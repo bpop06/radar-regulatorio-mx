@@ -17,6 +17,8 @@ CATEGORY_TERMS: dict[str, tuple[str, ...]] = {
         "sat",
         "prodecon",
         "credito fiscal",
+        "ejecucion fiscal",
+        "procedimiento administrativo de ejecucion",
         "comprobante fiscal",
         "cfdi",
         "lavado de dinero",
@@ -60,15 +62,6 @@ CATEGORY_TERMS: dict[str, tuple[str, ...]] = {
         "modelo de utilidad",
         "secreto industrial",
     ),
-    "Procesal fiscal": (
-        "juicio contencioso",
-        "tribunal federal de justicia administrativa",
-        "recurso de revocacion",
-        "amparo fiscal",
-        "medio de defensa",
-        "procedimiento administrativo de ejecucion",
-        "garantia del interes fiscal",
-    ),
     "Normalización": (
         "norma oficial mexicana",
         "proy-nom",
@@ -88,6 +81,140 @@ CATEGORY_TERMS: dict[str, tuple[str, ...]] = {
     ),
 }
 
+ADMINISTRATIVE_LAW_TERMS = (
+    "ley federal de procedimiento administrativo",
+    "lfpa",
+    "ley organica de la administracion publica federal",
+    "loapf",
+    "reglamento interior",
+    "estatuto organico",
+    "manual de organizacion",
+    "estructura organica",
+    "administracion publica federal",
+    "servicio profesional de carrera",
+    "delegan facultades",
+    "delegacion de facultades",
+    "facultades delegadas",
+    "acuerdo delegatorio",
+    "adscripcion de unidades administrativas",
+    "unidades administrativas",
+    "organos administrativos desconcentrados",
+    "sectorizacion",
+    "desincorporacion",
+    "extincion de organismo",
+    "creacion de organismo",
+)
+
+APPOINTMENT_ACTION_TERMS = (
+    "nombramiento",
+    "nombramientos",
+    "nombra",
+    "nombro",
+    "nombrado",
+    "nombrada",
+    "designacion",
+    "designa",
+    "designo",
+    "designado",
+    "designada",
+    "designados",
+    "designadas",
+    "ratificacion",
+    "ratifica",
+    "remocion",
+    "renuncia",
+    "suplencia",
+    "encargado de despacho",
+    "encargada de despacho",
+    "toma de protesta",
+)
+
+FEDERAL_POSITION_TERMS = (
+    "secretario de estado",
+    "secretaria de estado",
+    "subsecretario",
+    "subsecretaria",
+    "titular de la secretaria",
+    "titular del organo",
+    "titular de la unidad",
+    "titular de la jefatura",
+    "titular de jefatura",
+    "titular del instituto",
+    "titular del organismo",
+    "director general",
+    "directora general",
+    "director de area",
+    "directora de area",
+    "subdirector",
+    "subdirectora",
+    "jefe de unidad",
+    "jefa de unidad",
+    "jefe de departamento",
+    "jefa de departamento",
+    "coordinador general",
+    "coordinadora general",
+    "oficial mayor",
+    "comisionado",
+    "comisionada",
+    "presidente del organismo",
+    "presidenta del organismo",
+    "secretario tecnico",
+    "secretaria tecnica",
+    "vocal ejecutivo",
+    "vocal ejecutiva",
+    "embajador",
+    "embajadora",
+    "consul general",
+)
+
+APPOINTMENT_EXPLICIT_TERMS = (
+    "nombramientos presidenciales",
+    "nuevo titular",
+    "nueva titular",
+    "nuevo director general",
+    "nueva directora general",
+)
+
+CONTENTIOUS_EXPLICIT_TERMS = (
+    "ley federal de procedimiento contencioso administrativo",
+    "lfpca",
+    "juicio contencioso administrativo",
+    "juicio de nulidad",
+    "demanda de nulidad",
+    "nulidad lisa y llana",
+    "nulidad para efectos",
+    "recurso de reclamacion",
+    "incidente de suspension",
+    "medida cautelar",
+)
+
+CONTENTIOUS_PROCESS_TERMS = (
+    "sentencia definitiva",
+    "cumplimiento de sentencia",
+    "nulidad de la resolucion",
+    "plazos procesales",
+    "terminos y plazos procesales",
+    "actividades jurisdiccionales",
+    "procedimiento jurisdiccional",
+    "medio de defensa",
+)
+
+ADMINISTRATIVE_COURT_TERMS = (
+    "tribunal federal de justicia administrativa",
+    "tfja",
+    "sala regional",
+    "sala superior",
+    "sala especializada",
+)
+
+FISCAL_CONTENTIOUS_TERMS = (
+    "juicio de resolucion exclusiva de fondo",
+    "juicio contencioso administrativo federal en materia fiscal",
+    "sala especializada en materia fiscal",
+    "nulidad de credito fiscal",
+    "impugnacion de credito fiscal",
+)
+
 HIGH_VALUE_TERMS = (
     "codigo fiscal",
     "ley aduanera",
@@ -96,22 +223,70 @@ HIGH_VALUE_TERMS = (
     "tarifa de la ley de los impuestos generales",
     "propiedad industrial",
     "cuota compensatoria",
+    "ley federal de procedimiento administrativo",
+    "ley organica de la administracion publica federal",
+    "ley federal de procedimiento contencioso administrativo",
+    "nombramiento",
+    "designacion",
     "iniciativa",
     "proyecto de decreto",
 )
 
 
 def classify(candidate: Candidate) -> ClassifiedCandidate:
-    text = normalized(candidate.searchable_text)
+    text = normalized(
+        " ".join(
+            (
+                candidate.official_title,
+                candidate.description,
+                candidate.document_type,
+            )
+        )
+    )
     categories: list[str] = []
     matches: list[str] = []
 
     for category, terms in CATEGORY_TERMS.items():
-        category_matches = [term for term in terms if _contains_term(text, term)]
+        category_matches = _matching_terms(text, terms)
         if category_matches:
             categories.append(category)
             matches.extend(category_matches)
 
+    administrative_matches = _matching_terms(text, ADMINISTRATIVE_LAW_TERMS)
+    appointment_actions = _matching_terms(text, APPOINTMENT_ACTION_TERMS)
+    appointment_positions = _matching_terms(text, FEDERAL_POSITION_TERMS)
+    explicit_appointments = _matching_terms(text, APPOINTMENT_EXPLICIT_TERMS)
+    is_appointment = bool(explicit_appointments) or _has_term_proximity(
+        text,
+        APPOINTMENT_ACTION_TERMS,
+        FEDERAL_POSITION_TERMS,
+    )
+
+    if administrative_matches or is_appointment:
+        categories.append("Derecho administrativo")
+        matches.extend(administrative_matches)
+        matches.extend(appointment_actions)
+        matches.extend(appointment_positions)
+        matches.extend(explicit_appointments)
+    if is_appointment:
+        categories.append("Nombramientos federales")
+
+    explicit_contentious = _matching_terms(text, CONTENTIOUS_EXPLICIT_TERMS)
+    contentious_process = _matching_terms(text, CONTENTIOUS_PROCESS_TERMS)
+    court_context = _matching_terms(text, ADMINISTRATIVE_COURT_TERMS)
+    is_contentious = bool(explicit_contentious or (contentious_process and court_context))
+    if is_contentious:
+        categories.append("Contencioso administrativo")
+        matches.extend(explicit_contentious)
+        matches.extend(contentious_process)
+        matches.extend(court_context)
+
+    fiscal_contentious = _matching_terms(text, FISCAL_CONTENTIOUS_TERMS)
+    if fiscal_contentious or (is_contentious and "Fiscal" in categories):
+        categories.append("Contencioso administrativo fiscal")
+        matches.extend(fiscal_contentious)
+
+    unique_categories = tuple(dict.fromkeys(categories))
     unique_matches = tuple(dict.fromkeys(matches))
     score = min(len(unique_matches), 4)
     score += sum(1 for term in HIGH_VALUE_TERMS if _contains_term(text, term))
@@ -119,10 +294,49 @@ def classify(candidate: Candidate) -> ClassifiedCandidate:
 
     return ClassifiedCandidate(
         candidate=candidate,
-        categories=tuple(categories),
+        categories=unique_categories,
         relevance_score=score,
         matched_terms=unique_matches,
     )
+
+
+def _matching_terms(text: str, terms: tuple[str, ...]) -> list[str]:
+    return [term for term in terms if _contains_term(text, term)]
+
+
+def _has_term_proximity(
+    text: str,
+    left_terms: tuple[str, ...],
+    right_terms: tuple[str, ...],
+    maximum_distance: int = 160,
+) -> bool:
+    left_spans = _term_spans(text, left_terms)
+    right_spans = _term_spans(text, right_terms)
+    for left_start, left_end in left_spans:
+        for right_start, right_end in right_spans:
+            distance = min(
+                abs(left_start - right_end),
+                abs(right_start - left_end),
+            )
+            between_start = min(left_end, right_end)
+            between_end = max(left_start, right_start)
+            between = text[between_start:between_end]
+            if distance <= maximum_distance and not re.search(r"[.!?;]", between):
+                return True
+    return False
+
+
+def _term_spans(text: str, terms: tuple[str, ...]) -> list[tuple[int, int]]:
+    spans: list[tuple[int, int]] = []
+    for term in terms:
+        normalized_term = normalized(term)
+        pattern = (
+            rf"(?<!\w){re.escape(normalized_term)}(?!\w)"
+            if normalized_term.replace(" ", "").isalnum()
+            else re.escape(normalized_term)
+        )
+        spans.extend(match.span() for match in re.finditer(pattern, text))
+    return spans
 
 
 def _contains_term(text: str, term: str) -> bool:

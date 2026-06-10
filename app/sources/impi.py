@@ -27,7 +27,11 @@ class ImpiCollector(Collector):
         for article in soup.select("article"):
             time_element = article.find("time")
             title_element = article.find(["h3", "h4"])
-            anchor = title_element.find("a", href=True) if title_element else None
+            anchor = None
+            if title_element:
+                anchor = title_element.find("a", href=True) or title_element.find_parent(
+                    "a", href=True
+                )
             if not time_element or not title_element or not anchor:
                 continue
             raw_date = time_element.get("datetime") or time_element.get("date")
@@ -53,4 +57,3 @@ class ImpiCollector(Collector):
                 )
             )
         return candidates
-

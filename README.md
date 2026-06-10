@@ -4,6 +4,21 @@ Sitio diario de inteligencia regulatoria mexicana. Reúne publicaciones
 oficiales, detecta asuntos relevantes y presenta un título ejecutivo con un
 resumen de exactamente 30 palabras.
 
+## Materias cubiertas
+
+- Fiscal, aduanero y comercio exterior.
+- Propiedad intelectual y normalización.
+- Derecho administrativo federal: LFPA, LOAPF, reglamentos interiores,
+  estructura orgánica, facultades y organización de toda la Administración
+  Pública Federal.
+- Nombramientos federales: designaciones, ratificaciones, remociones,
+  suplencias y encargadurías de mandos y titulares.
+- Contencioso administrativo general.
+- Contencioso administrativo fiscal, entendido como la especialidad fiscal
+  dentro del contencioso administrativo, no como cualquier acto de
+  recaudación o ejecución.
+- Iniciativas legislativas sobre cualquiera de estas materias.
+
 ## Fuentes del MVP
 
 - Diario Oficial de la Federación
@@ -12,6 +27,8 @@ resumen de exactamente 30 palabras.
 - Gaceta Parlamentaria de la Cámara de Diputados
 - Datos públicos de iniciativas del Senado
 - Instituto Mexicano de la Propiedad Industrial
+- Portales institucionales de la Administración Pública Federal publicados en
+  el índice oficial de `gob.mx`
 
 La auditoría técnica está en [`docs/SOURCE_AUDIT.md`](docs/SOURCE_AUDIT.md).
 

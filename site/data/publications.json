@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-10T17:26:59.541965+00:00",
+  "generated_at": "2026-06-10T17:47:10.916839+00:00",
   "lookback_days": 31,
-  "total_items": 77,
+  "total_items": 87,
   "sources": [
     {
       "source": "DOF",
@@ -36,11 +36,49 @@
     {
       "source": "IMPI",
       "status": "ok",
-      "items_found": 1,
+      "items_found": 2,
+      "error": null
+    },
+    {
+      "source": "Gob.mx APF",
+      "status": "ok",
+      "items_found": 13,
       "error": null
     }
   ],
   "items": [
+    {
+      "id": "dof:5790214",
+      "source": "DOF",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5790214&fecha=10/06/2026",
+      "official_title": "Acuerdo SRYUC/02/2026 por el que se da a conocer la suspensión de actividades jurisdiccionales en la Sala Regional en Yucatán del Tribunal Federal de Justicia Administrativa por causa de fuerza mayor.",
+      "title": "Acuerdo SRYUC/02/2026 por el que se da a conocer la suspensión de",
+      "summary": "Acuerdo SRYUC/02/2026 por el que se da a conocer la suspensión de actividades jurisdiccionales en la Sala Regional en Yucatán del Tribunal Federal de Justicia Administrativa por causa de fuerza.",
+      "published_at": "2026-06-10",
+      "authority": "ORGANISMOS AUTONOMOS TRIBUNAL FEDERAL DE JUSTICIA ADMINISTRATIVA",
+      "document_type": "Acuerdo Sryuc/02/2026 Por",
+      "categories": [
+        "Contencioso administrativo"
+      ],
+      "relevance_score": 4,
+      "ai_generated": false
+    },
+    {
+      "id": "dof:5790186",
+      "source": "DOF",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5790186&fecha=10/06/2026",
+      "official_title": "Acuerdo por el que se delegan facultades a la Secretaría Particular de la persona Titular de la Secretaría de Economía.",
+      "title": "Acuerdo por el que se delegan facultades a la Secretaría Particular de",
+      "summary": "Acuerdo por el que se delegan facultades a la Secretaría Particular de la persona Titular de la Secretaría de Economía. Publicación oficial de PODER EJECUTIVO SECRETARIA DE ECONOMIA, relacionada con.",
+      "published_at": "2026-06-10",
+      "authority": "PODER EJECUTIVO SECRETARIA DE ECONOMIA",
+      "document_type": "Acuerdo Por El",
+      "categories": [
+        "Derecho administrativo"
+      ],
+      "relevance_score": 3,
+      "ai_generated": false
+    },
     {
       "id": "dof:5790195",
       "source": "DOF",
@@ -74,22 +112,6 @@
       "ai_generated": false
     },
     {
-      "id": "dof:5790214",
-      "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5790214&fecha=10/06/2026",
-      "official_title": "Acuerdo SRYUC/02/2026 por el que se da a conocer la suspensión de actividades jurisdiccionales en la Sala Regional en Yucatán del Tribunal Federal de Justicia Administrativa por causa de fuerza mayor.",
-      "title": "Acuerdo SRYUC/02/2026 por el que se da a conocer la suspensión de",
-      "summary": "Acuerdo SRYUC/02/2026 por el que se da a conocer la suspensión de actividades jurisdiccionales en la Sala Regional en Yucatán del Tribunal Federal de Justicia Administrativa por causa de fuerza.",
-      "published_at": "2026-06-10",
-      "authority": "ORGANISMOS AUTONOMOS TRIBUNAL FEDERAL DE JUSTICIA ADMINISTRATIVA",
-      "document_type": "Acuerdo Sryuc/02/2026 Por",
-      "categories": [
-        "Procesal fiscal"
-      ],
-      "relevance_score": 2,
-      "ai_generated": false
-    },
-    {
       "id": "dof:5790008",
       "source": "DOF",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5790008&fecha=09/06/2026",
@@ -101,6 +123,22 @@
       "document_type": "Proyecto De Norma",
       "categories": [
         "Normalización"
+      ],
+      "relevance_score": 4,
+      "ai_generated": false
+    },
+    {
+      "id": "dof:5790039",
+      "source": "DOF",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5790039&fecha=09/06/2026",
+      "official_title": "Acuerdo SROAX/02/2026 por el que se da a conocer la suspensión de actividades jurisdiccionales en la Sala Regional en Oaxaca del Tribunal Federal de Justicia Administrativa por causa de fuerza mayor.",
+      "title": "Acuerdo SROAX/02/2026 por el que se da a conocer la suspensión de",
+      "summary": "Acuerdo SROAX/02/2026 por el que se da a conocer la suspensión de actividades jurisdiccionales en la Sala Regional en Oaxaca del Tribunal Federal de Justicia Administrativa por causa de fuerza.",
+      "published_at": "2026-06-09",
+      "authority": "ORGANISMOS AUTONOMOS TRIBUNAL FEDERAL DE JUSTICIA ADMINISTRATIVA",
+      "document_type": "Acuerdo Sroax/02/2026 Por",
+      "categories": [
+        "Contencioso administrativo"
       ],
       "relevance_score": 4,
       "ai_generated": false
@@ -122,67 +160,35 @@
       "ai_generated": false
     },
     {
-      "id": "dof:5790039",
+      "id": "dof:5790010",
       "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5790039&fecha=09/06/2026",
-      "official_title": "Acuerdo SROAX/02/2026 por el que se da a conocer la suspensión de actividades jurisdiccionales en la Sala Regional en Oaxaca del Tribunal Federal de Justicia Administrativa por causa de fuerza mayor.",
-      "title": "Acuerdo SROAX/02/2026 por el que se da a conocer la suspensión de",
-      "summary": "Acuerdo SROAX/02/2026 por el que se da a conocer la suspensión de actividades jurisdiccionales en la Sala Regional en Oaxaca del Tribunal Federal de Justicia Administrativa por causa de fuerza.",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5790010&fecha=09/06/2026",
+      "official_title": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a la Fiscalía General de la República, a las empresas públicas del Estado, a las demarcaciones territoriales de la Ciudad de México, así como a las entidades federativas y sus municipios, que deberán abstenerse de aceptar propuestas o celebrar contratos con la empresa Garza Gas, S.A. de C.V.",
+      "title": "Circular por la que se comunica a las dependencias y entidades de",
+      "summary": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a la Fiscalía General de la República, a las empresas públicas del Estado, a.",
       "published_at": "2026-06-09",
-      "authority": "ORGANISMOS AUTONOMOS TRIBUNAL FEDERAL DE JUSTICIA ADMINISTRATIVA",
-      "document_type": "Acuerdo Sroax/02/2026 Por",
+      "authority": "PODER EJECUTIVO SECRETARIA ANTICORRUPCION Y BUEN GOBIERNO",
+      "document_type": "Circular Por La",
       "categories": [
-        "Procesal fiscal"
+        "Derecho administrativo"
       ],
       "relevance_score": 2,
       "ai_generated": false
     },
     {
-      "id": "dof:5790040",
+      "id": "dof:5790011",
       "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5790040&fecha=09/06/2026",
-      "official_title": "Extracto del Acuerdo G/JGA/61/2026, denominado \"Suplencia de persona Magistrada, en la Segunda Ponencia de la Segunda Sala Especializada en Materia Ambiental y de Regulación\".",
-      "title": "Extracto del Acuerdo G/JGA/61/2026, denominado \"Suplencia de persona Magistrada, en la Segunda",
-      "summary": "Extracto del Acuerdo G/JGA/61/2026, denominado \"Suplencia de persona Magistrada, en la Segunda Ponencia de la Segunda Sala Especializada en Materia Ambiental y de Regulación\". Publicación oficial de ORGANISMOS AUTONOMOS TRIBUNAL.",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5790011&fecha=09/06/2026",
+      "official_title": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a la Fiscalía General de la República, a las empresas públicas del Estado, a las entidades federativas y sus municipios, así como a las demarcaciones territoriales de la Ciudad de México que deberán abstenerse de participar en procedimientos de contratación o celebrar contratos con la persona moral Servicios Especiales de Gas LP, S.A. de C.V.",
+      "title": "Circular por la que se comunica a las dependencias y entidades de",
+      "summary": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a la Fiscalía General de la República, a las empresas públicas del Estado, a.",
       "published_at": "2026-06-09",
-      "authority": "ORGANISMOS AUTONOMOS TRIBUNAL FEDERAL DE JUSTICIA ADMINISTRATIVA",
-      "document_type": "Extracto Del Acuerdo",
+      "authority": "PODER EJECUTIVO SECRETARIA ANTICORRUPCION Y BUEN GOBIERNO",
+      "document_type": "Circular Por La",
       "categories": [
-        "Procesal fiscal"
+        "Derecho administrativo"
       ],
       "relevance_score": 2,
-      "ai_generated": false
-    },
-    {
-      "id": "dof:5790041",
-      "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5790041&fecha=09/06/2026",
-      "official_title": "Extracto del Acuerdo G/JGA/62/2026, denominado \"Suplencia de persona Magistrada, en la Tercera Ponencia de la Primera Sala Regional en la Ciudad de México\".",
-      "title": "Extracto del Acuerdo G/JGA/62/2026, denominado \"Suplencia de persona Magistrada, en la Tercera",
-      "summary": "Extracto del Acuerdo G/JGA/62/2026, denominado \"Suplencia de persona Magistrada, en la Tercera Ponencia de la Primera Sala Regional en la Ciudad de México\". Publicación oficial de ORGANISMOS AUTONOMOS TRIBUNAL FEDERAL.",
-      "published_at": "2026-06-09",
-      "authority": "ORGANISMOS AUTONOMOS TRIBUNAL FEDERAL DE JUSTICIA ADMINISTRATIVA",
-      "document_type": "Extracto Del Acuerdo",
-      "categories": [
-        "Procesal fiscal"
-      ],
-      "relevance_score": 2,
-      "ai_generated": false
-    },
-    {
-      "id": "impi:f6a4a6cf428a8a4d",
-      "source": "IMPI",
-      "url": "https://www.impi.gob.mx/impi/articulos/impi-intensifica-operativos-contra-pirateria-en-el-centro-historico-a-unos-dias-del-inicio-del-mundial-428146?idiom=es",
-      "official_title": "IMPI intensifica operativos contra piratería en el Centro Histórico a unos días del inicio del Mundial",
-      "title": "IMPI intensifica operativos contra piratería en el Centro Histórico a unos días",
-      "summary": "IMPI intensifica operativos contra piratería en el Centro Histórico a unos días del inicio del Mundial. Publicación oficial de Instituto Mexicano de la Propiedad Industrial, relacionada con Propiedad intelectual. Consulta.",
-      "published_at": "2026-06-08",
-      "authority": "Instituto Mexicano de la Propiedad Industrial",
-      "document_type": "Artículo",
-      "categories": [
-        "Propiedad intelectual"
-      ],
-      "relevance_score": 4,
       "ai_generated": false
     },
     {
@@ -202,36 +208,36 @@
       "ai_generated": false
     },
     {
-      "id": "dof:5789898",
-      "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5789898&fecha=08/06/2026",
-      "official_title": "Publicación de datos relacionados con la Solicitud de Declaración de Protección a la Indicación Geográfica \"Venado Bura del Desierto de Sonora\".",
-      "title": "Publicación de datos relacionados con la Solicitud de Declaración de Protección a",
-      "summary": "Publicación de datos relacionados con la Solicitud de Declaración de Protección a la Indicación Geográfica \"Venado Bura del Desierto de Sonora\". Publicación oficial de ORGANISMOS DESCONCENTRADOS O DESCENTRALIZADOS INSTITUTO MEXICANO.",
+      "id": "impi:f6a4a6cf428a8a4d",
+      "source": "IMPI",
+      "url": "https://www.impi.gob.mx/impi/articulos/impi-intensifica-operativos-contra-pirateria-en-el-centro-historico-a-unos-dias-del-inicio-del-mundial-428146?idiom=es",
+      "official_title": "IMPI intensifica operativos contra piratería en el Centro Histórico a unos días del inicio del Mundial",
+      "title": "IMPI intensifica operativos contra piratería en el Centro Histórico a unos días",
+      "summary": "IMPI intensifica operativos contra piratería en el Centro Histórico a unos días del inicio del Mundial. Publicación oficial de Instituto Mexicano de la Propiedad Industrial, relacionada con Propiedad intelectual. Consulta.",
       "published_at": "2026-06-08",
-      "authority": "ORGANISMOS DESCONCENTRADOS O DESCENTRALIZADOS INSTITUTO MEXICANO DE LA PROPIEDAD INDUSTRIAL",
-      "document_type": "Publicación De Datos",
+      "authority": "Instituto Mexicano de la Propiedad Industrial",
+      "document_type": "Artículo",
       "categories": [
         "Propiedad intelectual"
       ],
-      "relevance_score": 3,
+      "relevance_score": 2,
       "ai_generated": false
     },
     {
-      "id": "dof:5789648",
+      "id": "dof:5789650",
       "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5789648&fecha=05/06/2026",
-      "official_title": "Oficio 900 04 00 00 00 2026-254 mediante el cual se comunica que Operadora Autopistas Nacionales Equivent, S.A. de C.V. promovió un medio de defensa en contra del oficio de presunción a que se refiere el artículo 69-B Bis cuarto párrafo del Código Fiscal de la Federación y, una vez resuelto, el órgano jurisdiccional dejó sin efectos el referido acto.",
-      "title": "Oficio 900 04 00 00 00 2026-254 mediante el cual se comunica",
-      "summary": "Oficio 900 04 00 00 00 2026-254 mediante el cual se comunica que Operadora Autopistas Nacionales Equivent, S.A. de C.V. promovió un medio de defensa en contra del oficio de.",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5789650&fecha=05/06/2026",
+      "official_title": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, así como a las entidades federativas, el cumplimiento dado a la sentencia definitiva de fecha once de noviembre de dos mil veinticuatro, dictada en el juicio de nulidad 7987/22- 17-03-3, promovido por la empresa Bioabast, S.A. de C.V., por medio de la cual la Tercera Sala Regional Metropolitana del Tribunal Federal de Justicia Administrativa, declaró la nulidad de la resolución contenida dictada el veintidós de febrero de dos mil veintidós, emitida dentro del procedimiento administrativo de sanción a licitantes, SAN-019/2021.",
+      "title": "Circular por la que se comunica a las dependencias y entidades de",
+      "summary": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, así como a las entidades federativas, el cumplimiento dado a la sentencia definitiva de.",
       "published_at": "2026-06-05",
-      "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
-      "document_type": "Oficio 900 04",
+      "authority": "PODER EJECUTIVO SECRETARIA ANTICORRUPCION Y BUEN GOBIERNO",
+      "document_type": "Circular Por La",
       "categories": [
-        "Fiscal",
-        "Procesal fiscal"
+        "Derecho administrativo",
+        "Contencioso administrativo"
       ],
-      "relevance_score": 4,
+      "relevance_score": 5,
       "ai_generated": false
     },
     {
@@ -283,33 +289,17 @@
       "ai_generated": false
     },
     {
-      "id": "dof:5789660",
+      "id": "dof:5789648",
       "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5789660&fecha=05/06/2026",
-      "official_title": "Acuerdo por el que se emiten los Lineamientos para el funcionamiento del Comité Técnico para el Proceso de Selección de Examinadores de Patentes.",
-      "title": "Acuerdo por el que se emiten los Lineamientos para el funcionamiento del",
-      "summary": "Acuerdo por el que se emiten los Lineamientos para el funcionamiento del Comité Técnico para el Proceso de Selección de Examinadores de Patentes. Publicación oficial de ORGANISMOS DESCONCENTRADOS O DESCENTRALIZADOS.",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5789648&fecha=05/06/2026",
+      "official_title": "Oficio 900 04 00 00 00 2026-254 mediante el cual se comunica que Operadora Autopistas Nacionales Equivent, S.A. de C.V. promovió un medio de defensa en contra del oficio de presunción a que se refiere el artículo 69-B Bis cuarto párrafo del Código Fiscal de la Federación y, una vez resuelto, el órgano jurisdiccional dejó sin efectos el referido acto.",
+      "title": "Oficio 900 04 00 00 00 2026-254 mediante el cual se comunica",
+      "summary": "Oficio 900 04 00 00 00 2026-254 mediante el cual se comunica que Operadora Autopistas Nacionales Equivent, S.A. de C.V. promovió un medio de defensa en contra del oficio de.",
       "published_at": "2026-06-05",
-      "authority": "ORGANISMOS DESCONCENTRADOS O DESCENTRALIZADOS INSTITUTO MEXICANO DE LA PROPIEDAD INDUSTRIAL",
-      "document_type": "Acuerdo Por El",
+      "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
+      "document_type": "Oficio 900 04",
       "categories": [
-        "Propiedad intelectual"
-      ],
-      "relevance_score": 3,
-      "ai_generated": false
-    },
-    {
-      "id": "dof:5789661",
-      "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5789661&fecha=05/06/2026",
-      "official_title": "Publicación de datos relacionados con la Solicitud de Declaración de Protección a la Indicación Geográfica \"Cerámica de Mata Ortiz\".",
-      "title": "Publicación de datos relacionados con la Solicitud de Declaración de Protección a",
-      "summary": "Publicación de datos relacionados con la Solicitud de Declaración de Protección a la Indicación Geográfica \"Cerámica de Mata Ortiz\". Publicación oficial de ORGANISMOS DESCONCENTRADOS O DESCENTRALIZADOS INSTITUTO MEXICANO DE LA.",
-      "published_at": "2026-06-05",
-      "authority": "ORGANISMOS DESCONCENTRADOS O DESCENTRALIZADOS INSTITUTO MEXICANO DE LA PROPIEDAD INDUSTRIAL",
-      "document_type": "Publicación De Datos",
-      "categories": [
-        "Propiedad intelectual"
+        "Fiscal"
       ],
       "relevance_score": 3,
       "ai_generated": false
@@ -331,19 +321,86 @@
       "ai_generated": false
     },
     {
-      "id": "dof:5789650",
+      "id": "dof:5789678",
       "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5789650&fecha=05/06/2026",
-      "official_title": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, así como a las entidades federativas, el cumplimiento dado a la sentencia definitiva de fecha once de noviembre de dos mil veinticuatro, dictada en el juicio de nulidad 7987/22- 17-03-3, promovido por la empresa Bioabast, S.A. de C.V., por medio de la cual la Tercera Sala Regional Metropolitana del Tribunal Federal de Justicia Administrativa, declaró la nulidad de la resolución contenida dictada el veintidós de febrero de dos mil veintidós, emitida dentro del procedimiento administrativo de sanción a licitantes, SAN-019/2021.",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5789678&fecha=05/06/2026",
+      "official_title": "Aviso General mediante el cual se da a conocer el cambio de domicilio del Órgano de Desarrollo Institucional y Servicio Profesional de Carrera y sus Unidades Administrativas de la Fiscalía General de la República.",
+      "title": "Aviso General mediante el cual se da a conocer el cambio de",
+      "summary": "Aviso General mediante el cual se da a conocer el cambio de domicilio del Órgano de Desarrollo Institucional y Servicio Profesional de Carrera y sus Unidades Administrativas de la Fiscalía.",
+      "published_at": "2026-06-05",
+      "authority": "ORGANISMOS AUTONOMOS FISCALIA GENERAL DE LA REPUBLICA",
+      "document_type": "Aviso General Mediante",
+      "categories": [
+        "Derecho administrativo"
+      ],
+      "relevance_score": 3,
+      "ai_generated": false
+    },
+    {
+      "id": "dof:5789651",
+      "source": "DOF",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5789651&fecha=05/06/2026",
+      "official_title": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, así como a las entidades federativas que deberán abstenerse de aceptar propuestas o celebrar contratos con la moral Bioabast, S.A. de C.V.",
       "title": "Circular por la que se comunica a las dependencias y entidades de",
-      "summary": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, así como a las entidades federativas, el cumplimiento dado a la sentencia definitiva de.",
+      "summary": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, así como a las entidades federativas que deberán abstenerse de aceptar propuestas o celebrar.",
       "published_at": "2026-06-05",
       "authority": "PODER EJECUTIVO SECRETARIA ANTICORRUPCION Y BUEN GOBIERNO",
       "document_type": "Circular Por La",
       "categories": [
-        "Procesal fiscal"
+        "Derecho administrativo"
       ],
       "relevance_score": 2,
+      "ai_generated": false
+    },
+    {
+      "id": "dof:5789669",
+      "source": "DOF",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5789669&fecha=05/06/2026",
+      "official_title": "Reglamento Interior de la Auditoría Superior de la Federación.",
+      "title": "Reglamento Interior de la Auditoría Superior de la Federación",
+      "summary": "Reglamento Interior de la Auditoría Superior de la Federación. Publicación oficial de PODER LEGISLATIVO AUDITORIA SUPERIOR DE LA FEDERACION, relacionada con Derecho administrativo. Consulta la fuente íntegra para confirmar su.",
+      "published_at": "2026-06-05",
+      "authority": "PODER LEGISLATIVO AUDITORIA SUPERIOR DE LA FEDERACION",
+      "document_type": "Reglamento Interior De",
+      "categories": [
+        "Derecho administrativo"
+      ],
+      "relevance_score": 2,
+      "ai_generated": false
+    },
+    {
+      "id": "dof:5789469",
+      "source": "DOF",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5789469&fecha=04/06/2026",
+      "official_title": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, así como a las entidades federativas, el acuerdo de fecha veinte de mayo de dos mil veintiséis, por el que se da cumplimiento a la sentencia definitiva de diecinueve de noviembre de dos mil veinticinco, dictada en el juicio de nulidad 12276/23-17-05-7, promovido por el C. Erick Moctezuma Ríos Ángeles, en representación legal de la empresa MYK Solutions And Services de México, S.A. de C.V., por medio de la cual la Quinta Sala Regional Metropolitana del Tribunal Federal de Justicia Administrativa, declaró la nulidad de la resolución contenida en el oficio OIC/00/637/24109/2023, de fecha veintiséis de abril de dos mil veintitrés, emitida dentro del procedimiento administrativo de sanción a licitantes, proveedores y contratistas PA-004/2023.",
+      "title": "Circular por la que se comunica a las dependencias y entidades de",
+      "summary": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, así como a las entidades federativas, el acuerdo de fecha veinte de mayo de.",
+      "published_at": "2026-06-04",
+      "authority": "PODER EJECUTIVO SECRETARIA ANTICORRUPCION Y BUEN GOBIERNO",
+      "document_type": "Circular Por La",
+      "categories": [
+        "Derecho administrativo",
+        "Contencioso administrativo"
+      ],
+      "relevance_score": 5,
+      "ai_generated": false
+    },
+    {
+      "id": "gob.mx apf:8b2f66c22066d0b0",
+      "source": "Gob.mx APF",
+      "url": "https://www.gob.mx/se/prensa/secretaria-de-economia-sat-y-aduanas-eliminan-dictaminacion-de-avisos-en-comercio-exterior-para-agilizar-tramites?idiom=es",
+      "official_title": "Secretaría de Economía, SAT y Aduanas eliminan dictaminación de avisos en comercio exterior para agilizar trámites",
+      "title": "Esta estrategia del Gobierno de México elimina las cargas administrativas innecesarias y",
+      "summary": "Esta estrategia del Gobierno de México elimina las cargas administrativas innecesarias y optimiza los tiempos de atención en materia de comercio exterior En coordinación con la Agencia de Transformación Digital.",
+      "published_at": "2026-06-04",
+      "authority": "Secretaría de Economía",
+      "document_type": "Comunicado",
+      "categories": [
+        "Fiscal",
+        "Aduanero",
+        "Comercio exterior"
+      ],
+      "relevance_score": 4,
       "ai_generated": false
     },
     {
@@ -379,17 +436,17 @@
       "ai_generated": false
     },
     {
-      "id": "dof:5789469",
+      "id": "dof:5789470",
       "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5789469&fecha=04/06/2026",
-      "official_title": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, así como a las entidades federativas, el acuerdo de fecha veinte de mayo de dos mil veintiséis, por el que se da cumplimiento a la sentencia definitiva de diecinueve de noviembre de dos mil veinticinco, dictada en el juicio de nulidad 12276/23-17-05-7, promovido por el C. Erick Moctezuma Ríos Ángeles, en representación legal de la empresa MYK Solutions And Services de México, S.A. de C.V., por medio de la cual la Quinta Sala Regional Metropolitana del Tribunal Federal de Justicia Administrativa, declaró la nulidad de la resolución contenida en el oficio OIC/00/637/24109/2023, de fecha veintiséis de abril de dos mil veintitrés, emitida dentro del procedimiento administrativo de sanción a licitantes, proveedores y contratistas PA-004/2023.",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5789470&fecha=04/06/2026",
+      "official_title": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a las entidades federativas, a los municipios, los entes públicos de unas y otros, así como a las demarcaciones territoriales de la Ciudad de México, que deberán abstenerse de aceptar propuestas y/o celebrar contratos con la empresa Brigalag, S.A. de C.V.",
       "title": "Circular por la que se comunica a las dependencias y entidades de",
-      "summary": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, así como a las entidades federativas, el acuerdo de fecha veinte de mayo de.",
+      "summary": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a las entidades federativas, a los municipios, los entes públicos de unas y otros.",
       "published_at": "2026-06-04",
       "authority": "PODER EJECUTIVO SECRETARIA ANTICORRUPCION Y BUEN GOBIERNO",
       "document_type": "Circular Por La",
       "categories": [
-        "Procesal fiscal"
+        "Derecho administrativo"
       ],
       "relevance_score": 2,
       "ai_generated": false
@@ -445,6 +502,43 @@
       "ai_generated": false
     },
     {
+      "id": "gob.mx apf:145571f7704ea97d",
+      "source": "Gob.mx APF",
+      "url": "https://www.gob.mx/se/prensa/vidal-llerenas-nuevo-titular-del-impi-427404?idiom=es",
+      "official_title": "Vidal Llerenas nuevo titular del IMPI",
+      "title": "• Su nombramiento fortalecerá el papel del IMPI en el desarrollo industrial",
+      "summary": "• Su nombramiento fortalecerá el papel del IMPI en el desarrollo industrial y la innovación en México. • El IMPI contará con 500 perfiles de profesionistas en ciencia, tecnología, ingeniería.",
+      "published_at": "2026-06-01",
+      "authority": "Secretaría de Economía",
+      "document_type": "Comunicado",
+      "categories": [
+        "Propiedad intelectual",
+        "Derecho administrativo",
+        "Nombramientos federales"
+      ],
+      "relevance_score": 7,
+      "ai_generated": false
+    },
+    {
+      "id": "gob.mx apf:f983c88d42a433ce",
+      "source": "Gob.mx APF",
+      "url": "https://www.gob.mx/se/prensa/del-secretario-de-economia-marcelo-ebrard-durante-la-presentacion-del-director-del-instituto-mexicano-de-la-propiedad-industrial?idiom=es",
+      "official_title": "Participación del secretario Marcelo Ebrard durante la presentación del director del Instituto Mexicano de la Propiedad Industrial",
+      "title": "Mensaje del secretario de Economía, Marcelo Ebrard Casaubon: Bueno, muy buenos días",
+      "summary": "Mensaje del secretario de Economía, Marcelo Ebrard Casaubon: Bueno, muy buenos días a todas y a todos, buenos días. Gracias por acompañarnos a los medios de comunicación que nos hace.",
+      "published_at": "2026-06-01",
+      "authority": "Secretaría de Economía",
+      "document_type": "Discurso",
+      "categories": [
+        "Aduanero",
+        "Comercio exterior",
+        "Propiedad intelectual",
+        "Iniciativa"
+      ],
+      "relevance_score": 6,
+      "ai_generated": false
+    },
+    {
       "id": "dof:5789109",
       "source": "DOF",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5789109&fecha=01/06/2026",
@@ -458,6 +552,71 @@
         "Comercio exterior"
       ],
       "relevance_score": 3,
+      "ai_generated": false
+    },
+    {
+      "id": "dof:5789100",
+      "source": "DOF",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5789100&fecha=01/06/2026",
+      "official_title": "Aviso por el que se da a conocer la página institucional donde puede consultarse el Manual de Organización de la Administración del Sistema Portuario Nacional Mazatlán, S.A. de C.V.",
+      "title": "Aviso por el que se da a conocer la página institucional donde",
+      "summary": "Aviso por el que se da a conocer la página institucional donde puede consultarse el Manual de Organización de la Administración del Sistema Portuario Nacional Mazatlán, S.A. de C.V. Publicación.",
+      "published_at": "2026-06-01",
+      "authority": "PODER EJECUTIVO SECRETARIA DE MARINA",
+      "document_type": "Aviso Por El",
+      "categories": [
+        "Derecho administrativo"
+      ],
+      "relevance_score": 2,
+      "ai_generated": false
+    },
+    {
+      "id": "gob.mx apf:3c3eaced53d756e7",
+      "source": "Gob.mx APF",
+      "url": "https://www.gob.mx/sre/prensa/anuncia-sre-nombramientos-de-jefes-de-unidad-y-directores-generales?idiom=es",
+      "official_title": "Anuncia SRE nombramientos de jefes de unidad y directores generales",
+      "title": "La Secretaría de Relaciones Exteriores (SRE) informa que, por instrucciones del canciller",
+      "summary": "La Secretaría de Relaciones Exteriores (SRE) informa que, por instrucciones del canciller Roberto Velasco Álvarez, se han realizado nombramientos de jefas y jefes de unidad, y directoras y directores generales.",
+      "published_at": "2026-05-29",
+      "authority": "Secretaría de Relaciones Exteriores",
+      "document_type": "Comunicado",
+      "categories": [
+        "Derecho administrativo",
+        "Nombramientos federales"
+      ],
+      "relevance_score": 4,
+      "ai_generated": false
+    },
+    {
+      "id": "dof:5788983",
+      "source": "DOF",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5788983&fecha=29/05/2026",
+      "official_title": "Acuerdo mediante el cual se emite el Manual de Percepciones de las personas Servidoras Públicas de las dependencias y entidades de la Administración Pública Federal.",
+      "title": "Acuerdo mediante el cual se emite el Manual de Percepciones de las",
+      "summary": "Acuerdo mediante el cual se emite el Manual de Percepciones de las personas Servidoras Públicas de las dependencias y entidades de la Administración Pública Federal. Publicación oficial de PODER EJECUTIVO.",
+      "published_at": "2026-05-29",
+      "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
+      "document_type": "Acuerdo Mediante El",
+      "categories": [
+        "Derecho administrativo"
+      ],
+      "relevance_score": 2,
+      "ai_generated": false
+    },
+    {
+      "id": "dof:5788990",
+      "source": "DOF",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5788990&fecha=29/05/2026",
+      "official_title": "Acuerdo de la Comisión Nacional de Energía por el que se expide el Manual de Organización General de la Comisión Nacional de Energía.",
+      "title": "Acuerdo de la Comisión Nacional de Energía por el que se expide",
+      "summary": "Acuerdo de la Comisión Nacional de Energía por el que se expide el Manual de Organización General de la Comisión Nacional de Energía. Publicación oficial de PODER EJECUTIVO SECRETARIA DE.",
+      "published_at": "2026-05-29",
+      "authority": "PODER EJECUTIVO SECRETARIA DE ENERGIA",
+      "document_type": "Acuerdo De La",
+      "categories": [
+        "Derecho administrativo"
+      ],
+      "relevance_score": 2,
       "ai_generated": false
     },
     {
@@ -541,6 +700,55 @@
       "ai_generated": false
     },
     {
+      "id": "dof:5788850",
+      "source": "DOF",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5788850&fecha=28/05/2026",
+      "official_title": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a las entidades federativas, a los municipios, a los entes públicos de unas y otros, así como a las demarcaciones territoriales de la Ciudad de México, que deberán abstenerse de aceptar propuestas y/o celebrar contratos con la empresa Constructora & Comercializadora Pietra, S.A. de C.V.",
+      "title": "Circular por la que se comunica a las dependencias y entidades de",
+      "summary": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a las entidades federativas, a los municipios, a los entes públicos de unas y.",
+      "published_at": "2026-05-28",
+      "authority": "PODER EJECUTIVO SECRETARIA ANTICORRUPCION Y BUEN GOBIERNO",
+      "document_type": "Circular Por La",
+      "categories": [
+        "Derecho administrativo"
+      ],
+      "relevance_score": 2,
+      "ai_generated": false
+    },
+    {
+      "id": "gob.mx apf:a1df4cbaf83ad440",
+      "source": "Gob.mx APF",
+      "url": "https://www.gob.mx/sre/prensa/nombramientos-presidenciales-son-enviados-al-senado-de-la-republica-para-su-ratificacion?idiom=es",
+      "official_title": "Nombramientos presidenciales son enviados al Senado de la República para su ratificación",
+      "title": "La Secretaría de Relaciones Exteriores (SRE) informa que han sido enviados al",
+      "summary": "La Secretaría de Relaciones Exteriores (SRE) informa que han sido enviados al Senado de la República cuatro nombramientos designados por la presidenta Claudia Sheinbaum para su ratificación. De los cuatro.",
+      "published_at": "2026-05-27",
+      "authority": "Secretaría de Relaciones Exteriores",
+      "document_type": "Comunicado",
+      "categories": [
+        "Derecho administrativo",
+        "Nombramientos federales"
+      ],
+      "relevance_score": 4,
+      "ai_generated": false
+    },
+    {
+      "id": "dof:5788763",
+      "source": "DOF",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5788763&fecha=27/05/2026",
+      "official_title": "Acuerdo SRYUC/01/2026 por el que se da a conocer la suspensión de actividades jurisdiccionales en la Sala Regional en Yucatán del Tribunal Federal de Justicia Administrativa por causa de fuerza mayor.",
+      "title": "Acuerdo SRYUC/01/2026 por el que se da a conocer la suspensión de",
+      "summary": "Acuerdo SRYUC/01/2026 por el que se da a conocer la suspensión de actividades jurisdiccionales en la Sala Regional en Yucatán del Tribunal Federal de Justicia Administrativa por causa de fuerza.",
+      "published_at": "2026-05-27",
+      "authority": "ORGANISMOS AUTONOMOS TRIBUNAL FEDERAL DE JUSTICIA ADMINISTRATIVA",
+      "document_type": "Acuerdo Sryuc/01/2026 Por",
+      "categories": [
+        "Contencioso administrativo"
+      ],
+      "relevance_score": 4,
+      "ai_generated": false
+    },
+    {
       "id": "dof:5788724",
       "source": "DOF",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5788724&fecha=27/05/2026",
@@ -568,54 +776,6 @@
       "document_type": "Convenio De Coordinación",
       "categories": [
         "Normalización"
-      ],
-      "relevance_score": 2,
-      "ai_generated": false
-    },
-    {
-      "id": "dof:5788763",
-      "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5788763&fecha=27/05/2026",
-      "official_title": "Acuerdo SRYUC/01/2026 por el que se da a conocer la suspensión de actividades jurisdiccionales en la Sala Regional en Yucatán del Tribunal Federal de Justicia Administrativa por causa de fuerza mayor.",
-      "title": "Acuerdo SRYUC/01/2026 por el que se da a conocer la suspensión de",
-      "summary": "Acuerdo SRYUC/01/2026 por el que se da a conocer la suspensión de actividades jurisdiccionales en la Sala Regional en Yucatán del Tribunal Federal de Justicia Administrativa por causa de fuerza.",
-      "published_at": "2026-05-27",
-      "authority": "ORGANISMOS AUTONOMOS TRIBUNAL FEDERAL DE JUSTICIA ADMINISTRATIVA",
-      "document_type": "Acuerdo Sryuc/01/2026 Por",
-      "categories": [
-        "Procesal fiscal"
-      ],
-      "relevance_score": 2,
-      "ai_generated": false
-    },
-    {
-      "id": "dof:5788764",
-      "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5788764&fecha=27/05/2026",
-      "official_title": "Extracto del Acuerdo G/JGA/54/2026, denominado \"Suplencia de persona Magistrada, en la Primera Ponencia de la Sala Regional en Guanajuato I\".",
-      "title": "Extracto del Acuerdo G/JGA/54/2026, denominado \"Suplencia de persona Magistrada, en la Primera",
-      "summary": "Extracto del Acuerdo G/JGA/54/2026, denominado \"Suplencia de persona Magistrada, en la Primera Ponencia de la Sala Regional en Guanajuato I\". Publicación oficial de ORGANISMOS AUTONOMOS TRIBUNAL FEDERAL DE JUSTICIA ADMINISTRATIVA.",
-      "published_at": "2026-05-27",
-      "authority": "ORGANISMOS AUTONOMOS TRIBUNAL FEDERAL DE JUSTICIA ADMINISTRATIVA",
-      "document_type": "Extracto Del Acuerdo",
-      "categories": [
-        "Procesal fiscal"
-      ],
-      "relevance_score": 2,
-      "ai_generated": false
-    },
-    {
-      "id": "dof:5788765",
-      "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5788765&fecha=27/05/2026",
-      "official_title": "Extracto del Acuerdo G/JGA/59/2026, denominado \"Prórroga de la suspensión de términos y plazos procesales, en los expedientes substanciados en el Sistema de Justicia en Línea Versión 2.0, del 21 al 25 de mayo de 2026\".",
-      "title": "Extracto del Acuerdo G/JGA/59/2026, denominado \"Prórroga de la suspensión de términos y",
-      "summary": "Extracto del Acuerdo G/JGA/59/2026, denominado \"Prórroga de la suspensión de términos y plazos procesales, en los expedientes substanciados en el Sistema de Justicia en Línea Versión 2.0, del 21 al.",
-      "published_at": "2026-05-27",
-      "authority": "ORGANISMOS AUTONOMOS TRIBUNAL FEDERAL DE JUSTICIA ADMINISTRATIVA",
-      "document_type": "Extracto Del Acuerdo",
-      "categories": [
-        "Procesal fiscal"
       ],
       "relevance_score": 2,
       "ai_generated": false
@@ -653,22 +813,6 @@
       "ai_generated": false
     },
     {
-      "id": "dof:5788544",
-      "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5788544&fecha=26/05/2026",
-      "official_title": "Extracto del Acuerdo G/JGA/58/2026, denominado \"Suspensión de términos y plazos procesales, en los expedientes substanciados en el Sistema de Justicia en Línea Versión 2.0, del 18 al 20 de mayo de 2026\".",
-      "title": "Extracto del Acuerdo G/JGA/58/2026, denominado \"Suspensión de términos y plazos procesales, en",
-      "summary": "Extracto del Acuerdo G/JGA/58/2026, denominado \"Suspensión de términos y plazos procesales, en los expedientes substanciados en el Sistema de Justicia en Línea Versión 2.0, del 18 al 20 de mayo.",
-      "published_at": "2026-05-26",
-      "authority": "ORGANISMOS AUTONOMOS TRIBUNAL FEDERAL DE JUSTICIA ADMINISTRATIVA",
-      "document_type": "Extracto Del Acuerdo",
-      "categories": [
-        "Procesal fiscal"
-      ],
-      "relevance_score": 2,
-      "ai_generated": false
-    },
-    {
       "id": "dof:5788639",
       "source": "DOF",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5788639&fecha=26/05/2026",
@@ -701,33 +845,33 @@
       "ai_generated": false
     },
     {
-      "id": "dof:5788402",
+      "id": "dof:5788387",
       "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5788402&fecha=25/05/2026",
-      "official_title": "Publicación de datos relacionados con la solicitud de Declaración de Protección a la Indicación Geográfica \"Naranja de Montemorelos\".",
-      "title": "Publicación de datos relacionados con la solicitud de Declaración de Protección a",
-      "summary": "Publicación de datos relacionados con la solicitud de Declaración de Protección a la Indicación Geográfica \"Naranja de Montemorelos\". Publicación oficial de ORGANISMOS DESCONCENTRADOS O DESCENTRALIZADOS INSTITUTO MEXICANO DE LA PROPIEDAD.",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5788387&fecha=25/05/2026",
+      "official_title": "Manual de Organización General de la Secretaría de Infraestructura, Comunicaciones y Transportes.",
+      "title": "Manual de Organización General de la Secretaría de Infraestructura, Comunicaciones y Transportes",
+      "summary": "Manual de Organización General de la Secretaría de Infraestructura, Comunicaciones y Transportes. Publicación oficial de PODER EJECUTIVO SECRETARIA DE INFRAESTRUCTURA, COMUNICACIONES Y TRANSPORTES, relacionada con Derecho administrativo. Consulta la fuente.",
       "published_at": "2026-05-25",
-      "authority": "ORGANISMOS DESCONCENTRADOS O DESCENTRALIZADOS INSTITUTO MEXICANO DE LA PROPIEDAD INDUSTRIAL",
-      "document_type": "Publicación De Datos",
+      "authority": "PODER EJECUTIVO SECRETARIA DE INFRAESTRUCTURA, COMUNICACIONES Y TRANSPORTES",
+      "document_type": "Manual De Organización",
       "categories": [
-        "Propiedad intelectual"
+        "Derecho administrativo"
       ],
-      "relevance_score": 3,
+      "relevance_score": 2,
       "ai_generated": false
     },
     {
-      "id": "dof:5788403",
+      "id": "dof:5788257",
       "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5788403&fecha=25/05/2026",
-      "official_title": "Publicación de datos relacionados con la solicitud de Declaración de Protección a la Indicación Geográfica \"Alfeñique de Toluca\".",
-      "title": "Publicación de datos relacionados con la solicitud de Declaración de Protección a",
-      "summary": "Publicación de datos relacionados con la solicitud de Declaración de Protección a la Indicación Geográfica \"Alfeñique de Toluca\". Publicación oficial de ORGANISMOS DESCONCENTRADOS O DESCENTRALIZADOS INSTITUTO MEXICANO DE LA PROPIEDAD.",
-      "published_at": "2026-05-25",
-      "authority": "ORGANISMOS DESCONCENTRADOS O DESCENTRALIZADOS INSTITUTO MEXICANO DE LA PROPIEDAD INDUSTRIAL",
-      "document_type": "Publicación De Datos",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5788257&fecha=22/05/2026",
+      "official_title": "Aviso mediante el cual se informa al público en general los domicilios de las Oficialías de Partes de las Unidades Administrativas de la Subsecretaría de Derechos Humanos, Población y Migración de la Secretaría de Gobernación.",
+      "title": "Aviso mediante el cual se informa al público en general los domicilios",
+      "summary": "Aviso mediante el cual se informa al público en general los domicilios de las Oficialías de Partes de las Unidades Administrativas de la Subsecretaría de Derechos Humanos, Población y Migración.",
+      "published_at": "2026-05-22",
+      "authority": "PODER EJECUTIVO SECRETARIA DE GOBERNACION",
+      "document_type": "Aviso Mediante El",
       "categories": [
-        "Propiedad intelectual"
+        "Derecho administrativo"
       ],
       "relevance_score": 3,
       "ai_generated": false
@@ -782,6 +926,23 @@
       "ai_generated": false
     },
     {
+      "id": "senado:2cf5786abf4e7768",
+      "source": "Senado",
+      "url": "https://www.senado.gob.mx/66/gaceta_comision_permanente/documento/159516",
+      "official_title": "Proyecto de decreto por el que se reforma el artículo 32 Bis, fracciones XXXIX y XLIII de la Ley Orgánica de la Administración Pública Federal y se adicionan a los artículos 7, la fracción XVII Bis; al 10, la fracción XXXIX Bis; al artículo 14, la fracción XIII Bis; y al 68, la fracción VI Bis de la Ley General de Desarrollo Forestal Sustentable.",
+      "title": "Facultar a SEMARNAT para emitir certificados de libre deforestación",
+      "summary": "Facultar a SEMARNAT para emitir certificados de libre deforestación. Publicación oficial de Cámara de Senadores, relacionada con Iniciativa, Derecho administrativo. Consulta la fuente íntegra para confirmar su alcance, fechas de.",
+      "published_at": "2026-05-21",
+      "authority": "Cámara de Senadores",
+      "document_type": "Iniciativa de Ley",
+      "categories": [
+        "Iniciativa",
+        "Derecho administrativo"
+      ],
+      "relevance_score": 8,
+      "ai_generated": false
+    },
+    {
       "id": "snice:df0255790664064a",
       "source": "SNICE",
       "url": "https://www.snice.gob.mx/~oracle/SNICE_DOCS/ACTALICITACION015-2026-LICITACION-ACTUALIDAD_20260521-20260521.pdf",
@@ -830,49 +991,17 @@
       "ai_generated": false
     },
     {
-      "id": "dof:5788141",
+      "id": "dof:5788115",
       "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5788141&fecha=21/05/2026",
-      "official_title": "Extracto del Acuerdo G/JGA/53/2026, denominado \"Suplencia de persona Magistrada, en la Segunda Ponencia de la Sexta Sala Regional en Ciudad de México\".",
-      "title": "Extracto del Acuerdo G/JGA/53/2026, denominado \"Suplencia de persona Magistrada, en la Segunda",
-      "summary": "Extracto del Acuerdo G/JGA/53/2026, denominado \"Suplencia de persona Magistrada, en la Segunda Ponencia de la Sexta Sala Regional en Ciudad de México\". Publicación oficial de ORGANISMOS AUTONOMOS TRIBUNAL FEDERAL DE.",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5788115&fecha=21/05/2026",
+      "official_title": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a las entidades federativas, municipios y demarcaciones territoriales de la Ciudad de México, que deberán abstenerse de aceptar propuestas y/o celebrar contratos con la persona moral denominada Corporativo Mexicano Revelor, S.A. de C.V.",
+      "title": "Circular por la que se comunica a las dependencias y entidades de",
+      "summary": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a las entidades federativas, municipios y demarcaciones territoriales de la Ciudad de México, que.",
       "published_at": "2026-05-21",
-      "authority": "ORGANISMOS AUTONOMOS TRIBUNAL FEDERAL DE JUSTICIA ADMINISTRATIVA",
-      "document_type": "Extracto Del Acuerdo",
+      "authority": "PODER EJECUTIVO SECRETARIA ANTICORRUPCION Y BUEN GOBIERNO",
+      "document_type": "Circular Por La",
       "categories": [
-        "Procesal fiscal"
-      ],
-      "relevance_score": 2,
-      "ai_generated": false
-    },
-    {
-      "id": "dof:5788142",
-      "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5788142&fecha=21/05/2026",
-      "official_title": "Extracto del Acuerdo G/JGA/56/2026, denominado \"Adscripción y suplencia de persona Magistrada, en diversas Salas Regionales del Tribunal\".",
-      "title": "Extracto del Acuerdo G/JGA/56/2026, denominado \"Adscripción y suplencia de persona Magistrada, en",
-      "summary": "Extracto del Acuerdo G/JGA/56/2026, denominado \"Adscripción y suplencia de persona Magistrada, en diversas Salas Regionales del Tribunal\". Publicación oficial de ORGANISMOS AUTONOMOS TRIBUNAL FEDERAL DE JUSTICIA ADMINISTRATIVA, relacionada con Procesal.",
-      "published_at": "2026-05-21",
-      "authority": "ORGANISMOS AUTONOMOS TRIBUNAL FEDERAL DE JUSTICIA ADMINISTRATIVA",
-      "document_type": "Extracto Del Acuerdo",
-      "categories": [
-        "Procesal fiscal"
-      ],
-      "relevance_score": 2,
-      "ai_generated": false
-    },
-    {
-      "id": "dof:5788143",
-      "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5788143&fecha=21/05/2026",
-      "official_title": "Extracto del Acuerdo G/JGA/57/2026, denominado \"Suplencia de persona Magistrada, en la Segunda Ponencia de la Sala Regional en Morelos y Auxiliar\".",
-      "title": "Extracto del Acuerdo G/JGA/57/2026, denominado \"Suplencia de persona Magistrada, en la Segunda",
-      "summary": "Extracto del Acuerdo G/JGA/57/2026, denominado \"Suplencia de persona Magistrada, en la Segunda Ponencia de la Sala Regional en Morelos y Auxiliar\". Publicación oficial de ORGANISMOS AUTONOMOS TRIBUNAL FEDERAL DE JUSTICIA.",
-      "published_at": "2026-05-21",
-      "authority": "ORGANISMOS AUTONOMOS TRIBUNAL FEDERAL DE JUSTICIA ADMINISTRATIVA",
-      "document_type": "Extracto Del Acuerdo",
-      "categories": [
-        "Procesal fiscal"
+        "Derecho administrativo"
       ],
       "relevance_score": 2,
       "ai_generated": false
@@ -927,33 +1056,35 @@
       "ai_generated": false
     },
     {
-      "id": "dof:5787999",
+      "id": "dof:5788004",
       "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5787999&fecha=20/05/2026",
-      "official_title": "Modificación a la Declaración General de Protección de la Denominación de Origen \"Mezcal\" para incluir los municipios del Estado de Guanajuato, que en la misma se indican.",
-      "title": "Modificación a la Declaración General de Protección de la Denominación de Origen",
-      "summary": "Modificación a la Declaración General de Protección de la Denominación de Origen \"Mezcal\" para incluir los municipios del Estado de Guanajuato, que en la misma se indican. Publicación oficial de.",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5788004&fecha=20/05/2026",
+      "official_title": "Aviso mediante el cual se designa a la licenciada María Elena Parra González, Titular de la Jefatura de Servicios Jurídicos como la persona que suplirá las ausencias del doctor Marco Antonio Hernández Carrillo, Titular del Órgano de Operación Administrativa Desconcentrada Estatal Jalisco del Instituto Mexicano del Seguro Social.",
+      "title": "Aviso mediante el cual se designa a la licenciada María Elena Parra",
+      "summary": "Aviso mediante el cual se designa a la licenciada María Elena Parra González, Titular de la Jefatura de Servicios Jurídicos como la persona que suplirá las ausencias del doctor Marco.",
       "published_at": "2026-05-20",
-      "authority": "ORGANISMOS DESCONCENTRADOS O DESCENTRALIZADOS INSTITUTO MEXICANO DE LA PROPIEDAD INDUSTRIAL",
-      "document_type": "Modificación A La",
+      "authority": "ORGANISMOS DESCONCENTRADOS O DESCENTRALIZADOS INSTITUTO MEXICANO DEL SEGURO SOCIAL",
+      "document_type": "Aviso Mediante El",
       "categories": [
-        "Propiedad intelectual"
+        "Derecho administrativo",
+        "Nombramientos federales"
       ],
-      "relevance_score": 3,
+      "relevance_score": 4,
       "ai_generated": false
     },
     {
-      "id": "dof:5788000",
-      "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5788000&fecha=20/05/2026",
-      "official_title": "Modificación a la Declaración General de Protección de la Denominación de Origen \"Mezcal\" para incluir los municipios del Estado de Puebla, que en la misma se indican.",
-      "title": "Modificación a la Declaración General de Protección de la Denominación de Origen",
-      "summary": "Modificación a la Declaración General de Protección de la Denominación de Origen \"Mezcal\" para incluir los municipios del Estado de Puebla, que en la misma se indican. Publicación oficial de.",
+      "id": "gob.mx apf:770f01b854b50519",
+      "source": "Gob.mx APF",
+      "url": "https://www.gob.mx/sectur/es/articulos/sectur-y-anam-impulsan-plataforma-aduana-facil-para-fortalecer-la-atencion-y-experiencia-de-viajeros-internacionales?idiom=es",
+      "official_title": "Sectur y ANAM impulsan plataforma Aduana Fácil para fortalecer la atención y experiencia de viajeros internacionales",
+      "title": "La secretaria de Turismo del Gobierno de México, Josefina Rodríguez Zamora, y",
+      "summary": "La secretaria de Turismo del Gobierno de México, Josefina Rodríguez Zamora, y el titular de la Agencia Nacional de Aduanas de México, Héctor Alonso Romero Gutiérrez, sostuvieron este miércoles una.",
       "published_at": "2026-05-20",
-      "authority": "ORGANISMOS DESCONCENTRADOS O DESCENTRALIZADOS INSTITUTO MEXICANO DE LA PROPIEDAD INDUSTRIAL",
-      "document_type": "Modificación A La",
+      "authority": "Secretaría de Turismo",
+      "document_type": "Artículo",
       "categories": [
-        "Propiedad intelectual"
+        "Aduanero",
+        "Comercio exterior"
       ],
       "relevance_score": 3,
       "ai_generated": false
@@ -1007,22 +1138,6 @@
       "ai_generated": false
     },
     {
-      "id": "dof:5787815",
-      "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5787815&fecha=19/05/2026",
-      "official_title": "Extracto del Acuerdo G/JGA/55/2026, denominado \"Se deja sin efectos el Acuerdo G/JGA/48/2026, por el que se determinó la suplencia de persona Magistrada, en la Segunda Ponencia de la Sala Regional en Hidalgo\".",
-      "title": "Extracto del Acuerdo G/JGA/55/2026, denominado \"Se deja sin efectos el Acuerdo G/JGA/48/2026",
-      "summary": "Extracto del Acuerdo G/JGA/55/2026, denominado \"Se deja sin efectos el Acuerdo G/JGA/48/2026, por el que se determinó la suplencia de persona Magistrada, en la Segunda Ponencia de la Sala Regional.",
-      "published_at": "2026-05-19",
-      "authority": "ORGANISMOS AUTONOMOS TRIBUNAL FEDERAL DE JUSTICIA ADMINISTRATIVA",
-      "document_type": "Extracto Del Acuerdo",
-      "categories": [
-        "Procesal fiscal"
-      ],
-      "relevance_score": 2,
-      "ai_generated": false
-    },
-    {
       "id": "dof:5787885",
       "source": "DOF",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5787885&fecha=19/05/2026",
@@ -1036,6 +1151,39 @@
         "Comercio exterior"
       ],
       "relevance_score": 2,
+      "ai_generated": false
+    },
+    {
+      "id": "dof:5787704",
+      "source": "DOF",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5787704&fecha=18/05/2026",
+      "official_title": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a las empresas públicas del Estado, a la Fiscalía General de la República, a las entidades federativas y sus municipios, así como a las demarcaciones territoriales de la Ciudad de México, que deberán abstenerse de aceptar propuestas o celebrar contratos con la empresa Musa del Pacífico, S.A. de C.V.",
+      "title": "Circular por la que se comunica a las dependencias y entidades de",
+      "summary": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a las empresas públicas del Estado, a la Fiscalía General de la República, a.",
+      "published_at": "2026-05-18",
+      "authority": "PODER EJECUTIVO SECRETARIA ANTICORRUPCION Y BUEN GOBIERNO",
+      "document_type": "Circular Por La",
+      "categories": [
+        "Derecho administrativo"
+      ],
+      "relevance_score": 2,
+      "ai_generated": false
+    },
+    {
+      "id": "dof:5787584",
+      "source": "DOF",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5787584&fecha=15/05/2026",
+      "official_title": "Aviso mediante el cual se designa a la Titular de la Jefatura de Servicios Jurídicos para que supla las ausencias de la Dra. Roxana Blanca Rivera Leaños, Titular del Órgano de Operación Administrativa Desconcentrada Estatal Durango del Instituto Mexicano del Seguro Social, autorizándole a firmar y despachar la documentación incluyendo la suscripción de las resoluciones que debe emitir este órgano.",
+      "title": "Aviso mediante el cual se designa a la Titular de la Jefatura",
+      "summary": "Aviso mediante el cual se designa a la Titular de la Jefatura de Servicios Jurídicos para que supla las ausencias de la Dra. Roxana Blanca Rivera Leaños, Titular del Órgano.",
+      "published_at": "2026-05-15",
+      "authority": "ORGANISMOS DESCONCENTRADOS O DESCENTRALIZADOS INSTITUTO MEXICANO DEL SEGURO SOCIAL",
+      "document_type": "Aviso Mediante El",
+      "categories": [
+        "Derecho administrativo",
+        "Nombramientos federales"
+      ],
+      "relevance_score": 4,
       "ai_generated": false
     },
     {
@@ -1168,6 +1316,22 @@
       "ai_generated": false
     },
     {
+      "id": "dof:5787428",
+      "source": "DOF",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5787428&fecha=14/05/2026",
+      "official_title": "Resolución que modifica el Acuerdo por el que se adscriben orgánicamente las unidades administrativas de la Comisión Nacional Bancaria y de Valores.",
+      "title": "Resolución que modifica el Acuerdo por el que se adscriben orgánicamente las",
+      "summary": "Resolución que modifica el Acuerdo por el que se adscriben orgánicamente las unidades administrativas de la Comisión Nacional Bancaria y de Valores. Publicación oficial de PODER EJECUTIVO SECRETARIA DE HACIENDA.",
+      "published_at": "2026-05-14",
+      "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
+      "document_type": "Resolución Que Modifica",
+      "categories": [
+        "Derecho administrativo"
+      ],
+      "relevance_score": 2,
+      "ai_generated": false
+    },
+    {
       "id": "senado:3c6cde6cef7d8340",
       "source": "Senado",
       "url": "https://www.senado.gob.mx/66/gaceta_comision_permanente/documento/159228",
@@ -1218,35 +1382,51 @@
       "ai_generated": false
     },
     {
-      "id": "dof:5787139",
-      "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5787139&fecha=12/05/2026",
-      "official_title": "Declaración de Protección de la Indicación Geográfica \"Miel de Abeja Melipona del Corredor de la Zona Maya de Quintana Roo\".",
-      "title": "Declaración de Protección de la Indicación Geográfica \"Miel de Abeja Melipona del",
-      "summary": "Declaración de Protección de la Indicación Geográfica \"Miel de Abeja Melipona del Corredor de la Zona Maya de Quintana Roo\". Publicación oficial de ORGANISMOS DESCONCENTRADOS O DESCENTRALIZADOS INSTITUTO MEXICANO DE.",
-      "published_at": "2026-05-12",
-      "authority": "ORGANISMOS DESCONCENTRADOS O DESCENTRALIZADOS INSTITUTO MEXICANO DE LA PROPIEDAD INDUSTRIAL",
-      "document_type": "Declaración De Protección",
+      "id": "gob.mx apf:593f6dd143444377",
+      "source": "Gob.mx APF",
+      "url": "https://www.gob.mx/buengobierno/prensa/violar-la-ley-tiene-consecuencias-buen-gobierno-logra-inhabilitaciones-de-hasta-por-10-anos-a-servidores-publicos-del-sat-y-banbien?idiom=es",
+      "official_title": "​​​​​​​Violar la ley tiene consecuencias: Buen Gobierno logra inhabilitaciones de hasta por 10 años a servidores públicos del SAT y BANBIEN",
+      "title": "Comunicado no. 046 Ciudad de México, 13 de mayo de 2026 Las",
+      "summary": "Comunicado no. 046 Ciudad de México, 13 de mayo de 2026 Las investigaciones realizadas por los Órganos Internos de Control (OIC) en el Servicio de Administración Tributaria (SAT) y en.",
+      "published_at": "2026-05-13",
+      "authority": "Secretaría Anticorrupción y Buen Gobierno",
+      "document_type": "Comunicado",
       "categories": [
-        "Propiedad intelectual"
+        "Fiscal"
       ],
-      "relevance_score": 3,
+      "relevance_score": 2,
       "ai_generated": false
     },
     {
-      "id": "dof:5787140",
+      "id": "dof:5787304",
       "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5787140&fecha=12/05/2026",
-      "official_title": "Declaración de Protección de la Indicación Geográfica \"Árbol de la Vida de Metepec\".",
-      "title": "Declaración de Protección de la Indicación Geográfica \"Árbol de la Vida de",
-      "summary": "Declaración de Protección de la Indicación Geográfica \"Árbol de la Vida de Metepec\". Publicación oficial de ORGANISMOS DESCONCENTRADOS O DESCENTRALIZADOS INSTITUTO MEXICANO DE LA PROPIEDAD INDUSTRIAL, relacionada con Propiedad intelectual.",
-      "published_at": "2026-05-12",
-      "authority": "ORGANISMOS DESCONCENTRADOS O DESCENTRALIZADOS INSTITUTO MEXICANO DE LA PROPIEDAD INDUSTRIAL",
-      "document_type": "Declaración De Protección",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5787304&fecha=13/05/2026",
+      "official_title": "Acuerdo de la Secretaría de Energía por el que se delegan facultades a diversas áreas de la Dirección General de Impacto Social, Consulta Previa y Ocupación Superficial.",
+      "title": "Acuerdo de la Secretaría de Energía por el que se delegan facultades",
+      "summary": "Acuerdo de la Secretaría de Energía por el que se delegan facultades a diversas áreas de la Dirección General de Impacto Social, Consulta Previa y Ocupación Superficial. Publicación oficial de.",
+      "published_at": "2026-05-13",
+      "authority": "PODER EJECUTIVO SECRETARIA DE ENERGIA",
+      "document_type": "Acuerdo De La",
       "categories": [
-        "Propiedad intelectual"
+        "Derecho administrativo"
       ],
-      "relevance_score": 3,
+      "relevance_score": 2,
+      "ai_generated": false
+    },
+    {
+      "id": "dof:5787312",
+      "source": "DOF",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5787312&fecha=13/05/2026",
+      "official_title": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a las empresas públicas del Estado, a la Fiscalía General de la República, a las entidades federativas y sus municipios, así como a las demarcaciones territoriales de la Ciudad de México, que deberán abstenerse de aceptar propuestas o celebrar contratos con la empresa Puerta del Sol Capital, S.A. de C.V.",
+      "title": "Circular por la que se comunica a las dependencias y entidades de",
+      "summary": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a las empresas públicas del Estado, a la Fiscalía General de la República, a.",
+      "published_at": "2026-05-13",
+      "authority": "PODER EJECUTIVO SECRETARIA ANTICORRUPCION Y BUEN GOBIERNO",
+      "document_type": "Circular Por La",
+      "categories": [
+        "Derecho administrativo"
+      ],
+      "relevance_score": 2,
       "ai_generated": false
     },
     {
@@ -1266,17 +1446,17 @@
       "ai_generated": false
     },
     {
-      "id": "dof:5787266",
+      "id": "dof:5787025",
       "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5787266&fecha=12/05/2026",
-      "official_title": "TRIBUNAL FEDERAL DE JUSTICIA ADMINISTRATIVA - REF:575754",
-      "title": "TRIBUNAL FEDERAL DE JUSTICIA ADMINISTRATIVA - REF:575754",
-      "summary": "TRIBUNAL FEDERAL DE JUSTICIA ADMINISTRATIVA - REF:575754. Publicación oficial de CONVOCATORIAS PARA CONCURSOS DE ADQUISICIONES, ARRENDAMIENTOS, OBRAS Y SERVICIOS DEL SECTOR PUBLICO, relacionada con Procesal fiscal. Consulta la fuente íntegra.",
-      "published_at": "2026-05-12",
-      "authority": "CONVOCATORIAS PARA CONCURSOS DE ADQUISICIONES, ARRENDAMIENTOS, OBRAS Y SERVICIOS DEL SECTOR PUBLICO",
-      "document_type": "Tribunal Federal De",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5787025&fecha=11/05/2026",
+      "official_title": "Acuerdo por el que se da aviso del cambio de domicilio de las unidades administrativas y de la Unidad de Transparencia del Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública.",
+      "title": "Acuerdo por el que se da aviso del cambio de domicilio de",
+      "summary": "Acuerdo por el que se da aviso del cambio de domicilio de las unidades administrativas y de la Unidad de Transparencia del Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública.",
+      "published_at": "2026-05-11",
+      "authority": "PODER EJECUTIVO SECRETARIA DE SEGURIDAD Y PROTECCION CIUDADANA",
+      "document_type": "Acuerdo Por El",
       "categories": [
-        "Procesal fiscal"
+        "Derecho administrativo"
       ],
       "relevance_score": 2,
       "ai_generated": false
