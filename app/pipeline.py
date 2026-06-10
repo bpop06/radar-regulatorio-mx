@@ -10,17 +10,19 @@ import httpx
 import truststore
 
 from app.config import Settings
-from app.models import Publication, SourceResult
+from app.models import Candidate, Publication, SourceResult
 from app.relevance import classify, is_relevant
 from app.sources import (
     DiputadosCollector,
     DofCollector,
+    GobMxCollector,
     ImpiCollector,
     PlatiicaCollector,
     SenadoCollector,
     SniceCollector,
 )
 from app.summarizer import Summarizer
+from app.text import normalized
 
 
 async def collect(settings: Settings, days: int | None = None) -> dict[str, object]:
@@ -43,19 +45,20 @@ async def collect(settings: Settings, days: int | None = None) -> dict[str, obje
             DiputadosCollector(client),
             SenadoCollector(client),
             ImpiCollector(client),
+            GobMxCollector(client),
         ]
         results = await asyncio.gather(
             *(_collect_source(collector, since) for collector in collectors)
         )
 
-    unique = {}
+    unique: dict[str, Candidate] = {}
     for result in results:
         for candidate in result.candidates:
             unique[candidate.id] = candidate
 
     classified = [
         item
-        for item in (classify(candidate) for candidate in unique.values())
+        for item in (classify(candidate) for candidate in _deduplicate(unique.values()))
         if is_relevant(item, settings.minimum_relevance)
     ]
     classified.sort(
@@ -120,3 +123,13 @@ def write_output(payload: dict[str, object], output: Path) -> None:
         json.dumps(payload, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
+
+
+def _deduplicate(candidates) -> list[Candidate]:
+    selected: dict[tuple[date, str], Candidate] = {}
+    for candidate in candidates:
+        key = (candidate.published_at, normalized(candidate.official_title))
+        current = selected.get(key)
+        if current is None or len(candidate.description) > len(current.description):
+            selected[key] = candidate
+    return list(selected.values())

@@ -3,7 +3,8 @@
 ## Purpose
 
 Build and maintain a daily Mexican regulatory intelligence service focused on
-tax, customs, foreign trade, intellectual property, and tax procedure.
+tax, customs, foreign trade, intellectual property, federal administrative
+law, administrative litigation, and tax-specific administrative litigation.
 
 ## Engineering rules
 
@@ -13,6 +14,11 @@ tax, customs, foreign trade, intellectual property, and tax procedure.
 - Preserve the official source URL and publication date for every record.
 - Deduplicate by stable source identifier or canonical URL.
 - Do not publish a generated summary unless it contains exactly 30 words.
+- Treat tax administrative litigation as a subset of administrative
+  litigation. Tax collection or enforcement alone is not contentious
+  procedure.
+- Cover LFPA, LOAPF, organic rules, delegated powers, federal organization,
+  and appointments across the Federal Public Administration.
 - A collector failure must not prevent successful sources from being published.
 - Add parser fixtures and tests when changing source-specific extraction.
 - Never commit API keys, tokens, local databases, or downloaded bulk documents.
@@ -33,4 +39,3 @@ python -m app.cli collect --dry-run
 - Use short-lived branches prefixed with `codex/`.
 - Write imperative Conventional Commit messages.
 - Keep generated data changes separate from source-code changes when practical.
-
