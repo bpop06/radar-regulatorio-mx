@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Actualizaciones oficiales mexicanas sobre materia fiscal, aduanera, comercio exterior, propiedad intelectual y proceso fiscal."
+    >
+    <title>Radar Regulatorio MX</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,600&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav shell" aria-label="Navegación principal">
+        <a class="brand" href="./" aria-label="Radar Regulatorio MX, inicio">
+          <span class="brand-mark" aria-hidden="true">RR</span>
+          <span>Radar Regulatorio MX</span>
+        </a>
+        <a class="source-link" href="#fuentes">Fuentes oficiales</a>
+      </nav>
+
+      <div class="hero-content shell">
+        <p class="eyebrow">Inteligencia jurídica pública</p>
+        <h1>Lo importante cambió.<br><span>Aquí está en 30 palabras.</span></h1>
+        <p class="hero-copy">
+          Seguimiento diario de publicaciones fiscales, aduaneras, de comercio exterior,
+          propiedad intelectual, proceso fiscal e iniciativas legislativas en México.
+        </p>
+        <div class="hero-meta">
+          <span id="last-update">Consultando actualización...</span>
+          <span class="meta-divider" aria-hidden="true"></span>
+          <span id="result-count">0 documentos</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="shell">
+      <section class="control-panel" aria-label="Filtros">
+        <label class="search">
+          <span class="sr-only">Buscar documentos</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z"/>
+          </svg>
+          <input id="search" type="search" placeholder="Buscar ley, autoridad o tema">
+        </label>
+
+        <div class="filters" id="category-filters" aria-label="Filtrar por materia">
+          <button class="filter active" type="button" data-category="Todas">Todas</button>
+        </div>
+      </section>
+
+      <section class="feed" aria-labelledby="feed-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Actualizaciones seleccionadas</p>
+            <h2 id="feed-title">Radar de novedades</h2>
+          </div>
+          <label class="sort">
+            <span>Ordenar</span>
+            <select id="sort">
+              <option value="date">Más recientes</option>
+              <option value="relevance">Mayor relevancia</option>
+            </select>
+          </label>
+        </div>
+
+        <div id="news-list" class="news-list" aria-live="polite">
+          <div class="loading-card">
+            <span class="loading-line wide"></span>
+            <span class="loading-line"></span>
+            <span class="loading-line short"></span>
+          </div>
+        </div>
+
+        <div id="empty-state" class="empty-state" hidden>
+          <p class="eyebrow">Sin coincidencias</p>
+          <h2>No encontramos documentos con esos filtros.</h2>
+          <button id="clear-filters" type="button">Limpiar búsqueda</button>
+        </div>
+      </section>
+
+      <section class="sources" id="fuentes" aria-labelledby="sources-title">
+        <div>
+          <p class="eyebrow">Transparencia del sistema</p>
+          <h2 id="sources-title">Fuentes consultadas</h2>
+          <p>
+            Cada ficha enlaza al documento oficial. El sistema prioriza interfaces públicas,
+            registra fallos por separado y nunca sustituye la consulta jurídica de la fuente.
+          </p>
+        </div>
+        <div id="source-status" class="source-grid"></div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="shell footer-content">
+        <p>Radar Regulatorio MX</p>
+        <p>Información pública sintetizada. No constituye asesoría legal.</p>
+      </div>
+    </footer>
+
+    <template id="news-template">
+      <article class="news-card">
+        <div class="card-topline">
+          <div class="badges"></div>
+          <time></time>
+        </div>
+        <h3></h3>
+        <p class="summary"></p>
+        <div class="official-title"></div>
+        <div class="card-footer">
+          <div>
+            <span class="source-name"></span>
+            <span class="authority"></span>
+          </div>
+          <a target="_blank" rel="noopener noreferrer">
+            Ver fuente
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M7 17 17 7M8 7h9v9"/>
+            </svg>
+          </a>
+        </div>
+      </article>
+    </template>
+  </body>
+</html>
+
