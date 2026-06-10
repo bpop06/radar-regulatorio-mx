@@ -6,6 +6,28 @@ const state = {
   sort: "date",
 };
 
+const supportedCategories = [
+  "Fiscal",
+  "Aduanero",
+  "Comercio exterior",
+  "Propiedad intelectual",
+  "Normalización",
+  "Derecho administrativo",
+  "Nombramientos federales",
+  "Contencioso administrativo",
+  "Contencioso administrativo fiscal",
+  "Iniciativa",
+];
+
+const searchAliases = {
+  "Contencioso administrativo": "procesal administrativo juicio de nulidad",
+  "Contencioso administrativo fiscal":
+    "procesal fiscal procedimiento contencioso administrativo fiscal",
+  "Derecho administrativo": "lfpa loapf administración pública federal",
+  "Nombramientos federales":
+    "designaciones cargos públicos directores subdirectores titulares",
+};
+
 const elements = {
   list: document.querySelector("#news-list"),
   template: document.querySelector("#news-template"),
@@ -34,7 +56,8 @@ function normalize(value) {
 }
 
 function renderFilters() {
-  const categories = [...new Set(state.items.flatMap((item) => item.categories))].sort();
+  const discovered = state.items.flatMap((item) => item.categories);
+  const categories = [...new Set([...supportedCategories, ...discovered])];
   for (const category of categories) {
     const button = document.createElement("button");
     button.className = "filter";
@@ -69,6 +92,7 @@ function filteredItems() {
         item.authority,
         item.document_type,
         item.categories.join(" "),
+        item.categories.map((category) => searchAliases[category] || "").join(" "),
       ].join(" "),
     );
     return matchesCategory && (!query || haystack.includes(query));
@@ -194,4 +218,3 @@ async function loadData() {
 
 bindControls();
 loadData();
-
