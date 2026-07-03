@@ -52,16 +52,36 @@
           <input id="search" type="search" placeholder="Buscar ley, autoridad o tema">
         </label>
 
+        <div class="filter-controls">
+          <label class="select-control">
+            <span>Fuente</span>
+            <select id="source-filter">
+              <option value="Todas">Todas</option>
+            </select>
+          </label>
+          <label class="select-control">
+            <span>Periodo</span>
+            <select id="date-range">
+              <option value="all">Todo el periodo</option>
+              <option value="7">Últimos 7 días</option>
+              <option value="15">Últimos 15 días</option>
+            </select>
+          </label>
+        </div>
+
         <div class="filters" id="category-filters" aria-label="Filtrar por materia">
           <button class="filter active" type="button" data-category="Todas">Todas</button>
         </div>
       </section>
+
+      <aside id="source-alert" class="source-alert" hidden></aside>
 
       <section class="feed" aria-labelledby="feed-title">
         <div class="section-heading">
           <div>
             <p class="eyebrow">Actualizaciones seleccionadas</p>
             <h2 id="feed-title">Radar de novedades</h2>
+            <p id="feed-note" class="feed-note">Cargando documentos oficiales.</p>
           </div>
           <label class="sort">
             <span>Ordenar</span>
@@ -81,8 +101,8 @@
         </div>
 
         <div id="empty-state" class="empty-state" hidden>
-          <p class="eyebrow">Sin coincidencias</p>
-          <h2>No encontramos documentos con esos filtros.</h2>
+          <p id="empty-eyebrow" class="eyebrow">Sin coincidencias</p>
+          <h2 id="empty-title">No encontramos documentos con esos filtros.</h2>
           <button id="clear-filters" type="button">Limpiar búsqueda</button>
         </div>
       </section>
@@ -95,6 +115,7 @@
             Cada ficha enlaza al documento oficial. El sistema prioriza interfaces públicas,
             registra fallos por separado y nunca sustituye la consulta jurídica de la fuente.
           </p>
+          <p id="source-summary" class="source-summary">Consultando estado de fuentes.</p>
         </div>
         <div id="source-status" class="source-grid"></div>
       </section>

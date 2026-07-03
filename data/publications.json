@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-06-10T17:47:10.916839+00:00",
+  "generated_at": "2026-07-03T19:45:14.050304+00:00",
   "lookback_days": 31,
-  "total_items": 87,
+  "total_items": 70,
   "sources": [
     {
       "source": "DOF",
       "status": "ok",
-      "items_found": 9678,
+      "items_found": 10188,
       "error": null
     },
     {
       "source": "SNICE",
       "status": "ok",
-      "items_found": 14,
+      "items_found": 7,
       "error": null
     },
     {
@@ -24,29 +24,745 @@
     {
       "source": "Diputados",
       "status": "ok",
-      "items_found": 6,
+      "items_found": 7,
       "error": null
     },
     {
       "source": "Senado",
       "status": "ok",
-      "items_found": 208,
+      "items_found": 0,
       "error": null
     },
     {
       "source": "IMPI",
       "status": "ok",
-      "items_found": 2,
+      "items_found": 4,
       "error": null
     },
     {
       "source": "Gob.mx APF",
       "status": "ok",
-      "items_found": 13,
+      "items_found": 39,
       "error": null
     }
   ],
   "items": [
+    {
+      "id": "dof:5792567",
+      "source": "DOF",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5792567&fecha=03/07/2026",
+      "official_title": "Oficio 500-05-00-00-00-2026-16021 mediante el cual se comunica listado de contribuyentes que promovieron algún medio de defensa en contra del oficio de presunción a que se refiere el artículo 69-B primer párrafo del Código Fiscal de la Federación, vigente hasta el 24 de julio de 2018, o en contra de la resolución a que se refiere el tercer párrafo del artículo en comento, y una vez resuelto el mismo, el órgano jurisdiccional o administrativo dejó insubsistente el referido acto.",
+      "title": "Oficio 500-05-00-00-00-2026-16021 mediante el cual se comunica listado de contribuyentes que promovieron",
+      "summary": "Oficio 500-05-00-00-00-2026-16021 mediante el cual se comunica listado de contribuyentes que promovieron algún medio de defensa en contra del oficio de presunción a que se refiere el artículo 69-B primer.",
+      "published_at": "2026-07-03",
+      "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
+      "document_type": "Oficio 500-05-00-00-00-2026-16021 Mediante",
+      "categories": [
+        "Fiscal"
+      ],
+      "relevance_score": 3,
+      "ai_generated": false
+    },
+    {
+      "id": "dof:5792568",
+      "source": "DOF",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5792568&fecha=03/07/2026",
+      "official_title": "Oficio 500-05-00-00-00-2026-16022 mediante el cual se comunica listado de contribuyentes que promovieron algún medio de defensa en contra del oficio de presunción a que se refiere el artículo 69-B primer párrafo del Código Fiscal de la Federación o en contra de la resolución a que se refiere el cuarto párrafo del artículo en comento, y una vez resuelto el mismo, el órgano jurisdiccional o administrativo dejó sin efectos el referido acto.",
+      "title": "Oficio 500-05-00-00-00-2026-16022 mediante el cual se comunica listado de contribuyentes que promovieron",
+      "summary": "Oficio 500-05-00-00-00-2026-16022 mediante el cual se comunica listado de contribuyentes que promovieron algún medio de defensa en contra del oficio de presunción a que se refiere el artículo 69-B primer.",
+      "published_at": "2026-07-03",
+      "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
+      "document_type": "Oficio 500-05-00-00-00-2026-16022 Mediante",
+      "categories": [
+        "Fiscal"
+      ],
+      "relevance_score": 3,
+      "ai_generated": false
+    },
+    {
+      "id": "dof:5792569",
+      "source": "DOF",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5792569&fecha=03/07/2026",
+      "official_title": "Oficio 500-05-00-00-00-2026-16059 mediante el cual se comunica listado global definitivo en términos del artículo 69-B, párrafo cuarto del Código Fiscal de la Federación.",
+      "title": "Oficio 500-05-00-00-00-2026-16059 mediante el cual se comunica listado global definitivo en términos",
+      "summary": "Oficio 500-05-00-00-00-2026-16059 mediante el cual se comunica listado global definitivo en términos del artículo 69-B, párrafo cuarto del Código Fiscal de la Federación. Publicación oficial de PODER EJECUTIVO SECRETARIA DE.",
+      "published_at": "2026-07-03",
+      "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
+      "document_type": "Oficio 500-05-00-00-00-2026-16059 Mediante",
+      "categories": [
+        "Fiscal"
+      ],
+      "relevance_score": 3,
+      "ai_generated": false
+    },
+    {
+      "id": "dof:5792570",
+      "source": "DOF",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5792570&fecha=03/07/2026",
+      "official_title": "Oficio 500-05-00-00-00-2026-16084 mediante el cual se comunica listado global definitivo en términos del artículo 69-B, párrafo tercero del Código Fiscal de la Federación vigente hasta el 24 de julio de 2018.",
+      "title": "Oficio 500-05-00-00-00-2026-16084 mediante el cual se comunica listado global definitivo en términos",
+      "summary": "Oficio 500-05-00-00-00-2026-16084 mediante el cual se comunica listado global definitivo en términos del artículo 69-B, párrafo tercero del Código Fiscal de la Federación vigente hasta el 24 de julio de.",
+      "published_at": "2026-07-03",
+      "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
+      "document_type": "Oficio 500-05-00-00-00-2026-16084 Mediante",
+      "categories": [
+        "Fiscal"
+      ],
+      "relevance_score": 3,
+      "ai_generated": false
+    },
+    {
+      "id": "dof:5792560",
+      "source": "DOF",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5792560&fecha=03/07/2026",
+      "official_title": "Decreto por el que se establecen directrices para que las dependencias y entidades de la Administración Pública Federal, realicen los procedimientos de contratación regulados en la Ley para el Fomento de la Inversión en Infraestructura Estratégica para el Desarrollo con Bienestar y su Reglamento.",
+      "title": "Decreto por el que se establecen directrices para que las dependencias y",
+      "summary": "Decreto por el que se establecen directrices para que las dependencias y entidades de la Administración Pública Federal, realicen los procedimientos de contratación regulados en la Ley para el Fomento.",
+      "published_at": "2026-07-03",
+      "authority": "PODER EJECUTIVO PRESIDENCIA DE LA REPUBLICA",
+      "document_type": "Decreto Por El",
+      "categories": [
+        "Derecho administrativo"
+      ],
+      "relevance_score": 2,
+      "ai_generated": false
+    },
+    {
+      "id": "dof:5792413",
+      "source": "DOF",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5792413&fecha=02/07/2026",
+      "official_title": "Aviso mediante el cual se designa al Titular de la Jefatura de Servicios de Desarrollo de Personal, para que supla las ausencias del Dr. Jorge Martínez Torres, Titular del Órgano de Operación Administrativa Desconcentrada Regional Estado de México Oriente del Instituto Mexicano del Seguro Social, autorizándole a firmar y despachar la documentación, incluyendo la suscripción de las resoluciones que debe emitir este Órgano.",
+      "title": "Aviso mediante el cual se designa al Titular de la Jefatura de",
+      "summary": "Aviso mediante el cual se designa al Titular de la Jefatura de Servicios de Desarrollo de Personal, para que supla las ausencias del Dr. Jorge Martínez Torres, Titular del Órgano.",
+      "published_at": "2026-07-02",
+      "authority": "ORGANISMOS DESCONCENTRADOS O DESCENTRALIZADOS INSTITUTO MEXICANO DEL SEGURO SOCIAL",
+      "document_type": "Aviso Mediante El",
+      "categories": [
+        "Derecho administrativo",
+        "Nombramientos federales"
+      ],
+      "relevance_score": 4,
+      "ai_generated": false
+    },
+    {
+      "id": "dof:5792414",
+      "source": "DOF",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5792414&fecha=02/07/2026",
+      "official_title": "Aviso mediante el cual se designa a la Licenciada Veronica Flores Frias, Titular de la Jefatura de Servicios Jurídicos para que supla las ausencias del Doctor Eusebio Rosales Partida, Titular del Órgano de Operación Administrativa Desconcentrada Estatal Guanajuato del Instituto Mexicano del Seguro Social, autorizándole a firmar y despachar la documentación incluyendo la suscripción de las resoluciones que debe emitir este Órgano.",
+      "title": "Aviso mediante el cual se designa a la Licenciada Veronica Flores Frias",
+      "summary": "Aviso mediante el cual se designa a la Licenciada Veronica Flores Frias, Titular de la Jefatura de Servicios Jurídicos para que supla las ausencias del Doctor Eusebio Rosales Partida, Titular.",
+      "published_at": "2026-07-02",
+      "authority": "ORGANISMOS DESCONCENTRADOS O DESCENTRALIZADOS INSTITUTO MEXICANO DEL SEGURO SOCIAL",
+      "document_type": "Aviso Mediante El",
+      "categories": [
+        "Derecho administrativo",
+        "Nombramientos federales"
+      ],
+      "relevance_score": 4,
+      "ai_generated": false
+    },
+    {
+      "id": "dof:5792415",
+      "source": "DOF",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5792415&fecha=02/07/2026",
+      "official_title": "Aviso mediante el cual se designa al Titular de la Jefatura de Servicios Jurídicos, Lic. Everardo Jaime Casas López, para que supla las ausencias del Dr. Gabriel Padrón Segura, Titular del Órgano de Operación Administrativa Desconcentrada Estatal Oaxaca del Instituto Mexicano del Seguro Social, autorizándole a firmar y despachar la documentación incluyendo la suscripción de las resoluciones que debe emitir este Órgano.",
+      "title": "Aviso mediante el cual se designa al Titular de la Jefatura de",
+      "summary": "Aviso mediante el cual se designa al Titular de la Jefatura de Servicios Jurídicos, Lic. Everardo Jaime Casas López, para que supla las ausencias del Dr. Gabriel Padrón Segura, Titular.",
+      "published_at": "2026-07-02",
+      "authority": "ORGANISMOS DESCONCENTRADOS O DESCENTRALIZADOS INSTITUTO MEXICANO DEL SEGURO SOCIAL",
+      "document_type": "Aviso Mediante El",
+      "categories": [
+        "Derecho administrativo",
+        "Nombramientos federales"
+      ],
+      "relevance_score": 4,
+      "ai_generated": false
+    },
+    {
+      "id": "dof:5792310",
+      "source": "DOF",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5792310&fecha=01/07/2026",
+      "official_title": "Oficio Circular con el que se dará a conocer a las dependencias, entidades, órganos administrativos desconcentrados de la Administración Pública Federal, sujetos a la cobertura de los Tratados de Libre Comercio que se indican, la conversión a moneda nacional de los umbrales determinados y actualizados conforme a los capítulos de compras del sector público respectivos, que tendrán vigencia del 1 de julio al 31 de diciembre de 2026.",
+      "title": "Oficio Circular con el que se dará a conocer a las dependencias",
+      "summary": "Oficio Circular con el que se dará a conocer a las dependencias, entidades, órganos administrativos desconcentrados de la Administración Pública Federal, sujetos a la cobertura de los Tratados de Libre.",
+      "published_at": "2026-07-01",
+      "authority": "PODER EJECUTIVO SECRETARIA ANTICORRUPCION Y BUEN GOBIERNO",
+      "document_type": "Oficio Circular Con",
+      "categories": [
+        "Derecho administrativo"
+      ],
+      "relevance_score": 3,
+      "ai_generated": false
+    },
+    {
+      "id": "dof:5792094",
+      "source": "DOF",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5792094&fecha=30/06/2026",
+      "official_title": "Fe de erratas a la Norma Oficial Mexicana NOM-037-SICT2-2026, Barreras de protección en carreteras y vías urbanas, publicada el 19 de mayo de 2026.",
+      "title": "Fe de erratas a la Norma Oficial Mexicana NOM-037-SICT2-2026, Barreras de protección",
+      "summary": "Fe de erratas a la Norma Oficial Mexicana NOM-037-SICT2-2026, Barreras de protección en carreteras y vías urbanas, publicada el 19 de mayo de 2026. Publicación oficial de PODER EJECUTIVO SECRETARIA.",
+      "published_at": "2026-06-30",
+      "authority": "PODER EJECUTIVO SECRETARIA DE INFRAESTRUCTURA, COMUNICACIONES Y TRANSPORTES",
+      "document_type": "Fe De Erratas",
+      "categories": [
+        "Normalización"
+      ],
+      "relevance_score": 3,
+      "ai_generated": false
+    },
+    {
+      "id": "dof:5792091",
+      "source": "DOF",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5792091&fecha=30/06/2026",
+      "official_title": "Aviso por el que se dan a conocer los nombres de los titulares y números de Programas de la Industria Manufacturera, Maquiladora y de Servicios de Exportación suspendidos por falta de presentación del reporte anual correspondiente al ejercicio fiscal 2025.",
+      "title": "Aviso por el que se dan a conocer los nombres de los",
+      "summary": "Aviso por el que se dan a conocer los nombres de los titulares y números de Programas de la Industria Manufacturera, Maquiladora y de Servicios de Exportación suspendidos por falta.",
+      "published_at": "2026-06-30",
+      "authority": "PODER EJECUTIVO SECRETARIA DE ECONOMIA",
+      "document_type": "Aviso Por El",
+      "categories": [
+        "Comercio exterior"
+      ],
+      "relevance_score": 2,
+      "ai_generated": false
+    },
+    {
+      "id": "gob.mx apf:ef015eadfe17d895",
+      "source": "Gob.mx APF",
+      "url": "https://www.gob.mx/sre/prensa/presidenta-claudia-sheinbaum-envia-nombramiento-de-esteban-moctezuma-como-embajador-de-mexico-ante-la-union-europea-belgica-y-luxemburgo?idiom=es",
+      "official_title": "Presidenta Claudia Sheinbaum envía nombramiento de Esteban Moctezuma como embajador de México ante la Unión Europea, Bélgica y Luxemburgo",
+      "title": "Presidenta Claudia Sheinbaum envía nombramiento de Esteban Moctezuma como embajador de México",
+      "summary": "Presidenta Claudia Sheinbaum envía nombramiento de Esteban Moctezuma como embajador de México ante la Unión Europea, Bélgica y Luxemburgo. Publicación oficial de Secretaría de Relaciones Exteriores, relacionada con Derecho administrativo.",
+      "published_at": "2026-06-29",
+      "authority": "Secretaría de Relaciones Exteriores",
+      "document_type": "Comunicado",
+      "categories": [
+        "Derecho administrativo",
+        "Nombramientos federales"
+      ],
+      "relevance_score": 3,
+      "ai_generated": false
+    },
+    {
+      "id": "dof:5791849",
+      "source": "DOF",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5791849&fecha=26/06/2026",
+      "official_title": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, empresas públicas del Estado, a la Fiscalía General de la República, a las entidades federativas y sus municipios, así como a las demarcaciones territoriales de la Ciudad de México, el cumplimiento a la suspensión provisional, decretada por la Sexta Sala Regional en la Ciudad de México del Tribunal Federal de Justicia Administrativa, en el juicio de nulidad 10988/26-17-06-3, interpuesto por la representación legal de la empresa Hima Promotions, S.A. de C.V., en donde se controvierte la resolución del primero de abril de dos mil veintiséis, emitida dentro del expediente administrativo número PISI-A-NC-DS-0001/2025.",
+      "title": "Circular por la que se comunica a las dependencias y entidades de",
+      "summary": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, empresas públicas del Estado, a la Fiscalía General de la República, a las entidades.",
+      "published_at": "2026-06-26",
+      "authority": "PODER EJECUTIVO SECRETARIA ANTICORRUPCION Y BUEN GOBIERNO",
+      "document_type": "Circular Por La",
+      "categories": [
+        "Derecho administrativo",
+        "Contencioso administrativo"
+      ],
+      "relevance_score": 5,
+      "ai_generated": false
+    },
+    {
+      "id": "dof:5791845",
+      "source": "DOF",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5791845&fecha=26/06/2026",
+      "official_title": "Oficio 500-05-00-00-00-2026-16026 mediante el cual se comunica listado global de presunción de contribuyentes que se ubicaron en el supuesto previsto en el artículo 69-B, párrafo primero del Código Fiscal de la Federación.",
+      "title": "Oficio 500-05-00-00-00-2026-16026 mediante el cual se comunica listado global de presunción de",
+      "summary": "Oficio 500-05-00-00-00-2026-16026 mediante el cual se comunica listado global de presunción de contribuyentes que se ubicaron en el supuesto previsto en el artículo 69-B, párrafo primero del Código Fiscal de.",
+      "published_at": "2026-06-26",
+      "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
+      "document_type": "Oficio 500-05-00-00-00-2026-16026 Mediante",
+      "categories": [
+        "Fiscal"
+      ],
+      "relevance_score": 3,
+      "ai_generated": false
+    },
+    {
+      "id": "gob.mx apf:f8e293622fae2472",
+      "source": "Gob.mx APF",
+      "url": "https://www.gob.mx/se/prensa/economia-e-impi-otorgan-registro-de-marca-del-pato-merlin-a-su-propietaria-karla-ivette-gomez-lopez-429408?idiom=es",
+      "official_title": "Economía e IMPI otorgan registro de marca del \"PATO MERLÍN\" a su propietaria, Karla Ivette Gómez López",
+      "title": "Economía e IMPI otorgan registro de marca del \"PATO MERLÍN\" a su",
+      "summary": "Economía e IMPI otorgan registro de marca del \"PATO MERLÍN\" a su propietaria, Karla Ivette Gómez López. Publicación oficial de Secretaría de Economía, relacionada con Propiedad intelectual. Consulta la fuente.",
+      "published_at": "2026-06-26",
+      "authority": "Secretaría de Economía",
+      "document_type": "Comunicado",
+      "categories": [
+        "Propiedad intelectual"
+      ],
+      "relevance_score": 2,
+      "ai_generated": false
+    },
+    {
+      "id": "dof:5791682",
+      "source": "DOF",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5791682&fecha=25/06/2026",
+      "official_title": "Aviso mediante el cual se designa al Titular de la Jefatura de Servicios Jurídicos para que supla las ausencias de la Dra. Mónica Arriaga Arroyo, Titular del Órgano de Operación Administrativa Desconcentrada Estatal Morelos del Instituto Mexicano del Seguro Social, autorizándole a firmar y despachar la documentación incluyendo la suscripción de las resoluciones que debe emitir este Órgano.",
+      "title": "Aviso mediante el cual se designa al Titular de la Jefatura de",
+      "summary": "Aviso mediante el cual se designa al Titular de la Jefatura de Servicios Jurídicos para que supla las ausencias de la Dra. Mónica Arriaga Arroyo, Titular del Órgano de Operación.",
+      "published_at": "2026-06-25",
+      "authority": "ORGANISMOS DESCONCENTRADOS O DESCENTRALIZADOS INSTITUTO MEXICANO DEL SEGURO SOCIAL",
+      "document_type": "Aviso Mediante El",
+      "categories": [
+        "Derecho administrativo",
+        "Nombramientos federales"
+      ],
+      "relevance_score": 4,
+      "ai_generated": false
+    },
+    {
+      "id": "dof:5791670",
+      "source": "DOF",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5791670&fecha=25/06/2026",
+      "official_title": "Convenio de Coordinación que celebran la Secretaría de Turismo y el Estado de Nuevo León, que tiene por objeto verificar el cumplimiento de la Ley General de Turismo, su Reglamento, la Ley de Infraestructura de la Calidad y las normas oficiales mexicanas en la materia, así como el fortalecimiento de las atribuciones en el procedimiento de verificación de los prestadores de servicios turísticos en la entidad.",
+      "title": "Convenio de Coordinación que celebran la Secretaría de Turismo y el Estado",
+      "summary": "Convenio de Coordinación que celebran la Secretaría de Turismo y el Estado de Nuevo León, que tiene por objeto verificar el cumplimiento de la Ley General de Turismo, su Reglamento.",
+      "published_at": "2026-06-25",
+      "authority": "PODER EJECUTIVO SECRETARIA DE TURISMO",
+      "document_type": "Convenio De Coordinación",
+      "categories": [
+        "Normalización"
+      ],
+      "relevance_score": 2,
+      "ai_generated": false
+    },
+    {
+      "id": "dof:5791371",
+      "source": "DOF",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5791371&fecha=23/06/2026",
+      "official_title": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal y a las entidades federativas el cumplimiento dado a la sentencia definitiva de veintitrés de septiembre de dos mil veinticuatro, dictada en el juicio de nulidad 25835/23-17-12-1, promovido por el C. Ángel Pérez Dorante, en representación legal de K.P. Asociados, S.A. de C.V., en la cual la Décimo Segunda Sala Regional en la Ciudad de México del Tribunal Federal de Justicia Administrativa, declaró la nulidad de la resolución contenida en el oficio No. OIC/00/637/22453/2023 de veintiocho de marzo de dos mil veintitrés, emitida dentro del procedimiento administrativo de sanción a licitantes, proveedores y contratistas SAN-002/2023.",
+      "title": "Circular por la que se comunica a las dependencias y entidades de",
+      "summary": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal y a las entidades federativas el cumplimiento dado a la sentencia definitiva de veintitrés.",
+      "published_at": "2026-06-23",
+      "authority": "PODER EJECUTIVO SECRETARIA ANTICORRUPCION Y BUEN GOBIERNO",
+      "document_type": "Circular Por La",
+      "categories": [
+        "Derecho administrativo",
+        "Contencioso administrativo"
+      ],
+      "relevance_score": 5,
+      "ai_generated": false
+    },
+    {
+      "id": "dof:5791368",
+      "source": "DOF",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5791368&fecha=23/06/2026",
+      "official_title": "Aviso de consulta pública del Proyecto de Norma Oficial Mexicana PROY-NOM-039-ENER/SE-2025, Rendimiento térmico, ahorro de gas y seguridad de los calentadores de agua solares de baja presión y de los calentadores de agua solares de baja presión con respaldo de un calentador de agua que utiliza como combustible gas L.P. o gas natural. Especificaciones, métodos de prueba y etiquetado.",
+      "title": "Aviso de consulta pública del Proyecto de Norma Oficial Mexicana PROY-NOM-039-ENER/SE-2025, Rendimiento",
+      "summary": "Aviso de consulta pública del Proyecto de Norma Oficial Mexicana PROY-NOM-039-ENER/SE-2025, Rendimiento térmico, ahorro de gas y seguridad de los calentadores de agua solares de baja presión y de los.",
+      "published_at": "2026-06-23",
+      "authority": "PODER EJECUTIVO SECRETARIA DE ENERGIA",
+      "document_type": "Aviso De Consulta",
+      "categories": [
+        "Normalización"
+      ],
+      "relevance_score": 4,
+      "ai_generated": false
+    },
+    {
+      "id": "dof:5791369",
+      "source": "DOF",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5791369&fecha=23/06/2026",
+      "official_title": "Aviso de consulta pública del Proyecto de Norma Oficial Mexicana PROY-NOM-041-ENER/SE-2025, Eficiencia energética y requisitos de seguridad de ventiladores. Límites, métodos de prueba y etiquetado.",
+      "title": "Aviso de consulta pública del Proyecto de Norma Oficial Mexicana PROY-NOM-041-ENER/SE-2025, Eficiencia",
+      "summary": "Aviso de consulta pública del Proyecto de Norma Oficial Mexicana PROY-NOM-041-ENER/SE-2025, Eficiencia energética y requisitos de seguridad de ventiladores. Límites, métodos de prueba y etiquetado. Publicación oficial de PODER EJECUTIVO.",
+      "published_at": "2026-06-23",
+      "authority": "PODER EJECUTIVO SECRETARIA DE ENERGIA",
+      "document_type": "Aviso De Consulta",
+      "categories": [
+        "Normalización"
+      ],
+      "relevance_score": 4,
+      "ai_generated": false
+    },
+    {
+      "id": "dof:5791405",
+      "source": "DOF",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5791405&fecha=23/06/2026",
+      "official_title": "Suspensión de actividades jurisdiccionales en la Sala Regional en Tabasco y Auxiliar del Tribunal Federal de Justicia Administrativa.",
+      "title": "Suspensión de actividades jurisdiccionales en la Sala Regional en Tabasco y Auxiliar",
+      "summary": "Suspensión de actividades jurisdiccionales en la Sala Regional en Tabasco y Auxiliar del Tribunal Federal de Justicia Administrativa. Publicación oficial de ORGANISMOS AUTONOMOS TRIBUNAL FEDERAL DE JUSTICIA ADMINISTRATIVA, relacionada con.",
+      "published_at": "2026-06-23",
+      "authority": "ORGANISMOS AUTONOMOS TRIBUNAL FEDERAL DE JUSTICIA ADMINISTRATIVA",
+      "document_type": "Suspensión De Actividades",
+      "categories": [
+        "Contencioso administrativo"
+      ],
+      "relevance_score": 4,
+      "ai_generated": false
+    },
+    {
+      "id": "dof:5791381",
+      "source": "DOF",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5791381&fecha=23/06/2026",
+      "official_title": "Acuerdo por el que se declaran días inhábiles en el Instituto Mexicano de la Propiedad Industrial.",
+      "title": "Acuerdo por el que se declaran días inhábiles en el Instituto Mexicano",
+      "summary": "Acuerdo por el que se declaran días inhábiles en el Instituto Mexicano de la Propiedad Industrial. Publicación oficial de ORGANISMOS DESCONCENTRADOS O DESCENTRALIZADOS INSTITUTO MEXICANO DE LA PROPIEDAD INDUSTRIAL, relacionada.",
+      "published_at": "2026-06-23",
+      "authority": "ORGANISMOS DESCONCENTRADOS O DESCENTRALIZADOS INSTITUTO MEXICANO DE LA PROPIEDAD INDUSTRIAL",
+      "document_type": "Acuerdo Por El",
+      "categories": [
+        "Propiedad intelectual"
+      ],
+      "relevance_score": 3,
+      "ai_generated": false
+    },
+    {
+      "id": "dof:5791366",
+      "source": "DOF",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5791366&fecha=23/06/2026",
+      "official_title": "Aviso mediante el cual se da a conocer la página institucional donde puede consultarse el Manual de Organización de la Administración del Sistema Portuario Nacional Ensenada, S.A. de C.V.",
+      "title": "Aviso mediante el cual se da a conocer la página institucional donde",
+      "summary": "Aviso mediante el cual se da a conocer la página institucional donde puede consultarse el Manual de Organización de la Administración del Sistema Portuario Nacional Ensenada, S.A. de C.V. Publicación.",
+      "published_at": "2026-06-23",
+      "authority": "PODER EJECUTIVO SECRETARIA DE MARINA",
+      "document_type": "Aviso Mediante El",
+      "categories": [
+        "Derecho administrativo"
+      ],
+      "relevance_score": 2,
+      "ai_generated": false
+    },
+    {
+      "id": "dof:5791388",
+      "source": "DOF",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5791388&fecha=23/06/2026",
+      "official_title": "Acuerdo SO/II-26/10,S del Comité Técnico del Consejo Nacional de Normalización y Certificación de Competencias Laborales, mediante el cual se aprobaron los Estándares de Competencia que se indican.",
+      "title": "Acuerdo SO/II-26/10,S del Comité Técnico del Consejo Nacional de Normalización y Certificación",
+      "summary": "Acuerdo SO/II-26/10,S del Comité Técnico del Consejo Nacional de Normalización y Certificación de Competencias Laborales, mediante el cual se aprobaron los Estándares de Competencia que se indican. Publicación oficial de.",
+      "published_at": "2026-06-23",
+      "authority": "ORGANISMOS DESCONCENTRADOS O DESCENTRALIZADOS CONSEJO NACIONAL DE NORMALIZACION Y CERTIFICACION DE COMPETENCIAS LABORALES",
+      "document_type": "Acuerdo So/Ii-26/10,S Del",
+      "categories": [
+        "Normalización"
+      ],
+      "relevance_score": 2,
+      "ai_generated": false
+    },
+    {
+      "id": "dof:5791264",
+      "source": "DOF",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5791264&fecha=22/06/2026",
+      "official_title": "Acuerdo por el que se modifica el diverso por el que se da a conocer la Tasa Aplicable del Impuesto General de Importación para las mercancías originarias de la región conformada por México, Australia, Brunéi, Canadá, Chile, Japón, Malasia, Nueva Zelanda, Perú, Singapur y Vietnam, que corresponden a Australia, Brunéi, Canadá, Chile, Japón, Malasia, Nueva Zelanda, Perú y Singapur.",
+      "title": "Acuerdo por el que se modifica el diverso por el que se",
+      "summary": "Acuerdo por el que se modifica el diverso por el que se da a conocer la Tasa Aplicable del Impuesto General de Importación para las mercancías originarias de la región.",
+      "published_at": "2026-06-22",
+      "authority": "PODER EJECUTIVO SECRETARIA DE ECONOMIA",
+      "document_type": "Acuerdo Por El",
+      "categories": [
+        "Fiscal",
+        "Comercio exterior"
+      ],
+      "relevance_score": 3,
+      "ai_generated": false
+    },
+    {
+      "id": "dof:5791267",
+      "source": "DOF",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5791267&fecha=22/06/2026",
+      "official_title": "Acuerdo delegatorio de facultades a favor de la persona titular de la Subsecretaría de Infraestructura de la Secretaría de Infraestructura, Comunicaciones y Transportes.",
+      "title": "Acuerdo delegatorio de facultades a favor de la persona titular de la",
+      "summary": "Acuerdo delegatorio de facultades a favor de la persona titular de la Subsecretaría de Infraestructura de la Secretaría de Infraestructura, Comunicaciones y Transportes. Publicación oficial de PODER EJECUTIVO SECRETARIA DE.",
+      "published_at": "2026-06-22",
+      "authority": "PODER EJECUTIVO SECRETARIA DE INFRAESTRUCTURA, COMUNICACIONES Y TRANSPORTES",
+      "document_type": "Acuerdo Delegatorio De",
+      "categories": [
+        "Derecho administrativo"
+      ],
+      "relevance_score": 3,
+      "ai_generated": false
+    },
+    {
+      "id": "dof:5791257",
+      "source": "DOF",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5791257&fecha=22/06/2026",
+      "official_title": "Manual de Organización General de la Secretaría de la Defensa Nacional.",
+      "title": "Manual de Organización General de la Secretaría de la Defensa Nacional",
+      "summary": "Manual de Organización General de la Secretaría de la Defensa Nacional. Publicación oficial de PODER EJECUTIVO SECRETARIA DE LA DEFENSA NACIONAL, relacionada con Derecho administrativo. Consulta la fuente íntegra para.",
+      "published_at": "2026-06-22",
+      "authority": "PODER EJECUTIVO SECRETARIA DE LA DEFENSA NACIONAL",
+      "document_type": "Manual De Organización",
+      "categories": [
+        "Derecho administrativo"
+      ],
+      "relevance_score": 2,
+      "ai_generated": false
+    },
+    {
+      "id": "dof:5791265",
+      "source": "DOF",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5791265&fecha=22/06/2026",
+      "official_title": "Acuerdo que modifica el diverso por el que se dan a conocer los cupos de importación descritos en el Apéndice A-1 \"Contingentes arancelarios de México\" del Anexo 2-D \"Compromisos Arancelarios\" del Tratado Integral y Progresista de Asociación Transpacífico.",
+      "title": "Acuerdo que modifica el diverso por el que se dan a conocer",
+      "summary": "Acuerdo que modifica el diverso por el que se dan a conocer los cupos de importación descritos en el Apéndice A-1 \"Contingentes arancelarios de México\" del Anexo 2-D \"Compromisos Arancelarios\".",
+      "published_at": "2026-06-22",
+      "authority": "PODER EJECUTIVO SECRETARIA DE ECONOMIA",
+      "document_type": "Acuerdo Que Modifica",
+      "categories": [
+        "Comercio exterior"
+      ],
+      "relevance_score": 2,
+      "ai_generated": false
+    },
+    {
+      "id": "dof:5791269",
+      "source": "DOF",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5791269&fecha=22/06/2026",
+      "official_title": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a las empresas públicas del Estado, a la Fiscalía General de la República, a las entidades federativas y sus municipios, así como a las demarcaciones territoriales de la Ciudad de México, que deberán abstenerse de aceptar propuestas o celebrar contratos con la empresa Maquinaria e Ingeniería, S.A. de C.V.",
+      "title": "Circular por la que se comunica a las dependencias y entidades de",
+      "summary": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a las empresas públicas del Estado, a la Fiscalía General de la República, a.",
+      "published_at": "2026-06-22",
+      "authority": "PODER EJECUTIVO SECRETARIA ANTICORRUPCION Y BUEN GOBIERNO",
+      "document_type": "Circular Por La",
+      "categories": [
+        "Derecho administrativo"
+      ],
+      "relevance_score": 2,
+      "ai_generated": false
+    },
+    {
+      "id": "impi:07711d4fba8fcfed",
+      "source": "IMPI",
+      "url": "https://www.impi.gob.mx/impi/articulos/impi-refuerza-acciones-preventivas-contra-la-pirateria-en-el-estadio-guadalajara-durante-el-mundial-2026-429420?idiom=es",
+      "official_title": "IMPI refuerza acciones preventivas contra la piratería en el Estadio Guadalajara durante el Mundial 2026",
+      "title": "IMPI refuerza acciones preventivas contra la piratería en el Estadio Guadalajara durante",
+      "summary": "IMPI refuerza acciones preventivas contra la piratería en el Estadio Guadalajara durante el Mundial 2026. Publicación oficial de Instituto Mexicano de la Propiedad Industrial, relacionada con Propiedad intelectual. Consulta la.",
+      "published_at": "2026-06-20",
+      "authority": "Instituto Mexicano de la Propiedad Industrial",
+      "document_type": "Artículo",
+      "categories": [
+        "Propiedad intelectual"
+      ],
+      "relevance_score": 2,
+      "ai_generated": false
+    },
+    {
+      "id": "dof:5791119",
+      "source": "DOF",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5791119&fecha=19/06/2026",
+      "official_title": "Resolución final del procedimiento administrativo de investigación antidumping sobre las importaciones de piña en almíbar originarias del Reino de Tailandia, la República de Filipinas y la República de Indonesia, independientemente del país de procedencia.",
+      "title": "Resolución final del procedimiento administrativo de investigación antidumping sobre las importaciones de",
+      "summary": "Resolución final del procedimiento administrativo de investigación antidumping sobre las importaciones de piña en almíbar originarias del Reino de Tailandia, la República de Filipinas y la República de Indonesia, independientemente.",
+      "published_at": "2026-06-19",
+      "authority": "PODER EJECUTIVO SECRETARIA DE ECONOMIA",
+      "document_type": "Resolución Final Del",
+      "categories": [
+        "Comercio exterior"
+      ],
+      "relevance_score": 2,
+      "ai_generated": false
+    },
+    {
+      "id": "dof:5791121",
+      "source": "DOF",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5791121&fecha=19/06/2026",
+      "official_title": "Aviso mediante el cual se da a conocer las modificaciones al Estatuto Orgánico del Comité Nacional para el Desarrollo Sustentable de la Caña de Azúcar (CONADESUCA) .",
+      "title": "Aviso mediante el cual se da a conocer las modificaciones al Estatuto",
+      "summary": "Aviso mediante el cual se da a conocer las modificaciones al Estatuto Orgánico del Comité Nacional para el Desarrollo Sustentable de la Caña de Azúcar (CONADESUCA). Publicación oficial de PODER.",
+      "published_at": "2026-06-19",
+      "authority": "PODER EJECUTIVO SECRETARIA DE AGRICULTURA Y DESARROLLO RURAL",
+      "document_type": "Aviso Mediante El",
+      "categories": [
+        "Derecho administrativo"
+      ],
+      "relevance_score": 2,
+      "ai_generated": false
+    },
+    {
+      "id": "dof:5791131",
+      "source": "DOF",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5791131&fecha=19/06/2026",
+      "official_title": "Convenio de Coordinación que celebran la Secretaría de Turismo y el Estado de México, que tiene por objeto verificar el cumplimiento de la Ley General de Turismo, su Reglamento, la Ley de Infraestructura de la Calidad y las normas oficiales mexicanas en la materia, así como el fortalecimiento de las atribuciones en el procedimiento de verificación de los prestadores de servicios turísticos en la entidad.",
+      "title": "Convenio de Coordinación que celebran la Secretaría de Turismo y el Estado",
+      "summary": "Convenio de Coordinación que celebran la Secretaría de Turismo y el Estado de México, que tiene por objeto verificar el cumplimiento de la Ley General de Turismo, su Reglamento, la.",
+      "published_at": "2026-06-19",
+      "authority": "PODER EJECUTIVO SECRETARIA DE TURISMO",
+      "document_type": "Convenio De Coordinación",
+      "categories": [
+        "Normalización"
+      ],
+      "relevance_score": 2,
+      "ai_generated": false
+    },
+    {
+      "id": "dof:5790955",
+      "source": "DOF",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5790955&fecha=18/06/2026",
+      "official_title": "Aviso mediante el cual se designa a la Titular de la Jefatura de Servicios de Finanzas para que supla las ausencias de la Doctora Karla Guadalupe López López, Titular del Órgano de Operación Administrativa Desconcentrada Sur del Distrito Federal del Instituto Mexicano del Seguro Social, autorizándole a firmar y despachar la documentación incluyendo la suscripción de las resoluciones que debe emitir este Órgano.",
+      "title": "Aviso mediante el cual se designa a la Titular de la Jefatura",
+      "summary": "Aviso mediante el cual se designa a la Titular de la Jefatura de Servicios de Finanzas para que supla las ausencias de la Doctora Karla Guadalupe López López, Titular del.",
+      "published_at": "2026-06-18",
+      "authority": "ORGANISMOS DESCONCENTRADOS O DESCENTRALIZADOS INSTITUTO MEXICANO DEL SEGURO SOCIAL",
+      "document_type": "Aviso Mediante El",
+      "categories": [
+        "Derecho administrativo",
+        "Nombramientos federales"
+      ],
+      "relevance_score": 4,
+      "ai_generated": false
+    },
+    {
+      "id": "dof:5790956",
+      "source": "DOF",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5790956&fecha=18/06/2026",
+      "official_title": "Aviso mediante el cual se designa a la Licenciada Veronica Flores Frias, Titular de la Jefatura de Servicios Jurídicos para que supla las ausencias del Doctor Eusebio Rosales Partida, Titular del Órgano de Operación Administrativa Desconcentrada Estatal Guanajuato del Instituto Mexicano del Seguro Social, autorizándole a firmar y despachar la documentación incluyendo la suscripción de las resoluciones que debe emitir este Órgano.",
+      "title": "Aviso mediante el cual se designa a la Licenciada Veronica Flores Frias",
+      "summary": "Aviso mediante el cual se designa a la Licenciada Veronica Flores Frias, Titular de la Jefatura de Servicios Jurídicos para que supla las ausencias del Doctor Eusebio Rosales Partida, Titular.",
+      "published_at": "2026-06-18",
+      "authority": "ORGANISMOS DESCONCENTRADOS O DESCENTRALIZADOS INSTITUTO MEXICANO DEL SEGURO SOCIAL",
+      "document_type": "Aviso Mediante El",
+      "categories": [
+        "Derecho administrativo",
+        "Nombramientos federales"
+      ],
+      "relevance_score": 4,
+      "ai_generated": false
+    },
+    {
+      "id": "dof:5790695",
+      "source": "DOF",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5790695&fecha=16/06/2026",
+      "official_title": "Aviso mediante el cual se designa al licenciado Jesús Pérez Ortega, Titular de la Jefatura de Servicios Jurídicos para que supla las ausencias del Doctor Víctor Gasca Martínez, Titular del Órgano de Operación Administrativa Desconcentrada Estatal Quintana Roo del Instituto Mexicano del Seguro Social, autorizándole a firmar y despachar la documentación incluyendo la suscripción de las resoluciones que debe emitir este Órgano.",
+      "title": "Aviso mediante el cual se designa al licenciado Jesús Pérez Ortega, Titular",
+      "summary": "Aviso mediante el cual se designa al licenciado Jesús Pérez Ortega, Titular de la Jefatura de Servicios Jurídicos para que supla las ausencias del Doctor Víctor Gasca Martínez, Titular del.",
+      "published_at": "2026-06-16",
+      "authority": "ORGANISMOS DESCONCENTRADOS O DESCENTRALIZADOS INSTITUTO MEXICANO DEL SEGURO SOCIAL",
+      "document_type": "Aviso Mediante El",
+      "categories": [
+        "Derecho administrativo",
+        "Nombramientos federales"
+      ],
+      "relevance_score": 4,
+      "ai_generated": false
+    },
+    {
+      "id": "dof:5790754",
+      "source": "DOF",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5790754&fecha=16/06/2026",
+      "official_title": "INSTITUTO MEXICANO DE LA PROPIEDAD INDUSTRIAL - REF:577213",
+      "title": "INSTITUTO MEXICANO DE LA PROPIEDAD INDUSTRIAL - REF:577213",
+      "summary": "INSTITUTO MEXICANO DE LA PROPIEDAD INDUSTRIAL - REF:577213. Publicación oficial de CONVOCATORIAS PARA CONCURSOS DE ADQUISICIONES, ARRENDAMIENTOS, OBRAS Y SERVICIOS DEL SECTOR PUBLICO, relacionada con Propiedad intelectual. Consulta la fuente.",
+      "published_at": "2026-06-16",
+      "authority": "CONVOCATORIAS PARA CONCURSOS DE ADQUISICIONES, ARRENDAMIENTOS, OBRAS Y SERVICIOS DEL SECTOR PUBLICO",
+      "document_type": "Instituto Mexicano De",
+      "categories": [
+        "Propiedad intelectual"
+      ],
+      "relevance_score": 3,
+      "ai_generated": false
+    },
+    {
+      "id": "dof:5790789",
+      "source": "DOF",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5790789&fecha=16/06/2026",
+      "official_title": "INSTITUTO MEXICANO DE LA PROPIEDAD INDUSTRIAL - REF:577212",
+      "title": "INSTITUTO MEXICANO DE LA PROPIEDAD INDUSTRIAL - REF:577212",
+      "summary": "INSTITUTO MEXICANO DE LA PROPIEDAD INDUSTRIAL - REF:577212. Publicación oficial de CONVOCATORIAS PARA CONCURSOS DE ADQUISICIONES, ARRENDAMIENTOS, OBRAS Y SERVICIOS DEL SECTOR PUBLICO, relacionada con Propiedad intelectual. Consulta la fuente.",
+      "published_at": "2026-06-16",
+      "authority": "CONVOCATORIAS PARA CONCURSOS DE ADQUISICIONES, ARRENDAMIENTOS, OBRAS Y SERVICIOS DEL SECTOR PUBLICO",
+      "document_type": "Instituto Mexicano De",
+      "categories": [
+        "Propiedad intelectual"
+      ],
+      "relevance_score": 3,
+      "ai_generated": false
+    },
+    {
+      "id": "gob.mx apf:82d10173de548952",
+      "source": "Gob.mx APF",
+      "url": "https://www.gob.mx/bancomext/prensa/carlos-torres-rosas-nuevo-director-general-de-bancomext-y-nafin?idiom=es",
+      "official_title": "CARLOS TORRES ROSAS, NUEVO DIRECTOR GENERAL DE BANCOMEXT Y NAFIN",
+      "title": "CARLOS TORRES ROSAS, NUEVO DIRECTOR GENERAL DE BANCOMEXT Y NAFIN",
+      "summary": "CARLOS TORRES ROSAS, NUEVO DIRECTOR GENERAL DE BANCOMEXT Y NAFIN. Publicación oficial de Portal federal BANCOMEXT, relacionada con Derecho administrativo, Nombramientos federales. Consulta la fuente íntegra para confirmar su alcance.",
+      "published_at": "2026-06-16",
+      "authority": "Portal federal BANCOMEXT",
+      "document_type": "Comunicado",
+      "categories": [
+        "Derecho administrativo",
+        "Nombramientos federales"
+      ],
+      "relevance_score": 2,
+      "ai_generated": false
+    },
+    {
+      "id": "dof:5790707",
+      "source": "DOF",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5790707&fecha=16/06/2026",
+      "official_title": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a las empresas productivas del Estado, así como a las entidades federativas, municipios y alcaldías de la Ciudad de México, que la empresa RMCH Construcciones S.A. de C.V. y el C. José Ricardo Montiel Chavarría fueron inhabilitadas por el periodo de tres meses.",
+      "title": "Circular por la que se comunica a las dependencias y entidades de",
+      "summary": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a las empresas productivas del Estado, así como a las entidades federativas, municipios y.",
+      "published_at": "2026-06-16",
+      "authority": "ORGANISMOS AUTONOMOS TRIBUNAL FEDERAL DE JUSTICIA ADMINISTRATIVA",
+      "document_type": "Circular Por La",
+      "categories": [
+        "Derecho administrativo"
+      ],
+      "relevance_score": 2,
+      "ai_generated": false
+    },
+    {
+      "id": "dof:5790546",
+      "source": "DOF",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5790546&fecha=15/06/2026",
+      "official_title": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a la Fiscalía General de la República, a las entidades federativas, municipios y demarcaciones territoriales de la Ciudad de México, que deberán abstenerse de aceptar propuestas o celebrar contratos con la empresa Ingeniería y Desarrollo de Obras Suma, S.A. de C.V. y la persona física que la representó el Ciudadano Omar Suárez Márquez, incluso cuando este último pretenda representar a empresas diversas a la sancionada.",
+      "title": "Circular por la que se comunica a las dependencias y entidades de",
+      "summary": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a la Fiscalía General de la República, a las entidades federativas, municipios y demarcaciones.",
+      "published_at": "2026-06-15",
+      "authority": "PODER EJECUTIVO SECRETARIA ANTICORRUPCION Y BUEN GOBIERNO",
+      "document_type": "Circular Por La",
+      "categories": [
+        "Derecho administrativo"
+      ],
+      "relevance_score": 2,
+      "ai_generated": false
+    },
+    {
+      "id": "gob.mx apf:4fc9878dbf8dd432",
+      "source": "Gob.mx APF",
+      "url": "https://www.gob.mx/impi/prensa/el-impi-impulsa-acciones-contra-la-pirateria-y-el-streaming-ilegal-en-el-marco-de-la-copa-mundial-fifa-2026?idiom=es",
+      "official_title": "El IMPI impulsa acciones contra la piratería y el streaming ilegal en el marco de la Copa Mundial FIFA 2026",
+      "title": "El IMPI impulsa acciones contra la piratería y el streaming ilegal en",
+      "summary": "El IMPI impulsa acciones contra la piratería y el streaming ilegal en el marco de la Copa Mundial FIFA 2026. Publicación oficial de Portal federal IMPI, relacionada con Propiedad intelectual.",
+      "published_at": "2026-06-14",
+      "authority": "Portal federal IMPI",
+      "document_type": "Comunicado",
+      "categories": [
+        "Propiedad intelectual"
+      ],
+      "relevance_score": 2,
+      "ai_generated": false
+    },
+    {
+      "id": "dof:5790446",
+      "source": "DOF",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5790446&fecha=12/06/2026",
+      "official_title": "Norma Oficial Mexicana NOM-005-SSA-2026, De los Servicios de Planificación Familiar y Anticoncepción.",
+      "title": "Norma Oficial Mexicana NOM-005-SSA-2026, De los Servicios de Planificación Familiar y Anticoncepción",
+      "summary": "Norma Oficial Mexicana NOM-005-SSA-2026, De los Servicios de Planificación Familiar y Anticoncepción. Publicación oficial de PODER EJECUTIVO SECRETARIA DE SALUD, relacionada con Normalización. Consulta la fuente íntegra para confirmar su.",
+      "published_at": "2026-06-12",
+      "authority": "PODER EJECUTIVO SECRETARIA DE SALUD",
+      "document_type": "Norma Oficial Mexicana",
+      "categories": [
+        "Normalización"
+      ],
+      "relevance_score": 3,
+      "ai_generated": false
+    },
+    {
+      "id": "dof:5790440",
+      "source": "DOF",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5790440&fecha=12/06/2026",
+      "official_title": "Aviso por el que se da a conocer la página institucional, donde puede consultarse el Manual de Organización de la Administración del Sistema Portuario Nacional Dos Bocas, S.A. de C.V.",
+      "title": "Aviso por el que se da a conocer la página institucional, donde",
+      "summary": "Aviso por el que se da a conocer la página institucional, donde puede consultarse el Manual de Organización de la Administración del Sistema Portuario Nacional Dos Bocas, S.A. de C.V.",
+      "published_at": "2026-06-12",
+      "authority": "PODER EJECUTIVO SECRETARIA DE MARINA",
+      "document_type": "Aviso Por El",
+      "categories": [
+        "Derecho administrativo"
+      ],
+      "relevance_score": 2,
+      "ai_generated": false
+    },
     {
       "id": "dof:5790214",
       "source": "DOF",
@@ -208,14 +924,14 @@
       "ai_generated": false
     },
     {
-      "id": "impi:f6a4a6cf428a8a4d",
-      "source": "IMPI",
-      "url": "https://www.impi.gob.mx/impi/articulos/impi-intensifica-operativos-contra-pirateria-en-el-centro-historico-a-unos-dias-del-inicio-del-mundial-428146?idiom=es",
+      "id": "gob.mx apf:3b55ee09d86e5119",
+      "source": "Gob.mx APF",
+      "url": "https://www.gob.mx/impi/es/articulos/impi-intensifica-operativos-contra-pirateria-en-el-centro-historico-a-unos-dias-del-inicio-del-mundial-428146?idiom=es",
       "official_title": "IMPI intensifica operativos contra piratería en el Centro Histórico a unos días del inicio del Mundial",
       "title": "IMPI intensifica operativos contra piratería en el Centro Histórico a unos días",
-      "summary": "IMPI intensifica operativos contra piratería en el Centro Histórico a unos días del inicio del Mundial. Publicación oficial de Instituto Mexicano de la Propiedad Industrial, relacionada con Propiedad intelectual. Consulta.",
+      "summary": "IMPI intensifica operativos contra piratería en el Centro Histórico a unos días del inicio del Mundial. Publicación oficial de Portal federal IMPI, relacionada con Propiedad intelectual. Consulta la fuente íntegra.",
       "published_at": "2026-06-08",
-      "authority": "Instituto Mexicano de la Propiedad Industrial",
+      "authority": "Portal federal IMPI",
       "document_type": "Artículo",
       "categories": [
         "Propiedad intelectual"
@@ -386,24 +1102,6 @@
       "ai_generated": false
     },
     {
-      "id": "gob.mx apf:8b2f66c22066d0b0",
-      "source": "Gob.mx APF",
-      "url": "https://www.gob.mx/se/prensa/secretaria-de-economia-sat-y-aduanas-eliminan-dictaminacion-de-avisos-en-comercio-exterior-para-agilizar-tramites?idiom=es",
-      "official_title": "Secretaría de Economía, SAT y Aduanas eliminan dictaminación de avisos en comercio exterior para agilizar trámites",
-      "title": "Esta estrategia del Gobierno de México elimina las cargas administrativas innecesarias y",
-      "summary": "Esta estrategia del Gobierno de México elimina las cargas administrativas innecesarias y optimiza los tiempos de atención en materia de comercio exterior En coordinación con la Agencia de Transformación Digital.",
-      "published_at": "2026-06-04",
-      "authority": "Secretaría de Economía",
-      "document_type": "Comunicado",
-      "categories": [
-        "Fiscal",
-        "Aduanero",
-        "Comercio exterior"
-      ],
-      "relevance_score": 4,
-      "ai_generated": false
-    },
-    {
       "id": "dof:5789473",
       "source": "DOF",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5789473&fecha=04/06/2026",
@@ -468,995 +1166,17 @@
       "ai_generated": false
     },
     {
-      "id": "senado:40ed26a9d83edf2e",
-      "source": "Senado",
-      "url": "https://www.senado.gob.mx/66/gaceta_comision_permanente/documento/159794",
-      "official_title": "Proyecto de decreto por el que se adicionan diversas disposiciones de la Ley del Impuesto Sobre la Renta, de la Ley del Impuesto al Valor Agregado, de la Ley Sobre el Contrato de Seguro, y de la Ley General de Protección Civil.",
-      "title": "Se adicionan diversas disposiciones de la Ley del Impuesto Sobre la Renta",
-      "summary": "Costos operativos de emergencias. Publicación oficial de Cámara de Diputados, relacionada con Fiscal, Iniciativa. Consulta la fuente íntegra para confirmar su alcance, fechas de vigencia, obligaciones, requisitos, excepciones, autoridades responsables.",
-      "published_at": "2026-06-01",
-      "authority": "Cámara de Diputados",
-      "document_type": "Iniciativa de Ley",
-      "categories": [
-        "Fiscal",
-        "Iniciativa"
-      ],
-      "relevance_score": 8,
-      "ai_generated": false
-    },
-    {
-      "id": "senado:bc434045c9609de4",
-      "source": "Senado",
-      "url": "https://www.senado.gob.mx/66/gaceta_comision_permanente/documento/159742",
-      "official_title": "Proyecto de decreto por el que se reforman y adicionan diversas disposiciones del Código Fiscal de la Federación.",
-      "title": "Modificación del régimen fiscal y obligaciones de información a las cooperativas de",
-      "summary": "Modificación del régimen fiscal y obligaciones de información a las cooperativas de ahorro y préstamo. Publicación oficial de Cámara de Diputados, relacionada con Fiscal, Iniciativa. Consulta la fuente íntegra para.",
-      "published_at": "2026-06-01",
-      "authority": "Cámara de Diputados",
-      "document_type": "Iniciativa de Ley",
-      "categories": [
-        "Fiscal",
-        "Iniciativa"
-      ],
-      "relevance_score": 7,
-      "ai_generated": false
-    },
-    {
-      "id": "gob.mx apf:145571f7704ea97d",
+      "id": "gob.mx apf:5531561ef723d221",
       "source": "Gob.mx APF",
-      "url": "https://www.gob.mx/se/prensa/vidal-llerenas-nuevo-titular-del-impi-427404?idiom=es",
-      "official_title": "Vidal Llerenas nuevo titular del IMPI",
-      "title": "• Su nombramiento fortalecerá el papel del IMPI en el desarrollo industrial",
-      "summary": "• Su nombramiento fortalecerá el papel del IMPI en el desarrollo industrial y la innovación en México. • El IMPI contará con 500 perfiles de profesionistas en ciencia, tecnología, ingeniería.",
-      "published_at": "2026-06-01",
-      "authority": "Secretaría de Economía",
-      "document_type": "Comunicado",
-      "categories": [
-        "Propiedad intelectual",
-        "Derecho administrativo",
-        "Nombramientos federales"
-      ],
-      "relevance_score": 7,
-      "ai_generated": false
-    },
-    {
-      "id": "gob.mx apf:f983c88d42a433ce",
-      "source": "Gob.mx APF",
-      "url": "https://www.gob.mx/se/prensa/del-secretario-de-economia-marcelo-ebrard-durante-la-presentacion-del-director-del-instituto-mexicano-de-la-propiedad-industrial?idiom=es",
-      "official_title": "Participación del secretario Marcelo Ebrard durante la presentación del director del Instituto Mexicano de la Propiedad Industrial",
-      "title": "Mensaje del secretario de Economía, Marcelo Ebrard Casaubon: Bueno, muy buenos días",
-      "summary": "Mensaje del secretario de Economía, Marcelo Ebrard Casaubon: Bueno, muy buenos días a todas y a todos, buenos días. Gracias por acompañarnos a los medios de comunicación que nos hace.",
-      "published_at": "2026-06-01",
-      "authority": "Secretaría de Economía",
-      "document_type": "Discurso",
-      "categories": [
-        "Aduanero",
-        "Comercio exterior",
-        "Propiedad intelectual",
-        "Iniciativa"
-      ],
-      "relevance_score": 6,
-      "ai_generated": false
-    },
-    {
-      "id": "dof:5789109",
-      "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5789109&fecha=01/06/2026",
-      "official_title": "Resolución por la que se declara el inicio del procedimiento administrativo de examen de vigencia de la cuota compensatoria impuesta a las importaciones de placa de acero en rollo originarias de la Federación de Rusia, independientemente del país de procedencia.",
-      "title": "Resolución por la que se declara el inicio del procedimiento administrativo de",
-      "summary": "Resolución por la que se declara el inicio del procedimiento administrativo de examen de vigencia de la cuota compensatoria impuesta a las importaciones de placa de acero en rollo originarias.",
-      "published_at": "2026-06-01",
-      "authority": "PODER EJECUTIVO SECRETARIA DE ECONOMIA",
-      "document_type": "Resolución Por La",
-      "categories": [
-        "Comercio exterior"
-      ],
-      "relevance_score": 3,
-      "ai_generated": false
-    },
-    {
-      "id": "dof:5789100",
-      "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5789100&fecha=01/06/2026",
-      "official_title": "Aviso por el que se da a conocer la página institucional donde puede consultarse el Manual de Organización de la Administración del Sistema Portuario Nacional Mazatlán, S.A. de C.V.",
-      "title": "Aviso por el que se da a conocer la página institucional donde",
-      "summary": "Aviso por el que se da a conocer la página institucional donde puede consultarse el Manual de Organización de la Administración del Sistema Portuario Nacional Mazatlán, S.A. de C.V. Publicación.",
-      "published_at": "2026-06-01",
-      "authority": "PODER EJECUTIVO SECRETARIA DE MARINA",
-      "document_type": "Aviso Por El",
-      "categories": [
-        "Derecho administrativo"
-      ],
-      "relevance_score": 2,
-      "ai_generated": false
-    },
-    {
-      "id": "gob.mx apf:3c3eaced53d756e7",
-      "source": "Gob.mx APF",
-      "url": "https://www.gob.mx/sre/prensa/anuncia-sre-nombramientos-de-jefes-de-unidad-y-directores-generales?idiom=es",
-      "official_title": "Anuncia SRE nombramientos de jefes de unidad y directores generales",
-      "title": "La Secretaría de Relaciones Exteriores (SRE) informa que, por instrucciones del canciller",
-      "summary": "La Secretaría de Relaciones Exteriores (SRE) informa que, por instrucciones del canciller Roberto Velasco Álvarez, se han realizado nombramientos de jefas y jefes de unidad, y directoras y directores generales.",
-      "published_at": "2026-05-29",
-      "authority": "Secretaría de Relaciones Exteriores",
-      "document_type": "Comunicado",
-      "categories": [
-        "Derecho administrativo",
-        "Nombramientos federales"
-      ],
-      "relevance_score": 4,
-      "ai_generated": false
-    },
-    {
-      "id": "dof:5788983",
-      "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5788983&fecha=29/05/2026",
-      "official_title": "Acuerdo mediante el cual se emite el Manual de Percepciones de las personas Servidoras Públicas de las dependencias y entidades de la Administración Pública Federal.",
-      "title": "Acuerdo mediante el cual se emite el Manual de Percepciones de las",
-      "summary": "Acuerdo mediante el cual se emite el Manual de Percepciones de las personas Servidoras Públicas de las dependencias y entidades de la Administración Pública Federal. Publicación oficial de PODER EJECUTIVO.",
-      "published_at": "2026-05-29",
-      "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
-      "document_type": "Acuerdo Mediante El",
-      "categories": [
-        "Derecho administrativo"
-      ],
-      "relevance_score": 2,
-      "ai_generated": false
-    },
-    {
-      "id": "dof:5788990",
-      "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5788990&fecha=29/05/2026",
-      "official_title": "Acuerdo de la Comisión Nacional de Energía por el que se expide el Manual de Organización General de la Comisión Nacional de Energía.",
-      "title": "Acuerdo de la Comisión Nacional de Energía por el que se expide",
-      "summary": "Acuerdo de la Comisión Nacional de Energía por el que se expide el Manual de Organización General de la Comisión Nacional de Energía. Publicación oficial de PODER EJECUTIVO SECRETARIA DE.",
-      "published_at": "2026-05-29",
-      "authority": "PODER EJECUTIVO SECRETARIA DE ENERGIA",
-      "document_type": "Acuerdo De La",
-      "categories": [
-        "Derecho administrativo"
-      ],
-      "relevance_score": 2,
-      "ai_generated": false
-    },
-    {
-      "id": "dof:5788992",
-      "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5788992&fecha=29/05/2026",
-      "official_title": "Acuerdo que modifica el diverso por el que la Secretaría de Economía emite Reglas y criterios de carácter general en materia de comercio exterior.",
-      "title": "Acuerdo que modifica el diverso por el que la Secretaría de Economía",
-      "summary": "Acuerdo que modifica el diverso por el que la Secretaría de Economía emite Reglas y criterios de carácter general en materia de comercio exterior. Publicación oficial de PODER EJECUTIVO SECRETARIA.",
-      "published_at": "2026-05-29",
-      "authority": "PODER EJECUTIVO SECRETARIA DE ECONOMIA",
-      "document_type": "Acuerdo Que Modifica",
-      "categories": [
-        "Comercio exterior"
-      ],
-      "relevance_score": 2,
-      "ai_generated": false
-    },
-    {
-      "id": "dof:5788839",
-      "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5788839&fecha=28/05/2026",
-      "official_title": "Aviso de consulta pública del Proyecto de Norma Oficial Mexicana PROY-NOM-004-NUCL-2025, Clasificación de los desechos radiactivos.",
-      "title": "Aviso de consulta pública del Proyecto de Norma Oficial Mexicana PROY-NOM-004-NUCL-2025, Clasificación",
-      "summary": "Aviso de consulta pública del Proyecto de Norma Oficial Mexicana PROY-NOM-004-NUCL-2025, Clasificación de los desechos radiactivos. Publicación oficial de PODER EJECUTIVO SECRETARIA DE ENERGIA, relacionada con Normalización. Consulta la fuente.",
-      "published_at": "2026-05-28",
-      "authority": "PODER EJECUTIVO SECRETARIA DE ENERGIA",
-      "document_type": "Aviso De Consulta",
-      "categories": [
-        "Normalización"
-      ],
-      "relevance_score": 4,
-      "ai_generated": false
-    },
-    {
-      "id": "dof:5788840",
-      "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5788840&fecha=28/05/2026",
-      "official_title": "Aviso de consulta pública del Proyecto de Norma Oficial Mexicana PROY-NOM-035-NUCL-2026, Criterios para la dispensa de materiales que contengan o estén contaminados con material radiactivo.",
-      "title": "Aviso de consulta pública del Proyecto de Norma Oficial Mexicana PROY-NOM-035-NUCL-2026, Criterios",
-      "summary": "Aviso de consulta pública del Proyecto de Norma Oficial Mexicana PROY-NOM-035-NUCL-2026, Criterios para la dispensa de materiales que contengan o estén contaminados con material radiactivo. Publicación oficial de PODER EJECUTIVO.",
-      "published_at": "2026-05-28",
-      "authority": "PODER EJECUTIVO SECRETARIA DE ENERGIA",
-      "document_type": "Aviso De Consulta",
-      "categories": [
-        "Normalización"
-      ],
-      "relevance_score": 4,
-      "ai_generated": false
-    },
-    {
-      "id": "dof:5788841",
-      "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5788841&fecha=28/05/2026",
-      "official_title": "Aviso de consulta pública del Proyecto de Norma Oficial Mexicana PROY-NOM-041-NUCL-2025, Límites anuales de incorporación y concentraciones en liberaciones.",
-      "title": "Aviso de consulta pública del Proyecto de Norma Oficial Mexicana PROY-NOM-041-NUCL-2025, Límites",
-      "summary": "Aviso de consulta pública del Proyecto de Norma Oficial Mexicana PROY-NOM-041-NUCL-2025, Límites anuales de incorporación y concentraciones en liberaciones. Publicación oficial de PODER EJECUTIVO SECRETARIA DE ENERGIA, relacionada con Normalización.",
-      "published_at": "2026-05-28",
-      "authority": "PODER EJECUTIVO SECRETARIA DE ENERGIA",
-      "document_type": "Aviso De Consulta",
-      "categories": [
-        "Normalización"
-      ],
-      "relevance_score": 4,
-      "ai_generated": false
-    },
-    {
-      "id": "dof:5788843",
-      "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5788843&fecha=28/05/2026",
-      "official_title": "Acuerdo que modifica el diverso por el que la Secretaría de Economía emite Reglas y criterios de carácter general en materia de comercio exterior.",
-      "title": "Acuerdo que modifica el diverso por el que la Secretaría de Economía",
-      "summary": "Acuerdo que modifica el diverso por el que la Secretaría de Economía emite Reglas y criterios de carácter general en materia de comercio exterior. Publicación oficial de PODER EJECUTIVO SECRETARIA.",
-      "published_at": "2026-05-28",
-      "authority": "PODER EJECUTIVO SECRETARIA DE ECONOMIA",
-      "document_type": "Acuerdo Que Modifica",
-      "categories": [
-        "Comercio exterior"
-      ],
-      "relevance_score": 2,
-      "ai_generated": false
-    },
-    {
-      "id": "dof:5788850",
-      "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5788850&fecha=28/05/2026",
-      "official_title": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a las entidades federativas, a los municipios, a los entes públicos de unas y otros, así como a las demarcaciones territoriales de la Ciudad de México, que deberán abstenerse de aceptar propuestas y/o celebrar contratos con la empresa Constructora & Comercializadora Pietra, S.A. de C.V.",
-      "title": "Circular por la que se comunica a las dependencias y entidades de",
-      "summary": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a las entidades federativas, a los municipios, a los entes públicos de unas y.",
-      "published_at": "2026-05-28",
-      "authority": "PODER EJECUTIVO SECRETARIA ANTICORRUPCION Y BUEN GOBIERNO",
-      "document_type": "Circular Por La",
-      "categories": [
-        "Derecho administrativo"
-      ],
-      "relevance_score": 2,
-      "ai_generated": false
-    },
-    {
-      "id": "gob.mx apf:a1df4cbaf83ad440",
-      "source": "Gob.mx APF",
-      "url": "https://www.gob.mx/sre/prensa/nombramientos-presidenciales-son-enviados-al-senado-de-la-republica-para-su-ratificacion?idiom=es",
-      "official_title": "Nombramientos presidenciales son enviados al Senado de la República para su ratificación",
-      "title": "La Secretaría de Relaciones Exteriores (SRE) informa que han sido enviados al",
-      "summary": "La Secretaría de Relaciones Exteriores (SRE) informa que han sido enviados al Senado de la República cuatro nombramientos designados por la presidenta Claudia Sheinbaum para su ratificación. De los cuatro.",
-      "published_at": "2026-05-27",
-      "authority": "Secretaría de Relaciones Exteriores",
-      "document_type": "Comunicado",
-      "categories": [
-        "Derecho administrativo",
-        "Nombramientos federales"
-      ],
-      "relevance_score": 4,
-      "ai_generated": false
-    },
-    {
-      "id": "dof:5788763",
-      "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5788763&fecha=27/05/2026",
-      "official_title": "Acuerdo SRYUC/01/2026 por el que se da a conocer la suspensión de actividades jurisdiccionales en la Sala Regional en Yucatán del Tribunal Federal de Justicia Administrativa por causa de fuerza mayor.",
-      "title": "Acuerdo SRYUC/01/2026 por el que se da a conocer la suspensión de",
-      "summary": "Acuerdo SRYUC/01/2026 por el que se da a conocer la suspensión de actividades jurisdiccionales en la Sala Regional en Yucatán del Tribunal Federal de Justicia Administrativa por causa de fuerza.",
-      "published_at": "2026-05-27",
-      "authority": "ORGANISMOS AUTONOMOS TRIBUNAL FEDERAL DE JUSTICIA ADMINISTRATIVA",
-      "document_type": "Acuerdo Sryuc/01/2026 Por",
-      "categories": [
-        "Contencioso administrativo"
-      ],
-      "relevance_score": 4,
-      "ai_generated": false
-    },
-    {
-      "id": "dof:5788724",
-      "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5788724&fecha=27/05/2026",
-      "official_title": "Acuerdo por el que se da a conocer la Decisión No. 127 de la Comisión Administradora del Tratado de Libre Comercio entre los Estados Unidos Mexicanos y la República de Colombia, adoptada el 26 de mayo de 2026.",
-      "title": "Acuerdo por el que se da a conocer la Decisión No. 127",
-      "summary": "Acuerdo por el que se da a conocer la Decisión No. 127 de la Comisión Administradora del Tratado de Libre Comercio entre los Estados Unidos Mexicanos y la República de.",
-      "published_at": "2026-05-27",
-      "authority": "PODER EJECUTIVO SECRETARIA DE ECONOMIA",
-      "document_type": "Acuerdo Por El",
-      "categories": [
-        "Comercio exterior"
-      ],
-      "relevance_score": 2,
-      "ai_generated": false
-    },
-    {
-      "id": "dof:5788742",
-      "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5788742&fecha=27/05/2026",
-      "official_title": "Convenio de Coordinación que celebran la Secretaría de Turismo y el Estado de Jalisco, que tiene por objeto verificar el cumplimiento de la Ley General de Turismo, su Reglamento, la Ley de Infraestructura de la Calidad y las normas oficiales mexicanas en la materia, así como el fortalecimiento de las atribuciones en el procedimiento de verificación de los prestadores de servicios turísticos en la entidad.",
-      "title": "Convenio de Coordinación que celebran la Secretaría de Turismo y el Estado",
-      "summary": "Convenio de Coordinación que celebran la Secretaría de Turismo y el Estado de Jalisco, que tiene por objeto verificar el cumplimiento de la Ley General de Turismo, su Reglamento, la.",
-      "published_at": "2026-05-27",
-      "authority": "PODER EJECUTIVO SECRETARIA DE TURISMO",
-      "document_type": "Convenio De Coordinación",
-      "categories": [
-        "Normalización"
-      ],
-      "relevance_score": 2,
-      "ai_generated": false
-    },
-    {
-      "id": "dof:5788527",
-      "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5788527&fecha=26/05/2026",
-      "official_title": "Acuerdo por el que se suspenden los plazos en el Instituto Mexicano de la Propiedad Industrial, por causa de fuerza mayor.",
-      "title": "Acuerdo por el que se suspenden los plazos en el Instituto Mexicano",
-      "summary": "Acuerdo por el que se suspenden los plazos en el Instituto Mexicano de la Propiedad Industrial, por causa de fuerza mayor. Publicación oficial de ORGANISMOS DESCONCENTRADOS O DESCENTRALIZADOS INSTITUTO MEXICANO.",
-      "published_at": "2026-05-26",
-      "authority": "ORGANISMOS DESCONCENTRADOS O DESCENTRALIZADOS INSTITUTO MEXICANO DE LA PROPIEDAD INDUSTRIAL",
-      "document_type": "Acuerdo Por El",
-      "categories": [
-        "Propiedad intelectual"
-      ],
-      "relevance_score": 3,
-      "ai_generated": false
-    },
-    {
-      "id": "dof:5788656",
-      "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5788656&fecha=26/05/2026",
-      "official_title": "INSTITUTO MEXICANO DE LA PROPIEDAD INDUSTRIAL - REF:576276",
-      "title": "INSTITUTO MEXICANO DE LA PROPIEDAD INDUSTRIAL - REF:576276",
-      "summary": "INSTITUTO MEXICANO DE LA PROPIEDAD INDUSTRIAL - REF:576276. Publicación oficial de CONVOCATORIAS PARA CONCURSOS DE ADQUISICIONES, ARRENDAMIENTOS, OBRAS Y SERVICIOS DEL SECTOR PUBLICO, relacionada con Propiedad intelectual. Consulta la fuente.",
-      "published_at": "2026-05-26",
-      "authority": "CONVOCATORIAS PARA CONCURSOS DE ADQUISICIONES, ARRENDAMIENTOS, OBRAS Y SERVICIOS DEL SECTOR PUBLICO",
-      "document_type": "Instituto Mexicano De",
-      "categories": [
-        "Propiedad intelectual"
-      ],
-      "relevance_score": 3,
-      "ai_generated": false
-    },
-    {
-      "id": "dof:5788639",
-      "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5788639&fecha=26/05/2026",
-      "official_title": "CONSEJO NACIONAL DE NORMALIZACION Y CERTIFICACION DE COMPETENCIAS LABORALES - REF:576267",
-      "title": "CONSEJO NACIONAL DE NORMALIZACION Y CERTIFICACION DE COMPETENCIAS LABORALES - REF:576267",
-      "summary": "CONSEJO NACIONAL DE NORMALIZACION Y CERTIFICACION DE COMPETENCIAS LABORALES - REF:576267. Publicación oficial de CONVOCATORIAS PARA CONCURSOS DE ADQUISICIONES, ARRENDAMIENTOS, OBRAS Y SERVICIOS DEL SECTOR PUBLICO, relacionada con Normalización. Consulta.",
-      "published_at": "2026-05-26",
-      "authority": "CONVOCATORIAS PARA CONCURSOS DE ADQUISICIONES, ARRENDAMIENTOS, OBRAS Y SERVICIOS DEL SECTOR PUBLICO",
-      "document_type": "Consejo Nacional De",
-      "categories": [
-        "Normalización"
-      ],
-      "relevance_score": 2,
-      "ai_generated": false
-    },
-    {
-      "id": "dof:5788390",
-      "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5788390&fecha=25/05/2026",
-      "official_title": "Respuestas a los comentarios recibidos respecto del Proyecto de Norma Oficial Mexicana PROY-NOM-005-SSA-2025, De los Servicios de Planificación Familiar y Anticoncepción, publicado el 16 de abril de 2025.",
-      "title": "Respuestas a los comentarios recibidos respecto del Proyecto de Norma Oficial Mexicana",
-      "summary": "Respuestas a los comentarios recibidos respecto del Proyecto de Norma Oficial Mexicana PROY-NOM-005-SSA-2025, De los Servicios de Planificación Familiar y Anticoncepción, publicado el 16 de abril de 2025. Publicación oficial.",
-      "published_at": "2026-05-25",
-      "authority": "PODER EJECUTIVO SECRETARIA DE SALUD",
-      "document_type": "Respuestas A Los",
-      "categories": [
-        "Normalización"
-      ],
-      "relevance_score": 4,
-      "ai_generated": false
-    },
-    {
-      "id": "dof:5788387",
-      "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5788387&fecha=25/05/2026",
-      "official_title": "Manual de Organización General de la Secretaría de Infraestructura, Comunicaciones y Transportes.",
-      "title": "Manual de Organización General de la Secretaría de Infraestructura, Comunicaciones y Transportes",
-      "summary": "Manual de Organización General de la Secretaría de Infraestructura, Comunicaciones y Transportes. Publicación oficial de PODER EJECUTIVO SECRETARIA DE INFRAESTRUCTURA, COMUNICACIONES Y TRANSPORTES, relacionada con Derecho administrativo. Consulta la fuente.",
-      "published_at": "2026-05-25",
-      "authority": "PODER EJECUTIVO SECRETARIA DE INFRAESTRUCTURA, COMUNICACIONES Y TRANSPORTES",
-      "document_type": "Manual De Organización",
-      "categories": [
-        "Derecho administrativo"
-      ],
-      "relevance_score": 2,
-      "ai_generated": false
-    },
-    {
-      "id": "dof:5788257",
-      "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5788257&fecha=22/05/2026",
-      "official_title": "Aviso mediante el cual se informa al público en general los domicilios de las Oficialías de Partes de las Unidades Administrativas de la Subsecretaría de Derechos Humanos, Población y Migración de la Secretaría de Gobernación.",
-      "title": "Aviso mediante el cual se informa al público en general los domicilios",
-      "summary": "Aviso mediante el cual se informa al público en general los domicilios de las Oficialías de Partes de las Unidades Administrativas de la Subsecretaría de Derechos Humanos, Población y Migración.",
-      "published_at": "2026-05-22",
-      "authority": "PODER EJECUTIVO SECRETARIA DE GOBERNACION",
-      "document_type": "Aviso Mediante El",
-      "categories": [
-        "Derecho administrativo"
-      ],
-      "relevance_score": 3,
-      "ai_generated": false
-    },
-    {
-      "id": "dof:5788265",
-      "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5788265&fecha=22/05/2026",
-      "official_title": "Oficio 700 04 00 00 00 2026-061 mediante el cual se da a conocer el listado de Prestadores de Servicios Digitales Inscritos en el Registro Federal de Contribuyentes, en términos del artículo 18-D, primer párrafo, fracción I, de la Ley del Impuesto al Valor Agregado vigente.",
-      "title": "Oficio 700 04 00 00 00 2026-061 mediante el cual se da",
-      "summary": "Oficio 700 04 00 00 00 2026-061 mediante el cual se da a conocer el listado de Prestadores de Servicios Digitales Inscritos en el Registro Federal de Contribuyentes, en términos.",
-      "published_at": "2026-05-22",
-      "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
-      "document_type": "Oficio 700 04",
-      "categories": [
-        "Fiscal"
-      ],
-      "relevance_score": 3,
-      "ai_generated": false
-    },
-    {
-      "id": "dof:5788268",
-      "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5788268&fecha=22/05/2026",
-      "official_title": "Norma Oficial Mexicana NOM-174-SEMARNAT-2026, Límites máximos permisibles de emisión de contaminantes provenientes del escape de los motores nuevos incorporados o a ser instalados en maquinaria móvil nueva no de carretera, que usan diésel como combustible.",
-      "title": "Norma Oficial Mexicana NOM-174-SEMARNAT-2026, Límites máximos permisibles de emisión de contaminantes provenientes",
-      "summary": "Norma Oficial Mexicana NOM-174-SEMARNAT-2026, Límites máximos permisibles de emisión de contaminantes provenientes del escape de los motores nuevos incorporados o a ser instalados en maquinaria móvil nueva no de carretera.",
-      "published_at": "2026-05-22",
-      "authority": "PODER EJECUTIVO SECRETARIA DE MEDIO AMBIENTE Y RECURSOS NATURALES",
-      "document_type": "Norma Oficial Mexicana",
-      "categories": [
-        "Normalización"
-      ],
-      "relevance_score": 3,
-      "ai_generated": false
-    },
-    {
-      "id": "senado:242264f0bc720092",
-      "source": "Senado",
-      "url": "https://www.senado.gob.mx/66/gaceta_comision_permanente/documento/159320",
-      "official_title": "Proyecto de decreto por el que se reforman y adicionan diversas disposiciones de la Ley General de Vida Silvestre, de la Ley General del Equilibrio Ecológico y la Protección al Ambiente y de la Ley del Impuesto sobre la Renta.",
-      "title": "Reproducción, repoblación, reproducción y traslocación de vida silvestre en áreas naturales protegidas",
-      "summary": "Reproducción, repoblación, reproducción y traslocación de vida silvestre en áreas naturales protegidas participativas. Publicación oficial de Cámara de Diputados, relacionada con Fiscal, Iniciativa. Consulta la fuente íntegra para confirmar su.",
-      "published_at": "2026-05-21",
-      "authority": "Cámara de Diputados",
-      "document_type": "Iniciativa de Ley",
-      "categories": [
-        "Fiscal",
-        "Iniciativa"
-      ],
-      "relevance_score": 8,
-      "ai_generated": false
-    },
-    {
-      "id": "senado:2cf5786abf4e7768",
-      "source": "Senado",
-      "url": "https://www.senado.gob.mx/66/gaceta_comision_permanente/documento/159516",
-      "official_title": "Proyecto de decreto por el que se reforma el artículo 32 Bis, fracciones XXXIX y XLIII de la Ley Orgánica de la Administración Pública Federal y se adicionan a los artículos 7, la fracción XVII Bis; al 10, la fracción XXXIX Bis; al artículo 14, la fracción XIII Bis; y al 68, la fracción VI Bis de la Ley General de Desarrollo Forestal Sustentable.",
-      "title": "Facultar a SEMARNAT para emitir certificados de libre deforestación",
-      "summary": "Facultar a SEMARNAT para emitir certificados de libre deforestación. Publicación oficial de Cámara de Senadores, relacionada con Iniciativa, Derecho administrativo. Consulta la fuente íntegra para confirmar su alcance, fechas de.",
-      "published_at": "2026-05-21",
-      "authority": "Cámara de Senadores",
-      "document_type": "Iniciativa de Ley",
-      "categories": [
-        "Iniciativa",
-        "Derecho administrativo"
-      ],
-      "relevance_score": 8,
-      "ai_generated": false
-    },
-    {
-      "id": "snice:df0255790664064a",
-      "source": "SNICE",
-      "url": "https://www.snice.gob.mx/~oracle/SNICE_DOCS/ACTALICITACION015-2026-LICITACION-ACTUALIDAD_20260521-20260521.pdf",
-      "official_title": "Acta de la LPN No. 015/2026 para asignar el cupo para importar filetes de pescado frescos o refrigerados y congelados establecidos en el acuerdo por el que se da a conocer el cupo para importar con el arancel-cupo establecido, filetes de pescado frescos o refrigerados y congelados.",
-      "title": "21.05.2026 Acta de la LPN No. 015/2026 para asignar el cupo para",
-      "summary": "21.05.2026 Acta de la LPN No. 015/2026 para asignar el cupo para importar filetes de pescado frescos o refrigerados y congelados establecidos en el acuerdo por el que se da.",
-      "published_at": "2026-05-21",
-      "authority": "Secretaría de Economía",
-      "document_type": "Actualidad",
-      "categories": [
-        "Comercio exterior"
-      ],
-      "relevance_score": 2,
-      "ai_generated": false
-    },
-    {
-      "id": "dof:5788109",
-      "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5788109&fecha=21/05/2026",
-      "official_title": "Resolución por la que se acepta la solicitud de parte interesada y se declara el inicio del procedimiento administrativo de investigación antidumping sobre las importaciones de vidrio de espejo originarias de la República Popular China, independientemente del país de procedencia.",
-      "title": "Resolución por la que se acepta la solicitud de parte interesada y",
-      "summary": "Resolución por la que se acepta la solicitud de parte interesada y se declara el inicio del procedimiento administrativo de investigación antidumping sobre las importaciones de vidrio de espejo originarias.",
-      "published_at": "2026-05-21",
-      "authority": "PODER EJECUTIVO SECRETARIA DE ECONOMIA",
-      "document_type": "Resolución Por La",
-      "categories": [
-        "Comercio exterior"
-      ],
-      "relevance_score": 2,
-      "ai_generated": false
-    },
-    {
-      "id": "dof:5788110",
-      "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5788110&fecha=21/05/2026",
-      "official_title": "Resolución por la que se acepta la solicitud de parte interesada y se declara el inicio del procedimiento administrativo de investigación antidumping sobre las importaciones de cintas plásticas autoadhesivas originarias de la República Popular China, independientemente del país de procedencia.",
-      "title": "Resolución por la que se acepta la solicitud de parte interesada y",
-      "summary": "Resolución por la que se acepta la solicitud de parte interesada y se declara el inicio del procedimiento administrativo de investigación antidumping sobre las importaciones de cintas plásticas autoadhesivas originarias.",
-      "published_at": "2026-05-21",
-      "authority": "PODER EJECUTIVO SECRETARIA DE ECONOMIA",
-      "document_type": "Resolución Por La",
-      "categories": [
-        "Comercio exterior"
-      ],
-      "relevance_score": 2,
-      "ai_generated": false
-    },
-    {
-      "id": "dof:5788115",
-      "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5788115&fecha=21/05/2026",
-      "official_title": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a las entidades federativas, municipios y demarcaciones territoriales de la Ciudad de México, que deberán abstenerse de aceptar propuestas y/o celebrar contratos con la persona moral denominada Corporativo Mexicano Revelor, S.A. de C.V.",
-      "title": "Circular por la que se comunica a las dependencias y entidades de",
-      "summary": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a las entidades federativas, municipios y demarcaciones territoriales de la Ciudad de México, que.",
-      "published_at": "2026-05-21",
-      "authority": "PODER EJECUTIVO SECRETARIA ANTICORRUPCION Y BUEN GOBIERNO",
-      "document_type": "Circular Por La",
-      "categories": [
-        "Derecho administrativo"
-      ],
-      "relevance_score": 2,
-      "ai_generated": false
-    },
-    {
-      "id": "dof:5787982",
-      "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5787982&fecha=20/05/2026",
-      "official_title": "Anexos 5, 22 y 29 de la Primera Resolución de Modificaciones a las Reglas Generales de Comercio Exterior para 2026, publicada el 14 de mayo de 2026.",
-      "title": "Anexos 5, 22 y 29 de la Primera Resolución de Modificaciones a",
-      "summary": "Anexos 5, 22 y 29 de la Primera Resolución de Modificaciones a las Reglas Generales de Comercio Exterior para 2026, publicada el 14 de mayo de 2026. Publicación oficial de.",
-      "published_at": "2026-05-20",
-      "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
-      "document_type": "Anexos 5, 22",
-      "categories": [
-        "Aduanero",
-        "Comercio exterior"
-      ],
-      "relevance_score": 4,
-      "ai_generated": false
-    },
-    {
-      "id": "dof:5787984",
-      "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5787984&fecha=20/05/2026",
-      "official_title": "Aviso de consulta pública del Proyecto de Norma Oficial Mexicana PROY-NOM-028-ASEA-2026, Transporte y/o Distribución de Gas Natural Licuado por medio de Semirremolques-Condiciones de seguridad y Operación de recipientes y equipos a bordo.",
-      "title": "Aviso de consulta pública del Proyecto de Norma Oficial Mexicana PROY-NOM-028-ASEA-2026, Transporte",
-      "summary": "Aviso de consulta pública del Proyecto de Norma Oficial Mexicana PROY-NOM-028-ASEA-2026, Transporte y/o Distribución de Gas Natural Licuado por medio de Semirremolques-Condiciones de seguridad y Operación de recipientes y equipos.",
-      "published_at": "2026-05-20",
-      "authority": "PODER EJECUTIVO SECRETARIA DE MEDIO AMBIENTE Y RECURSOS NATURALES",
-      "document_type": "Aviso De Consulta",
-      "categories": [
-        "Normalización"
-      ],
-      "relevance_score": 4,
-      "ai_generated": false
-    },
-    {
-      "id": "dof:5787985",
-      "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5787985&fecha=20/05/2026",
-      "official_title": "Aviso de consulta pública del Proyecto de Norma Oficial Mexicana PROY-NOM-029-ASEA-2026, Transporte de Gas Licuado de Petróleo por medio de Auto-tanque y Semirremolque.",
-      "title": "Aviso de consulta pública del Proyecto de Norma Oficial Mexicana PROY-NOM-029-ASEA-2026, Transporte",
-      "summary": "Aviso de consulta pública del Proyecto de Norma Oficial Mexicana PROY-NOM-029-ASEA-2026, Transporte de Gas Licuado de Petróleo por medio de Auto-tanque y Semirremolque. Publicación oficial de PODER EJECUTIVO SECRETARIA DE.",
-      "published_at": "2026-05-20",
-      "authority": "PODER EJECUTIVO SECRETARIA DE MEDIO AMBIENTE Y RECURSOS NATURALES",
-      "document_type": "Aviso De Consulta",
-      "categories": [
-        "Normalización"
-      ],
-      "relevance_score": 4,
-      "ai_generated": false
-    },
-    {
-      "id": "dof:5788004",
-      "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5788004&fecha=20/05/2026",
-      "official_title": "Aviso mediante el cual se designa a la licenciada María Elena Parra González, Titular de la Jefatura de Servicios Jurídicos como la persona que suplirá las ausencias del doctor Marco Antonio Hernández Carrillo, Titular del Órgano de Operación Administrativa Desconcentrada Estatal Jalisco del Instituto Mexicano del Seguro Social.",
-      "title": "Aviso mediante el cual se designa a la licenciada María Elena Parra",
-      "summary": "Aviso mediante el cual se designa a la licenciada María Elena Parra González, Titular de la Jefatura de Servicios Jurídicos como la persona que suplirá las ausencias del doctor Marco.",
-      "published_at": "2026-05-20",
-      "authority": "ORGANISMOS DESCONCENTRADOS O DESCENTRALIZADOS INSTITUTO MEXICANO DEL SEGURO SOCIAL",
-      "document_type": "Aviso Mediante El",
-      "categories": [
-        "Derecho administrativo",
-        "Nombramientos federales"
-      ],
-      "relevance_score": 4,
-      "ai_generated": false
-    },
-    {
-      "id": "gob.mx apf:770f01b854b50519",
-      "source": "Gob.mx APF",
-      "url": "https://www.gob.mx/sectur/es/articulos/sectur-y-anam-impulsan-plataforma-aduana-facil-para-fortalecer-la-atencion-y-experiencia-de-viajeros-internacionales?idiom=es",
-      "official_title": "Sectur y ANAM impulsan plataforma Aduana Fácil para fortalecer la atención y experiencia de viajeros internacionales",
-      "title": "La secretaria de Turismo del Gobierno de México, Josefina Rodríguez Zamora, y",
-      "summary": "La secretaria de Turismo del Gobierno de México, Josefina Rodríguez Zamora, y el titular de la Agencia Nacional de Aduanas de México, Héctor Alonso Romero Gutiérrez, sostuvieron este miércoles una.",
-      "published_at": "2026-05-20",
-      "authority": "Secretaría de Turismo",
+      "url": "https://www.gob.mx/prodecon/es/articulos/prodecon-te-informa-sobre-una-aplicacion-innovadora-y-eficaz-que-te-permite-consultar-tu-informacion-desde-la-pagina-del-sat?idiom=es",
+      "official_title": "PRODECON te informa sobre una aplicación innovadora y eficaz que te permite consultar tu información desde la página del SAT:",
+      "title": "PRODECON te informa sobre una aplicación innovadora y eficaz que te permite",
+      "summary": "PRODECON te informa sobre una aplicación innovadora y eficaz que te permite consultar tu información desde la página del SAT. Publicación oficial de Portal federal PRODECON, relacionada con Fiscal. Consulta.",
+      "published_at": "2026-06-03",
+      "authority": "Portal federal PRODECON",
       "document_type": "Artículo",
       "categories": [
-        "Aduanero",
-        "Comercio exterior"
-      ],
-      "relevance_score": 3,
-      "ai_generated": false
-    },
-    {
-      "id": "snice:59dadb5c665a05d9",
-      "source": "SNICE",
-      "url": "https://www.snice.gob.mx/~oracle/SNICE_DOCS/AVISOCARPETA-LPN015-2026-LICITACION-ACTUALIDAD_20260520-20260520.pdf",
-      "official_title": "Aviso mediante el que se comunica el listado de carpetas encriptadas recibidas para participar en la LPN No. 015/2026 para asignar el cupo para importar filetes de pescado frescos o refrigerados y congelados establecidos en el acuerdo por el que se da a conocer el cupo para importar con el arancel-cupo establecido, filetes de pescado frescos o refrigerados y congelados.",
-      "title": "20.05.2026 Aviso mediante el que se comunica el listado de carpetas encriptadas",
-      "summary": "20.05.2026 Aviso mediante el que se comunica el listado de carpetas encriptadas recibidas para participar en la LPN No. 015/2026 para asignar el cupo para importar filetes de pescado frescos.",
-      "published_at": "2026-05-20",
-      "authority": "Secretaría de Economía",
-      "document_type": "Actualidad",
-      "categories": [
-        "Comercio exterior"
-      ],
-      "relevance_score": 2,
-      "ai_generated": false
-    },
-    {
-      "id": "dof:5787787",
-      "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5787787&fecha=19/05/2026",
-      "official_title": "Norma Oficial Mexicana NOM-037-SICT2-2026, Barreras de protección en carreteras y vías urbanas.",
-      "title": "Norma Oficial Mexicana NOM-037-SICT2-2026, Barreras de protección en carreteras y vías urbanas",
-      "summary": "Norma Oficial Mexicana NOM-037-SICT2-2026, Barreras de protección en carreteras y vías urbanas. Publicación oficial de PODER EJECUTIVO SECRETARIA DE INFRAESTRUCTURA, COMUNICACIONES Y TRANSPORTES, relacionada con Normalización. Consulta la fuente íntegra.",
-      "published_at": "2026-05-19",
-      "authority": "PODER EJECUTIVO SECRETARIA DE INFRAESTRUCTURA, COMUNICACIONES Y TRANSPORTES",
-      "document_type": "Norma Oficial Mexicana",
-      "categories": [
-        "Normalización"
-      ],
-      "relevance_score": 3,
-      "ai_generated": false
-    },
-    {
-      "id": "dof:5787790",
-      "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5787790&fecha=19/05/2026",
-      "official_title": "Norma Oficial Mexicana NOM-137-SSA1-2025, Etiquetado de dispositivos médicos.",
-      "title": "Norma Oficial Mexicana NOM-137-SSA1-2025, Etiquetado de dispositivos médicos",
-      "summary": "Norma Oficial Mexicana NOM-137-SSA1-2025, Etiquetado de dispositivos médicos. Publicación oficial de PODER EJECUTIVO SECRETARIA DE SALUD, relacionada con Normalización. Consulta la fuente íntegra para confirmar su alcance, fechas de vigencia.",
-      "published_at": "2026-05-19",
-      "authority": "PODER EJECUTIVO SECRETARIA DE SALUD",
-      "document_type": "Norma Oficial Mexicana",
-      "categories": [
-        "Normalización"
-      ],
-      "relevance_score": 3,
-      "ai_generated": false
-    },
-    {
-      "id": "dof:5787885",
-      "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5787885&fecha=19/05/2026",
-      "official_title": "BANCO NACIONAL DE COMERCIO EXTERIOR, S.N.C., I.B.D. - REF:576104",
-      "title": "BANCO NACIONAL DE COMERCIO EXTERIOR, S.N.C., I.B.D. - REF:576104",
-      "summary": "BANCO NACIONAL DE COMERCIO EXTERIOR, S.N.C., I.B.D. - REF:576104. Publicación oficial de CONVOCATORIAS PARA CONCURSOS DE ADQUISICIONES, ARRENDAMIENTOS, OBRAS Y SERVICIOS DEL SECTOR PUBLICO, relacionada con Comercio exterior. Consulta la.",
-      "published_at": "2026-05-19",
-      "authority": "CONVOCATORIAS PARA CONCURSOS DE ADQUISICIONES, ARRENDAMIENTOS, OBRAS Y SERVICIOS DEL SECTOR PUBLICO",
-      "document_type": "Banco Nacional De",
-      "categories": [
-        "Comercio exterior"
-      ],
-      "relevance_score": 2,
-      "ai_generated": false
-    },
-    {
-      "id": "dof:5787704",
-      "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5787704&fecha=18/05/2026",
-      "official_title": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a las empresas públicas del Estado, a la Fiscalía General de la República, a las entidades federativas y sus municipios, así como a las demarcaciones territoriales de la Ciudad de México, que deberán abstenerse de aceptar propuestas o celebrar contratos con la empresa Musa del Pacífico, S.A. de C.V.",
-      "title": "Circular por la que se comunica a las dependencias y entidades de",
-      "summary": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a las empresas públicas del Estado, a la Fiscalía General de la República, a.",
-      "published_at": "2026-05-18",
-      "authority": "PODER EJECUTIVO SECRETARIA ANTICORRUPCION Y BUEN GOBIERNO",
-      "document_type": "Circular Por La",
-      "categories": [
-        "Derecho administrativo"
-      ],
-      "relevance_score": 2,
-      "ai_generated": false
-    },
-    {
-      "id": "dof:5787584",
-      "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5787584&fecha=15/05/2026",
-      "official_title": "Aviso mediante el cual se designa a la Titular de la Jefatura de Servicios Jurídicos para que supla las ausencias de la Dra. Roxana Blanca Rivera Leaños, Titular del Órgano de Operación Administrativa Desconcentrada Estatal Durango del Instituto Mexicano del Seguro Social, autorizándole a firmar y despachar la documentación incluyendo la suscripción de las resoluciones que debe emitir este órgano.",
-      "title": "Aviso mediante el cual se designa a la Titular de la Jefatura",
-      "summary": "Aviso mediante el cual se designa a la Titular de la Jefatura de Servicios Jurídicos para que supla las ausencias de la Dra. Roxana Blanca Rivera Leaños, Titular del Órgano.",
-      "published_at": "2026-05-15",
-      "authority": "ORGANISMOS DESCONCENTRADOS O DESCENTRALIZADOS INSTITUTO MEXICANO DEL SEGURO SOCIAL",
-      "document_type": "Aviso Mediante El",
-      "categories": [
-        "Derecho administrativo",
-        "Nombramientos federales"
-      ],
-      "relevance_score": 4,
-      "ai_generated": false
-    },
-    {
-      "id": "dof:5787562",
-      "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5787562&fecha=15/05/2026",
-      "official_title": "Oficio 500-05-2026-11290 mediante el cual se comunica listado global de presunción de contribuyentes que se ubicaron en el supuesto previsto en el artículo 69-B, párrafo primero del Código Fiscal de la Federación.",
-      "title": "Oficio 500-05-2026-11290 mediante el cual se comunica listado global de presunción de",
-      "summary": "Oficio 500-05-2026-11290 mediante el cual se comunica listado global de presunción de contribuyentes que se ubicaron en el supuesto previsto en el artículo 69-B, párrafo primero del Código Fiscal de.",
-      "published_at": "2026-05-15",
-      "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
-      "document_type": "Oficio 500-05-2026-11290 Mediante",
-      "categories": [
         "Fiscal"
-      ],
-      "relevance_score": 3,
-      "ai_generated": false
-    },
-    {
-      "id": "dof:5787563",
-      "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5787563&fecha=15/05/2026",
-      "official_title": "Oficio 500-05-2026-11341 mediante el cual se comunica listado global definitivo en términos del artículo 69-B, párrafo cuarto del Código Fiscal de la Federación.",
-      "title": "Oficio 500-05-2026-11341 mediante el cual se comunica listado global definitivo en términos",
-      "summary": "Oficio 500-05-2026-11341 mediante el cual se comunica listado global definitivo en términos del artículo 69-B, párrafo cuarto del Código Fiscal de la Federación. Publicación oficial de PODER EJECUTIVO SECRETARIA DE.",
-      "published_at": "2026-05-15",
-      "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
-      "document_type": "Oficio 500-05-2026-11341 Mediante",
-      "categories": [
-        "Fiscal"
-      ],
-      "relevance_score": 3,
-      "ai_generated": false
-    },
-    {
-      "id": "dof:5787564",
-      "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5787564&fecha=15/05/2026",
-      "official_title": "Oficio 500-05-2026-11385 mediante el cual se comunica listado global definitivo en términos del artículo 69-B, párrafo cuarto del Código Fiscal de la Federación.",
-      "title": "Oficio 500-05-2026-11385 mediante el cual se comunica listado global definitivo en términos",
-      "summary": "Oficio 500-05-2026-11385 mediante el cual se comunica listado global definitivo en términos del artículo 69-B, párrafo cuarto del Código Fiscal de la Federación. Publicación oficial de PODER EJECUTIVO SECRETARIA DE.",
-      "published_at": "2026-05-15",
-      "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
-      "document_type": "Oficio 500-05-2026-11385 Mediante",
-      "categories": [
-        "Fiscal"
-      ],
-      "relevance_score": 3,
-      "ai_generated": false
-    },
-    {
-      "id": "dof:5787569",
-      "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5787569&fecha=15/05/2026",
-      "official_title": "Resolución por la que se acepta la solicitud de parte interesada y se declara el inicio del procedimiento administrativo de revisión de la cuota compensatoria impuesta a las importaciones de bicicletas para niños originarias de la República Popular China, independientemente del país de procedencia.",
-      "title": "Resolución por la que se acepta la solicitud de parte interesada y",
-      "summary": "Resolución por la que se acepta la solicitud de parte interesada y se declara el inicio del procedimiento administrativo de revisión de la cuota compensatoria impuesta a las importaciones de.",
-      "published_at": "2026-05-15",
-      "authority": "PODER EJECUTIVO SECRETARIA DE ECONOMIA",
-      "document_type": "Resolución Por La",
-      "categories": [
-        "Comercio exterior"
-      ],
-      "relevance_score": 3,
-      "ai_generated": false
-    },
-    {
-      "id": "dof:5787570",
-      "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5787570&fecha=15/05/2026",
-      "official_title": "Resolución por la que se acepta la solicitud de parte interesada y se declara el inicio del procedimiento administrativo de revisión de la cuota compensatoria impuesta a las importaciones de microalambre para soldar originarias de la República Socialista de Vietnam, independientemente del país de procedencia.",
-      "title": "Resolución por la que se acepta la solicitud de parte interesada y",
-      "summary": "Resolución por la que se acepta la solicitud de parte interesada y se declara el inicio del procedimiento administrativo de revisión de la cuota compensatoria impuesta a las importaciones de.",
-      "published_at": "2026-05-15",
-      "authority": "PODER EJECUTIVO SECRETARIA DE ECONOMIA",
-      "document_type": "Resolución Por La",
-      "categories": [
-        "Comercio exterior"
-      ],
-      "relevance_score": 3,
-      "ai_generated": false
-    },
-    {
-      "id": "dof:5787425",
-      "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5787425&fecha=14/05/2026",
-      "official_title": "Primera Resolución de Modificaciones a las Reglas Generales de Comercio Exterior para 2026.",
-      "title": "Primera Resolución de Modificaciones a las Reglas Generales de Comercio Exterior para",
-      "summary": "Primera Resolución de Modificaciones a las Reglas Generales de Comercio Exterior para 2026. Publicación oficial de PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO, relacionada con Aduanero, Comercio exterior. Consulta.",
-      "published_at": "2026-05-14",
-      "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
-      "document_type": "Primera Resolución De",
-      "categories": [
-        "Aduanero",
-        "Comercio exterior"
-      ],
-      "relevance_score": 4,
-      "ai_generated": false
-    },
-    {
-      "id": "dof:5787430",
-      "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5787430&fecha=14/05/2026",
-      "official_title": "Proyecto de Modificación a la Norma Oficial Mexicana NOM- 001-CONAGUA-2011, Sistemas de agua potable, toma domiciliaria y alcantarillado sanitario- Hermeticidad-Especificaciones y métodos de prueba.",
-      "title": "Proyecto de Modificación a la Norma Oficial Mexicana NOM- 001-CONAGUA-2011, Sistemas de",
-      "summary": "Proyecto de Modificación a la Norma Oficial Mexicana NOM- 001-CONAGUA-2011, Sistemas de agua potable, toma domiciliaria y alcantarillado sanitario- Hermeticidad-Especificaciones y métodos de prueba. Publicación oficial de PODER EJECUTIVO SECRETARIA.",
-      "published_at": "2026-05-14",
-      "authority": "PODER EJECUTIVO SECRETARIA DE MEDIO AMBIENTE Y RECURSOS NATURALES",
-      "document_type": "Proyecto De Modificación",
-      "categories": [
-        "Normalización"
-      ],
-      "relevance_score": 3,
-      "ai_generated": false
-    },
-    {
-      "id": "dof:5787418",
-      "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5787418&fecha=14/05/2026",
-      "official_title": "Decreto por el que se reforman y adicionan diversas disposiciones de la Ley Federal del Trabajo y de la Ley Federal del Derecho de Autor, en materia de derechos de las personas trabajadoras artistas intérpretes o ejecutantes.",
-      "title": "Decreto por el que se reforman y adicionan diversas disposiciones de la",
-      "summary": "Decreto por el que se reforman y adicionan diversas disposiciones de la Ley Federal del Trabajo y de la Ley Federal del Derecho de Autor, en materia de derechos de.",
-      "published_at": "2026-05-14",
-      "authority": "PODER EJECUTIVO PRESIDENCIA DE LA REPUBLICA",
-      "document_type": "Decreto Por El",
-      "categories": [
-        "Propiedad intelectual"
-      ],
-      "relevance_score": 2,
-      "ai_generated": false
-    },
-    {
-      "id": "dof:5787428",
-      "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5787428&fecha=14/05/2026",
-      "official_title": "Resolución que modifica el Acuerdo por el que se adscriben orgánicamente las unidades administrativas de la Comisión Nacional Bancaria y de Valores.",
-      "title": "Resolución que modifica el Acuerdo por el que se adscriben orgánicamente las",
-      "summary": "Resolución que modifica el Acuerdo por el que se adscriben orgánicamente las unidades administrativas de la Comisión Nacional Bancaria y de Valores. Publicación oficial de PODER EJECUTIVO SECRETARIA DE HACIENDA.",
-      "published_at": "2026-05-14",
-      "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
-      "document_type": "Resolución Que Modifica",
-      "categories": [
-        "Derecho administrativo"
-      ],
-      "relevance_score": 2,
-      "ai_generated": false
-    },
-    {
-      "id": "senado:3c6cde6cef7d8340",
-      "source": "Senado",
-      "url": "https://www.senado.gob.mx/66/gaceta_comision_permanente/documento/159228",
-      "official_title": "Proyecto de decreto por el que se adiciona una fracción IX al artículo 151 de la Ley del Impuesto Sobre la Renta.",
-      "title": "Se adiciona una fracción IX al artículo 151 de la Ley del",
-      "summary": "Impuesto Sobre la Renta. Publicación oficial de Cámara de Diputados, relacionada con Fiscal, Iniciativa. Consulta la fuente íntegra para confirmar su alcance, fechas de vigencia, obligaciones, requisitos, excepciones, autoridades responsables.",
-      "published_at": "2026-05-13",
-      "authority": "Cámara de Diputados",
-      "document_type": "Iniciativa de Ley",
-      "categories": [
-        "Fiscal",
-        "Iniciativa"
-      ],
-      "relevance_score": 8,
-      "ai_generated": false
-    },
-    {
-      "id": "senado:13d16e2ad73a1daf",
-      "source": "Senado",
-      "url": "https://www.senado.gob.mx/66/gaceta_comision_permanente/documento/159047",
-      "official_title": "Proyecto de decreto por el que se reforman diversos artículos de la Ley del impuesto Sobre la Renta.",
-      "title": "Tarifa preferencial del impuesto sobre la renta para madres solteras y madres",
-      "summary": "Tarifa preferencial del impuesto sobre la renta para madres solteras y madres cuidadoras. Publicación oficial de Cámara de Senadores, relacionada con Fiscal, Iniciativa. Consulta la fuente íntegra para confirmar su.",
-      "published_at": "2026-05-13",
-      "authority": "Cámara de Senadores",
-      "document_type": "Iniciativa de Ley",
-      "categories": [
-        "Fiscal",
-        "Iniciativa"
-      ],
-      "relevance_score": 8,
-      "ai_generated": false
-    },
-    {
-      "id": "snice:8bdf4374e92a601d",
-      "source": "SNICE",
-      "url": "https://www.snice.gob.mx/~oracle/SNICE_DOCS/CONSTANCIAS-015-2026-LICITACION-ACTUALIDAD_20260513-20260513.pdf",
-      "official_title": "Aviso mediante el que se comunica el listado de las constancias de calificación emitidas por la unidad de apoyo jurídico para participar en la LPN No. 015/2026 para asignar el cupo para importar filetes de pescado frescos o refrigerados y congelados establecido en el Acuerdo por el que se da a conocer el cupo para importar con el Arancel-Cupo establecido, filetes de pescado frescos o refrigerados y congelados.",
-      "title": "13.05.2026 Aviso mediante el que se comunica el listado de las constancias",
-      "summary": "13.05.2026 Aviso mediante el que se comunica el listado de las constancias de calificación emitidas por la unidad de apoyo jurídico para participar en la LPN No. 015/2026 para asignar.",
-      "published_at": "2026-05-13",
-      "authority": "Secretaría de Economía",
-      "document_type": "Actualidad",
-      "categories": [
-        "Comercio exterior"
-      ],
-      "relevance_score": 2,
-      "ai_generated": false
-    },
-    {
-      "id": "gob.mx apf:593f6dd143444377",
-      "source": "Gob.mx APF",
-      "url": "https://www.gob.mx/buengobierno/prensa/violar-la-ley-tiene-consecuencias-buen-gobierno-logra-inhabilitaciones-de-hasta-por-10-anos-a-servidores-publicos-del-sat-y-banbien?idiom=es",
-      "official_title": "​​​​​​​Violar la ley tiene consecuencias: Buen Gobierno logra inhabilitaciones de hasta por 10 años a servidores públicos del SAT y BANBIEN",
-      "title": "Comunicado no. 046 Ciudad de México, 13 de mayo de 2026 Las",
-      "summary": "Comunicado no. 046 Ciudad de México, 13 de mayo de 2026 Las investigaciones realizadas por los Órganos Internos de Control (OIC) en el Servicio de Administración Tributaria (SAT) y en.",
-      "published_at": "2026-05-13",
-      "authority": "Secretaría Anticorrupción y Buen Gobierno",
-      "document_type": "Comunicado",
-      "categories": [
-        "Fiscal"
-      ],
-      "relevance_score": 2,
-      "ai_generated": false
-    },
-    {
-      "id": "dof:5787304",
-      "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5787304&fecha=13/05/2026",
-      "official_title": "Acuerdo de la Secretaría de Energía por el que se delegan facultades a diversas áreas de la Dirección General de Impacto Social, Consulta Previa y Ocupación Superficial.",
-      "title": "Acuerdo de la Secretaría de Energía por el que se delegan facultades",
-      "summary": "Acuerdo de la Secretaría de Energía por el que se delegan facultades a diversas áreas de la Dirección General de Impacto Social, Consulta Previa y Ocupación Superficial. Publicación oficial de.",
-      "published_at": "2026-05-13",
-      "authority": "PODER EJECUTIVO SECRETARIA DE ENERGIA",
-      "document_type": "Acuerdo De La",
-      "categories": [
-        "Derecho administrativo"
-      ],
-      "relevance_score": 2,
-      "ai_generated": false
-    },
-    {
-      "id": "dof:5787312",
-      "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5787312&fecha=13/05/2026",
-      "official_title": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a las empresas públicas del Estado, a la Fiscalía General de la República, a las entidades federativas y sus municipios, así como a las demarcaciones territoriales de la Ciudad de México, que deberán abstenerse de aceptar propuestas o celebrar contratos con la empresa Puerta del Sol Capital, S.A. de C.V.",
-      "title": "Circular por la que se comunica a las dependencias y entidades de",
-      "summary": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a las empresas públicas del Estado, a la Fiscalía General de la República, a.",
-      "published_at": "2026-05-13",
-      "authority": "PODER EJECUTIVO SECRETARIA ANTICORRUPCION Y BUEN GOBIERNO",
-      "document_type": "Circular Por La",
-      "categories": [
-        "Derecho administrativo"
-      ],
-      "relevance_score": 2,
-      "ai_generated": false
-    },
-    {
-      "id": "snice:100a386b794259d6",
-      "source": "SNICE",
-      "url": "https://www.snice.gob.mx/~oracle/SNICE_DOCS/BASESLPN_15-LICITACION-ACTUALIDAD_20260512-20260512.pdf",
-      "official_title": "Bases para participar en la LPN No. 015/2026 para importar filetes de pescado frescos o refrigerados y congelados establecidos en el Acuerdo por el que se da a conocer el cupo para importar con el arancel-cupo establecido, filetes de pescado frescos o refrigerados y congelados.",
-      "title": "12.05.2026 Bases para participar en la LPN No. 015/2026 para importar filetes",
-      "summary": "12.05.2026 Bases para participar en la LPN No. 015/2026 para importar filetes de pescado frescos o refrigerados y congelados establecidos en el Acuerdo por el que se da a conocer.",
-      "published_at": "2026-05-12",
-      "authority": "Secretaría de Economía",
-      "document_type": "Actualidad",
-      "categories": [
-        "Comercio exterior"
-      ],
-      "relevance_score": 2,
-      "ai_generated": false
-    },
-    {
-      "id": "dof:5787025",
-      "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5787025&fecha=11/05/2026",
-      "official_title": "Acuerdo por el que se da aviso del cambio de domicilio de las unidades administrativas y de la Unidad de Transparencia del Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública.",
-      "title": "Acuerdo por el que se da aviso del cambio de domicilio de",
-      "summary": "Acuerdo por el que se da aviso del cambio de domicilio de las unidades administrativas y de la Unidad de Transparencia del Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública.",
-      "published_at": "2026-05-11",
-      "authority": "PODER EJECUTIVO SECRETARIA DE SEGURIDAD Y PROTECCION CIUDADANA",
-      "document_type": "Acuerdo Por El",
-      "categories": [
-        "Derecho administrativo"
       ],
       "relevance_score": 2,
       "ai_generated": false
