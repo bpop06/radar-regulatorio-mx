@@ -44,9 +44,12 @@ class Publication:
     id: str
     source: str
     url: str
+    detail_url: str
     official_title: str
     title: str
     summary: str
+    description: str
+    detail_markdown: str
     published_at: str
     authority: str
     document_type: str
@@ -65,6 +68,7 @@ class SourceResult:
     source: str
     candidates: list[Candidate] = field(default_factory=list)
     error: str | None = None
+    attempts: int = 1
 
     def status_dict(self) -> dict[str, object]:
         return {
@@ -72,5 +76,5 @@ class SourceResult:
             "status": "error" if self.error else "ok",
             "items_found": len(self.candidates),
             "error": self.error,
+            "attempts": self.attempts,
         }
-
