@@ -85,6 +85,15 @@ fi
 
 git add docs/data/publications.json
 git commit -m "chore: refresh regulatory data"
+
+# Si el remoto avanzó desde el pull inicial, rebasar antes de empujar; un
+# rebase fallido no debe dejar el repo a medio rebase para la corrida
+# siguiente.
+if ! git pull --rebase origin main; then
+  git rebase --abort 2>/dev/null || true
+  echo "error: could not rebase onto origin/main; leaving local commit unpushed"
+  exit 1
+fi
 git push origin main
 
 echo "[$(date -u '+%Y-%m-%dT%H:%M:%SZ')] collection completed"

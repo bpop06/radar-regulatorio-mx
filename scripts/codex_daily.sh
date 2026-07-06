@@ -64,6 +64,9 @@ run_fallback() {
   if [[ -n "$(git status --porcelain)" ]]; then
     echo "warning: working tree has leftover changes from the codex run"
   fi
+  # Si el agente dejó el repo en una rama codex/fix-*, volver a main para que
+  # el recolector de respaldo sí pueda publicar el día.
+  git checkout main 2>/dev/null || true
   "$ROOT/scripts/collect_daily.sh"
 }
 

@@ -15,12 +15,25 @@ LOG_DIR="$ROOT/logs"
 RUN_HOUR="${RADAR_RUN_HOUR:-9}"
 RUN_MINUTE="${RADAR_RUN_MINUTE:-30}"
 
-if ! [[ "$RUN_HOUR" =~ ^[0-9]+$ ]] || [[ "$RUN_HOUR" -lt 0 ]] || [[ "$RUN_HOUR" -gt 23 ]]; then
+# Validar como dígitos y normalizar a base 10 ANTES de comparar rangos: con
+# cero a la izquierda (08, 09) la aritmética de bash y printf los tratarían
+# como octal inválido.
+if ! [[ "$RUN_HOUR" =~ ^[0-9]+$ ]]; then
+  echo "error: RADAR_RUN_HOUR must be an integer between 0 and 23 (got '$RUN_HOUR')" >&2
+  exit 1
+fi
+RUN_HOUR=$((10#$RUN_HOUR))
+if [[ "$RUN_HOUR" -gt 23 ]]; then
   echo "error: RADAR_RUN_HOUR must be an integer between 0 and 23 (got '$RUN_HOUR')" >&2
   exit 1
 fi
 
-if ! [[ "$RUN_MINUTE" =~ ^[0-9]+$ ]] || [[ "$RUN_MINUTE" -lt 0 ]] || [[ "$RUN_MINUTE" -gt 59 ]]; then
+if ! [[ "$RUN_MINUTE" =~ ^[0-9]+$ ]]; then
+  echo "error: RADAR_RUN_MINUTE must be an integer between 0 and 59 (got '$RUN_MINUTE')" >&2
+  exit 1
+fi
+RUN_MINUTE=$((10#$RUN_MINUTE))
+if [[ "$RUN_MINUTE" -gt 59 ]]; then
   echo "error: RADAR_RUN_MINUTE must be an integer between 0 and 59 (got '$RUN_MINUTE')" >&2
   exit 1
 fi

@@ -85,7 +85,11 @@ if ! command -v codex >/dev/null 2>&1; then
   log "codex no está en PATH"
   if command -v npm >/dev/null 2>&1; then
     log "instalando codex con npm install -g @openai/codex"
-    npm install -g @openai/codex
+    if ! npm install -g @openai/codex; then
+      echo "error: npm install -g @openai/codex falló (típicamente permisos EACCES)." >&2
+      echo "Instálalo manualmente con: brew install --cask codex" >&2
+      exit 1
+    fi
   else
     echo "error: no se encontró npm para instalar codex automáticamente." >&2
     echo "Instálalo con: brew install --cask codex" >&2
@@ -133,8 +137,10 @@ log "instalando el LaunchAgent de codex (scripts/install_macos_codex_launchd.sh)
 chmod +x "$ROOT/scripts/install_macos_codex_launchd.sh" "$ROOT/scripts/codex_daily.sh" "$ROOT/scripts/collect_daily.sh"
 "$ROOT/scripts/install_macos_codex_launchd.sh"
 
-RUN_HOUR="${RADAR_RUN_HOUR:-9}"
-RUN_MINUTE="${RADAR_RUN_MINUTE:-30}"
+# El instalador ya validó estos valores (salió con error si eran inválidos);
+# se normalizan a base 10 para que printf no trate 08/09 como octal.
+RUN_HOUR=$((10#${RADAR_RUN_HOUR:-9}))
+RUN_MINUTE=$((10#${RADAR_RUN_MINUTE:-30}))
 
 # --- Paso 7: primera corrida opcional ---------------------------------------
 
