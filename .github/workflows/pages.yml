@@ -19,6 +19,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -30,8 +31,14 @@ jobs:
       - name: Collect official publications
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-5.5' }}
+          OPENAI_MODEL: gpt-5.5
+          LOCAL_TIMEZONE: America/Mexico_City
+          REQUEST_TIMEOUT_SECONDS: "45"
+          SOURCE_RETRIES: "3"
+          SOURCE_RETRY_BACKOFF_SECONDS: "1.5"
         run: python -m app.cli collect --output site/data/publications.json --days 31
+      - name: Validate generated data
+        run: python -m app.cli validate --input site/data/publications.json
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

@@ -78,6 +78,11 @@ a {
   content: "";
 }
 
+.detail-header {
+  color: #f9f7ef;
+  background: linear-gradient(125deg, #0e261e 0%, #103f31 68%, #0d5c43 100%);
+}
+
 .nav {
   position: relative;
   z-index: 1;
@@ -125,24 +130,26 @@ a {
   color: var(--gold);
   font-size: 0.74rem;
   font-weight: 700;
-  letter-spacing: 0.14em;
+  letter-spacing: 0;
   text-transform: uppercase;
 }
 
 .hero h1,
 .section-heading h2,
 .sources h2,
-.empty-state h2 {
+.empty-state h2,
+.markdown-body h1,
+.markdown-body h2 {
   margin: 0;
   font-family: "Newsreader", serif;
   font-weight: 600;
-  line-height: 0.98;
+  letter-spacing: 0;
 }
 
 .hero h1 {
   max-width: 880px;
-  font-size: clamp(3.2rem, 7vw, 6.2rem);
-  letter-spacing: -0.045em;
+  font-size: 5.8rem;
+  line-height: 0.98;
 }
 
 .hero h1 span {
@@ -232,7 +239,7 @@ main {
   color: var(--muted);
   font-size: 0.74rem;
   font-weight: 700;
-  letter-spacing: 0.04em;
+  letter-spacing: 0;
   text-transform: uppercase;
 }
 
@@ -303,8 +310,8 @@ main {
 .section-heading h2,
 .sources h2,
 .empty-state h2 {
-  font-size: clamp(2.4rem, 5vw, 4rem);
-  letter-spacing: -0.035em;
+  font-size: 3.8rem;
+  line-height: 0.98;
 }
 
 .feed-note {
@@ -332,19 +339,23 @@ main {
 
 .news-list {
   display: grid;
-  gap: 14px;
+  gap: 10px;
 }
 
 .news-card,
 .loading-card {
-  padding: 30px;
+  padding: 22px 24px;
   background: var(--surface);
   border: 1px solid var(--line);
-  border-radius: 14px;
+  border-radius: 8px;
   transition:
     border-color 160ms ease,
     transform 160ms ease,
     box-shadow 160ms ease;
+}
+
+.news-card {
+  cursor: pointer;
 }
 
 .news-card:hover {
@@ -353,10 +364,20 @@ main {
   box-shadow: 0 16px 36px rgba(19, 35, 29, 0.07);
 }
 
+.news-card:focus-visible {
+  border-color: var(--green);
+  outline: 3px solid rgba(13, 92, 67, 0.2);
+  outline-offset: 3px;
+}
+
 .card-topline,
-.card-footer {
+.card-footer,
+.card-meta {
   display: flex;
   align-items: center;
+}
+
+.card-topline {
   justify-content: space-between;
 }
 
@@ -373,7 +394,7 @@ main {
   border-radius: 5px;
   font-size: 0.7rem;
   font-weight: 700;
-  letter-spacing: 0.04em;
+  letter-spacing: 0;
   text-transform: uppercase;
 }
 
@@ -383,54 +404,43 @@ main {
 }
 
 .news-card h3 {
-  max-width: 850px;
-  margin: 24px 0 12px;
-  font-family: "Newsreader", serif;
-  font-size: clamp(1.7rem, 3vw, 2.35rem);
-  font-weight: 600;
-  line-height: 1.08;
-  letter-spacing: -0.025em;
-}
-
-.summary {
-  max-width: 860px;
-  margin: 0;
-  color: #394841;
-  font-size: 1.02rem;
-}
-
-.official-title {
   max-width: 900px;
-  margin-top: 18px;
-  padding-left: 14px;
+  margin: 18px 0 12px;
+  font-family: "Newsreader", serif;
+  font-size: 1.48rem;
+  font-weight: 600;
+  line-height: 1.16;
+  letter-spacing: 0;
+}
+
+.card-meta {
+  flex-wrap: wrap;
+  gap: 8px 12px;
   color: var(--muted);
-  border-left: 2px solid #d8b56e;
-  font-size: 0.78rem;
+  font-size: 0.8rem;
 }
 
-.card-footer {
-  gap: 22px;
-  margin-top: 26px;
-  padding-top: 18px;
-  border-top: 1px solid #e6e3da;
-}
-
-.card-footer > div {
-  display: flex;
-  gap: 10px;
-  align-items: center;
+.card-meta span:not(:last-child)::after {
+  margin-left: 12px;
+  color: #b8b5aa;
+  content: "/";
 }
 
 .source-name {
+  color: var(--ink);
   font-weight: 700;
 }
 
-.authority {
-  color: var(--muted);
-  font-size: 0.78rem;
+.card-footer {
+  gap: 14px;
+  justify-content: flex-start;
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid #e6e3da;
 }
 
-.card-footer a {
+.card-footer a,
+.detail-actions a {
   display: flex;
   gap: 6px;
   align-items: center;
@@ -440,7 +450,15 @@ main {
   text-decoration: none;
 }
 
-.card-footer svg {
+.card-footer a:hover,
+.detail-actions a:hover,
+.markdown-body a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.card-footer svg,
+.detail-actions svg {
   width: 17px;
   fill: none;
   stroke: currentcolor;
@@ -551,6 +569,69 @@ main {
   font-size: 0.75rem;
 }
 
+.detail-main {
+  padding: 58px 0 84px;
+}
+
+.detail-card {
+  padding: 52px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.markdown-body {
+  max-width: 860px;
+}
+
+.markdown-body h1 {
+  font-size: 3.4rem;
+  line-height: 1;
+}
+
+.markdown-body h2 {
+  margin-top: 42px;
+  padding-top: 24px;
+  border-top: 1px solid #e6e3da;
+  font-size: 1.65rem;
+  line-height: 1.12;
+}
+
+.markdown-body p,
+.markdown-body li {
+  color: #34433c;
+  font-size: 1.02rem;
+  line-height: 1.72;
+}
+
+.markdown-body p {
+  margin: 18px 0 0;
+}
+
+.markdown-body ul {
+  margin: 18px 0 0;
+  padding-left: 22px;
+}
+
+.markdown-body strong {
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.markdown-body a {
+  color: var(--green);
+  font-weight: 700;
+}
+
+.detail-actions {
+  display: flex;
+  gap: 16px;
+  margin-top: 42px;
+  padding-top: 18px;
+  border-top: 1px solid #e6e3da;
+}
+
 footer {
   padding: 30px 0;
   color: rgba(255, 255, 255, 0.65);
@@ -572,6 +653,10 @@ footer {
     min-height: auto;
   }
 
+  .hero h1 {
+    font-size: 4.2rem;
+  }
+
   .hero-content {
     padding: 58px 0 92px;
   }
@@ -591,12 +676,22 @@ footer {
     flex-direction: column;
   }
 
+  .section-heading h2,
+  .sources h2,
+  .empty-state h2 {
+    font-size: 3rem;
+  }
+
   .sources {
     gap: 34px;
   }
 
   .filter-controls {
     grid-template-columns: 1fr;
+  }
+
+  .markdown-body h1 {
+    font-size: 2.6rem;
   }
 }
 
@@ -619,7 +714,8 @@ footer {
 
   .hero-meta,
   .card-footer,
-  .footer-content {
+  .footer-content,
+  .detail-actions {
     align-items: flex-start;
     flex-direction: column;
   }
@@ -633,7 +729,11 @@ footer {
   }
 
   .news-card {
-    padding: 22px;
+    padding: 20px;
+  }
+
+  .news-card h3 {
+    font-size: 1.32rem;
   }
 
   .card-topline {
@@ -642,9 +742,31 @@ footer {
     flex-direction: column-reverse;
   }
 
-  .card-footer > div {
+  .card-meta {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .card-meta span:not(:last-child)::after {
+    content: "";
+    margin-left: 0;
+  }
+
+  .detail-main {
+    padding: 34px 0 64px;
+  }
+
+  .detail-card {
+    padding: 24px 20px;
+  }
+
+  .markdown-body h1 {
+    font-size: 2.05rem;
+  }
+
+  .markdown-body h2 {
+    margin-top: 32px;
+    font-size: 1.35rem;
   }
 
   .source-grid {
