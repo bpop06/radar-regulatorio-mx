@@ -67,7 +67,9 @@ def _print_source_status(payload: dict[str, Any]) -> None:
         name = source.get("source", "Fuente desconocida")
         status = source.get("status", "desconocido")
         attempts = source.get("attempts")
-        attempts_text = f", {attempts} intentos" if isinstance(attempts, int) and attempts > 1 else ""
+        attempts_text = (
+            f", {attempts} intentos" if isinstance(attempts, int) and attempts > 1 else ""
+        )
         if status == "ok":
             print(
                 f"Fuente {name}: {source.get('items_found', 0)} registros revisados{attempts_text}",
