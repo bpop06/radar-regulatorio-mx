@@ -67,6 +67,10 @@ function normalize(value) {
     .toLowerCase();
 }
 
+function detailUrlFor(item) {
+  return item.detail_url || `ficha.html?id=${encodeURIComponent(item.id)}`;
+}
+
 function renderFilters() {
   elements.filters.replaceChildren();
   const allButton = document.createElement("button");
@@ -132,6 +136,8 @@ function filteredItems() {
         item.title,
         item.summary,
         item.official_title,
+        item.description,
+        item.detail_markdown,
         item.source,
         item.authority,
         item.document_type,
@@ -167,7 +173,7 @@ function renderItems() {
   elements.feedNote.textContent =
     items.length === 0
       ? "Ajusta búsqueda, materia, fuente o periodo para ampliar resultados."
-      : `${items.length} coincidencias listas para revisar y abrir en fuente oficial.`;
+      : `${items.length} coincidencias listas para revisar en fichas breves.`;
 
   if (items.length === 0) {
     const hasData = state.items.length !== 0;
@@ -181,6 +187,7 @@ function renderItems() {
     const fragment = elements.template.content.cloneNode(true);
     const card = fragment.querySelector(".news-card");
     const badges = fragment.querySelector(".badges");
+    const detailUrl = detailUrlFor(item);
 
     for (const category of item.categories.slice(0, 3)) {
       const badge = document.createElement("span");
@@ -193,16 +200,23 @@ function renderItems() {
     time.dateTime = item.published_at;
     time.textContent = dateFormatter.format(new Date(`${item.published_at}T00:00:00Z`));
     fragment.querySelector("h3").textContent = item.title;
-    fragment.querySelector(".summary").textContent = item.summary;
-    fragment.querySelector(".official-title").textContent =
-      `Título oficial: ${item.official_title}`;
     fragment.querySelector(".source-name").textContent = item.source;
-    fragment.querySelector(".authority").textContent = item.authority;
+    fragment.querySelector(".authority").textContent = item.authority || "Autoridad no identificada";
+    fragment.querySelector(".document-type").textContent = item.document_type || "Documento oficial";
 
-    const link = fragment.querySelector(".card-footer a");
-    link.href = item.url;
-    link.setAttribute("aria-label", `Ver fuente oficial: ${item.official_title}`);
+    const detailLink = fragment.querySelector(".detail-link");
+    detailLink.href = detailUrl;
+    detailLink.setAttribute("aria-label", `Ver ficha: ${item.title}`);
+
+    const sourceLink = fragment.querySelector(".source-link-card");
+    sourceLink.href = item.url;
+    sourceLink.setAttribute("aria-label", `Ver fuente oficial: ${item.official_title}`);
+
     card.dataset.id = item.id;
+    card.dataset.detailUrl = detailUrl;
+    card.tabIndex = 0;
+    card.setAttribute("role", "link");
+    card.setAttribute("aria-label", `Abrir ficha: ${item.title}`);
     elements.list.append(fragment);
   }
 }
@@ -222,6 +236,8 @@ function renderSources() {
       : `Actualización parcial: ${failed.map((source) => source.source).join(", ")} no respondió.`;
 
   for (const source of state.sources) {
+    const attempts = Number(source.attempts || 1);
+    const retryText = attempts > 1 ? ` (${attempts} intentos)` : "";
     const container = document.createElement("div");
     container.className = "source-status";
     const dot = document.createElement("span");
@@ -234,8 +250,8 @@ function renderSources() {
     const detail = document.createElement("span");
     detail.textContent =
       source.status === "ok"
-        ? `${source.items_found} registros revisados`
-        : source.error || "Consulta temporalmente no disponible";
+        ? `${source.items_found} registros revisados${retryText}`
+        : `${source.error || "Consulta temporalmente no disponible"}${retryText}`;
     copy.append(name, detail);
     container.append(dot, copy);
     elements.sources.append(container);
@@ -243,6 +259,23 @@ function renderSources() {
 }
 
 function bindControls() {
+  elements.list.addEventListener("click", (event) => {
+    const target = event.target;
+    if (!(target instanceof Element)) return;
+    if (target.closest("a")) return;
+    const card = target.closest(".news-card");
+    if (!card?.dataset.detailUrl) return;
+    window.location.href = card.dataset.detailUrl;
+  });
+  elements.list.addEventListener("keydown", (event) => {
+    if (event.key !== "Enter" && event.key !== " ") return;
+    const target = event.target;
+    if (!(target instanceof Element)) return;
+    const card = target.closest(".news-card");
+    if (!card?.dataset.detailUrl) return;
+    event.preventDefault();
+    window.location.href = card.dataset.detailUrl;
+  });
   elements.filters.addEventListener("click", (event) => {
     const button = event.target.closest("button[data-category]");
     if (!button) return;
