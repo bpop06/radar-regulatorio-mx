@@ -43,10 +43,10 @@ export REQUEST_TIMEOUT_SECONDS="${REQUEST_TIMEOUT_SECONDS:-45}"
 export SOURCE_RETRIES="${SOURCE_RETRIES:-3}"
 export SOURCE_RETRY_BACKOFF_SECONDS="${SOURCE_RETRY_BACKOFF_SECONDS:-1.5}"
 
-"$PY" -m app.cli collect --output site/data/publications.json --days "$LOOKBACK_DAYS"
-"$PY" -m app.cli validate --input site/data/publications.json
+"$PY" -m app.cli collect --output docs/data/publications.json --days "$LOOKBACK_DAYS"
+"$PY" -m app.cli validate --input docs/data/publications.json
 
-if git diff --quiet -- site/data/publications.json; then
+if git diff --quiet -- docs/data/publications.json; then
   echo "no publication data changes"
   exit 0
 fi
@@ -59,7 +59,7 @@ if ! git config user.email >/dev/null; then
   git config user.email "140567647+bpop06@users.noreply.github.com"
 fi
 
-git add site/data/publications.json
+git add docs/data/publications.json
 git commit -m "chore: refresh regulatory data"
 git push origin main
 

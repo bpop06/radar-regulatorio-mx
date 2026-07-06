@@ -38,8 +38,8 @@ La auditoría técnica está en [`docs/SOURCE_AUDIT.md`](docs/SOURCE_AUDIT.md).
 python -m venv .venv
 source .venv/bin/activate
 python -m pip install -e ".[dev]"
-python -m app.cli collect --output site/data/publications.json
-python -m http.server 8000 --directory site
+python -m app.cli collect --output docs/data/publications.json
+python -m http.server 8000 --directory docs
 ```
 
 Abrir `http://localhost:8000`.
@@ -50,12 +50,30 @@ resultado a 30 palabras.
 
 ## Automatización
 
-La recolección diaria está preparada para ejecutarse desde la Mac con launchd,
-porque GitHub Actions puede quedar bloqueado antes de arrancar runners en este
-repositorio. Consulta [`docs/MAC_SCHEDULE.md`](docs/MAC_SCHEDULE.md).
+La actualización diaria corre desde la Mac con launchd mediante el agente
+Codex: la skill [`radar-diario`](.agents/skills/radar-diario/SKILL.md) recolecta
+las fuentes, valida, investiga incidencias y publica. La instalación en la Mac
+y la modalidad sin agente están en [`docs/MAC_SCHEDULE.md`](docs/MAC_SCHEDULE.md).
 
-Los workflows de GitHub quedan disponibles sólo para ejecución manual mientras
-se resuelve la capacidad/configuración de Actions de la cuenta.
+GitHub Actions de esta cuenta falla con `startup_failure` antes de crear jobs,
+por lo que los workflows quedan sólo como respaldo manual mientras eso se
+resuelve con GitHub.
+
+## Publicación en GitHub Pages
+
+El sitio es la carpeta [`docs/`](docs/) y se sirve con GitHub Pages en modo
+"Deploy from a branch", que no depende de los runners de Actions. Activación
+(una sola vez, desde la web de GitHub):
+
+1. El repositorio debe ser público para usar Pages en el plan gratuito
+   (Settings → General → Danger Zone → Change visibility), o bien la cuenta
+   debe tener GitHub Pro para publicarlo desde un repo privado.
+2. Settings → Pages → Build and deployment → Source: **Deploy from a branch**.
+3. Branch: **main**, carpeta **/docs** → Save.
+
+La página queda en `https://bpop06.github.io/radar-regulatorio-mx/` y se
+actualiza sola con cada push a `main` que toque `docs/` (es lo que hace la
+tarea diaria de la Mac al publicar `docs/data/publications.json`).
 
 ## Git
 
