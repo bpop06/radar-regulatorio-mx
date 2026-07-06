@@ -80,10 +80,15 @@ ejecuta todos los días a las 09:30 (hora local de la Mac) el script
 `scripts/codex_daily.sh`:
 
 1. Actualiza `main` (`git pull --ff-only`).
-2. Corre `codex exec` con la skill `$radar-diario` en sandbox
-   `workspace-write` con red habilitada.
-3. Si Codex no está instalado o su corrida falla, cae automáticamente al
-   recolector directo (`scripts/collect_daily.sh`) para no perder el día.
+2. **Publica de forma determinista:** corre `scripts/collect_daily.sh`, que
+   recolecta, valida y commitea **únicamente** `docs/data/publications.json` a
+   `main`. Es el único componente con permiso de publicar y no depende del
+   agente, así que el día se actualiza aunque Codex falle o no esté instalado.
+3. **Investiga con el agente (solo lectura):** corre `codex exec` con la skill
+   `$radar-diario` en sandbox `read-only` para auditar la actualización ya
+   publicada y redactar el parte diario. El agente **no** puede escribir el
+   repo ni hacer push, y la `OPENAI_API_KEY` no se le pasa (endurecimiento de
+   seguridad; ver la nota más abajo).
 
 Para cambiar el horario, reinstala con variables:
 
@@ -147,30 +152,43 @@ CODEX_MODEL=            # opcional: fija el modelo que usa codex exec
 
 ## Qué publica la tarea
 
-En ambas opciones, si la recolección y la validación pasan y el JSON cambió,
-se hace commit `chore: refresh regulatory data` de
-`docs/data/publications.json` y `git push origin main`. Como GitHub Pages
-sirve la carpeta `docs/` de `main`, ese push actualiza la página publicada.
+En ambas opciones publica **el recolector determinista** `collect_daily.sh`:
+si la recolección y la validación pasan y el JSON cambió, hace commit
+`chore: refresh regulatory data` de **únicamente** `docs/data/publications.json`
+y `git push origin main`. Como GitHub Pages sirve la carpeta `docs/` de `main`,
+ese push actualiza la página publicada. El agente Codex nunca publica.
+
+## Modelo de seguridad de la corrida diaria
+
+- El agente Codex corre en sandbox **`read-only`**: no puede escribir el repo
+  ni ejecutar `git push`, aunque una fuente comprometida intente inyectarle
+  instrucciones. Su producto es texto (el parte diario), no cambios en `main`.
+- El único que commitea es `collect_daily.sh`, y sólo el archivo de datos.
+- La `OPENAI_API_KEY` (si la usas para resúmenes) se pasa **sólo** al
+  recolector de Python; se elimina del entorno del proceso de Codex con
+  `env -u OPENAI_API_KEY`.
+- Si necesitas que Codex proponga un fix de parser, lo hará **como texto** en
+  el parte diario; tú lo aplicas después en una rama `codex/fix-<fuente>`.
 
 ## Ejecutar manualmente
 
 ```bash
-scripts/codex_daily.sh      # con agente Codex
-scripts/collect_daily.sh    # recolector directo
+scripts/codex_daily.sh      # publica (determinista) + investiga (Codex, solo lectura)
+scripts/collect_daily.sh    # sólo publica, sin agente
 ```
 
 ## Solución de problemas conocidos
 
-- **La corrida de Codex no produce salida y termina sin error.** Algunas
-  versiones (0.124–0.125) tienen una regresión de `codex exec` sin terminal.
-  Revisa `codex --version` y actualiza (`npm update -g @openai/codex`). El
-  script cae al recolector directo, así que el día no se pierde.
+- **La corrida de Codex no produce salida o falla.** No afecta la publicación
+  del día: `collect_daily.sh` ya publicó en el Paso 1 antes de invocar a Codex.
+  El parte diario simplemente queda vacío o incompleto. Revisa
+  `codex --version` y actualiza (`npm update -g @openai/codex`) si persiste.
 - **`codex exec` se queda colgado.** Suele ser stdin abierto sin escritor;
   `scripts/codex_daily.sh` ya redirige `</dev/null` para evitarlo.
-- **El agente no tiene red dentro del sandbox.** El sandbox
-  `workspace-write` bloquea red por defecto; el script la habilita con
-  `-c sandbox_workspace_write.network_access=true`. Si corres Codex a mano,
-  agrega ese override.
+- **El agente sólo audita datos locales, no re-consulta las fuentes.** Es a
+  propósito: corre en sandbox `read-only` sobre la actualización ya publicada,
+  sin salida a la red. Eso elimina cualquier canal de exfiltración desde el
+  agente. La verificación en vivo de fuentes la hace el recolector, no Codex.
 - **Falla de autenticación en corridas sin supervisión.** La sesión de
   `codex login` queda en `~/.codex/auth.json`; ese archivo debe existir y ser
   escribible (Codex refresca el token y lo reescribe). Basta hacer

@@ -132,7 +132,7 @@ async function loadDetail() {
     document.title = `${item.title} | Radar Regulatorio MX`;
     renderMarkdown(item.detail_markdown || fallbackMarkdown(item));
 
-    if (item.url) {
+    if (typeof item.url === "string" && /^https?:\/\//i.test(item.url)) {
       elements.officialSource.href = item.url;
       elements.officialSource.hidden = false;
     }

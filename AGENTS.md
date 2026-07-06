@@ -31,6 +31,19 @@ law, administrative litigation, and tax-specific administrative litigation.
 - Add parser fixtures and tests when changing source-specific extraction.
 - Never commit API keys, tokens, local databases, or downloaded bulk documents.
 
+## Dependencies
+
+Runtime and dev dependencies are pinned with hashes in `requirements.txt` and
+`requirements-dev.txt`, generated from `pyproject.toml` with `uv`. Install with
+`pip install --require-hashes -r requirements.txt` (or `requirements-dev.txt`),
+then `pip install -e . --no-deps` for the local package. To change a version,
+edit `pyproject.toml` and regenerate both files:
+
+```bash
+uv pip compile pyproject.toml --generate-hashes -o requirements.txt
+uv pip compile --extra dev pyproject.toml --generate-hashes -o requirements-dev.txt
+```
+
 ## Verification
 
 Run before committing (from the repo's `.venv`; bare `python` may not exist

@@ -1,10 +1,17 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Ejecuta la actualización diaria del radar mediante el agente Codex CLI.
-# Pensado para correr desde launchd en la Mac (docs/MAC_SCHEDULE.md).
-# Si Codex no está disponible, cae al recolector directo (collect_daily.sh)
-# para que la publicación diaria nunca dependa del agente.
+# Corrida diaria del Radar Regulatorio MX (para launchd en la Mac; ver
+# docs/MAC_SCHEDULE.md).
+#
+# Endurecimiento de seguridad:
+#   - La PUBLICACIÓN la hace SIEMPRE el recolector determinista
+#     (collect_daily.sh), que commitea únicamente docs/data/publications.json.
+#   - El agente Codex corre DESPUÉS y sólo para INVESTIGAR y redactar el parte
+#     diario, en sandbox `read-only`: no puede escribir el repo ni hacer push.
+#   - La OPENAI_API_KEY del resumen NO se pasa al proceso del agente.
+# Así, una inyección de prompt desde una fuente comprometida no tiene camino a
+# ejecutar código en la Mac ni a robar la API key.
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 LOG_DIR="$ROOT/logs"
@@ -18,7 +25,7 @@ export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PAT
 mkdir -p "$LOG_DIR"
 exec >>"$LOG_DIR/codex-daily.log" 2>&1
 
-echo "[$(date -u '+%Y-%m-%dT%H:%M:%SZ')] starting codex daily run"
+echo "[$(date -u '+%Y-%m-%dT%H:%M:%SZ')] starting daily run"
 
 STALE_LOCK_MINUTES=360
 
@@ -31,11 +38,14 @@ if [[ -d "$LOCK_DIR" ]] && [[ -n "$(find "$LOCK_DIR" -maxdepth 0 -mmin +$STALE_L
 fi
 
 if ! mkdir "$LOCK_DIR" 2>/dev/null; then
-  echo "another codex run is already in progress"
+  echo "another daily run is already in progress"
   exit 0
 fi
 trap 'rmdir "$LOCK_DIR"' EXIT
 
+# Se cargan variables opcionales (CODEX_MODEL, CODEX_BIN, LOOKBACK_DAYS y, si se
+# usa, OPENAI_API_KEY). La API key sólo debe llegar al recolector de Python; más
+# abajo se elimina del entorno del agente con `env -u`.
 if [[ -f "$ENV_FILE" ]]; then
   set -a
   # shellcheck disable=SC1090
@@ -45,68 +55,53 @@ fi
 
 cd "$ROOT"
 
-# El repositorio debe partir de main actualizado para que el agente trabaje
-# sobre la última versión publicada. Un fallo aquí (sin red, árbol sucio) no
-# debe matar la corrida: se continúa con el estado local y se deja constancia.
+# Partir de main actualizado. Un fallo aquí (sin red, árbol sucio) no debe matar
+# la corrida: se continúa con el estado local y se deja constancia.
 if ! { git fetch origin main && git checkout main && git pull --ff-only origin main; }; then
   echo "warning: could not update main; continuing with current checkout"
 fi
 
 LAST_MESSAGE_FILE="$LOG_DIR/codex-last-message.txt"
 
-# Corre el recolector directo tras descartar residuos que el agente pudiera
-# haber dejado en el archivo de datos, para que parta de un estado conocido.
-# Reutilizada tanto si `codex exec` sale con error como si sale 0 sin
-# producir salida (ver más abajo).
-run_fallback() {
-  echo "$1"
-  git checkout -- docs/data/publications.json 2>/dev/null || true
-  if [[ -n "$(git status --porcelain)" ]]; then
-    echo "warning: working tree has leftover changes from the codex run"
-  fi
-  # Si el agente dejó el repo en una rama codex/fix-*, volver a main para que
-  # el recolector de respaldo sí pueda publicar el día.
-  git checkout main 2>/dev/null || true
-  "$ROOT/scripts/collect_daily.sh"
-}
-
-if ! command -v "$CODEX_BIN" >/dev/null 2>&1; then
-  echo "codex CLI not found; falling back to direct collection"
-  "$ROOT/scripts/collect_daily.sh"
-  exit $?
+# --- Paso 1: publicación determinista (fuente de verdad del día) -------------
+# collect_daily.sh recolecta, valida y publica ÚNICAMENTE docs/data/publications.json.
+# Es el único componente con permiso de commit/push y no depende del agente.
+publish_status=0
+"$ROOT/scripts/collect_daily.sh" || publish_status=$?
+if [[ "$publish_status" -ne 0 ]]; then
+  echo "warning: la recolección determinista terminó con código $publish_status"
 fi
 
-# La mención $radar-diario invoca explícitamente la skill del repo. Se
-# incluye la ruta literal como respaldo por si la mención no resuelve en la
-# versión instalada de Codex. Comillas simples: el $ es de Codex, no del
-# shell.
-PROMPT='$radar-diario Ejecuta la actualización diaria completa del Radar Regulatorio MX siguiendo en orden los pasos de la skill definida en .agents/skills/radar-diario/SKILL.md y termina con el parte diario.'
+# --- Paso 2: investigación del agente (mejor esfuerzo, solo lectura) ---------
+# El agente NO puede escribir el repo ni hacer push (sandbox read-only) y no ve
+# la OPENAI_API_KEY (env -u). Revisa la actualización ya publicada y redacta el
+# parte diario en LAST_MESSAGE_FILE. Que falle no afecta la publicación del día.
+PROMPT='$radar-diario Revisa la actualización de hoy del Radar Regulatorio MX, que ya fue publicada, siguiendo la skill definida en .agents/skills/radar-diario/SKILL.md: verifica la calidad de los datos, señala fuentes con error o anomalías y redacta el parte diario. No modifiques archivos ni hagas commits o push.'
 
-# workspace-write no da red por defecto; el override -c la habilita porque
-# la recolección y git push la necesitan. stdin se redirige a /dev/null:
-# codex exec se cuelga esperando EOF si stdin queda como pipe abierto.
-CODEX_ARGS=(
-  exec
-  --cd "$ROOT"
-  --sandbox workspace-write
-  -c 'sandbox_workspace_write.network_access=true'
-  --output-last-message "$LAST_MESSAGE_FILE"
-)
-
-if [[ -n "$CODEX_MODEL" ]]; then
-  CODEX_ARGS+=(--model "$CODEX_MODEL")
-fi
-
-# Se borra antes de invocar codex para poder distinguir, tras una corrida que
-# sale 0, entre "el agente terminó y escribió su parte" y la regresión
-# conocida de codex exec (versiones 0.124-0.125): sale con éxito sin producir
-# ninguna salida.
 rm -f "$LAST_MESSAGE_FILE"
 
-if ! "$CODEX_BIN" "${CODEX_ARGS[@]}" "$PROMPT" </dev/null; then
-  run_fallback "codex run failed; falling back to direct collection"
-elif [[ ! -s "$LAST_MESSAGE_FILE" ]]; then
-  run_fallback "codex exited 0 but $LAST_MESSAGE_FILE is missing or empty (known codex exec regression); falling back to direct collection"
+if command -v "$CODEX_BIN" >/dev/null 2>&1; then
+  # stdin a /dev/null: codex exec se cuelga esperando EOF si stdin queda como
+  # pipe abierto.
+  CODEX_ARGS=(
+    exec
+    --cd "$ROOT"
+    --sandbox read-only
+    --output-last-message "$LAST_MESSAGE_FILE"
+  )
+  if [[ -n "$CODEX_MODEL" ]]; then
+    CODEX_ARGS+=(--model "$CODEX_MODEL")
+  fi
+  # env -u OPENAI_API_KEY: la key del resumen no debe estar en el entorno del
+  # agente. Codex se autentica con ~/.codex/auth.json, no con esa variable.
+  if ! env -u OPENAI_API_KEY -u OPENAI_MODEL "$CODEX_BIN" "${CODEX_ARGS[@]}" "$PROMPT" </dev/null; then
+    echo "warning: la investigación de Codex falló; la publicación del Paso 1 ya se hizo"
+  fi
+else
+  echo "codex CLI no encontrado; se omite la investigación (la publicación del Paso 1 ya se hizo)"
 fi
 
-echo "[$(date -u '+%Y-%m-%dT%H:%M:%SZ')] codex daily run completed"
+echo "[$(date -u '+%Y-%m-%dT%H:%M:%SZ')] daily run completed"
+
+# El código de salida refleja la PUBLICACIÓN (Paso 1), no la investigación.
+exit "$publish_status"

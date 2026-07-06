@@ -67,8 +67,16 @@ function normalize(value) {
     .toLowerCase();
 }
 
+function isSafeHttpUrl(u) {
+  return typeof u === "string" && /^https?:\/\//i.test(u);
+}
+
 function detailUrlFor(item) {
-  return item.detail_url || `ficha.html?id=${encodeURIComponent(item.id)}`;
+  const fallback = `ficha.html?id=${encodeURIComponent(item.id)}`;
+  if (typeof item.detail_url === "string" && item.detail_url.startsWith("ficha.html?id=")) {
+    return item.detail_url;
+  }
+  return fallback;
 }
 
 function renderFilters() {
@@ -209,8 +217,14 @@ function renderItems() {
     detailLink.setAttribute("aria-label", `Ver ficha: ${item.title}`);
 
     const sourceLink = fragment.querySelector(".source-link-card");
-    sourceLink.href = item.url;
-    sourceLink.setAttribute("aria-label", `Ver fuente oficial: ${item.official_title}`);
+    if (isSafeHttpUrl(item.url)) {
+      sourceLink.href = item.url;
+      sourceLink.setAttribute("aria-label", `Ver fuente oficial: ${item.official_title}`);
+    } else {
+      sourceLink.removeAttribute("href");
+      sourceLink.setAttribute("aria-disabled", "true");
+      sourceLink.classList.add("is-disabled");
+    }
 
     card.dataset.id = item.id;
     card.dataset.detailUrl = detailUrl;

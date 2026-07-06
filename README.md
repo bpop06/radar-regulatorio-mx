@@ -50,10 +50,14 @@ resultado a 30 palabras.
 
 ## Automatización
 
-La actualización diaria corre desde la Mac con launchd mediante el agente
-Codex: la skill [`radar-diario`](.agents/skills/radar-diario/SKILL.md) recolecta
-las fuentes, valida, investiga incidencias y publica. La instalación en la Mac
-y la modalidad sin agente están en [`docs/MAC_SCHEDULE.md`](docs/MAC_SCHEDULE.md).
+La actualización diaria corre desde la Mac con launchd. La publicación la hace
+un recolector determinista (`scripts/collect_daily.sh`), que commitea sólo
+`docs/data/publications.json`. El agente Codex corre después en modo solo
+lectura con la skill [`radar-diario`](.agents/skills/radar-diario/SKILL.md)
+para auditar la actualización y redactar un parte diario, sin capacidad de
+escribir el repositorio ni de hacer push. La instalación en la Mac, la
+modalidad sin agente y el modelo de seguridad están en
+[`docs/MAC_SCHEDULE.md`](docs/MAC_SCHEDULE.md).
 
 GitHub Actions de esta cuenta falla con `startup_failure` antes de crear jobs,
 por lo que los workflows quedan sólo como respaldo manual mientras eso se

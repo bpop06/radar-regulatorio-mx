@@ -27,7 +27,11 @@ class DofCollector(Collector):
         # Parse complete items independently so one damaged tail does not erase the day.
         item_blocks = re.findall(rb"<item>\s*.*?</item>", payload, flags=re.DOTALL)
         for block in item_blocks:
-            item = ElementTree.fromstring(block)
+            try:
+                item = ElementTree.fromstring(block)
+            except ElementTree.ParseError:
+                # A malformed block should not take down the rest of the feed.
+                continue
             url = clean_text(item.findtext("link", ""))
             raw_date = item.findtext("valueDate", "")
             if not raw_date:

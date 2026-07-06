@@ -46,7 +46,10 @@ fi
 
 PY="$ROOT/.venv/bin/python"
 "$PY" -m pip install --upgrade pip
-"$PY" -m pip install -e .
+# Dependencias fijadas con hashes (ver requirements.txt); el paquete local
+# no lleva hash, por lo que se instala aparte con --no-deps.
+"$PY" -m pip install --require-hashes -r requirements.txt
+"$PY" -m pip install -e . --no-deps
 
 export LOCAL_TIMEZONE="${LOCAL_TIMEZONE:-America/Mexico_City}"
 export REQUEST_TIMEOUT_SECONDS="${REQUEST_TIMEOUT_SECONDS:-45}"
