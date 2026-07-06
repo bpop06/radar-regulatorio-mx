@@ -214,9 +214,6 @@ function renderItems() {
 
     card.dataset.id = item.id;
     card.dataset.detailUrl = detailUrl;
-    card.tabIndex = 0;
-    card.setAttribute("role", "link");
-    card.setAttribute("aria-label", `Abrir ficha: ${item.title}`);
     elements.list.append(fragment);
   }
 }
@@ -265,15 +262,6 @@ function bindControls() {
     if (target.closest("a")) return;
     const card = target.closest(".news-card");
     if (!card?.dataset.detailUrl) return;
-    window.location.href = card.dataset.detailUrl;
-  });
-  elements.list.addEventListener("keydown", (event) => {
-    if (event.key !== "Enter" && event.key !== " ") return;
-    const target = event.target;
-    if (!(target instanceof Element)) return;
-    const card = target.closest(".news-card");
-    if (!card?.dataset.detailUrl) return;
-    event.preventDefault();
     window.location.href = card.dataset.detailUrl;
   });
   elements.filters.addEventListener("click", (event) => {

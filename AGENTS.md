@@ -6,6 +6,14 @@ Build and maintain a daily Mexican regulatory intelligence service focused on
 tax, customs, foreign trade, intellectual property, federal administrative
 law, administrative litigation, and tax-specific administrative litigation.
 
+## Layout
+
+- `docs/` is the public site served by GitHub Pages ("Deploy from a branch",
+  `main` + `/docs`). The daily data file is `docs/data/publications.json`.
+- The daily automation skill lives in `.agents/skills/radar-diario/SKILL.md`
+  and is executed on the Mac via `scripts/codex_daily.sh` (see
+  `docs/MAC_SCHEDULE.md`).
+
 ## Engineering rules
 
 - Keep each public source in an isolated collector.
@@ -25,12 +33,13 @@ law, administrative litigation, and tax-specific administrative litigation.
 
 ## Verification
 
-Run before committing:
+Run before committing (from the repo's `.venv`; bare `python` may not exist
+on macOS):
 
 ```bash
-python -m pytest
-python -m ruff check .
-python -m app.cli collect --dry-run
+.venv/bin/python -m pytest
+.venv/bin/python -m ruff check .
+.venv/bin/python -m app.cli collect --dry-run
 ```
 
 ## Git

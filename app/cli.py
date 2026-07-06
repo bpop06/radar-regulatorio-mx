@@ -19,7 +19,7 @@ def build_parser() -> argparse.ArgumentParser:
     collect_parser.add_argument(
         "--output",
         type=Path,
-        default=Path("site/data/publications.json"),
+        default=Path("docs/data/publications.json"),
     )
     collect_parser.add_argument("--days", type=int)
     collect_parser.add_argument("--dry-run", action="store_true")
@@ -27,7 +27,7 @@ def build_parser() -> argparse.ArgumentParser:
     validate_parser.add_argument(
         "--input",
         type=Path,
-        default=Path("site/data/publications.json"),
+        default=Path("docs/data/publications.json"),
     )
     return parser
 
