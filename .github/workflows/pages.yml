@@ -31,7 +31,7 @@ jobs:
       - name: Collect official publications
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-5.5' }}
+          OPENAI_MODEL: gpt-5.5
           LOCAL_TIMEZONE: America/Mexico_City
           REQUEST_TIMEOUT_SECONDS: "45"
           SOURCE_RETRIES: "3"
