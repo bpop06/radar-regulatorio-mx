@@ -10,9 +10,12 @@ REQUIRED_ITEM_FIELDS = {
     "id": str,
     "source": str,
     "url": str,
+    "detail_url": str,
     "official_title": str,
     "title": str,
     "summary": str,
+    "description": str,
+    "detail_markdown": str,
     "published_at": str,
     "authority": str,
     "document_type": str,
@@ -108,6 +111,18 @@ def _validate_item(index: int, item: Any, errors: list[str]) -> None:
     if isinstance(item.get("url"), str) and not item["url"].startswith(("http://", "https://")):
         errors.append(f"items[{index}].url must be an absolute URL")
 
+    if isinstance(item.get("detail_url"), str) and not item["detail_url"].startswith(
+        "ficha.html?id="
+    ):
+        errors.append(f"items[{index}].detail_url must point to ficha.html")
+
+    if isinstance(item.get("detail_markdown"), str):
+        markdown = item["detail_markdown"]
+        if not markdown.startswith("# "):
+            errors.append(f"items[{index}].detail_markdown must start with a level 1 heading")
+        if "\n\n## " not in markdown:
+            errors.append(f"items[{index}].detail_markdown must include section headings")
+
 
 def _validate_source(
     index: int,
@@ -128,6 +143,9 @@ def _validate_source(
         errors.append(f"sources[{index}].status must be ok or error")
     if not isinstance(source.get("items_found"), int):
         errors.append(f"sources[{index}].items_found must be an integer")
+    attempts = source.get("attempts")
+    if not isinstance(attempts, int) or attempts < 1:
+        errors.append(f"sources[{index}].attempts must be a positive integer")
     if status == "error":
         message = source.get("error") or "unknown error"
         source_errors.append(f"{name}: {message}")
