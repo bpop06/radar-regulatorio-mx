@@ -44,6 +44,15 @@ cat >"$PLIST" <<PLIST
     <key>Minute</key>
     <integer>$RUN_MINUTE</integer>
   </dict>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key>
+    <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+    <key>HOME</key>
+    <string>$HOME</string>
+  </dict>
+  <key>StandardInPath</key>
+  <string>/dev/null</string>
   <key>StandardOutPath</key>
   <string>$LOG_DIR/launchd.codex.out.log</string>
   <key>StandardErrorPath</key>
