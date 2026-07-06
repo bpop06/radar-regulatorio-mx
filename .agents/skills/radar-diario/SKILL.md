@@ -38,7 +38,10 @@ Trabaja siempre desde la raíz del repositorio y respeta `AGENTS.md`.
 ## Paso 2 — Recolectar y validar
 
 1. Ejecuta la recolección:
-   `.venv/bin/python -m app.cli collect --output docs/data/publications.json --days 31`
+   `.venv/bin/python -m app.cli collect --output docs/data/publications.json --days "${LOOKBACK_DAYS:-31}"`
+   (`LOOKBACK_DAYS` es opcional y viene del archivo env
+   `~/.radar-regulatorio-mx.env` si está definida ahí; por defecto son 31
+   días).
 2. Sólo si `collect` terminó con éxito, corre la validación independiente:
    `.venv/bin/python -m app.cli validate --input docs/data/publications.json`
 3. Reglas duras:
@@ -64,7 +67,9 @@ Trabaja siempre desde la raíz del repositorio y respeta `AGENTS.md`.
      `app/sources/`, con su prueba en `tests/`; corre
      `.venv/bin/python -m pytest` y `.venv/bin/python -m ruff check .`.
      Empuja la rama y déjala lista para revisión. Nunca mezcles esa
-     corrección con el commit de datos ni la subas a `main`.
+     corrección con el commit de datos ni la subas a `main`. Antes de
+     continuar al Paso 4, regresa a `main` con `git checkout main`: el
+     commit de datos nunca debe quedar en la rama `codex/fix-*`.
 3. Haz un control de calidad muestral: toma 2 o 3 ítems nuevos del día (o del
    corte vigente si hoy no hubo novedades) y verifica que el enlace oficial
    responde, que el resumen tiene exactamente 30 palabras y que la
@@ -74,7 +79,10 @@ Trabaja siempre desde la raíz del repositorio y respeta `AGENTS.md`.
 
 ## Paso 4 — Publicar
 
-Solo si la validación pasó y hay cambios en los datos:
+Solo si la validación pasó y hay cambios en los datos. Antes de commitear,
+verifica que estás en `main` (`git branch --show-current`); si el Paso 3 creó
+o dejó activa una rama `codex/fix-*`, vuelve a `main` primero. Nunca
+commitees datos fuera de `main`:
 
 ```bash
 git add docs/data/publications.json

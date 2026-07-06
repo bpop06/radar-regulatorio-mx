@@ -20,6 +20,16 @@ exec >>"$LOG_DIR/codex-daily.log" 2>&1
 
 echo "[$(date -u '+%Y-%m-%dT%H:%M:%SZ')] starting codex daily run"
 
+STALE_LOCK_MINUTES=360
+
+# Un lock huérfano (proceso muerto por SIGKILL o apagón) no debe bloquear
+# corridas futuras para siempre. `find -mmin +N` es portable a bash 3.2 de
+# macOS (no depende de features de bash 4).
+if [[ -d "$LOCK_DIR" ]] && [[ -n "$(find "$LOCK_DIR" -maxdepth 0 -mmin +$STALE_LOCK_MINUTES 2>/dev/null)" ]]; then
+  echo "lock dir $LOCK_DIR is older than $STALE_LOCK_MINUTES minutes; treating as stale and removing"
+  rmdir "$LOCK_DIR" 2>/dev/null || rm -rf "$LOCK_DIR"
+fi
+
 if ! mkdir "$LOCK_DIR" 2>/dev/null; then
   echo "another codex run is already in progress"
   exit 0
@@ -42,6 +52,21 @@ if ! { git fetch origin main && git checkout main && git pull --ff-only origin m
   echo "warning: could not update main; continuing with current checkout"
 fi
 
+LAST_MESSAGE_FILE="$LOG_DIR/codex-last-message.txt"
+
+# Corre el recolector directo tras descartar residuos que el agente pudiera
+# haber dejado en el archivo de datos, para que parta de un estado conocido.
+# Reutilizada tanto si `codex exec` sale con error como si sale 0 sin
+# producir salida (ver más abajo).
+run_fallback() {
+  echo "$1"
+  git checkout -- docs/data/publications.json 2>/dev/null || true
+  if [[ -n "$(git status --porcelain)" ]]; then
+    echo "warning: working tree has leftover changes from the codex run"
+  fi
+  "$ROOT/scripts/collect_daily.sh"
+}
+
 if ! command -v "$CODEX_BIN" >/dev/null 2>&1; then
   echo "codex CLI not found; falling back to direct collection"
   "$ROOT/scripts/collect_daily.sh"
@@ -62,22 +87,23 @@ CODEX_ARGS=(
   --cd "$ROOT"
   --sandbox workspace-write
   -c 'sandbox_workspace_write.network_access=true'
-  --output-last-message "$LOG_DIR/codex-last-message.txt"
+  --output-last-message "$LAST_MESSAGE_FILE"
 )
 
 if [[ -n "$CODEX_MODEL" ]]; then
   CODEX_ARGS+=(--model "$CODEX_MODEL")
 fi
 
+# Se borra antes de invocar codex para poder distinguir, tras una corrida que
+# sale 0, entre "el agente terminó y escribió su parte" y la regresión
+# conocida de codex exec (versiones 0.124-0.125): sale con éxito sin producir
+# ninguna salida.
+rm -f "$LAST_MESSAGE_FILE"
+
 if ! "$CODEX_BIN" "${CODEX_ARGS[@]}" "$PROMPT" </dev/null; then
-  echo "codex run failed; falling back to direct collection"
-  # Descarta residuos del agente en el archivo de datos para que el
-  # recolector directo parta de un estado conocido.
-  git checkout -- docs/data/publications.json 2>/dev/null || true
-  if [[ -n "$(git status --porcelain)" ]]; then
-    echo "warning: working tree has leftover changes from the codex run"
-  fi
-  "$ROOT/scripts/collect_daily.sh"
+  run_fallback "codex run failed; falling back to direct collection"
+elif [[ ! -s "$LAST_MESSAGE_FILE" ]]; then
+  run_fallback "codex exited 0 but $LAST_MESSAGE_FILE is missing or empty (known codex exec regression); falling back to direct collection"
 fi
 
 echo "[$(date -u '+%Y-%m-%dT%H:%M:%SZ')] codex daily run completed"

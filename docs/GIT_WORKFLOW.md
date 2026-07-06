@@ -29,13 +29,20 @@ relación en el mismo commit.
 2. Implementar y probar localmente.
 3. Revisar el diff y confirmar que no contiene secretos.
 4. Abrir un pull request.
-5. Esperar las verificaciones automáticas.
+5. Esperar las verificaciones automáticas. Mientras GitHub Actions de esta
+   cuenta siga en `startup_failure` (ver README), esas verificaciones no
+   corren en el PR: hay que ejecutarlas en local antes del merge
+   (`.venv/bin/python -m pytest`, `.venv/bin/python -m ruff check .`,
+   `.venv/bin/python -m app.cli validate --input docs/data/publications.json`).
 6. Integrar con squash merge y borrar la rama.
 
 ## Seguridad
 
-- Guardar `OPENAI_API_KEY` y otros secretos únicamente en GitHub Actions
-  Secrets.
+- Los secretos viven en dos lugares, nunca versionados: GitHub Actions
+  Secrets (para los workflows del repo) y archivos locales fuera del
+  repositorio en la Mac (`~/.radar-regulatorio-mx.env` para
+  `OPENAI_API_KEY` y demás variables; `~/.codex/auth.json` para la sesión
+  de `codex login` que usan las corridas diarias sin supervisión).
 - No versionar `.env`, bases SQLite locales ni credenciales.
 - Mantener permisos mínimos para workflows.
 - Fijar versiones principales de las acciones de GitHub y revisar

@@ -5,6 +5,31 @@ crear jobs, así que la actualización diaria corre desde la Mac. Hay dos
 modalidades; la recomendada es el **agente Codex**, que además de recolectar
 investiga fuentes caídas y entrega un parte diario.
 
+## Arranque en un paso
+
+Para dejar todo instalado con un solo comando en una Mac nueva:
+
+```bash
+git clone https://github.com/bpop06/radar-regulatorio-mx.git
+cd radar-regulatorio-mx
+scripts/mac_bootstrap.sh
+```
+
+El script verifica requisitos (macOS, git, Python 3.12+, Codex CLI y sesión
+de `codex login`), instala la tarea programada (Opción A de abajo) y, al
+final, pregunta si quieres correr la primera actualización de inmediato en
+primer plano. Para saltarte esa pregunta y correrla sin supervisión, agrega
+`--run-now`:
+
+```bash
+scripts/mac_bootstrap.sh --run-now
+```
+
+Es idempotente: se puede volver a ejecutar cuando quieras (por ejemplo, tras
+`git pull`, o para cambiar el horario con `RADAR_RUN_HOUR`/`RADAR_RUN_MINUTE`).
+El resto de este documento explica en detalle qué hace cada pieza y cómo
+operarlas por separado.
+
 ## Opción A (recomendada): agente Codex diario
 
 > **Importante:** instala esto sólo cuando la skill ya esté integrada en
@@ -91,8 +116,13 @@ chmod +x scripts/install_macos_launchd.sh
 scripts/install_macos_launchd.sh
 ```
 
-No instales las dos opciones a la vez: el instalador de Codex retira el
-LaunchAgent clásico si lo encuentra, para evitar corridas dobles.
+Este instalador corre siempre a las **14:17** hora local de la Mac: es un
+horario fijo en el plist y no lee `RADAR_RUN_HOUR` ni `RADAR_RUN_MINUTE`
+(esas variables sólo las respeta `scripts/install_macos_codex_launchd.sh`,
+Opción A). Para cambiar el horario de la Opción B hay que editar el script.
+
+No instales las dos opciones a la vez: cada instalador retira el LaunchAgent
+de la otra opción si lo encuentra, para evitar corridas dobles.
 
 ## Variables opcionales
 

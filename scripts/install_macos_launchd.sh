@@ -3,10 +3,18 @@ set -euo pipefail
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 LABEL="com.bpop06.radar-regulatorio-mx"
+CODEX_LABEL="com.bpop06.radar-regulatorio-mx.codex"
 PLIST="$HOME/Library/LaunchAgents/$LABEL.plist"
+CODEX_PLIST="$HOME/Library/LaunchAgents/$CODEX_LABEL.plist"
 LOG_DIR="$ROOT/logs"
 
 mkdir -p "$HOME/Library/LaunchAgents" "$LOG_DIR"
+
+if [[ -f "$CODEX_PLIST" ]]; then
+  echo "Removing codex LaunchAgent $CODEX_LABEL to avoid duplicate runs"
+  launchctl bootout "gui/$(id -u)" "$CODEX_PLIST" >/dev/null 2>&1 || true
+  rm "$CODEX_PLIST"
+fi
 
 cat >"$PLIST" <<PLIST
 <?xml version="1.0" encoding="UTF-8"?>

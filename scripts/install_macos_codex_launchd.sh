@@ -15,6 +15,16 @@ LOG_DIR="$ROOT/logs"
 RUN_HOUR="${RADAR_RUN_HOUR:-9}"
 RUN_MINUTE="${RADAR_RUN_MINUTE:-30}"
 
+if ! [[ "$RUN_HOUR" =~ ^[0-9]+$ ]] || [[ "$RUN_HOUR" -lt 0 ]] || [[ "$RUN_HOUR" -gt 23 ]]; then
+  echo "error: RADAR_RUN_HOUR must be an integer between 0 and 23 (got '$RUN_HOUR')" >&2
+  exit 1
+fi
+
+if ! [[ "$RUN_MINUTE" =~ ^[0-9]+$ ]] || [[ "$RUN_MINUTE" -lt 0 ]] || [[ "$RUN_MINUTE" -gt 59 ]]; then
+  echo "error: RADAR_RUN_MINUTE must be an integer between 0 and 59 (got '$RUN_MINUTE')" >&2
+  exit 1
+fi
+
 mkdir -p "$HOME/Library/LaunchAgents" "$LOG_DIR"
 
 if [[ -f "$LEGACY_PLIST" ]]; then
@@ -66,7 +76,25 @@ PLIST
 chmod +x "$ROOT/scripts/codex_daily.sh" "$ROOT/scripts/collect_daily.sh"
 
 launchctl bootout "gui/$(id -u)" "$PLIST" >/dev/null 2>&1 || true
-launchctl bootstrap "gui/$(id -u)" "$PLIST"
+
+# Hay una race conocida entre bootout y bootstrap ("Bootstrap failed: 5:
+# Input/output error") si launchd todavía no terminó de liberar el label
+# anterior. Se reintenta unas cuantas veces con una pausa breve.
+BOOTSTRAP_OK=false
+for attempt in 1 2 3; do
+  if launchctl bootstrap "gui/$(id -u)" "$PLIST"; then
+    BOOTSTRAP_OK=true
+    break
+  fi
+  echo "launchctl bootstrap failed (attempt $attempt/3); retrying in 2s"
+  sleep 2
+done
+
+if [[ "$BOOTSTRAP_OK" != true ]]; then
+  echo "error: launchctl bootstrap failed after 3 attempts" >&2
+  exit 1
+fi
+
 launchctl enable "gui/$(id -u)/$LABEL"
 
 echo "Installed $LABEL"

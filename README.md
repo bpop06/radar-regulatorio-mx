@@ -62,8 +62,11 @@ resuelve con GitHub.
 ## Publicación en GitHub Pages
 
 El sitio es la carpeta [`docs/`](docs/) y se sirve con GitHub Pages en modo
-"Deploy from a branch", que no depende de los runners de Actions. Activación
-(una sola vez, desde la web de GitHub):
+"Deploy from a branch". Esto no depende de los workflows del repositorio (los
+de `.github/workflows/`, que hoy fallan con `startup_failure`), sino del
+proceso interno de Pages que gestiona GitHub, el workflow "pages build and
+deployment" — que también corre sobre Actions, pero es distinto y separado de
+los workflows del repo. Activación (una sola vez, desde la web de GitHub):
 
 1. El repositorio debe ser público para usar Pages en el plan gratuito
    (Settings → General → Danger Zone → Change visibility), o bien la cuenta
@@ -74,6 +77,11 @@ El sitio es la carpeta [`docs/`](docs/) y se sirve con GitHub Pages en modo
 La página queda en `https://bpop06.github.io/radar-regulatorio-mx/` y se
 actualiza sola con cada push a `main` que toque `docs/` (es lo que hace la
 tarea diaria de la Mac al publicar `docs/data/publications.json`).
+
+Si tras activar Pages el sitio no publica y el workflow interno "pages build
+and deployment" también falla, la causa es el bloqueo de Actions a nivel de
+cuenta (facturación o verificación pendiente) y hay que resolverlo con
+soporte de GitHub, no en este repositorio.
 
 ## Git
 
