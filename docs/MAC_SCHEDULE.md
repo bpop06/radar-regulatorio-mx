@@ -7,6 +7,12 @@ investiga fuentes caídas y entrega un parte diario.
 
 ## Opción A (recomendada): agente Codex diario
 
+> **Importante:** instala esto sólo cuando la skill ya esté integrada en
+> `main` (verifica que `main` contenga `.agents/skills/radar-diario/SKILL.md`
+> y `scripts/codex_daily.sh`). La tarea diaria trabaja sobre `main`: si estos
+> archivos siguen únicamente en una rama, la corrida hará checkout de un
+> `main` sin skill y la mención `$radar-diario` no resolverá.
+
 La skill vive en el repositorio, en `.agents/skills/radar-diario/SKILL.md`
 (la ubicación estándar multi-agente que Codex escanea desde el directorio de
 trabajo hasta la raíz del repo). Codex la detecta automáticamente al trabajar

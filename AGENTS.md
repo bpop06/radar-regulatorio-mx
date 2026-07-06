@@ -33,12 +33,13 @@ law, administrative litigation, and tax-specific administrative litigation.
 
 ## Verification
 
-Run before committing:
+Run before committing (from the repo's `.venv`; bare `python` may not exist
+on macOS):
 
 ```bash
-python -m pytest
-python -m ruff check .
-python -m app.cli collect --dry-run
+.venv/bin/python -m pytest
+.venv/bin/python -m ruff check .
+.venv/bin/python -m app.cli collect --dry-run
 ```
 
 ## Git

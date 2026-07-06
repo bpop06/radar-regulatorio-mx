@@ -35,11 +35,12 @@ fi
 
 cd "$ROOT"
 
-# El repositorio debe partir de main actualizado para que el agente
-# trabaje sobre la última versión publicada.
-git fetch origin main
-git checkout main
-git pull --ff-only origin main
+# El repositorio debe partir de main actualizado para que el agente trabaje
+# sobre la última versión publicada. Un fallo aquí (sin red, árbol sucio) no
+# debe matar la corrida: se continúa con el estado local y se deja constancia.
+if ! { git fetch origin main && git checkout main && git pull --ff-only origin main; }; then
+  echo "warning: could not update main; continuing with current checkout"
+fi
 
 if ! command -v "$CODEX_BIN" >/dev/null 2>&1; then
   echo "codex CLI not found; falling back to direct collection"
@@ -47,10 +48,11 @@ if ! command -v "$CODEX_BIN" >/dev/null 2>&1; then
   exit $?
 fi
 
-# La mención $radar-diario invoca explícitamente la skill del repo
-# (.agents/skills/radar-diario/SKILL.md). Comillas simples: el $ es de
-# Codex, no del shell.
-PROMPT='$radar-diario Ejecuta la actualización diaria completa del Radar Regulatorio MX siguiendo los pasos de la skill en orden y termina con el parte diario.'
+# La mención $radar-diario invoca explícitamente la skill del repo. Se
+# incluye la ruta literal como respaldo por si la mención no resuelve en la
+# versión instalada de Codex. Comillas simples: el $ es de Codex, no del
+# shell.
+PROMPT='$radar-diario Ejecuta la actualización diaria completa del Radar Regulatorio MX siguiendo en orden los pasos de la skill definida en .agents/skills/radar-diario/SKILL.md y termina con el parte diario.'
 
 # workspace-write no da red por defecto; el override -c la habilita porque
 # la recolección y git push la necesitan. stdin se redirige a /dev/null:
@@ -69,6 +71,12 @@ fi
 
 if ! "$CODEX_BIN" "${CODEX_ARGS[@]}" "$PROMPT" </dev/null; then
   echo "codex run failed; falling back to direct collection"
+  # Descarta residuos del agente en el archivo de datos para que el
+  # recolector directo parta de un estado conocido.
+  git checkout -- docs/data/publications.json 2>/dev/null || true
+  if [[ -n "$(git status --porcelain)" ]]; then
+    echo "warning: working tree has leftover changes from the codex run"
+  fi
   "$ROOT/scripts/collect_daily.sh"
 fi
 
