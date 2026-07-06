@@ -50,10 +50,12 @@ resultado a 30 palabras.
 
 ## Automatización
 
-El workflow `Collect and deploy` se ejecuta diariamente a las 20:17 UTC
-(14:17 de Ciudad de México), consulta las fuentes y despliega el sitio en
-GitHub Pages. La clave de OpenAI, si se usa, debe guardarse como GitHub Actions
-Secret.
+La recolección diaria está preparada para ejecutarse desde la Mac con launchd,
+porque GitHub Actions puede quedar bloqueado antes de arrancar runners en este
+repositorio. Consulta [`docs/MAC_SCHEDULE.md`](docs/MAC_SCHEDULE.md).
+
+Los workflows de GitHub quedan disponibles sólo para ejecución manual mientras
+se resuelve la capacidad/configuración de Actions de la cuenta.
 
 ## Git
 

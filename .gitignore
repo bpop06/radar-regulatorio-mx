@@ -12,4 +12,5 @@ build/
 *.egg-info/
 data/cache.db
 data/cache.db-*
+logs/
 
