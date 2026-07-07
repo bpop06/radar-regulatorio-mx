@@ -23,7 +23,7 @@ def valid_payload(summary: str | None = None):
                 "detail_url": "ficha.html?id=dof%3A1",
                 "official_title": "Acuerdo por el que se delegan facultades.",
                 "title": "Delegan facultades administrativas",
-                "summary": summary or " ".join(f"palabra{i}" for i in range(30)),
+                "summary": summary or " ".join(f"palabra{i}" for i in range(45)),
                 "description": "El acuerdo delega facultades administrativas específicas.",
                 "detail_markdown": (
                     "# Delegan facultades administrativas\n\n"
@@ -88,11 +88,62 @@ def test_validate_publications_payload_accepts_valid_contract():
     assert report.errors == []
 
 
-def test_validate_publications_payload_rejects_wrong_summary_length():
+def test_validate_publications_payload_rejects_summary_below_range():
     report = validate_publications_payload(valid_payload(summary="Resumen demasiado corto."))
 
     assert not report.ok
-    assert "items[0].summary has 3 words" in report.errors
+    assert any("items[0].summary has 3 words" in error for error in report.errors)
+
+
+def test_validate_publications_payload_rejects_summary_above_range():
+    report = validate_publications_payload(
+        valid_payload(summary=" ".join(f"palabra{i}" for i in range(81)))
+    )
+
+    assert not report.ok
+    assert any("items[0].summary has 81 words" in error for error in report.errors)
+
+
+def test_validate_publications_payload_accepts_summary_at_bounds():
+    assert validate_publications_payload(
+        valid_payload(summary=" ".join(f"palabra{i}" for i in range(40)))
+    ).ok
+    assert validate_publications_payload(
+        valid_payload(summary=" ".join(f"palabra{i}" for i in range(80)))
+    ).ok
+
+
+def test_validate_publications_payload_rejects_act_number_in_what_published():
+    payload = valid_payload()
+    payload["items"][0]["card_body"] = (
+        "## Qué se publicó\n\n"
+        "Oficio 500-05-2026-16021 de la Secretaría.\n\n"
+        "## Sustancia\n\nCambio sustantivo concreto.\n\n"
+        "## Fuente\n\n[Abrir publicación oficial](https://dof.gob.mx/nota_detalle.php?codigo=1)"
+    )
+
+    report = validate_publications_payload(payload)
+
+    assert not report.ok
+    assert any("must not contain an act number" in error for error in report.errors)
+
+
+def test_validate_publications_payload_accepts_optional_case_fields():
+    payload = valid_payload()
+    payload["items"][0]["case_parties"] = "México c. Empresa"
+    payload["items"][0]["case_status"] = "En trámite"
+
+    assert validate_publications_payload(payload).ok
+
+
+def test_validate_publications_payload_rejects_non_string_case_fields():
+    payload = valid_payload()
+    payload["items"][0]["case_status"] = 5
+
+    report = validate_publications_payload(payload)
+
+    assert not report.ok
+    assert any("case_status must be str" in error for error in report.errors)
 
 
 def test_validate_publications_payload_rejects_bad_detail_url():

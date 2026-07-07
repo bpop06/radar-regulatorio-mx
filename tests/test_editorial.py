@@ -5,9 +5,14 @@ import pytest
 from app.editorial import EditorialError, apply_editorial
 from app.storage import Storage
 
-VALID_SUMMARY = " ".join(f"palabra{i}" for i in range(30))
+VALID_SUMMARY = " ".join(f"palabra{i}" for i in range(45))
 VALID_CARD_BODY = (
     "## Qué se publicó\n\nAcuerdo de la autoridad.\n\n"
+    "## Sustancia\n\nCambio sustantivo concreto.\n\n"
+    "## Fuente\n\n[Abrir publicación oficial](https://example.gob.mx/doc)"
+)
+CARD_BODY_WITH_ACT_NUMBER = (
+    "## Qué se publicó\n\nOficio 500-05-2026-16021 de la autoridad.\n\n"
     "## Sustancia\n\nCambio sustantivo concreto.\n\n"
     "## Fuente\n\n[Abrir publicación oficial](https://example.gob.mx/doc)"
 )
@@ -106,7 +111,9 @@ def test_apply_editorial_updates_local_database(tmp_path):
     [
         (edit(id="dof:999"), "id inexistente"),
         (edit(summary="muy corto"), "palabras"),
+        (edit(summary=" ".join(f"palabra{i}" for i in range(90))), "palabras"),
         (edit(card_body="## Qué se publicó\n\nSolo una sección"), "sección"),
+        (edit(card_body=CARD_BODY_WITH_ACT_NUMBER), "número de acto"),
         (edit(title="Oficio 500-05-2026-1 comunica listado"), "número de oficio"),
         (edit(relevance_score=99), "no editables"),
     ],

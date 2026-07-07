@@ -1,19 +1,34 @@
-from app.text import concise_title, exactly_30_words, parse_date, words
+from app.text import bounded_summary, concise_title, parse_date, words
 
 
-def test_summary_is_exactly_30_words():
-    summary = exactly_30_words("Se publica una reforma fiscal relevante.")
+def test_short_summary_is_extended_to_the_minimum():
+    summary = bounded_summary("Se publica una reforma fiscal relevante.")
 
-    assert len(words(summary)) == 30
+    assert 40 <= len(words(summary)) <= 80
     assert summary.endswith(".")
 
 
-def test_long_summary_is_truncated_to_30_words():
-    summary = exactly_30_words(" ".join(f"palabra{i}" for i in range(50)))
+def test_empty_summary_is_extended_to_the_minimum():
+    summary = bounded_summary("")
 
-    assert len(words(summary)) == 30
-    assert "palabra29" in summary
-    assert "palabra30" not in summary
+    assert 40 <= len(words(summary)) <= 80
+    assert summary.endswith(".")
+
+
+def test_long_summary_is_truncated_to_the_maximum():
+    summary = bounded_summary(" ".join(f"palabra{i}" for i in range(200)))
+
+    assert len(words(summary)) == 80
+    assert "palabra79" in summary
+    assert "palabra80" not in summary
+    assert summary.endswith(".")
+
+
+def test_summary_in_range_is_left_at_length():
+    text = " ".join(f"palabra{i}" for i in range(50))
+    summary = bounded_summary(text)
+
+    assert len(words(summary)) == 50
 
 
 def test_title_is_limited():
