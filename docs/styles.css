@@ -186,9 +186,8 @@ main {
 
 .control-panel {
   display: grid;
-  grid-template-columns: minmax(260px, 1fr) minmax(320px, 0.9fr);
-  gap: 18px 24px;
-  align-items: center;
+  grid-template-columns: 1fr;
+  gap: 18px;
   margin-top: -36px;
   padding: 22px;
   background: var(--surface);
@@ -229,7 +228,7 @@ main {
 
 .filter-controls {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 12px;
 }
 
@@ -321,6 +320,13 @@ main {
   font-size: 0.92rem;
 }
 
+.sort-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
 .sort {
   display: flex;
   gap: 10px;
@@ -339,12 +345,25 @@ main {
 
 .news-list {
   display: grid;
-  gap: 10px;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+@media (min-width: 760px) {
+  .news-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1120px) {
+  .news-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
 
 .news-card,
 .loading-card {
-  padding: 22px 24px;
+  padding: 16px 18px;
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -352,6 +371,10 @@ main {
     border-color 160ms ease,
     transform 160ms ease,
     box-shadow 160ms ease;
+}
+
+.loading-card {
+  grid-column: 1 / -1;
 }
 
 .news-card {
@@ -398,26 +421,60 @@ main {
   text-transform: uppercase;
 }
 
+.topline-meta {
+  display: flex;
+  flex: 0 0 auto;
+  gap: 8px;
+  align-items: center;
+}
+
 .card-topline time {
   color: var(--muted);
-  font-size: 0.8rem;
+  font-size: 0.78rem;
+  white-space: nowrap;
+}
+
+.importance-chip {
+  padding: 3px 8px;
+  color: #7a5415;
+  background: #f6e6c4;
+  border-radius: 999px;
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.intl-chip {
+  padding: 3px 8px;
+  color: var(--muted);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: 0.66rem;
+  font-weight: 700;
+  white-space: nowrap;
 }
 
 .news-card h3 {
-  max-width: 900px;
-  margin: 18px 0 12px;
+  display: -webkit-box;
+  overflow: hidden;
+  max-width: none;
+  margin: 12px 0 10px;
   font-family: "Newsreader", serif;
-  font-size: 1.48rem;
+  font-size: 1.18rem;
   font-weight: 600;
-  line-height: 1.16;
+  line-height: 1.24;
   letter-spacing: 0;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 }
 
 .card-meta {
   flex-wrap: wrap;
-  gap: 8px 12px;
+  gap: 6px 12px;
   color: var(--muted);
-  font-size: 0.8rem;
+  font-size: 0.78rem;
 }
 
 .card-meta span:not(:last-child)::after {
@@ -434,8 +491,8 @@ main {
 .card-footer {
   gap: 14px;
   justify-content: flex-start;
-  margin-top: 16px;
-  padding-top: 14px;
+  margin-top: 12px;
+  padding-top: 12px;
   border-top: 1px solid #e6e3da;
 }
 
@@ -511,6 +568,41 @@ main {
   border: 0;
   border-radius: 8px;
   cursor: pointer;
+}
+
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 18px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.pagination button {
+  padding: 10px 18px;
+  color: var(--green);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.pagination button:hover:not(:disabled) {
+  border-color: var(--green);
+}
+
+.pagination button:disabled {
+  color: var(--muted);
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.pagination p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.85rem;
 }
 
 .sources {
@@ -624,6 +716,41 @@ main {
   font-weight: 700;
 }
 
+.detail-full {
+  margin-top: 42px;
+  padding-top: 24px;
+  border-top: 1px solid #e6e3da;
+}
+
+.detail-full summary {
+  color: var(--green);
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  list-style: none;
+}
+
+.detail-full summary::-webkit-details-marker {
+  display: none;
+}
+
+.detail-full summary::before {
+  margin-right: 6px;
+  content: "+";
+}
+
+.detail-full[open] summary::before {
+  content: "−";
+}
+
+.detail-full .markdown-body {
+  margin-top: 20px;
+}
+
+.detail-full .markdown-body h1 {
+  font-size: 2.1rem;
+}
+
 .detail-actions {
   display: flex;
   gap: 16px;
@@ -729,11 +856,11 @@ footer {
   }
 
   .news-card {
-    padding: 20px;
+    padding: 14px 16px;
   }
 
   .news-card h3 {
-    font-size: 1.32rem;
+    font-size: 1.08rem;
   }
 
   .card-topline {

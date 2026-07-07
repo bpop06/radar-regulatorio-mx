@@ -6,7 +6,12 @@ const state = {
   category: "Todas",
   source: "Todas",
   dateRange: "all",
+  issuingBody: "Todas",
+  jurisdiction: "Todas",
+  month: "all",
   sort: "date",
+  page: 1,
+  pageSize: 24,
 };
 
 const supportedCategories = [
@@ -31,6 +36,21 @@ const searchAliases = {
     "designaciones cargos públicos directores subdirectores titulares",
 };
 
+const monthNames = [
+  "enero",
+  "febrero",
+  "marzo",
+  "abril",
+  "mayo",
+  "junio",
+  "julio",
+  "agosto",
+  "septiembre",
+  "octubre",
+  "noviembre",
+  "diciembre",
+];
+
 const elements = {
   list: document.querySelector("#news-list"),
   template: document.querySelector("#news-template"),
@@ -38,7 +58,15 @@ const elements = {
   search: document.querySelector("#search"),
   sourceFilter: document.querySelector("#source-filter"),
   dateRange: document.querySelector("#date-range"),
+  issuingBodyFilter: document.querySelector("#issuing-body-filter"),
+  jurisdictionFilter: document.querySelector("#jurisdiction-filter"),
+  monthFilter: document.querySelector("#month-filter"),
   sort: document.querySelector("#sort"),
+  pageSize: document.querySelector("#page-size"),
+  pagination: document.querySelector("#pagination"),
+  pagePrev: document.querySelector("#page-prev"),
+  pageNext: document.querySelector("#page-next"),
+  pageIndicator: document.querySelector("#page-indicator"),
   empty: document.querySelector("#empty-state"),
   emptyEyebrow: document.querySelector("#empty-eyebrow"),
   emptyTitle: document.querySelector("#empty-title"),
@@ -79,6 +107,16 @@ function detailUrlFor(item) {
   return fallback;
 }
 
+function monthKey(item) {
+  return `${item.published_year}-${String(item.published_month).padStart(2, "0")}`;
+}
+
+function monthLabel(key) {
+  const [year, month] = key.split("-").map(Number);
+  const name = monthNames[month - 1] || "";
+  return `${name} ${year}`.trim();
+}
+
 function renderFilters() {
   elements.filters.replaceChildren();
   const allButton = document.createElement("button");
@@ -114,6 +152,33 @@ function renderSourceFilter() {
   elements.sourceFilter.value = state.source;
 }
 
+function renderIssuingBodyFilter() {
+  const selected = state.issuingBody;
+  const bodies = [...new Set(state.items.map((item) => item.issuing_body).filter(Boolean))].sort(
+    (left, right) => left.localeCompare(right, "es"),
+  );
+  elements.issuingBodyFilter.replaceChildren(new Option("Todas", "Todas"));
+  for (const body of bodies) {
+    elements.issuingBodyFilter.append(new Option(body, body));
+  }
+  state.issuingBody = bodies.includes(selected) ? selected : "Todas";
+  elements.issuingBodyFilter.value = state.issuingBody;
+}
+
+function renderMonthFilter() {
+  const selected = state.month;
+  const keys = [...new Set(state.items.map((item) => monthKey(item)))].sort((left, right) =>
+    right.localeCompare(left),
+  );
+  elements.monthFilter.replaceChildren(new Option("Todos", "all"));
+  for (const key of keys) {
+    const label = monthLabel(key);
+    elements.monthFilter.append(new Option(label.charAt(0).toUpperCase() + label.slice(1), key));
+  }
+  state.month = keys.includes(selected) ? selected : "all";
+  elements.monthFilter.value = state.month;
+}
+
 function activeAnchorDate() {
   if (state.generatedAt && !Number.isNaN(state.generatedAt.valueOf())) {
     return state.generatedAt;
@@ -133,6 +198,18 @@ function matchesDateRange(item) {
   return elapsed >= 0 && elapsed <= Number(state.dateRange) * dayInMilliseconds;
 }
 
+function matchesIssuingBody(item) {
+  return state.issuingBody === "Todas" || item.issuing_body === state.issuingBody;
+}
+
+function matchesJurisdiction(item) {
+  return state.jurisdiction === "Todas" || item.jurisdiction === state.jurisdiction;
+}
+
+function matchesMonth(item) {
+  return state.month === "all" || monthKey(item) === state.month;
+}
+
 function filteredItems() {
   const query = normalize(state.query.trim());
   const selected = state.items.filter((item) => {
@@ -148,8 +225,11 @@ function filteredItems() {
         item.detail_markdown,
         item.source,
         item.authority,
+        item.issuing_body,
         item.document_type,
         item.categories.join(" "),
+        (item.topic_tags || []).join(" "),
+        (item.subtopic_tags || []).join(" "),
         item.categories.map((category) => searchAliases[category] || "").join(" "),
       ].join(" "),
     );
@@ -157,6 +237,9 @@ function filteredItems() {
       matchesCategory &&
       matchesSource &&
       matchesDateRange(item) &&
+      matchesIssuingBody(item) &&
+      matchesJurisdiction(item) &&
+      matchesMonth(item) &&
       (!query || haystack.includes(query))
     );
   });
@@ -166,24 +249,51 @@ function filteredItems() {
       return right.relevance_score - left.relevance_score ||
         right.published_at.localeCompare(left.published_at);
     }
+    if (state.sort === "importance") {
+      return (right.importance || 0) - (left.importance || 0) ||
+        right.published_at.localeCompare(left.published_at);
+    }
     return right.published_at.localeCompare(left.published_at) ||
       right.relevance_score - left.relevance_score;
   });
 }
 
-function renderItems() {
-  const items = filteredItems();
-  elements.list.replaceChildren();
-  elements.empty.hidden = items.length !== 0;
-  elements.list.hidden = items.length === 0;
-  elements.count.textContent =
-    `${items.length} de ${state.items.length} ${state.items.length === 1 ? "documento" : "documentos"}`;
-  elements.feedNote.textContent =
-    items.length === 0
-      ? "Ajusta búsqueda, materia, fuente o periodo para ampliar resultados."
-      : `${items.length} coincidencias listas para revisar en fichas breves.`;
+function resetToFirstPage() {
+  state.page = 1;
+}
 
-  if (items.length === 0) {
+function renderItems() {
+  const filtered = filteredItems();
+  const total = filtered.length;
+  const pageSize = state.pageSize;
+  const totalPages = Math.max(1, Math.ceil(total / pageSize));
+  if (state.page > totalPages) state.page = totalPages;
+  if (state.page < 1) state.page = 1;
+
+  const startIdx = total === 0 ? 0 : (state.page - 1) * pageSize + 1;
+  const endIdx = Math.min(state.page * pageSize, total);
+  const items = total === 0 ? [] : filtered.slice(startIdx - 1, endIdx);
+
+  elements.list.replaceChildren();
+  elements.empty.hidden = total !== 0;
+  elements.list.hidden = total === 0;
+  elements.pagination.hidden = total === 0;
+
+  elements.count.textContent =
+    total === 0
+      ? `0 de ${state.items.length} ${state.items.length === 1 ? "documento" : "documentos"}`
+      : `Mostrando ${startIdx}–${endIdx} de ${total} ${total === 1 ? "documento" : "documentos"}`;
+
+  elements.feedNote.textContent =
+    total === 0
+      ? "Ajusta búsqueda, materia, fuente o periodo para ampliar resultados."
+      : `Mostrando ${startIdx}–${endIdx} de ${total} coincidencias. Página ${state.page} de ${totalPages}.`;
+
+  elements.pageIndicator.textContent = `Página ${state.page} de ${totalPages}`;
+  elements.pagePrev.disabled = state.page <= 1;
+  elements.pageNext.disabled = state.page >= totalPages;
+
+  if (total === 0) {
     const hasData = state.items.length !== 0;
     elements.emptyEyebrow.textContent = hasData ? "Sin coincidencias" : "Sin datos";
     elements.emptyTitle.textContent = hasData
@@ -197,20 +307,35 @@ function renderItems() {
     const badges = fragment.querySelector(".badges");
     const detailUrl = detailUrlFor(item);
 
-    for (const category of item.categories.slice(0, 3)) {
+    const topicTags = Array.isArray(item.topic_tags) && item.topic_tags.length
+      ? item.topic_tags
+      : item.categories;
+    for (const tag of topicTags.slice(0, 2)) {
       const badge = document.createElement("span");
       badge.className = "badge";
-      badge.textContent = category;
+      badge.textContent = tag;
       badges.append(badge);
     }
 
     const time = fragment.querySelector("time");
     time.dateTime = item.published_at;
     time.textContent = dateFormatter.format(new Date(`${item.published_at}T00:00:00Z`));
+
+    const importanceChip = fragment.querySelector(".importance-chip");
+    if (Number(item.importance) >= 4) {
+      importanceChip.hidden = false;
+    }
+
+    const intlChip = fragment.querySelector(".intl-chip");
+    if (item.jurisdiction === "internacional" && item.country_or_org) {
+      intlChip.textContent = item.country_or_org;
+      intlChip.hidden = false;
+    }
+
     fragment.querySelector("h3").textContent = item.title;
     fragment.querySelector(".source-name").textContent = item.source;
-    fragment.querySelector(".authority").textContent = item.authority || "Autoridad no identificada";
-    fragment.querySelector(".document-type").textContent = item.document_type || "Documento oficial";
+    fragment.querySelector(".authority").textContent =
+      item.issuing_body || item.authority || "Autoridad no identificada";
 
     const detailLink = fragment.querySelector(".detail-link");
     detailLink.href = detailUrl;
@@ -285,22 +410,55 @@ function bindControls() {
     document.querySelectorAll(".filter").forEach((item) => {
       item.classList.toggle("active", item === button);
     });
+    resetToFirstPage();
     renderItems();
   });
   elements.search.addEventListener("input", (event) => {
     state.query = event.target.value;
+    resetToFirstPage();
     renderItems();
   });
   elements.sourceFilter.addEventListener("change", (event) => {
     state.source = event.target.value;
+    resetToFirstPage();
     renderItems();
   });
   elements.dateRange.addEventListener("change", (event) => {
     state.dateRange = event.target.value;
+    resetToFirstPage();
+    renderItems();
+  });
+  elements.issuingBodyFilter.addEventListener("change", (event) => {
+    state.issuingBody = event.target.value;
+    resetToFirstPage();
+    renderItems();
+  });
+  elements.jurisdictionFilter.addEventListener("change", (event) => {
+    state.jurisdiction = event.target.value;
+    resetToFirstPage();
+    renderItems();
+  });
+  elements.monthFilter.addEventListener("change", (event) => {
+    state.month = event.target.value;
+    resetToFirstPage();
     renderItems();
   });
   elements.sort.addEventListener("change", (event) => {
     state.sort = event.target.value;
+    resetToFirstPage();
+    renderItems();
+  });
+  elements.pageSize.addEventListener("change", (event) => {
+    state.pageSize = Number(event.target.value) || 24;
+    resetToFirstPage();
+    renderItems();
+  });
+  elements.pagePrev.addEventListener("click", () => {
+    state.page = Math.max(1, state.page - 1);
+    renderItems();
+  });
+  elements.pageNext.addEventListener("click", () => {
+    state.page += 1;
     renderItems();
   });
   elements.clear.addEventListener("click", () => {
@@ -308,12 +466,19 @@ function bindControls() {
     state.category = "Todas";
     state.source = "Todas";
     state.dateRange = "all";
+    state.issuingBody = "Todas";
+    state.jurisdiction = "Todas";
+    state.month = "all";
     elements.search.value = "";
     elements.sourceFilter.value = "Todas";
     elements.dateRange.value = "all";
+    elements.issuingBodyFilter.value = "Todas";
+    elements.jurisdictionFilter.value = "Todas";
+    elements.monthFilter.value = "all";
     document.querySelectorAll(".filter").forEach((button) => {
       button.classList.toggle("active", button.dataset.category === "Todas");
     });
+    resetToFirstPage();
     renderItems();
   });
 }
@@ -335,12 +500,15 @@ async function loadData() {
         }).format(generated)}`;
     renderFilters();
     renderSourceFilter();
+    renderIssuingBodyFilter();
+    renderMonthFilter();
     renderItems();
     renderSources();
   } catch (error) {
     elements.list.replaceChildren();
     elements.empty.hidden = false;
     elements.list.hidden = true;
+    elements.pagination.hidden = true;
     elements.emptyEyebrow.textContent = "Error de datos";
     elements.emptyTitle.textContent = "No fue posible cargar la actualización.";
     elements.updated.textContent = "Error al consultar los datos";

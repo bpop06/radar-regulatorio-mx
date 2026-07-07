@@ -1,10 +1,12 @@
 const elements = {
   content: document.querySelector("#detail-content"),
+  fullDetails: document.querySelector("#detail-full"),
+  fullContent: document.querySelector("#detail-full-content"),
   officialSource: document.querySelector("#official-source"),
 };
 
-function renderMarkdown(markdown) {
-  elements.content.replaceChildren();
+function renderMarkdown(markdown, container) {
+  container.replaceChildren();
   const blocks = markdown.trim().split(/\n{2,}/);
 
   for (const rawBlock of blocks) {
@@ -14,14 +16,14 @@ function renderMarkdown(markdown) {
     if (block.startsWith("# ")) {
       const heading = document.createElement("h1");
       heading.textContent = block.slice(2).trim();
-      elements.content.append(heading);
+      container.append(heading);
       continue;
     }
 
     if (block.startsWith("## ")) {
       const heading = document.createElement("h2");
       heading.textContent = block.slice(3).trim();
-      elements.content.append(heading);
+      container.append(heading);
       continue;
     }
 
@@ -33,7 +35,7 @@ function renderMarkdown(markdown) {
         appendInline(item, line.slice(2).trim());
         list.append(item);
       }
-      elements.content.append(list);
+      container.append(list);
       continue;
     }
 
@@ -42,7 +44,7 @@ function renderMarkdown(markdown) {
       if (index > 0) paragraph.append(document.createElement("br"));
       appendInline(paragraph, line);
     });
-    elements.content.append(paragraph);
+    container.append(paragraph);
   }
 }
 
@@ -102,6 +104,14 @@ function fallbackMarkdown(item) {
   ].join("\n\n");
 }
 
+function buildCardMarkdown(item) {
+  const metaLine =
+    `**Fecha de publicación:** ${item.published_at || "Sin fecha"}. ` +
+    `**Fuente:** ${item.source || "Sin fuente"}. ` +
+    `**Emitido por:** ${item.issuing_body || item.authority || "Autoridad no identificada"}.`;
+  return [`# ${item.title || "Ficha regulatoria"}`, metaLine, item.card_body].join("\n\n");
+}
+
 function showMessage(title, detail) {
   elements.content.replaceChildren();
   const heading = document.createElement("h1");
@@ -109,6 +119,7 @@ function showMessage(title, detail) {
   const paragraph = document.createElement("p");
   paragraph.textContent = detail;
   elements.content.append(heading, paragraph);
+  elements.fullDetails.hidden = true;
 }
 
 async function loadDetail() {
@@ -130,7 +141,19 @@ async function loadDetail() {
     }
 
     document.title = `${item.title} | Radar Regulatorio MX`;
-    renderMarkdown(item.detail_markdown || fallbackMarkdown(item));
+
+    if (item.card_body) {
+      renderMarkdown(buildCardMarkdown(item), elements.content);
+      if (item.detail_markdown) {
+        renderMarkdown(item.detail_markdown, elements.fullContent);
+        elements.fullDetails.hidden = false;
+      } else {
+        elements.fullDetails.hidden = true;
+      }
+    } else {
+      renderMarkdown(item.detail_markdown || fallbackMarkdown(item), elements.content);
+      elements.fullDetails.hidden = true;
+    }
 
     if (typeof item.url === "string" && /^https?:\/\//i.test(item.url)) {
       elements.officialSource.href = item.url;
