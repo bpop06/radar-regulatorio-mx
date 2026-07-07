@@ -38,10 +38,21 @@ REQUIRED_ITEM_FIELDS = {
 
 CARD_BODY_SECTIONS = ("## Qué se publicó", "## Sustancia", "## Fuente")
 WHAT_PUBLISHED_SECTION = "## Qué se publicó"
+SUBSTANCE_SECTION = "## Sustancia"
+
+# Secciones de la ficha única (`detail_markdown` v2, distinta del `card_body`
+# de la tarjeta: comparte "Qué se publicó"/"Sustancia" pero cierra con
+# "Fuente oficial" en vez de "Fuente").
+SOURCE_OFICIAL_SECTION = "## Fuente oficial"
+DETAIL_MARKDOWN_SECTIONS = (WHAT_PUBLISHED_SECTION, SUBSTANCE_SECTION, SOURCE_OFICIAL_SECTION)
 
 # Rango editorial del resumen (decisión del dueño; sustituye las 30 exactas).
 SUMMARY_MIN_WORDS = 40
 SUMMARY_MAX_WORDS = 80
+
+# Rango del mini-resumen por ítem del digest agrupado (contrato v6).
+DIGEST_THEME_MIN_WORDS = 8
+DIGEST_THEME_MAX_WORDS = 35
 
 # Un título editorial se rige por la temática, no por el número de acto.
 OFFICE_NUMBER_TITLE = r"^(oficio|acuerdo|circular|resoluci[oó]n|expediente)\s+[A-Z0-9/.-]*\d"
@@ -66,6 +77,84 @@ def card_section_text(card_body: str, heading: str) -> str:
     )
     match = pattern.search(card_body)
     return match.group(1).strip() if match else ""
+
+
+def validate_digest(digest: Any, existing_ids: set[str]) -> list[str]:
+    """Valida el bloque opcional `digest` (resumen del corte agrupado por
+    tema). Se reutiliza tal cual desde el payload publicado y desde el gate
+    editorial (`app.editorial`), que valida el mismo bloque en el archivo de
+    ediciones antes de aplicarlo. `existing_ids` acota a qué ítems puede
+    referirse cada entrada del digest."""
+    errors: list[str] = []
+    if not isinstance(digest, dict):
+        errors.append("digest must be an object")
+        return errors
+
+    unknown_top = set(digest) - {"groups"}
+    if unknown_top:
+        errors.append(f"digest has unknown keys: {sorted(unknown_top)}")
+
+    groups = digest.get("groups")
+    if not isinstance(groups, list) or not groups:
+        errors.append("digest.groups must be a non-empty list")
+        return errors
+
+    seen_ids: set[str] = set()
+    for group_index, group in enumerate(groups):
+        prefix = f"digest.groups[{group_index}]"
+        if not isinstance(group, dict):
+            errors.append(f"{prefix} must be an object")
+            continue
+
+        unknown_group = set(group) - {"label", "items"}
+        if unknown_group:
+            errors.append(f"{prefix} has unknown keys: {sorted(unknown_group)}")
+
+        label = group.get("label")
+        if not isinstance(label, str) or not label.strip():
+            errors.append(f"{prefix}.label must be a non-empty string")
+
+        items = group.get("items")
+        if not isinstance(items, list) or not items:
+            errors.append(f"{prefix}.items must be a non-empty list")
+            continue
+
+        for item_index, item in enumerate(items):
+            item_prefix = f"{prefix}.items[{item_index}]"
+            if not isinstance(item, dict):
+                errors.append(f"{item_prefix} must be an object")
+                continue
+
+            unknown_item = set(item) - {"id", "organ", "theme"}
+            if unknown_item:
+                errors.append(f"{item_prefix} has unknown keys: {sorted(unknown_item)}")
+
+            item_id = item.get("id")
+            if not isinstance(item_id, str) or item_id not in existing_ids:
+                errors.append(f"{item_prefix}.id does not exist in publications ({item_id!r})")
+            elif item_id in seen_ids:
+                errors.append(f"{item_prefix}.id is duplicated in the digest ({item_id})")
+            else:
+                seen_ids.add(item_id)
+
+            organ = item.get("organ")
+            if not isinstance(organ, str) or not organ.strip():
+                errors.append(f"{item_prefix}.organ must be a non-empty string")
+
+            theme = item.get("theme")
+            if not isinstance(theme, str) or not theme.strip():
+                errors.append(f"{item_prefix}.theme must be a non-empty string")
+                continue
+            theme_words = len(words(theme))
+            if not DIGEST_THEME_MIN_WORDS <= theme_words <= DIGEST_THEME_MAX_WORDS:
+                errors.append(
+                    f"{item_prefix}.theme has {theme_words} words "
+                    f"(must be {DIGEST_THEME_MIN_WORDS}-{DIGEST_THEME_MAX_WORDS})"
+                )
+            if ACT_NUMBER_RE.search(theme):
+                errors.append(f"{item_prefix}.theme must not contain an act number")
+
+    return errors
 
 
 @dataclass(frozen=True)
@@ -94,6 +183,15 @@ def validate_publications_payload(payload: dict[str, Any]) -> ValidationReport:
             errors.append(f"total_items is {expected_total}, but items has {len(items)} records")
         for index, item in enumerate(items):
             _validate_item(index, item, errors, warnings)
+
+    digest = payload.get("digest")
+    if digest is not None:
+        existing_ids = {
+            item["id"]
+            for item in (items if isinstance(items, list) else [])
+            if isinstance(item, dict) and isinstance(item.get("id"), str)
+        }
+        errors.extend(validate_digest(digest, existing_ids))
 
     if isinstance(sources, list):
         for index, source in enumerate(sources):
@@ -138,7 +236,7 @@ def _validate_item(index: int, item: Any, errors: list[str], warnings: list[str]
         if not isinstance(value, field_type):
             errors.append(f"items[{index}].{field_name} must be {field_type.__name__}")
 
-    for optional_field in ("case_parties", "case_status"):
+    for optional_field in ("case_parties", "case_status", "case_facts"):
         if optional_field in item and not isinstance(item.get(optional_field), str):
             errors.append(f"items[{index}].{optional_field} must be str")
 
@@ -204,8 +302,19 @@ def _validate_item(index: int, item: Any, errors: list[str], warnings: list[str]
         markdown = item["detail_markdown"]
         if not markdown.startswith("# "):
             errors.append(f"items[{index}].detail_markdown must start with a level 1 heading")
-        if "\n\n## " not in markdown:
-            errors.append(f"items[{index}].detail_markdown must include section headings")
+        # El corte publicado antes del contrato v6 trae la ficha vieja (con
+        # "## Resumen ejecutivo" en vez de "## Qué se publicó"/"## Sustancia").
+        # Degradar la ausencia de las secciones nuevas a advertencia evita
+        # invalidar ese corte ya publicado; solo se exige como error el
+        # encabezado de nivel 1, que ambas versiones cumplen. La rutina
+        # editorial recompone la ficha con el builder v2 en cuanto vuelve a
+        # correr sobre un ítem (`app.editorial.apply_editorial`).
+        for section in DETAIL_MARKDOWN_SECTIONS:
+            if section not in markdown:
+                warnings.append(
+                    f"items[{index}].detail_markdown is missing section '{section}' "
+                    "(v6 ficha contract)"
+                )
 
 
 def _validate_source(

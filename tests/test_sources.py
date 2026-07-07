@@ -749,9 +749,11 @@ def test_icsid_snapshot_path_configurable_via_env(tmp_path, monkeypatch):
 TFJA_HTML = """
 <p><strong>Miercoles 17 de junio de 2026</strong></p>
 <ul>
-<li><a href="/pdf/secretaria_general_de_acuerdos/acuerdos_sala_superior/2026/SS-12-2026.pdf">SS/12/2026</a><br />
+<li><a href="/pdf/secretaria_general_de_acuerdos/acuerdos_sala_superior/2026/SS-12-2026.pdf">
+SS/12/2026</a><br />
 HORARIO DE GUARDIAS DE LAS OFICIAL&Iacute;AS DE PARTES DEL TRIBUNAL</li>
-<li><a href="/pdf/secretaria_general_de_acuerdos/acuerdos_sala_superior/2026/SS-11-2026.pdf">SS/11/2026</a><br />
+<li><a href="/pdf/secretaria_general_de_acuerdos/acuerdos_sala_superior/2026/SS-11-2026.pdf">
+SS/11/2026</a><br />
 SUSPENSI&Oacute;N DE ACTIVIDADES PRESENCIALES</li>
 </ul>
 <p><strong>Lunes 15 de junio de 2026</strong></p>

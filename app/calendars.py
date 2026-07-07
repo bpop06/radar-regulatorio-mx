@@ -4,8 +4,20 @@ from datetime import date
 from typing import Any
 
 VALID_STATUSES = {"inhabil", "vacaciones"}
+# La fuente principal de un día es el TEXTO del acuerdo publicado (DOF u
+# oficial); el sitio web del órgano solo confirma/orienta. "pendiente" cubre
+# los días que el sitio anuncia pero cuyo acuerdo aún no se publica.
+VALID_PUBLICACION_KINDS = {"dof", "web_oficial", "pendiente"}
 REQUIRED_ORGAN_FIELDS = ("id", "name", "kind", "source_page")
-REQUIRED_DAY_FIELDS = ("date", "status", "reason", "source_url", "analysis", "verified")
+REQUIRED_DAY_FIELDS = (
+    "date",
+    "status",
+    "reason",
+    "source_url",
+    "analysis",
+    "verified",
+    "publicacion",
+)
 
 
 def validate_calendars_payload(payload: dict[str, Any]) -> list[str]:
@@ -85,5 +97,34 @@ def validate_calendars_payload(payload: dict[str, Any]) -> list[str]:
                 ("http://", "https://")
             ):
                 errors.append(f"{prefix}.source_url debe ser una URL absoluta")
+
+            publicacion = day.get("publicacion")
+            if isinstance(publicacion, str) and publicacion not in VALID_PUBLICACION_KINDS:
+                errors.append(
+                    f"{prefix}.publicacion debe ser 'dof', 'web_oficial' o 'pendiente'"
+                )
+
+            # `acuerdo` es obligatorio como campo (cita del acuerdo publicado)
+            # pero solo puede quedar vacío cuando el día está marcado como
+            # publicación pendiente en el DOF.
+            acuerdo = day.get("acuerdo")
+            if not isinstance(acuerdo, str):
+                errors.append(f"{prefix}.acuerdo debe ser una cadena")
+            elif not acuerdo.strip() and publicacion != "pendiente":
+                errors.append(
+                    f"{prefix}.acuerdo no puede quedar vacío salvo publicacion='pendiente'"
+                )
+
+            if "guardia" in day and not isinstance(day.get("guardia"), bool):
+                errors.append(f"{prefix}.guardia debe ser booleano")
+
+            if "guardia_detalle" in day and day.get("guardia") is not True:
+                errors.append(
+                    f"{prefix}: guardia_detalle requiere guardia=true"
+                )
+            if "guardia_detalle" in day:
+                guardia_detalle = day.get("guardia_detalle")
+                if not isinstance(guardia_detalle, str) or not guardia_detalle.strip():
+                    errors.append(f"{prefix}.guardia_detalle debe ser una cadena no vacía")
 
     return errors

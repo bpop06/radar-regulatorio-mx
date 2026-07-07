@@ -13,6 +13,9 @@ const state = {
   sort: "date",
   page: 1,
   pageSize: 24,
+  // Contrato v6 (opcional): payload.digest.groups. null cuando el corte no lo trae
+  // (cortes viejos) — todo el código de agrupación debe degradar al feed plano.
+  digestGroups: null,
 };
 
 // Materias primarias del contrato v4. El código de renderFilters() une estas
@@ -83,6 +86,9 @@ const elements = {
   readingCount: document.querySelector("#reading-count"),
   readingOrgans: document.querySelector("#reading-organs"),
   hero: document.querySelector(".hero"),
+  heroBand: document.querySelector(".hero-band"),
+  digestSection: document.querySelector("#digest"),
+  digestGroups: document.querySelector("#digest-groups"),
 };
 
 const dayInMilliseconds = 24 * 60 * 60 * 1000;
@@ -316,11 +322,216 @@ function resetToFirstPage() {
   state.page = 1;
 }
 
+// Pausa initScrollCompact mientras scrollToGroup hace su propio salto (ver más abajo):
+// evita que el listener de scroll pelee con el colapso forzado del hero a mitad de vuelo.
+let suppressScrollCompact = false;
+
+/* ---------------------------------------------------------------- digest / agrupación (v6) */
+// Contrato opcional: payload.digest = {"groups":[{"label","items":[{"id","organ","theme"}]}]}.
+// Ausente en cortes viejos -> state.digestGroups queda null y todo degrada al feed plano.
+function hasActiveFilters() {
+  return (
+    state.category !== "Todas" || state.source !== "Todas" || state.dateRange !== "all" ||
+    state.issuingBody !== "Todas" || state.jurisdiction !== "Todas" || state.month !== "all" ||
+    state.query.trim() !== ""
+  );
+}
+
+function dateSortedAll() {
+  return [...state.items].sort(
+    (left, right) =>
+      right.published_at.localeCompare(left.published_at) || right.relevance_score - left.relevance_score,
+  );
+}
+
+// Agrupa `items` (ya filtrados/ordenados) según state.digestGroups. Cada tarjeta del
+// grupo conserva el `item` (publicación completa) y el `entry` del digest (organ/theme
+// curados por la editorial, solo para el panel resumen). Devuelve [{key,label,cards}]
+// con cards=[{item,entry}], o null si no hay digest o ningún grupo tuvo coincidencias.
+function buildDigestGroups(items) {
+  const groups = state.digestGroups;
+  if (!Array.isArray(groups) || !groups.length) return null;
+  const byId = new Map(items.map((item) => [item.id, item]));
+  const used = new Set();
+  const result = [];
+  groups.forEach((group, groupIndex) => {
+    const entries = Array.isArray(group && group.items) ? group.items : [];
+    const cards = [];
+    for (const entry of entries) {
+      const id = entry && typeof entry.id === "string" ? entry.id : null;
+      if (!id || used.has(id)) continue;
+      const item = byId.get(id);
+      if (!item) continue; // tolerante a ids del digest que ya no estén en el corte
+      used.add(id);
+      cards.push({ item, entry });
+    }
+    if (cards.length) {
+      result.push({ key: `g${groupIndex}`, label: String((group && group.label) || "Grupo"), cards });
+    }
+  });
+  const rest = items.filter((item) => !used.has(item.id));
+  if (rest.length) {
+    result.push({
+      key: "otras",
+      label: "Otras publicaciones",
+      cards: rest.map((item) => ({ item, entry: null })),
+    });
+  }
+  return result.length ? result : null;
+}
+
+// El feed solo agrupa con sort=="date" y sin filtros/búsqueda activos (contrato v6, F2#1).
+function computeGroupedOrder(filtered) {
+  if (state.sort !== "date" || hasActiveFilters()) return null;
+  return buildDigestGroups(filtered);
+}
+
+function flattenGroupedOrder(groups) {
+  const flat = [];
+  for (const group of groups) {
+    for (const card of group.cards) flat.push({ item: card.item, group });
+  }
+  return flat;
+}
+
+function resetFiltersState() {
+  state.query = "";
+  state.category = "Todas";
+  state.source = "Todas";
+  state.dateRange = "all";
+  state.issuingBody = "Todas";
+  state.jurisdiction = "Todas";
+  state.month = "all";
+  elements.search.value = "";
+  elements.sourceFilter.value = "Todas";
+  elements.dateRange.value = "all";
+  elements.issuingBodyFilter.value = "Todas";
+  elements.jurisdictionFilter.value = "Todas";
+  elements.monthFilter.value = "all";
+  elements.filters.querySelectorAll(".filter").forEach((button) => {
+    button.classList.toggle("active", button.dataset.category === "Todas");
+  });
+  placeFilterIndicator();
+}
+
+function buildGroupHeading(group) {
+  const heading = document.createElement("h3");
+  heading.className = "feed-group-heading";
+  heading.dataset.groupKey = group.key;
+  const label = document.createElement("span");
+  label.className = "fg-label";
+  label.textContent = group.label;
+  const count = document.createElement("span");
+  count.className = "fg-count";
+  count.textContent = String(group.cards.length);
+  heading.append(label, count);
+  return heading;
+}
+
+// Clic en una entrada del panel "Resumen del corte": fuerza el estado que agrupa
+// el feed (fecha, sin filtros), salta a la página donde inicia el grupo y hace scroll
+// a su encabezado.
+function scrollToGroup(groupKey) {
+  resetFiltersState();
+  state.sort = "date";
+  elements.sort.value = "date";
+
+  const groups = buildDigestGroups(dateSortedAll());
+  const target = groups ? groups.find((group) => group.key === groupKey) : null;
+  if (!target) {
+    resetToFirstPage();
+    renderItems();
+    return;
+  }
+  const flat = flattenGroupedOrder(groups);
+  const firstIndex = flat.findIndex((entry) => entry.group.key === groupKey);
+  state.page = firstIndex >= 0 ? Math.floor(firstIndex / state.pageSize) + 1 : 1;
+  renderItems();
+
+  // El destino siempre cae más allá del hero: lo colapsamos ya, de forma instantánea
+  // (sin la transición normal de is-scrolled — ver .is-scrolled-instant en styles.css),
+  // para que el layout quede fijo ANTES de iniciar el scroll suave. Si el colapso
+  // animara en paralelo al scrollIntoView, el documento encogería en pleno vuelo y el
+  // navegador terminaría el scroll pasado de largo respecto al encabezado. También se
+  // suspende el listener de scroll (initScrollCompact) mientras dura el salto: sin esto,
+  // los primeros píxeles del scroll suave (todavía por debajo del umbral) lo revertirían
+  // a mitad de camino y el hero se re-expandiría animado, persiguiendo el objetivo.
+  suppressScrollCompact = true;
+  document.body.classList.add("is-scrolled", "is-scrolled-instant");
+  void document.body.offsetHeight; // fuerza el reflow con las transiciones ya anuladas
+  document.body.classList.remove("is-scrolled-instant");
+
+  const heading = elements.list.querySelector(`[data-group-key="${groupKey}"]`);
+  const releaseScrollCompact = () => { suppressScrollCompact = false; };
+  if (!heading) {
+    releaseScrollCompact();
+    return;
+  }
+  // Con el hero ya colapsado de forma síncrona, la posición absoluta del encabezado
+  // (independiente del scrollY actual) queda fija: se calcula una sola vez, ya no hay
+  // nada por delante que la vuelva a mover.
+  const targetY = Math.max(0, heading.getBoundingClientRect().top + window.scrollY);
+  if (RM) {
+    window.scrollTo({ top: targetY, behavior: "auto" });
+    releaseScrollCompact();
+    return;
+  }
+  window.addEventListener("scrollend", releaseScrollCompact, { once: true });
+  setTimeout(releaseScrollCompact, 1000); // red de seguridad si el navegador no soporta scrollend
+  window.scrollTo({ top: targetY, behavior: "smooth" });
+}
+
+function renderDigestPanel() {
+  const section = elements.digestSection;
+  const host = elements.digestGroups;
+  if (!section || !host) return;
+
+  // El panel resumen solo muestra los grupos curados por la editorial, nunca el cajón
+  // "Otras publicaciones" (ese es exclusivo del feed agrupado, ver computeGroupedOrder).
+  const groups = (buildDigestGroups(state.items) || []).filter((group) => group.key !== "otras");
+  host.replaceChildren();
+  section.hidden = groups.length === 0;
+  if (!groups.length) return;
+
+  for (const group of groups) {
+    const wrap = document.createElement("div");
+    wrap.className = "digest-group";
+
+    const label = document.createElement("h3");
+    label.className = "digest-group-label";
+    label.textContent = group.label;
+    wrap.append(label);
+
+    const list = document.createElement("ol");
+    list.className = "digest-items";
+    for (const card of group.cards) {
+      const { item, entry } = card;
+      const organText = (entry && entry.organ) || item.issuing_body || item.authority || "—";
+      const themeText = (entry && entry.theme) || item.title;
+      const li = document.createElement("li");
+      li.className = "digest-item";
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = "digest-entry";
+      button.dataset.groupKey = group.key;
+      const organ = document.createElement("span");
+      organ.className = "digest-organ";
+      organ.textContent = organText;
+      button.append(organ, document.createTextNode(` — ${themeText}`));
+      li.append(button);
+      list.append(li);
+    }
+    wrap.append(list);
+    host.append(wrap);
+  }
+}
+
 /* ---------------------------------------------------------------- card render */
 function buildImportanceBar(container, importance) {
   container.replaceChildren();
-  const n = Math.max(0, Math.min(3, Number(importance) || 0));
-  for (let i = 0; i < 3; i++) {
+  const n = Math.max(0, Math.min(5, Number(importance) || 0));
+  container.dataset.importance = String(n);
+  for (let i = 0; i < 5; i++) {
     const seg = document.createElement("span");
     seg.className = i < n ? "seg on" : "seg";
     container.append(seg);
@@ -360,6 +571,7 @@ function populateCard(fragment, item, indexInPage) {
   time.textContent = monoDate(item.published_at);
 
   buildImportanceBar(fragment.querySelector(".importance-bar"), item.importance);
+  card.dataset.importance = String(Math.max(0, Math.min(5, Number(item.importance) || 0)));
 
   fragment.querySelector(".card-organ").textContent =
     item.issuing_body || item.authority || "Autoridad no identificada";
@@ -423,7 +635,14 @@ function populateCard(fragment, item, indexInPage) {
 
 function renderItems() {
   const filtered = filteredItems();
-  const total = filtered.length;
+  const groups = computeGroupedOrder(filtered);
+  // Agrupado: las tarjetas se reordenan grupo por grupo (mismo total, misma paginación).
+  // Ítems no referenciados en el digest ya quedaron en "Otras publicaciones" al final.
+  const flat = groups ? flattenGroupedOrder(groups) : null;
+  const ordered = flat ? flat.map((entry) => entry.item) : filtered;
+  const groupByItemId = flat ? new Map(flat.map((entry) => [entry.item.id, entry.group])) : null;
+
+  const total = ordered.length;
   const pageSize = state.pageSize;
   const totalPages = Math.max(1, Math.ceil(total / pageSize));
   if (state.page > totalPages) state.page = totalPages;
@@ -431,7 +650,7 @@ function renderItems() {
 
   const startIdx = total === 0 ? 0 : (state.page - 1) * pageSize + 1;
   const endIdx = Math.min(state.page * pageSize, total);
-  const items = total === 0 ? [] : filtered.slice(startIdx - 1, endIdx);
+  const items = total === 0 ? [] : ordered.slice(startIdx - 1, endIdx);
 
   elements.list.replaceChildren();
   elements.empty.hidden = total !== 0;
@@ -460,7 +679,15 @@ function renderItems() {
       : "La actualización no contiene novedades publicables.";
   }
 
+  let previousGroupKey = null;
   items.forEach((item, index) => {
+    if (groupByItemId) {
+      const group = groupByItemId.get(item.id);
+      if (group && group.key !== previousGroupKey) {
+        elements.list.append(buildGroupHeading(group));
+        previousGroupKey = group.key;
+      }
+    }
     const fragment = elements.template.content.cloneNode(true);
     const card = populateCard(fragment, item, index);
     elements.list.append(fragment);
@@ -596,26 +823,18 @@ function bindControls() {
     renderItems();
   });
   elements.clear.addEventListener("click", () => {
-    state.query = "";
-    state.category = "Todas";
-    state.source = "Todas";
-    state.dateRange = "all";
-    state.issuingBody = "Todas";
-    state.jurisdiction = "Todas";
-    state.month = "all";
-    elements.search.value = "";
-    elements.sourceFilter.value = "Todas";
-    elements.dateRange.value = "all";
-    elements.issuingBodyFilter.value = "Todas";
-    elements.jurisdictionFilter.value = "Todas";
-    elements.monthFilter.value = "all";
-    elements.filters.querySelectorAll(".filter").forEach((button) => {
-      button.classList.toggle("active", button.dataset.category === "Todas");
-    });
-    placeFilterIndicator();
+    resetFiltersState();
     resetToFirstPage();
     renderItems();
   });
+
+  if (elements.digestGroups) {
+    elements.digestGroups.addEventListener("click", (event) => {
+      const button = event.target.closest(".digest-entry");
+      if (!button) return;
+      scrollToGroup(button.dataset.groupKey);
+    });
+  }
 
   window.addEventListener("resize", placeFilterIndicator);
 }
@@ -650,6 +869,13 @@ async function loadData() {
       item._folio = String(idx + 1).padStart(3, "0");
     });
 
+    // Contrato v6 (opcional): payload.digest.groups. Ausente en cortes viejos -> null,
+    // el feed y el panel "Resumen del corte" degradan al comportamiento actual.
+    const digestGroups = payload.digest && Array.isArray(payload.digest.groups)
+      ? payload.digest.groups
+      : null;
+    state.digestGroups = digestGroups && digestGroups.length ? digestGroups : null;
+
     elements.readingDate.textContent = monoDate(state.generatedISO);
     countUp(elements.readingCount, Number(payload.total_items || state.items.length));
     updateOrganReading();
@@ -658,6 +884,7 @@ async function loadData() {
     renderSourceFilter();
     renderIssuingBodyFilter();
     renderMonthFilter();
+    renderDigestPanel();
     renderItems();
     renderSources();
   } catch (error) {
@@ -680,11 +907,28 @@ function initHero() {
   });
 }
 
+// Compacta el hero + control-panel al rebasar la banda (solo index; extiende el
+// patrón is-condensed de markdown.js initNav, pero exclusivo de esta página porque
+// depende de .hero-band, que no existe en ficha.html ni calendario.html).
+function initScrollCompact() {
+  const heroBand = elements.heroBand;
+  if (!heroBand) return;
+  const threshold = () => Math.max(0, heroBand.offsetHeight - 80);
+  const onScroll = () => {
+    if (suppressScrollCompact) return;
+    document.body.classList.toggle("is-scrolled", window.scrollY > threshold());
+  };
+  onScroll();
+  window.addEventListener("scroll", onScroll, { passive: true });
+  window.addEventListener("resize", onScroll);
+}
+
 // Reveals estáticos (meridianas, encabezados de sección)
 document.querySelectorAll("[data-reveal]").forEach((el) => {
   if (!el.closest("#news-list")) observeReveal(el);
 });
 
 initHero();
+initScrollCompact();
 bindControls();
 loadData();

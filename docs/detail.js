@@ -7,9 +7,8 @@ const elements = {
   case: document.querySelector("#detail-case"),
   caseChip: document.querySelector("#detail-case .case-chip"),
   parties: document.querySelector("#detail-parties"),
+  categories: document.querySelector("#detail-categories"),
   content: document.querySelector("#detail-content"),
-  fullDetails: document.querySelector("#detail-full"),
-  fullContent: document.querySelector("#detail-full-content"),
   officialSource: document.querySelector("#official-source"),
 };
 
@@ -24,8 +23,9 @@ function monoDate(iso) {
 
 function buildImportanceBar(container, importance) {
   container.replaceChildren();
-  const n = Math.max(0, Math.min(3, Number(importance) || 0));
-  for (let i = 0; i < 3; i++) {
+  const n = Math.max(0, Math.min(5, Number(importance) || 0));
+  container.dataset.importance = String(n);
+  for (let i = 0; i < 5; i++) {
     const seg = document.createElement("span");
     seg.className = i < n ? "seg on" : "seg";
     container.append(seg);
@@ -61,7 +61,6 @@ function showMessage(title, detail) {
   const paragraph = document.createElement("p");
   paragraph.textContent = detail;
   elements.content.append(paragraph);
-  elements.fullDetails.hidden = true;
 }
 
 async function loadDetail() {
@@ -119,18 +118,22 @@ async function loadDetail() {
       elements.parties.hidden = false;
     }
 
-    if (item.card_body) {
-      render(item.card_body, elements.content);
-      if (item.detail_markdown) {
-        render(item.detail_markdown, elements.fullContent);
-        elements.fullDetails.hidden = false;
-      } else {
-        elements.fullDetails.hidden = true;
+    // Contrato v6: materias como fila de chips (reusa .badge, ver docs/styles.css).
+    const categories = Array.isArray(item.categories) ? item.categories.filter(Boolean) : [];
+    if (categories.length && elements.categories) {
+      elements.categories.replaceChildren();
+      for (const category of categories) {
+        const chip = document.createElement("span");
+        chip.className = "badge";
+        chip.textContent = category;
+        elements.categories.append(chip);
       }
-    } else {
-      render(item.detail_markdown || fallbackMarkdown(item), elements.content);
-      elements.fullDetails.hidden = true;
+      elements.categories.hidden = false;
     }
+
+    // Ficha única (v6): el backend ya integra card_body en detail_markdown. Solo los
+    // ítems del contrato viejo (sin detail_markdown) degradan a card_body o al fallback.
+    render(item.detail_markdown || item.card_body || fallbackMarkdown(item), elements.content);
 
     if (window.Radar && window.Radar.isSafeHttpUrl(item.url)) {
       elements.officialSource.href = item.url;
