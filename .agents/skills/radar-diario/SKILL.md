@@ -48,13 +48,15 @@ modificas archivos. Respeta `AGENTS.md`.
 Toma 2 o 3 ítems del corte vigente y verifica, leyendo el JSON (sin salir a la
 red; corres en solo lectura):
 
-- Que `summary` tenga exactamente 30 palabras.
+- Que `summary` tenga entre 40 y 80 palabras (inclusive).
 - Que `url` sea un enlace oficial `https://` plausible para la fuente.
-- Que `categories` y `topic_tags` clasifiquen de forma razonable según el
-  `official_title`.
+- Que `categories` (materia primaria) y `topic_tags` (etiquetas finas)
+  clasifiquen de forma razonable según el `official_title`.
 - Que `detail_markdown` tenga la estructura esperada (encabezado y secciones).
 - Que `card_body` tenga sus tres secciones (`## Qué se publicó`,
-  `## Sustancia`, `## Fuente`) y que su contenido sea fiel al título oficial.
+  `## Sustancia`, `## Fuente`) y que su contenido sea fiel al título oficial;
+  que «Qué se publicó» no traiga número de acto y use el nombre corto del
+  órgano.
 - Que el `title` sea editorial (órgano + verbo + sustancia) y no inicie con
   número de oficio/acuerdo; si encuentras títulos con número de oficio,
   repórtalo como anomalía editorial (ocurre cuando el resumen corrió sin
@@ -64,8 +66,8 @@ red; corres en solo lectura):
   (ONU Noticias, USTR, Trade.gov) y las facetas `published_year/month/day`
   coinciden con `published_at`.
 
-Registra cualquier anomalía (resumen fuera de 30 palabras, materia dudosa,
-enlace sospechoso) para el parte diario.
+Registra cualquier anomalía (resumen fuera del rango 40-80 palabras, materia
+dudosa, enlace sospechoso) para el parte diario.
 
 ## Paso 4 — Parte diario
 

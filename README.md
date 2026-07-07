@@ -2,8 +2,9 @@
 
 Sitio diario de inteligencia regulatoria mexicana. Reúne publicaciones
 oficiales, detecta asuntos relevantes y presenta un título editorial (órgano +
-acción + sustancia), un resumen de exactamente 30 palabras y una ficha con
-jerarquía fija (qué se publicó, sustancia y fuente oficial).
+acción + sustancia), un resumen de entre 40 y 80 palabras y una ficha con
+jerarquía fija (qué se publicó —sin número de acto ni nombre completo del
+órgano—, sustancia y fuente oficial).
 
 Cada novedad queda clasificada por dependencia u órgano emisor, rama de
 gobierno, jurisdicción (nacional/internacional), fecha (facetas de año, mes y
@@ -14,18 +15,33 @@ opcional para trabajo local.
 
 ## Materias cubiertas
 
-- Fiscal, aduanero y comercio exterior.
-- Propiedad intelectual y normalización.
+Cada publicación se agrupa en una **materia primaria** (`categories`) y
+conserva sus **etiquetas finas** en `topic_tags`. Las materias primarias son:
+Fiscal, Comercio exterior, Comercio internacional, Penal, Anti-lavado,
+Administración centralizada, Administración descentralizada y Proceso
+legislativo. Las etiquetas finas que las alimentan:
+
+- Fiscal (incluye el contencioso administrativo fiscal, entendido como la
+  especialidad fiscal dentro del contencioso, no cualquier acto de
+  recaudación o ejecución).
+- Aduanero y comercio exterior (importación, exportación, aranceles, cuotas
+  compensatorias, reglas generales de comercio exterior).
+- Comercio internacional: T-MEC/USMCA, OMC, OCDE, arbitraje de inversión
+  (CIADI/ICSID), paneles y solución de diferencias.
+- Penal: delitos, defraudación fiscal, contrabando, extinción de dominio y la
+  justicia penal internacional (CPI).
+- Anti-lavado: LFPIORPI, actividades vulnerables, UIF, GAFI y beneficiario
+  controlador.
+- Propiedad intelectual y normalización (colapsan a Administración
+  centralizada o descentralizada según la rama del órgano emisor).
 - Derecho administrativo federal: LFPA, LOAPF, reglamentos interiores,
   estructura orgánica, facultades y organización de toda la Administración
   Pública Federal.
 - Nombramientos federales: designaciones, ratificaciones, remociones,
   suplencias y encargadurías de mandos y titulares.
 - Contencioso administrativo general.
-- Contencioso administrativo fiscal, entendido como la especialidad fiscal
-  dentro del contencioso administrativo, no como cualquier acto de
-  recaudación o ejecución.
-- Iniciativas legislativas sobre cualquiera de estas materias.
+- Iniciativas legislativas sobre cualquiera de estas materias (materia
+  primaria Proceso legislativo).
 
 ## Fuentes del MVP
 
@@ -62,9 +78,9 @@ JSON desde la última corrida guardada), `storage-report` (tamaño y contenido
 de la base) y `validate`.
 
 La recolección local genera resúmenes extractivos deterministas
-(`ai_generated: false`). La capa editorial — título de noticia, resumen de 30
-palabras y cuerpo de la ficha — la produce la rutina diaria de Claude en la
-nube ([`docs/EDITORIAL_CLOUD.md`](docs/EDITORIAL_CLOUD.md)), que aplica sus
+(`ai_generated: false`). La capa editorial — título de noticia, resumen de 40
+a 80 palabras y cuerpo de la ficha — la produce la rutina diaria de Claude en
+la nube ([`docs/EDITORIAL_CLOUD.md`](docs/EDITORIAL_CLOUD.md)), que aplica sus
 textos con `python -m app.cli apply-editorial` y marca `ai_generated: true`.
 No se usa ninguna API de pago: todo corre con la suscripción de Claude.
 
