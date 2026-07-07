@@ -31,10 +31,13 @@ guardar nada en máquinas locales**.
 3. **Audita** el corte (guía read-only `.agents/skills/radar-diario/SKILL.md`)
    y revisa si el corte trae acuerdos de días inhábiles que ameriten
    actualizar los calendarios (solo lo reporta).
-4. **Publica**: commit únicamente de `docs/data/publications.json`
-   (`chore: radar diario`) y push a `main`; GitHub Pages actualiza el sitio.
-   El historial de git es el archivo histórico del radar (un corte por
-   commit); no hay base de datos local.
+4. **Publica**: commit únicamente de los datos del corte —
+   `docs/data/publications.json` y `docs/data/icsid_snapshot.json` (el
+   estado {caso: estatus} del CIADI, que debe sobrevivir entre sesiones
+   efímeras para que solo se emitan casos nuevos o con cambio de
+   estatus)— (`chore: radar diario`) y push a `main`; GitHub Pages
+   actualiza el sitio. El historial de git es el archivo histórico del
+   radar (un corte por commit); no hay base de datos local.
 5. Termina con el **parte diario** (notificación push).
 
 ## Requisito del entorno: red hacia las fuentes
@@ -75,8 +78,9 @@ HTML público con parsers tolerantes y probados con fixtures
   `detail_url` interno.
 - **Canal editorial acotado**: el agente solo puede modificar
   título/resumen/cuerpo de ítems existentes vía `apply-editorial`.
-- **Publicación mínima**: la rutina commitea un solo archivo de datos; nunca
-  código, nunca force-push.
+- **Publicación mínima**: la rutina commitea solo archivos de datos bajo
+  `docs/data/` (el corte y el snapshot del CIADI); nunca código, nunca
+  force-push.
 - El sitio publicado valida esquemas de URL en el cliente y no usa
   `innerHTML`.
 

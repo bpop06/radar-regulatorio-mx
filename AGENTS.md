@@ -39,7 +39,9 @@ law, administrative litigation, and tax-specific administrative litigation.
   (`primary_categories`) used as `categories`; the fine labels stay in
   `topic_tags`.
 - The local SQLite history (`data/radar.sqlite3`) is never committed; the
-  public JSON remains the only published data contract.
+  published data lives under `docs/data/` (`publications.json` plus the
+  ICSID snapshot `icsid_snapshot.json`, which must persist across the
+  routine's ephemeral sessions so only new/changed cases are emitted).
 - Treat tax administrative litigation as a subset of administrative
   litigation. Tax collection or enforcement alone is not contentious
   procedure.
