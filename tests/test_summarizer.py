@@ -26,7 +26,7 @@ def test_fallback_summary_is_readable_and_exact():
         matched_terms=("impuesto", "iniciativa"),
     )
 
-    summary = Summarizer(api_key=None, model="gpt-5.5").summarize(item)
+    summary = Summarizer().summarize(item)
 
     assert len(words(summary.summary)) == 30
     assert "Publicación oficial" in summary.summary

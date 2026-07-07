@@ -1,83 +1,36 @@
 const elements = {
+  breadcrumb: document.querySelector("#bc-meta"),
+  title: document.querySelector("#detail-title"),
+  organ: document.querySelector("#detail-organ"),
+  signal: document.querySelector("#detail-signal"),
+  importance: document.querySelector("#detail-importance"),
   content: document.querySelector("#detail-content"),
   fullDetails: document.querySelector("#detail-full"),
   fullContent: document.querySelector("#detail-full-content"),
   officialSource: document.querySelector("#official-source"),
 };
 
-function renderMarkdown(markdown, container) {
+const monthShort = ["ENE", "FEB", "MAR", "ABR", "MAY", "JUN", "JUL", "AGO", "SEP", "OCT", "NOV", "DIC"];
+
+function monoDate(iso) {
+  if (typeof iso !== "string") return "—";
+  const [y, m, d] = iso.slice(0, 10).split("-").map(Number);
+  if (!y || !m || !d) return "—";
+  return `${String(d).padStart(2, "0")}·${monthShort[m - 1] || "?"}·${y}`;
+}
+
+function buildImportanceBar(container, importance) {
   container.replaceChildren();
-  const blocks = markdown.trim().split(/\n{2,}/);
-
-  for (const rawBlock of blocks) {
-    const block = rawBlock.trim();
-    if (!block) continue;
-
-    if (block.startsWith("# ")) {
-      const heading = document.createElement("h1");
-      heading.textContent = block.slice(2).trim();
-      container.append(heading);
-      continue;
-    }
-
-    if (block.startsWith("## ")) {
-      const heading = document.createElement("h2");
-      heading.textContent = block.slice(3).trim();
-      container.append(heading);
-      continue;
-    }
-
-    if (block.startsWith("- ")) {
-      const list = document.createElement("ul");
-      for (const line of block.split("\n")) {
-        if (!line.startsWith("- ")) continue;
-        const item = document.createElement("li");
-        appendInline(item, line.slice(2).trim());
-        list.append(item);
-      }
-      container.append(list);
-      continue;
-    }
-
-    const paragraph = document.createElement("p");
-    block.split("\n").forEach((line, index) => {
-      if (index > 0) paragraph.append(document.createElement("br"));
-      appendInline(paragraph, line);
-    });
-    container.append(paragraph);
+  const n = Math.max(0, Math.min(3, Number(importance) || 0));
+  for (let i = 0; i < 3; i++) {
+    const seg = document.createElement("span");
+    seg.className = i < n ? "seg on" : "seg";
+    container.append(seg);
   }
 }
 
-function appendInline(container, text) {
-  const inlinePattern = /(\*\*([^*]+)\*\*)|\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g;
-  let lastIndex = 0;
-  let match = inlinePattern.exec(text);
-
-  while (match) {
-    if (match.index > lastIndex) {
-      container.append(document.createTextNode(text.slice(lastIndex, match.index)));
-    }
-
-    if (match[2]) {
-      const strong = document.createElement("strong");
-      strong.textContent = match[2];
-      container.append(strong);
-    } else if (match[3] && match[4]) {
-      const link = document.createElement("a");
-      link.href = match[4];
-      link.target = "_blank";
-      link.rel = "noopener noreferrer";
-      link.textContent = match[3];
-      container.append(link);
-    }
-
-    lastIndex = inlinePattern.lastIndex;
-    match = inlinePattern.exec(text);
-  }
-
-  if (lastIndex < text.length) {
-    container.append(document.createTextNode(text.slice(lastIndex)));
-  }
+function render(markdown, container) {
+  if (window.Radar) window.Radar.renderMarkdown(markdown, container);
 }
 
 function fallbackMarkdown(item) {
@@ -85,13 +38,7 @@ function fallbackMarkdown(item) {
     ? item.categories.join(", ")
     : "Sin materia clasificada";
   return [
-    `# ${item.title || "Ficha regulatoria"}`,
-    (
-      `**Fecha de publicación:** ${item.published_at || "Sin fecha"}. ` +
-      `**Fuente:** ${item.source || "Sin fuente"}. ` +
-      `**Autoridad:** ${item.authority || "Autoridad no identificada"}.`
-    ),
-    "## Resumen ejecutivo",
+    `## Resumen ejecutivo`,
     item.summary || "Sin resumen disponible.",
     "## Información oficial",
     `**Título oficial:** ${item.official_title || "Sin título oficial"}`,
@@ -104,21 +51,13 @@ function fallbackMarkdown(item) {
   ].join("\n\n");
 }
 
-function buildCardMarkdown(item) {
-  const metaLine =
-    `**Fecha de publicación:** ${item.published_at || "Sin fecha"}. ` +
-    `**Fuente:** ${item.source || "Sin fuente"}. ` +
-    `**Emitido por:** ${item.issuing_body || item.authority || "Autoridad no identificada"}.`;
-  return [`# ${item.title || "Ficha regulatoria"}`, metaLine, item.card_body].join("\n\n");
-}
-
 function showMessage(title, detail) {
+  elements.title.textContent = title;
+  elements.breadcrumb.textContent = "—";
   elements.content.replaceChildren();
-  const heading = document.createElement("h1");
-  heading.textContent = title;
   const paragraph = document.createElement("p");
   paragraph.textContent = detail;
-  elements.content.append(heading, paragraph);
+  elements.content.append(paragraph);
   elements.fullDetails.hidden = true;
 }
 
@@ -133,7 +72,9 @@ async function loadDetail() {
     const response = await fetch("data/publications.json", { cache: "no-store" });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const payload = await response.json();
-    const item = (payload.items || []).find((publication) => publication.id === id);
+    const items = payload.items || [];
+    const idx = items.findIndex((publication) => publication.id === id);
+    const item = idx >= 0 ? items[idx] : null;
 
     if (!item) {
       showMessage("Ficha no encontrada", "No hay una publicación con ese identificador.");
@@ -142,20 +83,35 @@ async function loadDetail() {
 
     document.title = `${item.title} | Radar Regulatorio MX`;
 
+    const folio = String(idx + 1).padStart(3, "0");
+    elements.breadcrumb.textContent = `№ ${folio} · ${item.source} · ${monoDate(item.published_at)}`;
+    elements.title.textContent = item.title || "Ficha regulatoria";
+
+    if (Number(item.importance) > 0) {
+      buildImportanceBar(elements.importance, item.importance);
+      elements.signal.hidden = false;
+    }
+
+    const organ = item.issuing_body || item.authority;
+    if (organ) {
+      elements.organ.textContent = organ;
+      elements.organ.hidden = false;
+    }
+
     if (item.card_body) {
-      renderMarkdown(buildCardMarkdown(item), elements.content);
+      render(item.card_body, elements.content);
       if (item.detail_markdown) {
-        renderMarkdown(item.detail_markdown, elements.fullContent);
+        render(item.detail_markdown, elements.fullContent);
         elements.fullDetails.hidden = false;
       } else {
         elements.fullDetails.hidden = true;
       }
     } else {
-      renderMarkdown(item.detail_markdown || fallbackMarkdown(item), elements.content);
+      render(item.detail_markdown || fallbackMarkdown(item), elements.content);
       elements.fullDetails.hidden = true;
     }
 
-    if (typeof item.url === "string" && /^https?:\/\//i.test(item.url)) {
+    if (window.Radar && window.Radar.isSafeHttpUrl(item.url)) {
       elements.officialSource.href = item.url;
       elements.officialSource.hidden = false;
     }

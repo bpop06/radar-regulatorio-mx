@@ -61,23 +61,23 @@ publica el JSON), `collect` (solo JSON, sin base), `export-site` (regenera el
 JSON desde la última corrida guardada), `storage-report` (tamaño y contenido
 de la base) y `validate`.
 
-Sin `OPENAI_API_KEY`, el sistema genera un resumen extractivo de respaldo. Con
-la variable configurada utiliza OpenAI Responses API (`OPENAI_MODEL`, por
-defecto `gpt-5.5`, con `OPENAI_REASONING_EFFORT`, por defecto `extra_high`)
-para razonar el título editorial, el resumen de 30 palabras y el cuerpo de la
-ficha; si la API rechaza el esfuerzo configurado, se degrada a `high` con
-aviso.
+La recolección local genera resúmenes extractivos deterministas
+(`ai_generated: false`). La capa editorial — título de noticia, resumen de 30
+palabras y cuerpo de la ficha — la produce la rutina diaria de Claude en la
+nube ([`docs/EDITORIAL_CLOUD.md`](docs/EDITORIAL_CLOUD.md)), que aplica sus
+textos con `python -m app.cli apply-editorial` y marca `ai_generated: true`.
+No se usa ninguna API de pago: todo corre con la suscripción de Claude.
 
 ## Automatización
 
-La actualización diaria corre desde la Mac con launchd. La publicación la hace
-un recolector determinista (`scripts/collect_daily.sh`), que commitea sólo
-`docs/data/publications.json`. El agente Codex corre después en modo solo
-lectura con la skill [`radar-diario`](.agents/skills/radar-diario/SKILL.md)
-para auditar la actualización y redactar un parte diario, sin capacidad de
-escribir el repositorio ni de hacer push. La instalación en la Mac, la
-modalidad sin agente y el modelo de seguridad están en
-[`docs/MAC_SCHEDULE.md`](docs/MAC_SCHEDULE.md).
+La operación diaria tiene dos piezas: (1) la Mac recolecta y publica los
+datos con launchd a las 9:30 (recolector determinista que commitea sólo
+`docs/data/publications.json`; ver [`docs/MAC_SCHEDULE.md`](docs/MAC_SCHEDULE.md));
+y (2) la rutina diaria de Claude en la nube (11:00 CDMX) redacta la capa
+editorial con razonamiento opus, audita el corte con la guía
+[`radar-diario`](.agents/skills/radar-diario/SKILL.md) y publica; ver
+[`docs/EDITORIAL_CLOUD.md`](docs/EDITORIAL_CLOUD.md). Codex y la API de
+OpenAI quedaron fuera del ciclo.
 
 GitHub Actions de esta cuenta falla con `startup_failure` antes de crear jobs,
 por lo que los workflows quedan sólo como respaldo manual mientras eso se

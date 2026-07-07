@@ -31,8 +31,6 @@ jobs:
       - run: python -m pip install . --no-deps
       - name: Collect official publications
         env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          OPENAI_MODEL: gpt-5.5
           LOCAL_TIMEZONE: America/Mexico_City
           REQUEST_TIMEOUT_SECONDS: "45"
           SOURCE_RETRIES: "3"

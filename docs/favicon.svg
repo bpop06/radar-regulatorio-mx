@@ -1,4 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="14" fill="#0d3b2e"/>
-  <text x="32" y="43" font-family="Georgia, 'Times New Roman', serif" font-size="28" font-weight="700" text-anchor="middle" fill="#e8d5a3">RR</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Radar Regulatorio MX">
+  <style>
+    .tile { fill: #F4F4F1; }
+    .frame { stroke: #171A1C; }
+    .sweep { stroke: #171A1C; }
+    .dot { fill: #D42A1C; }
+    @media (prefers-color-scheme: dark) {
+      .tile { fill: #14171A; }
+      .frame { stroke: #ECEBE6; }
+      .sweep { stroke: #ECEBE6; }
+      .dot { fill: #F0553F; }
+    }
+  </style>
+  <rect class="tile" x="2" y="2" width="60" height="60" rx="10"/>
+  <rect class="frame" x="12" y="12" width="40" height="40" rx="3" fill="none" stroke-width="3"/>
+  <line class="sweep" x1="16" y1="48" x2="44" y2="20" stroke-width="3" stroke-linecap="round"/>
+  <circle class="dot" cx="44" cy="20" r="5"/>
 </svg>

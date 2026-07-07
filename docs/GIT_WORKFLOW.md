@@ -38,11 +38,9 @@ relación en el mismo commit.
 
 ## Seguridad
 
-- Los secretos viven en dos lugares, nunca versionados: GitHub Actions
-  Secrets (para los workflows del repo) y archivos locales fuera del
-  repositorio en la Mac (`~/.radar-regulatorio-mx.env` para
-  `OPENAI_API_KEY` y demás variables; `~/.codex/auth.json` para la sesión
-  de `codex login` que usan las corridas diarias sin supervisión).
+- Los secretos de workflows viven en GitHub Actions Secrets; la operación
+  diaria no usa APIs de pago ni credenciales adicionales (la configuración
+  local opcional vive en `~/.radar-regulatorio-mx.env`, fuera del repo).
 - No versionar `.env`, bases SQLite locales ni credenciales.
 - Mantener permisos mínimos para workflows.
 - Fijar versiones principales de las acciones de GitHub y revisar

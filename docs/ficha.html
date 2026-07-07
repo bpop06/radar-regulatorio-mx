@@ -3,57 +3,96 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta
-      name="description"
-      content="Ficha completa en Markdown de una publicación oficial mexicana."
-    >
+    <meta name="description" content="Ficha completa de una publicación oficial mexicana del Radar Regulatorio MX.">
     <title>Ficha | Radar Regulatorio MX</title>
+    <script>
+      (function () {
+        var d = document.documentElement;
+        d.classList.add("js");
+        try { var t = localStorage.getItem("radar-theme"); if (t === "dark" || t === "light") d.setAttribute("data-theme", t); } catch (e) {}
+      })();
+    </script>
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..600&family=Libre+Franklin:wght@400..700&family=IBM+Plex+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     >
     <link rel="stylesheet" href="styles.css">
+    <script src="markdown.js" defer></script>
     <script src="detail.js" defer></script>
   </head>
   <body>
-    <header class="detail-header">
-      <nav class="nav shell" aria-label="Navegación principal">
-        <a class="brand" href="./" aria-label="Radar Regulatorio MX, inicio">
-          <span class="brand-mark" aria-hidden="true">RR</span>
-          <span>Radar Regulatorio MX</span>
+    <div class="progress-line" aria-hidden="true"></div>
+    <header>
+      <nav class="nav" aria-label="Navegación principal">
+        <div class="nav-inner shell">
+        <a class="brand" href="index.html" aria-label="Radar Regulatorio MX, inicio">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 22 22" width="22" height="22" fill="none">
+              <line x1="5" y1="17" x2="15" y2="6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+              <circle cx="15" cy="6" r="2.4" fill="var(--accent)"/>
+            </svg>
+          </span>
+          <span>
+            <span class="brand-word">Radar<span class="tick">·</span>MX</span>
+            <span class="brand-sub">Regulatorio · MX</span>
+          </span>
         </a>
-        <a class="source-link" href="./">Volver al radar</a>
+        <div class="nav-right">
+          <div class="nav-links">
+            <a class="nav-link" data-page="index" href="index.html">Fichas</a>
+            <a class="nav-link" data-page="calendario" href="calendario.html">Calendario</a>
+            <a class="nav-link" href="index.html#fuentes">Fuentes</a>
+            <span class="nav-indicator" aria-hidden="true"></span>
+          </div>
+          <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Cambiar tema">
+            <span class="theme-glyph" aria-hidden="true">☽</span>
+          </button>
+        </div>
+        </div>
       </nav>
     </header>
 
     <main class="detail-main shell">
-      <article class="detail-card">
+      <article class="detail-col">
+        <p class="detail-breadcrumb" id="detail-breadcrumb"><a href="index.html">Fichas</a> · <span id="bc-meta">cargando…</span></p>
+        <h1 class="detail-h1" id="detail-title">Cargando ficha…</h1>
+        <p class="detail-signal" id="detail-signal" hidden>
+          <span class="lbl">Importancia</span>
+          <span class="importance-bar" id="detail-importance" aria-hidden="true"></span>
+        </p>
+        <p class="detail-organ" id="detail-organ" hidden></p>
+
+        <div class="meridian" data-reveal aria-hidden="true"></div>
+
         <div id="detail-content" class="markdown-body" aria-live="polite">
           <p>Cargando ficha.</p>
         </div>
+
         <details id="detail-full" class="detail-full" hidden>
           <summary>Ficha técnica completa</summary>
           <div id="detail-full-content" class="markdown-body"></div>
         </details>
+
         <div class="detail-actions">
-          <a href="./">Volver</a>
-          <a id="official-source" target="_blank" rel="noopener noreferrer" hidden>
+          <a class="btn-ghost" href="index.html">Volver</a>
+          <a id="official-source" class="btn-accent" target="_blank" rel="noopener noreferrer" hidden>
             Fuente oficial
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M7 17 17 7M8 7h9v9"/>
-            </svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
           </a>
         </div>
       </article>
     </main>
 
-    <footer>
-      <div class="shell footer-content">
-        <p>Radar Regulatorio MX</p>
-        <p>Información pública sintetizada. No constituye asesoría legal.</p>
+    <footer class="band site-footer">
+      <div class="shell">
+        <div class="meridian" aria-hidden="true"></div>
+        <div class="footer-content">
+          <p><strong>Radar Regulatorio MX</strong> · Instrumento del Registro</p>
+          <p>Información pública sintetizada. No constituye asesoría legal.</p>
+        </div>
       </div>
     </footer>
   </body>
