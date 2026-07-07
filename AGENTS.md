@@ -10,9 +10,11 @@ law, administrative litigation, and tax-specific administrative litigation.
 
 - `docs/` is the public site served by GitHub Pages ("Deploy from a branch",
   `main` + `/docs`). The daily data file is `docs/data/publications.json`.
-- The daily automation skill lives in `.agents/skills/radar-diario/SKILL.md`
-  and is executed on the Mac via `scripts/codex_daily.sh` (see
-  `docs/MAC_SCHEDULE.md`).
+- Daily operation is split: the Mac collects and publishes extractive data
+  (`scripts/codex_daily.sh` → `collect_daily.sh`, see `docs/MAC_SCHEDULE.md`);
+  a daily Claude routine in the cloud writes the editorial layer through
+  `python -m app.cli apply-editorial` and audits the cut using the read-only
+  guide `.agents/skills/radar-diario/SKILL.md` (see `docs/EDITORIAL_CLOUD.md`).
 
 ## Engineering rules
 

@@ -2243,7 +2243,7 @@
         "date": "2026-01-01",
         "status": "inhabil",
         "reason": "Año Nuevo",
-        "source_url": "http://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf",
+        "source_url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf",
         "analysis": "Fundamento: art. 12, primer párrafo, del CFF, que excluye el 1o. de enero del cómputo de plazos. Coincide además con el último tramo del segundo periodo general de vacaciones 2025 del SAT (18-dic-2025 a 2-ene-2026, regla 2.1.6 RMF 2025), por lo que la fecha es inhábil por doble motivo.",
         "verified": true
       },
@@ -2259,7 +2259,7 @@
         "date": "2026-02-02",
         "status": "inhabil",
         "reason": "Primer lunes de febrero, conmemoración del 5 de febrero",
-        "source_url": "http://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf",
+        "source_url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf",
         "analysis": "Art. 12 CFF excluye 'el primer lunes de febrero en conmemoración del 5 de febrero'. El primer lunes de febrero de 2026 es el día 2 (verificado por cálculo calendario independiente: 1-feb-2026 es domingo). Nota: algunas fuentes secundarias de baja calidad citan erróneamente el '3 de febrero'; se descarta ese dato por no corresponder al primer lunes real del mes.",
         "verified": true
       },
@@ -2267,7 +2267,7 @@
         "date": "2026-03-16",
         "status": "inhabil",
         "reason": "Tercer lunes de marzo, conmemoración del 21 de marzo (natalicio de Benito Juárez)",
-        "source_url": "http://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf",
+        "source_url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf",
         "analysis": "Art. 12 CFF excluye 'el tercer lunes de marzo en conmemoración del 21 de marzo'. El tercer lunes de marzo de 2026 es el día 16 (lunes 2, 9, 16, 23, 30; verificado por cálculo calendario). Se descarta el '17 de marzo' citado por algunas fuentes secundarias, que no corresponde al tercer lunes real.",
         "verified": true
       },
@@ -2291,7 +2291,7 @@
         "date": "2026-05-01",
         "status": "inhabil",
         "reason": "Día del Trabajo",
-        "source_url": "http://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf",
+        "source_url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf",
         "analysis": "Art. 12 CFF excluye expresamente el 1o. de mayo del cómputo de plazos. Dato ampliamente reproducido y no controvertido en todas las fuentes consultadas.",
         "verified": true
       },
@@ -2307,7 +2307,7 @@
         "date": "2026-09-16",
         "status": "inhabil",
         "reason": "Día de la Independencia",
-        "source_url": "http://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf",
+        "source_url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf",
         "analysis": "Art. 12 CFF excluye expresamente el 16 de septiembre. Dato uniforme en todas las fuentes consultadas, sin discrepancia.",
         "verified": true
       },
@@ -2315,7 +2315,7 @@
         "date": "2026-11-16",
         "status": "inhabil",
         "reason": "Tercer lunes de noviembre, conmemoración del 20 de noviembre (Revolución Mexicana)",
-        "source_url": "http://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf",
+        "source_url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf",
         "analysis": "Art. 12 CFF excluye 'el tercer lunes de noviembre en conmemoración del 20 de noviembre'. El tercer lunes de noviembre de 2026 es el día 16 (lunes 2, 9, 16, 23, 30; verificado por cálculo calendario). Se descarta el '17 de noviembre' citado por alguna fuente secundaria de baja calidad.",
         "verified": true
       },
@@ -2323,7 +2323,7 @@
         "date": "2026-12-25",
         "status": "inhabil",
         "reason": "Navidad",
-        "source_url": "http://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf",
+        "source_url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf",
         "analysis": "Art. 12 CFF excluye expresamente el 25 de diciembre del cómputo de plazos. Dato uniforme en todas las fuentes consultadas.",
         "verified": true
       },
@@ -2397,7 +2397,7 @@
         "date": "2026-01-01",
         "status": "inhabil",
         "reason": "Año Nuevo",
-        "source_url": "http://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf",
+        "source_url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf",
         "analysis": "ANAM no cuenta con un código de plazos propio distinto: para el cómputo de plazos en trámites y procedimientos aduaneros aplica el art. 12 del CFF (la operación aduanera diaria de despacho continúa con personal necesario, pero eso no afecta el cómputo de plazos legales). El 1o. de enero es inhábil por dicho artículo.",
         "verified": true
       },
@@ -2405,7 +2405,7 @@
         "date": "2026-02-02",
         "status": "inhabil",
         "reason": "Primer lunes de febrero, conmemoración del 5 de febrero",
-        "source_url": "http://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf",
+        "source_url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf",
         "analysis": "Art. 12 CFF, aplicable a ANAM para cómputo de plazos. El primer lunes de febrero de 2026 es el día 2 (verificado por cálculo calendario: 1-feb-2026 es domingo).",
         "verified": true
       },
@@ -2413,7 +2413,7 @@
         "date": "2026-03-16",
         "status": "inhabil",
         "reason": "Tercer lunes de marzo, conmemoración del 21 de marzo (natalicio de Benito Juárez)",
-        "source_url": "http://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf",
+        "source_url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf",
         "analysis": "Art. 12 CFF, aplicable a ANAM para cómputo de plazos. El tercer lunes de marzo de 2026 es el día 16 (verificado por cálculo calendario: lunes 2, 9, 16, 23, 30 de marzo).",
         "verified": true
       },
@@ -2437,7 +2437,7 @@
         "date": "2026-05-01",
         "status": "inhabil",
         "reason": "Día del Trabajo",
-        "source_url": "http://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf",
+        "source_url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf",
         "analysis": "Art. 12 CFF excluye expresamente el 1o. de mayo del cómputo de plazos, aplicable a ANAM. Dato uniforme en todas las fuentes consultadas.",
         "verified": true
       },
@@ -2453,7 +2453,7 @@
         "date": "2026-09-16",
         "status": "inhabil",
         "reason": "Día de la Independencia",
-        "source_url": "http://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf",
+        "source_url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf",
         "analysis": "Art. 12 CFF excluye expresamente el 16 de septiembre, aplicable a ANAM. Dato uniforme en todas las fuentes consultadas.",
         "verified": true
       },
@@ -2461,7 +2461,7 @@
         "date": "2026-11-16",
         "status": "inhabil",
         "reason": "Tercer lunes de noviembre, conmemoración del 20 de noviembre (Revolución Mexicana)",
-        "source_url": "http://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf",
+        "source_url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf",
         "analysis": "Art. 12 CFF, aplicable a ANAM. El tercer lunes de noviembre de 2026 es el día 16 (verificado por cálculo calendario: lunes 2, 9, 16, 23, 30 de noviembre).",
         "verified": true
       },
@@ -2469,7 +2469,7 @@
         "date": "2026-12-25",
         "status": "inhabil",
         "reason": "Navidad",
-        "source_url": "http://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf",
+        "source_url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf",
         "analysis": "Art. 12 CFF excluye expresamente el 25 de diciembre, aplicable a ANAM. Dato uniforme en todas las fuentes consultadas.",
         "verified": true
       }

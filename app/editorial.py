@@ -7,7 +7,11 @@ from typing import Any
 
 from app.storage import Storage
 from app.text import words
-from app.validation import CARD_BODY_SECTIONS, OFFICE_NUMBER_TITLE
+from app.validation import (
+    CARD_BODY_SECTIONS,
+    OFFICE_NUMBER_TITLE,
+    validate_publications_payload,
+)
 
 EDITABLE_FIELDS = ("title", "summary", "card_body")
 
@@ -49,6 +53,14 @@ def apply_editorial(
         for field, value in fields.items():
             item[field] = value
         item["ai_generated"] = True
+
+    # Validar el payload fusionado EN MEMORIA antes de escribir: un fallo aquí
+    # no debe dejar el archivo publicado a medio modificar.
+    report = validate_publications_payload(payload)
+    if not report.ok:
+        raise EditorialError(
+            "el payload resultante no pasa el contrato: " + "; ".join(report.errors[:5])
+        )
 
     publications_path.write_text(
         json.dumps(payload, ensure_ascii=False, indent=2) + "\n",
