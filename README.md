@@ -7,10 +7,10 @@ jerarquía fija (qué se publicó, sustancia y fuente oficial).
 
 Cada novedad queda clasificada por dependencia u órgano emisor, rama de
 gobierno, jurisdicción (nacional/internacional), fecha (facetas de año, mes y
-día), materias, etiquetas temáticas e importancia editorial (1-5). Las corridas
-se acumulan en una base SQLite local (`data/radar.sqlite3`, fuera de git) que
-funciona como memoria histórica; el contrato público sigue siendo
-`docs/data/publications.json`.
+día), materias, etiquetas temáticas e importancia editorial (1-5). El contrato
+público es `docs/data/publications.json` y el historial de git funciona como
+archivo del radar (un corte por commit); la base SQLite (`research`) es
+opcional para trabajo local.
 
 ## Materias cubiertas
 
@@ -100,7 +100,7 @@ los workflows del repo. Activación (una sola vez, desde la web de GitHub):
 
 La página queda en `https://bpop06.github.io/radar-regulatorio-mx/` y se
 actualiza sola con cada push a `main` que toque `docs/` (es lo que hace la
-tarea diaria de la Mac al publicar `docs/data/publications.json`).
+rutina diaria al publicar `docs/data/publications.json`).
 
 Si tras activar Pages el sitio no publica y el workflow interno "pages build
 and deployment" también falla, la causa es el bloqueo de Actions a nivel de
