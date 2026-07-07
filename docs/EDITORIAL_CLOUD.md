@@ -1,55 +1,83 @@
-# Rutina editorial diaria en la nube (Claude)
+# Rutina diaria integral en la nube (Claude)
 
-La capa editorial del radar la produce una **rutina diaria de Claude** que
-corre en la nube con la suscripción del propietario — sin API de OpenAI y sin
-Codex.
+Todo el ciclo diario del radar corre en la nube con una rutina de Claude y la
+suscripción del propietario — sin API de pago, sin Codex y **sin procesar ni
+guardar nada en máquinas locales**.
 
 ## Qué hace cada día (11:00 CDMX / 17:00 UTC)
 
-1. Abre una sesión nueva de Claude Code en el entorno del repositorio y trae
-   `main` actualizado (la Mac ya recolectó y publicó datos extractivos a las
-   9:30).
-2. Lee `docs/data/publications.json` y selecciona los ítems con
-   `ai_generated: false` (pendientes de editorial).
-3. Redacta por lotes, con subagentes de razonamiento (opus), para cada ítem:
-   - **Título de noticia**: «órgano + verbo sustantivo + qué cambia», regido
-     por la temática esencial; el número de oficio/acuerdo jamás abre el
-     título.
-   - **Resumen de exactamente 30 palabras**, autosuficiente y sin inventar
-     hechos (solo a partir del título oficial, la descripción y la autoridad).
-   - **`card_body`** con la jerarquía fija `## Qué se publicó`,
-     `## Sustancia`, `## Fuente`.
-4. Aplica las ediciones con el único canal permitido:
-   `python -m app.cli apply-editorial ediciones.json` — el comando rechaza
-   ids inexistentes, resúmenes ≠ 30 palabras, cuerpos sin las tres secciones
-   y títulos que inicien con número de oficio; es todo-o-nada y termina con
-   la validación completa del contrato.
-5. Audita el corte siguiendo `.agents/skills/radar-diario/SKILL.md`
-   (solo lectura).
-6. Commitea **únicamente** `docs/data/publications.json` con el mensaje
-   `chore: editorial diario` y empuja a `main` (con reintentos). GitHub Pages
-   publica.
-7. Termina con el parte diario, que llega como **notificación push**.
+1. **Recolecta** las 10 fuentes oficiales ejecutando el pipeline determinista
+   del repo: `python -m app.cli collect` consulta DOF, SNICE, PLATIICA,
+   Diputados, Senado, IMPI, gob.mx APF, ONU Noticias, USTR y Trade.gov,
+   clasifica, valida y escribe `docs/data/publications.json`. La recolección
+   es **código, no navegación del agente**: el modelo nunca "lee" páginas web
+   crudas; procesa los campos ya extraídos y validados por el pipeline.
+2. **Editorializa** los ítems nuevos (`ai_generated: false`) con subagentes
+   de razonamiento opus: titular de noticia, resumen de 30 palabras exactas y
+   `card_body` con las tres secciones, aplicados por el único canal
+   permitido, `python -m app.cli apply-editorial` (validación dura,
+   todo-o-nada).
+3. **Audita** el corte (guía read-only `.agents/skills/radar-diario/SKILL.md`)
+   y revisa si el corte trae acuerdos de días inhábiles que ameriten
+   actualizar los calendarios (solo lo reporta).
+4. **Publica**: commit únicamente de `docs/data/publications.json`
+   (`chore: radar diario`) y push a `main`; GitHub Pages actualiza el sitio.
+   El historial de git es el archivo histórico del radar (un corte por
+   commit); no hay base de datos local.
+5. Termina con el **parte diario** (notificación push).
+
+## Requisito del entorno: red hacia las fuentes
+
+El entorno de Claude Code donde corre la rutina debe permitir salida HTTPS a
+los dominios oficiales del recolector:
+
+```
+www.dof.gob.mx          www.snice.gob.mx        platiica.economia.gob.mx
+gaceta.diputados.gob.mx transparenciaparlamentaria.senado.gob.mx
+www.impi.gob.mx         www.gob.mx              news.un.org
+ustr.gov                blog.trade.gov
+```
+
+Se configura en claude.ai/code → ajustes del entorno → acceso a red
+(allowlist con esos dominios, o red completa). Sin esa apertura, `collect`
+reporta todas las fuentes en error y la rutina no publica datos nuevos
+(publica solo editorial pendiente, si la hay).
+
+## Cómo consulta las fuentes (endpoints primero)
+
+Regla del repo (AGENTS.md): interfaces estructuradas oficiales primero; HTML
+solo donde no existe API. Estado actual: DOF (RSS oficial), PLATIICA (REST),
+Senado (JSON de transparencia), ONU/USTR/Trade.gov (RSS) son endpoints;
+SNICE, Gaceta de Diputados, IMPI y gob.mx no publican API y se leen de su
+HTML público con parsers tolerantes y probados con fixtures
+(`docs/SOURCE_AUDIT.md` documenta cada interfaz y sus límites).
+
+## Medidas de seguridad del ciclo
+
+- **TLS verificado** en todas las solicitudes (truststore), User-Agent
+  identificado, timeouts y reintentos acotados, una corrida al día.
+- **Recolectores aislados**: una fuente caída o malformada no afecta a las
+  demás; XML parseado sin entidades externas (sin XXE); el contenido nunca se
+  ejecuta.
+- **Gate de validación duro** antes de publicar: contrato completo, resúmenes
+  de 30 palabras, URLs http(s), `detail_url` interno.
+- **Canal editorial acotado**: el agente solo puede modificar
+  título/resumen/cuerpo de ítems existentes vía `apply-editorial`.
+- **Publicación mínima**: la rutina commitea un solo archivo de datos; nunca
+  código, nunca force-push.
+- El sitio publicado valida esquemas de URL en el cliente y no usa
+  `innerHTML`.
 
 ## Operación de la rutina
 
-La rutina es un *trigger* de Claude Code (`create_new_session_on_fire`) con
-cron `0 17 * * *`. Desde cualquier sesión de Claude Code conectada a la
-cuenta se administra con las herramientas del servidor Claude_Code_Remote:
+Administrable desde cualquier sesión de Claude conectada a la cuenta
+(`list_triggers`, `update_trigger` para pausar o cambiar horario,
+`fire_trigger` para dispararla ya, `delete_trigger`), o en lenguaje natural:
+«pausa/dispara la rutina del radar».
 
-- `list_triggers` — ver el trigger y su próximo disparo.
-- `update_trigger` — pausar (`enabled: false`), reanudar o cambiar horario.
-- `fire_trigger` — dispararla de inmediato fuera de horario.
-- `delete_trigger` — eliminarla.
+## Respaldo manual
 
-También se puede pedir en lenguaje natural a Claude: «pausa la rutina
-editorial del radar», «dispárala ahora», etc.
-
-## Límites de seguridad
-
-- La rutina solo puede modificar los tres campos editoriales de ítems
-  existentes a través de `apply-editorial`; el resto del contrato y del
-  repositorio no es escribible por ese canal.
-- Si un día la Mac no publicó, la rutina editorializa el corte previo y lo
-  anota en el parte; no recolecta (no tiene red hacia sitios de gobierno) ni
-  inventa novedades.
+Si un día la rutina no corre, cualquier máquina con red puede publicar el
+corte: `scripts/collect_daily.sh` (recolecta, valida y commitea solo el
+archivo de datos). La editorial pendiente la tomará la siguiente corrida de
+la rutina.

@@ -70,14 +70,14 @@ No se usa ninguna API de pago: todo corre con la suscripción de Claude.
 
 ## Automatización
 
-La operación diaria tiene dos piezas: (1) la Mac recolecta y publica los
-datos con launchd a las 9:30 (recolector determinista que commitea sólo
-`docs/data/publications.json`; ver [`docs/MAC_SCHEDULE.md`](docs/MAC_SCHEDULE.md));
-y (2) la rutina diaria de Claude en la nube (11:00 CDMX) redacta la capa
-editorial con razonamiento opus, audita el corte con la guía
-[`radar-diario`](.agents/skills/radar-diario/SKILL.md) y publica; ver
-[`docs/EDITORIAL_CLOUD.md`](docs/EDITORIAL_CLOUD.md). Codex y la API de
-OpenAI quedaron fuera del ciclo.
+Todo el ciclo diario corre en la nube con la rutina de Claude (11:00 CDMX):
+recolecta las 10 fuentes oficiales con el pipeline determinista, redacta la
+capa editorial con razonamiento opus, audita el corte con la guía
+[`radar-diario`](.agents/skills/radar-diario/SKILL.md) y publica sólo
+`docs/data/publications.json`; ver
+[`docs/EDITORIAL_CLOUD.md`](docs/EDITORIAL_CLOUD.md). Nada se procesa ni se
+guarda en máquinas locales; el historial de git es el archivo del radar.
+Codex y la API de OpenAI quedaron fuera del ciclo.
 
 GitHub Actions de esta cuenta falla con `startup_failure` antes de crear jobs,
 por lo que los workflows quedan sólo como respaldo manual mientras eso se
