@@ -2,6 +2,7 @@ const state = {
   items: [],
   sources: [],
   generatedAt: null,
+  generatedISO: null,
   query: "",
   category: "Todas",
   source: "Todas",
@@ -37,24 +38,19 @@ const searchAliases = {
 };
 
 const monthNames = [
-  "enero",
-  "febrero",
-  "marzo",
-  "abril",
-  "mayo",
-  "junio",
-  "julio",
-  "agosto",
-  "septiembre",
-  "octubre",
-  "noviembre",
-  "diciembre",
+  "enero", "febrero", "marzo", "abril", "mayo", "junio",
+  "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre",
 ];
+
+const monthShort = ["ENE", "FEB", "MAR", "ABR", "MAY", "JUN", "JUL", "AGO", "SEP", "OCT", "NOV", "DIC"];
+
+const RM = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 const elements = {
   list: document.querySelector("#news-list"),
   template: document.querySelector("#news-template"),
   filters: document.querySelector("#category-filters"),
+  filterIndicator: document.querySelector(".filter-indicator"),
   search: document.querySelector("#search"),
   sourceFilter: document.querySelector("#source-filter"),
   dateRange: document.querySelector("#date-range"),
@@ -71,32 +67,37 @@ const elements = {
   emptyEyebrow: document.querySelector("#empty-eyebrow"),
   emptyTitle: document.querySelector("#empty-title"),
   count: document.querySelector("#result-count"),
-  updated: document.querySelector("#last-update"),
   feedNote: document.querySelector("#feed-note"),
   sourceAlert: document.querySelector("#source-alert"),
   sourceSummary: document.querySelector("#source-summary"),
   sources: document.querySelector("#source-status"),
   clear: document.querySelector("#clear-filters"),
+  readingDate: document.querySelector("#reading-date"),
+  readingCount: document.querySelector("#reading-count"),
+  readingOrgans: document.querySelector("#reading-organs"),
+  hero: document.querySelector(".hero"),
 };
 
 const dayInMilliseconds = 24 * 60 * 60 * 1000;
 
-const dateFormatter = new Intl.DateTimeFormat("es-MX", {
-  day: "numeric",
-  month: "long",
-  year: "numeric",
-  timeZone: "UTC",
-});
-
 function normalize(value) {
-  return value
-    .normalize("NFD")
-    .replace(/\p{Diacritic}/gu, "")
-    .toLowerCase();
+  return value.normalize("NFD").replace(/\p{Diacritic}/gu, "").toLowerCase();
 }
 
 function isSafeHttpUrl(u) {
   return typeof u === "string" && /^https?:\/\//i.test(u);
+}
+
+function monoDate(iso) {
+  if (typeof iso !== "string") return "—";
+  const parts = iso.slice(0, 10).split("-").map(Number);
+  const [y, m, d] = parts;
+  if (!y || !m || !d) return "—";
+  return `${String(d).padStart(2, "0")}·${monthShort[m - 1] || "?"}·${y}`;
+}
+
+function sourceCode(src) {
+  return String(src || "").split(/\s+/)[0].toUpperCase();
 }
 
 function detailUrlFor(item) {
@@ -117,8 +118,69 @@ function monthLabel(key) {
   return `${name} ${year}`.trim();
 }
 
+/* ---------------------------------------------------------------- motion */
+const revealObserver =
+  "IntersectionObserver" in window
+    ? new IntersectionObserver(
+        (entries, obs) => {
+          for (const entry of entries) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              obs.unobserve(entry.target);
+            }
+          }
+        },
+        { threshold: 0.15, rootMargin: "0px 0px -10% 0px" },
+      )
+    : null;
+
+function observeReveal(el) {
+  if (RM || !revealObserver) {
+    el.classList.add("is-visible");
+    return;
+  }
+  revealObserver.observe(el);
+}
+
+function countUp(el, target, format) {
+  const fmt = format || ((v) => String(v));
+  if (RM || !el) {
+    if (el) el.textContent = fmt(target);
+    return;
+  }
+  const duration = 900;
+  const start = performance.now();
+  const ease = (t) => 1 - Math.pow(1 - t, 4); // aproxima ease-out-expo
+  function tick(now) {
+    const t = Math.min(1, (now - start) / duration);
+    el.textContent = fmt(Math.round(ease(t) * target));
+    if (t < 1) requestAnimationFrame(tick);
+  }
+  requestAnimationFrame(tick);
+}
+
+function placeFilterIndicator() {
+  const indicator = elements.filterIndicator;
+  if (!indicator) return;
+  const active = elements.filters.querySelector(".filter.active");
+  if (!active) {
+    indicator.style.opacity = "0";
+    return;
+  }
+  const parentRect = elements.filters.getBoundingClientRect();
+  const rect = active.getBoundingClientRect();
+  const left = rect.left - parentRect.left + elements.filters.scrollLeft;
+  indicator.style.width = `${rect.width}px`;
+  indicator.style.transform = `translateX(${left}px)`;
+  indicator.style.opacity = "1";
+}
+
+/* ---------------------------------------------------------------- filters UI */
 function renderFilters() {
+  const indicator = elements.filterIndicator;
   elements.filters.replaceChildren();
+  if (indicator) elements.filters.append(indicator);
+
   const allButton = document.createElement("button");
   allButton.className = "filter active";
   allButton.type = "button";
@@ -137,6 +199,7 @@ function renderFilters() {
     button.textContent = category;
     elements.filters.append(button);
   }
+  requestAnimationFrame(placeFilterIndicator);
 }
 
 function renderSourceFilter() {
@@ -145,9 +208,7 @@ function renderSourceFilter() {
     left.localeCompare(right, "es"),
   );
   elements.sourceFilter.replaceChildren(new Option("Todas", "Todas"));
-  for (const source of sources) {
-    elements.sourceFilter.append(new Option(source, source));
-  }
+  for (const source of sources) elements.sourceFilter.append(new Option(source, source));
   state.source = sources.includes(selected) ? selected : "Todas";
   elements.sourceFilter.value = state.source;
 }
@@ -158,9 +219,7 @@ function renderIssuingBodyFilter() {
     (left, right) => left.localeCompare(right, "es"),
   );
   elements.issuingBodyFilter.replaceChildren(new Option("Todas", "Todas"));
-  for (const body of bodies) {
-    elements.issuingBodyFilter.append(new Option(body, body));
-  }
+  for (const body of bodies) elements.issuingBodyFilter.append(new Option(body, body));
   state.issuingBody = bodies.includes(selected) ? selected : "Todas";
   elements.issuingBodyFilter.value = state.issuingBody;
 }
@@ -179,10 +238,9 @@ function renderMonthFilter() {
   elements.monthFilter.value = state.month;
 }
 
+/* ---------------------------------------------------------------- filtering (v2 logic intacta) */
 function activeAnchorDate() {
-  if (state.generatedAt && !Number.isNaN(state.generatedAt.valueOf())) {
-    return state.generatedAt;
-  }
+  if (state.generatedAt && !Number.isNaN(state.generatedAt.valueOf())) return state.generatedAt;
   const timestamps = state.items
     .map((item) => new Date(`${item.published_at}T00:00:00Z`).valueOf())
     .filter((value) => !Number.isNaN(value));
@@ -201,11 +259,9 @@ function matchesDateRange(item) {
 function matchesIssuingBody(item) {
   return state.issuingBody === "Todas" || item.issuing_body === state.issuingBody;
 }
-
 function matchesJurisdiction(item) {
   return state.jurisdiction === "Todas" || item.jurisdiction === state.jurisdiction;
 }
-
 function matchesMonth(item) {
   return state.month === "all" || monthKey(item) === state.month;
 }
@@ -213,20 +269,12 @@ function matchesMonth(item) {
 function filteredItems() {
   const query = normalize(state.query.trim());
   const selected = state.items.filter((item) => {
-    const matchesCategory =
-      state.category === "Todas" || item.categories.includes(state.category);
+    const matchesCategory = state.category === "Todas" || item.categories.includes(state.category);
     const matchesSource = state.source === "Todas" || item.source === state.source;
     const haystack = normalize(
       [
-        item.title,
-        item.summary,
-        item.official_title,
-        item.description,
-        item.detail_markdown,
-        item.source,
-        item.authority,
-        item.issuing_body,
-        item.document_type,
+        item.title, item.summary, item.official_title, item.description, item.detail_markdown,
+        item.source, item.authority, item.issuing_body, item.document_type,
         item.categories.join(" "),
         (item.topic_tags || []).join(" "),
         (item.subtopic_tags || []).join(" "),
@@ -234,13 +282,8 @@ function filteredItems() {
       ].join(" "),
     );
     return (
-      matchesCategory &&
-      matchesSource &&
-      matchesDateRange(item) &&
-      matchesIssuingBody(item) &&
-      matchesJurisdiction(item) &&
-      matchesMonth(item) &&
-      (!query || haystack.includes(query))
+      matchesCategory && matchesSource && matchesDateRange(item) && matchesIssuingBody(item) &&
+      matchesJurisdiction(item) && matchesMonth(item) && (!query || haystack.includes(query))
     );
   });
 
@@ -260,6 +303,102 @@ function filteredItems() {
 
 function resetToFirstPage() {
   state.page = 1;
+}
+
+/* ---------------------------------------------------------------- card render */
+function buildImportanceBar(container, importance) {
+  container.replaceChildren();
+  const n = Math.max(0, Math.min(3, Number(importance) || 0));
+  for (let i = 0; i < 3; i++) {
+    const seg = document.createElement("span");
+    seg.className = i < n ? "seg on" : "seg";
+    container.append(seg);
+  }
+}
+
+function findSection(sections, needle) {
+  return sections.find((s) => normalize(s.title).includes(normalize(needle)));
+}
+
+function populateCard(fragment, item, indexInPage) {
+  const card = fragment.querySelector(".news-card");
+  const detailUrl = detailUrlFor(item);
+
+  card.style.setProperty("--i", indexInPage < 8 ? indexInPage : 0);
+
+  fragment.querySelector(".folio").textContent = `№ ${item._folio}`;
+  fragment.querySelector(".source-chip").textContent = sourceCode(item.source);
+
+  const intlChip = fragment.querySelector(".intl-chip");
+  if (item.jurisdiction === "internacional" && item.country_or_org) {
+    intlChip.textContent = item.country_or_org;
+    intlChip.hidden = false;
+  }
+
+  const time = fragment.querySelector("time");
+  time.dateTime = item.published_at;
+  time.textContent = monoDate(item.published_at);
+
+  buildImportanceBar(fragment.querySelector(".importance-bar"), item.importance);
+
+  fragment.querySelector(".card-organ").textContent =
+    item.issuing_body || item.authority || "Autoridad no identificada";
+
+  fragment.querySelector("h3 .u").textContent = item.title;
+
+  const badges = fragment.querySelector(".badges");
+  const topicTags = Array.isArray(item.topic_tags) && item.topic_tags.length
+    ? item.topic_tags
+    : item.categories;
+  for (const tag of topicTags.slice(0, 2)) {
+    const badge = document.createElement("span");
+    badge.className = "badge";
+    badge.textContent = tag;
+    badges.append(badge);
+  }
+
+  // card_body markdown: "Qué se publicó" siempre visible; "Sustancia"/"Fuente" al expandir.
+  const sections = window.Radar ? window.Radar.getSections(item.card_body || "") : [];
+  const primaryHost = fragment.querySelector(".card-substance-primary");
+  const moreHost = fragment.querySelector(".card-more-inner");
+  const expandBtn = fragment.querySelector(".card-expand");
+
+  const qué = findSection(sections, "publicó") || findSection(sections, "publico");
+  if (qué && window.Radar) {
+    const sec = document.createElement("div");
+    sec.className = "md-section";
+    window.Radar.renderSection(qué, sec);
+    primaryHost.append(sec);
+  }
+  const rest = sections.filter((s) => s !== qué);
+  if (rest.length && window.Radar) {
+    for (const s of rest) {
+      const sec = document.createElement("div");
+      sec.className = "md-section";
+      window.Radar.renderSection(s, sec);
+      moreHost.append(sec);
+    }
+  } else {
+    expandBtn.hidden = true;
+  }
+
+  const detailLink = fragment.querySelector(".detail-link");
+  detailLink.href = detailUrl;
+  detailLink.setAttribute("aria-label", `Ver ficha: ${item.title}`);
+
+  const sourceLink = fragment.querySelector(".source-link-card");
+  if (isSafeHttpUrl(item.url)) {
+    sourceLink.href = item.url;
+    sourceLink.setAttribute("aria-label", `Ver fuente oficial: ${item.official_title}`);
+  } else {
+    sourceLink.removeAttribute("href");
+    sourceLink.setAttribute("aria-disabled", "true");
+    sourceLink.classList.add("is-disabled");
+  }
+
+  card.dataset.id = item.id;
+  card.dataset.detailUrl = detailUrl;
+  return card;
 }
 
 function renderItems() {
@@ -301,60 +440,12 @@ function renderItems() {
       : "La actualización no contiene novedades publicables.";
   }
 
-  for (const item of items) {
+  items.forEach((item, index) => {
     const fragment = elements.template.content.cloneNode(true);
-    const card = fragment.querySelector(".news-card");
-    const badges = fragment.querySelector(".badges");
-    const detailUrl = detailUrlFor(item);
-
-    const topicTags = Array.isArray(item.topic_tags) && item.topic_tags.length
-      ? item.topic_tags
-      : item.categories;
-    for (const tag of topicTags.slice(0, 2)) {
-      const badge = document.createElement("span");
-      badge.className = "badge";
-      badge.textContent = tag;
-      badges.append(badge);
-    }
-
-    const time = fragment.querySelector("time");
-    time.dateTime = item.published_at;
-    time.textContent = dateFormatter.format(new Date(`${item.published_at}T00:00:00Z`));
-
-    const importanceChip = fragment.querySelector(".importance-chip");
-    if (Number(item.importance) >= 4) {
-      importanceChip.hidden = false;
-    }
-
-    const intlChip = fragment.querySelector(".intl-chip");
-    if (item.jurisdiction === "internacional" && item.country_or_org) {
-      intlChip.textContent = item.country_or_org;
-      intlChip.hidden = false;
-    }
-
-    fragment.querySelector("h3").textContent = item.title;
-    fragment.querySelector(".source-name").textContent = item.source;
-    fragment.querySelector(".authority").textContent =
-      item.issuing_body || item.authority || "Autoridad no identificada";
-
-    const detailLink = fragment.querySelector(".detail-link");
-    detailLink.href = detailUrl;
-    detailLink.setAttribute("aria-label", `Ver ficha: ${item.title}`);
-
-    const sourceLink = fragment.querySelector(".source-link-card");
-    if (isSafeHttpUrl(item.url)) {
-      sourceLink.href = item.url;
-      sourceLink.setAttribute("aria-label", `Ver fuente oficial: ${item.official_title}`);
-    } else {
-      sourceLink.removeAttribute("href");
-      sourceLink.setAttribute("aria-disabled", "true");
-      sourceLink.classList.add("is-disabled");
-    }
-
-    card.dataset.id = item.id;
-    card.dataset.detailUrl = detailUrl;
+    const card = populateCard(fragment, item, index);
     elements.list.append(fragment);
-  }
+    observeReveal(card);
+  });
 }
 
 function renderSources() {
@@ -376,43 +467,66 @@ function renderSources() {
     const retryText = attempts > 1 ? ` (${attempts} intentos)` : "";
     const container = document.createElement("div");
     container.className = "source-status";
+
     const dot = document.createElement("span");
     dot.className = `status-dot${source.status === "error" ? " error" : ""}`;
     dot.setAttribute("aria-hidden", "true");
 
     const copy = document.createElement("div");
     const name = document.createElement("strong");
+    name.className = "s-name";
     name.textContent = source.source;
     const detail = document.createElement("span");
+    detail.className = "s-detail";
     detail.textContent =
       source.status === "ok"
         ? `${source.items_found} registros revisados${retryText}`
         : `${source.error || "Consulta temporalmente no disponible"}${retryText}`;
     copy.append(name, detail);
-    container.append(dot, copy);
+
+    const count = document.createElement("span");
+    count.className = "s-count tabular";
+    count.textContent = source.status === "ok" ? String(source.items_found) : "—";
+
+    container.append(dot, copy, count);
     elements.sources.append(container);
   }
 }
 
+/* ---------------------------------------------------------------- controls */
 function bindControls() {
   elements.list.addEventListener("click", (event) => {
     const target = event.target;
     if (!(target instanceof Element)) return;
+
+    const expandBtn = target.closest(".card-expand");
+    if (expandBtn) {
+      const card = expandBtn.closest(".news-card");
+      const more = card.querySelector(".card-more");
+      const open = expandBtn.getAttribute("aria-expanded") === "true";
+      expandBtn.setAttribute("aria-expanded", String(!open));
+      more.classList.toggle("open", !open);
+      return;
+    }
     if (target.closest("a")) return;
+    if (target.closest("button")) return;
     const card = target.closest(".news-card");
     if (!card?.dataset.detailUrl) return;
     window.location.href = card.dataset.detailUrl;
   });
+
   elements.filters.addEventListener("click", (event) => {
     const button = event.target.closest("button[data-category]");
     if (!button) return;
     state.category = button.dataset.category;
-    document.querySelectorAll(".filter").forEach((item) => {
+    elements.filters.querySelectorAll(".filter").forEach((item) => {
       item.classList.toggle("active", item === button);
     });
+    placeFilterIndicator();
     resetToFirstPage();
     renderItems();
   });
+
   elements.search.addEventListener("input", (event) => {
     state.query = event.target.value;
     resetToFirstPage();
@@ -475,14 +589,33 @@ function bindControls() {
     elements.issuingBodyFilter.value = "Todas";
     elements.jurisdictionFilter.value = "Todas";
     elements.monthFilter.value = "all";
-    document.querySelectorAll(".filter").forEach((button) => {
+    elements.filters.querySelectorAll(".filter").forEach((button) => {
       button.classList.toggle("active", button.dataset.category === "Todas");
     });
+    placeFilterIndicator();
     resetToFirstPage();
     renderItems();
   });
+
+  window.addEventListener("resize", placeFilterIndicator);
 }
 
+/* ---------------------------------------------------------------- readings */
+function updateOrganReading() {
+  const setOrgans = (n) => countUp(elements.readingOrgans, n);
+  fetch("data/calendars.json", { cache: "no-store" })
+    .then((r) => (r.ok ? r.json() : Promise.reject(new Error(`HTTP ${r.status}`))))
+    .then((payload) => {
+      const n = Array.isArray(payload.organs) ? payload.organs.length : 0;
+      setOrgans(n || fallbackOrganCount());
+    })
+    .catch(() => setOrgans(fallbackOrganCount()));
+}
+function fallbackOrganCount() {
+  return new Set(state.items.map((i) => i.issuing_body).filter(Boolean)).size;
+}
+
+/* ---------------------------------------------------------------- load */
 async function loadData() {
   try {
     const response = await fetch("data/publications.json", { cache: "no-store" });
@@ -491,13 +624,16 @@ async function loadData() {
     state.items = payload.items || [];
     state.sources = payload.sources || [];
     state.generatedAt = new Date(payload.generated_at);
-    const generated = new Date(payload.generated_at);
-    elements.updated.textContent = Number.isNaN(generated.valueOf())
-      ? "Pendiente de primera actualización"
-      : `Actualizado ${new Intl.DateTimeFormat("es-MX", {
-          dateStyle: "long",
-          timeStyle: "short",
-        }).format(generated)}`;
+    state.generatedISO = typeof payload.generated_at === "string" ? payload.generated_at : null;
+
+    state.items.forEach((item, idx) => {
+      item._folio = String(idx + 1).padStart(3, "0");
+    });
+
+    elements.readingDate.textContent = monoDate(state.generatedISO);
+    countUp(elements.readingCount, Number(payload.total_items || state.items.length));
+    updateOrganReading();
+
     renderFilters();
     renderSourceFilter();
     renderIssuingBodyFilter();
@@ -511,11 +647,24 @@ async function loadData() {
     elements.pagination.hidden = true;
     elements.emptyEyebrow.textContent = "Error de datos";
     elements.emptyTitle.textContent = "No fue posible cargar la actualización.";
-    elements.updated.textContent = "Error al consultar los datos";
     elements.feedNote.textContent = "Revisa que el archivo de datos esté disponible.";
+    elements.readingDate.textContent = "ERROR";
     console.error(error);
   }
 }
 
+function initHero() {
+  if (!elements.hero) return;
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => elements.hero.classList.add("is-loaded"));
+  });
+}
+
+// Reveals estáticos (meridianas, encabezados de sección)
+document.querySelectorAll("[data-reveal]").forEach((el) => {
+  if (!el.closest("#news-list")) observeReveal(el);
+});
+
+initHero();
 bindControls();
 loadData();

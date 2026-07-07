@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Calendarios de días hábiles, inhábiles y vacaciones por órgano — Radar Regulatorio MX.">
+    <title>Calendario de días hábiles | Radar Regulatorio MX</title>
+    <script>
+      (function () {
+        var d = document.documentElement;
+        d.classList.add("js");
+        try { var t = localStorage.getItem("radar-theme"); if (t === "dark" || t === "light") d.setAttribute("data-theme", t); } catch (e) {}
+      })();
+    </script>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..600&family=Libre+Franklin:wght@400..700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+    <script src="markdown.js" defer></script>
+    <script src="calendario.js" defer></script>
+  </head>
+  <body>
+    <nav class="nav nav-on-band" aria-label="Navegación principal">
+      <div class="nav-inner shell">
+        <a class="brand" href="index.html" aria-label="Radar Regulatorio MX, inicio">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 22 22" width="22" height="22" fill="none">
+              <line x1="5" y1="17" x2="15" y2="6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+              <circle cx="15" cy="6" r="2.4" fill="var(--accent)"/>
+            </svg>
+          </span>
+          <span>
+            <span class="brand-word">Radar<span class="tick">·</span>MX</span>
+            <span class="brand-sub">Regulatorio · MX</span>
+          </span>
+        </a>
+        <div class="nav-right">
+          <div class="nav-links">
+            <a class="nav-link" data-page="index" href="index.html">Fichas</a>
+            <a class="nav-link" data-page="calendario" href="calendario.html">Calendario</a>
+            <a class="nav-link" href="index.html#fuentes">Fuentes</a>
+            <span class="nav-indicator" aria-hidden="true"></span>
+          </div>
+          <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Cambiar tema">
+            <span class="theme-glyph" aria-hidden="true">☽</span>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <header class="band">
+      <span class="sweep-ambient" aria-hidden="true"></span>
+      <div class="cal-header shell">
+        <p class="label"><span class="idx">01 —</span> Cómputo de plazos</p>
+        <h1>Calendario de días hábiles</h1>
+        <div class="readings" role="group" aria-label="Lecturas del calendario">
+          <div class="reading">
+            <span class="reading-label">Días hábiles restantes en 2026</span>
+            <span class="reading-value tabular" id="reading-restantes">0</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="cal-body">
+      <div class="shell">
+        <div class="organ-selector">
+          <p class="label"><span class="idx">02 —</span> Órgano</p>
+          <div class="organ-chips" id="organ-chips" role="tablist" aria-label="Seleccionar órgano">
+            <span class="filter-indicator" aria-hidden="true"></span>
+          </div>
+          <label class="sr-only" for="organ-select">Órgano</label>
+          <select class="organ-select" id="organ-select"></select>
+        </div>
+
+        <div class="organ-subhead" id="organ-subhead"></div>
+
+        <div class="cal-layout">
+          <section aria-label="Calendario mensual">
+            <div class="month-controls">
+              <button class="month-btn" id="cal-prev" type="button" aria-label="Mes anterior">‹</button>
+              <span class="month-label tabular" id="cal-month-label" aria-live="polite">—</span>
+              <button class="month-btn" id="cal-next" type="button" aria-label="Mes siguiente">›</button>
+              <button class="today-btn" id="cal-today" type="button">Hoy</button>
+            </div>
+
+            <div class="cal-wrap">
+              <div class="cal-dow" aria-hidden="true">
+                <span>Lun</span><span>Mar</span><span>Mié</span><span>Jue</span><span>Vie</span><span>Sáb</span><span>Dom</span>
+              </div>
+              <div class="cal-grid" id="cal-grid" role="grid" aria-label="Días del mes"></div>
+              <span class="cal-sweep" id="cal-sweep" aria-hidden="true"></span>
+            </div>
+
+            <div class="cal-legend" id="cal-legend">
+              <span class="legend-item" data-hl="habil"><span class="legend-swatch habil"></span> Hábil</span>
+              <span class="legend-item" data-hl="inhabil"><span class="legend-swatch inhabil"></span> Inhábil</span>
+              <span class="legend-item" data-hl="vacaciones"><span class="legend-swatch vacaciones"></span> Vacaciones</span>
+              <span class="legend-item"><span class="legend-swatch today"></span> Hoy</span>
+            </div>
+          </section>
+
+          <aside class="day-panel empty" id="day-panel" aria-live="polite">
+            <button class="dp-close" id="dp-close" type="button" aria-label="Cerrar detalle">✕</button>
+            <p class="dp-empty">Selecciona un día del calendario para ver su cómputo, motivo y fuente.</p>
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    <div class="day-scrim" id="day-scrim" aria-hidden="true"></div>
+
+    <footer class="band site-footer">
+      <div class="shell">
+        <div class="meridian" aria-hidden="true"></div>
+        <div class="footer-content">
+          <p><strong>Radar Regulatorio MX</strong> · Instrumento del Registro</p>
+          <p>Sábados y domingos son inhábiles por regla general. No constituye asesoría legal.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
