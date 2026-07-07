@@ -156,6 +156,172 @@ def test_validate_publications_payload_rejects_bad_detail_url():
     assert "items[0].detail_url must point to ficha.html" in report.errors
 
 
+def test_validate_publications_payload_accepts_optional_case_facts():
+    payload = valid_payload()
+    payload["items"][0]["case_facts"] = "México y la demandante suscribieron un contrato en 2010."
+
+    assert validate_publications_payload(payload).ok
+
+
+def test_validate_publications_payload_rejects_non_string_case_facts():
+    payload = valid_payload()
+    payload["items"][0]["case_facts"] = 5
+
+    report = validate_publications_payload(payload)
+
+    assert not report.ok
+    assert any("case_facts must be str" in error for error in report.errors)
+
+
+def test_validate_publications_payload_warns_on_legacy_detail_markdown_sections():
+    # El fixture usa la ficha v1 ("## Resumen ejecutivo"); el corte publicado
+    # antes del contrato v6 no debe invalidarse por esto, solo advertirse.
+    report = validate_publications_payload(valid_payload())
+
+    assert report.ok
+    assert any("detail_markdown is missing section" in warning for warning in report.warnings)
+
+
+def test_validate_publications_payload_rejects_detail_markdown_without_level1_heading():
+    payload = valid_payload()
+    payload["items"][0]["detail_markdown"] = "Sin encabezado de nivel 1"
+
+    report = validate_publications_payload(payload)
+
+    assert not report.ok
+    assert any("must start with a level 1 heading" in error for error in report.errors)
+
+
+def test_validate_publications_payload_accepts_v2_detail_markdown_without_warnings():
+    payload = valid_payload()
+    payload["items"][0]["detail_markdown"] = (
+        "# Delegan facultades administrativas\n\n"
+        "**Fecha:** 2026-07-03 · **Fuente:** DOF · **Órgano:** Secretaría de Economía\n\n"
+        "## Qué se publicó\n\nAcuerdo de la SE.\n\n"
+        "## Sustancia\n\nDelegación de facultades administrativas.\n\n"
+        "## Clasificación\n\n**Materias:** Derecho administrativo.\n\n"
+        "## Fuente oficial\n\n*Acuerdo por el que se delegan facultades.*\n\n"
+        "[Abrir documento oficial](https://dof.gob.mx/nota_detalle.php?codigo=1)"
+    )
+
+    report = validate_publications_payload(payload)
+
+    assert report.ok
+    assert report.warnings == []
+
+
+def test_validate_publications_payload_accepts_valid_digest():
+    payload = valid_payload()
+    payload["digest"] = {
+        "groups": [
+            {
+                "label": "Fiscal",
+                "items": [
+                    {
+                        "id": "dof:1",
+                        "organ": "SE",
+                        "theme": " ".join(f"tema{i}" for i in range(12)),
+                    }
+                ],
+            }
+        ]
+    }
+
+    assert validate_publications_payload(payload).ok
+
+
+def test_validate_publications_payload_rejects_digest_with_unknown_id():
+    payload = valid_payload()
+    payload["digest"] = {
+        "groups": [
+            {
+                "label": "Fiscal",
+                "items": [
+                    {
+                        "id": "dof:999",
+                        "organ": "SE",
+                        "theme": " ".join(f"tema{i}" for i in range(12)),
+                    }
+                ],
+            }
+        ]
+    }
+
+    report = validate_publications_payload(payload)
+
+    assert not report.ok
+    assert any("does not exist in publications" in error for error in report.errors)
+
+
+def test_validate_publications_payload_rejects_digest_theme_out_of_range():
+    payload = valid_payload()
+    payload["digest"] = {
+        "groups": [{"label": "Fiscal", "items": [{"id": "dof:1", "organ": "SE", "theme": "corto"}]}]
+    }
+
+    report = validate_publications_payload(payload)
+
+    assert not report.ok
+    assert any("theme has" in error for error in report.errors)
+
+
+def test_validate_publications_payload_rejects_digest_theme_with_act_number():
+    payload = valid_payload()
+    payload["digest"] = {
+        "groups": [
+            {
+                "label": "Fiscal",
+                "items": [
+                    {
+                        "id": "dof:1",
+                        "organ": "SE",
+                        "theme": (
+                            "Oficio 500-05-2026-16021 sobre el listado correspondiente "
+                            "de contribuyentes"
+                        ),
+                    }
+                ],
+            }
+        ]
+    }
+
+    report = validate_publications_payload(payload)
+
+    assert not report.ok
+    assert any("must not contain an act number" in error for error in report.errors)
+
+
+def test_validate_publications_payload_rejects_digest_with_duplicate_id():
+    theme = " ".join(f"tema{i}" for i in range(12))
+    payload = valid_payload()
+    payload["digest"] = {
+        "groups": [
+            {
+                "label": "Fiscal",
+                "items": [
+                    {"id": "dof:1", "organ": "SE", "theme": theme},
+                    {"id": "dof:1", "organ": "SE", "theme": theme},
+                ],
+            }
+        ]
+    }
+
+    report = validate_publications_payload(payload)
+
+    assert not report.ok
+    assert any("duplicated in the digest" in error for error in report.errors)
+
+
+def test_validate_publications_payload_rejects_empty_digest_groups():
+    payload = valid_payload()
+    payload["digest"] = {"groups": []}
+
+    report = validate_publications_payload(payload)
+
+    assert not report.ok
+    assert any("digest.groups must be a non-empty list" in error for error in report.errors)
+
+
 def test_validate_publications_payload_rejects_all_sources_in_error():
     payload = valid_payload()
     payload["sources"] = [

@@ -41,6 +41,10 @@
   --st-vacaciones-mark: #DE9A2A;
   --st-vacaciones-tint: #FAF0D8;
   --st-today: var(--accent);
+  /* Guardia (v6): overlay ámbar-azulado sobre inhábil/vacaciones, no un status propio. */
+  --st-guardia-ink: #3E6A85;
+  --st-guardia-mark: #4C86A8;
+  --st-guardia-tint: #E4EEF2;
 
   /* LEDs */
   --led-ok: #2F8A5F;
@@ -117,6 +121,9 @@
     --st-vacaciones-ink: #F0B049;
     --st-vacaciones-mark: #F0B049;
     --st-vacaciones-tint: rgba(240, 176, 73, .12);
+    --st-guardia-ink: #7FB8D6;
+    --st-guardia-mark: #7FB8D6;
+    --st-guardia-tint: rgba(127, 184, 214, .14);
 
     --led-ok: #46B37E; --led-warn: #F0B049; --led-error: #F0553F;
 
@@ -157,6 +164,9 @@
   --st-vacaciones-ink: #F0B049;
   --st-vacaciones-mark: #F0B049;
   --st-vacaciones-tint: rgba(240, 176, 73, .12);
+  --st-guardia-ink: #7FB8D6;
+  --st-guardia-mark: #7FB8D6;
+  --st-guardia-tint: rgba(127, 184, 214, .14);
 
   --led-ok: #46B37E; --led-warn: #F0B049; --led-error: #F0553F;
 
@@ -375,6 +385,26 @@ html:not(.js) .meridian, .meridian.is-visible { transform: scaleX(1); }
   line-height: 1; letter-spacing: -0.01em; color: var(--on-band);
 }
 
+/* Compactar al hacer scroll (v6, solo index: depende de .hero-band). El listener vive
+   en app.js (initScrollCompact) porque .hero-band/.readings no existen en las otras
+   páginas; markdown.js sigue a cargo del is-condensed compartido del <nav>. */
+.hero-band .hero { transition: min-height var(--dur-3) var(--ease-out-quint); }
+.hero-band .hero-content { transition: padding var(--dur-3) var(--ease-out-quint); }
+.hero-band .hero-copy, .hero-band .readings {
+  overflow: hidden; max-height: 320px;
+  transition: opacity var(--dur-2) var(--ease-out-quint), max-height var(--dur-3) var(--ease-out-quint),
+    margin var(--dur-2) var(--ease-out-quint);
+}
+body.is-scrolled .hero-band .hero { min-height: 0; }
+body.is-scrolled .hero-band .hero-content {
+  padding-top: clamp(88px, 11vh, 120px);
+  padding-bottom: var(--space-lg);
+}
+body.is-scrolled .hero-band .hero-copy,
+body.is-scrolled .hero-band .readings {
+  opacity: 0; max-height: 0; margin-top: 0; margin-bottom: 0; pointer-events: none;
+}
+
 /* ---------------------------------------------------------------- CONSOLA DE FILTROS */
 .control-panel {
   position: sticky; top: 54px; z-index: var(--z-sticky);
@@ -461,6 +491,40 @@ html:not(.js) .meridian, .meridian.is-visible { transform: scaleX(1); }
   font-family: var(--font-mono); font-size: 0.78rem; border-radius: var(--radius-xs);
 }
 
+/* ---------------------------------------------------------------- RESUMEN DEL CORTE (digest v6) */
+.digest-panel { padding: var(--space-2xl) 0 var(--space-xl); border-bottom: 1px solid var(--line); }
+.digest-panel h2 {
+  margin: var(--space-xs) 0 var(--space-lg); font-family: var(--font-display); font-weight: 440;
+  font-size: 1.75rem; line-height: 1.1; letter-spacing: -0.01em; color: var(--ink-900);
+  font-variation-settings: "opsz" 72;
+}
+.digest-groups {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: var(--space-lg) var(--space-xl);
+}
+.digest-group { border-top: 2px solid var(--ink-900); padding-top: var(--space-sm); }
+.digest-group-label {
+  margin: 0 0 var(--space-sm); font-family: var(--font-mono); font-weight: 500; font-size: 0.72rem;
+  letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-500);
+}
+.digest-items { list-style: none; margin: 0; padding: 0; counter-reset: ditem; display: grid; gap: 2px; }
+.digest-item { counter-increment: ditem; }
+.digest-entry {
+  display: flex; gap: 8px; width: 100%; text-align: left; background: transparent; border: 0;
+  padding: 5px 4px; margin: 0 -4px; border-radius: var(--radius-xs); cursor: pointer;
+  font-family: var(--font-text); font-size: 0.88rem; line-height: 1.4; color: var(--ink-700);
+  transition: color var(--dur-2) var(--ease-out-quint), background var(--dur-2) var(--ease-out-quint);
+}
+.digest-entry::before {
+  content: counter(ditem) ".";
+  flex: 0 0 auto; min-width: 2ch;
+  font-family: var(--font-mono); font-size: 0.8rem; color: var(--ink-400);
+}
+.digest-entry:hover, .digest-entry:focus-visible { color: var(--accent-strong); background: var(--surface-sunken); }
+.digest-entry:hover::before, .digest-entry:focus-visible::before { color: var(--accent); }
+.digest-organ { font-weight: 600; color: var(--ink-900); flex: 0 0 auto; }
+
 /* ---------------------------------------------------------------- FEED */
 .feed { padding: var(--space-4xl) 0; }
 .section-heading { display: flex; align-items: flex-end; justify-content: space-between; gap: var(--space-lg); margin-bottom: var(--space-xl); flex-wrap: wrap; }
@@ -476,6 +540,19 @@ html:not(.js) .meridian, .meridian.is-visible { transform: scaleX(1); }
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: var(--space-lg);
 }
+
+/* Encabezado de grupo intercalado en el feed agrupado (digest v6) */
+.feed-group-heading {
+  grid-column: 1 / -1;
+  display: flex; align-items: baseline; gap: var(--space-sm);
+  margin: var(--space-lg) 0 0;
+  padding-bottom: var(--space-xs); border-bottom: 1px solid var(--line-strong);
+  font-family: var(--font-mono); font-weight: 500; font-size: 0.85rem; letter-spacing: 0.08em;
+  text-transform: uppercase; color: var(--ink-900);
+}
+.feed-group-heading:first-child { margin-top: 0; }
+.fg-count { font-family: var(--font-mono); font-size: 0.72rem; color: var(--ink-400); }
+.fg-count::before { content: "· "; }
 
 /* ---------------------------------------------------------------- TARJETA */
 .news-card {
@@ -497,6 +574,9 @@ html:not(.js) .meridian, .meridian.is-visible { transform: scaleX(1); }
   background: var(--surface-2);
 }
 .news-card:active { transform: translateY(-1px); }
+/* Importancia alta (v6): filete izquierdo sutil, coherente con el acento del sistema. */
+.news-card[data-importance="5"] { border-left: 3px solid var(--accent); }
+.news-card[data-importance="4"] { border-left: 3px solid color-mix(in srgb, var(--accent) 55%, var(--line-strong)); }
 
 .card-topline { display: flex; align-items: center; justify-content: space-between; gap: var(--space-sm); flex-wrap: wrap; }
 .topline-left, .topline-right { display: flex; align-items: center; gap: var(--space-xs); flex-wrap: wrap; }
@@ -522,6 +602,12 @@ html:not(.js) .meridian, .meridian.is-visible { transform: scaleX(1); }
 .importance-bar { display: inline-flex; gap: 2px; align-items: center; }
 .importance-bar .seg { width: 3px; height: 12px; background: var(--line-strong); border-radius: 1px; }
 .importance-bar .seg.on { background: var(--accent); }
+/* 5 niveles (v6): 4-5 cinabrio, 3 ámbar, 1-2 neutro — reusa tokens existentes. */
+.importance-bar[data-importance="5"] .seg.on,
+.importance-bar[data-importance="4"] .seg.on { background: var(--accent); }
+.importance-bar[data-importance="3"] .seg.on { background: var(--led-warn); }
+.importance-bar[data-importance="1"] .seg.on,
+.importance-bar[data-importance="2"] .seg.on { background: var(--st-inhabil-ink); }
 
 .card-organ {
   padding-left: 10px; border-left: 2px solid var(--accent);
@@ -670,6 +756,7 @@ html:not(.js) .meridian, .meridian.is-visible { transform: scaleX(1); }
 .detail-parties strong { color: var(--ink-700); font-weight: 500; }
 .detail-signal { display: inline-flex; align-items: center; gap: var(--space-sm); margin: 0 0 var(--space-md); }
 .detail-signal .lbl { font-family: var(--font-mono); font-size: 0.62rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-400); }
+.detail-categories { margin: 0 0 var(--space-lg); }
 
 /* markdown-body editorial */
 .markdown-body { color: var(--ink-700); font-size: 1.125rem; line-height: 1.7; counter-reset: sec; }
@@ -694,19 +781,6 @@ html:not(.js) .meridian, .meridian.is-visible { transform: scaleX(1); }
 .markdown-body a .ext-arrow { margin-left: 2px; }
 .markdown-body a:hover { text-underline-offset: 4px; }
 .markdown-body blockquote { margin: var(--space-md) 0; padding-left: var(--space-md); border-left: 3px solid var(--accent); color: var(--ink-500); }
-
-.detail-full { margin-top: var(--space-2xl); border-top: 1px solid var(--line); padding-top: var(--space-lg); }
-.detail-full summary {
-  list-style: none; cursor: pointer; font-family: var(--font-mono); font-size: 0.8rem;
-  letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-500);
-  display: inline-flex; align-items: center; gap: 8px;
-}
-.detail-full summary::-webkit-details-marker { display: none; }
-.detail-full summary::after { content: "↓"; transition: transform var(--dur-2) var(--ease-out-quint); }
-.detail-full[open] summary::after { transform: rotate(180deg); }
-.detail-full summary:hover { color: var(--accent); }
-.detail-full .markdown-body { margin-top: var(--space-lg); font-size: 1rem; }
-.detail-full .markdown-body h1 { font-size: 1.6rem; }
 
 .detail-actions { display: flex; gap: var(--space-md); margin-top: var(--space-2xl); padding-top: var(--space-lg); border-top: 1px solid var(--line); flex-wrap: wrap; }
 .btn-ghost {
@@ -795,6 +869,15 @@ html:not(.js) .meridian, .meridian.is-visible { transform: scaleX(1); }
 .day--vacaciones .num { color: var(--st-vacaciones-ink); }
 .day--vacaciones .state-key { background: var(--st-vacaciones-mark); }
 
+/* Guardia (v6): overlay sobre el status del día, no cambia fondo ni pill. */
+.cal-day .guardia-mark {
+  position: absolute; top: 5px; right: 5px; width: 7px; height: 7px;
+  border-radius: var(--radius-pill); background: var(--st-guardia-mark);
+  box-shadow: 0 0 0 2px var(--surface);
+}
+.day--inhabil .guardia-mark { box-shadow: 0 0 0 2px var(--st-inhabil-fill); }
+.day--vacaciones .guardia-mark { box-shadow: 0 0 0 2px var(--st-vacaciones-tint); }
+
 .cal-day.is-today { box-shadow: inset 0 0 0 2px var(--accent); }
 .cal-day.is-today::after {
   content: ""; position: absolute; inset: 2px; border: 1px solid var(--accent); border-radius: var(--radius-xs);
@@ -819,6 +902,7 @@ html:not(.js) .meridian, .meridian.is-visible { transform: scaleX(1); }
 .legend-swatch.habil { background: var(--st-habil-mark); }
 .legend-swatch.inhabil { background: repeating-linear-gradient(45deg, transparent 0 4px, color-mix(in srgb, var(--st-inhabil-ink) 30%, transparent) 4px 5px), var(--st-inhabil-fill); }
 .legend-swatch.vacaciones { background: var(--st-vacaciones-tint); border-color: var(--st-vacaciones-mark); }
+.legend-swatch.guardia { background: var(--st-guardia-tint); border-color: var(--st-guardia-mark); }
 .legend-swatch.today { border: 2px solid var(--accent); background: transparent; }
 .cal-grid.hl-habil .cal-day:not(.day--habil), .cal-grid.hl-inhabil .cal-day:not(.day--inhabil), .cal-grid.hl-vacaciones .cal-day:not(.day--vacaciones) { opacity: .35; }
 
@@ -835,10 +919,22 @@ html:not(.js) .meridian, .meridian.is-visible { transform: scaleX(1); }
 .day-pill.inhabil { color: var(--st-inhabil-ink); background: var(--surface-sunken); }
 .day-pill.vacaciones { color: var(--st-vacaciones-ink); background: var(--st-vacaciones-tint); }
 .dp-unverified { display: inline-flex; align-items: center; gap: 5px; margin-left: 8px; padding: 4px 10px; border-radius: var(--radius-pill); border: 1px dashed var(--st-vacaciones-mark); color: var(--st-vacaciones-ink); font-family: var(--font-mono); font-size: 0.6rem; letter-spacing: 0.08em; text-transform: uppercase; }
+/* Acuerdo pendiente de publicación (v6): mismo lenguaje visual que .dp-unverified, badge propio. */
+.dp-pending { display: inline-flex; align-items: center; gap: 5px; margin-left: 8px; padding: 4px 10px; border-radius: var(--radius-pill); border: 1px dashed var(--led-warn); color: var(--st-vacaciones-ink); font-family: var(--font-mono); font-size: 0.6rem; letter-spacing: 0.08em; text-transform: uppercase; }
 .dp-reason { margin: var(--space-md) 0 0; font-weight: 600; color: var(--ink-900); }
+/* Acuerdo publicado como fuente principal (v6); el enlace web queda como confirmación. */
+.dp-acuerdo { margin: var(--space-md) 0 0; color: var(--ink-900); }
+.dp-acuerdo-label { display: block; margin-bottom: 2px; font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-500); }
 .dp-analysis { margin: var(--space-sm) 0 0; font-size: 0.9rem; line-height: 1.6; color: var(--ink-500); }
 .dp-source { margin-top: var(--space-md); }
 .dp-source a { display: inline-flex; align-items: center; gap: 5px; font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-strong); }
+/* Guardia (v6): overlay informativo, no un status; usa la terna --st-guardia-*. */
+.dp-guardia {
+  margin: var(--space-md) 0 0; padding: 8px 10px; border-left: 2px solid var(--st-guardia-mark);
+  background: var(--st-guardia-tint); color: var(--ink-700); font-size: 0.88rem; line-height: 1.5;
+  border-radius: var(--radius-xs);
+}
+.dp-guardia-label { font-weight: 600; color: var(--st-guardia-ink); }
 .dp-note { margin: var(--space-md) 0 0; font-family: var(--font-mono); font-size: 0.72rem; color: var(--ink-400); }
 
 /* Panel como bottom-sheet en móvil */

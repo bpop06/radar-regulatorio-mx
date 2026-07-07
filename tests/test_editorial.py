@@ -61,6 +61,9 @@ def publications_payload() -> dict:
     }
 
 
+DIGEST_THEME = " ".join(f"tema{i}" for i in range(12))
+
+
 def edit(**overrides) -> dict:
     base = {
         "id": "dof:1",
@@ -72,11 +75,20 @@ def edit(**overrides) -> dict:
     return base
 
 
-def write_files(tmp_path, edits):
+def digest_block(**item_overrides) -> dict:
+    item = {"id": "dof:1", "organ": "SHCP", "theme": DIGEST_THEME}
+    item.update(item_overrides)
+    return {"groups": [{"label": "Fiscal", "items": [item]}]}
+
+
+def write_files(tmp_path, edits, digest=None):
     pubs = tmp_path / "publications.json"
     pubs.write_text(json.dumps(publications_payload(), ensure_ascii=False), encoding="utf-8")
+    edits_payload: dict = {"items": edits}
+    if digest is not None:
+        edits_payload["digest"] = digest
     edits_file = tmp_path / "edits.json"
-    edits_file.write_text(json.dumps({"items": edits}, ensure_ascii=False), encoding="utf-8")
+    edits_file.write_text(json.dumps(edits_payload, ensure_ascii=False), encoding="utf-8")
     return edits_file, pubs
 
 
@@ -116,6 +128,8 @@ def test_apply_editorial_updates_local_database(tmp_path):
         (edit(card_body=CARD_BODY_WITH_ACT_NUMBER), "número de acto"),
         (edit(title="Oficio 500-05-2026-1 comunica listado"), "número de oficio"),
         (edit(relevance_score=99), "no editables"),
+        (edit(case_facts="   "), "vacío"),
+        (edit(case_facts="## Encabezado no permitido"), "encabezados"),
     ],
 )
 def test_apply_editorial_rejects_invalid_edits(tmp_path, bad_edit, message_part):
@@ -133,6 +147,93 @@ def test_apply_editorial_is_all_or_nothing(tmp_path):
     original = pubs.read_text(encoding="utf-8")
 
     with pytest.raises(EditorialError):
+        apply_editorial(edits_file, pubs)
+
+    assert pubs.read_text(encoding="utf-8") == original
+
+
+def test_apply_editorial_recomposes_detail_markdown_from_edited_fields(tmp_path):
+    new_card_body = (
+        "## Qué se publicó\n\nSHCP deja sin efectos la presunción de folios fiscales.\n\n"
+        "## Sustancia\n\nSe excluyen del listado 69-B los contribuyentes que acreditaron.\n\n"
+        "## Fuente\n\n[Abrir publicación oficial](https://example.gob.mx/doc)"
+    )
+    edits_file, pubs = write_files(tmp_path, [edit(card_body=new_card_body)])
+
+    apply_editorial(edits_file, pubs)
+
+    result = json.loads(pubs.read_text(encoding="utf-8"))["items"][0]
+    markdown = result["detail_markdown"]
+    assert markdown.startswith("# SHCP actualiza")
+    assert (
+        "## Qué se publicó\n\nSHCP deja sin efectos la presunción de folios fiscales." in markdown
+    )
+    assert (
+        "## Sustancia\n\nSe excluyen del listado 69-B los contribuyentes que acreditaron."
+        in markdown
+    )
+    # La ficha vieja del fixture ("## Resumen ejecutivo") queda reemplazada.
+    assert "Resumen ejecutivo" not in markdown
+
+
+def test_apply_editorial_accepts_optional_case_facts_and_recomposes_section(tmp_path):
+    case_facts = "México y la demandante suscribieron un contrato de concesión en 2010."
+    edits_file, pubs = write_files(tmp_path, [edit(case_facts=case_facts)])
+
+    apply_editorial(edits_file, pubs)
+
+    result = json.loads(pubs.read_text(encoding="utf-8"))["items"][0]
+    assert result["case_facts"] == case_facts
+    assert "## Hechos del asunto" in result["detail_markdown"]
+    assert case_facts in result["detail_markdown"]
+
+
+def test_apply_editorial_syncs_case_facts_to_local_database(tmp_path):
+    case_facts = "México y la demandante suscribieron un contrato de concesión en 2010."
+    edits_file, pubs = write_files(tmp_path, [edit(case_facts=case_facts)])
+    db = tmp_path / "radar.sqlite3"
+    with Storage(db) as storage:
+        storage.save_run(publications_payload())
+
+    apply_editorial(edits_file, pubs, db)
+
+    with Storage(db) as storage:
+        exported = storage.export_payload()
+    assert exported["items"][0]["case_facts"] == case_facts
+    assert "## Hechos del asunto" in exported["items"][0]["detail_markdown"]
+
+
+def test_apply_editorial_applies_valid_digest_to_payload(tmp_path):
+    edits_file, pubs = write_files(tmp_path, [edit()], digest=digest_block())
+
+    apply_editorial(edits_file, pubs)
+
+    result = json.loads(pubs.read_text(encoding="utf-8"))
+    assert result["digest"]["groups"][0]["label"] == "Fiscal"
+    assert result["digest"]["groups"][0]["items"][0]["id"] == "dof:1"
+
+
+@pytest.mark.parametrize(
+    ("bad_digest", "message_part"),
+    [
+        (digest_block(id="dof:999"), "does not exist"),
+        (digest_block(theme="muy corto"), "words"),
+        (
+            digest_block(
+                theme="Oficio 500-05-2026-16021 sobre el listado correspondiente a la autoridad"
+            ),
+            "act number",
+        ),
+        ({"groups": []}, "non-empty list"),
+    ],
+)
+def test_apply_editorial_rejects_invalid_digest_and_leaves_file_untouched(
+    tmp_path, bad_digest, message_part
+):
+    edits_file, pubs = write_files(tmp_path, [edit()], digest=bad_digest)
+    original = pubs.read_text(encoding="utf-8")
+
+    with pytest.raises(EditorialError, match=message_part):
         apply_editorial(edits_file, pubs)
 
     assert pubs.read_text(encoding="utf-8") == original

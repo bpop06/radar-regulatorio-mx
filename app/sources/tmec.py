@@ -94,7 +94,7 @@ class TmecCollector(Collector):
 
         candidates: list[Candidate] = []
         current: dict[str, str] = {}
-        for page, source_url in zip(pages, cls.urls):
+        for page, source_url in zip(pages, cls.urls, strict=False):
             for row in ROW_RE.findall(page):
                 cells = [
                     clean_text(re.sub(r"<[^>]+>", " ", unescape(cell)))

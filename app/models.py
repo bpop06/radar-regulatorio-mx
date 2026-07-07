@@ -71,6 +71,7 @@ class Publication:
     ai_generated: bool
     case_parties: str = ""
     case_status: str = ""
+    case_facts: str = ""
 
     def to_dict(self) -> dict[str, object]:
         result = asdict(self)

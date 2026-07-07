@@ -121,18 +121,22 @@ async def collect(
         candidate = item.candidate
         taxonomy = enrich(item)
         published_at = candidate.published_at.isoformat()
+        # case_facts no lo produce el pipeline extractivo: lo agrega la
+        # editorial (app.editorial) sobre ítems de caso ya publicados y
+        # recompone la ficha en ese momento.
         full_markdown = build_detail_markdown(
             title=summary.title,
             summary=summary.summary,
             official_title=candidate.official_title,
-            description=candidate.description,
             source=candidate.source,
             authority=candidate.authority,
             document_type=candidate.document_type,
             published_at=published_at,
             categories=taxonomy.primary_categories,
             source_url=candidate.url,
-            ai_generated=summary.ai_generated,
+            card_body=summary.card_body,
+            case_status=candidate.case_status,
+            case_parties=candidate.case_parties,
         )
         publications.append(
             Publication(
@@ -164,6 +168,10 @@ async def collect(
                 ai_generated=summary.ai_generated,
                 case_parties=candidate.case_parties,
                 case_status=candidate.case_status,
+                # case_facts es puramente editorial (lo agrega app.editorial
+                # sobre ítems de caso ya publicados); el pipeline extractivo
+                # nunca lo produce.
+                case_facts="",
             )
         )
 

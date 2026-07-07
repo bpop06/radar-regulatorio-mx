@@ -58,6 +58,9 @@ function monoDate(iso) {
 }
 
 /* ------------------------------------------------------------ regla de negocio */
+// Campos v6 (opcionales, contrato aún no los trae): `publicacion` ("dof"|"web_oficial"|
+// "pendiente"), `acuerdo` (cita del acuerdo publicado) y `guardia`/`guardia_detalle`
+// (overlay, no cambia el status). Tolerante a su ausencia en calendars.json.
 function resolveDay(organId, iso) {
   const [y, m, d] = iso.split("-").map(Number);
   const dow = dowOf(y, m - 1, d);
@@ -71,6 +74,10 @@ function resolveDay(organId, iso) {
       verified: entry.verified !== false,
       derived: false,
       dow,
+      publicacion: typeof entry.publicacion === "string" ? entry.publicacion : "",
+      acuerdo: typeof entry.acuerdo === "string" ? entry.acuerdo.trim() : "",
+      guardia: entry.guardia === true,
+      guardia_detalle: typeof entry.guardia_detalle === "string" ? entry.guardia_detalle.trim() : "",
     };
   }
   if (dow === 0 || dow === 6) {
@@ -83,9 +90,16 @@ function resolveDay(organId, iso) {
       derived: true,
       weekend: true,
       dow,
+      publicacion: "",
+      acuerdo: "",
+      guardia: false,
+      guardia_detalle: "",
     };
   }
-  return { status: "habil", reason: "", source_url: null, analysis: "", verified: true, derived: true, dow };
+  return {
+    status: "habil", reason: "", source_url: null, analysis: "", verified: true, derived: true, dow,
+    publicacion: "", acuerdo: "", guardia: false, guardia_detalle: "",
+  };
 }
 
 function statusLabel(status) {
@@ -213,14 +227,15 @@ function renderMonth() {
 
     const cell = document.createElement("button");
     cell.type = "button";
-    cell.className = `cal-day day--${info.status}`;
+    cell.className = `cal-day day--${info.status}${info.guardia ? " day--guardia" : ""}`;
     cell.dataset.date = iso;
     cell.dataset.cell = "";
     cell.style.setProperty("--ci", lead + d - 1);
     cell.setAttribute("role", "gridcell");
     cell.setAttribute(
       "aria-label",
-      `${dowNamesLower[dow]} ${d} de ${monthNamesFull[m]}, ${statusLabel(info.status)}`,
+      `${dowNamesLower[dow]} ${d} de ${monthNamesFull[m]}, ${statusLabel(info.status)}` +
+        (info.guardia ? ", con guardia" : ""),
     );
     cell.setAttribute("aria-selected", String(iso === store.selectedDate));
     cell.tabIndex = -1;
@@ -236,6 +251,12 @@ function renderMonth() {
     key.className = "state-key";
     key.setAttribute("aria-hidden", "true");
     cell.append(num, key);
+    if (info.guardia) {
+      const mark = document.createElement("span");
+      mark.className = "guardia-mark";
+      mark.setAttribute("aria-hidden", "true");
+      cell.append(mark);
+    }
 
     cell.addEventListener("click", () => selectDay(iso, cell));
     el.grid.append(cell);
@@ -355,6 +376,14 @@ function renderPanel(iso) {
     badge.textContent = "sin verificar";
     pillRow.append(badge);
   }
+  // Contrato v6 (opcional): publicacion:"pendiente" -> el acuerdo aún no se publica en
+  // el DOF. La guardia (overlay) no toca esta fila: sin cambios de fondo del pill.
+  if (info.publicacion === "pendiente") {
+    const pending = document.createElement("span");
+    pending.className = "dp-pending";
+    pending.textContent = "Acuerdo pendiente de publicación en el DOF";
+    pillRow.append(pending);
+  }
   el.panel.append(pillRow);
 
   if (info.reason) {
@@ -369,6 +398,18 @@ function renderPanel(iso) {
     el.panel.append(reason);
   }
 
+  // Contrato v6: el texto del acuerdo publicado es la fuente principal; el sitio web
+  // (source_url) queda como confirmación orientativa.
+  if (info.acuerdo) {
+    const acuerdo = document.createElement("p");
+    acuerdo.className = "dp-acuerdo";
+    const label = document.createElement("span");
+    label.className = "dp-acuerdo-label";
+    label.textContent = "Fuente principal";
+    acuerdo.append(label, document.createTextNode(info.acuerdo));
+    el.panel.append(acuerdo);
+  }
+
   if (info.source_url && window.Radar && window.Radar.isSafeHttpUrl(info.source_url)) {
     const src = document.createElement("p");
     src.className = "dp-source";
@@ -376,9 +417,19 @@ function renderPanel(iso) {
     a.href = info.source_url;
     a.target = "_blank";
     a.rel = "noopener noreferrer";
-    a.textContent = "Ver fuente oficial ↗";
+    a.textContent = info.acuerdo ? "Confirmación en sitio oficial ↗" : "Ver fuente oficial ↗";
     src.append(a);
     el.panel.append(src);
+  }
+
+  if (info.guardia) {
+    const guardia = document.createElement("p");
+    guardia.className = "dp-guardia";
+    const label = document.createElement("span");
+    label.className = "dp-guardia-label";
+    label.textContent = "Guardia: ";
+    guardia.append(label, document.createTextNode(info.guardia_detalle || "Guardia activa este día."));
+    el.panel.append(guardia);
   }
 
   if (info.analysis) {
