@@ -3,7 +3,8 @@ name: radar-diario
 description: >
   Revisa la actualización diaria del Radar Regulatorio MX ya publicada:
   audita la calidad de los datos oficiales mexicanos (DOF, SNICE, PLATIICA,
-  Diputados, Senado, IMPI y portales de gob.mx), detecta fuentes con error o
+  Diputados, Senado, IMPI y portales de gob.mx) e internacionales (ONU,
+  USTR, CIADI, Banco Mundial, CPI, CIJ), detecta fuentes con error o
   anomalías, y redacta un parte diario. Úsala cuando pidan revisar el radar,
   auditar la recolección diaria o reportar novedades regulatorias de
   dependencias de gobierno. NO publica ni modifica el repositorio.
@@ -63,8 +64,10 @@ red; corres en solo lectura):
   modelo de lenguaje).
 - Que la taxonomía sea coherente: `issuing_body` corresponde a la autoridad,
   `jurisdiction` es `internacional` sólo para fuentes internacionales
-  (ONU Noticias, USTR, Trade.gov) y las facetas `published_year/month/day`
-  coinciden con `published_at`.
+  (ONU Noticias, USTR, Trade.gov, CIADI, Banco Mundial, CPI, CIJ) y las
+  facetas `published_year/month/day` coinciden con `published_at`.
+- En ítems de la CIADI, que `case_parties` y `case_status` estén poblados
+  (partes y estado procesal del caso).
 
 Registra cualquier anomalía (resumen fuera del rango 40-80 palabras, materia
 dudosa, enlace sospechoso) para el parte diario.

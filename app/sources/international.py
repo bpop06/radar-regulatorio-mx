@@ -32,6 +32,9 @@ class RssCollector(Collector):
     url: str
     default_authority: str = ""
     default_document_type: str = "Comunicado"
+    # Patrón opcional de títulos a descartar (nodos que no son publicaciones,
+    # p. ej. recursos multimedia cuyo título es el nombre del archivo).
+    skip_title_re: re.Pattern[str] | None = None
 
     async def collect(self, since: date) -> list[Candidate]:
         response = await self.client.get(self.url)
@@ -59,6 +62,8 @@ class RssCollector(Collector):
             # <link> sin texto: se toma el primer <link> con contenido real.
             url = clean_text(_first_nonempty_text(item, "link"))
             if not title or not url.lower().startswith(("http://", "https://")):
+                continue
+            if cls.skip_title_re is not None and cls.skip_title_re.search(title):
                 continue
 
             raw_date = item.findtext("pubDate", "")
@@ -162,6 +167,9 @@ class CijCollector(RssCollector):
     url = "https://www.icj-cij.org/rss.xml"
     default_authority = "Corte Internacional de Justicia"
     default_document_type = "Comunicado"
+    # El feed mezcla comunicados con nodos multimedia cuyo título es el
+    # nombre del archivo ("20260630-200-InterventionPoland"): se descartan.
+    skip_title_re = re.compile(r"^\d{8}-")
 
 
 class TradeGovCollector(RssCollector):

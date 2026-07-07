@@ -377,6 +377,13 @@ ICJ_RSS = b"""<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0"><channel>
 <title>INTERNATIONAL COURT OF JUSTICE</title>
 <item>
+  <title>20260630-200-InterventionPoland</title>
+  <link>https://www.icj-cij.org/node/206439</link>
+  <description>20260630-200-InterventionPoland uploaded media node</description>
+  <guid isPermaLink="false">206439 at https://www.icj-cij.org</guid>
+  <pubDate>Tue, 30 Jun 2026 15:23:40 +0000</pubDate>
+</item>
+<item>
   <title>Poland files a declaration of intervention under Article 63</title>
   <link>https://www.icj-cij.org/node/206438</link>
   <description>&lt;p&gt;On 30 June 2026, Poland filed a declaration of intervention under

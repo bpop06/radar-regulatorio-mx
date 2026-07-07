@@ -76,10 +76,13 @@ CATEGORY_TERMS: dict[str, tuple[str, ...]] = {
         "signos distintivos",
         "modelo de utilidad",
         "secreto industrial",
+        "indicacion geografica",
+        "denominacion de origen",
         "patent",
         "trademark",
         "copyright",
         "intellectual property",
+        "geographical indication",
     ),
     "Normalización": (
         "norma oficial mexicana",
@@ -113,6 +116,12 @@ CATEGORY_TERMS: dict[str, tuple[str, ...]] = {
         "crimes against humanity",
         "prosecutor",
         "arrest warrant",
+        "genocide",
+        "genocidio",
+        "lesa humanidad",
+        "crimenes de guerra",
+        "rome statute",
+        "estatuto de roma",
     ),
     "Anti-lavado": (
         "lavado de dinero",
@@ -148,6 +157,20 @@ CATEGORY_TERMS: dict[str, tuple[str, ...]] = {
         "fmi",
         "aranceles reciprocos",
         "global tariff",
+    ),
+    # Actividad procesal de cortes y tribunales internacionales (CIJ, CIADI,
+    # CPI). Frases inglesas multi-palabra a propósito: sus feeds publican en
+    # inglés y las frases largas evitan falsos positivos en textos del DOF.
+    "Litigio internacional": (
+        "declaration of intervention",
+        "application instituting proceedings",
+        "institutes proceedings",
+        "provisional measures",
+        "advisory opinion",
+        "preliminary objections",
+        "delivers its judgment",
+        "arbitral award",
+        "arbitral tribunal",
     ),
 }
 
@@ -313,7 +336,24 @@ HIGH_VALUE_TERMS = (
     "usmca",
     "tariff",
     "trade agreement",
+    "indicacion geografica",
+    "denominacion de origen",
 )
+
+# Fuentes cuyo material sustantivo recibe un punto extra de relevancia: los
+# órganos oficiales mexicanos de publicación (DOF, Cámaras) y los órganos
+# jurisdiccionales o financieros internacionales pedidos por el dueño (sus
+# comunicados con materia jurídica son el producto; el ruido operativo —
+# vacantes, visitas, fotos — no recibe materia y queda fuera de todos modos).
+BONUS_SOURCES = {
+    "DOF",
+    "Senado",
+    "Diputados",
+    "CIADI",
+    "Banco Mundial",
+    "CPI",
+    "CIJ",
+}
 
 
 def classify(candidate: Candidate) -> ClassifiedCandidate:
@@ -373,7 +413,7 @@ def classify(candidate: Candidate) -> ClassifiedCandidate:
     unique_matches = tuple(dict.fromkeys(matches))
     score = min(len(unique_matches), 4)
     score += sum(1 for term in HIGH_VALUE_TERMS if _contains_term(text, term))
-    score += 1 if candidate.source in {"DOF", "Senado", "Diputados"} else 0
+    score += 1 if candidate.source in BONUS_SOURCES else 0
 
     return ClassifiedCandidate(
         candidate=candidate,
