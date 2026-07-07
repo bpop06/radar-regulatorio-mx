@@ -273,3 +273,35 @@ que no es su objeto.
 
 Cada incorporación debe revisar primero API, RSS, sitemap o datos abiertos y
 documentar límites de uso antes de implementar extracción HTML.
+
+
+## Adenda v5 — ponderación con navegador residencial (07-jul-2026)
+
+Auditoría ejecutada por el dueño con Claude en Chrome (residencial) y
+re-verificada endpoint por endpoint desde este entorno (datacenter), que es
+donde corre el recolector. Integrado en esta ola:
+
+- **ANAM** (`www.anam.gob.mx/sitemap.rss`): el sitio revivió; RSS del plugin
+  SEO con comunicados y boletines técnicos (no llegan al DOF). curl falla por
+  HTTP/2, httpx funciona. Páginas índice descartadas por título.
+- **TFJA** (`/acuerdos/acuerdos_{año}/`): acuerdos de Sala Superior con
+  encabezados de fecha en español; robots permisivo. Suspensiones de plazos
+  con efecto procesal directo.
+- **OMC** (`/library/rss/latest_news_e.xml`): feed vivo verificado desde el
+  datacenter. El robots veta el rastreo del sitio, por lo que SOLO se consume
+  el feed (canal de suscripción publicado por el propio sitio); el resto de
+  wto.org sigue sin scrapearse.
+- **Secretariado T-MEC** (`can-mex-usa-sec.org`, capítulos 10 y 31): tablas
+  públicas de paneles sin login, con partes, fecha de solicitud y estatus;
+  novedad por snapshot-diff (`docs/data/tmec_snapshot.json`, commiteado).
+- **Portales gob.mx siempre-relevantes**: se suman `cnbv`, `uif`,
+  `antimonopolio` (CNA, sucesora de COFECE tras su extinción) y `profeco`.
+
+Diferido con evidencia: **Banxico** (tabla de circulares sin fecha por fila:
+requeriría snapshot; endpoint `marco-normativo/normativa-agrupada-por-ano-cr.html`),
+**SCJN** (listado de comunicados sin fecha; microservicio de tesis
+`sjf2.scjn.gob.mx` es POST y merece colector propio), **SAT minisitio RMF**
+(gateway hostil; probar más corridas), **CONDUSEF sitio propio** (cadena TLS
+rota incluso vía gateway; su espejo gob.mx no publica contenido propio),
+**OCDE/FMI** (bloqueo a IPs de datacenter; solo navegador), **COFECE**
+(extinta; archivo histórico), **INDAUTOR** (robots `Disallow: /`).

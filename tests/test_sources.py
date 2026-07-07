@@ -515,13 +515,15 @@ def test_prodecon_is_always_relevant_despite_generic_titles():
     assert "prodecon" in ALWAYS_RELEVANT_PORTALS
 
 
-def test_condusef_and_profeco_are_not_always_relevant():
-    # Verificado en vivo: sus boletines de prensa son mayormente protección
-    # al consumidor genérica (alertas de suplantación de identidad, precios
-    # de alimentos, quejas de aerolíneas), ajena al alcance del radar;
-    # incluirlos sin filtro inundaría el radar con ruido.
+def test_always_relevant_portals_reflect_owner_scope():
+    # v5 (ponderación con navegador residencial): PROFECO entra —su archivo
+    # de prensa y alertas en gob.mx publica actos con relevancia jurídica y
+    # el dueño pidió expresamente los descentralizados de consumo—, junto
+    # con CNBV, UIF y la nueva CNA (antimonopolio). El espejo gob.mx de
+    # CONDUSEF sigue fuera: no publica contenido propio (su sitio real,
+    # condusef.gob.mx, quedó diferido por cadena TLS rota).
+    assert {"prodecon", "cnbv", "uif", "antimonopolio", "profeco"} <= ALWAYS_RELEVANT_PORTALS
     assert "condusef" not in ALWAYS_RELEVANT_PORTALS
-    assert "profeco" not in ALWAYS_RELEVANT_PORTALS
 
 
 # --- Banco Mundial ---------------------------------------------------------
@@ -740,3 +742,93 @@ def test_icsid_snapshot_path_configurable_via_env(tmp_path, monkeypatch):
     collector = IcsidCollector(client=None)
 
     assert collector.snapshot_path == snapshot_path
+
+
+# --- TFJA: acuerdos de Sala Superior (fragmento fiel, corrida en vivo 07-jul-2026)
+
+TFJA_HTML = """
+<p><strong>Miercoles 17 de junio de 2026</strong></p>
+<ul>
+<li><a href="/pdf/secretaria_general_de_acuerdos/acuerdos_sala_superior/2026/SS-12-2026.pdf">SS/12/2026</a><br />
+HORARIO DE GUARDIAS DE LAS OFICIAL&Iacute;AS DE PARTES DEL TRIBUNAL</li>
+<li><a href="/pdf/secretaria_general_de_acuerdos/acuerdos_sala_superior/2026/SS-11-2026.pdf">SS/11/2026</a><br />
+SUSPENSI&Oacute;N DE ACTIVIDADES PRESENCIALES</li>
+</ul>
+<p><strong>Lunes 15 de junio de 2026</strong></p>
+<ul>
+<li><a href="/pdf/x/SRT-04-2026.pdf">SRT/04/2026</a><br /> ACUERDO ANTIGUO</li>
+</ul>
+"""
+
+
+def test_tfja_parser_assigns_dates_and_filters_by_since():
+    from app.sources.tfja import TfjaCollector
+
+    items = TfjaCollector.parse(TFJA_HTML, date(2026, 6, 16))
+
+    assert [item.published_at for item in items] == [date(2026, 6, 17), date(2026, 6, 17)]
+    assert items[0].url.endswith("/2026/SS-12-2026.pdf")
+    assert items[0].official_title.startswith("Acuerdo SS/12/2026 del TFJA.")
+    assert "GUARDIAS" in items[0].description
+    assert items[0].source == "TFJA"
+
+
+# --- Secretariado T-MEC: tabla de paneles (estructura fiel, 07-jul-2026)
+
+TMEC_HTML = """
+<table><tr><th>Panel Review Number</th><th>Title</th><th>Instrument Invoked</th>
+<th>Mechanism</th><th>Importing Party</th><th>Other Party</th><th>Date</th><th>Status</th></tr>
+<tr><td>CDA-MEX-2026-10.12-01</td><td>Certain Oil Country Tubular Goods</td>
+<td>CUSMA</td><td>Chapter 10</td><td>Canada</td><td>Mexico</td>
+<td>2026-05-01</td><td>Active</td></tr></table>
+"""
+
+
+def test_tmec_first_run_emits_all_and_then_only_changes(tmp_path):
+    from app.sources.tmec import TmecCollector
+
+    snapshot = tmp_path / "tmec.json"
+    items = TmecCollector.parse(TMEC_HTML, snapshot_path=snapshot, today=date(2026, 7, 7))
+    assert len(items) == 1
+    assert items[0].case_parties == "Canada / Mexico"
+    assert items[0].case_status == "Active"
+    assert "Panel CDA-MEX-2026-10.12-01" in items[0].official_title
+
+    # Segunda corrida sin cambios: nada nuevo.
+    assert TmecCollector.parse(TMEC_HTML, snapshot_path=snapshot, today=date(2026, 7, 8)) == []
+
+    # Cambio de estatus: se emite.
+    changed = TMEC_HTML.replace(">Active<", ">Completed<")
+    again = TmecCollector.parse(changed, snapshot_path=snapshot, today=date(2026, 7, 9))
+    assert len(again) == 1 and again[0].case_status == "Completed"
+
+
+def test_tmec_dry_run_does_not_persist_snapshot(tmp_path):
+    from app.sources.tmec import TmecCollector
+
+    snapshot = tmp_path / "tmec.json"
+    TmecCollector.parse(
+        TMEC_HTML, snapshot_path=snapshot, today=date(2026, 7, 7), persist_snapshot=False
+    )
+    assert not snapshot.exists()
+
+
+def test_anam_skips_listing_pages():
+    from app.sources.anam import AnamCollector
+
+    feed = b"""<rss version="2.0"><channel>
+    <item><guid>https://www.anam.gob.mx/comunicados-de-prensa-2026/</guid>
+    <link>https://www.anam.gob.mx/comunicados-de-prensa-2026/</link>
+    <title>Comunicados de Prensa 2026</title>
+    <pubDate>Sat, 04 Jul 2026 19:05:45 +0000</pubDate></item>
+    <item><guid>https://www.anam.gob.mx/comunicado-prensa-conjunto-38-2026/</guid>
+    <link>https://www.anam.gob.mx/comunicado-prensa-conjunto-38-2026/</link>
+    <title>ASEGURAMIENTO DE CIGARRILLOS EN ADUANA DEL AIFA</title>
+    <pubDate>Sat, 04 Jul 2026 18:58:10 +0000</pubDate></item>
+    </channel></rss>"""
+
+    items = AnamCollector.parse(feed, date(2026, 7, 1))
+
+    assert len(items) == 1
+    assert items[0].source == "ANAM"
+    assert "ASEGURAMIENTO" in items[0].official_title

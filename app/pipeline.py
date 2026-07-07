@@ -15,6 +15,7 @@ from app.markdown import build_detail_markdown, detail_url
 from app.models import Candidate, Publication, SourceResult
 from app.relevance import classify, is_relevant
 from app.sources import (
+    AnamCollector,
     CijCollector,
     CpiCollector,
     DiputadosCollector,
@@ -22,10 +23,13 @@ from app.sources import (
     GobMxCollector,
     IcsidCollector,
     ImpiCollector,
+    OmcCollector,
     OnuNoticiasCollector,
     PlatiicaCollector,
     SenadoCollector,
     SniceCollector,
+    TfjaCollector,
+    TmecCollector,
     TradeGovCollector,
     UstrCollector,
     WorldBankCollector,
@@ -76,6 +80,10 @@ async def collect(
             # En dry-run no se persiste el snapshot del CIADI: de lo
             # contrario la novedad se consumiría sin publicarse.
             IcsidCollector(client, persist_snapshot=not dry_run),
+            AnamCollector(client),
+            TfjaCollector(client),
+            OmcCollector(client),
+            TmecCollector(client, persist_snapshot=not dry_run),
             WorldBankCollector(client),
             CpiCollector(client),
             CijCollector(client),

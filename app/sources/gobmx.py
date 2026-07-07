@@ -66,7 +66,13 @@ NON_INSTITUTIONAL_PORTALS = {
 # identidad, precios de alimentos, quejas de aerolíneas, educación
 # financiera), así que agregarlos aquí inundaría el radar con ruido; se
 # dejan filtrados por título como el resto de los portales.
-ALWAYS_RELEVANT_PORTALS = {"prodecon"}
+# Portales institucionales cuyo material es jurídicamente relevante per se
+# (títulos genéricos que no pasan el filtro por vocabulario): la defensoría
+# fiscal, la supervisora bancaria, la de PLD, la nueva autoridad de
+# competencia (CNA, sectorizada a la SE) y PROFECO, pedida expresamente por
+# el dueño. El espejo gob.mx de CONDUSEF queda fuera: no publica contenido
+# propio (su sitio real está diferido por cadena TLS rota).
+ALWAYS_RELEVANT_PORTALS = {"prodecon", "cnbv", "uif", "antimonopolio", "profeco"}
 
 PORTAL_AUTHORITIES = {
     "agricultura": "Secretaría de Agricultura y Desarrollo Rural",
