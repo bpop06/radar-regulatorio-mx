@@ -114,8 +114,9 @@ class Storage:
         return run_id
 
     def export_payload(self) -> dict[str, Any]:
-        """Reconstruye el payload público desde la última corrida guardada,
-        con los documentos vigentes dentro de su ventana de lookback."""
+        """Reconstruye el payload público con exactamente los documentos de la
+        última corrida guardada (los vistos en corridas anteriores pero no en
+        la última no se incluyen)."""
         cursor = self._connection.cursor()
         run = cursor.execute(
             "SELECT id, generated_at, lookback_days FROM collection_runs"

@@ -15,6 +15,11 @@ from app.text import clean_text
 # modo que un bloque dañado o incompleto no tire el resto del feed.
 ITEM_BLOCK_RE = re.compile(rb"<item>\s*.*?</item>", re.DOTALL)
 
+# Prefijos de namespace en etiquetas (<dc:creator>, <content:encoded>...). Se
+# declaran en la raíz <rss> del feed, no en cada <item>, así que el bloque
+# aislado no puede resolverlos y ElementTree falla con "unbound prefix".
+NAMESPACE_PREFIX_RE = re.compile(rb"<(/?)[A-Za-z0-9._-]+:")
+
 
 class RssCollector(Collector):
     """Base compartida para fuentes internacionales que publican RSS 2.0.
@@ -40,11 +45,19 @@ class RssCollector(Collector):
             try:
                 item = ElementTree.fromstring(block)
             except ElementTree.ParseError:
-                # Un bloque malformado no debe tumbar el resto del feed.
-                continue
+                # Feeds WordPress/Drupal traen hijos con prefijo de namespace
+                # que rompen el parseo del bloque aislado: se eliminan los
+                # prefijos de las etiquetas y se reintenta. Un bloque
+                # genuinamente malformado sigue descartándose solo.
+                try:
+                    item = ElementTree.fromstring(NAMESPACE_PREFIX_RE.sub(rb"<\1", block))
+                except ElementTree.ParseError:
+                    continue
 
             title = clean_text(item.findtext("title", ""))
-            url = clean_text(item.findtext("link", ""))
+            # Tras quitar prefijos, un <atom:link .../> del ítem se vuelve un
+            # <link> sin texto: se toma el primer <link> con contenido real.
+            url = clean_text(_first_nonempty_text(item, "link"))
             if not title or not url.lower().startswith(("http://", "https://")):
                 continue
 
@@ -72,6 +85,13 @@ class RssCollector(Collector):
                 )
             )
         return candidates
+
+
+def _first_nonempty_text(item: ElementTree.Element, tag: str) -> str:
+    for element in item.iter(tag):
+        if element.text and element.text.strip():
+            return element.text
+    return ""
 
 
 class OnuNoticiasCollector(RssCollector):

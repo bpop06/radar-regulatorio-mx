@@ -88,13 +88,21 @@ def main() -> None:
         if not report.ok:
             raise SystemExit(1)
 
-        with Storage(args.db or settings.database_path) as storage:
-            run_id = storage.save_run(payload)
+        # La publicación del día nunca debe depender de la base histórica:
+        # primero se escribe el JSON público y después se persiste la corrida
+        # como mejor esfuerzo (una DB corrupta o un disco lleno solo advierten).
         write_output(payload, args.output)
-        print(
-            f"Corrida {run_id} guardada en la base local y "
-            f"{payload['total_items']} novedades publicadas en {args.output}"
-        )
+        print(f"Publicadas {payload['total_items']} novedades en {args.output}")
+        try:
+            with Storage(args.db or settings.database_path) as storage:
+                run_id = storage.save_run(payload)
+        except Exception as exc:
+            print(
+                f"Advertencia: no se pudo guardar la corrida en la base local: {exc}",
+                file=sys.stderr,
+            )
+        else:
+            print(f"Corrida {run_id} guardada en la base local")
     elif args.command == "export-site":
         with Storage(args.db or settings.database_path) as storage:
             payload = storage.export_payload()

@@ -297,3 +297,36 @@ def test_ustr_candidate_classifies_as_international_taxonomy():
 
     assert taxonomy.jurisdiction == "internacional"
     assert taxonomy.country_or_org == "EEUU"
+
+
+WORDPRESS_NAMESPACED_RSS = b"""<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tradeology</title>
+    <item>
+      <title>ITA announces new tariff guidance for USMCA partners</title>
+      <link>https://blog.trade.gov/2026/07/01/tariff-guidance/</link>
+      <dc:creator><![CDATA[ITA Press]]></dc:creator>
+      <pubDate>Wed, 01 Jul 2026 15:00:00 +0000</pubDate>
+      <guid isPermaLink="false">https://blog.trade.gov/?p=12345</guid>
+      <description><![CDATA[Guidance on <b>tariff</b> treatment.]]></description>
+      <content:encoded><![CDATA[<p>Full post body with markup.</p>]]></content:encoded>
+    </item>
+  </channel>
+</rss>
+"""
+
+
+def test_rss_parser_survives_wordpress_namespaced_items():
+    # Los feeds WordPress/Drupal (Trade.gov, USTR) traen hijos con prefijo de
+    # namespace declarado en la raíz; el bloque <item> aislado debe parsearse
+    # igual en el reintento sin prefijos.
+    items = TradeGovCollector.parse(WORDPRESS_NAMESPACED_RSS, date(2026, 6, 1))
+
+    assert len(items) == 1
+    assert items[0].official_title == "ITA announces new tariff guidance for USMCA partners"
+    assert items[0].url == "https://blog.trade.gov/2026/07/01/tariff-guidance/"
+    assert items[0].description == "Guidance on tariff treatment."
