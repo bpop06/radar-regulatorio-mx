@@ -8,6 +8,7 @@ from pathlib import Path
 from typing import Any
 
 from app.config import Settings
+from app.editorial import EditorialError, apply_editorial
 from app.pipeline import collect, write_output
 from app.storage import Storage
 from app.validation import ValidationReport, validate_publications_payload
@@ -54,6 +55,22 @@ def build_parser() -> argparse.ArgumentParser:
         help="tamaño y contenido de la base local",
     )
     report_parser.add_argument("--db", type=Path, default=None)
+
+    editorial_parser = subparsers.add_parser(
+        "apply-editorial",
+        help="aplica títulos/resúmenes/cuerpos editoriales validados a ítems existentes",
+    )
+    editorial_parser.add_argument(
+        "edits",
+        type=Path,
+        help="JSON con {items:[{id,title,summary,card_body}]}",
+    )
+    editorial_parser.add_argument(
+        "--input",
+        type=Path,
+        default=Path("docs/data/publications.json"),
+    )
+    editorial_parser.add_argument("--db", type=Path, default=None)
 
     validate_parser = subparsers.add_parser("validate")
     validate_parser.add_argument(
@@ -121,6 +138,22 @@ def main() -> None:
         print(f"Corridas: {info.runs}")
         print(f"Publicaciones únicas: {info.documents}")
         print(f"Última corrida: {info.last_generated_at or 'sin corridas'}")
+    elif args.command == "apply-editorial":
+        try:
+            applied = apply_editorial(
+                args.edits,
+                args.input,
+                Path(args.db) if args.db else Path(settings.database_path),
+            )
+        except EditorialError as exc:
+            print(f"Error editorial: {exc}", file=sys.stderr)
+            raise SystemExit(1) from exc
+        payload = json.loads(args.input.read_text(encoding="utf-8"))
+        report = validate_publications_payload(payload)
+        _print_validation_report(report)
+        if not report.ok:
+            raise SystemExit(1)
+        print(f"Editorial aplicada a {applied} publicaciones en {args.input}")
     elif args.command == "validate":
         payload = json.loads(args.input.read_text(encoding="utf-8"))
         report = validate_publications_payload(payload)

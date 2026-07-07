@@ -84,11 +84,7 @@ async def collect(settings: Settings, days: int | None = None) -> dict[str, obje
         reverse=True,
     )
 
-    summarizer = Summarizer(
-        settings.openai_api_key,
-        settings.openai_model,
-        settings.openai_reasoning_effort,
-    )
+    summarizer = Summarizer()
     publications: list[Publication] = []
     for item in classified:
         summary = summarizer.summarize(item)

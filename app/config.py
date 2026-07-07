@@ -14,9 +14,6 @@ class Settings:
         os.getenv("SOURCE_RETRY_BACKOFF_SECONDS", "1.25")
     )
     local_timezone: str = os.getenv("LOCAL_TIMEZONE", "America/Mexico_City")
-    openai_api_key: str | None = os.getenv("OPENAI_API_KEY") or None
-    openai_model: str = os.getenv("OPENAI_MODEL", "gpt-5.5")
-    openai_reasoning_effort: str = os.getenv("OPENAI_REASONING_EFFORT", "extra_high")
     database_path: str = os.getenv("RADAR_DB_PATH", "data/radar.sqlite3")
     user_agent: str = os.getenv(
         "USER_AGENT",

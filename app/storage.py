@@ -158,6 +158,24 @@ class Storage:
             "items": items,
         }
 
+    def update_document_fields(self, document_id: str, fields: dict[str, Any]) -> bool:
+        """Actualiza campos puntuales del payload de un documento existente.
+        Devuelve False si el documento no está en la base."""
+        cursor = self._connection.cursor()
+        row = cursor.execute(
+            "SELECT payload FROM documents WHERE id = ?", (document_id,)
+        ).fetchone()
+        if row is None:
+            return False
+        document = json.loads(row[0])
+        document.update(fields)
+        cursor.execute(
+            "UPDATE documents SET payload = ? WHERE id = ?",
+            (json.dumps(document, ensure_ascii=False), document_id),
+        )
+        self._connection.commit()
+        return True
+
     def report(self) -> StorageReport:
         cursor = self._connection.cursor()
         runs = cursor.execute("SELECT COUNT(*) FROM collection_runs").fetchone()[0]

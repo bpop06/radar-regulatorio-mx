@@ -79,44 +79,9 @@ fi
 export PYTHON_BIN
 log "Python adecuado: $PYTHON_BIN ($("$PYTHON_BIN" --version 2>&1))"
 
-# --- Paso 3: Codex CLI -----------------------------------------------------
-
-if ! command -v codex >/dev/null 2>&1; then
-  log "codex no está en PATH"
-  if command -v npm >/dev/null 2>&1; then
-    log "instalando codex con npm install -g @openai/codex"
-    if ! npm install -g @openai/codex; then
-      echo "error: npm install -g @openai/codex falló (típicamente permisos EACCES)." >&2
-      echo "Instálalo manualmente con: brew install --cask codex" >&2
-      exit 1
-    fi
-  else
-    echo "error: no se encontró npm para instalar codex automáticamente." >&2
-    echo "Instálalo con: brew install --cask codex" >&2
-    exit 1
-  fi
-fi
-
-if ! command -v codex >/dev/null 2>&1; then
-  echo "error: codex sigue sin encontrarse en PATH tras el intento de instalación." >&2
-  echo "Instálalo manualmente con: brew install --cask codex" >&2
-  exit 1
-fi
-
-log "codex disponible: $(codex --version)"
-
-# --- Paso 4: sesión de Codex -----------------------------------------------
-
-CODEX_AUTH_FILE="$HOME/.codex/auth.json"
-if [[ ! -f "$CODEX_AUTH_FILE" ]]; then
-  log "no hay sesión de codex guardada ($CODEX_AUTH_FILE); abriendo 'codex login'"
-  codex login
-  log "codex login terminó"
-else
-  log "sesión de codex ya existe en $CODEX_AUTH_FILE"
-fi
-
-# --- Paso 5: raíz del repo y actualización de main -------------------------
+# --- Paso 3: raíz del repo y actualización de main -------------------------
+# (La Mac ya no necesita Codex ni ninguna API: solo recolecta y publica datos;
+# la capa editorial la hace la rutina diaria de Claude en la nube.)
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 log "raíz del repositorio: $ROOT"
@@ -164,12 +129,8 @@ fi
 if [[ "$RUN_NOW" == true ]]; then
   log "corriendo scripts/codex_daily.sh en primer plano (puede tardar varios minutos)"
   "$ROOT/scripts/codex_daily.sh"
-  log "corrida terminada; últimas líneas del parte diario del agente:"
-  if [[ -s "$ROOT/logs/codex-last-message.txt" ]]; then
-    tail -n 40 "$ROOT/logs/codex-last-message.txt"
-  else
-    echo "(sin parte diario disponible; revisa $ROOT/logs/codex-daily.log)"
-  fi
+  log "corrida terminada; últimas líneas del log:"
+  tail -n 15 "$ROOT/logs/collect-daily.log" 2>/dev/null || echo "(revisa $ROOT/logs/codex-daily.log)"
 fi
 
 # --- Paso 8: resumen final ---------------------------------------------------
