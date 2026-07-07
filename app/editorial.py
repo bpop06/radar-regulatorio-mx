@@ -8,8 +8,13 @@ from typing import Any
 from app.storage import Storage
 from app.text import words
 from app.validation import (
+    ACT_NUMBER_RE,
     CARD_BODY_SECTIONS,
     OFFICE_NUMBER_TITLE,
+    SUMMARY_MAX_WORDS,
+    SUMMARY_MIN_WORDS,
+    WHAT_PUBLISHED_SECTION,
+    card_section_text,
     validate_publications_payload,
 )
 
@@ -93,9 +98,10 @@ def _validate_edit(index: int, edit: Any, by_id: dict[str, dict[str, Any]]) -> s
             raise EditorialError(f"items[{index}] ({edit_id}): falta el campo '{field}'")
 
     summary_words = len(words(edit["summary"]))
-    if summary_words != 30:
+    if not SUMMARY_MIN_WORDS <= summary_words <= SUMMARY_MAX_WORDS:
         raise EditorialError(
-            f"items[{index}] ({edit_id}): el resumen tiene {summary_words} palabras, deben ser 30"
+            f"items[{index}] ({edit_id}): el resumen tiene {summary_words} palabras, "
+            f"deben ser {SUMMARY_MIN_WORDS}-{SUMMARY_MAX_WORDS}"
         )
 
     for section in CARD_BODY_SECTIONS:
@@ -103,6 +109,13 @@ def _validate_edit(index: int, edit: Any, by_id: dict[str, dict[str, Any]]) -> s
             raise EditorialError(
                 f"items[{index}] ({edit_id}): card_body sin la sección '{section}'"
             )
+
+    what_published = card_section_text(edit["card_body"], WHAT_PUBLISHED_SECTION)
+    if ACT_NUMBER_RE.search(what_published):
+        raise EditorialError(
+            f"items[{index}] ({edit_id}): la sección '{WHAT_PUBLISHED_SECTION}' "
+            "no debe traer número de acto"
+        )
 
     if re.match(OFFICE_NUMBER_TITLE, edit["title"].strip(), flags=re.IGNORECASE):
         raise EditorialError(

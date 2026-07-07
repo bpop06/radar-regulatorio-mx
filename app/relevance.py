@@ -21,8 +21,6 @@ CATEGORY_TERMS: dict[str, tuple[str, ...]] = {
         "procedimiento administrativo de ejecucion",
         "comprobante fiscal",
         "cfdi",
-        "lavado de dinero",
-        "actividades vulnerables",
         "tax",
         "taxation",
         "transfer pricing",
@@ -78,10 +76,13 @@ CATEGORY_TERMS: dict[str, tuple[str, ...]] = {
         "signos distintivos",
         "modelo de utilidad",
         "secreto industrial",
+        "indicacion geografica",
+        "denominacion de origen",
         "patent",
         "trademark",
         "copyright",
         "intellectual property",
+        "geographical indication",
     ),
     "Normalización": (
         "norma oficial mexicana",
@@ -100,7 +101,88 @@ CATEGORY_TERMS: dict[str, tuple[str, ...]] = {
         "dictamen",
         "minuta",
     ),
+    "Penal": (
+        "delito",
+        "penal",
+        "fiscalia",
+        "fgr",
+        "defraudacion fiscal",
+        "contrabando",
+        "extincion de dominio",
+        "prision preventiva",
+        "codigo nacional de procedimientos penales",
+        "orden de aprehension",
+        "war crimes",
+        "crimes against humanity",
+        "prosecutor",
+        "arrest warrant",
+        "genocide",
+        "genocidio",
+        "lesa humanidad",
+        "crimenes de guerra",
+        "rome statute",
+        "estatuto de roma",
+    ),
+    "Anti-lavado": (
+        "lavado de dinero",
+        "lfpiorpi",
+        "actividades vulnerables",
+        "uif",
+        "unidad de inteligencia financiera",
+        "gafi",
+        "fatf",
+        "beneficiario controlador",
+        "operaciones inusuales",
+        "money laundering",
+        "aml",
+        "terrorist financing",
+    ),
+    "Comercio internacional": (
+        "t-mec",
+        "usmca",
+        "omc",
+        "wto",
+        "ocde",
+        "oecd",
+        "arbitraje de inversion",
+        "investment arbitration",
+        "icsid",
+        "ciadi",
+        "tratado bilateral de inversion",
+        "panel binacional",
+        "dispute settlement",
+        "world bank",
+        "banco mundial",
+        "imf",
+        "fmi",
+        "aranceles reciprocos",
+        "global tariff",
+    ),
+    # Actividad procesal de cortes y tribunales internacionales (CIJ, CIADI,
+    # CPI). Frases inglesas multi-palabra a propósito: sus feeds publican en
+    # inglés y las frases largas evitan falsos positivos en textos del DOF.
+    "Litigio internacional": (
+        "declaration of intervention",
+        "application instituting proceedings",
+        "institutes proceedings",
+        "provisional measures",
+        "advisory opinion",
+        "preliminary objections",
+        "delivers its judgment",
+        "arbitral award",
+        "arbitral tribunal",
+    ),
 }
+
+# Autoridades cuyo material siempre es relevante para el radar, aunque el
+# clasificador no le asigne materia ni score alto (enrich les da como materia
+# primaria "Administración centralizada").
+ALWAYS_RELEVANT_AUTHORITY_TERMS = (
+    "secretaria de hacienda",
+    "shcp",
+    "hacienda y credito publico",
+    "secretaria de economia",
+)
 
 ADMINISTRATIVE_LAW_TERMS = (
     "ley federal de procedimiento administrativo",
@@ -254,7 +336,24 @@ HIGH_VALUE_TERMS = (
     "usmca",
     "tariff",
     "trade agreement",
+    "indicacion geografica",
+    "denominacion de origen",
 )
+
+# Fuentes cuyo material sustantivo recibe un punto extra de relevancia: los
+# órganos oficiales mexicanos de publicación (DOF, Cámaras) y los órganos
+# jurisdiccionales o financieros internacionales pedidos por el dueño (sus
+# comunicados con materia jurídica son el producto; el ruido operativo —
+# vacantes, visitas, fotos — no recibe materia y queda fuera de todos modos).
+BONUS_SOURCES = {
+    "DOF",
+    "Senado",
+    "Diputados",
+    "CIADI",
+    "Banco Mundial",
+    "CPI",
+    "CIJ",
+}
 
 
 def classify(candidate: Candidate) -> ClassifiedCandidate:
@@ -314,7 +413,7 @@ def classify(candidate: Candidate) -> ClassifiedCandidate:
     unique_matches = tuple(dict.fromkeys(matches))
     score = min(len(unique_matches), 4)
     score += sum(1 for term in HIGH_VALUE_TERMS if _contains_term(text, term))
-    score += 1 if candidate.source in {"DOF", "Senado", "Diputados"} else 0
+    score += 1 if candidate.source in BONUS_SOURCES else 0
 
     return ClassifiedCandidate(
         candidate=candidate,
@@ -377,5 +476,8 @@ def _contains_term(text: str, term: str) -> bool:
 
 
 def is_relevant(item: ClassifiedCandidate, minimum_score: int) -> bool:
+    authority = normalized(item.candidate.authority)
+    if any(term in authority for term in ALWAYS_RELEVANT_AUTHORITY_TERMS):
+        return True
     substantive_categories = set(item.categories) - {"Iniciativa"}
     return bool(substantive_categories) and item.relevance_score >= minimum_score

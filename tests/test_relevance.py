@@ -174,3 +174,101 @@ def test_fiscalia_does_not_match_fiscal():
     result = classify(candidate("Requisitos para ocupar la Fiscalía General de la República"))
 
     assert "Fiscal" not in result.categories
+
+
+def test_classifies_new_fine_categories():
+    penal = classify(candidate("Orden de aprehensión por defraudación fiscal y contrabando"))
+    assert "Penal" in penal.categories
+
+    aml = classify(
+        candidate("Reglas sobre actividades vulnerables y lavado de dinero ante la UIF")
+    )
+    assert "Anti-lavado" in aml.categories
+
+    trade = classify(
+        candidate("Panel binacional del T-MEC sobre arbitraje de inversión ante el CIADI")
+    )
+    assert "Comercio internacional" in trade.categories
+
+
+def test_international_court_substance_passes_and_noise_stays_out():
+    # Actividad procesal real de la CIJ: materia + bono de fuente → publica.
+    intervention = classify(
+        candidate(
+            "Poland files a declaration of intervention in the proceedings "
+            "under Article 63 of the Statute",
+            source="CIJ",
+        )
+    )
+    assert "Litigio internacional" in intervention.categories
+    assert is_relevant(intervention, minimum_score=2)
+
+    # Ruido operativo del mismo feed (visitas, fotos): sin materia → fuera.
+    visit = classify(
+        candidate("Visit by HE Mr Luc Frieden, Prime Minister of Luxembourg", source="CIJ")
+    )
+    assert not is_relevant(visit, minimum_score=2)
+
+    # Vacantes de la CPI: sin materia → fuera aun con bono de fuente.
+    vacancy = classify(candidate("Administrative Assistant (G-5)", source="CPI"))
+    assert not is_relevant(vacancy, minimum_score=2)
+
+    # Comunicado sustantivo de la CPI sobre crímenes de guerra → publica.
+    warrant = classify(
+        candidate(
+            "Pre-Trial Chamber issues decision on war crimes charges",
+            source="CPI",
+        )
+    )
+    assert "Penal" in warrant.categories
+    assert is_relevant(warrant, minimum_score=2)
+
+
+def test_icsid_mexico_case_is_relevant():
+    result = classify(
+        candidate(
+            "Espíritu Santo Holdings, LP v. United Mexican States "
+            "(ICSID Case No. ARB/20/13)",
+            source="CIADI",
+        )
+    )
+
+    assert "Comercio internacional" in result.categories
+    assert is_relevant(result, minimum_score=2)
+
+
+def test_geographical_indication_is_high_value_ip():
+    result = classify(
+        candidate(
+            "Economía e IMPI reconocen al Aguacate Franja Michoacán "
+            "como Indicación Geográfica Protegida",
+            source="Gob.mx APF",
+        )
+    )
+
+    assert "Propiedad intelectual" in result.categories
+    assert is_relevant(result, minimum_score=2)
+
+
+def test_shcp_authority_is_always_relevant_even_without_category():
+    item = classify(
+        candidate(
+            "Convocatoria para adquirir mobiliario de oficina",
+            authority="Secretaría de Hacienda y Crédito Público",
+        )
+    )
+
+    # Sin categoría sustantiva ni score alto, pero la autoridad la hace relevante.
+    assert not (set(item.categories) - {"Iniciativa"})
+    assert is_relevant(item, minimum_score=99)
+
+
+def test_unrelated_authority_without_category_is_not_relevant():
+    item = classify(
+        candidate(
+            "Convenio cultural para actividades deportivas municipales",
+            authority="Instituto Municipal del Deporte",
+        )
+    )
+
+    assert not is_relevant(item, minimum_score=2)

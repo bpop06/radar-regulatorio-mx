@@ -23,14 +23,21 @@ law, administrative litigation, and tax-specific administrative litigation.
   interface exists.
 - Preserve the official source URL and publication date for every record.
 - Deduplicate by stable source identifier or canonical URL.
-- Do not publish a generated summary unless it contains exactly 30 words.
+- Do not publish a generated summary unless it holds between 40 and 80 words
+  (inclusive); `app.text.bounded_summary` and the validator enforce the range.
 - Editorial titles lead with the substance ("organ + verb + what changed");
   office/act numbers are secondary metadata and must not open a title.
 - Every published item carries `card_body` with the fixed sections
   "## Qué se publicó", "## Sustancia" and "## Fuente".
+- The "## Qué se publicó" section states WHAT was published without act
+  numbers or clave (validator regex `ACT_NUMBER_RE`) and names the organ with
+  its short form (SHCP, SAT, IMPI, ...), never the full legal name.
 - Taxonomy is deterministic (`app/taxonomy.py`): issuing body resolved from
   the organ catalog, jurisdiction/country from the source origin map, date
-  facets from `published_at`, importance bucketed 1-5 from relevance.
+  facets from `published_at`, importance bucketed 1-5 from relevance. Fine
+  categories from `app/relevance.py` collapse to the owner's primary materias
+  (`primary_categories`) used as `categories`; the fine labels stay in
+  `topic_tags`.
 - The local SQLite history (`data/radar.sqlite3`) is never committed; the
   public JSON remains the only published data contract.
 - Treat tax administrative litigation as a subset of administrative

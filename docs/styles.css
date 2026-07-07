@@ -91,8 +91,8 @@
     --surface: #16191C;
     --surface-2: #1D2125;
     --surface-sunken: #0B0D0F;
-    --ink-band: #090A0B;
-    --on-band: #ECEBE6;
+    --ink-band: #060708;
+    --on-band: #E6E9EC;
     --on-band-muted: #8A8F93;
 
     --ink-900: #ECEBE6;
@@ -131,8 +131,8 @@
   --surface: #16191C;
   --surface-2: #1D2125;
   --surface-sunken: #0B0D0F;
-  --ink-band: #090A0B;
-  --on-band: #ECEBE6;
+  --ink-band: #060708;
+  --on-band: #E6E9EC;
   --on-band-muted: #8A8F93;
 
   --ink-900: #ECEBE6;
@@ -213,7 +213,7 @@ a { color: var(--accent-strong); text-decoration-thickness: 1px; text-underline-
   color: var(--ink-500);
 }
 .label .idx { color: var(--accent); margin-right: 0.5ch; }
-.on-band .label, .ink-band-surface .label { color: var(--on-band-muted); }
+.band .label { color: var(--on-band-muted); }
 
 /* La Meridiana */
 .meridian {
@@ -225,7 +225,7 @@ a { color: var(--accent-strong); text-decoration-thickness: 1px; text-underline-
 }
 html.js .meridian:not(.is-visible) { transform: scaleX(0); }
 html:not(.js) .meridian, .meridian.is-visible { transform: scaleX(1); }
-.on-band .meridian { background: rgba(236, 235, 230, .22); }
+.band .meridian { background: color-mix(in srgb, var(--on-band) 22%, transparent); }
 
 /* ---------------------------------------------------------------- NAV GLOBAL */
 .nav {
@@ -258,8 +258,8 @@ html:not(.js) .meridian, .meridian.is-visible { transform: scaleX(1); }
 .nav-on-band:not(.is-condensed) { color: var(--on-band); }
 .nav-on-band:not(.is-condensed) .brand-word,
 .nav-on-band:not(.is-condensed) .nav-link { color: var(--on-band); }
-.nav-on-band:not(.is-condensed) .brand-mark { border-color: rgba(236, 235, 230, .5); }
-.nav-on-band:not(.is-condensed) .nav-link.is-active { color: #fff; }
+.nav-on-band:not(.is-condensed) .brand-mark { border-color: color-mix(in srgb, var(--on-band) 50%, transparent); }
+.nav-on-band:not(.is-condensed) .nav-link.is-active { color: var(--on-band); }
 
 .brand { display: inline-flex; gap: 10px; align-items: center; text-decoration: none; color: inherit; }
 .brand-mark {
@@ -299,7 +299,7 @@ html:not(.js) .meridian, .meridian.is-visible { transform: scaleX(1); }
 }
 .theme-toggle:hover { border-color: var(--ink-900); }
 .theme-glyph { font-size: 0.95rem; line-height: 1; }
-.nav-on-band:not(.is-condensed) .theme-toggle { border-color: rgba(236, 235, 230, .4); }
+.nav-on-band:not(.is-condensed) .theme-toggle { border-color: color-mix(in srgb, var(--on-band) 40%, transparent); }
 
 /* ---------------------------------------------------------------- BANDA GRAFITO */
 .band {
@@ -356,14 +356,14 @@ html:not(.js) .meridian, .meridian.is-visible { transform: scaleX(1); }
 .readings {
   display: flex; flex-wrap: wrap; gap: 0;
   margin-top: var(--space-2xl);
-  border-top: 1px solid rgba(236, 235, 230, .18);
-  border-bottom: 1px solid rgba(236, 235, 230, .18);
+  border-top: 1px solid color-mix(in srgb, var(--on-band) 18%, transparent);
+  border-bottom: 1px solid color-mix(in srgb, var(--on-band) 18%, transparent);
 }
 .reading {
   display: flex; flex-direction: column; gap: 4px;
   padding: var(--space-md) var(--space-lg) var(--space-md) 0;
   margin-right: var(--space-lg);
-  border-right: 1px solid rgba(236, 235, 230, .18);
+  border-right: 1px solid color-mix(in srgb, var(--on-band) 18%, transparent);
 }
 .reading:last-child { border-right: 0; margin-right: 0; }
 .reading-label {
@@ -420,13 +420,12 @@ html:not(.js) .meridian, .meridian.is-visible { transform: scaleX(1); }
 .select-control select:focus, .sort select:focus { outline: none; border-bottom-color: var(--ink-900); box-shadow: none; }
 .select-control select:focus-visible, .sort select:focus-visible { box-shadow: var(--ring); }
 
-/* Chips de materia + indicador deslizante */
+/* Chips de materia + indicador deslizante (8-15 chips: wrap limpio, sin overflow) */
 .filters {
   position: relative;
-  display: flex; gap: 4px; overflow-x: auto; scrollbar-width: none;
+  display: flex; flex-wrap: wrap; gap: 6px 4px;
   padding-bottom: 6px;
 }
-.filters::-webkit-scrollbar { display: none; }
 .filter {
   position: relative; z-index: 1; flex: 0 0 auto;
   padding: 7px 12px; background: transparent; border: 1px solid transparent;
@@ -438,10 +437,11 @@ html:not(.js) .meridian, .meridian.is-visible { transform: scaleX(1); }
 .filter:hover { color: var(--ink-900); }
 .filter.active { color: var(--ink-900); }
 .filter-indicator {
-  position: absolute; z-index: 0; left: 0; top: 2px; height: calc(100% - 8px);
+  position: absolute; z-index: 0; left: 0; top: 0; height: 0;
   background: var(--accent-tint); border: 1px solid var(--accent);
   border-radius: var(--radius-pill); width: 0; opacity: 0;
-  transition: transform var(--dur-3) var(--ease-out-quint), width var(--dur-3) var(--ease-out-quint);
+  transition: transform var(--dur-3) var(--ease-out-quint), width var(--dur-3) var(--ease-out-quint),
+    height var(--dur-3) var(--ease-out-quint);
   pointer-events: none;
 }
 
@@ -498,8 +498,8 @@ html:not(.js) .meridian, .meridian.is-visible { transform: scaleX(1); }
 }
 .news-card:active { transform: translateY(-1px); }
 
-.card-topline { display: flex; align-items: center; justify-content: space-between; gap: var(--space-sm); }
-.topline-left, .topline-right { display: flex; align-items: center; gap: var(--space-xs); }
+.card-topline { display: flex; align-items: center; justify-content: space-between; gap: var(--space-sm); flex-wrap: wrap; }
+.topline-left, .topline-right { display: flex; align-items: center; gap: var(--space-xs); flex-wrap: wrap; }
 .folio {
   font-family: var(--font-mono); font-size: 0.8125rem; font-weight: 500; letter-spacing: 0.02em;
   color: var(--ink-400); transition: color var(--dur-2) var(--ease-out-quint);
@@ -514,6 +514,7 @@ html:not(.js) .meridian, .meridian.is-visible { transform: scaleX(1); }
   font-family: var(--font-mono); font-size: 0.62rem; letter-spacing: 0.08em; text-transform: uppercase;
   color: var(--ink-500); padding: 2px 6px; border: 1px solid var(--line); border-radius: var(--radius-xs);
 }
+.case-chip { color: var(--accent-ink); border-color: currentColor; }
 .card-date {
   font-family: var(--font-mono); font-size: 0.8125rem; letter-spacing: 0.02em; color: var(--ink-400);
   white-space: nowrap;
@@ -661,6 +662,12 @@ html:not(.js) .meridian, .meridian.is-visible { transform: scaleX(1); }
   font-variation-settings: "opsz" 72;
 }
 .detail-organ { padding-left: 12px; border-left: 2px solid var(--accent); font-weight: 600; color: var(--ink-500); font-size: 0.9rem; margin: 0 0 var(--space-lg); }
+.detail-case { margin: 0 0 var(--space-sm); }
+.detail-parties {
+  margin: 0 0 var(--space-lg); font-family: var(--font-mono); font-size: 0.8125rem;
+  color: var(--ink-500); line-height: 1.5;
+}
+.detail-parties strong { color: var(--ink-700); font-weight: 500; }
 .detail-signal { display: inline-flex; align-items: center; gap: var(--space-sm); margin: 0 0 var(--space-md); }
 .detail-signal .lbl { font-family: var(--font-mono); font-size: 0.62rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-400); }
 
@@ -780,7 +787,7 @@ html:not(.js) .meridian, .meridian.is-visible { transform: scaleX(1); }
 .day--habil .state-key { background: var(--st-habil-mark); opacity: .55; }
 .day--habil .num { color: var(--ink-900); }
 .day--inhabil {
-  background: repeating-linear-gradient(45deg, transparent 0 6px, rgba(124, 122, 114, .12) 6px 7px), var(--st-inhabil-fill);
+  background: repeating-linear-gradient(45deg, transparent 0 6px, color-mix(in srgb, var(--st-inhabil-ink) 12%, transparent) 6px 7px), var(--st-inhabil-fill);
 }
 .day--inhabil .num { color: var(--st-inhabil-ink); }
 .day--inhabil .state-key { background: var(--st-inhabil-ink); opacity: .4; }
@@ -810,7 +817,7 @@ html:not(.js) .meridian, .meridian.is-visible { transform: scaleX(1); }
 .legend-item { display: inline-flex; align-items: center; gap: 8px; font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.04em; text-transform: uppercase; color: var(--ink-500); cursor: default; }
 .legend-swatch { width: 16px; height: 16px; border: 1px solid var(--line); border-radius: var(--radius-xs); }
 .legend-swatch.habil { background: var(--st-habil-mark); }
-.legend-swatch.inhabil { background: repeating-linear-gradient(45deg, transparent 0 4px, rgba(124, 122, 114, .3) 4px 5px), var(--st-inhabil-fill); }
+.legend-swatch.inhabil { background: repeating-linear-gradient(45deg, transparent 0 4px, color-mix(in srgb, var(--st-inhabil-ink) 30%, transparent) 4px 5px), var(--st-inhabil-fill); }
 .legend-swatch.vacaciones { background: var(--st-vacaciones-tint); border-color: var(--st-vacaciones-mark); }
 .legend-swatch.today { border: 2px solid var(--accent); background: transparent; }
 .cal-grid.hl-habil .cal-day:not(.day--habil), .cal-grid.hl-inhabil .cal-day:not(.day--inhabil), .cal-grid.hl-vacaciones .cal-day:not(.day--vacaciones) { opacity: .35; }

@@ -15,17 +15,19 @@ const state = {
   pageSize: 24,
 };
 
+// Materias primarias del contrato v4. El código de renderFilters() une estas
+// con cualquier categoría descubierta en los datos, así que sigue siendo
+// tolerante a datos del contrato viejo (que no traen estas materias) o a
+// materias nuevas que aún no estén listadas aquí.
 const supportedCategories = [
-  "Fiscal",
-  "Aduanero",
+  "Comercio internacional",
   "Comercio exterior",
-  "Propiedad intelectual",
-  "Normalización",
-  "Derecho administrativo",
-  "Nombramientos federales",
-  "Contencioso administrativo",
-  "Contencioso administrativo fiscal",
-  "Iniciativa",
+  "Fiscal",
+  "Anti-lavado",
+  "Penal",
+  "Administración centralizada",
+  "Administración descentralizada",
+  "Proceso legislativo",
 ];
 
 const searchAliases = {
@@ -35,6 +37,11 @@ const searchAliases = {
   "Derecho administrativo": "lfpa loapf administración pública federal",
   "Nombramientos federales":
     "designaciones cargos públicos directores subdirectores titulares",
+  "Anti-lavado": "pld lavado dinero uif lfpiorpi",
+  "Comercio internacional": "t-mec usmca omc wto arbitraje inversión ciadi",
+  Penal: "delito fiscalía fgr",
+  "Administración centralizada": "apf secretaría lfpa loapf nombramientos",
+  "Administración descentralizada": "organismo descentralizado desconcentrado autónomo",
 };
 
 const monthNames = [
@@ -167,11 +174,15 @@ function placeFilterIndicator() {
     indicator.style.opacity = "0";
     return;
   }
+  // Con 8-15 chips los filtros hacen wrap en varias filas: el indicador necesita
+  // seguir también la posición vertical (top) y alto del chip activo, no solo X/ancho.
   const parentRect = elements.filters.getBoundingClientRect();
   const rect = active.getBoundingClientRect();
   const left = rect.left - parentRect.left + elements.filters.scrollLeft;
+  const top = rect.top - parentRect.top + elements.filters.scrollTop;
   indicator.style.width = `${rect.width}px`;
-  indicator.style.transform = `translateX(${left}px)`;
+  indicator.style.height = `${rect.height}px`;
+  indicator.style.transform = `translate(${left}px, ${top}px)`;
   indicator.style.opacity = "1";
 }
 
@@ -329,10 +340,19 @@ function populateCard(fragment, item, indexInPage) {
   fragment.querySelector(".folio").textContent = `№ ${item._folio}`;
   fragment.querySelector(".source-chip").textContent = sourceCode(item.source);
 
-  const intlChip = fragment.querySelector(".intl-chip");
+  const intlChip = fragment.querySelector(".intl-chip:not(.case-chip)");
   if (item.jurisdiction === "internacional" && item.country_or_org) {
     intlChip.textContent = item.country_or_org;
     intlChip.hidden = false;
+  }
+
+  // Contrato v4 (opcional): si el item trae case_status no vacío, chip discreto "CASO · …".
+  // Tolerante a datos del contrato viejo, que no traen este campo.
+  const caseChip = fragment.querySelector(".case-chip");
+  const caseStatus = typeof item.case_status === "string" ? item.case_status.trim() : "";
+  if (caseChip && caseStatus) {
+    caseChip.textContent = `CASO · ${caseStatus}`;
+    caseChip.hidden = false;
   }
 
   const time = fragment.querySelector("time");

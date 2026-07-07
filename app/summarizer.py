@@ -5,7 +5,12 @@ from dataclasses import dataclass
 
 from app.markdown import build_card_body
 from app.models import ClassifiedCandidate
-from app.text import concise_title, exactly_30_words, normalized, words
+from app.taxonomy import short_organ_name
+from app.text import bounded_summary, concise_title, normalized, words
+
+# El tipo base de acto se deriva del document_type cortando en el primer dígito
+# (así "Oficio 500-05-2026-1" queda en "Oficio", sin arrastrar el número).
+_ACT_TYPE_BASE_RE = re.compile(r"^[^\d]*")
 
 
 @dataclass(frozen=True)
@@ -30,24 +35,30 @@ class Summarizer:
         candidate = item.candidate
         base = (candidate.description or candidate.official_title).rstrip(" .;:")
         title_base = _fallback_title_base(candidate.official_title, candidate.description)
-        categories = ", ".join(item.categories)
+        authority = candidate.authority.strip() or "autoridad federal"
+        categories = ", ".join(item.categories) or "materias reguladas por el radar"
+
+        lead = f"{base}. " if base else ""
         summary_base = (
-            f"{base}. Publicación oficial de {candidate.authority}, relacionada con {categories}. "
+            f"{lead}Publicación oficial de {authority}, relacionada con {categories}. "
             "Consulta la fuente íntegra para confirmar su alcance, fechas de vigencia, "
             "obligaciones, requisitos, excepciones, autoridades responsables, procedimientos "
             "y efectos jurídicos aplicables."
         )
-        document_type = candidate.document_type.strip() or "Publicación oficial"
-        authority = candidate.authority.strip() or "autoridad federal"
-        what_published = f"{document_type} de {authority}."
+        # "Qué se publicó" sin número de acto ni nombre completo del órgano.
+        act_type = _base_act_type(candidate.document_type)
+        organ_short = short_organ_name(
+            candidate.source, candidate.authority, candidate.official_title
+        )
+        what_published = f"{act_type} de {organ_short}."
         substance = (
-            f"{base}. Materias: {categories or 'sin clasificar'}. Resumen extractivo "
+            f"{lead}Materias: {categories}. Resumen extractivo "
             "pendiente de revisión editorial; consulta la fuente oficial para el "
             "alcance completo."
         )
         return Summary(
             title=concise_title(title_base),
-            summary=exactly_30_words(summary_base),
+            summary=bounded_summary(summary_base),
             card_body=build_card_body(
                 what_published=what_published,
                 substance=substance,
@@ -55,6 +66,14 @@ class Summarizer:
             ),
             ai_generated=False,
         )
+
+
+def _base_act_type(document_type: str) -> str:
+    """Tipo base del acto sin número ni clave: corta el document_type en el
+    primer dígito y limpia separadores sobrantes."""
+    match = _ACT_TYPE_BASE_RE.match(document_type.strip())
+    base = (match.group(0) if match else "").strip(" -/.,:;")
+    return base or "Publicación oficial"
 
 
 def _fallback_title_base(official_title: str, description: str) -> str:

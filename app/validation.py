@@ -37,9 +37,35 @@ REQUIRED_ITEM_FIELDS = {
 }
 
 CARD_BODY_SECTIONS = ("## Qué se publicó", "## Sustancia", "## Fuente")
+WHAT_PUBLISHED_SECTION = "## Qué se publicó"
+
+# Rango editorial del resumen (decisión del dueño; sustituye las 30 exactas).
+SUMMARY_MIN_WORDS = 40
+SUMMARY_MAX_WORDS = 80
 
 # Un título editorial se rige por la temática, no por el número de acto.
 OFFICE_NUMBER_TITLE = r"^(oficio|acuerdo|circular|resoluci[oó]n|expediente)\s+[A-Z0-9/.-]*\d"
+
+# Patrón de número de acto (oficio/acuerdo/circular/expediente/clave). La sección
+# "Qué se publicó" describe QUÉ se publicó sin arrastrar el número del documento.
+# Se exporta para reuso en el gate editorial (`app.editorial`).
+ACT_NUMBER_RE = re.compile(
+    r"(?:oficio|acuerdo|circular|resoluci[oó]n|expediente|no\.|núm)\s*[:.]?\s*"
+    r"[A-Z0-9][A-Z0-9/.-]*\d"
+    r"|\b\d{3,}[-/][A-Z0-9/.-]*\d",
+    flags=re.IGNORECASE,
+)
+
+
+def card_section_text(card_body: str, heading: str) -> str:
+    """Devuelve el texto de una sección del `card_body` (desde su encabezado
+    hasta el siguiente `## ` o el final). Cadena vacía si no existe."""
+    pattern = re.compile(
+        rf"{re.escape(heading)}\s*(.*?)(?=\n##\s|\Z)",
+        flags=re.DOTALL,
+    )
+    match = pattern.search(card_body)
+    return match.group(1).strip() if match else ""
 
 
 @dataclass(frozen=True)
@@ -112,15 +138,28 @@ def _validate_item(index: int, item: Any, errors: list[str], warnings: list[str]
         if not isinstance(value, field_type):
             errors.append(f"items[{index}].{field_name} must be {field_type.__name__}")
 
+    for optional_field in ("case_parties", "case_status"):
+        if optional_field in item and not isinstance(item.get(optional_field), str):
+            errors.append(f"items[{index}].{optional_field} must be str")
+
     if isinstance(item.get("summary"), str):
         count = len(words(item["summary"]))
-        if count != 30:
-            errors.append(f"items[{index}].summary has {count} words")
+        if not SUMMARY_MIN_WORDS <= count <= SUMMARY_MAX_WORDS:
+            errors.append(
+                f"items[{index}].summary has {count} words "
+                f"(must be {SUMMARY_MIN_WORDS}-{SUMMARY_MAX_WORDS})"
+            )
 
     if isinstance(item.get("card_body"), str):
+        card_body = item["card_body"]
         for section in CARD_BODY_SECTIONS:
-            if section not in item["card_body"]:
+            if section not in card_body:
                 errors.append(f"items[{index}].card_body is missing section '{section}'")
+        if ACT_NUMBER_RE.search(card_section_text(card_body, WHAT_PUBLISHED_SECTION)):
+            errors.append(
+                f"items[{index}].card_body '{WHAT_PUBLISHED_SECTION}' "
+                "must not contain an act number"
+            )
 
     if isinstance(item.get("title"), str) and re.match(
         OFFICE_NUMBER_TITLE, item["title"].strip(), flags=re.IGNORECASE

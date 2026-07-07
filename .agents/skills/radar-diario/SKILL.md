@@ -3,7 +3,8 @@ name: radar-diario
 description: >
   Revisa la actualización diaria del Radar Regulatorio MX ya publicada:
   audita la calidad de los datos oficiales mexicanos (DOF, SNICE, PLATIICA,
-  Diputados, Senado, IMPI y portales de gob.mx), detecta fuentes con error o
+  Diputados, Senado, IMPI y portales de gob.mx) e internacionales (ONU,
+  USTR, CIADI, Banco Mundial, CPI, CIJ), detecta fuentes con error o
   anomalías, y redacta un parte diario. Úsala cuando pidan revisar el radar,
   auditar la recolección diaria o reportar novedades regulatorias de
   dependencias de gobierno. NO publica ni modifica el repositorio.
@@ -48,24 +49,28 @@ modificas archivos. Respeta `AGENTS.md`.
 Toma 2 o 3 ítems del corte vigente y verifica, leyendo el JSON (sin salir a la
 red; corres en solo lectura):
 
-- Que `summary` tenga exactamente 30 palabras.
+- Que `summary` tenga entre 40 y 80 palabras (inclusive).
 - Que `url` sea un enlace oficial `https://` plausible para la fuente.
-- Que `categories` y `topic_tags` clasifiquen de forma razonable según el
-  `official_title`.
+- Que `categories` (materia primaria) y `topic_tags` (etiquetas finas)
+  clasifiquen de forma razonable según el `official_title`.
 - Que `detail_markdown` tenga la estructura esperada (encabezado y secciones).
 - Que `card_body` tenga sus tres secciones (`## Qué se publicó`,
-  `## Sustancia`, `## Fuente`) y que su contenido sea fiel al título oficial.
+  `## Sustancia`, `## Fuente`) y que su contenido sea fiel al título oficial;
+  que «Qué se publicó» no traiga número de acto y use el nombre corto del
+  órgano.
 - Que el `title` sea editorial (órgano + verbo + sustancia) y no inicie con
   número de oficio/acuerdo; si encuentras títulos con número de oficio,
   repórtalo como anomalía editorial (ocurre cuando el resumen corrió sin
   modelo de lenguaje).
 - Que la taxonomía sea coherente: `issuing_body` corresponde a la autoridad,
   `jurisdiction` es `internacional` sólo para fuentes internacionales
-  (ONU Noticias, USTR, Trade.gov) y las facetas `published_year/month/day`
-  coinciden con `published_at`.
+  (ONU Noticias, USTR, Trade.gov, CIADI, Banco Mundial, CPI, CIJ) y las
+  facetas `published_year/month/day` coinciden con `published_at`.
+- En ítems de la CIADI, que `case_parties` y `case_status` estén poblados
+  (partes y estado procesal del caso).
 
-Registra cualquier anomalía (resumen fuera de 30 palabras, materia dudosa,
-enlace sospechoso) para el parte diario.
+Registra cualquier anomalía (resumen fuera del rango 40-80 palabras, materia
+dudosa, enlace sospechoso) para el parte diario.
 
 ## Paso 4 — Parte diario
 

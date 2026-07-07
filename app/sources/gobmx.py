@@ -54,6 +54,20 @@ NON_INSTITUTIONAL_PORTALS = {
     "universidadnaval",
 }
 
+# Portales cuyo contenido siempre se acepta, sin pasar por el filtro de
+# relevancia por título (`looks_relevant`). PRODECON publica sus boletines
+# con títulos genéricos ("Boletín 09/2026", "Tarjeta informativa") que nunca
+# mencionan explícitamente términos fiscales, aunque su mandato (Procuraduría
+# de la Defensa del Contribuyente) es enteramente fiscal: todo lo que
+# publica es, por definición, relevante para este radar. Se verificaron en
+# vivo también los archivos de prensa de CONDUSEF y PROFECO: a diferencia de
+# PRODECON, su contenido real es mayormente protección al consumidor
+# genérica y ajena al alcance del radar (alertas de suplantación de
+# identidad, precios de alimentos, quejas de aerolíneas, educación
+# financiera), así que agregarlos aquí inundaría el radar con ruido; se
+# dejan filtrados por título como el resto de los portales.
+ALWAYS_RELEVANT_PORTALS = {"prodecon"}
+
 PORTAL_AUTHORITIES = {
     "agricultura": "Secretaría de Agricultura y Desarrollo Rural",
     "bienestar": "Secretaría de Bienestar",
@@ -73,6 +87,7 @@ PORTAL_AUTHORITIES = {
     "inpi": "Instituto Nacional de los Pueblos Indígenas",
     "issste": "Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado",
     "pensionissste": "PENSIONISSSTE",
+    "prodecon": "Procuraduría de la Defensa del Contribuyente",
     "profepa": "Procuraduría Federal de Protección al Ambiente",
     "salud": "Secretaría de Salud",
     "se": "Secretaría de Economía",
@@ -144,7 +159,7 @@ class GobMxCollector(Collector):
             item.url: item
             for result in archive_results
             for item in result
-            if self.looks_relevant(item.title)
+            if item.portal in ALWAYS_RELEVANT_PORTALS or self.looks_relevant(item.title)
         }
         candidates = await asyncio.gather(
             *(self._enrich(item) for item in items.values())

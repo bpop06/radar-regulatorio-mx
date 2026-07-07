@@ -13,10 +13,21 @@ guardar nada en máquinas locales**.
    es **código, no navegación del agente**: el modelo nunca "lee" páginas web
    crudas; procesa los campos ya extraídos y validados por el pipeline.
 2. **Editorializa** los ítems nuevos (`ai_generated: false`) con subagentes
-   de razonamiento opus: titular de noticia, resumen de 30 palabras exactas y
-   `card_body` con las tres secciones, aplicados por el único canal
-   permitido, `python -m app.cli apply-editorial` (validación dura,
-   todo-o-nada).
+   de razonamiento opus:
+   - **Titular de noticia**: órgano + verbo + qué cambió; nunca abre con
+     número de oficio/acuerdo.
+   - **Resumen** de entre **40 y 80 palabras** (el rango que exige el
+     validador; ni 39 ni 81).
+   - **`card_body`** con las tres secciones fijas:
+     - **## Qué se publicó**: qué acto se publicó, **sin su número** ni clave
+       y con el **nombre corto** del órgano (SHCP, SAT, IMPI...), no el nombre
+       legal completo.
+     - **## Sustancia**: el significado esencial razonado en 4 a 8 frases (qué
+       cambia, a quién obliga y por qué importa), no un recorte del título.
+     - **## Fuente**: enlace a la publicación oficial.
+
+   Todo se aplica por el único canal permitido,
+   `python -m app.cli apply-editorial` (validación dura, todo-o-nada).
 3. **Audita** el corte (guía read-only `.agents/skills/radar-diario/SKILL.md`)
    y revisa si el corte trae acuerdos de días inhábiles que ameriten
    actualizar los calendarios (solo lo reporta).
@@ -60,7 +71,8 @@ HTML público con parsers tolerantes y probados con fixtures
   demás; XML parseado sin entidades externas (sin XXE); el contenido nunca se
   ejecuta.
 - **Gate de validación duro** antes de publicar: contrato completo, resúmenes
-  de 30 palabras, URLs http(s), `detail_url` interno.
+  de 40 a 80 palabras, «Qué se publicó» sin número de acto, URLs http(s),
+  `detail_url` interno.
 - **Canal editorial acotado**: el agente solo puede modificar
   título/resumen/cuerpo de ítems existentes vía `apply-editorial`.
 - **Publicación mínima**: la rutina commitea un solo archivo de datos; nunca
