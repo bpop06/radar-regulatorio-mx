@@ -188,6 +188,10 @@ body {
   font-size: 16px;
   line-height: 1.65;
   -webkit-text-size-adjust: 100%;
+  /* El colapso del hero (is-scrolled) y scrollToGroup calculan y fijan el scroll de
+     forma explícita; el "scroll anchoring" del navegador reajusta scrollY por su cuenta
+     cuando el contenido de arriba cambia de tamaño, lo que pelea con esas cuentas. */
+  overflow-anchor: none;
 }
 
 button, input, select, textarea { font: inherit; color: inherit; }
@@ -404,6 +408,11 @@ body.is-scrolled .hero-band .hero-copy,
 body.is-scrolled .hero-band .readings {
   opacity: 0; max-height: 0; margin-top: 0; margin-bottom: 0; pointer-events: none;
 }
+/* Salto directo a un grupo del digest (ver scrollToGroup en app.js): colapsa el hero
+   en un solo frame, sin animar, para que el scroll suave no persiga un layout que
+   sigue encogiendo debajo de él. */
+.is-scrolled-instant .hero-band,
+.is-scrolled-instant .hero-band * { transition: none !important; }
 
 /* ---------------------------------------------------------------- CONSOLA DE FILTROS */
 .control-panel {

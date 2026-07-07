@@ -322,6 +322,10 @@ function resetToFirstPage() {
   state.page = 1;
 }
 
+// Pausa initScrollCompact mientras scrollToGroup hace su propio salto (ver más abajo):
+// evita que el listener de scroll pelee con el colapso forzado del hero a mitad de vuelo.
+let suppressScrollCompact = false;
+
 /* ---------------------------------------------------------------- digest / agrupación (v6) */
 // Contrato opcional: payload.digest = {"groups":[{"label","items":[{"id","organ","theme"}]}]}.
 // Ausente en cortes viejos -> state.digestGroups queda null y todo degrada al feed plano.
@@ -444,10 +448,37 @@ function scrollToGroup(groupKey) {
   state.page = firstIndex >= 0 ? Math.floor(firstIndex / state.pageSize) + 1 : 1;
   renderItems();
 
-  requestAnimationFrame(() => {
-    const heading = elements.list.querySelector(`[data-group-key="${groupKey}"]`);
-    if (heading) heading.scrollIntoView({ behavior: RM ? "auto" : "smooth", block: "start" });
-  });
+  // El destino siempre cae más allá del hero: lo colapsamos ya, de forma instantánea
+  // (sin la transición normal de is-scrolled — ver .is-scrolled-instant en styles.css),
+  // para que el layout quede fijo ANTES de iniciar el scroll suave. Si el colapso
+  // animara en paralelo al scrollIntoView, el documento encogería en pleno vuelo y el
+  // navegador terminaría el scroll pasado de largo respecto al encabezado. También se
+  // suspende el listener de scroll (initScrollCompact) mientras dura el salto: sin esto,
+  // los primeros píxeles del scroll suave (todavía por debajo del umbral) lo revertirían
+  // a mitad de camino y el hero se re-expandiría animado, persiguiendo el objetivo.
+  suppressScrollCompact = true;
+  document.body.classList.add("is-scrolled", "is-scrolled-instant");
+  void document.body.offsetHeight; // fuerza el reflow con las transiciones ya anuladas
+  document.body.classList.remove("is-scrolled-instant");
+
+  const heading = elements.list.querySelector(`[data-group-key="${groupKey}"]`);
+  const releaseScrollCompact = () => { suppressScrollCompact = false; };
+  if (!heading) {
+    releaseScrollCompact();
+    return;
+  }
+  // Con el hero ya colapsado de forma síncrona, la posición absoluta del encabezado
+  // (independiente del scrollY actual) queda fija: se calcula una sola vez, ya no hay
+  // nada por delante que la vuelva a mover.
+  const targetY = Math.max(0, heading.getBoundingClientRect().top + window.scrollY);
+  if (RM) {
+    window.scrollTo({ top: targetY, behavior: "auto" });
+    releaseScrollCompact();
+    return;
+  }
+  window.addEventListener("scrollend", releaseScrollCompact, { once: true });
+  setTimeout(releaseScrollCompact, 1000); // red de seguridad si el navegador no soporta scrollend
+  window.scrollTo({ top: targetY, behavior: "smooth" });
 }
 
 function renderDigestPanel() {
@@ -455,10 +486,12 @@ function renderDigestPanel() {
   const host = elements.digestGroups;
   if (!section || !host) return;
 
-  const groups = buildDigestGroups(state.items);
+  // El panel resumen solo muestra los grupos curados por la editorial, nunca el cajón
+  // "Otras publicaciones" (ese es exclusivo del feed agrupado, ver computeGroupedOrder).
+  const groups = (buildDigestGroups(state.items) || []).filter((group) => group.key !== "otras");
   host.replaceChildren();
-  section.hidden = !groups;
-  if (!groups) return;
+  section.hidden = groups.length === 0;
+  if (!groups.length) return;
 
   for (const group of groups) {
     const wrap = document.createElement("div");
@@ -882,6 +915,7 @@ function initScrollCompact() {
   if (!heroBand) return;
   const threshold = () => Math.max(0, heroBand.offsetHeight - 80);
   const onScroll = () => {
+    if (suppressScrollCompact) return;
     document.body.classList.toggle("is-scrolled", window.scrollY > threshold());
   };
   onScroll();
