@@ -185,3 +185,17 @@ class TradeGovCollector(RssCollector):
     url = "https://blog.trade.gov/feed/"
     default_authority = "International Trade Administration (Trade.gov)"
     default_document_type = "Comunicado"
+
+
+class OmcCollector(RssCollector):
+    """Noticias de la Organización Mundial del Comercio (OMC / WTO)."""
+
+    source = "OMC"
+    # Confirmado en vivo desde este entorno (datacenter): RSS 2.0 estándar con
+    # pubDate del día. El robots.txt de wto.org veta el rastreo general del
+    # sitio (`User-agent: *` / `Disallow: *`), por lo que NO se scrapea nada
+    # más; este feed es el canal de suscripción que el propio sitio publica
+    # para lectores RSS y solo se citan título/enlace/resumen.
+    url = "https://www.wto.org/library/rss/latest_news_e.xml"
+    default_authority = "Organización Mundial del Comercio"
+    default_document_type = "Noticia"

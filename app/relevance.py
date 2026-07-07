@@ -347,6 +347,10 @@ HIGH_VALUE_TERMS = (
 # vacantes, visitas, fotos — no recibe materia y queda fuera de todos modos).
 BONUS_SOURCES = {
     "DOF",
+    "ANAM",
+    "TFJA",
+    "OMC",
+    "Secretariado T-MEC",
     "Senado",
     "Diputados",
     "CIADI",

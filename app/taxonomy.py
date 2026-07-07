@@ -213,6 +213,8 @@ SOURCE_ORIGIN: dict[str, tuple[str, str]] = {
     "Banco Mundial": ("internacional", "Banco Mundial"),
     "CPI": ("internacional", "CPI"),
     "CIJ": ("internacional", "CIJ"),
+    "OMC": ("internacional", "OMC"),
+    "Secretariado T-MEC": ("internacional", "T-MEC"),
 }
 DEFAULT_ORIGIN = ("nacional", "México")
 
@@ -223,6 +225,7 @@ SOURCE_DEFAULT_PRIMARY: dict[str, str] = {
     "OMC": "Comercio internacional",
     "CIJ": "Comercio internacional",
     "CPI": "Penal",
+    "Secretariado T-MEC": "Comercio internacional",
 }
 
 # Etiquetas temáticas derivadas del tipo documental (además de las materias).

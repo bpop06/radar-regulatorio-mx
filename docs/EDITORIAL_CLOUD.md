@@ -49,7 +49,10 @@ los dominios oficiales del recolector:
 www.dof.gob.mx          www.snice.gob.mx        platiica.economia.gob.mx
 gaceta.diputados.gob.mx transparenciaparlamentaria.senado.gob.mx
 www.impi.gob.mx         www.gob.mx              news.un.org
-ustr.gov                blog.trade.gov
+ustr.gov                blog.trade.gov          icsid.worldbank.org
+search.worldbank.org    www.icc-cpi.int         www.icj-cij.org
+www.anam.gob.mx         www.tfja.gob.mx         www.wto.org
+can-mex-usa-sec.org
 ```
 
 Se configura en claude.ai/code → ajustes del entorno → acceso a red
