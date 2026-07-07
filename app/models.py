@@ -14,6 +14,8 @@ class Candidate:
     published_at: date
     authority: str = ""
     document_type: str = ""
+    case_parties: str = ""
+    case_status: str = ""
 
     @property
     def id(self) -> str:
@@ -67,6 +69,8 @@ class Publication:
     importance: int
     relevance_score: int
     ai_generated: bool
+    case_parties: str = ""
+    case_status: str = ""
 
     def to_dict(self) -> dict[str, object]:
         result = asdict(self)

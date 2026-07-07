@@ -21,8 +21,6 @@ CATEGORY_TERMS: dict[str, tuple[str, ...]] = {
         "procedimiento administrativo de ejecucion",
         "comprobante fiscal",
         "cfdi",
-        "lavado de dinero",
-        "actividades vulnerables",
         "tax",
         "taxation",
         "transfer pricing",
@@ -100,7 +98,68 @@ CATEGORY_TERMS: dict[str, tuple[str, ...]] = {
         "dictamen",
         "minuta",
     ),
+    "Penal": (
+        "delito",
+        "penal",
+        "fiscalia",
+        "fgr",
+        "defraudacion fiscal",
+        "contrabando",
+        "extincion de dominio",
+        "prision preventiva",
+        "codigo nacional de procedimientos penales",
+        "orden de aprehension",
+        "war crimes",
+        "crimes against humanity",
+        "prosecutor",
+        "arrest warrant",
+    ),
+    "Anti-lavado": (
+        "lavado de dinero",
+        "lfpiorpi",
+        "actividades vulnerables",
+        "uif",
+        "unidad de inteligencia financiera",
+        "gafi",
+        "fatf",
+        "beneficiario controlador",
+        "operaciones inusuales",
+        "money laundering",
+        "aml",
+        "terrorist financing",
+    ),
+    "Comercio internacional": (
+        "t-mec",
+        "usmca",
+        "omc",
+        "wto",
+        "ocde",
+        "oecd",
+        "arbitraje de inversion",
+        "investment arbitration",
+        "icsid",
+        "ciadi",
+        "tratado bilateral de inversion",
+        "panel binacional",
+        "dispute settlement",
+        "world bank",
+        "banco mundial",
+        "imf",
+        "fmi",
+        "aranceles reciprocos",
+        "global tariff",
+    ),
 }
+
+# Autoridades cuyo material siempre es relevante para el radar, aunque el
+# clasificador no le asigne materia ni score alto (enrich les da como materia
+# primaria "Administración centralizada").
+ALWAYS_RELEVANT_AUTHORITY_TERMS = (
+    "secretaria de hacienda",
+    "shcp",
+    "hacienda y credito publico",
+    "secretaria de economia",
+)
 
 ADMINISTRATIVE_LAW_TERMS = (
     "ley federal de procedimiento administrativo",
@@ -377,5 +436,8 @@ def _contains_term(text: str, term: str) -> bool:
 
 
 def is_relevant(item: ClassifiedCandidate, minimum_score: int) -> bool:
+    authority = normalized(item.candidate.authority)
+    if any(term in authority for term in ALWAYS_RELEVANT_AUTHORITY_TERMS):
+        return True
     substantive_categories = set(item.categories) - {"Iniciativa"}
     return bool(substantive_categories) and item.relevance_score >= minimum_score

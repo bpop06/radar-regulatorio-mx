@@ -2,7 +2,13 @@ from datetime import date
 
 from app.models import Candidate
 from app.relevance import classify
-from app.taxonomy import classify_organ, enrich, importance_from_score
+from app.taxonomy import (
+    classify_organ,
+    enrich,
+    importance_from_score,
+    primary_categories,
+    short_organ_name,
+)
 
 
 def make_candidate(**overrides):
@@ -73,3 +79,70 @@ def test_importance_from_score_buckets():
     assert importance_from_score(4) == 3
     assert importance_from_score(7) == 4
     assert importance_from_score(9) == 5
+
+
+def test_primary_categories_shcp_authority_passes_as_central_administration():
+    # Sin categoría fina pero con autoridad SHCP: siempre entra como
+    # Administración centralizada (coordina con is_relevant).
+    assert primary_categories(
+        (), "Ejecutivo federal", "SECRETARIA DE HACIENDA Y CREDITO PUBLICO", "DOF"
+    ) == ("Administración centralizada",)
+
+
+def test_primary_categories_intellectual_property_follows_organ_branch():
+    # IMPI es organismo descentralizado -> Administración descentralizada.
+    assert primary_categories(
+        ("Propiedad intelectual",),
+        "Organismo descentralizado",
+        "Instituto Mexicano de la Propiedad Industrial",
+        "IMPI",
+    ) == ("Administración descentralizada",)
+    # La misma materia en un órgano centralizado cae en centralizada.
+    assert primary_categories(
+        ("Normalización",), "Ejecutivo federal", "Secretaría de Economía", "DOF"
+    ) == ("Administración centralizada",)
+
+
+def test_primary_categories_uses_source_default_for_international_sources():
+    assert primary_categories((), "Organismo internacional", "", "CIADI") == (
+        "Comercio internacional",
+    )
+    assert primary_categories((), "Organismo internacional", "", "CPI") == ("Penal",)
+
+
+def test_primary_categories_collapses_initiative_to_legislative_process():
+    primaries = primary_categories(
+        ("Fiscal", "Iniciativa"), "Legislativo federal", "Senado de la República", "Senado"
+    )
+
+    assert "Proceso legislativo" in primaries
+    assert "Fiscal" in primaries
+
+
+def test_primary_categories_maps_customs_and_contentious_fiscal():
+    assert primary_categories(
+        ("Aduanero", "Comercio exterior"), "Ejecutivo federal", "ANAM", "DOF"
+    ) == ("Comercio exterior",)
+    assert primary_categories(
+        ("Contencioso administrativo fiscal",),
+        "Órgano jurisdiccional",
+        "Tribunal Federal de Justicia Administrativa",
+        "DOF",
+    ) == ("Fiscal",)
+
+
+def test_short_organ_name_resolves_catalog_and_falls_back():
+    assert short_organ_name("DOF", "SECRETARIA DE HACIENDA Y CREDITO PUBLICO", "") == "SHCP"
+    assert short_organ_name("IMPI", "", "Aviso del IMPI sobre marcas") == "IMPI"
+    assert short_organ_name("DOF", "Comisión Especial de Prueba", "") == "Comisión"
+    assert short_organ_name("CIADI", "", "") == "CIADI"
+
+
+def test_enrich_exposes_primary_categories_and_keeps_fine_in_topic_tags():
+    item = classify(make_candidate())
+    taxonomy = enrich(item)
+
+    assert taxonomy.primary_categories
+    # Las categorías finas de classify siguen presentes como etiquetas.
+    for fine in item.categories:
+        assert fine in taxonomy.topic_tags

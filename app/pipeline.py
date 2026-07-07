@@ -100,7 +100,7 @@ async def collect(settings: Settings, days: int | None = None) -> dict[str, obje
             authority=candidate.authority,
             document_type=candidate.document_type,
             published_at=published_at,
-            categories=item.categories,
+            categories=taxonomy.primary_categories,
             source_url=candidate.url,
             ai_generated=summary.ai_generated,
         )
@@ -126,12 +126,14 @@ async def collect(settings: Settings, days: int | None = None) -> dict[str, obje
                 published_year=taxonomy.published_year,
                 published_month=taxonomy.published_month,
                 published_day=taxonomy.published_day,
-                categories=item.categories,
+                categories=taxonomy.primary_categories,
                 topic_tags=taxonomy.topic_tags,
                 subtopic_tags=taxonomy.subtopic_tags,
                 importance=taxonomy.importance,
                 relevance_score=item.relevance_score,
                 ai_generated=summary.ai_generated,
+                case_parties=candidate.case_parties,
+                case_status=candidate.case_status,
             )
         )
 

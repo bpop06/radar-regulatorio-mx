@@ -174,3 +174,42 @@ def test_fiscalia_does_not_match_fiscal():
     result = classify(candidate("Requisitos para ocupar la Fiscalía General de la República"))
 
     assert "Fiscal" not in result.categories
+
+
+def test_classifies_new_fine_categories():
+    penal = classify(candidate("Orden de aprehensión por defraudación fiscal y contrabando"))
+    assert "Penal" in penal.categories
+
+    aml = classify(
+        candidate("Reglas sobre actividades vulnerables y lavado de dinero ante la UIF")
+    )
+    assert "Anti-lavado" in aml.categories
+
+    trade = classify(
+        candidate("Panel binacional del T-MEC sobre arbitraje de inversión ante el CIADI")
+    )
+    assert "Comercio internacional" in trade.categories
+
+
+def test_shcp_authority_is_always_relevant_even_without_category():
+    item = classify(
+        candidate(
+            "Convocatoria para adquirir mobiliario de oficina",
+            authority="Secretaría de Hacienda y Crédito Público",
+        )
+    )
+
+    # Sin categoría sustantiva ni score alto, pero la autoridad la hace relevante.
+    assert not (set(item.categories) - {"Iniciativa"})
+    assert is_relevant(item, minimum_score=99)
+
+
+def test_unrelated_authority_without_category_is_not_relevant():
+    item = classify(
+        candidate(
+            "Convenio cultural para actividades deportivas municipales",
+            authority="Instituto Municipal del Deporte",
+        )
+    )
+
+    assert not is_relevant(item, minimum_score=2)
