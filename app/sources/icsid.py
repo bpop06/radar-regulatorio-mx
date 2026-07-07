@@ -61,16 +61,29 @@ class IcsidCollector(Collector):
     authority = "Centro Internacional de Arreglo de Diferencias Relativas a Inversiones"
     document_type = "Caso de arbitraje de inversión"
 
-    def __init__(self, client, snapshot_path: str | Path | None = None) -> None:
+    def __init__(
+        self,
+        client,
+        snapshot_path: str | Path | None = None,
+        persist_snapshot: bool = True,
+    ) -> None:
         super().__init__(client)
         self.snapshot_path = Path(snapshot_path) if snapshot_path else _default_snapshot_path()
+        # En corridas de prueba (`collect --dry-run`) el snapshot NO debe
+        # persistirse: si se guardara, la novedad quedaría "consumida" sin
+        # haberse publicado nunca y la siguiente corrida real la omitiría.
+        self.persist_snapshot = persist_snapshot
 
     async def collect(self, since: date) -> list[Candidate]:
         # `since` no se usa: la novedad de esta fuente se decide por cambio
         # de estatus contra el snapshot local, no por fecha (ver docstring).
         response = await self.client.get(self.url)
         response.raise_for_status()
-        return self.parse(response.json(), snapshot_path=self.snapshot_path)
+        return self.parse(
+            response.json(),
+            snapshot_path=self.snapshot_path,
+            persist_snapshot=self.persist_snapshot,
+        )
 
     @classmethod
     def parse(
@@ -78,6 +91,7 @@ class IcsidCollector(Collector):
         payload: dict[str, Any],
         snapshot_path: str | Path = DEFAULT_SNAPSHOT_PATH,
         today: date | None = None,
+        persist_snapshot: bool = True,
     ) -> list[Candidate]:
         snapshot_path = Path(snapshot_path)
         published_at = today or _local_today()
@@ -105,7 +119,8 @@ class IcsidCollector(Collector):
             if previous_status is None or previous_status != status:
                 candidates.append(_build_candidate(case, caseno, status, published_at))
 
-        _save_snapshot(snapshot_path, current_snapshot)
+        if persist_snapshot:
+            _save_snapshot(snapshot_path, current_snapshot)
         return candidates
 
 

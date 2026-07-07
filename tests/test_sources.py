@@ -668,6 +668,23 @@ def test_icsid_first_run_emits_only_pending_and_saves_full_snapshot(tmp_path):
     assert saved == {"ARB/25/7": "Pending", "ARB/25/32": "Concluded"}
 
 
+def test_icsid_dry_run_does_not_consume_novelty(tmp_path):
+    snapshot_path = tmp_path / "icsid_snapshot.json"
+
+    # Una corrida sin persistencia (collect --dry-run) emite los candidatos
+    # pero NO guarda el snapshot: la novedad sigue disponible para la
+    # siguiente corrida real.
+    items = IcsidCollector.parse(
+        ICSID_PAYLOAD,
+        snapshot_path=snapshot_path,
+        today=date(2026, 7, 7),
+        persist_snapshot=False,
+    )
+
+    assert len(items) == 1
+    assert not snapshot_path.exists()
+
+
 def test_icsid_next_run_emits_only_new_or_changed_cases(tmp_path):
     snapshot_path = tmp_path / "icsid_snapshot.json"
     snapshot_path.write_text(

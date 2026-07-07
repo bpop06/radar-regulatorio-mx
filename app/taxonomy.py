@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import re
 from dataclasses import dataclass
 from datetime import date
 
@@ -262,6 +263,12 @@ class Taxonomy:
 DESCENTRALIZED_BRANCH_MARKERS = ("descentralizado", "desconcentrado", "autonomo")
 
 
+def _alias_matches(haystack: str, alias: str) -> bool:
+    """Busca el alias con frontera de palabra: los alias cortos ("onu", "imf",
+    "fmi") no deben dispararse dentro de otras siglas ("cONUee", "hIMFg")."""
+    return re.search(rf"(?<!\w){re.escape(alias)}(?!\w)", haystack) is not None
+
+
 def classify_organ(source: str, authority: str, official_title: str) -> tuple[str, str]:
     """Resuelve (órgano canónico, rama) buscando alias primero en la autoridad
     declarada y después en el título oficial."""
@@ -269,7 +276,7 @@ def classify_organ(source: str, authority: str, official_title: str) -> tuple[st
         if not haystack:
             continue
         for canonical, branch, _short, aliases in ORGAN_CATALOG:
-            if any(alias in haystack for alias in aliases):
+            if any(_alias_matches(haystack, alias) for alias in aliases):
                 return canonical, branch
 
     jurisdiction, _ = SOURCE_ORIGIN.get(source, DEFAULT_ORIGIN)
@@ -288,7 +295,7 @@ def short_organ_name(source: str, authority: str, official_title: str) -> str:
         if not haystack:
             continue
         for _canonical, _branch, short, aliases in ORGAN_CATALOG:
-            if any(alias in haystack for alias in aliases):
+            if any(_alias_matches(haystack, alias) for alias in aliases):
                 return short
 
     authority_tokens = words(authority)

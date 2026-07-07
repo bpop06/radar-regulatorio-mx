@@ -146,3 +146,21 @@ def test_enrich_exposes_primary_categories_and_keeps_fine_in_topic_tags():
     # Las categorías finas de classify siguen presentes como etiquetas.
     for fine in item.categories:
         assert fine in taxonomy.topic_tags
+
+
+def test_alias_matching_requires_word_boundaries():
+    # "hIMFg" y "cONUee" contienen los alias cortos "imf"/"onu" como
+    # subcadena, pero NO son el FMI ni la ONU: el matching debe exigir
+    # frontera de palabra (regresión de la corrida en vivo v4).
+    organ, branch = classify_organ(
+        "Gob.mx APF",
+        "Instituto Nacional de Perinatología",
+        "Aviso de la consulta del HIMFG",
+    )
+    assert organ != "Fondo Monetario Internacional"
+
+    organ, _ = classify_organ("Gob.mx APF", "Portal federal CONUEE", "")
+    assert organ != "Organización de las Naciones Unidas"
+
+    # Los alias legítimos con frontera real siguen funcionando.
+    assert short_organ_name("Gob.mx APF", "", "Informe del FMI sobre México") == "FMI"

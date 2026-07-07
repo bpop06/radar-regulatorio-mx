@@ -35,7 +35,9 @@ from app.taxonomy import enrich
 from app.text import normalized
 
 
-async def collect(settings: Settings, days: int | None = None) -> dict[str, object]:
+async def collect(
+    settings: Settings, days: int | None = None, dry_run: bool = False
+) -> dict[str, object]:
     lookback = days if days is not None else settings.lookback_days
     since = _local_today(settings.local_timezone) - timedelta(days=lookback)
     headers = {"User-Agent": settings.user_agent}
@@ -71,7 +73,9 @@ async def collect(settings: Settings, days: int | None = None) -> dict[str, obje
             OnuNoticiasCollector(client),
             UstrCollector(client),
             TradeGovCollector(client),
-            IcsidCollector(client),
+            # En dry-run no se persiste el snapshot del CIADI: de lo
+            # contrario la novedad se consumiría sin publicarse.
+            IcsidCollector(client, persist_snapshot=not dry_run),
             WorldBankCollector(client),
             CpiCollector(client),
             CijCollector(client),

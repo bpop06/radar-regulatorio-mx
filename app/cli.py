@@ -96,7 +96,7 @@ def main() -> None:
     args = build_parser().parse_args()
     settings = Settings()
     if args.command == "collect":
-        payload = asyncio.run(collect(settings, args.days))
+        payload = asyncio.run(collect(settings, args.days, dry_run=args.dry_run))
         report = validate_publications_payload(payload)
         _print_source_status(payload)
         _print_validation_report(report)
