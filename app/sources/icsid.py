@@ -12,11 +12,13 @@ from app.models import Candidate
 from app.sources.base import Collector
 from app.text import clean_text, normalized
 
-# Ruta por defecto del snapshot local (relativa al directorio de trabajo del
-# proceso, igual que `database_path` en app/config.py). Configurable por
-# variable de entorno o por parámetro del constructor/parse — ver docstring
-# de IcsidCollector.
-DEFAULT_SNAPSHOT_PATH = Path("data/icsid_snapshot.json")
+# Ruta por defecto del snapshot (relativa al directorio de trabajo del
+# proceso). Vive bajo docs/data/ y SE COMMITEA junto con publications.json:
+# la rutina diaria corre en una sesión efímera nueva cada día, y si el
+# snapshot no persistiera en el repo, cada corrida sería "primera corrida"
+# y re-emitiría todos los casos Pending de México a diario. Configurable
+# por variable de entorno o por parámetro del constructor/parse.
+DEFAULT_SNAPSHOT_PATH = Path("docs/data/icsid_snapshot.json")
 
 STATUS_LABELS = {
     "Pending": "Pendiente",
@@ -34,11 +36,12 @@ class IcsidCollector(Collector):
     ("Pending"/"Concluded"). Por eso la estrategia de novedad no puede ser
     por fecha como en el resto de los recolectores:
 
-    - Se guarda un snapshot local `{caseno: status}` (por defecto en
-      `data/icsid_snapshot.json`, fuera de git — ver .gitignore); la ruta es
-      configurable con la variable de entorno `RADAR_ICSID_SNAPSHOT` o con el
-      parámetro `snapshot_path` del constructor/`parse`, para poder aislarla
-      en pruebas con `tmp_path`.
+    - Se guarda un snapshot `{caseno: status}` (por defecto en
+      `docs/data/icsid_snapshot.json`, COMMITEADO al repo: la rutina diaria
+      corre en sesiones efímeras y el estado debe sobrevivir entre corridas);
+      la ruta es configurable con la variable de entorno
+      `RADAR_ICSID_SNAPSHOT` o con el parámetro `snapshot_path` del
+      constructor/`parse`, para poder aislarla en pruebas con `tmp_path`.
     - En cada corrida se compara el estatus de cada caso mexicano contra el
       snapshot anterior. Solo se emite un Candidate para los casos NUEVOS
       (número de caso ausente en el snapshot previo) o con CAMBIO de estatus
