@@ -26,6 +26,9 @@ radar-regulatorio = "app.cli:main"
 [tool.setuptools.packages.find]
 include = ["app*"]
 
+[tool.setuptools.package-data]
+app = ["certs/*.pem"]
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 

@@ -15,9 +15,12 @@ from app.markdown import build_detail_markdown, detail_url
 from app.models import Candidate, Publication, SourceResult
 from app.relevance import classify, is_relevant
 from app.sources import (
+    CijCollector,
+    CpiCollector,
     DiputadosCollector,
     DofCollector,
     GobMxCollector,
+    IcsidCollector,
     ImpiCollector,
     OnuNoticiasCollector,
     PlatiicaCollector,
@@ -25,6 +28,7 @@ from app.sources import (
     SniceCollector,
     TradeGovCollector,
     UstrCollector,
+    WorldBankCollector,
 )
 from app.summarizer import Summarizer
 from app.taxonomy import enrich
@@ -37,6 +41,16 @@ async def collect(settings: Settings, days: int | None = None) -> dict[str, obje
     headers = {"User-Agent": settings.user_agent}
     timeout = httpx.Timeout(settings.request_timeout)
     ssl_context = truststore.SSLContext(ssl.PROTOCOL_TLS_CLIENT)
+    # Algunos sitios de gobierno mexicano (DOF, Senado) sirven solo el
+    # certificado hoja y omiten el intermedio; en Linux el almacén del
+    # sistema no lo completa automáticamente y la verificación TLS falla con
+    # "unable to get local issuer certificate". Se agregan los intermedios
+    # públicos verificados en app/certs/intermediates.pem (ver ese archivo
+    # para el detalle de cada cadena) sin reemplazar la confianza del
+    # sistema que ya aporta truststore.
+    intermediates_path = Path(__file__).parent / "certs" / "intermediates.pem"
+    if intermediates_path.exists():
+        ssl_context.load_verify_locations(cafile=str(intermediates_path))
     source_retries = max(1, settings.source_retries)
     retry_backoff = max(0.0, settings.source_retry_backoff_seconds)
 
@@ -57,6 +71,10 @@ async def collect(settings: Settings, days: int | None = None) -> dict[str, obje
             OnuNoticiasCollector(client),
             UstrCollector(client),
             TradeGovCollector(client),
+            IcsidCollector(client),
+            WorldBankCollector(client),
+            CpiCollector(client),
+            CijCollector(client),
         ]
         results = await asyncio.gather(
             *(

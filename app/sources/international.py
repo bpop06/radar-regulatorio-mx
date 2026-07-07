@@ -128,6 +128,42 @@ class UstrCollector(RssCollector):
     default_document_type = "Comunicado"
 
 
+class CpiCollector(RssCollector):
+    """Comunicados de la Corte Penal Internacional (CPI / ICC)."""
+
+    source = "CPI"
+    # Confirmado en vivo: https://www.icc-cpi.int/rss.xml es RSS 2.0 estándar
+    # (pubDate, guid, description con HTML embebido), compatible sin cambios
+    # con el parser tolerante de RssCollector.
+    #
+    # robots.txt (verificado en vivo) declara, para `User-agent: *` (nuestro
+    # UA es "RadarRegulatorioMX/0.1 ...", no un bot listado explícitamente):
+    #   Content-Signal: search=yes,ai-train=no,use=reference
+    #   Allow: /
+    # "use=reference" autoriza el uso de referencia (enlazar y citar
+    # extractos), que es exactamente lo que hace este recolector: título,
+    # enlace y una descripción/resumen, nunca reentrega del sitio completo.
+    # El robots sí lista `Disallow: /` para bots específicos (Amazonbot,
+    # ClaudeBot, GPTBot, etc.), pero ese bloque no aplica a nuestro
+    # User-Agent declarado.
+    url = "https://www.icc-cpi.int/rss.xml"
+    default_authority = "Corte Penal Internacional"
+    default_document_type = "Comunicado"
+
+
+class CijCollector(RssCollector):
+    """Comunicados de la Corte Internacional de Justicia (CIJ / ICJ)."""
+
+    source = "CIJ"
+    # Confirmado en vivo: https://www.icj-cij.org/rss.xml es RSS 2.0 estándar
+    # (pubDate, guid, description con HTML embebido). robots.txt (verificado
+    # en vivo) es el robots.txt genérico de Drupal, sin restricciones por
+    # user-agent ni bloqueo de /rss.xml.
+    url = "https://www.icj-cij.org/rss.xml"
+    default_authority = "Corte Internacional de Justicia"
+    default_document_type = "Comunicado"
+
+
 class TradeGovCollector(RssCollector):
     """International Trade Administration (Trade.gov, Departamento de Comercio de EEUU)."""
 
