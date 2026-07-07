@@ -99,7 +99,17 @@ def build_detail_markdown(
 
     if case_status.strip():
         sections.append("## Estado procesal")
-        status_block = clean_text(case_status)
+        # La base del CIADI/T-MEC reporta el estatus en inglés; se publica en
+        # español con su matiz ("según la base oficial").
+        status_labels = {
+            "pending": "Pendiente (en trámite, según la base oficial)",
+            "concluded": "Concluido (según la base oficial)",
+            "active": "Activo (según la base oficial)",
+            "completed": "Concluido (según la base oficial)",
+        }
+        status_block = status_labels.get(
+            clean_text(case_status).lower(), clean_text(case_status)
+        )
         if case_parties.strip():
             status_block += f"\n\n**Partes:** {clean_text(case_parties)}"
         sections.append(status_block)

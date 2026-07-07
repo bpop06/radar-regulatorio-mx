@@ -90,6 +90,10 @@ def validate_digest(digest: Any, existing_ids: set[str]) -> list[str]:
         errors.append("digest must be an object")
         return errors
 
+    unknown_top = set(digest) - {"groups"}
+    if unknown_top:
+        errors.append(f"digest has unknown keys: {sorted(unknown_top)}")
+
     groups = digest.get("groups")
     if not isinstance(groups, list) or not groups:
         errors.append("digest.groups must be a non-empty list")
@@ -101,6 +105,10 @@ def validate_digest(digest: Any, existing_ids: set[str]) -> list[str]:
         if not isinstance(group, dict):
             errors.append(f"{prefix} must be an object")
             continue
+
+        unknown_group = set(group) - {"label", "items"}
+        if unknown_group:
+            errors.append(f"{prefix} has unknown keys: {sorted(unknown_group)}")
 
         label = group.get("label")
         if not isinstance(label, str) or not label.strip():
@@ -116,6 +124,10 @@ def validate_digest(digest: Any, existing_ids: set[str]) -> list[str]:
             if not isinstance(item, dict):
                 errors.append(f"{item_prefix} must be an object")
                 continue
+
+            unknown_item = set(item) - {"id", "organ", "theme"}
+            if unknown_item:
+                errors.append(f"{item_prefix} has unknown keys: {sorted(unknown_item)}")
 
             item_id = item.get("id")
             if not isinstance(item_id, str) or item_id not in existing_ids:

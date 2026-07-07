@@ -593,7 +593,7 @@
         "reason": "Tercer lunes de marzo (día en que por la LFT se suspenden labores)",
         "source_url": "https://www2.scjn.gob.mx/ssai/Archivos/DocGuia/AcuerdoGeneral-18-2013.pdf",
         "analysis": "Aplicando la misma regla de traslado a lunes del Acuerdo General Plenario 18/2013 (el 21 de marzo de 2026 cae sábado, día que ordinariamente ya es de descanso, por lo que el traslado administrativo se hace al tercer lunes de marzo, el día 16, siguiendo el mismo criterio usado para el 5 de febrero y el 20 de noviembre). No se localizó una fuente que confirme explícitamente este traslado para 2026 cuando la fecha fija ya cae en fin de semana; se marca como no verificado por analogía. | Instrumento base (v6): Acuerdo General Plenario 18/2013 de la SCJN, relativo a la determinación de los días hábiles e inhábiles respecto de los asuntos de su competencia (DOF 27/11/2013) (los lunes en que por la LFT deje de laborarse); Art. 74, fracción III, de la Ley Federal del Trabajo (tercer lunes de marzo). AG 18/2013 confirmado en el DOF (codigo 5323552, 27/11/2013) en esta sesión.",
-        "verified": true,
+        "verified": false,
         "publicacion": "dof",
         "acuerdo": "Acuerdo General Plenario 18/2013 de la SCJN, relativo a la determinación de los días hábiles e inhábiles respecto de los asuntos de su competencia (DOF 27/11/2013) (los lunes en que por la LFT deje de laborarse); Art. 74, fracción III, de la Ley Federal del Trabajo (tercer lunes de marzo)"
       },
@@ -3861,7 +3861,7 @@
         "reason": "Navidad",
         "source_url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf",
         "analysis": "Fuentes secundarias que resumen el acuerdo IMSS 2026 citan el 25 de diciembre como inhábil (patrón universal para dependencias federales). Sin embargo, otra referencia sobre el mismo acuerdo indica textualmente que 'los días inhábiles correspondientes al mes de diciembre de 2026 se dan a conocer según lo dispuesto por el artículo 28 de la Ley Federal de Procedimiento Administrativo', es decir, mediante publicación posterior aún pendiente a la fecha de esta investigación. Existe por tanto una contradicción entre fuentes sobre si el 25 de diciembre ya está formalmente confirmado en el acuerdo vigente o si depende de una publicación adicional; se marca como no verificado hasta que se confirme cuál de las dos versiones es correcta. | Instrumento base (v6): Art. 12, primer párrafo, del Código Fiscal de la Federación (25 de diciembre); Art. 28, segundo párrafo, de la Ley Federal de Procedimiento Administrativo (25 de diciembre).",
-        "verified": true,
+        "verified": false,
         "publicacion": "dof",
         "acuerdo": "Art. 12, primer párrafo, del Código Fiscal de la Federación (25 de diciembre); Art. 28, segundo párrafo, de la Ley Federal de Procedimiento Administrativo (25 de diciembre)"
       }

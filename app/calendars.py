@@ -118,6 +118,10 @@ def validate_calendars_payload(payload: dict[str, Any]) -> list[str]:
             if "guardia" in day and not isinstance(day.get("guardia"), bool):
                 errors.append(f"{prefix}.guardia debe ser booleano")
 
+            if "guardia_detalle" in day and day.get("guardia") is not True:
+                errors.append(
+                    f"{prefix}: guardia_detalle requiere guardia=true"
+                )
             if "guardia_detalle" in day:
                 guardia_detalle = day.get("guardia_detalle")
                 if not isinstance(guardia_detalle, str) or not guardia_detalle.strip():
