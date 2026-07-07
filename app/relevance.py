@@ -23,6 +23,9 @@ CATEGORY_TERMS: dict[str, tuple[str, ...]] = {
         "cfdi",
         "lavado de dinero",
         "actividades vulnerables",
+        "tax",
+        "taxation",
+        "transfer pricing",
     ),
     "Aduanero": (
         "aduana",
@@ -33,6 +36,8 @@ CATEGORY_TERMS: dict[str, tuple[str, ...]] = {
         "recinto fiscal",
         "importador",
         "exportador",
+        "customs",
+        "customs duties",
     ),
     "Comercio exterior": (
         "comercio exterior",
@@ -49,6 +54,18 @@ CATEGORY_TERMS: dict[str, tuple[str, ...]] = {
         "regla de origen",
         "immex",
         "prosec",
+        "tariff",
+        "tariffs",
+        "trade agreement",
+        "usmca",
+        "free trade",
+        "trade remedy",
+        "antidumping duty",
+        "section 301",
+        "export control",
+        "sanction",
+        "sanctions",
+        "wto",
     ),
     "Propiedad intelectual": (
         "propiedad intelectual",
@@ -61,6 +78,10 @@ CATEGORY_TERMS: dict[str, tuple[str, ...]] = {
         "signos distintivos",
         "modelo de utilidad",
         "secreto industrial",
+        "patent",
+        "trademark",
+        "copyright",
+        "intellectual property",
     ),
     "Normalización": (
         "norma oficial mexicana",
@@ -230,6 +251,9 @@ HIGH_VALUE_TERMS = (
     "designacion",
     "iniciativa",
     "proyecto de decreto",
+    "usmca",
+    "tariff",
+    "trade agreement",
 )
 
 

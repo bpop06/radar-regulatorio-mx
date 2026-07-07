@@ -19,9 +19,12 @@ from app.sources import (
     DofCollector,
     GobMxCollector,
     ImpiCollector,
+    OnuNoticiasCollector,
     PlatiicaCollector,
     SenadoCollector,
     SniceCollector,
+    TradeGovCollector,
+    UstrCollector,
 )
 from app.summarizer import Summarizer
 from app.taxonomy import enrich
@@ -51,6 +54,9 @@ async def collect(settings: Settings, days: int | None = None) -> dict[str, obje
             SenadoCollector(client),
             ImpiCollector(client),
             GobMxCollector(client),
+            OnuNoticiasCollector(client),
+            UstrCollector(client),
+            TradeGovCollector(client),
         ]
         results = await asyncio.gather(
             *(
