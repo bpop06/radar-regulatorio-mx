@@ -24,11 +24,33 @@ def publications_payload() -> dict:
         "items": [
             {
                 "id": "dof:1",
+                "source": "DOF",
+                "url": "https://example.gob.mx/doc",
+                "detail_url": "ficha.html?id=dof%3A1",
+                "official_title": "Acuerdo por el que se delegan facultades.",
                 "title": "Título extractivo original",
                 "summary": VALID_SUMMARY,
+                "description": "El acuerdo delega facultades administrativas.",
+                "detail_markdown": (
+                    "# Título extractivo original\n\n## Resumen ejecutivo\n\nResumen."
+                ),
                 "card_body": VALID_CARD_BODY,
-                "ai_generated": False,
                 "published_at": "2026-07-03",
+                "authority": "Secretaría de Economía",
+                "document_type": "Acuerdo",
+                "issuing_body": "Secretaría de Economía",
+                "government_branch": "Ejecutivo federal",
+                "jurisdiction": "nacional",
+                "country_or_org": "México",
+                "published_year": 2026,
+                "published_month": 7,
+                "published_day": 3,
+                "categories": ["Derecho administrativo"],
+                "topic_tags": ["Derecho administrativo", "Acuerdo"],
+                "subtopic_tags": ["delegan facultades"],
+                "importance": 2,
+                "relevance_score": 3,
+                "ai_generated": False,
             }
         ],
     }
