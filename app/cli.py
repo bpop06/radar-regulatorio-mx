@@ -7,6 +7,7 @@ import sys
 from pathlib import Path
 from typing import Any
 
+from app.calendars import validate_calendars_payload
 from app.config import Settings
 from app.editorial import EditorialError, apply_editorial
 from app.pipeline import collect, write_output
@@ -77,6 +78,16 @@ def build_parser() -> argparse.ArgumentParser:
         "--input",
         type=Path,
         default=Path("docs/data/publications.json"),
+    )
+
+    calendars_parser = subparsers.add_parser(
+        "validate-calendars",
+        help="valida el contrato de los calendarios de días hábiles",
+    )
+    calendars_parser.add_argument(
+        "--input",
+        type=Path,
+        default=Path("docs/data/calendars.json"),
     )
     return parser
 
@@ -161,6 +172,18 @@ def main() -> None:
         if not report.ok:
             raise SystemExit(1)
         print(f"Validación correcta: {payload['total_items']} novedades en {args.input}")
+    elif args.command == "validate-calendars":
+        payload = json.loads(args.input.read_text(encoding="utf-8"))
+        errors = validate_calendars_payload(payload)
+        for error in errors:
+            print(f"Error: {error}", file=sys.stderr)
+        if errors:
+            raise SystemExit(1)
+        total_days = sum(len(days) for days in payload.get("days_by_organ", {}).values())
+        print(
+            f"Calendarios válidos: {len(payload.get('organs', []))} órganos, "
+            f"{total_days} días registrados en {args.input}"
+        )
 
 
 def _print_source_status(payload: dict[str, Any]) -> None:
