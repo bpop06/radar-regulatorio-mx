@@ -7,10 +7,10 @@ jerarquía fija (qué se publicó, sustancia y fuente oficial).
 
 Cada novedad queda clasificada por dependencia u órgano emisor, rama de
 gobierno, jurisdicción (nacional/internacional), fecha (facetas de año, mes y
-día), materias, etiquetas temáticas e importancia editorial (1-5). Las corridas
-se acumulan en una base SQLite local (`data/radar.sqlite3`, fuera de git) que
-funciona como memoria histórica; el contrato público sigue siendo
-`docs/data/publications.json`.
+día), materias, etiquetas temáticas e importancia editorial (1-5). El contrato
+público es `docs/data/publications.json` y el historial de git funciona como
+archivo del radar (un corte por commit); la base SQLite (`research`) es
+opcional para trabajo local.
 
 ## Materias cubiertas
 
@@ -70,14 +70,14 @@ No se usa ninguna API de pago: todo corre con la suscripción de Claude.
 
 ## Automatización
 
-La operación diaria tiene dos piezas: (1) la Mac recolecta y publica los
-datos con launchd a las 9:30 (recolector determinista que commitea sólo
-`docs/data/publications.json`; ver [`docs/MAC_SCHEDULE.md`](docs/MAC_SCHEDULE.md));
-y (2) la rutina diaria de Claude en la nube (11:00 CDMX) redacta la capa
-editorial con razonamiento opus, audita el corte con la guía
-[`radar-diario`](.agents/skills/radar-diario/SKILL.md) y publica; ver
-[`docs/EDITORIAL_CLOUD.md`](docs/EDITORIAL_CLOUD.md). Codex y la API de
-OpenAI quedaron fuera del ciclo.
+Todo el ciclo diario corre en la nube con la rutina de Claude (11:00 CDMX):
+recolecta las 10 fuentes oficiales con el pipeline determinista, redacta la
+capa editorial con razonamiento opus, audita el corte con la guía
+[`radar-diario`](.agents/skills/radar-diario/SKILL.md) y publica sólo
+`docs/data/publications.json`; ver
+[`docs/EDITORIAL_CLOUD.md`](docs/EDITORIAL_CLOUD.md). Nada se procesa ni se
+guarda en máquinas locales; el historial de git es el archivo del radar.
+Codex y la API de OpenAI quedaron fuera del ciclo.
 
 GitHub Actions de esta cuenta falla con `startup_failure` antes de crear jobs,
 por lo que los workflows quedan sólo como respaldo manual mientras eso se
@@ -100,7 +100,7 @@ los workflows del repo. Activación (una sola vez, desde la web de GitHub):
 
 La página queda en `https://bpop06.github.io/radar-regulatorio-mx/` y se
 actualiza sola con cada push a `main` que toque `docs/` (es lo que hace la
-tarea diaria de la Mac al publicar `docs/data/publications.json`).
+rutina diaria al publicar `docs/data/publications.json`).
 
 Si tras activar Pages el sitio no publica y el workflow interno "pages build
 and deployment" también falla, la causa es el bloqueo de Actions a nivel de

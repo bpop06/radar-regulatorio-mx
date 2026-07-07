@@ -1,4 +1,19 @@
-# Automatización diaria en la Mac
+# Automatización diaria en la Mac (RETIRADA)
+
+> **Esta modalidad quedó retirada.** La recolección y la editorial corren
+> ahora íntegramente en la nube con la rutina diaria de Claude
+> ([`docs/EDITORIAL_CLOUD.md`](EDITORIAL_CLOUD.md)); la Mac ya no guarda ni
+> procesa nada localmente. Si tenías instalada la tarea, desinstálala:
+>
+> ```bash
+> launchctl bootout "gui/$(id -u)" "$HOME/Library/LaunchAgents/com.bpop06.radar-regulatorio-mx.codex.plist" 2>/dev/null
+> rm -f "$HOME/Library/LaunchAgents/com.bpop06.radar-regulatorio-mx.codex.plist"
+> launchctl bootout "gui/$(id -u)" "$HOME/Library/LaunchAgents/com.bpop06.radar-regulatorio-mx.plist" 2>/dev/null
+> rm -f "$HOME/Library/LaunchAgents/com.bpop06.radar-regulatorio-mx.plist"
+> ```
+>
+> Los scripts de `scripts/` se conservan solo como respaldo manual de
+> emergencia (una corrida puntual desde cualquier máquina con red).
 
 La Mac tiene UNA responsabilidad: **recolectar y publicar los datos** todos
 los días de forma determinista. La capa editorial y la auditoría corren en la
