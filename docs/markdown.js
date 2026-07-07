@@ -129,6 +129,25 @@
   }
 
   // --- Chrome común: tema + nav --------------------------------------------
+  // Colores reales de --paper por tema (deben coincidir con los <meta name="theme-color"> del <head>).
+  const THEME_COLOR = { light: "#F4F4F1", dark: "#0F1113" };
+
+  function resolveTheme(theme) {
+    if (theme === "dark" || theme === "light") return theme;
+    return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  }
+
+  // Los <meta name="theme-color"> con media prefers-color-scheme cubren el estado
+  // por defecto (sin JS / sin override). Al togglear manualmente, el navegador sigue
+  // decidiendo qué meta usar según el SO, así que sincronizamos el content de AMBOS
+  // al color resuelto para que el toggle manual también controle el chrome del navegador.
+  function syncThemeColorMeta(theme) {
+    const color = THEME_COLOR[resolveTheme(theme)] || THEME_COLOR.light;
+    document.querySelectorAll('meta[name="theme-color"]').forEach((meta) => {
+      meta.setAttribute("content", color);
+    });
+  }
+
   function applyTheme(theme) {
     const root = document.documentElement;
     if (theme === "dark" || theme === "light") {
@@ -136,6 +155,7 @@
     } else {
       root.removeAttribute("data-theme");
     }
+    syncThemeColorMeta(theme);
   }
 
   function currentTheme() {
@@ -155,6 +175,7 @@
       if (glyph) glyph.textContent = isDark ? "☀" : "☽"; // sol / luna
     };
     sync();
+    syncThemeColorMeta(currentTheme());
     btn.addEventListener("click", () => {
       const next = currentTheme() === "dark" ? "light" : "dark";
       applyTheme(next);
@@ -216,6 +237,9 @@
     getSections: getSections,
     renderSection: renderSection,
     appendInline: appendInline,
+    applyTheme: applyTheme,
+    currentTheme: currentTheme,
+    syncThemeColorMeta: syncThemeColorMeta,
   };
 
   if (document.readyState === "loading") {

@@ -4,6 +4,9 @@ const elements = {
   organ: document.querySelector("#detail-organ"),
   signal: document.querySelector("#detail-signal"),
   importance: document.querySelector("#detail-importance"),
+  case: document.querySelector("#detail-case"),
+  caseChip: document.querySelector("#detail-case .case-chip"),
+  parties: document.querySelector("#detail-parties"),
   content: document.querySelector("#detail-content"),
   fullDetails: document.querySelector("#detail-full"),
   fullContent: document.querySelector("#detail-full-content"),
@@ -96,6 +99,24 @@ async function loadDetail() {
     if (organ) {
       elements.organ.textContent = organ;
       elements.organ.hidden = false;
+    }
+
+    // Contrato v4 (opcional): case_status / case_parties. Tolerante a su ausencia
+    // (los datos del contrato viejo no traen estos campos).
+    const caseStatus = typeof item.case_status === "string" ? item.case_status.trim() : "";
+    if (caseStatus && elements.case && elements.caseChip) {
+      elements.caseChip.textContent = `CASO · ${caseStatus}`;
+      elements.case.hidden = false;
+    }
+
+    const partiesText = Array.isArray(item.case_parties)
+      ? item.case_parties.filter(Boolean).join(", ")
+      : typeof item.case_parties === "string"
+        ? item.case_parties.trim()
+        : "";
+    if (partiesText && elements.parties) {
+      elements.parties.textContent = `Partes: ${partiesText}`;
+      elements.parties.hidden = false;
     }
 
     if (item.card_body) {
