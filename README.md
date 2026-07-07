@@ -1,8 +1,16 @@
 # Radar Regulatorio MX
 
 Sitio diario de inteligencia regulatoria mexicana. Reúne publicaciones
-oficiales, detecta asuntos relevantes y presenta un título ejecutivo con un
-resumen de exactamente 30 palabras.
+oficiales, detecta asuntos relevantes y presenta un título editorial (órgano +
+acción + sustancia), un resumen de exactamente 30 palabras y una ficha con
+jerarquía fija (qué se publicó, sustancia y fuente oficial).
+
+Cada novedad queda clasificada por dependencia u órgano emisor, rama de
+gobierno, jurisdicción (nacional/internacional), fecha (facetas de año, mes y
+día), materias, etiquetas temáticas e importancia editorial (1-5). Las corridas
+se acumulan en una base SQLite local (`data/radar.sqlite3`, fuera de git) que
+funciona como memoria histórica; el contrato público sigue siendo
+`docs/data/publications.json`.
 
 ## Materias cubiertas
 
@@ -29,6 +37,9 @@ resumen de exactamente 30 palabras.
 - Instituto Mexicano de la Propiedad Industrial
 - Portales institucionales de la Administración Pública Federal publicados en
   el índice oficial de `gob.mx`
+- Internacionales (primera ola): ONU Noticias, USTR y Trade.gov, con catálogo
+  de fase 2 (OCDE, OMC, FMI, Banco Mundial, CIADI, Wassenaar, CPI, CIJ) en la
+  auditoría de fuentes
 
 La auditoría técnica está en [`docs/SOURCE_AUDIT.md`](docs/SOURCE_AUDIT.md).
 
@@ -37,16 +48,25 @@ La auditoría técnica está en [`docs/SOURCE_AUDIT.md`](docs/SOURCE_AUDIT.md).
 ```bash
 python -m venv .venv
 source .venv/bin/activate
-python -m pip install -e ".[dev]"
-python -m app.cli collect --output docs/data/publications.json
+python -m pip install --require-hashes -r requirements-dev.txt
+python -m pip install -e . --no-deps
+python -m app.cli research --output docs/data/publications.json
 python -m http.server 8000 --directory docs
 ```
 
 Abrir `http://localhost:8000`.
 
+Comandos del CLI: `research` (recolecta, guarda la corrida en la base local y
+publica el JSON), `collect` (solo JSON, sin base), `export-site` (regenera el
+JSON desde la última corrida guardada), `storage-report` (tamaño y contenido
+de la base) y `validate`.
+
 Sin `OPENAI_API_KEY`, el sistema genera un resumen extractivo de respaldo. Con
-la variable configurada utiliza OpenAI Responses API y siempre normaliza el
-resultado a 30 palabras.
+la variable configurada utiliza OpenAI Responses API (`OPENAI_MODEL`, por
+defecto `gpt-5.5`, con `OPENAI_REASONING_EFFORT`, por defecto `extra_high`)
+para razonar el título editorial, el resumen de 30 palabras y el cuerpo de la
+ficha; si la API rechaza el esfuerzo configurado, se degrada a `high` con
+aviso.
 
 ## Automatización
 
@@ -86,6 +106,19 @@ Si tras activar Pages el sitio no publica y el workflow interno "pages build
 and deployment" también falla, la causa es el bloqueo de Actions a nivel de
 cuenta (facturación o verificación pendiente) y hay que resolverlo con
 soporte de GitHub, no en este repositorio.
+
+## Memoria local y servidor dedicado
+
+La base histórica (`data/radar.sqlite3`) vive solo en la máquina que corre la
+recolección. Órdenes de magnitud: ~3 KB por publicación enriquecida en el JSON;
+en SQLite, alrededor de 100–250 MB al llegar a 10,000 documentos con índices y
+1–3 GB hacia 100,000. Para uso individual sin textos completos, la Mac es
+suficiente durante años (decenas de MB por año). Conviene evaluar un servidor
+dedicado cuando se quiera: archivo documental completo (PDF/sentencias, >20 GB),
+búsqueda multiusuario o embeddings, más de ~50 fuentes con corridas
+garantizadas aunque la Mac esté apagada, o colas de procesamiento LLM con
+monitoreo de costos. `python -m app.cli storage-report` da las cifras reales
+para decidir el momento.
 
 ## Git
 

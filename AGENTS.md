@@ -22,6 +22,15 @@ law, administrative litigation, and tax-specific administrative litigation.
 - Preserve the official source URL and publication date for every record.
 - Deduplicate by stable source identifier or canonical URL.
 - Do not publish a generated summary unless it contains exactly 30 words.
+- Editorial titles lead with the substance ("organ + verb + what changed");
+  office/act numbers are secondary metadata and must not open a title.
+- Every published item carries `card_body` with the fixed sections
+  "## Qué se publicó", "## Sustancia" and "## Fuente".
+- Taxonomy is deterministic (`app/taxonomy.py`): issuing body resolved from
+  the organ catalog, jurisdiction/country from the source origin map, date
+  facets from `published_at`, importance bucketed 1-5 from relevance.
+- The local SQLite history (`data/radar.sqlite3`) is never committed; the
+  public JSON remains the only published data contract.
 - Treat tax administrative litigation as a subset of administrative
   litigation. Tax collection or enforcement alone is not contentious
   procedure.

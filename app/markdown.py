@@ -9,6 +9,25 @@ def detail_url(publication_id: str) -> str:
     return f"ficha.html?id={quote(publication_id, safe='')}"
 
 
+def build_card_body(
+    *,
+    what_published: str,
+    substance: str,
+    source_url: str,
+) -> str:
+    """Cuerpo editorial de la ficha con jerarquía fija de secciones."""
+    return "\n\n".join(
+        [
+            "## Qué se publicó",
+            clean_text(what_published),
+            "## Sustancia",
+            clean_text(substance),
+            "## Fuente",
+            f"[Abrir publicación oficial]({source_url})",
+        ]
+    )
+
+
 def build_detail_markdown(
     *,
     title: str,

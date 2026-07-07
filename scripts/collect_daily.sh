@@ -56,7 +56,9 @@ export REQUEST_TIMEOUT_SECONDS="${REQUEST_TIMEOUT_SECONDS:-45}"
 export SOURCE_RETRIES="${SOURCE_RETRIES:-3}"
 export SOURCE_RETRY_BACKOFF_SECONDS="${SOURCE_RETRY_BACKOFF_SECONDS:-1.5}"
 
-"$PY" -m app.cli collect --output docs/data/publications.json --days "$LOOKBACK_DAYS"
+# `research` recolecta, guarda la corrida en la base histórica local
+# (data/radar.sqlite3, ignorada por git) y escribe el JSON público.
+"$PY" -m app.cli research --output docs/data/publications.json --days "$LOOKBACK_DAYS"
 "$PY" -m app.cli validate --input docs/data/publications.json
 
 if git diff --quiet -- docs/data/publications.json; then

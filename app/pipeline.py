@@ -24,6 +24,7 @@ from app.sources import (
     SniceCollector,
 )
 from app.summarizer import Summarizer
+from app.taxonomy import enrich
 from app.text import normalized
 
 
@@ -77,11 +78,16 @@ async def collect(settings: Settings, days: int | None = None) -> dict[str, obje
         reverse=True,
     )
 
-    summarizer = Summarizer(settings.openai_api_key, settings.openai_model)
+    summarizer = Summarizer(
+        settings.openai_api_key,
+        settings.openai_model,
+        settings.openai_reasoning_effort,
+    )
     publications: list[Publication] = []
     for item in classified:
         summary = summarizer.summarize(item)
         candidate = item.candidate
+        taxonomy = enrich(item)
         published_at = candidate.published_at.isoformat()
         full_markdown = build_detail_markdown(
             title=summary.title,
@@ -107,10 +113,21 @@ async def collect(settings: Settings, days: int | None = None) -> dict[str, obje
                 summary=summary.summary,
                 description=candidate.description,
                 detail_markdown=full_markdown,
+                card_body=summary.card_body,
                 published_at=published_at,
                 authority=candidate.authority,
                 document_type=candidate.document_type,
+                issuing_body=taxonomy.issuing_body,
+                government_branch=taxonomy.government_branch,
+                jurisdiction=taxonomy.jurisdiction,
+                country_or_org=taxonomy.country_or_org,
+                published_year=taxonomy.published_year,
+                published_month=taxonomy.published_month,
+                published_day=taxonomy.published_day,
                 categories=item.categories,
+                topic_tags=taxonomy.topic_tags,
+                subtopic_tags=taxonomy.subtopic_tags,
+                importance=taxonomy.importance,
                 relevance_score=item.relevance_score,
                 ai_generated=summary.ai_generated,
             )
