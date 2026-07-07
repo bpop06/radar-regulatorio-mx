@@ -147,7 +147,16 @@ REQUEST_TIMEOUT_SECONDS=45
 SOURCE_RETRIES=3
 SOURCE_RETRY_BACKOFF_SECONDS=1.5
 LOOKBACK_DAYS=31
+OPENAI_REASONING_EFFORT=extra_high   # esfuerzo de razonamiento editorial
 CODEX_MODEL=            # opcional: fija el modelo que usa codex exec
+```
+
+La recolección diaria usa `app.cli research`: además de publicar el JSON,
+acumula cada corrida en la base histórica local `data/radar.sqlite3` (ignorada
+por git). Consulta su tamaño y contenido con:
+
+```bash
+.venv/bin/python -m app.cli storage-report
 ```
 
 ## Qué publica la tarea

@@ -50,16 +50,29 @@ class Publication:
     summary: str
     description: str
     detail_markdown: str
+    card_body: str
     published_at: str
     authority: str
     document_type: str
+    issuing_body: str
+    government_branch: str
+    jurisdiction: str
+    country_or_org: str
+    published_year: int
+    published_month: int
+    published_day: int
     categories: tuple[str, ...]
+    topic_tags: tuple[str, ...]
+    subtopic_tags: tuple[str, ...]
+    importance: int
     relevance_score: int
     ai_generated: bool
 
     def to_dict(self) -> dict[str, object]:
         result = asdict(self)
         result["categories"] = list(self.categories)
+        result["topic_tags"] = list(self.topic_tags)
+        result["subtopic_tags"] = list(self.subtopic_tags)
         return result
 
 

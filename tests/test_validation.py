@@ -32,15 +32,53 @@ def valid_payload(summary: str | None = None):
                     "## Información oficial\n\n"
                     "**Título oficial:** Acuerdo por el que se delegan facultades."
                 ),
+                "card_body": (
+                    "## Qué se publicó\n\n"
+                    "Acuerdo de la Secretaría de Economía.\n\n"
+                    "## Sustancia\n\n"
+                    "Delegación de facultades administrativas específicas.\n\n"
+                    "## Fuente\n\n"
+                    "[Abrir publicación oficial](https://dof.gob.mx/nota_detalle.php?codigo=1)"
+                ),
                 "published_at": "2026-07-03",
                 "authority": "Secretaría de Economía",
                 "document_type": "Acuerdo",
+                "issuing_body": "Secretaría de Economía",
+                "government_branch": "Ejecutivo federal",
+                "jurisdiction": "nacional",
+                "country_or_org": "México",
+                "published_year": 2026,
+                "published_month": 7,
+                "published_day": 3,
                 "categories": ["Derecho administrativo"],
+                "topic_tags": ["Derecho administrativo", "Acuerdo"],
+                "subtopic_tags": ["delegan facultades"],
+                "importance": 2,
                 "relevance_score": 3,
                 "ai_generated": False,
             }
         ],
     }
+
+
+def test_validate_publications_payload_rejects_missing_card_body_sections():
+    payload = valid_payload()
+    payload["items"][0]["card_body"] = "## Qué se publicó\n\nSolo una sección."
+
+    report = validate_publications_payload(payload)
+
+    assert not report.ok
+    assert any("card_body is missing section" in error for error in report.errors)
+
+
+def test_validate_publications_payload_warns_on_office_number_title():
+    payload = valid_payload()
+    payload["items"][0]["title"] = "Oficio 500-05-2026-16021 comunica listado"
+
+    report = validate_publications_payload(payload)
+
+    assert report.ok
+    assert any("starts with an office/act number" in warning for warning in report.warnings)
 
 
 def test_validate_publications_payload_accepts_valid_contract():

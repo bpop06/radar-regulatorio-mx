@@ -50,8 +50,19 @@ red; corres en solo lectura):
 
 - Que `summary` tenga exactamente 30 palabras.
 - Que `url` sea un enlace oficial `https://` plausible para la fuente.
-- Que `categories` clasifique de forma razonable según el `official_title`.
+- Que `categories` y `topic_tags` clasifiquen de forma razonable según el
+  `official_title`.
 - Que `detail_markdown` tenga la estructura esperada (encabezado y secciones).
+- Que `card_body` tenga sus tres secciones (`## Qué se publicó`,
+  `## Sustancia`, `## Fuente`) y que su contenido sea fiel al título oficial.
+- Que el `title` sea editorial (órgano + verbo + sustancia) y no inicie con
+  número de oficio/acuerdo; si encuentras títulos con número de oficio,
+  repórtalo como anomalía editorial (ocurre cuando el resumen corrió sin
+  modelo de lenguaje).
+- Que la taxonomía sea coherente: `issuing_body` corresponde a la autoridad,
+  `jurisdiction` es `internacional` sólo para fuentes internacionales
+  (ONU Noticias, USTR, Trade.gov) y las facetas `published_year/month/day`
+  coinciden con `published_at`.
 
 Registra cualquier anomalía (resumen fuera de 30 palabras, materia dudosa,
 enlace sospechoso) para el parte diario.

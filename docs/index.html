@@ -68,6 +68,26 @@
               <option value="15">Últimos 15 días</option>
             </select>
           </label>
+          <label class="select-control">
+            <span>Órgano</span>
+            <select id="issuing-body-filter">
+              <option value="Todas">Todas</option>
+            </select>
+          </label>
+          <label class="select-control">
+            <span>Jurisdicción</span>
+            <select id="jurisdiction-filter">
+              <option value="Todas">Todas</option>
+              <option value="nacional">Nacional</option>
+              <option value="internacional">Internacional</option>
+            </select>
+          </label>
+          <label class="select-control">
+            <span>Mes</span>
+            <select id="month-filter">
+              <option value="all">Todos</option>
+            </select>
+          </label>
         </div>
 
         <div class="filters" id="category-filters" aria-label="Filtrar por materia">
@@ -84,13 +104,24 @@
             <h2 id="feed-title">Radar de novedades</h2>
             <p id="feed-note" class="feed-note" aria-live="polite">Cargando documentos oficiales.</p>
           </div>
-          <label class="sort">
-            <span>Ordenar</span>
-            <select id="sort">
-              <option value="date">Más recientes</option>
-              <option value="relevance">Mayor relevancia</option>
-            </select>
-          </label>
+          <div class="sort-controls">
+            <label class="sort">
+              <span>Ordenar</span>
+              <select id="sort">
+                <option value="date">Más recientes</option>
+                <option value="relevance">Mayor relevancia</option>
+                <option value="importance">Mayor importancia</option>
+              </select>
+            </label>
+            <label class="sort">
+              <span>Por página</span>
+              <select id="page-size">
+                <option value="24">24</option>
+                <option value="48">48</option>
+                <option value="96">96</option>
+              </select>
+            </label>
+          </div>
         </div>
 
         <div id="news-list" class="news-list">
@@ -106,6 +137,12 @@
           <h2 id="empty-title">No encontramos documentos con esos filtros.</h2>
           <button id="clear-filters" type="button">Limpiar búsqueda</button>
         </div>
+
+        <nav id="pagination" class="pagination" aria-label="Paginación de resultados" hidden>
+          <button id="page-prev" type="button" aria-label="Página anterior">Anterior</button>
+          <p id="page-indicator" aria-live="polite">Página 1 de 1</p>
+          <button id="page-next" type="button" aria-label="Página siguiente">Siguiente</button>
+        </nav>
       </section>
 
       <section class="sources" id="fuentes" aria-labelledby="sources-title">
@@ -133,13 +170,16 @@
       <article class="news-card">
         <div class="card-topline">
           <div class="badges"></div>
-          <time></time>
+          <div class="topline-meta">
+            <span class="intl-chip" hidden></span>
+            <span class="importance-chip" hidden>Alta</span>
+            <time></time>
+          </div>
         </div>
         <h3></h3>
         <div class="card-meta">
           <span class="source-name"></span>
           <span class="authority"></span>
-          <span class="document-type"></span>
         </div>
         <div class="card-footer">
           <a class="detail-link">
