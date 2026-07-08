@@ -55,6 +55,13 @@ def build_detail_markdown(
     duplicadas ("Revisión"/"Resumen generado con IA" y la descripción de
     origen desaparecen por completo frente a v1).
 
+    `authority` debe recibir el ÓRGANO CANÓNICO (`taxonomy.issuing_body`), no
+    la autoridad cruda del recolector: así la línea meta y el fallback de
+    "Qué se publicó" muestran "Instituto Mexicano del Seguro Social" en vez
+    de variantes crudas en mayúsculas ("INSTITUTO MEXICANO DEL SEGURO
+    SOCIAL"). Los llamadores (`app.pipeline`, `app.editorial`) son
+    responsables de pasar el valor ya canonicalizado.
+
     "Qué se publicó" y "Sustancia" se extraen del `card_body` ya redactado
     (misma prosa que ve la tarjeta, sin reescribirla). El pipeline extractivo
     siempre trae `card_body` porque `Summarizer` lo genera incluso sin capa

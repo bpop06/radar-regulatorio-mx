@@ -284,21 +284,45 @@ function setRovingTabindex() {
   cells.forEach((c) => (c.tabIndex = c === target ? 0 : -1));
 }
 
+// F2#7 (v7 QA): antes se difería un frame vía rAF para disparar la transición CSS de
+// entrada. Combinado con document.startViewTransition (ver runWithViewTransition), esa
+// espera de un frame corría el riesgo de perderse si la transición fallaba/se
+// solapaba (InvalidStateError) — el resultado era una retícula que quedaba invisible
+// ("gris") hasta el siguiente scroll/repintado. Ahora se marcan visibles de inmediato,
+// en el mismo tick que se pintó el mes: nunca dependen de un frame futuro.
 function runScanIn() {
   const cells = el.grid.querySelectorAll("[data-cell]");
-  if (RM) { cells.forEach((c) => c.classList.add("is-in")); return; }
-  requestAnimationFrame(() => cells.forEach((c) => c.classList.add("is-in")));
+  cells.forEach((c) => c.classList.add("is-in"));
+}
+
+// F2#7 (v7 QA): evita encadenar View Transitions solapadas. document.startViewTransition
+// lanza InvalidStateError si se invoca mientras otra sigue en curso — con clics rápidos
+// (o los ~10 cambios de mes seguidos del smoke) eso pasaba decenas de veces y, al
+// abortar a medias, dejaba pseudo-elementos de la transición vieja pisando el DOM
+// nuevo (de ahí la retícula gris hasta hacer scroll). Si ya hay una transición activa,
+// se pinta directo, sin transición, en vez de encolar otra.
+let viewTransitionPending = false;
+function runWithViewTransition(render) {
+  if (RM || !document.startViewTransition || viewTransitionPending) {
+    render();
+    return;
+  }
+  viewTransitionPending = true;
+  try {
+    const transition = document.startViewTransition(render);
+    const clear = () => { viewTransitionPending = false; };
+    Promise.resolve(transition.finished).then(clear, clear);
+  } catch (error) {
+    viewTransitionPending = false;
+    render();
+  }
 }
 
 function changeMonth(delta) {
   const nextMonth = store.month + delta;
   if (nextMonth < 0 || nextMonth > 11) return;
   store.month = nextMonth;
-  if (document.startViewTransition && !RM) {
-    document.startViewTransition(() => renderMonth());
-  } else {
-    renderMonth();
-  }
+  runWithViewTransition(() => renderMonth());
 }
 
 /* ------------------------------------------------------------ órgano: barrido + recompute */
@@ -322,8 +346,7 @@ function selectOrgan(id) {
     // re-render panel si hay día seleccionado (cambia el estado por órgano)
     if (store.selectedDate) renderPanel(store.selectedDate);
   };
-  if (document.startViewTransition && !RM) document.startViewTransition(doRender);
-  else doRender();
+  runWithViewTransition(doRender);
 }
 
 /* ------------------------------------------------------------ panel de día */
@@ -430,6 +453,16 @@ function renderPanel(iso) {
     label.textContent = "Guardia: ";
     guardia.append(label, document.createTextNode(info.guardia_detalle || "Guardia activa este día."));
     el.panel.append(guardia);
+
+    // F2#14 (v7 QA): la guardia no habilita el día para el cómputo de plazos — enlaza
+    // a la guía (docs/GUARDIAS.md, servida en guardias.html) para que quede claro.
+    const guideLink = document.createElement("p");
+    guideLink.className = "dp-guardia-link";
+    const guideAnchor = document.createElement("a");
+    guideAnchor.href = "guardias.html";
+    guideAnchor.textContent = "Ver guía de guardias y plazos →";
+    guideLink.append(guideAnchor);
+    el.panel.append(guideLink);
   }
 
   if (info.analysis) {
@@ -445,21 +478,9 @@ function renderPanel(iso) {
   else if (info.derived && info.status === "habil") note.textContent = "Sin suspensión ni receso registrado para este día.";
   else note.textContent = "Estado tomado del calendario oficial del órgano.";
   el.panel.append(note);
-
-  // stagger de hijos
-  if (!RM) {
-    Array.from(el.panel.children).forEach((child, i) => {
-      if (child.classList.contains("dp-close")) return;
-      child.style.opacity = "0";
-      child.style.transform = "translateY(8px)";
-      child.style.transition = "opacity 300ms var(--ease-out-expo), transform 300ms var(--ease-out-expo)";
-      child.style.transitionDelay = `${i * 50}ms`;
-      requestAnimationFrame(() => requestAnimationFrame(() => {
-        child.style.opacity = "1";
-        child.style.transform = "none";
-      }));
-    });
-  }
+  // F2#13 (v7 QA): el panel del día tardaba ~1s en aparecer por el stagger de
+  // entrada (opacidad 0 + retraso por hijo antes de esta línea). Se quita: el panel
+  // debe quedar visible de inmediato al seleccionar un día.
 }
 
 function openSheet() {
@@ -518,8 +539,7 @@ async function init() {
     const targetMonth = t.y === YEAR ? t.m : store.month;
     if (targetMonth !== store.month) {
       store.month = targetMonth;
-      if (document.startViewTransition && !RM) document.startViewTransition(() => renderMonth());
-      else renderMonth();
+      runWithViewTransition(() => renderMonth());
     }
     if (t.y === YEAR) selectDay(t.iso, null);
   });

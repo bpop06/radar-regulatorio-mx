@@ -21,9 +21,14 @@ from app.validation import (
 )
 
 EDITABLE_FIELDS = ("title", "summary", "card_body")
-# case_facts es el único campo por-ítem opcional del gate: solo aplica a
-# ítems de caso (CIADI, TFJA...) y puede omitirse en la edición sin error.
+# case_facts es el único campo por-ítem opcional del gate de tipo texto: solo
+# aplica a ítems de caso (CIADI, TFJA...) y puede omitirse en la edición sin
+# error.
 OPTIONAL_EDITABLE_FIELDS = ("case_facts",)
+# importance es la curaduría editorial de qué tan relevante es un ítem ya
+# publicado (bug #15): opcional igual que case_facts, pero de tipo int
+# (1-5, mismo rango que exige app.validation), no texto.
+OPTIONAL_EDITABLE_INT_FIELDS = ("importance",)
 
 # case_facts es prosa de párrafos; si trajera sus propios encabezados
 # rompería la jerarquía fija de la ficha única (la sección "## Hechos del
@@ -44,11 +49,12 @@ def apply_editorial(
     de la base local si existe).
 
     Este comando es el único canal de escritura de la rutina editorial de la
-    nube: permite reemplazar `title`, `summary` y `card_body` (obligatorios) y
-    `case_facts` (opcional, solo ítems de caso) de ítems existentes
-    (marcándolos `ai_generated=true`), más el bloque opcional `digest` del
-    corte completo, con validación dura. Todo o nada: si una edición o el
-    digest son inválidos, no se aplica nada.
+    nube: permite reemplazar `title`, `summary` y `card_body` (obligatorios),
+    `case_facts` (opcional, solo ítems de caso) e `importance` (opcional,
+    curaduría de qué tan relevante es el ítem, entero 1-5) de ítems
+    existentes (marcándolos `ai_generated=true`), más el bloque opcional
+    `digest` del corte completo, con validación dura. Todo o nada: si una
+    edición o el digest son inválidos, no se aplica nada.
     """
     edits_payload = json.loads(edits_path.read_text(encoding="utf-8"))
     edits = edits_payload.get("items")
@@ -58,7 +64,7 @@ def apply_editorial(
     payload = json.loads(publications_path.read_text(encoding="utf-8"))
     by_id = {item["id"]: item for item in payload.get("items", [])}
 
-    validated: dict[str, dict[str, str]] = {}
+    validated: dict[str, dict[str, Any]] = {}
     for index, edit in enumerate(edits):
         edit_id, fields = _validate_edit(index, edit, by_id)
         if edit_id in validated:
@@ -88,7 +94,9 @@ def apply_editorial(
             summary=item["summary"],
             official_title=item["official_title"],
             source=item["source"],
-            authority=item["authority"],
+            # Línea meta y fallback muestran el órgano canónico ya resuelto
+            # por app.taxonomy, no la autoridad cruda (bug #19).
+            authority=item.get("issuing_body") or item["authority"],
             document_type=item.get("document_type", ""),
             published_at=item["published_at"],
             categories=tuple(item.get("categories", [])),
@@ -125,11 +133,16 @@ def apply_editorial(
 
 def _validate_edit(
     index: int, edit: Any, by_id: dict[str, dict[str, Any]]
-) -> tuple[str, dict[str, str]]:
+) -> tuple[str, dict[str, Any]]:
     if not isinstance(edit, dict):
         raise EditorialError(f"items[{index}] debe ser un objeto")
 
-    unknown = set(edit) - {"id", *EDITABLE_FIELDS, *OPTIONAL_EDITABLE_FIELDS}
+    unknown = set(edit) - {
+        "id",
+        *EDITABLE_FIELDS,
+        *OPTIONAL_EDITABLE_FIELDS,
+        *OPTIONAL_EDITABLE_INT_FIELDS,
+    }
     if unknown:
         raise EditorialError(
             f"items[{index}] trae campos no editables: {', '.join(sorted(unknown))}"
@@ -139,7 +152,7 @@ def _validate_edit(
     if not isinstance(edit_id, str) or edit_id not in by_id:
         raise EditorialError(f"items[{index}]: id inexistente en las publicaciones ({edit_id!r})")
 
-    fields: dict[str, str] = {}
+    fields: dict[str, Any] = {}
     for field in EDITABLE_FIELDS:
         value = edit.get(field)
         if not isinstance(value, str) or not value.strip():
@@ -186,10 +199,21 @@ def _validate_edit(
             )
         fields[field] = value.strip()
 
+    for field in OPTIONAL_EDITABLE_INT_FIELDS:
+        if field not in edit:
+            continue
+        value = edit[field]
+        is_plain_int = isinstance(value, int) and not isinstance(value, bool)
+        if not is_plain_int or not 1 <= value <= 5:
+            raise EditorialError(
+                f"items[{index}] ({edit_id}): '{field}' debe ser un entero entre 1 y 5"
+            )
+        fields[field] = value
+
     return edit_id, fields
 
 
-def _apply_to_database(database_path: Path, validated: dict[str, dict[str, str]]) -> None:
+def _apply_to_database(database_path: Path, validated: dict[str, dict[str, Any]]) -> None:
     with Storage(database_path) as storage:
         for edit_id, fields in validated.items():
             storage.update_document_fields(edit_id, {**fields, "ai_generated": True})

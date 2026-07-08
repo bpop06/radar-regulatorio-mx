@@ -2,7 +2,7 @@ import json
 from datetime import date
 
 from app.relevance import classify
-from app.sources.diputados import DiputadosCollector
+from app.sources.diputados import DiputadosCollector, permanent_gaceta_url
 from app.sources.dof import DofCollector
 from app.sources.gobmx import ALWAYS_RELEVANT_PORTALS, GobMxCollector
 from app.sources.icsid import IcsidCollector
@@ -35,6 +35,35 @@ def test_dof_parser_extracts_official_item():
     assert len(items) == 1
     assert items[0].source_id == "123"
     assert items[0].published_at == date(2026, 6, 10)
+
+
+def test_dof_parser_cleans_document_type_of_act_numbers_and_trailing_connectors():
+    # Regresión #5: tomar las primeras palabras a secas del sumario del DOF
+    # arrastraba números de oficio/acuerdo y conectores sueltos ("Acuerdo Por
+    # El", "Oficio 500-05-00-00-00-2026-16021 Mediante").
+    xml = b"""<?xml version="1.0" encoding="ISO-8859-1"?>
+    <rss><channel>
+    <item>
+      <title>PODER EJECUTIVO SECRETARIA DE ECONOMIA</title>
+      <link>https://dof.gob.mx/nota_detalle.php?codigo=111&amp;fecha=10/06/2026</link>
+      <description>Acuerdo por el que se delegan facultades a la unidad.</description>
+      <valueDate>10/06/2026</valueDate>
+    </item>
+    <item>
+      <title>PODER EJECUTIVO SECRETARIA DE HACIENDA</title>
+      <link>https://dof.gob.mx/nota_detalle.php?codigo=222&amp;fecha=10/06/2026</link>
+      <description>
+        Oficio 500-05-00-00-00-2026-16021 mediante el cual se comunica el listado.
+      </description>
+      <valueDate>10/06/2026</valueDate>
+    </item>
+    </channel></rss>"""
+
+    items = DofCollector.parse(xml, date(2026, 6, 1))
+
+    by_id = {item.source_id: item for item in items}
+    assert by_id["111"].document_type == "Acuerdo"
+    assert by_id["222"].document_type == "Oficio"
 
 
 def test_dof_parser_ignores_incomplete_feed_tail():
@@ -491,6 +520,27 @@ def test_diputados_parser_extracts_anexos_alongside_index():
     # El índice original sigue funcionando junto a los anexos.
     index_items = [item for item in items if item.document_type != "Dictámenes y minutas"]
     assert len(index_items) == 1
+
+
+def test_diputados_parser_index_items_use_permanent_dated_url():
+    # Regresión #11: "gp_hoy.html#Iniciativa1" deja de resolver el asunto en
+    # cuanto la portada avanza al día siguiente. La URL emitida debe ser la
+    # edición archivada y fechada de la Gaceta (confirmada en vivo: responde
+    # 200 y conserva el mismo ancla que la portada del día).
+    items = DiputadosCollector.parse(GACETA_CON_ANEXOS, date(2026, 6, 1))
+
+    index_items = [item for item in items if item.document_type != "Dictámenes y minutas"]
+    assert len(index_items) == 1
+    assert index_items[0].url == (
+        "https://gaceta.diputados.gob.mx/Gaceta/66/2026/jul/20260706.html#Iniciativa1"
+    )
+
+
+def test_permanent_gaceta_url_omits_anchor_when_missing():
+    assert (
+        permanent_gaceta_url(date(2026, 1, 15))
+        == "https://gaceta.diputados.gob.mx/Gaceta/66/2026/ene/20260115.html"
+    )
 
 
 def test_diputados_parser_filters_anexos_by_their_own_filename_date():

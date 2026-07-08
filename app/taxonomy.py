@@ -130,6 +130,39 @@ ORGAN_CATALOG: tuple[tuple[str, str, str, tuple[str, ...]], ...] = (
         ("banco de mexico", "banxico"),
     ),
     (
+        "Instituto Mexicano del Seguro Social",
+        "Organismo descentralizado",
+        "IMSS",
+        ("instituto mexicano del seguro social", "imss"),
+    ),
+    (
+        "Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado",
+        "Organismo descentralizado",
+        "ISSSTE",
+        (
+            "instituto de seguridad y servicios sociales de los trabajadores del estado",
+            "issste",
+        ),
+    ),
+    (
+        "Instituto Nacional de los Pueblos Indígenas",
+        "Organismo descentralizado",
+        "INPI",
+        ("instituto nacional de los pueblos indigenas", "inpi"),
+    ),
+    (
+        "Fiscalía General de la República",
+        "Organismo autónomo",
+        "FGR",
+        ("fiscalia general de la republica", "fgr"),
+    ),
+    (
+        "Secretaría de Marina",
+        "Ejecutivo federal",
+        "Semar",
+        ("secretaria de marina", "semar"),
+    ),
+    (
         "Presidencia de la República",
         "Ejecutivo federal",
         "Presidencia",
