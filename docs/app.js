@@ -16,6 +16,11 @@ const state = {
   // Contrato v6 (opcional): payload.digest.groups. null cuando el corte no lo trae
   // (cortes viejos) — todo el código de agrupación debe degradar al feed plano.
   digestGroups: null,
+  // Filtro "HOY" (v7 QA, mejora autorizada): true limita el feed a published_at ==
+  // fecha actual en America/Mexico_City. Cuenta como filtro activo (ver
+  // hasActiveFilters) — como cualquier otro, apaga la agrupación del digest mientras
+  // esté encendido.
+  onlyToday: false,
 };
 
 // Materias primarias del contrato v4. El código de renderFilters() une estas
@@ -68,6 +73,8 @@ const elements = {
   jurisdictionFilter: document.querySelector("#jurisdiction-filter"),
   monthFilter: document.querySelector("#month-filter"),
   sort: document.querySelector("#sort"),
+  todayFilter: document.querySelector("#today-filter"),
+  todayCount: document.querySelector("#today-count"),
   pageSize: document.querySelector("#page-size"),
   pagination: document.querySelector("#pagination"),
   pagePrev: document.querySelector("#page-prev"),
@@ -89,6 +96,8 @@ const elements = {
   heroBand: document.querySelector(".hero-band"),
   digestSection: document.querySelector("#digest"),
   digestGroups: document.querySelector("#digest-groups"),
+  nav: document.querySelector(".nav"),
+  controlPanel: document.querySelector(".control-panel"),
 };
 
 const dayInMilliseconds = 24 * 60 * 60 * 1000;
@@ -107,6 +116,15 @@ function monoDate(iso) {
   const [y, m, d] = parts;
   if (!y || !m || !d) return "—";
   return `${String(d).padStart(2, "0")}·${monthShort[m - 1] || "?"}·${y}`;
+}
+
+// Formato compacto (sin año) para el panel "Resumen del corte" — todas las entradas
+// son del mismo corte, así que el año es ruido (v7 QA, digest enriquecido).
+function monoDateShort(iso) {
+  if (typeof iso !== "string") return "—";
+  const [y, m, d] = iso.slice(0, 10).split("-").map(Number);
+  if (!y || !m || !d) return "—";
+  return `${String(d).padStart(2, "0")}·${monthShort[m - 1] || "?"}`;
 }
 
 function sourceCode(src) {
@@ -132,6 +150,11 @@ function monthLabel(key) {
 }
 
 /* ---------------------------------------------------------------- motion */
+// F2#13 (v7 QA): rootMargin generoso (25% por debajo del viewport) para que el
+// elemento ya esté marcado is-visible ANTES de entrar físicamente en pantalla —
+// con scroll rápido, el margen negativo original dejaba secciones en blanco
+// 0.5-1.5s porque el "recorte" del root retrasaba el disparo respecto a lo que
+// el ojo ya veía.
 const revealObserver =
   "IntersectionObserver" in window
     ? new IntersectionObserver(
@@ -143,33 +166,72 @@ const revealObserver =
             }
           }
         },
-        { threshold: 0.15, rootMargin: "0px 0px -10% 0px" },
+        { threshold: 0, rootMargin: "0px 0px 25% 0px" },
       )
     : null;
+
+// Un elemento que ya está (o casi) dentro del viewport en el momento de pintarlo
+// (p. ej. tarjetas añadidas durante un scroll rápido, o el primer renderItems con
+// pocos resultados) se marca visible de inmediato, sin pasar por el observer: así
+// nunca depende de que el primer callback asíncrono llegue a tiempo.
+function isNearViewport(el) {
+  const rect = el.getBoundingClientRect();
+  const vh = window.innerHeight || document.documentElement.clientHeight || 0;
+  return rect.top < vh * 1.25 && rect.bottom > -vh * 0.25;
+}
 
 function observeReveal(el) {
   if (RM || !revealObserver) {
     el.classList.add("is-visible");
     return;
   }
+  if (isNearViewport(el)) {
+    el.classList.add("is-visible");
+    return;
+  }
   revealObserver.observe(el);
 }
 
+// F2#9 (v7 QA): contador determinista. Anima máx. 800ms con rAF, pero un setTimeout
+// de respaldo fija el valor final si la pestaña pierde rAF (oculta, throttling,
+// entorno headless) — así nunca queda pegado en 0. Un guardia por elemento evita
+// reanimar si algo (p. ej. un futuro cambio de tema) volviera a invocar countUp.
 function countUp(el, target, format) {
+  if (!el) return;
   const fmt = format || ((v) => String(v));
-  if (RM || !el) {
-    if (el) el.textContent = fmt(target);
+  const finalize = () => {
+    el.textContent = fmt(target);
+    el.dataset.countDone = "1";
+  };
+
+  if (RM || document.hidden || el.dataset.countDone === "1") {
+    finalize();
     return;
   }
-  const duration = 900;
+
+  const duration = 800;
   const start = performance.now();
   const ease = (t) => 1 - Math.pow(1 - t, 4); // aproxima ease-out-expo
+  let done = false;
+  let rafId = null;
+
+  const finish = () => {
+    if (done) return;
+    done = true;
+    if (rafId !== null) cancelAnimationFrame(rafId);
+    clearTimeout(fallbackId);
+    finalize();
+  };
+
   function tick(now) {
+    if (done) return;
     const t = Math.min(1, (now - start) / duration);
     el.textContent = fmt(Math.round(ease(t) * target));
-    if (t < 1) requestAnimationFrame(tick);
+    if (t < 1) rafId = requestAnimationFrame(tick);
+    else finish();
   }
-  requestAnimationFrame(tick);
+  rafId = requestAnimationFrame(tick);
+  const fallbackId = setTimeout(finish, duration + 150);
 }
 
 function placeFilterIndicator() {
@@ -255,6 +317,31 @@ function renderMonthFilter() {
   elements.monthFilter.value = state.month;
 }
 
+/* ---------------------------------------------------------------- filtro "HOY" (v7) */
+// Refleja state.onlyToday + el conteo de publicaciones de hoy en el chip junto al
+// orden. Si no hay ninguna hoy, el chip queda deshabilitado (no rompe el resto de
+// los filtros: simplemente no se puede activar).
+function syncTodayFilterUI() {
+  const btn = elements.todayFilter;
+  if (!btn) return;
+  const n = countTodayItems();
+  if (elements.todayCount) elements.todayCount.textContent = String(n);
+  btn.disabled = n === 0 && !state.onlyToday;
+  btn.classList.toggle("active", state.onlyToday);
+  btn.setAttribute("aria-pressed", String(state.onlyToday));
+}
+
+function setHoyUrlParam(on) {
+  try {
+    const url = new URL(window.location.href);
+    if (on) url.searchParams.set("hoy", "1");
+    else url.searchParams.delete("hoy");
+    history.replaceState(null, "", url.pathname + url.search + url.hash);
+  } catch (error) {
+    /* noop: entorno sin history API usable (p. ej. file://) */
+  }
+}
+
 /* ---------------------------------------------------------------- filtering (v2 logic intacta) */
 function activeAnchorDate() {
   if (state.generatedAt && !Number.isNaN(state.generatedAt.valueOf())) return state.generatedAt;
@@ -283,6 +370,24 @@ function matchesMonth(item) {
   return state.month === "all" || monthKey(item) === state.month;
 }
 
+// Filtro "HOY" (v7 QA): fecha civil actual en America/Mexico_City, independiente del
+// huso del navegador/servidor que corre las pruebas. "en-CA" formatea como YYYY-MM-DD.
+function todayISOMexico() {
+  try {
+    return new Intl.DateTimeFormat("en-CA", { timeZone: "America/Mexico_City" }).format(new Date());
+  } catch (error) {
+    return new Date().toISOString().slice(0, 10);
+  }
+}
+function matchesToday(item) {
+  if (!state.onlyToday) return true;
+  return String(item.published_at || "").slice(0, 10) === todayISOMexico();
+}
+function countTodayItems() {
+  const today = todayISOMexico();
+  return state.items.filter((item) => String(item.published_at || "").slice(0, 10) === today).length;
+}
+
 function filteredItems() {
   const query = normalize(state.query.trim());
   const selected = state.items.filter((item) => {
@@ -300,7 +405,8 @@ function filteredItems() {
     );
     return (
       matchesCategory && matchesSource && matchesDateRange(item) && matchesIssuingBody(item) &&
-      matchesJurisdiction(item) && matchesMonth(item) && (!query || haystack.includes(query))
+      matchesJurisdiction(item) && matchesMonth(item) && matchesToday(item) &&
+      (!query || haystack.includes(query))
     );
   });
 
@@ -333,7 +439,7 @@ function hasActiveFilters() {
   return (
     state.category !== "Todas" || state.source !== "Todas" || state.dateRange !== "all" ||
     state.issuingBody !== "Todas" || state.jurisdiction !== "Todas" || state.month !== "all" ||
-    state.query.trim() !== ""
+    state.query.trim() !== "" || state.onlyToday
   );
 }
 
@@ -402,6 +508,7 @@ function resetFiltersState() {
   state.issuingBody = "Todas";
   state.jurisdiction = "Todas";
   state.month = "all";
+  state.onlyToday = false;
   elements.search.value = "";
   elements.sourceFilter.value = "Todas";
   elements.dateRange.value = "all";
@@ -411,21 +518,110 @@ function resetFiltersState() {
   elements.filters.querySelectorAll(".filter").forEach((button) => {
     button.classList.toggle("active", button.dataset.category === "Todas");
   });
+  syncTodayFilterUI();
+  setHoyUrlParam(false);
   placeFilterIndicator();
 }
 
-function buildGroupHeading(group) {
+// F2#16 (v7 QA): cuando un grupo ya empezó en una página anterior, el encabezado
+// repetido en la página siguiente debe decir "· continúa" y conservar el conteo
+// TOTAL del grupo (no solo el resto que cae en esta página) — `group.cards.length`
+// ya es el total (buildDigestGroups no lo recorta por página).
+function buildGroupHeading(group, continued) {
   const heading = document.createElement("h3");
   heading.className = "feed-group-heading";
   heading.dataset.groupKey = group.key;
   const label = document.createElement("span");
   label.className = "fg-label";
-  label.textContent = group.label;
+  label.textContent = continued ? `${group.label} · continúa` : group.label;
   const count = document.createElement("span");
   count.className = "fg-count";
   count.textContent = String(group.cards.length);
   heading.append(label, count);
   return heading;
+}
+
+// F2#6/#8 (v7 QA): mide en vivo cuánto tapan el nav condensado + el control-panel
+// sticky y lo publica en --sticky-offset (leído por scroll-margin-top en
+// .feed-group-heading y #fuentes). El nav condensa su padding con una transición
+// CSS: si midiéramos su altura justo al alternar la clase, offsetHeight seguiría
+// reportando el valor ANTERIOR (la transición interpola desde ahí) — por eso se
+// mide con las transiciones anuladas y se revierte todo de forma síncrona, sin que
+// llegue a pintarse el estado intermedio.
+function syncStickyOffset() {
+  const nav = elements.nav;
+  if (!nav) return;
+  const wasCondensed = nav.classList.contains("is-condensed");
+  nav.classList.add("nav-instant");
+  nav.classList.add("is-condensed"); // cualquier salto cae siempre con el nav condensado
+  void nav.offsetHeight;
+  const navH = nav.getBoundingClientRect().height;
+  nav.classList.toggle("is-condensed", wasCondensed);
+  void nav.offsetHeight;
+  nav.classList.remove("nav-instant");
+  // A ≤640px el control-panel deja de ser sticky (ver media query en styles.css: una
+  // franja tan alta con todo apilado en una columna taparía media pantalla si se
+  // quedara fija) — ahí solo el nav tapa el destino, sumar su altura sería de más.
+  const panelIsSticky = elements.controlPanel &&
+    getComputedStyle(elements.controlPanel).position === "sticky";
+  const panelH = panelIsSticky ? elements.controlPanel.getBoundingClientRect().height : 0;
+  document.documentElement.style.setProperty("--sticky-offset", `${Math.ceil(navH + panelH + 12)}px`);
+}
+
+// Resalta brevemente (~2s) el elemento destino de un salto, con la paleta del sitio.
+function flashTarget(el) {
+  if (!el || RM) return;
+  el.classList.remove("is-target-flash");
+  void el.offsetWidth; // reinicia la transición si se reencadenan saltos rápidos
+  el.classList.add("is-target-flash");
+  setTimeout(() => el.classList.remove("is-target-flash"), 2000);
+}
+
+// Salta suavemente a `el` sin que quede tapado por el nav+control-panel sticky
+// (scroll-margin-top, recalculado justo antes vía syncStickyOffset) y sin que el
+// colapso del hero (initScrollCompact) le pelee el scroll a mitad de vuelo.
+function jumpToElement(el, { flash = false, instant = false } = {}) {
+  if (!el) return;
+  syncStickyOffset();
+
+  // El destino siempre cae más allá del hero: lo colapsamos ya, de forma instantánea
+  // (sin la transición normal de is-scrolled — ver .is-scrolled-instant en styles.css),
+  // para que el layout quede fijo ANTES de iniciar el scroll. Si el colapso animara en
+  // paralelo al scrollIntoView, el documento encogería en pleno vuelo y el navegador
+  // terminaría el scroll pasado de largo respecto al destino.
+  if (elements.heroBand) {
+    suppressScrollCompact = true;
+    document.body.classList.add("is-scrolled", "is-scrolled-instant");
+    void document.body.offsetHeight; // fuerza el reflow con las transiciones ya anuladas
+    document.body.classList.remove("is-scrolled-instant");
+  }
+
+  const behavior = RM || instant ? "auto" : "smooth";
+  el.scrollIntoView({ behavior, block: "start" });
+
+  const release = () => { suppressScrollCompact = false; };
+  if (behavior === "auto") {
+    release();
+  } else {
+    window.addEventListener("scrollend", release, { once: true });
+    setTimeout(release, 1000); // red de seguridad si el navegador no soporta scrollend
+  }
+
+  // Cancela el salto "propietario" del scroll en cuanto el usuario toma el control:
+  // sin esto, suppressScrollCompact seguiría bloqueado hasta el timeout aunque el
+  // usuario ya esté desplazándose por su cuenta, y el nav/hero dejarían de reaccionar
+  // a su gesto (el scroll diferido "pisaría" el scroll manual — F2#6 v7 QA).
+  const cancelOnUserInput = () => {
+    release();
+    window.removeEventListener("wheel", cancelOnUserInput);
+    window.removeEventListener("touchstart", cancelOnUserInput);
+    window.removeEventListener("keydown", cancelOnUserInput);
+  };
+  window.addEventListener("wheel", cancelOnUserInput, { passive: true, once: true });
+  window.addEventListener("touchstart", cancelOnUserInput, { passive: true, once: true });
+  window.addEventListener("keydown", cancelOnUserInput, { once: true });
+
+  if (flash) flashTarget(el);
 }
 
 // Clic en una entrada del panel "Resumen del corte": fuerza el estado que agrupa
@@ -448,37 +644,8 @@ function scrollToGroup(groupKey) {
   state.page = firstIndex >= 0 ? Math.floor(firstIndex / state.pageSize) + 1 : 1;
   renderItems();
 
-  // El destino siempre cae más allá del hero: lo colapsamos ya, de forma instantánea
-  // (sin la transición normal de is-scrolled — ver .is-scrolled-instant en styles.css),
-  // para que el layout quede fijo ANTES de iniciar el scroll suave. Si el colapso
-  // animara en paralelo al scrollIntoView, el documento encogería en pleno vuelo y el
-  // navegador terminaría el scroll pasado de largo respecto al encabezado. También se
-  // suspende el listener de scroll (initScrollCompact) mientras dura el salto: sin esto,
-  // los primeros píxeles del scroll suave (todavía por debajo del umbral) lo revertirían
-  // a mitad de camino y el hero se re-expandiría animado, persiguiendo el objetivo.
-  suppressScrollCompact = true;
-  document.body.classList.add("is-scrolled", "is-scrolled-instant");
-  void document.body.offsetHeight; // fuerza el reflow con las transiciones ya anuladas
-  document.body.classList.remove("is-scrolled-instant");
-
   const heading = elements.list.querySelector(`[data-group-key="${groupKey}"]`);
-  const releaseScrollCompact = () => { suppressScrollCompact = false; };
-  if (!heading) {
-    releaseScrollCompact();
-    return;
-  }
-  // Con el hero ya colapsado de forma síncrona, la posición absoluta del encabezado
-  // (independiente del scrollY actual) queda fija: se calcula una sola vez, ya no hay
-  // nada por delante que la vuelva a mover.
-  const targetY = Math.max(0, heading.getBoundingClientRect().top + window.scrollY);
-  if (RM) {
-    window.scrollTo({ top: targetY, behavior: "auto" });
-    releaseScrollCompact();
-    return;
-  }
-  window.addEventListener("scrollend", releaseScrollCompact, { once: true });
-  setTimeout(releaseScrollCompact, 1000); // red de seguridad si el navegador no soporta scrollend
-  window.scrollTo({ top: targetY, behavior: "smooth" });
+  jumpToElement(heading, { flash: true });
 }
 
 function renderDigestPanel() {
@@ -514,10 +681,25 @@ function renderDigestPanel() {
       button.type = "button";
       button.className = "digest-entry";
       button.dataset.groupKey = group.key;
+
+      // Mejora autorizada (v7 QA): fecha + color de importancia por entrada, mismo
+      // mapeo que las tarjetas del feed (buildImportanceBar / .importance-bar).
+      const meta = document.createElement("span");
+      meta.className = "digest-meta";
+      const date = document.createElement("span");
+      date.className = "digest-date tabular";
+      date.textContent = monoDateShort(item.published_at);
+      const importance = document.createElement("span");
+      importance.className = "digest-importance";
+      importance.dataset.importance = String(Math.max(0, Math.min(5, Number(item.importance) || 0)));
+      importance.setAttribute("aria-hidden", "true");
+      importance.title = item.importance ? `Importancia ${item.importance}/5` : "Sin importancia asignada";
+      meta.append(date, importance);
+
       const organ = document.createElement("span");
       organ.className = "digest-organ";
       organ.textContent = organText;
-      button.append(organ, document.createTextNode(` — ${themeText}`));
+      button.append(meta, organ, document.createTextNode(` — ${themeText}`));
       li.append(button);
       list.append(li);
     }
@@ -562,7 +744,8 @@ function populateCard(fragment, item, indexInPage) {
   const caseChip = fragment.querySelector(".case-chip");
   const caseStatus = typeof item.case_status === "string" ? item.case_status.trim() : "";
   if (caseChip && caseStatus) {
-    caseChip.textContent = `CASO · ${caseStatus}`;
+    const label = window.Radar ? window.Radar.translateCaseStatus(caseStatus) : caseStatus;
+    caseChip.textContent = `CASO · ${label}`;
     caseChip.hidden = false;
   }
 
@@ -641,6 +824,15 @@ function renderItems() {
   const flat = groups ? flattenGroupedOrder(groups) : null;
   const ordered = flat ? flat.map((entry) => entry.item) : filtered;
   const groupByItemId = flat ? new Map(flat.map((entry) => [entry.item.id, entry.group])) : null;
+  // Índice (0-based, sobre el orden COMPLETO, no solo la página) donde cada grupo
+  // aparece por primera vez — permite distinguir, al pintar la página siguiente,
+  // si un encabezado es el inicio real del grupo o una continuación (F2#16).
+  const groupFirstIndex = new Map();
+  if (flat) {
+    flat.forEach((entry, idx) => {
+      if (!groupFirstIndex.has(entry.group.key)) groupFirstIndex.set(entry.group.key, idx);
+    });
+  }
 
   const total = ordered.length;
   const pageSize = state.pageSize;
@@ -684,7 +876,11 @@ function renderItems() {
     if (groupByItemId) {
       const group = groupByItemId.get(item.id);
       if (group && group.key !== previousGroupKey) {
-        elements.list.append(buildGroupHeading(group));
+        // Una continuación solo puede ser el primer ítem de la página: si el grupo
+        // reaparece a mitad de página es porque empieza ahí mismo (los grupos son
+        // contiguos en el orden agrupado), nunca porque "siguió" desde antes.
+        const continued = index === 0 && (groupFirstIndex.get(group.key) ?? 0) < startIdx - 1;
+        elements.list.append(buildGroupHeading(group, continued));
         previousGroupKey = group.key;
       }
     }
@@ -809,6 +1005,15 @@ function bindControls() {
     resetToFirstPage();
     renderItems();
   });
+  if (elements.todayFilter) {
+    elements.todayFilter.addEventListener("click", () => {
+      state.onlyToday = !state.onlyToday;
+      syncTodayFilterUI();
+      setHoyUrlParam(state.onlyToday);
+      resetToFirstPage();
+      renderItems();
+    });
+  }
   elements.pageSize.addEventListener("change", (event) => {
     state.pageSize = Number(event.target.value) || 24;
     resetToFirstPage();
@@ -837,6 +1042,34 @@ function bindControls() {
   }
 
   window.addEventListener("resize", placeFilterIndicator);
+}
+
+/* ---------------------------------------------------------------- nav "Fuentes" (v7 QA #8) */
+// El enlace "Fuentes" del nav apunta a index.html#fuentes. Si ya estamos en index, se
+// intercepta el click para saltar con jumpToElement (nav fijo + control-panel sticky
+// correctamente descontados vía --sticky-offset) en vez de dejar el salto nativo del
+// navegador, que no sabe nada de ese offset y deja el título tapado. Si el enlace se
+// sigue desde otra página (calendario/ficha), se deja la navegación normal: el salto
+// correcto ocurre en jumpToHashOnLoad() una vez cargado index.html.
+function initFuentesNav() {
+  document.querySelectorAll('a[href$="#fuentes"]').forEach((link) => {
+    link.addEventListener("click", (event) => {
+      const target = document.getElementById("fuentes");
+      if (!target) return;
+      event.preventDefault();
+      if (location.hash !== "#fuentes") history.pushState(null, "", "#fuentes");
+      jumpToElement(target);
+    });
+  });
+}
+
+// Si la página se cargó (o se navegó) con #fuentes ya en la URL, salta una vez que el
+// feed terminó de pintarse (antes, el destino todavía no tiene su tamaño final).
+function jumpToHashOnLoad() {
+  if (location.hash !== "#fuentes") return;
+  const target = document.getElementById("fuentes");
+  if (!target) return;
+  requestAnimationFrame(() => requestAnimationFrame(() => jumpToElement(target, { instant: true })));
 }
 
 /* ---------------------------------------------------------------- readings */
@@ -876,6 +1109,12 @@ async function loadData() {
       : null;
     state.digestGroups = digestGroups && digestGroups.length ? digestGroups : null;
 
+    // Filtro "HOY" (v7 QA): ?hoy=1 en la URL activa el filtro desde la carga (opcional,
+    // no rompe nada si el corte no trae publicaciones de hoy — ver syncTodayFilterUI).
+    try {
+      if (new URLSearchParams(window.location.search).get("hoy") === "1") state.onlyToday = true;
+    } catch (error) { /* noop */ }
+
     elements.readingDate.textContent = monoDate(state.generatedISO);
     countUp(elements.readingCount, Number(payload.total_items || state.items.length));
     updateOrganReading();
@@ -884,9 +1123,12 @@ async function loadData() {
     renderSourceFilter();
     renderIssuingBodyFilter();
     renderMonthFilter();
+    syncTodayFilterUI();
     renderDigestPanel();
     renderItems();
     renderSources();
+    syncStickyOffset();
+    jumpToHashOnLoad();
   } catch (error) {
     elements.list.replaceChildren();
     elements.empty.hidden = false;
@@ -910,17 +1152,81 @@ function initHero() {
 // Compacta el hero + control-panel al rebasar la banda (solo index; extiende el
 // patrón is-condensed de markdown.js initNav, pero exclusivo de esta página porque
 // depende de .hero-band, que no existe en ficha.html ni calendario.html).
+//
+// v7 QA (hallazgo adicional del dueño): al hacer scroll normal, colapsar el hero
+// encoge el layout de golpe MIENTRAS scrollY se queda fijo (overflow-anchor está
+// desactivado a propósito, ver comentario en <body> de styles.css), así que todo lo
+// de abajo se recoloca hacia arriba y el usuario "cae" de más — las tarjetas que
+// estaba leyendo terminan tapadas por el nav/control-panel sticky. Arreglo:
+// (a) el umbral se calcula sobre la altura EXPANDIDA fija (medida una sola vez,
+//     nunca sobre heroBand.offsetHeight ya encogido) y colapsa solo cuando el hero
+//     prácticamente salió de pantalla; (b) con histéresis, para no parpadear justo
+//     en el borde; y (c) el colapso/expansión es instantáneo (sin transición) y
+//     compensa scrollY exactamente por el delta de altura, así el contenido bajo el
+//     punto de scroll actual no se mueve ni un píxel en pantalla.
 function initScrollCompact() {
   const heroBand = elements.heroBand;
   if (!heroBand) return;
-  const threshold = () => Math.max(0, heroBand.offsetHeight - 80);
-  const onScroll = () => {
+
+  const HYSTERESIS = 32;
+  let expandedHeight = 0;
+  let collapsedHeight = 0;
+  let collapseAt = 0;
+  let expandAt = 0;
+
+  function remeasure() {
+    const wasScrolled = document.body.classList.contains("is-scrolled");
+    document.body.classList.add("is-scrolled-instant");
+    document.body.classList.remove("is-scrolled");
+    void heroBand.offsetHeight;
+    expandedHeight = heroBand.getBoundingClientRect().height;
+    document.body.classList.add("is-scrolled");
+    void heroBand.offsetHeight;
+    collapsedHeight = heroBand.getBoundingClientRect().height;
+    document.body.classList.toggle("is-scrolled", wasScrolled);
+    void heroBand.offsetHeight;
+    document.body.classList.remove("is-scrolled-instant");
+    // Colapsa justo cuando el hero terminó de salir de pantalla (no antes): así el
+    // punto que queda en la parte superior del viewport en el momento del disparo
+    // siempre cae DEBAJO del hero (ver guardia de compensación en onScroll).
+    collapseAt = Math.max(0, expandedHeight);
+    expandAt = Math.max(0, collapseAt - HYSTERESIS);
+  }
+
+  let firstRun = true;
+  function onScroll() {
     if (suppressScrollCompact) return;
-    document.body.classList.toggle("is-scrolled", window.scrollY > threshold());
-  };
+    const y = window.scrollY;
+    const current = document.body.classList.contains("is-scrolled");
+    let next = current;
+    if (!current && y > collapseAt) next = true;
+    else if (current && y < expandAt) next = false;
+    if (next === current) return;
+
+    const delta = expandedHeight - collapsedHeight;
+    // La compensación asume que el punto que hoy está arriba del viewport queda
+    // DEBAJO del hero (para poder "restarle"/"sumarle" el delta y que no se mueva
+    // en pantalla). Si y cae DENTRO del propio hero (p. ej. un salto directo a
+    // scrollY=0, o el usuario yendo al principio con Inicio/Home mientras el hero
+    // seguía colapsado), esa suposición no aplica: compensar ahí metería un salto
+    // que no existía (justo el bug que se está arreglando, en sentido inverso).
+    const safeToCompensate = next ? y >= expandedHeight : y >= collapsedHeight;
+    document.body.classList.add("is-scrolled-instant");
+    document.body.classList.toggle("is-scrolled", next);
+    void heroBand.offsetHeight;
+    document.body.classList.remove("is-scrolled-instant");
+
+    // Al colapsar el layout se encoge `delta` px (el contenido de abajo sube ese
+    // tanto); al expandir crece esa misma cantidad. Se compensa el scroll para que
+    // lo que el usuario tenía en pantalla se quede exactamente donde estaba.
+    if (!firstRun && delta && safeToCompensate) window.scrollBy(0, next ? -delta : delta);
+  }
+
+  remeasure();
   onScroll();
+  firstRun = false;
   window.addEventListener("scroll", onScroll, { passive: true });
-  window.addEventListener("resize", onScroll);
+  window.addEventListener("resize", () => { remeasure(); onScroll(); });
 }
 
 // Reveals estáticos (meridianas, encabezados de sección)
@@ -930,5 +1236,7 @@ document.querySelectorAll("[data-reveal]").forEach((el) => {
 
 initHero();
 initScrollCompact();
+initFuentesNav();
 bindControls();
 loadData();
+window.addEventListener("resize", syncStickyOffset);

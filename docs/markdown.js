@@ -11,6 +11,20 @@
     return typeof u === "string" && /^https?:\/\//i.test(u);
   }
 
+  // Contrato v4 (opcional) case_status: chip "CASO · …" en tarjeta/ficha (v7 QA #18).
+  // Traduce estados conocidos; cualquier otro valor (incluidos los textos largos de
+  // integración de paneles arbitrales que a veces llegan en este campo) se deja tal cual.
+  const CASE_STATUS_LABELS = {
+    Pending: "Pendiente",
+    Concluded: "Concluido",
+    Active: "Activo",
+    Completed: "Concluido",
+  };
+  function translateCaseStatus(status) {
+    const key = typeof status === "string" ? status.trim() : "";
+    return CASE_STATUS_LABELS[key] || key;
+  }
+
   // --- Mini-renderer markdown (extraído de detail.js v2) --------------------
   function appendInline(container, text) {
     const inlinePattern = /(\*\*([^*]+)\*\*)|\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g;
@@ -52,6 +66,15 @@
     }
   }
 
+  // Fila de tabla "| a | b | c |" -> celdas ["a","b","c"] (tolera bordes sin "|").
+  function splitTableRow(line) {
+    let trimmed = line.trim();
+    if (trimmed.startsWith("|")) trimmed = trimmed.slice(1);
+    if (trimmed.endsWith("|")) trimmed = trimmed.slice(0, -1);
+    return trimmed.split("|").map((cell) => cell.trim());
+  }
+  const tableSeparatorRe = /^\|?\s*:?-{2,}:?\s*(\|\s*:?-{2,}:?\s*)*\|?$/;
+
   function renderMarkdown(markdown, container) {
     container.replaceChildren();
     const blocks = String(markdown || "").trim().split(/\n{2,}/);
@@ -87,6 +110,45 @@
           list.append(item);
         }
         container.append(list);
+        continue;
+      }
+      if (block.startsWith(">")) {
+        const quote = document.createElement("blockquote");
+        block.split("\n").forEach((line, index) => {
+          if (index > 0) quote.append(document.createElement("br"));
+          appendInline(quote, line.replace(/^>\s?/, ""));
+        });
+        container.append(quote);
+        continue;
+      }
+      const lines = block.split("\n");
+      if (lines.length >= 2 && lines[0].trim().startsWith("|") && tableSeparatorRe.test(lines[1].trim())) {
+        const table = document.createElement("table");
+        const thead = document.createElement("thead");
+        const headRow = document.createElement("tr");
+        for (const cell of splitTableRow(lines[0])) {
+          const th = document.createElement("th");
+          appendInline(th, cell);
+          headRow.append(th);
+        }
+        thead.append(headRow);
+        table.append(thead);
+        const tbody = document.createElement("tbody");
+        for (const line of lines.slice(2)) {
+          if (!line.trim()) continue;
+          const tr = document.createElement("tr");
+          for (const cell of splitTableRow(line)) {
+            const td = document.createElement("td");
+            appendInline(td, cell);
+            tr.append(td);
+          }
+          tbody.append(tr);
+        }
+        table.append(tbody);
+        const wrap = document.createElement("div");
+        wrap.className = "md-table-wrap";
+        wrap.append(table);
+        container.append(wrap);
         continue;
       }
 
@@ -240,6 +302,7 @@
     applyTheme: applyTheme,
     currentTheme: currentTheme,
     syncThemeColorMeta: syncThemeColorMeta,
+    translateCaseStatus: translateCaseStatus,
   };
 
   if (document.readyState === "loading") {

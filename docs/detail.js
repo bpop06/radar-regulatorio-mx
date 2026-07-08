@@ -104,7 +104,8 @@ async function loadDetail() {
     // (los datos del contrato viejo no traen estos campos).
     const caseStatus = typeof item.case_status === "string" ? item.case_status.trim() : "";
     if (caseStatus && elements.case && elements.caseChip) {
-      elements.caseChip.textContent = `CASO · ${caseStatus}`;
+      const caseLabel = window.Radar ? window.Radar.translateCaseStatus(caseStatus) : caseStatus;
+      elements.caseChip.textContent = `CASO · ${caseLabel}`;
       elements.case.hidden = false;
     }
 

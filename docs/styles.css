@@ -87,6 +87,11 @@
   --font-display: "Fraunces", Georgia, "Times New Roman", serif;
   --font-text: "Libre Franklin", system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+
+  /* Cuánto tapan el nav condensado + el control-panel sticky (index). Se recalcula en
+     vivo desde app.js (syncStickyOffset) — este valor es solo el fallback antes de que
+     JS corra o en páginas sin control-panel. */
+  --sticky-offset: 180px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -178,7 +183,20 @@
 /* ---------------------------------------------------------------- RESET/BASE */
 * { box-sizing: border-box; }
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  /* Red de seguridad (v7 QA #10/#12): ningún elemento debería forzar scroll
+     horizontal de página, pero un <select>/input que se resista a encoger en
+     viewports angostos no debe poder abrir uno — ver también el reflow a una
+     columna de .control-row/.filters en el media query de 640px.
+     IMPORTANTE: esto va solo en <html> (el elemento que realmente scrollea la
+     página), NUNCA en <body> — darle overflow a <body> (aunque sea solo el eje
+     X) hace que el navegador le agregue overflow-y:auto implícito y lo vuelva
+     un contenedor de scroll espurio; position:sticky de los descendientes
+     (p. ej. .control-panel) empieza a anclarse a ESE contenedor en vez de al
+     viewport real y deja de "pegarse" al hacer scroll. */
+  overflow-x: hidden;
+}
 
 body {
   margin: 0;
@@ -268,6 +286,9 @@ html:not(.js) .meridian, .meridian.is-visible { transform: scaleX(1); }
   border-bottom-color: var(--line);
 }
 .nav.is-condensed .nav-inner { padding: 9px 0; }
+/* Usado por app.js (syncStickyOffset) para medir la altura condensada del nav de
+   forma síncrona sin animar el padding — ver comentario junto a la función. */
+.nav-instant, .nav-instant .nav-inner { transition: none !important; }
 /* Sobre banda grafito (index/calendario): nav transparente hasta scroll */
 .nav-on-band:not(.is-condensed) { color: var(--on-band); }
 .nav-on-band:not(.is-condensed) .brand-word,
@@ -491,6 +512,23 @@ body.is-scrolled .hero-band .readings {
   text-transform: uppercase; color: var(--ink-400);
 }
 
+/* Filtro "HOY" (mejora autorizada v7 QA) */
+.today-filter {
+  display: inline-flex; align-items: center; gap: 4px; align-self: flex-end;
+  padding: 7px 12px; background: transparent; border: 1px solid var(--line);
+  border-radius: var(--radius-pill); cursor: pointer;
+  font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--ink-500);
+  transition: color var(--dur-2) var(--ease-out-quint), border-color var(--dur-2) var(--ease-out-quint),
+    background var(--dur-2) var(--ease-out-quint);
+}
+.today-filter:hover:not(:disabled) { color: var(--ink-900); border-color: var(--line-strong); }
+.today-filter.active {
+  color: var(--on-accent); background: var(--accent-strong); border-color: var(--accent-strong);
+}
+.today-filter:disabled { opacity: .45; cursor: not-allowed; }
+.tf-count { color: inherit; }
+
 .source-alert {
   margin-top: var(--space-md);
   padding: 10px 14px 10px 16px;
@@ -520,7 +558,8 @@ body.is-scrolled .hero-band .readings {
 .digest-items { list-style: none; margin: 0; padding: 0; counter-reset: ditem; display: grid; gap: 2px; }
 .digest-item { counter-increment: ditem; }
 .digest-entry {
-  display: flex; gap: 8px; width: 100%; text-align: left; background: transparent; border: 0;
+  display: flex; flex-wrap: wrap; row-gap: 2px; gap: 8px; width: 100%; text-align: left;
+  background: transparent; border: 0;
   padding: 5px 4px; margin: 0 -4px; border-radius: var(--radius-xs); cursor: pointer;
   font-family: var(--font-text); font-size: 0.88rem; line-height: 1.4; color: var(--ink-700);
   transition: color var(--dur-2) var(--ease-out-quint), background var(--dur-2) var(--ease-out-quint);
@@ -533,6 +572,23 @@ body.is-scrolled .hero-band .readings {
 .digest-entry:hover, .digest-entry:focus-visible { color: var(--accent-strong); background: var(--surface-sunken); }
 .digest-entry:hover::before, .digest-entry:focus-visible::before { color: var(--accent); }
 .digest-organ { font-weight: 600; color: var(--ink-900); flex: 0 0 auto; }
+
+/* Fecha + color de importancia por entrada (mejora autorizada v7 QA). Mismo mapeo de
+   color que .importance-bar en las tarjetas del feed. */
+.digest-meta {
+  display: inline-flex; align-items: center; gap: 5px; flex: 0 0 auto;
+  font-family: var(--font-mono); font-size: 0.72rem; color: var(--ink-400);
+}
+.digest-date { white-space: nowrap; }
+.digest-importance {
+  width: 6px; height: 6px; border-radius: var(--radius-pill); flex: 0 0 auto;
+  background: var(--st-inhabil-ink);
+}
+.digest-importance[data-importance="4"], .digest-importance[data-importance="5"] { background: var(--accent); }
+.digest-importance[data-importance="3"] { background: var(--led-warn); }
+.digest-importance[data-importance="0"] {
+  background: transparent; box-shadow: inset 0 0 0 1px var(--line-strong);
+}
 
 /* ---------------------------------------------------------------- FEED */
 .feed { padding: var(--space-4xl) 0; }
@@ -555,13 +611,27 @@ body.is-scrolled .hero-band .readings {
   grid-column: 1 / -1;
   display: flex; align-items: baseline; gap: var(--space-sm);
   margin: var(--space-lg) 0 0;
-  padding-bottom: var(--space-xs); border-bottom: 1px solid var(--line-strong);
+  padding: 2px 4px var(--space-xs); margin-inline: -4px;
+  border-bottom: 1px solid var(--line-strong);
   font-family: var(--font-mono); font-weight: 500; font-size: 0.85rem; letter-spacing: 0.08em;
   text-transform: uppercase; color: var(--ink-900);
+  /* F2#6 (v7 QA): al saltar aquí desde el digest, que no quede tapado por el nav
+     fijo + el control-panel sticky (offset medido en vivo, ver syncStickyOffset). */
+  scroll-margin-top: var(--sticky-offset);
+  background-color: transparent;
+  transition: background-color 900ms var(--ease-out-quint), color 900ms var(--ease-out-quint);
 }
 .feed-group-heading:first-child { margin-top: 0; }
 .fg-count { font-family: var(--font-mono); font-size: 0.72rem; color: var(--ink-400); }
 .fg-count::before { content: "· "; }
+/* Resalte temporal (~2s) del encabezado destino de un salto desde el digest. */
+.feed-group-heading.is-target-flash {
+  background-color: var(--accent-tint);
+  color: var(--accent-ink);
+}
+
+/* F2#8 (v7 QA): el ancla del nav "Fuentes" también necesita descontar nav+control-panel. */
+#fuentes { scroll-margin-top: var(--sticky-offset); }
 
 /* ---------------------------------------------------------------- TARJETA */
 .news-card {
@@ -768,7 +838,10 @@ body.is-scrolled .hero-band .readings {
 .detail-categories { margin: 0 0 var(--space-lg); }
 
 /* markdown-body editorial */
-.markdown-body { color: var(--ink-700); font-size: 1.125rem; line-height: 1.7; counter-reset: sec; }
+/* v7 QA #14/#10: GUARDIAS.md trae URLs sueltas (sin envolver en [texto](url)), sin
+   espacios y más largas que el viewport — sin esto, esa "palabra" única fuerza
+   overflow horizontal de página completa a ~390px. */
+.markdown-body { color: var(--ink-700); font-size: 1.125rem; line-height: 1.7; counter-reset: sec; overflow-wrap: anywhere; }
 .markdown-body h1 { font-family: var(--font-display); font-weight: 420; font-size: clamp(28px, 3vw, 40px); line-height: 1.05; color: var(--ink-900); margin: 0 0 var(--space-md); font-variation-settings: "opsz" 72; }
 .markdown-body h2 {
   position: relative; counter-increment: sec;
@@ -790,6 +863,17 @@ body.is-scrolled .hero-band .readings {
 .markdown-body a .ext-arrow { margin-left: 2px; }
 .markdown-body a:hover { text-underline-offset: 4px; }
 .markdown-body blockquote { margin: var(--space-md) 0; padding-left: var(--space-md); border-left: 3px solid var(--accent); color: var(--ink-500); }
+/* Tablas (v7 QA #14, GUARDIAS.md): envueltas en su propio scroller horizontal para
+   que nunca sean ellas las que empujen el ancho de la página (móvil). */
+.md-table-wrap { margin: var(--space-md) 0; overflow-x: auto; }
+.markdown-body table { border-collapse: collapse; width: 100%; min-width: 40ch; font-size: 0.92rem; }
+.markdown-body th, .markdown-body td {
+  padding: 8px 12px; border: 1px solid var(--line); text-align: left; vertical-align: top;
+}
+.markdown-body th {
+  background: var(--surface-sunken); font-family: var(--font-mono); font-size: 0.72rem;
+  letter-spacing: 0.04em; text-transform: uppercase; color: var(--ink-500); white-space: nowrap;
+}
 
 .detail-actions { display: flex; gap: var(--space-md); margin-top: var(--space-2xl); padding-top: var(--space-lg); border-top: 1px solid var(--line); flex-wrap: wrap; }
 .btn-ghost {
@@ -911,8 +995,20 @@ body.is-scrolled .hero-band .readings {
 .legend-swatch.habil { background: var(--st-habil-mark); }
 .legend-swatch.inhabil { background: repeating-linear-gradient(45deg, transparent 0 4px, color-mix(in srgb, var(--st-inhabil-ink) 30%, transparent) 4px 5px), var(--st-inhabil-fill); }
 .legend-swatch.vacaciones { background: var(--st-vacaciones-tint); border-color: var(--st-vacaciones-mark); }
-.legend-swatch.guardia { background: var(--st-guardia-tint); border-color: var(--st-guardia-mark); }
+/* F2#17 (v7 QA): la guardia es un overlay (punto), no un status con celda propia —
+   la leyenda debe verse como la celda real: fondo neutro + puntito, no un cuadro
+   azul lleno. */
+.legend-swatch.guardia { position: relative; background: var(--surface); border-color: var(--line); }
+.legend-swatch.guardia .legend-dot {
+  position: absolute; top: 50%; left: 50%; width: 7px; height: 7px;
+  border-radius: var(--radius-pill); background: var(--st-guardia-mark);
+  transform: translate(-50%, -50%); box-shadow: 0 0 0 2px var(--surface);
+}
 .legend-swatch.today { border: 2px solid var(--accent); background: transparent; }
+.legend-guide-link {
+  margin-left: auto; color: var(--accent-strong); text-decoration: none; cursor: pointer;
+}
+.legend-guide-link:hover { text-decoration: underline; }
 .cal-grid.hl-habil .cal-day:not(.day--habil), .cal-grid.hl-inhabil .cal-day:not(.day--inhabil), .cal-grid.hl-vacaciones .cal-day:not(.day--vacaciones) { opacity: .35; }
 
 /* Panel de día */
@@ -944,6 +1040,12 @@ body.is-scrolled .hero-band .readings {
   border-radius: var(--radius-xs);
 }
 .dp-guardia-label { font-weight: 600; color: var(--st-guardia-ink); }
+.dp-guardia-link { margin: var(--space-sm) 0 0; }
+.dp-guardia-link a {
+  color: var(--accent-strong); font-family: var(--font-mono); font-size: 0.75rem;
+  letter-spacing: 0.02em; text-decoration: none;
+}
+.dp-guardia-link a:hover { text-decoration: underline; }
 .dp-note { margin: var(--space-md) 0 0; font-family: var(--font-mono); font-size: 0.72rem; color: var(--ink-400); }
 
 /* Panel como bottom-sheet en móvil */
@@ -1007,10 +1109,46 @@ html.js .cal-grid [data-cell]:not(.is-in) { opacity: 0; transform: translateY(10
 }
 @media (max-width: 640px) {
   :root { --shell: min(1200px, calc(100% - 32px)); }
-  .nav-links { gap: var(--space-md); }
+
+  /* F2#10/#12 (v7 QA): a ~390px el nav (marca + 3 enlaces + toggle de tema) no cabía
+     en una fila y el toggle terminaba empujado fuera de la vista. Se aprieta tipografía
+     y separaciones — nada se oculta, todo sigue siendo tocable. */
+  .nav-inner { gap: 8px; }
+  .nav-right { gap: var(--space-sm); }
+  .nav-links { gap: 10px; }
+  .nav-link { font-size: 0.66rem; letter-spacing: 0.03em; }
+  .brand-word { font-size: 0.78rem; }
+
   .hero h1 { max-width: none; }
-  .sort-controls { margin-left: 0; }
-  .reading { border-right: 0; margin-right: 0; padding-right: 0; }
+
+  /* F2#5 (v7 QA): la franja de lecturas del hero venía con gap:0 y cada .reading sin
+     margen/padding derecho en móvil — si dos entradas cabían en la misma fila (el
+     flex-wrap no las separaba en líneas distintas) el texto quedaba pegado, p. ej.
+     "07·JUL·2026170". Un gap real en ambos ejes evita el pegoste sea cual sea el wrap. */
+  .readings { gap: var(--space-sm) var(--space-lg); }
+  .reading { border-right: 0; margin-right: 0; padding-right: 0; flex: 1 1 40%; min-width: 0; }
+
+  /* F2#10/#12 (v7 QA): .control-row (buscador + 5 selects) no envolvía limpio a
+     ~390px — el <select>/<input> se resistían a encoger por debajo de su ancho de
+     contenido (min-width:auto por defecto en flex items) y el conjunto desbordaba
+     ~958px, forzando scroll horizontal de página. Reflow a una columna, con
+     min-width:0 para permitir que cada control se comprima al ancho disponible. */
+  .control-row { flex-direction: column; align-items: stretch; }
+  .control-row > * { width: 100%; max-width: 100%; min-width: 0; }
+  .search { flex: 1 1 auto; }
+  .select-control select { width: 100%; }
+  .filters { max-width: 100%; }
+  .sort-controls { margin-left: 0; width: 100%; }
+  .today-filter { align-self: flex-start; }
+
+  /* v7 QA (hallazgo adicional): con el buscador + 5 selects apilados en una columna,
+     el control-panel se vuelve mucho más alto. Dejarlo "sticky" a ~390px lo
+     convertiría en una franja fija que tapa buena parte de la pantalla mientras se
+     hace scroll por el feed (justo lo que el dueño pidió verificar: que el sticky no
+     tape los títulos de las tarjetas). En móvil se vuelve estático: sigue el flujo
+     normal en vez de quedarse pegado. */
+  .control-panel { position: static; }
+
   .organ-chips { display: none; }
   .organ-select { display: block; width: 100%; padding: 10px 12px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-xs); font-family: var(--font-mono); font-size: 0.82rem; }
   .cal-day { padding: 5px; }
