@@ -1171,8 +1171,6 @@ function initScrollCompact() {
   const HYSTERESIS = 32;
   let expandedHeight = 0;
   let collapsedHeight = 0;
-  let collapseAt = 0;
-  let expandAt = 0;
 
   function remeasure() {
     const wasScrolled = document.body.classList.contains("is-scrolled");
@@ -1186,11 +1184,6 @@ function initScrollCompact() {
     document.body.classList.toggle("is-scrolled", wasScrolled);
     void heroBand.offsetHeight;
     document.body.classList.remove("is-scrolled-instant");
-    // Colapsa justo cuando el hero terminó de salir de pantalla (no antes): así el
-    // punto que queda en la parte superior del viewport en el momento del disparo
-    // siempre cae DEBAJO del hero (ver guardia de compensación en onScroll).
-    collapseAt = Math.max(0, expandedHeight);
-    expandAt = Math.max(0, collapseAt - HYSTERESIS);
   }
 
   let firstRun = true;
@@ -1198,28 +1191,39 @@ function initScrollCompact() {
     if (suppressScrollCompact) return;
     const y = window.scrollY;
     const current = document.body.classList.contains("is-scrolled");
+
+    // Variable de decisión INVARIANTE bajo la transición compensada. `belowHero`
+    // es la posición de scroll medida desde el fondo del hero EN SU TAMAÑO ACTUAL
+    // (collapsedHeight si está colapsado, expandedHeight si no). Al colapsar se
+    // resta `delta` a la vez a scrollY (compensación) y a la altura del hero, así
+    // que belowHero NO cambia con la transición: la acción no mueve la variable
+    // que la dispara y la histéresis no puede oscilar.
+    //
+    // Este es el arreglo del bug crítico: la versión anterior comparaba scrollY
+    // contra umbrales fijos del marco expandido, pero la compensación con scrollBy
+    // dejaba scrollY en el marco colapsado (~delta px más chico). Ese scrollY
+    // reducido volvía a caer en la zona de "expandir", que compensaba de vuelta,
+    // colapsando y expandiendo en bucle infinito (delta≈600px ≫ histéresis 32px).
+    const heroHeight = current ? collapsedHeight : expandedHeight;
+    const belowHero = y - heroHeight;
     let next = current;
-    if (!current && y > collapseAt) next = true;
-    else if (current && y < expandAt) next = false;
+    if (!current && belowHero > 0) next = true; // el hero salió de pantalla → colapsa
+    else if (current && belowHero < -HYSTERESIS) next = false; // volviste arriba → expande
     if (next === current) return;
 
     const delta = expandedHeight - collapsedHeight;
-    // La compensación asume que el punto que hoy está arriba del viewport queda
-    // DEBAJO del hero (para poder "restarle"/"sumarle" el delta y que no se mueva
-    // en pantalla). Si y cae DENTRO del propio hero (p. ej. un salto directo a
-    // scrollY=0, o el usuario yendo al principio con Inicio/Home mientras el hero
-    // seguía colapsado), esa suposición no aplica: compensar ahí metería un salto
-    // que no existía (justo el bug que se está arreglando, en sentido inverso).
-    const safeToCompensate = next ? y >= expandedHeight : y >= collapsedHeight;
     document.body.classList.add("is-scrolled-instant");
     document.body.classList.toggle("is-scrolled", next);
     void heroBand.offsetHeight;
     document.body.classList.remove("is-scrolled-instant");
 
-    // Al colapsar el layout se encoge `delta` px (el contenido de abajo sube ese
-    // tanto); al expandir crece esa misma cantidad. Se compensa el scroll para que
-    // lo que el usuario tenía en pantalla se quede exactamente donde estaba.
-    if (!firstRun && delta && safeToCompensate) window.scrollBy(0, next ? -delta : delta);
+    // Se compensa el scroll SOLO al colapsar: ahí el punto que el usuario tiene en
+    // pantalla queda debajo del hero (belowHero>0 ⇒ y>expandedHeight≥delta, así que
+    // scrollBy(-delta) nunca choca contra 0) y restar el delta lo deja clavado en
+    // su sitio. Al expandir NO se compensa: solo ocurre cerca del tope (belowHero<
+    // -HYSTERESIS ⇒ y<collapsedHeight), donde el usuario está yendo al inicio y
+    // compensar lo empujaría de vuelta hacia abajo, lejos del tope que busca.
+    if (!firstRun && next && delta) window.scrollBy(0, -delta);
   }
 
   remeasure();
