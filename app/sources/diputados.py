@@ -3,7 +3,7 @@ from __future__ import annotations
 import hashlib
 import re
 from datetime import date
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlparse
 
 from bs4 import BeautifulSoup, Tag
 
@@ -19,6 +19,53 @@ from app.text import clean_text, parse_date
 # de la Comisión Permanente).
 ANEXO_FILENAME_RE = re.compile(r"(\d{4})(\d{2})(\d{2})-[^./]+\.pdf$", re.IGNORECASE)
 ANEXO_LABEL_RE = re.compile(r"anexo\s+(\S+)", re.IGNORECASE)
+
+# `#Indice` enlaza cada asunto con un ancla dentro de LA MISMA página
+# `gp_hoy.html` ("#Iniciativa5"). Esa página siempre muestra la gaceta del
+# día en curso: en cuanto hay una nueva sesión, el enlace publicado ayer
+# apunta a la edición de hoy (bug #11: "la fuente se pudre a diario").
+#
+# Cada edición también se archiva de forma permanente en:
+#   https://gaceta.diputados.gob.mx/Gaceta/<legislatura>/<AAAA>/<mes3>/<AAAAMMDD>.html
+# (confirmado en vivo el 2026-07-07: /Gaceta/66/2026/jul/20260706.html y
+# .../20260707.html responden 200 y conservan las mismas anclas "NombreN"
+# que la edición de ese día en gp_hoy.html). Esa URL fechada es estable
+# porque el archivo no se regenera; el ancla original sobrevive porque
+# apunta al mismo documento archivado, sólo que bajo una ruta permanente en
+# vez de la portada "de hoy".
+#
+# La legislatura no viene expuesta en el índice (sólo en los anexos, que ya
+# resuelven su propia fecha/legislatura desde el nombre del PDF); se fija
+# aquí como constante. LXVI Legislatura cubre del 1/set/2024 al 31/ago/2027:
+# actualizar a "67" a partir de esa fecha.
+GACETA_LEGISLATURA = "66"
+GACETA_PERMANENT_BASE = "https://gaceta.diputados.gob.mx/Gaceta"
+_SPANISH_MONTH_ABBR = {
+    1: "ene",
+    2: "feb",
+    3: "mar",
+    4: "abr",
+    5: "may",
+    6: "jun",
+    7: "jul",
+    8: "ago",
+    9: "sep",
+    10: "oct",
+    11: "nov",
+    12: "dic",
+}
+
+
+def permanent_gaceta_url(published_at: date, fragment: str = "") -> str:
+    """URL permanente y fechada de la Gaceta Parlamentaria del día, con el
+    ancla del asunto si se conoce (queda sin ancla si no se pudo determinar,
+    en vez de arrastrar la ruta rota de `gp_hoy.html`)."""
+    month = _SPANISH_MONTH_ABBR[published_at.month]
+    base = (
+        f"{GACETA_PERMANENT_BASE}/{GACETA_LEGISLATURA}/{published_at.year}/"
+        f"{month}/{published_at:%Y%m%d}.html"
+    )
+    return f"{base}#{fragment}" if fragment else base
 
 
 class DiputadosCollector(Collector):
@@ -69,7 +116,12 @@ class DiputadosCollector(Collector):
             title = clean_text(anchor.get_text(" ", strip=True))
             if len(title) < 20:
                 continue
-            url = urljoin(cls.url, anchor["href"])
+            # URL permanente fechada en vez de "gp_hoy.html#ancla" (que deja
+            # de resolver el asunto en cuanto la portada avanza al día
+            # siguiente): se conserva el ancla original si el enlace la trae,
+            # y se omite si no (en vez de arrastrar una ruta rota).
+            fragment = urlparse(anchor["href"]).fragment
+            url = permanent_gaceta_url(published_at, fragment)
             candidates.append(
                 Candidate(
                     source=cls.source,

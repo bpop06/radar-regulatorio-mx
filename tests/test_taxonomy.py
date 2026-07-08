@@ -148,6 +148,41 @@ def test_enrich_exposes_primary_categories_and_keeps_fine_in_topic_tags():
         assert fine in taxonomy.topic_tags
 
 
+def test_classify_organ_resolves_imss_fgr_issste_inpi_and_semar():
+    # Regresión #19: estos órganos caían al fallback en mayúsculas crudas
+    # (p.ej. "INSTITUTO MEXICANO DEL SEGURO SOCIAL") en vez de resolver al
+    # catálogo canónico.
+    assert classify_organ("Gob.mx APF", "IMSS", "") == (
+        "Instituto Mexicano del Seguro Social",
+        "Organismo descentralizado",
+    )
+    assert classify_organ(
+        "DOF", "FISCALIA GENERAL DE LA REPUBLICA", ""
+    ) == (
+        "Fiscalía General de la República",
+        "Organismo autónomo",
+    )
+    assert classify_organ("Gob.mx APF", "ISSSTE", "")[0] == (
+        "Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado"
+    )
+    assert classify_organ("Gob.mx APF", "INPI", "")[0] == (
+        "Instituto Nacional de los Pueblos Indígenas"
+    )
+    assert classify_organ("Gob.mx APF", "Secretaría de Marina", "") == (
+        "Secretaría de Marina",
+        "Ejecutivo federal",
+    )
+    assert short_organ_name("Gob.mx APF", "Secretaría de Marina", "") == "Semar"
+
+
+def test_classify_organ_prefers_secretaria_over_poder_ejecutivo_prefix():
+    # El encabezado del DOF suele traer "PODER EJECUTIVO <SECRETARIA...>";
+    # el alias genérico de Presidencia ("poder ejecutivo") no debe ganarle
+    # a la secretaría específica que sí está en el catálogo.
+    organ, _ = classify_organ("DOF", "PODER EJECUTIVO SECRETARIA DE MARINA", "")
+    assert organ == "Secretaría de Marina"
+
+
 def test_alias_matching_requires_word_boundaries():
     # "hIMFg" y "cONUee" contienen los alias cortos "imf"/"onu" como
     # subcadena, pero NO son el FMI ni la ONU: el matching debe exigir

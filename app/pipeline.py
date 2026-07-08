@@ -129,7 +129,10 @@ async def collect(
             summary=summary.summary,
             official_title=candidate.official_title,
             source=candidate.source,
-            authority=candidate.authority,
+            # Línea meta y fallback muestran el órgano canónico, no la
+            # autoridad cruda del recolector (bug #19: "IMSS" o textos en
+            # mayúsculas sin resolver contra el catálogo de app.taxonomy).
+            authority=taxonomy.issuing_body,
             document_type=candidate.document_type,
             published_at=published_at,
             categories=taxonomy.primary_categories,

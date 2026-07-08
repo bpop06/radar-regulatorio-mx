@@ -104,6 +104,30 @@ def test_apply_editorial_updates_fields_and_marks_ai_generated(tmp_path):
     assert result["published_at"] == "2026-07-03"
 
 
+def test_apply_editorial_updates_optional_importance(tmp_path):
+    # Bug #15: la curaduría editorial necesita poder subir/bajar la
+    # importancia (1-5) de un ítem ya publicado sin tocar el resto.
+    edits_file, pubs = write_files(tmp_path, [edit(importance=5)])
+
+    apply_editorial(edits_file, pubs)
+
+    result = json.loads(pubs.read_text(encoding="utf-8"))["items"][0]
+    assert result["importance"] == 5
+
+
+def test_apply_editorial_syncs_importance_to_local_database(tmp_path):
+    edits_file, pubs = write_files(tmp_path, [edit(importance=5)])
+    db = tmp_path / "radar.sqlite3"
+    with Storage(db) as storage:
+        storage.save_run(publications_payload())
+
+    apply_editorial(edits_file, pubs, db)
+
+    with Storage(db) as storage:
+        exported = storage.export_payload()
+    assert exported["items"][0]["importance"] == 5
+
+
 def test_apply_editorial_updates_local_database(tmp_path):
     edits_file, pubs = write_files(tmp_path, [edit()])
     db = tmp_path / "radar.sqlite3"
@@ -130,6 +154,9 @@ def test_apply_editorial_updates_local_database(tmp_path):
         (edit(relevance_score=99), "no editables"),
         (edit(case_facts="   "), "vacío"),
         (edit(case_facts="## Encabezado no permitido"), "encabezados"),
+        (edit(importance=6), "entre 1 y 5"),
+        (edit(importance=0), "entre 1 y 5"),
+        (edit(importance="5"), "entre 1 y 5"),
     ],
 )
 def test_apply_editorial_rejects_invalid_edits(tmp_path, bad_edit, message_part):
@@ -140,6 +167,24 @@ def test_apply_editorial_rejects_invalid_edits(tmp_path, bad_edit, message_part)
         apply_editorial(edits_file, pubs)
 
     assert pubs.read_text(encoding="utf-8") == original
+
+
+def test_apply_editorial_recomposes_meta_line_with_canonical_organ(tmp_path):
+    # Bug #19: la línea meta de la ficha debe mostrar el órgano canónico
+    # (issuing_body), no la autoridad cruda del recolector.
+    payload = publications_payload()
+    payload["items"][0]["authority"] = "SECRETARIA DE ECONOMIA"
+    payload["items"][0]["issuing_body"] = "Secretaría de Economía"
+    pubs = tmp_path / "publications.json"
+    pubs.write_text(json.dumps(payload, ensure_ascii=False), encoding="utf-8")
+    edits_file = tmp_path / "edits.json"
+    edits_file.write_text(json.dumps({"items": [edit()]}, ensure_ascii=False), encoding="utf-8")
+
+    apply_editorial(edits_file, pubs)
+
+    markdown = json.loads(pubs.read_text(encoding="utf-8"))["items"][0]["detail_markdown"]
+    assert "**Órgano:** Secretaría de Economía" in markdown
+    assert "SECRETARIA DE ECONOMIA" not in markdown
 
 
 def test_apply_editorial_is_all_or_nothing(tmp_path):

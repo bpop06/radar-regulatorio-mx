@@ -61,6 +61,42 @@ class DofCollector(Collector):
         return candidates
 
 
+# El sumario del DOF describe el documento como prosa libre (a veces
+# arrancando con el propio órgano emisor, p.ej. "FISCALIA GENERAL DE LA
+# REPUBLICA.- Convocatoria..."), no con un tipo documental limpio. Tomar sus
+# primeras palabras a secas arrastra basura: números de oficio/acuerdo
+# ("Oficio 500-05-00-00-00-2026-16021 Mediante...") y conectores sueltos que
+# quedan colgando al recortar a un número fijo de palabras ("Acuerdo Por
+# El...", "Instituto Mexicano De..."). Se corta antes de la primera palabra
+# con un dígito (el número de acto empieza ahí) y se eliminan los conectores
+# finales que puedan quedar colgando tras el recorte.
+_DOCUMENT_TYPE_WORDS = 3
+_HAS_DIGIT_RE = re.compile(r"\d")
+_TRAILING_CONNECTORS = {
+    "de",
+    "del",
+    "por",
+    "el",
+    "la",
+    "los",
+    "que",
+    "con",
+    "mediante",
+    "se",
+    "cual",
+}
+
+
 def _document_type(title: str) -> str:
-    first_words = clean_text(title).split()[:3]
-    return " ".join(first_words).title()
+    candidate_words = clean_text(title).split()[:_DOCUMENT_TYPE_WORDS]
+
+    words: list[str] = []
+    for word in candidate_words:
+        if _HAS_DIGIT_RE.search(word):
+            break
+        words.append(word)
+
+    while words and words[-1].strip(".,;:").lower() in _TRAILING_CONNECTORS:
+        words.pop()
+
+    return " ".join(words).title()
