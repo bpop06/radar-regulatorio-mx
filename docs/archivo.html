@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Archivo consultable de publicaciones oficiales seleccionadas por Radar Regulatorio MX.">
+    <title>Archivo | Radar Regulatorio MX</title>
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#F4EDDD">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#152630">
+    <script>
+      (function () {
+        document.documentElement.classList.add("js");
+        try {
+          var theme = localStorage.getItem("radar-theme");
+          if (theme === "dark" || theme === "light") document.documentElement.dataset.theme = theme;
+        } catch (error) {}
+      })();
+    </script>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preload" href="fonts/fraunces-variable-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/paper-card-deckled.webp" as="image">
+    <link rel="preload" href="assets/watercolor-paper.png" as="image">
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="archive.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Saltar al contenido</a>
+    <header class="site-header">
+      <nav class="nav shell" aria-label="Navegación principal">
+        <a class="brand" href="index.html" aria-label="Radar Regulatorio MX, Hoy">
+          <span class="brand-signal" aria-hidden="true"><span></span></span>
+          <span class="brand-copy"><strong>Radar MX</strong><small>Inteligencia regulatoria</small></span>
+        </a>
+        <div class="nav-actions">
+          <div class="nav-links">
+            <a class="nav-link" data-page="today" href="index.html">Hoy</a>
+            <a class="nav-link" data-page="archive" href="archivo.html">Archivo</a>
+            <a class="nav-link" data-page="calendar" href="calendario.html">Calendario</a>
+          </div>
+          <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Cambiar tema"><span class="theme-glyph" aria-hidden="true">◐</span></button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main" class="archive-main shell">
+      <header class="page-intro archive-intro">
+        <div>
+          <p class="page-context">Consulta documental</p>
+          <h1>Archivo regulatorio</h1>
+        </div>
+        <p>Busca el acto, la autoridad o la materia. La relevancia ordena; la fuente oficial decide.</p>
+      </header>
+
+      <section class="archive-controls" aria-labelledby="filters-heading">
+        <h2 class="sr-only" id="filters-heading">Filtros del archivo</h2>
+        <label class="archive-search">
+          <span>Buscar</span>
+          <input id="search" type="search" placeholder="Ley, autoridad, tema o palabra clave" autocomplete="off">
+        </label>
+        <details id="filter-drawer" class="filter-drawer" open>
+          <summary>Filtros de búsqueda <span aria-hidden="true">＋</span></summary>
+          <div class="filter-grid">
+            <label><span>Periodo</span><select id="date-range"><option value="all">Todo el corte</option><option value="7">Últimos 7 días</option><option value="15">Últimos 15 días</option></select></label>
+            <label><span>Materia</span><select id="category-filter"><option value="Todas">Todas</option></select></label>
+            <label><span>Órgano</span><select id="organ-filter"><option value="Todas">Todos</option></select></label>
+            <label><span>Fuente</span><select id="source-filter"><option value="Todas">Todas</option></select></label>
+            <label><span>Jurisdicción</span><select id="jurisdiction-filter"><option value="Todas">Todas</option><option value="nacional">Nacional</option><option value="internacional">Internacional</option></select></label>
+            <label><span>Orden</span><select id="sort"><option value="date">Más recientes</option><option value="importance">Mayor importancia</option><option value="relevance">Mayor relevancia</option></select></label>
+          </div>
+        </details>
+        <div class="active-query" id="active-query" hidden>
+          <p id="active-query-copy"></p>
+          <button id="clear-filters" type="button">Limpiar filtros</button>
+        </div>
+      </section>
+
+      <section class="archive-results" aria-labelledby="results-heading">
+        <div class="section-heading-row archive-results-heading">
+          <div>
+            <p class="section-kicker">Resultado</p>
+            <h2 id="results-heading">Publicaciones seleccionadas</h2>
+          </div>
+          <p id="result-count" class="section-count" aria-live="polite">Cargando…</p>
+        </div>
+        <ol id="archive-list" class="archive-list">
+          <li class="archive-loading"><span></span><span></span><span></span></li>
+        </ol>
+        <section id="archive-empty" class="archive-empty" hidden>
+          <h3>No encontramos publicaciones con esos criterios.</h3>
+          <p>Prueba una búsqueda más amplia o limpia los filtros.</p>
+        </section>
+        <nav id="pagination" class="pagination" aria-label="Páginas del archivo" hidden>
+          <button id="page-prev" type="button">Anterior</button>
+          <p id="page-indicator" aria-live="polite">Página 1 de 1</p>
+          <button id="page-next" type="button">Siguiente</button>
+        </nav>
+      </section>
+
+      <section id="fuentes" class="archive-sources" aria-labelledby="sources-heading">
+        <div>
+          <p class="section-kicker">Cobertura</p>
+          <h2 id="sources-heading">Fuentes del corte</h2>
+        </div>
+        <div id="source-status" class="source-status-list"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-inner">
+        <p><strong>Radar Regulatorio MX</strong><br>Archivo del corte publicado.</p>
+        <p>Información pública sintetizada. No constituye asesoría legal.</p>
+      </div>
+    </footer>
+  </body>
+</html>

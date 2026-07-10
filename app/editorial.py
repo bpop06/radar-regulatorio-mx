@@ -5,6 +5,7 @@ import re
 from pathlib import Path
 from typing import Any
 
+from app.edition import prepare_payload, write_site_artifacts
 from app.markdown import build_detail_markdown
 from app.storage import Storage
 from app.text import words
@@ -17,6 +18,7 @@ from app.validation import (
     WHAT_PUBLISHED_SECTION,
     card_section_text,
     validate_digest,
+    validate_edition,
     validate_publications_payload,
 )
 
@@ -44,6 +46,7 @@ def apply_editorial(
     edits_path: Path,
     publications_path: Path,
     database_path: Path | None = None,
+    edition_path: Path | None = None,
 ) -> int:
     """Aplica ediciones editoriales al JSON publicado (y a la última corrida
     de la base local si existe).
@@ -57,11 +60,15 @@ def apply_editorial(
     edición o el digest son inválidos, no se aplica nada.
     """
     edits_payload = json.loads(edits_path.read_text(encoding="utf-8"))
-    edits = edits_payload.get("items")
-    if not isinstance(edits, list) or not edits:
-        raise EditorialError("el archivo de ediciones debe traer una lista 'items' no vacía")
+    edits = edits_payload.get("items", [])
+    if not isinstance(edits, list):
+        raise EditorialError("el archivo de ediciones debe traer una lista 'items'")
+    if not edits and edits_payload.get("digest") is None and edits_payload.get("edition") is None:
+        raise EditorialError("el archivo de ediciones no contiene cambios")
 
-    payload = json.loads(publications_path.read_text(encoding="utf-8"))
+    payload = prepare_payload(
+        json.loads(publications_path.read_text(encoding="utf-8")),
+    )
     by_id = {item["id"]: item for item in payload.get("items", [])}
 
     validated: dict[str, dict[str, Any]] = {}
@@ -79,6 +86,16 @@ def apply_editorial(
         digest_errors = validate_digest(digest, set(by_id))
         if digest_errors:
             raise EditorialError("digest inválido: " + "; ".join(digest_errors[:5]))
+
+    edition = edits_payload.get("edition")
+    if edition is not None:
+        edition_errors = validate_edition(
+            edition,
+            list(by_id.values()),
+            payload.get("sources", []),
+        )
+        if edition_errors:
+            raise EditorialError("edición inválida: " + "; ".join(edition_errors[:5]))
 
     for edit_id, fields in validated.items():
         item = by_id[edit_id]
@@ -111,6 +128,8 @@ def apply_editorial(
 
     if digest is not None:
         payload["digest"] = digest
+    if edition is not None:
+        payload["edition"] = edition
 
     # Validar el payload fusionado EN MEMORIA antes de escribir: un fallo aquí
     # no debe dejar el archivo publicado a medio modificar.
@@ -120,10 +139,7 @@ def apply_editorial(
             "el payload resultante no pasa el contrato: " + "; ".join(report.errors[:5])
         )
 
-    publications_path.write_text(
-        json.dumps(payload, ensure_ascii=False, indent=2) + "\n",
-        encoding="utf-8",
-    )
+    write_site_artifacts(payload, publications_path, edition_path)
 
     if database_path is not None and Path(database_path).exists():
         _apply_to_database(Path(database_path), validated)

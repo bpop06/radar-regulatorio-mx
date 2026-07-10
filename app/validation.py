@@ -5,6 +5,14 @@ from dataclasses import dataclass, field
 from datetime import datetime
 from typing import Any
 
+from app.edition import (
+    EDITION_KEYS,
+    MAX_SIGNALS,
+    SCHEMA_VERSION,
+    SIGNAL_REFERENCE_KEYS,
+    WHY_MAX_WORDS,
+    WHY_MIN_WORDS,
+)
 from app.text import words
 
 REQUIRED_ITEM_FIELDS = {
@@ -157,6 +165,186 @@ def validate_digest(digest: Any, existing_ids: set[str]) -> list[str]:
     return errors
 
 
+def validate_edition(
+    edition: Any,
+    items: list[Any],
+    sources: list[Any],
+) -> list[str]:
+    """Valida la selección finita de la portada y su relación con el corte."""
+    errors: list[str] = []
+    if not isinstance(edition, dict):
+        return ["edition must be an object"]
+
+    unknown = set(edition) - EDITION_KEYS
+    if unknown:
+        errors.append(f"edition has unknown keys: {sorted(unknown)}")
+
+    edition_date = edition.get("edition_date")
+    parsed_date = None
+    if not isinstance(edition_date, str):
+        errors.append("edition.edition_date must be an ISO date")
+    else:
+        try:
+            parsed_date = datetime.fromisoformat(edition_date).date()
+        except ValueError:
+            errors.append("edition.edition_date must be an ISO date")
+
+    state = edition.get("state")
+    if state not in {"ready", "empty"}:
+        errors.append("edition.state must be ready or empty")
+
+    item_records = [item for item in items if isinstance(item, dict)]
+    by_id = {
+        item.get("id"): item
+        for item in item_records
+        if isinstance(item.get("id"), str)
+    }
+    today_items = (
+        [item for item in item_records if item.get("published_at") == edition_date]
+        if isinstance(edition_date, str)
+        else []
+    )
+    total_today = edition.get("total_today")
+    if not isinstance(total_today, int) or isinstance(total_today, bool):
+        errors.append("edition.total_today must be an integer")
+    elif total_today != len(today_items):
+        errors.append(
+            f"edition.total_today is {total_today}, but {len(today_items)} items match the date"
+        )
+
+    available_dates = sorted(
+        {
+            item.get("published_at")
+            for item in item_records
+            if isinstance(item.get("published_at"), str)
+        },
+        reverse=True,
+    )
+    last_available = edition.get("last_available_date")
+    expected_last = available_dates[0] if available_dates else None
+    if last_available != expected_last:
+        errors.append(
+            "edition.last_available_date must match the latest publication date "
+            f"({expected_last!r})"
+        )
+
+    errors.extend(_validate_coverage(edition.get("coverage"), sources))
+
+    signals = edition.get("signals")
+    if not isinstance(signals, list):
+        errors.append("edition.signals must be a list")
+        signals = []
+    elif len(signals) > MAX_SIGNALS:
+        errors.append(f"edition.signals must contain at most {MAX_SIGNALS} items")
+
+    seen_ids: set[str] = set()
+    ranks: list[int] = []
+    for index, signal in enumerate(signals):
+        prefix = f"edition.signals[{index}]"
+        if not isinstance(signal, dict):
+            errors.append(f"{prefix} must be an object")
+            continue
+        unknown_signal = set(signal) - SIGNAL_REFERENCE_KEYS
+        if unknown_signal:
+            errors.append(f"{prefix} has unknown keys: {sorted(unknown_signal)}")
+
+        item_id = signal.get("id")
+        item = by_id.get(item_id)
+        if not isinstance(item_id, str) or item is None:
+            errors.append(f"{prefix}.id does not exist in publications ({item_id!r})")
+        elif item_id in seen_ids:
+            errors.append(f"{prefix}.id is duplicated in the edition ({item_id})")
+        else:
+            seen_ids.add(item_id)
+            if item.get("published_at") != edition_date:
+                errors.append(f"{prefix}.id does not belong to edition.edition_date")
+
+        rank = signal.get("rank")
+        if not isinstance(rank, int) or isinstance(rank, bool):
+            errors.append(f"{prefix}.rank must be an integer")
+        else:
+            ranks.append(rank)
+
+        reason = signal.get("why_it_matters")
+        if not isinstance(reason, str) or not reason.strip():
+            errors.append(f"{prefix}.why_it_matters must be a non-empty string")
+        else:
+            count = len(words(reason))
+            if not WHY_MIN_WORDS <= count <= WHY_MAX_WORDS:
+                errors.append(
+                    f"{prefix}.why_it_matters has {count} words "
+                    f"(must be {WHY_MIN_WORDS}-{WHY_MAX_WORDS})"
+                )
+            if ACT_NUMBER_RE.search(reason):
+                errors.append(f"{prefix}.why_it_matters must not contain an act number")
+
+    if ranks and sorted(ranks) != list(range(1, len(signals) + 1)):
+        errors.append("edition signal ranks must be contiguous starting at 1")
+
+    lead_id = edition.get("lead_id")
+    ranked_lead = next(
+        (
+            signal.get("id")
+            for signal in signals
+            if isinstance(signal, dict) and signal.get("rank") == 1
+        ),
+        None,
+    )
+    if state == "ready":
+        if not today_items:
+            errors.append("edition.state ready requires at least one item from the edition date")
+        if not signals:
+            errors.append("edition.state ready requires at least one signal")
+        if lead_id != ranked_lead or not isinstance(lead_id, str):
+            errors.append("edition.lead_id must match the rank 1 signal")
+    if state == "empty":
+        if today_items:
+            errors.append("edition.state empty requires zero items from the edition date")
+        if signals:
+            errors.append("edition.state empty requires an empty signals list")
+        if lead_id is not None:
+            errors.append("edition.state empty requires a null lead_id")
+
+    if parsed_date is None and isinstance(edition_date, str):
+        errors.append("edition.edition_date could not be parsed")
+    return errors
+
+
+def _validate_coverage(coverage: Any, sources: list[Any]) -> list[str]:
+    if not isinstance(coverage, dict):
+        return ["edition.coverage must be an object"]
+    errors: list[str] = []
+    unknown = set(coverage) - {"state", "ok", "failed"}
+    if unknown:
+        errors.append(f"edition.coverage has unknown keys: {sorted(unknown)}")
+
+    source_records = [source for source in sources if isinstance(source, dict)]
+    expected_failed = [
+        str(source.get("source", "Fuente desconocida"))
+        for source in source_records
+        if source.get("status") == "error"
+    ]
+    expected_ok = sum(source.get("status") == "ok" for source in source_records)
+    failed = coverage.get("failed")
+    if not isinstance(failed, list) or any(
+        not isinstance(source, str) or not source.strip() for source in failed
+    ):
+        errors.append("edition.coverage.failed must be a list of source names")
+    elif failed != expected_failed:
+        errors.append("edition.coverage.failed must match sources in error")
+
+    ok_count = coverage.get("ok")
+    if not isinstance(ok_count, int) or isinstance(ok_count, bool):
+        errors.append("edition.coverage.ok must be an integer")
+    elif ok_count != expected_ok:
+        errors.append("edition.coverage.ok must match sources in ok state")
+
+    expected_state = "partial" if expected_failed else "complete"
+    if coverage.get("state") != expected_state:
+        errors.append(f"edition.coverage.state must be {expected_state}")
+    return errors
+
+
 @dataclass(frozen=True)
 class ValidationReport:
     errors: list[str] = field(default_factory=list)
@@ -184,6 +372,18 @@ def validate_publications_payload(payload: dict[str, Any]) -> ValidationReport:
         for index, item in enumerate(items):
             _validate_item(index, item, errors, warnings)
 
+    edition = payload.get("edition")
+    if edition is not None:
+        errors.extend(
+            validate_edition(
+                edition,
+                items if isinstance(items, list) else [],
+                sources if isinstance(sources, list) else [],
+            )
+        )
+    elif payload.get("schema_version") == SCHEMA_VERSION:
+        errors.append("schema_version 7 requires an edition object")
+
     digest = payload.get("digest")
     if digest is not None:
         existing_ids = {
@@ -205,6 +405,9 @@ def validate_publications_payload(payload: dict[str, Any]) -> ValidationReport:
 
 
 def _validate_top_level(payload: dict[str, Any], errors: list[str]) -> None:
+    schema_version = payload.get("schema_version")
+    if schema_version is not None and schema_version != SCHEMA_VERSION:
+        errors.append(f"schema_version must be {SCHEMA_VERSION}")
     if not isinstance(payload.get("generated_at"), str):
         errors.append("generated_at must be a string")
     else:

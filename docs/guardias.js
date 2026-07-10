@@ -1,33 +1,22 @@
-/* Página "Guardias y plazos" (v7 QA #14) — carga y renderiza docs/GUARDIAS.md con el
- * mini-renderer compartido (window.Radar.renderMarkdown, ver markdown.js). Sin datos
- * dinámicos: es contenido editorial estático. El .md vive junto a este archivo en
- * docs/, así que el fetch es relativo a esta misma carpeta. */
-(function () {
-  "use strict";
+import { renderMarkdown } from "./markdown.js";
 
-  const host = document.querySelector("#guardias-content");
+const host = document.querySelector("#guardias-content");
+
+async function init() {
   if (!host) return;
+  try {
+    const response = await fetch("GUARDIAS.md", { cache: "no-store" });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    renderMarkdown(await response.text(), host);
+    const duplicateHeading = host.querySelector("h1");
+    if (duplicateHeading) duplicateHeading.remove();
+  } catch (error) {
+    host.replaceChildren();
+    const message = document.createElement("p");
+    message.textContent = "No fue posible cargar la guía de guardias y plazos.";
+    host.append(message);
+    console.error(error);
+  }
+}
 
-  fetch("GUARDIAS.md", { cache: "no-store" })
-    .then((response) => {
-      if (!response.ok) throw new Error(`HTTP ${response.status}`);
-      return response.text();
-    })
-    .then((markdown) => {
-      if (window.Radar) {
-        window.Radar.renderMarkdown(markdown, host);
-      } else {
-        host.replaceChildren();
-        const pre = document.createElement("pre");
-        pre.textContent = markdown;
-        host.append(pre);
-      }
-    })
-    .catch((error) => {
-      host.replaceChildren();
-      const p = document.createElement("p");
-      p.textContent = "No fue posible cargar la guía de guardias y plazos.";
-      host.append(p);
-      console.error(error);
-    });
-})();
+init();

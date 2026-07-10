@@ -5,12 +5,12 @@ import json
 import ssl
 from datetime import UTC, date, datetime, timedelta
 from pathlib import Path
-from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 
 import httpx
 import truststore
 
 from app.config import Settings
+from app.edition import edition_date_from_generated_at, prepare_payload
 from app.markdown import build_detail_markdown, detail_url
 from app.models import Candidate, Publication, SourceResult
 from app.relevance import classify, is_relevant
@@ -178,13 +178,14 @@ async def collect(
             )
         )
 
-    return {
+    payload: dict[str, object] = {
         "generated_at": datetime.now(UTC).isoformat(),
         "lookback_days": lookback,
         "total_items": len(publications),
         "sources": [result.status_dict() for result in results],
         "items": [publication.to_dict() for publication in publications],
     }
+    return prepare_payload(payload, settings.local_timezone)
 
 
 async def _collect_source(
@@ -234,7 +235,4 @@ def _deduplicate(candidates) -> list[Candidate]:
 
 
 def _local_today(timezone_name: str) -> date:
-    try:
-        return datetime.now(ZoneInfo(timezone_name)).date()
-    except ZoneInfoNotFoundError:
-        return date.today()
+    return edition_date_from_generated_at(datetime.now(UTC).isoformat(), timezone_name)

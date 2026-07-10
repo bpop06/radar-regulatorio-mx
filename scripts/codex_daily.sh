@@ -7,7 +7,7 @@ set -euo pipefail
 #
 # Arquitectura vigente: la Mac SOLO recolecta y publica datos extractivos de
 # forma determinista (collect_daily.sh commitea únicamente
-# docs/data/publications.json). La capa editorial y la auditoría las hace la
+# docs/data/publications.json y su edición ligera docs/data/edition.json). La capa editorial y la auditoría las hace la
 # rutina diaria de Claude en la nube (docs/EDITORIAL_CLOUD.md) — aquí ya no
 # corre ningún agente ni se usa ninguna API.
 

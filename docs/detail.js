@@ -1,142 +1,156 @@
+import {
+  formatDate,
+  getSections,
+  isSafeHttpUrl,
+  renderMarkdown,
+  renderSection,
+  translateCaseStatus,
+} from "./markdown.js";
+
 const elements = {
-  breadcrumb: document.querySelector("#bc-meta"),
+  back: document.querySelector("#detail-back"),
+  breadcrumb: document.querySelector("#detail-breadcrumb"),
   title: document.querySelector("#detail-title"),
+  summary: document.querySelector("#detail-summary"),
+  why: document.querySelector("#detail-why"),
+  whyCopy: document.querySelector("#detail-why-copy"),
+  content: document.querySelector("#detail-content"),
+  date: document.querySelector("#detail-date"),
   organ: document.querySelector("#detail-organ"),
-  signal: document.querySelector("#detail-signal"),
+  source: document.querySelector("#detail-source"),
   importance: document.querySelector("#detail-importance"),
+  caseRow: document.querySelector("#detail-case-row"),
   case: document.querySelector("#detail-case"),
-  caseChip: document.querySelector("#detail-case .case-chip"),
+  partiesRow: document.querySelector("#detail-parties-row"),
   parties: document.querySelector("#detail-parties"),
   categories: document.querySelector("#detail-categories"),
-  content: document.querySelector("#detail-content"),
   officialSource: document.querySelector("#official-source"),
 };
 
-const monthShort = ["ENE", "FEB", "MAR", "ABR", "MAY", "JUN", "JUL", "AGO", "SEP", "OCT", "NOV", "DIC"];
-
-function monoDate(iso) {
-  if (typeof iso !== "string") return "—";
-  const [y, m, d] = iso.slice(0, 10).split("-").map(Number);
-  if (!y || !m || !d) return "—";
-  return `${String(d).padStart(2, "0")}·${monthShort[m - 1] || "?"}·${y}`;
-}
-
-function buildImportanceBar(container, importance) {
-  container.replaceChildren();
-  const n = Math.max(0, Math.min(5, Number(importance) || 0));
-  container.dataset.importance = String(n);
-  for (let i = 0; i < 5; i++) {
-    const seg = document.createElement("span");
-    seg.className = i < n ? "seg on" : "seg";
-    container.append(seg);
+function setBackLink(origin) {
+  if (origin === "hoy") {
+    elements.back.href = "index.html";
+    elements.back.textContent = "← Volver a Hoy";
+  } else {
+    elements.back.href = "archivo.html";
+    elements.back.textContent = "← Volver al archivo";
   }
 }
 
-function render(markdown, container) {
-  if (window.Radar) window.Radar.renderMarkdown(markdown, container);
+function renderImportance(value) {
+  const importance = Math.max(0, Math.min(5, Number(value) || 0));
+  elements.importance.replaceChildren();
+  elements.importance.setAttribute("aria-label", `Importancia ${importance} de 5`);
+  for (let index = 1; index <= 5; index += 1) {
+    const bar = document.createElement("span");
+    if (index <= importance) bar.classList.add("is-on");
+    elements.importance.append(bar);
+  }
 }
 
 function fallbackMarkdown(item) {
-  const categories = Array.isArray(item.categories) && item.categories.length
-    ? item.categories.join(", ")
-    : "Sin materia clasificada";
   return [
-    `## Resumen ejecutivo`,
-    item.summary || "Sin resumen disponible.",
-    "## Información oficial",
-    `**Título oficial:** ${item.official_title || "Sin título oficial"}`,
-    `**Tipo de documento:** ${item.document_type || "Documento oficial"}`,
-    `**Descripción de origen:** ${item.description || item.official_title || "Sin descripción"}`,
-    "## Clasificación",
-    `**Materias:** ${categories}.`,
+    "## Qué se publicó",
+    item.description || item.official_title || "Sin descripción disponible.",
+    "## Sustancia",
+    item.summary || "Sin síntesis disponible.",
     "## Fuente oficial",
     `[Abrir documento oficial](${item.url})`,
   ].join("\n\n");
 }
 
-function showMessage(title, detail) {
-  elements.title.textContent = title;
-  elements.breadcrumb.textContent = "—";
+function renderDocument(item) {
+  const markdown = item.detail_markdown || item.card_body || fallbackMarkdown(item);
+  const sections = getSections(markdown);
   elements.content.replaceChildren();
-  const paragraph = document.createElement("p");
-  paragraph.textContent = detail;
-  elements.content.append(paragraph);
+  if (sections.length) {
+    sections.forEach((section) => renderSection(section, elements.content));
+  } else {
+    renderMarkdown(markdown, elements.content);
+    const duplicateHeading = elements.content.querySelector("h1");
+    if (duplicateHeading) duplicateHeading.remove();
+  }
+}
+
+function findEditionReason(edition, id) {
+  const signal = Array.isArray(edition?.signals)
+    ? edition.signals.find((candidate) => candidate.id === id)
+    : null;
+  return signal?.why_it_matters || "";
+}
+
+function showMessage(title, message) {
+  elements.title.textContent = title;
+  elements.summary.textContent = message;
+  elements.breadcrumb.textContent = "Evidencia no disponible";
+  elements.content.replaceChildren();
+}
+
+async function fetchOptionalEdition() {
+  try {
+    const response = await fetch("data/edition.json", { cache: "no-store" });
+    return response.ok ? response.json() : null;
+  } catch {
+    return null;
+  }
 }
 
 async function loadDetail() {
-  const id = new URLSearchParams(window.location.search).get("id");
+  const params = new URLSearchParams(location.search);
+  const id = params.get("id");
+  setBackLink(params.get("from"));
   if (!id) {
-    showMessage("Ficha no encontrada", "La URL no incluye el identificador de la noticia.");
+    showMessage("Ficha no encontrada", "La URL no incluye el identificador de la publicación.");
     return;
   }
 
   try {
-    const response = await fetch("data/publications.json", { cache: "no-store" });
+    const [response, edition] = await Promise.all([
+      fetch("data/publications.json", { cache: "no-store" }),
+      fetchOptionalEdition(),
+    ]);
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const payload = await response.json();
-    const items = payload.items || [];
-    const idx = items.findIndex((publication) => publication.id === id);
-    const item = idx >= 0 ? items[idx] : null;
-
+    const items = Array.isArray(payload.items) ? payload.items : [];
+    const item = items.find((publication) => publication.id === id);
     if (!item) {
-      showMessage("Ficha no encontrada", "No hay una publicación con ese identificador.");
+      showMessage("Ficha no encontrada", "No existe una publicación con ese identificador en el corte disponible.");
       return;
     }
 
     document.title = `${item.title} | Radar Regulatorio MX`;
-
-    const folio = String(idx + 1).padStart(3, "0");
-    elements.breadcrumb.textContent = `№ ${folio} · ${item.source} · ${monoDate(item.published_at)}`;
+    elements.breadcrumb.textContent = `${item.source} · ${formatDate(item.published_at)}`;
     elements.title.textContent = item.title || "Ficha regulatoria";
+    elements.summary.textContent = item.summary || "";
+    elements.date.textContent = formatDate(item.published_at);
+    elements.organ.textContent = item.issuing_body || item.authority || "No identificado";
+    elements.source.textContent = item.source || "Fuente oficial";
+    elements.categories.textContent = Array.isArray(item.categories) && item.categories.length
+      ? item.categories.join(" · ")
+      : "Sin materia clasificada";
+    renderImportance(item.importance);
 
-    if (Number(item.importance) > 0) {
-      buildImportanceBar(elements.importance, item.importance);
-      elements.signal.hidden = false;
+    const reason = findEditionReason(edition, id);
+    if (reason) {
+      elements.whyCopy.textContent = reason;
+      elements.why.hidden = false;
     }
 
-    const organ = item.issuing_body || item.authority;
-    if (organ) {
-      elements.organ.textContent = organ;
-      elements.organ.hidden = false;
-    }
-
-    // Contrato v4 (opcional): case_status / case_parties. Tolerante a su ausencia
-    // (los datos del contrato viejo no traen estos campos).
     const caseStatus = typeof item.case_status === "string" ? item.case_status.trim() : "";
-    if (caseStatus && elements.case && elements.caseChip) {
-      const caseLabel = window.Radar ? window.Radar.translateCaseStatus(caseStatus) : caseStatus;
-      elements.caseChip.textContent = `CASO · ${caseLabel}`;
-      elements.case.hidden = false;
+    if (caseStatus) {
+      elements.case.textContent = translateCaseStatus(caseStatus);
+      elements.caseRow.hidden = false;
     }
-
-    const partiesText = Array.isArray(item.case_parties)
+    const parties = Array.isArray(item.case_parties)
       ? item.case_parties.filter(Boolean).join(", ")
-      : typeof item.case_parties === "string"
-        ? item.case_parties.trim()
-        : "";
-    if (partiesText && elements.parties) {
-      elements.parties.textContent = `Partes: ${partiesText}`;
-      elements.parties.hidden = false;
+      : typeof item.case_parties === "string" ? item.case_parties.trim() : "";
+    if (parties) {
+      elements.parties.textContent = parties;
+      elements.partiesRow.hidden = false;
     }
 
-    // Contrato v6: materias como fila de chips (reusa .badge, ver docs/styles.css).
-    const categories = Array.isArray(item.categories) ? item.categories.filter(Boolean) : [];
-    if (categories.length && elements.categories) {
-      elements.categories.replaceChildren();
-      for (const category of categories) {
-        const chip = document.createElement("span");
-        chip.className = "badge";
-        chip.textContent = category;
-        elements.categories.append(chip);
-      }
-      elements.categories.hidden = false;
-    }
-
-    // Ficha única (v6): el backend ya integra card_body en detail_markdown. Solo los
-    // ítems del contrato viejo (sin detail_markdown) degradan a card_body o al fallback.
-    render(item.detail_markdown || item.card_body || fallbackMarkdown(item), elements.content);
-
-    if (window.Radar && window.Radar.isSafeHttpUrl(item.url)) {
+    renderDocument(item);
+    if (isSafeHttpUrl(item.url)) {
       elements.officialSource.href = item.url;
       elements.officialSource.hidden = false;
     }

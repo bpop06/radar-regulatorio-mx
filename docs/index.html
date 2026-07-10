@@ -3,267 +3,165 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta
-      name="description"
-      content="Instrumento editorial de vigilancia jurídica: seguimiento oficial mexicano en materia fiscal, aduanera y de comercio exterior e internacional, anti-lavado, penal y administración pública federal (centralizada y descentralizada)."
-    >
-    <title>Radar Regulatorio MX</title>
-    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#F4F4F1">
-    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0F1113">
+    <meta name="description" content="La edición diaria del Radar Regulatorio MX: las señales jurídicas y regulatorias que merecen atención hoy, con fuente oficial.">
+    <title>Hoy | Radar Regulatorio MX</title>
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#F4EDDD">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#152630">
     <script>
       (function () {
-        var d = document.documentElement;
-        d.classList.add("js");
-        try { var t = localStorage.getItem("radar-theme"); if (t === "dark" || t === "light") d.setAttribute("data-theme", t); } catch (e) {}
+        document.documentElement.classList.add("js");
+        try {
+          var theme = localStorage.getItem("radar-theme");
+          if (theme === "dark" || theme === "light") document.documentElement.dataset.theme = theme;
+        } catch (error) {}
       })();
     </script>
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- v7 QA #13: no-render-blocking, ver nota igual en calendario.html. -->
-    <link
-      rel="stylesheet"
-      media="print"
-      onload="this.media='all'"
-      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..600&family=Libre+Franklin:wght@400..700&family=IBM+Plex+Mono:wght@400;500&display=swap"
-    >
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..600&family=Libre+Franklin:wght@400..700&family=IBM+Plex+Mono:wght@400;500&display=swap"></noscript>
+    <link rel="preload" href="fonts/fraunces-variable-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/paper-card-deckled.webp" as="image">
+    <link rel="preload" href="assets/watercolor-paper.png" as="image">
     <link rel="stylesheet" href="styles.css">
-    <script src="markdown.js" defer></script>
-    <script src="app.js" defer></script>
+    <script type="module" src="app.js"></script>
   </head>
   <body>
-    <nav class="nav nav-on-band" aria-label="Navegación principal">
-      <div class="nav-inner shell">
-        <a class="brand" href="index.html" aria-label="Radar Regulatorio MX, inicio">
-          <span class="brand-mark" aria-hidden="true">
-            <svg viewBox="0 0 22 22" width="22" height="22" fill="none">
-              <line x1="5" y1="17" x2="15" y2="6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
-              <circle cx="15" cy="6" r="2.4" fill="var(--accent)"/>
-            </svg>
-          </span>
-          <span>
-            <span class="brand-word">Radar<span class="tick">·</span>MX</span>
-            <span class="brand-sub">Regulatorio · MX</span>
-          </span>
+    <a class="skip-link" href="#main">Saltar al contenido</a>
+    <header class="site-header">
+      <nav class="nav shell" aria-label="Navegación principal">
+        <a class="brand" href="index.html" aria-label="Radar Regulatorio MX, Hoy">
+          <span class="brand-signal" aria-hidden="true"><span></span></span>
+          <span class="brand-copy"><strong>Radar MX</strong><small>Inteligencia regulatoria</small></span>
         </a>
-        <div class="nav-right">
+        <div class="nav-actions">
           <div class="nav-links">
-            <a class="nav-link" data-page="index" href="index.html">Fichas</a>
-            <a class="nav-link" data-page="calendario" href="calendario.html">Calendario</a>
-            <a class="nav-link" href="index.html#fuentes">Fuentes</a>
-            <span class="nav-indicator" aria-hidden="true"></span>
+            <a class="nav-link" data-page="today" href="index.html">Hoy</a>
+            <a class="nav-link" data-page="archive" href="archivo.html">Archivo</a>
+            <a class="nav-link" data-page="calendar" href="calendario.html">Calendario</a>
           </div>
           <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Cambiar tema">
-            <span class="theme-glyph" aria-hidden="true">☽</span>
+            <span class="theme-glyph" aria-hidden="true">◐</span>
           </button>
         </div>
-      </div>
-    </nav>
-    <header class="band hero-band">
-      <span class="sweep-ambient" aria-hidden="true"></span>
-      <div class="hero hero-content shell">
-        <p class="label hero-eyebrow"><span class="idx">01 —</span> Inteligencia regulatoria pública</p>
-        <h1>
-          <span class="hl-line" style="--line-i:0"><span>El registro oficial,</span></span>
-          <span class="hl-line" style="--line-i:1"><span>leído en <em class="accent-word">tiempo real</em>.</span></span>
-        </h1>
-        <p class="hero-copy">
-          Seguimiento diario fiscal, aduanero y de comercio exterior e internacional,
-          anti-lavado, penal y de administración pública federal —centralizada y
-          descentralizada— en México.
-        </p>
-        <div class="readings" role="group" aria-label="Lecturas del sistema">
-          <div class="reading">
-            <span class="reading-label">Última corrida</span>
-            <span class="reading-value tabular" id="reading-date">—</span>
-          </div>
-          <div class="reading">
-            <span class="reading-label">Documentos</span>
-            <span class="reading-value tabular" id="reading-count">0</span>
-          </div>
-          <div class="reading">
-            <span class="reading-label">Órganos en vigilancia</span>
-            <span class="reading-value tabular" id="reading-organs">0</span>
-          </div>
-        </div>
-      </div>
+      </nav>
     </header>
 
-    <main>
-      <section class="control-panel" aria-label="Filtros">
-        <div class="control-inner shell">
-          <div class="control-row">
-            <label class="search">
-              <span class="sr-only">Buscar documentos</span>
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z"/>
-              </svg>
-              <input id="search" type="search" placeholder="Buscar ley, autoridad o tema">
-            </label>
-            <label class="select-control">
-              <span>Fuente</span>
-              <select id="source-filter"><option value="Todas">Todas</option></select>
-            </label>
-            <label class="select-control">
-              <span>Periodo</span>
-              <select id="date-range">
-                <option value="all">Todo el periodo</option>
-                <option value="7">Últimos 7 días</option>
-                <option value="15">Últimos 15 días</option>
-              </select>
-            </label>
-            <label class="select-control">
-              <span>Órgano</span>
-              <select id="issuing-body-filter"><option value="Todas">Todas</option></select>
-            </label>
-            <label class="select-control">
-              <span>Jurisdicción</span>
-              <select id="jurisdiction-filter">
-                <option value="Todas">Todas</option>
-                <option value="nacional">Nacional</option>
-                <option value="internacional">Internacional</option>
-              </select>
-            </label>
-            <label class="select-control">
-              <span>Mes</span>
-              <select id="month-filter"><option value="all">Todos</option></select>
-            </label>
+    <main id="main" class="today-main">
+      <section class="edition shell" aria-labelledby="edition-heading">
+        <header class="edition-heading">
+          <div>
+            <p class="edition-date" id="edition-date">Edición de hoy</p>
+            <h1 id="edition-heading">Lo que merece tu atención.</h1>
           </div>
-          <div class="filters" id="category-filters" aria-label="Filtrar por materia">
-            <span class="filter-indicator" aria-hidden="true"></span>
-            <button class="filter active" type="button" data-category="Todas">Todas</button>
-          </div>
-          <aside id="source-alert" class="source-alert" hidden></aside>
+          <a class="coverage-indicator" id="coverage-indicator" href="#fuentes">
+            <span class="coverage-dot" aria-hidden="true"></span>
+            <span id="coverage-label">Verificando fuentes</span>
+          </a>
+        </header>
+
+        <div id="edition-loading" class="edition-loading" aria-live="polite">
+          <span class="loading-pulse" aria-hidden="true"></span>
+          <p>Ordenando las señales del corte.</p>
         </div>
-      </section>
 
-      <section id="digest" class="digest-panel shell" aria-labelledby="digest-title" hidden>
-        <div data-reveal="up">
-          <p class="label"><span class="idx">02 —</span> Lectura editorial del corte</p>
-          <h2 id="digest-title">Resumen del corte</h2>
-        </div>
-        <div id="digest-groups" class="digest-groups"></div>
-      </section>
+        <section id="edition-ready" class="edition-ready" hidden>
+          <div class="signal-desk">
+            <div class="desk-material" aria-hidden="true">
+              <span class="desk-wash desk-wash-one"></span>
+              <span class="desk-wash desk-wash-two"></span>
+              <span class="desk-thread"></span>
+            </div>
+            <article id="lead-panel" class="lead-panel" aria-live="polite" tabindex="-1">
+              <div class="lead-meta">
+                <span id="lead-rank">Señal 01</span>
+                <span id="lead-organ">—</span>
+                <span id="lead-importance">Importancia —/5</span>
+              </div>
+              <h2 id="lead-title">—</h2>
+              <p class="lead-reason-label">Por qué está en el radar</p>
+              <p id="lead-reason" class="lead-reason">—</p>
+              <p id="lead-summary" class="lead-summary">—</p>
+              <div class="lead-actions">
+                <a id="lead-detail" class="primary-action" href="archivo.html">Abrir ficha</a>
+                <a id="lead-source" class="text-action" href="archivo.html" target="_blank" rel="noopener noreferrer">Fuente oficial ↗</a>
+              </div>
+            </article>
 
-      <div class="shell">
-        <section class="feed" aria-labelledby="feed-title">
-          <div class="section-heading">
-            <div data-reveal="up">
-              <p class="label"><span class="idx">03 —</span> Actualizaciones seleccionadas</p>
-              <h2 id="feed-title">Radar de novedades</h2>
-              <p id="feed-note" class="feed-note" aria-live="polite">Cargando documentos oficiales.</p>
-            </div>
-            <div class="sort-controls">
-              <button id="today-filter" class="today-filter" type="button" aria-pressed="false" title="Mostrar solo publicaciones de hoy">
-                <span class="tf-label">Hoy</span>
-                <span class="tf-count tabular">· <span id="today-count">0</span></span>
-              </button>
-              <label class="sort">
-                <span>Ordenar</span>
-                <select id="sort">
-                  <option value="date">Más recientes</option>
-                  <option value="relevance">Mayor relevancia</option>
-                  <option value="importance">Mayor importancia</option>
-                </select>
-              </label>
-              <label class="sort">
-                <span>Por página</span>
-                <select id="page-size">
-                  <option value="24">24</option>
-                  <option value="48">48</option>
-                  <option value="96">96</option>
-                </select>
-              </label>
-            </div>
-          </div>
-          <p class="sr-only" id="result-count">0 documentos</p>
-
-          <div id="news-list" class="news-list">
-            <div class="loading-card">
-              <span class="loading-line wide"></span>
-              <span class="loading-line"></span>
-              <span class="loading-line short"></span>
-            </div>
+            <section class="impact-panel" aria-labelledby="impact-heading">
+              <div class="impact-heading">
+                <div>
+                  <p class="section-kicker">Selección editorial</p>
+                  <h2 id="impact-heading">Baraja del día</h2>
+                </div>
+                <p>El orden expresa prioridad. El pigmento, la materia.</p>
+              </div>
+              <div id="signal-band" class="signal-band" role="tablist" aria-label="Señales de la edición"></div>
+              <p class="deck-help">Elige una carta para traerla al frente.</p>
+            </section>
           </div>
 
-          <div id="empty-state" class="empty-state" hidden>
-            <p id="empty-eyebrow" class="label"><span class="idx">—</span> Sin coincidencias</p>
-            <h2 id="empty-title">No encontramos documentos con esos filtros.</h2>
-            <button id="clear-filters" type="button">Limpiar búsqueda</button>
-          </div>
+          <section class="signal-ledger" aria-labelledby="ledger-heading">
+            <div class="section-heading-row">
+              <div>
+                <p class="section-kicker">Lectura completa</p>
+                <h2 id="ledger-heading">Cartas sobre la mesa</h2>
+              </div>
+              <p id="today-total" class="section-count">—</p>
+            </div>
+            <ol id="signal-list" class="signal-list"></ol>
+          </section>
 
-          <nav id="pagination" class="pagination" aria-label="Paginación de resultados" hidden>
-            <button id="page-prev" type="button" aria-label="Página anterior">Anterior</button>
-            <p id="page-indicator" aria-live="polite">Página 1 de 1</p>
-            <button id="page-next" type="button" aria-label="Página siguiente">Siguiente</button>
-          </nav>
+          <section class="edition-complete" aria-label="Fin de la edición">
+            <span class="completion-mark" aria-hidden="true">FIN</span>
+            <div>
+              <h2>Ya estás al día.</h2>
+              <p>La portada termina aquí. El resto del corte permanece disponible para consulta.</p>
+            </div>
+            <a id="archive-today-link" class="secondary-action" href="archivo.html">Ver todo el corte</a>
+          </section>
         </section>
 
-        <div class="meridian" data-reveal aria-hidden="true"></div>
-
-        <section class="sources" id="fuentes" aria-labelledby="sources-title">
-          <div data-reveal="up">
-            <p class="label"><span class="idx">04 —</span> Transparencia del sistema</p>
-            <h2 id="sources-title">Fuentes consultadas</h2>
-            <p>
-              Cada ficha enlaza al documento oficial. El sistema prioriza interfaces públicas,
-              registra fallos por separado y nunca sustituye la consulta jurídica de la fuente.
-            </p>
-            <p id="source-summary" class="source-summary">Consultando estado de fuentes.</p>
+        <section id="edition-empty" class="edition-state" aria-live="polite" hidden>
+          <div class="state-glyph" aria-hidden="true"><span></span></div>
+          <p class="state-label" id="empty-label">Estado del corte</p>
+          <h2 id="empty-title">El corte de hoy todavía no está publicado.</h2>
+          <p id="empty-copy">La portada no mezcla noticias anteriores con la fecha de hoy.</p>
+          <p id="empty-update" class="state-update"></p>
+          <div class="state-actions">
+            <a id="last-edition-link" class="primary-action" href="archivo.html">Abrir última edición</a>
+            <a class="secondary-action" href="archivo.html">Explorar archivo</a>
+            <a class="text-action" href="calendario.html">Consultar calendario</a>
           </div>
-          <div id="source-status" class="source-grid"></div>
         </section>
-      </div>
+
+        <section id="edition-error" class="edition-state error-state" aria-live="assertive" hidden>
+          <div class="state-glyph error" aria-hidden="true">!</div>
+          <p class="state-label">Datos no verificables</p>
+          <h2>No fue posible comprobar el corte.</h2>
+          <p>La portada no mostrará información desactualizada como si fuera vigente. Intenta de nuevo o consulta el archivo.</p>
+          <div class="state-actions">
+            <button id="retry-edition" class="primary-action" type="button">Reintentar</button>
+            <a class="secondary-action" href="archivo.html">Abrir archivo</a>
+          </div>
+        </section>
+      </section>
+
+      <section id="fuentes" class="coverage-section shell" aria-labelledby="coverage-heading">
+        <div class="coverage-summary">
+          <div>
+            <p class="section-kicker">Trazabilidad</p>
+            <h2 id="coverage-heading">Cobertura del corte</h2>
+          </div>
+          <p id="coverage-copy">Comprobando el estado de las fuentes oficiales.</p>
+        </div>
+        <div id="coverage-detail" class="coverage-detail"></div>
+        <p class="legal-note">Cada síntesis enlaza al documento oficial. Esta herramienta no sustituye la consulta jurídica de la fuente primaria.</p>
+      </section>
     </main>
 
-    <footer class="band site-footer">
-      <div class="shell">
-        <div class="meridian" aria-hidden="true"></div>
-        <div class="footer-content">
-          <p><strong>Radar Regulatorio MX</strong> · Instrumento del Registro</p>
-          <p>Información pública sintetizada. No constituye asesoría legal.</p>
-        </div>
+    <footer class="site-footer">
+      <div class="shell footer-inner">
+        <p><strong>Radar Regulatorio MX</strong><br>Una edición jurídica finita y verificable.</p>
+        <p>Información pública sintetizada. No constituye asesoría legal.</p>
       </div>
     </footer>
-
-    <template id="news-template">
-      <article class="news-card" data-reveal="up">
-        <div class="card-topline">
-          <div class="topline-left">
-            <span class="folio"></span>
-            <span class="card-tick" aria-hidden="true"></span>
-            <span class="source-chip"></span>
-            <span class="intl-chip" hidden></span>
-            <span class="intl-chip case-chip" hidden></span>
-          </div>
-          <div class="topline-right">
-            <time class="card-date"></time>
-            <span class="importance-bar" aria-hidden="true"></span>
-          </div>
-        </div>
-        <p class="card-organ"></p>
-        <h3><span class="u"></span></h3>
-        <div class="badges"></div>
-        <div class="card-substance">
-          <div class="card-substance-primary card-md"></div>
-          <button type="button" class="card-expand" aria-expanded="false">
-            <span class="ce-label">Sustancia</span>
-            <span class="chev" aria-hidden="true">⌄</span>
-          </button>
-          <div class="card-more"><div class="card-md card-more-inner"></div></div>
-        </div>
-        <div class="card-footer">
-          <a class="detail-link">
-            Ver ficha
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18 15 12 9 6"/></svg>
-          </a>
-          <a class="source-link-card" target="_blank" rel="noopener noreferrer">
-            Fuente oficial
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
-          </a>
-        </div>
-      </article>
-    </template>
   </body>
 </html>

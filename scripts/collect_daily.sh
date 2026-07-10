@@ -61,7 +61,7 @@ export SOURCE_RETRY_BACKOFF_SECONDS="${SOURCE_RETRY_BACKOFF_SECONDS:-1.5}"
 "$PY" -m app.cli research --output docs/data/publications.json --days "$LOOKBACK_DAYS"
 "$PY" -m app.cli validate --input docs/data/publications.json
 
-if git diff --quiet -- docs/data/publications.json; then
+if git diff --quiet -- docs/data/publications.json docs/data/edition.json; then
   echo "no publication data changes"
   exit 0
 fi
@@ -88,7 +88,7 @@ if ! git config user.email >/dev/null; then
   git config user.email "140567647+bpop06@users.noreply.github.com"
 fi
 
-git add docs/data/publications.json
+git add docs/data/publications.json docs/data/edition.json
 git commit -m "chore: refresh regulatory data"
 
 # Si el remoto avanzó desde el pull inicial, rebasar antes de empujar; un
