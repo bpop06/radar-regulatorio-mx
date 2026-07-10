@@ -2,6 +2,8 @@
  * Reglas: sábados/domingos inhábiles SIEMPRE (derivados en cliente); los días del
  * JSON pintan su estado encima; el resto son hábiles. Un calendario por órgano. */
 
+import { isSafeHttpUrl, mexicoToday } from "./markdown.js";
+
 const RM = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 const monthNamesFull = [
@@ -12,7 +14,7 @@ const monthShort = ["ENE", "FEB", "MAR", "ABR", "MAY", "JUN", "JUL", "AGO", "SEP
 const dowNamesUpper = ["DOMINGO", "LUNES", "MARTES", "MIÉRCOLES", "JUEVES", "VIERNES", "SÁBADO"];
 const dowNamesLower = ["domingo", "lunes", "martes", "miércoles", "jueves", "viernes", "sábado"];
 
-const YEAR = 2026;
+let calendarYear = new Date().getFullYear();
 
 const el = {
   chips: document.querySelector("#organ-chips"),
@@ -28,6 +30,7 @@ const el = {
   panel: document.querySelector("#day-panel"),
   scrim: document.querySelector("#day-scrim"),
   reading: document.querySelector("#reading-restantes"),
+  readingLabel: document.querySelector("#reading-label"),
   legend: document.querySelector("#cal-legend"),
 };
 
@@ -47,9 +50,9 @@ function daysInMonth(y, m) { return new Date(Date.UTC(y, m + 1, 0)).getUTCDate()
 function mondayIndex(dow) { return (dow + 6) % 7; } // Lun=0..Dom=6
 
 function todayInfo() {
-  const now = new Date();
-  return { y: now.getFullYear(), m: now.getMonth(), d: now.getDate(),
-    iso: dateStr(now.getFullYear(), now.getMonth(), now.getDate()) };
+  const iso = mexicoToday();
+  const [y, month, d] = iso.split("-").map(Number);
+  return { y, m: month - 1, d, iso };
 }
 
 function monoDate(iso) {
@@ -153,7 +156,7 @@ function renderSubhead() {
   kind.textContent = organ.kind || "";
   el.subhead.append(code, name, kind);
 
-  if (window.Radar && window.Radar.isSafeHttpUrl(organ.source_page)) {
+  if (isSafeHttpUrl(organ.source_page)) {
     const src = document.createElement("span");
     src.className = "o-source";
     const a = document.createElement("a");
@@ -169,12 +172,14 @@ function renderSubhead() {
 /* ------------------------------------------------------------ lectura viva */
 function computeRestantes() {
   const t = todayInfo();
-  if (t.y !== YEAR) {
-    // si el año en curso no es 2026, contar todo el año
-    return countHabil(new Date(Date.UTC(YEAR, 0, 1)), new Date(Date.UTC(YEAR, 11, 31)));
+  if (t.y !== calendarYear) {
+    return countHabil(
+      new Date(Date.UTC(calendarYear, 0, 1)),
+      new Date(Date.UTC(calendarYear, 11, 31)),
+    );
   }
   const from = new Date(Date.UTC(t.y, t.m, t.d + 1));
-  const to = new Date(Date.UTC(YEAR, 11, 31));
+  const to = new Date(Date.UTC(calendarYear, 11, 31));
   return countHabil(from, to);
 }
 function countHabil(fromDate, toDate) {
@@ -190,7 +195,7 @@ function countHabil(fromDate, toDate) {
 function updateReading() {
   const n = computeRestantes();
   if (RM) { el.reading.textContent = String(n); return; }
-  const duration = 700;
+  const duration = 180;
   const start = performance.now();
   const ease = (x) => 1 - Math.pow(1 - x, 4);
   function tick(now) {
@@ -204,14 +209,14 @@ function updateReading() {
 /* ------------------------------------------------------------ render del mes */
 function renderMonth() {
   const m = store.month;
-  el.monthLabel.textContent = `${monthNamesFull[m].toUpperCase()} ${YEAR}`;
+  el.monthLabel.textContent = `${monthNamesFull[m].toUpperCase()} ${calendarYear}`;
   el.prev.disabled = m <= 0;
   el.next.disabled = m >= 11;
 
   el.grid.replaceChildren();
   const t = todayInfo();
-  const lead = mondayIndex(dowOf(YEAR, m, 1));
-  const total = daysInMonth(YEAR, m);
+  const lead = mondayIndex(dowOf(calendarYear, m, 1));
+  const total = daysInMonth(calendarYear, m);
 
   for (let i = 0; i < lead; i++) {
     const pad = document.createElement("div");
@@ -221,9 +226,9 @@ function renderMonth() {
   }
 
   for (let d = 1; d <= total; d++) {
-    const iso = dateStr(YEAR, m, d);
+    const iso = dateStr(calendarYear, m, d);
     const info = resolveDay(store.selectedOrgan, iso);
-    const dow = dowOf(YEAR, m, d);
+    const dow = dowOf(calendarYear, m, d);
 
     const cell = document.createElement("button");
     cell.type = "button";
@@ -240,7 +245,7 @@ function renderMonth() {
     cell.setAttribute("aria-selected", String(iso === store.selectedDate));
     cell.tabIndex = -1;
 
-    const isToday = t.y === YEAR && t.m === m && t.d === d;
+    const isToday = t.y === calendarYear && t.m === m && t.d === d;
     if (isToday) cell.classList.add("is-today");
     if (iso === store.selectedDate) cell.classList.add("is-selected");
 
@@ -338,7 +343,7 @@ function selectOrgan(id) {
     el.sweep.classList.remove("run");
     void el.sweep.offsetWidth; // reflow
     el.sweep.classList.add("run");
-    setTimeout(() => el.sweep && el.sweep.classList.remove("run"), 560);
+    setTimeout(() => el.sweep && el.sweep.classList.remove("run"), 260);
   }
 
   const doRender = () => {
@@ -433,7 +438,7 @@ function renderPanel(iso) {
     el.panel.append(acuerdo);
   }
 
-  if (info.source_url && window.Radar && window.Radar.isSafeHttpUrl(info.source_url)) {
+  if (isSafeHttpUrl(info.source_url)) {
     const src = document.createElement("p");
     src.className = "dp-source";
     const a = document.createElement("a");
@@ -536,12 +541,12 @@ async function init() {
   el.next.addEventListener("click", () => changeMonth(1));
   el.today.addEventListener("click", () => {
     const t = todayInfo();
-    const targetMonth = t.y === YEAR ? t.m : store.month;
+    const targetMonth = t.y === calendarYear ? t.m : store.month;
     if (targetMonth !== store.month) {
       store.month = targetMonth;
       runWithViewTransition(() => renderMonth());
     }
-    if (t.y === YEAR) selectDay(t.iso, null);
+    if (t.y === calendarYear) selectDay(t.iso, null);
   });
   el.scrim.addEventListener("click", closeSheet);
   initKeyboard();
@@ -551,6 +556,8 @@ async function init() {
     const res = await fetch("data/calendars.json", { cache: "no-store" });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const payload = await res.json();
+    calendarYear = Number(payload.year) || calendarYear;
+    el.readingLabel.textContent = `Días hábiles restantes en ${calendarYear}`;
     store.organs = Array.isArray(payload.organs) ? payload.organs : [];
     const dbo = payload.days_by_organ || {};
     for (const organ of store.organs) {
@@ -561,7 +568,7 @@ async function init() {
     store.selectedOrgan = store.organs.length ? store.organs[0].id : null;
 
     const t = todayInfo();
-    store.month = t.y === YEAR ? t.m : 6;
+    store.month = t.y === calendarYear ? t.m : 0;
 
     renderOrganSelector();
     syncOrganActive();

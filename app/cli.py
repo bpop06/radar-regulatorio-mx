@@ -9,8 +9,9 @@ from typing import Any
 
 from app.calendars import validate_calendars_payload
 from app.config import Settings
+from app.edition import prepare_payload, write_site_artifacts
 from app.editorial import EditorialError, apply_editorial
-from app.pipeline import collect, write_output
+from app.pipeline import collect
 from app.storage import Storage
 from app.validation import ValidationReport, validate_publications_payload
 
@@ -27,6 +28,7 @@ def build_parser() -> argparse.ArgumentParser:
     )
     collect_parser.add_argument("--days", type=int)
     collect_parser.add_argument("--dry-run", action="store_true")
+    collect_parser.add_argument("--edition-output", type=Path, default=None)
 
     research_parser = subparsers.add_parser(
         "research",
@@ -39,6 +41,7 @@ def build_parser() -> argparse.ArgumentParser:
     )
     research_parser.add_argument("--days", type=int)
     research_parser.add_argument("--db", type=Path, default=None)
+    research_parser.add_argument("--edition-output", type=Path, default=None)
 
     export_parser = subparsers.add_parser(
         "export-site",
@@ -50,6 +53,7 @@ def build_parser() -> argparse.ArgumentParser:
         default=Path("docs/data/publications.json"),
     )
     export_parser.add_argument("--db", type=Path, default=None)
+    export_parser.add_argument("--edition-output", type=Path, default=None)
 
     report_parser = subparsers.add_parser(
         "storage-report",
@@ -72,6 +76,18 @@ def build_parser() -> argparse.ArgumentParser:
         default=Path("docs/data/publications.json"),
     )
     editorial_parser.add_argument("--db", type=Path, default=None)
+    editorial_parser.add_argument("--edition-output", type=Path, default=None)
+
+    edition_parser = subparsers.add_parser(
+        "build-edition",
+        help="actualiza el contrato v7 y genera el artefacto ligero de la portada",
+    )
+    edition_parser.add_argument(
+        "--input",
+        type=Path,
+        default=Path("docs/data/publications.json"),
+    )
+    edition_parser.add_argument("--output", type=Path, default=None)
 
     validate_parser = subparsers.add_parser("validate")
     validate_parser.add_argument(
@@ -106,7 +122,7 @@ def main() -> None:
         if args.dry_run:
             print(json.dumps(payload, ensure_ascii=False, indent=2))
         else:
-            write_output(payload, args.output)
+            write_site_artifacts(payload, args.output, args.edition_output)
             print(f"Publicadas {payload['total_items']} novedades en {args.output}")
     elif args.command == "research":
         payload = asyncio.run(collect(settings, args.days))
@@ -119,7 +135,7 @@ def main() -> None:
         # La publicación del día nunca debe depender de la base histórica:
         # primero se escribe el JSON público y después se persiste la corrida
         # como mejor esfuerzo (una DB corrupta o un disco lleno solo advierten).
-        write_output(payload, args.output)
+        write_site_artifacts(payload, args.output, args.edition_output)
         print(f"Publicadas {payload['total_items']} novedades en {args.output}")
         try:
             with Storage(args.db or settings.database_path) as storage:
@@ -134,11 +150,12 @@ def main() -> None:
     elif args.command == "export-site":
         with Storage(args.db or settings.database_path) as storage:
             payload = storage.export_payload()
+        payload = prepare_payload(payload, settings.local_timezone, force=True)
         report = validate_publications_payload(payload)
         _print_validation_report(report)
         if not report.ok:
             raise SystemExit(1)
-        write_output(payload, args.output)
+        write_site_artifacts(payload, args.output, args.edition_output)
         print(f"Exportadas {payload['total_items']} novedades en {args.output}")
     elif args.command == "storage-report":
         with Storage(args.db or settings.database_path) as storage:
@@ -155,6 +172,7 @@ def main() -> None:
                 args.edits,
                 args.input,
                 Path(args.db) if args.db else Path(settings.database_path),
+                args.edition_output,
             )
         except EditorialError as exc:
             print(f"Error editorial: {exc}", file=sys.stderr)
@@ -165,6 +183,21 @@ def main() -> None:
         if not report.ok:
             raise SystemExit(1)
         print(f"Editorial aplicada a {applied} publicaciones en {args.input}")
+    elif args.command == "build-edition":
+        payload = prepare_payload(
+            json.loads(args.input.read_text(encoding="utf-8")),
+            settings.local_timezone,
+            force=True,
+        )
+        report = validate_publications_payload(payload)
+        _print_validation_report(report)
+        if not report.ok:
+            raise SystemExit(1)
+        write_site_artifacts(payload, args.input, args.output)
+        print(
+            f"Edición {payload['edition']['edition_date']} generada en "
+            f"{args.output or args.input.with_name('edition.json')}"
+        )
     elif args.command == "validate":
         payload = json.loads(args.input.read_text(encoding="utf-8"))
         report = validate_publications_payload(payload)

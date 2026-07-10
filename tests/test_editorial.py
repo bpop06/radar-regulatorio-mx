@@ -81,6 +81,27 @@ def digest_block(**item_overrides) -> dict:
     return {"groups": [{"label": "Fiscal", "items": [item]}]}
 
 
+def edition_block() -> dict:
+    return {
+        "edition_date": "2026-07-07",
+        "state": "ready",
+        "coverage": {"state": "complete", "ok": 1, "failed": []},
+        "total_today": 1,
+        "last_available_date": "2026-07-07",
+        "lead_id": "dof:1",
+        "signals": [
+            {
+                "id": "dof:1",
+                "rank": 1,
+                "why_it_matters": (
+                    "La actualización modifica obligaciones fiscales relevantes para "
+                    "contribuyentes y exige revisar de inmediato la fuente oficial."
+                ),
+            }
+        ],
+    }
+
+
 def write_files(tmp_path, edits, digest=None):
     pubs = tmp_path / "publications.json"
     pubs.write_text(json.dumps(publications_payload(), ensure_ascii=False), encoding="utf-8")
@@ -282,3 +303,26 @@ def test_apply_editorial_rejects_invalid_digest_and_leaves_file_untouched(
         apply_editorial(edits_file, pubs)
 
     assert pubs.read_text(encoding="utf-8") == original
+
+
+def test_apply_editorial_accepts_edition_only_and_writes_light_artifact(tmp_path):
+    payload = publications_payload()
+    payload["items"][0]["published_at"] = "2026-07-07"
+    payload["items"][0]["published_year"] = 2026
+    payload["items"][0]["published_month"] = 7
+    payload["items"][0]["published_day"] = 7
+    pubs = tmp_path / "publications.json"
+    pubs.write_text(json.dumps(payload, ensure_ascii=False), encoding="utf-8")
+    edits_file = tmp_path / "edits.json"
+    edits_file.write_text(
+        json.dumps({"items": [], "edition": edition_block()}, ensure_ascii=False),
+        encoding="utf-8",
+    )
+
+    applied = apply_editorial(edits_file, pubs)
+
+    result = json.loads(pubs.read_text(encoding="utf-8"))
+    light = json.loads((tmp_path / "edition.json").read_text(encoding="utf-8"))
+    assert applied == 0
+    assert result["edition"]["lead_id"] == "dof:1"
+    assert light["signals"][0]["why_it_matters"].startswith("La actualización")

@@ -1,14 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Radar Regulatorio MX">
   <style>
-    .tile { fill: #F4F4F1; }
-    .frame { stroke: #171A1C; }
-    .sweep { stroke: #171A1C; }
-    .dot { fill: #D42A1C; }
+    .tile { fill: #EEF4F3; }
+    .frame { stroke: #082F3A; }
+    .sweep { stroke: #082F3A; }
+    .dot { fill: #B3185B; }
     @media (prefers-color-scheme: dark) {
-      .tile { fill: #14171A; }
-      .frame { stroke: #ECEBE6; }
-      .sweep { stroke: #ECEBE6; }
-      .dot { fill: #F0553F; }
+      .tile { fill: #071C23; }
+      .frame { stroke: #EAF3F2; }
+      .sweep { stroke: #EAF3F2; }
+      .dot { fill: #FF72AD; }
     }
   </style>
   <rect class="tile" x="2" y="2" width="60" height="60" rx="10"/>

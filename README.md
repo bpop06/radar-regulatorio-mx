@@ -9,9 +9,11 @@ jerarquía fija (qué se publicó —sin número de acto ni nombre completo del
 Cada novedad queda clasificada por dependencia u órgano emisor, rama de
 gobierno, jurisdicción (nacional/internacional), fecha (facetas de año, mes y
 día), materias, etiquetas temáticas e importancia editorial (1-5). El contrato
-público es `docs/data/publications.json` y el historial de git funciona como
-archivo del radar (un corte por commit); la base SQLite (`research`) es
-opcional para trabajo local.
+público completo es `docs/data/publications.json`; la portada consume además
+`docs/data/edition.json`, un artefacto ligero con el corte del día, cobertura y
+un máximo de siete señales priorizadas. Cada archivo se publica mediante
+reemplazo atómico y el historial de git funciona como archivo del radar (un
+corte por commit); la base SQLite (`research`) es opcional para trabajo local.
 
 ## Materias cubiertas
 
@@ -67,15 +69,30 @@ source .venv/bin/activate
 python -m pip install --require-hashes -r requirements-dev.txt
 python -m pip install -e . --no-deps
 python -m app.cli research --output docs/data/publications.json
+python -m app.cli build-edition
 python -m http.server 8000 --directory docs
 ```
 
 Abrir `http://localhost:8000`.
 
+### Sistema visual
+
+La interfaz se comporta como una mesa editorial de cartas físicas. Las señales
+de la portada forman una baraja navegable por clic, toque o teclado; seleccionar
+una carta la adelanta, cambia el pigmento de la materia y actualiza la noticia
+principal. El archivo usa un muro asimétrico de cartas y la ficha superpone la
+evidencia sobre el expediente.
+
+Los materiales de papel y acuarela viven en `docs/assets/`; las tipografías
+Fraunces, Alegreya Sans e IBM Plex Mono se sirven localmente desde `docs/fonts/`
+con sus licencias OFL. El movimiento evita animar layout, se limita a
+`transform` y `opacity`, y respeta `prefers-reduced-motion`.
+
 Comandos del CLI: `research` (recolecta, guarda la corrida en la base local y
-publica el JSON), `collect` (solo JSON, sin base), `export-site` (regenera el
-JSON desde la última corrida guardada), `storage-report` (tamaño y contenido
-de la base) y `validate`.
+publica ambos artefactos), `collect` (sin base), `export-site` (regenera los
+artefactos desde la última corrida guardada), `build-edition` (migra el
+contrato y reconstruye únicamente la edición), `storage-report` (tamaño y
+contenido de la base) y `validate`.
 
 La recolección local genera resúmenes extractivos deterministas
 (`ai_generated: false`). La capa editorial — título de noticia, resumen de 40
@@ -90,7 +107,7 @@ Todo el ciclo diario corre en la nube con la rutina de Claude (11:00 CDMX):
 recolecta las 10 fuentes oficiales con el pipeline determinista, redacta la
 capa editorial con razonamiento opus, audita el corte con la guía
 [`radar-diario`](.agents/skills/radar-diario/SKILL.md) y publica sólo
-`docs/data/publications.json`; ver
+`docs/data/publications.json` y `docs/data/edition.json`; ver
 [`docs/EDITORIAL_CLOUD.md`](docs/EDITORIAL_CLOUD.md). Nada se procesa ni se
 guarda en máquinas locales; el historial de git es el archivo del radar.
 Codex y la API de OpenAI quedaron fuera del ciclo.

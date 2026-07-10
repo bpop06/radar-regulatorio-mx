@@ -10077,5 +10077,55 @@
         ]
       }
     ]
+  },
+  "schema_version": 7,
+  "edition": {
+    "edition_date": "2026-07-07",
+    "state": "ready",
+    "coverage": {
+      "state": "complete",
+      "ok": 18,
+      "failed": []
+    },
+    "total_today": 79,
+    "last_available_date": "2026-07-07",
+    "lead_id": "diputados:794611c2ae0b0824",
+    "signals": [
+      {
+        "id": "diputados:794611c2ae0b0824",
+        "rank": 1,
+        "why_it_matters": "El Congreso de Durango presentó ante la Comisión Permanente un proyecto de decreto que adiciona una fracción y reforma un párrafo de la Ley del Impuesto sobre la Renta, para modificar el."
+      },
+      {
+        "id": "ciadi:49fc9ddbe9ff607f",
+        "rank": 2,
+        "why_it_matters": "Canadian Pacific Kansas City demanda por medidas sobre su concesión ferroviaria de carga y el uso de vías para trenes de pasajeros."
+      },
+      {
+        "id": "ciadi:0d24aceaef6385be",
+        "rank": 3,
+        "why_it_matters": "La sociedad estadounidense Doups Holdings mantiene un arbitraje de inversión pendiente contra México ante el CIADI. El expediente sigue el cauce inversionista-Estado: el reclamante sostiene que medidas atribuibles al Estado mexicano afectaron."
+      },
+      {
+        "id": "dof:5792793",
+        "rank": 4,
+        "why_it_matters": "La Secretaría Anticorrupción y Buen Gobierno instruyó a toda la Administración Pública Federal, a las empresas públicas del Estado, a la Fiscalía General de la República, a las entidades federativas, municipios y."
+      },
+      {
+        "id": "dof:5792794",
+        "rank": 5,
+        "why_it_matters": "La Secretaría Anticorrupción y Buen Gobierno ordenó a la Administración Pública Federal, a las entidades federativas, a la Fiscalía General de la República, a las empresas públicas del Estado, municipios y demarcaciones."
+      },
+      {
+        "id": "dof:5792804",
+        "rank": 6,
+        "why_it_matters": "El instituto de la propiedad industrial suspendió labores y declaró que no corren plazos ni términos en sus trámites de marcas, patentes y contenciosos."
+      },
+      {
+        "id": "dof:5792805",
+        "rank": 7,
+        "why_it_matters": "Se publicaron los datos de la solicitud para proteger como indicación geográfica los textiles artesanales de Hueyapan, Puebla, abriendo la etapa de observaciones."
+      }
+    ]
   }
 }
