@@ -17,6 +17,7 @@ from app.sources.gobmx import (
     GobMxCollector,
     canonical_gobmx_url,
     gobmx_source_id,
+    sanitize_gobmx_title,
 )
 from app.sources.icsid import IcsidCollector, parse_case_detail
 from app.sources.impi import ImpiCollector
@@ -32,7 +33,7 @@ from app.sources.international import (
 from app.sources.platiica import PlatiicaCollector
 from app.sources.senado import SenadoCollector
 from app.sources.snice import SniceCollector
-from app.sources.worldbank import WorldBankCollector
+from app.sources.worldbank import WorldBankCollector, canonical_worldbank_url
 from app.taxonomy import enrich
 
 
@@ -250,6 +251,31 @@ def test_gobmx_parser_reads_javascript_archive_response():
     assert GobMxCollector.looks_relevant(items[0].title)
     assert not GobMxCollector.looks_relevant(
         "CONADE presenta su estrategia de masificación deportiva"
+    )
+
+
+def test_gobmx_parser_collapses_exact_title_duplicated_by_archive_markup():
+    duplicated = (
+        "¿Eres una persona pensionada o jubilada? PRODECON te informa sobre"
+        "¿Eres una persona pensionada o jubilada? PRODECON te informa sobre?"
+    )
+    payload = rf'''
+      $("#articulos").append("<article>
+        <time datetime=\"2026-06-18 14:19:00\">18 de junio de 2026<\/time>
+        <h2>{duplicated}<\/h2>
+        <a href=\"/prodecon/es/articulos/titulo-repetido-titulo-repetido?idiom=es\">
+          Leer<\/a>
+      <\/article>");
+    '''
+
+    items = GobMxCollector.parse_archive(payload, "prodecon", "articulos")
+
+    assert len(items) == 1
+    assert items[0].title == (
+        "¿Eres una persona pensionada o jubilada? PRODECON te informa sobre?"
+    )
+    assert sanitize_gobmx_title("Una frase legítima sin duplicación") == (
+        "Una frase legítima sin duplicación"
     )
 
 
@@ -1001,8 +1027,21 @@ def test_worldbank_parser_extracts_candidate_and_skips_facets_entry():
     assert item.source == "Banco Mundial"
     assert item.published_at == date(2026, 7, 1)
     assert "Juan Pablo Uribe" in item.official_title
-    assert item.url.startswith("http://www.bancomundial.org/")
+    assert item.url.startswith("https://www.bancomundial.org/")
+    assert item.canonical_url == item.url
     assert "Uribe" in item.description
+
+
+def test_worldbank_url_only_promotes_exact_official_hosts_to_https():
+    assert canonical_worldbank_url("http://documents1.worldbank.org/report.pdf") == (
+        "https://documents1.worldbank.org/report.pdf"
+    )
+    assert canonical_worldbank_url("http://www.worldbank.org/en/news") == (
+        "https://www.worldbank.org/en/news"
+    )
+    assert canonical_worldbank_url("http://worldbank.example/en/news") == (
+        "http://worldbank.example/en/news"
+    )
 
 
 def test_worldbank_parser_filters_by_since():

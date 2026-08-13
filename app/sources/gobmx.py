@@ -28,6 +28,7 @@ from app.text import clean_text, normalized, parse_date
 
 APPEND_RE = re.compile(r"""append\((["'])((?:\\.|(?!\1).)*)\1\)""", re.DOTALL)
 SITEMAP_LOCATION_RE = re.compile(rb"<loc>\s*(.*?)\s*</loc>", re.DOTALL)
+TITLE_TERMINAL_PUNCTUATION = " .,:;!?…"
 MAX_ARCHIVE_PAGES = 12
 ARCHIVE_KINDS = ("prensa", "articulos")
 
@@ -218,6 +219,29 @@ def gobmx_source_id(value: str) -> str:
     return hashlib.sha256(canonical_url.encode()).hexdigest()[:16]
 
 
+def sanitize_gobmx_title(value: str) -> str:
+    """Colapsa una repetición estructural exacta del título de Gob.mx.
+
+    Algunos archivos concatenan dos veces el mismo texto visible (y el slug
+    puede repetirlo también). Sólo se elimina una segunda mitad idéntica,
+    ignorando la puntuación de cierre; no se completa ni reescribe contenido.
+    """
+
+    title = clean_text(value)
+    if len(title) < 24:
+        return title
+
+    for split_at in range(12, len(title) - 11):
+        first = title[:split_at].strip()
+        second = title[split_at:].strip()
+        first_core = first.rstrip(TITLE_TERMINAL_PUNCTUATION)
+        second_core = second.rstrip(TITLE_TERMINAL_PUNCTUATION)
+        if first_core and first_core.casefold() == second_core.casefold():
+            closing = second[len(second_core) :]
+            return f"{first_core}{closing}"
+    return title
+
+
 class GobMxCollector(Collector):
     source = "Gob.mx APF"
     index_url = "https://www.gob.mx/sitemap-gobierno.xml"
@@ -402,7 +426,7 @@ class GobMxCollector(Collector):
             except ValueError:
                 skipped += 1
                 continue
-            title = clean_text(title_element.get_text(" ", strip=True))
+            title = sanitize_gobmx_title(title_element.get_text(" ", strip=True))
             url = urljoin("https://www.gob.mx", anchor["href"])
             if not title or not url.lower().startswith(("http://", "https://")):
                 skipped += 1

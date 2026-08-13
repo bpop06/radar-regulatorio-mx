@@ -3,10 +3,17 @@ from __future__ import annotations
 import hashlib
 from datetime import date, datetime
 from typing import Any
+from urllib.parse import urlsplit, urlunsplit
 
 from app.models import Candidate
 from app.sources.base import Collector, SourceContractError
 from app.text import clean_text
+
+WORLD_BANK_HTTPS_HOSTS = {
+    "documents1.worldbank.org",
+    "www.bancomundial.org",
+    "www.worldbank.org",
+}
 
 
 class WorldBankCollector(Collector):
@@ -46,7 +53,7 @@ class WorldBankCollector(Collector):
                 continue
 
             title = _cdata_text(entry.get("title"))
-            url = clean_text(str(entry.get("url") or ""))
+            url = canonical_worldbank_url(str(entry.get("url") or ""))
             if not title or not url.lower().startswith(("http://", "https://")):
                 continue
 
@@ -62,6 +69,7 @@ class WorldBankCollector(Collector):
                     source=cls.source,
                     source_id=hashlib.sha256(stable_id.encode()).hexdigest()[:16],
                     url=url,
+                    canonical_url=url,
                     official_title=title,
                     description=description,
                     published_at=published_at,
@@ -82,6 +90,21 @@ def _cdata_text(value: object) -> str:
     if isinstance(value, str):
         return clean_text(value)
     return ""
+
+
+def canonical_worldbank_url(value: str) -> str:
+    """Promueve a HTTPS únicamente hosts oficiales con TLS comprobado.
+
+    El buscador del Banco Mundial todavía devuelve enlaces ``http://`` para
+    documentos y noticias que los mismos hosts sirven por HTTPS. La lista
+    exacta evita modificar URLs de terceros o subdominios parecidos.
+    """
+
+    url = clean_text(value)
+    parts = urlsplit(url)
+    if parts.scheme.lower() != "http" or parts.netloc.lower() not in WORLD_BANK_HTTPS_HOSTS:
+        return url
+    return urlunsplit(("https", parts.netloc.lower(), parts.path, parts.query, parts.fragment))
 
 
 def _parse_wb_date(raw_date: str) -> date | None:
