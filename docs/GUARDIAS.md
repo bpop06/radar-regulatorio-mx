@@ -1,7 +1,6 @@
 # Efecto jurídico de las guardias de los tribunales federales sobre los plazos procesales
 
 *Radar Regulatorio MX — Nota de investigación jurídica*
-*Fecha de elaboración: 7 de julio de 2026. Rama: `claude/radar-v6`.*
 *Materias: amparo, contencioso administrativo federal (TFJA), fiscal, referencia penal federal.*
 
 ---
