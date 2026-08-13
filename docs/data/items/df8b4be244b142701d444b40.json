@@ -1,5 +1,5 @@
 {
-  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "cut_id": "eb601fec447d40cac59ba502",
   "item": {
     "ai_generated": false,
     "authority": "PODER EJECUTIVO SECRETARIA DE TURISMO",
@@ -22,16 +22,16 @@
     "description": "Convenio de Coordinación que celebran la Secretaría de Turismo y la Ciudad de México, que tiene por objeto verificar el cumplimiento de la Ley General de Turismo, su Reglamento, la Ley de Infraestructura de la Calidad y las normas oficiales mexicanas en la materia, así como el fortalecimiento de las atribuciones que tienen encomendadas por ministerio de Ley, en el procedimiento de verificación de los prestadores de servicios turísticos en la entidad.",
     "detail_markdown": null,
     "detail_url": "notas/df8b4be244b142701d444b40.html",
-    "detected_at": "2026-08-13T02:53:39.855587+00:00",
+    "detected_at": "2026-07-14T12:00:00+00:00",
     "document_type": "Convenio De Coordinación",
     "editorial_status": "needs_review",
-    "first_seen_at": "2026-08-13T02:36:54.429478+00:00",
+    "first_seen_at": "2026-07-14T12:00:00+00:00",
     "government_branch": "Ejecutivo federal",
     "id": "dof:5793477",
     "importance": 2,
     "issuing_body": "Presidencia de la República",
     "jurisdiction": "nacional",
-    "last_seen_at": "2026-08-13T02:53:39.855587+00:00",
+    "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
     "official_evidence": {
       "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793477&fecha=14/07/2026"
     },
@@ -45,7 +45,7 @@
     "published_month": 7,
     "published_year": 2026,
     "relevance_score": 2,
-    "review_reason": "La fuente oficial cambió; requiere una nueva revisión editorial.",
+    "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
     "source": "DOF",
     "source_id": "5793477",
     "subtopic_tags": [

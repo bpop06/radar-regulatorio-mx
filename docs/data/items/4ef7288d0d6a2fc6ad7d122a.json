@@ -1,5 +1,5 @@
 {
-  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "cut_id": "eb601fec447d40cac59ba502",
   "item": {
     "ai_generated": false,
     "authority": "Organización Mundial del Comercio",
@@ -23,16 +23,16 @@
     "description": "A new Trade Policy Activity (TPA) index by WTO and IMF economists shows a marked rise in trade policy activity during 2025-26, alongside heightened trade policy tensions among large economies, against the backdrop of an overall upward trend.",
     "detail_markdown": null,
     "detail_url": "notas/4ef7288d0d6a2fc6ad7d122a.html",
-    "detected_at": "2026-08-13T02:36:54.429478+00:00",
+    "detected_at": "2026-07-23T12:00:00+00:00",
     "document_type": "Noticia",
     "editorial_status": "needs_review",
-    "first_seen_at": "2026-08-13T02:36:54.429478+00:00",
+    "first_seen_at": "2026-07-23T12:00:00+00:00",
     "government_branch": "Organismo internacional",
     "id": "omc:6f6d40979ff60c0c",
     "importance": 2,
     "issuing_body": "Organización Mundial del Comercio",
     "jurisdiction": "internacional",
-    "last_seen_at": "2026-08-13T02:53:39.855587+00:00",
+    "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
     "official_evidence": {
       "primary_url": "https://www.wto.org/english/news_e/news26_e/rese_23jul26_463_e.htm"
     },

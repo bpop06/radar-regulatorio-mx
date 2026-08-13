@@ -1,5 +1,5 @@
 {
-  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "cut_id": "eb601fec447d40cac59ba502",
   "item": {
     "ai_generated": false,
     "authority": "Servicio de Administración Tributaria",
@@ -15,8 +15,8 @@
     "case_status": "",
     "case_treaty": "",
     "categories": [
-      "Fiscal",
-      "Comercio exterior"
+      "Comercio exterior",
+      "Fiscal"
     ],
     "content_hash": "163293e514ba75dece696124047ccf10179b5e215f7aee8ac48378e30b0ae99c",
     "country_or_org": "México",
@@ -50,20 +50,20 @@
     "source": "Gob.mx APF",
     "source_id": "1efd0f397c9dd91f",
     "subtopic_tags": [
-      "sat",
       "aduana",
       "agencia nacional de aduanas",
       "reglas generales de comercio exterior",
       "pedimento",
-      "comercio exterior"
+      "comercio exterior",
+      "sat"
     ],
     "summary": null,
     "summary_teaser": null,
     "title": null,
     "topic_tags": [
-      "Fiscal",
       "Aduanero",
-      "Comercio exterior"
+      "Comercio exterior",
+      "Fiscal"
     ],
     "url": "https://www.gob.mx/sat/prensa/amplian-sat-y-anam-entrada-en-vigor-de-la-manifestacion-de-valor-electronica-53-2026?idiom=es"
   },

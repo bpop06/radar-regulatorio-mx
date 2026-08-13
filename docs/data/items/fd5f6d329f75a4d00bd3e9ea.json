@@ -1,5 +1,5 @@
 {
-  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "cut_id": "eb601fec447d40cac59ba502",
   "item": {
     "ai_generated": false,
     "authority": "Agencia Nacional de Aduanas de México",
@@ -22,16 +22,16 @@
     "description": "Amplían SAT y ANAM entrada en vigor de laManifestación de Valor Electrónica",
     "detail_markdown": null,
     "detail_url": "notas/fd5f6d329f75a4d00bd3e9ea.html",
-    "detected_at": "2026-08-13T02:53:39.855587+00:00",
+    "detected_at": "2026-07-31T12:00:00+00:00",
     "document_type": "Comunicado",
     "editorial_status": "needs_review",
-    "first_seen_at": "2026-08-13T02:36:54.429478+00:00",
+    "first_seen_at": "2026-07-31T12:00:00+00:00",
     "government_branch": "Ejecutivo federal",
     "id": "anam:f231025c960769f6",
     "importance": 2,
     "issuing_body": "Agencia Nacional de Aduanas de México",
     "jurisdiction": "nacional",
-    "last_seen_at": "2026-08-13T02:53:39.855587+00:00",
+    "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
     "official_evidence": {
       "primary_url": "https://www.anam.gob.mx/comunicado-prensa-conjunto-53-2026/"
     },
@@ -45,7 +45,7 @@
     "published_month": 7,
     "published_year": 2026,
     "relevance_score": 2,
-    "review_reason": "La fuente oficial cambió; requiere una nueva revisión editorial.",
+    "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
     "source": "ANAM",
     "source_id": "f231025c960769f6",
     "subtopic_tags": [

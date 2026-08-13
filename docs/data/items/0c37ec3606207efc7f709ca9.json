@@ -1,5 +1,5 @@
 {
-  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "cut_id": "eb601fec447d40cac59ba502",
   "item": {
     "ai_generated": false,
     "authority": "Organización Mundial del Comercio",
@@ -23,16 +23,16 @@
     "description": "Uzbekistan reaffirmed its determination to complete its WTO accession process within 2026 at a meeting of the Working Party on the Accession of Uzbekistan on 27 and 28 July, soon after its last meeting in March. The head of Uzbekistan's delegation, Chief Negotiator Azizbek Urunov, stressed that maintaining a strong pace of engagement and addressing members' remaining concerns will be critical to bringing the accession process to a successful conclusion.",
     "detail_markdown": null,
     "detail_url": "notas/0c37ec3606207efc7f709ca9.html",
-    "detected_at": "2026-08-13T02:36:54.429478+00:00",
+    "detected_at": "2026-07-27T12:00:00+00:00",
     "document_type": "Noticia",
     "editorial_status": "needs_review",
-    "first_seen_at": "2026-08-13T02:36:54.429478+00:00",
+    "first_seen_at": "2026-07-27T12:00:00+00:00",
     "government_branch": "Organismo internacional",
     "id": "omc:100b4985d1255354",
     "importance": 2,
     "issuing_body": "Organización Mundial del Comercio",
     "jurisdiction": "internacional",
-    "last_seen_at": "2026-08-13T02:53:39.855587+00:00",
+    "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
     "official_evidence": {
       "primary_url": "https://www.wto.org/english/news_e/news26_e/acc_27jul26_470_e.htm"
     },

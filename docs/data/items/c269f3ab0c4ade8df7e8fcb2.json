@@ -1,5 +1,5 @@
 {
-  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "cut_id": "eb601fec447d40cac59ba502",
   "item": {
     "ai_generated": false,
     "authority": "Secretaría de Turismo",
@@ -15,8 +15,7 @@
     "case_status": "",
     "case_treaty": "",
     "categories": [
-      "Administración centralizada",
-      "Proceso legislativo"
+      "Administración centralizada"
     ],
     "content_hash": "d2f70bbc3529a106ce9577dd500959ab5df6f972176d7ddf55507058544459ff",
     "country_or_org": "México",
@@ -29,7 +28,7 @@
     "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
     "government_branch": "Ejecutivo federal",
     "id": "gob.mx apf:9e27f5bd291f80c3",
-    "importance": 2,
+    "importance": 1,
     "issuing_body": "Secretaría de Turismo",
     "jurisdiction": "nacional",
     "last_seen_at": "2026-07-07T22:17:33.843455+00:00",
@@ -45,21 +44,15 @@
     "published_day": 17,
     "published_month": 6,
     "published_year": 2026,
-    "relevance_score": 3,
+    "relevance_score": 1,
     "review_reason": "Registro legado o contenido sin revisión editorial certificada.",
     "source": "Gob.mx APF",
     "source_id": "9e27f5bd291f80c3",
-    "subtopic_tags": [
-      "marca",
-      "iniciativa"
-    ],
+    "subtopic_tags": [],
     "summary": null,
     "summary_teaser": null,
     "title": null,
-    "topic_tags": [
-      "Propiedad intelectual",
-      "Iniciativa"
-    ],
+    "topic_tags": [],
     "url": "https://www.gob.mx/sectur/es/articulos/sectur-y-volaris-llevan-la-campana-mexico-esta-de-moda-a-nuevos-mercados-con-el-avion-el-embajador?idiom=es"
   },
   "schema_version": 8

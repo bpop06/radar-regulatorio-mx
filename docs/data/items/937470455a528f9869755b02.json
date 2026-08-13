@@ -1,5 +1,5 @@
 {
-  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "cut_id": "eb601fec447d40cac59ba502",
   "item": {
     "ai_generated": false,
     "authority": "Organización Mundial del Comercio",
@@ -22,16 +22,16 @@
     "description": "At a meeting of the Dispute Settlement Body (DSB) on 24 July, members considered a request from the Russian Federation for the establishment of a dispute panel to review the European Union's Carbon Border Adjustment Mechanism (CBAM) Package and alleged export subsidy under the EU scheme for trading greenhouse gas emission allowances. The DSB Chair, Ambassador Guilherme de Aguiar Patriota (Brazil), also updated members on dispute settlement reform consultations and convened an informal discussion after the meeting to further hear members' views.",
     "detail_markdown": null,
     "detail_url": "notas/937470455a528f9869755b02.html",
-    "detected_at": "2026-08-13T02:36:54.429478+00:00",
+    "detected_at": "2026-07-24T12:00:00+00:00",
     "document_type": "Noticia",
     "editorial_status": "needs_review",
-    "first_seen_at": "2026-08-13T02:36:54.429478+00:00",
+    "first_seen_at": "2026-07-24T12:00:00+00:00",
     "government_branch": "Organismo internacional",
     "id": "omc:4cc7129bf98bcf35",
     "importance": 2,
     "issuing_body": "Organización Mundial del Comercio",
     "jurisdiction": "internacional",
-    "last_seen_at": "2026-08-13T02:53:39.855587+00:00",
+    "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
     "official_evidence": {
       "primary_url": "https://www.wto.org/english/news_e/news26_e/dsb_24jul26_464_e.htm"
     },

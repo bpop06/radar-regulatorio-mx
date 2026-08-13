@@ -1,5 +1,5 @@
 {
-  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "cut_id": "eb601fec447d40cac59ba502",
   "item": {
     "ai_generated": false,
     "authority": "PODER EJECUTIVO SECRETARIA ANTICORRUPCION Y BUEN GOBIERNO",
@@ -23,16 +23,16 @@
     "description": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, Fiscalía General de la República, entidades federativas, municipios y demarcaciones territoriales de la Ciudad de México, que el Juzgado Octavo de Distrito en Materia Administrativa en la Ciudad de México, determinó dentro del juicio de amparo indirecto número 299/ 2026, promovido por la empresa Intman, S.A. de C.V., por conducto de su representante legal, el ciudadano John Lorenzo Días Salas, mediante acuerdo de veintitrés de abril de dos mil veintiséis, el sobreseimiento del juicio antes señalado y advirtió que al no acreditarse el pago de la sanción impuesta subsiste la inhabilitación determinada en el procedimiento administrativo de sanción a proveedores número 005/PAS/2024.",
     "detail_markdown": null,
     "detail_url": "notas/4fab73e5407b381847613642.html",
-    "detected_at": "2026-08-13T02:53:39.855587+00:00",
+    "detected_at": "2026-07-16T12:00:00+00:00",
     "document_type": "Circular",
     "editorial_status": "needs_review",
-    "first_seen_at": "2026-08-13T02:36:54.429478+00:00",
+    "first_seen_at": "2026-07-16T12:00:00+00:00",
     "government_branch": "Ejecutivo federal",
     "id": "dof:5793724",
     "importance": 2,
     "issuing_body": "Presidencia de la República",
     "jurisdiction": "nacional",
-    "last_seen_at": "2026-08-13T02:53:39.855587+00:00",
+    "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
     "official_evidence": {
       "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793724&fecha=16/07/2026"
     },
@@ -46,7 +46,7 @@
     "published_month": 7,
     "published_year": 2026,
     "relevance_score": 3,
-    "review_reason": "La fuente oficial cambió; requiere una nueva revisión editorial.",
+    "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
     "source": "DOF",
     "source_id": "5793724",
     "subtopic_tags": [

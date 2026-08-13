@@ -1,5 +1,5 @@
 {
-  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "cut_id": "eb601fec447d40cac59ba502",
   "item": {
     "ai_generated": false,
     "authority": "Cámara de Diputados",
@@ -45,16 +45,14 @@
     "published_day": 7,
     "published_month": 7,
     "published_year": 2026,
-    "relevance_score": 7,
+    "relevance_score": 6,
     "review_reason": "Registro legado o contenido sin revisión editorial certificada.",
     "source": "Diputados",
     "source_id": "794611c2ae0b0824",
     "subtopic_tags": [
       "impuesto",
       "renta",
-      "proyecto de decreto",
-      "reforma",
-      "adiciona"
+      "proyecto de decreto"
     ],
     "summary": null,
     "summary_teaser": null,

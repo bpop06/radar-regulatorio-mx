@@ -1,5 +1,5 @@
 {
-  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "cut_id": "eb601fec447d40cac59ba502",
   "item": {
     "ai_generated": false,
     "authority": "Unidad de Inteligencia Financiera",
@@ -23,16 +23,16 @@
     "description": "La Oficina de Control de Activos Extranjeros (OFAC) del Departamento del Tesoro de Estados Unidos designó a 55 sujetos (39 personas físicas y 16 personas morales) presuntamente vinculados con una red financiera del Cártel Jalisco Nueva Generación (CJNG), como parte de las acciones de cooperación bilateral para combatir las finanzas de la delincuencia organizada. Derivado del análisis financiero, fiscal y corporativo realizado en México, la Unidad de Inteligencia Financiera (UIF) identificó indicadores relacionados con posibles operaciones con recursos de procedencia ilícita, entre ellos operaciones en efectivo, adquisición de vehículos de alta gama, joyas e inmuebles, transferencias internacionales, uso intensivo de tarjetas de crédito y de servicio, así como operaciones mediante activos virtuales. Asimismo, se detectaron posibles inconsistencias entre los ingresos reportados ante la autoridad fiscal y los recursos observados en el sistema financiero. El análisis identificó además personas morales con actividades ilícitas, algunas de las cuales registraron operaciones financieras relevantes, mientras que otras presentan características de empresas fachada o con estructuras corporativas de limitada o nula actividad económica aparente. En el ámbito de sus atribuciones, la UIF presentó la denuncia correspondiente ante la Fiscalía General de la República (FGR) por la probable comisión del delito de operaciones con recursos de procedencia ilícita e incluyó en la Lista de Personas Bloqueadas (LPB) a los sujetos relacionados con esta designación internacional. Asimismo, incorporó a la LPB ocho sujetos adicionales (cuatro personas físicas y cuatro personas morales) vinculados con la misma estructura financiera. Las acciones coordinadas entre autoridades mexicanas y estadounidenses fortalecen los mecanismos de cooperación internacional para prevenir el uso indebido del sistema financiero, combatir el lavado de dinero y debilitar las estructuras económicas de la delincuencia organizada. La Secretaría de Hacienda, a través de la UIF, mantiene coordinación permanente con autoridades nacionales e internacionales, en apego al marco jurídico vigente y a los estándares del Grupo de Acción Financiera Internacional (GAFI), con el objetivo de proteger la integridad del sistema financiero y fortalecer las acciones para prevenir y combatir las operaciones con recursos de procedencia ilícita.",
     "detail_markdown": null,
     "detail_url": "notas/68f41d6b87127eeef94a3541.html",
-    "detected_at": "2026-08-13T02:36:54.429478+00:00",
+    "detected_at": "2026-07-23T12:00:00+00:00",
     "document_type": "Comunicado",
     "editorial_status": "needs_review",
-    "first_seen_at": "2026-08-13T02:36:54.429478+00:00",
+    "first_seen_at": "2026-07-23T12:00:00+00:00",
     "government_branch": "Ejecutivo federal",
     "id": "gob.mx apf:a752467d8ecd1a8d",
     "importance": 3,
     "issuing_body": "Unidad de Inteligencia Financiera",
     "jurisdiction": "nacional",
-    "last_seen_at": "2026-08-13T02:53:39.855587+00:00",
+    "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
     "official_evidence": {
       "primary_url": "https://www.gob.mx/uif/prensa/la-uif-en-coordinacion-con-autoridades-de-estados-unidos-fortalece-acciones-contra-estructuras-financieras-vinculadas-al-cjng?idiom=es"
     },

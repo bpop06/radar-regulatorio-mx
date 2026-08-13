@@ -1,5 +1,5 @@
 {
-  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "cut_id": "eb601fec447d40cac59ba502",
   "item": {
     "ai_generated": false,
     "authority": "Instituto Mexicano de la Propiedad Industrial",
@@ -23,16 +23,16 @@
     "description": "IMPI asegura mercancía apócrifa en Aduana de Lázaro Cárdenas, Michoacán.",
     "detail_markdown": null,
     "detail_url": "notas/caee6ed38c439a1700e8cf2d.html",
-    "detected_at": "2026-08-13T02:36:54.429478+00:00",
+    "detected_at": "2026-07-15T12:00:00+00:00",
     "document_type": "Comunicado",
     "editorial_status": "needs_review",
-    "first_seen_at": "2026-08-13T02:36:54.429478+00:00",
+    "first_seen_at": "2026-07-15T12:00:00+00:00",
     "government_branch": "Organismo descentralizado",
     "id": "impi:45fdd3a81b2a08c9",
     "importance": 2,
     "issuing_body": "Instituto Mexicano de la Propiedad Industrial",
     "jurisdiction": "nacional",
-    "last_seen_at": "2026-08-13T02:53:39.855587+00:00",
+    "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
     "official_evidence": {
       "official_notice": "https://www.gob.mx/impi/prensa/impi-asegura-mercancia-apocrifa-en-aduana-de-lazaro-cardenas-michoacan?idiom=es",
       "primary_url": "https://www.gob.mx/impi/prensa/impi-asegura-mercancia-apocrifa-en-aduana-de-lazaro-cardenas-michoacan?idiom=es"

@@ -1,5 +1,5 @@
 {
-  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "cut_id": "eb601fec447d40cac59ba502",
   "item": {
     "ai_generated": false,
     "authority": "Instituto Mexicano de la Propiedad Industrial",
@@ -22,16 +22,16 @@
     "description": "Recibe IMPI nombramiento como Administración encargada de la Búsqueda Internacional y del Examen Preliminar Internacional de patentes",
     "detail_markdown": null,
     "detail_url": "notas/b3b27c6c93fa489f654f1546.html",
-    "detected_at": "2026-08-13T02:36:54.429478+00:00",
+    "detected_at": "2026-07-13T12:00:00+00:00",
     "document_type": "Comunicado",
     "editorial_status": "needs_review",
-    "first_seen_at": "2026-08-13T02:36:54.429478+00:00",
+    "first_seen_at": "2026-07-13T12:00:00+00:00",
     "government_branch": "Organismo descentralizado",
     "id": "impi:ad708c5c728ed6cc",
     "importance": 2,
     "issuing_body": "Instituto Mexicano de la Propiedad Industrial",
     "jurisdiction": "nacional",
-    "last_seen_at": "2026-08-13T02:53:39.855587+00:00",
+    "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
     "official_evidence": {
       "official_notice": "https://www.gob.mx/impi/prensa/recibe-impi-nombramiento-como-administracion-encargada-de-la-busqueda-internacional-y-del-examen-preliminar-internacional-de-patentes?idiom=es",
       "primary_url": "https://www.gob.mx/impi/prensa/recibe-impi-nombramiento-como-administracion-encargada-de-la-busqueda-internacional-y-del-examen-preliminar-internacional-de-patentes?idiom=es"

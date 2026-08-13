@@ -1,5 +1,5 @@
 {
-  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "cut_id": "eb601fec447d40cac59ba502",
   "item": {
     "ai_generated": false,
     "authority": "Secretaría Anticorrupción y Buen Gobierno",
@@ -15,8 +15,8 @@
     "case_status": "",
     "case_treaty": "",
     "categories": [
-      "Fiscal",
-      "Penal"
+      "Penal",
+      "Fiscal"
     ],
     "content_hash": "5739041c750d0e27a55f77e5d3d9199c4e5ce866dde7d62e110d32b14a91a68c",
     "country_or_org": "México",
@@ -50,18 +50,18 @@
     "source": "Gob.mx APF",
     "source_id": "d77714f449531756",
     "subtopic_tags": [
-      "sat",
       "delito",
       "fiscalia",
       "fgr",
-      "orden de aprehension"
+      "orden de aprehension",
+      "sat"
     ],
     "summary": null,
     "summary_teaser": null,
     "title": null,
     "topic_tags": [
-      "Fiscal",
-      "Penal"
+      "Penal",
+      "Fiscal"
     ],
     "url": "https://www.gob.mx/buengobierno/prensa/buen-gobierno-informa-en-relacion-a-la-aprehension-de-una-ex-persona-servidora-publica-del-sat?idiom=es"
   },

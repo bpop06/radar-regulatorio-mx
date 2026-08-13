@@ -1,5 +1,5 @@
 {
-  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "cut_id": "eb601fec447d40cac59ba502",
   "item": {
     "ai_generated": false,
     "authority": "Procuraduría de la Defensa del Contribuyente",
@@ -51,12 +51,12 @@
     "source": "Gob.mx APF",
     "source_id": "19cf2023025ded9b",
     "subtopic_tags": [
-      "sat",
       "prodecon",
       "reglas generales de comercio exterior",
       "pedimento",
       "importador",
-      "comercio exterior"
+      "comercio exterior",
+      "sat"
     ],
     "summary": null,
     "summary_teaser": null,

@@ -1,5 +1,5 @@
 {
-  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "cut_id": "eb601fec447d40cac59ba502",
   "item": {
     "ai_generated": false,
     "authority": "Procuraduría Federal del Consumidor",
@@ -15,24 +15,23 @@
     "case_status": "",
     "case_treaty": "",
     "categories": [
-      "Fiscal",
-      "Proceso legislativo"
+      "Fiscal"
     ],
     "content_hash": "cbd1d3e4129c1efc5d024bdf35c850386e075aec538a9e87547a0a25108d6f4d",
     "country_or_org": "México",
     "description": "El Gobierno de México, encabezado por la Presidenta Dra. Claudia Sheinbaum Pardo, reafirma su compromiso con la economía nacional al mantener una comunicación permanente y coordinada con el sector gasolinero. Esta alianza ha permitido operar con éxito la Estrategia para estabilizar el precio del Diésel en la República Mexicana, lo que ha generado beneficios directos para la población. La estrategia, que se mantiene vigente convoca a la participación voluntaria de las y los empresarios del sector junto con la acción directa de distintas entidades gubernamentales. Así, se ha logrado mantener el precio de este energético por debajo de los $ 27.00 pesos por litro a nivel nacional y en zonas fronterizas por debajo de $ 25.39 pesos por litro, derivado de la aplicación de una tasa de IVA del 8% en esas regiones. Para sostener este esfuerzo, el Gobierno de México aplica de manera coordinada los siguientes mecanismos de apoyo: Estímulos fiscales: Se mantiene de forma constante la aplicación de estímulos al Impuesto Especial sobre Producción y Servicios (IEPS); Reducción de comisiones: Se trabaja en coordinación con la Asociación de Bancos de México y la Asociación de Sociedades Emisoras de Vales, A.C. para disminuir las comisiones por pago con tarjetas, vales y medios electrónicos; Apoyo de PEMEX: Petróleos Mexicanos respalda esta iniciativa ofertando los combustibles a precios competitivos, además de incorporar cada vez más gasolineras a su transporte de última milla mejorando el costo del flete de los combustibles de sus Terminales de Almacenamiento y Despacho (TADs) hacia las estaciones de servicio. Logística y seguridad: Se refuerza continuamente la seguridad en estaciones de servicio y carreteras y se optimizan las cadenas logísticas de suministro de combustibles en todo el territorio nacional. A pesar de las medidas implementadas por el Gobierno Mexicano y el compromiso de la mayoría las y los empresarios gasolineros, aún se identifican algunas estaciones de servicio que no se han sumado a este esfuerzo conjunto y comercializan el diésel a precios significativamente superiores a los observados en el mercado. El Gobierno de México pone a disposición de la ciudadanía el listado de estaciones de servicio que no han realizado ningún esfuerzo en beneficio del pueblo de México y ofertan precios de diésel por encima de un margen razonablemente justo, el cual puede ser consultado mediante el siguiente código QR o liga electrónica adjunta: https://repositorio.energia.gob.mx/index.php/s/pfPybZZHTcAijEi Asimismo, reitera el llamado a estas estaciones de servicio para que reflejen el mismo compromiso en beneficio de México que ya han mostrado el 80% de las gasolineras que operan en el país, y reitera que continuará vigilando el mercado de combustibles para garantizar una competencia justa y proteger el bienestar de todas y todos los mexicanos.",
     "detail_markdown": null,
     "detail_url": "notas/e0a69887b3403ea473bd7f67.html",
-    "detected_at": "2026-08-13T02:36:54.429478+00:00",
+    "detected_at": "2026-07-12T12:00:00+00:00",
     "document_type": "Comunicado",
     "editorial_status": "needs_review",
-    "first_seen_at": "2026-08-13T02:36:54.429478+00:00",
+    "first_seen_at": "2026-07-12T12:00:00+00:00",
     "government_branch": "Organismo descentralizado",
     "id": "gob.mx apf:e41689152c5c519f",
     "importance": 3,
     "issuing_body": "Procuraduría Federal del Consumidor",
     "jurisdiction": "nacional",
-    "last_seen_at": "2026-08-13T02:53:39.855587+00:00",
+    "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
     "official_evidence": {
       "primary_url": "https://www.gob.mx/profeco/prensa/el-gobierno-de-mexico-informa-sobre-las-estaciones-de-servicio-que-no-se-han-adherido-al-acuerdo-para-la-estabilizacion-del-precio-de-diesel?idiom=es"
     },
@@ -45,22 +44,20 @@
     "published_day": 12,
     "published_month": 7,
     "published_year": 2026,
-    "relevance_score": 5,
+    "relevance_score": 4,
     "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
     "source": "Gob.mx APF",
     "source_id": "e41689152c5c519f",
     "subtopic_tags": [
       "impuesto",
       "iva",
-      "ieps",
-      "iniciativa"
+      "ieps"
     ],
     "summary": null,
     "summary_teaser": null,
     "title": null,
     "topic_tags": [
       "Fiscal",
-      "Iniciativa",
       "Acuerdo"
     ],
     "url": "https://www.gob.mx/profeco/prensa/el-gobierno-de-mexico-informa-sobre-las-estaciones-de-servicio-que-no-se-han-adherido-al-acuerdo-para-la-estabilizacion-del-precio-de-diesel?idiom=es"

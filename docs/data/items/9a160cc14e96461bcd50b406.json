@@ -1,5 +1,5 @@
 {
-  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "cut_id": "eb601fec447d40cac59ba502",
   "item": {
     "ai_generated": false,
     "authority": "Consejería Jurídica del Ejecutivo Federal",
@@ -32,7 +32,7 @@
     "importance": 2,
     "issuing_body": "Consejería Jurídica del Ejecutivo Federal",
     "jurisdiction": "nacional",
-    "last_seen_at": "2026-08-13T02:53:39.855587+00:00",
+    "last_seen_at": "2026-08-13T03:50:09.071593+00:00",
     "official_evidence": {
       "primary_url": "https://www.gob.mx/cjef/es/articulos/iniciativa-nacional-contra-el-feminicidio?idiom=es"
     },
@@ -50,7 +50,7 @@
     "source": "Gob.mx APF",
     "source_id": "67d05e4d855f0a31",
     "subtopic_tags": [
-      "iniciativa",
+      "iniciativa de ley",
       "delito"
     ],
     "summary": null,

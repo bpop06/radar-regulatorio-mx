@@ -1,5 +1,5 @@
 {
-  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "cut_id": "eb601fec447d40cac59ba502",
   "item": {
     "ai_generated": false,
     "authority": "PODER EJECUTIVO SECRETARIA DE ENERGIA",
@@ -22,16 +22,16 @@
     "description": "Norma Oficial Mexicana NOM-022-ENER/SE-2025, Eficiencia energética y requisitos de seguridad al usuario para aparatos de refrigeración comercial autocontenidos. Límites, métodos de prueba y etiquetado.",
     "detail_markdown": null,
     "detail_url": "notas/17568c10b3a1d4bcfaca06d7.html",
-    "detected_at": "2026-08-13T02:53:39.855587+00:00",
+    "detected_at": "2026-07-23T12:00:00+00:00",
     "document_type": "Norma Oficial Mexicana",
     "editorial_status": "needs_review",
-    "first_seen_at": "2026-08-13T02:36:54.429478+00:00",
+    "first_seen_at": "2026-07-23T12:00:00+00:00",
     "government_branch": "Ejecutivo federal",
     "id": "dof:5794525",
     "importance": 2,
     "issuing_body": "Presidencia de la República",
     "jurisdiction": "nacional",
-    "last_seen_at": "2026-08-13T02:53:39.855587+00:00",
+    "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
     "official_evidence": {
       "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5794525&fecha=23/07/2026"
     },
@@ -45,7 +45,7 @@
     "published_month": 7,
     "published_year": 2026,
     "relevance_score": 3,
-    "review_reason": "La fuente oficial cambió; requiere una nueva revisión editorial.",
+    "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
     "source": "DOF",
     "source_id": "5794525",
     "subtopic_tags": [

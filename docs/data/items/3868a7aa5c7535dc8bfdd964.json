@@ -1,5 +1,5 @@
 {
-  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "cut_id": "eb601fec447d40cac59ba502",
   "item": {
     "ai_generated": false,
     "authority": "Secretaría de Economía",
@@ -17,7 +17,6 @@
     "categories": [
       "Comercio exterior",
       "Administración centralizada",
-      "Proceso legislativo",
       "Comercio internacional"
     ],
     "content_hash": "7cc8ba669f7a69b1c7ebfec8eb7008b90595e5d7ff9410562aa2b39db68d2c85",
@@ -54,10 +53,9 @@
     "subtopic_tags": [
       "exportador",
       "exportacion",
-      "marca",
       "indicacion geografica",
       "denominacion de origen",
-      "iniciativa"
+      "t-mec"
     ],
     "summary": null,
     "summary_teaser": null,
@@ -66,7 +64,6 @@
       "Aduanero",
       "Comercio exterior",
       "Propiedad intelectual",
-      "Iniciativa",
       "Comercio internacional"
     ],
     "url": "https://www.gob.mx/se/prensa/participacion-del-secretario-marcelo-ebrard-durante-la-presentacion-de-la-indicacion-geografica-del-aguacate-franja-michoacan?idiom=es"

@@ -1,5 +1,5 @@
 {
-  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "cut_id": "eb601fec447d40cac59ba502",
   "item": {
     "ai_generated": false,
     "authority": "Instituto Mexicano de la Propiedad Industrial",
@@ -15,8 +15,7 @@
     "case_status": "",
     "case_treaty": "",
     "categories": [
-      "Administración descentralizada",
-      "Proceso legislativo"
+      "Administración descentralizada"
     ],
     "content_hash": "41d49e45291c5f3ca696dc91929c5cef8b81267c49a3a7b8c3fee9895e7fe524",
     "country_or_org": "México",
@@ -52,14 +51,13 @@
     "subtopic_tags": [
       "propiedad industrial",
       "impi",
-      "iniciativa"
+      "registro de marcas"
     ],
     "summary": null,
     "summary_teaser": null,
     "title": null,
     "topic_tags": [
-      "Propiedad intelectual",
-      "Iniciativa"
+      "Propiedad intelectual"
     ],
     "url": "https://www.gob.mx/impi/prensa/secihti-e-impi-buscan-incorporar-500-especialistas-a-la-proteccion-de-la-innovacion-marcas-y-patentes?idiom=es"
   },

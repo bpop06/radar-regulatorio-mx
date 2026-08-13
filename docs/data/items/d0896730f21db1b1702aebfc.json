@@ -1,9 +1,9 @@
 {
-  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "cut_id": "eb601fec447d40cac59ba502",
   "item": {
     "ai_generated": false,
     "authority": "Banco Mundial",
-    "canonical_url": "http://www.bancomundial.org/es/news/press-release/2026/07/01/banco-mundial-ampla-funciones-de-juan-pablo-uribe-como-director-de-division-",
+    "canonical_url": "https://www.bancomundial.org/es/news/press-release/2026/07/01/banco-mundial-ampla-funciones-de-juan-pablo-uribe-como-director-de-division-",
     "card_body": null,
     "case_amount": "",
     "case_claim": "",
@@ -17,7 +17,7 @@
     "categories": [
       "Comercio internacional"
     ],
-    "content_hash": "a6c62a6f91196e5d8914f52118522fb824bcfd6b91f3a0a70861e92841955e5f",
+    "content_hash": "f012bb2a9d3f5b968aef7622f78cd8699021560ebe36b77361ffabdc096fd69f",
     "country_or_org": "Banco Mundial",
     "description": "El Banco Mundial anunció la ampliación de las responsabilidades de Juan Pablo Uribe, quien asumirá, a partir de hoy, el cargo de Director de la División para México, Centroamérica y la República Dominicana. Uribe continuará basado en la oficina regional en Ciudad de Panamá, desde donde lidera las operaciones de la institución en Centroamérica y la República Dominicana desde julio de 2025 y asumirá además la dirección del portafolio del Banco Mundial en México.",
     "detail_markdown": null,
@@ -33,7 +33,7 @@
     "jurisdiction": "internacional",
     "last_seen_at": "2026-07-07T22:17:33.843455+00:00",
     "official_evidence": {
-      "primary_url": "http://www.bancomundial.org/es/news/press-release/2026/07/01/banco-mundial-ampla-funciones-de-juan-pablo-uribe-como-director-de-division-"
+      "primary_url": "https://www.bancomundial.org/es/news/press-release/2026/07/01/banco-mundial-ampla-funciones-de-juan-pablo-uribe-como-director-de-division-"
     },
     "official_identifiers": {
       "source_id": "23fda9ef7f1048fc"
@@ -57,7 +57,7 @@
     "topic_tags": [
       "Comercio internacional"
     ],
-    "url": "http://www.bancomundial.org/es/news/press-release/2026/07/01/banco-mundial-ampla-funciones-de-juan-pablo-uribe-como-director-de-division-"
+    "url": "https://www.bancomundial.org/es/news/press-release/2026/07/01/banco-mundial-ampla-funciones-de-juan-pablo-uribe-como-director-de-division-"
   },
   "schema_version": 8
 }

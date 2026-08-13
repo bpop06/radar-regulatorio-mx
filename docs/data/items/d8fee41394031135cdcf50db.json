@@ -1,5 +1,5 @@
 {
-  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "cut_id": "eb601fec447d40cac59ba502",
   "item": {
     "ai_generated": false,
     "authority": "Organización Mundial del Comercio",
@@ -23,16 +23,16 @@
     "description": "The WTO will host the first World Trade and Tech Day on 14 September at its headquarters in Geneva, bringing together trade and information and communications technology (ICT) policymakers, industry leaders and other stakeholders to discuss how artificial intelligence (AI) strategies can better support economies' efforts to maximize the gains of international trade.",
     "detail_markdown": null,
     "detail_url": "notas/d8fee41394031135cdcf50db.html",
-    "detected_at": "2026-08-13T02:36:54.429478+00:00",
+    "detected_at": "2026-08-03T12:00:00+00:00",
     "document_type": "Noticia",
     "editorial_status": "needs_review",
-    "first_seen_at": "2026-08-13T02:36:54.429478+00:00",
+    "first_seen_at": "2026-08-03T12:00:00+00:00",
     "government_branch": "Organismo internacional",
     "id": "omc:b43a78527c8c2146",
     "importance": 2,
     "issuing_body": "Organización Mundial del Comercio",
     "jurisdiction": "internacional",
-    "last_seen_at": "2026-08-13T02:53:39.855587+00:00",
+    "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
     "official_evidence": {
       "primary_url": "https://www.wto.org/english/news_e/news26_e/dtech_03aug26_471_e.htm"
     },

@@ -1,5 +1,5 @@
 {
-  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "cut_id": "eb601fec447d40cac59ba502",
   "item": {
     "ai_generated": false,
     "authority": "Agencia Nacional de Aduanas de México",
@@ -22,16 +22,16 @@
     "description": "Guía de importación y exportación",
     "detail_markdown": null,
     "detail_url": "notas/682b03dc0a559ce79c4c03b5.html",
-    "detected_at": "2026-08-13T02:53:39.855587+00:00",
+    "detected_at": "2026-08-05T12:00:00+00:00",
     "document_type": "Comunicado",
     "editorial_status": "needs_review",
-    "first_seen_at": "2026-08-13T02:36:54.429478+00:00",
+    "first_seen_at": "2026-08-05T12:00:00+00:00",
     "government_branch": "Ejecutivo federal",
     "id": "anam:d05cbcfade301a91",
     "importance": 2,
     "issuing_body": "Agencia Nacional de Aduanas de México",
     "jurisdiction": "nacional",
-    "last_seen_at": "2026-08-13T02:53:39.855587+00:00",
+    "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
     "official_evidence": {
       "primary_url": "https://www.anam.gob.mx/guia-de-importacion-y-exportacion/"
     },
@@ -45,7 +45,7 @@
     "published_month": 8,
     "published_year": 2026,
     "relevance_score": 3,
-    "review_reason": "La fuente oficial cambió; requiere una nueva revisión editorial.",
+    "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
     "source": "ANAM",
     "source_id": "d05cbcfade301a91",
     "subtopic_tags": [

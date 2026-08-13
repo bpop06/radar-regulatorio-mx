@@ -1,5 +1,5 @@
 {
-  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "cut_id": "eb601fec447d40cac59ba502",
   "item": {
     "ai_generated": false,
     "authority": "Organización Mundial del Comercio",
@@ -23,16 +23,16 @@
     "description": "On 5 August 2026, the United Kingdom notified the WTO’s Committee on Safeguards that it had initiated, on the same day, a safeguard investigation on imports of certain polyethylene terephthalate (PET).",
     "detail_markdown": null,
     "detail_url": "notas/bdcc68cd3d59fda932545576.html",
-    "detected_at": "2026-08-13T02:36:54.429478+00:00",
+    "detected_at": "2026-08-05T12:00:00+00:00",
     "document_type": "Noticia",
     "editorial_status": "needs_review",
-    "first_seen_at": "2026-08-13T02:36:54.429478+00:00",
+    "first_seen_at": "2026-08-05T12:00:00+00:00",
     "government_branch": "Organismo internacional",
     "id": "omc:2388393e6da55d24",
     "importance": 2,
     "issuing_body": "Organización Mundial del Comercio",
     "jurisdiction": "internacional",
-    "last_seen_at": "2026-08-13T02:53:39.855587+00:00",
+    "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
     "official_evidence": {
       "primary_url": "https://www.wto.org/english/news_e/news26_e/safe_gbr_05aug26_472_e.htm"
     },

@@ -1,5 +1,5 @@
 {
-  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "cut_id": "eb601fec447d40cac59ba502",
   "item": {
     "ai_generated": false,
     "authority": "Cámara de Diputados",
@@ -15,8 +15,8 @@
     "case_status": "",
     "case_treaty": "",
     "categories": [
-      "Proceso legislativo",
-      "Penal"
+      "Penal",
+      "Proceso legislativo"
     ],
     "content_hash": "0c555856ed47a20fdc2d20cb64cccff6549ced7508fbbe6d3b4e43059a47bf1f",
     "country_or_org": "México",
@@ -45,22 +45,21 @@
     "published_day": 6,
     "published_month": 7,
     "published_year": 2026,
-    "relevance_score": 5,
+    "relevance_score": 4,
     "review_reason": "Registro legado o contenido sin revisión editorial certificada.",
     "source": "Diputados",
     "source_id": "8ced7b07f0fe6891",
     "subtopic_tags": [
-      "reforma",
-      "adiciona",
       "penal",
-      "codigo nacional de procedimientos penales"
+      "codigo nacional de procedimientos penales",
+      "reforma normativa"
     ],
     "summary": null,
     "summary_teaser": null,
     "title": null,
     "topic_tags": [
-      "Iniciativa",
-      "Penal"
+      "Penal",
+      "Iniciativa"
     ],
     "url": "https://gaceta.diputados.gob.mx/Gaceta/66/2026/jul/20260706.html#Iniciativa10"
   },

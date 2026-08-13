@@ -1,5 +1,5 @@
 {
-  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "cut_id": "eb601fec447d40cac59ba502",
   "item": {
     "ai_generated": false,
     "authority": "Secretaría de Economía",
@@ -22,16 +22,16 @@
     "description": "10.08.2026 Listado de empresas para el Aviso de Disponibilidad.",
     "detail_markdown": null,
     "detail_url": "notas/a711b17f51cb633d3e0bc16f.html",
-    "detected_at": "2026-08-13T02:36:54.429478+00:00",
+    "detected_at": "2026-08-10T12:00:00+00:00",
     "document_type": "Actualidad",
     "editorial_status": "needs_review",
-    "first_seen_at": "2026-08-13T02:36:54.429478+00:00",
+    "first_seen_at": "2026-08-10T12:00:00+00:00",
     "government_branch": "Ejecutivo federal",
     "id": "snice:5ca4a0ab4b8b1dca",
     "importance": 1,
     "issuing_body": "Secretaría de Economía",
     "jurisdiction": "nacional",
-    "last_seen_at": "2026-08-13T02:53:39.855587+00:00",
+    "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
     "official_evidence": {
       "primary_url": "https://www.snice.gob.mx/~oracle/SNICE_DOCS/AVISODISPONIBILIDAD-ACTUALIDAD_20260811-20260810.xlsx"
     },

@@ -1,5 +1,5 @@
 {
-  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "cut_id": "eb601fec447d40cac59ba502",
   "item": {
     "ai_generated": false,
     "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
@@ -22,16 +22,16 @@
     "description": "Acuerdo por el que se destina a la Universidad Nacional Autónoma de México, el inmueble federal denominado Fracción B Anexo Museo de la Mujer, con Registro Federal Inmobiliario 9-71406-0, y superficie de 314.30 metros cuadrados, que proviene de un inmueble de mayor extensión, ubicado en Calle República de Bolivia número 25, Colonia Centro, Código Postal 06010, Alcaldía Cuauhtémoc, Ciudad de México.",
     "detail_markdown": null,
     "detail_url": "notas/f64a8cf4213e3fd59a830122.html",
-    "detected_at": "2026-08-13T02:53:39.855587+00:00",
+    "detected_at": "2026-07-30T12:00:00+00:00",
     "document_type": "Acuerdo",
     "editorial_status": "needs_review",
-    "first_seen_at": "2026-08-13T02:36:54.429478+00:00",
+    "first_seen_at": "2026-07-30T12:00:00+00:00",
     "government_branch": "Ejecutivo federal",
     "id": "dof:5795026",
     "importance": 1,
     "issuing_body": "Secretaría de Hacienda y Crédito Público",
     "jurisdiction": "nacional",
-    "last_seen_at": "2026-08-13T02:53:39.855587+00:00",
+    "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
     "official_evidence": {
       "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795026&fecha=30/07/2026"
     },
@@ -45,7 +45,7 @@
     "published_month": 7,
     "published_year": 2026,
     "relevance_score": 1,
-    "review_reason": "La fuente oficial cambió; requiere una nueva revisión editorial.",
+    "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
     "source": "DOF",
     "source_id": "5795026",
     "subtopic_tags": [],

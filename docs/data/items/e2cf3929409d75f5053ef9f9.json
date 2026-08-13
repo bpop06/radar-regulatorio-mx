@@ -1,5 +1,5 @@
 {
-  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "cut_id": "eb601fec447d40cac59ba502",
   "item": {
     "ai_generated": false,
     "authority": "Secretaría de Economía",
@@ -16,8 +16,8 @@
     "case_treaty": "",
     "categories": [
       "Administración centralizada",
-      "Proceso legislativo",
-      "Comercio internacional"
+      "Comercio internacional",
+      "Proceso legislativo"
     ],
     "content_hash": "14864f6e8a6b8d0aa70517b8aecf1d017d2f94b77ee32de39fb0d66c9832c573",
     "country_or_org": "México",
@@ -55,7 +55,7 @@
       "propiedad industrial",
       "impi",
       "patente",
-      "marca",
+      "registro de marcas",
       "pirateria"
     ],
     "summary": null,
@@ -63,8 +63,8 @@
     "title": null,
     "topic_tags": [
       "Propiedad intelectual",
-      "Iniciativa",
       "Comercio internacional",
+      "Iniciativa",
       "Derecho administrativo"
     ],
     "url": "https://www.gob.mx/se/prensa/conferencia-de-prensa-del-director-general-del-impi-vidal-llerenas-del-secretario-de-economia-marcelo-ebrard?idiom=es"
