@@ -8,10 +8,15 @@ import {
   stableDetailHref,
   teaser,
 } from "./data-client.js";
-import { formatDate, isSafeHttpUrl, mexicoToday } from "./markdown.js";
+import { formatDate, isSafeHttpUrl, mexicoToday, setTime } from "./markdown.js?v=20260813g";
 
 const elements = {
+  heading: document.querySelector("#edition-heading"),
+  deck: document.querySelector("#edition-deck"),
   date: document.querySelector("#edition-date"),
+  updated: document.querySelector("#edition-updated"),
+  editionTotal: document.querySelector("#edition-total"),
+  editionSignals: document.querySelector("#edition-signals"),
   loading: document.querySelector("#edition-loading"),
   ready: document.querySelector("#edition-ready"),
   empty: document.querySelector("#edition-empty"),
@@ -25,6 +30,7 @@ const elements = {
   coverageIndicator: document.querySelector("#coverage-indicator"),
   coverageLabel: document.querySelector("#coverage-label"),
   coverageCopy: document.querySelector("#coverage-copy"),
+  coverageUpdated: document.querySelector("#coverage-updated"),
   coverageDetail: document.querySelector("#coverage-detail"),
   leadPanel: document.querySelector("#lead-panel"),
   leadRank: document.querySelector("#lead-rank"),
@@ -66,6 +72,7 @@ function watercolorFor(signal) {
 }
 
 function showState(name) {
+  elements.ready.setAttribute("aria-busy", String(name === "loading"));
   elements.loading.hidden = name !== "loading";
   elements.ready.hidden = name !== "ready";
   elements.empty.hidden = name !== "empty";
@@ -117,6 +124,7 @@ function renderCoverage(data) {
   elements.coverageCopy.textContent = degraded
     ? "El corte se publicó con incidencias aisladas. Las fuentes afectadas se identifican abajo."
     : "Las fuentes oficiales certificadas respondieron correctamente en este corte.";
+  setTime(elements.coverageUpdated, data.generated_at, { type: "datetime", short: true });
 
   elements.coverageDetail.replaceChildren();
   if (degraded) {
@@ -151,7 +159,10 @@ function setLastEdition(data) {
 }
 
 function renderPending(data) {
-  elements.date.textContent = `Hoy · ${formatDate(mexicoToday())}`;
+  setTime(elements.date, mexicoToday());
+  setTime(elements.updated, data.generated_at, { type: "datetime", short: true });
+  elements.editionTotal.textContent = "—";
+  elements.editionSignals.textContent = "—";
   elements.emptyLabel.textContent = "Corte pendiente";
   elements.emptyTitle.textContent = "El corte vigente todavía no está publicado.";
   elements.emptyCopy.textContent = "La portada conserva la fecha real del último corte. Consulta esa edición o navega el archivo permanente.";
@@ -163,7 +174,10 @@ function renderPending(data) {
 }
 
 function renderEmpty(data) {
-  elements.date.textContent = `Hoy · ${formatDate(data.edition_date)}`;
+  setTime(elements.date, data.edition_date);
+  setTime(elements.updated, data.generated_at, { type: "datetime", short: true });
+  elements.editionTotal.textContent = String(Number(data.total_today) || 0);
+  elements.editionSignals.textContent = "0";
   elements.emptyLabel.textContent = "Sin novedades";
   elements.emptyTitle.textContent = "El corte de hoy no contiene publicaciones seleccionadas.";
   elements.emptyCopy.textContent = "Las fuentes fueron revisadas y no se detectaron novedades que cumplieran los criterios del radar.";
@@ -195,6 +209,9 @@ function selectSignal(index, { focus = false } = {}) {
   elements.leadStatus.textContent = editorialLabel(signal);
   elements.leadStatus.className = `editorial-badge ${pending ? "is-pending" : "is-complete"}`;
   elements.leadDate.textContent = dateLabel(signal);
+  const machineDate = officialDate(signal) || String(signal.detected_at || "").slice(0, 10);
+  if (machineDate) elements.leadDate.setAttribute("datetime", machineDate);
+  else elements.leadDate.removeAttribute("datetime");
   elements.leadTitle.textContent = displayTitle(signal);
   elements.leadReasonLabel.textContent = pending ? "Motivo de revisión" : "Por qué está en el radar";
   elements.leadReason.textContent = pending
@@ -323,7 +340,14 @@ function renderReady(data) {
   const signals = data.signals;
   if (!signals.length) return renderEmpty({ ...data, state: "empty" });
   editionData = data;
-  elements.date.textContent = `Corte del ${formatDate(data.edition_date)} · fecha de detección`;
+  elements.heading.textContent = "Corte regulatorio";
+  if (elements.deck) {
+    elements.deck.textContent = `${signals.length} señales priorizadas de ${data.total_today} publicaciones registradas hoy.`;
+  }
+  setTime(elements.date, data.edition_date);
+  setTime(elements.updated, data.generated_at, { type: "datetime", short: true });
+  elements.editionTotal.textContent = String(Number(data.total_today) || 0);
+  elements.editionSignals.textContent = String(signals.length);
   const pending = signals.filter((signal) => signal.editorial_status === "needs_review").length;
   const detected = data.total_today ?? signals.length;
   const detectionLabel = detected === 1 ? "detección" : "detecciones";
@@ -351,6 +375,11 @@ async function loadCurrentEdition() {
     else throw new Error("Estado de edición desconocido");
   } catch (error) {
     showState("error");
+    setTime(elements.date, null);
+    setTime(elements.updated, null, { type: "datetime" });
+    setTime(elements.coverageUpdated, null, { type: "datetime" });
+    elements.editionTotal.textContent = "—";
+    elements.editionSignals.textContent = "—";
     elements.coverageLabel.textContent = "Cobertura no verificada";
     elements.coverageCopy.textContent = "No fue posible leer el manifiesto y el corte publicado.";
     console.error(error);

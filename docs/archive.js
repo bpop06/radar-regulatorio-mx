@@ -7,7 +7,7 @@ import {
   stableDetailHref,
   teaser,
 } from "./data-client.js";
-import { formatDate } from "./markdown.js";
+import { formatDate, setTime } from "./markdown.js?v=20260813g";
 
 const ARCHIVE_WATERCOLORS = ["#54789b", "#667c61", "#94691f", "#8c5964", "#756a8b"];
 const ARCHIVE_TILTS = [-.6, .45, -.25, .7, -.4, .3];
@@ -42,7 +42,17 @@ const elements = {
   sourceStatus: document.querySelector("#source-status"),
   monthStatus: document.querySelector("#archive-month-status"),
   loadMore: document.querySelector("#load-more-months"),
+  from: document.querySelector("#archive-from"),
+  to: document.querySelector("#archive-to"),
+  updated: document.querySelector("#archive-updated"),
 };
+
+function updateDatasetFacts() {
+  const dates = state.items.map((item) => officialDate(item)).filter(Boolean).sort();
+  setTime(elements.from, dates[0]);
+  setTime(elements.to, dates.at(-1));
+  setTime(elements.updated, state.manifest?.generated_at, { type: "datetime", short: true });
+}
 
 function normalize(value) {
   return String(value || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
@@ -219,6 +229,7 @@ function buildRow(item, absoluteIndex) {
 function renderActiveQuery() {
   const labels = [];
   if (state.exactDate) labels.push(`Fecha oficial: ${formatDate(state.exactDate)}`);
+  else if (state.days !== "all") labels.push(`Últimos ${state.days} días`);
   if (state.query) labels.push(`“${state.query}”`);
   if (state.category !== "Todas") labels.push(state.category);
   if (state.organ !== "Todas") labels.push(state.organ);
@@ -229,6 +240,7 @@ function renderActiveQuery() {
 }
 
 function render() {
+  elements.list.setAttribute("aria-busy", "true");
   const filtered = filteredItems();
   const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
   state.page = Math.min(state.page, totalPages);
@@ -244,6 +256,7 @@ function render() {
   elements.next.disabled = state.page >= totalPages;
   renderActiveQuery();
   updateUrl();
+  elements.list.removeAttribute("aria-busy");
 }
 
 function renderSources() {
@@ -297,7 +310,7 @@ function bind() {
     syncControls();
     if (mobileFilters.matches) elements.filterDrawer.open = false;
     render();
-    elements.search.focus();
+    elements.search.focus({ preventScroll: true });
   });
   elements.prev.addEventListener("click", () => {
     state.page = Math.max(1, state.page - 1);
@@ -316,6 +329,7 @@ function bind() {
     elements.monthStatus.textContent = "Cargando el mes anterior…";
     try {
       state.items = uniqueItems([...state.items, ...await loadArchiveMonth(path, state.manifest)]);
+      updateDatasetFacts();
       populateFilters();
       render();
       elements.monthStatus.textContent = state.remainingPaths.length
@@ -335,6 +349,7 @@ function bind() {
 async function init() {
   loadUrlState();
   bind();
+  elements.list.setAttribute("aria-busy", "true");
   try {
     const requestedMonth = /^\d{4}-\d{2}-\d{2}$/.test(state.exactDate)
       ? state.exactDate.slice(0, 7) : "";
@@ -343,6 +358,7 @@ async function init() {
     state.items = uniqueItems(payload.items);
     state.sources = payload.sources;
     state.remainingPaths = payload.remainingPaths || [];
+    updateDatasetFacts();
     populateFilters();
     elements.loadMore.hidden = state.remainingPaths.length === 0;
     elements.monthStatus.textContent = state.remainingPaths.length
@@ -355,7 +371,12 @@ async function init() {
     elements.empty.hidden = true;
     elements.error.hidden = false;
     elements.count.textContent = "Datos no disponibles";
+    setTime(elements.from, null);
+    setTime(elements.to, null);
+    setTime(elements.updated, null, { type: "datetime" });
     console.error(error);
+  } finally {
+    elements.list.removeAttribute("aria-busy");
   }
 }
 

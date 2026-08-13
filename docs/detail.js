@@ -10,8 +10,9 @@ import {
 import {
   formatDate,
   isSafeHttpUrl,
+  setTime,
   translateCaseStatus,
-} from "./markdown.js";
+} from "./markdown.js?v=20260813g";
 
 const elements = {
   back: document.querySelector("#detail-back"),
@@ -26,6 +27,7 @@ const elements = {
   loadStatus: document.querySelector("#detail-load-status"),
   content: document.querySelector("#detail-content"),
   officialDate: document.querySelector("#detail-date"),
+  updated: document.querySelector("#detail-updated"),
   detectedDate: document.querySelector("#detail-detected-date"),
   detectedRow: document.querySelector("#detail-detected-row"),
   identifier: document.querySelector("#detail-identifier"),
@@ -201,6 +203,8 @@ async function loadDetail() {
     return;
   }
 
+  const main = document.querySelector("#main");
+  main?.setAttribute("aria-busy", "true");
   try {
     const manifest = await loadManifest();
     const [item, edition] = await Promise.all([
@@ -219,7 +223,11 @@ async function loadDetail() {
     elements.status.textContent = editorialLabel(item);
     elements.status.className = `editorial-badge ${pending ? "is-pending" : "is-complete"}`;
     elements.summary.textContent = pending ? "" : teaser(item);
-    elements.officialDate.textContent = formatDate(officialDate(item));
+    setTime(elements.officialDate, officialDate(item));
+    setTime(elements.updated, manifest?.generated_at || edition?.generated_at, {
+      type: "datetime",
+      short: true,
+    });
     elements.organ.textContent = item.issuing_body || item.authority || "No identificado";
     elements.source.textContent = item.source || "Fuente oficial";
     elements.categories.textContent = Array.isArray(item.categories) && item.categories.length
@@ -257,6 +265,8 @@ async function loadDetail() {
   } catch (error) {
     showMessage("No fue posible cargar la ficha", "Comprueba la conexión y vuelve a intentarlo desde el archivo.");
     console.error(error);
+  } finally {
+    main?.removeAttribute("aria-busy");
   }
 }
 

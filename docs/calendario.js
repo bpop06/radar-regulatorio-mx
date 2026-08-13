@@ -2,7 +2,7 @@
  * Reglas: sábados/domingos inhábiles SIEMPRE (derivados en cliente); los días del
  * JSON pintan su estado encima; el resto son hábiles. Un calendario por órgano. */
 
-import { isSafeHttpUrl, mexicoToday } from "./markdown.js";
+import { isSafeHttpUrl, mexicoToday, setTime } from "./markdown.js?v=20260813g";
 
 const RM = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
@@ -32,6 +32,7 @@ const el = {
   reading: document.querySelector("#reading-restantes"),
   readingLabel: document.querySelector("#reading-label"),
   legend: document.querySelector("#cal-legend"),
+  updated: document.querySelector("#calendar-updated"),
 };
 
 const store = {
@@ -218,6 +219,7 @@ function countHabil(fromDate, toDate) {
 }
 function updateReading() {
   const n = computeRestantes();
+  el.readingLabel.textContent = `${n === 1 ? "Día hábil restante" : "Días hábiles restantes"} en ${calendarYear}`;
   if (RM) { el.reading.textContent = String(n); return; }
   const duration = 180;
   const start = performance.now();
@@ -232,8 +234,10 @@ function updateReading() {
 
 /* ------------------------------------------------------------ render del mes */
 function renderMonth() {
+  el.grid.setAttribute("aria-busy", "true");
   const m = store.month;
   el.monthLabel.textContent = `${monthNamesFull[m].toUpperCase()} ${calendarYear}`;
+  el.monthLabel.dateTime = `${calendarYear}-${pad2(m + 1)}`;
   el.prev.disabled = m <= 0;
   el.next.disabled = m >= 11;
 
@@ -260,13 +264,12 @@ function renderMonth() {
     cell.dataset.date = iso;
     cell.dataset.cell = "";
     cell.style.setProperty("--ci", lead + d - 1);
-    cell.setAttribute("role", "gridcell");
     cell.setAttribute(
       "aria-label",
-      `${dowNamesLower[dow]} ${d} de ${monthNamesFull[m]}, ${statusLabel(info.status)}` +
+      `${dowNamesLower[dow]} ${d} de ${monthNamesFull[m]} de ${calendarYear}, ${statusLabel(info.status)}` +
         (info.guardia ? ", con guardia" : ""),
     );
-    cell.setAttribute("aria-selected", String(iso === store.selectedDate));
+    cell.setAttribute("aria-pressed", String(iso === store.selectedDate));
     cell.tabIndex = -1;
 
     const isToday = t.y === calendarYear && t.m === m && t.d === d;
@@ -279,6 +282,7 @@ function renderMonth() {
     const key = document.createElement("span");
     key.className = "state-key";
     key.setAttribute("aria-hidden", "true");
+    key.textContent = info.status === "habil" ? "H" : info.status === "vacaciones" ? "V" : "I";
     cell.append(num, key);
     if (info.guardia) {
       const mark = document.createElement("span");
@@ -306,13 +310,13 @@ function renderMonth() {
   for (let index = 0; index < dayNodes.length; index += 7) {
     const row = document.createElement("div");
     row.className = "cal-row";
-    row.setAttribute("role", "row");
     row.append(...dayNodes.slice(index, index + 7));
     el.grid.append(row);
   }
 
   setRovingTabindex();
   runScanIn();
+  el.grid.removeAttribute("aria-busy");
 }
 
 function setRovingTabindex() {
@@ -396,7 +400,7 @@ function selectDay(iso, cell) {
   el.grid.querySelectorAll(".cal-day").forEach((c) => {
     const on = c.dataset.date === iso;
     c.classList.toggle("is-selected", on);
-    c.setAttribute("aria-selected", String(on));
+    c.setAttribute("aria-pressed", String(on));
   });
   if (cell) {
     el.grid.querySelectorAll(".cal-day").forEach((c) => (c.tabIndex = c === cell ? 0 : -1));
@@ -592,6 +596,7 @@ function initLegend() {
 
 /* ------------------------------------------------------------ init */
 async function init() {
+  el.grid.setAttribute("aria-busy", "true");
   el.prev.addEventListener("click", () => changeMonth(-1));
   el.next.addEventListener("click", () => changeMonth(1));
   el.today.addEventListener("click", () => {
@@ -618,6 +623,7 @@ async function init() {
     const res = await fetch("data/calendars.json", { cache: "no-store" });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const payload = await res.json();
+    setTime(el.updated, payload.generated_at, { type: "datetime", short: true });
     calendarYear = Number(payload.year) || calendarYear;
     el.readingLabel.textContent = `Días hábiles restantes en ${calendarYear}`;
     store.organs = Array.isArray(payload.organs) ? payload.organs : [];
@@ -644,7 +650,10 @@ async function init() {
     msg.className = "dp-note";
     msg.textContent = "No fue posible cargar los calendarios.";
     el.grid.append(msg);
+    setTime(el.updated, null, { type: "datetime" });
     console.error(error);
+  } finally {
+    el.grid.removeAttribute("aria-busy");
   }
 }
 

@@ -4,13 +4,68 @@
     "ok": 18,
     "state": "complete"
   },
-  "cut_id": "f25f95a51e0dba261a6cd6aa",
+  "cut_id": "2799643ed56f78681626ac6c",
   "edition_date": "2026-08-13",
-  "generated_at": "2026-08-13T06:24:23.111815+00:00",
-  "last_available_date": "2026-08-12",
-  "lead_id": null,
+  "generated_at": "2026-08-13T13:53:50.681449+00:00",
+  "last_available_date": "2026-08-13",
+  "lead_id": "dof:5796157",
   "schema_version": 8,
-  "signals": [],
-  "state": "empty",
-  "total_today": 0
+  "signals": [
+    {
+      "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796157&fecha=13%2F08%2F2026",
+      "categories": [
+        "Administración centralizada"
+      ],
+      "country_or_org": "México",
+      "detail_url": "notas/99dbebe845dea7381dbb1800.html",
+      "detected_at": "2026-08-13T13:53:50.681449+00:00",
+      "editorial_status": "needs_review",
+      "id": "dof:5796157",
+      "importance": 1,
+      "issuing_body": "Secretaría de Hacienda y Crédito Público",
+      "jurisdiction": "nacional",
+      "official_published_at": "2026-08-13",
+      "official_title": "Acuerdo por el que se reforma y adiciona el Manual de Contabilidad Gubernamental.",
+      "published_at": "2026-08-13",
+      "rank": 1,
+      "relevance_score": 1,
+      "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
+      "source": "DOF",
+      "source_id": "5796157",
+      "summary": null,
+      "summary_teaser": null,
+      "title": null,
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796157&fecha=13/08/2026",
+      "why_it_matters": "Contenido nuevo o modificado; requiere revisión editorial. Consulta la fuente primaria para confirmar su alcance jurídico."
+    },
+    {
+      "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796158&fecha=13%2F08%2F2026",
+      "categories": [
+        "Administración centralizada"
+      ],
+      "country_or_org": "México",
+      "detail_url": "notas/4f446e3adebd24a17346c2fb.html",
+      "detected_at": "2026-08-13T13:53:50.681449+00:00",
+      "editorial_status": "needs_review",
+      "id": "dof:5796158",
+      "importance": 1,
+      "issuing_body": "Secretaría de Hacienda y Crédito Público",
+      "jurisdiction": "nacional",
+      "official_published_at": "2026-08-13",
+      "official_title": "Acuerdo por el que se reforma el Marco Conceptual de Contabilidad Gubernamental.",
+      "published_at": "2026-08-13",
+      "rank": 2,
+      "relevance_score": 1,
+      "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
+      "source": "DOF",
+      "source_id": "5796158",
+      "summary": null,
+      "summary_teaser": null,
+      "title": null,
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796158&fecha=13/08/2026",
+      "why_it_matters": "Contenido nuevo o modificado; requiere revisión editorial. Consulta la fuente primaria para confirmar su alcance jurídico."
+    }
+  ],
+  "state": "ready",
+  "total_today": 2
 }

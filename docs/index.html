@@ -9,8 +9,8 @@
     <meta property="og:title" content="Hoy · Radar Regulatorio MX">
     <meta property="og:description" content="Señales jurídicas y regulatorias con evidencia oficial y estatus editorial explícito.">
     <title>Hoy · Radar Regulatorio MX</title>
-    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#F4EDDD">
-    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#152630">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#F7F4EC">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#050B16">
     <script>
       (function () {
         document.documentElement.classList.add("js");
@@ -22,22 +22,27 @@
     </script>
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="preload" href="fonts/fraunces-variable-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="styles.css?v=20260812b">
-    <script type="module" src="app.js?v=20260812b"></script>
+    <link rel="preload" href="assets/archive-field-20260813.webp" as="image" type="image/webp">
+    <link rel="stylesheet" href="styles.css?v=20260813g">
+    <script type="module" src="app.js?v=20260813g"></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Saltar al contenido</a>
+    <div class="ambient-field" aria-hidden="true">
+      <span class="ambient-layer ambient-layer-paper"></span>
+      <span class="ambient-layer ambient-layer-carbon"></span>
+    </div>
     <header class="site-header">
       <nav class="nav shell" aria-label="Navegación principal">
         <a class="brand" href="index.html" aria-label="Radar Regulatorio MX, Hoy">
           <span class="brand-signal" aria-hidden="true"><span></span></span>
-          <span class="brand-copy"><strong>Radar MX</strong><small>Inteligencia regulatoria</small></span>
+          <span class="brand-copy"><strong>Radar MX</strong><small>Seguimiento regulatorio</small></span>
         </a>
         <div class="nav-actions">
           <div class="nav-links">
-            <a class="nav-link" data-page="today" href="index.html">Hoy</a>
-            <a class="nav-link" data-page="archive" href="archivo.html">Archivo</a>
-            <a class="nav-link" data-page="calendar" href="calendario.html">Calendario</a>
+            <a class="nav-link" data-page="today" href="index.html"><span data-icon="today" aria-hidden="true"></span><span>Hoy</span></a>
+            <a class="nav-link" data-page="archive" href="archivo.html"><span data-icon="archive" aria-hidden="true"></span><span>Archivo</span></a>
+            <a class="nav-link" data-page="calendar" href="calendario.html"><span data-icon="calendar" aria-hidden="true"></span><span>Calendario</span></a>
           </div>
           <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Cambiar tema">
             <span class="theme-glyph" aria-hidden="true">◐</span>
@@ -47,18 +52,37 @@
     </header>
 
     <main id="main" class="today-main" tabindex="-1">
-      <p id="edition-status" class="sr-only" role="status"></p>
       <section class="edition shell" aria-labelledby="edition-heading">
         <header class="edition-heading">
-          <div>
-            <p class="edition-date" id="edition-date">Edición de hoy</p>
-            <h1 id="edition-heading">Lo que merece tu atención.</h1>
+          <div class="edition-heading-copy">
+            <p class="edition-kicker">Edición diaria</p>
+            <h1 id="edition-heading">Corte regulatorio</h1>
+            <p id="edition-deck" class="edition-deck">Señales priorizadas y publicaciones del día, con fecha y fuente oficial.</p>
           </div>
-          <a class="coverage-indicator" id="coverage-indicator" href="#fuentes">
-            <span class="coverage-dot" aria-hidden="true"></span>
-            <span id="coverage-label">Verificando fuentes</span>
-          </a>
+          <dl class="edition-facts" aria-label="Datos del corte">
+            <div class="edition-fact edition-fact-date">
+              <dt><span data-icon="date" aria-hidden="true"></span> Fecha del corte</dt>
+              <dd><time id="edition-date">Fecha por confirmar</time></dd>
+            </div>
+            <div class="edition-fact">
+              <dt><span data-icon="refresh" aria-hidden="true"></span> Última actualización</dt>
+              <dd><time id="edition-updated">Hora por confirmar</time></dd>
+            </div>
+            <div class="edition-stat"><dt>Novedades</dt><dd id="edition-total">—</dd></div>
+            <div class="edition-stat"><dt>Señales</dt><dd id="edition-signals">—</dd></div>
+            <div class="edition-coverage">
+              <dt class="sr-only">Cobertura de fuentes</dt>
+              <dd>
+                <a class="coverage-indicator" id="coverage-indicator" href="#fuentes">
+                  <span class="coverage-dot" aria-hidden="true"></span>
+                  <span id="coverage-label">Verificando fuentes</span>
+                </a>
+              </dd>
+            </div>
+          </dl>
         </header>
+
+        <p id="edition-status" class="sr-only" role="status"></p>
 
         <div id="edition-loading" class="edition-loading">
           <span class="loading-pulse" aria-hidden="true"></span>
@@ -78,7 +102,7 @@
                 <span id="lead-organ">—</span>
                 <span id="lead-importance">Importancia —/5</span>
                 <span id="lead-status" class="editorial-badge">—</span>
-                <span id="lead-date">Fecha —</span>
+                <time id="lead-date">Fecha —</time>
               </div>
               <h2 id="lead-title">—</h2>
               <p class="lead-reason-label" id="lead-reason-label">Por qué está en el radar</p>
@@ -93,13 +117,13 @@
             <section class="impact-panel" aria-labelledby="impact-heading">
               <div class="impact-heading">
                 <div>
-                  <p class="section-kicker">Selección editorial</p>
-                  <h2 id="impact-heading">Baraja del día</h2>
+                  <p class="section-kicker">Índice del corte</p>
+                  <h2 id="impact-heading">Señales priorizadas</h2>
                 </div>
-                <p>El orden expresa prioridad. El pigmento, la materia.</p>
+                <p>El orden expresa prioridad editorial.</p>
               </div>
               <div id="signal-band" class="signal-band" role="tablist" aria-label="Señales de la edición"></div>
-              <p class="deck-help">Elige una carta para traerla al frente.</p>
+              <p class="deck-help">Selecciona una señal; con teclado, usa las flechas.</p>
             </section>
           </div>
 
@@ -152,10 +176,13 @@
       <section id="fuentes" class="coverage-section shell" aria-labelledby="coverage-heading">
         <div class="coverage-summary">
           <div>
-            <p class="section-kicker">Trazabilidad</p>
-            <h2 id="coverage-heading">Cobertura del corte</h2>
+            <p class="section-kicker">Verificación</p>
+            <h2 id="coverage-heading">Estado de las fuentes</h2>
           </div>
-          <p id="coverage-copy">Comprobando el estado de las fuentes oficiales.</p>
+          <div>
+            <p id="coverage-copy">Comprobando el estado de las fuentes oficiales.</p>
+            <p class="coverage-updated">Actualizado <time id="coverage-updated">hora por confirmar</time></p>
+          </div>
         </div>
         <div id="coverage-detail" class="coverage-detail"></div>
         <p class="legal-note">Cada síntesis enlaza al documento oficial. Esta herramienta no sustituye la consulta jurídica de la fuente primaria.</p>

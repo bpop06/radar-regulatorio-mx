@@ -1,4 +1,10 @@
-const THEME_COLORS = { light: "#F4EDDD", dark: "#152630" };
+import { hydrateIcons } from "./icons.js?v=20260813g";
+
+const THEME_COLORS = { light: "#F7F4EC", dark: "#050B16" };
+const ISO_DATE_PATTERN = /^(\d{4})-(\d{2})-(\d{2})$/;
+const ISO_INSTANT_PATTERN =
+  /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(?::\d{2}(?:\.\d+)?)?(?:Z|[+-]\d{2}:\d{2})$/i;
+const MEXICO_CITY_TIME_ZONE = "America/Mexico_City";
 const CASE_STATUS_LABELS = {
   Pending: "Pendiente",
   Concluded: "Concluido",
@@ -15,9 +21,25 @@ export function translateCaseStatus(status) {
   return CASE_STATUS_LABELS[key] || key;
 }
 
+export function normalizeIsoDate(value) {
+  if (typeof value !== "string") return null;
+  const match = ISO_DATE_PATTERN.exec(value.trim());
+  if (!match) return null;
+  const [, yearText, monthText, dayText] = match;
+  const year = Number(yearText);
+  const month = Number(monthText);
+  const day = Number(dayText);
+  const date = new Date(Date.UTC(year, month - 1, day));
+  if (date.getUTCFullYear() !== year
+    || date.getUTCMonth() !== month - 1
+    || date.getUTCDate() !== day) return null;
+  return `${yearText}-${monthText}-${dayText}`;
+}
+
 export function formatDate(iso, options = {}) {
-  if (typeof iso !== "string" || !/^\d{4}-\d{2}-\d{2}/.test(iso)) return "—";
-  const [year, month, day] = iso.slice(0, 10).split("-").map(Number);
+  const normalized = normalizeIsoDate(typeof iso === "string" ? iso.slice(0, 10) : iso);
+  if (!normalized) return "—";
+  const [year, month, day] = normalized.split("-").map(Number);
   const date = new Date(Date.UTC(year, month - 1, day, 12));
   return new Intl.DateTimeFormat("es-MX", {
     day: "numeric",
@@ -25,6 +47,48 @@ export function formatDate(iso, options = {}) {
     year: options.year === false ? undefined : "numeric",
     timeZone: "UTC",
   }).format(date);
+}
+
+export function formatDateTime(value, options = {}) {
+  if (typeof value !== "string" || !ISO_INSTANT_PATTERN.test(value.trim())) return "—";
+  const instant = new Date(value);
+  if (Number.isNaN(instant.getTime())) return "—";
+  return new Intl.DateTimeFormat("es-MX", {
+    day: "numeric",
+    month: options.short ? "short" : "long",
+    year: "numeric",
+    hour: "numeric",
+    minute: "2-digit",
+    timeZone: MEXICO_CITY_TIME_ZONE,
+    timeZoneName: "short",
+  }).format(instant).replace("GMT-6", "CDMX").replace("CST", "CDMX");
+}
+
+export function datePresentation(value, options = {}) {
+  if (options.type === "datetime") {
+    if (typeof value !== "string" || !ISO_INSTANT_PATTERN.test(value.trim())) {
+      return { dateTime: null, label: "—" };
+    }
+    const instant = new Date(value);
+    if (Number.isNaN(instant.getTime())) return { dateTime: null, label: "—" };
+    return {
+      dateTime: instant.toISOString(),
+      label: formatDateTime(value, options),
+    };
+  }
+  const normalized = normalizeIsoDate(value);
+  return {
+    dateTime: normalized,
+    label: normalized ? formatDate(normalized, options) : "—",
+  };
+}
+
+export function setTime(element, value, options = {}) {
+  if (!element) return;
+  const presentation = datePresentation(value, options);
+  element.textContent = presentation.label;
+  if (presentation.dateTime) element.setAttribute("datetime", presentation.dateTime);
+  else element.removeAttribute("datetime");
 }
 
 export function mexicoToday() {
@@ -253,6 +317,7 @@ function initNavigation() {
 }
 
 if (typeof document !== "undefined") {
+  hydrateIcons(document);
   initTheme();
   initNavigation();
 }
