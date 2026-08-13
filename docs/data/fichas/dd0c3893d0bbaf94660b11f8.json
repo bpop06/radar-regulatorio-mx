@@ -1,0 +1,179 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-3",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "84e7490661f4f2d27727e334",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "heading": "Requisitos y presentación de solicitudes",
+      "paragraphs": [
+        "La convocatoria está dirigida a personas físicas y morales interesadas en evaluar políticas públicas, programas presupuestarios y recursos federales transferidos. Deben acreditar su situación legal, fiscal y técnica, así como experiencia y especialización. Para personas físicas se exige constancia de no inhabilitación con antigüedad máxima de 30 días; las morales deben documentar su situación frente al Directorio de Proveedores y Contratistas Sancionados.",
+        "El expediente incluye currículum, evidencia de evaluaciones federales o estatales realizadas entre 2020 y 2025, informes finales y documentos de valoración institucional. Cada postulante puede designar hasta cinco personas coordinadoras, quienes deben acreditar individualmente experiencia, maestría, publicación o investigación y la formación técnica prevista. Las solicitudes se envían al correo de la UPER en PDF y las enviadas fuera de los términos solicitados se rechazan automáticamente."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2",
+        "chunk-3"
+      ],
+      "heading": "Calendario y subsanación",
+      "paragraphs": [
+        "La recepción ocurre del 1 al 24 de julio de 2026. La UPER revisará requisitos del 27 de julio al 21 de agosto y puede comunicar una sola vez omisiones o inconsistencias dentro de los diez días hábiles posteriores a confirmar la recepción; quien sea notificado tendrá cinco días hábiles para subsanar. Las solicitudes procedentes reciben folio y enlace para el examen de capacidades técnicas y normativas del 31 de agosto."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-3"
+      ],
+      "heading": "Valoración, resultados y restricciones",
+      "paragraphs": [
+        "La valoración suma hasta 25 puntos por la persona física o moral y hasta 75 por la persona coordinadora de la evaluación. El total es de 100 puntos y se requieren al menos 80 para autorizar el registro; con más de una coordinación, cada coordinación en su valoración conjunta con la persona solicitante debe alcanzar el mínimo. El Grupo Dictaminador revisará del 1 de septiembre al 30 de octubre y la UPER comunicará resultados a más tardar el 13 de noviembre de 2026.",
+        "El registro tiene vigencia de dos años desde su comunicación. La UPER se abstendrá de admitir una nueva solicitud si el rechazo de una solicitud previa sigue sujeto a recurso administrativo, juicio u otro medio de impugnación pendiente de resolución definitiva, hasta que exista desistimiento o resolución firme."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "e8fda3c4a012aa6769cbfe03f46c985bc50ae1c9d8604196aef48e03b67f86ed",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "CONVOCATORIA para personas físicas y morales interesadas en obtener su registro en el Padrón de Evaluadores de Políticas Públicas, programas derivados del Plan Nacional de Desarrollo, programas presupuestarios y recursos federales transferidos, correspondiente al ejercicio fiscal 2027.",
+        "location": "caracteres 0-290"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público. · parte 1",
+        "location": "caracteres 290-12290"
+      },
+      {
+        "id": "chunk-3",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público. · parte 2",
+        "location": "caracteres 12290-21298"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792087&fecha=30/06/2026",
+    "retrieved_at": "2026-08-13T19:43:37.707015+00:00"
+  },
+  "executive_summary": [
+    "La Unidad de Política y Estrategia para Resultados de la Secretaría de Hacienda y Crédito Público abrió el registro 2027 del Padrón de Evaluadores de Políticas Públicas, programas derivados del Plan Nacional de Desarrollo, programas presupuestarios y recursos federales transferidos. El padrón busca ampliar la disponibilidad de evaluadores externos para dependencias y entidades federales.",
+    "Las personas físicas y morales deben presentar un expediente legal, fiscal, técnico y profesional entre el 1 y el 24 de julio de 2026. La autorización depende del examen técnico y de un mínimo de 80 puntos en la combinación de la persona solicitante con cada coordinación de evaluación vinculada; el registro tendrá vigencia de dos años."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2",
+        "chunk-3"
+      ],
+      "paragraphs": [
+        "La convocatoria estructura el acceso al padrón de referencia para evaluadores externos de políticas y programas federales. Para las personas aspirantes, la elegibilidad depende de cumplir el expediente, aprobar la evaluación técnica y alcanzar el puntaje mínimo en cada combinación requerida de solicitante y coordinación."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-2",
+          "chunk-3"
+        ],
+        "paragraphs": [
+          "Las organizaciones y profesionales que busquen integrar el padrón deben reunir evidencia de experiencia reciente, informes finales y documentación de cada coordinación propuesta. La fecha de recepción, la única oportunidad de subsanar y el umbral individual para cada combinación de coordinación hacen necesario revisar el expediente antes de enviarlo."
+        ],
+        "sector": "Consultoras, universidades y especialistas en evaluación pública"
+      },
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-3"
+        ],
+        "paragraphs": [
+          "La ampliación del padrón incrementa la oferta potencial de evaluadores externos para el Programa Anual de Evaluación y las evaluaciones complementarias que determine Hacienda. La contratación posterior debe observar las restricciones aplicables a los procedimientos de contratación pública."
+        ],
+        "sector": "Dependencias y entidades federales"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792087&fecha=30/06/2026",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "c04d35a42dfbb10e5f1d2e83adbb30bf1f623b71785ec73b859d1d3c7123af5b",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/dd0c3893d0bbaf94660b11f8.json",
+    "detail_url": "notas/dd0c3893d0bbaf94660b11f8.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Convocatoria Para Personas",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5792087",
+    "importance": 1,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-06-30",
+    "official_title": "Convocatoria para personas físicas y morales interesadas en obtener su registro en el Padrón de Evaluadores de Políticas Públicas, programas derivados del Plan Nacional de Desarrollo, programas presupuestarios y recursos federales transferidos, correspondiente al ejercicio fiscal 2027.",
+    "published_at": "2026-06-30",
+    "relevance_score": 1,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5792087",
+    "summary_teaser": "Hacienda abrió el registro 2027 para evaluadores externos de políticas públicas, programas presupuestarios y recursos federales transferidos. Las solicitudes se reciben del 1 al 24 de julio y requieren expediente legal, fiscal, técnico y profesional. La autorización depende de examen y de 80 puntos en la combinación de la persona solicitante con cada coordinación propuesta.",
+    "title": "Hacienda abre padrón 2027 de evaluadores con umbral de 80 puntos",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5792087&fecha=30/06/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Personas físicas y morales aspirantes al padrón",
+      "deadline": "Recepción de solicitudes: del 1 al 24 de julio de 2026; subsanación: cinco días hábiles posteriores a la notificación",
+      "evidence_refs": [
+        "chunk-2",
+        "chunk-3"
+      ],
+      "legal_basis": "Bases II, III, IV, V, VII y IX de la convocatoria y Lineamientos para la integración del Padrón de Evaluadores",
+      "paragraphs": [
+        "Integrar y ordenar el expediente antes de enviarlo, incluyendo la evidencia legal, fiscal, técnica y profesional exigida, los informes finales de las evaluaciones declaradas y la documentación individual de cada coordinación propuesta. Verificar que las constancias de no inhabilitación o capturas del directorio tengan la antigüedad requerida y que los documentos se envíen en PDF conforme a las bases.",
+        "Presentar la solicitud dentro de la ventana oficial y monitorear el correo registrado. Si la UPER comunica omisiones o inconsistencias, usar el plazo de cinco días hábiles para corregirlas; además, confirmar que no exista una impugnación pendiente sobre un rechazo anterior que impida la admisión de una nueva solicitud."
+      ],
+      "trigger": "Interés en obtener registro como evaluador externo para el ejercicio fiscal 2027"
+    }
+  ],
+  "schema_version": 8
+}
