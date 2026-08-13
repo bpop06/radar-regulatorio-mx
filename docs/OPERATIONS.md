@@ -79,6 +79,37 @@ Si GitHub Actions termina en `startup_failure`, el PR no se integra. La
 automatización informa el incidente y conserva producción. No se sustituyen
 los checks por una revisión manual.
 
+### Recuperar un bloqueo de facturación sin contratar un plan
+
+GitHub documenta que una cuenta bloqueada por facturación puede bajar a
+**GitHub Free** y conservar estas funciones avanzadas en repositorios públicos.
+La ruta operativa es:
+
+1. Mantener el PR abierto y no fusionarlo manualmente; guardar la URL de la
+   ejecución y el texto exacto de `startup_failure`.
+2. En la cuenta propietaria, abrir **Settings → Billing & Licensing** y bajar
+   el plan personal u organizacional a **GitHub Free**. No hace falta contratar
+   Pro/Team ni añadir un método de pago para la arquitectura de este proyecto.
+3. Confirmar que el plan activo aparece como Free y que
+   `bpop06/radar-regulatorio-mx` continúa público. Verificar además que Actions
+   sigue habilitado y que Pages conserva `main` + `/docs`.
+4. Volver a ejecutar el workflow fallido. No habilitar larger runners, merge
+   queue ni un despliegue alterno para intentar sortear el bloqueo.
+5. Si el mismo bloqueo persiste después de confirmar Free, abrir un caso de
+   **cuenta/facturación** en el portal de GitHub Support. Adjuntar usuario,
+   repositorio, URL y hora de la ejecución, mensaje exacto y captura donde se
+   vea el plan Free. Las cuentas Free pueden reportar problemas de cuenta.
+
+Hasta que `Python` y `Frontend` inicien y terminen en verde, el relanzamiento
+queda detenido y Pages conserva el último corte aprobado.
+
+Referencias oficiales: [desbloquear una cuenta][locked], [bajar a GitHub
+Free][downgrade] y [contactar GitHub Support][support].
+
+[locked]: https://docs.github.com/billing/how-tos/troubleshooting/locked-account
+[downgrade]: https://docs.github.com/billing/how-tos/manage-plan-and-licenses/downgrade-plan
+[support]: https://docs.github.com/support/contacting-github-support
+
 ## Estados públicos
 
 - **Completa:** evidencia y editorial validadas.
