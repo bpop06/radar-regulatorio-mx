@@ -1,15 +1,13 @@
-name: CI
+name: Manual CI fallback
 
-# Cost contract: this public repository runs on GitHub Free. Keep every job on
-# the standard ubuntu-latest runner; do not add larger runners or merge queues.
+# Optional diagnostic only. The required release gates are executed by the
+# scheduled Codex task in a clean local clone and reported as commit statuses.
+# Keeping this workflow manual prevents an unrelated GitHub billing lock from
+# blocking a project that otherwise uses only free repository features.
+# If invoked, it still uses only the standard public-repository runner.
 
 on:
   workflow_dispatch:
-  pull_request:
-  push:
-    branches:
-      - main
-      - "codex/**"
 
 concurrency:
   group: ci-${{ github.workflow }}-${{ github.ref }}

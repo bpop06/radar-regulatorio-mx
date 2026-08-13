@@ -1,80 +1,100 @@
 # Flujo de trabajo con Git
 
-## Contrato GitHub Free
+## Contrato de costo cero
 
-Este proyecto opera en un **repositorio público con GitHub Free**. La
-configuración deliberadamente se limita a funciones incluidas sin costo:
+El proyecto usa únicamente funciones gratuitas:
 
-- GitHub Actions usa únicamente runners estándar `ubuntu-latest`. En
-  repositorios públicos su uso es gratuito e ilimitado. No se configuran
-  larger runners, runner groups, imágenes personalizadas ni runners con GPU.
-- GitHub Pages publica mediante **Deploy from a branch**, rama `main`, carpeta
-  `/docs`. No hay un pipeline de hosting de pago ni un workflow de despliegue
-  alterno.
-- `main` usa una regla clásica de protección de rama, disponible para
-  repositorios públicos con GitHub Free, y exige los checks `Python` y
-  `Frontend`.
-- El repositorio permite auto-merge, también disponible para repositorios
-  públicos con GitHub Free. Auto-merge sólo integra el PR cuando la protección
-  de rama ya está satisfecha.
-- No se habilita **Require merge queue** ni se declara el evento
-  `merge_group`; una cola de merge no es necesaria para este repositorio.
+- repositorio público en GitHub Free;
+- GitHub Pages desde `main/docs` mediante **Deploy from a branch**;
+- pull requests, protección clásica de `main` y auto-merge;
+- una automatización local de Codex para recolección, editorial y CI;
+- estados de commit gratuitos publicados con la API de GitHub.
 
-El script `scripts/verify_github_free.sh` hace fallar CI si un workflow cambia
-de runner, activa `merge_group`, deja de exigir el manifiesto o recupera el
-fallback a schema v7.
+GitHub Actions no forma parte del camino crítico. Los dos workflows se
+conservan como diagnósticos manuales sobre `ubuntu-latest`, sin eventos
+`push`, `pull_request`, `schedule` ni `merge_group`. Nunca se usan larger
+runners, merge queue, hosting de pago ni un plan GitHub Pro/Team.
 
-Referencias oficiales: [runners alojados por GitHub][runners], [ramas
-protegidas][protected], [auto-merge][automerge] y [disponibilidad de
-Pages][pages].
+`scripts/verify_github_free.sh` hace fallar el gate si un workflow vuelve a
+ejecutarse automáticamente, cambia de runner, activa una merge queue o deja de
+validar el contrato v8.
 
-[runners]: https://docs.github.com/actions/reference/runners/github-hosted-runners
+## Gates requeridos
+
+La protección de `main` exige estos dos estados, creados por la automatización
+Codex sobre el SHA exacto del PR:
+
+- `Codex local / Python`
+- `Codex local / Frontend`
+
+`scripts/run_codex_ci.sh` exige el número del PR, comprueba por API que esté
+abierto contra `main` y que su cabeza coincida con el `HEAD` local, ejecuta los
+comandos fijos en un clon limpio y publica primero `pending`; sólo publica
+`success` cuando termina todo el grupo.
+Un comando fallido publica `failure` y deja el PR abierto.
+
+El grupo Python comprende Ruff, pytest, recolección en seco, validación v8 con
+frescura, calendarios y `git diff --check`. El grupo Frontend comprende
+instalación reproducible con `npm ci`, unitarias JavaScript, instalación de
+Chromium y Playwright/axe. Frontend no corre si Python falla.
+
+Los estados son transparentes: su descripción dice que fueron ejecutados por
+Codex local. No se reutilizan los nombres `Python` o `Frontend` de Actions.
+
+## Ramas, PR y merge
+
+- `main` siempre debe ser desplegable y nunca recibe pushes directos.
+- El desarrollo usa ramas cortas `codex/*`.
+- Los cortes reutilizan `codex/radar-daily` y un único PR abierto.
+- Los mensajes siguen Conventional Commits.
+- Los cambios de código y los datos generados se separan cuando sea práctico.
+
+Secuencia de integración:
+
+1. Clonar `origin/main` en un directorio temporal limpio.
+2. Generar el corte y su editorial validada.
+3. Crear o actualizar el PR único.
+4. Verificar que el SHA local coincida con la cabeza remota del PR.
+5. Ejecutar `scripts/run_codex_ci.sh` sobre ese SHA.
+6. Confirmar por API que ambos estados requeridos son `success`.
+7. Habilitar auto-merge; nunca hacer push directo ni usar bypass administrativo.
+8. Tras el merge, verificar `cut_id`, hashes, ficha histórica y enlaces en Pages.
+
+## Configuración del repositorio
+
+`main` usa una regla clásica con:
+
+- pull request obligatorio;
+- rama actualizada antes del merge;
+- estados requeridos `Codex local / Python` y
+  `Codex local / Frontend`;
+- resolución de conversaciones;
+- sin force-push, borrado o bypass administrativo.
+
+El repositorio permite auto-merge y elimina la rama después del merge. No usa
+merge queue. Pages sirve `main` y `/docs`.
+
+## Límite de confianza
+
+La automatización Codex es la autoridad que publica estados. Opera desde un
+prompt local fuera del repositorio, clona desde GitHub y ejecuta los comandos
+fijos; una modificación de un PR no puede omitir un gate cambiando el prompt.
+El token de `gh` permanece en el llavero local y nunca se escribe en el repo.
+
+Si Codex no puede ejecutar un gate, publicar el estado o verificar el SHA, el
+PR no se integra y producción conserva el corte anterior.
+
+Referencias: [estados de commit][statuses], [protección de ramas][protected],
+[auto-merge][automerge] y [GitHub Pages][pages].
+
+[statuses]: https://docs.github.com/rest/commits/statuses
 [protected]: https://docs.github.com/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches
 [automerge]: https://docs.github.com/repositories/configuring-branches-and-merges-in-your-repository/configuring-pull-request-merges/managing-auto-merge-for-pull-requests-in-your-repository
 [pages]: https://docs.github.com/pages/getting-started-with-github-pages/github-pages-limits
 
-## Ramas y commits
-
-- `main` es desplegable y GitHub Pages sirve `main/docs`.
-- El desarrollo usa ramas cortas `codex/*`.
-- Los cortes recurrentes reutilizan `codex/radar-daily` y un único PR.
-- Los mensajes son imperativos y siguen Conventional Commits.
-- Cuando sea práctico, los cambios de código y los datos generados van en
-  commits distintos.
-
-## Integración
-
-1. Partir del `main` remoto en un checkout limpio.
-2. Ejecutar los gates locales.
-3. Revisar que el diff no contenga secretos ni artefactos ajenos.
-4. Abrir o actualizar un pull request.
-5. Esperar los checks requeridos `Python` y `Frontend`.
-6. Habilitar auto-merge sólo cuando ambos estén verdes.
-7. Verificar el `cut_id` y los hashes desplegados por Pages.
-
-### Configuración única del repositorio
-
-1. En **Settings → Pages**, seleccionar **Deploy from a branch**, `main` y
-   `/docs`.
-2. Dejar que `Python` y `Frontend` terminen correctamente al menos una vez para
-   que GitHub los ofrezca como checks seleccionables.
-3. En **Settings → Branches**, crear una regla clásica para `main`; activar
-   **Require a pull request before merging** y **Require status checks to pass
-   before merging**, exigir que la rama esté actualizada, seleccionar
-   exactamente `Python` y `Frontend` y activar **Do not allow bypassing the
-   above settings**. No exigir aprobaciones: este repositorio tiene un solo
-   operador y la garantía la dan los dos checks.
-4. No activar **Require merge queue**. En **Settings → General → Pull
-   Requests**, activar **Allow auto-merge**.
-5. En cada PR diario, habilitar auto-merge. Si uno de los dos checks no inicia,
-   queda pendiente o falla, el PR permanece abierto.
-
-Ningún script, workflow o agente puede empujar directamente a `main`. Si
-Actions no inicia o falla, el PR queda abierto y producción conserva el corte
-anterior.
-
 ## Seguridad y recuperación
 
 - No versionar `.env`, bases SQLite, credenciales ni descargas masivas.
-- Mantener permisos mínimos y acciones fijadas por SHA.
 - No reescribir la historia de `main`; revertir mediante un nuevo PR.
+- Un estado `failure`, ausente o asociado a otro SHA nunca autoriza merge.
+- Una corrida fallida o `--dry-run` no consume snapshots ni cambia producción.

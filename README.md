@@ -96,8 +96,9 @@ respaldo en el estado autenticado por el manifiesto para permitir rollback.
 
 Una sola automatización Codex ejecuta a las 10:30 y 18:30, hora de Ciudad de
 México, incluidos fines de semana. Trabaja en un worktree limpio, mantiene un
-único PR `codex/radar-daily`, espera los checks y verifica que Pages publique
-el mismo `cut_id`. No hay pushes directos a `main`.
+único PR `codex/radar-daily`, ejecuta los gates locales Codex sobre el SHA
+remoto y verifica que Pages publique el mismo `cut_id`. GitHub Actions queda
+como diagnóstico manual opcional; no hay pushes directos a `main`.
 
 El runbook, los gates de relanzamiento, el SLA y la recuperación están en
 [`docs/OPERATIONS.md`](docs/OPERATIONS.md). El flujo Git está en

@@ -26,8 +26,8 @@ solo pull request abierto; nunca crea PR competidores y nunca empuja a
    hashes, y hacer un único reemplazo.
 6. Ejecutar Ruff, pytest, validación del corte y calendarios, pruebas
    JavaScript, Playwright y axe.
-7. Actualizar el PR diario y habilitar auto-merge sólo con todos los checks
-   requeridos en verde.
+7. Actualizar el PR diario, ejecutar CI local Codex sobre el SHA remoto y
+   habilitar auto-merge sólo cuando sus dos estados requeridos estén verdes.
 8. Tras el merge, verificar HTTP 200, `cut_id`, hashes, enlaces oficiales y
    una ficha histórica en GitHub Pages.
 9. Informar totales completos/pendientes, fuentes degradadas, PR, merge,
@@ -39,7 +39,8 @@ El relanzamiento inicial requiere:
 
 - 18 fuentes certificadas, sin falsos verdes;
 - dos cortes sombra consecutivos deterministas;
-- checks `Python` y `Frontend` completamente verdes;
+- estados `Codex local / Python` y `Codex local / Frontend` completamente
+  verdes sobre el SHA exacto del PR;
 - manifiesto, edición, archivo, fichas y estado con el mismo `cut_id`;
 - cero diferencias en una segunda generación con las mismas entradas.
 
@@ -94,40 +95,32 @@ Después de los dos cortes productivos de aceptación, la variable se omite. As�
 una fuente aislada en estado `degraded` se informa en el corte sin bloquear a
 las demás; sólo el fallo total conserva el corte anterior.
 
-Si GitHub Actions termina en `startup_failure`, el PR no se integra. La
-automatización informa el incidente y conserva producción. No se sustituyen
-los checks por una revisión manual.
+GitHub Actions es un diagnóstico manual opcional y no participa en el release.
+La operación gratuita no depende de runners alojados ni de un método de pago.
 
-### Recuperar un bloqueo de facturación sin contratar un plan
+### CI local Codex
 
-GitHub documenta que una cuenta bloqueada por facturación puede bajar a
-**GitHub Free** y conservar estas funciones avanzadas en repositorios públicos.
-La ruta operativa es:
+La automatización ejecuta en el clon limpio:
 
-1. Mantener el PR abierto y no fusionarlo manualmente; guardar la URL de la
-   ejecución y el texto exacto de `startup_failure`.
-2. En la cuenta propietaria, abrir **Settings → Billing & Licensing** y bajar
-   el plan personal u organizacional a **GitHub Free**. No hace falta contratar
-   Pro/Team ni añadir un método de pago para la arquitectura de este proyecto.
-3. Confirmar que el plan activo aparece como Free y que
-   `bpop06/radar-regulatorio-mx` continúa público. Verificar además que Actions
-   sigue habilitado y que Pages conserva `main` + `/docs`.
-4. Volver a ejecutar el workflow fallido. No habilitar larger runners, merge
-   queue ni un despliegue alterno para intentar sortear el bloqueo.
-5. Si el mismo bloqueo persiste después de confirmar Free, abrir un caso de
-   **cuenta/facturación** en el portal de GitHub Support. Adjuntar usuario,
-   repositorio, URL y hora de la ejecución, mensaje exacto y captura donde se
-   vea el plan Free. Las cuentas Free pueden reportar problemas de cuenta.
+```bash
+RADAR_GITHUB_REPOSITORY=bpop06/radar-regulatorio-mx \
+RADAR_GIT_SHA="$(git rev-parse HEAD)" \
+RADAR_PR_NUMBER="$PR_NUMBER" \
+scripts/run_codex_ci.sh
+```
 
-Hasta que `Python` y `Frontend` inicien y terminen en verde, el relanzamiento
-queda detenido y Pages conserva el último corte aprobado.
+Antes de correr, confirma que `HEAD` coincide con la cabeza remota del PR y
+que el árbol está limpio. El script publica `pending` para cada grupo y luego
+`success` o `failure` mediante la API gratuita de estados de commit. No se
+acepta una validación narrada, un estado de otro SHA ni la ausencia del estado.
 
-Referencias oficiales: [desbloquear una cuenta][locked], [bajar a GitHub
-Free][downgrade] y [contactar GitHub Support][support].
+La protección de `main` exige exclusivamente:
 
-[locked]: https://docs.github.com/billing/how-tos/troubleshooting/locked-account
-[downgrade]: https://docs.github.com/billing/how-tos/manage-plan-and-licenses/downgrade-plan
-[support]: https://docs.github.com/support/contacting-github-support
+- `Codex local / Python`
+- `Codex local / Frontend`
+
+Si el equipo local, la sesión de GitHub o Codex no están disponibles, no se
+publica `success`, el PR queda abierto y Pages conserva el corte anterior.
 
 ## Estados públicos
 
@@ -180,10 +173,9 @@ Cada corte debe aparecer en Pages dentro de 90 minutos. Se alerta cuando:
 Un día sin publicaciones produce una edición vigente **Sin novedades**; nunca
 se reutiliza una portada vieja como si fuera el corte actual.
 
-La automatización consulta GitHub inmediatamente después de subir la rama y
-durante la ventana de despliegue. Si no existe una ejecución de CI, la
-ejecución termina como `startup_failure` operativo: no integra ni reintenta por
-otra vía. La comprobación de frescura se puede ejecutar con
+La automatización consulta los estados del SHA inmediatamente después de
+subir la rama y durante la ventana de despliegue. Si falta un estado, no
+integra ni publica por otra vía. La comprobación de frescura se puede ejecutar con
 `python -m app.cli validate --input docs/data/publications.json
 --require-v8 --max-age-hours 1.5`. El chequeo diario de `main` permite 25
 horas para no fallar antes del primer corte; la verificación posterior a cada
