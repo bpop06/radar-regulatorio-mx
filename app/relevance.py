@@ -14,7 +14,6 @@ CATEGORY_TERMS: dict[str, tuple[str, ...]] = {
         "iva",
         "isr",
         "ieps",
-        "sat",
         "prodecon",
         "credito fiscal",
         "ejecucion fiscal",
@@ -361,15 +360,14 @@ BONUS_SOURCES = {
 
 
 def classify(candidate: Candidate) -> ClassifiedCandidate:
-    text = normalized(
-        " ".join(
-            (
-                candidate.official_title,
-                candidate.description,
-                candidate.document_type,
-            )
+    source_text = " ".join(
+        (
+            candidate.official_title,
+            candidate.description,
+            candidate.document_type,
         )
     )
+    text = normalized(source_text)
     categories: list[str] = []
     matches: list[str] = []
 
@@ -378,6 +376,16 @@ def classify(candidate: Candidate) -> ClassifiedCandidate:
         if category_matches:
             categories.append(category)
             matches.extend(category_matches)
+
+    # SAT es un acrónimo oficial sensible a mayúsculas. Tratarlo después de
+    # normalizar el texto confundía la abreviatura inglesa de sábado en
+    # metadatos como ``Date Sat, 09/05/2026`` con el organismo fiscal mexicano.
+    # Exigir la grafía ``SAT`` conserva publicaciones fiscales reales y evita
+    # que vacantes internacionales reciban materia y pasen por el bono de fuente.
+    if re.search(r"(?<!\w)SAT(?!\w)", source_text):
+        if "Fiscal" not in categories:
+            categories.append("Fiscal")
+        matches.append("sat")
 
     administrative_matches = _matching_terms(text, ADMINISTRATIVE_LAW_TERMS)
     appointment_actions = _matching_terms(text, APPOINTMENT_ACTION_TERMS)

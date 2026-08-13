@@ -213,6 +213,26 @@ def test_international_court_substance_passes_and_noise_stays_out():
     vacancy = classify(candidate("Administrative Assistant (G-5)", source="CPI"))
     assert not is_relevant(vacancy, minimum_score=2)
 
+    dated_vacancy = classify(
+        candidate(
+            "Associate Logistics Officer (Travel and Transport) (P-2)",
+            source="CPI",
+            description="Vacancy Category Professional Date Sat, 09/05/2026 - 23:59",
+        )
+    )
+    assert "Fiscal" not in dated_vacancy.categories
+    assert "sat" not in dated_vacancy.matched_terms
+    assert not is_relevant(dated_vacancy, minimum_score=2)
+
+    tax_authority = classify(
+        candidate(
+            "El SAT publica facilidades para contribuyentes",
+            source="Gob.mx APF",
+        )
+    )
+    assert "Fiscal" in tax_authority.categories
+    assert "sat" in tax_authority.matched_terms
+
     # Comunicado sustantivo de la CPI sobre crímenes de guerra → publica.
     warrant = classify(
         candidate(

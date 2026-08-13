@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import hashlib
 import re
+from dataclasses import dataclass, field
 from datetime import date
 from email.utils import parsedate_to_datetime
 from urllib.parse import urljoin
@@ -27,6 +28,68 @@ ITEM_BLOCK_RE = re.compile(rb"<item>\s*.*?</item>", re.DOTALL)
 # declaran en la raíz <rss> del feed, no en cada <item>, así que el bloque
 # aislado no puede resolverlos y ElementTree falla con "unbound prefix".
 NAMESPACE_PREFIX_RE = re.compile(rb"<(/?)[A-Za-z0-9._-]+:")
+
+ICC_CASE_NUMBER_RE = re.compile(r"\bICC-\d{2}/\d{2}(?:-\d{2}/\d{2})?\b", re.IGNORECASE)
+ICC_PARTIES_RE = re.compile(
+    r"\b(?P<parties>(?:The\s+)?Prosecutor\s+v\.?\s+[^.;:()]{2,160}?)"
+    r"(?=\s+(?:\(|concerns?\b|involves?\b|relates?\s+to\b|was\b|is\b|has\b)|[.;:]|$)",
+    re.IGNORECASE,
+)
+ICC_CLAIM_RE = re.compile(
+    # Se permiten puntos dentro de la ventana porque la carátula usa ``v.``
+    # y el número de expediente puede contener puntuación; el punto final de
+    # la litis sigue delimitado por el grupo ``claim``.
+    r"\b(?:case|proceedings)\b[^;]{0,180}?"
+    r"\b(?:concerns?|involves?|relates?\s+to)\s+(?P<claim>[^.;]{3,300})",
+    re.IGNORECASE,
+)
+ICC_CHARGES_RE = re.compile(
+    r"\bcharges?\s+(?:of|for)\s+(?P<claim>[^.;]{3,300})",
+    re.IGNORECASE,
+)
+ICC_OUTCOME_RE = re.compile(
+    r"\b(?:convicts?|acquits?|sentences?|rejects?|dismisses?|confirms?|orders?|"
+    r"terminates?|closes?|issues?\s+(?:an?\s+)?(?:warrants?\s+of\s+arrest|"
+    r"reparations?\s+orders?))\b",
+    re.IGNORECASE,
+)
+EXPLICIT_STATUS_RE = re.compile(
+    r"\b(?:is|are|remains?)\s+(?:pending|ongoing|final|closed|adjourned|outstanding)\b",
+    re.IGNORECASE,
+)
+CIJ_OUTCOME_RE = re.compile(
+    r"\b(?:rejects?|dismisses?|upholds?|finds?|orders?|declares?|decides?|rules?|"
+    r"convicts?|acquits?|sentences?)\b|(?<!\bto\s)\bdelivers?\s+"
+    r"(?:its\s+)?(?:judgment|advisory opinion|order)\b|\bjudgment\s+delivered\b",
+    re.IGNORECASE,
+)
+CIJ_TERMINAL_STATUS_RE = re.compile(
+    r"\b(?:removes?\s+the\s+case\s+from\s+(?:the\s+Court['’]s|its)\s+List|"
+    r"proceedings\s+(?:are\s+)?(?:terminated|discontinued)|"
+    r"case\s+(?:is\s+)?(?:closed|removed))\b",
+    re.IGNORECASE,
+)
+AMOUNT_RE = re.compile(
+    r"(?:\b(?:US\$|USD|EUR)\s*|€\s*|\$\s*)\d[\d.,]*"
+    r"(?:\s*(?:million|billion|millones?|mil\s+millones))?\b"
+    r"|\b\d[\d.,]*\s*(?:million|billion|millones?|mil\s+millones)?\s*"
+    r"(?:euros?|dollars?|d[oó]lares?)\b",
+    re.IGNORECASE,
+)
+
+
+@dataclass(frozen=True)
+class ExtractedCase:
+    """Literal case metadata found in an official title or description."""
+
+    number: str = ""
+    parties: str = ""
+    claim: str = ""
+    status: str = ""
+    outcome: str = ""
+    reasoning: str = ""
+    amount: str = ""
+    evidence: dict[str, str] = field(default_factory=dict)
 
 
 class RssCollector(Collector):
@@ -99,6 +162,7 @@ class RssCollector(Collector):
 
             guid = clean_text(item.findtext("guid", "")) or url
             description = clean_text(item.findtext("description", "")) or title
+            case = _extract_case_metadata(cls.source, title, description)
 
             candidates.append(
                 Candidate(
@@ -110,6 +174,14 @@ class RssCollector(Collector):
                     published_at=published_at,
                     authority=cls.default_authority,
                     document_type=cls.default_document_type,
+                    case_number=case.number,
+                    case_parties=case.parties,
+                    case_status=case.status,
+                    case_claim=case.claim,
+                    case_outcome=case.outcome,
+                    case_reasoning=case.reasoning,
+                    case_amount=case.amount,
+                    official_evidence=case.evidence,
                 )
             )
         return candidates, skipped
@@ -208,16 +280,26 @@ class CijCollector(Collector):
                 continue
             url = urljoin(cls.url, str(number_anchor.get("href")))
             source_id = re.sub(r"^Press release No\.\s*", "", number, flags=re.IGNORECASE)
+            description = f"{number}. {title}"
+            case = _extract_case_metadata(cls.source, title, description)
             candidates.append(
                 Candidate(
                     source=cls.source,
                     source_id=source_id,
                     url=url,
                     official_title=title,
-                    description=f"{number}. {title}",
+                    description=description,
                     published_at=published_at,
                     authority=cls.default_authority,
                     document_type=cls.default_document_type,
+                    case_number=case.number,
+                    case_parties=case.parties,
+                    case_status=case.status,
+                    case_claim=case.claim,
+                    case_outcome=case.outcome,
+                    case_reasoning=case.reasoning,
+                    case_amount=case.amount,
+                    official_evidence=case.evidence,
                 )
             )
         return candidates
@@ -300,6 +382,129 @@ class OmcCollector(RssCollector):
     url = "https://www.wto.org/library/rss/latest_news_e.xml"
     default_authority = "Organización Mundial del Comercio"
     default_document_type = "Noticia"
+
+
+def _extract_case_metadata(source: str, title: str, description: str) -> ExtractedCase:
+    if source == "CIJ":
+        return _extract_cij_case(title, description)
+    if source == "CPI":
+        return _extract_cpi_case(title, description)
+    return ExtractedCase()
+
+
+def _extract_cij_case(title: str, description: str) -> ExtractedCase:
+    # Las carátulas oficiales de la CIJ terminan en ``(Estado A v. Estado B)``.
+    # No se interpreta el objeto de la controversia: se conserva literalmente
+    # el texto anterior a la carátula y la actuación posterior al guión.
+    caption = re.search(
+        r"\((?P<parties>[^()]{2,200}\bv\.?\s+[^()]{2,200})\)",
+        title,
+        flags=re.IGNORECASE,
+    )
+    if caption is None:
+        return ExtractedCase()
+
+    parties = clean_text(caption.group("parties"))
+    claim = clean_text(title[: caption.start()].strip(" -"))
+    procedure = clean_text(title[caption.end() :].strip(" -"))
+    amount = _explicit_amount(f"{title}. {description}")
+    outcome = procedure if procedure and CIJ_OUTCOME_RE.search(procedure) else ""
+    if outcome:
+        terminal = CIJ_TERMINAL_STATUS_RE.search(procedure)
+        status = clean_text(terminal.group(0)) if terminal else ""
+    else:
+        status = procedure
+
+    evidence = {
+        "case_caption": clean_text(caption.group(0)),
+        "litis": claim,
+    }
+    if procedure:
+        evidence["procedural_update"] = procedure
+    if outcome:
+        evidence["outcome"] = outcome
+    if status:
+        evidence["status"] = status
+    if amount:
+        evidence["amount"] = amount
+    return ExtractedCase(
+        parties=parties,
+        claim=claim,
+        status=status,
+        outcome=outcome,
+        amount=amount,
+        evidence=evidence,
+    )
+
+
+def _extract_cpi_case(title: str, description: str) -> ExtractedCase:
+    text = clean_text(f"{title}. {description}")
+    number_match = ICC_CASE_NUMBER_RE.search(text)
+    parties_match = ICC_PARTIES_RE.search(text)
+    claim_match = ICC_CLAIM_RE.search(text) or ICC_CHARGES_RE.search(text)
+    # La descripción oficial suele expresar el resultado con más precisión
+    # que el encabezado; se prioriza sin resumirla ni completar huecos.
+    sentences = _sentences(description, title)
+    outcome_sentence = next(
+        (sentence for sentence in sentences if ICC_OUTCOME_RE.search(sentence)), ""
+    )
+    status_sentence = next(
+        (sentence for sentence in sentences if EXPLICIT_STATUS_RE.search(sentence)), ""
+    )
+    amount = _explicit_amount(text)
+
+    number = clean_text(number_match.group(0)) if number_match else ""
+    parties = clean_text(parties_match.group("parties")) if parties_match else ""
+    claim = clean_text(claim_match.group("claim")) if claim_match else ""
+    evidence: dict[str, str] = {}
+    if number:
+        evidence["case_number"] = number
+    if parties:
+        evidence["case_parties"] = parties
+    if claim:
+        claim_evidence = next(
+            (
+                sentence
+                for sentence in sentences
+                if claim in sentence
+                and re.search(r"\b(?:concerns?|involves?|relates?\s+to|charges?)\b", sentence, re.I)
+            ),
+            clean_text(claim_match.group(0)),
+        )
+        evidence["litis"] = claim_evidence
+    if status_sentence:
+        evidence["status"] = status_sentence
+    if outcome_sentence:
+        evidence["outcome"] = outcome_sentence
+    if amount:
+        evidence["amount"] = amount
+    return ExtractedCase(
+        number=number,
+        parties=parties,
+        claim=claim,
+        status=status_sentence,
+        outcome=outcome_sentence,
+        amount=amount,
+        evidence=evidence,
+    )
+
+
+def _sentences(*values: str) -> list[str]:
+    result: list[str] = []
+    for value in values:
+        for sentence in re.split(
+            r"(?<!\bv\.)(?<!\bV\.)(?<=[.!?])\s+",
+            clean_text(value),
+        ):
+            sentence = sentence.strip()
+            if sentence and sentence not in result:
+                result.append(sentence)
+    return result
+
+
+def _explicit_amount(text: str) -> str:
+    match = AMOUNT_RE.search(text)
+    return clean_text(match.group(0)) if match else ""
 
 
 def _parse_html_date(raw_date: str) -> date | None:

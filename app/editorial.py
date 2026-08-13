@@ -8,7 +8,7 @@ from typing import Any
 from app.edition import PublishError, load_manifested_items, prepare_payload, write_site_artifacts
 from app.markdown import build_detail_markdown
 from app.storage import Storage
-from app.text import ACT_NUMBER_RE, words
+from app.text import words
 from app.validation import (
     CARD_BODY_SECTIONS,
     OFFICE_NUMBER_TITLE,

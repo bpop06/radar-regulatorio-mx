@@ -163,6 +163,7 @@ def test_snice_parser_uses_official_actualidad_block():
 
 def test_snice_parser_ignores_empty_projects_status_and_keeps_documents():
     payload = """
+    <h1>ACTUALIDAD</h1>
     <section>
       <h5>
         <a href="https://www.herramientasregulatorias.gob.mx/Buscador">
@@ -564,6 +565,45 @@ def test_cpi_parser_extracts_candidate_and_filters_by_since():
     assert item.published_at == date(2026, 7, 6)
     assert "<" not in item.description
     assert "Press Release" in item.description
+    assert not item.case_number
+    assert not item.case_parties
+    assert not item.case_claim
+
+
+ICC_CASE_RSS = b"""<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"><channel><title>International Criminal Court</title>
+<item>
+  <title>Trial Chamber IX issues reparations order in the Ongwen case</title>
+  <link>https://www.icc-cpi.int/news/ongwen-reparations-order</link>
+  <description>&lt;p&gt;The case The Prosecutor v. Dominic Ongwen (ICC-02/04-01/15)
+  concerns war crimes and crimes against humanity. Trial Chamber IX orders
+  reparations of EUR 52.4 million. The order is final.&lt;/p&gt;</description>
+  <guid isPermaLink="false">ongwen-reparations-order</guid>
+  <pubDate>Mon, 06 Jul 2026 14:24:09 +0000</pubDate>
+</item>
+</channel></rss>"""
+
+
+def test_cpi_parser_extracts_only_explicit_case_metadata_from_official_description():
+    item = CpiCollector.parse(ICC_CASE_RSS, date(2026, 6, 1))[0]
+
+    assert item.case_number == "ICC-02/04-01/15"
+    assert item.case_parties == "The Prosecutor v. Dominic Ongwen"
+    assert item.case_claim == "war crimes and crimes against humanity"
+    assert item.case_status == "The order is final."
+    assert item.case_outcome == "Trial Chamber IX orders reparations of EUR 52.4 million."
+    assert item.case_amount == "EUR 52.4 million"
+    assert item.official_evidence == {
+        "case_number": "ICC-02/04-01/15",
+        "case_parties": "The Prosecutor v. Dominic Ongwen",
+        "litis": (
+            "The case The Prosecutor v. Dominic Ongwen (ICC-02/04-01/15) "
+            "concerns war crimes and crimes against humanity."
+        ),
+        "status": "The order is final.",
+        "outcome": "Trial Chamber IX orders reparations of EUR 52.4 million.",
+        "amount": "EUR 52.4 million",
+    }
 
 
 ICJ_HTML = """
@@ -602,6 +642,73 @@ def test_cij_html_parser_extracts_candidate_and_filters_by_since():
     assert item.url.endswith("/sites/default/files/case-related/200/release-en.pdf")
     assert item.published_at == date(2026, 7, 21)
     assert "<" not in item.description
+    assert not item.case_parties
+    assert not item.case_claim
+
+
+ICJ_CASE_HTML = """
+<div class="view view-press-releases"><div class="view-content row">
+<div class="views-row">
+  <div class="views-field-field-press-release-number"><a
+    href="/sites/default/files/case-related/193/193-20260801-pre-01-00-en.pdf">
+    Press release No. 2026/25</a></div>
+  <div class="views-field-field-date-of-the-document"><time
+    datetime="2026-08-01T12:00:00Z">1 August 2026</time></div>
+  <div class="views-field-field-document-long-title"><p>
+    Application of the Genocide Convention in Sudan (Sudan v. United Arab Emirates)
+    - The Court rejects the Request for provisional measures and removes the case
+    from its List</p></div>
+</div>
+</div></div>
+"""
+
+
+def test_cij_parser_splits_caption_litis_outcome_and_terminal_status_literally():
+    item = CijCollector.parse(ICJ_CASE_HTML, date(2026, 7, 1))[0]
+
+    assert item.case_parties == "Sudan v. United Arab Emirates"
+    assert item.case_claim == "Application of the Genocide Convention in Sudan"
+    assert item.case_outcome == (
+        "The Court rejects the Request for provisional measures and removes the case "
+        "from its List"
+    )
+    assert item.case_status == "removes the case from its List"
+    assert not item.case_number
+    assert not item.case_amount
+    assert item.official_evidence["case_caption"] == "(Sudan v. United Arab Emirates)"
+    assert item.official_evidence["litis"] == item.case_claim
+    assert item.official_evidence["outcome"] == item.case_outcome
+    assert item.official_evidence["status"] == item.case_status
+
+
+ICJ_PENDING_CASE_HTML = """
+<div class="view view-press-releases"><div class="view-content row">
+<div class="views-row">
+  <div class="views-field-field-press-release-number"><a
+    href="/sites/default/files/case-related/193/193-20260801-pre-01-00-en.pdf">
+    Press release No. 2026/26</a></div>
+  <div class="views-field-field-date-of-the-document"><time
+    datetime="2026-08-02T12:00:00Z">2 August 2026</time></div>
+  <div class="views-field-field-document-long-title"><p>
+    Alleged Breaches of Certain International Obligations in respect of the Occupied
+    Palestinian Territory (Nicaragua v. Germany) - Preliminary objections raised by
+    Germany - Public hearings to be held from Monday 7 to Thursday 10 September 2026
+  </p></div>
+</div>
+</div></div>
+"""
+
+
+def test_cij_parser_keeps_procedural_update_as_status_without_inventing_outcome():
+    item = CijCollector.parse(ICJ_PENDING_CASE_HTML, date(2026, 7, 1))[0]
+
+    assert item.case_parties == "Nicaragua v. Germany"
+    assert item.case_claim.startswith("Alleged Breaches")
+    assert item.case_status == (
+        "Preliminary objections raised by Germany - Public hearings to be held from "
+        "Monday 7 to Thursday 10 September 2026"
+    )
+    assert not item.case_outcome
 
 
 # --- Diputados: anexos de la Gaceta Parlamentaria -------------------------
