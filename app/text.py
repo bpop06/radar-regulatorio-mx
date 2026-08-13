@@ -10,6 +10,17 @@ from bs4 import BeautifulSoup
 SPACE_RE = re.compile(r"\s+")
 WORD_RE = re.compile(r"\S+")
 
+# Un rango de años desnudo describe normalmente vigencia, no un identificador.
+# Si el mismo rango sigue a una etiqueta de acto, la primera alternativa sí lo
+# reconoce (por ejemplo, "Acuerdo 2026-2030").
+_PLAUSIBLE_YEAR_RANGE = r"(?:1[89]|20|21)\d{2}-(?:1[89]|20|21)\d{2}\b"
+ACT_NUMBER_RE = re.compile(
+    r"(?:oficio|acuerdo|circular|resoluci[oó]n|expediente|no\.|núm)\s*[:.]?\s*"
+    r"[A-Z0-9][A-Z0-9/.-]*\d"
+    rf"|\b(?!{_PLAUSIBLE_YEAR_RANGE})\d{{3,}}[-/][A-Z0-9/.-]*\d",
+    flags=re.IGNORECASE,
+)
+
 SPANISH_MONTHS = {
     "enero": 1,
     "febrero": 2,

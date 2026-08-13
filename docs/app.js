@@ -90,7 +90,7 @@ function renderCoverage(data) {
     ? `${ok}/${total} fuentes operativas`
     : `${ok}/${total || ok} fuentes verificadas`;
   elements.coverageCopy.textContent = partial
-    ? `El corte es parcial: ${failed.length} fuente${failed.length === 1 ? "" : "s"} no respondió.`
+    ? `El corte es parcial: ${failed.length} fuente${failed.length === 1 ? " no respondió" : "s no respondieron"}.`
     : `${ok} fuentes oficiales respondieron correctamente en la última recolección.`;
 
   elements.coverageDetail.replaceChildren();

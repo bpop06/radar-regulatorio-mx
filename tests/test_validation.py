@@ -1,3 +1,4 @@
+from app.text import ACT_NUMBER_RE
 from app.validation import validate_publications_payload
 
 
@@ -81,6 +82,25 @@ def test_validate_publications_payload_warns_on_office_number_title():
     assert any("starts with an office/act number" in warning for warning in report.warnings)
 
 
+def test_act_number_pattern_ignores_plausible_year_ranges():
+    for text in (
+        "2026-2030",
+        "El programa tendrá vigencia durante el periodo 2026-2030.",
+    ):
+        assert ACT_NUMBER_RE.search(text) is None
+
+
+def test_act_number_pattern_preserves_supported_act_number_formats():
+    for text in (
+        "Oficio 500-05-2026-16021",
+        "Acuerdo 01/2026",
+        "500-05-2026-16021",
+        "Acuerdo 2026-2030",
+        "Oficio 2026-2030",
+    ):
+        assert ACT_NUMBER_RE.search(text) is not None
+
+
 def test_validate_publications_payload_accepts_valid_contract():
     report = validate_publications_payload(valid_payload())
 
@@ -126,6 +146,20 @@ def test_validate_publications_payload_rejects_act_number_in_what_published():
 
     assert not report.ok
     assert any("must not contain an act number" in error for error in report.errors)
+
+
+def test_validate_publications_payload_accepts_year_range_in_what_published():
+    payload = valid_payload()
+    payload["items"][0]["card_body"] = (
+        "## Qué se publicó\n\n"
+        "Programa institucional con vigencia para el periodo 2026-2030.\n\n"
+        "## Sustancia\n\nCambio sustantivo concreto.\n\n"
+        "## Fuente\n\n[Abrir publicación oficial](https://dof.gob.mx/nota_detalle.php?codigo=1)"
+    )
+
+    report = validate_publications_payload(payload)
+
+    assert report.ok
 
 
 def test_validate_publications_payload_accepts_optional_case_fields():

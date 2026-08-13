@@ -46,37 +46,55 @@ export function detailHref(item, from = "archivo") {
   return `${base}${separator}from=${encodeURIComponent(from)}`;
 }
 
-function appendInline(container, text) {
-  const inlinePattern = /(\*\*([^*]+)\*)|\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g;
+export function parseInline(text) {
+  const inlinePattern = /(\*\*([^*\n]+)\*\*)|(\*([^*\n]+)\*)|\[([^\]]+)\]\((https?:\/\/[^)]+)\)/gi;
+  const tokens = [];
   let lastIndex = 0;
   let match = inlinePattern.exec(text);
   while (match) {
     if (match.index > lastIndex) {
-      container.append(document.createTextNode(text.slice(lastIndex, match.index)));
+      tokens.push({ type: "text", value: text.slice(lastIndex, match.index) });
     }
     if (match[2]) {
+      tokens.push({ type: "strong", value: match[2] });
+    } else if (match[4]) {
+      tokens.push({ type: "emphasis", value: match[4] });
+    } else if (match[5] && match[6] && isSafeHttpUrl(match[6])) {
+      tokens.push({ type: "link", value: match[5], url: match[6] });
+    }
+    lastIndex = inlinePattern.lastIndex;
+    match = inlinePattern.exec(text);
+  }
+  if (lastIndex < text.length) tokens.push({ type: "text", value: text.slice(lastIndex) });
+  return tokens;
+}
+
+function appendInline(container, text) {
+  for (const token of parseInline(text)) {
+    if (token.type === "strong") {
       const strong = document.createElement("strong");
-      strong.textContent = match[2];
+      strong.textContent = token.value;
       container.append(strong);
-    } else if (match[3] && match[4] && isSafeHttpUrl(match[4])) {
+    } else if (token.type === "emphasis") {
+      const emphasis = document.createElement("em");
+      emphasis.textContent = token.value;
+      container.append(emphasis);
+    } else if (token.type === "link") {
       const link = document.createElement("a");
-      link.href = match[4];
+      link.href = token.url;
       link.target = "_blank";
       link.rel = "noopener noreferrer";
-      link.textContent = match[3];
+      link.textContent = token.value;
       const arrow = document.createElement("span");
       arrow.className = "external-arrow";
       arrow.setAttribute("aria-hidden", "true");
       arrow.textContent = " ↗";
       link.append(arrow);
       container.append(link);
-    } else if (match[3]) {
-      container.append(document.createTextNode(match[3]));
+    } else {
+      container.append(document.createTextNode(token.value));
     }
-    lastIndex = inlinePattern.lastIndex;
-    match = inlinePattern.exec(text);
   }
-  if (lastIndex < text.length) container.append(document.createTextNode(text.slice(lastIndex)));
 }
 
 function splitTableRow(line) {

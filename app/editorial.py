@@ -8,9 +8,8 @@ from typing import Any
 from app.edition import prepare_payload, write_site_artifacts
 from app.markdown import build_detail_markdown
 from app.storage import Storage
-from app.text import words
+from app.text import ACT_NUMBER_RE, words
 from app.validation import (
-    ACT_NUMBER_RE,
     CARD_BODY_SECTIONS,
     OFFICE_NUMBER_TITLE,
     SUMMARY_MAX_WORDS,

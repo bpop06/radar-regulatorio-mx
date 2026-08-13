@@ -8,13 +8,17 @@ from pathlib import Path
 from typing import Any
 from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 
-from app.text import words
+from app.text import ACT_NUMBER_RE, words
 
 SCHEMA_VERSION = 7
 MAX_SIGNALS = 7
 WHY_MIN_WORDS = 12
 WHY_MAX_WORDS = 32
 DEFAULT_TIMEZONE = "America/Mexico_City"
+DEFAULT_WHY_IT_MATTERS = (
+    "Actualización oficial seleccionada por su importancia jurídica y relevancia para el "
+    "seguimiento regulatorio del día"
+)
 
 EDITION_KEYS = {
     "edition_date",
@@ -261,11 +265,8 @@ def _digest_reason_map(digest: Any) -> dict[str, str]:
 
 def _bounded_reason(value: Any) -> str:
     selected = words(value if isinstance(value, str) else "")
-    if not selected:
-        selected = words(
-            "Actualización oficial seleccionada por su importancia jurídica y relevancia "
-            "para el seguimiento regulatorio del día"
-        )
+    if not selected or ACT_NUMBER_RE.search(" ".join(selected)):
+        selected = words(DEFAULT_WHY_IT_MATTERS)
     if len(selected) < WHY_MIN_WORDS:
         selected.extend(
             words("Revisa la fuente primaria para confirmar su alcance jurídico aplicable")

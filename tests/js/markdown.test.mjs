@@ -5,6 +5,7 @@ import {
   detailHref,
   formatDate,
   isSafeHttpUrl as safeUrl,
+  parseInline,
   translateCaseStatus as translateStatus,
 } from "../../docs/markdown.js";
 
@@ -45,4 +46,21 @@ test("translateStatus localizes known case statuses and preserves unknown ones",
   assert.equal(translateStatus(" Active "), "Activo");
   assert.equal(translateStatus("Suspended"), "Suspended");
   assert.equal(translateStatus(undefined), "");
+});
+
+test("parseInline renders strong, emphasis, and safe links without literal markers", () => {
+  assert.deepEqual(
+    parseInline("**Materia:** *Título oficial* [Fuente](https://example.test/doc)"),
+    [
+      { type: "strong", value: "Materia:" },
+      { type: "text", value: " " },
+      { type: "emphasis", value: "Título oficial" },
+      { type: "text", value: " " },
+      { type: "link", value: "Fuente", url: "https://example.test/doc" },
+    ],
+  );
+  assert.deepEqual(
+    parseInline("[No abrir](javascript:alert(1))"),
+    [{ type: "text", value: "[No abrir](javascript:alert(1))" }],
+  );
 });
