@@ -25,10 +25,10 @@ class Summarizer:
     """Resumen extractivo determinista.
 
     La capa editorial (título de noticia, resumen razonado y cuerpo de la
-    ficha) NO se genera aquí: la produce la rutina diaria de Claude en la
-    nube mediante `app.cli apply-editorial`, que marca `ai_generated=true`.
-    Este generador garantiza que toda publicación salga completa y válida
-    aunque la rutina editorial aún no haya corrido.
+    ficha) NO se genera aquí: la produce la automatización diaria de Codex
+    mediante `app.cli apply-editorial`, que marca `ai_generated=true`. Los
+    registros sin esa revisión se publican explícitamente como
+    `needs_review`; este helper se conserva sólo para compatibilidad interna.
     """
 
     def summarize(self, item: ClassifiedCandidate) -> Summary:

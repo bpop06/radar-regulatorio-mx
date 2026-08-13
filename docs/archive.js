@@ -1,21 +1,22 @@
-import { detailHref, formatDate } from "./markdown.js?v=20260812a";
+import {
+  displayTitle,
+  editorialLabel,
+  loadArchive,
+  loadArchiveMonth,
+  officialDate,
+  stableDetailHref,
+  teaser,
+} from "./data-client.js";
+import { formatDate } from "./markdown.js";
 
-const ARCHIVE_WATERCOLORS = ["#54789b", "#73866f", "#b18443", "#9b6971", "#756a8b"];
+const ARCHIVE_WATERCOLORS = ["#54789b", "#667c61", "#94691f", "#8c5964", "#756a8b"];
 const ARCHIVE_TILTS = [-.6, .45, -.25, .7, -.4, .3];
-
 const PAGE_SIZE = 25;
+
 const state = {
-  items: [],
-  sources: [],
-  query: "",
-  days: "all",
-  category: "Todas",
-  organ: "Todas",
-  source: "Todas",
-  jurisdiction: "Todas",
-  sort: "date",
-  exactDate: "",
-  page: 1,
+  items: [], sources: [], query: "", days: "all", category: "Todas", organ: "Todas",
+  source: "Todas", jurisdiction: "Todas", sort: "date", exactDate: "", page: 1,
+  manifest: null, remainingPaths: [],
 };
 
 const elements = {
@@ -33,21 +34,47 @@ const elements = {
   count: document.querySelector("#result-count"),
   list: document.querySelector("#archive-list"),
   empty: document.querySelector("#archive-empty"),
-  retry: document.querySelector("#retry-archive"),
+  error: document.querySelector("#archive-error"),
   pagination: document.querySelector("#pagination"),
   prev: document.querySelector("#page-prev"),
   next: document.querySelector("#page-next"),
   pageIndicator: document.querySelector("#page-indicator"),
   sourceStatus: document.querySelector("#source-status"),
+  monthStatus: document.querySelector("#archive-month-status"),
+  loadMore: document.querySelector("#load-more-months"),
 };
 
 function normalize(value) {
   return String(value || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
 }
 
+function identity(item) {
+  return `${item.source || ""}:${item.source_id || item.id || item.canonical_url || item.url || ""}`;
+}
+
+function uniqueItems(items) {
+  const seen = new Set();
+  return items.filter((item) => {
+    const key = identity(item);
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+}
+
 function populateSelect(select, values, allLabel) {
   select.replaceChildren(new Option(allLabel, "Todas"));
   values.forEach((value) => select.append(new Option(value, value)));
+}
+
+function populateFilters() {
+  populateSelect(elements.category, [...new Set(state.items.flatMap((item) => item.categories || []))]
+    .sort((a, b) => a.localeCompare(b, "es")), "Todas");
+  populateSelect(elements.organ, [...new Set(state.items.map((item) => item.issuing_body || item.authority).filter(Boolean))]
+    .sort((a, b) => a.localeCompare(b, "es")), "Todos");
+  populateSelect(elements.source, [...new Set(state.items.map((item) => item.source).filter(Boolean))]
+    .sort((a, b) => a.localeCompare(b, "es")), "Todas");
+  syncControls();
 }
 
 function loadUrlState() {
@@ -89,48 +116,44 @@ function updateUrl() {
 }
 
 function anchorDate() {
-  const dates = state.items.map((item) => item.published_at).filter(Boolean).sort().reverse();
-  return dates[0] || "";
+  return state.items.map(officialDate).filter(Boolean).sort().reverse()[0] || "";
 }
 
 function matchesPeriod(item) {
-  if (state.exactDate) return item.published_at === state.exactDate;
+  const itemDate = officialDate(item);
+  if (state.exactDate) return itemDate.slice(0, 10) === state.exactDate;
   if (state.days === "all") return true;
-  const anchor = new Date(`${anchorDate()}T12:00:00Z`);
-  const current = new Date(`${item.published_at}T12:00:00Z`);
+  const anchor = new Date(`${anchorDate().slice(0, 10)}T12:00:00Z`);
+  const current = new Date(`${itemDate.slice(0, 10)}T12:00:00Z`);
   const delta = (anchor - current) / 86400000;
-  return delta >= 0 && delta < Number(state.days);
+  return Number.isFinite(delta) && delta >= 0 && delta < Number(state.days);
 }
 
 function filteredItems() {
   const query = normalize(state.query);
   const selected = state.items.filter((item) => {
     const haystack = normalize([
-      item.title,
-      item.summary,
-      item.official_title,
-      item.issuing_body,
-      item.authority,
-      ...(item.categories || []),
+      displayTitle(item), item.summary_teaser, item.summary, item.description, item.review_reason,
+      item.official_title, item.issuing_body, item.authority, ...(item.categories || []),
       ...(item.topic_tags || []),
     ].join(" "));
     return (!query || haystack.includes(query))
       && matchesPeriod(item)
       && (state.category === "Todas" || (item.categories || []).includes(state.category))
-      && (state.organ === "Todas" || item.issuing_body === state.organ)
+      && (state.organ === "Todas" || (item.issuing_body || item.authority) === state.organ)
       && (state.source === "Todas" || item.source === state.source)
       && (state.jurisdiction === "Todas" || item.jurisdiction === state.jurisdiction);
   });
   return selected.sort((left, right) => {
     if (state.sort === "importance") {
       return (Number(right.importance) - Number(left.importance))
-        || String(right.published_at).localeCompare(String(left.published_at));
+        || officialDate(right).localeCompare(officialDate(left));
     }
     if (state.sort === "relevance") {
       return (Number(right.relevance_score) - Number(left.relevance_score))
-        || String(right.published_at).localeCompare(String(left.published_at));
+        || officialDate(right).localeCompare(officialDate(left));
     }
-    return String(right.published_at).localeCompare(String(left.published_at))
+    return officialDate(right).localeCompare(officialDate(left))
       || (Number(right.importance) - Number(left.importance));
   });
 }
@@ -149,8 +172,9 @@ function importanceMeter(value) {
 }
 
 function buildRow(item, absoluteIndex) {
+  const pending = item.editorial_status === "needs_review";
   const row = document.createElement("li");
-  row.className = "archive-row";
+  row.className = "archive-row is-revealed";
   row.style.setProperty("--wash", ARCHIVE_WATERCOLORS[absoluteIndex % ARCHIVE_WATERCOLORS.length]);
   row.style.setProperty("--card-tilt", `${ARCHIVE_TILTS[absoluteIndex % ARCHIVE_TILTS.length]}deg`);
   row.dataset.importance = String(Math.max(0, Math.min(5, Number(item.importance) || 0)));
@@ -162,19 +186,22 @@ function buildRow(item, absoluteIndex) {
   const meta = document.createElement("div");
   meta.className = "archive-row-meta";
   const date = document.createElement("time");
-  date.dateTime = item.published_at;
-  date.textContent = formatDate(item.published_at, { short: true });
+  date.dateTime = officialDate(item);
+  date.textContent = `${item.official_published_at ? "Fecha oficial" : "Fecha publicada"}: ${formatDate(officialDate(item), { short: true })}`;
   const organ = document.createElement("span");
   organ.textContent = item.issuing_body || item.authority || item.source;
-  meta.append(date, organ, importanceMeter(item.importance));
+  const status = document.createElement("span");
+  status.className = `editorial-badge ${pending ? "is-pending" : "is-complete"}`;
+  status.textContent = editorialLabel(item);
+  meta.append(date, organ, status, importanceMeter(item.importance));
 
   const title = document.createElement("h3");
   const link = document.createElement("a");
-  link.href = detailHref(item, "archivo");
-  link.textContent = item.title || item.official_title || "Publicación oficial";
+  link.href = stableDetailHref(item, "archivo");
+  link.textContent = displayTitle(item);
   title.append(link);
   const summary = document.createElement("p");
-  summary.textContent = item.summary || item.description || "Sin síntesis disponible.";
+  summary.textContent = teaser(item) || "Consulta la evidencia oficial en la ficha.";
   const taxonomy = document.createElement("p");
   taxonomy.className = "archive-taxonomy";
   taxonomy.textContent = [...(item.categories || []), item.jurisdiction].filter(Boolean).join(" · ");
@@ -182,31 +209,10 @@ function buildRow(item, absoluteIndex) {
 
   const action = document.createElement("a");
   action.className = "archive-row-action";
-  action.href = detailHref(item, "archivo");
-  action.textContent = "Ver ficha";
+  action.href = stableDetailHref(item, "archivo");
+  action.textContent = pending ? "Revisar evidencia" : "Abrir ficha";
   row.append(number, body, action);
   return row;
-}
-
-function revealArchiveCards() {
-  const cards = [...elements.list.children];
-  const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
-  if (reducedMotion || !("IntersectionObserver" in window)) {
-    cards.forEach((card) => card.classList.add("is-revealed"));
-    return;
-  }
-  cards.forEach((card, index) => {
-    card.classList.add("paper-reveal");
-    card.style.setProperty("--reveal-delay", `${Math.min(index, 5) * 28}ms`);
-  });
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (!entry.isIntersecting) return;
-      entry.target.classList.add("is-revealed");
-      observer.unobserve(entry.target);
-    });
-  }, { rootMargin: "0px 0px -6%", threshold: .06 });
-  cards.forEach((card) => observer.observe(card));
 }
 
 function renderActiveQuery() {
@@ -228,10 +234,9 @@ function render() {
   const start = (state.page - 1) * PAGE_SIZE;
   const page = filtered.slice(start, start + PAGE_SIZE);
   elements.list.replaceChildren(...page.map((item, index) => buildRow(item, start + index)));
-  revealArchiveCards();
   elements.count.textContent = filtered.length === 1 ? "1 publicación" : `${filtered.length} publicaciones`;
   elements.empty.hidden = filtered.length !== 0;
-  elements.retry.hidden = true;
+  elements.error.hidden = true;
   elements.pagination.hidden = filtered.length <= PAGE_SIZE;
   elements.pageIndicator.textContent = `Página ${state.page} de ${totalPages}`;
   elements.prev.disabled = state.page <= 1;
@@ -243,16 +248,22 @@ function render() {
 function renderSources() {
   elements.sourceStatus.replaceChildren();
   for (const source of state.sources) {
+    const degraded = !["ok", "success"].includes(source.status);
     const row = document.createElement("div");
-    row.className = `source-status-row ${source.status === "error" ? "is-error" : ""}`;
+    row.className = `source-status-row ${degraded ? "is-error" : ""}`;
     const name = document.createElement("strong");
-    name.textContent = source.source || "Fuente";
+    name.textContent = source.source || source.name || "Fuente oficial";
     const status = document.createElement("span");
-    status.textContent = source.status === "error"
-      ? `Incidencia · ${source.error || "sin detalle"}`
-      : `${source.items_found || 0} registros revisados`;
+    status.textContent = degraded
+      ? `Cobertura degradada · ${source.error || source.message || "respuesta no verificable"}`
+      : `${source.items_found || 0} registros revisados · Operativa`;
     row.append(name, status);
     elements.sourceStatus.append(row);
+  }
+  if (!state.sources.length) {
+    const note = document.createElement("p");
+    note.textContent = "El estado de las fuentes está disponible en el corte vigente.";
+    elements.sourceStatus.append(note);
   }
 }
 
@@ -262,49 +273,61 @@ function resetPageAndRender() {
 }
 
 function bind() {
-  const mobileFilters = matchMedia("(max-width: 760px)");
-  const syncDrawer = () => {
-    if (!mobileFilters.matches) elements.filterDrawer.open = true;
-  };
+  const mobileFilters = matchMedia("(max-width: 47.5rem)");
   if (mobileFilters.matches) elements.filterDrawer.open = false;
-  mobileFilters.addEventListener("change", syncDrawer);
+  mobileFilters.addEventListener("change", () => {
+    if (!mobileFilters.matches) elements.filterDrawer.open = true;
+  });
   elements.search.addEventListener("input", (event) => {
     state.query = event.target.value.trim();
     state.exactDate = "";
     resetPageAndRender();
   });
-  const controls = [
-    [elements.days, "days"],
-    [elements.category, "category"],
-    [elements.organ, "organ"],
-    [elements.source, "source"],
-    [elements.jurisdiction, "jurisdiction"],
-    [elements.sort, "sort"],
-  ];
-  controls.forEach(([control, key]) => control.addEventListener("change", (event) => {
-    state[key] = event.target.value;
-    if (key === "days") state.exactDate = "";
-    resetPageAndRender();
-  }));
+  [[elements.days, "days"], [elements.category, "category"], [elements.organ, "organ"],
+    [elements.source, "source"], [elements.jurisdiction, "jurisdiction"], [elements.sort, "sort"]]
+    .forEach(([control, key]) => control.addEventListener("change", (event) => {
+      state[key] = event.target.value;
+      if (key === "days") state.exactDate = "";
+      resetPageAndRender();
+    }));
   elements.clear.addEventListener("click", () => {
-    Object.assign(state, {
-      query: "", days: "all", category: "Todas", organ: "Todas",
-      source: "Todas", jurisdiction: "Todas", sort: "date", exactDate: "", page: 1,
-    });
+    Object.assign(state, { query: "", days: "all", category: "Todas", organ: "Todas",
+      source: "Todas", jurisdiction: "Todas", sort: "date", exactDate: "", page: 1 });
     syncControls();
     if (mobileFilters.matches) elements.filterDrawer.open = false;
     render();
+    elements.search.focus();
   });
-  elements.retry.addEventListener("click", () => location.reload());
   elements.prev.addEventListener("click", () => {
     state.page = Math.max(1, state.page - 1);
     render();
-    document.querySelector("#results-heading").scrollIntoView();
+    document.querySelector("#results-heading").focus();
   });
   elements.next.addEventListener("click", () => {
     state.page += 1;
     render();
-    document.querySelector("#results-heading").scrollIntoView();
+    document.querySelector("#results-heading").focus();
+  });
+  elements.loadMore.addEventListener("click", async () => {
+    const path = state.remainingPaths.shift();
+    if (!path) return;
+    elements.loadMore.disabled = true;
+    elements.monthStatus.textContent = "Cargando el mes anterior…";
+    try {
+      state.items = uniqueItems([...state.items, ...await loadArchiveMonth(path, state.manifest)]);
+      populateFilters();
+      render();
+      elements.monthStatus.textContent = state.remainingPaths.length
+        ? `${state.items.length} publicaciones cargadas; quedan ${state.remainingPaths.length} meses por consultar.`
+        : "Archivo completo cargado.";
+    } catch (error) {
+      state.remainingPaths.unshift(path);
+      elements.monthStatus.textContent = "No fue posible cargar el mes anterior. Intenta de nuevo.";
+      console.error(error);
+    } finally {
+      elements.loadMore.disabled = false;
+      elements.loadMore.hidden = state.remainingPaths.length === 0;
+    }
   });
 }
 
@@ -312,35 +335,24 @@ async function init() {
   loadUrlState();
   bind();
   try {
-    const response = await fetch("data/publications.json", { cache: "no-store" });
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    const payload = await response.json();
-    state.items = Array.isArray(payload.items) ? payload.items : [];
-    state.sources = Array.isArray(payload.sources) ? payload.sources : [];
-    populateSelect(
-      elements.category,
-      [...new Set(state.items.flatMap((item) => item.categories || []))].sort((a, b) => a.localeCompare(b, "es")),
-      "Todas",
-    );
-    populateSelect(
-      elements.organ,
-      [...new Set(state.items.map((item) => item.issuing_body).filter(Boolean))].sort((a, b) => a.localeCompare(b, "es")),
-      "Todos",
-    );
-    populateSelect(
-      elements.source,
-      [...new Set(state.items.map((item) => item.source).filter(Boolean))].sort((a, b) => a.localeCompare(b, "es")),
-      "Todas",
-    );
-    syncControls();
+    const requestedMonth = /^\d{4}-\d{2}-\d{2}$/.test(state.exactDate)
+      ? state.exactDate.slice(0, 7) : "";
+    const payload = await loadArchive({ month: requestedMonth });
+    state.manifest = payload.manifest;
+    state.items = uniqueItems(payload.items);
+    state.sources = payload.sources;
+    state.remainingPaths = payload.remainingPaths || [];
+    populateFilters();
+    elements.loadMore.hidden = state.remainingPaths.length === 0;
+    elements.monthStatus.textContent = state.remainingPaths.length
+      ? `${requestedMonth ? `Mostrando ${requestedMonth}.` : "Mostrando el mes más reciente."} Hay ${state.remainingPaths.length} meses adicionales disponibles.`
+      : "Archivo disponible completo.";
     renderSources();
     render();
   } catch (error) {
     elements.list.replaceChildren();
-    elements.empty.hidden = false;
-    elements.empty.querySelector("h3").textContent = "No fue posible cargar el archivo.";
-    elements.empty.querySelector("p").textContent = "Comprueba tu conexión y vuelve a intentar la carga.";
-    elements.retry.hidden = false;
+    elements.empty.hidden = true;
+    elements.error.hidden = false;
     elements.count.textContent = "Datos no disponibles";
     console.error(error);
   }

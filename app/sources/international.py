@@ -4,10 +4,18 @@ import hashlib
 import re
 from datetime import date
 from email.utils import parsedate_to_datetime
+from urllib.parse import urljoin
 from xml.etree import ElementTree
 
+from bs4 import BeautifulSoup
+
 from app.models import Candidate
-from app.sources.base import Collector
+from app.sources.base import (
+    Collector,
+    SourceContractError,
+    require_html_marker,
+    require_xml_channel,
+)
 from app.text import clean_text
 
 # Igual que el sumario del DOF (app/sources/dof.py): se aíslan bloques <item>
@@ -38,12 +46,26 @@ class RssCollector(Collector):
 
     async def collect(self, since: date) -> list[Candidate]:
         response = await self.client.get(self.url)
-        response.raise_for_status()
-        return self.parse(response.content, since)
+        self.validate_response(
+            response,
+            content_types={"application/rss+xml", "application/xml", "text/xml"},
+        )
+        candidates, skipped = self.parse_with_diagnostics(response.content, since)
+        if skipped:
+            self.mark_degraded(f"{skipped} bloques RSS no pudieron interpretarse")
+        return candidates
 
     @classmethod
     def parse(cls, payload: bytes, since: date) -> list[Candidate]:
+        return cls.parse_with_diagnostics(payload, since)[0]
+
+    @classmethod
+    def parse_with_diagnostics(
+        cls, payload: bytes, since: date
+    ) -> tuple[list[Candidate], int]:
+        require_xml_channel(payload, source=cls.source)
         candidates: list[Candidate] = []
+        skipped = 0
         for block in ITEM_BLOCK_RE.findall(payload):
             try:
                 item = ElementTree.fromstring(block)
@@ -55,6 +77,7 @@ class RssCollector(Collector):
                 try:
                     item = ElementTree.fromstring(NAMESPACE_PREFIX_RE.sub(rb"<\1", block))
                 except ElementTree.ParseError:
+                    skipped += 1
                     continue
 
             title = clean_text(item.findtext("title", ""))
@@ -89,7 +112,7 @@ class RssCollector(Collector):
                     document_type=cls.default_document_type,
                 )
             )
-        return candidates
+        return candidates, skipped
 
 
 def _first_nonempty_text(item: ElementTree.Element, tag: str) -> str:
@@ -103,13 +126,11 @@ class OnuNoticiasCollector(RssCollector):
     """Noticias ONU (news.un.org), edición en español."""
 
     source = "ONU Noticias"
-    # Confirmado por búsqueda: la página oficial de feeds
+    # Certificado en vivo: la página oficial de feeds
     # https://news.un.org/es/rss-feeds lista el feed general en español, y el
     # patrón de ruta (/feed/subscribe/{idioma}/{seccion}/all/...) se verificó
     # con el feed hermano de audio
     # https://news.un.org/feed/subscribe/es/audio-product/all/audio-rss.xml.
-    # No se pudo hacer una petición HTTP en vivo en este entorno (red externa
-    # bloqueada); pendiente de verificación en vivo desde la Mac.
     url = "https://news.un.org/feed/subscribe/es/news/all/rss.xml"
     default_authority = "Organización de las Naciones Unidas"
     default_document_type = "Noticia"
@@ -119,15 +140,8 @@ class UstrCollector(RssCollector):
     """Comunicados de la Oficina del Representante Comercial de EEUU (USTR)."""
 
     source = "USTR"
-    # USTR mantenía un índice de feeds RSS en
-    # https://ustr.gov/archive/Meta_Content/RSS/Section_Index.html (archivado
-    # tras el rediseño del sitio); no se localizó un feed RSS activo
-    # equivalente para la sección actual de comunicados
-    # (https://ustr.gov/about-us/policy-offices/press-office/press-releases).
-    # Se usa la ruta convencional de Drupal para el feed general del sitio.
-    # PENDIENTE DE VERIFICACIÓN EN VIVO desde la Mac (red externa bloqueada
-    # en este entorno): confirmar que expone los comunicados de prensa y, si
-    # no, sustituir por el feed correcto una vez detectado con acceso real.
+    # Certificado en vivo: el feed general de Drupal expone contenido USTR
+    # estructurado y pasa los contratos de transporte, tipo y estructura.
     url = "https://ustr.gov/rss.xml"
     default_authority = "Oficina del Representante Comercial de Estados Unidos (USTR)"
     default_document_type = "Comunicado"
@@ -156,35 +170,122 @@ class CpiCollector(RssCollector):
     default_document_type = "Comunicado"
 
 
-class CijCollector(RssCollector):
+class CijCollector(Collector):
     """Comunicados de la Corte Internacional de Justicia (CIJ / ICJ)."""
 
     source = "CIJ"
-    # Confirmado en vivo: https://www.icj-cij.org/rss.xml es RSS 2.0 estándar
-    # (pubDate, guid, description con HTML embebido). robots.txt (verificado
-    # en vivo) es el robots.txt genérico de Drupal, sin restricciones por
-    # user-agent ni bloqueo de /rss.xml.
-    url = "https://www.icj-cij.org/rss.xml"
+    # /rss.xml fue retirado y devuelve 404. El índice oficial es HTML estable
+    # de Drupal y publica número, fecha, título y PDF oficial por comunicado.
+    url = "https://www.icj-cij.org/press-releases"
     default_authority = "Corte Internacional de Justicia"
     default_document_type = "Comunicado"
-    # El feed mezcla comunicados con nodos multimedia cuyo título es el
-    # nombre del archivo ("20260630-200-InterventionPoland"): se descartan.
-    skip_title_re = re.compile(r"^\d{8}-")
+
+    async def collect(self, since: date) -> list[Candidate]:
+        response = await self.client.get(self.url)
+        self.validate_response(response, content_types={"text/html"})
+        return self.parse(response.text, since)
+
+    @classmethod
+    def parse(cls, payload: str, since: date) -> list[Candidate]:
+        require_html_marker(payload, "view-press-releases", source=cls.source)
+        soup = BeautifulSoup(payload, "html.parser")
+        container = soup.select_one(".view-press-releases .view-content")
+        if container is None:
+            raise SourceContractError(f"{cls.source}: falta la lista oficial de comunicados")
+
+        candidates: list[Candidate] = []
+        for row in container.select(":scope > .views-row"):
+            number_anchor = row.select_one(".views-field-field-press-release-number a[href]")
+            time_element = row.select_one(".views-field-field-date-of-the-document time")
+            title_element = row.select_one(".views-field-field-document-long-title")
+            if number_anchor is None or time_element is None or title_element is None:
+                continue
+            number = clean_text(number_anchor.get_text(" ", strip=True))
+            title = clean_text(title_element.get_text(" ", strip=True))
+            raw_date = str(time_element.get("datetime") or time_element.get_text(" ", strip=True))
+            published_at = _parse_html_date(raw_date)
+            if not number or not title or published_at is None or published_at < since:
+                continue
+            url = urljoin(cls.url, str(number_anchor.get("href")))
+            source_id = re.sub(r"^Press release No\.\s*", "", number, flags=re.IGNORECASE)
+            candidates.append(
+                Candidate(
+                    source=cls.source,
+                    source_id=source_id,
+                    url=url,
+                    official_title=title,
+                    description=f"{number}. {title}",
+                    published_at=published_at,
+                    authority=cls.default_authority,
+                    document_type=cls.default_document_type,
+                )
+            )
+        return candidates
 
 
-class TradeGovCollector(RssCollector):
+class TradeGovCollector(Collector):
     """International Trade Administration (Trade.gov, Departamento de Comercio de EEUU)."""
 
     source = "Trade.gov"
-    # Confirmado por búsqueda: Tradeology, el blog oficial de la International
-    # Trade Administration sobre política comercial (incluye relación
-    # comercial EEUU-México), publica su feed RSS en blog.trade.gov/feed/.
-    # No se localizó un feed RSS dedicado para la sección HTML
-    # trade.gov/press-releases; pendiente de verificación en vivo desde la
-    # Mac para confirmar vigencia y cobertura.
-    url = "https://blog.trade.gov/feed/"
+    # El antiguo feed redirige a HTML. Este índice oficial contiene fecha y
+    # enlace canónico de los comunicados de la ITA.
+    url = "https://www.trade.gov/press-releases"
     default_authority = "International Trade Administration (Trade.gov)"
     default_document_type = "Comunicado"
+
+    async def collect(self, since: date) -> list[Candidate]:
+        response = await self.client.get(self.url)
+        self.validate_response(response, content_types={"text/html"})
+        return self.parse(response.text, since)
+
+    @classmethod
+    def parse(cls, payload: str | bytes, since: date) -> list[Candidate]:
+        if isinstance(payload, bytes):
+            payload = payload.decode("utf-8", errors="replace")
+        require_html_marker(
+            payload,
+            "Press Releases Issued by the International Trade Administration",
+            source=cls.source,
+        )
+        soup = BeautifulSoup(payload, "html.parser")
+        heading = soup.find(
+            "h2",
+            string=lambda value: bool(value)
+            and "Press Releases Issued by the International Trade Administration" in value,
+        )
+        if heading is None or heading.parent is None:
+            raise SourceContractError(f"{cls.source}: falta la lista oficial de comunicados")
+
+        candidates: list[Candidate] = []
+        for item in heading.parent.find_all("li"):
+            anchor = item.find("a", href=True)
+            if anchor is None:
+                continue
+            url = urljoin(cls.url, str(anchor.get("href")))
+            if "/press-release/" not in url and "/feature-article/" not in url:
+                continue
+            strings = list(item.stripped_strings)
+            if not strings:
+                continue
+            published_at = _parse_html_date(strings[0])
+            if published_at is None or published_at < since:
+                continue
+            title = clean_text(anchor.get_text(" ", strip=True))
+            if not title:
+                continue
+            candidates.append(
+                Candidate(
+                    source=cls.source,
+                    source_id=hashlib.sha256(url.encode()).hexdigest()[:16],
+                    url=url,
+                    official_title=title,
+                    description=title,
+                    published_at=published_at,
+                    authority=cls.default_authority,
+                    document_type=cls.default_document_type,
+                )
+            )
+        return candidates
 
 
 class OmcCollector(RssCollector):
@@ -199,3 +300,19 @@ class OmcCollector(RssCollector):
     url = "https://www.wto.org/library/rss/latest_news_e.xml"
     default_authority = "Organización Mundial del Comercio"
     default_document_type = "Noticia"
+
+
+def _parse_html_date(raw_date: str) -> date | None:
+    from datetime import datetime
+
+    normalized_date = clean_text(raw_date).replace("Z", "+00:00")
+    try:
+        return datetime.fromisoformat(normalized_date).date()
+    except ValueError:
+        pass
+    for pattern in ("%m/%d/%y", "%m/%d/%Y", "%d %B %Y"):
+        try:
+            return datetime.strptime(normalized_date, pattern).date()
+        except ValueError:
+            continue
+    return None

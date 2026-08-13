@@ -5,7 +5,7 @@ import re
 from pathlib import Path
 from typing import Any
 
-from app.edition import prepare_payload, write_site_artifacts
+from app.edition import PublishError, load_manifested_items, prepare_payload, write_site_artifacts
 from app.markdown import build_detail_markdown
 from app.storage import Storage
 from app.text import ACT_NUMBER_RE, words
@@ -14,18 +14,27 @@ from app.validation import (
     OFFICE_NUMBER_TITLE,
     SUMMARY_MAX_WORDS,
     SUMMARY_MIN_WORDS,
+    TEASER_MAX_WORDS,
     WHAT_PUBLISHED_SECTION,
     card_section_text,
+    contains_act_number,
     validate_digest,
     validate_edition,
     validate_publications_payload,
+    validate_site_artifacts,
 )
 
-EDITABLE_FIELDS = ("title", "summary", "card_body")
-# case_facts es el único campo por-ítem opcional del gate de tipo texto: solo
-# aplica a ítems de caso (CIADI, TFJA...) y puede omitirse en la edición sin
-# error.
-OPTIONAL_EDITABLE_FIELDS = ("case_facts",)
+EDITABLE_FIELDS = ("title", "summary_teaser", "summary", "card_body")
+# Campos sustantivos de casos que Codex puede completar sólo después de leer
+# evidencia oficial. El content_hash obligatorio impide aplicar ese análisis
+# sobre una versión de la fuente que ya cambió.
+OPTIONAL_EDITABLE_FIELDS = (
+    "case_facts",
+    "case_claim",
+    "case_outcome",
+    "case_reasoning",
+    "case_amount",
+)
 # importance es la curaduría editorial de qué tan relevante es un ítem ya
 # publicado (bug #15): opcional igual que case_facts, pero de tipo int
 # (1-5, mismo rango que exige app.validation), no texto.
@@ -50,13 +59,15 @@ def apply_editorial(
     """Aplica ediciones editoriales al JSON publicado (y a la última corrida
     de la base local si existe).
 
-    Este comando es el único canal de escritura de la rutina editorial de la
-    nube: permite reemplazar `title`, `summary` y `card_body` (obligatorios),
-    `case_facts` (opcional, solo ítems de caso) e `importance` (opcional,
-    curaduría de qué tan relevante es el ítem, entero 1-5) de ítems
-    existentes (marcándolos `ai_generated=true`), más el bloque opcional
-    `digest` del corte completo, con validación dura. Todo o nada: si una
-    edición o el digest son inválidos, no se aplica nada.
+    Este comando es el único canal de escritura de la rutina editorial de
+    Codex: permite reemplazar `title`, `summary_teaser`, `summary` y
+    `card_body` (obligatorios),
+    análisis de caso opcional e `importance` (opcional, curaduría de qué tan
+    relevante es el ítem, entero 1-5) de ítems existentes —incluidas fichas
+    permanentes que ya salieron de la ventana móvil—, marcándolos
+    `ai_generated=true`, más el bloque opcional `digest` del corte completo,
+    con validación dura. Todo o nada: si una edición o el digest son inválidos,
+    no se aplica nada.
     """
     edits_payload = json.loads(edits_path.read_text(encoding="utf-8"))
     edits = edits_payload.get("items", [])
@@ -68,7 +79,23 @@ def apply_editorial(
     payload = prepare_payload(
         json.loads(publications_path.read_text(encoding="utf-8")),
     )
-    by_id = {item["id"]: item for item in payload.get("items", [])}
+    current_by_id = {item["id"]: item for item in payload.get("items", [])}
+    manifest_path = publications_path.with_name("manifest.json")
+    if manifest_path.exists():
+        baseline_report = validate_site_artifacts(manifest_path)
+        if not baseline_report.ok:
+            raise EditorialError(
+                "el corte base no pasa la validación transaccional: "
+                + "; ".join(baseline_report.errors[:5])
+            )
+    try:
+        by_id = load_manifested_items(publications_path)
+    except PublishError as exc:
+        raise EditorialError(f"no se pudieron cargar las fichas permanentes: {exc}") from exc
+    # La versión de publications.json tiene precedencia para los ítems del
+    # corte móvil y comparte identidad de objeto con payload, de modo que sus
+    # ediciones se reflejan en el artefacto compatible sin una segunda copia.
+    by_id.update(current_by_id)
 
     validated: dict[str, dict[str, Any]] = {}
     for index, edit in enumerate(edits):
@@ -82,7 +109,7 @@ def apply_editorial(
     # también el archivo completo de ediciones.
     digest = edits_payload.get("digest")
     if digest is not None:
-        digest_errors = validate_digest(digest, set(by_id))
+        digest_errors = validate_digest(digest, set(current_by_id))
         if digest_errors:
             raise EditorialError("digest inválido: " + "; ".join(digest_errors[:5]))
 
@@ -90,7 +117,7 @@ def apply_editorial(
     if edition is not None:
         edition_errors = validate_edition(
             edition,
-            list(by_id.values()),
+            list(current_by_id.values()),
             payload.get("sources", []),
         )
         if edition_errors:
@@ -101,6 +128,8 @@ def apply_editorial(
         for field, value in fields.items():
             item[field] = value
         item["ai_generated"] = True
+        item["editorial_status"] = "complete"
+        item["review_reason"] = None
         # La ficha única debe quedar coherente con la edición aplicada: se
         # recompone con el builder v2 a partir de los campos ya actualizados
         # del ítem. El pipeline la vuelve a generar igual en la próxima
@@ -124,11 +153,22 @@ def apply_editorial(
         )
         # Se sincroniza a la base local igual que los demás campos editados.
         fields["detail_markdown"] = item["detail_markdown"]
+        fields["editorial_status"] = "complete"
+        fields["review_reason"] = None
 
     if digest is not None:
         payload["digest"] = digest
     if edition is not None:
         payload["edition"] = edition
+
+    historical_edits = [
+        by_id[edit_id] for edit_id in validated if edit_id not in current_by_id
+    ]
+    if historical_edits:
+        # Transporte privado ya soportado por el writer: regenera ficha, nota
+        # e índice mensual sin convertir el registro histórico en novedad del
+        # corte actual ni incorporarlo a publications.json/edition.json.
+        payload["_historical_items"] = historical_edits
 
     # Validar el payload fusionado EN MEMORIA antes de escribir: un fallo aquí
     # no debe dejar el archivo publicado a medio modificar.
@@ -138,6 +178,11 @@ def apply_editorial(
             "el payload resultante no pasa el contrato: " + "; ".join(report.errors[:5])
         )
 
+    if edition is not None:
+        # El writer reconstruye por defecto la selección tras reconciliar
+        # editoriales. Sólo una edición explícitamente incluida por Codex
+        # debe conservar rangos y razones personalizados.
+        payload["_preserve_edition"] = True
     write_site_artifacts(payload, publications_path, edition_path)
 
     if database_path is not None and Path(database_path).exists():
@@ -154,6 +199,7 @@ def _validate_edit(
 
     unknown = set(edit) - {
         "id",
+        "content_hash",
         *EDITABLE_FIELDS,
         *OPTIONAL_EDITABLE_FIELDS,
         *OPTIONAL_EDITABLE_INT_FIELDS,
@@ -166,6 +212,16 @@ def _validate_edit(
     edit_id = edit.get("id")
     if not isinstance(edit_id, str) or edit_id not in by_id:
         raise EditorialError(f"items[{index}]: id inexistente en las publicaciones ({edit_id!r})")
+
+    expected_hash = edit.get("content_hash")
+    if not isinstance(expected_hash, str) or not expected_hash:
+        raise EditorialError(
+            f"items[{index}] ({edit_id}): falta content_hash de la evidencia revisada"
+        )
+    if expected_hash != by_id[edit_id].get("content_hash"):
+        raise EditorialError(
+            f"items[{index}] ({edit_id}): content_hash cambió; vuelve a revisar la evidencia"
+        )
 
     fields: dict[str, Any] = {}
     for field in EDITABLE_FIELDS:
@@ -181,6 +237,13 @@ def _validate_edit(
             f"deben ser {SUMMARY_MIN_WORDS}-{SUMMARY_MAX_WORDS}"
         )
 
+    teaser_words = len(words(fields["summary_teaser"]))
+    if teaser_words > TEASER_MAX_WORDS:
+        raise EditorialError(
+            f"items[{index}] ({edit_id}): el teaser tiene {teaser_words} palabras, "
+            f"el máximo es {TEASER_MAX_WORDS}"
+        )
+
     for section in CARD_BODY_SECTIONS:
         if section not in fields["card_body"]:
             raise EditorialError(
@@ -188,7 +251,7 @@ def _validate_edit(
             )
 
     what_published = card_section_text(fields["card_body"], WHAT_PUBLISHED_SECTION)
-    if ACT_NUMBER_RE.search(what_published):
+    if contains_act_number(what_published):
         raise EditorialError(
             f"items[{index}] ({edit_id}): la sección '{WHAT_PUBLISHED_SECTION}' "
             "no debe traer número de acto"

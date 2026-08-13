@@ -2,10 +2,12 @@ import json
 
 import pytest
 
+from app.edition import prepare_payload
 from app.editorial import EditorialError, apply_editorial
 from app.storage import Storage
 
-VALID_SUMMARY = " ".join(f"palabra{i}" for i in range(45))
+VALID_TEASER = " ".join(f"avance{i}" for i in range(40))
+VALID_SUMMARY = " ".join(f"palabra{i}" for i in range(320))
 VALID_CARD_BODY = (
     "## Qué se publicó\n\nAcuerdo de la autoridad.\n\n"
     "## Sustancia\n\nCambio sustantivo concreto.\n\n"
@@ -73,6 +75,7 @@ def edit(**overrides) -> dict:
     base = {
         "id": "dof:1",
         "title": "SHCP actualiza el listado de contribuyentes con presunción fiscal",
+        "summary_teaser": VALID_TEASER,
         "summary": VALID_SUMMARY,
         "card_body": VALID_CARD_BODY,
     }
@@ -109,7 +112,14 @@ def edition_block() -> dict:
 
 def write_files(tmp_path, edits, digest=None):
     pubs = tmp_path / "publications.json"
-    pubs.write_text(json.dumps(publications_payload(), ensure_ascii=False), encoding="utf-8")
+    payload = prepare_payload(publications_payload(), force=True)
+    pubs.write_text(json.dumps(payload, ensure_ascii=False), encoding="utf-8")
+    by_id = {item["id"]: item for item in payload["items"]}
+    edits = [dict(edit_value) for edit_value in edits]
+    for edit_value in edits:
+        item = by_id.get(edit_value.get("id"))
+        if item is not None:
+            edit_value.setdefault("content_hash", item["content_hash"])
     edits_payload: dict = {"items": edits}
     if digest is not None:
         edits_payload["digest"] = digest
@@ -182,7 +192,7 @@ def test_apply_editorial_updates_local_database(tmp_path):
     [
         (edit(id="dof:999"), "id inexistente"),
         (edit(summary="muy corto"), "palabras"),
-        (edit(summary=" ".join(f"palabra{i}" for i in range(90))), "palabras"),
+        (edit(summary=" ".join(f"palabra{i}" for i in range(1001))), "palabras"),
         (edit(card_body="## Qué se publicó\n\nSolo una sección"), "sección"),
         (edit(card_body=CARD_BODY_WITH_ACT_NUMBER), "número de acto"),
         (edit(title="Oficio 500-05-2026-1 comunica listado"), "número de oficio"),
@@ -210,10 +220,17 @@ def test_apply_editorial_recomposes_meta_line_with_canonical_organ(tmp_path):
     payload = publications_payload()
     payload["items"][0]["authority"] = "SECRETARIA DE ECONOMIA"
     payload["items"][0]["issuing_body"] = "Secretaría de Economía"
+    payload = prepare_payload(payload, force=True)
     pubs = tmp_path / "publications.json"
     pubs.write_text(json.dumps(payload, ensure_ascii=False), encoding="utf-8")
     edits_file = tmp_path / "edits.json"
-    edits_file.write_text(json.dumps({"items": [edit()]}, ensure_ascii=False), encoding="utf-8")
+    edits_file.write_text(
+        json.dumps(
+            {"items": [edit(content_hash=payload["items"][0]["content_hash"])]},
+            ensure_ascii=False,
+        ),
+        encoding="utf-8",
+    )
 
     apply_editorial(edits_file, pubs)
 

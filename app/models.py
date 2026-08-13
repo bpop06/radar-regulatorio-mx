@@ -1,7 +1,8 @@
 from __future__ import annotations
 
 from dataclasses import asdict, dataclass, field
-from datetime import date
+from datetime import date, datetime
+from typing import Any
 
 
 @dataclass(frozen=True)
@@ -16,6 +17,20 @@ class Candidate:
     document_type: str = ""
     case_parties: str = ""
     case_status: str = ""
+    # Contrato v8. Los recolectores pueden poblar sólo lo que expone la
+    # fuente; el pipeline completa los fallbacks deterministas (URL, fecha y
+    # hash) sin inventar contenido editorial.
+    canonical_url: str = ""
+    official_published_at: date | None = None
+    detected_at: datetime | None = None
+    content_hash: str = ""
+    case_number: str = ""
+    case_treaty: str = ""
+    case_claim: str = ""
+    case_outcome: str = ""
+    case_reasoning: str = ""
+    case_amount: str = ""
+    official_evidence: dict[str, str] = field(default_factory=dict)
 
     @property
     def id(self) -> str:
@@ -44,16 +59,28 @@ class ClassifiedCandidate:
 @dataclass(frozen=True)
 class Publication:
     id: str
+    source_id: str
     source: str
     url: str
+    canonical_url: str
     detail_url: str
     official_title: str
-    title: str
-    summary: str
+    title: str | None
+    summary_teaser: str | None
+    summary: str | None
     description: str
-    detail_markdown: str
-    card_body: str
+    detail_markdown: str | None
+    card_body: str | None
     published_at: str
+    official_published_at: str
+    detected_at: str
+    first_seen_at: str
+    last_seen_at: str
+    content_hash: str
+    editorial_status: str
+    review_reason: str | None
+    official_identifiers: dict[str, str]
+    official_evidence: dict[str, str]
     authority: str
     document_type: str
     issuing_body: str
@@ -69,9 +96,15 @@ class Publication:
     importance: int
     relevance_score: int
     ai_generated: bool
+    case_number: str = ""
     case_parties: str = ""
     case_status: str = ""
     case_facts: str = ""
+    case_treaty: str = ""
+    case_claim: str = ""
+    case_outcome: str = ""
+    case_reasoning: str = ""
+    case_amount: str = ""
 
     def to_dict(self) -> dict[str, object]:
         result = asdict(self)
@@ -87,12 +120,15 @@ class SourceResult:
     candidates: list[Candidate] = field(default_factory=list)
     error: str | None = None
     attempts: int = 1
+    degraded: bool = False
+    details: dict[str, Any] = field(default_factory=dict)
 
     def status_dict(self) -> dict[str, object]:
         return {
             "source": self.source,
-            "status": "error" if self.error else "ok",
+            "status": "error" if self.error else ("degraded" if self.degraded else "ok"),
             "items_found": len(self.candidates),
             "error": self.error,
             "attempts": self.attempts,
+            **self.details,
         }

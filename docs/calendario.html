@@ -4,7 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Calendarios de días hábiles, inhábiles, vacaciones y guardias por órgano federal.">
-    <title>Calendario | Radar Regulatorio MX</title>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Radar Regulatorio MX">
+    <meta property="og:title" content="Calendario operativo · Radar Regulatorio MX">
+    <meta property="og:description" content="Consulta días hábiles, suspensiones, vacaciones y guardias por autoridad, con evidencia oficial.">
+    <title>Calendario operativo · Radar Regulatorio MX</title>
     <meta name="theme-color" media="(prefers-color-scheme: light)" content="#F4EDDD">
     <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#152630">
     <script>
@@ -18,8 +22,8 @@
     </script>
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="preload" href="fonts/fraunces-variable-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="styles.css?v=20260812a">
-    <script type="module" src="calendario.js?v=20260812a"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="calendario.js"></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Saltar al contenido</a>
@@ -40,7 +44,7 @@
       </nav>
     </header>
 
-    <main id="main" class="calendar-main shell" tabindex="-1">
+    <main id="main" class="calendar-main shell">
       <header class="page-intro calendar-intro">
         <div>
           <p class="page-context">Cómputo de plazos</p>
@@ -65,7 +69,7 @@
           <select class="organ-select" id="organ-select"></select>
         </aside>
 
-        <div class="calendar-stage" id="organ-calendar-panel" role="tabpanel" aria-label="Calendario del órgano seleccionado">
+        <div class="calendar-stage" id="calendar-panel" role="tabpanel" tabindex="-1">
           <header class="organ-subhead" id="organ-subhead"></header>
           <div class="cal-layout">
             <section class="month-stage" aria-label="Calendario mensual">
@@ -90,18 +94,16 @@
               </div>
             </section>
 
-            <aside class="day-panel empty" id="day-panel">
-              <div class="day-panel-content" id="day-panel-content">
-                <p class="dp-empty">Selecciona un día para consultar su cómputo, motivo y fuente.</p>
-              </div>
-              <p class="sr-only calendar-status" id="calendar-status" role="status"></p>
-            </aside>
+            <dialog class="day-panel empty" id="day-panel" open aria-labelledby="day-panel-heading">
+              <h2 id="day-panel-heading" class="sr-only">Detalle del día</h2>
+              <button class="dp-close" id="dp-close" type="button" aria-label="Cerrar detalle">×</button>
+              <p class="dp-empty">Selecciona un día para consultar su cómputo, motivo y fuente.</p>
+            </dialog>
           </div>
         </div>
       </section>
     </main>
 
-    <div class="day-scrim" id="day-scrim" aria-hidden="true"></div>
     <footer class="site-footer">
       <div class="shell footer-inner">
         <p><strong>Radar Regulatorio MX</strong><br>Calendarios con evidencia oficial.</p>

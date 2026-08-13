@@ -1,4 +1,9 @@
 from app.sources.anam import AnamCollector
+from app.sources.certification import (
+    RELAUNCH_SOURCES,
+    assert_relaunch_ready,
+    certification_report,
+)
 from app.sources.diputados import DiputadosCollector
 from app.sources.dof import DofCollector
 from app.sources.gobmx import GobMxCollector
@@ -21,6 +26,7 @@ from app.sources.worldbank import WorldBankCollector
 
 __all__ = [
     "AnamCollector",
+    "RELAUNCH_SOURCES",
     "OmcCollector",
     "TfjaCollector",
     "TmecCollector",
@@ -38,4 +44,6 @@ __all__ = [
     "TradeGovCollector",
     "UstrCollector",
     "WorldBankCollector",
+    "assert_relaunch_ready",
+    "certification_report",
 ]

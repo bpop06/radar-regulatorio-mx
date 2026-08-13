@@ -4,6 +4,7 @@ import argparse
 import asyncio
 import json
 import sys
+from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
 
@@ -12,8 +13,15 @@ from app.config import Settings
 from app.edition import prepare_payload, write_site_artifacts
 from app.editorial import EditorialError, apply_editorial
 from app.pipeline import collect
+from app.sources.base import SourceContractError
+from app.sources.certification import assert_relaunch_ready, certification_report
 from app.storage import Storage
-from app.validation import ValidationReport, validate_publications_payload
+from app.validation import (
+    ValidationReport,
+    validate_freshness,
+    validate_publications_payload,
+    validate_site_artifacts,
+)
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -28,7 +36,21 @@ def build_parser() -> argparse.ArgumentParser:
     )
     collect_parser.add_argument("--days", type=int)
     collect_parser.add_argument("--dry-run", action="store_true")
+    collect_parser.add_argument(
+        "--rebuild-stateful-history",
+        action="store_true",
+        help=(
+            "reconstruye las fichas permanentes CIADI/T-MEC aunque exista snapshot, "
+            "sin publicarlas como novedades del día"
+        ),
+    )
     collect_parser.add_argument("--edition-output", type=Path, default=None)
+
+    certify_parser = subparsers.add_parser(
+        "certify-sources",
+        help="verifica que las 18 fuentes estén listas para el relanzamiento inicial",
+    )
+    certify_parser.add_argument("--days", type=int)
 
     research_parser = subparsers.add_parser(
         "research",
@@ -80,7 +102,7 @@ def build_parser() -> argparse.ArgumentParser:
 
     edition_parser = subparsers.add_parser(
         "build-edition",
-        help="actualiza el contrato v7 y genera el artefacto ligero de la portada",
+        help="actualiza el contrato v8 y genera el corte transaccional del sitio",
     )
     edition_parser.add_argument(
         "--input",
@@ -94,6 +116,17 @@ def build_parser() -> argparse.ArgumentParser:
         "--input",
         type=Path,
         default=Path("docs/data/publications.json"),
+    )
+    validate_parser.add_argument(
+        "--require-v8",
+        action="store_true",
+        help="exige schema v8 y manifest hermano; usar en CI de relanzamiento/producción",
+    )
+    validate_parser.add_argument(
+        "--max-age-hours",
+        type=float,
+        default=None,
+        help="falla si generated_at es más antiguo; por defecto no aplica gate histórico",
     )
 
     calendars_parser = subparsers.add_parser(
@@ -112,7 +145,14 @@ def main() -> None:
     args = build_parser().parse_args()
     settings = Settings()
     if args.command == "collect":
-        payload = asyncio.run(collect(settings, args.days, dry_run=args.dry_run))
+        payload = asyncio.run(
+            collect(
+                settings,
+                args.days,
+                dry_run=args.dry_run,
+                rebuild_stateful_history=args.rebuild_stateful_history,
+            )
+        )
         report = validate_publications_payload(payload)
         _print_source_status(payload)
         _print_validation_report(report)
@@ -124,6 +164,16 @@ def main() -> None:
         else:
             write_site_artifacts(payload, args.output, args.edition_output)
             print(f"Publicadas {payload['total_items']} novedades en {args.output}")
+    elif args.command == "certify-sources":
+        payload = asyncio.run(collect(settings, args.days, dry_run=True))
+        sources = payload.get("sources")
+        report = certification_report(sources if isinstance(sources, list) else [])
+        print(json.dumps(report, ensure_ascii=False, indent=2, sort_keys=True))
+        try:
+            assert_relaunch_ready(report)
+        except SourceContractError as exc:
+            print(f"Error: {exc}", file=sys.stderr)
+            raise SystemExit(1) from exc
     elif args.command == "research":
         payload = asyncio.run(collect(settings, args.days))
         report = validate_publications_payload(payload)
@@ -138,8 +188,9 @@ def main() -> None:
         write_site_artifacts(payload, args.output, args.edition_output)
         print(f"Publicadas {payload['total_items']} novedades en {args.output}")
         try:
+            published_payload = json.loads(args.output.read_text(encoding="utf-8"))
             with Storage(args.db or settings.database_path) as storage:
-                run_id = storage.save_run(payload)
+                run_id = storage.save_run(published_payload)
         except Exception as exc:
             print(
                 f"Advertencia: no se pudo guardar la corrida en la base local: {exc}",
@@ -200,10 +251,33 @@ def main() -> None:
         )
     elif args.command == "validate":
         payload = json.loads(args.input.read_text(encoding="utf-8"))
+        manifest_path = args.input.with_name("manifest.json")
+        if args.require_v8:
+            if payload.get("schema_version") != 8:
+                print("Error: el gate exige schema_version 8", file=sys.stderr)
+                raise SystemExit(1)
+            if not manifest_path.exists():
+                print("Error: el gate exige manifest.json", file=sys.stderr)
+                raise SystemExit(1)
         report = validate_publications_payload(payload)
         _print_validation_report(report)
         if not report.ok:
             raise SystemExit(1)
+        if args.max_age_hours is not None:
+            freshness_errors = validate_freshness(
+                payload,
+                now=datetime.now(UTC),
+                max_age_hours=args.max_age_hours,
+            )
+            for error in freshness_errors:
+                print(f"Error: {error}", file=sys.stderr)
+            if freshness_errors:
+                raise SystemExit(1)
+        if manifest_path.exists():
+            artifact_report = validate_site_artifacts(manifest_path)
+            _print_validation_report(artifact_report)
+            if not artifact_report.ok:
+                raise SystemExit(1)
         print(f"Validación correcta: {payload['total_items']} novedades en {args.input}")
     elif args.command == "validate-calendars":
         payload = json.loads(args.input.read_text(encoding="utf-8"))
@@ -236,6 +310,16 @@ def _print_source_status(payload: dict[str, Any]) -> None:
         if status == "ok":
             print(
                 f"Fuente {name}: {source.get('items_found', 0)} registros revisados{attempts_text}",
+                file=sys.stderr,
+            )
+        elif status == "degraded":
+            warnings = source.get("warnings")
+            detail = source.get("error")
+            if not detail and isinstance(warnings, list) and warnings:
+                detail = "; ".join(str(warning) for warning in warnings[:3])
+            print(
+                f"Fuente {name}: cobertura degradada{attempts_text}: "
+                f"{detail or 'sin detalle'}",
                 file=sys.stderr,
             )
         else:

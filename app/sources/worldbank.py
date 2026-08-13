@@ -5,7 +5,7 @@ from datetime import date, datetime
 from typing import Any
 
 from app.models import Candidate
-from app.sources.base import Collector
+from app.sources.base import Collector, SourceContractError
 from app.text import clean_text
 
 
@@ -31,7 +31,7 @@ class WorldBankCollector(Collector):
 
     async def collect(self, since: date) -> list[Candidate]:
         response = await self.client.get(self.url)
-        response.raise_for_status()
+        self.validate_response(response, content_types={"application/json"})
         return self.parse(response.json(), since)
 
     @classmethod
@@ -39,7 +39,7 @@ class WorldBankCollector(Collector):
         candidates: list[Candidate] = []
         documents = payload.get("documents") if isinstance(payload, dict) else None
         if not isinstance(documents, dict):
-            return candidates
+            raise SourceContractError("Banco Mundial: falta el objeto JSON documents")
 
         for _doc_id, entry in documents.items():
             if not isinstance(entry, dict):

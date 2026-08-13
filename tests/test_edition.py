@@ -62,15 +62,15 @@ def test_edition_date_uses_mexico_city_timezone():
     assert edition_date_from_generated_at("2026-07-08T03:30:00+00:00") == date(2026, 7, 7)
 
 
-def test_prepare_payload_builds_ready_v7_edition():
+def test_prepare_payload_builds_ready_v8_edition():
     result = prepare_payload(payload([item("dof:1")]), force=True)
 
-    assert result["schema_version"] == 7
+    assert result["schema_version"] == 8
     assert result["edition"]["edition_date"] == "2026-07-07"
     assert result["edition"]["state"] == "ready"
     assert result["edition"]["lead_id"] == "dof:1"
     assert result["edition"]["coverage"] == {
-        "state": "partial",
+        "state": "degraded",
         "ok": 1,
         "failed": ["SNICE"],
     }
@@ -134,7 +134,9 @@ def test_edition_artifact_denormalizes_only_public_signal_fields():
     artifact = build_edition_artifact(prepared)
 
     signal = artifact["signals"][0]
-    assert signal["title"] == "Título editorial dof:1"
+    assert signal["title"] is None
+    assert signal["official_title"] == "Título editorial dof:1"
+    assert signal["editorial_status"] == "needs_review"
     assert signal["rank"] == 1
     assert "why_it_matters" in signal
     assert "card_body" not in signal
@@ -148,6 +150,8 @@ def test_write_site_artifacts_writes_both_json_files(tmp_path):
 
     written_publications = json.loads(publications_path.read_text(encoding="utf-8"))
     written_edition = json.loads((tmp_path / "edition.json").read_text(encoding="utf-8"))
-    assert written_publications["schema_version"] == 7
+    assert written_publications["schema_version"] == 8
     assert written_edition["lead_id"] == "dof:1"
+    assert written_publications["cut_id"] == written_edition["cut_id"]
+    assert (tmp_path / "manifest.json").exists()
     assert not list(tmp_path.glob("*.tmp"))

@@ -1,52 +1,30 @@
 # Flujo de trabajo con Git
 
-## Ramas
+## Ramas y commits
 
-- `main`: versión estable y desplegable.
-- `codex/feature-*`: funcionalidades nuevas.
-- `codex/fix-*`: correcciones.
-- `codex/docs-*`: documentación.
-
-Las ramas deben durar poco y enfocarse en un solo objetivo.
-
-## Commits
-
-Usar mensajes imperativos y Conventional Commits:
-
-```text
-feat: add DOF collector
-fix: normalize PLATIICA links
-test: cover relevance classifier
-docs: explain daily workflow
-```
-
-No mezclar refactorizaciones, datos generados y cambios funcionales sin
-relación en el mismo commit.
+- `main` es desplegable y GitHub Pages sirve `main/docs`.
+- El desarrollo usa ramas cortas `codex/*`.
+- Los cortes recurrentes reutilizan `codex/radar-daily` y un único PR.
+- Los mensajes son imperativos y siguen Conventional Commits.
+- Cuando sea práctico, los cambios de código y los datos generados van en
+  commits distintos.
 
 ## Integración
 
-1. Crear una rama desde `main`.
-2. Implementar y probar localmente.
-3. Revisar el diff y confirmar que no contiene secretos.
-4. Abrir un pull request.
-5. Esperar las verificaciones automáticas. Mientras GitHub Actions de esta
-   cuenta siga en `startup_failure` (ver README), esas verificaciones no
-   corren en el PR: hay que ejecutarlas en local antes del merge
-   (`.venv/bin/python -m pytest`, `.venv/bin/python -m ruff check .`,
-   `.venv/bin/python -m app.cli validate --input docs/data/publications.json`).
-6. Integrar con squash merge y borrar la rama.
+1. Partir del `main` remoto en un checkout limpio.
+2. Ejecutar los gates locales.
+3. Revisar que el diff no contenga secretos ni artefactos ajenos.
+4. Abrir o actualizar un pull request.
+5. Esperar los checks requeridos `Python` y `Frontend`.
+6. Habilitar auto-merge sólo cuando ambos estén verdes.
+7. Verificar el `cut_id` y los hashes desplegados por Pages.
 
-## Seguridad
+Ningún script, workflow o agente puede empujar directamente a `main`. Si
+Actions no inicia o falla, el PR queda abierto y producción conserva el corte
+anterior.
 
-- Los secretos de workflows viven en GitHub Actions Secrets; la operación
-  diaria no usa APIs de pago ni credenciales adicionales (la configuración
-  local opcional vive en `~/.radar-regulatorio-mx.env`, fuera del repo).
-- No versionar `.env`, bases SQLite locales ni credenciales.
-- Mantener permisos mínimos para workflows.
-- Fijar versiones principales de las acciones de GitHub y revisar
-  periódicamente sus actualizaciones.
+## Seguridad y recuperación
 
-## Recuperación
-
-No reescribir la historia de `main`. Para deshacer un cambio publicado, crear
-un commit de reversión mediante `git revert`.
+- No versionar `.env`, bases SQLite, credenciales ni descargas masivas.
+- Mantener permisos mínimos y acciones fijadas por SHA.
+- No reescribir la historia de `main`; revertir mediante un nuevo PR.

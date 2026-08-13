@@ -94,6 +94,15 @@ class Storage:
             )
 
         for item in payload.get("items", []):
+            item = dict(item)
+            previous = cursor.execute(
+                "SELECT payload FROM documents WHERE id = ?", (item["id"],)
+            ).fetchone()
+            if previous is not None:
+                previous_item = json.loads(previous[0])
+                item.setdefault("first_seen_at", previous_item.get("first_seen_at"))
+            item.setdefault("first_seen_at", payload["generated_at"])
+            item["last_seen_at"] = payload["generated_at"]
             cursor.execute(
                 "INSERT INTO documents (id, published_at, first_seen_run,"
                 " last_seen_run, payload) VALUES (?, ?, ?, ?, ?)"

@@ -39,62 +39,53 @@ export function mexicoToday() {
 }
 
 export function detailHref(item, from = "archivo") {
-  const base = typeof item?.detail_url === "string"
-    ? item.detail_url
-    : `ficha.html?id=${encodeURIComponent(item?.id || "")}`;
+  const candidate = typeof item?.detail_url === "string" ? item.detail_url : "";
+  const safeDetail = candidate
+    && !candidate.startsWith("/")
+    && !candidate.includes("..")
+    && !/^[a-z][a-z\d+.-]*:/i.test(candidate)
+    ? candidate
+    : "";
+  const base = safeDetail || `ficha.html?id=${encodeURIComponent(item?.id || "")}`;
   const separator = base.includes("?") ? "&" : "?";
   return `${base}${separator}from=${encodeURIComponent(from)}`;
 }
 
-export function parseInline(text) {
-  const inlinePattern = /(\*\*([^*\n]+)\*\*)|(\*([^*\n]+)\*)|\[([^\]]+)\]\((https?:\/\/[^)]+)\)/gi;
-  const tokens = [];
+function appendInline(container, text) {
+  const inlinePattern = /(\*\*([^*]+)\*\*)|\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g;
   let lastIndex = 0;
   let match = inlinePattern.exec(text);
   while (match) {
     if (match.index > lastIndex) {
-      tokens.push({ type: "text", value: text.slice(lastIndex, match.index) });
+      container.append(document.createTextNode(text.slice(lastIndex, match.index)));
     }
     if (match[2]) {
-      tokens.push({ type: "strong", value: match[2] });
-    } else if (match[4]) {
-      tokens.push({ type: "emphasis", value: match[4] });
-    } else if (match[5] && match[6] && isSafeHttpUrl(match[6])) {
-      tokens.push({ type: "link", value: match[5], url: match[6] });
-    }
-    lastIndex = inlinePattern.lastIndex;
-    match = inlinePattern.exec(text);
-  }
-  if (lastIndex < text.length) tokens.push({ type: "text", value: text.slice(lastIndex) });
-  return tokens;
-}
-
-function appendInline(container, text) {
-  for (const token of parseInline(text)) {
-    if (token.type === "strong") {
       const strong = document.createElement("strong");
-      strong.textContent = token.value;
+      strong.textContent = match[2];
       container.append(strong);
-    } else if (token.type === "emphasis") {
-      const emphasis = document.createElement("em");
-      emphasis.textContent = token.value;
-      container.append(emphasis);
-    } else if (token.type === "link") {
+    } else if (match[3] && match[4] && isSafeHttpUrl(match[4])) {
       const link = document.createElement("a");
-      link.href = token.url;
+      link.href = match[4];
       link.target = "_blank";
       link.rel = "noopener noreferrer";
-      link.textContent = token.value;
+      link.textContent = match[3];
       const arrow = document.createElement("span");
       arrow.className = "external-arrow";
       arrow.setAttribute("aria-hidden", "true");
       arrow.textContent = " ↗";
       link.append(arrow);
+      const hint = document.createElement("span");
+      hint.className = "sr-only";
+      hint.textContent = " (abre en una pestaña nueva)";
+      link.append(hint);
       container.append(link);
-    } else {
-      container.append(document.createTextNode(token.value));
+    } else if (match[3]) {
+      container.append(document.createTextNode(match[3]));
     }
+    lastIndex = inlinePattern.lastIndex;
+    match = inlinePattern.exec(text);
   }
+  if (lastIndex < text.length) container.append(document.createTextNode(text.slice(lastIndex)));
 }
 
 function splitTableRow(line) {
@@ -145,6 +136,7 @@ export function renderMarkdown(markdown, container) {
       const headRow = document.createElement("tr");
       for (const value of splitTableRow(lines[0])) {
         const cell = document.createElement("th");
+        cell.scope = "col";
         appendInline(cell, value);
         headRow.append(cell);
       }

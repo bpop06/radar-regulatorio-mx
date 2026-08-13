@@ -4,7 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Archivo consultable de publicaciones oficiales seleccionadas por Radar Regulatorio MX.">
-    <title>Archivo | Radar Regulatorio MX</title>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Radar Regulatorio MX">
+    <meta property="og:title" content="Archivo permanente · Radar Regulatorio MX">
+    <meta property="og:description" content="Índice mensual permanente de publicaciones regulatorias con fuente oficial.">
+    <title>Archivo permanente · Radar Regulatorio MX</title>
     <meta name="theme-color" media="(prefers-color-scheme: light)" content="#F4EDDD">
     <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#152630">
     <script>
@@ -18,8 +22,8 @@
     </script>
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="preload" href="fonts/fraunces-variable-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="styles.css?v=20260812a">
-    <script type="module" src="archive.js?v=20260812a"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="archive.js"></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Saltar al contenido</a>
@@ -40,13 +44,13 @@
       </nav>
     </header>
 
-    <main id="main" class="archive-main shell" tabindex="-1">
+    <main id="main" class="archive-main shell">
       <header class="page-intro archive-intro">
         <div>
           <p class="page-context">Consulta documental</p>
           <h1>Archivo regulatorio</h1>
         </div>
-        <p>Busca el acto, la autoridad o la materia. La relevancia ordena; la fuente oficial decide.</p>
+        <p>Busca el acto, la autoridad o la materia en el índice mensual permanente. Cada ficha conserva su enlace y evidencia oficial.</p>
       </header>
 
       <section class="archive-controls" aria-labelledby="filters-heading">
@@ -58,7 +62,7 @@
         <details id="filter-drawer" class="filter-drawer" open>
           <summary>Filtros de búsqueda <span aria-hidden="true">＋</span></summary>
           <div class="filter-grid">
-            <label><span>Periodo</span><select id="date-range"><option value="all">Todo el corte</option><option value="7">Últimos 7 días</option><option value="15">Últimos 15 días</option></select></label>
+            <label><span>Periodo</span><select id="date-range"><option value="all">Todo el archivo</option><option value="7">Últimos 7 días</option><option value="15">Últimos 15 días</option></select></label>
             <label><span>Materia</span><select id="category-filter"><option value="Todas">Todas</option></select></label>
             <label><span>Órgano</span><select id="organ-filter"><option value="Todas">Todos</option></select></label>
             <label><span>Fuente</span><select id="source-filter"><option value="Todas">Todas</option></select></label>
@@ -76,7 +80,7 @@
         <div class="section-heading-row archive-results-heading">
           <div>
             <p class="section-kicker">Resultado</p>
-            <h2 id="results-heading">Publicaciones seleccionadas</h2>
+            <h2 id="results-heading" tabindex="-1">Publicaciones seleccionadas</h2>
           </div>
           <p id="result-count" class="section-count" aria-live="polite">Cargando…</p>
         </div>
@@ -84,21 +88,29 @@
           <li class="archive-loading"><span></span><span></span><span></span></li>
         </ol>
         <section id="archive-empty" class="archive-empty" hidden>
-          <h3>No encontramos publicaciones con esos criterios.</h3>
-          <p>Prueba una búsqueda más amplia o limpia los filtros.</p>
-          <button id="retry-archive" class="secondary-action" type="button" hidden>Reintentar carga</button>
+          <h3>No hay publicaciones con esos criterios.</h3>
+          <p>Amplía la búsqueda o limpia los filtros para volver al archivo completo.</p>
+        </section>
+        <section id="archive-error" class="archive-empty error-state" role="alert" hidden>
+          <h3>No fue posible cargar el archivo.</h3>
+          <p>Comprueba la conexión y recarga la página. El corte vigente sigue disponible en Hoy.</p>
+          <a class="secondary-action" href="index.html">Abrir corte vigente</a>
         </section>
         <nav id="pagination" class="pagination" aria-label="Páginas del archivo" hidden>
           <button id="page-prev" type="button">Anterior</button>
           <p id="page-indicator" aria-live="polite">Página 1 de 1</p>
           <button id="page-next" type="button">Siguiente</button>
         </nav>
+        <div class="archive-month-loader">
+          <p id="archive-month-status" role="status"></p>
+          <button id="load-more-months" class="secondary-action" type="button" hidden>Cargar mes anterior</button>
+        </div>
       </section>
 
       <section id="fuentes" class="archive-sources" aria-labelledby="sources-heading">
         <div>
           <p class="section-kicker">Cobertura</p>
-          <h2 id="sources-heading">Fuentes del corte</h2>
+          <h2 id="sources-heading">Estado de las fuentes</h2>
         </div>
         <div id="source-status" class="source-status-list"></div>
       </section>
@@ -106,7 +118,7 @@
 
     <footer class="site-footer">
       <div class="shell footer-inner">
-        <p><strong>Radar Regulatorio MX</strong><br>Archivo del corte publicado.</p>
+        <p><strong>Radar Regulatorio MX</strong><br>Archivo regulatorio permanente.</p>
         <p>Información pública sintetizada. No constituye asesoría legal.</p>
       </div>
     </footer>

@@ -1,26 +1,28 @@
 name: CI
 
 on:
+  workflow_dispatch:
+  pull_request:
   push:
     branches:
       - main
-  pull_request:
-  workflow_dispatch:
+      - "codex/**"
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 permissions:
   contents: read
 
 jobs:
-  verify:
-    name: Verify Python package
+  python:
+    name: Python
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - name: Check out repository
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
-      - name: Set up Node.js
-        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
-        with:
-          node-version: "22"
       - name: Set up Python
         uses: actions/setup-python@0b93645e9fea7318ecaed2b359559ac225c90a2b # v5.3.0
         with:
@@ -31,18 +33,42 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install --require-hashes -r requirements-dev.txt
           python -m pip install -e . --no-deps
-      - name: Check JavaScript syntax
-        run: |
-          for file in docs/*.js; do
-            node --check "$file"
-          done
-      - name: Test JavaScript
-        run: node --test tests/js/*.test.mjs
       - name: Lint
         run: python -m ruff check .
       - name: Test
         run: python -m pytest
-      - name: Validate publications
-        run: python -m app.cli validate --input docs/data/publications.json
+      - name: Validate public cut
+        run: |
+          if [ -f docs/data/manifest.json ]; then
+            python -m app.cli validate --input docs/data/publications.json --require-v8
+          else
+            python -m app.cli validate --input docs/data/publications.json
+          fi
+      - name: Enforce production freshness
+        if: github.ref == 'refs/heads/main' && hashFiles('docs/data/manifest.json') != ''
+        run: >-
+          python -m app.cli validate --input docs/data/publications.json
+          --require-v8 --max-age-hours 25
       - name: Validate calendars
         run: python -m app.cli validate-calendars --input docs/data/calendars.json
+
+  frontend:
+    name: Frontend
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - name: Set up Node.js
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version: "22"
+          cache: npm
+      - name: Install dependencies
+        run: npm ci
+      - name: Run JavaScript tests
+        run: npm test
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+      - name: Run browser and accessibility tests
+        run: npm run test:e2e

@@ -4,7 +4,7 @@ import hashlib
 from datetime import date
 
 from app.models import Candidate
-from app.sources.base import Collector
+from app.sources.base import Collector, require_mapping_list
 from app.text import clean_text, parse_date
 
 
@@ -20,14 +20,16 @@ class SenadoCollector(Collector):
         candidates: list[Candidate] = []
         for year in range(since.year, date.today().year + 1):
             response = await self.client.get(self.url_template.format(year=year))
-            response.raise_for_status()
+            self.validate_response(response, content_types={"application/json"})
             candidates.extend(self.parse(response.json(), since))
         return candidates
 
     @classmethod
     def parse(cls, payload: dict[str, object], since: date) -> list[Candidate]:
         candidates: list[Candidate] = []
-        for entry in payload.get("data", []):  # type: ignore[union-attr]
+        for entry in require_mapping_list(payload, "data", source=cls.source):
+            if not isinstance(entry, dict):
+                continue
             document_type = clean_text(str(entry.get("tipo_documento", "")))
             if "iniciativa" not in document_type.lower():
                 continue

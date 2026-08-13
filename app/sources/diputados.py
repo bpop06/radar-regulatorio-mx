@@ -8,7 +8,7 @@ from urllib.parse import urljoin, urlparse
 from bs4 import BeautifulSoup, Tag
 
 from app.models import Candidate
-from app.sources.base import Collector
+from app.sources.base import Collector, SourceContractError
 from app.text import clean_text, parse_date
 
 # Nombre de archivo de los anexos del Pleno: /PDF/<legislatura>/AAAA/mes/AAAAMMDD-<n>.pdf
@@ -74,7 +74,7 @@ class DiputadosCollector(Collector):
 
     async def collect(self, since: date) -> list[Candidate]:
         response = await self.client.get(self.url)
-        response.raise_for_status()
+        self.validate_response(response, content_types={"text/html"})
         return self.parse(response.content, since)
 
     @classmethod
@@ -84,8 +84,12 @@ class DiputadosCollector(Collector):
         page_title = clean_text(soup.title.get_text() if soup.title else "")
         try:
             published_at = parse_date(page_title)
-        except ValueError:
-            published_at = date.today()
+        except ValueError as exc:
+            raise SourceContractError(
+                "Diputados: la Gaceta no contiene una fecha reconocible en <title>"
+            ) from exc
+        if soup.select_one("#Indice") is None and soup.select_one("#Anexos") is None:
+            raise SourceContractError("Diputados: faltan #Indice y #Anexos en la Gaceta")
         if published_at < since:
             return []
 
@@ -183,4 +187,3 @@ class DiputadosCollector(Collector):
                 )
             )
         return candidates
-

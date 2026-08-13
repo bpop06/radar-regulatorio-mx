@@ -7,7 +7,7 @@ from html import unescape
 from urllib.parse import urljoin
 
 from app.models import Candidate
-from app.sources.base import Collector
+from app.sources.base import Collector, require_html_marker
 from app.text import SPANISH_MONTHS, clean_text
 
 
@@ -41,7 +41,8 @@ class TfjaCollector(Collector):
         candidates: list[Candidate] = []
         for year in sorted({since.year, date.today().year}):
             response = await self.client.get(self.url_template.format(year=year))
-            response.raise_for_status()
+            self.validate_response(response, content_types={"text/html"})
+            require_html_marker(response.text, "acuerdos", source=self.source)
             candidates.extend(self.parse(response.text, since))
         return candidates
 

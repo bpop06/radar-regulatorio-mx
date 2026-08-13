@@ -1,19 +1,28 @@
+import asyncio
 import json
 from datetime import date
 
+import httpx
+import pytest
+
+from app.pipeline import _collect_source
 from app.relevance import classify
+from app.sources.base import Collector, SourceContractError
+from app.sources.certification import RELAUNCH_SOURCES, certification_report
 from app.sources.diputados import DiputadosCollector, permanent_gaceta_url
 from app.sources.dof import DofCollector
 from app.sources.gobmx import ALWAYS_RELEVANT_PORTALS, GobMxCollector
-from app.sources.icsid import IcsidCollector
+from app.sources.icsid import IcsidCollector, parse_case_detail
 from app.sources.impi import ImpiCollector
 from app.sources.international import (
     CijCollector,
     CpiCollector,
+    OmcCollector,
     OnuNoticiasCollector,
     TradeGovCollector,
     UstrCollector,
 )
+from app.sources.platiica import PlatiicaCollector
 from app.sources.senado import SenadoCollector
 from app.sources.snice import SniceCollector
 from app.sources.worldbank import WorldBankCollector
@@ -118,6 +127,40 @@ def test_senado_parser_excludes_points_of_agreement():
     assert SenadoCollector.parse(payload, date(2026, 5, 1)) == []
 
 
+def test_platiica_parser_accepts_valid_empty_list_and_stable_post_id():
+    assert PlatiicaCollector.parse([], date(2026, 8, 1)) == []
+
+    items = PlatiicaCollector.parse(
+        [
+            {
+                "id": 987,
+                "modified": "2026-08-12T13:30:00",
+                "link": "https://platiica.economia.gob.mx/consulta-publica/nmx-1/",
+                "slug": "consulta-publica-nmx-1",
+                "title": {"rendered": "Consulta pública de proyecto de norma mexicana"},
+                "excerpt": {"rendered": "<p>Proyecto en consulta por 60 días.</p>"},
+            }
+        ],
+        date(2026, 8, 1),
+    )
+    assert len(items) == 1
+    assert items[0].source_id == "987"
+    assert items[0].url.endswith("/consulta-publica/nmx-1/")
+
+
+def test_snice_parser_uses_official_actualidad_block():
+    payload = """
+    <html><body><!-- ACTUALIDAD -->
+    <section id="actualidad"><p><a href="/~oracle/SNICE_DOCS/aviso.pdf">
+    12.08.2026 Aviso sobre cupos de importación y compromisos arancelarios del TIPAT
+    </a></p></section></body></html>
+    """
+    items = SniceCollector.parse(payload, date(2026, 8, 1))
+    assert len(items) == 1
+    assert items[0].published_at == date(2026, 8, 12)
+    assert items[0].url == "https://www.snice.gob.mx/~oracle/SNICE_DOCS/aviso.pdf"
+
+
 def test_snice_parser_ignores_empty_projects_status_and_keeps_documents():
     payload = """
     <section>
@@ -150,7 +193,10 @@ def test_snice_parser_ignores_empty_projects_status_and_keeps_documents():
         "Aviso sobre los cupos de importación vigentes.",
         "Informe sobre localidades sin proyectos en materia de Comercio Exterior.",
     ]
-    assert all(item.url != "https://www.herramientasregulatorias.gob.mx/Buscador" for item in items)
+    assert all(
+        item.url != "https://www.herramientasregulatorias.gob.mx/Buscador"
+        for item in items
+    )
 
 
 def test_impi_parser_accepts_link_wrapping_heading():
@@ -165,7 +211,7 @@ def test_impi_parser_accepts_link_wrapping_heading():
     items = ImpiCollector.parse(payload, date(2026, 5, 1))
 
     assert len(items) == 1
-    assert items[0].url == "https://www.impi.gob.mx/publicaciones/nombramiento"
+    assert items[0].url == "https://www.gob.mx/publicaciones/nombramiento"
 
 
 def test_gobmx_parser_discovers_institutional_portals_only():
@@ -326,17 +372,48 @@ def test_ustr_parser_extracts_candidate_and_filters_by_since():
     assert "Section 301" in item.description
 
 
-def test_trade_gov_parser_extracts_candidate_and_filters_by_since():
-    items = TradeGovCollector.parse(TRADE_GOV_RSS, date(2026, 6, 1))
+def test_omc_source_specific_rss_fixture_preserves_official_link_and_date():
+    payload = b"""<rss version="2.0"><channel><item>
+    <title>WTO members discuss customs valuation and trade facilitation</title>
+    <link>https://www.wto.org/english/news_e/news26_e/cus_12aug26_e.htm</link>
+    <guid>wto-cus-12aug26</guid>
+    <description>Members reviewed customs valuation notifications.</description>
+    <pubDate>Wed, 12 Aug 2026 16:00:00 GMT</pubDate>
+    </item></channel></rss>"""
 
+    items = OmcCollector.parse(payload, date(2026, 8, 1))
     assert len(items) == 1
+    assert items[0].source == "OMC"
+    assert items[0].published_at == date(2026, 8, 12)
+    assert items[0].url.endswith("cus_12aug26_e.htm")
+
+
+TRADE_GOV_HTML = """
+<html><body><div class="field-body">
+<h2>Press Releases Issued by the International Trade Administration</h2>
+<h4>July 2026</h4><ul>
+<li>7/31/26<br><a href="/press-release/duty-evasion-filing">
+Commerce Department Secures Win Following First-Time Duty Evasion Filing</a></li>
+<li>7/21/26<br><a href="/feature-article/remarks-at-farnborough">
+Remarks by Under Secretary at Farnborough</a></li>
+</ul>
+<h4>May 2024</h4><ul><li>5/1/24<br>
+<a href="/press-release/historical">Historical release</a></li></ul>
+</div></body></html>
+"""
+
+
+def test_trade_gov_html_parser_extracts_candidates_and_filters_by_since():
+    items = TradeGovCollector.parse(TRADE_GOV_HTML, date(2026, 6, 1))
+
+    assert len(items) == 2
     item = items[0]
     assert item.source == "Trade.gov"
     assert item.official_title == (
-        "ITA Supports US-Mexico Trade Relationship with New Export Guidance"
+        "Commerce Department Secures Win Following First-Time Duty Evasion Filing"
     )
-    assert item.published_at == date(2026, 6, 9)
-    assert "<" not in item.description
+    assert item.published_at == date(2026, 7, 31)
+    assert item.url == "https://www.trade.gov/press-release/duty-evasion-filing"
 
 
 def test_international_parser_discards_items_without_title_or_http_link():
@@ -392,10 +469,10 @@ WORDPRESS_NAMESPACED_RSS = b"""<?xml version="1.0" encoding="UTF-8"?>
 
 
 def test_rss_parser_survives_wordpress_namespaced_items():
-    # Los feeds WordPress/Drupal (Trade.gov, USTR) traen hijos con prefijo de
+    # Los feeds WordPress/Drupal (como USTR) traen hijos con prefijo de
     # namespace declarado en la raíz; el bloque <item> aislado debe parsearse
     # igual en el reintento sin prefijos.
-    items = TradeGovCollector.parse(WORDPRESS_NAMESPACED_RSS, date(2026, 6, 1))
+    items = UstrCollector.parse(WORDPRESS_NAMESPACED_RSS, date(2026, 6, 1))
 
     assert len(items) == 1
     assert items[0].official_title == "ITA announces new tariff guidance for USMCA partners"
@@ -489,8 +566,30 @@ def test_cpi_parser_extracts_candidate_and_filters_by_since():
     assert "Press Release" in item.description
 
 
-def test_cij_parser_extracts_candidate_and_filters_by_since():
-    items = CijCollector.parse(ICJ_RSS, date(2026, 6, 1))
+ICJ_HTML = """
+<div class="view view-press-releases"><div class="view-content row">
+<div class="views-row">
+  <div class="views-field-field-press-release-number"><a
+    href="/sites/default/files/case-related/200/release-en.pdf">
+    Press release No. 2026/20</a></div>
+  <div class="views-field-field-date-of-the-document"><time
+    datetime="2026-07-21T12:00:00Z">21 July 2026</time></div>
+  <div class="views-field-field-document-long-title"><p>
+    Poland files a declaration of intervention under Article 63</p></div>
+</div>
+<div class="views-row">
+  <div class="views-field-field-press-release-number"><a href="/old.pdf">
+    Press release No. 2018/1</a></div>
+  <div class="views-field-field-date-of-the-document"><time
+    datetime="2018-01-10T12:00:00Z">10 January 2018</time></div>
+  <div class="views-field-field-document-long-title">Historical release</div>
+</div>
+</div></div>
+"""
+
+
+def test_cij_html_parser_extracts_candidate_and_filters_by_since():
+    items = CijCollector.parse(ICJ_HTML, date(2026, 6, 1))
 
     assert len(items) == 1
     item = items[0]
@@ -499,7 +598,9 @@ def test_cij_parser_extracts_candidate_and_filters_by_since():
     assert item.official_title == (
         "Poland files a declaration of intervention under Article 63"
     )
-    assert item.published_at == date(2026, 6, 30)
+    assert item.source_id == "2026/20"
+    assert item.url.endswith("/sites/default/files/case-related/200/release-en.pdf")
+    assert item.published_at == date(2026, 7, 21)
     assert "<" not in item.description
 
 
@@ -719,50 +820,34 @@ def test_icsid_parser_filters_non_mexico_cases():
         ICSID_PAYLOAD,
         snapshot_path="/nonexistent/snapshot-should-not-be-read.json",
         today=date(2026, 7, 7),
-        persist_snapshot=False,
     )
     # El caso de Mozambique nunca debe aparecer, ni en la primera corrida.
     assert all("Mozambique" not in item.official_title for item in items)
 
 
-def test_icsid_first_run_emits_only_pending_and_saves_full_snapshot(tmp_path):
-    snapshot_path = tmp_path / "icsid_snapshot.json"
-    assert not snapshot_path.exists()
-
-    items = IcsidCollector.parse(
-        ICSID_PAYLOAD, snapshot_path=snapshot_path, today=date(2026, 7, 7)
+def test_icsid_first_run_bootstraps_without_emitting_historical_inventory():
+    proposal = IcsidCollector.propose(
+        ICSID_PAYLOAD,
+        previous=None,
+        today=date(2026, 7, 7),
     )
 
-    # Solo el caso Pending de México se emite en la primera corrida (el
-    # Concluded no genera ruido histórico).
-    assert len(items) == 1
-    item = items[0]
-    assert item.source == "CIADI"
-    assert item.case_status == "Pending"
-    assert item.case_parties == "Draslovka Holding A.S. v. United Mexican States"
-    assert item.official_title == (
-        "Draslovka Holding A.S. v. United Mexican States (Caso CIADI No. ARB/25/7)"
-    )
-    assert item.url == (
-        "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB/25/7"
-    )
-    assert item.published_at == date(2026, 7, 7)
-    assert item.authority == (
-        "Centro Internacional de Arreglo de Diferencias Relativas a Inversiones"
-    )
-
-    # El snapshot completo (Pending + Concluded de México) queda guardado
-    # como línea base, aunque el Concluded no haya generado Candidate.
-    saved = json.loads(snapshot_path.read_text(encoding="utf-8"))
-    assert saved == {"ARB/25/7": "Pending", "ARB/25/32": "Concluded"}
+    assert proposal.bootstrap is True
+    assert proposal.candidates == ()
+    assert {item.case_number for item in proposal.historical_candidates} == {
+        "ARB/25/7",
+        "ARB/25/32",
+    }
+    assert set(proposal.state) == {"ARB/25/7", "ARB/25/32"}
+    assert "Pending" in proposal.state["ARB/25/7"]
+    assert "Mozambique" not in json.dumps(proposal.state)
 
 
 def test_icsid_dry_run_does_not_consume_novelty(tmp_path):
     snapshot_path = tmp_path / "icsid_snapshot.json"
 
-    # Una corrida sin persistencia (collect --dry-run) emite los candidatos
-    # pero NO guarda el snapshot: la novedad sigue disponible para la
-    # siguiente corrida real.
+    # Parsear o ejecutar dry-run nunca escribe estado ni convierte el
+    # inventario inicial en novedades del día.
     items = IcsidCollector.parse(
         ICSID_PAYLOAD,
         snapshot_path=snapshot_path,
@@ -770,7 +855,7 @@ def test_icsid_dry_run_does_not_consume_novelty(tmp_path):
         persist_snapshot=False,
     )
 
-    assert len(items) == 1
+    assert items == []
     assert not snapshot_path.exists()
 
 
@@ -807,19 +892,47 @@ def test_icsid_next_run_emits_only_new_or_changed_cases(tmp_path):
         changed_payload, snapshot_path=snapshot_path, today=date(2026, 7, 8)
     )
 
-    emitted_casenos = {
-        item.url.rsplit("CaseNo=", 1)[1] for item in items
-    }
+    emitted_casenos = {item.case_number for item in items}
     assert emitted_casenos == {"ARB/25/32", "ARB/26/99"}
     for item in items:
         assert item.published_at == date(2026, 7, 8)
 
+    # El parser propone cambios, pero no consume el snapshot anterior.
     saved = json.loads(snapshot_path.read_text(encoding="utf-8"))
-    assert saved == {
-        "ARB/25/7": "Pending",
-        "ARB/25/32": "Annulment proceeding",
-        "ARB/26/99": "Pending",
-    }
+    assert saved == {"ARB/25/7": "Pending", "ARB/25/32": "Concluded"}
+
+
+ICSID_CASE_DETAIL_HTML = """
+<div class="case__detail">
+<h1>Canadian Pacific Kansas City Limited v. United Mexican States
+ (ICSID Case No. ARB/26/19)</h1>
+<ul>
+<li class="row"><div><label>Subject of Dispute:</label></div>
+<div class="rightcol">Railroad concession</div></li>
+<li class="row"><div><label>Economic Sector:</label></div>
+<div class="rightcol">Transportation</div></li>
+<li class="row"><div><label>Instrument(s) Invoked:</label></div>
+<div class="rightcol">Comprehensive and Progressive Agreement for
+ Trans-Pacific Partnership (CPTPP)</div></li>
+<li class="row"><div><label>Date Registered:</label></div>
+<div class="rightcol">April 27, 2026</div></li>
+<li class="row"><div><label>Status of Proceeding:</label></div>
+<div class="rightcol">Pending</div></li>
+<li class="row"><div><label>Latest Development:</label></div>
+<div class="rightcol">July 3, 2026 - Arbitrator appointed.</div></li>
+</ul></div>
+"""
+
+
+def test_icsid_case_detail_preserves_cptpp_evidence_without_tmec_inference():
+    detail = parse_case_detail(ICSID_CASE_DETAIL_HTML)
+
+    assert detail.subject == "Railroad concession"
+    assert detail.treaty.endswith("(CPTPP)")
+    assert "USMCA" not in detail.treaty
+    assert "T-MEC" not in detail.treaty
+    assert detail.registered_at == date(2026, 4, 27)
+    assert detail.latest_development_at == date(2026, 7, 3)
 
 
 def test_icsid_snapshot_path_configurable_via_env(tmp_path, monkeypatch):
@@ -866,30 +979,55 @@ def test_tfja_parser_assigns_dates_and_filters_by_since():
 
 TMEC_HTML = """
 <table><tr><th>Panel Review Number</th><th>Title</th><th>Instrument Invoked</th>
-<th>Mechanism</th><th>Importing Party</th><th>Other Party</th><th>Date</th><th>Status</th></tr>
-<tr><td>CDA-MEX-2026-10.12-01</td><td>Certain Oil Country Tubular Goods</td>
-<td>CUSMA</td><td>Chapter 10</td><td>Canada</td><td>Mexico</td>
-<td>2026-05-01</td><td>Active</td></tr></table>
+<th>Dispute Settlement Mechanism</th><th>Complaining Party</th><th>Responding Party</th>
+<th>Third Party</th><th>Panel Composition</th><th>Date of Panel Request</th>
+<th>Status</th><th>Date of Final Report</th></tr>
+<tr><td>MEX-USA-2024-31A-04</td><td>Rapid Response Labor Panel</td>
+<td>Canada United States Mexico Agreement (CUSMA)</td><td>Annex 31-A</td>
+<td>United States</td><td>Mexico</td><td>N/A</td>
+<td><ul><li>Adolfo Ciudad, Chair</li><li>Janice Bellace, panelist</li></ul></td>
+<td>2024-12-18</td><td>Active</td><td>N/A</td></tr></table>
 """
 
 
-def test_tmec_first_run_emits_all_and_then_only_changes(tmp_path):
+def test_tmec_bootstrap_is_silent_and_diff_maps_columns_by_headers():
     from app.sources.tmec import TmecCollector
 
-    snapshot = tmp_path / "tmec.json"
-    items = TmecCollector.parse(TMEC_HTML, snapshot_path=snapshot, today=date(2026, 7, 7))
-    assert len(items) == 1
-    assert items[0].case_parties == "Canada / Mexico"
-    assert items[0].case_status == "Active"
-    assert "Panel CDA-MEX-2026-10.12-01" in items[0].official_title
+    pages = [(TMEC_HTML, TmecCollector.urls[1])]
+    bootstrap = TmecCollector.propose(pages, previous=None, today=date(2026, 7, 7))
+    assert bootstrap.bootstrap is True
+    assert bootstrap.candidates == ()
+    assert len(bootstrap.historical_candidates) == 1
+    historical = bootstrap.historical_candidates[0]
+    assert historical.source_id == "MEX-USA-2024-31A-04"
+    assert historical.case_status == "Active"
+    assert "Adolfo Ciudad" not in historical.case_status
+    assert historical.official_evidence["panel_composition"].startswith("Adolfo Ciudad")
 
     # Segunda corrida sin cambios: nada nuevo.
-    assert TmecCollector.parse(TMEC_HTML, snapshot_path=snapshot, today=date(2026, 7, 8)) == []
+    same = TmecCollector.propose(
+        pages,
+        previous=bootstrap.state,
+        today=date(2026, 7, 8),
+    )
+    assert same.candidates == ()
 
     # Cambio de estatus: se emite.
     changed = TMEC_HTML.replace(">Active<", ">Completed<")
-    again = TmecCollector.parse(changed, snapshot_path=snapshot, today=date(2026, 7, 9))
-    assert len(again) == 1 and again[0].case_status == "Completed"
+    again = TmecCollector.propose(
+        [(changed, TmecCollector.urls[1])],
+        previous=bootstrap.state,
+        today=date(2026, 7, 9),
+    )
+    assert len(again.candidates) == 1
+    item = again.candidates[0]
+    assert item.case_status == "Completed"
+    assert item.case_parties == "United States / Mexico"
+    assert item.case_number == "MEX-USA-2024-31A-04"
+    assert item.official_evidence["panel_composition"].startswith("Adolfo Ciudad")
+    assert item.case_status not in item.official_evidence["panel_composition"]
+    assert "case=MEX-USA-2024-31A-04" in item.canonical_url
+    assert item.official_evidence["case_listing"] == item.canonical_url
 
 
 def test_tmec_dry_run_does_not_persist_snapshot(tmp_path):
@@ -900,6 +1038,14 @@ def test_tmec_dry_run_does_not_persist_snapshot(tmp_path):
         TMEC_HTML, snapshot_path=snapshot, today=date(2026, 7, 7), persist_snapshot=False
     )
     assert not snapshot.exists()
+
+
+def test_tmec_rejects_unknown_status_instead_of_publishing_panelists_as_status():
+    from app.sources.tmec import parse_tmec_page
+
+    malformed = TMEC_HTML.replace(">Active<", ">Adolfo Ciudad, Chair<")
+    with pytest.raises(SourceContractError, match="estatus desconocido"):
+        parse_tmec_page(malformed, "https://example.test/chapter-31")
 
 
 def test_anam_skips_listing_pages():
@@ -921,3 +1067,140 @@ def test_anam_skips_listing_pages():
     assert len(items) == 1
     assert items[0].source == "ANAM"
     assert "ASEGURAMIENTO" in items[0].official_title
+
+
+def test_rss_zero_is_valid_only_when_channel_structure_is_present():
+    assert OnuNoticiasCollector.parse(
+        b"<rss version='2.0'><channel></channel></rss>",
+        date(2026, 8, 1),
+    ) == []
+
+    with pytest.raises(SourceContractError, match="canal RSS"):
+        OnuNoticiasCollector.parse(b"<html><body>Access denied</body></html>", date(2026, 8, 1))
+
+
+def test_rss_and_dof_report_malformed_blocks_for_degraded_coverage():
+    malformed = b"<rss><channel><item><title>broken</item></channel></rss>"
+    assert OnuNoticiasCollector.parse_with_diagnostics(
+        malformed, date(2026, 8, 1)
+    ) == ([], 1)
+
+    dof = (
+        b"<rss><channel><item><title>SHCP</title><description>Acuerdo</description>"
+        b"<link>https://dof.gob.mx/nota_detalle.php?codigo=1&amp;fecha=12/08/2026</link>"
+        b"<valueDate>12/08/2026</valueDate><broken></item></channel></rss>"
+    )
+    assert DofCollector.parse_with_diagnostics(dof, date(2026, 8, 1)) == ([], 1)
+
+
+def test_html_collectors_reject_unexpected_pages_instead_of_false_green_zero():
+    with pytest.raises(SourceContractError, match="estructura HTML"):
+        TradeGovCollector.parse("<html><h1>Maintenance</h1></html>", date(2026, 8, 1))
+    with pytest.raises(SourceContractError, match="estructura HTML"):
+        CijCollector.parse("<html><h1>Maintenance</h1></html>", date(2026, 8, 1))
+
+
+class _ContractCollector(Collector):
+    source = "Fixture"
+
+    async def collect(self, since: date):
+        del since
+        return []
+
+
+def test_response_contract_rejects_wrong_content_type_even_on_http_200():
+    collector = _ContractCollector(client=None)
+    response = httpx.Response(
+        200,
+        request=httpx.Request("GET", "https://example.test/source"),
+        headers={"content-type": "text/html; charset=utf-8"},
+        content=b"<html>login</html>",
+    )
+
+    with pytest.raises(SourceContractError, match="Content-Type inesperado"):
+        collector.validate_response(response, content_types={"application/json"})
+
+
+def test_gobmx_partial_403_is_exposed_as_degraded():
+    def handler(request: httpx.Request) -> httpx.Response:
+        return httpx.Response(403, request=request, text="Forbidden")
+
+    async def run() -> GobMxCollector:
+        async with httpx.AsyncClient(transport=httpx.MockTransport(handler)) as client:
+            collector = GobMxCollector(client)
+            items = await collector._collect_archive("se", "prensa", date(2026, 8, 1))
+            assert items == []
+            return collector
+
+    collector = asyncio.run(run())
+    assert collector.diagnostics.status == "degraded"
+    assert "403" in collector.diagnostics.warnings[0]
+
+
+def test_rss_http_404_is_an_error_not_a_valid_zero():
+    def handler(request: httpx.Request) -> httpx.Response:
+        return httpx.Response(
+            404,
+            request=request,
+            headers={"content-type": "text/html"},
+            text="Not found",
+        )
+
+    async def run() -> None:
+        async with httpx.AsyncClient(transport=httpx.MockTransport(handler)) as client:
+            collector = OnuNoticiasCollector(client)
+            with pytest.raises(httpx.HTTPStatusError):
+                await collector.collect(date(2026, 8, 1))
+
+    asyncio.run(run())
+
+
+def test_certification_gate_requires_exactly_the_18_sources_without_degradation():
+    healthy = [
+        {
+            "source": source,
+            "status": "ok",
+            "items_found": 0,
+            "error": None,
+            "validated_endpoints": 1,
+        }
+        for source in RELAUNCH_SOURCES
+    ]
+    report = certification_report(healthy)
+    assert report["required_sources"] == 18
+    assert report["relaunch_ready"] is True
+
+    degraded = [dict(item) for item in healthy]
+    degraded[5]["status"] = "degraded"
+    report = certification_report(degraded)
+    assert report["relaunch_ready"] is False
+    assert report["counts"]["degraded"] == 1
+
+    unvalidated = [dict(item) for item in healthy]
+    unvalidated[0].pop("validated_endpoints")
+    report = certification_report(unvalidated)
+    assert report["relaunch_ready"] is False
+    assert report["sources"][0]["status"] == "degraded"
+
+
+def test_pipeline_never_reports_ok_without_a_validated_endpoint():
+    class UnvalidatedCollector(Collector):
+        source = "Fixture sin contrato"
+
+        async def collect(self, since: date):
+            del since
+            return []
+
+    result = asyncio.run(
+        _collect_source(
+            UnvalidatedCollector(client=None),
+            date(2026, 8, 1),
+            attempts=1,
+            backoff_seconds=0,
+        )
+    )
+
+    status = result.status_dict()
+    assert status["status"] == "degraded"
+    assert status["validated_endpoints"] == 0
+    assert "ningún endpoint" in status["warnings"][0]
