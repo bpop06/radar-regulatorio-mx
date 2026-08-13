@@ -4,10 +4,10 @@ Servicio de inteligencia regulatoria que consulta 18 fuentes oficiales,
 conserva evidencia estable y publica un corte dos veces al día. GitHub Pages
 sirve `main/docs`.
 
-El sitio distingue entre una ficha editorial **completa** y una publicación
-**pendiente de revisión**. Cuando la fuente no contiene sustancia suficiente,
-el registro conserva su título oficial, fecha, órgano y enlace, sin fabricar
-una interpretación.
+El sitio publica únicamente fichas editoriales **completas**. Cuando la fuente
+no puede leerse íntegramente o no contiene sustancia suficiente, el registro
+se conserva en una cola privada con su título oficial, fecha, órgano, enlace y
+causa de revisión, sin fabricar ni exponer una interpretación provisional.
 
 ## Fuentes certificadas para el relanzamiento
 
@@ -30,6 +30,7 @@ Artefactos:
 - `docs/data/manifest.json`: `cut_id`, versión y hashes del corte.
 - `docs/data/edition.json`: portada ligera y cobertura.
 - `docs/data/publications.json`: compatibilidad durante la migración.
+- `docs/data/fichas/<hash>.json`: cuatro bloques editoriales estructurados.
 - `docs/data/archive/YYYY-MM.json`: índices mensuales permanentes.
 - `docs/data/items/<hash>.json`: evidencia y ficha estable por documento.
 - `docs/notas/<hash>.html`: nota estática con metadatos sociales.
@@ -91,7 +92,7 @@ Aplicación editorial validada:
 
 ```bash
 .venv/bin/python -m app.cli apply-editorial edits.json \
-  --input docs/data/publications.json
+  --db "$RADAR_STATE_DIR/radar.sqlite3"
 ```
 
 La interpretación editorial la realiza Codex a partir de fuentes oficiales.

@@ -13,12 +13,13 @@ law, administrative litigation, and tax-specific administrative litigation.
   deduplicate by title and date.
 - Preserve `canonical_url`, `official_published_at`, `detected_at`,
   `content_hash`, `first_seen_at` and `last_seen_at`.
-- `editorial_status` is `needs_review` or `complete`.
+- Private editorial state is `pending`, `needs_review` or `complete`; public
+  artifacts contain only `complete` records.
 - A complete item needs an editorial title, a teaser of at most 70 words, a
   300-1000 word summary, structured card content, official identifiers and
   official evidence.
-- A needs-review item stays public with its official title, metadata, source
-  and review reason. Do not fabricate missing interpretation.
+- A needs-review item stays in the private SQLite queue with its official
+  metadata and review reason. Do not fabricate or expose a provisional title.
 - International cases keep number, parties, claim, treaty, status, outcome,
   reasoning and amount in separate fields.
 

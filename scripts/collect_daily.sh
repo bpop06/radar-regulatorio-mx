@@ -35,14 +35,29 @@ export LOCAL_TIMEZONE="${LOCAL_TIMEZONE:-America/Mexico_City}"
 export REQUEST_TIMEOUT_SECONDS="${REQUEST_TIMEOUT_SECONDS:-45}"
 export SOURCE_RETRIES="${SOURCE_RETRIES:-3}"
 export SOURCE_RETRY_BACKOFF_SECONDS="${SOURCE_RETRY_BACKOFF_SECONDS:-1.5}"
+export RADAR_STATE_DIR="${RADAR_STATE_DIR:-$HOME/Library/Application Support/Radar Regulatorio MX}"
 
 if [[ "${RADAR_REQUIRE_RELAUNCH_CERTIFICATION:-0}" == "1" ]]; then
   .venv/bin/python -m app.cli certify-sources --days "$LOOKBACK_DAYS"
 fi
 
-.venv/bin/python -m app.cli collect \
-  --output docs/data/publications.json \
+.venv/bin/python -m app.cli prepare-editorial \
+  --db "$RADAR_STATE_DIR/radar.sqlite3" \
   --days "$LOOKBACK_DAYS"
+.venv/bin/python -m app.cli editorial-queue \
+  --db "$RADAR_STATE_DIR/radar.sqlite3" \
+  --output /private/tmp/radar-editorial-queue.json
+
+if [[ "${RADAR_EDITORIAL_APPROVED:-0}" != "1" ]]; then
+  echo "Private queue prepared. Set RADAR_EDITORIAL_APPROVED=1 only after Terra Max audits." >&2
+  exit 2
+fi
+
+.venv/bin/python -m app.cli export-site \
+  --db "$RADAR_STATE_DIR/radar.sqlite3" \
+  --complete-only \
+  --output docs/data/publications.json \
+  --details-dir docs/data/fichas
 .venv/bin/python -m app.cli validate \
   --input docs/data/publications.json \
   --require-v8 \

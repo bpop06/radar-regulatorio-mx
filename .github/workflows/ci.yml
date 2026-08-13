@@ -45,7 +45,9 @@ jobs:
           test -f docs/data/manifest.json
           python -m app.cli validate --input docs/data/publications.json --require-v8
       - name: Enforce production freshness
-        if: github.ref == 'refs/heads/main'
+        if: >-
+          github.ref == 'refs/heads/main' &&
+          hashFiles('docs/data/manifest.json') != ''
         run: >-
           python -m app.cli validate --input docs/data/publications.json
           --require-v8 --max-age-hours 25

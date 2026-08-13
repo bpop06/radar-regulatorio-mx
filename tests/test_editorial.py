@@ -2,7 +2,7 @@ import json
 
 import pytest
 
-from app.edition import prepare_payload
+from app.edition import item_key, prepare_payload
 from app.editorial import EditorialError, apply_editorial
 from app.storage import Storage
 
@@ -13,6 +13,25 @@ VALID_CARD_BODY = (
     "## Sustancia\n\nCambio sustantivo concreto.\n\n"
     "## Fuente\n\n[Abrir publicación oficial](https://example.gob.mx/doc)"
 )
+
+
+def permanent_item(pubs, light):
+    path = pubs.parent / "items" / f"{item_key(light['id'])}.json"
+    return json.loads(path.read_text(encoding="utf-8"))["item"]
+
+
+def extracted_private_payload() -> dict:
+    payload = prepare_payload(publications_payload(), force=True)
+    item = payload["items"][0]
+    item.update(
+        extraction_status="complete",
+        extracted_text="Texto oficial completo con inicio, contenido material y final.",
+        source_content_hash="b" * 64,
+        extraction_method="html-adapter",
+        extraction_retrieved_at="2026-08-13T12:00:00+00:00",
+        source_sections=[{"id": "p1", "label": "Cuerpo", "order": 1}],
+    )
+    return payload
 CARD_BODY_WITH_ACT_NUMBER = (
     "## Qué se publicó\n\nOficio 500-05-2026-16021 de la autoridad.\n\n"
     "## Sustancia\n\nCambio sustantivo concreto.\n\n"
@@ -83,6 +102,50 @@ def edit(**overrides) -> dict:
     return base
 
 
+def private_edit(**overrides) -> dict:
+    base = edit(
+        source_content_hash="b" * 64,
+        executive_summary=["La autoridad modificó una obligación administrativa."],
+        detailed_summary=[{
+            "heading": "Cambio principal",
+            "paragraphs": ["El acuerdo establece la medida descrita."],
+            "evidence_refs": ["p1"],
+        }],
+        impacts={
+            "general": {
+                "paragraphs": ["No existe impacto general directo."],
+                "evidence_refs": ["p1"],
+            },
+            "sectors": [{
+                "sector": "Personas reguladas",
+                "paragraphs": ["Deben revisar la medida aplicable."],
+                "evidence_refs": ["p1"],
+            }],
+        },
+        recommended_actions=[{
+            "affected_group": "Personas reguladas",
+            "paragraphs": ["Conservar la documentación relacionada."],
+            "trigger": "Quedar sujeto al acuerdo",
+            "deadline": None,
+            "legal_basis": None,
+            "evidence_refs": ["p1"],
+        }],
+        evidence={
+            "official_url": "https://example.gob.mx/doc",
+            "retrieved_at": "2026-08-13T12:00:00+00:00",
+            "content_hash": "b" * 64,
+            "extraction_method": "html-adapter",
+            "locators": [{"id": "p1", "label": "Cuerpo", "location": "párrafo 1"}],
+        },
+        coverage=[{
+            "source_ref": "p1", "disposition": "summarized",
+            "target_sections": ["detailed_summary"], "reason": None,
+        }],
+    )
+    base.update(overrides)
+    return base
+
+
 def digest_block(**item_overrides) -> dict:
     item = {"id": "dof:1", "organ": "SHCP", "theme": DIGEST_THEME}
     item.update(item_overrides)
@@ -134,7 +197,8 @@ def test_apply_editorial_updates_fields_and_marks_ai_generated(tmp_path):
     applied = apply_editorial(edits_file, pubs)
 
     assert applied == 1
-    result = json.loads(pubs.read_text(encoding="utf-8"))["items"][0]
+    light = json.loads(pubs.read_text(encoding="utf-8"))["items"][0]
+    result = permanent_item(pubs, light)
     assert result["title"].startswith("SHCP actualiza")
     assert result["ai_generated"] is True
     assert result["published_at"] == "2026-07-03"
@@ -145,7 +209,8 @@ def test_apply_editorial_accepts_year_range_in_what_published(tmp_path):
 
     apply_editorial(edits_file, pubs)
 
-    result = json.loads(pubs.read_text(encoding="utf-8"))["items"][0]
+    light = json.loads(pubs.read_text(encoding="utf-8"))["items"][0]
+    result = permanent_item(pubs, light)
     assert "2026-2030" in result["card_body"]
 
 
@@ -161,10 +226,10 @@ def test_apply_editorial_updates_optional_importance(tmp_path):
 
 
 def test_apply_editorial_syncs_importance_to_local_database(tmp_path):
-    edits_file, pubs = write_files(tmp_path, [edit(importance=5)])
+    edits_file, pubs = write_files(tmp_path, [private_edit(importance=5)])
     db = tmp_path / "radar.sqlite3"
     with Storage(db) as storage:
-        storage.save_run(publications_payload())
+        storage.save_run(extracted_private_payload())
 
     apply_editorial(edits_file, pubs, db)
 
@@ -174,10 +239,10 @@ def test_apply_editorial_syncs_importance_to_local_database(tmp_path):
 
 
 def test_apply_editorial_updates_local_database(tmp_path):
-    edits_file, pubs = write_files(tmp_path, [edit()])
+    edits_file, pubs = write_files(tmp_path, [private_edit()])
     db = tmp_path / "radar.sqlite3"
     with Storage(db) as storage:
-        storage.save_run(publications_payload())
+        storage.save_run(extracted_private_payload())
 
     apply_editorial(edits_file, pubs, db)
 
@@ -234,7 +299,8 @@ def test_apply_editorial_recomposes_meta_line_with_canonical_organ(tmp_path):
 
     apply_editorial(edits_file, pubs)
 
-    markdown = json.loads(pubs.read_text(encoding="utf-8"))["items"][0]["detail_markdown"]
+    light = json.loads(pubs.read_text(encoding="utf-8"))["items"][0]
+    markdown = permanent_item(pubs, light)["detail_markdown"]
     assert "**Órgano:** Secretaría de Economía" in markdown
     assert "SECRETARIA DE ECONOMIA" not in markdown
 
@@ -259,7 +325,8 @@ def test_apply_editorial_recomposes_detail_markdown_from_edited_fields(tmp_path)
 
     apply_editorial(edits_file, pubs)
 
-    result = json.loads(pubs.read_text(encoding="utf-8"))["items"][0]
+    light = json.loads(pubs.read_text(encoding="utf-8"))["items"][0]
+    result = permanent_item(pubs, light)
     markdown = result["detail_markdown"]
     assert markdown.startswith("# SHCP actualiza")
     assert (
@@ -279,7 +346,8 @@ def test_apply_editorial_accepts_optional_case_facts_and_recomposes_section(tmp_
 
     apply_editorial(edits_file, pubs)
 
-    result = json.loads(pubs.read_text(encoding="utf-8"))["items"][0]
+    light = json.loads(pubs.read_text(encoding="utf-8"))["items"][0]
+    result = permanent_item(pubs, light)
     assert result["case_facts"] == case_facts
     assert "## Hechos del asunto" in result["detail_markdown"]
     assert case_facts in result["detail_markdown"]
@@ -287,10 +355,10 @@ def test_apply_editorial_accepts_optional_case_facts_and_recomposes_section(tmp_
 
 def test_apply_editorial_syncs_case_facts_to_local_database(tmp_path):
     case_facts = "México y la demandante suscribieron un contrato de concesión en 2010."
-    edits_file, pubs = write_files(tmp_path, [edit(case_facts=case_facts)])
+    edits_file, pubs = write_files(tmp_path, [private_edit(case_facts=case_facts)])
     db = tmp_path / "radar.sqlite3"
     with Storage(db) as storage:
-        storage.save_run(publications_payload())
+        storage.save_run(extracted_private_payload())
 
     apply_editorial(edits_file, pubs, db)
 

@@ -4,6 +4,8 @@ import {
   loadEdition,
   loadItem,
   loadManifest,
+  loadStructuredDetail,
+  isPublicEditorialItem,
   officialDate,
   teaser,
 } from "./data-client.js";
@@ -13,6 +15,11 @@ import {
   setTime,
   translateCaseStatus,
 } from "./markdown.js?v=20260813g";
+import {
+  renderStructuredDetail,
+  renderTraceability,
+  structuredDetailIsUsable,
+} from "./detail-renderer.js";
 
 const elements = {
   back: document.querySelector("#detail-back"),
@@ -53,6 +60,8 @@ const elements = {
   amount: document.querySelector("#detail-amount"),
   categories: document.querySelector("#detail-categories"),
   officialSource: document.querySelector("#official-source"),
+  traceability: document.querySelector("#detail-traceability"),
+  traceabilityHeading: document.querySelector("#traceability-heading"),
 };
 
 function setBackLink(origin) {
@@ -195,10 +204,11 @@ async function fetchOptionalEdition(manifest) {
 
 async function loadDetail() {
   const params = new URLSearchParams(location.search);
+  const detailPath = params.get("detail") || "";
   const key = params.get("item") || params.get("key") || "";
   const id = params.get("id") || "";
   setBackLink(params.get("from"));
-  if (!key && !id) {
+  if (!detailPath && !key && !id) {
     showMessage("Ficha no encontrada", "La URL no incluye el identificador de la publicación.");
     return;
   }
@@ -207,16 +217,22 @@ async function loadDetail() {
   main?.setAttribute("aria-busy", "true");
   try {
     const manifest = await loadManifest();
-    const [item, edition] = await Promise.all([
-      loadItem({ key, id }, manifest),
-      fetchOptionalEdition(manifest),
-    ]);
+    const detailEnvelope = detailPath
+      ? await loadStructuredDetail(detailPath, manifest)
+      : await loadItem({ key, id }, manifest);
+    const edition = detailPath ? null : await fetchOptionalEdition(manifest);
+    const item = detailPath ? detailEnvelope.item : detailEnvelope;
+    const detail = detailPath ? detailEnvelope.detail : null;
     if (!item) {
       showMessage("Ficha no encontrada", "No existe una publicación con ese identificador en el archivo disponible.");
       return;
     }
 
-    const pending = item.editorial_status === "needs_review";
+    if (!isPublicEditorialItem(item, { allowLegacy: !manifest })) {
+      showMessage("Ficha no disponible", "La interpretación editorial todavía no ha sido aprobada.");
+      return;
+    }
+    const pending = false;
     updateSeo(item);
     elements.breadcrumb.textContent = `${item.source || "Fuente oficial"} · ${formatDate(officialDate(item))}`;
     elements.title.textContent = displayTitle(item);
@@ -244,8 +260,14 @@ async function loadDetail() {
       elements.identifierRow.hidden = false;
     }
 
-    if (pending) renderReview(item);
-    else {
+    if (detailPath && !structuredDetailIsUsable(detail)) {
+      throw new Error("La ficha estructurada no cumple el contrato editorial v8");
+    }
+    if (detail) {
+      renderStructuredDetail(elements.content, detail);
+      if (elements.traceability) renderTraceability(elements.traceability, detail);
+      if (elements.traceabilityHeading) elements.traceabilityHeading.hidden = false;
+    } else {
       renderDocument(item);
       const reason = findEditionReason(edition, item);
       if (reason) {

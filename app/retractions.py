@@ -6,7 +6,11 @@ from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
 
-from app.edition import load_manifested_items, write_site_artifacts
+from app.edition import (
+    load_manifested_items,
+    write_site_artifacts,
+    write_site_artifacts_legacy,
+)
 from app.state import load_committed_state
 from app.validation import validate_publications_payload, validate_site_artifacts
 
@@ -44,7 +48,7 @@ def retract_items(
 
     payload = json.loads(publications_path.read_text(encoding="utf-8"))
     payload.setdefault("collection_notes", {"dof_previous_day_reviewed": False})
-    payload_report = validate_publications_payload(payload)
+    payload_report = validate_publications_payload(payload, index_only=True)
     if not payload_report.ok:
         raise RetractionError(
             "el payload base no es válido: " + "; ".join(payload_report.errors[:5])
@@ -58,12 +62,17 @@ def retract_items(
             "retracted_at": now,
             "record": permanent[item_id],
         }
+    payload["items"] = [
+        deepcopy(permanent[item["id"]])
+        for item in payload.get("items", [])
+        if isinstance(item, dict) and item.get("id") in permanent
+    ]
     payload["_retired_item_ids"] = list(requested)
     payload["_pending_state"] = {
         "retractions": {"version": 1, "items": entries}
     }
     payload["_preserve_edition"] = False
-    write_site_artifacts(payload, publications_path, edition_path)
+    _write_retraction_artifacts(payload, publications_path, edition_path)
     return len(requested)
 
 
@@ -85,11 +94,17 @@ def restore_items(
 
     restored = [deepcopy(entries.pop(item_id)["record"]) for item_id in requested]
     payload = json.loads(publications_path.read_text(encoding="utf-8"))
+    permanent = load_manifested_items(publications_path)
     current_ids = {
         item.get("id")
         for item in payload.get("items", [])
         if isinstance(item, dict)
     }
+    payload["items"] = [
+        deepcopy(permanent[item["id"]])
+        for item in payload.get("items", [])
+        if isinstance(item, dict) and item.get("id") in permanent
+    ]
     payload["_historical_items"] = [
         item for item in restored if item.get("id") not in current_ids
     ]
@@ -97,7 +112,7 @@ def restore_items(
         "retractions": {"version": 1, "items": entries}
     }
     payload["_preserve_edition"] = False
-    write_site_artifacts(payload, publications_path, edition_path)
+    _write_retraction_artifacts(payload, publications_path, edition_path)
     return len(requested)
 
 
@@ -111,3 +126,19 @@ def _existing_ledger(publications_path: Path) -> dict[str, Any]:
             "el registro de retiros no pertenece al corte confirmado o es inválido"
         )
     return state
+
+
+def _write_retraction_artifacts(
+    payload: dict[str, Any], publications_path: Path, edition_path: Path | None
+) -> None:
+    """Conserva compatibilidad sólo al operar un corte explícitamente legacy."""
+    try:
+        manifest = json.loads(
+            publications_path.with_name("manifest.json").read_text(encoding="utf-8")
+        )
+    except (OSError, json.JSONDecodeError):
+        manifest = {}
+    if manifest.get("publication_policy") == "legacy-compatible":
+        write_site_artifacts_legacy(payload, publications_path, edition_path)
+    else:
+        write_site_artifacts(payload, publications_path, edition_path)

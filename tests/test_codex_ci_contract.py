@@ -42,6 +42,7 @@ def test_run_codex_ci_declares_required_contexts_and_commands() -> None:
         ".venv/bin/python -m ruff check .",
         ".venv/bin/python -m pytest",
         ".venv/bin/python -m app.cli collect --dry-run",
+        "jq -e '.publication_policy == \"complete-only\"' docs/data/manifest.json",
         ".venv/bin/python -m app.cli validate --input docs/data/publications.json --require-v8",
         "--max-age-hours 1.5",
         ".venv/bin/python -m app.cli validate-calendars",

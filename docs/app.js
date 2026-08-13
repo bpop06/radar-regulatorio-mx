@@ -2,6 +2,7 @@ import {
   displayTitle,
   editorialLabel,
   isGeneratedCutOverdue,
+  isPublicEditorialItem,
   loadEdition,
   loadManifest,
   officialDate,
@@ -337,9 +338,12 @@ function buildLedger(signals) {
 }
 
 function renderReady(data) {
-  const signals = data.signals;
+  const signals = (Array.isArray(data.signals) ? data.signals : [])
+    .filter((item) => isPublicEditorialItem(
+      item, { allowLegacy: Number(data.schema_version) === 7 },
+    ));
   if (!signals.length) return renderEmpty({ ...data, state: "empty" });
-  editionData = data;
+  editionData = { ...data, signals };
   elements.heading.textContent = "Corte regulatorio";
   if (elements.deck) {
     elements.deck.textContent = `${signals.length} señales priorizadas de ${data.total_today} publicaciones registradas hoy.`;
@@ -348,12 +352,11 @@ function renderReady(data) {
   setTime(elements.updated, data.generated_at, { type: "datetime", short: true });
   elements.editionTotal.textContent = String(Number(data.total_today) || 0);
   elements.editionSignals.textContent = String(signals.length);
-  const pending = signals.filter((signal) => signal.editorial_status === "needs_review").length;
   const detected = data.total_today ?? signals.length;
   const detectionLabel = detected === 1 ? "detección" : "detecciones";
   const signalLabel = signals.length === 1 ? "señal" : "señales";
-  const pendingLabel = pending === 1 ? "pendiente" : "pendientes";
-  elements.total.textContent = `${detected} ${detectionLabel} · ${signals.length} ${signalLabel} · ${pending} ${pendingLabel}`;
+  const completeLabel = signals.length === 1 ? "completa" : "completas";
+  elements.total.textContent = `${detected} ${detectionLabel} · ${signals.length} ${signalLabel} ${completeLabel}`;
   elements.archiveToday.href = "archivo.html";
   elements.archiveToday.textContent = "Explorar el archivo permanente";
   buildBand(signals);

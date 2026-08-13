@@ -51,14 +51,16 @@ PUBLIC_SIGNAL_FIELDS = (
     "source_id",
     "title",
     "summary_teaser",
-    "summary",
     "official_title",
     "editorial_status",
+    "extraction_status",
+    "ai_generated",
     "review_reason",
     "source",
     "url",
     "canonical_url",
     "detail_url",
+    "detail_data_url",
     "published_at",
     "official_published_at",
     "detected_at",
@@ -68,6 +70,11 @@ PUBLIC_SIGNAL_FIELDS = (
     "relevance_score",
     "jurisdiction",
     "country_or_org",
+)
+
+PUBLIC_INDEX_FIELDS = PUBLIC_SIGNAL_FIELDS + (
+    "content_hash",
+    "document_type",
 )
 
 ARCHIVE_ITEM_FIELDS = PUBLIC_SIGNAL_FIELDS + (
@@ -84,6 +91,34 @@ ARCHIVE_ITEM_FIELDS = PUBLIC_SIGNAL_FIELDS + (
     "case_amount",
 )
 
+# Lista blanca del registro permanente público. La extracción íntegra y sus
+# diagnósticos sólo viven en SQLite, nunca en Git ni en el sitio.
+PUBLIC_PERMANENT_FIELDS = ARCHIVE_ITEM_FIELDS + (
+    # Compatibilidad del envelope v8: nunca contiene el cuerpo oficial; la
+    # proyección sustituye la descripción privada por una cadena vacía.
+    "description",
+    "summary",
+    "card_body",
+    "review_reason",
+    "official_identifiers",
+    "official_evidence",
+    "authority",
+    "government_branch",
+    "published_year",
+    "published_month",
+    "published_day",
+    "topic_tags",
+    "subtopic_tags",
+    "case_facts",
+    "case_claim",
+    "executive_summary",
+    "detailed_summary",
+    "impacts",
+    "recommended_actions",
+    "evidence",
+    "coverage",
+)
+
 EDITORIAL_FIELDS = (
     "title",
     "summary_teaser",
@@ -96,6 +131,14 @@ EDITORIAL_FIELDS = (
     "case_reasoning",
     "case_amount",
     "importance",
+    "extraction_status",
+    "detail_data_url",
+    "executive_summary",
+    "detailed_summary",
+    "impacts",
+    "recommended_actions",
+    "evidence",
+    "coverage",
 )
 
 
@@ -303,6 +346,9 @@ def write_site_artifacts(
     payload: dict[str, Any],
     publications_path: Path,
     edition_path: Path | None = None,
+    *,
+    complete_only: bool = True,
+    details_dir: Path | None = None,
 ) -> dict[str, Any]:
     """Construye y confirma un corte v8 completo mediante staging y rollback.
 
@@ -325,22 +371,41 @@ def write_site_artifacts(
     current.pop("_pending_state", None)
     historical_transport = current.pop("_historical_items", [])
     current.pop("_preserve_edition", None)
+    allow_legacy_editorial_reconciliation = (
+        current.pop("_allow_legacy_editorial_reconciliation", False) is True
+    )
     baseline_inventory = current.pop("_baseline_inventory", False) is True
     current.pop("_explicit_detection_ids", None)
     state_payloads = _state_payloads(data_dir, pending_state)
+    unsafe_state_names = [
+        name
+        for name in state_payloads
+        if not isinstance(name, str) or not re.fullmatch(r"[a-z0-9_-]+", name)
+    ]
+    if unsafe_state_names:
+        raise PublishError("nombre de estado inseguro")
     retired_item_ids = _effective_retired_item_ids(
         current.pop("_retired_item_ids", ()), state_payloads
     )
     previous_by_case = _case_identity_index(previous_items)
-    current_items = [
+    reconciled_current_items = [
         _reconcile_item(
             item, _previous_item(item, previous_items, previous_by_case),
             current["generated_at"],
             preserve_detection=not baseline_inventory,
+            reuse_previous_editorial=(
+                not complete_only or allow_legacy_editorial_reconciliation
+            ),
         )
         for item in current["items"]
         if str(item.get("id") or "") not in retired_item_ids
     ]
+    if complete_only:
+        current_items = [
+            item for item in reconciled_current_items if _is_public_complete(item)
+        ]
+    else:
+        current_items = reconciled_current_items
     historical_items = [
         _reconcile_item(
             item,
@@ -351,6 +416,8 @@ def write_site_artifacts(
         if isinstance(item, dict)
         and str(item.get("id") or "") not in retired_item_ids
     ]
+    if complete_only:
+        historical_items = [item for item in historical_items if _is_public_complete(item)]
     current["items"] = current_items
     current["total_items"] = len(current_items)
     if not preserve_edition:
@@ -359,9 +426,43 @@ def write_site_artifacts(
         )
 
     permanent_items = dict(previous_items)
-    superseded_item_ids: set[str] = set(
-        _consolidate_identity_aliases(permanent_items)
-    )
+    superseded_from_invalidations: set[str] = set()
+    if complete_only:
+        # Resolver invalidaciones contra el inventario previo completo antes
+        # de filtrar: aun una ficha legacy que ya no normalice como publicable
+        # debe retirarse físicamente si reaparece pendiente/cambiada.
+        for item in reconciled_current_items:
+            if _is_public_complete(item):
+                continue
+            incoming_id = str(item.get("id") or "")
+            if incoming_id in permanent_items:
+                superseded_from_invalidations.add(incoming_id)
+            superseded_from_invalidations.update(
+                item_id
+                for item_id, previous in permanent_items.items()
+                if records_are_aliases(item, previous)
+            )
+        permanent_items = {
+            item_id: item
+            for item_id, item in permanent_items.items()
+            if _is_public_complete(item)
+        }
+            # Un registro observado de nuevo pero ya no aprobable invalida la
+            # versión pública previa y la agenda para retiro transaccional.
+        for item in reconciled_current_items:
+            if _is_public_complete(item):
+                continue
+            incoming_id = str(item.get("id") or "")
+            if permanent_items.pop(incoming_id, None) is not None:
+                superseded_from_invalidations.add(incoming_id)
+            for item_id, previous in tuple(permanent_items.items()):
+                if records_are_aliases(item, previous):
+                    permanent_items.pop(item_id, None)
+                    superseded_from_invalidations.add(item_id)
+    superseded_item_ids: set[str] = {
+        *superseded_from_invalidations,
+        *_consolidate_identity_aliases(permanent_items),
+    }
     for item_id in retired_item_ids:
         if permanent_items.pop(item_id, None) is not None:
             superseded_item_ids.add(item_id)
@@ -369,12 +470,42 @@ def write_site_artifacts(
         superseded_item_ids.update(_remove_legacy_case_aliases(permanent_items, item))
         superseded_item_ids.update(_remove_identity_aliases(permanent_items, item))
         permanent_items[item["id"]] = item
+    if complete_only:
+        permanent_items = {
+            item_id: item
+            for item_id, item in permanent_items.items()
+            if _is_public_complete(item)
+        }
+
+    details_prefix = _details_prefix(details_dir, site_root, data_prefix)
+    for item in permanent_items.values():
+        if _has_structured_detail(item):
+            item["detail_data_url"] = (
+                details_prefix / f"{item_key(str(item['id']))}.json"
+            ).as_posix()
+    if complete_only:
+        from app.validation import validate_structured_public_item
+
+        public_errors = [
+            error
+            for item in permanent_items.values()
+            for error in validate_structured_public_item(item)
+        ]
+        if public_errors:
+            raise PublishError("ficha pública inválida: " + "; ".join(public_errors[:8]))
+    public_current = deepcopy(current)
+    public_current["items"] = [_public_index_item(item) for item in current_items]
+    public_current["total_items"] = len(public_current["items"])
     cut_id = compute_cut_id(
-        current,
-        permanent_items.values(),
+        public_current,
+        (
+            _public_permanent_item(item, legacy=not complete_only)
+            for item in permanent_items.values()
+        ),
         state_payloads,
     )
     current["cut_id"] = cut_id
+    public_current["cut_id"] = cut_id
 
     from app.validation import validate_publications_payload
 
@@ -385,7 +516,7 @@ def write_site_artifacts(
     artifacts: dict[Path, bytes] = {}
     publications_rel = publications_path.relative_to(site_root)
     edition_rel = edition_path.relative_to(site_root)
-    artifacts[publications_rel] = _json_bytes(current)
+    artifacts[publications_rel] = _json_bytes(public_current)
     artifacts[edition_rel] = _json_bytes(build_edition_artifact(current))
 
     archive_months: list[str] = []
@@ -395,9 +526,14 @@ def write_site_artifacts(
         if len(month) == 7:
             grouped.setdefault(month, []).append(item)
         key = item_key(str(item["id"]))
+        public_item = _public_permanent_item(item, legacy=not complete_only)
         artifacts[data_prefix / "items" / f"{key}.json"] = _json_bytes(
-            {"schema_version": SCHEMA_VERSION, "cut_id": cut_id, "item": item}
+            {"schema_version": SCHEMA_VERSION, "cut_id": cut_id, "item": public_item}
         )
+        if _has_structured_detail(item):
+            artifacts[details_prefix / f"{key}.json"] = _json_bytes(
+                _structured_detail_envelope(item, cut_id)
+            )
         artifacts[Path("notas") / f"{key}.html"] = _detail_html(item).encode("utf-8")
 
     for month, month_items in sorted(grouped.items()):
@@ -439,6 +575,7 @@ def write_site_artifacts(
     }
     manifest = {
         "schema_version": SCHEMA_VERSION,
+        "publication_policy": "complete-only" if complete_only else "legacy-compatible",
         "cut_id": cut_id,
         "generated_at": current["generated_at"],
         "edition_date": current["edition"]["edition_date"],
@@ -456,11 +593,12 @@ def write_site_artifacts(
                     keep={path.as_posix() for path in artifacts},
                     data_prefix=data_prefix,
                 ),
-                *(
-                    data_prefix / "items" / f"{item_key(item_id)}.json"
-                    for item_id in superseded_item_ids
+                *_retired_item_artifacts(
+                    data_dir / "manifest.json",
+                    item_ids=superseded_item_ids,
+                    data_prefix=data_prefix,
+                    details_prefix=details_prefix,
                 ),
-                *(Path("notas") / f"{item_key(item_id)}.html" for item_id in superseded_item_ids),
             },
             key=lambda path: path.as_posix(),
         )
@@ -475,13 +613,23 @@ def write_site_artifacts(
             encoding="utf-8",
         )
         for relative, content in artifacts.items():
+            if relative.is_absolute() or ".." in relative.parts:
+                raise PublishError(f"ruta de artefacto insegura: {relative}")
             staged = stage_root / relative
+            try:
+                staged.resolve().relative_to(stage_root.resolve())
+            except ValueError as exc:
+                raise PublishError(f"ruta de artefacto fuera de staging: {relative}") from exc
             staged.parent.mkdir(parents=True, exist_ok=True)
             staged.write_bytes(content)
 
         from app.validation import validate_site_artifacts
 
-        staged_report = validate_site_artifacts(stage_root / manifest_rel, root=stage_root)
+        staged_report = validate_site_artifacts(
+            stage_root / manifest_rel,
+            root=stage_root,
+            require_complete_only=complete_only,
+        )
         if not staged_report.ok:
             raise PublishError("staging inválido: " + "; ".join(staged_report.errors[:8]))
         # `manifest.json` is the commit marker. It must be the final replace:
@@ -499,6 +647,93 @@ def write_site_artifacts(
     finally:
         shutil.rmtree(stage_root, ignore_errors=True)
     return manifest
+
+
+def write_site_artifacts_legacy(
+    payload: dict[str, Any],
+    publications_path: Path,
+    edition_path: Path | None = None,
+    **options: Any,
+) -> dict[str, Any]:
+    """Compatibilidad explícita para fixtures/migraciones v7, nunca automatización v8."""
+    options.setdefault("complete_only", False)
+    return write_site_artifacts(
+        payload, publications_path, edition_path, **options
+    )
+
+
+def _is_public_complete(item: dict[str, Any]) -> bool:
+    return (
+        item.get("extraction_status") == "complete"
+        and item.get("editorial_status") == "complete"
+        and item.get("ai_generated") is True
+        and bool(item.get("source_content_hash"))
+        and item.get("source_revalidation_status") == "complete"
+    )
+
+
+def _has_structured_detail(item: dict[str, Any]) -> bool:
+    return all(item.get(field) not in (None, "", [], {}) for field in (
+        "executive_summary",
+        "detailed_summary",
+        "impacts",
+        "recommended_actions",
+        "evidence",
+        "coverage",
+    ))
+
+
+def _public_index_item(item: dict[str, Any]) -> dict[str, Any]:
+    """Proyección ligera: el análisis extenso vive sólo en la ficha por hash."""
+    return {
+        field: deepcopy(item.get(field))
+        for field in PUBLIC_INDEX_FIELDS
+        if field in item
+    }
+
+
+def _public_permanent_item(
+    item: dict[str, Any], *, legacy: bool = False
+) -> dict[str, Any]:
+    """Proyección exhaustiva sin texto extraído ni diagnósticos privados."""
+    result = {
+        field: deepcopy(item.get(field))
+        for field in PUBLIC_PERMANENT_FIELDS
+        if field in item
+    }
+    # Description puede contener el cuerpo íntegro de fuentes legacy y no
+    # forma parte de la identidad v8. Nunca sale de la base privada.
+    result["description"] = str(item.get("description") or "") if legacy else ""
+    if legacy and "detail_markdown" in item:
+        result["detail_markdown"] = deepcopy(item.get("detail_markdown"))
+    return result
+
+
+def _details_prefix(
+    details_dir: Path | None, site_root: Path, data_prefix: Path
+) -> Path:
+    if details_dir is None:
+        return data_prefix / "fichas"
+    path = Path(details_dir)
+    try:
+        return path.resolve().relative_to(site_root.resolve())
+    except ValueError as exc:
+        raise PublishError("details_dir debe quedar dentro del sitio público") from exc
+
+
+def _structured_detail_envelope(item: dict[str, Any], cut_id: str) -> dict[str, Any]:
+    envelope = {
+        "schema_version": SCHEMA_VERSION,
+        "cut_id": cut_id,
+        "item": _public_index_item(item),
+        "executive_summary": deepcopy(item["executive_summary"]),
+        "detailed_summary": deepcopy(item["detailed_summary"]),
+        "impacts": deepcopy(item["impacts"]),
+        "recommended_actions": deepcopy(item["recommended_actions"]),
+        "evidence": deepcopy(item["evidence"]),
+        "coverage": deepcopy(item["coverage"]),
+    }
+    return envelope
 
 
 def item_key(publication_id: str) -> str:
@@ -584,6 +819,7 @@ def _normalize_item(item: dict[str, Any], generated_at: str) -> dict[str, Any]:
             "url": public_url or canonical_url,
             "canonical_url": canonical_url,
             "detail_url": f"notas/{item_key(item_id)}.html",
+            "detail_data_url": "",
             "official_published_at": official_date,
             "published_at": official_date,
             "detected_at": detected_at,
@@ -655,7 +891,26 @@ def _normalize_item(item: dict[str, Any], generated_at: str) -> dict[str, Any]:
     # de la evidencia oficial normalizada. Así, cambiar el título oficial u
     # otro dato sustantivo sin actualizar el hash no puede conservar una
     # editorial obsoleta.
-    result["content_hash"] = official_content_hash(result)
+    projected_public_item = "description" in item and item.get("description") == ""
+    derived_content_hash = official_content_hash(result)
+    # Los envelopes públicos v8 omiten la descripción privada. Su hash ya fue
+    # validado al exportar y debe preservarse al recargar el manifiesto; sólo
+    # entradas privadas/de recolector se vuelven a derivar aquí.
+    result["content_hash"] = (
+        incoming_content_hash
+        if projected_public_item and incoming_content_hash
+        else derived_content_hash
+    )
+    result.setdefault("extraction_status", "pending")
+    for field, default in (
+        ("executive_summary", None),
+        ("detailed_summary", None),
+        ("impacts", None),
+        ("recommended_actions", None),
+        ("evidence", None),
+        ("coverage", None),
+    ):
+        result.setdefault(field, default)
     if (
         incoming_editorial_status == "complete"
         and incoming_content_hash != result["content_hash"]
@@ -667,10 +922,19 @@ def _normalize_item(item: dict[str, Any], generated_at: str) -> dict[str, Any]:
         )
         result["importance"] = derived_importance
 
-    if result.get("editorial_status") not in {"complete", "needs_review"}:
+    if result.get("editorial_status") not in {"complete", "needs_review", "pending"}:
         result["editorial_status"] = "needs_review"
-    if result["editorial_status"] == "needs_review":
+    if result["editorial_status"] != "complete":
         for field in ("title", "summary_teaser", "summary", "card_body", "detail_markdown"):
+            result[field] = None
+        for field in (
+            "executive_summary",
+            "detailed_summary",
+            "impacts",
+            "recommended_actions",
+            "evidence",
+            "coverage",
+        ):
             result[field] = None
         # `case_facts` es interpretación editorial heredada del contrato v7;
         # nunca debe sobrevivir una migración a revisión pendiente. Los
@@ -756,6 +1020,7 @@ def _reconcile_item(
     generated_at: str,
     *,
     preserve_detection: bool = True,
+    reuse_previous_editorial: bool = True,
 ) -> dict[str, Any]:
     item = deepcopy(incoming)
     if previous is None:
@@ -783,7 +1048,14 @@ def _reconcile_item(
     item["last_seen_at"] = _latest_iso_datetime(
         generated_at, item.get("first_seen_at") or item["detected_at"]
     )
-    if item["content_hash"] != previous.get("content_hash"):
+    incoming_source_hash = _editorial_source_hash(item)
+    previous_source_hash = _editorial_source_hash(previous)
+    source_changed = (
+        incoming_source_hash != previous_source_hash
+        if incoming_source_hash and previous_source_hash
+        else item["content_hash"] != previous.get("content_hash")
+    )
+    if source_changed:
         item["editorial_status"] = "needs_review"
         item["review_reason"] = "La fuente oficial cambió; requiere una nueva revisión editorial."
         for field in ("title", "summary_teaser", "summary", "card_body", "detail_markdown"):
@@ -798,7 +1070,7 @@ def _reconcile_item(
 
     if preserve_detection:
         item["detected_at"] = previous.get("detected_at", item["detected_at"])
-    if item.get("editorial_status") != "complete" and previous.get(
+    if reuse_previous_editorial and item.get("editorial_status") != "complete" and previous.get(
         "editorial_status"
     ) == "complete":
         for field in EDITORIAL_FIELDS:
@@ -807,6 +1079,16 @@ def _reconcile_item(
         item["review_reason"] = None
         item["ai_generated"] = True
     return item
+
+
+def _editorial_source_hash(item: dict[str, Any]) -> str:
+    direct = str(item.get("source_content_hash") or "").strip()
+    if direct:
+        return direct
+    evidence = item.get("evidence")
+    if isinstance(evidence, dict):
+        return str(evidence.get("content_hash") or "").strip()
+    return ""
 
 
 def _load_permanent_items(
@@ -826,8 +1108,7 @@ def _load_permanent_items(
                 result[item["id"]] = _normalize_item(item, generated_at)
 
     # Los envelopes de detalle son la fuente histórica primaria: contienen
-    # evidencia y editorial completas aunque el ítem haya salido de la
-    # ventana móvil. `publications.json` vigente tiene la última palabra.
+    # evidencia y editorial completas aunque el índice público sea ligero.
     for path in _manifest_item_paths(data_dir):
         try:
             envelope = json.loads(path.read_text(encoding="utf-8"))
@@ -846,7 +1127,11 @@ def _load_permanent_items(
         if isinstance(payload, dict):
             generated_at = _iso_datetime(payload.get("generated_at"))
             for item in payload.get("items", []):
-                if isinstance(item, dict) and isinstance(item.get("id"), str):
+                if (
+                    isinstance(item, dict)
+                    and isinstance(item.get("id"), str)
+                    and item["id"] not in result
+                ):
                     result[item["id"]] = _normalize_item(item, generated_at)
     return result
 
@@ -1111,10 +1396,15 @@ def _commit_staged_artifacts(
     *,
     retire: tuple[Path, ...] = (),
 ) -> None:
+    if not paths:
+        return
     backup_root = stage_root / ".backup"
     committed: list[tuple[Path, Path | None]] = []
     try:
-        for relative in paths:
+        # El último path es el manifiesto/commit marker: se reemplaza sólo
+        # después de escribir lo nuevo y retirar los artefactos invalidados.
+        # Si cualquier paso falla, el backup restaura también los retiros.
+        for relative in paths[:-1]:
             staged = stage_root / relative
             target = site_root / relative
             target.parent.mkdir(parents=True, exist_ok=True)
@@ -1138,6 +1428,22 @@ def _commit_staged_artifacts(
             backup.parent.mkdir(parents=True, exist_ok=True)
             os.replace(target, backup)
             committed.append((target, backup))
+        relative = paths[-1]
+        staged = stage_root / relative
+        target = site_root / relative
+        target.parent.mkdir(parents=True, exist_ok=True)
+        backup = None
+        if target.exists():
+            backup = backup_root / relative
+            backup.parent.mkdir(parents=True, exist_ok=True)
+            os.replace(target, backup)
+        try:
+            os.replace(staged, target)
+        except Exception:
+            if backup is not None and backup.exists():
+                os.replace(backup, target)
+            raise
+        committed.append((target, backup))
     except Exception:
         for target, backup in reversed(committed):
             if target.exists():
@@ -1185,11 +1491,11 @@ def _retired_artifacts(
     keep: set[str],
     data_prefix: Path,
 ) -> tuple[Path, ...]:
-    """Retira sólo índices/estado reemplazables que ya no pertenecen al corte.
+    """Retira índices/estado reemplazables que ya no pertenecen al corte.
 
-    Las fichas y notas son permanentes y nunca se eliminan aquí. Las rutas se
-    toman exclusivamente del manifiesto anterior, se validan como relativas y
-    se mueven al backup de la misma transacción para permitir rollback.
+    Las rutas se toman exclusivamente del manifiesto anterior, se validan
+    como relativas y se mueven al backup de la misma transacción. Item, ficha
+    y nota se agregan por id invalidado en ``write_site_artifacts``.
     """
     try:
         previous = json.loads(previous_manifest_path.read_text(encoding="utf-8"))
@@ -1212,6 +1518,46 @@ def _retired_artifacts(
         if path_text.startswith(allowed_prefixes):
             retired.append(relative)
     return tuple(sorted(retired, key=lambda path: path.as_posix()))
+
+
+def _retired_item_artifacts(
+    previous_manifest_path: Path,
+    *,
+    item_ids: set[str],
+    data_prefix: Path,
+    details_prefix: Path,
+) -> tuple[Path, ...]:
+    """Resuelve sólo item/ficha/nota declarados por el manifiesto anterior."""
+    if not item_ids:
+        return ()
+    try:
+        previous = json.loads(previous_manifest_path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return ()
+    declared = previous.get("artifacts") if isinstance(previous, dict) else None
+    if not isinstance(declared, dict):
+        return ()
+    candidates = {
+        path
+        for item_id in item_ids
+        for path in (
+            data_prefix / "items" / f"{item_key(item_id)}.json",
+            details_prefix / f"{item_key(item_id)}.json",
+            Path("notas") / f"{item_key(item_id)}.html",
+        )
+    }
+    return tuple(
+        sorted(
+            (
+                path
+                for path in candidates
+                if path.as_posix() in declared
+                and not path.is_absolute()
+                and ".." not in path.parts
+            ),
+            key=lambda path: path.as_posix(),
+        )
+    )
 
 
 def compute_cut_id(
@@ -1248,7 +1594,6 @@ def official_content_hash(item: dict[str, Any]) -> str:
             "source_id",
             "canonical_url",
             "official_title",
-            "description",
             "official_published_at",
             "authority",
             "document_type",

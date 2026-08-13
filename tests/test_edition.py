@@ -6,7 +6,7 @@ from app.edition import (
     build_edition_artifact,
     edition_date_from_generated_at,
     prepare_payload,
-    write_site_artifacts,
+    write_site_artifacts_legacy,
 )
 from app.text import ACT_NUMBER_RE
 from app.validation import validate_edition
@@ -146,7 +146,7 @@ def test_write_site_artifacts_writes_both_json_files(tmp_path):
     prepared = prepare_payload(payload([item("dof:1")]), force=True)
     publications_path = tmp_path / "publications.json"
 
-    write_site_artifacts(prepared, publications_path)
+    write_site_artifacts_legacy(prepared, publications_path)
 
     written_publications = json.loads(publications_path.read_text(encoding="utf-8"))
     written_edition = json.loads((tmp_path / "edition.json").read_text(encoding="utf-8"))

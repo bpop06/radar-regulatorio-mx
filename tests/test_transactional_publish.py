@@ -8,16 +8,28 @@ from pathlib import Path
 
 import pytest
 
+import app.edition as edition_module
 from app.edition import (
     STATIC_ASSET_VERSION,
+    PublishError,
     _consolidate_identity_aliases,
     item_key,
     prepare_payload,
     write_site_artifacts,
+    write_site_artifacts_legacy,
 )
 from app.editorial import apply_editorial
 from app.validation import validate_site_artifacts
 from tests.test_contract_v8 import extractive_payload
+from tests.test_editorial_workflow import _structured_fields
+
+
+def _artifact_bytes(docs: Path) -> dict[Path, bytes]:
+    return {
+        path.relative_to(docs): path.read_bytes()
+        for path in docs.rglob("*")
+        if path.is_file()
+    }
 
 
 def _rewrite_bytes_and_rehash(docs: Path, relative: str, content: bytes) -> None:
@@ -43,7 +55,7 @@ def test_transaction_writes_cross_checked_permanent_artifacts(tmp_path: Path) ->
     docs = tmp_path / "docs"
     publications = docs / "data" / "publications.json"
 
-    manifest = write_site_artifacts(extractive_payload(), publications)
+    manifest = write_site_artifacts_legacy(extractive_payload(), publications)
 
     written = json.loads(publications.read_text(encoding="utf-8"))
     item = written["items"][0]
@@ -83,13 +95,13 @@ def test_transaction_writes_cross_checked_permanent_artifacts(tmp_path: Path) ->
     assert validate_site_artifacts(docs / "data" / "manifest.json").ok
 
 
-def test_static_note_bounds_metadata_without_truncating_official_item(tmp_path: Path) -> None:
+def test_static_note_bounds_legacy_metadata(tmp_path: Path) -> None:
     docs = tmp_path / "docs"
     publications = docs / "data/publications.json"
     payload = extractive_payload()
     payload["items"][0]["description"] = "Documento oficial " + ("muy extenso " * 4000)
 
-    write_site_artifacts(payload, publications)
+    write_site_artifacts_legacy(payload, publications)
 
     written = json.loads(publications.read_text(encoding="utf-8"))
     item = written["items"][0]
@@ -97,7 +109,10 @@ def test_static_note_bounds_metadata_without_truncating_official_item(tmp_path: 
     match = re.search(r'<meta name="description" content="([^"]*)">', note)
     assert match is not None
     assert len(match.group(1)) <= 280
-    assert len(item["description"]) > 10_000
+    permanent = json.loads(
+        (docs / "data/items" / f"{item_key(item['id'])}.json").read_text()
+    )["item"]
+    assert len(permanent["description"]) > 10_000
 
 
 def test_static_note_json_ld_cannot_be_closed_by_official_text(tmp_path: Path) -> None:
@@ -106,7 +121,7 @@ def test_static_note_json_ld_cannot_be_closed_by_official_text(tmp_path: Path) -
     payload = extractive_payload()
     payload["items"][0]["official_title"] = "Acuerdo </script><script>alert(1)</script>"
 
-    write_site_artifacts(payload, publications)
+    write_site_artifacts_legacy(payload, publications)
 
     item = json.loads(publications.read_text(encoding="utf-8"))["items"][0]
     note = (docs / item["detail_url"]).read_text(encoding="utf-8")
@@ -122,7 +137,7 @@ def test_manifest_rejects_static_note_without_article_json_ld_after_rehash(
 ) -> None:
     docs = tmp_path / "docs"
     publications = docs / "data/publications.json"
-    write_site_artifacts(extractive_payload(), publications)
+    write_site_artifacts_legacy(extractive_payload(), publications)
     item = json.loads(publications.read_text(encoding="utf-8"))["items"][0]
     note = (docs / item["detail_url"]).read_text(encoding="utf-8")
     note = re.sub(
@@ -142,7 +157,7 @@ def test_manifest_rejects_static_note_without_article_json_ld_after_rehash(
 def test_manifest_detects_artifact_tampering(tmp_path: Path) -> None:
     docs = tmp_path / "docs"
     publications = docs / "data" / "publications.json"
-    write_site_artifacts(extractive_payload(), publications)
+    write_site_artifacts_legacy(extractive_payload(), publications)
     publications.write_text("{}\n", encoding="utf-8")
 
     report = validate_site_artifacts(docs / "data" / "manifest.json")
@@ -156,7 +171,7 @@ def test_manifest_rejects_semantically_mismatched_archive_even_with_valid_hash(
 ) -> None:
     docs = tmp_path / "docs"
     publications = docs / "data/publications.json"
-    write_site_artifacts(extractive_payload(), publications)
+    write_site_artifacts_legacy(extractive_payload(), publications)
     relative = "data/archive/2026-08.json"
     archive = json.loads((docs / relative).read_text())
     archive["items"][0]["official_title"] = "Otro acto oficial"
@@ -173,7 +188,7 @@ def test_invalid_cut_does_not_touch_previous_artifacts_or_state(tmp_path: Path) 
     publications = docs / "data" / "publications.json"
     valid = extractive_payload()
     valid["_pending_state"] = {"icsid": {"ARB/26/1": "Pending"}}
-    write_site_artifacts(valid, publications)
+    write_site_artifacts_legacy(valid, publications)
     before = {
         path.relative_to(docs): path.read_bytes()
         for path in docs.rglob("*")
@@ -185,7 +200,7 @@ def test_invalid_cut_does_not_touch_previous_artifacts_or_state(tmp_path: Path) 
     invalid["sources"][0]["error"] = "upstream unavailable"
     invalid["_pending_state"] = {"icsid": {"ARB/26/2": "Pending"}}
     with pytest.raises(Exception, match="all sources"):
-        write_site_artifacts(invalid, publications)
+        write_site_artifacts_legacy(invalid, publications)
 
     after = {
         path.relative_to(docs): path.read_bytes()
@@ -206,10 +221,10 @@ def test_second_run_is_idempotent_except_for_cut_observation_times(tmp_path: Pat
     docs = tmp_path / "docs"
     publications = docs / "data" / "publications.json"
     payload = extractive_payload()
-    first_manifest = write_site_artifacts(payload, publications)
+    first_manifest = write_site_artifacts_legacy(payload, publications)
     first = json.loads(publications.read_text(encoding="utf-8"))
 
-    second_manifest = write_site_artifacts(deepcopy(payload), publications)
+    second_manifest = write_site_artifacts_legacy(deepcopy(payload), publications)
     second = json.loads(publications.read_text(encoding="utf-8"))
 
     assert second_manifest["cut_id"] == first_manifest["cut_id"]
@@ -272,11 +287,11 @@ def test_global_alias_consolidation_preserves_winner_times_and_diputados_anchors
 def test_second_day_keeps_mobile_window_but_publishes_empty_edition(tmp_path: Path) -> None:
     docs = tmp_path / "docs"
     publications = docs / "data/publications.json"
-    write_site_artifacts(extractive_payload(), publications)
+    write_site_artifacts_legacy(extractive_payload(), publications)
 
     next_day = extractive_payload()
     next_day["generated_at"] = "2026-08-13T16:30:00+00:00"
-    write_site_artifacts(next_day, publications)
+    write_site_artifacts_legacy(next_day, publications)
 
     written = json.loads(publications.read_text(encoding="utf-8"))
     edition = json.loads((docs / "data/edition.json").read_text(encoding="utf-8"))
@@ -316,7 +331,7 @@ def test_bootstrap_repairs_inflated_detection_without_hiding_explicit_change(
         )
         inflated["items"].append(record)
     inflated["total_items"] = 2
-    write_site_artifacts(inflated, publications)
+    write_site_artifacts_legacy(inflated, publications)
 
     baseline = deepcopy(inflated)
     baseline["generated_at"] = "2026-08-13T16:30:00+00:00"
@@ -336,7 +351,7 @@ def test_bootstrap_repairs_inflated_detection_without_hiding_explicit_change(
             "last_seen_at": "2026-08-13T16:30:00+00:00",
         }
     )
-    write_site_artifacts(baseline, publications)
+    write_site_artifacts_legacy(baseline, publications)
 
     written = json.loads(publications.read_text(encoding="utf-8"))
     by_id = {item["id"]: item for item in written["items"]}
@@ -367,7 +382,7 @@ def test_writer_transactionally_consolidates_cross_source_url_aliases(
             "official_evidence": {"primary_url": official_url},
         }
     )
-    write_site_artifacts(first, publications)
+    write_site_artifacts_legacy(first, publications)
     old_key = item_key("gob.mx apf:gob-copy")
     assert (docs / f"data/items/{old_key}.json").exists()
     assert (docs / f"notas/{old_key}.html").exists()
@@ -386,7 +401,7 @@ def test_writer_transactionally_consolidates_cross_source_url_aliases(
             "official_evidence": {"primary_url": official_url},
         }
     )
-    write_site_artifacts(winner, publications)
+    write_site_artifacts_legacy(winner, publications)
 
     archive = json.loads((docs / "data/archive/2026-08.json").read_text())
     assert [item["id"] for item in archive["items"]] == ["impi:impi-copy"]
@@ -413,7 +428,7 @@ def test_lower_priority_alias_cannot_replace_existing_specific_winner(
             "official_evidence": {"primary_url": official_url},
         }
     )
-    write_site_artifacts(specific, publications)
+    write_site_artifacts_legacy(specific, publications)
     winner_key = item_key("impi:specific")
 
     aggregate_only = extractive_payload()
@@ -429,7 +444,7 @@ def test_lower_priority_alias_cannot_replace_existing_specific_winner(
             "official_evidence": {"primary_url": official_url},
         }
     )
-    write_site_artifacts(aggregate_only, publications)
+    write_site_artifacts_legacy(aggregate_only, publications)
 
     written = json.loads(publications.read_text(encoding="utf-8"))
     archive = json.loads((docs / "data/archive/2026-08.json").read_text())
@@ -464,7 +479,7 @@ def test_writer_consolidates_official_impi_article_alias_but_not_generic_same_so
             "official_evidence": {"primary_url": article_url},
         }
     )
-    write_site_artifacts(article, publications)
+    write_site_artifacts_legacy(article, publications)
 
     press = extractive_payload()
     press["generated_at"] = "2026-08-13T16:30:00+00:00"
@@ -479,7 +494,7 @@ def test_writer_consolidates_official_impi_article_alias_but_not_generic_same_so
             "official_evidence": {"primary_url": press_url},
         }
     )
-    write_site_artifacts(press, publications)
+    write_site_artifacts_legacy(press, publications)
     archive = json.loads((docs / "data/archive/2026-08.json").read_text())
     assert [item["id"] for item in archive["items"]] == ["gob.mx apf:press"]
 
@@ -496,13 +511,13 @@ def test_writer_consolidates_official_impi_article_alias_but_not_generic_same_so
             "official_evidence": {"primary_url": generic},
         }
     )
-    write_site_artifacts(first_dof, publications)
+    write_site_artifacts_legacy(first_dof, publications)
     second_dof = deepcopy(first_dof)
     second_dof["generated_at"] = "2026-08-15T16:30:00+00:00"
     second_dof["items"][0]["id"] = "DOF:two"
     second_dof["items"][0]["source_id"] = "two"
     second_dof["items"][0]["official_identifiers"] = {"source_id": "two"}
-    write_site_artifacts(second_dof, publications)
+    write_site_artifacts_legacy(second_dof, publications)
 
     archive = json.loads((docs / "data/archive/2026-08.json").read_text())
     archived_ids = {item["id"] for item in archive["items"]}
@@ -513,7 +528,7 @@ def test_writer_consolidates_official_impi_article_alias_but_not_generic_same_so
 def test_manifest_hashes_exact_bytes(tmp_path: Path) -> None:
     docs = tmp_path / "docs"
     publications = docs / "data" / "publications.json"
-    manifest = write_site_artifacts(extractive_payload(), publications)
+    manifest = write_site_artifacts_legacy(extractive_payload(), publications)
 
     for relative, metadata in manifest["artifacts"].items():
         content = (docs / relative).read_bytes()
@@ -526,11 +541,11 @@ def test_state_change_changes_cut_id_and_remains_cross_checked(tmp_path: Path) -
     publications = docs / "data/publications.json"
     first = extractive_payload()
     first["_pending_state"] = {"icsid": {"ARB/26/1": "Pending"}}
-    first_manifest = write_site_artifacts(first, publications)
+    first_manifest = write_site_artifacts_legacy(first, publications)
 
     second = extractive_payload()
     second["_pending_state"] = {"icsid": {"ARB/26/1": "Concluded"}}
-    second_manifest = write_site_artifacts(second, publications)
+    second_manifest = write_site_artifacts_legacy(second, publications)
     state = json.loads((docs / "data/state/icsid.json").read_text())
 
     assert second_manifest["cut_id"] != first_manifest["cut_id"]
@@ -544,7 +559,7 @@ def test_manifest_recomputes_cut_id_after_coherent_state_tamper(tmp_path: Path) 
     publications = docs / "data/publications.json"
     payload = extractive_payload()
     payload["_pending_state"] = {"icsid": {"ARB/26/1": "Pending"}}
-    write_site_artifacts(payload, publications)
+    write_site_artifacts_legacy(payload, publications)
     relative = "data/state/icsid.json"
     state = json.loads((docs / relative).read_text(encoding="utf-8"))
     state["state"]["ARB/26/1"] = "Concluded"
@@ -561,24 +576,160 @@ def test_obsolete_month_index_is_retired_when_official_month_is_corrected(
 ) -> None:
     docs = tmp_path / "docs"
     publications = docs / "data/publications.json"
-    write_site_artifacts(extractive_payload(), publications)
+    write_site_artifacts_legacy(extractive_payload(), publications)
     old_archive = docs / "data/archive/2026-08.json"
     assert old_archive.exists()
 
     corrected = extractive_payload()
     corrected["generated_at"] = "2026-09-02T16:30:00+00:00"
     corrected["items"][0]["published_at"] = "2026-09-01"
-    write_site_artifacts(corrected, publications)
+    write_site_artifacts_legacy(corrected, publications)
 
     assert not old_archive.exists()
     assert (docs / "data/archive/2026-09.json").exists()
     assert validate_site_artifacts(docs / "data/manifest.json").ok
 
 
+def test_invalidated_complete_item_retires_item_detail_and_note_transactionally(
+    tmp_path: Path,
+) -> None:
+    docs = tmp_path / "docs"
+    publications = docs / "data/publications.json"
+    payload = prepare_payload(extractive_payload(), force=True)
+    item = payload["items"][0]
+    item.update(
+        title="SAT modifica obligaciones fiscales para contribuyentes afectados",
+        summary_teaser=" ".join(f"dato{i}" for i in range(45)),
+        summary=" ".join(f"resumen{i}" for i in range(320)),
+        card_body=(
+            "## Qué se publicó\n\nAcuerdo.\n\n"
+            "## Sustancia\n\nCambio.\n\n## Fuente\n\nFuente."
+        ),
+        extraction_status="complete",
+        editorial_status="complete",
+        source_content_hash="b" * 64,
+        source_revalidation_status="complete",
+        ai_generated=True,
+        review_reason=None,
+        **_structured_fields(),
+    )
+    write_site_artifacts(payload, publications, complete_only=True)
+    key = item_key(item["id"])
+    paths = (
+        docs / f"data/items/{key}.json",
+        docs / f"data/fichas/{key}.json",
+        docs / f"notas/{key}.html",
+    )
+    assert all(path.exists() for path in paths)
+
+    pending = deepcopy(payload)
+    pending_item = pending["items"][0]
+    pending_item.update(
+        extraction_status="complete",
+        editorial_status="needs_review",
+        source_revalidation_status="complete",
+        ai_generated=False,
+        title=None,
+        summary_teaser=None,
+        summary=None,
+        card_body=None,
+        review_reason="La fuente cambió.",
+    )
+    write_site_artifacts(pending, publications, complete_only=True)
+    assert all(not path.exists() for path in paths)
+    manifest = json.loads((docs / "data/manifest.json").read_text())
+    assert all(path.relative_to(docs).as_posix() not in manifest["artifacts"] for path in paths)
+
+
+def test_complete_only_writer_rejects_legacy_complete_without_source_hash(
+    tmp_path: Path,
+) -> None:
+    payload = prepare_payload(extractive_payload(), force=True)
+    item = payload["items"][0]
+    item.update(
+        extraction_status="complete",
+        editorial_status="complete",
+        ai_generated=True,
+        title="SAT modifica obligaciones fiscales para contribuyentes afectados",
+        summary_teaser=" ".join(f"dato{i}" for i in range(45)),
+        summary=" ".join(f"resumen{i}" for i in range(320)),
+        card_body="## Qué se publicó\n\nAcuerdo.\n\n## Sustancia\n\nCambio.",
+    )
+    publications = tmp_path / "docs/data/publications.json"
+    write_site_artifacts(payload, publications, complete_only=True)
+    assert json.loads(publications.read_text())["items"] == []
+
+
+def test_invalidated_artifact_retirement_rolls_back_if_manifest_commit_fails(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    docs = tmp_path / "docs"
+    publications = docs / "data/publications.json"
+    payload = prepare_payload(extractive_payload(), force=True)
+    item = payload["items"][0]
+    item.update(
+        title="SAT modifica obligaciones fiscales para contribuyentes afectados",
+        summary_teaser=" ".join(f"dato{i}" for i in range(45)),
+        summary=" ".join(f"resumen{i}" for i in range(320)),
+        card_body=(
+            "## Qué se publicó\n\nAcuerdo.\n\n"
+            "## Sustancia\n\nCambio.\n\n## Fuente\n\nFuente."
+        ),
+        extraction_status="complete",
+        editorial_status="complete",
+        source_content_hash="b" * 64,
+        source_revalidation_status="complete",
+        ai_generated=True,
+        review_reason=None,
+        **_structured_fields(),
+    )
+    write_site_artifacts(payload, publications, complete_only=True)
+    before = _artifact_bytes(docs)
+    pending = deepcopy(payload)
+    pending["items"][0].update(
+        editorial_status="needs_review",
+        ai_generated=False,
+        title=None,
+        summary_teaser=None,
+        summary=None,
+        card_body=None,
+        review_reason="La fuente cambió.",
+    )
+    real_replace = edition_module.os.replace
+    failed = False
+
+    def fail_manifest(source: Path, target: Path) -> None:
+        nonlocal failed
+        if (
+            not failed
+            and target == docs / "data/manifest.json"
+            and ".radar-stage-" in str(source)
+            and ".backup" not in str(source)
+        ):
+            failed = True
+            raise OSError("fallo del manifiesto")
+        real_replace(source, target)
+
+    monkeypatch.setattr(edition_module.os, "replace", fail_manifest)
+    with pytest.raises(OSError, match="fallo del manifiesto"):
+        write_site_artifacts(pending, publications, complete_only=True)
+    assert _artifact_bytes(docs) == before
+
+
 def test_prepare_dry_run_has_no_filesystem_side_effects(tmp_path: Path) -> None:
     result = prepare_payload(extractive_payload(), force=True)
     assert result["schema_version"] == 8
     assert list(tmp_path.iterdir()) == []
+
+
+def test_pending_state_cannot_escape_staging(tmp_path: Path) -> None:
+    docs = tmp_path / "docs"
+    payload = extractive_payload()
+    payload["_pending_state"] = {"../../../escaped": {"secret": True}}
+    with pytest.raises(PublishError, match="estado inseguro"):
+        write_site_artifacts_legacy(payload, docs / "data/publications.json")
+    assert not (docs / "escaped.json").exists()
+    assert not (tmp_path / "escaped.json").exists()
 
 
 def test_item_outside_mobile_window_keeps_complete_note_and_evidence(tmp_path: Path) -> None:
@@ -589,7 +740,7 @@ def test_item_outside_mobile_window_keeps_complete_note_and_evidence(tmp_path: P
         "primary_url": "https://dof.gob.mx/nota?id=abc",
         "annex_url": "https://dof.gob.mx/nota_detalle_popup.php?id=abc",
     }
-    write_site_artifacts(initial, publications)
+    write_site_artifacts_legacy(initial, publications)
     first = json.loads(publications.read_text(encoding="utf-8"))["items"][0]
     edits = tmp_path / "edits.json"
     edits.write_text(
@@ -622,15 +773,15 @@ def test_item_outside_mobile_window_keeps_complete_note_and_evidence(tmp_path: P
     later["items"] = []
     later["total_items"] = 0
     later["sources"][0]["items_found"] = 0
-    write_site_artifacts(later, publications)
+    write_site_artifacts_legacy(later, publications)
 
     permanent = json.loads(
         (docs / "data/items" / f"{item_key(completed['id'])}.json").read_text()
     )["item"]
     archive = json.loads((docs / "data/archive/2026-08.json").read_text())
     assert permanent["editorial_status"] == "complete"
-    assert permanent["summary"] == completed["summary"]
-    assert permanent["official_evidence"] == completed["official_evidence"]
+    assert permanent["summary"].split()[0] == "resumen0"
+    assert permanent["official_evidence"]["annex_url"].endswith("id=abc")
     assert archive["items"][0]["detail_url"] == completed["detail_url"]
     assert detail_path.exists()
     assert "SHCP modifica" in detail_path.read_text(encoding="utf-8")

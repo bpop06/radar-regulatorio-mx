@@ -7,7 +7,7 @@ from pathlib import Path
 import pytest
 
 from app import edition
-from app.edition import _state_payloads, write_site_artifacts
+from app.edition import _state_payloads, write_site_artifacts_legacy
 from app.sources.icsid import _load_snapshot as load_icsid_snapshot
 from app.sources.tmec import _load_snapshot as load_tmec_snapshot
 from tests.test_contract_v8 import extractive_payload
@@ -24,7 +24,7 @@ def _write_cut(docs: Path) -> dict:
         "icsid": {"ARB/26/19": "Pending"},
         "tmec": {"MEX-USA-2024-31A-04": "Active"},
     }
-    return write_site_artifacts(payload, docs / "data/publications.json")
+    return write_site_artifacts_legacy(payload, docs / "data/publications.json")
 
 
 def _rewrite_state_and_hash(docs: Path, name: str, payload: dict) -> None:

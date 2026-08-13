@@ -196,6 +196,16 @@ export function editorialLabel(item) {
   return item?.editorial_status === "needs_review" ? "Revisión pendiente" : "Completa";
 }
 
+// Las superficies públicas sólo pueden mostrar notas terminadas. Mantener esta
+// comprobación centralizada evita que una respuesta de archivo desactualizada
+// vuelva a exponer un registro que todavía requiere revisión editorial.
+export function isPublicEditorialItem(item, { allowLegacy = false } = {}) {
+  return isRecord(item)
+    && item.editorial_status === "complete"
+    && (item.extraction_status === "complete"
+      || (allowLegacy && item.extraction_status === undefined));
+}
+
 export function safeRelativePath(value) {
   if (typeof value !== "string" || !value || value.startsWith("/") || value.includes("..")) return "";
   if (/^[a-z][a-z\d+.-]*:/i.test(value)) return "";
@@ -203,6 +213,10 @@ export function safeRelativePath(value) {
 }
 
 export function stableDetailHref(item, from = "archivo") {
+  const detailData = safeRelativePath(item?.detail_data_url);
+  if (detailData) {
+    return `ficha.html?detail=${encodeURIComponent(detailData)}&from=${encodeURIComponent(from)}`;
+  }
   const stable = safeRelativePath(item?.detail_url);
   let base = stable;
   if (!base) {
@@ -211,6 +225,34 @@ export function stableDetailHref(item, from = "archivo") {
   }
   const separator = base.includes("?") ? "&" : "?";
   return `${base}${separator}from=${encodeURIComponent(from)}`;
+}
+
+export async function loadStructuredDetail(path, manifest = undefined) {
+  const safePath = safeRelativePath(path);
+  if (!safePath) throw new Error("Ruta de ficha estructurada inválida");
+
+  const resolvedManifest = manifest === undefined ? await loadManifest() : manifest;
+  if (!resolvedManifest) throw new Error("Una ficha estructurada requiere manifiesto v8");
+  if (!Object.prototype.hasOwnProperty.call(resolvedManifest.artifacts || {}, safePath)) {
+    throw new Error("La ficha estructurada no pertenece al manifiesto vigente");
+  }
+
+  const envelope = await fetchJson(safePath);
+  assertMatchingCut(resolvedManifest, envelope, "Ficha estructurada");
+  if (!isRecord(envelope) || Number(envelope.schema_version) !== 8) {
+    throw new Error("Contrato de ficha estructurada inválido");
+  }
+
+  const item = isRecord(envelope.item) ? envelope.item
+    : isRecord(envelope.publication) ? envelope.publication
+      : null;
+  const detail = isRecord(envelope.detail) ? envelope.detail
+    : isRecord(envelope.detail_data) ? envelope.detail_data
+      : (Array.isArray(envelope.executive_summary) ? envelope : null);
+  if (!item || !detail || !isPublicEditorialItem(item)) {
+    throw new Error("Ficha no disponible para publicación pública");
+  }
+  return { item, detail, envelope };
 }
 
 export async function loadManifest() {
@@ -246,7 +288,7 @@ export async function loadArchive({ month = "" } = {}) {
     const sources = sourceList(envelope).length ? sourceList(envelope) : sourceList(manifest);
     return {
       manifest,
-      items: itemList(envelope),
+      items: itemList(envelope).filter(isPublicEditorialItem),
       sources,
       loadedPaths: [initialPath],
       remainingPaths: olderArchivePaths(paths, initialPath),
@@ -261,7 +303,9 @@ export async function loadArchive({ month = "" } = {}) {
   if (!Array.isArray(payload.items)) throw new Error("Contrato de archivo inválido");
   return {
     manifest,
-    items: itemList(payload),
+    items: itemList(payload).filter((item) => isPublicEditorialItem(
+      item, { allowLegacy: !manifest && Number(payload.schema_version) === 7 },
+    )),
     sources: sourceList(payload),
     mode: "compatibility",
   };
@@ -276,7 +320,7 @@ export async function loadArchiveMonth(path, manifest = undefined) {
   const envelope = await fetchJson(path);
   assertMatchingCut(resolvedManifest, envelope, "Archivo mensual");
   if (!Array.isArray(envelope.items)) throw new Error("Contrato mensual inválido");
-  return itemList(envelope);
+  return itemList(envelope).filter(isPublicEditorialItem);
 }
 
 export async function loadItem({ key = "", id = "" } = {}, manifest = undefined) {

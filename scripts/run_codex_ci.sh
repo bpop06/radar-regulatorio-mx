@@ -124,6 +124,8 @@ run_python_gate() {
   .venv/bin/python -m ruff check . || return 1
   .venv/bin/python -m pytest || return 1
   .venv/bin/python -m app.cli collect --dry-run || return 1
+  .venv/bin/python -m app.cli export-site --help || return 1
+  jq -e '.publication_policy == "complete-only"' docs/data/manifest.json >/dev/null || return 1
   .venv/bin/python -m app.cli validate --input docs/data/publications.json --require-v8 \
     --max-age-hours 1.5 || return 1
   .venv/bin/python -m app.cli validate-calendars || return 1
