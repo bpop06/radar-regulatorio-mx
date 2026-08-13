@@ -242,5 +242,7 @@ function initNavigation() {
   });
 }
 
-initTheme();
-initNavigation();
+if (typeof document !== "undefined") {
+  initTheme();
+  initNavigation();
+}

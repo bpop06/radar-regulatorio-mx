@@ -5,10 +5,11 @@ import {
   renderMarkdown,
   renderSection,
   translateCaseStatus,
-} from "./markdown.js";
+} from "./markdown.js?v=20260812a";
 
 const elements = {
   back: document.querySelector("#detail-back"),
+  status: document.querySelector("#detail-status"),
   breadcrumb: document.querySelector("#detail-breadcrumb"),
   title: document.querySelector("#detail-title"),
   summary: document.querySelector("#detail-summary"),
@@ -84,6 +85,7 @@ function showMessage(title, message) {
   elements.summary.textContent = message;
   elements.breadcrumb.textContent = "Evidencia no disponible";
   elements.content.replaceChildren();
+  elements.status.textContent = title;
 }
 
 async function fetchOptionalEdition() {
@@ -154,6 +156,7 @@ async function loadDetail() {
       elements.officialSource.href = item.url;
       elements.officialSource.hidden = false;
     }
+    elements.status.textContent = "Ficha cargada.";
   } catch (error) {
     showMessage("No fue posible cargar la ficha", "Revisa que los datos publicados estén disponibles.");
     console.error(error);

@@ -3,7 +3,7 @@ import {
   formatDate,
   isSafeHttpUrl,
   mexicoToday,
-} from "./markdown.js";
+} from "./markdown.js?v=20260812a";
 
 const elements = {
   date: document.querySelector("#edition-date"),
@@ -11,6 +11,8 @@ const elements = {
   ready: document.querySelector("#edition-ready"),
   empty: document.querySelector("#edition-empty"),
   error: document.querySelector("#edition-error"),
+  status: document.querySelector("#edition-status"),
+  signalStatus: document.querySelector("#signal-status"),
   emptyLabel: document.querySelector("#empty-label"),
   emptyTitle: document.querySelector("#empty-title"),
   emptyCopy: document.querySelector("#empty-copy"),
@@ -38,27 +40,25 @@ const elements = {
 
 const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
 let editionData = null;
-let selectedIndex = 0;
+let transitionTimer = 0;
 
 const WATERCOLOR_INKS = [
-  ["comercio internacional", "#3f6e9f"],
-  ["comercio exterior", "#4f7f7c"],
-  ["fiscal", "#b18443"],
-  ["penal", "#a45b62"],
-  ["lavado", "#756a8b"],
-  ["legislativo", "#5577a2"],
-  ["descentralizada", "#9b6971"],
-  ["centralizada", "#73866f"],
+  ["comercio internacional", "oklch(55% 0.12 238)"],
+  ["comercio exterior", "oklch(53% 0.09 190)"],
+  ["fiscal", "oklch(58% 0.13 75)"],
+  ["penal", "oklch(55% 0.14 25)"],
+  ["lavado", "oklch(52% 0.10 305)"],
+  ["legislativo", "oklch(54% 0.11 250)"],
+  ["descentralizada", "oklch(55% 0.11 350)"],
+  ["centralizada", "oklch(52% 0.08 145)"],
 ];
-
-const CARD_TILTS = [-4.2, 2.6, -1.5, 3.8, -2.8, 1.6, -.7];
 
 function watercolorFor(signal) {
   const taxonomy = [signal?.category, ...(signal?.categories || []), signal?.jurisdiction]
     .filter(Boolean)
     .join(" ")
     .toLocaleLowerCase("es-MX");
-  return WATERCOLOR_INKS.find(([label]) => taxonomy.includes(label))?.[1] || "#54789b";
+  return WATERCOLOR_INKS.find(([label]) => taxonomy.includes(label))?.[1] || "oklch(54% 0.11 238)";
 }
 
 function showState(name) {
@@ -130,6 +130,7 @@ function renderPending(data) {
   }
   document.title = "Corte pendiente | Radar Regulatorio MX";
   showState("empty");
+  elements.status.textContent = "El corte de hoy está pendiente. Se muestra la última actualización verificada.";
   if (editionDate) renderCoverage(data);
 }
 
@@ -149,6 +150,7 @@ function renderEmpty(data) {
   }
   document.title = "Sin novedades hoy | Radar Regulatorio MX";
   showState("empty");
+  elements.status.textContent = "El corte de hoy fue publicado sin novedades seleccionadas.";
   renderCoverage(data);
 }
 
@@ -156,9 +158,8 @@ function signalLabel(signal) {
   return signal.issuing_body || signal.source || "Fuente oficial";
 }
 
-function selectSignal(index, { pointer = false, focus = false } = {}) {
+function selectSignal(index, { animate = false, focus = false, announce = false } = {}) {
   if (!editionData?.signals?.[index]) return;
-  selectedIndex = index;
   const signal = editionData.signals[index];
   const update = () => {
     elements.leadPanel.style.setProperty("--wash", watercolorFor(signal));
@@ -177,22 +178,25 @@ function selectSignal(index, { pointer = false, focus = false } = {}) {
     }
     elements.band.querySelectorAll(".signal-tab").forEach((button, buttonIndex) => {
       const active = buttonIndex === index;
-      button.setAttribute("aria-selected", String(active));
-      button.tabIndex = active ? 0 : -1;
+      button.setAttribute("aria-pressed", String(active));
       button.classList.toggle("is-active", active);
     });
-    elements.band.style.setProperty("--selected-index", String(index));
+    if (announce) {
+      elements.signalStatus.textContent = `Señal ${index + 1} de ${editionData.signals.length}: ${signal.title}.`;
+    }
   };
 
-  if (pointer && !reducedMotion) {
+  window.clearTimeout(transitionTimer);
+  if (animate && !reducedMotion) {
     elements.leadPanel.classList.add("is-leaving");
-    setTimeout(() => {
+    transitionTimer = window.setTimeout(() => {
       update();
       elements.leadPanel.classList.remove("is-leaving");
       elements.leadPanel.classList.add("is-entering");
-      setTimeout(() => elements.leadPanel.classList.remove("is-entering"), 260);
-    }, 150);
+      transitionTimer = window.setTimeout(() => elements.leadPanel.classList.remove("is-entering"), 220);
+    }, 110);
   } else {
+    elements.leadPanel.classList.remove("is-leaving", "is-entering");
     update();
   }
   if (focus) {
@@ -207,16 +211,14 @@ function buildBand(signals, editionDate) {
     const button = document.createElement("button");
     button.type = "button";
     button.className = "signal-tab";
-    button.setAttribute("role", "tab");
+    button.id = `signal-choice-${index + 1}`;
     button.setAttribute("aria-controls", "lead-panel");
-    button.setAttribute("aria-selected", String(index === 0));
+    button.setAttribute("aria-pressed", String(index === 0));
     button.setAttribute(
       "aria-label",
       `Señal ${signal.rank}: ${signal.title}. Importancia ${signal.importance} de 5.`,
     );
-    button.tabIndex = index === 0 ? 0 : -1;
     button.style.setProperty("--card-index", String(index));
-    button.style.setProperty("--card-tilt", `${CARD_TILTS[index] || 0}deg`);
     button.style.setProperty("--impact", String(Math.max(1, Math.min(5, Number(signal.importance) || 1))));
     button.style.setProperty("--wash", watercolorFor(signal));
 
@@ -237,7 +239,10 @@ function buildBand(signals, editionDate) {
     impact.className = "signal-tab-impact";
     impact.textContent = `${Number(signal.importance) || 0}/5`;
     button.append(rank, source, title, meter, impact);
-    button.addEventListener("click", (event) => selectSignal(index, { pointer: event.detail > 0 }));
+    button.addEventListener("click", (event) => selectSignal(index, {
+      animate: event.detail > 0,
+      announce: true,
+    }));
     button.addEventListener("keydown", (event) => {
       let next = null;
       if (event.key === "ArrowRight" || event.key === "ArrowDown") next = (index + 1) % signals.length;
@@ -246,7 +251,7 @@ function buildBand(signals, editionDate) {
       if (event.key === "End") next = signals.length - 1;
       if (next === null) return;
       event.preventDefault();
-      selectSignal(next, { focus: true });
+      selectSignal(next, { focus: true, announce: true });
     });
     elements.band.append(button);
   });
@@ -352,7 +357,6 @@ function renderReady(data) {
   const signals = Array.isArray(data.signals) ? data.signals : [];
   if (!signals.length) throw new Error("Una edición ready debe contener señales");
   editionData = data;
-  selectedIndex = 0;
   elements.date.textContent = `Hoy · ${formatDate(data.edition_date)}`;
   elements.total.textContent = `${data.total_today} novedades · ${signals.length} seleccionadas`;
   elements.archiveToday.href = `archivo.html?fecha=${encodeURIComponent(data.edition_date)}`;
@@ -362,6 +366,7 @@ function renderReady(data) {
   renderCoverage(data);
   document.title = `Hoy, ${formatDate(data.edition_date, { short: true })} | Radar Regulatorio MX`;
   showState("ready");
+  elements.status.textContent = `Corte del ${formatDate(data.edition_date)}: ${signals.length} señales priorizadas.`;
 }
 
 function validateEnvelope(data) {
@@ -375,6 +380,7 @@ function validateEnvelope(data) {
 
 async function loadEdition() {
   showState("loading");
+  elements.status.textContent = "Cargando el corte diario.";
   try {
     const response = await fetch("data/edition.json", { cache: "no-store" });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
@@ -390,6 +396,7 @@ async function loadEdition() {
     }
   } catch (error) {
     showState("error");
+    elements.status.textContent = "No fue posible comprobar el corte. Puedes reintentar o consultar el archivo.";
     elements.coverageLabel.textContent = "Cobertura no verificada";
     elements.coverageCopy.textContent = "No fue posible leer el estado de las fuentes.";
     console.error(error);

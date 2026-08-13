@@ -1,4 +1,4 @@
-import { detailHref, formatDate } from "./markdown.js";
+import { detailHref, formatDate } from "./markdown.js?v=20260812a";
 
 const ARCHIVE_WATERCOLORS = ["#54789b", "#73866f", "#b18443", "#9b6971", "#756a8b"];
 const ARCHIVE_TILTS = [-.6, .45, -.25, .7, -.4, .3];
@@ -33,6 +33,7 @@ const elements = {
   count: document.querySelector("#result-count"),
   list: document.querySelector("#archive-list"),
   empty: document.querySelector("#archive-empty"),
+  retry: document.querySelector("#retry-archive"),
   pagination: document.querySelector("#pagination"),
   prev: document.querySelector("#page-prev"),
   next: document.querySelector("#page-next"),
@@ -230,6 +231,7 @@ function render() {
   revealArchiveCards();
   elements.count.textContent = filtered.length === 1 ? "1 publicación" : `${filtered.length} publicaciones`;
   elements.empty.hidden = filtered.length !== 0;
+  elements.retry.hidden = true;
   elements.pagination.hidden = filtered.length <= PAGE_SIZE;
   elements.pageIndicator.textContent = `Página ${state.page} de ${totalPages}`;
   elements.prev.disabled = state.page <= 1;
@@ -293,6 +295,7 @@ function bind() {
     if (mobileFilters.matches) elements.filterDrawer.open = false;
     render();
   });
+  elements.retry.addEventListener("click", () => location.reload());
   elements.prev.addEventListener("click", () => {
     state.page = Math.max(1, state.page - 1);
     render();
@@ -336,6 +339,8 @@ async function init() {
     elements.list.replaceChildren();
     elements.empty.hidden = false;
     elements.empty.querySelector("h3").textContent = "No fue posible cargar el archivo.";
+    elements.empty.querySelector("p").textContent = "Comprueba tu conexión y vuelve a intentar la carga.";
+    elements.retry.hidden = false;
     elements.count.textContent = "Datos no disponibles";
     console.error(error);
   }

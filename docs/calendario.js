@@ -2,9 +2,11 @@
  * Reglas: sábados/domingos inhábiles SIEMPRE (derivados en cliente); los días del
  * JSON pintan su estado encima; el resto son hábiles. Un calendario por órgano. */
 
-import { isSafeHttpUrl, mexicoToday } from "./markdown.js";
+import { weekBoundaryDay } from "./calendar-core.js?v=20260812a";
+import { isSafeHttpUrl, mexicoToday } from "./markdown.js?v=20260812a";
 
 const RM = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const mobileSheetMedia = window.matchMedia("(max-width: 760px)");
 
 const monthNamesFull = [
   "enero", "febrero", "marzo", "abril", "mayo", "junio",
@@ -20,6 +22,7 @@ const el = {
   chips: document.querySelector("#organ-chips"),
   chipIndicator: document.querySelector("#organ-chips .filter-indicator"),
   select: document.querySelector("#organ-select"),
+  tabpanel: document.querySelector("#organ-calendar-panel"),
   subhead: document.querySelector("#organ-subhead"),
   grid: document.querySelector("#cal-grid"),
   sweep: document.querySelector("#cal-sweep"),
@@ -28,6 +31,8 @@ const el = {
   next: document.querySelector("#cal-next"),
   today: document.querySelector("#cal-today"),
   panel: document.querySelector("#day-panel"),
+  panelContent: document.querySelector("#day-panel-content"),
+  status: document.querySelector("#calendar-status"),
   scrim: document.querySelector("#day-scrim"),
   reading: document.querySelector("#reading-restantes"),
   readingLabel: document.querySelector("#reading-label"),
@@ -41,6 +46,9 @@ const store = {
   month: 6, // julio por defecto (índice 0-based)
   selectedDate: null,
 };
+
+let sheetTrigger = null;
+let inertedOutside = [];
 
 /* ------------------------------------------------------------ utilidades fecha */
 function pad2(n) { return String(n).padStart(2, "0"); }
@@ -114,17 +122,21 @@ function statusLabel(status) {
 /* ------------------------------------------------------------ selector de órgano */
 function renderOrganSelector() {
   // chips
-  for (const organ of store.organs) {
+  store.organs.forEach((organ, index) => {
     const chip = document.createElement("button");
     chip.type = "button";
     chip.className = "organ-chip";
+    chip.id = `organ-tab-${index + 1}`;
     chip.dataset.organ = organ.id;
     chip.setAttribute("role", "tab");
+    chip.setAttribute("aria-controls", el.tabpanel.id);
+    chip.setAttribute("aria-selected", "false");
+    chip.tabIndex = -1;
     chip.textContent = organ.id.toUpperCase();
     chip.title = organ.name;
     chip.addEventListener("click", () => selectOrgan(organ.id));
     el.chips.append(chip);
-  }
+  });
   // select (móvil)
   el.select.replaceChildren();
   for (const organ of store.organs) {
@@ -135,10 +147,46 @@ function renderOrganSelector() {
 
 function syncOrganActive() {
   el.chips.querySelectorAll(".organ-chip").forEach((chip) => {
-    chip.classList.toggle("active", chip.dataset.organ === store.selectedOrgan);
-    chip.setAttribute("aria-selected", String(chip.dataset.organ === store.selectedOrgan));
+    const active = chip.dataset.organ === store.selectedOrgan;
+    chip.classList.toggle("active", active);
+    chip.setAttribute("aria-selected", String(active));
+    chip.tabIndex = active ? 0 : -1;
+    if (active) el.tabpanel.setAttribute("aria-labelledby", chip.id);
   });
   if (el.select.value !== store.selectedOrgan) el.select.value = store.selectedOrgan;
+}
+
+function initOrganTabs() {
+  el.chips.addEventListener("keydown", (event) => {
+    const tabs = Array.from(el.chips.querySelectorAll('[role="tab"]'));
+    const currentIndex = tabs.indexOf(event.target);
+    if (currentIndex < 0 || !tabs.length) return;
+
+    let nextIndex;
+    switch (event.key) {
+      case "ArrowRight":
+      case "ArrowDown":
+        nextIndex = (currentIndex + 1) % tabs.length;
+        break;
+      case "ArrowLeft":
+      case "ArrowUp":
+        nextIndex = (currentIndex - 1 + tabs.length) % tabs.length;
+        break;
+      case "Home":
+        nextIndex = 0;
+        break;
+      case "End":
+        nextIndex = tabs.length - 1;
+        break;
+      default:
+        return;
+    }
+
+    event.preventDefault();
+    const nextTab = tabs[nextIndex];
+    nextTab.focus();
+    selectOrgan(nextTab.dataset.organ);
+  });
 }
 
 function renderSubhead() {
@@ -237,6 +285,8 @@ function renderMonth() {
     cell.dataset.cell = "";
     cell.style.setProperty("--ci", lead + d - 1);
     cell.setAttribute("role", "gridcell");
+    cell.setAttribute("aria-controls", "day-panel");
+    if (mobileSheetMedia.matches) cell.setAttribute("aria-haspopup", "dialog");
     cell.setAttribute(
       "aria-label",
       `${dowNamesLower[dow]} ${d} de ${monthNamesFull[m]}, ${statusLabel(info.status)}` +
@@ -355,20 +405,17 @@ function selectOrgan(id) {
 }
 
 /* ------------------------------------------------------------ panel de día */
-function isDesktop() { return window.matchMedia("(min-width: 940px)").matches; }
-
-function selectDay(iso, cell) {
+function selectDay(iso, cell, triggerElement = cell || document.activeElement) {
+  const selectedCell = cell || el.grid.querySelector(`[data-date="${iso}"]`);
   store.selectedDate = iso;
   el.grid.querySelectorAll(".cal-day").forEach((c) => {
     const on = c.dataset.date === iso;
     c.classList.toggle("is-selected", on);
     c.setAttribute("aria-selected", String(on));
+    c.tabIndex = c === selectedCell ? 0 : -1;
   });
-  if (cell) {
-    el.grid.querySelectorAll(".cal-day").forEach((c) => (c.tabIndex = c === cell ? 0 : -1));
-  }
   renderPanel(iso);
-  if (!isDesktop()) openSheet();
+  if (mobileSheetMedia.matches) openSheet(triggerElement);
 }
 
 function renderPanel(iso) {
@@ -378,20 +425,22 @@ function renderPanel(iso) {
   const organ = store.organs.find((o) => o.id === store.selectedOrgan);
 
   el.panel.classList.remove("empty");
-  el.panel.replaceChildren();
+  el.panelContent.replaceChildren();
 
   const close = document.createElement("button");
   close.className = "dp-close";
   close.type = "button";
+  close.hidden = !mobileSheetMedia.matches;
   close.setAttribute("aria-label", "Cerrar detalle");
   close.textContent = "✕";
   close.addEventListener("click", closeSheet);
-  el.panel.append(close);
+  el.panelContent.append(close);
 
   const dateEl = document.createElement("p");
+  dateEl.id = "day-panel-title";
   dateEl.className = "dp-date tabular";
   dateEl.textContent = `${dowNamesUpper[dow]} ${monoDate(iso)}`;
-  el.panel.append(dateEl);
+  el.panelContent.append(dateEl);
 
   const pillRow = document.createElement("div");
   const pill = document.createElement("span");
@@ -412,18 +461,18 @@ function renderPanel(iso) {
     pending.textContent = "Acuerdo pendiente de publicación en el DOF";
     pillRow.append(pending);
   }
-  el.panel.append(pillRow);
+  el.panelContent.append(pillRow);
 
   if (info.reason) {
     const reason = document.createElement("p");
     reason.className = "dp-reason";
     reason.textContent = info.reason;
-    el.panel.append(reason);
+    el.panelContent.append(reason);
   } else if (info.status === "habil") {
     const reason = document.createElement("p");
     reason.className = "dp-reason";
     reason.textContent = `Día hábil para ${organ ? organ.name : "el órgano"}.`;
-    el.panel.append(reason);
+    el.panelContent.append(reason);
   }
 
   // Contrato v6: el texto del acuerdo publicado es la fuente principal; el sitio web
@@ -435,7 +484,7 @@ function renderPanel(iso) {
     label.className = "dp-acuerdo-label";
     label.textContent = "Fuente principal";
     acuerdo.append(label, document.createTextNode(info.acuerdo));
-    el.panel.append(acuerdo);
+    el.panelContent.append(acuerdo);
   }
 
   if (isSafeHttpUrl(info.source_url)) {
@@ -447,7 +496,7 @@ function renderPanel(iso) {
     a.rel = "noopener noreferrer";
     a.textContent = info.acuerdo ? "Confirmación en sitio oficial ↗" : "Ver fuente oficial ↗";
     src.append(a);
-    el.panel.append(src);
+    el.panelContent.append(src);
   }
 
   if (info.guardia) {
@@ -457,7 +506,7 @@ function renderPanel(iso) {
     label.className = "dp-guardia-label";
     label.textContent = "Guardia: ";
     guardia.append(label, document.createTextNode(info.guardia_detalle || "Guardia activa este día."));
-    el.panel.append(guardia);
+    el.panelContent.append(guardia);
 
     // F2#14 (v7 QA): la guardia no habilita el día para el cómputo de plazos — enlaza
     // a la guía (docs/GUARDIAS.md, servida en guardias.html) para que quede claro.
@@ -467,14 +516,14 @@ function renderPanel(iso) {
     guideAnchor.href = "guardias.html";
     guideAnchor.textContent = "Ver guía de guardias y plazos →";
     guideLink.append(guideAnchor);
-    el.panel.append(guideLink);
+    el.panelContent.append(guideLink);
   }
 
   if (info.analysis) {
     const analysis = document.createElement("p");
     analysis.className = "dp-analysis";
     analysis.textContent = info.analysis;
-    el.panel.append(analysis);
+    el.panelContent.append(analysis);
   }
 
   const note = document.createElement("p");
@@ -482,19 +531,134 @@ function renderPanel(iso) {
   if (info.weekend) note.textContent = "Regla general: fines de semana inhábiles.";
   else if (info.derived && info.status === "habil") note.textContent = "Sin suspensión ni receso registrado para este día.";
   else note.textContent = "Estado tomado del calendario oficial del órgano.";
-  el.panel.append(note);
+  el.panelContent.append(note);
+  const organLabel = organ ? `${organ.id.toUpperCase()}, ` : "";
+  el.status.textContent = `${organLabel}${d} de ${monthNamesFull[m - 1]}: ${statusLabel(info.status)}` +
+    (info.guardia ? ", con guardia." : ".");
   // F2#13 (v7 QA): el panel del día tardaba ~1s en aparecer por el stagger de
   // entrada (opacidad 0 + retraso por hijo antes de esta línea). Se quita: el panel
   // debe quedar visible de inmediato al seleccionar un día.
 }
 
-function openSheet() {
-  el.panel.classList.add("sheet-open");
-  el.scrim.classList.add("show");
+function setOutsideInert() {
+  inertedOutside = [];
+  let branch = el.panel;
+
+  while (branch && branch !== document.body) {
+    const parent = branch.parentElement;
+    if (!parent) break;
+    for (const sibling of parent.children) {
+      if (sibling === branch || sibling === el.scrim || sibling.inert) continue;
+      sibling.inert = true;
+      inertedOutside.push(sibling);
+    }
+    branch = parent;
+  }
 }
+
+function restoreOutside() {
+  inertedOutside.forEach((element) => {
+    element.inert = false;
+  });
+  inertedOutside = [];
+}
+
+function focusableSheetElements() {
+  return Array.from(el.panel.querySelectorAll(
+    'a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), ' +
+    'textarea:not([disabled]), [tabindex]:not([tabindex="-1"]), [contenteditable="true"]',
+  )).filter((element) => !element.hidden && element.getAttribute("aria-hidden") !== "true");
+}
+
+function setPanelAvailable(available) {
+  el.panel.inert = !available;
+  if (available) el.panel.removeAttribute("aria-hidden");
+  else el.panel.setAttribute("aria-hidden", "true");
+}
+
+function openSheet(trigger) {
+  if (!mobileSheetMedia.matches) return;
+  const wasOpen = el.panel.classList.contains("sheet-open");
+  if (!wasOpen) {
+    const selectedCell = el.grid.querySelector(`[data-date="${store.selectedDate}"]`);
+    sheetTrigger = trigger instanceof HTMLElement && trigger !== document.body &&
+      !el.panel.contains(trigger) ? trigger : selectedCell;
+  }
+
+  setPanelAvailable(true);
+  el.panel.classList.add("sheet-open");
+  el.panel.setAttribute("role", "dialog");
+  el.panel.setAttribute("aria-modal", "true");
+  el.panel.setAttribute("aria-labelledby", "day-panel-title");
+  el.scrim.classList.add("show");
+  document.body.classList.add("calendar-sheet-open");
+  if (!wasOpen) setOutsideInert();
+
+  const initialFocus = el.panel.querySelector(".dp-close") || el.panel;
+  if (initialFocus === el.panel) el.panel.tabIndex = -1;
+  initialFocus.focus({ preventScroll: true });
+}
+
 function closeSheet() {
+  const wasOpen = el.panel.classList.contains("sheet-open");
   el.panel.classList.remove("sheet-open");
+  el.panel.removeAttribute("role");
+  el.panel.removeAttribute("aria-modal");
+  el.panel.removeAttribute("aria-labelledby");
+  el.panel.removeAttribute("tabindex");
   el.scrim.classList.remove("show");
+  document.body.classList.remove("calendar-sheet-open");
+  restoreOutside();
+
+  const trigger = sheetTrigger;
+  sheetTrigger = null;
+  if (wasOpen) {
+    const selectedCell = el.grid.querySelector(`[data-date="${store.selectedDate}"]`);
+    const focusTarget = trigger && trigger.isConnected ? trigger : selectedCell || el.today;
+    focusTarget.focus({ preventScroll: true });
+  }
+  setPanelAvailable(!mobileSheetMedia.matches);
+}
+
+function handleSheetKeydown(event) {
+  if (!mobileSheetMedia.matches || !el.panel.classList.contains("sheet-open")) return;
+
+  if (event.key === "Escape") {
+    event.preventDefault();
+    event.stopPropagation();
+    closeSheet();
+    return;
+  }
+  if (event.key !== "Tab") return;
+
+  const focusable = focusableSheetElements();
+  if (!focusable.length) {
+    event.preventDefault();
+    el.panel.focus({ preventScroll: true });
+    return;
+  }
+
+  const first = focusable[0];
+  const last = focusable[focusable.length - 1];
+  const current = document.activeElement;
+  if (event.shiftKey && (current === first || !el.panel.contains(current))) {
+    event.preventDefault();
+    last.focus();
+  } else if (!event.shiftKey && (current === last || !el.panel.contains(current))) {
+    event.preventDefault();
+    first.focus();
+  }
+}
+
+function handleSheetBreakpoint(event) {
+  const close = el.panel.querySelector(".dp-close");
+  if (close) close.hidden = !event.matches;
+  el.grid.querySelectorAll(".cal-day").forEach((cell) => {
+    if (event.matches) cell.setAttribute("aria-haspopup", "dialog");
+    else cell.removeAttribute("aria-haspopup");
+  });
+  if (!event.matches) closeSheet();
+  else if (!el.panel.classList.contains("sheet-open")) setPanelAvailable(false);
 }
 
 /* ------------------------------------------------------------ teclado */
@@ -510,8 +674,19 @@ function initKeyboard() {
       case "ArrowLeft": next = Math.max(0, idx - 1); break;
       case "ArrowDown": next = Math.min(cells.length - 1, idx + 7); break;
       case "ArrowUp": next = Math.max(0, idx - 7); break;
-      case "Home": next = idx - (idx % 7); break;
-      case "End": next = Math.min(cells.length - 1, idx - (idx % 7) + 6); break;
+      case "Home":
+      case "End": {
+        const day = Number(current.dataset.date.slice(-2));
+        const leadingPads = mondayIndex(dowOf(calendarYear, store.month, 1));
+        const targetDay = weekBoundaryDay(
+          day,
+          leadingPads,
+          cells.length,
+          event.key === "Home" ? "start" : "end",
+        );
+        next = targetDay - 1;
+        break;
+      }
       case "Enter":
       case " ":
         event.preventDefault();
@@ -537,6 +712,7 @@ function initLegend() {
 
 /* ------------------------------------------------------------ init */
 async function init() {
+  setPanelAvailable(!mobileSheetMedia.matches);
   el.prev.addEventListener("click", () => changeMonth(-1));
   el.next.addEventListener("click", () => changeMonth(1));
   el.today.addEventListener("click", () => {
@@ -546,9 +722,16 @@ async function init() {
       store.month = targetMonth;
       runWithViewTransition(() => renderMonth());
     }
-    if (t.y === calendarYear) selectDay(t.iso, null);
+    if (t.y === calendarYear) selectDay(t.iso, null, el.today);
   });
   el.scrim.addEventListener("click", closeSheet);
+  document.addEventListener("keydown", handleSheetKeydown, true);
+  if (typeof mobileSheetMedia.addEventListener === "function") {
+    mobileSheetMedia.addEventListener("change", handleSheetBreakpoint);
+  } else {
+    mobileSheetMedia.addListener(handleSheetBreakpoint);
+  }
+  initOrganTabs();
   initKeyboard();
   initLegend();
 
@@ -581,6 +764,7 @@ async function init() {
     msg.className = "dp-note";
     msg.textContent = "No fue posible cargar los calendarios.";
     el.grid.append(msg);
+    el.status.textContent = "No fue posible cargar los calendarios. Intenta recargar la página.";
     console.error(error);
   }
 }
