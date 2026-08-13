@@ -5,7 +5,7 @@ import re
 from dataclasses import dataclass, field
 from datetime import date
 from email.utils import parsedate_to_datetime
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlsplit
 from xml.etree import ElementTree
 
 from bs4 import BeautifulSoup
@@ -28,6 +28,10 @@ ITEM_BLOCK_RE = re.compile(rb"<item>\s*.*?</item>", re.DOTALL)
 # declaran en la raíz <rss> del feed, no en cada <item>, así que el bloque
 # aislado no puede resolverlos y ElementTree falla con "unbound prefix".
 NAMESPACE_PREFIX_RE = re.compile(rb"<(/?)[A-Za-z0-9._-]+:")
+ICJ_CASE_PATH_RE = re.compile(
+    r"^/sites/default/files/case-related/(?P<number>[1-9]\d{0,3})/[^/]+\.pdf$",
+    re.IGNORECASE,
+)
 
 ICC_CASE_NUMBER_RE = re.compile(r"\bICC-\d{2}/\d{2}(?:-\d{2}/\d{2})?\b", re.IGNORECASE)
 ICC_PARTIES_RE = re.compile(
@@ -281,7 +285,7 @@ class CijCollector(Collector):
             url = urljoin(cls.url, str(number_anchor.get("href")))
             source_id = re.sub(r"^Press release No\.\s*", "", number, flags=re.IGNORECASE)
             description = f"{number}. {title}"
-            case = _extract_case_metadata(cls.source, title, description)
+            case = _extract_cij_case(title, description, url)
             candidates.append(
                 Candidate(
                     source=cls.source,
@@ -392,17 +396,25 @@ def _extract_case_metadata(source: str, title: str, description: str) -> Extract
     return ExtractedCase()
 
 
-def _extract_cij_case(title: str, description: str) -> ExtractedCase:
+def _extract_cij_case(
+    title: str,
+    description: str,
+    official_url: str = "",
+) -> ExtractedCase:
     # Las carátulas oficiales de la CIJ terminan en ``(Estado A v. Estado B)``.
     # No se interpreta el objeto de la controversia: se conserva literalmente
     # el texto anterior a la carátula y la actuación posterior al guión.
+    case_number = _icj_case_number_from_official_url(official_url)
     caption = re.search(
         r"\((?P<parties>[^()]{2,200}\bv\.?\s+[^()]{2,200})\)",
         title,
         flags=re.IGNORECASE,
     )
     if caption is None:
-        return ExtractedCase()
+        return ExtractedCase(
+            number=case_number,
+            evidence={"case_number": case_number} if case_number else {},
+        )
 
     parties = clean_text(caption.group("parties"))
     claim = clean_text(title[: caption.start()].strip(" -"))
@@ -419,6 +431,8 @@ def _extract_cij_case(title: str, description: str) -> ExtractedCase:
         "case_caption": clean_text(caption.group(0)),
         "litis": claim,
     }
+    if case_number:
+        evidence["case_number"] = case_number
     if procedure:
         evidence["procedural_update"] = procedure
     if outcome:
@@ -428,6 +442,7 @@ def _extract_cij_case(title: str, description: str) -> ExtractedCase:
     if amount:
         evidence["amount"] = amount
     return ExtractedCase(
+        number=case_number,
         parties=parties,
         claim=claim,
         status=status,
@@ -435,6 +450,24 @@ def _extract_cij_case(title: str, description: str) -> ExtractedCase:
         amount=amount,
         evidence=evidence,
     )
+
+
+def _icj_case_number_from_official_url(value: str) -> str:
+    """Return the docket path segment only for an official CIJ case PDF URL."""
+
+    try:
+        parts = urlsplit(value)
+    except ValueError:
+        return ""
+    if parts.scheme != "https" or (parts.hostname or "").casefold() not in {
+        "icj-cij.org",
+        "www.icj-cij.org",
+    }:
+        return ""
+    match = ICJ_CASE_PATH_RE.fullmatch(parts.path)
+    if match is None:
+        return ""
+    return match.group("number")
 
 
 def _extract_cpi_case(title: str, description: str) -> ExtractedCase:

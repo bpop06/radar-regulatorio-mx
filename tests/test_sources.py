@@ -640,6 +640,8 @@ def test_cij_html_parser_extracts_candidate_and_filters_by_since():
     )
     assert item.source_id == "2026/20"
     assert item.url.endswith("/sites/default/files/case-related/200/release-en.pdf")
+    assert item.case_number == "200"
+    assert item.official_evidence == {"case_number": "200"}
     assert item.published_at == date(2026, 7, 21)
     assert "<" not in item.description
     assert not item.case_parties
@@ -667,14 +669,15 @@ def test_cij_parser_splits_caption_litis_outcome_and_terminal_status_literally()
     item = CijCollector.parse(ICJ_CASE_HTML, date(2026, 7, 1))[0]
 
     assert item.case_parties == "Sudan v. United Arab Emirates"
+    assert item.case_number == "193"
     assert item.case_claim == "Application of the Genocide Convention in Sudan"
     assert item.case_outcome == (
         "The Court rejects the Request for provisional measures and removes the case "
         "from its List"
     )
     assert item.case_status == "removes the case from its List"
-    assert not item.case_number
     assert not item.case_amount
+    assert item.official_evidence["case_number"] == "193"
     assert item.official_evidence["case_caption"] == "(Sudan v. United Arab Emirates)"
     assert item.official_evidence["litis"] == item.case_claim
     assert item.official_evidence["outcome"] == item.case_outcome
@@ -703,12 +706,34 @@ def test_cij_parser_keeps_procedural_update_as_status_without_inventing_outcome(
     item = CijCollector.parse(ICJ_PENDING_CASE_HTML, date(2026, 7, 1))[0]
 
     assert item.case_parties == "Nicaragua v. Germany"
+    assert item.case_number == "193"
     assert item.case_claim.startswith("Alleged Breaches")
     assert item.case_status == (
         "Preliminary objections raised by Germany - Public hearings to be held from "
         "Monday 7 to Thursday 10 September 2026"
     )
     assert not item.case_outcome
+
+
+@pytest.mark.parametrize(
+    "href",
+    (
+        "https://example.test/sites/default/files/case-related/193/file.pdf",
+        "/sites/default/files/not-case-related/193/file.pdf",
+        "/sites/default/files/case-related/press-release-193/file.pdf",
+        "/sites/default/files/case-related/193/file.html",
+    ),
+)
+def test_cij_parser_does_not_infer_case_number_from_non_official_or_non_case_url(href):
+    payload = ICJ_CASE_HTML.replace(
+        "/sites/default/files/case-related/193/193-20260801-pre-01-00-en.pdf",
+        href,
+    )
+
+    item = CijCollector.parse(payload, date(2026, 7, 1))[0]
+
+    assert not item.case_number
+    assert "case_number" not in item.official_evidence
 
 
 # --- Diputados: anexos de la Gaceta Parlamentaria -------------------------
