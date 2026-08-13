@@ -1,4 +1,12 @@
-const THEME_COLORS = { light: "#F4EDDD", dark: "#152630" };
+import { appendIcon, hydrateIcons } from "./icons.js?v=20260812b";
+import { createLiquidMove } from "./motion.js?v=20260812b";
+
+const THEME_COLORS = { light: "#F6F5F1", dark: "#101827" };
+const DATE_UNAVAILABLE = "Fecha no disponible";
+const ISO_DATE_PATTERN = /^(\d{4})-(\d{2})-(\d{2})$/;
+const ISO_INSTANT_PATTERN =
+  /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(?::\d{2}(?:\.\d+)?)?(?:Z|[+-]\d{2}:\d{2})$/i;
+const MEXICO_CITY_TIME_ZONE = "America/Mexico_City";
 const CASE_STATUS_LABELS = {
   Pending: "Pendiente",
   Concluded: "Concluido",
@@ -15,16 +23,71 @@ export function translateCaseStatus(status) {
   return CASE_STATUS_LABELS[key] || key;
 }
 
-export function formatDate(iso, options = {}) {
-  if (typeof iso !== "string" || !/^\d{4}-\d{2}-\d{2}/.test(iso)) return "—";
-  const [year, month, day] = iso.slice(0, 10).split("-").map(Number);
+export function normalizeIsoDate(value) {
+  if (typeof value !== "string") return null;
+  const candidate = value.trim();
+  if (!ISO_DATE_PATTERN.test(candidate)) return null;
+  const instant = new Date(`${candidate}T00:00:00.000Z`);
+  if (Number.isNaN(instant.getTime()) || instant.toISOString().slice(0, 10) !== candidate) {
+    return null;
+  }
+  return candidate;
+}
+
+export function datePresentation(value, options = {}) {
+  const type = options.type === "datetime" ? "datetime" : "date";
+  if (type === "datetime") {
+    const candidate = typeof value === "string" ? value.trim() : "";
+    if (!ISO_INSTANT_PATTERN.test(candidate)) {
+      return { dateTime: null, label: DATE_UNAVAILABLE };
+    }
+    const instant = new Date(candidate);
+    if (Number.isNaN(instant.getTime())) {
+      return { dateTime: null, label: DATE_UNAVAILABLE };
+    }
+    const label = new Intl.DateTimeFormat("es-MX", {
+      dateStyle: options.short ? "medium" : "long",
+      timeStyle: "short",
+      timeZone: MEXICO_CITY_TIME_ZONE,
+    }).format(instant);
+    return {
+      dateTime: instant.toISOString(),
+      label: options.zoneLabel === false ? label : `${label} CDMX`,
+    };
+  }
+
+  const normalized = normalizeIsoDate(value);
+  if (!normalized) return { dateTime: null, label: DATE_UNAVAILABLE };
+  const [year, month, day] = normalized.split("-").map(Number);
   const date = new Date(Date.UTC(year, month - 1, day, 12));
-  return new Intl.DateTimeFormat("es-MX", {
-    day: "numeric",
-    month: options.short ? "short" : "long",
-    year: options.year === false ? undefined : "numeric",
-    timeZone: "UTC",
-  }).format(date);
+  return {
+    dateTime: normalized,
+    label: new Intl.DateTimeFormat("es-MX", {
+      day: "numeric",
+      month: options.short ? "short" : "long",
+      year: options.year === false ? undefined : "numeric",
+      timeZone: "UTC",
+    }).format(date),
+  };
+}
+
+export function formatDate(iso, options = {}) {
+  return datePresentation(iso, options).label;
+}
+
+export function formatDateTime(iso, options = {}) {
+  return datePresentation(iso, { ...options, type: "datetime" }).label;
+}
+
+export function createTime(value, options = {}, ownerDocument = globalThis.document) {
+  if (!ownerDocument || typeof ownerDocument.createElement !== "function") {
+    throw new TypeError("createTime requires a document");
+  }
+  const presentation = datePresentation(value, options);
+  const element = ownerDocument.createElement(presentation.dateTime ? "time" : "span");
+  element.textContent = presentation.label;
+  if (presentation.dateTime) element.setAttribute("datetime", presentation.dateTime);
+  return element;
 }
 
 export function mexicoToday() {
@@ -85,11 +148,11 @@ function appendInline(container, text) {
       link.target = "_blank";
       link.rel = "noopener noreferrer";
       link.textContent = token.value;
-      const arrow = document.createElement("span");
-      arrow.className = "external-arrow";
-      arrow.setAttribute("aria-hidden", "true");
-      arrow.textContent = " ↗";
-      link.append(arrow);
+      appendIcon(link, "external", { className: "rr-icon external-arrow" });
+      const notice = document.createElement("span");
+      notice.className = "sr-only";
+      notice.textContent = " (se abre en una pestaña nueva)";
+      link.append(notice);
       container.append(link);
     } else {
       container.append(document.createTextNode(token.value));
@@ -119,12 +182,28 @@ export function renderMarkdown(markdown, container) {
       container.append(node);
       continue;
     }
+    if (/^(-{3,}|\*{3,})$/.test(block)) {
+      container.append(document.createElement("hr"));
+      continue;
+    }
     if (block.startsWith("- ")) {
       const list = document.createElement("ul");
       for (const line of block.split("\n")) {
         if (!line.startsWith("- ")) continue;
         const item = document.createElement("li");
         appendInline(item, line.slice(2).trim());
+        list.append(item);
+      }
+      container.append(list);
+      continue;
+    }
+    if (/^\d+\.\s/.test(block)) {
+      const list = document.createElement("ol");
+      for (const line of block.split("\n")) {
+        const itemMatch = /^\d+\.\s+(.+)$/.exec(line);
+        if (!itemMatch) continue;
+        const item = document.createElement("li");
+        appendInline(item, itemMatch[1]);
         list.append(item);
       }
       container.append(list);
@@ -223,10 +302,10 @@ function initTheme() {
   if (!button) return;
   const sync = () => {
     const theme = resolveTheme(document.documentElement.dataset.theme);
-    button.setAttribute("aria-label", theme === "dark" ? "Usar tema claro" : "Usar tema oscuro");
-    button.setAttribute("aria-pressed", String(theme === "dark"));
-    const glyph = button.querySelector(".theme-glyph");
-    if (glyph) glyph.textContent = theme === "dark" ? "☀" : "☾";
+    const label = theme === "dark" ? "Cambiar a tema claro" : "Cambiar a tema oscuro";
+    button.setAttribute("aria-label", label);
+    button.title = label;
+    button.dataset.themeState = theme;
     syncThemeColor(theme);
   };
   button.addEventListener("click", () => {
@@ -258,9 +337,26 @@ function initNavigation() {
     if (active) link.setAttribute("aria-current", "page");
     else link.removeAttribute("aria-current");
   });
+  const navigation = document.querySelector(".nav-links[data-liquid-group]");
+  if (navigation) {
+    const liquid = createLiquidMove(navigation, { activeSelector: ".nav-link.is-active" });
+    navigation.addEventListener("pointerover", (event) => {
+      const link = event.target.closest?.(".nav-link");
+      if (link) liquid.moveTo(link);
+    });
+    navigation.addEventListener("pointerleave", () => liquid.sync());
+    navigation.addEventListener("focusin", (event) => {
+      const link = event.target.closest?.(".nav-link");
+      if (link) liquid.moveTo(link);
+    });
+    navigation.addEventListener("focusout", (event) => {
+      if (!navigation.contains(event.relatedTarget)) liquid.sync();
+    });
+  }
 }
 
 if (typeof document !== "undefined") {
+  hydrateIcons(document);
   initTheme();
   initNavigation();
 }

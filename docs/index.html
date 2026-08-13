@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="La edición diaria del Radar Regulatorio MX: las señales jurídicas y regulatorias que merecen atención hoy, con fuente oficial.">
     <title>Hoy | Radar Regulatorio MX</title>
-    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#F4EDDD">
-    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#152630">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#F6F5F1">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#101827">
     <script>
       (function () {
         document.documentElement.classList.add("js");
@@ -18,8 +18,8 @@
     </script>
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="preload" href="fonts/fraunces-variable-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="styles.css?v=20260812a">
-    <script type="module" src="app.js?v=20260812a"></script>
+    <link rel="stylesheet" href="styles.css?v=20260812b">
+    <script type="module" src="app.js?v=20260812b"></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Saltar al contenido</a>
@@ -30,13 +30,16 @@
           <span class="brand-copy"><strong>Radar MX</strong><small>Inteligencia regulatoria</small></span>
         </a>
         <div class="nav-actions">
-          <div class="nav-links">
-            <a class="nav-link" data-page="today" href="index.html">Hoy</a>
-            <a class="nav-link" data-page="archive" href="archivo.html">Archivo</a>
-            <a class="nav-link" data-page="calendar" href="calendario.html">Calendario</a>
+          <div class="nav-links" data-liquid-group>
+            <a class="nav-link" data-page="today" href="index.html"><span data-icon="today" aria-hidden="true"></span><span>Hoy</span></a>
+            <a class="nav-link" data-page="archive" href="archivo.html"><span data-icon="archive" aria-hidden="true"></span><span>Archivo</span></a>
+            <a class="nav-link" data-page="calendar" href="calendario.html"><span data-icon="calendar" aria-hidden="true"></span><span>Calendario</span></a>
           </div>
-          <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Cambiar tema">
-            <span class="theme-glyph" aria-hidden="true">◐</span>
+          <button id="theme-toggle" class="theme-toggle pressable" type="button" aria-label="Cambiar a tema oscuro">
+            <span class="theme-icon-stack" aria-hidden="true">
+              <span class="theme-icon theme-icon-moon" data-icon="moon"></span>
+              <span class="theme-icon theme-icon-sun" data-icon="sun"></span>
+            </span>
           </button>
         </div>
       </nav>
@@ -46,17 +49,33 @@
       <section class="edition shell" aria-labelledby="edition-heading">
         <header class="edition-heading">
           <div class="edition-heading-copy">
-            <p class="edition-date" id="edition-date">Corte diario</p>
-            <h1 id="edition-heading">Inteligencia regulatoria, sin ruido.</h1>
-            <p class="edition-deck">Señales oficiales priorizadas para decidir qué leer, qué vigilar y qué hacer después.</p>
-            <a class="coverage-indicator" id="coverage-indicator" href="#fuentes">
-              <span class="coverage-dot" aria-hidden="true"></span>
-              <span id="coverage-label">Verificando fuentes</span>
-            </a>
+            <p class="edition-kicker"><span data-icon="signal" aria-hidden="true"></span> Corte regulatorio diario</p>
+            <h1 id="edition-heading">Tu corte regulatorio, con fecha y fuente.</h1>
+            <p class="edition-deck">Lo que merece atención, ordenado para decidir en minutos.</p>
           </div>
-          <figure class="edition-art" aria-hidden="true">
-            <img src="assets/editorial-signal-map-20260812.webp" alt="" width="1200" height="800" decoding="async" fetchpriority="high">
-          </figure>
+          <dl class="edition-facts" aria-label="Datos del corte">
+            <div class="edition-fact edition-fact-date">
+              <dt><span data-icon="date" aria-hidden="true"></span> Fecha del corte</dt>
+              <dd><time id="edition-date">Fecha por confirmar</time></dd>
+            </div>
+            <div class="edition-fact">
+              <dt><span data-icon="refresh" aria-hidden="true"></span> Última actualización</dt>
+              <dd><time id="edition-updated">Hora por confirmar</time></dd>
+            </div>
+            <div class="edition-stat">
+              <dt>Novedades</dt>
+              <dd id="edition-total">—</dd>
+            </div>
+            <div class="edition-stat">
+              <dt>Señales</dt>
+              <dd id="edition-signals">—</dd>
+            </div>
+            <a class="coverage-indicator pressable" id="coverage-indicator" href="#fuentes">
+              <span class="coverage-icon" data-icon="coverage-ok" aria-hidden="true"></span>
+              <span id="coverage-label">Verificando fuentes</span>
+              <span data-icon="arrow-forward" aria-hidden="true"></span>
+            </a>
+          </dl>
         </header>
 
         <p id="edition-status" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></p>
@@ -69,58 +88,47 @@
 
         <section id="edition-ready" class="edition-ready" hidden>
           <div class="signal-desk">
-            <div class="desk-material" aria-hidden="true">
-              <span class="desk-wash desk-wash-one"></span>
-              <span class="desk-wash desk-wash-two"></span>
-              <span class="desk-thread"></span>
-            </div>
-            <article id="lead-panel" class="lead-panel">
-              <div class="lead-meta">
-                <span id="lead-rank">Señal 01</span>
-                <span id="lead-organ">—</span>
-                <span id="lead-importance">Importancia —/5</span>
-              </div>
-              <h2 id="lead-title">—</h2>
-              <p class="lead-reason-label">Por qué está en el radar</p>
-              <p id="lead-reason" class="lead-reason">—</p>
-              <p id="lead-summary" class="lead-summary">—</p>
-              <div class="lead-actions">
-                <a id="lead-detail" class="primary-action" href="archivo.html">Abrir ficha</a>
-                <a id="lead-source" class="text-action" href="archivo.html" target="_blank" rel="noopener noreferrer">Fuente oficial ↗</a>
-              </div>
-            </article>
-
             <section class="impact-panel" aria-labelledby="impact-heading">
               <div class="impact-heading">
                 <div>
-                  <p class="section-kicker">Selección editorial</p>
-                  <h2 id="impact-heading">Señales priorizadas</h2>
+                  <p class="section-kicker">Prioridad editorial</p>
+                  <h2 id="impact-heading">Qué leer primero</h2>
                 </div>
-                <p>El orden refleja urgencia e impacto jurídico.</p>
               </div>
-              <div id="signal-band" class="signal-band" role="group" aria-label="Señales de la edición"></div>
-              <p class="deck-help">Selecciona una señal para revisar su contexto.</p>
+              <div id="signal-band" class="signal-band" role="tablist" aria-label="Señales de la edición" data-liquid-group></div>
+              <p class="deck-help"><span data-icon="arrow-forward" aria-hidden="true"></span> Selecciona una señal para revisar su contexto.</p>
             </section>
+
+            <article id="lead-panel" class="lead-panel" role="tabpanel" tabindex="0">
+              <div class="lead-meta">
+                <span id="lead-rank">Señal 01</span>
+                <span id="lead-organ">—</span>
+                <time id="lead-date">Fecha por confirmar</time>
+                <span id="lead-importance">Importancia —/5</span>
+              </div>
+              <h2 id="lead-title">—</h2>
+              <div class="lead-body">
+                <div>
+                  <p class="lead-reason-label">Por qué está en el radar</p>
+                  <p id="lead-reason" class="lead-reason">—</p>
+                </div>
+                <p id="lead-summary" class="lead-summary">—</p>
+              </div>
+              <div class="lead-actions">
+                <a id="lead-detail" class="primary-action pressable" href="archivo.html"><span data-icon="file" aria-hidden="true"></span><span>Abrir ficha</span></a>
+                <a id="lead-source" class="secondary-action pressable external-action" href="archivo.html" target="_blank" rel="noopener noreferrer"><span data-icon="external" aria-hidden="true"></span><span>Consultar fuente oficial</span><span class="sr-only"> (se abre en una pestaña nueva)</span></a>
+              </div>
+            </article>
           </div>
 
-          <section class="signal-ledger" aria-labelledby="ledger-heading">
-            <div class="section-heading-row">
-              <div>
-                <p class="section-kicker">Lectura completa</p>
-                <h2 id="ledger-heading">El resto del corte</h2>
-              </div>
-              <p id="today-total" class="section-count">—</p>
-            </div>
-            <ol id="signal-list" class="signal-list"></ol>
-          </section>
-
           <section class="edition-complete" aria-label="Fin de la edición">
-            <span class="completion-mark" aria-hidden="true">✓</span>
+            <span class="completion-mark" data-icon="coverage-ok" aria-hidden="true"></span>
             <div>
-              <h2>Corte revisado.</h2>
-              <p>La portada es deliberadamente finita. El archivo conserva el universo consultable.</p>
+              <p class="section-kicker">Continúa la investigación</p>
+              <h2>El archivo conserva todo el corte.</h2>
+              <p id="today-total">—</p>
             </div>
-            <a id="archive-today-link" class="secondary-action" href="archivo.html">Ver todo el corte</a>
+            <a id="archive-today-link" class="secondary-action pressable" href="archivo.html"><span data-icon="archive" aria-hidden="true"></span><span>Ver publicaciones del día</span></a>
           </section>
         </section>
 
@@ -131,9 +139,9 @@
           <p id="empty-copy">La portada no mezcla noticias anteriores con la fecha de hoy.</p>
           <p id="empty-update" class="state-update"></p>
           <div class="state-actions">
-            <a id="last-edition-link" class="primary-action" href="archivo.html">Abrir última edición</a>
-            <a class="secondary-action" href="archivo.html">Explorar archivo</a>
-            <a class="text-action" href="calendario.html">Consultar calendario</a>
+            <a id="last-edition-link" class="primary-action pressable" href="archivo.html"><span data-icon="archive" aria-hidden="true"></span><span>Abrir última edición</span></a>
+            <a class="secondary-action pressable" href="archivo.html"><span data-icon="search" aria-hidden="true"></span><span>Explorar archivo</span></a>
+            <a class="text-action" href="calendario.html"><span data-icon="calendar" aria-hidden="true"></span><span>Consultar calendario</span></a>
           </div>
         </section>
 
@@ -143,8 +151,8 @@
           <h2>No fue posible comprobar el corte.</h2>
           <p>La portada no mostrará información desactualizada como si fuera vigente. Intenta de nuevo o consulta el archivo.</p>
           <div class="state-actions">
-            <button id="retry-edition" class="primary-action" type="button">Reintentar</button>
-            <a class="secondary-action" href="archivo.html">Abrir archivo</a>
+            <button id="retry-edition" class="primary-action pressable" type="button"><span data-icon="refresh" aria-hidden="true"></span><span>Reintentar carga</span></button>
+            <a class="secondary-action pressable" href="archivo.html"><span data-icon="archive" aria-hidden="true"></span><span>Abrir archivo</span></a>
           </div>
         </section>
       </section>
@@ -155,7 +163,10 @@
             <p class="section-kicker">Trazabilidad</p>
             <h2 id="coverage-heading">Cobertura del corte</h2>
           </div>
-          <p id="coverage-copy">Comprobando el estado de las fuentes oficiales.</p>
+          <div>
+            <p id="coverage-copy">Comprobando el estado de las fuentes oficiales.</p>
+            <p class="coverage-updated">Actualizado <time id="coverage-updated">hora por confirmar</time></p>
+          </div>
         </div>
         <div id="coverage-detail" class="coverage-detail"></div>
         <p class="legal-note">Cada síntesis enlaza al documento oficial. Esta herramienta no sustituye la consulta jurídica de la fuente primaria.</p>

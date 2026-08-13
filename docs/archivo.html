@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Archivo consultable de publicaciones oficiales seleccionadas por Radar Regulatorio MX.">
     <title>Archivo | Radar Regulatorio MX</title>
-    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#F4EDDD">
-    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#152630">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#F6F5F1">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#101827">
     <script>
       (function () {
         document.documentElement.classList.add("js");
@@ -18,8 +18,8 @@
     </script>
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="preload" href="fonts/fraunces-variable-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="styles.css?v=20260812a">
-    <script type="module" src="archive.js?v=20260812a"></script>
+    <link rel="stylesheet" href="styles.css?v=20260812b">
+    <script type="module" src="archive.js?v=20260812b"></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Saltar al contenido</a>
@@ -30,12 +30,12 @@
           <span class="brand-copy"><strong>Radar MX</strong><small>Inteligencia regulatoria</small></span>
         </a>
         <div class="nav-actions">
-          <div class="nav-links">
-            <a class="nav-link" data-page="today" href="index.html">Hoy</a>
-            <a class="nav-link" data-page="archive" href="archivo.html">Archivo</a>
-            <a class="nav-link" data-page="calendar" href="calendario.html">Calendario</a>
+          <div class="nav-links" data-liquid-group>
+            <a class="nav-link" data-page="today" href="index.html"><span data-icon="today" aria-hidden="true"></span><span>Hoy</span></a>
+            <a class="nav-link" data-page="archive" href="archivo.html"><span data-icon="archive" aria-hidden="true"></span><span>Archivo</span></a>
+            <a class="nav-link" data-page="calendar" href="calendario.html"><span data-icon="calendar" aria-hidden="true"></span><span>Calendario</span></a>
           </div>
-          <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Cambiar tema"><span class="theme-glyph" aria-hidden="true">◐</span></button>
+          <button id="theme-toggle" class="theme-toggle pressable" type="button" aria-label="Cambiar a tema oscuro"><span class="theme-icon-stack" aria-hidden="true"><span class="theme-icon theme-icon-moon" data-icon="moon"></span><span class="theme-icon theme-icon-sun" data-icon="sun"></span></span></button>
         </div>
       </nav>
     </header>
@@ -46,17 +46,21 @@
           <p class="page-context">Consulta documental</p>
           <h1>Archivo regulatorio</h1>
         </div>
-        <p>Busca el acto, la autoridad o la materia. La relevancia ordena; la fuente oficial decide.</p>
+        <div class="page-intro-aside">
+          <p>Busca el acto, la autoridad o la materia. La relevancia ordena; la fuente oficial decide.</p>
+          <p class="dataset-dates"><span data-icon="date" aria-hidden="true"></span><span>Datos del <time id="archive-from">—</time> al <time id="archive-to">—</time></span></p>
+          <p class="dataset-dates"><span data-icon="refresh" aria-hidden="true"></span><span>Actualizado <time id="archive-updated">—</time></span></p>
+        </div>
       </header>
 
       <section class="archive-controls" aria-labelledby="filters-heading">
         <h2 class="sr-only" id="filters-heading">Filtros del archivo</h2>
         <label class="archive-search">
-          <span>Buscar</span>
+          <span><span data-icon="search" aria-hidden="true"></span> Buscar</span>
           <input id="search" type="search" placeholder="Ley, autoridad, tema o palabra clave" autocomplete="off">
         </label>
         <details id="filter-drawer" class="filter-drawer" open>
-          <summary>Filtros de búsqueda <span aria-hidden="true">＋</span></summary>
+          <summary><span><span data-icon="sliders" aria-hidden="true"></span> Filtros de búsqueda</span><span class="disclosure-icon" data-icon="chevron-down" aria-hidden="true"></span></summary>
           <div class="filter-grid">
             <label><span>Periodo</span><select id="date-range"><option value="all">Todo el corte</option><option value="7">Últimos 7 días</option><option value="15">Últimos 15 días</option></select></label>
             <label><span>Materia</span><select id="category-filter"><option value="Todas">Todas</option></select></label>
@@ -68,7 +72,7 @@
         </details>
         <div class="active-query" id="active-query" hidden>
           <p id="active-query-copy"></p>
-          <button id="clear-filters" type="button">Limpiar filtros</button>
+          <button id="clear-filters" class="pressable" type="button"><span data-icon="close" aria-hidden="true"></span><span>Limpiar filtros</span></button>
         </div>
       </section>
 
@@ -86,12 +90,12 @@
         <section id="archive-empty" class="archive-empty" hidden>
           <h3>No encontramos publicaciones con esos criterios.</h3>
           <p>Prueba una búsqueda más amplia o limpia los filtros.</p>
-          <button id="retry-archive" class="secondary-action" type="button" hidden>Reintentar carga</button>
+          <button id="retry-archive" class="secondary-action pressable" type="button" hidden><span data-icon="refresh" aria-hidden="true"></span><span>Reintentar carga</span></button>
         </section>
         <nav id="pagination" class="pagination" aria-label="Páginas del archivo" hidden>
-          <button id="page-prev" type="button">Anterior</button>
+          <button id="page-prev" class="pressable" type="button"><span data-icon="chevron-back" aria-hidden="true"></span><span>Anterior</span></button>
           <p id="page-indicator" aria-live="polite">Página 1 de 1</p>
-          <button id="page-next" type="button">Siguiente</button>
+          <button id="page-next" class="pressable" type="button"><span>Siguiente</span><span data-icon="chevron-forward" aria-hidden="true"></span></button>
         </nav>
       </section>
 

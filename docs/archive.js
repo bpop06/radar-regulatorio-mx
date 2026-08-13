@@ -1,7 +1,5 @@
-import { detailHref, formatDate } from "./markdown.js?v=20260812a";
-
-const ARCHIVE_WATERCOLORS = ["#54789b", "#73866f", "#b18443", "#9b6971", "#756a8b"];
-const ARCHIVE_TILTS = [-.6, .45, -.25, .7, -.4, .3];
+import { appendIcon } from "./icons.js?v=20260812b";
+import { datePresentation, detailHref } from "./markdown.js?v=20260812b";
 
 const PAGE_SIZE = 25;
 const state = {
@@ -16,6 +14,7 @@ const state = {
   sort: "date",
   exactDate: "",
   page: 1,
+  generatedAt: "",
 };
 
 const elements = {
@@ -39,7 +38,19 @@ const elements = {
   next: document.querySelector("#page-next"),
   pageIndicator: document.querySelector("#page-indicator"),
   sourceStatus: document.querySelector("#source-status"),
+  from: document.querySelector("#archive-from"),
+  to: document.querySelector("#archive-to"),
+  updated: document.querySelector("#archive-updated"),
 };
+
+let initialRevealComplete = false;
+
+function setTime(element, value, options = {}) {
+  const presentation = datePresentation(value, options);
+  element.textContent = presentation.label;
+  if (presentation.dateTime) element.setAttribute("datetime", presentation.dateTime);
+  else element.removeAttribute("datetime");
+}
 
 function normalize(value) {
   return String(value || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
@@ -151,8 +162,6 @@ function importanceMeter(value) {
 function buildRow(item, absoluteIndex) {
   const row = document.createElement("li");
   row.className = "archive-row";
-  row.style.setProperty("--wash", ARCHIVE_WATERCOLORS[absoluteIndex % ARCHIVE_WATERCOLORS.length]);
-  row.style.setProperty("--card-tilt", `${ARCHIVE_TILTS[absoluteIndex % ARCHIVE_TILTS.length]}deg`);
   row.dataset.importance = String(Math.max(0, Math.min(5, Number(item.importance) || 0)));
   const number = document.createElement("span");
   number.className = "archive-row-number";
@@ -162,8 +171,9 @@ function buildRow(item, absoluteIndex) {
   const meta = document.createElement("div");
   meta.className = "archive-row-meta";
   const date = document.createElement("time");
-  date.dateTime = item.published_at;
-  date.textContent = formatDate(item.published_at, { short: true });
+  const published = datePresentation(item.published_at, { short: true });
+  if (published.dateTime) date.dateTime = published.dateTime;
+  date.textContent = published.label;
   const organ = document.createElement("span");
   organ.textContent = item.issuing_body || item.authority || item.source;
   meta.append(date, organ, importanceMeter(item.importance));
@@ -181,17 +191,21 @@ function buildRow(item, absoluteIndex) {
   body.append(meta, title, summary, taxonomy);
 
   const action = document.createElement("a");
-  action.className = "archive-row-action";
+  action.className = "archive-row-action pressable";
   action.href = detailHref(item, "archivo");
-  action.textContent = "Ver ficha";
+  action.setAttribute("aria-label", `Abrir ficha: ${link.textContent}`);
+  appendIcon(action, "file");
+  const actionLabel = document.createElement("span");
+  actionLabel.textContent = "Abrir ficha";
+  action.append(actionLabel);
   row.append(number, body, action);
   return row;
 }
 
-function revealArchiveCards() {
+function revealArchiveCards(animate = false) {
   const cards = [...elements.list.children];
   const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
-  if (reducedMotion || !("IntersectionObserver" in window)) {
+  if (!animate || reducedMotion || !("IntersectionObserver" in window)) {
     cards.forEach((card) => card.classList.add("is-revealed"));
     return;
   }
@@ -211,14 +225,23 @@ function revealArchiveCards() {
 
 function renderActiveQuery() {
   const labels = [];
-  if (state.exactDate) labels.push(`Edición del ${formatDate(state.exactDate)}`);
   if (state.query) labels.push(`“${state.query}”`);
   if (state.category !== "Todas") labels.push(state.category);
   if (state.organ !== "Todas") labels.push(state.organ);
   if (state.source !== "Todas") labels.push(state.source);
   if (state.jurisdiction !== "Todas") labels.push(state.jurisdiction);
-  elements.activeQuery.hidden = labels.length === 0;
-  elements.activeQueryCopy.textContent = labels.join(" · ");
+  elements.activeQuery.hidden = labels.length === 0 && !state.exactDate;
+  elements.activeQueryCopy.replaceChildren();
+  if (state.exactDate) {
+    elements.activeQueryCopy.append(document.createTextNode("Edición del "));
+    const exact = datePresentation(state.exactDate);
+    const time = document.createElement("time");
+    if (exact.dateTime) time.dateTime = exact.dateTime;
+    time.textContent = exact.label;
+    elements.activeQueryCopy.append(time);
+    if (labels.length) elements.activeQueryCopy.append(document.createTextNode(" · "));
+  }
+  if (labels.length) elements.activeQueryCopy.append(document.createTextNode(labels.join(" · ")));
 }
 
 function render() {
@@ -228,7 +251,8 @@ function render() {
   const start = (state.page - 1) * PAGE_SIZE;
   const page = filtered.slice(start, start + PAGE_SIZE);
   elements.list.replaceChildren(...page.map((item, index) => buildRow(item, start + index)));
-  revealArchiveCards();
+  revealArchiveCards(!initialRevealComplete);
+  initialRevealComplete = true;
   elements.count.textContent = filtered.length === 1 ? "1 publicación" : `${filtered.length} publicaciones`;
   elements.empty.hidden = filtered.length !== 0;
   elements.retry.hidden = true;
@@ -317,6 +341,11 @@ async function init() {
     const payload = await response.json();
     state.items = Array.isArray(payload.items) ? payload.items : [];
     state.sources = Array.isArray(payload.sources) ? payload.sources : [];
+    state.generatedAt = payload.generated_at || "";
+    const dates = state.items.map((item) => item.published_at).filter(Boolean).sort();
+    setTime(elements.from, dates[0]);
+    setTime(elements.to, dates.at(-1));
+    setTime(elements.updated, state.generatedAt, { type: "datetime", short: true });
     populateSelect(
       elements.category,
       [...new Set(state.items.flatMap((item) => item.categories || []))].sort((a, b) => a.localeCompare(b, "es")),
@@ -342,6 +371,9 @@ async function init() {
     elements.empty.querySelector("p").textContent = "Comprueba tu conexión y vuelve a intentar la carga.";
     elements.retry.hidden = false;
     elements.count.textContent = "Datos no disponibles";
+    setTime(elements.from, null);
+    setTime(elements.to, null);
+    setTime(elements.updated, null, { type: "datetime" });
     console.error(error);
   }
 }

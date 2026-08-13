@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Ficha de evidencia de una publicación oficial seleccionada por Radar Regulatorio MX.">
     <title>Ficha | Radar Regulatorio MX</title>
-    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#F4EDDD">
-    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#152630">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#F6F5F1">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#101827">
     <script>
       (function () {
         document.documentElement.classList.add("js");
@@ -18,8 +18,8 @@
     </script>
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="preload" href="fonts/fraunces-variable-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="styles.css?v=20260812a">
-    <script type="module" src="detail.js?v=20260812a"></script>
+    <link rel="stylesheet" href="styles.css?v=20260812b">
+    <script type="module" src="detail.js?v=20260812b"></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Saltar al contenido</a>
@@ -30,18 +30,18 @@
           <span class="brand-copy"><strong>Radar MX</strong><small>Inteligencia regulatoria</small></span>
         </a>
         <div class="nav-actions">
-          <div class="nav-links">
-            <a class="nav-link" data-page="today" href="index.html">Hoy</a>
-            <a class="nav-link" data-page="archive" href="archivo.html">Archivo</a>
-            <a class="nav-link" data-page="calendar" href="calendario.html">Calendario</a>
+          <div class="nav-links" data-liquid-group>
+            <a class="nav-link" data-page="today" href="index.html"><span data-icon="today" aria-hidden="true"></span><span>Hoy</span></a>
+            <a class="nav-link" data-page="archive" href="archivo.html"><span data-icon="archive" aria-hidden="true"></span><span>Archivo</span></a>
+            <a class="nav-link" data-page="calendar" href="calendario.html"><span data-icon="calendar" aria-hidden="true"></span><span>Calendario</span></a>
           </div>
-          <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Cambiar tema"><span class="theme-glyph" aria-hidden="true">◐</span></button>
+          <button id="theme-toggle" class="theme-toggle pressable" type="button" aria-label="Cambiar a tema oscuro"><span class="theme-icon-stack" aria-hidden="true"><span class="theme-icon theme-icon-moon" data-icon="moon"></span><span class="theme-icon theme-icon-sun" data-icon="sun"></span></span></button>
         </div>
       </nav>
     </header>
 
     <main id="main" class="detail-main shell" tabindex="-1">
-      <a id="detail-back" class="back-link" href="archivo.html">← Volver al archivo</a>
+      <a id="detail-back" class="back-link" href="archivo.html"><span data-icon="arrow-back" aria-hidden="true"></span><span>Volver al archivo</span></a>
       <p id="detail-status" class="sr-only" role="status">Cargando ficha…</p>
       <div class="detail-layout">
         <article class="detail-article">
@@ -54,7 +54,8 @@
           <aside class="evidence-rail" aria-labelledby="evidence-heading">
             <h2 id="evidence-heading">Evidencia</h2>
             <dl class="evidence-list">
-              <div><dt>Fecha</dt><dd id="detail-date">—</dd></div>
+              <div><dt><span data-icon="date" aria-hidden="true"></span> Fecha registrada</dt><dd><time id="detail-date">Fecha por confirmar</time></dd></div>
+              <div><dt><span data-icon="refresh" aria-hidden="true"></span> Datos actualizados</dt><dd><time id="detail-updated">Hora por confirmar</time></dd></div>
               <div><dt>Órgano</dt><dd id="detail-organ">—</dd></div>
               <div><dt>Fuente</dt><dd id="detail-source">—</dd></div>
               <div><dt>Importancia</dt><dd><span id="detail-importance" class="importance-rail" aria-label="Importancia"></span></dd></div>
@@ -62,7 +63,7 @@
               <div id="detail-parties-row" hidden><dt>Partes</dt><dd id="detail-parties">—</dd></div>
               <div><dt>Materias</dt><dd id="detail-categories">—</dd></div>
             </dl>
-            <a id="official-source" class="primary-action evidence-source" target="_blank" rel="noopener noreferrer" hidden>Consultar fuente oficial ↗</a>
+            <a id="official-source" class="primary-action pressable evidence-source external-action" target="_blank" rel="noopener noreferrer" hidden><span data-icon="external" aria-hidden="true"></span><span>Consultar fuente oficial</span><span class="sr-only"> (se abre en una pestaña nueva)</span></a>
             <p class="evidence-note">La síntesis facilita la lectura. Para efectos jurídicos, consulta siempre el documento oficial.</p>
           </aside>
 

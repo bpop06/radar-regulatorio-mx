@@ -2,8 +2,10 @@
  * Reglas: sábados/domingos inhábiles SIEMPRE (derivados en cliente); los días del
  * JSON pintan su estado encima; el resto son hábiles. Un calendario por órgano. */
 
-import { weekBoundaryDay } from "./calendar-core.js?v=20260812a";
-import { isSafeHttpUrl, mexicoToday } from "./markdown.js?v=20260812a";
+import { weekBoundaryDay } from "./calendar-core.js?v=20260812b";
+import { appendIcon } from "./icons.js?v=20260812b";
+import { createLiquidMove } from "./motion.js?v=20260812b";
+import { datePresentation, isSafeHttpUrl, mexicoToday } from "./markdown.js?v=20260812b";
 
 const RM = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 const mobileSheetMedia = window.matchMedia("(max-width: 760px)");
@@ -20,12 +22,10 @@ let calendarYear = new Date().getFullYear();
 
 const el = {
   chips: document.querySelector("#organ-chips"),
-  chipIndicator: document.querySelector("#organ-chips .filter-indicator"),
   select: document.querySelector("#organ-select"),
   tabpanel: document.querySelector("#organ-calendar-panel"),
   subhead: document.querySelector("#organ-subhead"),
   grid: document.querySelector("#cal-grid"),
-  sweep: document.querySelector("#cal-sweep"),
   monthLabel: document.querySelector("#cal-month-label"),
   prev: document.querySelector("#cal-prev"),
   next: document.querySelector("#cal-next"),
@@ -36,7 +36,7 @@ const el = {
   scrim: document.querySelector("#day-scrim"),
   reading: document.querySelector("#reading-restantes"),
   readingLabel: document.querySelector("#reading-label"),
-  legend: document.querySelector("#cal-legend"),
+  updated: document.querySelector("#calendar-updated"),
 };
 
 const store = {
@@ -49,6 +49,7 @@ const store = {
 
 let sheetTrigger = null;
 let inertedOutside = [];
+let organLiquid = null;
 
 /* ------------------------------------------------------------ utilidades fecha */
 function pad2(n) { return String(n).padStart(2, "0"); }
@@ -143,6 +144,10 @@ function renderOrganSelector() {
     el.select.append(new Option(`${organ.id.toUpperCase()} — ${organ.name}`, organ.id));
   }
   el.select.addEventListener("change", (e) => selectOrgan(e.target.value));
+  organLiquid?.destroy();
+  organLiquid = createLiquidMove(el.chips, {
+    activeSelector: '.organ-chip[aria-selected="true"]',
+  });
 }
 
 function syncOrganActive() {
@@ -211,7 +216,13 @@ function renderSubhead() {
     a.href = organ.source_page;
     a.target = "_blank";
     a.rel = "noopener noreferrer";
-    a.textContent = "Fuente oficial ↗";
+    appendIcon(a, "external");
+    const label = document.createElement("span");
+    label.textContent = "Fuente oficial";
+    const notice = document.createElement("span");
+    notice.className = "sr-only";
+    notice.textContent = " (se abre en una pestaña nueva)";
+    a.append(label, notice);
     src.append(document.createTextNode("Base: "), a);
     el.subhead.append(src);
   }
@@ -242,22 +253,14 @@ function countHabil(fromDate, toDate) {
 }
 function updateReading() {
   const n = computeRestantes();
-  if (RM) { el.reading.textContent = String(n); return; }
-  const duration = 180;
-  const start = performance.now();
-  const ease = (x) => 1 - Math.pow(1 - x, 4);
-  function tick(now) {
-    const x = Math.min(1, (now - start) / duration);
-    el.reading.textContent = String(Math.round(ease(x) * n));
-    if (x < 1) requestAnimationFrame(tick);
-  }
-  requestAnimationFrame(tick);
+  el.reading.textContent = String(n);
 }
 
 /* ------------------------------------------------------------ render del mes */
 function renderMonth() {
   const m = store.month;
   el.monthLabel.textContent = `${monthNamesFull[m].toUpperCase()} ${calendarYear}`;
+  el.monthLabel.dateTime = `${calendarYear}-${pad2(m + 1)}`;
   el.prev.disabled = m <= 0;
   el.next.disabled = m >= 11;
 
@@ -289,7 +292,7 @@ function renderMonth() {
     if (mobileSheetMedia.matches) cell.setAttribute("aria-haspopup", "dialog");
     cell.setAttribute(
       "aria-label",
-      `${dowNamesLower[dow]} ${d} de ${monthNamesFull[m]}, ${statusLabel(info.status)}` +
+      `${dowNamesLower[dow]} ${d} de ${monthNamesFull[m]} de ${calendarYear}, ${statusLabel(info.status)}` +
         (info.guardia ? ", con guardia" : ""),
     );
     cell.setAttribute("aria-selected", String(iso === store.selectedDate));
@@ -299,8 +302,9 @@ function renderMonth() {
     if (isToday) cell.classList.add("is-today");
     if (iso === store.selectedDate) cell.classList.add("is-selected");
 
-    const num = document.createElement("span");
+    const num = document.createElement("time");
     num.className = "num";
+    num.dateTime = iso;
     num.textContent = String(d);
     const key = document.createElement("span");
     key.className = "state-key";
@@ -388,14 +392,6 @@ function selectOrgan(id) {
   renderSubhead();
   updateReading();
 
-  // El Barrido
-  if (!RM && el.sweep) {
-    el.sweep.classList.remove("run");
-    void el.sweep.offsetWidth; // reflow
-    el.sweep.classList.add("run");
-    setTimeout(() => el.sweep && el.sweep.classList.remove("run"), 260);
-  }
-
   const doRender = () => {
     renderMonth();
     // re-render panel si hay día seleccionado (cambia el estado por órgano)
@@ -432,13 +428,14 @@ function renderPanel(iso) {
   close.type = "button";
   close.hidden = !mobileSheetMedia.matches;
   close.setAttribute("aria-label", "Cerrar detalle");
-  close.textContent = "✕";
+  appendIcon(close, "close");
   close.addEventListener("click", closeSheet);
   el.panelContent.append(close);
 
-  const dateEl = document.createElement("p");
+  const dateEl = document.createElement("time");
   dateEl.id = "day-panel-title";
   dateEl.className = "dp-date tabular";
+  dateEl.dateTime = iso;
   dateEl.textContent = `${dowNamesUpper[dow]} ${monoDate(iso)}`;
   el.panelContent.append(dateEl);
 
@@ -494,7 +491,13 @@ function renderPanel(iso) {
     a.href = info.source_url;
     a.target = "_blank";
     a.rel = "noopener noreferrer";
-    a.textContent = info.acuerdo ? "Confirmación en sitio oficial ↗" : "Ver fuente oficial ↗";
+    appendIcon(a, "external");
+    const sourceLabel = document.createElement("span");
+    sourceLabel.textContent = info.acuerdo ? "Confirmación en sitio oficial" : "Ver fuente oficial";
+    const sourceNotice = document.createElement("span");
+    sourceNotice.className = "sr-only";
+    sourceNotice.textContent = " (se abre en una pestaña nueva)";
+    a.append(sourceLabel, sourceNotice);
     src.append(a);
     el.panelContent.append(src);
   }
@@ -514,7 +517,11 @@ function renderPanel(iso) {
     guideLink.className = "dp-guardia-link";
     const guideAnchor = document.createElement("a");
     guideAnchor.href = "guardias.html";
-    guideAnchor.textContent = "Ver guía de guardias y plazos →";
+    appendIcon(guideAnchor, "book");
+    const guideLabel = document.createElement("span");
+    guideLabel.textContent = "Ver guía de guardias y plazos";
+    guideAnchor.append(guideLabel);
+    appendIcon(guideAnchor, "arrow-forward");
     guideLink.append(guideAnchor);
     el.panelContent.append(guideLink);
   }
@@ -533,7 +540,7 @@ function renderPanel(iso) {
   else note.textContent = "Estado tomado del calendario oficial del órgano.";
   el.panelContent.append(note);
   const organLabel = organ ? `${organ.id.toUpperCase()}, ` : "";
-  el.status.textContent = `${organLabel}${d} de ${monthNamesFull[m - 1]}: ${statusLabel(info.status)}` +
+  el.status.textContent = `${organLabel}${d} de ${monthNamesFull[m - 1]} de ${y}: ${statusLabel(info.status)}` +
     (info.guardia ? ", con guardia." : ".");
   // F2#13 (v7 QA): el panel del día tardaba ~1s en aparecer por el stagger de
   // entrada (opacidad 0 + retraso por hijo antes de esta línea). Se quita: el panel
@@ -702,14 +709,6 @@ function initKeyboard() {
 }
 
 /* ------------------------------------------------------------ leyenda */
-function initLegend() {
-  el.legend.querySelectorAll(".legend-item[data-hl]").forEach((item) => {
-    const cls = `hl-${item.dataset.hl}`;
-    item.addEventListener("mouseenter", () => el.grid.classList.add(cls));
-    item.addEventListener("mouseleave", () => el.grid.classList.remove(cls));
-  });
-}
-
 /* ------------------------------------------------------------ init */
 async function init() {
   setPanelAvailable(!mobileSheetMedia.matches);
@@ -733,12 +732,15 @@ async function init() {
   }
   initOrganTabs();
   initKeyboard();
-  initLegend();
 
   try {
     const res = await fetch("data/calendars.json", { cache: "no-store" });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const payload = await res.json();
+    const updated = datePresentation(payload.generated_at, { type: "datetime", short: true });
+    el.updated.textContent = updated.label;
+    if (updated.dateTime) el.updated.dateTime = updated.dateTime;
+    else el.updated.removeAttribute("datetime");
     calendarYear = Number(payload.year) || calendarYear;
     el.readingLabel.textContent = `Días hábiles restantes en ${calendarYear}`;
     store.organs = Array.isArray(payload.organs) ? payload.organs : [];
@@ -765,6 +767,8 @@ async function init() {
     msg.textContent = "No fue posible cargar los calendarios.";
     el.grid.append(msg);
     el.status.textContent = "No fue posible cargar los calendarios. Intenta recargar la página.";
+    el.updated.textContent = "Fecha no disponible";
+    el.updated.removeAttribute("datetime");
     console.error(error);
   }
 }

@@ -1,11 +1,12 @@
 import {
-  formatDate,
+  datePresentation,
   getSections,
   isSafeHttpUrl,
   renderMarkdown,
   renderSection,
   translateCaseStatus,
-} from "./markdown.js?v=20260812a";
+} from "./markdown.js?v=20260812b";
+import { appendIcon } from "./icons.js?v=20260812b";
 
 const elements = {
   back: document.querySelector("#detail-back"),
@@ -17,6 +18,7 @@ const elements = {
   whyCopy: document.querySelector("#detail-why-copy"),
   content: document.querySelector("#detail-content"),
   date: document.querySelector("#detail-date"),
+  updated: document.querySelector("#detail-updated"),
   organ: document.querySelector("#detail-organ"),
   source: document.querySelector("#detail-source"),
   importance: document.querySelector("#detail-importance"),
@@ -29,13 +31,24 @@ const elements = {
 };
 
 function setBackLink(origin) {
+  const label = document.createElement("span");
   if (origin === "hoy") {
     elements.back.href = "index.html";
-    elements.back.textContent = "← Volver a Hoy";
+    label.textContent = "Volver a Hoy";
   } else {
     elements.back.href = "archivo.html";
-    elements.back.textContent = "← Volver al archivo";
+    label.textContent = "Volver al archivo";
   }
+  elements.back.replaceChildren();
+  appendIcon(elements.back, "arrow-back");
+  elements.back.append(label);
+}
+
+function setTime(element, value, options = {}) {
+  const presentation = datePresentation(value, options);
+  element.textContent = presentation.label;
+  if (presentation.dateTime) element.setAttribute("datetime", presentation.dateTime);
+  else element.removeAttribute("datetime");
 }
 
 function renderImportance(value) {
@@ -121,10 +134,16 @@ async function loadDetail() {
     }
 
     document.title = `${item.title} | Radar Regulatorio MX`;
-    elements.breadcrumb.textContent = `${item.source} · ${formatDate(item.published_at)}`;
+    elements.breadcrumb.replaceChildren(document.createTextNode(`${item.source} · `));
+    const breadcrumbDate = datePresentation(item.published_at);
+    const breadcrumbTime = document.createElement("time");
+    if (breadcrumbDate.dateTime) breadcrumbTime.dateTime = breadcrumbDate.dateTime;
+    breadcrumbTime.textContent = breadcrumbDate.label;
+    elements.breadcrumb.append(breadcrumbTime);
     elements.title.textContent = item.title || "Ficha regulatoria";
     elements.summary.textContent = item.summary || "";
-    elements.date.textContent = formatDate(item.published_at);
+    setTime(elements.date, item.published_at);
+    setTime(elements.updated, payload.generated_at, { type: "datetime", short: true });
     elements.organ.textContent = item.issuing_body || item.authority || "No identificado";
     elements.source.textContent = item.source || "Fuente oficial";
     elements.categories.textContent = Array.isArray(item.categories) && item.categories.length
@@ -154,6 +173,7 @@ async function loadDetail() {
     renderDocument(item);
     if (isSafeHttpUrl(item.url)) {
       elements.officialSource.href = item.url;
+      elements.officialSource.setAttribute("aria-label", `Consultar fuente oficial: ${item.title}. Se abre en una pestaña nueva.`);
       elements.officialSource.hidden = false;
     }
     elements.status.textContent = "Ficha cargada.";
