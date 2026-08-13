@@ -23,6 +23,7 @@ const el = {
   select: document.querySelector("#organ-select"),
   subhead: document.querySelector("#organ-subhead"),
   grid: document.querySelector("#cal-grid"),
+  sweep: document.querySelector("#cal-sweep"),
   monthLabel: document.querySelector("#cal-month-label"),
   prev: document.querySelector("#cal-prev"),
   next: document.querySelector("#cal-next"),
@@ -30,7 +31,7 @@ const el = {
   panel: document.querySelector("#day-panel"),
   reading: document.querySelector("#reading-restantes"),
   readingLabel: document.querySelector("#reading-label"),
-  updated: document.querySelector("#calendar-updated"),
+  legend: document.querySelector("#cal-legend"),
 };
 
 const store = {
@@ -137,10 +138,6 @@ function renderOrganSelector() {
     el.select.append(new Option(`${organ.id.toUpperCase()} — ${organ.name}`, organ.id));
   }
   el.select.addEventListener("change", (e) => selectOrgan(e.target.value));
-  organLiquid?.destroy();
-  organLiquid = createLiquidMove(el.chips, {
-    activeSelector: '.organ-chip[aria-selected="true"]',
-  });
 }
 
 function handleOrganKeydown(event) {
@@ -190,13 +187,7 @@ function renderSubhead() {
     a.href = organ.source_page;
     a.target = "_blank";
     a.rel = "noopener noreferrer";
-    appendIcon(a, "external");
-    const label = document.createElement("span");
-    label.textContent = "Fuente oficial";
-    const notice = document.createElement("span");
-    notice.className = "sr-only";
-    notice.textContent = " (se abre en una pestaña nueva)";
-    a.append(label, notice);
+    a.textContent = "Fuente oficial ↗";
     src.append(document.createTextNode("Base: "), a);
     el.subhead.append(src);
   }
@@ -227,14 +218,22 @@ function countHabil(fromDate, toDate) {
 }
 function updateReading() {
   const n = computeRestantes();
-  el.reading.textContent = String(n);
+  if (RM) { el.reading.textContent = String(n); return; }
+  const duration = 180;
+  const start = performance.now();
+  const ease = (x) => 1 - Math.pow(1 - x, 4);
+  function tick(now) {
+    const x = Math.min(1, (now - start) / duration);
+    el.reading.textContent = String(Math.round(ease(x) * n));
+    if (x < 1) requestAnimationFrame(tick);
+  }
+  requestAnimationFrame(tick);
 }
 
 /* ------------------------------------------------------------ render del mes */
 function renderMonth() {
   const m = store.month;
   el.monthLabel.textContent = `${monthNamesFull[m].toUpperCase()} ${calendarYear}`;
-  el.monthLabel.dateTime = `${calendarYear}-${pad2(m + 1)}`;
   el.prev.disabled = m <= 0;
   el.next.disabled = m >= 11;
 
@@ -264,7 +263,7 @@ function renderMonth() {
     cell.setAttribute("role", "gridcell");
     cell.setAttribute(
       "aria-label",
-      `${dowNamesLower[dow]} ${d} de ${monthNamesFull[m]} de ${calendarYear}, ${statusLabel(info.status)}` +
+      `${dowNamesLower[dow]} ${d} de ${monthNamesFull[m]}, ${statusLabel(info.status)}` +
         (info.guardia ? ", con guardia" : ""),
     );
     cell.setAttribute("aria-selected", String(iso === store.selectedDate));
@@ -274,9 +273,8 @@ function renderMonth() {
     if (isToday) cell.classList.add("is-today");
     if (iso === store.selectedDate) cell.classList.add("is-selected");
 
-    const num = document.createElement("time");
+    const num = document.createElement("span");
     num.className = "num";
-    num.dateTime = iso;
     num.textContent = String(d);
     const key = document.createElement("span");
     key.className = "state-key";
@@ -374,6 +372,14 @@ function selectOrgan(id) {
   renderSubhead();
   updateReading();
 
+  // El Barrido
+  if (!RM && el.sweep) {
+    el.sweep.classList.remove("run");
+    void el.sweep.offsetWidth; // reflow
+    el.sweep.classList.add("run");
+    setTimeout(() => el.sweep && el.sweep.classList.remove("run"), 260);
+  }
+
   const doRender = () => {
     renderMonth();
     // re-render panel si hay día seleccionado (cambia el estado por órgano)
@@ -419,13 +425,12 @@ function renderPanel(iso) {
   close.className = "dp-close";
   close.type = "button";
   close.setAttribute("aria-label", "Cerrar detalle");
-  appendIcon(close, "close");
+  close.textContent = "✕";
   close.addEventListener("click", closeSheet);
   el.panel.append(close);
 
   const dateEl = document.createElement("p");
   dateEl.className = "dp-date tabular";
-  dateEl.dateTime = iso;
   dateEl.textContent = `${dowNamesUpper[dow]} ${monoDate(iso)}`;
   el.panel.append(dateEl);
 
@@ -481,13 +486,7 @@ function renderPanel(iso) {
     a.href = info.source_url;
     a.target = "_blank";
     a.rel = "noopener noreferrer";
-    appendIcon(a, "external");
-    const sourceLabel = document.createElement("span");
-    sourceLabel.textContent = info.acuerdo ? "Confirmación en sitio oficial" : "Ver fuente oficial";
-    const sourceNotice = document.createElement("span");
-    sourceNotice.className = "sr-only";
-    sourceNotice.textContent = " (se abre en una pestaña nueva)";
-    a.append(sourceLabel, sourceNotice);
+    a.textContent = info.acuerdo ? "Confirmación en sitio oficial ↗" : "Ver fuente oficial ↗";
     src.append(a);
     el.panel.append(src);
   }
@@ -507,11 +506,7 @@ function renderPanel(iso) {
     guideLink.className = "dp-guardia-link";
     const guideAnchor = document.createElement("a");
     guideAnchor.href = "guardias.html";
-    appendIcon(guideAnchor, "book");
-    const guideLabel = document.createElement("span");
-    guideLabel.textContent = "Ver guía de guardias y plazos";
-    guideAnchor.append(guideLabel);
-    appendIcon(guideAnchor, "arrow-forward");
+    guideAnchor.textContent = "Ver guía de guardias y plazos →";
     guideLink.append(guideAnchor);
     el.panel.append(guideLink);
   }
@@ -587,6 +582,14 @@ function initKeyboard() {
 }
 
 /* ------------------------------------------------------------ leyenda */
+function initLegend() {
+  el.legend.querySelectorAll(".legend-item[data-hl]").forEach((item) => {
+    const cls = `hl-${item.dataset.hl}`;
+    item.addEventListener("mouseenter", () => el.grid.classList.add(cls));
+    item.addEventListener("mouseleave", () => el.grid.classList.remove(cls));
+  });
+}
+
 /* ------------------------------------------------------------ init */
 async function init() {
   el.prev.addEventListener("click", () => changeMonth(-1));
@@ -609,15 +612,12 @@ async function init() {
   });
   desktopCalendar.addEventListener("change", syncPanelMode);
   initKeyboard();
+  initLegend();
 
   try {
     const res = await fetch("data/calendars.json", { cache: "no-store" });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const payload = await res.json();
-    const updated = datePresentation(payload.generated_at, { type: "datetime", short: true });
-    el.updated.textContent = updated.label;
-    if (updated.dateTime) el.updated.dateTime = updated.dateTime;
-    else el.updated.removeAttribute("datetime");
     calendarYear = Number(payload.year) || calendarYear;
     el.readingLabel.textContent = `Días hábiles restantes en ${calendarYear}`;
     store.organs = Array.isArray(payload.organs) ? payload.organs : [];

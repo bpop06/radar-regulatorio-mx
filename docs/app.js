@@ -1,4 +1,3 @@
-import { appendIcon, createIcon } from "./icons.js?v=20260812b";
 import {
   displayTitle,
   editorialLabel,
@@ -12,11 +11,7 @@ import {
 import { formatDate, isSafeHttpUrl, mexicoToday } from "./markdown.js";
 
 const elements = {
-  heading: document.querySelector("#edition-heading"),
   date: document.querySelector("#edition-date"),
-  updated: document.querySelector("#edition-updated"),
-  editionTotal: document.querySelector("#edition-total"),
-  editionSignals: document.querySelector("#edition-signals"),
   loading: document.querySelector("#edition-loading"),
   ready: document.querySelector("#edition-ready"),
   empty: document.querySelector("#edition-empty"),
@@ -28,15 +23,12 @@ const elements = {
   lastEdition: document.querySelector("#last-edition-link"),
   retry: document.querySelector("#retry-edition"),
   coverageIndicator: document.querySelector("#coverage-indicator"),
-  coverageIcon: document.querySelector(".coverage-icon"),
   coverageLabel: document.querySelector("#coverage-label"),
   coverageCopy: document.querySelector("#coverage-copy"),
-  coverageUpdated: document.querySelector("#coverage-updated"),
   coverageDetail: document.querySelector("#coverage-detail"),
   leadPanel: document.querySelector("#lead-panel"),
   leadRank: document.querySelector("#lead-rank"),
   leadOrgan: document.querySelector("#lead-organ"),
-  leadDate: document.querySelector("#lead-date"),
   leadImportance: document.querySelector("#lead-importance"),
   leadStatus: document.querySelector("#lead-status"),
   leadDate: document.querySelector("#lead-date"),
@@ -47,6 +39,7 @@ const elements = {
   leadDetail: document.querySelector("#lead-detail"),
   leadSource: document.querySelector("#lead-source"),
   band: document.querySelector("#signal-band"),
+  list: document.querySelector("#signal-list"),
   total: document.querySelector("#today-total"),
   archiveToday: document.querySelector("#archive-today-link"),
   liveStatus: document.querySelector("#edition-status"),
@@ -254,11 +247,6 @@ function buildBand(signals) {
     const source = document.createElement("span");
     source.className = "signal-tab-source";
     source.textContent = signal.source || "Fuente";
-    const date = datePresentation(signal.published_at, { short: true });
-    const dateElement = document.createElement("time");
-    dateElement.className = "signal-tab-date";
-    if (date.dateTime) dateElement.dateTime = date.dateTime;
-    dateElement.textContent = date.label;
     const title = document.createElement("span");
     title.className = "signal-tab-title";
     title.textContent = displayTitle(signal);
@@ -366,9 +354,6 @@ async function loadCurrentEdition() {
     elements.coverageLabel.textContent = "Cobertura no verificada";
     elements.coverageCopy.textContent = "No fue posible leer el manifiesto y el corte publicado.";
     console.error(error);
-  } finally {
-    elements.retry.disabled = false;
-    elements.retry.classList.remove("is-loading");
   }
 }
 

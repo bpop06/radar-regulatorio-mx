@@ -44,15 +44,6 @@ const elements = {
   loadMore: document.querySelector("#load-more-months"),
 };
 
-let initialRevealComplete = false;
-
-function setTime(element, value, options = {}) {
-  const presentation = datePresentation(value, options);
-  element.textContent = presentation.label;
-  if (presentation.dateTime) element.setAttribute("datetime", presentation.dateTime);
-  else element.removeAttribute("datetime");
-}
-
 function normalize(value) {
   return String(value || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
 }
@@ -233,18 +224,8 @@ function renderActiveQuery() {
   if (state.organ !== "Todas") labels.push(state.organ);
   if (state.source !== "Todas") labels.push(state.source);
   if (state.jurisdiction !== "Todas") labels.push(state.jurisdiction);
-  elements.activeQuery.hidden = labels.length === 0 && !state.exactDate;
-  elements.activeQueryCopy.replaceChildren();
-  if (state.exactDate) {
-    elements.activeQueryCopy.append(document.createTextNode("Edición del "));
-    const exact = datePresentation(state.exactDate);
-    const time = document.createElement("time");
-    if (exact.dateTime) time.dateTime = exact.dateTime;
-    time.textContent = exact.label;
-    elements.activeQueryCopy.append(time);
-    if (labels.length) elements.activeQueryCopy.append(document.createTextNode(" · "));
-  }
-  if (labels.length) elements.activeQueryCopy.append(document.createTextNode(labels.join(" · ")));
+  elements.activeQuery.hidden = labels.length === 0;
+  elements.activeQueryCopy.textContent = labels.join(" · ");
 }
 
 function render() {
@@ -374,9 +355,6 @@ async function init() {
     elements.empty.hidden = true;
     elements.error.hidden = false;
     elements.count.textContent = "Datos no disponibles";
-    setTime(elements.from, null);
-    setTime(elements.to, null);
-    setTime(elements.updated, null, { type: "datetime" });
     console.error(error);
   }
 }

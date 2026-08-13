@@ -34,16 +34,13 @@
           <span class="brand-copy"><strong>Radar MX</strong><small>Inteligencia regulatoria</small></span>
         </a>
         <div class="nav-actions">
-          <div class="nav-links" data-liquid-group>
-            <a class="nav-link" data-page="today" href="index.html"><span data-icon="today" aria-hidden="true"></span><span>Hoy</span></a>
-            <a class="nav-link" data-page="archive" href="archivo.html"><span data-icon="archive" aria-hidden="true"></span><span>Archivo</span></a>
-            <a class="nav-link" data-page="calendar" href="calendario.html"><span data-icon="calendar" aria-hidden="true"></span><span>Calendario</span></a>
+          <div class="nav-links">
+            <a class="nav-link" data-page="today" href="index.html">Hoy</a>
+            <a class="nav-link" data-page="archive" href="archivo.html">Archivo</a>
+            <a class="nav-link" data-page="calendar" href="calendario.html">Calendario</a>
           </div>
-          <button id="theme-toggle" class="theme-toggle pressable" type="button" aria-label="Cambiar a tema oscuro">
-            <span class="theme-icon-stack" aria-hidden="true">
-              <span class="theme-icon theme-icon-moon" data-icon="moon"></span>
-              <span class="theme-icon theme-icon-sun" data-icon="sun"></span>
-            </span>
+          <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Cambiar tema">
+            <span class="theme-glyph" aria-hidden="true">◐</span>
           </button>
         </div>
       </nav>
@@ -104,27 +101,6 @@
               <div id="signal-band" class="signal-band" role="tablist" aria-label="Señales de la edición"></div>
               <p class="deck-help">Elige una carta para traerla al frente.</p>
             </section>
-
-            <article id="lead-panel" class="lead-panel" role="tabpanel" tabindex="0">
-              <div class="lead-meta">
-                <span id="lead-rank">Señal 01</span>
-                <span id="lead-organ">—</span>
-                <time id="lead-date">Fecha por confirmar</time>
-                <span id="lead-importance">Importancia —/5</span>
-              </div>
-              <h2 id="lead-title">—</h2>
-              <div class="lead-body">
-                <div>
-                  <p class="lead-reason-label">Por qué está en el radar</p>
-                  <p id="lead-reason" class="lead-reason">—</p>
-                </div>
-                <p id="lead-summary" class="lead-summary">—</p>
-              </div>
-              <div class="lead-actions">
-                <a id="lead-detail" class="primary-action pressable" href="archivo.html"><span data-icon="file" aria-hidden="true"></span><span>Abrir ficha</span></a>
-                <a id="lead-source" class="secondary-action pressable external-action" href="archivo.html" target="_blank" rel="noopener noreferrer"><span data-icon="external" aria-hidden="true"></span><span>Consultar fuente oficial</span><span class="sr-only"> (se abre en una pestaña nueva)</span></a>
-              </div>
-            </article>
           </div>
 
           <section class="signal-ledger" aria-labelledby="ledger-heading">
@@ -155,9 +131,9 @@
           <p id="empty-copy">La portada no mezcla noticias anteriores con la fecha de hoy.</p>
           <p id="empty-update" class="state-update"></p>
           <div class="state-actions">
-            <a id="last-edition-link" class="primary-action pressable" href="archivo.html"><span data-icon="archive" aria-hidden="true"></span><span>Abrir última edición</span></a>
-            <a class="secondary-action pressable" href="archivo.html"><span data-icon="search" aria-hidden="true"></span><span>Explorar archivo</span></a>
-            <a class="text-action" href="calendario.html"><span data-icon="calendar" aria-hidden="true"></span><span>Consultar calendario</span></a>
+            <a id="last-edition-link" class="primary-action" href="archivo.html">Abrir última edición</a>
+            <a class="secondary-action" href="archivo.html">Explorar archivo</a>
+            <a class="text-action" href="calendario.html">Consultar calendario</a>
           </div>
         </section>
 
@@ -167,8 +143,8 @@
           <h2>No fue posible comprobar el corte.</h2>
           <p>La portada no mostrará información desactualizada como vigente. Reintenta la carga o consulta el archivo permanente.</p>
           <div class="state-actions">
-            <button id="retry-edition" class="primary-action pressable" type="button"><span data-icon="refresh" aria-hidden="true"></span><span>Reintentar carga</span></button>
-            <a class="secondary-action pressable" href="archivo.html"><span data-icon="archive" aria-hidden="true"></span><span>Abrir archivo</span></a>
+            <button id="retry-edition" class="primary-action" type="button">Reintentar</button>
+            <a class="secondary-action" href="archivo.html">Abrir archivo</a>
           </div>
         </section>
       </section>
@@ -179,10 +155,7 @@
             <p class="section-kicker">Trazabilidad</p>
             <h2 id="coverage-heading">Cobertura del corte</h2>
           </div>
-          <div>
-            <p id="coverage-copy">Comprobando el estado de las fuentes oficiales.</p>
-            <p class="coverage-updated">Actualizado <time id="coverage-updated">hora por confirmar</time></p>
-          </div>
+          <p id="coverage-copy">Comprobando el estado de las fuentes oficiales.</p>
         </div>
         <div id="coverage-detail" class="coverage-detail"></div>
         <p class="legal-note">Cada síntesis enlaza al documento oficial. Esta herramienta no sustituye la consulta jurídica de la fuente primaria.</p>

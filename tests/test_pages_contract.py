@@ -1,10 +1,8 @@
 from __future__ import annotations
 
-import json
 import re
 import unittest
 from collections import defaultdict
-from datetime import date, datetime
 from html.parser import HTMLParser
 from pathlib import Path
 from typing import NamedTuple
@@ -18,7 +16,7 @@ HTML_PAGES = tuple(sorted(DOCS_ROOT.glob("*.html")))
 STATIC_ASSET_VERSION = f"v={EDITION_STATIC_ASSET_VERSION}"
 MAX_PRELOADED_IMAGE_BYTES = 300 * 1024
 ARIA_IDREF_ATTRIBUTES = ("aria-labelledby", "aria-controls", "aria-describedby")
-COMPACT_LIVE_REGION_TAGS = frozenset({"output", "p", "span", "time"})
+COMPACT_LIVE_REGION_TAGS = frozenset({"output", "p", "span"})
 KNOWN_LIVE_COUNTER_IDS = frozenset(
     {
         "cal-month-label",
@@ -85,71 +83,6 @@ def local_path(page: Path, reference: str) -> Path | None:
 
 
 class PagesContractTests(unittest.TestCase):
-    def test_key_date_surfaces_use_semantic_time_elements(self) -> None:
-        required = {
-            "index.html": {
-                "edition-date",
-                "edition-updated",
-                "lead-date",
-                "coverage-updated",
-            },
-            "archivo.html": {"archive-from", "archive-to", "archive-updated"},
-            "ficha.html": {"detail-date", "detail-updated"},
-            "calendario.html": {"calendar-updated", "cal-month-label"},
-            "guardias.html": {"guide-date"},
-        }
-        for filename, element_ids in required.items():
-            elements = parse_page(DOCS_ROOT / filename).elements
-            by_id = {
-                element.attributes.get("id"): element
-                for element in elements
-                if element.attributes.get("id")
-            }
-            with self.subTest(page=filename):
-                self.assertEqual(element_ids - by_id.keys(), set())
-                self.assertTrue(
-                    all(by_id[element_id].tag == "time" for element_id in element_ids),
-                    f"{filename} must expose key dates with <time>",
-                )
-
-    def test_public_artifacts_supply_valid_dates_for_every_record(self) -> None:
-        publications = json.loads(
-            (DOCS_ROOT / "data" / "publications.json").read_text(encoding="utf-8")
-        )
-        edition = json.loads(
-            (DOCS_ROOT / "data" / "edition.json").read_text(encoding="utf-8")
-        )
-        calendars = json.loads(
-            (DOCS_ROOT / "data" / "calendars.json").read_text(encoding="utf-8")
-        )
-
-        for artifact in (publications, edition, calendars):
-            generated_at = artifact.get("generated_at")
-            with self.subTest(artifact=artifact.get("schema_version", "calendar")):
-                self.assertIsInstance(generated_at, str)
-                parsed = datetime.fromisoformat(generated_at.replace("Z", "+00:00"))
-                self.assertIsNotNone(parsed.tzinfo, "generated_at must carry a timezone")
-
-        items_by_id = {item["id"]: item for item in publications["items"]}
-        for item in publications["items"]:
-            with self.subTest(publication=item["id"]):
-                self.assertEqual(
-                    date.fromisoformat(item["published_at"]).isoformat(),
-                    item["published_at"],
-                )
-
-        for signal in edition["signals"]:
-            with self.subTest(signal=signal["id"]):
-                self.assertIn(signal["id"], items_by_id)
-                self.assertEqual(signal["published_at"], items_by_id[signal["id"]]["published_at"])
-                self.assertEqual(signal["published_at"], edition["edition_date"])
-
-        for organ, days in calendars["days_by_organ"].items():
-            for day in days:
-                with self.subTest(organ=organ, calendar_date=day["date"]):
-                    parsed = date.fromisoformat(day["date"])
-                    self.assertEqual(parsed.year, calendars["year"])
-
     def test_site_has_html_pages(self) -> None:
         self.assertTrue(HTML_PAGES, "docs/ must contain at least one HTML page")
 

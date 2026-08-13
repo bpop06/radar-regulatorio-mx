@@ -34,12 +34,12 @@
           <span class="brand-copy"><strong>Radar MX</strong><small>Inteligencia regulatoria</small></span>
         </a>
         <div class="nav-actions">
-          <div class="nav-links" data-liquid-group>
-            <a class="nav-link" data-page="today" href="index.html"><span data-icon="today" aria-hidden="true"></span><span>Hoy</span></a>
-            <a class="nav-link" data-page="archive" href="archivo.html"><span data-icon="archive" aria-hidden="true"></span><span>Archivo</span></a>
-            <a class="nav-link" data-page="calendar" href="calendario.html"><span data-icon="calendar" aria-hidden="true"></span><span>Calendario</span></a>
+          <div class="nav-links">
+            <a class="nav-link" data-page="today" href="index.html">Hoy</a>
+            <a class="nav-link" data-page="archive" href="archivo.html">Archivo</a>
+            <a class="nav-link" data-page="calendar" href="calendario.html">Calendario</a>
           </div>
-          <button id="theme-toggle" class="theme-toggle pressable" type="button" aria-label="Cambiar a tema oscuro"><span class="theme-icon-stack" aria-hidden="true"><span class="theme-icon theme-icon-moon" data-icon="moon"></span><span class="theme-icon theme-icon-sun" data-icon="sun"></span></span></button>
+          <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Cambiar tema"><span class="theme-glyph" aria-hidden="true">◐</span></button>
         </div>
       </nav>
     </header>
@@ -56,11 +56,11 @@
       <section class="archive-controls" aria-labelledby="filters-heading">
         <h2 class="sr-only" id="filters-heading">Filtros del archivo</h2>
         <label class="archive-search">
-          <span><span data-icon="search" aria-hidden="true"></span> Buscar</span>
+          <span>Buscar</span>
           <input id="search" type="search" placeholder="Ley, autoridad, tema o palabra clave" autocomplete="off">
         </label>
         <details id="filter-drawer" class="filter-drawer" open>
-          <summary><span><span data-icon="sliders" aria-hidden="true"></span> Filtros de búsqueda</span><span class="disclosure-icon" data-icon="chevron-down" aria-hidden="true"></span></summary>
+          <summary>Filtros de búsqueda <span aria-hidden="true">＋</span></summary>
           <div class="filter-grid">
             <label><span>Periodo</span><select id="date-range"><option value="all">Todo el archivo</option><option value="7">Últimos 7 días</option><option value="15">Últimos 15 días</option></select></label>
             <label><span>Materia</span><select id="category-filter"><option value="Todas">Todas</option></select></label>
@@ -72,7 +72,7 @@
         </details>
         <div class="active-query" id="active-query" hidden>
           <p id="active-query-copy"></p>
-          <button id="clear-filters" class="pressable" type="button"><span data-icon="close" aria-hidden="true"></span><span>Limpiar filtros</span></button>
+          <button id="clear-filters" type="button">Limpiar filtros</button>
         </div>
       </section>
 
@@ -97,9 +97,9 @@
           <a class="secondary-action" href="index.html">Abrir corte vigente</a>
         </section>
         <nav id="pagination" class="pagination" aria-label="Páginas del archivo" hidden>
-          <button id="page-prev" class="pressable" type="button"><span data-icon="chevron-back" aria-hidden="true"></span><span>Anterior</span></button>
+          <button id="page-prev" type="button">Anterior</button>
           <p id="page-indicator" aria-live="polite">Página 1 de 1</p>
-          <button id="page-next" class="pressable" type="button"><span>Siguiente</span><span data-icon="chevron-forward" aria-hidden="true"></span></button>
+          <button id="page-next" type="button">Siguiente</button>
         </nav>
         <div class="archive-month-loader">
           <p id="archive-month-status" role="status"></p>
