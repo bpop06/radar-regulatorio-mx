@@ -1,0 +1,65 @@
+{
+  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "item": {
+    "ai_generated": false,
+    "authority": "PODER EJECUTIVO SECRETARIA DE TURISMO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791131&fecha=19/06/2026",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "17649c784e8ec6c207c1da7bd1b2a659cc5eb1c3aa0bd9d51befb19f949f3486",
+    "country_or_org": "México",
+    "description": "Convenio de Coordinación que celebran la Secretaría de Turismo y el Estado de México, que tiene por objeto verificar el cumplimiento de la Ley General de Turismo, su Reglamento, la Ley de Infraestructura de la Calidad y las normas oficiales mexicanas en la materia, así como el fortalecimiento de las atribuciones en el procedimiento de verificación de los prestadores de servicios turísticos en la entidad.",
+    "detail_markdown": null,
+    "detail_url": "notas/66f01d6cbcca6bb4f75e0ed9.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Convenio De Coordinación",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5791131",
+    "importance": 2,
+    "issuing_body": "Presidencia de la República",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791131&fecha=19/06/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5791131"
+    },
+    "official_published_at": "2026-06-19",
+    "official_title": "Convenio de Coordinación que celebran la Secretaría de Turismo y el Estado de México, que tiene por objeto verificar el cumplimiento de la Ley General de Turismo, su Reglamento, la Ley de Infraestructura de la Calidad y las normas oficiales mexicanas en la materia, así como el fortalecimiento de las atribuciones en el procedimiento de verificación de los prestadores de servicios turísticos en la entidad.",
+    "published_at": "2026-06-19",
+    "published_day": 19,
+    "published_month": 6,
+    "published_year": 2026,
+    "relevance_score": 2,
+    "review_reason": "Registro legado o contenido sin revisión editorial certificada.",
+    "source": "DOF",
+    "source_id": "5791131",
+    "subtopic_tags": [
+      "infraestructura de la calidad"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Normalización",
+      "Norma",
+      "Reglamento"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5791131&fecha=19/06/2026"
+  },
+  "schema_version": 8
+}

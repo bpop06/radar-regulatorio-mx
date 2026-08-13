@@ -1,0 +1,70 @@
+{
+  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "item": {
+    "ai_generated": false,
+    "authority": "Secretariado del T-MEC",
+    "canonical_url": "https://can-mex-usa-sec.org/secretariat/dispute-differends-controversias/chapter-chapitre-capitulo_31.aspx?lang=eng&case=CDA-USA-2023-31-01",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "Dairy TRQ Allocation Measures",
+    "case_facts": "",
+    "case_number": "CDA-USA-2023-31-01",
+    "case_outcome": "",
+    "case_parties": "United States / Canada / Mexico",
+    "case_reasoning": "",
+    "case_status": "Complete",
+    "case_treaty": "Canada United States Mexico Agreement (CUSMA)",
+    "categories": [
+      "Comercio internacional"
+    ],
+    "content_hash": "f2fc5cc8414a55a9a36feb0ad4a42d7186384f08bcea7322d02f2fb355cf7683",
+    "country_or_org": "T-MEC",
+    "description": "Mecanismo: Chapter 31 (Dispute Settlement) - Section A. Partes: United States / Canada / Mexico. Solicitud de panel: 2023-01-31. Estatus: Complete. Informe final: 2024-11-24.",
+    "detail_markdown": null,
+    "detail_url": "notas/a5b093e2bdf962fffe768444.html",
+    "detected_at": "2026-08-13T02:52:37.559841+00:00",
+    "document_type": "Panel de solución de controversias",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Organismo internacional",
+    "id": "secretariado t-mec:CDA-USA-2023-31-01",
+    "importance": 2,
+    "issuing_body": "Secretariado del T-MEC",
+    "jurisdiction": "internacional",
+    "last_seen_at": "2026-08-13T02:53:39.855587+00:00",
+    "official_evidence": {
+      "case_listing": "https://can-mex-usa-sec.org/secretariat/dispute-differends-controversias/chapter-chapitre-capitulo_31.aspx?lang=eng&case=CDA-USA-2023-31-01",
+      "final_report_date": "2024-11-24",
+      "instrument_invoked": "Canada United States Mexico Agreement (CUSMA)",
+      "mechanism": "Chapter 31 (Dispute Settlement) - Section A",
+      "panel_composition": "Mateo Diego-Fernández, Chair, by agreement of the disputing Parties Serge Frechette, Appointed by the United States, the complaining Party Kathleen Claussen, Appointed by Canada, responding Party",
+      "primary_url": "https://can-mex-usa-sec.org/secretariat/dispute-differends-controversias/chapter-chapitre-capitulo_31.aspx?lang=eng&case=CDA-USA-2023-31-01",
+      "status": "Complete"
+    },
+    "official_identifiers": {
+      "case_number": "CDA-USA-2023-31-01",
+      "source_id": "CDA-USA-2023-31-01"
+    },
+    "official_published_at": "2023-01-31",
+    "official_title": "Dairy TRQ Allocation Measures (Panel CDA-USA-2023-31-01)",
+    "published_at": "2023-01-31",
+    "published_day": 31,
+    "published_month": 1,
+    "published_year": 2023,
+    "relevance_score": 2,
+    "review_reason": "La fuente oficial cambió; requiere una nueva revisión editorial.",
+    "source": "Secretariado T-MEC",
+    "source_id": "CDA-USA-2023-31-01",
+    "subtopic_tags": [
+      "dispute settlement"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Comercio internacional"
+    ],
+    "url": "https://can-mex-usa-sec.org/secretariat/dispute-differends-controversias/chapter-chapitre-capitulo_31.aspx?lang=eng&case=CDA-USA-2023-31-01"
+  },
+  "schema_version": 8
+}

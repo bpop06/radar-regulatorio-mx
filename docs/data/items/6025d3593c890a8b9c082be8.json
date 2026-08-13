@@ -1,0 +1,67 @@
+{
+  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "item": {
+    "ai_generated": false,
+    "authority": "Instituto Mexicano de la Propiedad Industrial",
+    "canonical_url": "https://www.gob.mx/impi/prensa/impi-asegura-mas-de-2-mil-gorras-apocrifas-de-la-marca-new-era-en-el-mercado-de-san-juan-de-dios-en-guadalajara?idiom=es",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración descentralizada"
+    ],
+    "content_hash": "7014fdfbafea6b78ea1e076442e8ae5b70bccd6547eae8f2e9844c95844178f9",
+    "country_or_org": "México",
+    "description": "•San Juan de Dios es uno de los mercados con más venta de piratería (mercado famoso) identificado por el IMPI en Jalisco. El Instituto Mexicano de la Propiedad Industrial (IMPI), en el marco de la estrategia “Operación Limpieza” encabezada por la Secretaría de Economía del Gobierno de México, llevó a cabo un operativo de inspección y emplazamiento en un establecimiento ubicado en la ciudad de Guadalajara, Jalisco, como parte de un procedimiento administrativo por presuntas infracciones en materia de propiedad industrial. La visita de inspección se realizó el pasado 27 de julio de 2026 en el establecimiento denominado “CAP LAB”, ubicado en calle Álvaro Obregón número 354, colonia San Juan de Dios, Guadalajara, Jalisco, uno de los mercados de venta de piratería más importantes de México. Durante la diligencia, personal del IMPI ejecutó una medida mediante la cual fueron aseguradas 2,600 gorras que presuntamente ostentan de manera indebida los signos distintivos protegidos por los registros marcarios “NEW ERA 59FIFTY y Diseño” y “NE NEW ERA y Diseño”. El valor aproximado de dichos productos asciende a 360 mil pesos, de conformidad con la información obtenida durante el proceso. El procedimiento deriva de una solicitud de declaración administrativa de infracción por presuntas violaciones a los derechos de propiedad industrial previstos en el artículo 386, fracciones I, XVII y XXI, de la Ley Federal de Protección a la Propiedad Industrial, acompañada de la solicitud de aplicación de medidas provisionales de aseguramiento. El director general del IMPI, Vidal Llerenas, informó que el Instituto continuará con el análisis jurídico del expediente para determinar, conforme a derecho y respetando el debido proceso, la existencia o no de las infracciones denunciadas. Con estas acciones, la Secretaría de Economía y el IMPI refrendan su compromiso de proteger los derechos de propiedad industrial, combatir la comercialización de productos que vulneran marcas registradas y brindar certeza jurídica a los titulares de derechos, en beneficio de la innovación, la competencia leal y las personas consumidoras en México. ooOoo",
+    "detail_markdown": null,
+    "detail_url": "notas/6025d3593c890a8b9c082be8.html",
+    "detected_at": "2026-08-13T02:36:54.429478+00:00",
+    "document_type": "Comunicado",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-08-13T02:36:54.429478+00:00",
+    "government_branch": "Organismo descentralizado",
+    "id": "gob.mx apf:53c004569a3b5936",
+    "importance": 3,
+    "issuing_body": "Instituto Mexicano de la Propiedad Industrial",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T02:53:39.855587+00:00",
+    "official_evidence": {
+      "primary_url": "https://www.gob.mx/impi/prensa/impi-asegura-mas-de-2-mil-gorras-apocrifas-de-la-marca-new-era-en-el-mercado-de-san-juan-de-dios-en-guadalajara?idiom=es"
+    },
+    "official_identifiers": {
+      "source_id": "53c004569a3b5936"
+    },
+    "official_published_at": "2026-07-29",
+    "official_title": "IMPI asegura más de 2 mil gorras apócrifas de la marca New Era en el mercado de San Juan de Dios en Guadalajara",
+    "published_at": "2026-07-29",
+    "published_day": 29,
+    "published_month": 7,
+    "published_year": 2026,
+    "relevance_score": 5,
+    "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
+    "source": "Gob.mx APF",
+    "source_id": "53c004569a3b5936",
+    "subtopic_tags": [
+      "propiedad industrial",
+      "impi",
+      "marca",
+      "pirateria",
+      "signos distintivos"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Propiedad intelectual"
+    ],
+    "url": "https://www.gob.mx/impi/prensa/impi-asegura-mas-de-2-mil-gorras-apocrifas-de-la-marca-new-era-en-el-mercado-de-san-juan-de-dios-en-guadalajara?idiom=es"
+  },
+  "schema_version": 8
+}

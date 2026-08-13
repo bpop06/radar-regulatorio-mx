@@ -1,0 +1,67 @@
+{
+  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "item": {
+    "ai_generated": false,
+    "authority": "PODER EJECUTIVO SECRETARIA DE ENERGIA",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791369&fecha=23/06/2026",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "f7fede068b44d95bbf89f8e1d4ccab8dd9d385010476ca93c2fe53ca2c234632",
+    "country_or_org": "México",
+    "description": "Aviso de consulta pública del Proyecto de Norma Oficial Mexicana PROY-NOM-041-ENER/SE-2025, Eficiencia energética y requisitos de seguridad de ventiladores. Límites, métodos de prueba y etiquetado.",
+    "detail_markdown": null,
+    "detail_url": "notas/2eac63eb125ae807edaa2863.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Aviso De Consulta",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5791369",
+    "importance": 3,
+    "issuing_body": "Presidencia de la República",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791369&fecha=23/06/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5791369"
+    },
+    "official_published_at": "2026-06-23",
+    "official_title": "Aviso de consulta pública del Proyecto de Norma Oficial Mexicana PROY-NOM-041-ENER/SE-2025, Eficiencia energética y requisitos de seguridad de ventiladores. Límites, métodos de prueba y etiquetado.",
+    "published_at": "2026-06-23",
+    "published_day": 23,
+    "published_month": 6,
+    "published_year": 2026,
+    "relevance_score": 4,
+    "review_reason": "Registro legado o contenido sin revisión editorial certificada.",
+    "source": "DOF",
+    "source_id": "5791369",
+    "subtopic_tags": [
+      "norma oficial mexicana",
+      "proy-nom",
+      "nom-"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Normalización",
+      "Aviso",
+      "Norma"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5791369&fecha=23/06/2026"
+  },
+  "schema_version": 8
+}

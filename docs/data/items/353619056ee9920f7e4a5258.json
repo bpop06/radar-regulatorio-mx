@@ -1,0 +1,63 @@
+{
+  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "item": {
+    "ai_generated": false,
+    "authority": "Agencia Nacional de Aduanas de México",
+    "canonical_url": "https://www.anam.gob.mx/comunicado-prensa-20-2026",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Comercio exterior"
+    ],
+    "content_hash": "6b42724a4b383c8ab3314ae6ad23c05123cc8e9666ce33f1ebf45d532c90cce9",
+    "country_or_org": "México",
+    "description": "ANAM Y LA ADMINISTRACIÓN DE ADUANAS DE FRANCIA FORTALECEN SU COOPERACIÓN PARA COMBATIR EL FRAUDE ADUANERO Y FACILITAR EL COMERCIO INTERNACIONAL",
+    "detail_markdown": null,
+    "detail_url": "notas/353619056ee9920f7e4a5258.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Comunicado",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "anam:a4001efcdcbcf132",
+    "importance": 2,
+    "issuing_body": "Agencia Nacional de Aduanas de México",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "official_evidence": {
+      "primary_url": "https://www.anam.gob.mx/comunicado-prensa-20-2026"
+    },
+    "official_identifiers": {
+      "source_id": "a4001efcdcbcf132"
+    },
+    "official_published_at": "2026-06-08",
+    "official_title": "ANAM Y LA ADMINISTRACIÓN DE ADUANAS DE FRANCIA FORTALECEN SU COOPERACIÓN PARA COMBATIR EL FRAUDE ADUANERO Y FACILITAR EL COMERCIO INTERNACIONAL",
+    "published_at": "2026-06-08",
+    "published_day": 8,
+    "published_month": 6,
+    "published_year": 2026,
+    "relevance_score": 2,
+    "review_reason": "Registro legado o contenido sin revisión editorial certificada.",
+    "source": "ANAM",
+    "source_id": "a4001efcdcbcf132",
+    "subtopic_tags": [
+      "aduanero"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Aduanero"
+    ],
+    "url": "https://www.anam.gob.mx/comunicado-prensa-20-2026/"
+  },
+  "schema_version": 8
+}

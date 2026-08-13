@@ -1,0 +1,71 @@
+{
+  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "item": {
+    "ai_generated": false,
+    "authority": "Banco Nacional de Comercio Exterior, S.N.C.",
+    "canonical_url": "https://www.gob.mx/bancomext/prensa/carlos-torres-rosas-nuevo-director-general-de-bancomext-y-nafin?idiom=es",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Comercio exterior",
+      "Administración centralizada"
+    ],
+    "content_hash": "aed4c36db10b0871dd12adce4d363dc0acac8c730b86c6d2a8b99eca6c18e895",
+    "country_or_org": "México",
+    "description": "Carlos Torres Rosas tomó posesión hoy como nuevo director general del Banco Nacional de Comercio Exterior (Bancomext) y Nacional Financiera (Nafin), tras su nombramiento por la presidenta de la República, Claudia Sheinbaum Pardo. El nuevo titular de ambos bancos de desarrollo es licenciado en Administración de Empresas por la Universidad de Bath, en el Reino Unido, y realizó estudios en Finanzas e Inversiones en la Escuela de Administración de Rotterdam de la Universidad Erasmus, en los Países Bajos. Hasta el 15 de junio de este año, se desempeñó como secretario técnico del Gabinete de la Presidencia de la República y coordinador general de Programas para el Bienestar, cuyas responsabilidades incluyen el seguimiento físico y financiero de programas y proyectos prioritarios del Gobierno de México. De igual forma, fue responsable de dar seguimiento al cumplimiento de acuerdos e instrucciones del Ejecutivo federal con dependencias y entidades públicas, así como de coordinar la planeación, ejecución y evaluación del trabajo de las delegaciones de los Programas para el Bienestar en las entidades federativas. Al asumir la titularidad de Bancomext y Nafin, Torres Rosas recalcó su compromiso de honrar la confianza de la presidenta Claudia Sheinbaum con honestidad y profesionalismo. Asimismo, señaló que trabajará para que estas instituciones sirvan cada vez más al desarrollo del país, en el marco del financiamiento a la estrategia del Plan México, impulsando proyectos que generen bienestar y fortalezcan la economía moral. DESCARGA EL COMUNICADO",
+    "detail_markdown": null,
+    "detail_url": "notas/db14e45785769c962da8adf6.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Comunicado",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "gob.mx apf:82d10173de548952",
+    "importance": 3,
+    "issuing_body": "Banco Nacional de Comercio Exterior, S.N.C.",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "official_evidence": {
+      "primary_url": "https://www.gob.mx/bancomext/prensa/carlos-torres-rosas-nuevo-director-general-de-bancomext-y-nafin?idiom=es"
+    },
+    "official_identifiers": {
+      "source_id": "82d10173de548952"
+    },
+    "official_published_at": "2026-06-16",
+    "official_title": "CARLOS TORRES ROSAS, NUEVO DIRECTOR GENERAL DE BANCOMEXT Y NAFIN",
+    "published_at": "2026-06-16",
+    "published_day": 16,
+    "published_month": 6,
+    "published_year": 2026,
+    "relevance_score": 5,
+    "review_reason": "Registro legado o contenido sin revisión editorial certificada.",
+    "source": "Gob.mx APF",
+    "source_id": "82d10173de548952",
+    "subtopic_tags": [
+      "comercio exterior",
+      "nombramiento",
+      "director general",
+      "coordinador general",
+      "secretario tecnico",
+      "nuevo titular"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Comercio exterior",
+      "Derecho administrativo",
+      "Nombramientos federales"
+    ],
+    "url": "https://www.gob.mx/bancomext/prensa/carlos-torres-rosas-nuevo-director-general-de-bancomext-y-nafin?idiom=es"
+  },
+  "schema_version": 8
+}

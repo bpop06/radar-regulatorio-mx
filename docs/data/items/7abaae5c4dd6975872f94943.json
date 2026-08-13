@@ -1,0 +1,67 @@
+{
+  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "item": {
+    "ai_generated": false,
+    "authority": "Instituto Mexicano de la Propiedad Industrial",
+    "canonical_url": "https://www.gob.mx/impi/prensa/el-impi-llama-a-establecimientos-y-ciudadania-a-cumplir-con-la-ley-y-no-dejarse-enganar-ante-informacion-falsa-en-el-marco-del-mundial-2026?idiom=es",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración descentralizada",
+      "Administración centralizada"
+    ],
+    "content_hash": "83e554d0d3eed2490031bb71d1021c1fbd7d091d0795f79cfcee52b8eff4af74",
+    "country_or_org": "México",
+    "description": "• El Instituto aclara que no realiza clausuras ni inspecciones aleatorias, actuando únicamente a petición de parte. • La ciudadanía puede corroborar la identidad de los verificadores del IMPI en el portal oficial de nómina federal “https://nominatransparente.rhnet.gob.mx”. • Se exhorta a establecimientos a cumplir con la normatividad y contar con las licencias correspondientes para la transmisión de contenidos. El Instituto no realizará clausuras de establecimientos ni llevará a cabo revisiones de manera aleatoria. Las visitas de inspección se efectúan únicamente a petición de parte, es decir, cuando los titulares de los derechos solicitan la intervención de la autoridad ante posibles infracciones, conforme a los procedimientos establecidos en la ley. Es importante que la ciudadanía no se deje sorprender ni extorsionar por falsos inspectores que pretendan actuar en nombre del IMPI. Todos los inspectores del Instituto están debidamente identificados con gafete oficial con fotografía y únicamente cuentan con facultades para realizar visitas de verificación en el ámbito de sus atribuciones. Cualquier actuación fuera de este marco debe considerarse irregular y puede ser denunciada ante las autoridades correspondientes. Para mayor certeza, la ciudadanía puede confirmar la identidad de los verificadores del IMPI a través del portal de nómina transparente del Gobierno de México (https://nominatransparente.rhnet.gob.mx), donde se publica información oficial del personal y nómina federal. Esta herramienta permite corroborar si una persona efectivamente forma parte de la Administración Pública Federal, fortaleciendo la prevención de fraudes y actos de suplantación. El IMPI actúa como autoridad administrativa encargada de tramitar y resolver procedimientos relacionados con posibles infracciones en materia de propiedad intelectual, siempre dentro del marco legal aplicable y respetando las garantías de las partes involucradas. El Instituto hace un llamado a los establecimientos comerciales a cumplir con la ley, recordando que la retransmisión de eventos deportivos sin la licencia correspondiente no es legal. Estas conductas pueden constituir infracciones en materia de derechos de autor y derechos conexos, afectando directamente a quienes legítimamente poseen dichos derechos. Se invita a la ciudadanía y a los medios de comunicación a verificar la información a través de fuentes oficiales, a fin de evitar la difusión de rumores o datos incorrectos que puedan generar confusión o alarma innecesaria entre la población. El IMPI reafirma su compromiso con el respeto a la legalidad y la protección de los derechos de autor. En este sentido, continuará promoviendo el cumplimiento de la normatividad aplicable y, en caso de identificar posibles irregularidades, actuará conforme a sus atribuciones, con el objetivo de brindar certeza y confianza tanto a los titulares de derechos como al público en general. -ooOoo-",
+    "detail_markdown": null,
+    "detail_url": "notas/7abaae5c4dd6975872f94943.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Comunicado",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Organismo descentralizado",
+    "id": "gob.mx apf:f8ae4a1c9b2b82c7",
+    "importance": 2,
+    "issuing_body": "Instituto Mexicano de la Propiedad Industrial",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "official_evidence": {
+      "primary_url": "https://www.gob.mx/impi/prensa/el-impi-llama-a-establecimientos-y-ciudadania-a-cumplir-con-la-ley-y-no-dejarse-enganar-ante-informacion-falsa-en-el-marco-del-mundial-2026?idiom=es"
+    },
+    "official_identifiers": {
+      "source_id": "f8ae4a1c9b2b82c7"
+    },
+    "official_published_at": "2026-06-10",
+    "official_title": "El IMPI llama a establecimientos y ciudadanía a cumplir con la ley y no dejarse engañar ante información falsa en el marco del Mundial 2026",
+    "published_at": "2026-06-10",
+    "published_day": 10,
+    "published_month": 6,
+    "published_year": 2026,
+    "relevance_score": 3,
+    "review_reason": "Registro legado o contenido sin revisión editorial certificada.",
+    "source": "Gob.mx APF",
+    "source_id": "f8ae4a1c9b2b82c7",
+    "subtopic_tags": [
+      "propiedad intelectual",
+      "impi",
+      "administracion publica federal"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Propiedad intelectual",
+      "Derecho administrativo"
+    ],
+    "url": "https://www.gob.mx/impi/prensa/el-impi-llama-a-establecimientos-y-ciudadania-a-cumplir-con-la-ley-y-no-dejarse-enganar-ante-informacion-falsa-en-el-marco-del-mundial-2026?idiom=es"
+  },
+  "schema_version": 8
+}

@@ -1,0 +1,67 @@
+{
+  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "item": {
+    "ai_generated": false,
+    "authority": "Instituto Mexicano de la Propiedad Industrial",
+    "canonical_url": "https://www.gob.mx/impi/prensa/impi-realiza-operativo-de-inspeccion-a-oficinas-de-la-empresa-propimex-legal-ante-denuncias-ciudadanas?idiom=es",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración descentralizada",
+      "Penal"
+    ],
+    "content_hash": "a80fb2a7795be6a9f0c0825aa54b4aad55a53bb3acdea5483f7f538375705ac2",
+    "country_or_org": "México",
+    "description": "El IMPI recibió diversas denuncias relacionadas con comunicaciones dirigidas a titulares de registros marcarios que presentarían características susceptibles de generar confusión respecto de su origen o naturaleza oficial. El director general del Instituto Mexicano de la Propiedad Industrial (IMPI) informó que, derivado de diversas denuncias ciudadanas recibidas en relación con PROPIMEX LEGAL, S.C., llevó a cabo una diligencia de inspección en el domicilio en el sur de la Ciudad de México. Las denuncias documentadas señalan el envío de comunicaciones dirigidas a titulares de registros marcarios que utilizan datos reales de registros, referencias a disposiciones de la Ley Federal de Protección a la Propiedad Industrial (LFPPI), elementos de apariencia institucional como es el caso del logotipo oficial del IMPI, requerimientos de pago y advertencias relacionadas con una supuesta pérdida de derechos marcarios, circunstancias que podrían generar confusión entre las personas usuarias respecto del origen, carácter oficial o vinculación de dichas comunicaciones con el Instituto. Entre los objetivos de dicho procedimiento se encontraba verificar la existencia y operación del establecimiento, los servicios efectivamente prestados, el posible uso de las denominaciones “IMPI” o “Instituto Mexicano de la Propiedad Industrial”, así como la publicidad, documentación, equipos, sistemas, plataformas y medios electrónicos empleados para la prestación de sus servicios. Durante la inspección se confirmó la presencia de la empresa señalada dentro de un espacio en el que, de acuerdo con lo manifestado durante la visita, se proporcionan oficinas o espacios de atención a diversas empresas. Asimismo, se tuvo a la vista equipo de cómputo utilizado para consultar información relacionada con los servicios ofrecidos. De igual manera, se identificó un sitio denominado PROPIMEX en el que se anuncian servicios relacionados con el registro, vigilancia, comprobación de uso y renovación de marcas, además de información tarifaria y medios de contacto. Como resultado de la actuación, se levantó el acta circunstanciada correspondiente y se realizó el emplazamiento de la parte visitada, con lo que continuarán las etapas procesales previstas en el procedimiento administrativo. El director general del IMPI destacó que, a partir de los elementos recabados durante la diligencia, incluidos los mecanismos de cobro e información relacionada con operaciones y cuentas bancarias, se realizará la valoración correspondiente para determinar la pertinencia de remitir información a las autoridades competentes. Lo anterior se llevará a cabo sin prejuzgar sobre la existencia de algún delito u operación ilícita. En su caso, la información podrá ser compartida con la Secretaría de Seguridad Ciudadana, a través de la Subsecretaría de Inteligencia e Investigación Policial; con el Servicio de Administración Tributaria y las autoridades hacendarias competentes; y, de existir elementos que pudieran ser constitutivos de delito, con la autoridad ministerial correspondiente, para que determine lo conducente dentro de sus atribuciones. El IMPI continuará con la integración de las etapas procesales y la emisión de la resolución correspondiente, al tiempo que mantendrá la coordinación interinstitucional necesaria para el seguimiento de los requerimientos de colaboración que, en su caso, formulen las autoridades competentes. El Instituto y la Secretaría de Economía reiteran su compromiso de proteger los derechos de las personas titulares de marcas y de prevenir prácticas que puedan generar confusión respecto de los servicios oficiales que presta, así como de fortalecer los mecanismos de atención y orientación para que las personas usuarias puedan identificar oportunamente las comunicaciones oficiales del IMPI. -ooOoo-",
+    "detail_markdown": null,
+    "detail_url": "notas/b6b3a06ee3285e3ebf8ccb0b.html",
+    "detected_at": "2026-08-13T02:36:54.429478+00:00",
+    "document_type": "Comunicado",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-08-13T02:36:54.429478+00:00",
+    "government_branch": "Organismo descentralizado",
+    "id": "gob.mx apf:16e9e06ecd337c52",
+    "importance": 3,
+    "issuing_body": "Instituto Mexicano de la Propiedad Industrial",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T02:53:39.855587+00:00",
+    "official_evidence": {
+      "primary_url": "https://www.gob.mx/impi/prensa/impi-realiza-operativo-de-inspeccion-a-oficinas-de-la-empresa-propimex-legal-ante-denuncias-ciudadanas?idiom=es"
+    },
+    "official_identifiers": {
+      "source_id": "16e9e06ecd337c52"
+    },
+    "official_published_at": "2026-08-12",
+    "official_title": "IMPI realiza operativo de inspección a oficinas de la empresa PROPIMEX LEGAL ante denuncias ciudadanas",
+    "published_at": "2026-08-12",
+    "published_day": 12,
+    "published_month": 8,
+    "published_year": 2026,
+    "relevance_score": 4,
+    "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
+    "source": "Gob.mx APF",
+    "source_id": "16e9e06ecd337c52",
+    "subtopic_tags": [
+      "propiedad industrial",
+      "impi",
+      "delito"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Propiedad intelectual",
+      "Penal"
+    ],
+    "url": "https://www.gob.mx/impi/prensa/impi-realiza-operativo-de-inspeccion-a-oficinas-de-la-empresa-propimex-legal-ante-denuncias-ciudadanas?idiom=es"
+  },
+  "schema_version": 8
+}

@@ -1,0 +1,63 @@
+{
+  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "item": {
+    "ai_generated": false,
+    "authority": "ORGANISMOS AUTONOMOS FISCALIA GENERAL DE LA REPUBLICA",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795194&fecha=31%2F07%2F2026",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Penal"
+    ],
+    "content_hash": "790e08148c0967370d9d103fa08041bf8071f39936b947f801213c2dc391eac8",
+    "country_or_org": "México",
+    "description": "Saldos del mandato y fideicomiso en los que la Fiscalía General de la República es mandante y fideicomitente.",
+    "detail_markdown": null,
+    "detail_url": "notas/c7013a80dce836b767cfc02d.html",
+    "detected_at": "2026-08-13T02:53:39.855587+00:00",
+    "document_type": "Saldos Del Mandato",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-08-13T02:36:54.429478+00:00",
+    "government_branch": "Organismo autónomo",
+    "id": "dof:5795194",
+    "importance": 2,
+    "issuing_body": "Fiscalía General de la República",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T02:53:39.855587+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795194&fecha=31/07/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5795194"
+    },
+    "official_published_at": "2026-07-31",
+    "official_title": "Saldos del mandato y fideicomiso en los que la Fiscalía General de la República es mandante y fideicomitente.",
+    "published_at": "2026-07-31",
+    "published_day": 31,
+    "published_month": 7,
+    "published_year": 2026,
+    "relevance_score": 2,
+    "review_reason": "La fuente oficial cambió; requiere una nueva revisión editorial.",
+    "source": "DOF",
+    "source_id": "5795194",
+    "subtopic_tags": [
+      "fiscalia"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Penal"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5795194&fecha=31/07/2026"
+  },
+  "schema_version": 8
+}

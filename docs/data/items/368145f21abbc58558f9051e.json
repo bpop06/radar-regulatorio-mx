@@ -1,0 +1,66 @@
+{
+  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "item": {
+    "ai_generated": false,
+    "authority": "PODER EJECUTIVO SECRETARIA DE MEDIO AMBIENTE Y RECURSOS NATURALES",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5790008&fecha=09/06/2026",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "e5dd7fd79560ca41165ffbcd4f3be9b224dbf2cfd9c12e1258cf635451c72d26",
+    "country_or_org": "México",
+    "description": "Proyecto de Norma Oficial Mexicana PROY-NOM-160- SEMARNAT-2026, Que establece los elementos y procedimientos para formular los planes de manejo de residuos peligrosos.",
+    "detail_markdown": null,
+    "detail_url": "notas/368145f21abbc58558f9051e.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Proyecto De Norma",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5790008",
+    "importance": 3,
+    "issuing_body": "Presidencia de la República",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5790008&fecha=09/06/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5790008"
+    },
+    "official_published_at": "2026-06-09",
+    "official_title": "Proyecto de Norma Oficial Mexicana PROY-NOM-160- SEMARNAT-2026, Que establece los elementos y procedimientos para formular los planes de manejo de residuos peligrosos.",
+    "published_at": "2026-06-09",
+    "published_day": 9,
+    "published_month": 6,
+    "published_year": 2026,
+    "relevance_score": 4,
+    "review_reason": "Registro legado o contenido sin revisión editorial certificada.",
+    "source": "DOF",
+    "source_id": "5790008",
+    "subtopic_tags": [
+      "norma oficial mexicana",
+      "proy-nom",
+      "nom-"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Normalización",
+      "Norma"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5790008&fecha=09/06/2026"
+  },
+  "schema_version": 8
+}

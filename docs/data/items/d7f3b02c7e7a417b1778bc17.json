@@ -1,0 +1,71 @@
+{
+  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "item": {
+    "ai_generated": false,
+    "authority": "Servicio de Administración Tributaria",
+    "canonical_url": "https://www.gob.mx/sat/prensa/amplian-sat-y-anam-entrada-en-vigor-de-la-manifestacion-de-valor-electronica-53-2026?idiom=es",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Fiscal",
+      "Comercio exterior"
+    ],
+    "content_hash": "163293e514ba75dece696124047ccf10179b5e215f7aee8ac48378e30b0ae99c",
+    "country_or_org": "México",
+    "description": "El Servicio de Administración Tributaria (SAT) y la Agencia Nacional de Aduanas de México (ANAM) informan que el plazo para presentar la Manifestación de Valor Electrónica (MVE) se amplía al 30 de septiembre de 2026. Dicho mecanismo permite integrar la información relacionada con el valor en aduana de la mercancía que se introduce a territorio nacional, para su presentación a través de la Ventanilla Única de Trámites de Comercio Exterior Mexicana (VUTCE). Esta medida permitirá que el usuario de comercio exterior cuente con un periodo adicional para realizar las adecuaciones correspondientes y familiarizarse con el nuevo esquema operativo. La nueva disposición se dio a conocer en la Tercera Versión Anticipada de la Segunda Resolución de Modificaciones a las Reglas Generales de Comercio Exterior (RGCE) para 2026, publicada en el Portal del SAT, mediante la cual se actualizó el transitorio Décimo Primero de las RGCE dadas a conocer en el DOF el 27 de diciembre de 2025. En la resolución se incluyen las siguientes facilidades para el cumplimiento de la MVE: No será necesario transmitir los documentos de transporte de las mercancías, el certificado de origen o el documento donde se establezca la garantía efectuada en la cuenta aduanera de garantía, siempre que dichos documentos se transmitan adjuntos al pedimento que se trate. Podrán transmitir el formato E15 contenido en el Anexo 1 con la información general de los contratos asociados a la MVE sin que sea necesario transmitir los mismos a través de la VUTCE. Con estas acciones, el SAT y la ANAM refrendan su compromiso de impulsar la modernización de los procesos de comercio exterior y facilitar el cumplimiento de las obligaciones mediante herramientas digitales que permitan una gestión más eficiente, ordenada y transparente. ¡Todas y todos contribuimos al bienestar de México! Descargar Comunicado conjunto",
+    "detail_markdown": null,
+    "detail_url": "notas/d7f3b02c7e7a417b1778bc17.html",
+    "detected_at": "2026-08-13T02:36:54.429478+00:00",
+    "document_type": "Comunicado",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-08-13T02:36:54.429478+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "gob.mx apf:1efd0f397c9dd91f",
+    "importance": 3,
+    "issuing_body": "Servicio de Administración Tributaria",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T02:53:39.855587+00:00",
+    "official_evidence": {
+      "primary_url": "https://www.gob.mx/sat/prensa/amplian-sat-y-anam-entrada-en-vigor-de-la-manifestacion-de-valor-electronica-53-2026?idiom=es"
+    },
+    "official_identifiers": {
+      "source_id": "1efd0f397c9dd91f"
+    },
+    "official_published_at": "2026-07-31",
+    "official_title": "Amplían SAT y ANAM entrada en vigor de la Manifestación de Valor Electrónica",
+    "published_at": "2026-07-31",
+    "published_day": 31,
+    "published_month": 7,
+    "published_year": 2026,
+    "relevance_score": 5,
+    "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
+    "source": "Gob.mx APF",
+    "source_id": "1efd0f397c9dd91f",
+    "subtopic_tags": [
+      "sat",
+      "aduana",
+      "agencia nacional de aduanas",
+      "reglas generales de comercio exterior",
+      "pedimento",
+      "comercio exterior"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Fiscal",
+      "Aduanero",
+      "Comercio exterior"
+    ],
+    "url": "https://www.gob.mx/sat/prensa/amplian-sat-y-anam-entrada-en-vigor-de-la-manifestacion-de-valor-electronica-53-2026?idiom=es"
+  },
+  "schema_version": 8
+}

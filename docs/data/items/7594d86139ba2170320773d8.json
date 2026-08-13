@@ -1,0 +1,59 @@
+{
+  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "item": {
+    "ai_generated": false,
+    "authority": "Secretaría de Economía",
+    "canonical_url": "https://www.gob.mx/se/prensa/tras-la-ratificacion-de-mexico-el-reino-unido-se-adhiere-al-tratado-integral-y-progresista-de-asociacion-transpacifico-tipat?idiom=es",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "be916e0e9034b73f77830a332da904c1d78b72b320f9fa8600fcf2cbf16d25a7",
+    "country_or_org": "México",
+    "description": "Tras la ratificación de México, a partir del 22 de junio de 2026, entra en vigor la adhesión del Reino Unido al Tratado Integral y Progresista de Asociación Transpacífico (TIPAT). Se prevé que el intercambio comercial y de inversión entre ambos países se amplíe bajo este tratado, derivado de la liberalización de bienes y de la acumulación de las reglas de origen. Las Secretarías de Economía y de Relaciones Exteriores informan que el 22 de junio entró en vigor, tras la ratificación de México, la adhesión del Reino Unido al Tratado Integral y Progresista de Asociación Transpacífico (TIPAT), lo que permite que ambos países apliquen entre sí las disposiciones del acuerdo. El TIPAT es un acuerdo comercial que agrupa a 12 países de América, Asia, Oceanía y Europa: Australia, Brunéi, Canadá, Chile, Japón, Malasia, México, Nueva Zelanda, Perú, Singapur, Vietnam y, desde ahora, el Reino Unido. México es miembro fundador del TIPAT, vigente en nuestro país desde el 30 de diciembre de 2018. Con la entrada en vigor de la adhesión del Reino Unido, ambos países podrán beneficiarse de las disposiciones del instrumento, lo que fortalecerá la relación económica bilateral. Actualmente, el comercio está caracterizado por flujos de bienes de alto valor agregado como maquinaria y equipo industrial, así como vehículos y autopartes. Bajo el TIPAT, los productos industriales y agroalimentarios quedarán desgravados entre México y el Reino Unido, lo que permitirá incrementar la expansión de nuestro comercio. Además, mediante las reglas de acumulación de origen, el TIPAT puede ampliar la participación de México y del Reino Unido en nuestras respectivas cadenas de valor. También podrá apoyar el fortalecimiento de sectores prioritarios del Plan México, como el automotriz, el aeroespacial y el farmacéutico, mediante el impulso de la inversión en México y de la transferencia de tecnología para incrementar la producción. En un contexto internacional marcado por la reconfiguración de las cadenas de suministro y la búsqueda de mercados más diversificados, la entrada en vigor de la adhesión del Reino Unido al TIPAT fortalece la posición de México como plataforma de comercio e inversión con alcance global y contribuye a estrechar los vínculos económicos con Europa, Asia-Pacífico y América mediante un marco común de reglas comerciales. El TIPAT sitúa a México y al Reino Unido en una nueva esfera de cooperación económica lo cual permitirá ampliar el intercambio comercial y de inversión entre ambos países que, tan solo en 2025, ascendió a 6,293 mdd. -ooOoo-",
+    "detail_markdown": null,
+    "detail_url": "notas/7594d86139ba2170320773d8.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Comunicado",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "gob.mx apf:5c5ea7cb47f9db0a",
+    "importance": 1,
+    "issuing_body": "Secretaría de Economía",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "official_evidence": {
+      "primary_url": "https://www.gob.mx/se/prensa/tras-la-ratificacion-de-mexico-el-reino-unido-se-adhiere-al-tratado-integral-y-progresista-de-asociacion-transpacifico-tipat?idiom=es"
+    },
+    "official_identifiers": {
+      "source_id": "5c5ea7cb47f9db0a"
+    },
+    "official_published_at": "2026-06-22",
+    "official_title": "Tras la ratificación de México, el Reino Unido se adhiere al Tratado Integral y Progresista de Asociación Transpacífico (TIPAT)",
+    "published_at": "2026-06-22",
+    "published_day": 22,
+    "published_month": 6,
+    "published_year": 2026,
+    "relevance_score": 0,
+    "review_reason": "Registro legado o contenido sin revisión editorial certificada.",
+    "source": "Gob.mx APF",
+    "source_id": "5c5ea7cb47f9db0a",
+    "subtopic_tags": [],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [],
+    "url": "https://www.gob.mx/se/prensa/tras-la-ratificacion-de-mexico-el-reino-unido-se-adhiere-al-tratado-integral-y-progresista-de-asociacion-transpacifico-tipat?idiom=es"
+  },
+  "schema_version": 8
+}

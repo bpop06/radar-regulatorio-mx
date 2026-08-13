@@ -1,0 +1,75 @@
+{
+  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "item": {
+    "ai_generated": false,
+    "authority": "Centro Internacional de Arreglo de Diferencias Relativas a Inversiones",
+    "canonical_url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%2F21%2F14",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "Mining",
+    "case_facts": "",
+    "case_number": "ARB/21/14",
+    "case_outcome": "",
+    "case_parties": "First Majestic Silver Corp. v. United Mexican States",
+    "case_reasoning": "",
+    "case_status": "Pending",
+    "case_treaty": "NAFTA (North American Free Trade Agreement), USMCA (United States-Mexico-Canada Agreement)",
+    "categories": [
+      "Comercio exterior",
+      "Comercio internacional"
+    ],
+    "content_hash": "48e3c408712949c7cf905ecd58919965f83e722bc684de6bedd0ba163cc18a00",
+    "country_or_org": "CIADI",
+    "description": "Estatus del procedimiento: Pendiente. Materia: Mining. Sector económico: Oil, Gas & Mining. Instrumento invocado: NAFTA (North American Free Trade Agreement), USMCA (United States-Mexico-Canada Agreement). Última actuación: April 17, 2026 - The Tribunal issues Procedural Order No. 9 concerning procedural matters.",
+    "detail_markdown": null,
+    "detail_url": "notas/8bd46ffc714b9e3d2f870ce2.html",
+    "detected_at": "2026-08-13T02:52:40.967177+00:00",
+    "document_type": "Caso de arbitraje de inversión",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Organismo internacional",
+    "id": "ciadi:ARB/21/14",
+    "importance": 4,
+    "issuing_body": "Centro Internacional de Arreglo de Diferencias relativas a Inversiones",
+    "jurisdiction": "internacional",
+    "last_seen_at": "2026-08-13T02:53:39.855587+00:00",
+    "official_evidence": {
+      "case_detail": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%2F21%2F14",
+      "instrument_invoked": "NAFTA (North American Free Trade Agreement), USMCA (United States-Mexico-Canada Agreement)",
+      "latest_development": "April 17, 2026 - The Tribunal issues Procedural Order No. 9 concerning procedural matters.",
+      "primary_url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%2F21%2F14",
+      "status": "Pending",
+      "subject": "Mining"
+    },
+    "official_identifiers": {
+      "case_number": "ARB/21/14",
+      "source_id": "ARB/21/14"
+    },
+    "official_published_at": "2026-04-17",
+    "official_title": "First Majestic Silver Corp. v. United Mexican States (ICSID Case No. ARB/21/14)",
+    "published_at": "2026-04-17",
+    "published_day": 17,
+    "published_month": 4,
+    "published_year": 2026,
+    "relevance_score": 7,
+    "review_reason": "La fuente oficial cambió; requiere una nueva revisión editorial.",
+    "source": "CIADI",
+    "source_id": "ARB/21/14",
+    "subtopic_tags": [
+      "trade agreement",
+      "usmca",
+      "free trade",
+      "arbitraje de inversion",
+      "icsid"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Comercio exterior",
+      "Comercio internacional"
+    ],
+    "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%2F21%2F14"
+  },
+  "schema_version": 8
+}

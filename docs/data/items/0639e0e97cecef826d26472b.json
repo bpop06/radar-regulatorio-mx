@@ -1,0 +1,67 @@
+{
+  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "item": {
+    "ai_generated": false,
+    "authority": "PODER EJECUTIVO SECRETARIA ANTICORRUPCION Y BUEN GOBIERNO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795520&fecha=05%2F08%2F2026",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Penal",
+      "Administración centralizada"
+    ],
+    "content_hash": "5b4c92d2548369ee0ad1f82a110e6da7ce73325d1712ee2081e86b1f31071f47",
+    "country_or_org": "México",
+    "description": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, empresas públicas del Estado, Fiscalía General de la República, entidades federativas, y sus municipios, así como las demarcaciones territoriales de la Ciudad de México, que deberán abstenerse de aceptar propuestas o celebrar contratos con la empresa Grupo Comercial Ogamak S.A. de C.V.",
+    "detail_markdown": null,
+    "detail_url": "notas/0639e0e97cecef826d26472b.html",
+    "detected_at": "2026-08-13T02:53:39.855587+00:00",
+    "document_type": "Circular",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-08-13T02:36:54.429478+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5795520",
+    "importance": 2,
+    "issuing_body": "Presidencia de la República",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T02:53:39.855587+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795520&fecha=05/08/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5795520"
+    },
+    "official_published_at": "2026-08-05",
+    "official_title": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, empresas públicas del Estado, Fiscalía General de la República, entidades federativas, y sus municipios, así como las demarcaciones territoriales de la Ciudad de México, que deberán abstenerse de aceptar propuestas o celebrar contratos con la empresa Grupo Comercial Ogamak S.A. de C.V.",
+    "published_at": "2026-08-05",
+    "published_day": 5,
+    "published_month": 8,
+    "published_year": 2026,
+    "relevance_score": 3,
+    "review_reason": "La fuente oficial cambió; requiere una nueva revisión editorial.",
+    "source": "DOF",
+    "source_id": "5795520",
+    "subtopic_tags": [
+      "fiscalia",
+      "administracion publica federal"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Penal",
+      "Derecho administrativo",
+      "Circular"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5795520&fecha=05/08/2026"
+  },
+  "schema_version": 8
+}

@@ -1,0 +1,66 @@
+{
+  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "item": {
+    "ai_generated": false,
+    "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791987&fecha=29/06/2026",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Proceso legislativo",
+      "Administración centralizada"
+    ],
+    "content_hash": "6d934c825f89a63229ce9ef6ff509fbbd78278f397eda7241e232f772dc8ba7c",
+    "country_or_org": "México",
+    "description": "Acuerdo por el que se reforma y adiciona la Clasificación Programática (Tipología general).",
+    "detail_markdown": null,
+    "detail_url": "notas/d22fad4e7861499fc0a56aae.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Acuerdo",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5791987",
+    "importance": 2,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791987&fecha=29/06/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5791987"
+    },
+    "official_published_at": "2026-06-29",
+    "official_title": "Acuerdo por el que se reforma y adiciona la Clasificación Programática (Tipología general).",
+    "published_at": "2026-06-29",
+    "published_day": 29,
+    "published_month": 6,
+    "published_year": 2026,
+    "relevance_score": 3,
+    "review_reason": "Registro legado o contenido sin revisión editorial certificada.",
+    "source": "DOF",
+    "source_id": "5791987",
+    "subtopic_tags": [
+      "reforma",
+      "adiciona"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Iniciativa",
+      "Acuerdo"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5791987&fecha=29/06/2026"
+  },
+  "schema_version": 8
+}

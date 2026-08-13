@@ -1,0 +1,69 @@
+{
+  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "item": {
+    "ai_generated": false,
+    "authority": "Servicio de Administración Tributaria",
+    "canonical_url": "https://www.gob.mx/sat/prensa/rinde-protesta-jennifer-krystel-castillo-madrid-como-nueva-titular-de-aggc-46-2026?idiom=es",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Fiscal",
+      "Administración centralizada"
+    ],
+    "content_hash": "485ce1bfe1eb4567daa326bacd922d44b8c496fc6ca76399280456926aff9b21",
+    "country_or_org": "México",
+    "description": "La maestra Jennifer Krystel Castillo Madrid fue ratificada por el Pleno de la Comisión Permanente del Congreso de la Unión, como nueva titular de la Administración General de Grandes Contribuyentes (AGGC). Luego de que fuera avalado su nombramiento, la Administradora General rindió la protesta de ley ante legisladoras y legisladores que se encontraban en el Salón de Sesiones de ese órgano del Congreso. Previamente, Castillo Madrid compareció en la Tercera Comisión, donde expuso el plan de trabajo que implementará desde la AGGC y reiteró su compromiso de desempeñar el cargo con responsabilidad y honestidad. Ante integrantes de la Comisión explicó que su labor se guiará por cinco ejes principales: mejora en procesos; criterios de programación y mejores prácticas en los procesos de auditoría; uniformidad en criterios de revisión que den certeza jurídica; fortalecimiento del contacto con el contribuyente y eficiencia operativa, y coordinación con autoridades. Enfatizó que su estrategia garantizará seguridad jurídica y fomentará las inversiones. Aseguró que no habrá espacios para la evasión fiscal ni para una interpretación selectiva de la normatividad en favor o en contra de algún contribuyente. Destacó que las principales actividades a fiscalizar serán las de alto riesgo, como operaciones con “factureras” y “nomineras”, las que presenten pérdidas fiscales recurrentes, simulen o realicen abuso de deducciones, que obtengan ingresos no declarados, entre otras. Precisó que ello no implica la realización de auditorías innecesarias o actos de molestia ociosos. La recaudación debe ejercerse con firmeza frente a las conductas indebidas, pero sin requerimientos innecesarios, desproporcionados ni actos de molestia para quienes cumplen oportunamente con el pago de sus impuestos, puntualizó. Agregó que en el país hay 15 mil 644 grandes contribuyentes, lo que representa el 0.02% del padrón nacional. La nueva titular de la Administración de Grandes Contribuyentes fue designada en el cargo por la presidenta Claudia Sheinbaum Pardo en abril pasado. ¡Todas y todos contribuimos al bienestar de México! Descargar Comunicado 46-2026",
+    "detail_markdown": null,
+    "detail_url": "notas/3c32fa7d492310c16a0f9b9e.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Comunicado",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "gob.mx apf:92f3878db16fcf24",
+    "importance": 3,
+    "issuing_body": "Servicio de Administración Tributaria",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "official_evidence": {
+      "primary_url": "https://www.gob.mx/sat/prensa/rinde-protesta-jennifer-krystel-castillo-madrid-como-nueva-titular-de-aggc-46-2026?idiom=es"
+    },
+    "official_identifiers": {
+      "source_id": "92f3878db16fcf24"
+    },
+    "official_published_at": "2026-06-17",
+    "official_title": "Rinde protesta Jennifer Krystel Castillo Madrid como nueva titular de AGGC",
+    "published_at": "2026-06-17",
+    "published_day": 17,
+    "published_month": 6,
+    "published_year": 2026,
+    "relevance_score": 5,
+    "review_reason": "Registro legado o contenido sin revisión editorial certificada.",
+    "source": "Gob.mx APF",
+    "source_id": "92f3878db16fcf24",
+    "subtopic_tags": [
+      "contribuyente",
+      "nombramiento",
+      "designada",
+      "nueva titular"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Fiscal",
+      "Derecho administrativo",
+      "Nombramientos federales"
+    ],
+    "url": "https://www.gob.mx/sat/prensa/rinde-protesta-jennifer-krystel-castillo-madrid-como-nueva-titular-de-aggc-46-2026?idiom=es"
+  },
+  "schema_version": 8
+}

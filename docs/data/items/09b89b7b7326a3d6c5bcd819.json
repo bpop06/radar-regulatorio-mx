@@ -1,0 +1,61 @@
+{
+  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "item": {
+    "ai_generated": false,
+    "authority": "PODER EJECUTIVO SECRETARIA DE ECONOMIA",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791664&fecha=25/06/2026",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "245171543c2b7ca299f4c1d40c279f6416c12d5ebc7d70c120bb9aea91b2b38e",
+    "country_or_org": "México",
+    "description": "Resolución final del procedimiento administrativo de examen de vigencia de las cuotas compensatorias impuestas a las importaciones de tubería de acero al carbono con costura longitudinal recta originarias de los Estados Unidos de América, independientemente del país de procedencia.",
+    "detail_markdown": null,
+    "detail_url": "notas/09b89b7b7326a3d6c5bcd819.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Resolución Final",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5791664",
+    "importance": 1,
+    "issuing_body": "Secretaría de Economía",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791664&fecha=25/06/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5791664"
+    },
+    "official_published_at": "2026-06-25",
+    "official_title": "Resolución final del procedimiento administrativo de examen de vigencia de las cuotas compensatorias impuestas a las importaciones de tubería de acero al carbono con costura longitudinal recta originarias de los Estados Unidos de América, independientemente del país de procedencia.",
+    "published_at": "2026-06-25",
+    "published_day": 25,
+    "published_month": 6,
+    "published_year": 2026,
+    "relevance_score": 1,
+    "review_reason": "Registro legado o contenido sin revisión editorial certificada.",
+    "source": "DOF",
+    "source_id": "5791664",
+    "subtopic_tags": [],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Resolución"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5791664&fecha=25/06/2026"
+  },
+  "schema_version": 8
+}

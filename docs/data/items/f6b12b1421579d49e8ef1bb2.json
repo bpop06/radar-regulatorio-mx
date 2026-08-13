@@ -1,0 +1,66 @@
+{
+  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "item": {
+    "ai_generated": false,
+    "authority": "Cámara de Diputados",
+    "canonical_url": "https://gaceta.diputados.gob.mx/Gaceta/66/2026/ago/20260812.html",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Proceso legislativo",
+      "Penal"
+    ],
+    "content_hash": "303adb3b192ae9b80671c1168fbf89d0489d76ed41fa379b34e95f4fb17445b3",
+    "country_or_org": "México",
+    "description": "Que reforma la fracción VII del artículo 10 de la Ley Nacional de Ejecución Penal, recibida del diputado Mario Alberto López Hernández, del Grupo Parlamentario del PVEM, en la sesión de la Comisión Permanente del miércoles 5 de agosto de 2026",
+    "detail_markdown": null,
+    "detail_url": "notas/f6b12b1421579d49e8ef1bb2.html",
+    "detected_at": "2026-08-13T02:53:39.855587+00:00",
+    "document_type": "Iniciativas",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-08-13T02:36:54.429478+00:00",
+    "government_branch": "Legislativo federal",
+    "id": "diputados:86ab138799a55169",
+    "importance": 2,
+    "issuing_body": "Cámara de Diputados",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T02:53:39.855587+00:00",
+    "official_evidence": {
+      "primary_url": "https://gaceta.diputados.gob.mx/Gaceta/66/2026/ago/20260812.html#Iniciativa18"
+    },
+    "official_identifiers": {
+      "source_id": "86ab138799a55169"
+    },
+    "official_published_at": "2026-08-12",
+    "official_title": "Que reforma la fracción VII del artículo 10 de la Ley Nacional de Ejecución Penal, recibida del diputado Mario Alberto López Hernández, del Grupo Parlamentario del PVEM, en la sesión de la Comisión Permanente del miércoles 5 de agosto de 2026",
+    "published_at": "2026-08-12",
+    "published_day": 12,
+    "published_month": 8,
+    "published_year": 2026,
+    "relevance_score": 3,
+    "review_reason": "La fuente oficial cambió; requiere una nueva revisión editorial.",
+    "source": "Diputados",
+    "source_id": "86ab138799a55169",
+    "subtopic_tags": [
+      "reforma",
+      "penal"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Iniciativa",
+      "Penal"
+    ],
+    "url": "https://gaceta.diputados.gob.mx/Gaceta/66/2026/ago/20260812.html#Iniciativa18"
+  },
+  "schema_version": 8
+}

@@ -1,0 +1,69 @@
+{
+  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "item": {
+    "ai_generated": false,
+    "authority": "Centro Internacional de Arreglo de Diferencias Relativas a Inversiones",
+    "canonical_url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%28AF%29%2F13%2F2",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "Construction activities",
+    "case_facts": "",
+    "case_number": "ARB(AF)/13/2",
+    "case_outcome": "",
+    "case_parties": "Cemusa - Corporación Europea de Mobiliario Urbano, S.A. and Corporación Americana de Equipamientos Urbanos, S.L. v. United Mexican States",
+    "case_reasoning": "",
+    "case_status": "Concluded",
+    "case_treaty": "BIT Spain - Mexico 2006",
+    "categories": [
+      "Comercio internacional"
+    ],
+    "content_hash": "f4a18debd1e92f20ab1388f07800840a93301c858268535bc59d244ab8d062b2",
+    "country_or_org": "CIADI",
+    "description": "Estatus del procedimiento: Concluido. Materia: Construction activities. Sector económico: Construction. Instrumento invocado: BIT Spain - Mexico 2006.",
+    "detail_markdown": null,
+    "detail_url": "notas/11a53c617a38f0a43aa9c7d8.html",
+    "detected_at": "2026-08-13T02:52:43.045874+00:00",
+    "document_type": "Caso de arbitraje de inversión",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-08-13T02:52:43.045874+00:00",
+    "government_branch": "Organismo internacional",
+    "id": "ciadi:ARB(AF)/13/2",
+    "importance": 2,
+    "issuing_body": "Centro Internacional de Arreglo de Diferencias relativas a Inversiones",
+    "jurisdiction": "internacional",
+    "last_seen_at": "2026-08-13T02:52:43.045874+00:00",
+    "official_evidence": {
+      "case_detail": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%28AF%29%2F13%2F2",
+      "instrument_invoked": "BIT Spain - Mexico 2006",
+      "primary_url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%28AF%29%2F13%2F2",
+      "status": "Concluded",
+      "subject": "Construction activities"
+    },
+    "official_identifiers": {
+      "case_number": "ARB(AF)/13/2",
+      "source_id": "ARB(AF)/13/2"
+    },
+    "official_published_at": "2013-11-06",
+    "official_title": "Cemusa - Corporación Europea de Mobiliario Urbano, S.A. and Corporación Americana de Equipamientos Urbanos, S.L. v. United Mexican States (ICSID Case No. ARB(AF)/13/2)",
+    "published_at": "2013-11-06",
+    "published_day": 6,
+    "published_month": 11,
+    "published_year": 2013,
+    "relevance_score": 3,
+    "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
+    "source": "CIADI",
+    "source_id": "ARB(AF)/13/2",
+    "subtopic_tags": [
+      "arbitraje de inversion",
+      "icsid"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Comercio internacional"
+    ],
+    "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%28AF%29%2F13%2F2"
+  },
+  "schema_version": 8
+}

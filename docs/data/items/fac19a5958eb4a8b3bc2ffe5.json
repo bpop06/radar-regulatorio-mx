@@ -1,0 +1,64 @@
+{
+  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "item": {
+    "ai_generated": false,
+    "authority": "ORGANISMOS DESCONCENTRADOS O DESCENTRALIZADOS INSTITUTO MEXICANO DE LA PROPIEDAD INDUSTRIAL",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792804&fecha=07/07/2026",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración descentralizada"
+    ],
+    "content_hash": "8fff1e66050fa94f686c82ff59519b57f53661554a8d72d196974b337b8be642",
+    "country_or_org": "México",
+    "description": "Acuerdo por el que se suspenden las labores y no corren plazos ni términos en el Instituto Mexicano de la Propiedad Industrial.",
+    "detail_markdown": null,
+    "detail_url": "notas/fac19a5958eb4a8b3bc2ffe5.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Acuerdo",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Organismo descentralizado",
+    "id": "dof:5792804",
+    "importance": 2,
+    "issuing_body": "Instituto Mexicano de la Propiedad Industrial",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792804&fecha=07/07/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5792804"
+    },
+    "official_published_at": "2026-07-07",
+    "official_title": "Acuerdo por el que se suspenden las labores y no corren plazos ni términos en el Instituto Mexicano de la Propiedad Industrial.",
+    "published_at": "2026-07-07",
+    "published_day": 7,
+    "published_month": 7,
+    "published_year": 2026,
+    "relevance_score": 3,
+    "review_reason": "Registro legado o contenido sin revisión editorial certificada.",
+    "source": "DOF",
+    "source_id": "5792804",
+    "subtopic_tags": [
+      "propiedad industrial"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Propiedad intelectual",
+      "Acuerdo"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5792804&fecha=07/07/2026"
+  },
+  "schema_version": 8
+}

@@ -1,0 +1,61 @@
+{
+  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "item": {
+    "ai_generated": false,
+    "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791565&fecha=24/06/2026",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "ae1b21127b38edcee741a79edbcb4b3214b11ea9228302d70f553e27dd80a461",
+    "country_or_org": "México",
+    "description": "Acuerdo por el que se destina a la Secretaría de Desarrollo Agrario, Territorial y Urbano, el Inmueble Federal denominado CENDI Carolina, con Registro Federal Inmobiliario 9- 3189-5, y superficie de 971.843 metros cuadrados, ubicado en calle Carolina número 77, Colonia Ciudad de los Deportes, Código Postal 03710, Alcaldía Benito Juárez, Ciudad de México.",
+    "detail_markdown": null,
+    "detail_url": "notas/c34943480afa4ec466854903.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Acuerdo",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5791565",
+    "importance": 1,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791565&fecha=24/06/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5791565"
+    },
+    "official_published_at": "2026-06-24",
+    "official_title": "Acuerdo por el que se destina a la Secretaría de Desarrollo Agrario, Territorial y Urbano, el Inmueble Federal denominado CENDI Carolina, con Registro Federal Inmobiliario 9- 3189-5, y superficie de 971.843 metros cuadrados, ubicado en calle Carolina número 77, Colonia Ciudad de los Deportes, Código Postal 03710, Alcaldía Benito Juárez, Ciudad de México.",
+    "published_at": "2026-06-24",
+    "published_day": 24,
+    "published_month": 6,
+    "published_year": 2026,
+    "relevance_score": 1,
+    "review_reason": "Registro legado o contenido sin revisión editorial certificada.",
+    "source": "DOF",
+    "source_id": "5791565",
+    "subtopic_tags": [],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Acuerdo"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5791565&fecha=24/06/2026"
+  },
+  "schema_version": 8
+}

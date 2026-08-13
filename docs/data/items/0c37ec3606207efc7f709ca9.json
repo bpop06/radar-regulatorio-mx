@@ -1,0 +1,65 @@
+{
+  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "item": {
+    "ai_generated": false,
+    "authority": "Organización Mundial del Comercio",
+    "canonical_url": "https://www.wto.org/english/news_e/news26_e/acc_27jul26_470_e.htm",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Comercio exterior",
+      "Comercio internacional"
+    ],
+    "content_hash": "059e0bb3dd692bc5fb8b947ae51d428835fe97aa74b08c24d6b2211cda140307",
+    "country_or_org": "OMC",
+    "description": "Uzbekistan reaffirmed its determination to complete its WTO accession process within 2026 at a meeting of the Working Party on the Accession of Uzbekistan on 27 and 28 July, soon after its last meeting in March. The head of Uzbekistan's delegation, Chief Negotiator Azizbek Urunov, stressed that maintaining a strong pace of engagement and addressing members' remaining concerns will be critical to bringing the accession process to a successful conclusion.",
+    "detail_markdown": null,
+    "detail_url": "notas/0c37ec3606207efc7f709ca9.html",
+    "detected_at": "2026-08-13T02:36:54.429478+00:00",
+    "document_type": "Noticia",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-08-13T02:36:54.429478+00:00",
+    "government_branch": "Organismo internacional",
+    "id": "omc:100b4985d1255354",
+    "importance": 2,
+    "issuing_body": "Organización Mundial del Comercio",
+    "jurisdiction": "internacional",
+    "last_seen_at": "2026-08-13T02:53:39.855587+00:00",
+    "official_evidence": {
+      "primary_url": "https://www.wto.org/english/news_e/news26_e/acc_27jul26_470_e.htm"
+    },
+    "official_identifiers": {
+      "source_id": "100b4985d1255354"
+    },
+    "official_published_at": "2026-07-27",
+    "official_title": "Uzbekistan reaffirms 2026 WTO accession goal, thanks members for continuing engagement",
+    "published_at": "2026-07-27",
+    "published_day": 27,
+    "published_month": 7,
+    "published_year": 2026,
+    "relevance_score": 2,
+    "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
+    "source": "OMC",
+    "source_id": "100b4985d1255354",
+    "subtopic_tags": [
+      "wto"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Comercio exterior",
+      "Comercio internacional"
+    ],
+    "url": "https://www.wto.org/english/news_e/news26_e/acc_27jul26_470_e.htm"
+  },
+  "schema_version": 8
+}

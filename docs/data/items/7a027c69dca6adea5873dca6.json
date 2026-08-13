@@ -1,0 +1,67 @@
+{
+  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "item": {
+    "ai_generated": false,
+    "authority": "Secretaría de Relaciones Exteriores",
+    "canonical_url": "https://www.gob.mx/sre/prensa/presidenta-claudia-sheinbaum-envia-nombramiento-de-esteban-moctezuma-como-embajador-de-mexico-ante-la-union-europea-belgica-y-luxemburgo?idiom=es",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "66a097cbbaf478d2f4a7fadb3c90314175d1673f95c0d07ed574c6b58aa1c235",
+    "country_or_org": "México",
+    "description": "Por instrucciones de la presidenta Claudia Sheinbaum, se envió a la Comisión Permanente del Congreso de la Unión el nombramiento de Esteban Moctezuma Barragán como embajador extraordinario y plenipotenciario de México ante el Reino de Bélgica y la Unión Europea, con concurrencia ante el Gran Ducado de Luxemburgo. Pendiente de su proceso en el Senado mexicano, su primera tarea será coordinar la ratificación del Acuerdo Global Modernizado (AGM) con todas las representaciones de México en los países miembros de la Unión Europea. De igual manera, y en seguimiento a la reciente firma del AGM entre la presidenta Sheinbaum y la presidenta de la Comisión Europea, Ursula von der Leyen, el pasado 22 de mayo en Palacio Nacional, Moctezuma Barragán ha sido encomendado por la presidenta Claudia Sheinbaum para coordinar una estrategia con los distintos países de la Unión Europea encaminada a incrementar el intercambio comercial, generar nuevas inversiones y aprovechar todas las oportunidades que ofrece este acuerdo para nuestro país. Esteban Moctezuma es licenciado en Economía por la Universidad Nacional Autónoma de México (UNAM) y maestro en Desarrollo por la Universidad de Cambridge en Reino Unido. Asimismo, cuenta con una larga trayectoria en el servicio público en favor de México, se desempeñó como secretario de Gobernación de 1994 a 1995; secretario de Desarrollo Social de 1998 a 1999; senador de la República en la LVII Legislatura, de 1997 al 2000; secretario de Educación Pública de 2018 a 2021; y se desempeñó exitosamente al frente de la Embajada de México en Estados Unidos de marzo de 2021 a mayo de 2026.",
+    "detail_markdown": null,
+    "detail_url": "notas/7a027c69dca6adea5873dca6.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Comunicado",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "gob.mx apf:ef015eadfe17d895",
+    "importance": 3,
+    "issuing_body": "Secretaría de Relaciones Exteriores",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "official_evidence": {
+      "primary_url": "https://www.gob.mx/sre/prensa/presidenta-claudia-sheinbaum-envia-nombramiento-de-esteban-moctezuma-como-embajador-de-mexico-ante-la-union-europea-belgica-y-luxemburgo?idiom=es"
+    },
+    "official_identifiers": {
+      "source_id": "ef015eadfe17d895"
+    },
+    "official_published_at": "2026-06-29",
+    "official_title": "Presidenta Claudia Sheinbaum envía nombramiento de Esteban Moctezuma como embajador de México ante la Unión Europea, Bélgica y Luxemburgo",
+    "published_at": "2026-06-29",
+    "published_day": 29,
+    "published_month": 6,
+    "published_year": 2026,
+    "relevance_score": 4,
+    "review_reason": "Registro legado o contenido sin revisión editorial certificada.",
+    "source": "Gob.mx APF",
+    "source_id": "ef015eadfe17d895",
+    "subtopic_tags": [
+      "nombramiento",
+      "ratificacion",
+      "embajador"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Derecho administrativo",
+      "Nombramientos federales",
+      "Nombramiento"
+    ],
+    "url": "https://www.gob.mx/sre/prensa/presidenta-claudia-sheinbaum-envia-nombramiento-de-esteban-moctezuma-como-embajador-de-mexico-ante-la-union-europea-belgica-y-luxemburgo?idiom=es"
+  },
+  "schema_version": 8
+}

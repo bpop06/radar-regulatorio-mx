@@ -1,0 +1,64 @@
+{
+  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "item": {
+    "ai_generated": false,
+    "authority": "Procuraduría de la Defensa del Contribuyente",
+    "canonical_url": "https://www.gob.mx/prodecon/es/articulos/eres-una-persona-pensionada-o-jubilada-prodecon-te-informa-sobre-eres-una-persona-pensionada-o-jubilada-prodecon-te-informa-sobre?idiom=es",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Fiscal"
+    ],
+    "content_hash": "cf3ce220a23e322b5c7cb4799dc5304acbebc2164425518653099c58e35c35e5",
+    "country_or_org": "México",
+    "description": "La e.firma es un mecanismo digital que sustituye la firma autógrafa y produce los mismos efectos que las leyes otorgan. Es el conjunto de datos y características que permite la identificación del firmante , puedes realizar trámites en diversas dependencias y acceder a los servicios del portal del Servicio de Administración Tributaria (SAT) como consultar tu constancia de situación fiscal, presentar aclaraciones, solicitudes o avisos, emitir comprobantes fiscales, entre otros. Con base en lo anterior, es importante no proporcionar tus datos a terceros o en sitios web no oficiales, ya que pueden hacer uso de tus datos fiscales y utilizarlos para realizar prácticas indebidas a tu nombre. Algunas de las formas más comunes de poder recabar tu información son: Mensajes de texto. Llamadas telefónicas. Mensaje vía WhatsApp. Enlaces de páginas de gobierno apócrifas. Solicitud de terceros para acceder a un programa social gubernamental. Si tienes dudas respecto a este tema, contáctanos a través de nuestros servicios gratuitos de asesoría que están a tu disposición: en el correo electrónico atencionalcontribuyente@prodecon.gob.mx ; vía telefónica al 55 12 05 9000 en la Ciudad de México, al 800 611 0190 (lada sin costo en el interior del país) o, si te encuentras en el extranjero, al (+52) 55 1205 9000; o bien, en los teléfonos de nuestras Delegaciones disponibles en: https://www.prodecon.gob.mx/homeprodecon/delegaciones/ ; a través de nuestro chat en línea en https://chat.prodecon.gob.mx/ ; mediante una asesoría personal, si así lo prefieres solicita tu cita, en: https://citas.prodecon.gob.mx",
+    "detail_markdown": null,
+    "detail_url": "notas/e9d012f78446d590472ac543.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Artículo",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Organismo descentralizado",
+    "id": "gob.mx apf:5e56fc12d7e0b79f",
+    "importance": 2,
+    "issuing_body": "Procuraduría de la Defensa del Contribuyente",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "official_evidence": {
+      "primary_url": "https://www.gob.mx/prodecon/es/articulos/eres-una-persona-pensionada-o-jubilada-prodecon-te-informa-sobre-eres-una-persona-pensionada-o-jubilada-prodecon-te-informa-sobre?idiom=es"
+    },
+    "official_identifiers": {
+      "source_id": "5e56fc12d7e0b79f"
+    },
+    "official_published_at": "2026-06-18",
+    "official_title": "¿Eres una persona pensionada o jubilada? PRODECON te informa sobre¿Eres una persona pensionada o jubilada? PRODECON te informa sobre?",
+    "published_at": "2026-06-18",
+    "published_day": 18,
+    "published_month": 6,
+    "published_year": 2026,
+    "relevance_score": 2,
+    "review_reason": "Registro legado o contenido sin revisión editorial certificada.",
+    "source": "Gob.mx APF",
+    "source_id": "5e56fc12d7e0b79f",
+    "subtopic_tags": [
+      "sat",
+      "prodecon"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Fiscal"
+    ],
+    "url": "https://www.gob.mx/prodecon/es/articulos/eres-una-persona-pensionada-o-jubilada-prodecon-te-informa-sobre-eres-una-persona-pensionada-o-jubilada-prodecon-te-informa-sobre?idiom=es"
+  },
+  "schema_version": 8
+}

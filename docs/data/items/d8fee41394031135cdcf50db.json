@@ -1,0 +1,65 @@
+{
+  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "item": {
+    "ai_generated": false,
+    "authority": "Organización Mundial del Comercio",
+    "canonical_url": "https://www.wto.org/english/news_e/news26_e/dtech_03aug26_471_e.htm",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Comercio exterior",
+      "Comercio internacional"
+    ],
+    "content_hash": "392a680146495c43efd86d41876969d01690cb0c79c0386bc763e27e0862f222",
+    "country_or_org": "OMC",
+    "description": "The WTO will host the first World Trade and Tech Day on 14 September at its headquarters in Geneva, bringing together trade and information and communications technology (ICT) policymakers, industry leaders and other stakeholders to discuss how artificial intelligence (AI) strategies can better support economies' efforts to maximize the gains of international trade.",
+    "detail_markdown": null,
+    "detail_url": "notas/d8fee41394031135cdcf50db.html",
+    "detected_at": "2026-08-13T02:36:54.429478+00:00",
+    "document_type": "Noticia",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-08-13T02:36:54.429478+00:00",
+    "government_branch": "Organismo internacional",
+    "id": "omc:b43a78527c8c2146",
+    "importance": 2,
+    "issuing_body": "Organización Mundial del Comercio",
+    "jurisdiction": "internacional",
+    "last_seen_at": "2026-08-13T02:53:39.855587+00:00",
+    "official_evidence": {
+      "primary_url": "https://www.wto.org/english/news_e/news26_e/dtech_03aug26_471_e.htm"
+    },
+    "official_identifiers": {
+      "source_id": "b43a78527c8c2146"
+    },
+    "official_published_at": "2026-08-03",
+    "official_title": "World Trade and Tech Day to explore policies to make AI work for inclusive trade",
+    "published_at": "2026-08-03",
+    "published_day": 3,
+    "published_month": 8,
+    "published_year": 2026,
+    "relevance_score": 2,
+    "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
+    "source": "OMC",
+    "source_id": "b43a78527c8c2146",
+    "subtopic_tags": [
+      "wto"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Comercio exterior",
+      "Comercio internacional"
+    ],
+    "url": "https://www.wto.org/english/news_e/news26_e/dtech_03aug26_471_e.htm"
+  },
+  "schema_version": 8
+}

@@ -1,0 +1,59 @@
+{
+  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "item": {
+    "ai_generated": false,
+    "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792788&fecha=07/07/2026",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "5201d8eed2833259a10e6e6f0a6abadaab2759c93ddfc7ae9aaed9496ecd7426",
+    "country_or_org": "México",
+    "description": "Reglas para la integración y operación del Comité y Subcomité de Aprovechamiento Inmobiliario del Instituto de Administración y Avalúos de Bienes Nacionales.",
+    "detail_markdown": null,
+    "detail_url": "notas/1aabed1279ea09ad4e01846d.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Reglas Para",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5792788",
+    "importance": 1,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792788&fecha=07/07/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5792788"
+    },
+    "official_published_at": "2026-07-07",
+    "official_title": "Reglas para la integración y operación del Comité y Subcomité de Aprovechamiento Inmobiliario del Instituto de Administración y Avalúos de Bienes Nacionales.",
+    "published_at": "2026-07-07",
+    "published_day": 7,
+    "published_month": 7,
+    "published_year": 2026,
+    "relevance_score": 1,
+    "review_reason": "Registro legado o contenido sin revisión editorial certificada.",
+    "source": "DOF",
+    "source_id": "5792788",
+    "subtopic_tags": [],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5792788&fecha=07/07/2026"
+  },
+  "schema_version": 8
+}

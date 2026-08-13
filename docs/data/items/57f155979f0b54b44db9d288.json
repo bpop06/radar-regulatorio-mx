@@ -1,0 +1,65 @@
+{
+  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "item": {
+    "ai_generated": false,
+    "authority": "Secretaría de Economía",
+    "canonical_url": "https://www.snice.gob.mx/~oracle/SNICE_DOCS/ACLARACION0016Y017-2026-LICITACION-ACTUALIDAD_20260803-20260803.pdf",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Comercio exterior",
+      "Administración centralizada"
+    ],
+    "content_hash": "a98fe4d1cf742d59ba1cf53e7ce34bc0084146b55f42dc06948dfa05b5986643",
+    "country_or_org": "México",
+    "description": "03.08.2026 Acta de junta de aclaración de bases para participar en las LPN No. 016/2026 y 017/2026 para asignar los cupos de importación de leche condensada y leche evaporada establecidos en el acuerdo por el que se dan a conocer los cupos de importación descritos en el Apéndice A-1 \"Contingentes arancelarios de México\" del Anexo 2-D \"Compromisos arancelarios\" del TIPAT.",
+    "detail_markdown": null,
+    "detail_url": "notas/57f155979f0b54b44db9d288.html",
+    "detected_at": "2026-08-13T02:36:54.429478+00:00",
+    "document_type": "Actualidad",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-08-13T02:36:54.429478+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "snice:24a6d0ca94db9b18",
+    "importance": 1,
+    "issuing_body": "Secretaría de Economía",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T02:53:39.855587+00:00",
+    "official_evidence": {
+      "primary_url": "https://www.snice.gob.mx/~oracle/SNICE_DOCS/ACLARACION0016Y017-2026-LICITACION-ACTUALIDAD_20260803-20260803.pdf"
+    },
+    "official_identifiers": {
+      "source_id": "24a6d0ca94db9b18"
+    },
+    "official_published_at": "2026-08-03",
+    "official_title": "Acta de junta de aclaración de bases para participar en las LPN No. 016/2026 y 017/2026 para asignar los cupos de importación de leche condensada y leche evaporada establecidos en el acuerdo por el que se dan a conocer los cupos de importación descritos en el Apéndice A-1 \"Contingentes arancelarios de México\" del Anexo 2-D \"Compromisos arancelarios\" del TIPAT.",
+    "published_at": "2026-08-03",
+    "published_day": 3,
+    "published_month": 8,
+    "published_year": 2026,
+    "relevance_score": 1,
+    "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
+    "source": "SNICE",
+    "source_id": "24a6d0ca94db9b18",
+    "subtopic_tags": [
+      "importacion"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Comercio exterior",
+      "Acuerdo"
+    ],
+    "url": "https://www.snice.gob.mx/~oracle/SNICE_DOCS/ACLARACION0016Y017-2026-LICITACION-ACTUALIDAD_20260803-20260803.pdf"
+  },
+  "schema_version": 8
+}

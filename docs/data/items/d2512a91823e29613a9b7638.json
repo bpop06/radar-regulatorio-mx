@@ -1,0 +1,66 @@
+{
+  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "item": {
+    "ai_generated": false,
+    "authority": "Secretaría de Agricultura y Desarrollo Rural",
+    "canonical_url": "https://www.gob.mx/agricultura/prensa/sembradoras-y-sembradores-de-papantla-veracruz-logran-primera-exportacion-de-limon-persa-a-rusia?idiom=es",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Comercio exterior",
+      "Proceso legislativo"
+    ],
+    "content_hash": "a1961f0052cc317107d987286674d32f4180694f6ea16ed3a837fb8ccd675199",
+    "country_or_org": "México",
+    "description": "Comunicado 160/Ciudad de México Este logro histórico es resultado de la estrategia de comercialización que promovió la secretaria de AGRICULTURA, Columba Jazmín López Gutiérrez, durante su gestión como coordinadora nacional de Sembrando Vida Las y los productores prevén una comercialización de más de 257 toneladas del cítrico durante el segundo semestre de 2026 Papantla cuenta con al menos nueve mil 500 productoras y productores con capacidad de proveeduría de limón persa La Secretaría de Agricultura y Desarrollo Rural (AGRICULTURA) da a conocer la primera exportación de limón persa del territorio Papantla de Olarte, Veracruz, con destino a Moscú, Rusia, como resultado de la estrategia de comercialización que impulsa el Gobierno de México, a través del programa Sembrando Vida. Con el acompañamiento técnico de esta iniciativa, las y los sembradores de la sociedad cooperativa Bioproductores del Llano Alto —integrada por 183 socios— lograron que los cultivos alcanzaran la madurez y la calidad de excelencia requeridas para concretar una venta inicial de 21.4 toneladas en el mercado euroasiático. Las y los sembradores prevén que este primer paso abra un abanico de nuevas oportunidades para la región, pues esa cifra se podría elevar a 257.4 toneladas en los próximos seis meses. Esto dará mayor presencia de los cítricos mexicanos en el exterior. Este logro histórico es resultado de la estrategia de comercialización directa que promovió la secretaria de Agricultura y Desarrollo Rural, Columba Jazmín López Gutiérrez, con proyectos estratégicos como limón, vainilla, cacao, café, achiote y naranja durante su gestión como coordinadora nacional del programa Sembrando Vida. Las herramientas permitieron a las y los agricultores dar un valor agregado a sus cosechas y, sobre todo, negociar directamente con las y los empresarios extranjeros durante las ferias agroalimentarias de clase mundial como Biofach (Núremberg) y Fruit Logistica (Berlín, Alemania), donde participaron al contar con certificaciones o prácticas agroecológicas sostenibles. Para ello, las y los sembradores contaron con acompañamiento técnico e integral, traductores y el apoyo de expertos en comercio internacional para alcanzar un acuerdo directo y justo en sus cultivos. El territorio de Papantla cuenta con una sólida base de al menos nueve mil 500 productores con capacidad de proveeduría de limón persa. Su geografía permite el cultivo desde el nivel del mar hasta los mil 600 metros de altitud, lo que garantiza el abasto continuo, compensando las dificultades climáticas como las sequías. El cítrico veracruzano se destacó frente a los compradores internacionales por su alta vida de anaquel —indispensable para soportar el trayecto marítimo superior a 30 días—, calidad física excepcional —con un color verde intenso, tamaño adecuado al mercado europeo y rugosidad de cáscara exigida— y porque los cultivos tienen entre 3 y 5 años de edad. El Gobierno de México, encabezado por la Presidenta Claudia Sheinbaum Pardo, reafirma su compromiso de impulsar el bienestar y la prosperidad compartida de las comunidades rurales a través de la organización de las y los productores y la apertura de nuevos mercados internacionales.",
+    "detail_markdown": null,
+    "detail_url": "notas/d2512a91823e29613a9b7638.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Comunicado",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "gob.mx apf:74279dc00b784912",
+    "importance": 2,
+    "issuing_body": "Secretaría de Agricultura y Desarrollo Rural",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "official_evidence": {
+      "primary_url": "https://www.gob.mx/agricultura/prensa/sembradoras-y-sembradores-de-papantla-veracruz-logran-primera-exportacion-de-limon-persa-a-rusia?idiom=es"
+    },
+    "official_identifiers": {
+      "source_id": "74279dc00b784912"
+    },
+    "official_published_at": "2026-07-02",
+    "official_title": "Sembradoras y sembradores de Papantla, Veracruz, logran primera exportación de limón persa a Rusia",
+    "published_at": "2026-07-02",
+    "published_day": 2,
+    "published_month": 7,
+    "published_year": 2026,
+    "relevance_score": 3,
+    "review_reason": "Registro legado o contenido sin revisión editorial certificada.",
+    "source": "Gob.mx APF",
+    "source_id": "74279dc00b784912",
+    "subtopic_tags": [
+      "exportacion",
+      "iniciativa"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Comercio exterior",
+      "Iniciativa"
+    ],
+    "url": "https://www.gob.mx/agricultura/prensa/sembradoras-y-sembradores-de-papantla-veracruz-logran-primera-exportacion-de-limon-persa-a-rusia?idiom=es"
+  },
+  "schema_version": 8
+}

@@ -1,0 +1,44 @@
+{
+  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "items": [
+    {
+      "canonical_url": "https://can-mex-usa-sec.org/secretariat/dispute-differends-controversias/chapter-chapitre-capitulo_10.aspx?lang=eng&case=USA-CDA-2022-10.12-01",
+      "case_amount": "",
+      "case_number": "USA-CDA-2022-10.12-01",
+      "case_outcome": "",
+      "case_parties": "United States / Canada",
+      "case_reasoning": "",
+      "case_status": "Terminated",
+      "case_treaty": "Canada United States Mexico Agreement (CUSMA)",
+      "categories": [
+        "Comercio internacional"
+      ],
+      "content_hash": "e3d2fb8f553b52ae5a814dbb14c556241f93614526b4763622dd121b86119b46",
+      "country_or_org": "T-MEC",
+      "detail_url": "notas/1a2f109c74ae734ec52be25c.html",
+      "detected_at": "2026-08-13T02:52:37.554213+00:00",
+      "document_type": "Panel de solución de controversias",
+      "editorial_status": "needs_review",
+      "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+      "id": "secretariado t-mec:USA-CDA-2022-10.12-01",
+      "importance": 1,
+      "issuing_body": "Secretariado del T-MEC",
+      "jurisdiction": "internacional",
+      "last_seen_at": "2026-08-13T02:53:39.855587+00:00",
+      "official_published_at": "2022-03-04",
+      "official_title": "Large Diameter Welded Pipe AD AR (Panel USA-CDA-2022-10.12-01)",
+      "published_at": "2022-03-04",
+      "relevance_score": 1,
+      "review_reason": "La fuente oficial cambió; requiere una nueva revisión editorial.",
+      "source": "Secretariado T-MEC",
+      "source_id": "USA-CDA-2022-10.12-01",
+      "summary": null,
+      "summary_teaser": null,
+      "title": null,
+      "url": "https://can-mex-usa-sec.org/secretariat/dispute-differends-controversias/chapter-chapitre-capitulo_10.aspx?lang=eng&case=USA-CDA-2022-10.12-01"
+    }
+  ],
+  "month": "2022-03",
+  "schema_version": 8,
+  "total_items": 1
+}

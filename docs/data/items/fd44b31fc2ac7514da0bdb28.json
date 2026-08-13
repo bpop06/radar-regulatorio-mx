@@ -1,0 +1,66 @@
+{
+  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "item": {
+    "ai_generated": false,
+    "authority": "PODER EJECUTIVO SECRETARIA ANTICORRUPCION Y BUEN GOBIERNO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792310&fecha=01/07/2026",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "211589476edefa829ea4fb6320d82cdf592bbf65a38321e1117697048a8780a7",
+    "country_or_org": "México",
+    "description": "Oficio Circular con el que se dará a conocer a las dependencias, entidades, órganos administrativos desconcentrados de la Administración Pública Federal, sujetos a la cobertura de los Tratados de Libre Comercio que se indican, la conversión a moneda nacional de los umbrales determinados y actualizados conforme a los capítulos de compras del sector público respectivos, que tendrán vigencia del 1 de julio al 31 de diciembre de 2026.",
+    "detail_markdown": null,
+    "detail_url": "notas/fd44b31fc2ac7514da0bdb28.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Oficio Circular",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5792310",
+    "importance": 2,
+    "issuing_body": "Presidencia de la República",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792310&fecha=01/07/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5792310"
+    },
+    "official_published_at": "2026-07-01",
+    "official_title": "Oficio Circular con el que se dará a conocer a las dependencias, entidades, órganos administrativos desconcentrados de la Administración Pública Federal, sujetos a la cobertura de los Tratados de Libre Comercio que se indican, la conversión a moneda nacional de los umbrales determinados y actualizados conforme a los capítulos de compras del sector público respectivos, que tendrán vigencia del 1 de julio al 31 de diciembre de 2026.",
+    "published_at": "2026-07-01",
+    "published_day": 1,
+    "published_month": 7,
+    "published_year": 2026,
+    "relevance_score": 3,
+    "review_reason": "Registro legado o contenido sin revisión editorial certificada.",
+    "source": "DOF",
+    "source_id": "5792310",
+    "subtopic_tags": [
+      "administracion publica federal",
+      "organos administrativos desconcentrados"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Derecho administrativo",
+      "Oficio",
+      "Circular"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5792310&fecha=01/07/2026"
+  },
+  "schema_version": 8
+}

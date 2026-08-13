@@ -1,0 +1,61 @@
+{
+  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "item": {
+    "ai_generated": false,
+    "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795168&fecha=31%2F07%2F2026",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "99856e1e7d43e494b2873d7f6227d1e2eaa479865d4af637cbff4c667bc00354",
+    "country_or_org": "México",
+    "description": "Acuerdo por el que se destina a la Secretaría Ejecutiva del Sistema Nacional Anticorrupción, el inmueble federal denominado \"Torre Cenit\", con Registro Federal Inmobiliario 9-21105-1, con superficie de terreno de 611.00 metros cuadrados, ubicado en Viaducto Miguel Alemán número 105, Colonia Escandón 1era. Sección, Código Postal 11800, Alcaldía Miguel Hidalgo, Ciudad de México.",
+    "detail_markdown": null,
+    "detail_url": "notas/1f6db5f9914acf678d8fed34.html",
+    "detected_at": "2026-08-13T02:53:39.855587+00:00",
+    "document_type": "Acuerdo",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-08-13T02:36:54.429478+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5795168",
+    "importance": 1,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T02:53:39.855587+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795168&fecha=31/07/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5795168"
+    },
+    "official_published_at": "2026-07-31",
+    "official_title": "Acuerdo por el que se destina a la Secretaría Ejecutiva del Sistema Nacional Anticorrupción, el inmueble federal denominado \"Torre Cenit\", con Registro Federal Inmobiliario 9-21105-1, con superficie de terreno de 611.00 metros cuadrados, ubicado en Viaducto Miguel Alemán número 105, Colonia Escandón 1era. Sección, Código Postal 11800, Alcaldía Miguel Hidalgo, Ciudad de México.",
+    "published_at": "2026-07-31",
+    "published_day": 31,
+    "published_month": 7,
+    "published_year": 2026,
+    "relevance_score": 1,
+    "review_reason": "La fuente oficial cambió; requiere una nueva revisión editorial.",
+    "source": "DOF",
+    "source_id": "5795168",
+    "subtopic_tags": [],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Acuerdo"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5795168&fecha=31/07/2026"
+  },
+  "schema_version": 8
+}

@@ -1,0 +1,68 @@
+{
+  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "item": {
+    "ai_generated": false,
+    "authority": "Instituto Mexicano de la Propiedad Industrial",
+    "canonical_url": "https://www.gob.mx/impi/prensa/asegura-impi-3-mil-300-juguetes-lego-apocrifos-en-aduana-de-queretaro?idiom=es",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Comercio exterior",
+      "Administración descentralizada"
+    ],
+    "content_hash": "417a9844ce99911f3d4fa006c2ec6ce9b6c6270b356699ec6ed3a8d1611900e8",
+    "country_or_org": "México",
+    "description": "• El IMPI aseguró 3 mil 366 sets de juguetes armables de procedencia extranjera, presuntamente vinculados con la vulneración de derechos de propiedad industrial de LEGO HOLDING A/S • Las acciones se realizaron en el recinto fiscalizado Terminal Logistics, en la Aduana de Querétaro Las acciones fueron realizadas el 21 de julio de 2026 por personal de la Dirección Divisional de Protección a la Propiedad Intelectual en el recinto fiscalizado Terminal Logistics, S.A. de C.V., ubicado en el municipio de Colón, Querétaro, en cumplimiento de órdenes de inspección emitidas conforme a la Ley Federal de Protección a la Propiedad Industrial. Durante la primera diligencia, el personal del IMPI identificó 2 mil sets de juguetes armables que ostentaban signos presuntamente similares en grado de confusión a los diseños tridimensionales protegidos por los registros marcarios de la empresa titular. Como resultado, se aplicó la medida provisional correspondiente y la mercancía quedó asegurada en el recinto fiscalizado, conforme a las disposiciones legales aplicables. En una segunda diligencia, realizada el mismo día, se ubicaron 1 mil 366 sets adicionales de juguetes armables con características presuntamente similares a los derechos protegidos de la parte actora. En consecuencia, también se ordenó la suspensión de su libre circulación y el aseguramiento de la mercancía. Con estas acciones, el IMPI aseguró 3 mil 366 sets de juguetes armables de procedencia extranjera, reforzando las acciones de observancia en puntos estratégicos de ingreso al país para impedir la comercialización de mercancías que presuntamente infringen derechos de propiedad industrial. La Secretaría de Economía y el Instituto Mexicano de la Propiedad Industrial refrendan su compromiso de trabajar de manera coordinada con las autoridades competentes para prevenir el ingreso y la comercialización de mercancías que presuntamente vulneren derechos de propiedad industrial, fortaleciendo el Estado de derecho y la promoción de condiciones de competencia leal que contribuyan a la innovación, certeza y equidad en México, en beneficio de las personas creadoras, las empresas y las y los consumidores.",
+    "detail_markdown": null,
+    "detail_url": "notas/77709215640dd40a1d3aed05.html",
+    "detected_at": "2026-08-13T02:36:54.429478+00:00",
+    "document_type": "Comunicado",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-08-13T02:36:54.429478+00:00",
+    "government_branch": "Organismo descentralizado",
+    "id": "gob.mx apf:1d0e66e7c24cb0ae",
+    "importance": 3,
+    "issuing_body": "Instituto Mexicano de la Propiedad Industrial",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T02:53:39.855587+00:00",
+    "official_evidence": {
+      "primary_url": "https://www.gob.mx/impi/prensa/asegura-impi-3-mil-300-juguetes-lego-apocrifos-en-aduana-de-queretaro?idiom=es"
+    },
+    "official_identifiers": {
+      "source_id": "1d0e66e7c24cb0ae"
+    },
+    "official_published_at": "2026-07-23",
+    "official_title": "Asegura IMPI 3 mil 300 juguetes LEGO apócrifos en Aduana de Querétaro",
+    "published_at": "2026-07-23",
+    "published_day": 23,
+    "published_month": 7,
+    "published_year": 2026,
+    "relevance_score": 5,
+    "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
+    "source": "Gob.mx APF",
+    "source_id": "1d0e66e7c24cb0ae",
+    "subtopic_tags": [
+      "aduana",
+      "propiedad intelectual",
+      "propiedad industrial",
+      "impi"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Aduanero",
+      "Propiedad intelectual"
+    ],
+    "url": "https://www.gob.mx/impi/prensa/asegura-impi-3-mil-300-juguetes-lego-apocrifos-en-aduana-de-queretaro?idiom=es"
+  },
+  "schema_version": 8
+}

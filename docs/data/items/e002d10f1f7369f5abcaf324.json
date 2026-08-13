@@ -1,0 +1,70 @@
+{
+  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "item": {
+    "ai_generated": false,
+    "authority": "Centro Internacional de Arreglo de Diferencias Relativas a Inversiones",
+    "canonical_url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%2F26%2F19",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "Railroad concession",
+    "case_facts": "",
+    "case_number": "ARB/26/19",
+    "case_outcome": "",
+    "case_parties": "Canadian Pacific Kansas City Limited v. United Mexican States",
+    "case_reasoning": "",
+    "case_status": "Pending",
+    "case_treaty": "Comprehensive and Progressive Agreement for Trans-Pacific Partnership (CPTPP)",
+    "categories": [
+      "Comercio internacional"
+    ],
+    "content_hash": "3c398de94ca9a687dc258b23dec9b0b63e5e5810d72d40604ae74c01bfb1007a",
+    "country_or_org": "CIADI",
+    "description": "Estatus del procedimiento: Pendiente. Materia: Railroad concession. Sector económico: Transportation. Instrumento invocado: Comprehensive and Progressive Agreement for Trans-Pacific Partnership (CPTPP). Última actuación: July 3, 2026 - Following appointment by the Respondent, Monica Pinto (Argentine) accepts her appointment as arbitrator.",
+    "detail_markdown": null,
+    "detail_url": "notas/e002d10f1f7369f5abcaf324.html",
+    "detected_at": "2026-08-13T02:52:38.026170+00:00",
+    "document_type": "Caso de arbitraje de inversión",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Organismo internacional",
+    "id": "ciadi:ARB/26/19",
+    "importance": 2,
+    "issuing_body": "Centro Internacional de Arreglo de Diferencias relativas a Inversiones",
+    "jurisdiction": "internacional",
+    "last_seen_at": "2026-08-13T02:53:39.855587+00:00",
+    "official_evidence": {
+      "case_detail": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%2F26%2F19",
+      "instrument_invoked": "Comprehensive and Progressive Agreement for Trans-Pacific Partnership (CPTPP)",
+      "latest_development": "July 3, 2026 - Following appointment by the Respondent, Monica Pinto (Argentine) accepts her appointment as arbitrator.",
+      "primary_url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%2F26%2F19",
+      "status": "Pending",
+      "subject": "Railroad concession"
+    },
+    "official_identifiers": {
+      "case_number": "ARB/26/19",
+      "source_id": "ARB/26/19"
+    },
+    "official_published_at": "2026-07-03",
+    "official_title": "Canadian Pacific Kansas City Limited v. United Mexican States (ICSID Case No. ARB/26/19)",
+    "published_at": "2026-07-03",
+    "published_day": 3,
+    "published_month": 7,
+    "published_year": 2026,
+    "relevance_score": 3,
+    "review_reason": "La fuente oficial cambió; requiere una nueva revisión editorial.",
+    "source": "CIADI",
+    "source_id": "ARB/26/19",
+    "subtopic_tags": [
+      "arbitraje de inversion",
+      "icsid"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Comercio internacional"
+    ],
+    "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%2F26%2F19"
+  },
+  "schema_version": 8
+}

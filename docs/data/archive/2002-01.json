@@ -1,0 +1,45 @@
+{
+  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "items": [
+    {
+      "canonical_url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%28AF%29%2F02%2F1",
+      "case_amount": "",
+      "case_number": "ARB(AF)/02/1",
+      "case_outcome": "",
+      "case_parties": "Fireman's Fund Insurance Company v. United Mexican States",
+      "case_reasoning": "",
+      "case_status": "Concluded",
+      "case_treaty": "NAFTA (North American Free Trade Agreement)",
+      "categories": [
+        "Comercio exterior",
+        "Comercio internacional"
+      ],
+      "content_hash": "5cf9b273b5d245af24d93fe5845f46504416017ee7f98689f63fde5cc08f6482",
+      "country_or_org": "CIADI",
+      "detail_url": "notas/c465db45a0742bf622f26767.html",
+      "detected_at": "2026-08-13T02:52:43.439072+00:00",
+      "document_type": "Caso de arbitraje de inversión",
+      "editorial_status": "needs_review",
+      "first_seen_at": "2026-08-13T02:52:43.439072+00:00",
+      "id": "ciadi:ARB(AF)/02/1",
+      "importance": 4,
+      "issuing_body": "Centro Internacional de Arreglo de Diferencias relativas a Inversiones",
+      "jurisdiction": "internacional",
+      "last_seen_at": "2026-08-13T02:52:43.439072+00:00",
+      "official_published_at": "2002-01-15",
+      "official_title": "Fireman's Fund Insurance Company v. United Mexican States (ICSID Case No. ARB(AF)/02/1)",
+      "published_at": "2002-01-15",
+      "relevance_score": 6,
+      "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
+      "source": "CIADI",
+      "source_id": "ARB(AF)/02/1",
+      "summary": null,
+      "summary_teaser": null,
+      "title": null,
+      "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%28AF%29%2F02%2F1"
+    }
+  ],
+  "month": "2002-01",
+  "schema_version": 8,
+  "total_items": 1
+}

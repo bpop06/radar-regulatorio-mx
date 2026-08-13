@@ -1,0 +1,61 @@
+{
+  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "item": {
+    "ai_generated": false,
+    "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792087&fecha=30/06/2026",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "df62e86cc2b03203b6521fa67769053407d68c34a8804528719e7298e566431c",
+    "country_or_org": "México",
+    "description": "Convocatoria para personas físicas y morales interesadas en obtener su registro en el Padrón de Evaluadores de Políticas Públicas, programas derivados del Plan Nacional de Desarrollo, programas presupuestarios y recursos federales transferidos, correspondiente al ejercicio fiscal 2027.",
+    "detail_markdown": null,
+    "detail_url": "notas/dd0c3893d0bbaf94660b11f8.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Convocatoria Para Personas",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5792087",
+    "importance": 1,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792087&fecha=30/06/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5792087"
+    },
+    "official_published_at": "2026-06-30",
+    "official_title": "Convocatoria para personas físicas y morales interesadas en obtener su registro en el Padrón de Evaluadores de Políticas Públicas, programas derivados del Plan Nacional de Desarrollo, programas presupuestarios y recursos federales transferidos, correspondiente al ejercicio fiscal 2027.",
+    "published_at": "2026-06-30",
+    "published_day": 30,
+    "published_month": 6,
+    "published_year": 2026,
+    "relevance_score": 1,
+    "review_reason": "Registro legado o contenido sin revisión editorial certificada.",
+    "source": "DOF",
+    "source_id": "5792087",
+    "subtopic_tags": [],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Convocatoria"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5792087&fecha=30/06/2026"
+  },
+  "schema_version": 8
+}

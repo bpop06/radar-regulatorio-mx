@@ -1,0 +1,67 @@
+{
+  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "item": {
+    "ai_generated": false,
+    "authority": "Procuraduría Federal del Consumidor",
+    "canonical_url": "https://www.gob.mx/profeco/prensa/profeco-conuee-y-caname-emiten-alerta-por-refrigerador-hisense-que-incumple-normas-de-eficiencia-energetica?idiom=es",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración descentralizada"
+    ],
+    "content_hash": "6ca912a075c19636a907bf9eb07f63f8ba673e306f4ad5b0594a96c2368582cd",
+    "country_or_org": "México",
+    "description": "La Procuraduría Federal del Consumidor (Profeco) participa en la alerta que la Comisión Nacional para el Uso Eficiente de la Energía (Conuee) y la Cámara Nacional de Manufacturas Eléctricas (Caname) emiten para el refrigerador marca Hisense, modelo RT90N6WKX, distribuido por la empresa Comercializadora México Americana. Tras realizar ensayos de laboratorio, se detectó que este modelo incumple con la Norma Oficial Mexicana NOM-015-ENER-2018, la cual regula los límites máximos de consumo de energía, métodos de prueba y etiquetado para refrigeradores y congeladores electrodomésticos en México. Mayor consumo y gasto para el usuario El refrigerador evaluado consume más energía eléctrica de la permitida por la normatividad vigente para su categoría, lo que puede traducirse en un mayor gasto económico para las y los consumidores por un mayor uso de electricidad durante su operación en comparación con el nivel máximo establecido por la NOM aplicable. Estos fueron los resultados obtenidos en las pruebas de laboratorio: Consumo de energía anual obtenido del producto evaluado: 352.98 KWh/año Consumo máximo permitido por la norma oficial: 316.42 KWh/año Diferencia de consumo: 36.56 KWh/año La Conuee ordenó a Comercializadora México Americana la prohibición inmediata de venta y enajenación de estos refrigeradores. La restricción se mantendrá vigente hasta que las unidades sean acondicionadas, reprocesadas, reparadas o sustituidas para cumplir con la ley. Con la difusión de esta alerta se busca fortalecer la protección de las personas consumidoras, brindándoles información oportuna para identificar productos que no cumplen con las disposiciones normativas vigentes y puedan tomar decisiones de compra informadas. La Profeco vigilará que se respeten los derechos de las y los consumidores, por lo que pide reportar anomalías al Teléfono del Consumidor 55 5568 8722 y 800 468 8722; en X: @Profeco y @AtencionProfeco; Facebook: ProfecoOficial; correos electrónicos denunciapublicitaria@profeco.gob.mx, asesoria@profeco.gob.mx y denunciasprofeco@profeco.gob.mx.",
+    "detail_markdown": null,
+    "detail_url": "notas/4a6b9e0d74137f78c7ba8bd2.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Comunicado",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Organismo descentralizado",
+    "id": "gob.mx apf:b844f086c0e982b3",
+    "importance": 2,
+    "issuing_body": "Procuraduría Federal del Consumidor",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "official_evidence": {
+      "primary_url": "https://www.gob.mx/profeco/prensa/profeco-conuee-y-caname-emiten-alerta-por-refrigerador-hisense-que-incumple-normas-de-eficiencia-energetica?idiom=es"
+    },
+    "official_identifiers": {
+      "source_id": "b844f086c0e982b3"
+    },
+    "official_published_at": "2026-06-16",
+    "official_title": "Profeco, Conuee y Caname emiten alerta por refrigerador Hisense que incumple normas de eficiencia energética",
+    "published_at": "2026-06-16",
+    "published_day": 16,
+    "published_month": 6,
+    "published_year": 2026,
+    "relevance_score": 3,
+    "review_reason": "Registro legado o contenido sin revisión editorial certificada.",
+    "source": "Gob.mx APF",
+    "source_id": "b844f086c0e982b3",
+    "subtopic_tags": [
+      "marca",
+      "norma oficial mexicana",
+      "nom-"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Propiedad intelectual",
+      "Normalización",
+      "Norma"
+    ],
+    "url": "https://www.gob.mx/profeco/prensa/profeco-conuee-y-caname-emiten-alerta-por-refrigerador-hisense-que-incumple-normas-de-eficiencia-energetica?idiom=es"
+  },
+  "schema_version": 8
+}

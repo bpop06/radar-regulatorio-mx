@@ -1,0 +1,71 @@
+{
+  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "item": {
+    "ai_generated": false,
+    "authority": "Servicio de Administración Tributaria",
+    "canonical_url": "https://www.gob.mx/sat/prensa/recupera-sat-mas-de-6-mil-mdp-con-programa-de-regularizacion-fiscal-54-2026?idiom=es",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Fiscal",
+      "Comercio exterior"
+    ],
+    "content_hash": "c8f0bd5d390a1b14fe07e4767f38167853b4380d9ad6edf6fe6352ce001656a5",
+    "country_or_org": "México",
+    "description": "Invitan a contribuyentes a aprovechar beneficios del programa; 31 de octubre es la fecha límite para acceder a él Se ha brindado apoyo a 26 mil 995 personas físicas y 11 mil 404 empresas Funcionarios del Servicio de Administración Tributaria (SAT) destacaron que el Programa de Regularización Fiscal 2026 ha recuperado para la hacienda pública 6 mil 436 millones de pesos, además ha apoyado a 38 mil 399 contribuyentes, quienes aprovecharon los beneficios que ofrece este esquema para reducir hasta en 100% multas, recargos y gastos de ejecución. En conferencia de prensa, recordaron a contribuyentes con adeudos fiscales, que tienen hasta el 31 de octubre para sumarse al programa, por lo que hicieron un llamado a que se acerquen a las oficinas del SAT para recibir orientación sobre cómo acceder a los estímulos y regularizar su situación tributaria. El administrador desconcentrado de Recaudación de la oficina DF 1, Alán Vázquez Armenta, informó que, de enero a la fecha, se han adherido al programa 38 mil 399 contribuyentes, lo que ha permitido recuperar 6 mil 436 millones de pesos. Asimismo, señaló que se han otorgado estímulos por 6 mil 134 millones de pesos mediante la reducción de multas, recargos y gastos de ejecución. Precisó que del total de contribuyentes regularizados, 11 mil 404 son empresas, que recibieron estímulos por 4 mil 246 millones de pesos. En este rubro, dijo, se obtuvo una recaudación de 4 mil 452 millones de pesos. Indicó que también 26 mil 995 personas físicas pusieron en orden su situación fiscal ante el SAT y obtuvieron un estímulo de mil 888 millones de pesos, con lo que se recaudaron mil 984 millones de pesos. El administrador desconcentrado de Recaudación de la oficina DF 3, Erik Arturo Mendoza Campuzano, explicó que, de los 6 mil 436 millones recuperados, 4 mil 76 millones corresponden al impuesto sobre la renta (ISR); 2 mil 111 millones a impuesto al valor agregado (IVA); 82 millones 389 mil a comercio exterior y 166 millones a otros rubros. Recordó que el programa va dirigido a contribuyentes con ingresos que no excedan los 300 millones de pesos. También precisó que el saldo que resulte después de descontar las multas puede cubrirse en tres parcialidades. Los funcionarios señalaron que el programa aplica a las y los contribuyentes ubicados en alguno de los siguientes supuestos: Que tengan adeudos por contribuciones federales o cuotas compensatorias no determinadas por la autoridad. Estén sujetos al ejercicio de facultades de comprobación. Tengan créditos fiscales firmes determinados por el SAT o la Agencia Nacional de Aduanas de México (ANAM). A qué adeudos aplica: A los generados por el ejercicio 2024 o anteriores, determinados por el SAT o la ANAM. Recargos y gastos de ejecución de contribuciones propias, retenidas, trasladadas, aprovechamientos o con cuotas compensatorias. Multas impuestas por infracciones fiscales, aduaneras y de comercio exterior. Multas derivadas del incumplimiento de obligaciones fiscales distintas a las de pago. Multas con agravantes. En la conferencia de prensa también participaron la administradora desconcentrada de Servicios al Contribuyente DF 1, María José Ríos Cano, y el administrador desconcentrado de Servicios al Contribuyente DF 3, Moisés Zacatzin García. ¡Todas y todos contribuimos al bienestar de México! Descargar Comunicado 54-2026",
+    "detail_markdown": null,
+    "detail_url": "notas/76388cd179d32674c083618c.html",
+    "detected_at": "2026-08-13T02:36:54.429478+00:00",
+    "document_type": "Comunicado",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-08-13T02:36:54.429478+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "gob.mx apf:efafd2c5716234d6",
+    "importance": 3,
+    "issuing_body": "Servicio de Administración Tributaria",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T02:53:39.855587+00:00",
+    "official_evidence": {
+      "primary_url": "https://www.gob.mx/sat/prensa/recupera-sat-mas-de-6-mil-mdp-con-programa-de-regularizacion-fiscal-54-2026?idiom=es"
+    },
+    "official_identifiers": {
+      "source_id": "efafd2c5716234d6"
+    },
+    "official_published_at": "2026-08-10",
+    "official_title": "Recupera SAT más de 6 mil mdp con Programa de Regularización Fiscal",
+    "published_at": "2026-08-10",
+    "published_day": 10,
+    "published_month": 8,
+    "published_year": 2026,
+    "relevance_score": 4,
+    "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
+    "source": "Gob.mx APF",
+    "source_id": "efafd2c5716234d6",
+    "subtopic_tags": [
+      "impuesto",
+      "contribuyente",
+      "renta",
+      "iva",
+      "isr",
+      "sat"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Fiscal",
+      "Aduanero",
+      "Comercio exterior"
+    ],
+    "url": "https://www.gob.mx/sat/prensa/recupera-sat-mas-de-6-mil-mdp-con-programa-de-regularizacion-fiscal-54-2026?idiom=es"
+  },
+  "schema_version": 8
+}

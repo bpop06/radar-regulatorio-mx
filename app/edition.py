@@ -1102,9 +1102,9 @@ def _detail_html(item: dict[str, Any]) -> str:
       <dt>Detectada</dt><dd>{html.escape(str(item.get('detected_at') or 'No indicada'))}</dd>
       <dt>Fuente</dt><dd>{html.escape(str(item.get('source') or 'No indicada'))}</dd>
     </dl>
-    {body}
-    {identifiers}
-    {case_html}
+{body}
+{identifiers}
+{case_html}
     <section aria-labelledby="titulo-oficial">
       <h2 id="titulo-oficial">Título oficial</h2>
       <p>{html.escape(str(item.get('official_title') or 'No indicado'))}</p>

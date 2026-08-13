@@ -1,0 +1,65 @@
+{
+  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "item": {
+    "ai_generated": false,
+    "authority": "Organización Mundial del Comercio",
+    "canonical_url": "https://www.wto.org/english/news_e/news26_e/igmsm_29jun26_436_e.htm",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Comercio exterior",
+      "Comercio internacional"
+    ],
+    "content_hash": "a61b6e5c7522605ef67094b3510f00aca8ac749d01b5b0ddbfb6d5b1d90d9654",
+    "country_or_org": "OMC",
+    "description": "On 29 June, the Informal Working Group on Micro, Small and Medium-sized Enterprises (MSMEs) and partner organizations announced the 2026 Small Business Champions. During meetings on 29 and 30 June, the Group held a thematic discussion on empowering small businesses to trade through artificial intelligence (AI) and continued a regular spotlight of small business leaders, among other key topics. The Group convened its annual consultations with the private sector, focusing on ways to help small businesses navigate trade uncertainties. Members welcomed Ghana as the 106th MSME Group member.",
+    "detail_markdown": null,
+    "detail_url": "notas/c492e52cb697ca92d987e360.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Noticia",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Organismo internacional",
+    "id": "omc:cd15aa0620d7cc44",
+    "importance": 2,
+    "issuing_body": "Organización Mundial del Comercio",
+    "jurisdiction": "internacional",
+    "last_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "official_evidence": {
+      "primary_url": "https://www.wto.org/english/news_e/news26_e/igmsm_29jun26_436_e.htm"
+    },
+    "official_identifiers": {
+      "source_id": "cd15aa0620d7cc44"
+    },
+    "official_published_at": "2026-06-29",
+    "official_title": "WTO MSME Group announces Small Business Champions, discusses AI and trade uncertainty",
+    "published_at": "2026-06-29",
+    "published_day": 29,
+    "published_month": 6,
+    "published_year": 2026,
+    "relevance_score": 2,
+    "review_reason": "Registro legado o contenido sin revisión editorial certificada.",
+    "source": "OMC",
+    "source_id": "cd15aa0620d7cc44",
+    "subtopic_tags": [
+      "wto"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Comercio exterior",
+      "Comercio internacional"
+    ],
+    "url": "https://www.wto.org/english/news_e/news26_e/igmsm_29jun26_436_e.htm"
+  },
+  "schema_version": 8
+}

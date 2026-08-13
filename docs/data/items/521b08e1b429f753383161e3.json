@@ -1,0 +1,64 @@
+{
+  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "item": {
+    "ai_generated": false,
+    "authority": "Instituto Mexicano de la Propiedad Industrial",
+    "canonical_url": "https://www.gob.mx/impi/prensa/impi-y-concanaco-servytur-abren-canal-directo-contra-extorsiones-simulaciones-y-falsos-inspectores-durante-el-mundial-2026?idiom=es",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración descentralizada"
+    ],
+    "content_hash": "3f427a5f69ce2f80e9ce98abcfc8bdf213b3ffd934b2472c1f36b6761e9212fd",
+    "country_or_org": "México",
+    "description": "Esta ruta fue acordada tras una llamada telefónica entre Octavio de la Torre de Stéffano, presidente de CONCANACOSERVYTUR México, y Vidal Llerenas Morales, Director General del IMPI, con el propósito de brindar certeza inmediata al sector productivo, evitar abusos y proteger a quienes trabajan en la formalidad. El IMPI aclaró que no realiza clausuras de establecimientos ni inspecciones aleatorias. Las visitas se llevan a cabo conforme al marco legal aplicable y únicamente a solicitud de las partes afectadas por una posible infracción. Asimismo, el Instituto reiteró que no está facultado para clausurar establecimientos y que ningún servidor público puede solicitar pagos, transferencias, efectivo, acuerdos informales o beneficios indebidos. Antes de permitir una inspección, los establecimientos deben asegurarse de que se trata de personal del IMPI. Los inspectores deben portar camisa y chaleco institucional con los logotipos de la Secretaría de Economía y del IMPI, además de identificarse con gafete oficial con fotografía. También deben actuar dentro del objeto de la visita y conforme al oficio correspondiente. CONCANACO SERVYTUR México y la Asamblea Nacional de Empresas y Negocios Familiares G32 recibirán reportes de establecimientos afectados a través de sus cámaras confederadas en el país e integrantes, para canalizarlos directamente con el equipo del Director General del IMPI, verificar la autenticidad de las actuaciones, prevenir abusos y dar seguimiento institucional a cada caso. “El Mundial 2026 representa una oportunidad histórica para México. Queremos que la derrama llegue a los negocios familiares: restaurantes, hoteles, comercios y servicios turísticos que todos los días generan empleo. Pero esa oportunidad no puede verse empañada por extorsiones, simulaciones o personas que usen indebidamente el nombre de una autoridad”, señaló CONCANACO SERVYTUR México. Ambas instituciones llaman a denunciar cualquier intento de extorsión, cobro indebido, amenaza de clausura, revisión simulada o visita de personas que pretendan actuar falsamente en nombre del IMPI. Cualquier persona que se presente sin identificación oficial, sin uniforme institucional, sin objeto claro de la visita o solicitando pagos debe considerarse irregular y denunciarse de inmediato. IMPI, CONCANACO SERVYTUR México y la Asamblea Nacional de Empresas y Negocios Familiares reiteran que la transmisión pública de contenidos deportivos y el uso de marcas debe realizarse conforme a la normatividad aplicable y con las licencias correspondientes. Al mismo tiempo, la Confederación exhorta a los titulares de derechos y proveedores autorizados a impulsar esquemas comerciales, licencias y precios accesibles para micro, pequeñas y medianas empresas, a fin de que más establecimientos participen de la economía mundialista dentro de la legalidad. IMPI y CONCANACO SERVYTUR México refrendan su compromiso con la legalidad, la protección de la propiedad intelectual, la prevención de extorsiones y el fortalecimiento de los negocios familiares que serán protagonistas de la derrama económica mundialista.",
+    "detail_markdown": null,
+    "detail_url": "notas/521b08e1b429f753383161e3.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Comunicado",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Organismo descentralizado",
+    "id": "gob.mx apf:d0dc124be10d7cae",
+    "importance": 2,
+    "issuing_body": "Instituto Mexicano de la Propiedad Industrial",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "official_evidence": {
+      "primary_url": "https://www.gob.mx/impi/prensa/impi-y-concanaco-servytur-abren-canal-directo-contra-extorsiones-simulaciones-y-falsos-inspectores-durante-el-mundial-2026?idiom=es"
+    },
+    "official_identifiers": {
+      "source_id": "d0dc124be10d7cae"
+    },
+    "official_published_at": "2026-06-11",
+    "official_title": "IMPI y CONCANACO SERVYTUR abren canal directo contra extorsiones, simulaciones y falsos inspectores durante el Mundial 2026",
+    "published_at": "2026-06-11",
+    "published_day": 11,
+    "published_month": 6,
+    "published_year": 2026,
+    "relevance_score": 2,
+    "review_reason": "Registro legado o contenido sin revisión editorial certificada.",
+    "source": "Gob.mx APF",
+    "source_id": "d0dc124be10d7cae",
+    "subtopic_tags": [
+      "propiedad intelectual",
+      "impi"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Propiedad intelectual"
+    ],
+    "url": "https://www.gob.mx/impi/prensa/impi-y-concanaco-servytur-abren-canal-directo-contra-extorsiones-simulaciones-y-falsos-inspectores-durante-el-mundial-2026?idiom=es"
+  },
+  "schema_version": 8
+}

@@ -1,0 +1,69 @@
+{
+  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "item": {
+    "ai_generated": false,
+    "authority": "Procuraduria Federal de Proteccion al Ambiente",
+    "canonical_url": "https://www.gob.mx/profepa/prensa/coadyuva-profepa-con-fgr-en-cateo-a-domicilio-con-ejemplares-de-vida-silvestre-en-san-luis-potosi?idiom=es",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración descentralizada",
+      "Penal"
+    ],
+    "content_hash": "a5d45d7ca9e8a8f7d607952cd50658d7e7f4cc0404f3ceca4596a18108d46497",
+    "country_or_org": "México",
+    "description": "La Procuraduría Federal de Protección al Ambiente (Profepa) participó en un cateo, a solicitud de la Fiscalía General de la República (FGR), en un domicilio en el municipio de Soledad de Graciano Sánchez, San Luis Potosí, en el que se localizaron cinco ejemplares de vida silvestre y cuatro taxidermias. El cateo se efectuó el 25 de junio. En el sitio, se observó a dos ejemplares de león africano (Panthera leo), macho y hembra, en aparentes buenas condiciones físicas y de salud, con una edad aproximada de uno y seis años, respectivamente. Adicionalmente, en otros tres recintos diferentes dentro del mismo predio, se encontraron un jaguar (Panthera onca) macho de seis años de edad, un tigre de Bengala (Panthera tigris) macho, de seis años, y una coyote (Canis latrans) hembra de un año. Los animales se encontraron en aparentes buenas condiciones físicas y de salud. De igual manera, se encontraron tres taxidermias de cuerpo completo: un chivo berberisco (Ammotragus lervia) y dos de oso negro (Ursus americanus kermodei) ; y una piel curtida tipo tapete con pelo natural de color negro y cabeza de un ejemplar de oso negro (Ursus americanus) . El jaguar está catalogado como especie en peligro de extinción según la NOM-059-SEMARNAT-2010; mientras que en la CITES, el jaguar y el tigre de Bengala están listados en el apéndice I y el león africano en el apéndice II. La FGR inició la carpeta de investigación por el delito contra la biodiversidad previsto y sancionado en el artículo 420, fracción IV del Código Penal Federal. Las taxidermias quedaron aseguradas por la Profepa; en cuanto a los ejemplares de vida silvestre, fueron trasladados a distintos Predios o Instalaciones que Manejan Vida Silvestre: el jaguar y coyote a San Luis Potosí, los leones a Nuevo León y el tigre de Bengala a Hidalgo. Estos lugares cuentan con las instalaciones y personal necesario para el cuidado y manejo de cada una de las especies. La Profepa continuará coadyuvando en la integración de la carpeta de investigación en este caso, refrendando su compromiso con el cuidado y protección de los ejemplares de vida silvestre. Foto 2. Taxidermia encontrada durante el cateo. Fotos descargables. Comunicado de prensa núm. 410/2026",
+    "detail_markdown": null,
+    "detail_url": "notas/ae41dfcab73332491d3888dd.html",
+    "detected_at": "2026-08-13T02:36:54.429478+00:00",
+    "document_type": "Comunicado",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-08-13T02:36:54.429478+00:00",
+    "government_branch": "Organismo autónomo",
+    "id": "gob.mx apf:7bf69116d06f511d",
+    "importance": 3,
+    "issuing_body": "Fiscalía General de la República",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T02:53:39.855587+00:00",
+    "official_evidence": {
+      "primary_url": "https://www.gob.mx/profepa/prensa/coadyuva-profepa-con-fgr-en-cateo-a-domicilio-con-ejemplares-de-vida-silvestre-en-san-luis-potosi?idiom=es"
+    },
+    "official_identifiers": {
+      "source_id": "7bf69116d06f511d"
+    },
+    "official_published_at": "2026-07-23",
+    "official_title": "Coadyuva Profepa con FGR en cateo a domicilio con ejemplares de vida silvestre en San Luis Potosí",
+    "published_at": "2026-07-23",
+    "published_day": 23,
+    "published_month": 7,
+    "published_year": 2026,
+    "relevance_score": 4,
+    "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
+    "source": "Gob.mx APF",
+    "source_id": "7bf69116d06f511d",
+    "subtopic_tags": [
+      "nom-",
+      "delito",
+      "penal",
+      "fiscalia",
+      "fgr"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Normalización",
+      "Penal"
+    ],
+    "url": "https://www.gob.mx/profepa/prensa/coadyuva-profepa-con-fgr-en-cateo-a-domicilio-con-ejemplares-de-vida-silvestre-en-san-luis-potosi?idiom=es"
+  },
+  "schema_version": 8
+}

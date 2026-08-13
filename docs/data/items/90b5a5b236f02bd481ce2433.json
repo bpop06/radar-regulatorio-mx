@@ -1,0 +1,65 @@
+{
+  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "item": {
+    "ai_generated": false,
+    "authority": "Secretaría de Marina",
+    "canonical_url": "https://www.gob.mx/semar/prensa/marina-sspc-y-fgr-rescatan-en-veracruz-a-tres-personas-privadas-de-su-libertad-431473?idiom=es",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Penal"
+    ],
+    "content_hash": "efaec22d105a4b7edc48e1fd64d3ae682f46b0c5878bbdd9358afb49a594af36",
+    "country_or_org": "México",
+    "description": "Como parte de las acciones implementadas en combate al secuestro y privación ilegal de la libertad, en el Estado de Veracruz, elementos de la Secretaría de Marina (Marina), Secretaría de Seguridad y Protección Ciudadana (SSPC) y Fiscalía General de la República (FGR), a través de la Agencia de Investigación Criminal (AIC), cumplimentaron órdenes de cateo en 10 inmuebles ubicados en los municipios de Boca del Río y Veracruz, donde fueron liberadas tres personas privadas de su libertad. Derivado de las labores de inteligencia e investigación acompañadas de vigilancia y seguimiento, agentes de campo identificaron 10 inmuebles en los municipios de Boca del Río y Veracruz, relacionados con el delito de secuestro. Con la información recabada se obtuvieron de un Juez de Control las órdenes de cateo correspondientes, las cuales fueron cumplimentadas de manera coordinada. Durante las diligencias, al intervenir un inmueble ubicado en la colonia Ricardo Flores Magón, en el municipio de Veracruz, fueron liberadas tres personas privadas de su libertad, dos de ellas contaban con fichas nacionales de búsqueda, a las víctimas se les brindó atención médica y psicológica para salvaguardar su integridad. Asimismo, resultado de los cateos se aseguraron siete equipos de telefonía celular, dos sobres con tarjetas SIM, una báscula gramera, una funda para arma de fuego con porta cargadores, diversos cartuchos útiles y documentación diversa. Los inmuebles y objetos asegurados fueron procesados y puestos a disposición del agente del Ministerio Público correspondiente, quien continuará con las investigaciones para esclarecer los hechos y determinar la posible responsabilidad de las personas involucradas. Con estas acciones, las instituciones que integran el Gabinete de Seguridad refrendan su compromiso de trabajar de manera coordinada para combatir el delito de secuestro, localizar y liberar a las víctimas, así como fortalecer la seguridad y la tranquilidad de la población. —oo0oo—",
+    "detail_markdown": null,
+    "detail_url": "notas/90b5a5b236f02bd481ce2433.html",
+    "detected_at": "2026-08-13T02:36:54.429478+00:00",
+    "document_type": "Nacional",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-08-13T02:36:54.429478+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "gob.mx apf:7abf80eec7c45516",
+    "importance": 2,
+    "issuing_body": "Secretaría de Marina",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T02:53:39.855587+00:00",
+    "official_evidence": {
+      "primary_url": "https://www.gob.mx/semar/prensa/marina-sspc-y-fgr-rescatan-en-veracruz-a-tres-personas-privadas-de-su-libertad-431473?idiom=es"
+    },
+    "official_identifiers": {
+      "source_id": "7abf80eec7c45516"
+    },
+    "official_published_at": "2026-07-28",
+    "official_title": "MARINA, SSPC Y FGR RESCATAN EN VERACRUZ A TRES PERSONAS PRIVADAS DE SU LIBERTAD",
+    "published_at": "2026-07-28",
+    "published_day": 28,
+    "published_month": 7,
+    "published_year": 2026,
+    "relevance_score": 3,
+    "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
+    "source": "Gob.mx APF",
+    "source_id": "7abf80eec7c45516",
+    "subtopic_tags": [
+      "delito",
+      "fiscalia",
+      "fgr"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Penal"
+    ],
+    "url": "https://www.gob.mx/semar/prensa/marina-sspc-y-fgr-rescatan-en-veracruz-a-tres-personas-privadas-de-su-libertad-431473?idiom=es"
+  },
+  "schema_version": 8
+}

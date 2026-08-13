@@ -1,0 +1,65 @@
+{
+  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "item": {
+    "ai_generated": false,
+    "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5794665&fecha=24%2F07%2F2026",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Fiscal",
+      "Administración centralizada"
+    ],
+    "content_hash": "8abb9672404800304a8af988498818a9e24e1c9a67ab062184faaa24c181b7db",
+    "country_or_org": "México",
+    "description": "Oficio 700 04 00 00 00 2026-077 mediante el cual se da a conocer el listado de Prestadores de Servicios Digitales Inscritos en el Registro Federal de Contribuyentes, en términos del artículo 18-D, primer párrafo, fracción I, de la Ley del Impuesto al Valor Agregado vigente.",
+    "detail_markdown": null,
+    "detail_url": "notas/0d6cbd9dab7f83e45c24b942.html",
+    "detected_at": "2026-08-13T02:53:39.855587+00:00",
+    "document_type": "Oficio",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-08-13T02:36:54.429478+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5794665",
+    "importance": 2,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T02:53:39.855587+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5794665&fecha=24/07/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5794665"
+    },
+    "official_published_at": "2026-07-24",
+    "official_title": "Oficio 700 04 00 00 00 2026-077 mediante el cual se da a conocer el listado de Prestadores de Servicios Digitales Inscritos en el Registro Federal de Contribuyentes, en términos del artículo 18-D, primer párrafo, fracción I, de la Ley del Impuesto al Valor Agregado vigente.",
+    "published_at": "2026-07-24",
+    "published_day": 24,
+    "published_month": 7,
+    "published_year": 2026,
+    "relevance_score": 3,
+    "review_reason": "La fuente oficial cambió; requiere una nueva revisión editorial.",
+    "source": "DOF",
+    "source_id": "5794665",
+    "subtopic_tags": [
+      "impuesto"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Fiscal",
+      "Oficio"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5794665&fecha=24/07/2026"
+  },
+  "schema_version": 8
+}

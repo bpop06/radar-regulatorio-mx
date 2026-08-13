@@ -1,0 +1,64 @@
+{
+  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "item": {
+    "ai_generated": false,
+    "authority": "Procuraduría Federal del Consumidor",
+    "canonical_url": "https://www.gob.mx/profeco/prensa/dos-de-cada-diez-gasolineras-venden-diesel-a-precios-injustificadamente-altos-profeco?idiom=es",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Fiscal"
+    ],
+    "content_hash": "d0773e92c1b4d160c8660e169d0e22bfc5721a4a067a07f8f64f19165dafa4bd",
+    "country_or_org": "México",
+    "description": "Destacó la disminución de precios de productos de la canasta básica Informó que el jitomate bajó un 38.98% su costo Invitó a leer el estudio de calidad de margarinas y mantequillas publicado en la Revista del Consumidor de junio Como resultado del acuerdo entre el Gobierno de México y el sector gasolinero para estabilizar el diésel en máximo $27.00 pesos por litro, el titular de la Procuraduría Federal del Consumidor (Profeco) reconoció el cumplimiento del 80% de las estaciones que vende el combustible a precios justos para el bolsillo de las personas consumidoras. Asimismo, recalcó que el 20% restante continúa con su comercialización por encima de un margen razonable, por lo que sugirió identificarlas a través del listado oficial . Al participar en la Conferencia Mañanera del Pueblo, encabezada por la Presidenta de México, Claudia Sheinbaum Pardo, el servidor público recordó que como mecanismo de apoyo se mantiene la aplicación de estímulos al Impuesto Especial sobre Producción y Servicios (IEPS); la disminución de comisiones por pago con tarjetas y medios electrónicos; la reducción de Pemex sobre precios en sus Terminales de Almacenamiento y Despacho (TAD) y la suma de gasolineras a su transporte de última milla para bajar el costo del flete. “Continuaremos vigilando el mercado de combustibles para garantizar una competencia justa; pedimos revisar en el mapa virtual, https://alertas.gob.mx/estaciones/ , los precios de gasolina regular y diésel en las estaciones de servicio”, anotó. Derivado de los trabajos de monitoreo que de manera permanente realiza la Procuraduría, se detectó la tendencia a la baja en los precios de algunos de los productos de consumo básico, informó Escalante Ruiz. Señaló que en la cuarta semana de junio el promedio del kilo de jitomate fue de $25.05 pesos, lo que representa una baja del 38.98%; el chile jalapeño disminuyó 13.99%; el limón 8.94% y la presentación de 18 piezas de huevo 7.21%. El titular de la Profeco retomó los datos del Índice Nacional de Precios al Consumidor (INPC), que señalan que en junio de este año la inflación general se ubicó en 3.37%, su nivel más bajo desde diciembre de 2020. Atribuyó este descenso a las acciones instruidas por la mandataria para favorecer la estabilidad económica de las familias, como el Paquete Contra la Inflación y la Carestía (Pacic) y la Estrategia para la Estabilización del Precio de la Gasolina y agregó que la institución a su cargo participa en estos esfuerzos para orientar a las personas consumidoras en su toma de decisiones de compra. Canasta Pacic En cuanto a los precios de los 24 productos que integran la canasta Pacic, el procurador dio a conocer que el precio más bajo de $748.50 pesos se reportó en Chedraui de Aguascalientes, Aguascalientes. Respecto a la revisión efectuada en la alcaldía Álvaro Obregón en la Ciudad de México; Morelia, Michoacán, y Saltillo, Coahuila, todas registraron costos por debajo de la meta nacional de $910.00 pesos. La información completa y detallada se puede consultar en la página oficial https://qqp.profeco.gob.mx/. Para finalizar, invitó a la población a revisar la edición 593 de la Revista del Consumidor, donde se publicó un Estudio de Calidad sobre margarinas y mantequillas, realizado por el Laboratorio Nacional de Protección al Consumidor.",
+    "detail_markdown": null,
+    "detail_url": "notas/a95d15b6f29c93992695c0f3.html",
+    "detected_at": "2026-08-13T02:36:54.429478+00:00",
+    "document_type": "Comunicado",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-08-13T02:36:54.429478+00:00",
+    "government_branch": "Organismo descentralizado",
+    "id": "gob.mx apf:f33fcd20a51aa778",
+    "importance": 2,
+    "issuing_body": "Procuraduría Federal del Consumidor",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T02:53:39.855587+00:00",
+    "official_evidence": {
+      "primary_url": "https://www.gob.mx/profeco/prensa/dos-de-cada-diez-gasolineras-venden-diesel-a-precios-injustificadamente-altos-profeco?idiom=es"
+    },
+    "official_identifiers": {
+      "source_id": "f33fcd20a51aa778"
+    },
+    "official_published_at": "2026-07-13",
+    "official_title": "Dos de cada diez gasolineras venden diésel a precios injustificadamente altos: Profeco",
+    "published_at": "2026-07-13",
+    "published_day": 13,
+    "published_month": 7,
+    "published_year": 2026,
+    "relevance_score": 2,
+    "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
+    "source": "Gob.mx APF",
+    "source_id": "f33fcd20a51aa778",
+    "subtopic_tags": [
+      "impuesto",
+      "ieps"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Fiscal"
+    ],
+    "url": "https://www.gob.mx/profeco/prensa/dos-de-cada-diez-gasolineras-venden-diesel-a-precios-injustificadamente-altos-profeco?idiom=es"
+  },
+  "schema_version": 8
+}

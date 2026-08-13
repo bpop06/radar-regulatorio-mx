@@ -1,0 +1,65 @@
+{
+  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "item": {
+    "ai_generated": false,
+    "authority": "Procuraduría Federal del Consumidor",
+    "canonical_url": "https://www.gob.mx/profeco/prensa/gobierno-de-mexico-pone-a-disposicion-mapa-de-estaciones-que-no-cumplen-con-el-acuerdo-para-la-estabilizacion-del-precio-del-diesel?idiom=es",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Fiscal"
+    ],
+    "content_hash": "54f5be103438c73289f673f4053b6fc8ae110f935bad018bcb5e5bbbf3c6e2f0",
+    "country_or_org": "México",
+    "description": "El Gobierno de México informa que, tras los comunicados conjuntos del 12 y 17 de julio, 618 estaciones de servicio se sumaron al Acuerdo Voluntario para la Estabilización del Precio del Diésel , logrando un total de 8,603 adheridas (84% del sector). Con esta estrategia, el precio nacional referente se mantiene por debajo de $27.00 pesos por litro y, en zonas fronterizas, menor a $25.39 pesos por litro, gracias a la tasa del IVA del 8% en esas regiones. A la fecha, 1,538 estaciones continúan vendiendo este combustible a precios significativamente superiores a los observados en el mercado. Para facilitar la consulta y dar seguimiento a esta información, se pone a disposición de la ciudadanía un mapa digital que permite identificar las estaciones de servicio que comercializan diésel a un precio superior al establecido en el Acuerdo Voluntario. Invitamos a estas estaciones a sumarse a este compromiso por el pueblo de México, que busca garantizar la estabilidad económica de quienes menos tienen. La información del mapa se actualiza diariamente. Consulte el mapa a través del siguiente enlace o código QR: https://seguimiento-precios.energia.gob.mx/precios-diesel Asimismo, se mantienen vigentes acciones coordinadas para fortalecer la estabilidad de los precios del diésel, mediante la aplicación de estímulos fiscales al IEPS, la reducción de comisiones por medios de pago electrónicos, el respaldo de Pemex con combustibles a precios competitivos y mejoras en la logística de suministro, y seguridad en estaciones y carreteras. El Gobierno de México continuará fortaleciendo la vigilancia del mercado de los combustibles, con el fin de garantizar una competencia justa y proteger el bienestar de todas y todos los mexicanos",
+    "detail_markdown": null,
+    "detail_url": "notas/28a1d6348e943de3e3a4f010.html",
+    "detected_at": "2026-08-13T02:36:54.429478+00:00",
+    "document_type": "Comunicado",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-08-13T02:36:54.429478+00:00",
+    "government_branch": "Organismo descentralizado",
+    "id": "gob.mx apf:35cf506123254c99",
+    "importance": 2,
+    "issuing_body": "Procuraduría Federal del Consumidor",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T02:53:39.855587+00:00",
+    "official_evidence": {
+      "primary_url": "https://www.gob.mx/profeco/prensa/gobierno-de-mexico-pone-a-disposicion-mapa-de-estaciones-que-no-cumplen-con-el-acuerdo-para-la-estabilizacion-del-precio-del-diesel?idiom=es"
+    },
+    "official_identifiers": {
+      "source_id": "35cf506123254c99"
+    },
+    "official_published_at": "2026-07-24",
+    "official_title": "Gobierno de México pone a disposición mapa de estaciones que no cumplen con el Acuerdo para la Estabilización del Precio del Diésel",
+    "published_at": "2026-07-24",
+    "published_day": 24,
+    "published_month": 7,
+    "published_year": 2026,
+    "relevance_score": 2,
+    "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
+    "source": "Gob.mx APF",
+    "source_id": "35cf506123254c99",
+    "subtopic_tags": [
+      "iva",
+      "ieps"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Fiscal",
+      "Acuerdo"
+    ],
+    "url": "https://www.gob.mx/profeco/prensa/gobierno-de-mexico-pone-a-disposicion-mapa-de-estaciones-que-no-cumplen-con-el-acuerdo-para-la-estabilizacion-del-precio-del-diesel?idiom=es"
+  },
+  "schema_version": 8
+}

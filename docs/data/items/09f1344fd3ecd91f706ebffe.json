@@ -1,0 +1,73 @@
+{
+  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "item": {
+    "ai_generated": false,
+    "authority": "PODER EJECUTIVO SECRETARIA ANTICORRUPCION Y BUEN GOBIERNO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791371&fecha=23/06/2026",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "596cbb616748f6a1a343beef65cc7e4b294586a07cbdb14989be4ae65c9edc20",
+    "country_or_org": "México",
+    "description": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal y a las entidades federativas el cumplimiento dado a la sentencia definitiva de veintitrés de septiembre de dos mil veinticuatro, dictada en el juicio de nulidad 25835/23-17-12-1, promovido por el C. Ángel Pérez Dorante, en representación legal de K.P. Asociados, S.A. de C.V., en la cual la Décimo Segunda Sala Regional en la Ciudad de México del Tribunal Federal de Justicia Administrativa, declaró la nulidad de la resolución contenida en el oficio No. OIC/00/637/22453/2023 de veintiocho de marzo de dos mil veintitrés, emitida dentro del procedimiento administrativo de sanción a licitantes, proveedores y contratistas SAN-002/2023.",
+    "detail_markdown": null,
+    "detail_url": "notas/09f1344fd3ecd91f706ebffe.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Circular",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5791371",
+    "importance": 3,
+    "issuing_body": "Presidencia de la República",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791371&fecha=23/06/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5791371"
+    },
+    "official_published_at": "2026-06-23",
+    "official_title": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal y a las entidades federativas el cumplimiento dado a la sentencia definitiva de veintitrés de septiembre de dos mil veinticuatro, dictada en el juicio de nulidad 25835/23-17-12-1, promovido por el C. Ángel Pérez Dorante, en representación legal de K.P. Asociados, S.A. de C.V., en la cual la Décimo Segunda Sala Regional en la Ciudad de México del Tribunal Federal de Justicia Administrativa, declaró la nulidad de la resolución contenida en el oficio No. OIC/00/637/22453/2023 de veintiocho de marzo de dos mil veintitrés, emitida dentro del procedimiento administrativo de sanción a licitantes, proveedores y contratistas SAN-002/2023.",
+    "published_at": "2026-06-23",
+    "published_day": 23,
+    "published_month": 6,
+    "published_year": 2026,
+    "relevance_score": 5,
+    "review_reason": "Registro legado o contenido sin revisión editorial certificada.",
+    "source": "DOF",
+    "source_id": "5791371",
+    "subtopic_tags": [
+      "administracion publica federal",
+      "juicio de nulidad",
+      "sentencia definitiva",
+      "nulidad de la resolucion",
+      "tribunal federal de justicia administrativa",
+      "sala regional"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Derecho administrativo",
+      "Contencioso administrativo",
+      "Resolución",
+      "Sentencia",
+      "Oficio",
+      "Circular"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5791371&fecha=23/06/2026"
+  },
+  "schema_version": 8
+}

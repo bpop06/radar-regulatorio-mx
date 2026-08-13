@@ -1,0 +1,66 @@
+{
+  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "item": {
+    "ai_generated": false,
+    "authority": "Instituto Mexicano de la Propiedad Industrial",
+    "canonical_url": "https://www.gob.mx/impi/prensa/impi-inaugura-la-exposicion-fotografica-mexico-herencia-y-origen-en-el-bosque-de-chapultepec?idiom=es",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración descentralizada"
+    ],
+    "content_hash": "42cbe25de3450ad2f720f5a6e98f312ab59150f30a646da95ec3c3fc2a579337",
+    "country_or_org": "México",
+    "description": "La muestra reúne 62 piezas sobre productos protegidos con Denominación de Origen e Indicación Geográfica. Destaca el trabajo, la tradición y la identidad de comunidades productoras y artesanas del país. La exposición reúne 62 piezas que reflejan el legado de generaciones que han preservado saberes, técnicas y procesos, consolidando productos que representan la identidad y el orgullo de sus comunidades. Cada imagen da cuenta de la estrecha relación entre territorio, cultura y producción, así como de la diversidad que caracteriza a México. Vidal Llerenas destacó que a través de esta muestra, queremos resaltar que los productos protegidos no solo representan bienes comerciales, sino también expresiones culturales que resguardan la historia, los paisajes y la creatividad de las regiones donde se originan. La exposición invita a reconocer el valor de lo hecho en comunidad y la importancia de la protección de la propiedad industrial como una herramienta que impulsa el desarrollo económico, fortalece las economías locales y promueve el reconocimiento internacional de México, señaló el director general del IMPI. Esta muestra está abierta al público en la Galería de la Juventud Heróica del Bosque de Chapultepec, de martes a domingo de 9 a 18 horas, y busca acercar a las y los visitantes a la riqueza del país, fomentando el respeto, la valoración y la preservación de los productos que forman parte de su patrimonio cultural. Al evento asistieron Natasha Uren Vazquez, directora ejecutiva del Bosque de Chapultepec, Diego Prieto, titular de la Unidad de Culturas Vivas de la Secretaria de Cultura Federal, Manola Zabalza Aldama, Secretaria de Desarrollo Económico de la Ciudad de México y Juan Pablo Cardona Medina, Director de Museo Archivo de Fotografía. Con estas acciones, el IMPI reafirma su compromiso con la promoción, protección y difusión de la propiedad industrial, así como con el fortalecimiento de la identidad productiva y cultural de México. -ooOoo-",
+    "detail_markdown": null,
+    "detail_url": "notas/159ec8a458a01cfa6f99f7ae.html",
+    "detected_at": "2026-08-13T02:36:54.429478+00:00",
+    "document_type": "Comunicado",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-08-13T02:36:54.429478+00:00",
+    "government_branch": "Organismo descentralizado",
+    "id": "gob.mx apf:583c9c9729fca30b",
+    "importance": 4,
+    "issuing_body": "Instituto Mexicano de la Propiedad Industrial",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T02:53:39.855587+00:00",
+    "official_evidence": {
+      "primary_url": "https://www.gob.mx/impi/prensa/impi-inaugura-la-exposicion-fotografica-mexico-herencia-y-origen-en-el-bosque-de-chapultepec?idiom=es"
+    },
+    "official_identifiers": {
+      "source_id": "583c9c9729fca30b"
+    },
+    "official_published_at": "2026-07-20",
+    "official_title": "IMPI inaugura la exposición fotográfica “México: Herencia y Origen” en el Bosque de Chapultepec",
+    "published_at": "2026-07-20",
+    "published_day": 20,
+    "published_month": 7,
+    "published_year": 2026,
+    "relevance_score": 7,
+    "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
+    "source": "Gob.mx APF",
+    "source_id": "583c9c9729fca30b",
+    "subtopic_tags": [
+      "propiedad industrial",
+      "impi",
+      "indicacion geografica",
+      "denominacion de origen"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Propiedad intelectual"
+    ],
+    "url": "https://www.gob.mx/impi/prensa/impi-inaugura-la-exposicion-fotografica-mexico-herencia-y-origen-en-el-bosque-de-chapultepec?idiom=es"
+  },
+  "schema_version": 8
+}

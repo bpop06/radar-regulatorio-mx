@@ -1,0 +1,66 @@
+{
+  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "item": {
+    "ai_generated": false,
+    "authority": "Instituto Mexicano de la Propiedad Industrial",
+    "canonical_url": "https://www.gob.mx/impi/prensa/impi-refuerza-acciones-preventivas-contra-la-pirateria-en-el-estadio-guadalajara-durante-el-mundial-2026?idiom=es",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración descentralizada"
+    ],
+    "content_hash": "c0b3bab1d7342d3b8b6b42bb000d306d8cea240de3831b9971200c5f58d2d6e1",
+    "country_or_org": "México",
+    "description": "• Operativo preventivo compuesto por 15 brigadas del IMPI logró disuadir la comercialización de mercancía apócrifa en inmediaciones del Estadio Guadalajara. • Personal de Protección a la Propiedad Industrial del IMPI brindó orientación y exhortó a 350 vendedores ambulantes a retirar su mercancía apócrifa. • IMPI ha dado de baja 140 URL de retransmisiones ilegales y ha asegurado en operativos más de 99 mil piezas apócrifas relacionadas al Mundial. Estas acciones se desarrollaron mediante recorridos de verificación en el perímetro del estadio, dentro y fuera de la última milla, a través de 15 brigadas de personal especializado que realizaron labores de observación, monitoreo y registro. Asimismo, se brindó orientación directa a aproximadamente 350 comerciantes y prestadores de servicios, invitándolos a abstenerse de ofrecer productos que reproduzcan sin autorización elementos protegidos por la legislación en materia de propiedad intelectual, así como informándoles sobre las posibles consecuencias legales de estas conductas. El operativo tuvo un carácter estrictamente preventivo, por lo que en esta etapa no se realizaron aseguramientos de mercancía ni se impusieron sanciones o medidas provisionales. Este enfoque busca privilegiar la concientización y el cumplimiento voluntario, en línea con la estrategia institucional implementada durante el desarrollo del torneo. El director general del IMPI, Vidal Llerenas comentó que, como resultado de estas acciones, se observó una disminución significativa en la presencia de puntos de venta de mercancía apócrifa en las inmediaciones del Estadio Guadalajara. Asimismo, derivado de las condiciones de seguridad en la zona y la coordinación con autoridades locales, se logró eliminar la presencia de comercio irregular vinculado a este tipo de productos en el perímetro del recinto. El IMPI también ha fortalecido sus acciones en el entorno digital, logrando bajar 140 URL asociadas a la retransmisión ilegal de partidos, como parte de una estrategia integral para combatir la piratería en todas sus modalidades durante la Copa Mundial, destacó Vidal Llerenas. En operativos realizados en fechas previas, el Instituto ha asegurado un total de más de 99 mil piezas de mercancía apócrifa, con un valor estimado de $13,885,030.00 pesos. Estas acciones incluyen intervenciones en Plaza Olimpia el 22 de abril, Izazaga 29 y 81 el 21 de mayo, y Plaza Cristal el 8 de junio, consolidando una respuesta institucional sostenida frente a estas prácticas ilegales. El IMPI continuará implementando acciones preventivas y, en su caso, ejerciendo sus facultades legales para proteger los derechos de propiedad intelectual, en cumplimiento de los compromisos asumidos en el marco de este evento internacional. -ooOoo-",
+    "detail_markdown": null,
+    "detail_url": "notas/ca7ebcd353b75a865afed891.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Comunicado",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Organismo descentralizado",
+    "id": "gob.mx apf:6a6621b5689896f3",
+    "importance": 3,
+    "issuing_body": "Instituto Mexicano de la Propiedad Industrial",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "official_evidence": {
+      "primary_url": "https://www.gob.mx/impi/prensa/impi-refuerza-acciones-preventivas-contra-la-pirateria-en-el-estadio-guadalajara-durante-el-mundial-2026?idiom=es"
+    },
+    "official_identifiers": {
+      "source_id": "6a6621b5689896f3"
+    },
+    "official_published_at": "2026-06-20",
+    "official_title": "IMPI refuerza acciones preventivas contra la piratería en el Estadio Guadalajara durante el Mundial 2026",
+    "published_at": "2026-06-20",
+    "published_day": 20,
+    "published_month": 6,
+    "published_year": 2026,
+    "relevance_score": 5,
+    "review_reason": "Registro legado o contenido sin revisión editorial certificada.",
+    "source": "Gob.mx APF",
+    "source_id": "6a6621b5689896f3",
+    "subtopic_tags": [
+      "propiedad intelectual",
+      "propiedad industrial",
+      "impi",
+      "pirateria"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Propiedad intelectual"
+    ],
+    "url": "https://www.gob.mx/impi/prensa/impi-refuerza-acciones-preventivas-contra-la-pirateria-en-el-estadio-guadalajara-durante-el-mundial-2026?idiom=es"
+  },
+  "schema_version": 8
+}

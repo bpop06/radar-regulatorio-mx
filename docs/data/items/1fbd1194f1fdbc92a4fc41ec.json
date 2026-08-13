@@ -1,0 +1,75 @@
+{
+  "cut_id": "c4a1c1b4512b5a7f956d8453",
+  "item": {
+    "ai_generated": false,
+    "authority": "Centro Internacional de Arreglo de Diferencias Relativas a Inversiones",
+    "canonical_url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%2F23%2F4",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "Mining concession",
+    "case_facts": "",
+    "case_number": "ARB/23/4",
+    "case_outcome": "",
+    "case_parties": "Goldgroup Resources, Inc. v. United Mexican States",
+    "case_reasoning": "",
+    "case_status": "Pending",
+    "case_treaty": "NAFTA (North American Free Trade Agreement), USMCA (United States-Mexico-Canada Agreement)",
+    "categories": [
+      "Comercio exterior",
+      "Comercio internacional"
+    ],
+    "content_hash": "f40072165ca43b0f16fd01573dbfb47b289e7496634d3d0fcbf4a45bafca59e1",
+    "country_or_org": "CIADI",
+    "description": "Estatus del procedimiento: Pendiente. Materia: Mining concession. Sector económico: Oil, Gas & Mining. Instrumento invocado: NAFTA (North American Free Trade Agreement), USMCA (United States-Mexico-Canada Agreement). Última actuación: June 29, 2026 - The Tribunal decides on the Respondent’s request of June 24, 2026.",
+    "detail_markdown": null,
+    "detail_url": "notas/1fbd1194f1fdbc92a4fc41ec.html",
+    "detected_at": "2026-08-13T02:52:40.243182+00:00",
+    "document_type": "Caso de arbitraje de inversión",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Organismo internacional",
+    "id": "ciadi:ARB/23/4",
+    "importance": 4,
+    "issuing_body": "Centro Internacional de Arreglo de Diferencias relativas a Inversiones",
+    "jurisdiction": "internacional",
+    "last_seen_at": "2026-08-13T02:53:39.855587+00:00",
+    "official_evidence": {
+      "case_detail": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%2F23%2F4",
+      "instrument_invoked": "NAFTA (North American Free Trade Agreement), USMCA (United States-Mexico-Canada Agreement)",
+      "latest_development": "June 29, 2026 - The Tribunal decides on the Respondent’s request of June 24, 2026.",
+      "primary_url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%2F23%2F4",
+      "status": "Pending",
+      "subject": "Mining concession"
+    },
+    "official_identifiers": {
+      "case_number": "ARB/23/4",
+      "source_id": "ARB/23/4"
+    },
+    "official_published_at": "2026-06-29",
+    "official_title": "Goldgroup Resources, Inc. v. United Mexican States (ICSID Case No. ARB/23/4)",
+    "published_at": "2026-06-29",
+    "published_day": 29,
+    "published_month": 6,
+    "published_year": 2026,
+    "relevance_score": 7,
+    "review_reason": "La fuente oficial cambió; requiere una nueva revisión editorial.",
+    "source": "CIADI",
+    "source_id": "ARB/23/4",
+    "subtopic_tags": [
+      "trade agreement",
+      "usmca",
+      "free trade",
+      "arbitraje de inversion",
+      "icsid"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Comercio exterior",
+      "Comercio internacional"
+    ],
+    "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%2F23%2F4"
+  },
+  "schema_version": 8
+}
