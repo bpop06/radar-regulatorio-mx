@@ -22,8 +22,8 @@
     </script>
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="preload" href="fonts/fraunces-variable-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="styles.css">
-    <script type="module" src="detail.js"></script>
+    <link rel="stylesheet" href="styles.css?v=20260812a">
+    <script type="module" src="detail.js?v=20260812a"></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Saltar al contenido</a>
@@ -44,7 +44,7 @@
       </nav>
     </header>
 
-    <main id="main" class="detail-main shell">
+    <main id="main" class="detail-main shell" tabindex="-1">
       <a id="detail-back" class="back-link" href="archivo.html">← Volver al archivo</a>
       <div class="detail-layout">
         <article class="detail-article">
@@ -67,7 +67,8 @@
             <p id="detail-why-copy"></p>
           </section>
 
-          <div id="detail-content" class="document-body" aria-live="polite" aria-busy="true">
+          <p id="detail-load-status" class="sr-only" role="status">Cargando ficha.</p>
+          <div id="detail-content" class="document-body" aria-busy="true">
             <p>Cargando documento.</p>
           </div>
         </article>

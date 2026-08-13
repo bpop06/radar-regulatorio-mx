@@ -26,6 +26,7 @@ const elements = {
   reviewReason: document.querySelector("#detail-review-reason"),
   why: document.querySelector("#detail-why"),
   whyCopy: document.querySelector("#detail-why-copy"),
+  loadStatus: document.querySelector("#detail-load-status"),
   content: document.querySelector("#detail-content"),
   officialDate: document.querySelector("#detail-date"),
   detectedDate: document.querySelector("#detail-detected-date"),
@@ -192,6 +193,7 @@ function showMessage(title, message) {
   elements.status.className = "editorial-badge is-pending";
   elements.content.replaceChildren();
   elements.content.setAttribute("aria-busy", "false");
+  elements.loadStatus.textContent = message;
   document.title = `${title} · Radar Regulatorio MX`;
 }
 
@@ -255,6 +257,7 @@ async function loadDetail() {
     }
     renderCase(item);
     elements.content.setAttribute("aria-busy", "false");
+    elements.loadStatus.textContent = "Ficha cargada.";
 
     const sourceUrl = item.url || item.canonical_url;
     if (isSafeHttpUrl(sourceUrl)) {

@@ -22,8 +22,8 @@
     </script>
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="preload" href="fonts/fraunces-variable-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="styles.css">
-    <script type="module" src="app.js"></script>
+    <link rel="stylesheet" href="styles.css?v=20260812a">
+    <script type="module" src="app.js?v=20260812a"></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Saltar al contenido</a>
@@ -46,7 +46,7 @@
       </nav>
     </header>
 
-    <main id="main" class="today-main">
+    <main id="main" class="today-main" tabindex="-1">
       <p id="edition-status" class="sr-only" role="status"></p>
       <section class="edition shell" aria-labelledby="edition-heading">
         <header class="edition-heading">
@@ -60,7 +60,7 @@
           </a>
         </header>
 
-        <div id="edition-loading" class="edition-loading" aria-live="polite">
+        <div id="edition-loading" class="edition-loading">
           <span class="loading-pulse" aria-hidden="true"></span>
           <p>Ordenando las señales del corte.</p>
         </div>
@@ -124,7 +124,7 @@
           </section>
         </section>
 
-        <section id="edition-empty" class="edition-state" aria-live="polite" hidden>
+        <section id="edition-empty" class="edition-state" hidden>
           <div class="state-glyph" aria-hidden="true"><span></span></div>
           <p class="state-label" id="empty-label">Estado del corte</p>
           <h2 id="empty-title">El corte de hoy todavía no está publicado.</h2>

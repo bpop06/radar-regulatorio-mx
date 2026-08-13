@@ -11,12 +11,14 @@ async function init() {
     renderMarkdown(await response.text(), host);
     const duplicateHeading = host.querySelector("h1");
     if (duplicateHeading) duplicateHeading.remove();
+    host.setAttribute("aria-busy", "false");
     status.textContent = "Guía cargada.";
   } catch (error) {
     host.replaceChildren();
     const message = document.createElement("p");
     message.textContent = "No fue posible cargar la guía de guardias y plazos.";
     host.append(message);
+    host.setAttribute("aria-busy", "false");
     status.textContent = "No fue posible cargar la guía.";
     console.error(error);
   }

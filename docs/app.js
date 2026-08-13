@@ -70,7 +70,13 @@ function showState(name) {
   elements.ready.hidden = name !== "ready";
   elements.empty.hidden = name !== "empty";
   elements.error.hidden = name !== "error";
-  elements.liveStatus.textContent = name === "loading" ? "Cargando el corte" : "";
+  const messages = {
+    loading: "Cargando el corte.",
+    ready: "Corte cargado.",
+    empty: elements.emptyTitle.textContent,
+    error: "No fue posible cargar el corte.",
+  };
+  elements.liveStatus.textContent = messages[name] || "";
 }
 
 function formatGeneratedAt(value) {
