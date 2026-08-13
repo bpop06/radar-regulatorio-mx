@@ -1,0 +1,68 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "Portal federal CONUEE",
+    "canonical_url": "https://www.gob.mx/conuee/es/articulos/actualiza-secretaria-de-economia-referencias-a-cuatro-nom-ener?idiom=es",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Comercio exterior",
+      "Administración centralizada"
+    ],
+    "content_hash": "67b0f93ae3e665006241d8b19e00e9eb45083f252237ee63dff2b410e747474a",
+    "country_or_org": "México",
+    "description": "La Dirección General de Facilitación Comercial y Comercio Exterior (DGFCCE) de la Secretaría de Economía coordinó la publicación del ACUERDO que modifica el diverso por el que la Secretaría de Economía emite Reglas y criterios de carácter general en materia de comercio exterior , publicado en el Diario Oficial de la Federación (DOF), el pasado 29 de mayo de 2026. Mediante la modificación del “Anexo de NOM”, también conocido como Anexo 2.4.1 de las Reglas y Criterios de Comercio Exterior, se actualizaron las referencias normativas de cuatro Normas Oficiales Mexicanas de Eficiencia Energética (NOM-ENER) recientemente publicadas: NOM-004-ENER-2025 , conjunto motorbomba y motobombas, para bombeo de agua limpia. NOM-011-ENER-2025 , acondicionadores de aire tipo central, paquete o dividido. NOM-014-ENER-2025 , motores eléctricos de corriente alterna, monofásicos. NOM-016-ENER-2025 , motores de corriente alterna, trifásicos. Esta actualización garantiza que las mercancías consideradas en el objetivo y campo de aplicación de las Normas, cuenten con los Certificados de Conformidad correspondientes antes de que los productos entren al país. De esta manera, se asegura que los productos importados cumplan con las nuevas especificaciones, métodos de pruebas e información comercial establecidas en las versiones vigentes de las NOM-ENER. La medida contribuye a que los usuarios finales tengan acceso a productos eficientes y de mayor calidad, lo cual se traduce en beneficios económicos y energéticos para el país. Asimismo, fortalece los mecanismos de control en los puntos de entrada de mercancías y asegura que los productos de importación cumplan con los mismos requisitos que se exigen a los productores nacionales, promoviendo condiciones equitativas de competencia. Con la incorporación de estas regulaciones, el 73% de las NOM-ENER de producto, actualmente vigentes, se mantienen incluidas en este Acuerdo en materia de comercio exterior, lo que reafirma el compromiso de la Conuee de velar por el cumplimiento de las normas. Es importante señalar que se mantiene el reconocimiento de los certificados de producto que se encuentren vigentes, considerando una “etapa de transición” como se establece en cada uno de los transitorios de dichas NOM-ENER. Asimismo, los certificados emitidos con base en las normas anteriores podrán seguir utilizándose en los términos en que fueron expedidos hasta la conclusión de su vigencia. Conoce la publicación del ACUERDO que modifica el diverso por el que la Secretaría de Economía emite Reglas y criterios de carácter general en materia de comercio exterior: https://www.dof.gob.mx/nota_detalle.php?codigo=5788992&fecha=29/05/2026#gsc.tab=0 Consulta las Normas Oficiales Mexicanas de Eficiencia Energética Vigentes, en: https://www.gob.mx/conuee/acciones-y-programas/organismos-de-evaluacion-de-la-conformidad-aprobados-por-nom-ener Consulta los Organismos de Evaluación de la Conformidad aprobados por la Conuee: https://www.gob.mx/conuee/acciones-y-programas/organismos-de-evaluacion-de-la-conformidad-aprobados-por-nom-ener",
+    "detail_markdown": null,
+    "detail_url": "notas/5aac76b5d28cf584814dd243.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Artículo",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "gob.mx apf:303875e6e508f2ea",
+    "importance": 3,
+    "issuing_body": "Secretaría de Economía",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "official_evidence": {
+      "primary_url": "https://www.gob.mx/conuee/es/articulos/actualiza-secretaria-de-economia-referencias-a-cuatro-nom-ener?idiom=es"
+    },
+    "official_identifiers": {
+      "source_id": "303875e6e508f2ea"
+    },
+    "official_published_at": "2026-06-17",
+    "official_title": "Actualiza Secretaría de Economía referencias a cuatro NOM-ENER...",
+    "published_at": "2026-06-17",
+    "published_day": 17,
+    "published_month": 6,
+    "published_year": 2026,
+    "relevance_score": 4,
+    "review_reason": "Registro legado o contenido sin revisión editorial certificada.",
+    "source": "Gob.mx APF",
+    "source_id": "303875e6e508f2ea",
+    "subtopic_tags": [
+      "comercio exterior",
+      "importacion",
+      "nom-",
+      "evaluacion de la conformidad"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Comercio exterior",
+      "Normalización"
+    ],
+    "url": "https://www.gob.mx/conuee/es/articulos/actualiza-secretaria-de-economia-referencias-a-cuatro-nom-ener?idiom=es"
+  },
+  "schema_version": 8
+}

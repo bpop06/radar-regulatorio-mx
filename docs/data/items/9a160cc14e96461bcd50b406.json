@@ -1,0 +1,66 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "Consejería Jurídica del Ejecutivo Federal",
+    "canonical_url": "https://www.gob.mx/cjef/es/articulos/iniciativa-nacional-contra-el-feminicidio?idiom=es",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Proceso legislativo",
+      "Penal"
+    ],
+    "content_hash": "01296d2a46fa080344ab086757120eab49bb16423cb6a57a46d37531c9b9cf90",
+    "country_or_org": "México",
+    "description": "La presidenta Claudia Sheinbaum Pardo firmó la iniciativa para homologar el delito de feminicidio a nivel nacional; será enviada al Congreso de la Unión para ser analizada en el periodo legislativo que comienza en septiembre. Se trata de la iniciativa de Ley general para prevenir, investigar, sancionar y reparar el daño por el delito de feminicidio.",
+    "detail_markdown": null,
+    "detail_url": "notas/9a160cc14e96461bcd50b406.html",
+    "detected_at": "2026-08-13T02:36:54.429478+00:00",
+    "document_type": "Artículo",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-08-13T02:36:54.429478+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "gob.mx apf:67d05e4d855f0a31",
+    "importance": 2,
+    "issuing_body": "Consejería Jurídica del Ejecutivo Federal",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T03:50:09.071593+00:00",
+    "official_evidence": {
+      "primary_url": "https://www.gob.mx/cjef/es/articulos/iniciativa-nacional-contra-el-feminicidio?idiom=es"
+    },
+    "official_identifiers": {
+      "source_id": "67d05e4d855f0a31"
+    },
+    "official_published_at": "2026-07-15",
+    "official_title": "Iniciativa nacional contra el feminicidio",
+    "published_at": "2026-07-15",
+    "published_day": 15,
+    "published_month": 7,
+    "published_year": 2026,
+    "relevance_score": 3,
+    "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
+    "source": "Gob.mx APF",
+    "source_id": "67d05e4d855f0a31",
+    "subtopic_tags": [
+      "iniciativa de ley",
+      "delito"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Iniciativa",
+      "Penal"
+    ],
+    "url": "https://www.gob.mx/cjef/es/articulos/iniciativa-nacional-contra-el-feminicidio?idiom=es"
+  },
+  "schema_version": 8
+}

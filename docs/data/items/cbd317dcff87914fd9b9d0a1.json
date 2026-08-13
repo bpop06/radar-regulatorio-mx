@@ -1,0 +1,74 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "Centro Internacional de Arreglo de Diferencias Relativas a Inversiones",
+    "canonical_url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%2F20%2F13",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "Telecommunications concession",
+    "case_facts": "",
+    "case_number": "ARB/20/13",
+    "case_outcome": "",
+    "case_parties": "Espíritu Santo Holdings, LP and L1bre Holding, LLC v. United Mexican States",
+    "case_reasoning": "",
+    "case_status": "Concluded",
+    "case_treaty": "NAFTA (North American Free Trade Agreement)",
+    "categories": [
+      "Comercio exterior",
+      "Comercio internacional"
+    ],
+    "content_hash": "24fdc4d9bf7227c26458464c6ddbef2fd7b6f50ed52f7effcb70e89adb1c4ab0",
+    "country_or_org": "CIADI",
+    "description": "Estatus del procedimiento: Pendiente. Materia: Telecommunications concession. Sector económico: Information & Communication. Instrumento invocado: NAFTA (North American Free Trade Agreement). Última actuación: July 1, 2026 - The Secretary-General registers an application for revision of the award filed by Espíritu Santo Holdings, LP and L1bre Holding, LLC and notifies the parties of the provisional stay of enforcement of the award.",
+    "detail_markdown": null,
+    "detail_url": "notas/cbd317dcff87914fd9b9d0a1.html",
+    "detected_at": "2026-08-13T02:52:41.711195+00:00",
+    "document_type": "Caso de arbitraje de inversión",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Organismo internacional",
+    "id": "ciadi:ARB/20/13",
+    "importance": 4,
+    "issuing_body": "Centro Internacional de Arreglo de Diferencias relativas a Inversiones",
+    "jurisdiction": "internacional",
+    "last_seen_at": "2026-08-13T05:08:47.293425+00:00",
+    "official_evidence": {
+      "case_detail": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%2F20%2F13",
+      "instrument_invoked": "NAFTA (North American Free Trade Agreement)",
+      "latest_development": "July 1, 2026 - The Secretary-General registers an application for revision of the award filed by Espíritu Santo Holdings, LP and L1bre Holding, LLC and notifies the parties of the provisional stay of enforcement of the award.",
+      "primary_url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%2F20%2F13",
+      "status": "Concluded",
+      "subject": "Telecommunications concession"
+    },
+    "official_identifiers": {
+      "case_number": "ARB/20/13",
+      "source_id": "ARB/20/13"
+    },
+    "official_published_at": "2026-07-01",
+    "official_title": "Espíritu Santo Holdings, LP and L1bre Holding, LLC v. United Mexican States (ICSID Case No. ARB/20/13)",
+    "published_at": "2026-07-01",
+    "published_day": 1,
+    "published_month": 7,
+    "published_year": 2026,
+    "relevance_score": 6,
+    "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
+    "source": "CIADI",
+    "source_id": "ARB/20/13",
+    "subtopic_tags": [
+      "trade agreement",
+      "free trade",
+      "arbitraje de inversion",
+      "icsid"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Comercio exterior",
+      "Comercio internacional"
+    ],
+    "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%2F20%2F13"
+  },
+  "schema_version": 8
+}

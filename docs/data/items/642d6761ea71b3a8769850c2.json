@@ -1,0 +1,68 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "ORGANISMOS DESCONCENTRADOS O DESCENTRALIZADOS INSTITUTO MEXICANO DEL SEGURO SOCIAL",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792413&fecha=02/07/2026",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "ae3193772f0af0e8897806a97fb73450f68f27cf85b111d7aab0cbb7e5fcef24",
+    "country_or_org": "México",
+    "description": "Aviso mediante el cual se designa al Titular de la Jefatura de Servicios de Desarrollo de Personal, para que supla las ausencias del Dr. Jorge Martínez Torres, Titular del Órgano de Operación Administrativa Desconcentrada Regional Estado de México Oriente del Instituto Mexicano del Seguro Social, autorizándole a firmar y despachar la documentación, incluyendo la suscripción de las resoluciones que debe emitir este Órgano.",
+    "detail_markdown": null,
+    "detail_url": "notas/642d6761ea71b3a8769850c2.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Aviso",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Organismo descentralizado",
+    "id": "dof:5792413",
+    "importance": 3,
+    "issuing_body": "Instituto Mexicano del Seguro Social",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792413&fecha=02/07/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5792413"
+    },
+    "official_published_at": "2026-07-02",
+    "official_title": "Aviso mediante el cual se designa al Titular de la Jefatura de Servicios de Desarrollo de Personal, para que supla las ausencias del Dr. Jorge Martínez Torres, Titular del Órgano de Operación Administrativa Desconcentrada Regional Estado de México Oriente del Instituto Mexicano del Seguro Social, autorizándole a firmar y despachar la documentación, incluyendo la suscripción de las resoluciones que debe emitir este Órgano.",
+    "published_at": "2026-07-02",
+    "published_day": 2,
+    "published_month": 7,
+    "published_year": 2026,
+    "relevance_score": 4,
+    "review_reason": "Registro legado o contenido sin revisión editorial certificada.",
+    "source": "DOF",
+    "source_id": "5792413",
+    "subtopic_tags": [
+      "designa",
+      "titular del organo",
+      "titular de la jefatura"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Derecho administrativo",
+      "Nombramientos federales",
+      "Resolución",
+      "Aviso"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5792413&fecha=02/07/2026"
+  },
+  "schema_version": 8
+}

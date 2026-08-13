@@ -1,0 +1,65 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792570&fecha=03/07/2026",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Fiscal",
+      "Administración centralizada"
+    ],
+    "content_hash": "8db5fd9a5f6208cabe619a45489877f41853b9d7b5122f33daf367b4c729b8b5",
+    "country_or_org": "México",
+    "description": "Oficio 500-05-00-00-00-2026-16084 mediante el cual se comunica listado global definitivo en términos del artículo 69-B, párrafo tercero del Código Fiscal de la Federación vigente hasta el 24 de julio de 2018.",
+    "detail_markdown": null,
+    "detail_url": "notas/797c2c511755de273288f467.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Oficio",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5792570",
+    "importance": 2,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792570&fecha=03/07/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5792570"
+    },
+    "official_published_at": "2026-07-03",
+    "official_title": "Oficio 500-05-00-00-00-2026-16084 mediante el cual se comunica listado global definitivo en términos del artículo 69-B, párrafo tercero del Código Fiscal de la Federación vigente hasta el 24 de julio de 2018.",
+    "published_at": "2026-07-03",
+    "published_day": 3,
+    "published_month": 7,
+    "published_year": 2026,
+    "relevance_score": 3,
+    "review_reason": "Registro legado o contenido sin revisión editorial certificada.",
+    "source": "DOF",
+    "source_id": "5792570",
+    "subtopic_tags": [
+      "codigo fiscal"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Fiscal",
+      "Oficio"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5792570&fecha=03/07/2026"
+  },
+  "schema_version": 8
+}

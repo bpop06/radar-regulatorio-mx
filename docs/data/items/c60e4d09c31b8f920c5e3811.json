@@ -1,0 +1,65 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "Instituto Mexicano de la Propiedad Industrial",
+    "canonical_url": "https://www.gob.mx/impi/prensa/impi-intensifica-operativos-contra-pirateria-en-el-centro-historico-a-unos-dias-del-inicio-del-mundial?idiom=es",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración descentralizada"
+    ],
+    "content_hash": "07d14ea909806ab0494ac67908afd09c26e0e739932465cfc658c548a89954cb",
+    "country_or_org": "México",
+    "description": "· En un esfuerzo conjunto con SSC de la CDMX y Marina, se aseguraron aproximadamente 65,934 piezas de mercancía presuntamente infractora con un valor estimado de 6,016,577 de pesos. · Los productos asegurados son principalmente ropa y accesorios deportivos, asociados a marcas como FIFA, ADIDAS y otras marcas vinculadas a la indumentaria oficial de selecciones participantes. Estas acciones consistieron en la ejecución de 20 visitas de verificación derivadas del inicio de procedimientos administrativos de oficio, mediante las cuales se aplicaron medidas provisionales de aseguramiento sobre mercancía presuntamente infractora. El operativo fue encabezado por el director general del IMPI, Vidal Llerenas Morales y contó con la participación de 70 inspectores del IMPI, en un esfuerzo coordinado con la Secretaría de Seguridad Ciudadana de la Ciudad de México, específicamente el área de inteligencia, así como con el apoyo de la Secretaría de Marina, fortaleciendo las labores de inspección y vigilancia. El objetivo principal de estas acciones es asegurar mercancía que presuntamente infringe derechos de propiedad intelectual y resguardarla en las instalaciones del IMPI, como parte de los procedimientos administrativos correspondientes. Este esfuerzo conjunto responde también a compromisos de colaboración internacional en el contexto de la Copa Mundial de la FIFA 2026, así como a la protección no solo de las marcas FIFA, sino también de diversas marcas deportivas relacionadas con la indumentaria oficial de selecciones participantes. El IMPI reafirma su compromiso de combatir la comercialización de productos ilícitos, proteger a los consumidores y garantizar condiciones de competencia justa para las industrias creativas y deportivas. Cumpliendo con las instrucciones de la presidenta Claudia Shienbaum y del secretario de Economía, Marcelo Ebrard, el Instituto continuará realizando operativos reforzando la vigilancia en puntos estratégicos de comercialización, con el objetivo de inhibir la distribución de mercancía apócrifa, proteger los derechos de propiedad intelectual y brindar certeza jurídica a las empresas legalmente constituidas en México. -ooOoo-",
+    "detail_markdown": null,
+    "detail_url": "notas/c60e4d09c31b8f920c5e3811.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Comunicado",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Organismo descentralizado",
+    "id": "gob.mx apf:1105a5ed4b5ee868",
+    "importance": 2,
+    "issuing_body": "Instituto Mexicano de la Propiedad Industrial",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "official_evidence": {
+      "primary_url": "https://www.gob.mx/impi/prensa/impi-intensifica-operativos-contra-pirateria-en-el-centro-historico-a-unos-dias-del-inicio-del-mundial?idiom=es"
+    },
+    "official_identifiers": {
+      "source_id": "1105a5ed4b5ee868"
+    },
+    "official_published_at": "2026-06-08",
+    "official_title": "IMPI intensifica operativos contra piratería en el Centro Histórico a unos días del inicio del Mundial",
+    "published_at": "2026-06-08",
+    "published_day": 8,
+    "published_month": 6,
+    "published_year": 2026,
+    "relevance_score": 3,
+    "review_reason": "Registro legado o contenido sin revisión editorial certificada.",
+    "source": "Gob.mx APF",
+    "source_id": "1105a5ed4b5ee868",
+    "subtopic_tags": [
+      "propiedad intelectual",
+      "impi",
+      "pirateria"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Propiedad intelectual"
+    ],
+    "url": "https://www.gob.mx/impi/prensa/impi-intensifica-operativos-contra-pirateria-en-el-centro-historico-a-unos-dias-del-inicio-del-mundial?idiom=es"
+  },
+  "schema_version": 8
+}

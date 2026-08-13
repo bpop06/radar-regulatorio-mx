@@ -1,0 +1,63 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "CONVOCATORIAS PARA CONCURSOS DE ADQUISICIONES, ARRENDAMIENTOS, OBRAS Y SERVICIOS DEL SECTOR PUBLICO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5794142&fecha=21%2F07%2F2026",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Penal"
+    ],
+    "content_hash": "56eb34be391b353caf435c16791ae3eb7ba0a55e2bc2296525441dda0df330ed",
+    "country_or_org": "México",
+    "description": "FISCALIA GENERAL DE LA REPUBLICA - REF:578565",
+    "detail_markdown": null,
+    "detail_url": "notas/c9f0b358bbdbdbd53bd124ba.html",
+    "detected_at": "2026-07-21T12:00:00+00:00",
+    "document_type": "Fiscalia General",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-21T12:00:00+00:00",
+    "government_branch": "Organismo autónomo",
+    "id": "dof:5794142",
+    "importance": 2,
+    "issuing_body": "Fiscalía General de la República",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5794142&fecha=21/07/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5794142"
+    },
+    "official_published_at": "2026-07-21",
+    "official_title": "FISCALIA GENERAL DE LA REPUBLICA - REF:578565",
+    "published_at": "2026-07-21",
+    "published_day": 21,
+    "published_month": 7,
+    "published_year": 2026,
+    "relevance_score": 2,
+    "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
+    "source": "DOF",
+    "source_id": "5794142",
+    "subtopic_tags": [
+      "fiscalia"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Penal"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5794142&fecha=21/07/2026"
+  },
+  "schema_version": 8
+}

@@ -1,0 +1,67 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "Secretaría de Seguridad y Protección Ciudadana",
+    "canonical_url": "https://www.gob.mx/sspc/prensa/en-la-aduana-de-lazaro-cardenas-michoacan-autoridades-federales-aseguran-contenedor-con-aproximadamente-137-kilos-de-presunta-cocaina?idiom=es",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Comercio exterior",
+      "Penal"
+    ],
+    "content_hash": "fd4701f16b43c412f34be860af9a67aa996c2f543562eed04eb8ee97dd9ee9e6",
+    "country_or_org": "México",
+    "description": "Este aseguramiento representa una afectación económica de más de 29 millones de pesos, lo que debilita la estructura financiera y operativa de los grupos delictivos En una operación encabezada por Secretaría de Marina (Semar), en coordinación con Aduanas de Lázaro Cárdenas, Michoacán, Secretaría de Seguridad y Protección Ciudadana (SSPC) y la Fiscalía General de la República (FGR), se localizaron cinco bultos con 139 ladrillos con un peso aproximado de 137 kilos de cocaína en el recinto portuario de dicho municipio. Esta acción se llevó a cabo cuando personal naval, durante labores de patrulla y vigilancia marítima, dio seguimiento hasta su arribo a puerto a un buque mercante que contaba con un alertamiento por el posible transporte de mercancía ilícita. A su arribo, elementos de la Unidad Naval de Protección Portuaria (UNAPROP), adscrita a la Décima Sexta Zona Naval, en estrecha coordinación con la Aduana Marítima de Lázaro Cárdenas, efectuaron labores de inspección a los contenedores transportados a bordo de la embarcación. Durante la revisión, con apoyo de un binomio canino especializado en detección de narcóticos, se identificaron irregularidades en una carga comercial, donde se encontraban ocultos cinco bultos que contenían 139 ladrillos con un peso aproximado de 137 kilogramos de presunta cocaína. Como resultado de estas acciones, fueron detenidas cinco personas de nacionalidad ecuatoriana, presuntamente involucradas en la comisión de hechos ilícitos. A los detenidos les fueron leídos sus derechos de ley y, junto con la droga asegurada, fueron puestos a disposición del agente del Ministerio Público correspondiente, quien integrará la carpeta de investigación del caso. Cabe destacar que este aseguramiento representa una afectación económica de 29 millones 711 mil pesos, lo que debilita la estructura financiera y operativa de los grupos delictivos. De igual forma, con esta acción se evitó que aproximadamente 274 mil dosis lleguen a la sociedad. Este resultado refleja la efectividad de la coordinación interinstitucional entre las autoridades marítimas y aduaneras para fortalecer los mecanismos de seguridad en los puertos nacionales, mediante operaciones permanentes de vigilancia marítima, portuaria, aérea y terrestre, orientadas a preservar el Estado de derecho e impedir que sustancias ilícitas afecten la salud y el bienestar de la población. —oo0oo—",
+    "detail_markdown": null,
+    "detail_url": "notas/7567e62d7b6b4761a969e7e4.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Comunicado",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "gob.mx apf:3734b8481a34ebf1",
+    "importance": 2,
+    "issuing_body": "Secretaría de Seguridad y Protección Ciudadana",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "official_evidence": {
+      "primary_url": "https://www.gob.mx/sspc/prensa/en-la-aduana-de-lazaro-cardenas-michoacan-autoridades-federales-aseguran-contenedor-con-aproximadamente-137-kilos-de-presunta-cocaina?idiom=es"
+    },
+    "official_identifiers": {
+      "source_id": "3734b8481a34ebf1"
+    },
+    "official_published_at": "2026-06-19",
+    "official_title": "EN LA ADUANA DE LÁZARO CÁRDENAS, MICHOACÁN, MARINA Y AUTORIDADES FEDERALES ASEGURAN CONTENEDOR CON 137 KILOS DE PRESUNTA COCAÍNA",
+    "published_at": "2026-06-19",
+    "published_day": 19,
+    "published_month": 6,
+    "published_year": 2026,
+    "relevance_score": 3,
+    "review_reason": "Registro legado o contenido sin revisión editorial certificada.",
+    "source": "Gob.mx APF",
+    "source_id": "3734b8481a34ebf1",
+    "subtopic_tags": [
+      "aduana",
+      "fiscalia",
+      "fgr"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Aduanero",
+      "Penal"
+    ],
+    "url": "https://www.gob.mx/sspc/prensa/en-la-aduana-de-lazaro-cardenas-michoacan-autoridades-federales-aseguran-contenedor-con-aproximadamente-137-kilos-de-presunta-cocaina?idiom=es"
+  },
+  "schema_version": 8
+}

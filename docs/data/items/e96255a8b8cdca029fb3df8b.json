@@ -1,0 +1,67 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "Secretaría de Economía",
+    "canonical_url": "https://www.gob.mx/se/prensa/quinta-reunion-de-la-comision-de-libre-comercio-del-t-mec-proceso-de-revision-conjunta-previsto-en-el-articulo-34-7?idiom=es",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Comercio exterior",
+      "Comercio internacional",
+      "Administración centralizada"
+    ],
+    "content_hash": "c41bc1ba0034ee0933d7b489b208a168930d05e636593ff5ef95ef650c81cd8d",
+    "country_or_org": "México",
+    "description": "• El T-MEC se mantiene al menos 10 años más. México, Estados Unidos y Canadá realizarán revisiones anuales al acuerdo • México y EE. UU. sostendrán la semana del 20 de julio una ronda de revisión El día de hoy se llevó a cabo, de manera virtual, la Quinta Reunión de la Comisión de Libre Comercio del T-MEC, en el marco del proceso de revisión conjunta previsto en el artículo 34.7 del propio tratado. En la reunión participaron el secretario de Economía de México, Marcelo Ebrard; el Representante Comercial de Estados Unidos (USTR, por sus siglas en inglés), Jamieson Greer; el ministro responsable del Comercio entre Canadá y Estados Unidos, Asuntos Intergubernamentales, Comercio Interior y Economía Única Canadiense, Dominic LeBlanc, así como los jefes negociadores de los tres países. Durante el encuentro, el secretario Ebrard dio a conocer una carta de la presidenta Claudia Sheinbaum Pardo, en la que se manifiesta a favor de avanzar hacia la extensión de la vigencia del Tratado y continuar impulsando la prosperidad compartida y la integración económica de América del Norte. Durante la reunión, los tres países acordaron realizar revisiones anuales al T-MEC, el cual continuará vigente hasta el 2036. El propio T-MEC establece que en cualquiera de esas revisiones anuales las partes pueden acordar extender la vigencia del tratado por otros dieciséis años. En virtud de lo anterior, México continuará exportando más del 80% de sus productos a los Estados Unidos sin pagar arancel, y seguirá siendo el país, junto con Canadá, que mejor trato arancelario tiene a nivel global. La semana del 20 de julio tendrá lugar en la Ciudad de México una ronda de revisión del tratado entre México y Estados Unidos, acorde a lo establecido. -ooOoo-",
+    "detail_markdown": null,
+    "detail_url": "notas/e96255a8b8cdca029fb3df8b.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Comunicado",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "gob.mx apf:50f9c2b9c603e1ce",
+    "importance": 2,
+    "issuing_body": "Secretaría de Economía",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "official_evidence": {
+      "primary_url": "https://www.gob.mx/se/prensa/quinta-reunion-de-la-comision-de-libre-comercio-del-t-mec-proceso-de-revision-conjunta-previsto-en-el-articulo-34-7?idiom=es"
+    },
+    "official_identifiers": {
+      "source_id": "50f9c2b9c603e1ce"
+    },
+    "official_published_at": "2026-07-01",
+    "official_title": "Quinta Reunión de la Comisión de Libre Comercio del T-MEC Proceso de Revisión Conjunta previsto en el artículo 34.7",
+    "published_at": "2026-07-01",
+    "published_day": 1,
+    "published_month": 7,
+    "published_year": 2026,
+    "relevance_score": 2,
+    "review_reason": "Registro legado o contenido sin revisión editorial certificada.",
+    "source": "Gob.mx APF",
+    "source_id": "50f9c2b9c603e1ce",
+    "subtopic_tags": [
+      "arancel",
+      "t-mec"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Comercio exterior",
+      "Comercio internacional"
+    ],
+    "url": "https://www.gob.mx/se/prensa/quinta-reunion-de-la-comision-de-libre-comercio-del-t-mec-proceso-de-revision-conjunta-previsto-en-el-articulo-34-7?idiom=es"
+  },
+  "schema_version": 8
+}

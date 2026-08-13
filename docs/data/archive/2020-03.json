@@ -1,0 +1,45 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "items": [
+    {
+      "canonical_url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=UNCT%2F20%2F2",
+      "case_amount": "",
+      "case_number": "UNCT/20/2",
+      "case_outcome": "",
+      "case_parties": "Carlos Sastre and others v. United Mexican States",
+      "case_reasoning": "",
+      "case_status": "Concluded",
+      "case_treaty": "BIT Mexico - Argentina 1996, BIT Mexico - France 1998, BIT Mexico - Portugal 1999 - NAFTA (North American Free Trade Agreement)",
+      "categories": [
+        "Comercio exterior",
+        "Comercio internacional"
+      ],
+      "content_hash": "35ffa4ab14e91905bb70d5984a3daa08d2c87a07390d476db8372b697fb01c5f",
+      "country_or_org": "CIADI",
+      "detail_url": "notas/5bfb5a9055f9e53f163d6069.html",
+      "detected_at": "2026-08-13T02:52:41.487974+00:00",
+      "document_type": "Caso de arbitraje de inversión",
+      "editorial_status": "needs_review",
+      "first_seen_at": "2026-08-13T02:52:41.487974+00:00",
+      "id": "ciadi:UNCT/20/2",
+      "importance": 4,
+      "issuing_body": "Centro Internacional de Arreglo de Diferencias relativas a Inversiones",
+      "jurisdiction": "internacional",
+      "last_seen_at": "2026-08-13T05:08:47.293425+00:00",
+      "official_published_at": "2020-03-03",
+      "official_title": "Carlos Sastre and others v. United Mexican States (ICSID Case No. UNCT/20/2)",
+      "published_at": "2020-03-03",
+      "relevance_score": 6,
+      "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
+      "source": "CIADI",
+      "source_id": "UNCT/20/2",
+      "summary": null,
+      "summary_teaser": null,
+      "title": null,
+      "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=UNCT%2F20%2F2"
+    }
+  ],
+  "month": "2020-03",
+  "schema_version": 8,
+  "total_items": 1
+}

@@ -4,7 +4,7 @@ from datetime import UTC, date, datetime, time
 from urllib.parse import urlparse
 
 from app.models import Candidate
-from app.sources.base import Collector
+from app.sources.base import Collector, SourceContractError
 from app.text import clean_text
 
 
@@ -25,11 +25,13 @@ class PlatiicaCollector(Collector):
                 "_fields": "id,date,modified,link,slug,title,excerpt",
             },
         )
-        response.raise_for_status()
+        self.validate_response(response, content_types={"application/json"})
         return self.parse(response.json(), since)
 
     @classmethod
     def parse(cls, payload: list[dict[str, object]], since: date) -> list[Candidate]:
+        if not isinstance(payload, list):
+            raise SourceContractError("PLATIICA: la respuesta de posts no es una lista JSON")
         candidates: list[Candidate] = []
         for post in payload:
             modified = datetime.fromisoformat(str(post["modified"])).date()

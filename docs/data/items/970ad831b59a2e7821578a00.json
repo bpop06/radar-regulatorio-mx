@@ -1,0 +1,63 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "ORGANISMOS DESCONCENTRADOS O DESCENTRALIZADOS INSTITUTO MEXICANO DE LA PROPIEDAD INDUSTRIAL",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5789898&fecha=08/06/2026",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración descentralizada"
+    ],
+    "content_hash": "de029b706f9c8b7e8555674682db0a5321a05ad4c3a5788a1bf74197d08f0c4a",
+    "country_or_org": "México",
+    "description": "Publicación de datos relacionados con la Solicitud de Declaración de Protección a la Indicación Geográfica \"Venado Bura del Desierto de Sonora\".",
+    "detail_markdown": null,
+    "detail_url": "notas/970ad831b59a2e7821578a00.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Publicación De Datos",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Organismo descentralizado",
+    "id": "dof:5789898",
+    "importance": 2,
+    "issuing_body": "Instituto Mexicano de la Propiedad Industrial",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5789898&fecha=08/06/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5789898"
+    },
+    "official_published_at": "2026-06-08",
+    "official_title": "Publicación de datos relacionados con la Solicitud de Declaración de Protección a la Indicación Geográfica \"Venado Bura del Desierto de Sonora\".",
+    "published_at": "2026-06-08",
+    "published_day": 8,
+    "published_month": 6,
+    "published_year": 2026,
+    "relevance_score": 3,
+    "review_reason": "Registro legado o contenido sin revisión editorial certificada.",
+    "source": "DOF",
+    "source_id": "5789898",
+    "subtopic_tags": [
+      "indicacion geografica"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Propiedad intelectual"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5789898&fecha=08/06/2026"
+  },
+  "schema_version": 8
+}

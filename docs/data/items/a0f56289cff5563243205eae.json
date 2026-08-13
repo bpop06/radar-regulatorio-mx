@@ -1,0 +1,74 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "Centro Internacional de Arreglo de Diferencias Relativas a Inversiones",
+    "canonical_url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%2F23%2F22",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "Oil and gas enterprise",
+    "case_facts": "",
+    "case_number": "ARB/23/22",
+    "case_outcome": "",
+    "case_parties": "Enerflex US Holdings Inc. and Exterran Energy Solutions, L.P. v. United Mexican States",
+    "case_reasoning": "",
+    "case_status": "Concluded",
+    "case_treaty": "NAFTA (North American Free Trade Agreement), USMCA (United States-Mexico-Canada Agreement)",
+    "categories": [
+      "Comercio exterior",
+      "Comercio internacional"
+    ],
+    "content_hash": "22fdd2ffed5434fa7f87a493ca4348d3fae4030ae7cc0875c94fae7c245a8f6c",
+    "country_or_org": "CIADI",
+    "description": "Estatus del procedimiento: Concluido. Materia: Oil and gas enterprise. Sector económico: Oil, Gas & Mining. Instrumento invocado: NAFTA (North American Free Trade Agreement), USMCA (United States-Mexico-Canada Agreement).",
+    "detail_markdown": null,
+    "detail_url": "notas/a0f56289cff5563243205eae.html",
+    "detected_at": "2026-08-13T02:52:40.185076+00:00",
+    "document_type": "Caso de arbitraje de inversión",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-08-13T02:52:40.185076+00:00",
+    "government_branch": "Organismo internacional",
+    "id": "ciadi:ARB/23/22",
+    "importance": 4,
+    "issuing_body": "Centro Internacional de Arreglo de Diferencias relativas a Inversiones",
+    "jurisdiction": "internacional",
+    "last_seen_at": "2026-08-13T05:08:47.293425+00:00",
+    "official_evidence": {
+      "case_detail": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%2F23%2F22",
+      "instrument_invoked": "NAFTA (North American Free Trade Agreement), USMCA (United States-Mexico-Canada Agreement)",
+      "primary_url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%2F23%2F22",
+      "status": "Concluded",
+      "subject": "Oil and gas enterprise"
+    },
+    "official_identifiers": {
+      "case_number": "ARB/23/22",
+      "source_id": "ARB/23/22"
+    },
+    "official_published_at": "2023-06-23",
+    "official_title": "Enerflex US Holdings Inc. and Exterran Energy Solutions, L.P. v. United Mexican States (ICSID Case No. ARB/23/22)",
+    "published_at": "2023-06-23",
+    "published_day": 23,
+    "published_month": 6,
+    "published_year": 2023,
+    "relevance_score": 7,
+    "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
+    "source": "CIADI",
+    "source_id": "ARB/23/22",
+    "subtopic_tags": [
+      "trade agreement",
+      "usmca",
+      "free trade",
+      "arbitraje de inversion",
+      "icsid"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Comercio exterior",
+      "Comercio internacional"
+    ],
+    "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%2F23%2F22"
+  },
+  "schema_version": 8
+}

@@ -1,0 +1,61 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795367&fecha=04%2F08%2F2026",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "12afc98cab1f3f0fdabcd564be69689b2aeb6c47260221ab26eebf87db5ba1c4",
+    "country_or_org": "México",
+    "description": "Acuerdo por el que se destinan a la Secretaría de Infraestructura, Comunicaciones y Transportes, los inmuebles federales denominados \"Vías Buenavista Mex-Qro (Vías)\" y \"Estación Buenavista Mex-Qro,\" con Registros Federales Inmobiliarios 9-71659-2 y 9-71660-9 y superficies de 3,394.97 y 10,757.32 metros cuadrados, respectivamente, que provienen de un inmueble de mayor extensión, ambos ubicados en Avenida Ricardo Flores Magón Número 234, colonia Guerrero, alcaldía Cuauhtémoc, Código Postal 06300, Ciudad de México.",
+    "detail_markdown": null,
+    "detail_url": "notas/625b6209c081f35903cd09d3.html",
+    "detected_at": "2026-08-04T12:00:00+00:00",
+    "document_type": "Acuerdo",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-08-04T12:00:00+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5795367",
+    "importance": 1,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795367&fecha=04/08/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5795367"
+    },
+    "official_published_at": "2026-08-04",
+    "official_title": "Acuerdo por el que se destinan a la Secretaría de Infraestructura, Comunicaciones y Transportes, los inmuebles federales denominados \"Vías Buenavista Mex-Qro (Vías)\" y \"Estación Buenavista Mex-Qro,\" con Registros Federales Inmobiliarios 9-71659-2 y 9-71660-9 y superficies de 3,394.97 y 10,757.32 metros cuadrados, respectivamente, que provienen de un inmueble de mayor extensión, ambos ubicados en Avenida Ricardo Flores Magón Número 234, colonia Guerrero, alcaldía Cuauhtémoc, Código Postal 06300, Ciudad de México.",
+    "published_at": "2026-08-04",
+    "published_day": 4,
+    "published_month": 8,
+    "published_year": 2026,
+    "relevance_score": 1,
+    "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
+    "source": "DOF",
+    "source_id": "5795367",
+    "subtopic_tags": [],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Acuerdo"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5795367&fecha=04/08/2026"
+  },
+  "schema_version": 8
+}

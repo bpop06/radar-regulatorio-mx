@@ -1,0 +1,67 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "PODER EJECUTIVO SECRETARIA ANTICORRUPCION Y BUEN GOBIERNO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792794&fecha=07/07/2026",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Penal",
+      "Administración centralizada"
+    ],
+    "content_hash": "86350012cea3350c9310911185c50eb5ef1d06c2b95c53a8fca044ede6d49269",
+    "country_or_org": "México",
+    "description": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a las entidades federativas, a la Fiscalía General de la República, a las empresas públicas del Estado, municipios y demarcaciones territoriales de la Ciudad de México, que deberán abstenerse de aceptar propuestas y celebrar contratos con la empresa ATV de Sahuayo, S.A. de C.V.",
+    "detail_markdown": null,
+    "detail_url": "notas/a99e4027ac45304baedbcc46.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Circular",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5792794",
+    "importance": 2,
+    "issuing_body": "Presidencia de la República",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792794&fecha=07/07/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5792794"
+    },
+    "official_published_at": "2026-07-07",
+    "official_title": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a las entidades federativas, a la Fiscalía General de la República, a las empresas públicas del Estado, municipios y demarcaciones territoriales de la Ciudad de México, que deberán abstenerse de aceptar propuestas y celebrar contratos con la empresa ATV de Sahuayo, S.A. de C.V.",
+    "published_at": "2026-07-07",
+    "published_day": 7,
+    "published_month": 7,
+    "published_year": 2026,
+    "relevance_score": 3,
+    "review_reason": "Registro legado o contenido sin revisión editorial certificada.",
+    "source": "DOF",
+    "source_id": "5792794",
+    "subtopic_tags": [
+      "fiscalia",
+      "administracion publica federal"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Penal",
+      "Derecho administrativo",
+      "Circular"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5792794&fecha=07/07/2026"
+  },
+  "schema_version": 8
+}

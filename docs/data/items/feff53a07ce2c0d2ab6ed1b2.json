@@ -1,0 +1,75 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "Centro Internacional de Arreglo de Diferencias Relativas a Inversiones",
+    "canonical_url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%2F23%2F25",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "Food products enterprise",
+    "case_facts": "",
+    "case_number": "ARB/23/25",
+    "case_outcome": "",
+    "case_parties": "Arbor Confections Inc., Mark Alan Ducorsky and Brad Ducorsky v. United Mexican States",
+    "case_reasoning": "",
+    "case_status": "Pending",
+    "case_treaty": "NAFTA (North American Free Trade Agreement), USMCA (United States-Mexico-Canada Agreement)",
+    "categories": [
+      "Comercio exterior",
+      "Comercio internacional"
+    ],
+    "content_hash": "007d7ac02880221b7b630da345edd386c574770e88c1610df20c25d2c92b1693",
+    "country_or_org": "CIADI",
+    "description": "Estatus del procedimiento: Pendiente. Materia: Food products enterprise. Sector económico: Other Industry. Instrumento invocado: NAFTA (North American Free Trade Agreement), USMCA (United States-Mexico-Canada Agreement). Última actuación: April 29, 2026 - The Claimants file a memorial on the merits.",
+    "detail_markdown": null,
+    "detail_url": "notas/feff53a07ce2c0d2ab6ed1b2.html",
+    "detected_at": "2026-08-13T02:52:39.546214+00:00",
+    "document_type": "Caso de arbitraje de inversión",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Organismo internacional",
+    "id": "ciadi:ARB/23/25",
+    "importance": 4,
+    "issuing_body": "Centro Internacional de Arreglo de Diferencias relativas a Inversiones",
+    "jurisdiction": "internacional",
+    "last_seen_at": "2026-08-13T05:08:47.293425+00:00",
+    "official_evidence": {
+      "case_detail": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%2F23%2F25",
+      "instrument_invoked": "NAFTA (North American Free Trade Agreement), USMCA (United States-Mexico-Canada Agreement)",
+      "latest_development": "April 29, 2026 - The Claimants file a memorial on the merits.",
+      "primary_url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%2F23%2F25",
+      "status": "Pending",
+      "subject": "Food products enterprise"
+    },
+    "official_identifiers": {
+      "case_number": "ARB/23/25",
+      "source_id": "ARB/23/25"
+    },
+    "official_published_at": "2026-04-29",
+    "official_title": "Arbor Confections Inc., Mark Alan Ducorsky and Brad Ducorsky v. United Mexican States (ICSID Case No. ARB/23/25)",
+    "published_at": "2026-04-29",
+    "published_day": 29,
+    "published_month": 4,
+    "published_year": 2026,
+    "relevance_score": 7,
+    "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
+    "source": "CIADI",
+    "source_id": "ARB/23/25",
+    "subtopic_tags": [
+      "trade agreement",
+      "usmca",
+      "free trade",
+      "arbitraje de inversion",
+      "icsid"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Comercio exterior",
+      "Comercio internacional"
+    ],
+    "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%2F23%2F25"
+  },
+  "schema_version": 8
+}

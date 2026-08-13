@@ -1,0 +1,63 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793378&fecha=13%2F07%2F2026",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "462cd76953fdfef0ff70314bbde43079b993ef0dc30076de2bc3ee664e5374fc",
+    "country_or_org": "México",
+    "description": "Lista de valores mínimos para desechos de bienes muebles que generen las dependencias y entidades de la Administración Pública Federal.",
+    "detail_markdown": null,
+    "detail_url": "notas/03adfc787c6bc6ecffc5a12f.html",
+    "detected_at": "2026-07-13T12:00:00+00:00",
+    "document_type": "Lista De Valores",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-13T12:00:00+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5793378",
+    "importance": 2,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793378&fecha=13/07/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5793378"
+    },
+    "official_published_at": "2026-07-13",
+    "official_title": "Lista de valores mínimos para desechos de bienes muebles que generen las dependencias y entidades de la Administración Pública Federal.",
+    "published_at": "2026-07-13",
+    "published_day": 13,
+    "published_month": 7,
+    "published_year": 2026,
+    "relevance_score": 2,
+    "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
+    "source": "DOF",
+    "source_id": "5793378",
+    "subtopic_tags": [
+      "administracion publica federal"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Derecho administrativo"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5793378&fecha=13/07/2026"
+  },
+  "schema_version": 8
+}

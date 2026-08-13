@@ -1,0 +1,70 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "Centro Internacional de Arreglo de Diferencias Relativas a Inversiones",
+    "canonical_url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%2F23%2F53",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "Renewable energy generation enterprise",
+    "case_facts": "",
+    "case_number": "ARB/23/53",
+    "case_outcome": "",
+    "case_parties": "Caisse de dépôt et placement du Québec and CDP Groupe Infrastructures Inc. v. United Mexican States",
+    "case_reasoning": "",
+    "case_status": "Pending",
+    "case_treaty": "Comprehensive and Progressive Agreement for Trans-Pacific Partnership (CPTPP)",
+    "categories": [
+      "Comercio internacional"
+    ],
+    "content_hash": "60021a5e41b16e4f1c6cb179ffbd43ed58216f756a39dda843b50034c563b668",
+    "country_or_org": "CIADI",
+    "description": "Estatus del procedimiento: Pendiente. Materia: Renewable energy generation enterprise. Sector económico: Electric Power & Other Energy. Instrumento invocado: Comprehensive and Progressive Agreement for Trans-Pacific Partnership (CPTPP). Última actuación: December 19, 2023 - The proceeding is suspended pursuant to the parties’ agreement.",
+    "detail_markdown": null,
+    "detail_url": "notas/e819bc3193fbd65e1e1f3cef.html",
+    "detected_at": "2026-08-13T02:52:39.497378+00:00",
+    "document_type": "Caso de arbitraje de inversión",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Organismo internacional",
+    "id": "ciadi:ARB/23/53",
+    "importance": 2,
+    "issuing_body": "Centro Internacional de Arreglo de Diferencias relativas a Inversiones",
+    "jurisdiction": "internacional",
+    "last_seen_at": "2026-08-13T05:08:47.293425+00:00",
+    "official_evidence": {
+      "case_detail": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%2F23%2F53",
+      "instrument_invoked": "Comprehensive and Progressive Agreement for Trans-Pacific Partnership (CPTPP)",
+      "latest_development": "December 19, 2023 - The proceeding is suspended pursuant to the parties’ agreement.",
+      "primary_url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%2F23%2F53",
+      "status": "Pending",
+      "subject": "Renewable energy generation enterprise"
+    },
+    "official_identifiers": {
+      "case_number": "ARB/23/53",
+      "source_id": "ARB/23/53"
+    },
+    "official_published_at": "2023-12-19",
+    "official_title": "Caisse de dépôt et placement du Québec and CDP Groupe Infrastructures Inc. v. United Mexican States (ICSID Case No. ARB/23/53)",
+    "published_at": "2023-12-19",
+    "published_day": 19,
+    "published_month": 12,
+    "published_year": 2023,
+    "relevance_score": 3,
+    "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
+    "source": "CIADI",
+    "source_id": "ARB/23/53",
+    "subtopic_tags": [
+      "arbitraje de inversion",
+      "icsid"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Comercio internacional"
+    ],
+    "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%2F23%2F53"
+  },
+  "schema_version": 8
+}

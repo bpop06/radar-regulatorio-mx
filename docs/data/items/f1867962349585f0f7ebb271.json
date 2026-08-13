@@ -1,0 +1,63 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "Procuraduria Federal de Proteccion al Ambiente",
+    "canonical_url": "https://www.gob.mx/profepa/prensa/emite-profepa-dictamen-pericial-por-saqueo-de-202-huevos-de-tortuga-marina-golfina-en-guerrero?idiom=es",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Penal"
+    ],
+    "content_hash": "bc64129e170f553ff8ea75672d5b40c21cc255e65f2d4821ceaf3c16d3c12ae3",
+    "country_or_org": "México",
+    "description": "La Procuraduría Federal de Protección al Ambiente (Profepa), a través de su Oficina de Representación en Guerrero, emitió un dictamen pericial en materia de fauna silvestre, a solicitud de la Fiscalía General de la República. Personal de la Profepa identificó 202 huevos de tortuga marina golfina ( Lepidochelys olivacea ) los cuales fueron observados en aparente buen estado y con características de reciente desove, toda vez que aún conservaban arena fresca. Estos huevos habían sido recolectados por una persona, que ya fue puesta a disposición del Ministerio Público Federal, pues los transportaba en una bolsa de plástico. De igual manera, se advirtió que, al encontrarse fuera de su nido de incubación y estar expuestos a la temperatura ambiente, presentaban un grado mínimo de deshidratación. Con el fin de favorecer la supervivencia de la especie, se procedió a su traslado e incubación inmediata en el Campamento Tortuguero del Hotel Ritz Acapulco, como parte del Programa de Apoyo para la Protección de la Tortuga Marina en la Bahía de Acapulco. Al ser recolectados de su medio natural, los huevos de quelonio marino pueden presentar alteraciones en su proceso germinativo, puesto que las condiciones externas difieren de las que hay en su nido; aunado a esto, las condiciones en las que fueron transportados y el manejo inadecuado al que pudieron estar sometidos, puede interrumpir el desarrollo normal del embrión. Así, para conocer plenamente el daño ocasionado, deberá transcurrir un periodo de 45 a 50 días en el que los huevos permanecerán en incubación; de acuerdo con los resultados obtenidos y el porcentaje de sobrevivencia o mortandad, se podrá determinar el daño ocasionado. Foto 2. Personal de la Profepa en zona de anidación. Fotos descargables. Comunicado de prensa núm. 441/2026",
+    "detail_markdown": null,
+    "detail_url": "notas/f1867962349585f0f7ebb271.html",
+    "detected_at": "2026-08-13T02:36:54.429478+00:00",
+    "document_type": "Comunicado",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-08-13T02:36:54.429478+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "gob.mx apf:31eb49ce6527d452",
+    "importance": 1,
+    "issuing_body": "Procuraduria Federal de Proteccion al Ambiente",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T03:50:09.071593+00:00",
+    "official_evidence": {
+      "primary_url": "https://www.gob.mx/profepa/prensa/emite-profepa-dictamen-pericial-por-saqueo-de-202-huevos-de-tortuga-marina-golfina-en-guerrero?idiom=es"
+    },
+    "official_identifiers": {
+      "source_id": "31eb49ce6527d452"
+    },
+    "official_published_at": "2026-08-05",
+    "official_title": "Emite Profepa dictamen pericial por saqueo de 202 huevos de tortuga marina golfina, en Guerrero",
+    "published_at": "2026-08-05",
+    "published_day": 5,
+    "published_month": 8,
+    "published_year": 2026,
+    "relevance_score": 1,
+    "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
+    "source": "Gob.mx APF",
+    "source_id": "31eb49ce6527d452",
+    "subtopic_tags": [
+      "fiscalia"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Penal"
+    ],
+    "url": "https://www.gob.mx/profepa/prensa/emite-profepa-dictamen-pericial-por-saqueo-de-202-huevos-de-tortuga-marina-golfina-en-guerrero?idiom=es"
+  },
+  "schema_version": 8
+}

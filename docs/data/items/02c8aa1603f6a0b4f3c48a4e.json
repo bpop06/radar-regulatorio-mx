@@ -1,0 +1,64 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "PODER EJECUTIVO SECRETARIA DE MARINA",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791366&fecha=23/06/2026",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "2616d64722b3b1bfa8eeb98ff0fea13a9aaec0018c9f38754604dc69f487ad01",
+    "country_or_org": "México",
+    "description": "Aviso mediante el cual se da a conocer la página institucional donde puede consultarse el Manual de Organización de la Administración del Sistema Portuario Nacional Ensenada, S.A. de C.V.",
+    "detail_markdown": null,
+    "detail_url": "notas/02c8aa1603f6a0b4f3c48a4e.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Aviso",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5791366",
+    "importance": 2,
+    "issuing_body": "Secretaría de Marina",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791366&fecha=23/06/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5791366"
+    },
+    "official_published_at": "2026-06-23",
+    "official_title": "Aviso mediante el cual se da a conocer la página institucional donde puede consultarse el Manual de Organización de la Administración del Sistema Portuario Nacional Ensenada, S.A. de C.V.",
+    "published_at": "2026-06-23",
+    "published_day": 23,
+    "published_month": 6,
+    "published_year": 2026,
+    "relevance_score": 2,
+    "review_reason": "Registro legado o contenido sin revisión editorial certificada.",
+    "source": "DOF",
+    "source_id": "5791366",
+    "subtopic_tags": [
+      "manual de organizacion"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Derecho administrativo",
+      "Aviso"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5791366&fecha=23/06/2026"
+  },
+  "schema_version": 8
+}

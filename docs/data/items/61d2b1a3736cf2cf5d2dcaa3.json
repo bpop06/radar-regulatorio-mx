@@ -1,0 +1,68 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "ORGANISMOS DESCONCENTRADOS O DESCENTRALIZADOS INSTITUTO MEXICANO DEL SEGURO SOCIAL",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5790955&fecha=18/06/2026",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "7ab25ec8a85b2a6604cc0e1bcdb33db76c4e8b2da08e2bcc6e8033328b8b6b12",
+    "country_or_org": "México",
+    "description": "Aviso mediante el cual se designa a la Titular de la Jefatura de Servicios de Finanzas para que supla las ausencias de la Doctora Karla Guadalupe López López, Titular del Órgano de Operación Administrativa Desconcentrada Sur del Distrito Federal del Instituto Mexicano del Seguro Social, autorizándole a firmar y despachar la documentación incluyendo la suscripción de las resoluciones que debe emitir este Órgano.",
+    "detail_markdown": null,
+    "detail_url": "notas/61d2b1a3736cf2cf5d2dcaa3.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Aviso",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Organismo descentralizado",
+    "id": "dof:5790955",
+    "importance": 3,
+    "issuing_body": "Instituto Mexicano del Seguro Social",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5790955&fecha=18/06/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5790955"
+    },
+    "official_published_at": "2026-06-18",
+    "official_title": "Aviso mediante el cual se designa a la Titular de la Jefatura de Servicios de Finanzas para que supla las ausencias de la Doctora Karla Guadalupe López López, Titular del Órgano de Operación Administrativa Desconcentrada Sur del Distrito Federal del Instituto Mexicano del Seguro Social, autorizándole a firmar y despachar la documentación incluyendo la suscripción de las resoluciones que debe emitir este Órgano.",
+    "published_at": "2026-06-18",
+    "published_day": 18,
+    "published_month": 6,
+    "published_year": 2026,
+    "relevance_score": 4,
+    "review_reason": "Registro legado o contenido sin revisión editorial certificada.",
+    "source": "DOF",
+    "source_id": "5790955",
+    "subtopic_tags": [
+      "designa",
+      "titular del organo",
+      "titular de la jefatura"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Derecho administrativo",
+      "Nombramientos federales",
+      "Resolución",
+      "Aviso"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5790955&fecha=18/06/2026"
+  },
+  "schema_version": 8
+}

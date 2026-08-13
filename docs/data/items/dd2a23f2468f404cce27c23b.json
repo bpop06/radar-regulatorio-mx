@@ -1,0 +1,69 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "Centro Internacional de Arreglo de Diferencias Relativas a Inversiones",
+    "canonical_url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%2F22%2F6",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "Desalination plant and pipelines",
+    "case_facts": "",
+    "case_number": "ARB/22/6",
+    "case_outcome": "",
+    "case_parties": "Consolidated Water Coöperatief, U.A. v. United Mexican States",
+    "case_reasoning": "",
+    "case_status": "Concluded",
+    "case_treaty": "BIT Netherlands - Mexico 1998",
+    "categories": [
+      "Comercio internacional"
+    ],
+    "content_hash": "3f2b6771e457b337f140f9d66781cd0cd13c47d7bdc752f45e34ac6a4e9c4eb9",
+    "country_or_org": "CIADI",
+    "description": "Estatus del procedimiento: Concluido. Materia: Desalination plant and pipelines. Sector económico: Water, Sanitation & Flood Protection. Instrumento invocado: BIT Netherlands - Mexico 1998.",
+    "detail_markdown": null,
+    "detail_url": "notas/dd2a23f2468f404cce27c23b.html",
+    "detected_at": "2026-08-13T02:52:40.944948+00:00",
+    "document_type": "Caso de arbitraje de inversión",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-08-13T02:52:40.944948+00:00",
+    "government_branch": "Organismo internacional",
+    "id": "ciadi:ARB/22/6",
+    "importance": 2,
+    "issuing_body": "Centro Internacional de Arreglo de Diferencias relativas a Inversiones",
+    "jurisdiction": "internacional",
+    "last_seen_at": "2026-08-13T05:08:47.293425+00:00",
+    "official_evidence": {
+      "case_detail": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%2F22%2F6",
+      "instrument_invoked": "BIT Netherlands - Mexico 1998",
+      "primary_url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%2F22%2F6",
+      "status": "Concluded",
+      "subject": "Desalination plant and pipelines"
+    },
+    "official_identifiers": {
+      "case_number": "ARB/22/6",
+      "source_id": "ARB/22/6"
+    },
+    "official_published_at": "2022-02-22",
+    "official_title": "Consolidated Water Coöperatief, U.A. v. United Mexican States (ICSID Case No. ARB/22/6)",
+    "published_at": "2022-02-22",
+    "published_day": 22,
+    "published_month": 2,
+    "published_year": 2022,
+    "relevance_score": 3,
+    "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
+    "source": "CIADI",
+    "source_id": "ARB/22/6",
+    "subtopic_tags": [
+      "arbitraje de inversion",
+      "icsid"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Comercio internacional"
+    ],
+    "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%2F22%2F6"
+  },
+  "schema_version": 8
+}

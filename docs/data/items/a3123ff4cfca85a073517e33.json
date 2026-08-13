@@ -1,0 +1,67 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "Unidad de Inteligencia Financiera",
+    "canonical_url": "https://www.gob.mx/uif/prensa/shcp-fortalece-el-regimen-nacional-para-la-prevencion-del-lavado-de-dinero-con-la-publicacion-de-las-rcg-de-la-lfpiorpi?idiom=es",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Anti-lavado"
+    ],
+    "content_hash": "53e3958d65baa4817a9cda9ed74f4070c7f19be669b5657d5cb94e4ddd8f15ec",
+    "country_or_org": "México",
+    "description": "La Secretaría de Hacienda y Crédito Público publicó en el Diario Oficial de la Federación las Reglas de Carácter General previstas en la Ley Federal para la Prevención e Identificación de Operaciones con Recursos de Procedencia Ilícita (LFPIORPI), como parte de la implementación de las reformas a la Ley y a su Reglamento publicadas en 2025 y 2026, respectivamente, fortaleciendo el marco regulatorio aplicable a quienes realizan Actividades Vulnerables y consolidando el régimen preventivo en materia de prevención del lavado de dinero. Las nuevas Reglas desarrollan las disposiciones previstas en la legislación, establecen criterios para su aplicación y precisan las obligaciones de los sujetos obligados, así como las atribuciones de las autoridades responsables de su implementación, supervisión y verificación, con el propósito de brindar mayor certeza jurídica y una aplicación homogénea de las disposiciones en la materia. Entre los principales cambios destaca la incorporación del Enfoque Basado en Riesgo (EBR) como principio rector para el cumplimiento de las obligaciones previstas en la Ley. A partir de este modelo, quienes realizan Actividades Vulnerables deberán identificar, evaluar, clasificar y documentar los riesgos asociados con sus clientes o usuarios, operaciones, productos, servicios, canales de operación y zonas geográficas, mediante metodologías que fortalezcan la gestión de riesgos y permitan una mejor identificación de operaciones que pudieran estar relacionadas con recursos de procedencia ilícita. Asimismo, las Reglas fortalecen las medidas de conocimiento del cliente o usuario, la identificación del beneficiario controlador y de las Personas Políticamente Expuestas, los mecanismos de control interno, la conservación de información y la presentación de avisos. De igual forma, la Secretaría de Hacienda y Crédito Público, por conducto de sus unidades, ejercerán sus atribuciones bajo un Enfoque Basado en Riesgo, orientando las acciones de supervisión y verificación hacia los sectores y actividades con mayor exposición a ser utilizados para el lavado de dinero. Las disposiciones incorporan además un modelo de cumplimiento proporcional, mediante el cual las obligaciones y las acciones de supervisión se aplicarán considerando el nivel de riesgo de cada Actividad Vulnerable. Este esquema permitirá optimizar los recursos destinados a la prevención, fortalecer el cumplimiento de las obligaciones legales y facilitar la implementación de controles acorde con las características de cada sector. La entrada en vigor de las nuevas disposiciones se realizará de manera gradual, con el propósito de facilitar su implementación, permitir que los sujetos obligados actualicen sus procesos internos y desarrollen las capacidades necesarias para cumplir con el nuevo marco regulatorio, favoreciendo una transición ordenada y eficiente. La Secretaría de Hacienda refrenda su compromiso de fortalecer el sistema nacional para la prevención de operaciones con recursos de procedencia ilícita, en apego al marco jurídico vigente y a los estándares internacionales del Grupo de Acción Financiera Internacional (GAFI), contribuyendo a la protección de la integridad del sistema financiero y al fortalecimiento de los mecanismos de prevención y combate al lavado de dinero.",
+    "detail_markdown": null,
+    "detail_url": "notas/a3123ff4cfca85a073517e33.html",
+    "detected_at": "2026-08-10T12:00:00+00:00",
+    "document_type": "Comunicado",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-08-10T12:00:00+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "gob.mx apf:8d1c06b1d18a0e24",
+    "importance": 3,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+    "official_evidence": {
+      "primary_url": "https://www.gob.mx/uif/prensa/shcp-fortalece-el-regimen-nacional-para-la-prevencion-del-lavado-de-dinero-con-la-publicacion-de-las-rcg-de-la-lfpiorpi?idiom=es"
+    },
+    "official_identifiers": {
+      "source_id": "8d1c06b1d18a0e24"
+    },
+    "official_published_at": "2026-08-10",
+    "official_title": "SHCP fortalece el régimen nacional para la prevención del lavado de dinero con la publicación de las RCG de la LFPIORPI",
+    "published_at": "2026-08-10",
+    "published_day": 10,
+    "published_month": 8,
+    "published_year": 2026,
+    "relevance_score": 4,
+    "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
+    "source": "Gob.mx APF",
+    "source_id": "8d1c06b1d18a0e24",
+    "subtopic_tags": [
+      "lavado de dinero",
+      "lfpiorpi",
+      "actividades vulnerables",
+      "gafi",
+      "beneficiario controlador"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Anti-lavado"
+    ],
+    "url": "https://www.gob.mx/uif/prensa/shcp-fortalece-el-regimen-nacional-para-la-prevencion-del-lavado-de-dinero-con-la-publicacion-de-las-rcg-de-la-lfpiorpi?idiom=es"
+  },
+  "schema_version": 8
+}

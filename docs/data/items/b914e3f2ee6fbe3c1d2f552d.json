@@ -1,0 +1,65 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "Organización Mundial del Comercio",
+    "canonical_url": "https://www.wto.org/english/news_e/news26_e/dtech_02jul26_439_e.htm",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Comercio exterior",
+      "Comercio internacional"
+    ],
+    "content_hash": "ad763626805d9d0bebcc9055297af3d96917991ae6bc1791f553580116f793cc",
+    "country_or_org": "OMC",
+    "description": "A new report published today, 2 July, by the WTO and the Organisation Internationale de la Francophonie (OIF) examines the transformative impact of digital trade on global economic structures, with a particular focus on how fit-for-purpose regulatory frameworks can support inclusive growth. The report explores the challenges and opportunities arising from the rapid digitalization of trade and considers how the digital divide between countries can be narrowed.",
+    "detail_markdown": null,
+    "detail_url": "notas/b914e3f2ee6fbe3c1d2f552d.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Noticia",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Organismo internacional",
+    "id": "omc:cf04a75291606a5f",
+    "importance": 2,
+    "issuing_body": "Organización Mundial del Comercio",
+    "jurisdiction": "internacional",
+    "last_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "official_evidence": {
+      "primary_url": "https://www.wto.org/english/news_e/news26_e/dtech_02jul26_439_e.htm"
+    },
+    "official_identifiers": {
+      "source_id": "cf04a75291606a5f"
+    },
+    "official_published_at": "2026-07-02",
+    "official_title": "WTO-OIF report highlights the transformative impact of digital trade for an inclusive global economy",
+    "published_at": "2026-07-02",
+    "published_day": 2,
+    "published_month": 7,
+    "published_year": 2026,
+    "relevance_score": 2,
+    "review_reason": "Registro legado o contenido sin revisión editorial certificada.",
+    "source": "OMC",
+    "source_id": "cf04a75291606a5f",
+    "subtopic_tags": [
+      "wto"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Comercio exterior",
+      "Comercio internacional"
+    ],
+    "url": "https://www.wto.org/english/news_e/news26_e/dtech_02jul26_439_e.htm"
+  },
+  "schema_version": 8
+}

@@ -1,0 +1,45 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "items": [
+    {
+      "canonical_url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%2F23%2F6",
+      "case_amount": "",
+      "case_number": "ARB/23/6",
+      "case_outcome": "",
+      "case_parties": "Sepadeve International LLC v. United Mexican States",
+      "case_reasoning": "",
+      "case_status": "Concluded",
+      "case_treaty": "NAFTA (North American Free Trade Agreement), USMCA (United States-Mexico-Canada Agreement)",
+      "categories": [
+        "Comercio exterior",
+        "Comercio internacional"
+      ],
+      "content_hash": "4e4a83f4f2878426d4f48b278e20799533b6d298c16c9d6c4b7c3c3f0b80df57",
+      "country_or_org": "CIADI",
+      "detail_url": "notas/10cedacd123f855bd3a945dd.html",
+      "detected_at": "2026-08-13T02:52:40.198070+00:00",
+      "document_type": "Caso de arbitraje de inversión",
+      "editorial_status": "needs_review",
+      "first_seen_at": "2026-08-13T02:52:40.198070+00:00",
+      "id": "ciadi:ARB/23/6",
+      "importance": 4,
+      "issuing_body": "Centro Internacional de Arreglo de Diferencias relativas a Inversiones",
+      "jurisdiction": "internacional",
+      "last_seen_at": "2026-08-13T05:08:47.293425+00:00",
+      "official_published_at": "2023-03-10",
+      "official_title": "Sepadeve International LLC v. United Mexican States (ICSID Case No. ARB/23/6)",
+      "published_at": "2023-03-10",
+      "relevance_score": 7,
+      "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
+      "source": "CIADI",
+      "source_id": "ARB/23/6",
+      "summary": null,
+      "summary_teaser": null,
+      "title": null,
+      "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%2F23%2F6"
+    }
+  ],
+  "month": "2023-03",
+  "schema_version": 8,
+  "total_items": 1
+}

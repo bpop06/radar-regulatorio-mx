@@ -7,22 +7,38 @@ from urllib.parse import parse_qs, urlparse
 from xml.etree import ElementTree
 
 from app.models import Candidate
-from app.sources.base import Collector
+from app.sources.base import Collector, require_xml_channel
 from app.text import clean_text, parse_date
 
 
 class DofCollector(Collector):
     source = "DOF"
-    url = "https://www.dof.gob.mx/sumarios/sumario_31dias.xml"
+    # El host ``www`` sirve una cadena TLS distinta e incompleta. El origen
+    # canónico sin ``www`` publica el mismo sumario con una cadena verificable.
+    url = "https://dof.gob.mx/sumarios/sumario_31dias.xml"
 
     async def collect(self, since: date) -> list[Candidate]:
         response = await self.client.get(self.url)
-        response.raise_for_status()
-        return self.parse(response.content, since)
+        self.validate_response(
+            response,
+            content_types={"application/rss+xml", "application/xml", "text/xml"},
+        )
+        candidates, skipped = self.parse_with_diagnostics(response.content, since)
+        if skipped:
+            self.mark_degraded(f"{skipped} bloques RSS no pudieron interpretarse")
+        return candidates
 
     @classmethod
     def parse(cls, payload: bytes, since: date) -> list[Candidate]:
+        return cls.parse_with_diagnostics(payload, since)[0]
+
+    @classmethod
+    def parse_with_diagnostics(
+        cls, payload: bytes, since: date
+    ) -> tuple[list[Candidate], int]:
+        require_xml_channel(payload, source=cls.source)
         candidates: list[Candidate] = []
+        skipped = 0
         # The official feed occasionally ends with an incomplete CDATA block.
         # Parse complete items independently so one damaged tail does not erase the day.
         item_blocks = re.findall(rb"<item>\s*.*?</item>", payload, flags=re.DOTALL)
@@ -31,6 +47,7 @@ class DofCollector(Collector):
                 item = ElementTree.fromstring(block)
             except ElementTree.ParseError:
                 # A malformed block should not take down the rest of the feed.
+                skipped += 1
                 continue
             url = clean_text(item.findtext("link", ""))
             raw_date = item.findtext("valueDate", "")
@@ -58,7 +75,7 @@ class DofCollector(Collector):
                     document_type=_document_type(item.findtext("description", "")),
                 )
             )
-        return candidates
+        return candidates, skipped
 
 
 # El sumario del DOF describe el documento como prosa libre (a veces

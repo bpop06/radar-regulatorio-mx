@@ -1,0 +1,67 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "Portal federal CONUEE",
+    "canonical_url": "https://www.gob.mx/conuee/es/articulos/se-publican-a-consulta-publica-dos-proyectos-de-norma-oficial-mexicana?idiom=es",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "2cb5d5cd1dd21787bc77b0b3d144a8f98283e61022eab15149d2946e7787acdd",
+    "country_or_org": "México",
+    "description": "El pasado 23 de junio de 2026 se publicaron en el Diario Oficial de la Federación los avisos de consulta pública de dos proyectos de Norma Oficial Mexicana de Eficiencia Energética y Seguridad, elaborados de forma conjunta entre el Comité Consultivo Nacional de Normalización para la Preservación y Uso Racional de los Recursos Energéticos (CCNNPURRE) y el Comité Consultivo Nacional de Normalización de la Secretaría de Economía (CCONNSE). El primero corresponde al PROY-NOM-039-ENER/SE-2025, Rendimiento térmico, ahorro de gas y seguridad de los calentadores de agua solares de baja presión y de los calentadores de agua solares de baja presión con respaldo de un calentador de agua que utiliza como combustible gas L.P. o gas natural. Especificaciones, métodos de prueba y etiquetado. Se trata de una nueva regulación que busca garantizar que los calentadores de agua solares que operan a presiones de trabajo menores que 3.0 kgf/cm2 generen ahorros de gas L.P. o gas natural y, al mismo tiempo, cuenten con características de diseño y construcción que reduzcan significativamente los riesgos de lesiones para las personas usuarias. El segundo corresponde al PROY-NOM-041-ENER/SE-2025, Eficiencia energética y requisitos de seguridad de ventiladores. Límites, métodos de prueba y etiquetado. Esta nueva regulación aplicará a ventiladores de techo, pared, piso, pedestal y tipo 3 en 1, con el propósito de disminuir el consumo de energía asociado a estos equipos, presentes en alrededor del 50 % de los hogares mexicanos. Asimismo, al incorporar requisitos de seguridad, contribuirá a proteger la integridad física de las personas usuarias. Ambos proyectos permanecerán en consulta pública hasta el día 22 de agosto de 2026. Durante este periodo, cualquier persona interesada podrá enviar los comentarios que considere convenientes de acuerdo con los formatos establecidos por la Secretaría de Economía . Los documentos pueden consultarse en el siguiente enlace: https://platiica.economia.gob.mx/proyectos-de-nom/ .",
+    "detail_markdown": null,
+    "detail_url": "notas/38d5490991a81209d42685bb.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Artículo",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "gob.mx apf:d44ffefb3ce67b30",
+    "importance": 3,
+    "issuing_body": "Portal federal CONUEE",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "official_evidence": {
+      "primary_url": "https://www.gob.mx/conuee/es/articulos/se-publican-a-consulta-publica-dos-proyectos-de-norma-oficial-mexicana?idiom=es"
+    },
+    "official_identifiers": {
+      "source_id": "d44ffefb3ce67b30"
+    },
+    "official_published_at": "2026-06-25",
+    "official_title": "Se publican a consulta pública dos proyectos de Norma Oficial Mexicana...",
+    "published_at": "2026-06-25",
+    "published_day": 25,
+    "published_month": 6,
+    "published_year": 2026,
+    "relevance_score": 4,
+    "review_reason": "Registro legado o contenido sin revisión editorial certificada.",
+    "source": "Gob.mx APF",
+    "source_id": "d44ffefb3ce67b30",
+    "subtopic_tags": [
+      "norma oficial mexicana",
+      "proy-nom",
+      "nom-",
+      "normalizacion"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Normalización",
+      "Norma"
+    ],
+    "url": "https://www.gob.mx/conuee/es/articulos/se-publican-a-consulta-publica-dos-proyectos-de-norma-oficial-mexicana?idiom=es"
+  },
+  "schema_version": 8
+}

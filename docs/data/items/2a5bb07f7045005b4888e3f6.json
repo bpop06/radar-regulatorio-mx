@@ -1,0 +1,67 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "Servicio de Administración Tributaria",
+    "canonical_url": "https://www.gob.mx/sat/prensa/realiza-sat-octava-publicacion-de-tasas-efectivas-del-isr-de-grandes-contribuyentes-para-los-ejercicios-2022-y-2023-44-2026?idiom=es",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Fiscal"
+    ],
+    "content_hash": "43435dd0f6a5ed01a39b9781de1d905eff978be18303f7589d8e743b3eda9e92",
+    "country_or_org": "México",
+    "description": "Esta octava emisión de tasas contempla cinco sectores económicos del país Los parámetros son resultado de análisis realizados por este órgano fiscal El Servicio de Administración Tributaria (SAT) da a conocer los parámetros de referencia, respecto a las tasas efectivas de impuesto para la medición de riesgos impositivos, que corresponden a 22 actividades económicas en los ejercicios fiscales 2022 y 2023, y sobre el padrón de grandes contribuyentes. Esta octava publicación contempla cinco sectores económicos: Industrias manufactureras Otros servicios excepto actividades del gobierno Servicios de apoyo a los negocios y manejo de desechos y servicios de remediación Servicios profesionales, científicos y técnicos Transportes, correos y almacenamiento Los parámetros son resultado de procesos de análisis realizados al interior del SAT y se dan a conocer en términos del artículo 33, primer párrafo, fracción I, inciso i) del Código Fiscal de la Federación vigente, y pueden ser consultados en el siguiente enlace: https://www.sat.gob.mx/minisitio/TasasEfectivasdelISR/index.html La medición se obtuvo con base en la información disponible en las bases de datos institucionales consistente en declaraciones anuales, dictámenes fiscales, información sobre la situación fiscal de los contribuyentes, declaraciones informativas, comprobantes fiscales digitales por internet (CFDI), pedimentos, entre otros. Para dar seguimiento a esta medida que facilita el cumplimiento de obligaciones fiscales, se ha contactado a través del Buzón Tributario a aquellos contribuyentes cuya tasa efectiva se encuentra por debajo de los parámetros publicados por el SAT, con la finalidad de que corrijan voluntariamente su situación fiscal mediante la presentación de declaraciones anuales complementarias. De esta manera, la autoridad tributaria invita a los grandes contribuyentes a consultar la tasa efectiva correspondiente a su actividad económica y compararla con su propia tasa efectiva de impuesto respecto de cada ejercicio fiscal. Lo anterior les permitirá medir sus riesgos impositivos y, en su caso, corregir su situación fiscal mediante la presentación de las declaraciones anuales complementarias correspondientes, además de reducir la posibilidad del inicio de revisiones orientadas a corroborar el correcto cumplimiento de sus obligaciones fiscales. El SAT reitera su compromiso de ofrecer información clara y oportuna, así como orientación y herramientas que faciliten e incentiven el cumplimiento voluntario de las y los contribuyentes. ¡Todas y todos contribuimos al bienestar de México! Descargar Comunicado 44-2026",
+    "detail_markdown": null,
+    "detail_url": "notas/2a5bb07f7045005b4888e3f6.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Comunicado",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "gob.mx apf:f8a9eefae4379170",
+    "importance": 3,
+    "issuing_body": "Servicio de Administración Tributaria",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "official_evidence": {
+      "primary_url": "https://www.gob.mx/sat/prensa/realiza-sat-octava-publicacion-de-tasas-efectivas-del-isr-de-grandes-contribuyentes-para-los-ejercicios-2022-y-2023-44-2026?idiom=es"
+    },
+    "official_identifiers": {
+      "source_id": "f8a9eefae4379170"
+    },
+    "official_published_at": "2026-06-08",
+    "official_title": "Realiza SAT octava publicación de Tasas efectivas del ISR de Grandes Contribuyentes para los ejercicios 2022 y 2023",
+    "published_at": "2026-06-08",
+    "published_day": 8,
+    "published_month": 6,
+    "published_year": 2026,
+    "relevance_score": 5,
+    "review_reason": "Registro legado o contenido sin revisión editorial certificada.",
+    "source": "Gob.mx APF",
+    "source_id": "f8a9eefae4379170",
+    "subtopic_tags": [
+      "impuesto",
+      "codigo fiscal",
+      "isr",
+      "cfdi",
+      "sat"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Fiscal"
+    ],
+    "url": "https://www.gob.mx/sat/prensa/realiza-sat-octava-publicacion-de-tasas-efectivas-del-isr-de-grandes-contribuyentes-para-los-ejercicios-2022-y-2023-44-2026?idiom=es"
+  },
+  "schema_version": 8
+}

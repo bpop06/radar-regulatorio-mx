@@ -1,0 +1,45 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "items": [
+    {
+      "canonical_url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%28AF%29%2F05%2F2",
+      "case_amount": "",
+      "case_number": "ARB(AF)/05/2",
+      "case_outcome": "",
+      "case_parties": "Cargill, Incorporated v. United Mexican States",
+      "case_reasoning": "",
+      "case_status": "Concluded",
+      "case_treaty": "NAFTA (North American Free Trade Agreement)",
+      "categories": [
+        "Comercio exterior",
+        "Comercio internacional"
+      ],
+      "content_hash": "435026a1b94de7869ad99c160f9270046726d6658c1a0a12f42f015909be133b",
+      "country_or_org": "CIADI",
+      "detail_url": "notas/2eb0295ab13bbdd310718541.html",
+      "detected_at": "2026-08-13T02:52:44.247801+00:00",
+      "document_type": "Caso de arbitraje de inversión",
+      "editorial_status": "needs_review",
+      "first_seen_at": "2026-08-13T02:52:44.247801+00:00",
+      "id": "ciadi:ARB(AF)/05/2",
+      "importance": 4,
+      "issuing_body": "Centro Internacional de Arreglo de Diferencias relativas a Inversiones",
+      "jurisdiction": "internacional",
+      "last_seen_at": "2026-08-13T05:08:47.293425+00:00",
+      "official_published_at": "2005-08-30",
+      "official_title": "Cargill, Incorporated v. United Mexican States (ICSID Case No. ARB(AF)/05/2)",
+      "published_at": "2005-08-30",
+      "relevance_score": 6,
+      "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
+      "source": "CIADI",
+      "source_id": "ARB(AF)/05/2",
+      "summary": null,
+      "summary_teaser": null,
+      "title": null,
+      "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%28AF%29%2F05%2F2"
+    }
+  ],
+  "month": "2005-08",
+  "schema_version": 8,
+  "total_items": 1
+}

@@ -7,7 +7,7 @@ import json
 import re
 from dataclasses import dataclass
 from datetime import date
-from urllib.parse import urljoin, urlparse
+from urllib.parse import parse_qsl, urlencode, urljoin, urlparse, urlsplit, urlunsplit
 
 from bs4 import BeautifulSoup
 
@@ -23,11 +23,12 @@ from app.relevance import (
     FEDERAL_POSITION_TERMS,
     FISCAL_CONTENTIOUS_TERMS,
 )
-from app.sources.base import Collector
+from app.sources.base import Collector, SourceContractError
 from app.text import clean_text, normalized, parse_date
 
 APPEND_RE = re.compile(r"""append\((["'])((?:\\.|(?!\1).)*)\1\)""", re.DOTALL)
 SITEMAP_LOCATION_RE = re.compile(rb"<loc>\s*(.*?)\s*</loc>", re.DOTALL)
+TITLE_TERMINAL_PUNCTUATION = " .,:;!?…"
 MAX_ARCHIVE_PAGES = 12
 ARCHIVE_KINDS = ("prensa", "articulos")
 
@@ -54,6 +55,51 @@ NON_INSTITUTIONAL_PORTALS = {
     "universidadnaval",
 }
 
+# El sitemap incluye campañas, micrositios presidenciales históricos, portales
+# de prueba y alias que redirigen a administraciones anteriores. Consultarlos
+# todos provocaba cientos de 401/403/500 y convertía una fuente útil en una
+# señal de cobertura imposible de interpretar. Este catálogo acota el
+# recolector a órganos vigentes y materialmente dentro del radar; incorporar
+# otro portal exige fixture y certificación, igual que una fuente nueva.
+CERTIFIED_APF_PORTALS = {
+    "agricultura",
+    "antimonopolio",
+    "bienestar",
+    "buengobierno",
+    "cjef",
+    "cnbv",
+    "cofepris",
+    "conade",
+    "conadis",
+    "conafor",
+    "conagua",
+    "consar",
+    "defensa",
+    "impi",
+    "inifed",
+    "inm",
+    "issste",
+    "pensionissste",
+    "prodecon",
+    "profeco",
+    "profepa",
+    "salud",
+    "sat",
+    "se",
+    "sectur",
+    "sedatu",
+    "segob",
+    "semar",
+    "semarnat",
+    "sener",
+    "sep",
+    "shcp",
+    "sict",
+    "sre",
+    "stps",
+    "uif",
+}
+
 # Portales cuyo contenido siempre se acepta, sin pasar por el filtro de
 # relevancia por título (`looks_relevant`). PRODECON publica sus boletines
 # con títulos genéricos ("Boletín 09/2026", "Tarjeta informativa") que nunca
@@ -76,6 +122,7 @@ ALWAYS_RELEVANT_PORTALS = {"prodecon", "cnbv", "uif", "antimonopolio", "profeco"
 
 PORTAL_AUTHORITIES = {
     "agricultura": "Secretaría de Agricultura y Desarrollo Rural",
+    "antimonopolio": "Comisión Nacional Antimonopolio",
     "bienestar": "Secretaría de Bienestar",
     "buengobierno": "Secretaría Anticorrupción y Buen Gobierno",
     "cjef": "Consejería Jurídica del Ejecutivo Federal",
@@ -85,6 +132,9 @@ PORTAL_AUTHORITIES = {
     ),
     "conafor": "Comisión Nacional Forestal",
     "conagua": "Comisión Nacional del Agua",
+    "cnbv": "Comisión Nacional Bancaria y de Valores",
+    "consar": "Comisión Nacional del Sistema de Ahorro para el Retiro",
+    "cofepris": "Comisión Federal para la Protección contra Riesgos Sanitarios",
     "defensa": "Secretaría de la Defensa Nacional",
     "epn": "Presidencia de la República",
     "fgr": "Fiscalía General de la República",
@@ -94,8 +144,10 @@ PORTAL_AUTHORITIES = {
     "issste": "Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado",
     "pensionissste": "PENSIONISSSTE",
     "prodecon": "Procuraduría de la Defensa del Contribuyente",
+    "profeco": "Procuraduría Federal del Consumidor",
     "profepa": "Procuraduría Federal de Protección al Ambiente",
     "salud": "Secretaría de Salud",
+    "sat": "Servicio de Administración Tributaria",
     "se": "Secretaría de Economía",
     "sectur": "Secretaría de Turismo",
     "sedatu": "Secretaría de Desarrollo Agrario, Territorial y Urbano",
@@ -108,6 +160,7 @@ PORTAL_AUTHORITIES = {
     "sict": "Secretaría de Infraestructura, Comunicaciones y Transportes",
     "sre": "Secretaría de Relaciones Exteriores",
     "stps": "Secretaría del Trabajo y Previsión Social",
+    "uif": "Unidad de Inteligencia Financiera",
 }
 
 DISCOVERY_TERMS = tuple(
@@ -141,18 +194,71 @@ class ArchiveItem:
     document_type: str
 
 
+def canonical_gobmx_url(value: str) -> str:
+    """Normaliza la URL oficial antes de derivar la identidad de Gob.mx."""
+
+    parts = urlsplit(value.strip())
+    query = [
+        (key, item)
+        for key, item in parse_qsl(parts.query, keep_blank_values=True)
+        if not key.lower().startswith("utm_")
+        and key.lower() not in {"fbclid", "gclid"}
+    ]
+    path = parts.path or "/"
+    if path != "/":
+        path = path.rstrip("/")
+    return urlunsplit(
+        (parts.scheme.lower(), parts.netloc.lower(), path, urlencode(query), "")
+    )
+
+
+def gobmx_source_id(value: str) -> str:
+    """Deriva un identificador estable de la URL canónica, no de variantes de rastreo."""
+
+    canonical_url = canonical_gobmx_url(value)
+    return hashlib.sha256(canonical_url.encode()).hexdigest()[:16]
+
+
+def sanitize_gobmx_title(value: str) -> str:
+    """Colapsa una repetición estructural exacta del título de Gob.mx.
+
+    Algunos archivos concatenan dos veces el mismo texto visible (y el slug
+    puede repetirlo también). Sólo se elimina una segunda mitad idéntica,
+    ignorando la puntuación de cierre; no se completa ni reescribe contenido.
+    """
+
+    title = clean_text(value)
+    if len(title) < 24:
+        return title
+
+    for split_at in range(12, len(title) - 11):
+        first = title[:split_at].strip()
+        second = title[split_at:].strip()
+        first_core = first.rstrip(TITLE_TERMINAL_PUNCTUATION)
+        second_core = second.rstrip(TITLE_TERMINAL_PUNCTUATION)
+        if first_core and first_core.casefold() == second_core.casefold():
+            closing = second[len(second_core) :]
+            return f"{first_core}{closing}"
+    return title
+
+
 class GobMxCollector(Collector):
     source = "Gob.mx APF"
     index_url = "https://www.gob.mx/sitemap-gobierno.xml"
 
     def __init__(self, client) -> None:
         super().__init__(client)
-        self._request_limit = asyncio.Semaphore(12)
+        # gob.mx aplica rate limiting por ráfagas incluso con concurrencia
+        # moderada. Serializar evita convertir archivos accesibles en falsos
+        # 403; ``gather`` conserva el aislamiento entre portales.
+        self._request_limit = asyncio.Semaphore(1)
 
     async def collect(self, since: date) -> list[Candidate]:
-        response = await self.client.get(self.index_url)
-        response.raise_for_status()
-        portals = self.parse_portals(response.content)
+        # El catálogo ya está certificado y versionado. No depender del
+        # sitemap global evita que campañas históricas/pruebas aparezcan de
+        # forma silenciosa y que un 403 transitorio del índice derribe todos
+        # los archivos oficiales que siguen disponibles.
+        portals = sorted(CERTIFIED_APF_PORTALS)
 
         archive_results = await asyncio.gather(
             *(
@@ -186,11 +292,33 @@ class GobMxCollector(Collector):
                     )
                 if response.status_code == 404:
                     break
-                response.raise_for_status()
-            except Exception:
+                self.validate_response(
+                    response,
+                    content_types={
+                        "application/javascript",
+                        "application/json",
+                        "text/html",
+                        "text/javascript",
+                    },
+                )
+            except Exception as exc:
+                self.mark_degraded(
+                    f"{portal}/{kind} página {page}: {type(exc).__name__}: {exc}"
+                )
                 break
 
-            page_items = self.parse_archive(response.text, portal, kind)
+            try:
+                page_items, skipped = self.parse_archive_with_diagnostics(
+                    response.text, portal, kind
+                )
+            except SourceContractError as exc:
+                self.mark_degraded(f"{portal}/{kind} página {page}: {exc}")
+                break
+            if skipped:
+                self.mark_degraded(
+                    f"{portal}/{kind} página {page}: "
+                    f"{skipped} registros no pudieron interpretarse"
+                )
             if not page_items:
                 break
             collected.extend(item for item in page_items if item.published_at >= since)
@@ -207,7 +335,7 @@ class GobMxCollector(Collector):
         try:
             async with self._request_limit:
                 response = await self.client.get(item.url)
-            response.raise_for_status()
+            self.validate_response(response, content_types={"text/html"})
             soup = BeautifulSoup(response.text, "html.parser")
             body = soup.select_one(".article-body")
             if body:
@@ -222,13 +350,17 @@ class GobMxCollector(Collector):
                     authority = parts[0]
                 if len(parts) >= 3 and parts[-1]:
                     document_type = parts[-1]
-        except Exception:
-            pass
+        except Exception as exc:
+            self.mark_degraded(
+                f"detalle {item.url}: {type(exc).__name__}: {exc}; se conserva el extracto"
+            )
 
+        canonical_url = canonical_gobmx_url(item.url)
         return Candidate(
             source=self.source,
-            source_id=hashlib.sha256(item.url.encode()).hexdigest()[:16],
+            source_id=gobmx_source_id(item.url),
             url=item.url,
+            canonical_url=canonical_url,
             official_title=item.title,
             description=description,
             published_at=item.published_at,
@@ -238,6 +370,8 @@ class GobMxCollector(Collector):
 
     @classmethod
     def parse_portals(cls, payload: bytes) -> list[str]:
+        if b"<sitemapindex" not in payload.lower():
+            raise SourceContractError("Gob.mx APF: respuesta sin sitemapindex")
         portals: list[str] = []
         for raw_location in SITEMAP_LOCATION_RE.findall(payload):
             location = html.unescape(raw_location.decode("utf-8", errors="replace"))
@@ -246,7 +380,7 @@ class GobMxCollector(Collector):
             if not match:
                 continue
             portal = match.group(1)
-            if portal not in NON_INSTITUTIONAL_PORTALS:
+            if portal not in NON_INSTITUTIONAL_PORTALS and portal in CERTIFIED_APF_PORTALS:
                 portals.append(portal)
         return list(dict.fromkeys(portals))
 
@@ -254,8 +388,19 @@ class GobMxCollector(Collector):
     def parse_archive(
         cls, payload: str, portal: str, kind: str
     ) -> list[ArchiveItem]:
+        return cls.parse_archive_with_diagnostics(payload, portal, kind)[0]
+
+    @classmethod
+    def parse_archive_with_diagnostics(
+        cls, payload: str, portal: str, kind: str
+    ) -> tuple[list[ArchiveItem], int]:
         html_fragments: list[str] = []
-        for match in APPEND_RE.finditer(payload):
+        matches = list(APPEND_RE.finditer(payload))
+        if not matches:
+            raise SourceContractError(
+                "Gob.mx APF: respuesta sin estructura de archivo reconocible"
+            )
+        for match in matches:
             quote, encoded = match.group(1), match.group(2)
             if quote == '"':
                 try:
@@ -267,19 +412,25 @@ class GobMxCollector(Collector):
 
         soup = BeautifulSoup("".join(html_fragments), "html.parser")
         items: list[ArchiveItem] = []
+        skipped = 0
         for article in soup.select("article"):
             time_element = article.find("time")
             title_element = article.find(["h2", "h3"])
             anchor = article.find("a", href=True)
             if not time_element or not title_element or not anchor:
+                skipped += 1
                 continue
             raw_date = time_element.get("datetime") or time_element.get("date")
             try:
                 published_at = parse_date(str(raw_date or time_element.get_text()))
             except ValueError:
+                skipped += 1
                 continue
-            title = clean_text(title_element.get_text(" ", strip=True))
+            title = sanitize_gobmx_title(title_element.get_text(" ", strip=True))
             url = urljoin("https://www.gob.mx", anchor["href"])
+            if not title or not url.lower().startswith(("http://", "https://")):
+                skipped += 1
+                continue
             items.append(
                 ArchiveItem(
                     url=url,
@@ -289,7 +440,7 @@ class GobMxCollector(Collector):
                     document_type="Comunicado" if kind == "prensa" else "Artículo",
                 )
             )
-        return items
+        return items, skipped
 
     @staticmethod
     def looks_relevant(title: str) -> bool:

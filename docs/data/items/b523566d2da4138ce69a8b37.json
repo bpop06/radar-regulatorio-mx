@@ -1,0 +1,63 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "ORGANISMOS DESCONCENTRADOS O DESCENTRALIZADOS INSTITUTO MEXICANO DE LA PROPIEDAD INDUSTRIAL",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792808&fecha=07/07/2026",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración descentralizada"
+    ],
+    "content_hash": "473734f47ae4668a9ab35edafb416b16ff9b49b47dfba03283ca1fb2e727c568",
+    "country_or_org": "México",
+    "description": "Solicitud para modificar la \"Declaración General de Protección a la Denominación de Origen Raicilla\".",
+    "detail_markdown": null,
+    "detail_url": "notas/b523566d2da4138ce69a8b37.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Solicitud Para Modificar",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Organismo descentralizado",
+    "id": "dof:5792808",
+    "importance": 2,
+    "issuing_body": "Instituto Mexicano de la Propiedad Industrial",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792808&fecha=07/07/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5792808"
+    },
+    "official_published_at": "2026-07-07",
+    "official_title": "Solicitud para modificar la \"Declaración General de Protección a la Denominación de Origen Raicilla\".",
+    "published_at": "2026-07-07",
+    "published_day": 7,
+    "published_month": 7,
+    "published_year": 2026,
+    "relevance_score": 3,
+    "review_reason": "Registro legado o contenido sin revisión editorial certificada.",
+    "source": "DOF",
+    "source_id": "5792808",
+    "subtopic_tags": [
+      "denominacion de origen"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Propiedad intelectual"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5792808&fecha=07/07/2026"
+  },
+  "schema_version": 8
+}

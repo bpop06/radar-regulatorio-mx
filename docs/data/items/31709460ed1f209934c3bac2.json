@@ -1,0 +1,61 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795722&fecha=07%2F08%2F2026",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "de6664a8b4eb2925a1ed85e23bd4c99ea3a06a0ebc5e4b8df53167f6c8d2ccfc",
+    "country_or_org": "México",
+    "description": "Resolución que modifica las Disposiciones de carácter general aplicables a los fondos de inversión y a las personas que les prestan servicios.",
+    "detail_markdown": null,
+    "detail_url": "notas/31709460ed1f209934c3bac2.html",
+    "detected_at": "2026-08-07T12:00:00+00:00",
+    "document_type": "Resolución Que Modifica",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-08-07T12:00:00+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5795722",
+    "importance": 1,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795722&fecha=07/08/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5795722"
+    },
+    "official_published_at": "2026-08-07",
+    "official_title": "Resolución que modifica las Disposiciones de carácter general aplicables a los fondos de inversión y a las personas que les prestan servicios.",
+    "published_at": "2026-08-07",
+    "published_day": 7,
+    "published_month": 8,
+    "published_year": 2026,
+    "relevance_score": 1,
+    "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
+    "source": "DOF",
+    "source_id": "5795722",
+    "subtopic_tags": [],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Resolución"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5795722&fecha=07/08/2026"
+  },
+  "schema_version": 8
+}

@@ -1,0 +1,68 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "Cámara de Diputados",
+    "canonical_url": "https://gaceta.diputados.gob.mx/Gaceta/66/2026/jul/20260707.html",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Fiscal",
+      "Proceso legislativo"
+    ],
+    "content_hash": "8ca79e89c41a232d2390bf6a739a286af0232774dc4246cbc7d682cee1b23f5b",
+    "country_or_org": "México",
+    "description": "Del Congreso de Durango, con proyecto de decreto por el que se adiciona la fracción IX y se reforma el último párrafo del artículo 151 de la Ley del Impuesto sobre la Renta, recibida en la sesión de la Comisión Permanente del miércoles 1 de julio de 2026",
+    "detail_markdown": null,
+    "detail_url": "notas/fbc4f949792bd8bd87b732ce.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Iniciativas",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Legislativo federal",
+    "id": "diputados:794611c2ae0b0824",
+    "importance": 4,
+    "issuing_body": "Cámara de Diputados",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "official_evidence": {
+      "primary_url": "https://gaceta.diputados.gob.mx/Gaceta/66/2026/jul/20260707.html"
+    },
+    "official_identifiers": {
+      "source_id": "794611c2ae0b0824"
+    },
+    "official_published_at": "2026-07-07",
+    "official_title": "Del Congreso de Durango, con proyecto de decreto por el que se adiciona la fracción IX y se reforma el último párrafo del artículo 151 de la Ley del Impuesto sobre la Renta, recibida en la sesión de la Comisión Permanente del miércoles 1 de julio de 2026",
+    "published_at": "2026-07-07",
+    "published_day": 7,
+    "published_month": 7,
+    "published_year": 2026,
+    "relevance_score": 6,
+    "review_reason": "Registro legado o contenido sin revisión editorial certificada.",
+    "source": "Diputados",
+    "source_id": "794611c2ae0b0824",
+    "subtopic_tags": [
+      "impuesto",
+      "renta",
+      "proyecto de decreto"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Fiscal",
+      "Iniciativa",
+      "Decreto"
+    ],
+    "url": "https://gaceta.diputados.gob.mx/Gaceta/66/2026/jul/20260707.html#Iniciativa1"
+  },
+  "schema_version": 8
+}

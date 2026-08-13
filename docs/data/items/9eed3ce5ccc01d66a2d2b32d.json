@@ -1,0 +1,69 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "Centro Internacional de Arreglo de Diferencias Relativas a Inversiones",
+    "canonical_url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%28AF%29%2F12%2F4",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "Telecommunications services",
+    "case_facts": "",
+    "case_number": "ARB(AF)/12/4",
+    "case_outcome": "",
+    "case_parties": "Telefónica S.A. v. United Mexican States",
+    "case_reasoning": "",
+    "case_status": "Concluded",
+    "case_treaty": "BIT Spain - Mexico 2006",
+    "categories": [
+      "Comercio internacional"
+    ],
+    "content_hash": "760935abfae13608a7f00b68c487eeb1e7f7f212ca41e17f0e4ca73e5ccdcdd4",
+    "country_or_org": "CIADI",
+    "description": "Estatus del procedimiento: Concluido. Materia: Telecommunications services. Sector económico: Information & Communication. Instrumento invocado: BIT Spain - Mexico 2006.",
+    "detail_markdown": null,
+    "detail_url": "notas/9eed3ce5ccc01d66a2d2b32d.html",
+    "detected_at": "2026-08-13T02:52:43.246714+00:00",
+    "document_type": "Caso de arbitraje de inversión",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-08-13T02:52:43.246714+00:00",
+    "government_branch": "Organismo internacional",
+    "id": "ciadi:ARB(AF)/12/4",
+    "importance": 2,
+    "issuing_body": "Centro Internacional de Arreglo de Diferencias relativas a Inversiones",
+    "jurisdiction": "internacional",
+    "last_seen_at": "2026-08-13T05:08:47.293425+00:00",
+    "official_evidence": {
+      "case_detail": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%28AF%29%2F12%2F4",
+      "instrument_invoked": "BIT Spain - Mexico 2006",
+      "primary_url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%28AF%29%2F12%2F4",
+      "status": "Concluded",
+      "subject": "Telecommunications services"
+    },
+    "official_identifiers": {
+      "case_number": "ARB(AF)/12/4",
+      "source_id": "ARB(AF)/12/4"
+    },
+    "official_published_at": "2012-06-21",
+    "official_title": "Telefónica S.A. v. United Mexican States (ICSID Case No. ARB(AF)/12/4)",
+    "published_at": "2012-06-21",
+    "published_day": 21,
+    "published_month": 6,
+    "published_year": 2012,
+    "relevance_score": 3,
+    "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
+    "source": "CIADI",
+    "source_id": "ARB(AF)/12/4",
+    "subtopic_tags": [
+      "arbitraje de inversion",
+      "icsid"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Comercio internacional"
+    ],
+    "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%28AF%29%2F12%2F4"
+  },
+  "schema_version": 8
+}

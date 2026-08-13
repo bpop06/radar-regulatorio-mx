@@ -1,0 +1,68 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "PODER EJECUTIVO SECRETARIA ANTICORRUPCION Y BUEN GOBIERNO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793724&fecha=16%2F07%2F2026",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Penal",
+      "Administración centralizada"
+    ],
+    "content_hash": "d6b7ae02d1c4f8d8bc91df57e7f592716badce90eacb516680951982b1b70940",
+    "country_or_org": "México",
+    "description": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, Fiscalía General de la República, entidades federativas, municipios y demarcaciones territoriales de la Ciudad de México, que el Juzgado Octavo de Distrito en Materia Administrativa en la Ciudad de México, determinó dentro del juicio de amparo indirecto número 299/ 2026, promovido por la empresa Intman, S.A. de C.V., por conducto de su representante legal, el ciudadano John Lorenzo Días Salas, mediante acuerdo de veintitrés de abril de dos mil veintiséis, el sobreseimiento del juicio antes señalado y advirtió que al no acreditarse el pago de la sanción impuesta subsiste la inhabilitación determinada en el procedimiento administrativo de sanción a proveedores número 005/PAS/2024.",
+    "detail_markdown": null,
+    "detail_url": "notas/4fab73e5407b381847613642.html",
+    "detected_at": "2026-07-16T12:00:00+00:00",
+    "document_type": "Circular",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-16T12:00:00+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5793724",
+    "importance": 2,
+    "issuing_body": "Presidencia de la República",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793724&fecha=16/07/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5793724"
+    },
+    "official_published_at": "2026-07-16",
+    "official_title": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, Fiscalía General de la República, entidades federativas, municipios y demarcaciones territoriales de la Ciudad de México, que el Juzgado Octavo de Distrito en Materia Administrativa en la Ciudad de México, determinó dentro del juicio de amparo indirecto número 299/ 2026, promovido por la empresa Intman, S.A. de C.V., por conducto de su representante legal, el ciudadano John Lorenzo Días Salas, mediante acuerdo de veintitrés de abril de dos mil veintiséis, el sobreseimiento del juicio antes señalado y advirtió que al no acreditarse el pago de la sanción impuesta subsiste la inhabilitación determinada en el procedimiento administrativo de sanción a proveedores número 005/PAS/2024.",
+    "published_at": "2026-07-16",
+    "published_day": 16,
+    "published_month": 7,
+    "published_year": 2026,
+    "relevance_score": 3,
+    "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
+    "source": "DOF",
+    "source_id": "5793724",
+    "subtopic_tags": [
+      "fiscalia",
+      "administracion publica federal"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Penal",
+      "Derecho administrativo",
+      "Acuerdo",
+      "Circular"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5793724&fecha=16/07/2026"
+  },
+  "schema_version": 8
+}

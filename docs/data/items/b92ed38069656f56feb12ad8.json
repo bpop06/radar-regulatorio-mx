@@ -1,0 +1,65 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "Instituto Mexicano de la Propiedad Industrial",
+    "canonical_url": "https://www.gob.mx/impi/prensa/el-impi-anuncia-resultados-en-materia-de-propiedad-industrial-durante-el-primer-semestre-de-2026?idiom=es",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración descentralizada"
+    ],
+    "content_hash": "7409a937b1979c3e6b7fbfa944f375772e86acbd51fd8d66a6375241b7eabadb",
+    "country_or_org": "México",
+    "description": "El IMPI anuncia resultados en materia de propiedad industrial durante el primer semestre de 2026",
+    "detail_markdown": null,
+    "detail_url": "notas/b92ed38069656f56feb12ad8.html",
+    "detected_at": "2026-08-02T12:00:00+00:00",
+    "document_type": "Comunicado",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-08-02T12:00:00+00:00",
+    "government_branch": "Organismo descentralizado",
+    "id": "impi:bf205e2d2ece2dce",
+    "importance": 2,
+    "issuing_body": "Instituto Mexicano de la Propiedad Industrial",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+    "official_evidence": {
+      "official_notice": "https://www.gob.mx/impi/prensa/el-impi-anuncia-resultados-en-materia-de-propiedad-industrial-durante-el-primer-semestre-de-2026?idiom=es",
+      "primary_url": "https://www.gob.mx/impi/prensa/el-impi-anuncia-resultados-en-materia-de-propiedad-industrial-durante-el-primer-semestre-de-2026?idiom=es"
+    },
+    "official_identifiers": {
+      "source_id": "bf205e2d2ece2dce"
+    },
+    "official_published_at": "2026-08-02",
+    "official_title": "El IMPI anuncia resultados en materia de propiedad industrial durante el primer semestre de 2026",
+    "published_at": "2026-08-02",
+    "published_day": 2,
+    "published_month": 8,
+    "published_year": 2026,
+    "relevance_score": 3,
+    "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
+    "source": "IMPI",
+    "source_id": "bf205e2d2ece2dce",
+    "subtopic_tags": [
+      "propiedad industrial",
+      "impi"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Propiedad intelectual"
+    ],
+    "url": "https://www.gob.mx/impi/prensa/el-impi-anuncia-resultados-en-materia-de-propiedad-industrial-durante-el-primer-semestre-de-2026?idiom=es"
+  },
+  "schema_version": 8
+}

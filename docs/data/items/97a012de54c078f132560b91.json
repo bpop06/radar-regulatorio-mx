@@ -1,0 +1,64 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "Procuraduría Federal del Consumidor",
+    "canonical_url": "https://www.gob.mx/profeco/prensa/revista-del-consumidor-detecta-incumplimientos-en-alimento-humedo-para-gato?idiom=es",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración descentralizada"
+    ],
+    "content_hash": "3089a21fd4ff582341d068f0be3da210c97f5ba155fc54d3fa444699f2d7c73d",
+    "country_or_org": "México",
+    "description": "El laboratorio de la Profeco aplicó pruebas de calidad sustentadas en la normatividad vigente Tres productos de la misma marca declaran más proteína de la que contienen Proporcionar una alimentación adecuada a las mascotas es fundamental para contribuir en su sano desarrollo y bienestar, pues además de ser parte de la responsabilidad que se asume al adoptar un animal de compañía también representa un gesto de cariño. Consciente de ello, la Procuraduría Federal del Consumidor (Profeco) instruyó el análisis de 54 productos denominados alimento húmedo para gato. Cabe destacar que el Laboratorio Nacional de Protección al Consumidor tuvo como objeto de estudio alimentos húmedos balanceados y completos, los cuales están formulados por una mezcla de carne o subproductos de ave, pescado, granos de cereales, proteína vegetal texturizada, vitaminas y minerales. Las pruebas aplicadas a estos productos se sustentaron en la Ley Federal de Protección al Consumidor (LFPC), la Ley de Infraestructura de la Calidad, en la Guía para la presentación e integración de los documentos para la autorización de los productos y aditivos alimenticios para consumo por animales, la NOM 012-SAG/ZOO-2020, NOM-002-SCFI-2011 y NOM-008-SE-2021, así como en lo dispuesto por la Asociación Americana de Oficiales de Control y Alimentos. Al concluir el Estudio de Calidad, la Procuraduría determinó que Purina One Visible Nutrition con carne incumple con la LFPC al presentar la leyenda no comprobable “SUPER NUTRIENTES”. Del mismo modo, GrandPET Carne Fresca muestra la imagen de trozos de salmón, ingrediente que no forma parte de su composición y puede confundir a la población consumidora. Por otra parte, los productos de la marca GrandPET Carne Fresca, Kisha Pavo y Natural Gourmet Receta de Pescado a las Finas Hierbas no son veraces en su declaración nutrimental, pues indican contener un mayor porcentaje de proteína al que realmente tienen. Con el objetivo de orientar a la población en su decisión de compra de alimento húmedo para gato, la Profeco sugiere consultar con especialistas veterinarios el estado de salud de su mascota para determinar los requerimientos que son necesarios cubrir nutricionalmente. A través de la Revista del Consumidor, la institución también señala que es importante tomar en cuenta la calidad del producto y no dejarse llevar por leyendas no comprobables que presumen ser la opción más ventajosa en el mercado. En suma, recomienda adquirirlos en establecimientos formales y conservarlos en un lugar fresco y seco al estar cerrados o en refrigeración si están abiertos. Consulta el Estudio de Calidad competo en la edición 594 de la Revista del Consumidor.",
+    "detail_markdown": null,
+    "detail_url": "notas/97a012de54c078f132560b91.html",
+    "detected_at": "2026-08-01T12:00:00+00:00",
+    "document_type": "Comunicado",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-08-01T12:00:00+00:00",
+    "government_branch": "Organismo descentralizado",
+    "id": "gob.mx apf:0298b738a090b677",
+    "importance": 2,
+    "issuing_body": "Procuraduría Federal del Consumidor",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+    "official_evidence": {
+      "primary_url": "https://www.gob.mx/profeco/prensa/revista-del-consumidor-detecta-incumplimientos-en-alimento-humedo-para-gato?idiom=es"
+    },
+    "official_identifiers": {
+      "source_id": "0298b738a090b677"
+    },
+    "official_published_at": "2026-08-01",
+    "official_title": "Revista del Consumidor detecta incumplimientos en alimento húmedo para gato",
+    "published_at": "2026-08-01",
+    "published_day": 1,
+    "published_month": 8,
+    "published_year": 2026,
+    "relevance_score": 2,
+    "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
+    "source": "Gob.mx APF",
+    "source_id": "0298b738a090b677",
+    "subtopic_tags": [
+      "nom-",
+      "infraestructura de la calidad"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Normalización"
+    ],
+    "url": "https://www.gob.mx/profeco/prensa/revista-del-consumidor-detecta-incumplimientos-en-alimento-humedo-para-gato?idiom=es"
+  },
+  "schema_version": 8
+}

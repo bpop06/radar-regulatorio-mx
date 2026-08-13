@@ -4,9 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Ficha de evidencia de una publicación oficial seleccionada por Radar Regulatorio MX.">
-    <title>Ficha | Radar Regulatorio MX</title>
-    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#F6F5F1">
-    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#101827">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Radar Regulatorio MX">
+    <meta property="og:title" content="Ficha de evidencia · Radar Regulatorio MX">
+    <meta property="og:description" content="Publicación regulatoria con metadatos, estatus editorial y enlace a la fuente oficial.">
+    <title>Ficha de evidencia · Radar Regulatorio MX</title>
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#F4EDDD">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#152630">
     <script>
       (function () {
         document.documentElement.classList.add("js");
@@ -30,42 +34,32 @@
           <span class="brand-copy"><strong>Radar MX</strong><small>Inteligencia regulatoria</small></span>
         </a>
         <div class="nav-actions">
-          <div class="nav-links" data-liquid-group>
-            <a class="nav-link" data-page="today" href="index.html"><span data-icon="today" aria-hidden="true"></span><span>Hoy</span></a>
-            <a class="nav-link" data-page="archive" href="archivo.html"><span data-icon="archive" aria-hidden="true"></span><span>Archivo</span></a>
-            <a class="nav-link" data-page="calendar" href="calendario.html"><span data-icon="calendar" aria-hidden="true"></span><span>Calendario</span></a>
+          <div class="nav-links">
+            <a class="nav-link" data-page="today" href="index.html">Hoy</a>
+            <a class="nav-link" data-page="archive" href="archivo.html">Archivo</a>
+            <a class="nav-link" data-page="calendar" href="calendario.html">Calendario</a>
           </div>
-          <button id="theme-toggle" class="theme-toggle pressable" type="button" aria-label="Cambiar a tema oscuro"><span class="theme-icon-stack" aria-hidden="true"><span class="theme-icon theme-icon-moon" data-icon="moon"></span><span class="theme-icon theme-icon-sun" data-icon="sun"></span></span></button>
+          <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Cambiar tema"><span class="theme-glyph" aria-hidden="true">◐</span></button>
         </div>
       </nav>
     </header>
 
     <main id="main" class="detail-main shell" tabindex="-1">
-      <a id="detail-back" class="back-link" href="archivo.html"><span data-icon="arrow-back" aria-hidden="true"></span><span>Volver al archivo</span></a>
-      <p id="detail-status" class="sr-only" role="status">Cargando ficha…</p>
+      <a id="detail-back" class="back-link" href="archivo.html">← Volver al archivo</a>
       <div class="detail-layout">
         <article class="detail-article">
           <header class="detail-header">
             <p id="detail-breadcrumb" class="detail-breadcrumb">Cargando evidencia…</p>
             <h1 id="detail-title">Cargando ficha…</h1>
+            <p><span id="detail-editorial-status" class="editorial-badge">Comprobando estado</span></p>
             <p id="detail-summary" class="detail-summary"></p>
           </header>
 
-          <aside class="evidence-rail" aria-labelledby="evidence-heading">
-            <h2 id="evidence-heading">Evidencia</h2>
-            <dl class="evidence-list">
-              <div><dt><span data-icon="date" aria-hidden="true"></span> Fecha registrada</dt><dd><time id="detail-date">Fecha por confirmar</time></dd></div>
-              <div><dt><span data-icon="refresh" aria-hidden="true"></span> Datos actualizados</dt><dd><time id="detail-updated">Hora por confirmar</time></dd></div>
-              <div><dt>Órgano</dt><dd id="detail-organ">—</dd></div>
-              <div><dt>Fuente</dt><dd id="detail-source">—</dd></div>
-              <div><dt>Importancia</dt><dd><span id="detail-importance" class="importance-rail" aria-label="Importancia"></span></dd></div>
-              <div id="detail-case-row" hidden><dt>Estado del asunto</dt><dd id="detail-case">—</dd></div>
-              <div id="detail-parties-row" hidden><dt>Partes</dt><dd id="detail-parties">—</dd></div>
-              <div><dt>Materias</dt><dd id="detail-categories">—</dd></div>
-            </dl>
-            <a id="official-source" class="primary-action pressable evidence-source external-action" target="_blank" rel="noopener noreferrer" hidden><span data-icon="external" aria-hidden="true"></span><span>Consultar fuente oficial</span><span class="sr-only"> (se abre en una pestaña nueva)</span></a>
-            <p class="evidence-note">La síntesis facilita la lectura. Para efectos jurídicos, consulta siempre el documento oficial.</p>
-          </aside>
+          <section id="detail-review" class="detail-review" hidden aria-labelledby="detail-review-heading">
+            <p class="section-kicker">Revisión pendiente</p>
+            <h2 id="detail-review-heading">La evidencia aún no tiene interpretación editorial.</h2>
+            <p id="detail-review-reason"></p>
+          </section>
 
           <section id="detail-why" class="detail-why" hidden aria-labelledby="detail-why-heading">
             <p class="section-kicker">Criterio editorial</p>
@@ -73,10 +67,34 @@
             <p id="detail-why-copy"></p>
           </section>
 
-          <div id="detail-content" class="document-body">
+          <p id="detail-load-status" class="sr-only" role="status">Cargando ficha.</p>
+          <div id="detail-content" class="document-body" aria-busy="true">
             <p>Cargando documento.</p>
           </div>
         </article>
+
+        <aside class="evidence-rail" aria-labelledby="evidence-heading">
+          <h2 id="evidence-heading">Evidencia</h2>
+          <dl class="evidence-list">
+            <div><dt>Fecha oficial</dt><dd id="detail-date">—</dd></div>
+            <div id="detail-detected-row" hidden><dt>Detectada</dt><dd id="detail-detected-date">—</dd></div>
+            <div id="detail-identifier-row" hidden><dt>Identificador oficial</dt><dd id="detail-identifier">—</dd></div>
+            <div><dt>Órgano</dt><dd id="detail-organ">—</dd></div>
+            <div><dt>Fuente</dt><dd id="detail-source">—</dd></div>
+            <div><dt>Importancia</dt><dd><span id="detail-importance" class="importance-rail" role="img" aria-label="Importancia"></span></dd></div>
+            <div id="detail-case-number-row" hidden><dt>Número de caso</dt><dd id="detail-case-number">—</dd></div>
+            <div id="detail-case-row" hidden><dt>Estado del asunto</dt><dd id="detail-case">—</dd></div>
+            <div id="detail-parties-row" hidden><dt>Partes</dt><dd id="detail-parties">—</dd></div>
+            <div id="detail-treaty-row" hidden><dt>Tratado o instrumento</dt><dd id="detail-treaty">—</dd></div>
+            <div id="detail-litis-row" hidden><dt>Litis</dt><dd id="detail-litis">—</dd></div>
+            <div id="detail-outcome-row" hidden><dt>Resultado</dt><dd id="detail-outcome">—</dd></div>
+            <div id="detail-reasoning-row" hidden><dt>Razonamiento</dt><dd id="detail-reasoning">—</dd></div>
+            <div id="detail-amount-row" hidden><dt>Monto</dt><dd id="detail-amount">—</dd></div>
+            <div><dt>Materias</dt><dd id="detail-categories">—</dd></div>
+          </dl>
+          <a id="official-source" class="primary-action evidence-source" target="_blank" rel="noopener noreferrer" hidden>Consultar fuente oficial ↗</a>
+          <p class="evidence-note">La síntesis facilita la lectura. Para efectos jurídicos, consulta siempre el documento oficial.</p>
+        </aside>
       </div>
     </main>
 

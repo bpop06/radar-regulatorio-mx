@@ -1,0 +1,63 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "CONVOCATORIAS PARA CONCURSOS DE ADQUISICIONES, ARRENDAMIENTOS, OBRAS Y SERVICIOS DEL SECTOR PUBLICO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792923&fecha=07/07/2026",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Comercio exterior"
+    ],
+    "content_hash": "5886f8e4b20d9708f824ff97c504f66b1e0f11090f0c13529f4bc5ac9a22b911",
+    "country_or_org": "México",
+    "description": "AGENCIA NACIONAL DE ADUANAS DE MEXICO - REF:578100",
+    "detail_markdown": null,
+    "detail_url": "notas/d559466e17fcf41fb874123f.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Agencia Nacional",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5792923",
+    "importance": 2,
+    "issuing_body": "Agencia Nacional de Aduanas de México",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792923&fecha=07/07/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5792923"
+    },
+    "official_published_at": "2026-07-07",
+    "official_title": "AGENCIA NACIONAL DE ADUANAS DE MEXICO - REF:578100",
+    "published_at": "2026-07-07",
+    "published_day": 7,
+    "published_month": 7,
+    "published_year": 2026,
+    "relevance_score": 2,
+    "review_reason": "Registro legado o contenido sin revisión editorial certificada.",
+    "source": "DOF",
+    "source_id": "5792923",
+    "subtopic_tags": [
+      "agencia nacional de aduanas"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Aduanero"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5792923&fecha=07/07/2026"
+  },
+  "schema_version": 8
+}

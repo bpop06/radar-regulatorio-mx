@@ -1,0 +1,44 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "items": [
+    {
+      "canonical_url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%28AF%29%2F09%2F2",
+      "case_amount": "",
+      "case_number": "ARB(AF)/09/2",
+      "case_outcome": "",
+      "case_parties": "Abengoa, S.A. y COFIDES, S.A. v. United Mexican States",
+      "case_reasoning": "",
+      "case_status": "Concluded",
+      "case_treaty": "BIT Spain - Mexico 2006",
+      "categories": [
+        "Comercio internacional"
+      ],
+      "content_hash": "6e694ecd7f2c664d5a9e8e327a654738518a045e5b948fe116058a6e5e01916d",
+      "country_or_org": "CIADI",
+      "detail_url": "notas/16a62aa6915eced76bb2e9d1.html",
+      "detected_at": "2026-08-13T02:52:43.197999+00:00",
+      "document_type": "Caso de arbitraje de inversión",
+      "editorial_status": "needs_review",
+      "first_seen_at": "2026-08-13T02:52:43.197999+00:00",
+      "id": "ciadi:ARB(AF)/09/2",
+      "importance": 2,
+      "issuing_body": "Centro Internacional de Arreglo de Diferencias relativas a Inversiones",
+      "jurisdiction": "internacional",
+      "last_seen_at": "2026-08-13T05:08:47.293425+00:00",
+      "official_published_at": "2009-12-11",
+      "official_title": "Abengoa, S.A. y COFIDES, S.A. v. United Mexican States (ICSID Case No. ARB(AF)/09/2)",
+      "published_at": "2009-12-11",
+      "relevance_score": 3,
+      "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
+      "source": "CIADI",
+      "source_id": "ARB(AF)/09/2",
+      "summary": null,
+      "summary_teaser": null,
+      "title": null,
+      "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%28AF%29%2F09%2F2"
+    }
+  ],
+  "month": "2009-12",
+  "schema_version": 8,
+  "total_items": 1
+}

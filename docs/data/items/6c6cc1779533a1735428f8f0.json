@@ -1,0 +1,67 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "Organización Mundial del Comercio",
+    "canonical_url": "https://www.wto.org/english/news_e/news26_e/tar_29jun26_431_e.htm",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Comercio exterior",
+      "Comercio internacional"
+    ],
+    "content_hash": "19d469f865b7bd8816bbea0f7b02c528d9e7f71554c9a14b147d342250210543",
+    "country_or_org": "OMC",
+    "description": "The WTO published on 29 June the 2026 edition of World Tariff Profiles, an annual publication providing comprehensive information on tariffs and non-tariff measures imposed by over 150 economies. It is a joint publication with the International Trade Centre (ITC) and UN Trade and Development (UNCTAD).",
+    "detail_markdown": null,
+    "detail_url": "notas/6c6cc1779533a1735428f8f0.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Noticia",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Organismo internacional",
+    "id": "omc:20e8c8e49dd1df91",
+    "importance": 3,
+    "issuing_body": "Organización Mundial del Comercio",
+    "jurisdiction": "internacional",
+    "last_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "official_evidence": {
+      "primary_url": "https://www.wto.org/english/news_e/news26_e/tar_29jun26_431_e.htm"
+    },
+    "official_identifiers": {
+      "source_id": "20e8c8e49dd1df91"
+    },
+    "official_published_at": "2026-06-29",
+    "official_title": "WTO issues new edition of World Tariff Profiles",
+    "published_at": "2026-06-29",
+    "published_day": 29,
+    "published_month": 6,
+    "published_year": 2026,
+    "relevance_score": 5,
+    "review_reason": "Registro legado o contenido sin revisión editorial certificada.",
+    "source": "OMC",
+    "source_id": "20e8c8e49dd1df91",
+    "subtopic_tags": [
+      "tariff",
+      "tariffs",
+      "wto"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Comercio exterior",
+      "Comercio internacional"
+    ],
+    "url": "https://www.wto.org/english/news_e/news26_e/tar_29jun26_431_e.htm"
+  },
+  "schema_version": 8
+}

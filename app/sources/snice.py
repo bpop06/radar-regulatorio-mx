@@ -8,7 +8,7 @@ from urllib.parse import urljoin
 from bs4 import BeautifulSoup
 
 from app.models import Candidate
-from app.sources.base import Collector
+from app.sources.base import Collector, require_html_marker
 from app.text import clean_text, parse_date
 
 _DATE_PREFIX_RE = re.compile(r"^\d{2}[./]\d{2}[./]\d{4}\s*")
@@ -29,11 +29,12 @@ class SniceCollector(Collector):
 
     async def collect(self, since: date) -> list[Candidate]:
         response = await self.client.get(self.url)
-        response.raise_for_status()
+        self.validate_response(response, content_types={"text/html"})
         return self.parse(response.text, since)
 
     @classmethod
     def parse(cls, payload: str, since: date) -> list[Candidate]:
+        require_html_marker(payload, "ACTUALIDAD", source=cls.source)
         soup = BeautifulSoup(payload, "html.parser")
         candidates: list[Candidate] = []
         seen: set[str] = set()

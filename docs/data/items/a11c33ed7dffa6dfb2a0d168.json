@@ -1,0 +1,64 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "Secretaría de Economía",
+    "canonical_url": "https://www.snice.gob.mx/~oracle/SNICE_DOCS/IMMEX_SUSPENDIDOS_2026-ACTUALIDAD_20260626-20260626.pdf",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Comercio exterior",
+      "Administración centralizada"
+    ],
+    "content_hash": "409daf0cb40dc9817fa4587a5e458a1d2f236ee4b0d54c43947ed6eee191a55d",
+    "country_or_org": "México",
+    "description": "26.06.2026 Comunicado IMMEX suspendidas 2026.",
+    "detail_markdown": null,
+    "detail_url": "notas/a11c33ed7dffa6dfb2a0d168.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Actualidad",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "snice:cdf15f1048aee277",
+    "importance": 1,
+    "issuing_body": "Secretaría de Economía",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "official_evidence": {
+      "primary_url": "https://www.snice.gob.mx/~oracle/SNICE_DOCS/IMMEX_SUSPENDIDOS_2026-ACTUALIDAD_20260626-20260626.pdf"
+    },
+    "official_identifiers": {
+      "source_id": "cdf15f1048aee277"
+    },
+    "official_published_at": "2026-06-26",
+    "official_title": "Comunicado IMMEX suspendidas 2026.",
+    "published_at": "2026-06-26",
+    "published_day": 26,
+    "published_month": 6,
+    "published_year": 2026,
+    "relevance_score": 1,
+    "review_reason": "Registro legado o contenido sin revisión editorial certificada.",
+    "source": "SNICE",
+    "source_id": "cdf15f1048aee277",
+    "subtopic_tags": [
+      "immex"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Comercio exterior"
+    ],
+    "url": "https://www.snice.gob.mx/~oracle/SNICE_DOCS/IMMEX_SUSPENDIDOS_2026-ACTUALIDAD_20260626-20260626.pdf"
+  },
+  "schema_version": 8
+}

@@ -1,0 +1,63 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "Agencia Nacional de Aduanas de México",
+    "canonical_url": "https://www.anam.gob.mx/importacion-de-vehiculos-v2",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Comercio exterior"
+    ],
+    "content_hash": "96edfe27cbf5d7ac03060dd71c2374b4b5223448222d43505ea5176ec373f7b9",
+    "country_or_org": "México",
+    "description": "Importacion de vehiculos v2",
+    "detail_markdown": null,
+    "detail_url": "notas/5d3a89d50746920f9ae42882.html",
+    "detected_at": "2026-08-07T12:00:00+00:00",
+    "document_type": "Comunicado",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-08-07T12:00:00+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "anam:aac33294cdef8cd5",
+    "importance": 2,
+    "issuing_body": "Agencia Nacional de Aduanas de México",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+    "official_evidence": {
+      "primary_url": "https://www.anam.gob.mx/importacion-de-vehiculos-v2/"
+    },
+    "official_identifiers": {
+      "source_id": "aac33294cdef8cd5"
+    },
+    "official_published_at": "2026-08-07",
+    "official_title": "Importacion de vehiculos v2",
+    "published_at": "2026-08-07",
+    "published_day": 7,
+    "published_month": 8,
+    "published_year": 2026,
+    "relevance_score": 2,
+    "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
+    "source": "ANAM",
+    "source_id": "aac33294cdef8cd5",
+    "subtopic_tags": [
+      "importacion"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Comercio exterior"
+    ],
+    "url": "https://www.anam.gob.mx/importacion-de-vehiculos-v2/"
+  },
+  "schema_version": 8
+}

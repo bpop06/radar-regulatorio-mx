@@ -1,0 +1,66 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "Secretaría de Economía",
+    "canonical_url": "https://www.gob.mx/se/prensa/economia-e-impi-otorgan-registro-de-marca-del-pato-merlin-a-su-propietaria-karla-ivette-gomez-lopez-429408?idiom=es",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "b22d147f72d09f22273cc10b8a8537f6c6eaf730594bd5add1247c928321b444",
+    "country_or_org": "México",
+    "description": "El IMPI recibió formalmente las solicitudes de marca “PATO MERLÍN” y su diseño tridimensional. Las solicitudes fueron presentadas formalmente por Karla Ivette Gómez López el 22 de junio de 2026 . La Secretaría de Economía y el Instituto Mexicano de la Propiedad Industrial (IMPI) informan que, por instrucciones de la presidenta de México, Claudia Sheinbaum, el pasado lunes 22 de junio de 2026 fueron recibidas oficialmente, a través del sistema de marca en línea (Marcanet), las solicitudes de registro de la denominación “PATO MERLÍN” y su diseño tridimensional, para la protección de servicios de educación, formación, entretenimiento, así como actividades deportivas y culturales, entre otros. Las solicitudes, identificadas con los números 3646513 y 3646554, fueron presentadas por la ciudadana Karla Ivette Gómez López, dando inicio formal al procedimiento administrativo correspondiente conforme a la normativa vigente en materia de propiedad industrial. Como parte del proceso, el Instituto hizo entrega a la solicitante de una constancia oficial que acredita la presentación de dichas solicitudes, documento que da fe del inicio del trámite ante esta autoridad. Al hacer entrega de la constancia a la familia propietaria, el secretario de Economía Marcelo Ebrard Casaubon hizo énfasis en que todas las solicitudes de registro de marca son sometidas a un procedimiento de análisis técnico y jurídico, con el objetivo de garantizar certeza, legalidad y transparencia en la protección de los derechos de propiedad industrial en México. El director general del IMPI, Vidal Llerenas, señaló que “es un hecho público y notorio que el Pato Merlín es una mascota de la familia de Karla Ivette Gómez, a quien pertenece la marca”, destacando la relevancia de reconocer y proteger los signos distintivos conforme a derecho. Con estas acciones, la Secretaría de Economía y el IMPI reafirman su compromiso de brindar certeza jurídica a las y los solicitantes, así como de impulsar la protección de la creatividad y los activos intangibles en el país. -oo0oo-",
+    "detail_markdown": null,
+    "detail_url": "notas/4e46764a6f5badadacd20708.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Comunicado",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "gob.mx apf:f8e293622fae2472",
+    "importance": 3,
+    "issuing_body": "Secretaría de Economía",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "official_evidence": {
+      "primary_url": "https://www.gob.mx/se/prensa/economia-e-impi-otorgan-registro-de-marca-del-pato-merlin-a-su-propietaria-karla-ivette-gomez-lopez-429408?idiom=es"
+    },
+    "official_identifiers": {
+      "source_id": "f8e293622fae2472"
+    },
+    "official_published_at": "2026-06-26",
+    "official_title": "Economía e IMPI otorgan registro de marca del \"PATO MERLÍN\" a su propietaria, Karla Ivette Gómez López",
+    "published_at": "2026-06-26",
+    "published_day": 26,
+    "published_month": 6,
+    "published_year": 2026,
+    "relevance_score": 5,
+    "review_reason": "Registro legado o contenido sin revisión editorial certificada.",
+    "source": "Gob.mx APF",
+    "source_id": "f8e293622fae2472",
+    "subtopic_tags": [
+      "propiedad industrial",
+      "impi",
+      "registro de marca",
+      "signos distintivos"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Propiedad intelectual"
+    ],
+    "url": "https://www.gob.mx/se/prensa/economia-e-impi-otorgan-registro-de-marca-del-pato-merlin-a-su-propietaria-karla-ivette-gomez-lopez-429408?idiom=es"
+  },
+  "schema_version": 8
+}

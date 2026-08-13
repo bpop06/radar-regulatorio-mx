@@ -1,0 +1,65 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "Portal federal IMPI",
+    "canonical_url": "https://www.gob.mx/impi/es/articulos/el-impi-fortalece-la-proteccion-de-la-innovacion-en-mexico-con-la-incorporacion-de-500-nuevos-examinadores-especializados-429419?idiom=es",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración descentralizada"
+    ],
+    "content_hash": "abbcb96b715f88d323ac70cb6c48304e34de61ff1387ee4cbd9a2472a563872a",
+    "country_or_org": "México",
+    "description": "Como parte de la estrategia económica del Gobierno de México establecida en la acción 15 del Plan México: “Mayor inversión para investigación científica y tecnológica y simplificación de tiempos para registro de patentes”, es indispensable consolidar el papel estratégico del Instituto Mexicano de la Propiedad Industrial (IMPI) para fortalecer la protección de la propiedad industrial y el desarrollo económico. · El proceso de recepción de documentos se realizará de manera digital a través del micrositio https://ingreso.impi.gob.mx/ del 12 al 26 de junio. En este contexto, el IMPI anunció que contará con 500 nuevas plazas para profesionistas altamente capacitados, quienes se incorporarán como examinadores de patentes y marcas especializados en carreras vinculadas con Ciencia, Tecnología, Ingeniería y Matemáticas como: Biología, Química, Física, Informática, Programación, Redes, Diseño de Estructuras, Robótica, Mecánica; además de Mercadotecnia, Comunicación, Diseño, Derecho, Administración y carreras afines. Esto permitirá agilizar la revisión, tramitación y protección de la propiedad industrial, reducir rezagos, brindar mayor certeza jurídica, impulsando la innovación, el desarrollo y crecimiento económico de México. Actualmente, el Instituto cuenta con 197 examinadores, de los cuales 113 forman parte de la plantilla de base y 84 se incorporaron durante 2024. Con la llegada de los nuevos especialistas, el IMPI fortalecerá significativamente su capacidad operativa para atender la creciente demanda de registros de patentes, marcas, diseños industriales y demás figuras de propiedad industrial, aseguró el director general del IMPI, Vidal Llerenas. La convocatoria estará abierta del 12 al 26 de junio de 2026, de 8:00 a 18:00 horas (hora de la Ciudad de México), dirigida a personas mexicanas y residentes en nuestro país que cuenten con cédula profesional y deseos de apoyar el desarrollo económico del país. Las postulaciones se realizarán mediante una plataforma electrónica dentro del portal del IMPI, en la cual podrán revisar las vacantes disponibles, requisitos y enviar la documentación para su postulación: https://ingreso.impi.gob.mx/ El procedimiento se desarrollará de la siguiente forma: REGISTRO DE LAS PERSONAS ASPIRANTES Las personas aspirantes deberán cumplir y acreditar de manera debida, fehaciente y oportuna los siguientes requisitos: A. Ser ciudadana o ciudadano mexicano o residente en México. B. Contar al día de la postulación con cédula profesional de nivel licenciatura en las ramas señaladas anteriormente y contar con los conocimientos que le permitan el desempeño de sus funciones. La incorporación de este nuevo talento especializado permitirá robustecer las capacidades técnicas y operativas del Instituto para atender con mayor rapidez y eficiencia las solicitudes de protección de invenciones y signos distintivos, contribuyendo al fortalecimiento del ecosistema nacional de innovación. -ooOoo-",
+    "detail_markdown": null,
+    "detail_url": "notas/2dcb0232c944baa7d8c195dd.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Artículo",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Organismo descentralizado",
+    "id": "gob.mx apf:b313416f82fac4e9",
+    "importance": 3,
+    "issuing_body": "Instituto Mexicano de la Propiedad Industrial",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "official_evidence": {
+      "primary_url": "https://www.gob.mx/impi/es/articulos/el-impi-fortalece-la-proteccion-de-la-innovacion-en-mexico-con-la-incorporacion-de-500-nuevos-examinadores-especializados-429419?idiom=es"
+    },
+    "official_identifiers": {
+      "source_id": "b313416f82fac4e9"
+    },
+    "official_published_at": "2026-06-09",
+    "official_title": "El IMPI fortalece la protección de la innovación en México con la incorporación de 500 nuevos examinadores especializados",
+    "published_at": "2026-06-09",
+    "published_day": 9,
+    "published_month": 6,
+    "published_year": 2026,
+    "relevance_score": 4,
+    "review_reason": "Registro legado o contenido sin revisión editorial certificada.",
+    "source": "Gob.mx APF",
+    "source_id": "b313416f82fac4e9",
+    "subtopic_tags": [
+      "propiedad industrial",
+      "impi",
+      "signos distintivos"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Propiedad intelectual"
+    ],
+    "url": "https://www.gob.mx/impi/es/articulos/el-impi-fortalece-la-proteccion-de-la-innovacion-en-mexico-con-la-incorporacion-de-500-nuevos-examinadores-especializados-429419?idiom=es"
+  },
+  "schema_version": 8
+}

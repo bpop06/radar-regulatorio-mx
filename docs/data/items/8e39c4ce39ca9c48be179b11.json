@@ -1,0 +1,63 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "Agencia Nacional de Aduanas de México",
+    "canonical_url": "https://www.anam.gob.mx/comunicado-presa-conjunto-36-2026",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Comercio exterior"
+    ],
+    "content_hash": "812a24bb6d36dfdfb53aa10c449aed4e342db75a11269103bf22e217e499c9c9",
+    "country_or_org": "México",
+    "description": "ANAM y DEFENSA identifican presunto tráfico de estupefacientes en la Aduana del Aeropuerto Internacional de Cancún, Quintana Roo",
+    "detail_markdown": null,
+    "detail_url": "notas/8e39c4ce39ca9c48be179b11.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Comunicado",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "anam:290a82adf7a292e3",
+    "importance": 2,
+    "issuing_body": "Agencia Nacional de Aduanas de México",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "official_evidence": {
+      "primary_url": "https://www.anam.gob.mx/comunicado-presa-conjunto-36-2026"
+    },
+    "official_identifiers": {
+      "source_id": "290a82adf7a292e3"
+    },
+    "official_published_at": "2026-07-03",
+    "official_title": "ANAM y DEFENSA identifican presunto tráfico de estupefacientes en la Aduana del Aeropuerto Internacional de Cancún, Quintana Roo",
+    "published_at": "2026-07-03",
+    "published_day": 3,
+    "published_month": 7,
+    "published_year": 2026,
+    "relevance_score": 2,
+    "review_reason": "Registro legado o contenido sin revisión editorial certificada.",
+    "source": "ANAM",
+    "source_id": "290a82adf7a292e3",
+    "subtopic_tags": [
+      "aduana"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Aduanero"
+    ],
+    "url": "https://www.anam.gob.mx/comunicado-presa-conjunto-36-2026/"
+  },
+  "schema_version": 8
+}

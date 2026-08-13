@@ -1,0 +1,67 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "Cámara de Diputados",
+    "canonical_url": "https://gaceta.diputados.gob.mx/Gaceta/66/2026/jul/20260706.html",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Penal",
+      "Proceso legislativo"
+    ],
+    "content_hash": "0c555856ed47a20fdc2d20cb64cccff6549ced7508fbbe6d3b4e43059a47bf1f",
+    "country_or_org": "México",
+    "description": "Que reforma y adiciona los artículos 137, 153 a 155 y 160 del Código Nacional de Procedimientos Penales, así como 325 del Código Penal Federal, en materia de suspensión de derechos parentales en caso de feminicidio, recibida de la diputada Claudia García Hernández, del Grupo Parlamentario de Morena, en la sesión de la Comisión Permanente del miércoles 1 de julio de 2026",
+    "detail_markdown": null,
+    "detail_url": "notas/e088c76c27654b155a7467d8.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Iniciativas",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Legislativo federal",
+    "id": "diputados:8ced7b07f0fe6891",
+    "importance": 3,
+    "issuing_body": "Cámara de Diputados",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "official_evidence": {
+      "primary_url": "https://gaceta.diputados.gob.mx/Gaceta/66/2026/jul/20260706.html"
+    },
+    "official_identifiers": {
+      "source_id": "8ced7b07f0fe6891"
+    },
+    "official_published_at": "2026-07-06",
+    "official_title": "Que reforma y adiciona los artículos 137, 153 a 155 y 160 del Código Nacional de Procedimientos Penales, así como 325 del Código Penal Federal, en materia de suspensión de derechos parentales en caso de feminicidio, recibida de la diputada Claudia García Hernández, del Grupo Parlamentario de Morena, en la sesión de la Comisión Permanente del miércoles 1 de julio de 2026",
+    "published_at": "2026-07-06",
+    "published_day": 6,
+    "published_month": 7,
+    "published_year": 2026,
+    "relevance_score": 4,
+    "review_reason": "Registro legado o contenido sin revisión editorial certificada.",
+    "source": "Diputados",
+    "source_id": "8ced7b07f0fe6891",
+    "subtopic_tags": [
+      "penal",
+      "codigo nacional de procedimientos penales",
+      "reforma normativa"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Penal",
+      "Iniciativa"
+    ],
+    "url": "https://gaceta.diputados.gob.mx/Gaceta/66/2026/jul/20260706.html#Iniciativa10"
+  },
+  "schema_version": 8
+}

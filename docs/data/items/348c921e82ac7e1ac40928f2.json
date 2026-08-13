@@ -1,0 +1,69 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "Secretaría del Trabajo y Previsión Social",
+    "canonical_url": "https://www.gob.mx/stps/prensa/junta-de-gobierno-del-centro-federal-laboral-aprobo-por-unanimidad-nombramiento-de-director-general-interino?idiom=es",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "1307aa7d04a2c6c1d0759b3657a295c720c16c17b000d857e1c6a3369c29e53d",
+    "country_or_org": "México",
+    "description": "Héctor Josué Arcos Balderas, estará al frente hasta que el Senado realice la designación. La Junta de Gobierno del Centro Federal de Conciliación y Registro Laboral (CFCRL) celebró una sesión extraordinaria encabezada por el secretario del Trabajo y Previsión Social, Marath Baruch Bolaños López con motivo de la conclusión de la gestión de Alfredo Domínguez Marrufo como Director General del organismo el día 28 de julio. Durante la sesión se aprobaron los nombramientos de las personas titulares de las coordinaciones generales de Verificación Nelson Iván Castro Enríquez y de Conciliación Individual Héctor Josué Arcos Balderas, quien además fue nombrado Director General interino del CFCRL a partir del 1 de agosto de 2026, con el propósito de garantizar la continuidad administrativa, jurídica y operativa del organismo hasta que el Senado de la República realice la designación correspondiente de quien encabece el organismo. En su intervención, Alfredo Domínguez Marrufo agradeció al secretario del Trabajo y Previsión Social, Marath Bolaños, así como a las instituciones que integran la Junta de Gobierno —las secretarías de Hacienda y Crédito Público (SHCP) del Trabajo y Previsión Social (STPS), el Instituto Nacional Electoral (INE) y el Instituto Nacional de Estadística y Geografía (INEGI)— por el respaldo, acompañamiento y coordinación brindados durante su gestión. Asimismo, destacó la consolidación del CFCRL como una institución clave responsable de impulsar la conciliación individual y colectiva, brindar certeza jurídica a los trámites de registro laboral y garantizar la libertad y la democracia sindical mediante el voto personal, libre, directo y secreto. Por su parte, el secretario Marath Bolaños López reconoció la labor de Alfredo Domínguez Marrufo al frente del CFCRL y su contribución a la implementación y consolidación del nuevo modelo de justicia laboral. Asimismo, subrayó la importancia de dar continuidad a los trabajos y avances alcanzados por el organismo.",
+    "detail_markdown": null,
+    "detail_url": "notas/348c921e82ac7e1ac40928f2.html",
+    "detected_at": "2026-07-27T12:00:00+00:00",
+    "document_type": "Comunicado",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-27T12:00:00+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "gob.mx apf:dd060a77a9764d02",
+    "importance": 4,
+    "issuing_body": "Secretaría del Trabajo y Previsión Social",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+    "official_evidence": {
+      "primary_url": "https://www.gob.mx/stps/prensa/junta-de-gobierno-del-centro-federal-laboral-aprobo-por-unanimidad-nombramiento-de-director-general-interino?idiom=es"
+    },
+    "official_identifiers": {
+      "source_id": "dd060a77a9764d02"
+    },
+    "official_published_at": "2026-07-27",
+    "official_title": "Junta de Gobierno del Centro Federal Laboral aprobó por unanimidad nombramiento de Director General interino",
+    "published_at": "2026-07-27",
+    "published_day": 27,
+    "published_month": 7,
+    "published_year": 2026,
+    "relevance_score": 6,
+    "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
+    "source": "Gob.mx APF",
+    "source_id": "dd060a77a9764d02",
+    "subtopic_tags": [
+      "nombramiento",
+      "nombramientos",
+      "nombrado",
+      "designacion",
+      "director general"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Derecho administrativo",
+      "Nombramientos federales",
+      "Nombramiento"
+    ],
+    "url": "https://www.gob.mx/stps/prensa/junta-de-gobierno-del-centro-federal-laboral-aprobo-por-unanimidad-nombramiento-de-director-general-interino?idiom=es"
+  },
+  "schema_version": 8
+}

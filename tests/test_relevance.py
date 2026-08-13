@@ -48,6 +48,68 @@ def test_classifies_legislative_tax_initiative():
     assert result.relevance_score >= 4
 
 
+def test_ordinary_initiative_reforma_address_and_expert_opinion_are_not_legislative():
+    mobile_office = classify(
+        candidate(
+            "SAT fortalece la atención de servicios fiscales en Yucatán",
+            source="Gob.mx APF",
+            description=(
+                "La iniciativa fue posible gracias a la colaboración estatal. "
+                "La Oficina Móvil atenderá en Reforma Ote. 3, Col. Centro."
+            ),
+        )
+    )
+    expert_opinion = classify(
+        candidate(
+            "Emite Profepa dictamen pericial por saqueo de huevos de tortuga",
+            source="Gob.mx APF",
+            description="El dictamen pericial fue solicitado por la Fiscalía General.",
+        )
+    )
+
+    assert "Fiscal" in mobile_office.categories
+    assert "Iniciativa" not in mobile_office.categories
+    assert "Iniciativa" not in expert_opinion.categories
+
+
+def test_tourism_campaign_is_neither_legislative_nor_intellectual_property():
+    result = classify(
+        candidate(
+            "Sectur y Volaris llevan la campaña México está de Moda a nuevos mercados",
+            source="Gob.mx APF",
+            description=(
+                "Esta iniciativa promocional llevará la marca México está de Moda "
+                "en una aeronave y en revistas a bordo."
+            ),
+        )
+    )
+
+    assert "Iniciativa" not in result.categories
+    assert "Propiedad intelectual" not in result.categories
+
+
+def test_legislative_dictamen_minuta_and_registered_trademark_keep_their_categories():
+    dictamen = classify(
+        candidate(
+            "Dictamen de la Comisión de Hacienda sobre la Ley Aduanera",
+            source="Diputados",
+        )
+    )
+    minuta = classify(
+        candidate(
+            "Minuta con proyecto de decreto que reforma el Código Fiscal",
+            source="Senado",
+        )
+    )
+    trademark = classify(
+        candidate("Resolución sobre una solicitud de registro de marca")
+    )
+
+    assert "Iniciativa" in dictamen.categories
+    assert "Iniciativa" in minuta.categories
+    assert "Propiedad intelectual" in trademark.categories
+
+
 def test_classifies_lfpa_and_loapf_as_administrative_law():
     result = classify(
         candidate(
@@ -212,6 +274,26 @@ def test_international_court_substance_passes_and_noise_stays_out():
     # Vacantes de la CPI: sin materia → fuera aun con bono de fuente.
     vacancy = classify(candidate("Administrative Assistant (G-5)", source="CPI"))
     assert not is_relevant(vacancy, minimum_score=2)
+
+    dated_vacancy = classify(
+        candidate(
+            "Associate Logistics Officer (Travel and Transport) (P-2)",
+            source="CPI",
+            description="Vacancy Category Professional Date Sat, 09/05/2026 - 23:59",
+        )
+    )
+    assert "Fiscal" not in dated_vacancy.categories
+    assert "sat" not in dated_vacancy.matched_terms
+    assert not is_relevant(dated_vacancy, minimum_score=2)
+
+    tax_authority = classify(
+        candidate(
+            "El SAT publica facilidades para contribuyentes",
+            source="Gob.mx APF",
+        )
+    )
+    assert "Fiscal" in tax_authority.categories
+    assert "sat" in tax_authority.matched_terms
 
     # Comunicado sustantivo de la CPI sobre crímenes de guerra → publica.
     warrant = classify(

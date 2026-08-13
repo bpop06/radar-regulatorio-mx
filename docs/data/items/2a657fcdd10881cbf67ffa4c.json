@@ -1,0 +1,67 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "Oficina del Representante Comercial de Estados Unidos (USTR)",
+    "canonical_url": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/july/public-hearing-proposed-responsive-action-section-301-investigation-certain-acts-policies-and",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Comercio exterior",
+      "Administración centralizada"
+    ],
+    "content_hash": "b6fefdceeacfa1245c5f9596713bebe5fbf54560dab2ec7a49bb0d3b56d03e3b",
+    "country_or_org": "EEUU",
+    "description": "Public Hearing on Proposed Responsive Action in the Section 301 Investigation of Certain Acts, Policies, and Practices of Brazil myarbrough Thu, 07/02/2026 - 18:53 WASHINGTON – The Office of the United States Trade Representative (USTR) will hold a public hearing starting on Monday, July 6 and continuing on Tuesday, July 7, regarding proposed responsive action in the Section 301 investigation of Brazil’s acts, policies, and practices related to digital trade and electronic payment services; unfair, preferential tariffs; anti-corruption enforcement; intellectual property protection; ethanol market access; and illegal deforestation. The hearing will be held at the U.S. International Trade Commission (500 E Street SW, Washington, DC) starting at 10:00 am ET. Please consult the USTR website for the hearing schedule . Note: The hearing is on the record but no external cameras or video recording will be allowed in the hearing room. The hearing will not be livestreamed. A full transcript of the hearing will be posted on ustr.gov after the hearing. Please contact media@ustr.eop.gov with questions or for more information on media arrangements. ###",
+    "detail_markdown": null,
+    "detail_url": "notas/2a657fcdd10881cbf67ffa4c.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Comunicado",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Gobierno de EEUU",
+    "id": "ustr:6716a2080f57c73a",
+    "importance": 2,
+    "issuing_body": "Oficina del Representante Comercial de EEUU",
+    "jurisdiction": "internacional",
+    "last_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "official_evidence": {
+      "primary_url": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/july/public-hearing-proposed-responsive-action-section-301-investigation-certain-acts-policies-and"
+    },
+    "official_identifiers": {
+      "source_id": "6716a2080f57c73a"
+    },
+    "official_published_at": "2026-07-02",
+    "official_title": "Public Hearing on Proposed Responsive Action in the Section 301 Investigation of Certain Acts, Policies, and Practices of Brazil",
+    "published_at": "2026-07-02",
+    "published_day": 2,
+    "published_month": 7,
+    "published_year": 2026,
+    "relevance_score": 3,
+    "review_reason": "Registro legado o contenido sin revisión editorial certificada.",
+    "source": "USTR",
+    "source_id": "6716a2080f57c73a",
+    "subtopic_tags": [
+      "tariffs",
+      "section 301",
+      "intellectual property"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Comercio exterior",
+      "Propiedad intelectual"
+    ],
+    "url": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/july/public-hearing-proposed-responsive-action-section-301-investigation-certain-acts-policies-and"
+  },
+  "schema_version": 8
+}

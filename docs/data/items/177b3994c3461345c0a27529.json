@@ -1,0 +1,61 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795028&fecha=30%2F07%2F2026",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "0b50f01bf744961e55efd42826ab19ccd07fdb86fa356f1372f357ed505def17",
+    "country_or_org": "México",
+    "description": "Acuerdo por el que se desincorpora del régimen de dominio público de la Federación, para su enajenación Ad Corpus a título oneroso, mediante licitación pública, el inmueble federal denominado Río Amazonas 93 y 93 A, con una superficie de terreno de 355.9000 metros cuadrados, con Registro Federal Inmobiliario 9-20072-8, ubicado en Calle Río Amazonas 93 y 93 A, Colonia Cuauhtémoc, Código Postal 06500, Alcaldía Cuauhtémoc, Ciudad de México.",
+    "detail_markdown": null,
+    "detail_url": "notas/177b3994c3461345c0a27529.html",
+    "detected_at": "2026-07-30T12:00:00+00:00",
+    "document_type": "Acuerdo",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-30T12:00:00+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5795028",
+    "importance": 1,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795028&fecha=30/07/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5795028"
+    },
+    "official_published_at": "2026-07-30",
+    "official_title": "Acuerdo por el que se desincorpora del régimen de dominio público de la Federación, para su enajenación Ad Corpus a título oneroso, mediante licitación pública, el inmueble federal denominado Río Amazonas 93 y 93 A, con una superficie de terreno de 355.9000 metros cuadrados, con Registro Federal Inmobiliario 9-20072-8, ubicado en Calle Río Amazonas 93 y 93 A, Colonia Cuauhtémoc, Código Postal 06500, Alcaldía Cuauhtémoc, Ciudad de México.",
+    "published_at": "2026-07-30",
+    "published_day": 30,
+    "published_month": 7,
+    "published_year": 2026,
+    "relevance_score": 1,
+    "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
+    "source": "DOF",
+    "source_id": "5795028",
+    "subtopic_tags": [],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Acuerdo"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5795028&fecha=30/07/2026"
+  },
+  "schema_version": 8
+}

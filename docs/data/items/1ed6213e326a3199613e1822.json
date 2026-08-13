@@ -1,0 +1,61 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5794449&fecha=22%2F07%2F2026",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "7225ddc5af935deef75ed4ece6f7a1c5bacf1f181f03689ffa1048bde33f26d7",
+    "country_or_org": "México",
+    "description": "Convocatoria dirigida a las Administradoras de Fondos para el Retiro interesadas en fungir como prestadoras de servicio para llevar el registro y control de los recursos de Cuentas Individuales pendientes de ser asignadas y Cuentas Individuales inactivas, en términos del artículo 76 de la Ley de los Sistemas de Ahorro para el Retiro.",
+    "detail_markdown": null,
+    "detail_url": "notas/1ed6213e326a3199613e1822.html",
+    "detected_at": "2026-07-22T12:00:00+00:00",
+    "document_type": "Convocatoria Dirigida A",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-22T12:00:00+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5794449",
+    "importance": 1,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5794449&fecha=22/07/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5794449"
+    },
+    "official_published_at": "2026-07-22",
+    "official_title": "Convocatoria dirigida a las Administradoras de Fondos para el Retiro interesadas en fungir como prestadoras de servicio para llevar el registro y control de los recursos de Cuentas Individuales pendientes de ser asignadas y Cuentas Individuales inactivas, en términos del artículo 76 de la Ley de los Sistemas de Ahorro para el Retiro.",
+    "published_at": "2026-07-22",
+    "published_day": 22,
+    "published_month": 7,
+    "published_year": 2026,
+    "relevance_score": 1,
+    "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
+    "source": "DOF",
+    "source_id": "5794449",
+    "subtopic_tags": [],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Convocatoria"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5794449&fecha=22/07/2026"
+  },
+  "schema_version": 8
+}

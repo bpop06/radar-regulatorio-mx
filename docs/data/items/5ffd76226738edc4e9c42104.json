@@ -1,0 +1,64 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "Instituto Nacional de Perinatología",
+    "canonical_url": "https://www.gob.mx/salud/inper/prensa/alcance-a-la-consulta-para-la-designacion-de-la-persona-titular-de-la-direccion-general-del-ho?idiom=es",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "bf85a3905544f2684d7b6fe42f8bb1160863c9aa4c41ca34fb1b1e1967cebe8a",
+    "country_or_org": "México",
+    "description": "En mi carácter de Presidente de la Junta de Gobierno del Hospital Infantil de México Federico Gómez , organismo público descentralizado de la Administración Pública Federal, con fundamento en los artículos 14, 15 y 18 de la Ley de los Institutos Nacionales de Salud; 17 y 18 de la Ley Federal de las Entidades Paraestatales; así como en la Consulta para la Designación de la Persona Titular de la Dirección General del Hospital Infantil de México Federico Gómez, publicada el 5 de junio de 2026, me permito hacer del conocimiento de las personas interesadas lo siguiente: PRIMERO. Se suspende temporalmente la Consulta para la Designación de la Persona Titular de la Dirección General del Hospital Infantil de México Federico Gómez, publicada el 5 de junio de 2026, a efecto de valorar la ampliación de los plazos del proceso y propiciar una integración más amplia y completa del procedimiento consultivo. SEGUNDO. La presente medida recae exclusivamente sobre el procedimiento consultivo previo, de carácter instrumental y auxiliar, y no afecta derechos adquiridos. En tanto la terna no ha sido presentada a la Junta de Gobierno ni dicho órgano ha realizado designación alguna, esta determinación no modifica la competencia de la Junta de Gobierno para designar, en su momento y conforme a la normativa aplicable, a la persona titular de la Dirección General del Hospital Infantil de México Federico Gómez. TERCERO. La suspensión decretada no prejuzga sobre el resultado del procedimiento ni sobre las personas aspirantes registradas , no implica la cancelación definitiva de la consulta, no afecta los derechos de las personas que hayan presentado oportunamente su postulación, las cuales conservarán su registro y documentación para el momento en que se reanude el procedimiento, sin perjuicio de que se les permita actualizar o complementar su información si así se determina. CUARTO. La presente suspensión será seguida de la emisión de un alcance formal a la convocatoria, en el que se precisarán los nuevos plazos y etapas del procedimiento. QUINTO. Publíquese y difúndase por los mismos medios a través de los cuales se dio a conocer la convocatoria original, para efectos de transparencia, certeza e igualdad entre las personas interesadas. Atentamente, Dr. David Kershenobich Stalnikowitz Secretario de Salud y Presidente de la Junta de Gobierno del Hospital Infantil de México Federico Gómez",
+    "detail_markdown": null,
+    "detail_url": "notas/5ffd76226738edc4e9c42104.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Nacional",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "gob.mx apf:0e722b3a1321634f",
+    "importance": 2,
+    "issuing_body": "Instituto Nacional de Perinatología",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "official_evidence": {
+      "primary_url": "https://www.gob.mx/salud/inper/prensa/alcance-a-la-consulta-para-la-designacion-de-la-persona-titular-de-la-direccion-general-del-ho?idiom=es"
+    },
+    "official_identifiers": {
+      "source_id": "0e722b3a1321634f"
+    },
+    "official_published_at": "2026-06-18",
+    "official_title": "ALCANCE A LA CONSULTA PARA LA DESIGNACIÓN DE LA PERSONA TITULAR DE LA DIRECCIÓN GENERAL DEL HIMFG",
+    "published_at": "2026-06-18",
+    "published_day": 18,
+    "published_month": 6,
+    "published_year": 2026,
+    "relevance_score": 3,
+    "review_reason": "Registro legado o contenido sin revisión editorial certificada.",
+    "source": "Gob.mx APF",
+    "source_id": "0e722b3a1321634f",
+    "subtopic_tags": [
+      "administracion publica federal",
+      "designacion"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Derecho administrativo"
+    ],
+    "url": "https://www.gob.mx/salud/inper/prensa/alcance-a-la-consulta-para-la-designacion-de-la-persona-titular-de-la-direccion-general-del-ho?idiom=es"
+  },
+  "schema_version": 8
+}

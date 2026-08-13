@@ -1,0 +1,73 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "Centro Internacional de Arreglo de Diferencias Relativas a Inversiones",
+    "canonical_url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%28AF%29%2F04%2F1",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "Soft drink sweetener production enterprise",
+    "case_facts": "",
+    "case_number": "ARB(AF)/04/1",
+    "case_outcome": "",
+    "case_parties": "Corn Products International, Inc. v. United Mexican States",
+    "case_reasoning": "",
+    "case_status": "Concluded",
+    "case_treaty": "NAFTA (North American Free Trade Agreement)",
+    "categories": [
+      "Comercio exterior",
+      "Comercio internacional"
+    ],
+    "content_hash": "d0279b3847a7f925c4d836a50df2c6aeb7df2b21f5f7f753cf5d837d7e7de5eb",
+    "country_or_org": "CIADI",
+    "description": "Estatus del procedimiento: Concluido. Materia: Soft drink sweetener production enterprise. Sector económico: Other Industry. Instrumento invocado: NAFTA (North American Free Trade Agreement).",
+    "detail_markdown": null,
+    "detail_url": "notas/62036b3120fed714d230fb99.html",
+    "detected_at": "2026-08-13T02:52:44.617123+00:00",
+    "document_type": "Caso de arbitraje de inversión",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-08-13T02:52:44.617123+00:00",
+    "government_branch": "Organismo internacional",
+    "id": "ciadi:ARB(AF)/04/1",
+    "importance": 4,
+    "issuing_body": "Centro Internacional de Arreglo de Diferencias relativas a Inversiones",
+    "jurisdiction": "internacional",
+    "last_seen_at": "2026-08-13T05:08:47.293425+00:00",
+    "official_evidence": {
+      "case_detail": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%28AF%29%2F04%2F1",
+      "instrument_invoked": "NAFTA (North American Free Trade Agreement)",
+      "primary_url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%28AF%29%2F04%2F1",
+      "status": "Concluded",
+      "subject": "Soft drink sweetener production enterprise"
+    },
+    "official_identifiers": {
+      "case_number": "ARB(AF)/04/1",
+      "source_id": "ARB(AF)/04/1"
+    },
+    "official_published_at": "2004-01-26",
+    "official_title": "Corn Products International, Inc. v. United Mexican States (ICSID Case No. ARB(AF)/04/1)",
+    "published_at": "2004-01-26",
+    "published_day": 26,
+    "published_month": 1,
+    "published_year": 2004,
+    "relevance_score": 6,
+    "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
+    "source": "CIADI",
+    "source_id": "ARB(AF)/04/1",
+    "subtopic_tags": [
+      "trade agreement",
+      "free trade",
+      "arbitraje de inversion",
+      "icsid"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Comercio exterior",
+      "Comercio internacional"
+    ],
+    "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%28AF%29%2F04%2F1"
+  },
+  "schema_version": 8
+}

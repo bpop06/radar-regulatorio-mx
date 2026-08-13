@@ -1,0 +1,63 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "Agencia Nacional de Aduanas de México",
+    "canonical_url": "https://www.anam.gob.mx/comunicado-prensa-58-2026",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Comercio exterior"
+    ],
+    "content_hash": "68c88c4e3ffc3d421580a0fbb65d6905a885c9905064eb9b389f66685207eebc",
+    "country_or_org": "México",
+    "description": "La ANAM alcanza en julio la mayor recaudación del año y registra récord de operaciones de comercio exterior",
+    "detail_markdown": null,
+    "detail_url": "notas/c1607aef9f3217827e292d28.html",
+    "detected_at": "2026-08-13T05:08:47.293425+00:00",
+    "document_type": "Comunicado",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-08-13T05:08:47.293425+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "anam:827d77cec754354b",
+    "importance": 2,
+    "issuing_body": "Agencia Nacional de Aduanas de México",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+    "official_evidence": {
+      "primary_url": "https://www.anam.gob.mx/comunicado-prensa-58-2026/"
+    },
+    "official_identifiers": {
+      "source_id": "827d77cec754354b"
+    },
+    "official_published_at": "2026-08-12",
+    "official_title": "La ANAM alcanza en julio la mayor recaudación del año y registra récord de operaciones de comercio exterior",
+    "published_at": "2026-08-12",
+    "published_day": 12,
+    "published_month": 8,
+    "published_year": 2026,
+    "relevance_score": 2,
+    "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
+    "source": "ANAM",
+    "source_id": "827d77cec754354b",
+    "subtopic_tags": [
+      "comercio exterior"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Comercio exterior"
+    ],
+    "url": "https://www.anam.gob.mx/comunicado-prensa-58-2026/"
+  },
+  "schema_version": 8
+}

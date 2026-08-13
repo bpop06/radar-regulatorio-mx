@@ -1,0 +1,67 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "PODER EJECUTIVO SECRETARIA ANTICORRUPCION Y BUEN GOBIERNO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793725&fecha=16%2F07%2F2026",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Penal",
+      "Administración centralizada"
+    ],
+    "content_hash": "a73573c43cf42e2f4871ee8199c1fd1cc8cea419bb22309acd16a1eeb17a68d6",
+    "country_or_org": "México",
+    "description": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a la Fiscalía General de la República, a las entidades federativas, municipios y demarcaciones territoriales de la Ciudad de México, que deberán abstenerse de aceptar propuestas o celebrar contratos con la empresa Comercializadora Jass de Compresores, S.A. de C.V. y la persona física que la representó el ciudadano Juan Antonio Soria Yáñez, incluso cuando este último pretenda representar a empresas diversas a la sancionada.",
+    "detail_markdown": null,
+    "detail_url": "notas/a93722a2637ea837023a0453.html",
+    "detected_at": "2026-07-16T12:00:00+00:00",
+    "document_type": "Circular",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-16T12:00:00+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5793725",
+    "importance": 2,
+    "issuing_body": "Presidencia de la República",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793725&fecha=16/07/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5793725"
+    },
+    "official_published_at": "2026-07-16",
+    "official_title": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a la Fiscalía General de la República, a las entidades federativas, municipios y demarcaciones territoriales de la Ciudad de México, que deberán abstenerse de aceptar propuestas o celebrar contratos con la empresa Comercializadora Jass de Compresores, S.A. de C.V. y la persona física que la representó el ciudadano Juan Antonio Soria Yáñez, incluso cuando este último pretenda representar a empresas diversas a la sancionada.",
+    "published_at": "2026-07-16",
+    "published_day": 16,
+    "published_month": 7,
+    "published_year": 2026,
+    "relevance_score": 3,
+    "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
+    "source": "DOF",
+    "source_id": "5793725",
+    "subtopic_tags": [
+      "fiscalia",
+      "administracion publica federal"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Penal",
+      "Derecho administrativo",
+      "Circular"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5793725&fecha=16/07/2026"
+  },
+  "schema_version": 8
+}

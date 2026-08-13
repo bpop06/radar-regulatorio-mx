@@ -1,0 +1,61 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5794670&fecha=24%2F07%2F2026",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "217aab58974722881d5f6a7fbe26b1275b75378c88a89eef9e2fea7e7cbe4bc5",
+    "country_or_org": "México",
+    "description": "Acuerdo por el que se desincorpora del régimen de dominio público de la Federación, para su enajenación Ad Corpus a título oneroso, mediante licitación pública, el inmueble federal denominado \"Productora Nacional de Semillas\", con una superficie de terreno de 4-03-20 hectáreas, con Registro Federal Inmobiliario 2-2357-9, ubicado en Carretera Federal número 5, Mexicali- San Felipe km 14+/-500, sin número, Lote 28 Fracción Porción Intermedia, Colonia 4 División 2 (Colorado IV), Código Postal 21703, Municipio de Mexicali, Estado de Baja California.",
+    "detail_markdown": null,
+    "detail_url": "notas/bb70e1c52b45579103f8b483.html",
+    "detected_at": "2026-07-24T12:00:00+00:00",
+    "document_type": "Acuerdo",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-24T12:00:00+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5794670",
+    "importance": 1,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5794670&fecha=24/07/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5794670"
+    },
+    "official_published_at": "2026-07-24",
+    "official_title": "Acuerdo por el que se desincorpora del régimen de dominio público de la Federación, para su enajenación Ad Corpus a título oneroso, mediante licitación pública, el inmueble federal denominado \"Productora Nacional de Semillas\", con una superficie de terreno de 4-03-20 hectáreas, con Registro Federal Inmobiliario 2-2357-9, ubicado en Carretera Federal número 5, Mexicali- San Felipe km 14+/-500, sin número, Lote 28 Fracción Porción Intermedia, Colonia 4 División 2 (Colorado IV), Código Postal 21703, Municipio de Mexicali, Estado de Baja California.",
+    "published_at": "2026-07-24",
+    "published_day": 24,
+    "published_month": 7,
+    "published_year": 2026,
+    "relevance_score": 1,
+    "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
+    "source": "DOF",
+    "source_id": "5794670",
+    "subtopic_tags": [],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Acuerdo"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5794670&fecha=24/07/2026"
+  },
+  "schema_version": 8
+}

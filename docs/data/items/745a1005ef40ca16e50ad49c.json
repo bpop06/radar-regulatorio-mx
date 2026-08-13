@@ -1,0 +1,66 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792567&fecha=03/07/2026",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Fiscal",
+      "Administración centralizada"
+    ],
+    "content_hash": "017453b50f7ab93ae59b860105f3ef41842cb71c83d58dc685f77075499868c2",
+    "country_or_org": "México",
+    "description": "Oficio 500-05-00-00-00-2026-16021 mediante el cual se comunica listado de contribuyentes que promovieron algún medio de defensa en contra del oficio de presunción a que se refiere el artículo 69-B primer párrafo del Código Fiscal de la Federación, vigente hasta el 24 de julio de 2018, o en contra de la resolución a que se refiere el tercer párrafo del artículo en comento, y una vez resuelto el mismo, el órgano jurisdiccional o administrativo dejó insubsistente el referido acto.",
+    "detail_markdown": null,
+    "detail_url": "notas/745a1005ef40ca16e50ad49c.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Oficio",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5792567",
+    "importance": 2,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792567&fecha=03/07/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5792567"
+    },
+    "official_published_at": "2026-07-03",
+    "official_title": "Oficio 500-05-00-00-00-2026-16021 mediante el cual se comunica listado de contribuyentes que promovieron algún medio de defensa en contra del oficio de presunción a que se refiere el artículo 69-B primer párrafo del Código Fiscal de la Federación, vigente hasta el 24 de julio de 2018, o en contra de la resolución a que se refiere el tercer párrafo del artículo en comento, y una vez resuelto el mismo, el órgano jurisdiccional o administrativo dejó insubsistente el referido acto.",
+    "published_at": "2026-07-03",
+    "published_day": 3,
+    "published_month": 7,
+    "published_year": 2026,
+    "relevance_score": 3,
+    "review_reason": "Registro legado o contenido sin revisión editorial certificada.",
+    "source": "DOF",
+    "source_id": "5792567",
+    "subtopic_tags": [
+      "codigo fiscal"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Fiscal",
+      "Resolución",
+      "Oficio"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5792567&fecha=03/07/2026"
+  },
+  "schema_version": 8
+}

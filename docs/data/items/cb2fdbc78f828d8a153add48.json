@@ -1,0 +1,65 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "Instituto Mexicano de la Propiedad Industrial",
+    "canonical_url": "https://www.gob.mx/impi/prensa/secihti-e-impi-buscan-incorporar-500-especialistas-a-la-proteccion-de-la-innovacion-marcas-y-patentes?idiom=es",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración descentralizada"
+    ],
+    "content_hash": "41d49e45291c5f3ca696dc91929c5cef8b81267c49a3a7b8c3fee9895e7fe524",
+    "country_or_org": "México",
+    "description": "● La iniciativa busca agilizar el registro de marcas y patentes, reducir rezagos y fortalecer la propiedad industrial en el país ● Forma parte de las acciones del Plan México para incrementar la inversión en investigación y desarrollo tecnológico ● La convocatoria (https://ingreso.impi.gob.mx/) está dirigida a profesionistas de diversas áreas del conocimiento y permanecerá abierta hasta el 26 de junio Con esta medida, que forma parte de las acciones del Plan México, se busca ampliar las capacidades técnicas del IMPI para abatir el rezago existente en la atención de solicitudes de propiedad industrial y acelerar la protección de las innovaciones desarrolladas en el país. Con ello, se brindará certeza jurídica y se generarán condiciones más favorables para la inversión, la transferencia tecnológica y el crecimiento económico. En sesión virtual, la subsecretaria de Ciencia y Humanidades de la Secihti, Violeta Vázquez-Rojas Maldonado, destacó que esta convocatoria es resultado de la colaboración sostenida entre ambas instituciones para fortalecer el ecosistema nacional de innovación. Señaló que la incorporación de profesionistas con perfi les científi cos, tecnológicos y técnicos contribuirá a acelerar la revisión y protección de la propiedad industrial. Dijo que ésta iniciativa se desarrolla de forma paralela a otras acciones del Programa de Inserción Laboral, el cual “es un esfuerzo articulado por la Secihti y se centra en una estrategia de coordinación entre el gobierno, las instituciones de educación superior, los centros públicos de investigación y el sector empresarial. Se busca promover la inserción laboral de las personas altamente califi cadas, mediante acciones intersectoriales que favorezcan sus ingresos y condiciones de trabajo”. La subsecretaria destacó que la convocatoria representa una oportunidad para quienes realizan o han concluido estancias posdoctorales al vincular talento altamente especializado con instituciones estratégicas para el desarrollo nacional. Durante la sesión, el director general del IMPI, Vidal Llerenas destacó que, con el objetivo de garantizar la protección y conservación de los derechos de propiedad industrial en nuestro país, el Gobierno de México ha destinado recursos para la contratación de profesionales quienes participarán en la revisión de 11 mil 972 expedientes de solicitudes de patentes; mientras que la dirección de marcas tiene alrededor de 77 mil trámites bajo análisis. Esta medida permitirá agilizar la revisión y resolución de trámites, reducir rezagos y brindar mayor certeza jurídica, impulsando el desarrollo económico nacional, indicó. Mencionó que la cooperación entre Secihti y el IMPI es fundamental, puesto que incentiva la participación de miembros del Sistema Nacional de Investigadoras e Investigadores (SNII) en actividades de evaluación de patentes, lo que contribuirá a detonar la innovación en México. Consulta la información referente a la Convocatoria de Servicios Profesionales por Honorarios aquí y la sesión virtual en el siguiente enlace: https://bit.ly/4vRxl2v -oo0oo-",
+    "detail_markdown": null,
+    "detail_url": "notas/cb2fdbc78f828d8a153add48.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Comunicado",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Organismo descentralizado",
+    "id": "gob.mx apf:fe786296a630a8ba",
+    "importance": 3,
+    "issuing_body": "Instituto Mexicano de la Propiedad Industrial",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "official_evidence": {
+      "primary_url": "https://www.gob.mx/impi/prensa/secihti-e-impi-buscan-incorporar-500-especialistas-a-la-proteccion-de-la-innovacion-marcas-y-patentes?idiom=es"
+    },
+    "official_identifiers": {
+      "source_id": "fe786296a630a8ba"
+    },
+    "official_published_at": "2026-06-17",
+    "official_title": "Secihti e IMPI buscan incorporar 500 especialistas a la protección de la innovación, marcas y patentes",
+    "published_at": "2026-06-17",
+    "published_day": 17,
+    "published_month": 6,
+    "published_year": 2026,
+    "relevance_score": 5,
+    "review_reason": "Registro legado o contenido sin revisión editorial certificada.",
+    "source": "Gob.mx APF",
+    "source_id": "fe786296a630a8ba",
+    "subtopic_tags": [
+      "propiedad industrial",
+      "impi",
+      "registro de marcas"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Propiedad intelectual"
+    ],
+    "url": "https://www.gob.mx/impi/prensa/secihti-e-impi-buscan-incorporar-500-especialistas-a-la-proteccion-de-la-innovacion-marcas-y-patentes?idiom=es"
+  },
+  "schema_version": 8
+}

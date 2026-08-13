@@ -1,0 +1,67 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "Portal federal IMP",
+    "canonical_url": "https://www.gob.mx/imp/es/articulos/curso-nom-016-cre-2016-referente-a-las-especificaciones-de-calidad-de-los-petroliferos-en-mexico?idiom=es",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Comercio exterior",
+      "Administración centralizada"
+    ],
+    "content_hash": "664a24dedacc3b2bb9d8e5405b436a5d445fd99a36960cc6557edc111255db77",
+    "country_or_org": "México",
+    "description": "Modalidad: En Línea. Plataforma: Microsoft Teams Fecha: Del 25 al 27 de agosto de 2026. Horario: Martes a jueves de 09:00 a 13:00 horas Objetivos: Conocer la participación y las funciones de la Comisión Nacional de Energía respecto a la vigencia y aplicación de esta Norma Oficial Mexicana. Identificar las especificaciones de calidad que deben cumplir los petrolíferos en cada etapa de la cadena de producción y suministro, en territorio nacional, incluyendo su importación. Establecer que la Norma es aplicable en todo el territorio nacional para: gasolinas, turbosina, diésel automotriz, diésel agrícola y marino, diésel industrial, combustóleo, gasóleo doméstico, gasavión, gasolina de llenado inicial, combustóleo intermedio y gas licuado de petróleo en toda la cadena de producción y suministro, incluyendo su importación. Temario: I. Introducción Importancia económica de los hidrocarburos Los petrolíferos y su origen Los petrolíferos como fuentes de contaminación Tendencias en especificaciones II. NOM-016-CRE-2016 y su modificación 2017 Marco Jurídico, actualizado con las nuevas funciones de la CNE. La cadena de valor de los hidrocarburos Los objetivos básicos de la NOM-016-CRE-2016 Campo de aplicación Obligaciones III. Petrolíferos normados y sus especificaciones Gasolina Mezclado de Gasolinas Especificaciones de la gasolina Diésel Especificaciones del diésel Turbosina Especificaciones de la turbosina Petrolíferos de uso industrial Diesel industrial Gasóleo doméstico Combustóleo Gasavión Combustóleo intermedio (IFO) Gasolina de llenado inicial Gas licuado de petróleo IV. Métodos de prueba alterno V. Métodos de Muestreo de Combustibles Requisitos: Presentar solicitud de inscripción. Pago del curso vía transferencia bancaria. Nota: El curso se impartirá vía Microsoft TEAMS, por lo que se requerirá a los participantes contar con equipo que incluya conectividad de internet aceptable, micrófono y cámara de video. Contactos Correo 📩 Lic. Brenda Mónica López Rivera | bmlopez@imp.mx Lic. Martha Alicia Guajardo Díaz | mguajard@imp.mx Lic. San Juana flores Sánchez | sjflores@imp.mx Lic. Maria Teresa Torres Hernández | teresaa@imp.mx El IMP se reserva el derecho de cancelar si no se cuenta con el mínimo de participantes requerido",
+    "detail_markdown": null,
+    "detail_url": "notas/4f004fdc958069a8d05dbcbc.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Artículo",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "gob.mx apf:9c7642780fc192d8",
+    "importance": 2,
+    "issuing_body": "Portal federal IMP",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "official_evidence": {
+      "primary_url": "https://www.gob.mx/imp/es/articulos/curso-nom-016-cre-2016-referente-a-las-especificaciones-de-calidad-de-los-petroliferos-en-mexico?idiom=es"
+    },
+    "official_identifiers": {
+      "source_id": "9c7642780fc192d8"
+    },
+    "official_published_at": "2026-06-09",
+    "official_title": "Curso: “NOM-016-CRE-2016 referente a las especificaciones de calidad de los petrolíferos en México”",
+    "published_at": "2026-06-09",
+    "published_day": 9,
+    "published_month": 6,
+    "published_year": 2026,
+    "relevance_score": 3,
+    "review_reason": "Registro legado o contenido sin revisión editorial certificada.",
+    "source": "Gob.mx APF",
+    "source_id": "9c7642780fc192d8",
+    "subtopic_tags": [
+      "importacion",
+      "norma oficial mexicana",
+      "nom-"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Comercio exterior",
+      "Normalización"
+    ],
+    "url": "https://www.gob.mx/imp/es/articulos/curso-nom-016-cre-2016-referente-a-las-especificaciones-de-calidad-de-los-petroliferos-en-mexico?idiom=es"
+  },
+  "schema_version": 8
+}

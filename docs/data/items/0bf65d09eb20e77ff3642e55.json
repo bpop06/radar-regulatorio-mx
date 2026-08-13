@@ -1,0 +1,69 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "ORGANISMOS AUTONOMOS FISCALIA GENERAL DE LA REPUBLICA",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795543&fecha=05%2F08%2F2026",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Penal",
+      "Administración centralizada"
+    ],
+    "content_hash": "e2e8c49fe20b5d0398fe3620f1a8bd39068dfedbe6e147a0261bd78ee55038c5",
+    "country_or_org": "México",
+    "description": "Acuerdo A/OIC/002/2026 por el que la persona Titular del Órgano Interno de Control de la Fiscalía General de la República establece las reglas a las que se sujetará su suplencia, en los casos de excusas y ausencias y de las personas titulares de las unidades que integran el Órgano Interno de Control de la Fiscalía General de la República.",
+    "detail_markdown": null,
+    "detail_url": "notas/0bf65d09eb20e77ff3642e55.html",
+    "detected_at": "2026-08-05T12:00:00+00:00",
+    "document_type": "Acuerdo",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-08-05T12:00:00+00:00",
+    "government_branch": "Organismo autónomo",
+    "id": "dof:5795543",
+    "importance": 3,
+    "issuing_body": "Fiscalía General de la República",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795543&fecha=05/08/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5795543"
+    },
+    "official_published_at": "2026-08-05",
+    "official_title": "Acuerdo A/OIC/002/2026 por el que la persona Titular del Órgano Interno de Control de la Fiscalía General de la República establece las reglas a las que se sujetará su suplencia, en los casos de excusas y ausencias y de las personas titulares de las unidades que integran el Órgano Interno de Control de la Fiscalía General de la República.",
+    "published_at": "2026-08-05",
+    "published_day": 5,
+    "published_month": 8,
+    "published_year": 2026,
+    "relevance_score": 4,
+    "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
+    "source": "DOF",
+    "source_id": "5795543",
+    "subtopic_tags": [
+      "fiscalia",
+      "suplencia",
+      "titular del organo"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Penal",
+      "Derecho administrativo",
+      "Nombramientos federales",
+      "Acuerdo"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5795543&fecha=05/08/2026"
+  },
+  "schema_version": 8
+}

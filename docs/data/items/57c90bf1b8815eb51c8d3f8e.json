@@ -1,0 +1,70 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "Centro Internacional de Arreglo de Diferencias Relativas a Inversiones",
+    "canonical_url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%2F25%2F30",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "Mining",
+    "case_facts": "",
+    "case_number": "ARB/25/30",
+    "case_outcome": "",
+    "case_parties": "Estate of Ian Colin Orr-Ewing and others v. United Mexican States",
+    "case_reasoning": "",
+    "case_status": "Pending",
+    "case_treaty": "BIT United Kingdom of Great Britain and Northern Ireland - Mexico 2006",
+    "categories": [
+      "Comercio internacional"
+    ],
+    "content_hash": "68b3c093226e7eefde53140ce283f7f0346f52a902644c3835a242b947b0a005",
+    "country_or_org": "CIADI",
+    "description": "Estatus del procedimiento: Pendiente. Materia: Mining. Sector económico: Oil, Gas & Mining. Instrumento invocado: BIT United Kingdom of Great Britain and Northern Ireland - Mexico 2006. Última actuación: February 18, 2026 - Following appointment by the Respondent, Jorge E. Viñuales (Argentine/Swiss) accepts his appointment as arbitrator.",
+    "detail_markdown": null,
+    "detail_url": "notas/57c90bf1b8815eb51c8d3f8e.html",
+    "detected_at": "2026-08-13T02:52:38.172965+00:00",
+    "document_type": "Caso de arbitraje de inversión",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Organismo internacional",
+    "id": "ciadi:ARB/25/30",
+    "importance": 2,
+    "issuing_body": "Centro Internacional de Arreglo de Diferencias relativas a Inversiones",
+    "jurisdiction": "internacional",
+    "last_seen_at": "2026-08-13T05:08:47.293425+00:00",
+    "official_evidence": {
+      "case_detail": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%2F25%2F30",
+      "instrument_invoked": "BIT United Kingdom of Great Britain and Northern Ireland - Mexico 2006",
+      "latest_development": "February 18, 2026 - Following appointment by the Respondent, Jorge E. Viñuales (Argentine/Swiss) accepts his appointment as arbitrator.",
+      "primary_url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%2F25%2F30",
+      "status": "Pending",
+      "subject": "Mining"
+    },
+    "official_identifiers": {
+      "case_number": "ARB/25/30",
+      "source_id": "ARB/25/30"
+    },
+    "official_published_at": "2026-02-18",
+    "official_title": "Estate of Ian Colin Orr-Ewing and others v. United Mexican States (ICSID Case No. ARB/25/30)",
+    "published_at": "2026-02-18",
+    "published_day": 18,
+    "published_month": 2,
+    "published_year": 2026,
+    "relevance_score": 3,
+    "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
+    "source": "CIADI",
+    "source_id": "ARB/25/30",
+    "subtopic_tags": [
+      "arbitraje de inversion",
+      "icsid"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Comercio internacional"
+    ],
+    "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%2F25%2F30"
+  },
+  "schema_version": 8
+}

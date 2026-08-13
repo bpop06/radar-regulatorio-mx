@@ -1,0 +1,65 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795166&fecha=31%2F07%2F2026",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Penal",
+      "Administración centralizada"
+    ],
+    "content_hash": "29933aeae3ad570b99991b9e86cde77259794977a686cfe1bb583897104c9067",
+    "country_or_org": "México",
+    "description": "Acuerdo por el que se desincorpora del régimen de dominio público de la Federación, para su aportación al patrimonio de la Fiscalía General de la República, el inmueble federal denominado \"Subsede Zihuatanejo\", con una superficie de terreno de 381.92 metros cuadrados, con Registro Federal Inmobiliario 12-19459-8, ubicado en calle Oyamel número 13, Colonia Hujal, Código Postal 40880, Municipio de Zihuatanejo de Azueta, Estado de Guerrero.",
+    "detail_markdown": null,
+    "detail_url": "notas/8f47964e06688b8188529be2.html",
+    "detected_at": "2026-07-31T12:00:00+00:00",
+    "document_type": "Acuerdo",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-31T12:00:00+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5795166",
+    "importance": 2,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795166&fecha=31/07/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5795166"
+    },
+    "official_published_at": "2026-07-31",
+    "official_title": "Acuerdo por el que se desincorpora del régimen de dominio público de la Federación, para su aportación al patrimonio de la Fiscalía General de la República, el inmueble federal denominado \"Subsede Zihuatanejo\", con una superficie de terreno de 381.92 metros cuadrados, con Registro Federal Inmobiliario 12-19459-8, ubicado en calle Oyamel número 13, Colonia Hujal, Código Postal 40880, Municipio de Zihuatanejo de Azueta, Estado de Guerrero.",
+    "published_at": "2026-07-31",
+    "published_day": 31,
+    "published_month": 7,
+    "published_year": 2026,
+    "relevance_score": 2,
+    "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
+    "source": "DOF",
+    "source_id": "5795166",
+    "subtopic_tags": [
+      "fiscalia"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Penal",
+      "Acuerdo"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5795166&fecha=31/07/2026"
+  },
+  "schema_version": 8
+}

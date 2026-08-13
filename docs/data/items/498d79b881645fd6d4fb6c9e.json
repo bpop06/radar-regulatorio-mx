@@ -1,0 +1,65 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "PODER EJECUTIVO SECRETARIA DE ECONOMIA",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5790186&fecha=10/06/2026",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "fb1ba5ee1e38ce14df55cc89f4bf41dcf3e9d4b922a0d2fc79c7ab14f430cafe",
+    "country_or_org": "México",
+    "description": "Acuerdo por el que se delegan facultades a la Secretaría Particular de la persona Titular de la Secretaría de Economía.",
+    "detail_markdown": null,
+    "detail_url": "notas/498d79b881645fd6d4fb6c9e.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Acuerdo",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5790186",
+    "importance": 2,
+    "issuing_body": "Secretaría de Economía",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5790186&fecha=10/06/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5790186"
+    },
+    "official_published_at": "2026-06-10",
+    "official_title": "Acuerdo por el que se delegan facultades a la Secretaría Particular de la persona Titular de la Secretaría de Economía.",
+    "published_at": "2026-06-10",
+    "published_day": 10,
+    "published_month": 6,
+    "published_year": 2026,
+    "relevance_score": 3,
+    "review_reason": "Registro legado o contenido sin revisión editorial certificada.",
+    "source": "DOF",
+    "source_id": "5790186",
+    "subtopic_tags": [
+      "delegan facultades",
+      "titular de la secretaria"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Derecho administrativo",
+      "Acuerdo"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5790186&fecha=10/06/2026"
+  },
+  "schema_version": 8
+}

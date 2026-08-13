@@ -1,0 +1,66 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "Secretaría de Marina",
+    "canonical_url": "https://www.gob.mx/semar/prensa/anam-y-semar-aseguran-precautoriamente-posible-raiz-de-tepezcohuite-en-la-aduana-del-aicm?idiom=es",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Comercio exterior"
+    ],
+    "content_hash": "a245be5cfd5f59d1179ca94bb8f058e6ab0df9b7ddb8d63e30bfaea055783403",
+    "country_or_org": "México",
+    "description": "Como resultado de las acciones permanentes de inspección y vigilancia en las aduanas del país, personal de la Agencia Nacional de Aduanas de México (ANAM), en coordinación con elementos de la Secretaría de Marina (SEMAR), realizó el hallazgo y aseguramiento precautorio de un embarque integrado por 19 cajas que contenían aproximadamente 500 kilogramos de posible raíz de tepezcohuite, con destino a Gran Bretaña. La detección se derivó de la aplicación de procedimientos de revisión documental, inspección no intrusiva e inspección física, mediante los cuales se identificaron elementos que motivaron una revisión especializada de la mercancía. Actualmente, la mercancía permanece bajo aseguramiento precautorio en la Aduana del Aeropuerto Internacional de la Ciudad de México (AICM), conforme a los procedimientos aplicables. Con estas acciones, la ANAM refrenda su compromiso con el fortalecimiento de los controles aduaneros, la gestión de riesgos y la seguridad de las operaciones de comercio exterior.",
+    "detail_markdown": null,
+    "detail_url": "notas/9bf451fddc674c987613e0bc.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Nacional",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "gob.mx apf:c1ebbbfc2383a0bd",
+    "importance": 2,
+    "issuing_body": "Secretaría de Marina",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "official_evidence": {
+      "primary_url": "https://www.gob.mx/semar/prensa/anam-y-semar-aseguran-precautoriamente-posible-raiz-de-tepezcohuite-en-la-aduana-del-aicm?idiom=es"
+    },
+    "official_identifiers": {
+      "source_id": "c1ebbbfc2383a0bd"
+    },
+    "official_published_at": "2026-06-23",
+    "official_title": "ANAM y SEMAR aseguran precautoriamente posible raíz de tepezcohuite en la Aduana del AICM",
+    "published_at": "2026-06-23",
+    "published_day": 23,
+    "published_month": 6,
+    "published_year": 2026,
+    "relevance_score": 3,
+    "review_reason": "Registro legado o contenido sin revisión editorial certificada.",
+    "source": "Gob.mx APF",
+    "source_id": "c1ebbbfc2383a0bd",
+    "subtopic_tags": [
+      "aduana",
+      "agencia nacional de aduanas",
+      "comercio exterior"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Aduanero",
+      "Comercio exterior"
+    ],
+    "url": "https://www.gob.mx/semar/prensa/anam-y-semar-aseguran-precautoriamente-posible-raiz-de-tepezcohuite-en-la-aduana-del-aicm?idiom=es"
+  },
+  "schema_version": 8
+}

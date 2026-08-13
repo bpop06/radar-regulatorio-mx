@@ -1,0 +1,61 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793859&fecha=17%2F07%2F2026",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "0769307f8590c4cd06f4c55915be0f443a3acec240a739d677ce5dbd1085d416",
+    "country_or_org": "México",
+    "description": "Anexos 3, 9, 14, 15, 21, 22 y 29 de la Primera Resolución de Modificaciones a la Resolución Miscelánea Fiscal para 2026, publicada el 9 de julio de 2026.",
+    "detail_markdown": null,
+    "detail_url": "notas/8843363165dfddbd3179797b.html",
+    "detected_at": "2026-07-17T12:00:00+00:00",
+    "document_type": "Anexos",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-17T12:00:00+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5793859",
+    "importance": 1,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793859&fecha=17/07/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5793859"
+    },
+    "official_published_at": "2026-07-17",
+    "official_title": "Anexos 3, 9, 14, 15, 21, 22 y 29 de la Primera Resolución de Modificaciones a la Resolución Miscelánea Fiscal para 2026, publicada el 9 de julio de 2026.",
+    "published_at": "2026-07-17",
+    "published_day": 17,
+    "published_month": 7,
+    "published_year": 2026,
+    "relevance_score": 1,
+    "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
+    "source": "DOF",
+    "source_id": "5793859",
+    "subtopic_tags": [],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Resolución"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5793859&fecha=17/07/2026"
+  },
+  "schema_version": 8
+}

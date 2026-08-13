@@ -1,0 +1,65 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "Organización Mundial del Comercio",
+    "canonical_url": "https://www.wto.org/english/news_e/news26_e/acc_06jul26_442_e.htm",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Comercio exterior",
+      "Comercio internacional"
+    ],
+    "content_hash": "18959e52e6363745ff59a6839b44c2cea3bf42e19cbab098c6e5b28c0a327c47",
+    "country_or_org": "OMC",
+    "description": "A new study on the WTO accession experiences of Arab countries was launched on 6 July 2026, drawing lessons from past and ongoing accession processes of countries in the Arab region. The study is aimed at providing insights to Arab governments in the process of seeking WTO membership, examining the challenges associated with WTO accession for Arab economies and identifying approaches for advancing accession negotiations. It is co-published by the WTO Secretariat, the Islamic Development Bank, the Arab Monetary Fund and the Islamic Centre for Development of Trade.",
+    "detail_markdown": null,
+    "detail_url": "notas/d0ccf502d40c59465a3fa9cb.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Noticia",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Organismo internacional",
+    "id": "omc:822c87853b54f347",
+    "importance": 2,
+    "issuing_body": "Organización Mundial del Comercio",
+    "jurisdiction": "internacional",
+    "last_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "official_evidence": {
+      "primary_url": "https://www.wto.org/english/news_e/news26_e/acc_06jul26_442_e.htm"
+    },
+    "official_identifiers": {
+      "source_id": "822c87853b54f347"
+    },
+    "official_published_at": "2026-07-06",
+    "official_title": "New study provides insights into Arab countries' accession to the WTO",
+    "published_at": "2026-07-06",
+    "published_day": 6,
+    "published_month": 7,
+    "published_year": 2026,
+    "relevance_score": 2,
+    "review_reason": "Registro legado o contenido sin revisión editorial certificada.",
+    "source": "OMC",
+    "source_id": "822c87853b54f347",
+    "subtopic_tags": [
+      "wto"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Comercio exterior",
+      "Comercio internacional"
+    ],
+    "url": "https://www.wto.org/english/news_e/news26_e/acc_06jul26_442_e.htm"
+  },
+  "schema_version": 8
+}

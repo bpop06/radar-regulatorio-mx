@@ -1,0 +1,61 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "Secretaría de Economía",
+    "canonical_url": "https://www.snice.gob.mx/~oracle/SNICE_DOCS/AVISODISPONIBILIDAD-ACTUALIDAD_20260707-20260707.xlsx",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "4614ae08d3d43f5dcbaae1d6eb25f2e83577744dba726482223153f732b886b0",
+    "country_or_org": "México",
+    "description": "07.07.2026 Listado de empresas para el Aviso de Disponibilidad.",
+    "detail_markdown": null,
+    "detail_url": "notas/d49a73b21103741d0c7e19ce.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Actualidad",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "snice:a90a16b2e16a534e",
+    "importance": 1,
+    "issuing_body": "Secretaría de Economía",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "official_evidence": {
+      "primary_url": "https://www.snice.gob.mx/~oracle/SNICE_DOCS/AVISODISPONIBILIDAD-ACTUALIDAD_20260707-20260707.xlsx"
+    },
+    "official_identifiers": {
+      "source_id": "a90a16b2e16a534e"
+    },
+    "official_published_at": "2026-07-07",
+    "official_title": "Listado de empresas para el Aviso de Disponibilidad.",
+    "published_at": "2026-07-07",
+    "published_day": 7,
+    "published_month": 7,
+    "published_year": 2026,
+    "relevance_score": 0,
+    "review_reason": "Registro legado o contenido sin revisión editorial certificada.",
+    "source": "SNICE",
+    "source_id": "a90a16b2e16a534e",
+    "subtopic_tags": [],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Aviso"
+    ],
+    "url": "https://www.snice.gob.mx/~oracle/SNICE_DOCS/AVISODISPONIBILIDAD-ACTUALIDAD_20260707-20260707.xlsx"
+  },
+  "schema_version": 8
+}

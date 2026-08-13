@@ -1,0 +1,67 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "Tribunal Federal de Justicia Administrativa",
+    "canonical_url": "https://www.tfja.gob.mx/pdf/secretaria_general_de_acuerdos/acuerdos_sala_superior/2026/SRT_04_2026.pdf",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "42c9a79731a576e7b3c42fc10770c45b7465812b98a386bdb71f26c65938a7b8",
+    "country_or_org": "México",
+    "description": "SUSPENSIÓN DE ACTIVIDADES JURISDICCIONALES EN LA SALA REGIONAL EN TABASCO Y AUXILIAR DEL TRIBUNAL FEDERAL DE JUSTICIA ADMINISTRATIVA POR CAUSA DE FUERZA MAYOR",
+    "detail_markdown": null,
+    "detail_url": "notas/982f85c17f53bf04768464d4.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Acuerdo",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Órgano jurisdiccional",
+    "id": "tfja:249bc8c534ee42ed",
+    "importance": 3,
+    "issuing_body": "Tribunal Federal de Justicia Administrativa",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "official_evidence": {
+      "primary_url": "https://www.tfja.gob.mx/pdf/secretaria_general_de_acuerdos/acuerdos_sala_superior/2026/SRT_04_2026.pdf"
+    },
+    "official_identifiers": {
+      "source_id": "249bc8c534ee42ed"
+    },
+    "official_published_at": "2026-06-15",
+    "official_title": "Acuerdo SRT/04/2026 del TFJA. SUSPENSIÓN DE ACTIVIDADES JURISDICCIONALES EN LA SALA REGIONAL EN TABASCO Y AUXILIAR DEL TRIBUNAL FEDERAL DE JUSTICIA ADMINISTRATIVA POR CAUSA DE FUERZA MAYOR",
+    "published_at": "2026-06-15",
+    "published_day": 15,
+    "published_month": 6,
+    "published_year": 2026,
+    "relevance_score": 5,
+    "review_reason": "Registro legado o contenido sin revisión editorial certificada.",
+    "source": "TFJA",
+    "source_id": "249bc8c534ee42ed",
+    "subtopic_tags": [
+      "actividades jurisdiccionales",
+      "tribunal federal de justicia administrativa",
+      "tfja",
+      "sala regional"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Contencioso administrativo",
+      "Acuerdo"
+    ],
+    "url": "https://www.tfja.gob.mx/pdf/secretaria_general_de_acuerdos/acuerdos_sala_superior/2026/SRT_04_2026.pdf"
+  },
+  "schema_version": 8
+}

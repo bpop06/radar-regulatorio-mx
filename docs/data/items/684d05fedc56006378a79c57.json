@@ -1,0 +1,67 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "ORGANISMOS DESCONCENTRADOS O DESCENTRALIZADOS INSTITUTO MEXICANO DEL SEGURO SOCIAL",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793871&fecha=17%2F07%2F2026",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "cbba0e7679dfafdad3af2ac92af35e9f0ae41d5e69192845d59aacce6c5e2305",
+    "country_or_org": "México",
+    "description": "Aviso mediante el cual se designa al Doctor Daniel Estrada García, en su carácter de Director Médico, como el funcionario que suplirá las ausencias del Titular de la Unidad Médica de Alta Especialidad (UMAE): Hospital de Gineco Obstetricia del Centro Médico Nacional de Occidente en Guadalajara, Jalisco del Instituto Mexicano del Seguro Social, autorizándole a firmar y despachar la documentación incluyendo la suscripción de las resoluciones que debe emitir este Órgano.",
+    "detail_markdown": null,
+    "detail_url": "notas/684d05fedc56006378a79c57.html",
+    "detected_at": "2026-07-17T12:00:00+00:00",
+    "document_type": "Aviso",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-17T12:00:00+00:00",
+    "government_branch": "Organismo descentralizado",
+    "id": "dof:5793871",
+    "importance": 2,
+    "issuing_body": "Instituto Mexicano del Seguro Social",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793871&fecha=17/07/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5793871"
+    },
+    "official_published_at": "2026-07-17",
+    "official_title": "Aviso mediante el cual se designa al Doctor Daniel Estrada García, en su carácter de Director Médico, como el funcionario que suplirá las ausencias del Titular de la Unidad Médica de Alta Especialidad (UMAE): Hospital de Gineco Obstetricia del Centro Médico Nacional de Occidente en Guadalajara, Jalisco del Instituto Mexicano del Seguro Social, autorizándole a firmar y despachar la documentación incluyendo la suscripción de las resoluciones que debe emitir este Órgano.",
+    "published_at": "2026-07-17",
+    "published_day": 17,
+    "published_month": 7,
+    "published_year": 2026,
+    "relevance_score": 3,
+    "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
+    "source": "DOF",
+    "source_id": "5793871",
+    "subtopic_tags": [
+      "designa",
+      "titular de la unidad"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Derecho administrativo",
+      "Nombramientos federales",
+      "Resolución",
+      "Aviso"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5793871&fecha=17/07/2026"
+  },
+  "schema_version": 8
+}

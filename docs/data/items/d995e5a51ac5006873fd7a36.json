@@ -1,0 +1,63 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "Procuraduría Federal del Consumidor",
+    "canonical_url": "https://www.gob.mx/profeco/prensa/estudio-de-calidad-de-utiles-escolares-encuentra-alternativas-mas-accesibles?idiom=es",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración descentralizada"
+    ],
+    "content_hash": "421145239e3687f1d82f77277cded564f44b136c6fc018577184e696f6fb71de",
+    "country_or_org": "México",
+    "description": "Con el propósito de proporcionar información oportuna con sustento técnico y científico que oriente la toma de decisiones de las y los mexicanos en el regreso a clases, la Procuraduría Federal del Consumidor (Profeco), a través del Laboratorio Nacional de Protección al Consumidor (LNPC), realizó un Estudio de Calidad de algunos de los útiles escolares que integran las listas de educación básica. En total, 94 productos fueron analizados por el laboratorio de la Profeco: 17 cuadernos tamaño profesional de 90 y 100 hojas, cosidos, con espiral metálico y de plástico (6 con pastas no plastificadas y 11 con pastas plastificadas); 23 lápices de color; 15 gomas blancas para borrar; 9 juegos de geometría con regla, escuadra, transportador y compás; 16 sacapuntas y 14 bolígrafos de tinta azul oleosa de punto mediano. Como parte de las pruebas aplicadas, la Procuraduría evaluó aspectos fundamentales de desempeño, información comercial y acabados. En los cuadernos de tamaño profesional corroboró el número de hojas, su resistencia, el gramaje y repelencia al agua; en los lápices de color midió la durabilidad, resistencia de las puntillas y la eficiencia del iluminado; y en las gomas, su desgaste y eficiencia al borrado. Respecto a los bolígrafos, el LNPC verificó su calidad, rendimiento y metros lineales de escritura; en los sacapuntas revisó su funcionamiento; y en los juegos de geometría la linealidad del trazo, desempeño, graduación y exactitud. Los resultados arrojaron que los 17 cuadernos cumplieron satisfactoriamente con las pruebas y no presentaron defectos. Sin embargo, la institución hace hincapié en comparar entre varias opciones que se ofrecen en el mercado, pues es posible encontrar productos con calidad similar pero con diferencias significativas en los precios. Por ejemplo, el cuaderno tamaño profesional de 100 hojas no plastificado en el modelo “NFL” Scribe tiene un precio de $79.91pesos, mientras que el de la marca Stuk cuesta $49.72 pesos. Ambos tienen características similares y calificación de Muy Bueno en las pruebas aplicadas en el estudio. En el caso de los lápices de colores, todos los modelos evaluados presentaron su información comercial completa sin defectos en sus acabados y ocho tuvieron las puntillas más resistentes. Asimismo, el Estudio de calidad destaca que los colores de la marca Maped y Artesco , con precios de $150.00 pesos y $118.53 pesos respectivamente, tienen características semejantes. En lo que respecta a las gomas, todas aprobaron con éxito las pruebas a las que fueron sometidas y los productos evaluados de Artesco, Kores, Maped, Office Depot, OfficeMax y Staedtler destacaron por su desempeño al borrado. Por otro lado, los juegos de geometría que el laboratorio de la Profeco analizó obtuvieron la calificación de Excelente en las pruebas de escala y linealidad del trazo. No obstante, en todos los modelos detectó defectos en sus acabados, mientras que las marcas Mae y Wacky mostraron fallas en el trazo del compás. El sacapuntas de Maped tuvo atascamiento y rompimiento de la punta en la prueba de funcionamiento y los modelos Kores Snappy 35813, Kores Snappy Duo 35814 y Kum incumplieron con la NOM-050-SCFI-2004, al omitir las leyendas de advertencia en su etiquetado. Finalmente, los bolígrafos de tinta azul oleosa de punto mediano sin mecanismo retráctil cumplieron con la información comercial completa y no presentaron imperfecciones en sus acabados. En cuanto al rendimiento y costo, el paquete de 12 piezas de la marca Bic calificó con Excelente y comercializado en $51.45 pesos resulta una opción más accesible frente a la de Pentel que tiene un costo de $235.55 pesos. Ante los datos obtenidos, la Procuraduría recuerda a la población la importancia de planear las compras, organizar un presupuesto y comparar los precios de los artículos escolares de diferentes marcas y en distintos establecimientos a fin de elegir lo más adecuado a las necesidades de las y los estudiantes y obtener un ahorro para el bolsillo familiar. Consulta el Estudio de Calidad detallado en la edición 594 de la Revista del Consumidor.",
+    "detail_markdown": null,
+    "detail_url": "notas/d995e5a51ac5006873fd7a36.html",
+    "detected_at": "2026-08-13T02:36:54.429478+00:00",
+    "document_type": "Comunicado",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-08-13T02:36:54.429478+00:00",
+    "government_branch": "Organismo descentralizado",
+    "id": "gob.mx apf:9c7f27e5b8aa42d1",
+    "importance": 1,
+    "issuing_body": "Procuraduría Federal del Consumidor",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T03:50:09.071593+00:00",
+    "official_evidence": {
+      "primary_url": "https://www.gob.mx/profeco/prensa/estudio-de-calidad-de-utiles-escolares-encuentra-alternativas-mas-accesibles?idiom=es"
+    },
+    "official_identifiers": {
+      "source_id": "9c7f27e5b8aa42d1"
+    },
+    "official_published_at": "2026-08-08",
+    "official_title": "Estudio de Calidad de útiles escolares encuentra alternativas más accesibles",
+    "published_at": "2026-08-08",
+    "published_day": 8,
+    "published_month": 8,
+    "published_year": 2026,
+    "relevance_score": 1,
+    "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
+    "source": "Gob.mx APF",
+    "source_id": "9c7f27e5b8aa42d1",
+    "subtopic_tags": [
+      "nom-"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Normalización"
+    ],
+    "url": "https://www.gob.mx/profeco/prensa/estudio-de-calidad-de-utiles-escolares-encuentra-alternativas-mas-accesibles?idiom=es"
+  },
+  "schema_version": 8
+}

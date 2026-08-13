@@ -1,0 +1,61 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5794448&fecha=22%2F07%2F2026",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "45f41649214fa64f7a2e86294653f501516eaf46c1133a6b62787cbb7e47ad0d",
+    "country_or_org": "México",
+    "description": "Circular Modificatoria 4/26 de la Única de Seguros y Fianzas.",
+    "detail_markdown": null,
+    "detail_url": "notas/8781fd52a4207b3da047e9b8.html",
+    "detected_at": "2026-07-22T12:00:00+00:00",
+    "document_type": "Circular Modificatoria",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-22T12:00:00+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5794448",
+    "importance": 1,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5794448&fecha=22/07/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5794448"
+    },
+    "official_published_at": "2026-07-22",
+    "official_title": "Circular Modificatoria 4/26 de la Única de Seguros y Fianzas.",
+    "published_at": "2026-07-22",
+    "published_day": 22,
+    "published_month": 7,
+    "published_year": 2026,
+    "relevance_score": 1,
+    "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
+    "source": "DOF",
+    "source_id": "5794448",
+    "subtopic_tags": [],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Circular"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5794448&fecha=22/07/2026"
+  },
+  "schema_version": 8
+}

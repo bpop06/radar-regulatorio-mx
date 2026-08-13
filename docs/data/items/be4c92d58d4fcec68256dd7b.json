@@ -1,0 +1,72 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "PODER EJECUTIVO SECRETARIA ANTICORRUPCION Y BUEN GOBIERNO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795175&fecha=31%2F07%2F2026",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "a89c61058f60a83b1611bd0caddc3852a34a5cd32f491e6dcac896d3ff7571b2",
+    "country_or_org": "México",
+    "description": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a las empresas públicas del Estado, a las entidades federativas y sus municipios, así como a las demarcaciones territoriales de la Ciudad de México, el cumplimiento a la sentencia definitiva del diecisiete de febrero de dos mil veintiséis, dictada en el juicio de nulidad número 929/25-18-01-5, interpuesto por la representación legal de la empresa Proveedora de Equipo de Laboratorio, Curación y Medicamento Maniflosa, S.A. de C.V. en la cual la Sala Regional en Tamaulipas del Tribunal Federal de Justicia Administrativa declaró la nulidad lisa y llana de la resolución de seis de junio de dos mil veinticinco, dictada en los autos del procedimiento PISI-A-NC-DS-0062/2023.",
+    "detail_markdown": null,
+    "detail_url": "notas/be4c92d58d4fcec68256dd7b.html",
+    "detected_at": "2026-07-31T12:00:00+00:00",
+    "document_type": "Circular",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-31T12:00:00+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5795175",
+    "importance": 3,
+    "issuing_body": "Presidencia de la República",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795175&fecha=31/07/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5795175"
+    },
+    "official_published_at": "2026-07-31",
+    "official_title": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a las empresas públicas del Estado, a las entidades federativas y sus municipios, así como a las demarcaciones territoriales de la Ciudad de México, el cumplimiento a la sentencia definitiva del diecisiete de febrero de dos mil veintiséis, dictada en el juicio de nulidad número 929/25-18-01-5, interpuesto por la representación legal de la empresa Proveedora de Equipo de Laboratorio, Curación y Medicamento Maniflosa, S.A. de C.V. en la cual la Sala Regional en Tamaulipas del Tribunal Federal de Justicia Administrativa declaró la nulidad lisa y llana de la resolución de seis de junio de dos mil veinticinco, dictada en los autos del procedimiento PISI-A-NC-DS-0062/2023.",
+    "published_at": "2026-07-31",
+    "published_day": 31,
+    "published_month": 7,
+    "published_year": 2026,
+    "relevance_score": 5,
+    "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
+    "source": "DOF",
+    "source_id": "5795175",
+    "subtopic_tags": [
+      "administracion publica federal",
+      "juicio de nulidad",
+      "nulidad lisa y llana",
+      "sentencia definitiva",
+      "tribunal federal de justicia administrativa",
+      "sala regional"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Derecho administrativo",
+      "Contencioso administrativo",
+      "Resolución",
+      "Sentencia",
+      "Circular"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5795175&fecha=31/07/2026"
+  },
+  "schema_version": 8
+}

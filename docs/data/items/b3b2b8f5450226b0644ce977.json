@@ -1,0 +1,65 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "Secretaría de Economía",
+    "canonical_url": "https://www.gob.mx/se/prensa/posicion-de-mexico-ante-fallo-final-del-arbitraje-internacional-ante-el-ciadi-iniciado-por-filial-de-vulcan-materials-company?idiom=es",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Comercio internacional",
+      "Administración centralizada"
+    ],
+    "content_hash": "82d867a7ee4576cf4c50233f65a1f8ce78a6c55a09bbb53ad7bd1fd75b22b6c4",
+    "country_or_org": "México",
+    "description": "El día de hoy se emitió el fallo final del arbitraje internacional en contra de México iniciado por Vulcan Legacy LLC, filial de Vulcan Materials Company, ante el Centro Internacional de Arreglo de Diferencias relativas a Inversiones del Banco Mundial (“CIADI”). En dicho proceso, realizado al amparo del TLCAN, la empresa reclamaba que, entre enero de 2018 y 2022, diversas autoridades federales y estatales adoptaron medidas que afectaron la operación de sus proyectos en México, reaizados a través de Calizas Industriales del Carmen, S.A. de C.V. (“CALICA”). El fallo final del Tribunal Arbitral emitido el día de hoy desestimó casi todas las reclamaciones de la empresa, salvo una medida relacionada con la clausura de un predio de CALICA, ocurrida en enero de 2018. Cabe señalar que esta medida representa menos del 1% del monto original reclamado. El Gobierno de México analiza detalladamente la decisión del Tribunal Arbitral para determinar las acciones legales que se encuentren a su alcance. De igual manera, refrenda su compromiso a favor de la inversión extranjera que trae innovación, buenos salarios y protección al ambiente, así como con el respeto a las reglas y procedimientos contenidos en los tratados internacionales como elemento fundamental para brindar la certidumbre jurídica que hace posible el desarrollo económico. -ooOoo-",
+    "detail_markdown": null,
+    "detail_url": "notas/b3b2b8f5450226b0644ce977.html",
+    "detected_at": "2026-07-27T12:00:00+00:00",
+    "document_type": "Comunicado",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-27T12:00:00+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "gob.mx apf:39e9e33f205d9e32",
+    "importance": 2,
+    "issuing_body": "Secretaría de Economía",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+    "official_evidence": {
+      "primary_url": "https://www.gob.mx/se/prensa/posicion-de-mexico-ante-fallo-final-del-arbitraje-internacional-ante-el-ciadi-iniciado-por-filial-de-vulcan-materials-company?idiom=es"
+    },
+    "official_identifiers": {
+      "source_id": "39e9e33f205d9e32"
+    },
+    "official_published_at": "2026-07-27",
+    "official_title": "Posición de México ante fallo final del arbitraje internacional ante el CIADI iniciado por filial de Vulcan Materials Company",
+    "published_at": "2026-07-27",
+    "published_day": 27,
+    "published_month": 7,
+    "published_year": 2026,
+    "relevance_score": 2,
+    "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
+    "source": "Gob.mx APF",
+    "source_id": "39e9e33f205d9e32",
+    "subtopic_tags": [
+      "ciadi",
+      "banco mundial"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Comercio internacional"
+    ],
+    "url": "https://www.gob.mx/se/prensa/posicion-de-mexico-ante-fallo-final-del-arbitraje-internacional-ante-el-ciadi-iniciado-por-filial-de-vulcan-materials-company?idiom=es"
+  },
+  "schema_version": 8
+}

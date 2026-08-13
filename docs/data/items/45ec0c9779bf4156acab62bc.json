@@ -1,0 +1,66 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "Procuraduría Federal del Consumidor",
+    "canonical_url": "https://www.gob.mx/profeco/prensa/actualizacion-del-numero-de-estaciones-de-servicio-que-no-cumplen-con-el-acuerdo-voluntario-para-la-estabilizacion-del-precio-del-diesel-430688?idiom=es",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Fiscal"
+    ],
+    "content_hash": "9871cfd13327a57e0ee42958b9c73755f0dbc1815c30a730d8ce3e8f8546fa80",
+    "country_or_org": "México",
+    "description": "Actualización del número de estaciones de servicio que no cumplen con el Acuerdo Voluntario para la Estabilización del Precio del Diésel. El Gobierno de México informa que, tras el comunicado conjunto del 12 de julio, 435 estaciones de servicio se sumaron al Acuerdo Voluntario para la Estabilización del Precio del Diésel, logrando un total de 8,481 adheridas (83% del sector) al día de hoy. Con esta estrategia, el precio nacional se mantiene por debajo de $27.00 pesos por litro y, en zonas fronterizas, menor a $25.39 pesos por litro, gracias a la tasa del IVA del 8% en esas regiones. A la fecha, 1,721 estaciones continúan vendiendo este combustible a precios significativamente superiores a los observados en el mercado. Invitamos a estas estaciones a sumarse a este compromiso por el pueblo de México, que busca garantizar la estabilidad económica de quienes menos tienen. Asimismo, se mantienen vigentes, de manera coordinada, los siguientes mecanismos: Estímulos fiscales: se mantiene de forma constante la aplicación de estímulos al Impuesto Especial sobre Producción y Servicios (IEPS); Reducción de comisiones: se trabaja en coordinación con la Asociación de Bancos de México y la de Sociedades Emisoras de Vales, A.C., para disminuir las comisiones por pago con tarjetas, vales y medios electrónicos; Apoyo de Pemex: Petróleos Mexicanos respalda esta iniciativa ofertando combustibles a precios competitivos e incorporando más gasolineras a su transporte de última milla, mejorando el costo del flete desde sus Terminales de Almacenamiento y Despacho; Logística y seguridad: se refuerza continuamente la seguridad en estaciones de servicio y carreteras, y se optimizan las cadenas logísticas de suministro en todo el territorio nacional. El Gobierno de México continuará fortaleciendo la vigilancia del mercado de los combustibles, con el fin de garantizar una competencia justa y proteger el bienestar de todas y todos los mexicanos. Para conocer a detalle las estaciones que no cumplen con este compromiso, consulte el listado oficial a través del siguiente link o código QR: https://repositorio.energia.gob.mx/index.php/s/gQ4ED4mF4ByEdFw?dir=/&editing=false&openfile=true",
+    "detail_markdown": null,
+    "detail_url": "notas/45ec0c9779bf4156acab62bc.html",
+    "detected_at": "2026-07-17T12:00:00+00:00",
+    "document_type": "Comunicado",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-17T12:00:00+00:00",
+    "government_branch": "Organismo descentralizado",
+    "id": "gob.mx apf:4779a490dc330f15",
+    "importance": 3,
+    "issuing_body": "Procuraduría Federal del Consumidor",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+    "official_evidence": {
+      "primary_url": "https://www.gob.mx/profeco/prensa/actualizacion-del-numero-de-estaciones-de-servicio-que-no-cumplen-con-el-acuerdo-voluntario-para-la-estabilizacion-del-precio-del-diesel-430688?idiom=es"
+    },
+    "official_identifiers": {
+      "source_id": "4779a490dc330f15"
+    },
+    "official_published_at": "2026-07-17",
+    "official_title": "Actualización del número de estaciones de servicio que no cumplen con el Acuerdo Voluntario para la Estabilización del Precio del Diésel.",
+    "published_at": "2026-07-17",
+    "published_day": 17,
+    "published_month": 7,
+    "published_year": 2026,
+    "relevance_score": 4,
+    "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
+    "source": "Gob.mx APF",
+    "source_id": "4779a490dc330f15",
+    "subtopic_tags": [
+      "impuesto",
+      "iva",
+      "ieps"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Fiscal",
+      "Acuerdo"
+    ],
+    "url": "https://www.gob.mx/profeco/prensa/actualizacion-del-numero-de-estaciones-de-servicio-que-no-cumplen-con-el-acuerdo-voluntario-para-la-estabilizacion-del-precio-del-diesel-430688?idiom=es"
+  },
+  "schema_version": 8
+}

@@ -1,0 +1,70 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "Centro Internacional de Arreglo de Diferencias Relativas a Inversiones",
+    "canonical_url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%2F25%2F7",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "Chemical production plant",
+    "case_facts": "",
+    "case_number": "ARB/25/7",
+    "case_outcome": "",
+    "case_parties": "Draslovka Holding A.S. v. United Mexican States",
+    "case_reasoning": "",
+    "case_status": "Pending",
+    "case_treaty": "BIT Mexico - Czechia 2002",
+    "categories": [
+      "Comercio internacional"
+    ],
+    "content_hash": "e1b5ad01fc96f8d11e873ce04ac1b6f814e6dcdd0c41f2ebf84d0993da06b600",
+    "country_or_org": "CIADI",
+    "description": "Estatus del procedimiento: Pendiente. Materia: Chemical production plant. Sector económico: Other Industry. Instrumento invocado: BIT Mexico - Czechia 2002. Última actuación: February 5, 2026 - The suspension of the proceeding is extended until November 4, 2026, pursuant to the parties’ agreement.",
+    "detail_markdown": null,
+    "detail_url": "notas/8e94afe0ab9a5ba1a6b0f46f.html",
+    "detected_at": "2026-08-13T02:52:38.732709+00:00",
+    "document_type": "Caso de arbitraje de inversión",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Organismo internacional",
+    "id": "ciadi:ARB/25/7",
+    "importance": 2,
+    "issuing_body": "Centro Internacional de Arreglo de Diferencias relativas a Inversiones",
+    "jurisdiction": "internacional",
+    "last_seen_at": "2026-08-13T05:08:47.293425+00:00",
+    "official_evidence": {
+      "case_detail": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%2F25%2F7",
+      "instrument_invoked": "BIT Mexico - Czechia 2002",
+      "latest_development": "February 5, 2026 - The suspension of the proceeding is extended until November 4, 2026, pursuant to the parties’ agreement.",
+      "primary_url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%2F25%2F7",
+      "status": "Pending",
+      "subject": "Chemical production plant"
+    },
+    "official_identifiers": {
+      "case_number": "ARB/25/7",
+      "source_id": "ARB/25/7"
+    },
+    "official_published_at": "2026-02-05",
+    "official_title": "Draslovka Holding A.S. v. United Mexican States (ICSID Case No. ARB/25/7)",
+    "published_at": "2026-02-05",
+    "published_day": 5,
+    "published_month": 2,
+    "published_year": 2026,
+    "relevance_score": 3,
+    "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
+    "source": "CIADI",
+    "source_id": "ARB/25/7",
+    "subtopic_tags": [
+      "arbitraje de inversion",
+      "icsid"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Comercio internacional"
+    ],
+    "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%2F25%2F7"
+  },
+  "schema_version": 8
+}

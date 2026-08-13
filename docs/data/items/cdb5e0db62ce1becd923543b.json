@@ -1,0 +1,75 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "Centro Internacional de Arreglo de Diferencias Relativas a Inversiones",
+    "canonical_url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=UNCT%2F22%2F1",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "Mining concession",
+    "case_facts": "",
+    "case_number": "UNCT/22/1",
+    "case_outcome": "",
+    "case_parties": "Coeur Mining, Inc. v. United Mexican States",
+    "case_reasoning": "",
+    "case_status": "Pending",
+    "case_treaty": "NAFTA (North American Free Trade Agreement), USMCA (United States-Mexico-Canada Agreement)",
+    "categories": [
+      "Comercio exterior",
+      "Comercio internacional"
+    ],
+    "content_hash": "833dfb32985e7049ba6fbdd328a74ec9e1721c874107de15bab14eb3e111db94",
+    "country_or_org": "CIADI",
+    "description": "Estatus del procedimiento: Pendiente. Materia: Mining concession. Sector económico: Oil, Gas & Mining. Instrumento invocado: NAFTA (North American Free Trade Agreement), USMCA (United States-Mexico-Canada Agreement). Última actuación: April 17, 2026 - The Claimant files a response to the Respondent’s observations of April 16, 2026.",
+    "detail_markdown": null,
+    "detail_url": "notas/cdb5e0db62ce1becd923543b.html",
+    "detected_at": "2026-08-13T02:52:39.512274+00:00",
+    "document_type": "Caso de arbitraje de inversión",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Organismo internacional",
+    "id": "ciadi:UNCT/22/1",
+    "importance": 4,
+    "issuing_body": "Centro Internacional de Arreglo de Diferencias relativas a Inversiones",
+    "jurisdiction": "internacional",
+    "last_seen_at": "2026-08-13T05:08:47.293425+00:00",
+    "official_evidence": {
+      "case_detail": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=UNCT%2F22%2F1",
+      "instrument_invoked": "NAFTA (North American Free Trade Agreement), USMCA (United States-Mexico-Canada Agreement)",
+      "latest_development": "April 17, 2026 - The Claimant files a response to the Respondent’s observations of April 16, 2026.",
+      "primary_url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=UNCT%2F22%2F1",
+      "status": "Pending",
+      "subject": "Mining concession"
+    },
+    "official_identifiers": {
+      "case_number": "UNCT/22/1",
+      "source_id": "UNCT/22/1"
+    },
+    "official_published_at": "2026-04-17",
+    "official_title": "Coeur Mining, Inc. v. United Mexican States (ICSID Case No. UNCT/22/1)",
+    "published_at": "2026-04-17",
+    "published_day": 17,
+    "published_month": 4,
+    "published_year": 2026,
+    "relevance_score": 7,
+    "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
+    "source": "CIADI",
+    "source_id": "UNCT/22/1",
+    "subtopic_tags": [
+      "trade agreement",
+      "usmca",
+      "free trade",
+      "arbitraje de inversion",
+      "icsid"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Comercio exterior",
+      "Comercio internacional"
+    ],
+    "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=UNCT%2F22%2F1"
+  },
+  "schema_version": 8
+}

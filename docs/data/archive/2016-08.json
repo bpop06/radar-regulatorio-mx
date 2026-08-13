@@ -1,0 +1,45 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "items": [
+    {
+      "canonical_url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%28AF%29%2F16%2F3",
+      "case_amount": "",
+      "case_number": "ARB(AF)/16/3",
+      "case_outcome": "",
+      "case_parties": "B-Mex, LLC and others v. United Mexican States",
+      "case_reasoning": "",
+      "case_status": "Concluded",
+      "case_treaty": "NAFTA (North American Free Trade Agreement)",
+      "categories": [
+        "Comercio exterior",
+        "Comercio internacional"
+      ],
+      "content_hash": "c700b808610cdf7a8a1f88813ae2badbc6034b80fe3b0a001df779815d536291",
+      "country_or_org": "CIADI",
+      "detail_url": "notas/ae43d91295a778b609ad0cfb.html",
+      "detected_at": "2026-08-13T02:52:42.559608+00:00",
+      "document_type": "Caso de arbitraje de inversión",
+      "editorial_status": "needs_review",
+      "first_seen_at": "2026-08-13T02:52:42.559608+00:00",
+      "id": "ciadi:ARB(AF)/16/3",
+      "importance": 4,
+      "issuing_body": "Centro Internacional de Arreglo de Diferencias relativas a Inversiones",
+      "jurisdiction": "internacional",
+      "last_seen_at": "2026-08-13T05:08:47.293425+00:00",
+      "official_published_at": "2016-08-11",
+      "official_title": "B-Mex, LLC and others v. United Mexican States (ICSID Case No. ARB(AF)/16/3)",
+      "published_at": "2016-08-11",
+      "relevance_score": 6,
+      "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
+      "source": "CIADI",
+      "source_id": "ARB(AF)/16/3",
+      "summary": null,
+      "summary_teaser": null,
+      "title": null,
+      "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%28AF%29%2F16%2F3"
+    }
+  ],
+  "month": "2016-08",
+  "schema_version": 8,
+  "total_items": 1
+}

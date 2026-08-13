@@ -1,0 +1,59 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795599&fecha=06%2F08%2F2026",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "6597b03316627875710a4dfea9d5ef163f592ba206f701c5e7b173e70eb5e9c8",
+    "country_or_org": "México",
+    "description": "Lista de las Sociedades Financieras Populares que participan en el Fondo de Protección de Sociedades Financieras Populares y de Protección a sus Ahorradores.",
+    "detail_markdown": null,
+    "detail_url": "notas/8373fd38656930217dd3c7e5.html",
+    "detected_at": "2026-08-06T12:00:00+00:00",
+    "document_type": "Lista De Las",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-08-06T12:00:00+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5795599",
+    "importance": 1,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795599&fecha=06/08/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5795599"
+    },
+    "official_published_at": "2026-08-06",
+    "official_title": "Lista de las Sociedades Financieras Populares que participan en el Fondo de Protección de Sociedades Financieras Populares y de Protección a sus Ahorradores.",
+    "published_at": "2026-08-06",
+    "published_day": 6,
+    "published_month": 8,
+    "published_year": 2026,
+    "relevance_score": 1,
+    "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
+    "source": "DOF",
+    "source_id": "5795599",
+    "subtopic_tags": [],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5795599&fecha=06/08/2026"
+  },
+  "schema_version": 8
+}

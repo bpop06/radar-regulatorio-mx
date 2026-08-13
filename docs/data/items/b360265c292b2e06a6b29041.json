@@ -1,0 +1,65 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "Instituto Mexicano de la Propiedad Industrial",
+    "canonical_url": "https://www.gob.mx/impi/prensa/el-impi-impulsa-acciones-contra-la-pirateria-y-el-streaming-ilegal-en-el-marco-de-la-copa-mundial-fifa-2026?idiom=es",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración descentralizada"
+    ],
+    "content_hash": "06c544c329742c7bca11f3fdd6472261895174ef104a8f05c2fe1e99d3ecebb3",
+    "country_or_org": "México",
+    "description": "• Se desplegaron 15 brigadas con recorridos preventivos en las inmediaciones del Estadio Ciudad de México • Se promovió la suspensión de 57 sitios de streaming ilegal de contenidos protegidos El Operativo Mundial, encabezado por el director general del IMPI, Vidal Llerenas, desplegó personal conformado por 15 brigadas integradas por parejas de verificadores (30 elementos), quienes realizaron recorridos preventivos en las inmediaciones del Estadio Ciudad de México. Durante estas acciones se identificaron puntos de venta de productos no oficiales, se brindó orientación a comerciantes sobre el cumplimiento de la normativa aplicable, se distribuyó material informativo y se registraron incidencias relevantes para la planeación de acciones posteriores. Asimismo, se detectaron prácticas como el almacenamiento y comercialización de mercancía relacionada con el evento mundialista en cocheras de domicilios y cajuelas de vehículos en zonas aledañas al estadio. Estas situaciones fueron debidamente documentadas para su seguimiento, privilegiando en todo momento las labores de orientación y prevención. En el ámbito digital, se promovieron acciones para la suspensión, bloqueo y remoción de 57 direcciones URL presuntamente utilizadas para la retransmisión no autorizada de contenidos protegidos. Estas acciones se llevaron a cabo en coordinación con proveedores de servicios de Internet, con el objetivo de fortalecer el combate a la piratería digital y salvaguardar los derechos de propiedad intelectual. Asimismo, el IMPI reconoce la colaboración institucional y la coordinación con los titulares de derechos vinculados al evento, quienes han manifestado su respaldo a las acciones implementadas. En este sentido, el director general del Instituto, informó que, por instrucciones del secretario de Economia del Gobierno de México, Marcelo Ebrard, se continuará con estas labores durante el desarrollo del Mundial, reforzando las estrategias de prevención y protección de los derechos de propiedad intelectual. El IMPI reafirma su compromiso con la legalidad, la protección de los derechos de propiedad intelectual y la promoción de un entorno de competencia leal, contribuyendo a que este evento internacional se desarrolle en un marco de respeto, certeza y cumplimiento normativo.",
+    "detail_markdown": null,
+    "detail_url": "notas/b360265c292b2e06a6b29041.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Comunicado",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Organismo descentralizado",
+    "id": "gob.mx apf:4fc9878dbf8dd432",
+    "importance": 2,
+    "issuing_body": "Instituto Mexicano de la Propiedad Industrial",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "official_evidence": {
+      "primary_url": "https://www.gob.mx/impi/prensa/el-impi-impulsa-acciones-contra-la-pirateria-y-el-streaming-ilegal-en-el-marco-de-la-copa-mundial-fifa-2026?idiom=es"
+    },
+    "official_identifiers": {
+      "source_id": "4fc9878dbf8dd432"
+    },
+    "official_published_at": "2026-06-14",
+    "official_title": "El IMPI impulsa acciones contra la piratería y el streaming ilegal en el marco de la Copa Mundial FIFA 2026",
+    "published_at": "2026-06-14",
+    "published_day": 14,
+    "published_month": 6,
+    "published_year": 2026,
+    "relevance_score": 3,
+    "review_reason": "Registro legado o contenido sin revisión editorial certificada.",
+    "source": "Gob.mx APF",
+    "source_id": "4fc9878dbf8dd432",
+    "subtopic_tags": [
+      "propiedad intelectual",
+      "impi",
+      "pirateria"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Propiedad intelectual"
+    ],
+    "url": "https://www.gob.mx/impi/prensa/el-impi-impulsa-acciones-contra-la-pirateria-y-el-streaming-ilegal-en-el-marco-de-la-copa-mundial-fifa-2026?idiom=es"
+  },
+  "schema_version": 8
+}

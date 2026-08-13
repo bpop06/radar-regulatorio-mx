@@ -1,0 +1,61 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5794757&fecha=27%2F07%2F2026",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "637cce3fb2dcf03506fd221a9555ad369a5db9a7cf566e7a91616fb5a64e9c19",
+    "country_or_org": "México",
+    "description": "Acuerdo por el cual se da a conocer el informe sobre la recaudación federal participable y las participaciones federales, así como los procedimientos de cálculo, por el mes de junio de 2026 y por el ajuste de participaciones del primer cuatrimestre de 2026.",
+    "detail_markdown": null,
+    "detail_url": "notas/8ae5264d945461edb376c7f2.html",
+    "detected_at": "2026-07-27T12:00:00+00:00",
+    "document_type": "Acuerdo",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-27T12:00:00+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5794757",
+    "importance": 1,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5794757&fecha=27/07/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5794757"
+    },
+    "official_published_at": "2026-07-27",
+    "official_title": "Acuerdo por el cual se da a conocer el informe sobre la recaudación federal participable y las participaciones federales, así como los procedimientos de cálculo, por el mes de junio de 2026 y por el ajuste de participaciones del primer cuatrimestre de 2026.",
+    "published_at": "2026-07-27",
+    "published_day": 27,
+    "published_month": 7,
+    "published_year": 2026,
+    "relevance_score": 1,
+    "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
+    "source": "DOF",
+    "source_id": "5794757",
+    "subtopic_tags": [],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Acuerdo"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5794757&fecha=27/07/2026"
+  },
+  "schema_version": 8
+}

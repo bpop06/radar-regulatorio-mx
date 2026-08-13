@@ -1,0 +1,64 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "Instituto Mexicano de la Propiedad Industrial",
+    "canonical_url": "https://www.gob.mx/impi/prensa/impi-asegura-mas-de-2-mil-gorras-apocrifas-de-la-marca-new-era-en-el-mercado-de-san-juan-de-dios-en-guadalajara?idiom=es",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración descentralizada"
+    ],
+    "content_hash": "71929b5d273500e60ec0839057e5bb9137442ad82df9e3721749b71f6aaa4e41",
+    "country_or_org": "México",
+    "description": "IMPI asegura más de 2 mil gorras apócrifas de la marca New Era en el mercado de San Juan de Dios en Guadalajara",
+    "detail_markdown": null,
+    "detail_url": "notas/583d812bfd93ea1189b4930d.html",
+    "detected_at": "2026-08-13T02:36:54.429478+00:00",
+    "document_type": "Comunicado",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-08-13T02:36:54.429478+00:00",
+    "government_branch": "Organismo descentralizado",
+    "id": "impi:53c004569a3b5936",
+    "importance": 1,
+    "issuing_body": "Instituto Mexicano de la Propiedad Industrial",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T03:50:09.071593+00:00",
+    "official_evidence": {
+      "official_notice": "https://www.gob.mx/impi/prensa/impi-asegura-mas-de-2-mil-gorras-apocrifas-de-la-marca-new-era-en-el-mercado-de-san-juan-de-dios-en-guadalajara?idiom=es",
+      "primary_url": "https://www.gob.mx/impi/prensa/impi-asegura-mas-de-2-mil-gorras-apocrifas-de-la-marca-new-era-en-el-mercado-de-san-juan-de-dios-en-guadalajara?idiom=es"
+    },
+    "official_identifiers": {
+      "source_id": "53c004569a3b5936"
+    },
+    "official_published_at": "2026-07-29",
+    "official_title": "IMPI asegura más de 2 mil gorras apócrifas de la marca New Era en el mercado de San Juan de Dios en Guadalajara",
+    "published_at": "2026-07-29",
+    "published_day": 29,
+    "published_month": 7,
+    "published_year": 2026,
+    "relevance_score": 1,
+    "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
+    "source": "IMPI",
+    "source_id": "53c004569a3b5936",
+    "subtopic_tags": [
+      "impi"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Propiedad intelectual"
+    ],
+    "url": "https://www.gob.mx/impi/prensa/impi-asegura-mas-de-2-mil-gorras-apocrifas-de-la-marca-new-era-en-el-mercado-de-san-juan-de-dios-en-guadalajara?idiom=es"
+  },
+  "schema_version": 8
+}

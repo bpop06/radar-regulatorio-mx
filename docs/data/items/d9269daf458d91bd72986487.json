@@ -1,0 +1,74 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "Centro Internacional de Arreglo de Diferencias Relativas a Inversiones",
+    "canonical_url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%2F23%2F24",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "Mining concession",
+    "case_facts": "",
+    "case_number": "ARB/23/24",
+    "case_outcome": "",
+    "case_parties": "Silver Bull Resources, Inc. v. United Mexican States",
+    "case_reasoning": "",
+    "case_status": "Concluded",
+    "case_treaty": "NAFTA (North American Free Trade Agreement), USMCA (United States-Mexico-Canada Agreement)",
+    "categories": [
+      "Comercio exterior",
+      "Comercio internacional"
+    ],
+    "content_hash": "172338714971bce828edbe2882a263edae918574612c8d7d2b89b8b7bff03b86",
+    "country_or_org": "CIADI",
+    "description": "Estatus del procedimiento: Concluido. Materia: Mining concession. Sector económico: Oil, Gas & Mining. Instrumento invocado: NAFTA (North American Free Trade Agreement), USMCA (United States-Mexico-Canada Agreement).",
+    "detail_markdown": null,
+    "detail_url": "notas/d9269daf458d91bd72986487.html",
+    "detected_at": "2026-08-13T02:52:40.131908+00:00",
+    "document_type": "Caso de arbitraje de inversión",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-08-13T02:52:40.131908+00:00",
+    "government_branch": "Organismo internacional",
+    "id": "ciadi:ARB/23/24",
+    "importance": 4,
+    "issuing_body": "Centro Internacional de Arreglo de Diferencias relativas a Inversiones",
+    "jurisdiction": "internacional",
+    "last_seen_at": "2026-08-13T05:08:47.293425+00:00",
+    "official_evidence": {
+      "case_detail": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%2F23%2F24",
+      "instrument_invoked": "NAFTA (North American Free Trade Agreement), USMCA (United States-Mexico-Canada Agreement)",
+      "primary_url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%2F23%2F24",
+      "status": "Concluded",
+      "subject": "Mining concession"
+    },
+    "official_identifiers": {
+      "case_number": "ARB/23/24",
+      "source_id": "ARB/23/24"
+    },
+    "official_published_at": "2023-07-20",
+    "official_title": "Silver Bull Resources, Inc. v. United Mexican States (ICSID Case No. ARB/23/24)",
+    "published_at": "2023-07-20",
+    "published_day": 20,
+    "published_month": 7,
+    "published_year": 2023,
+    "relevance_score": 7,
+    "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
+    "source": "CIADI",
+    "source_id": "ARB/23/24",
+    "subtopic_tags": [
+      "trade agreement",
+      "usmca",
+      "free trade",
+      "arbitraje de inversion",
+      "icsid"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Comercio exterior",
+      "Comercio internacional"
+    ],
+    "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%2F23%2F24"
+  },
+  "schema_version": 8
+}

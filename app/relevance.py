@@ -14,7 +14,6 @@ CATEGORY_TERMS: dict[str, tuple[str, ...]] = {
         "iva",
         "isr",
         "ieps",
-        "sat",
         "prodecon",
         "credito fiscal",
         "ejecucion fiscal",
@@ -70,7 +69,12 @@ CATEGORY_TERMS: dict[str, tuple[str, ...]] = {
         "propiedad industrial",
         "impi",
         "patente",
-        "marca",
+        "marca registrada",
+        "marcas registradas",
+        "registro de marca",
+        "registro de marcas",
+        "solicitud de marca",
+        "solicitud de registro de marca",
         "derecho de autor",
         "pirateria",
         "signos distintivos",
@@ -93,13 +97,13 @@ CATEGORY_TERMS: dict[str, tuple[str, ...]] = {
         "evaluacion de la conformidad",
     ),
     "Iniciativa": (
-        "iniciativa",
+        "iniciativa de ley",
+        "iniciativa legislativa",
+        "iniciativa parlamentaria",
+        "iniciativa con proyecto",
         "proyecto de decreto",
-        "reforma",
-        "adiciona",
-        "deroga",
-        "dictamen",
-        "minuta",
+        "dictamen legislativo",
+        "minuta legislativa",
     ),
     "Penal": (
         "delito",
@@ -173,6 +177,50 @@ CATEGORY_TERMS: dict[str, tuple[str, ...]] = {
         "arbitral tribunal",
     ),
 }
+
+LEGISLATIVE_SOURCES = {"Senado", "Diputados"}
+
+LEGISLATIVE_AUTHORITY_TERMS = (
+    "camara de diputados",
+    "camara de senadores",
+    "congreso de la union",
+    "senado de la republica",
+    "comision legislativa",
+)
+
+LEGISLATIVE_ACTION_PATTERNS = (
+    # Fórmulas oficiales frecuentes en iniciativas, minutas y decretos. El
+    # objeto jurídico evita que una dirección como "Reforma Ote." cuente.
+    re.compile(
+        r"\b(?:reforma|reforman|reformar|adiciona|adicionan|adicionar|deroga|"
+        r"derogan|derogar)\b.{0,80}\b(?:ley|codigo|constitucion|reglamento|"
+        r"decreto|articulo|articulos|disposicion|disposiciones)\b"
+    ),
+    re.compile(
+        r"\b(?:ley|codigo|constitucion|reglamento|decreto|articulo|articulos|"
+        r"disposicion|disposiciones)\b.{0,80}\b(?:se )?(?:reforma|reforman|"
+        r"adiciona|adicionan|deroga|derogan)\b"
+    ),
+)
+
+LEGISLATIVE_DOCUMENT_TERMS = (
+    "iniciativa",
+    "proyecto de decreto",
+    "dictamen",
+    "minuta",
+)
+
+LEGISLATIVE_CONTEXT_TERMS = (
+    "iniciativa",
+    "proyecto de decreto",
+    "minuta",
+    "comision legislativa",
+    "comision dictaminadora",
+    "camara de diputados",
+    "camara de senadores",
+    "congreso de la union",
+    "senado de la republica",
+)
 
 # Autoridades cuyo material siempre es relevante para el radar, aunque el
 # clasificador no le asigne materia ni score alto (enrich les da como materia
@@ -361,15 +409,14 @@ BONUS_SOURCES = {
 
 
 def classify(candidate: Candidate) -> ClassifiedCandidate:
-    text = normalized(
-        " ".join(
-            (
-                candidate.official_title,
-                candidate.description,
-                candidate.document_type,
-            )
+    source_text = " ".join(
+        (
+            candidate.official_title,
+            candidate.description,
+            candidate.document_type,
         )
     )
+    text = normalized(source_text)
     categories: list[str] = []
     matches: list[str] = []
 
@@ -378,6 +425,21 @@ def classify(candidate: Candidate) -> ClassifiedCandidate:
         if category_matches:
             categories.append(category)
             matches.extend(category_matches)
+
+    legislative_matches = _legislative_matches(candidate, text)
+    if legislative_matches and "Iniciativa" not in categories:
+        categories.append("Iniciativa")
+        matches.extend(legislative_matches)
+
+    # SAT es un acrónimo oficial sensible a mayúsculas. Tratarlo después de
+    # normalizar el texto confundía la abreviatura inglesa de sábado en
+    # metadatos como ``Date Sat, 09/05/2026`` con el organismo fiscal mexicano.
+    # Exigir la grafía ``SAT`` conserva publicaciones fiscales reales y evita
+    # que vacantes internacionales reciban materia y pasen por el bono de fuente.
+    if re.search(r"(?<!\w)SAT(?!\w)", source_text):
+        if "Fiscal" not in categories:
+            categories.append("Fiscal")
+        matches.append("sat")
 
     administrative_matches = _matching_terms(text, ADMINISTRATIVE_LAW_TERMS)
     appointment_actions = _matching_terms(text, APPOINTMENT_ACTION_TERMS)
@@ -429,6 +491,55 @@ def classify(candidate: Candidate) -> ClassifiedCandidate:
 
 def _matching_terms(text: str, terms: tuple[str, ...]) -> list[str]:
     return [term for term in terms if _contains_term(text, term)]
+
+
+def _legislative_matches(candidate: Candidate, text: str) -> list[str]:
+    """Detecta actos legislativos sin convertir lenguaje ordinario en ley.
+
+    ``iniciativa``, ``dictamen``, ``reforma`` y ``minuta`` son polisémicos.
+    Fuera de una fuente o autoridad legislativa sólo cuentan las fórmulas que
+    identifican expresamente un instrumento o una modificación normativa.
+    """
+
+    document_type = normalized(candidate.document_type)
+    authority = normalized(candidate.authority)
+    legislative_origin = candidate.source in LEGISLATIVE_SOURCES or any(
+        _contains_term(authority, term) for term in LEGISLATIVE_AUTHORITY_TERMS
+    )
+
+    document_matches = _matching_terms(document_type, LEGISLATIVE_DOCUMENT_TERMS)
+    if document_matches:
+        return document_matches
+
+    instrument_matches = _matching_terms(
+        text,
+        (
+            "iniciativa de ley",
+            "iniciativa legislativa",
+            "iniciativa parlamentaria",
+            "iniciativa con proyecto",
+            "proyecto de decreto",
+            "dictamen legislativo",
+            "minuta legislativa",
+        ),
+    )
+    if instrument_matches:
+        return instrument_matches
+
+    if any(pattern.search(text) for pattern in LEGISLATIVE_ACTION_PATTERNS):
+        return ["reforma normativa"]
+
+    if legislative_origin:
+        contextual_matches = _matching_terms(text, LEGISLATIVE_CONTEXT_TERMS)
+        if contextual_matches:
+            return contextual_matches
+
+        # En los canales oficiales de las Cámaras, el documento denominado
+        # dictamen pertenece por definición al proceso legislativo.
+        if _contains_term(text, "dictamen"):
+            return ["dictamen"]
+
+    return []
 
 
 def _has_term_proximity(

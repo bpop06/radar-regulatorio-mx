@@ -1,0 +1,64 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "Oficina del Representante Comercial de Estados Unidos (USTR)",
+    "canonical_url": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/june/united-states-and-uzbekistan-announce-early-harvest-trade-accelerate-agreement-reciprocal-trade-and",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Comercio exterior"
+    ],
+    "content_hash": "53167abc427671193821b74f40cd76c0a75ec387e9053495e91ecb2c2c2cac1e",
+    "country_or_org": "EEUU",
+    "description": "The United States and Uzbekistan Announce Early Harvest on Trade, Accelerate Agreement on Reciprocal Trade and Investment Talks myarbrough Thu, 06/25/2026 - 13:27 TASHKENT – Today, as part of the visit of Ambassador Jamieson Greer to Uzbekistan, the United States and Uzbekistan have agreed to an early harvest of trade commitments to strengthen the bilateral economic and investment relationship and ensure reciprocity, balance, and resilience in bilateral trade. Both countries also agreed to accelerate talks towards the swift conclusion of an Agreement on Reciprocal Trade and Investment. These announcements build on meetings between President Donald J. Trump and President Shavkat Mirziyoyev in 2025, and reaffirm both countries’ longstanding commitment to strengthening their strategic and economic partnership. This early harvest on trade and investment includes: Uzbekistan commits to eliminate or reduce tariffs on a wide range of U.S. industrial goods and agricultural products. The United States commits to provide favorable consideration in tariff actions for Uzbekistan industrial goods and agricultural products, to the extent appropriate and consistent with U.S. law. The United States and Uzbekistan also agree to strengthen investment cooperation and explore pathways for promoting and facilitating bilateral investments. The United States and Uzbekistan will accelerate negotiations towards an Agreement on Reciprocal Trade and Investment. These announcements represent further significant progress in the bilateral trade relationship since the announcement of $32 billion in bilateral commercial deals by President Trump and President Mirziyoyev last year, including an $8.5 billion deal with Boeing as well as purchases and investments in strategic sectors such as critical minerals, mining, energy, finance, and information technology. The United States strongly supports Uzbekistan in its World Trade Organization accession process and recognizes the substantial progress it has made thus far. The United States and Uzbekistan will memorialize this early harvest in the coming weeks. ###",
+    "detail_markdown": null,
+    "detail_url": "notas/d35858773e9f57546a2435f3.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Comunicado",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Gobierno de EEUU",
+    "id": "ustr:39a52ef5c710cb04",
+    "importance": 2,
+    "issuing_body": "Oficina del Representante Comercial de EEUU",
+    "jurisdiction": "internacional",
+    "last_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "official_evidence": {
+      "primary_url": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/june/united-states-and-uzbekistan-announce-early-harvest-trade-accelerate-agreement-reciprocal-trade-and"
+    },
+    "official_identifiers": {
+      "source_id": "39a52ef5c710cb04"
+    },
+    "official_published_at": "2026-06-25",
+    "official_title": "The United States and Uzbekistan Announce Early Harvest on Trade, Accelerate Agreement on Reciprocal Trade and Investment Talks",
+    "published_at": "2026-06-25",
+    "published_day": 25,
+    "published_month": 6,
+    "published_year": 2026,
+    "relevance_score": 3,
+    "review_reason": "Registro legado o contenido sin revisión editorial certificada.",
+    "source": "USTR",
+    "source_id": "39a52ef5c710cb04",
+    "subtopic_tags": [
+      "tariff",
+      "tariffs"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Comercio exterior"
+    ],
+    "url": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/june/united-states-and-uzbekistan-announce-early-harvest-trade-accelerate-agreement-reciprocal-trade-and"
+  },
+  "schema_version": 8
+}

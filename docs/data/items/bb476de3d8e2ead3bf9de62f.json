@@ -1,0 +1,65 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "item": {
+    "ai_generated": false,
+    "authority": "PODER EJECUTIVO SECRETARIA DE ECONOMIA",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5794527&fecha=23%2F07%2F2026",
+    "card_body": null,
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Comercio exterior",
+      "Administración centralizada"
+    ],
+    "content_hash": "9561687322a843e7cb0de94c9e4fa445ff2ced1908b5ea8cad2d5ea2bdb012f2",
+    "country_or_org": "México",
+    "description": "Resolución por la que se declara el inicio del procedimiento administrativo de examen de vigencia de la cuota compensatoria impuesta a las importaciones de alambrón de acero originarias de la República Popular China, independientemente del país de procedencia.",
+    "detail_markdown": null,
+    "detail_url": "notas/bb476de3d8e2ead3bf9de62f.html",
+    "detected_at": "2026-07-23T12:00:00+00:00",
+    "document_type": "Resolución",
+    "editorial_status": "needs_review",
+    "first_seen_at": "2026-07-23T12:00:00+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5794527",
+    "importance": 2,
+    "issuing_body": "Secretaría de Economía",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5794527&fecha=23/07/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5794527"
+    },
+    "official_published_at": "2026-07-23",
+    "official_title": "Resolución por la que se declara el inicio del procedimiento administrativo de examen de vigencia de la cuota compensatoria impuesta a las importaciones de alambrón de acero originarias de la República Popular China, independientemente del país de procedencia.",
+    "published_at": "2026-07-23",
+    "published_day": 23,
+    "published_month": 7,
+    "published_year": 2026,
+    "relevance_score": 3,
+    "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
+    "source": "DOF",
+    "source_id": "5794527",
+    "subtopic_tags": [
+      "cuota compensatoria"
+    ],
+    "summary": null,
+    "summary_teaser": null,
+    "title": null,
+    "topic_tags": [
+      "Comercio exterior",
+      "Resolución"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5794527&fecha=23/07/2026"
+  },
+  "schema_version": 8
+}

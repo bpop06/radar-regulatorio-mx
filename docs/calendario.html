@@ -4,9 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Calendarios de días hábiles, inhábiles, vacaciones y guardias por órgano federal.">
-    <title>Calendario | Radar Regulatorio MX</title>
-    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#F6F5F1">
-    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#101827">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Radar Regulatorio MX">
+    <meta property="og:title" content="Calendario operativo · Radar Regulatorio MX">
+    <meta property="og:description" content="Consulta días hábiles, suspensiones, vacaciones y guardias por autoridad, con evidencia oficial.">
+    <title>Calendario operativo · Radar Regulatorio MX</title>
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#F4EDDD">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#152630">
     <script>
       (function () {
         document.documentElement.classList.add("js");
@@ -30,12 +34,12 @@
           <span class="brand-copy"><strong>Radar MX</strong><small>Inteligencia regulatoria</small></span>
         </a>
         <div class="nav-actions">
-          <div class="nav-links" data-liquid-group>
-            <a class="nav-link" data-page="today" href="index.html"><span data-icon="today" aria-hidden="true"></span><span>Hoy</span></a>
-            <a class="nav-link" data-page="archive" href="archivo.html"><span data-icon="archive" aria-hidden="true"></span><span>Archivo</span></a>
-            <a class="nav-link" data-page="calendar" href="calendario.html"><span data-icon="calendar" aria-hidden="true"></span><span>Calendario</span></a>
+          <div class="nav-links">
+            <a class="nav-link" data-page="today" href="index.html">Hoy</a>
+            <a class="nav-link" data-page="archive" href="archivo.html">Archivo</a>
+            <a class="nav-link" data-page="calendar" href="calendario.html">Calendario</a>
           </div>
-          <button id="theme-toggle" class="theme-toggle pressable" type="button" aria-label="Cambiar a tema oscuro"><span class="theme-icon-stack" aria-hidden="true"><span class="theme-icon theme-icon-moon" data-icon="moon"></span><span class="theme-icon theme-icon-sun" data-icon="sun"></span></span></button>
+          <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Cambiar tema"><span class="theme-glyph" aria-hidden="true">◐</span></button>
         </div>
       </nav>
     </header>
@@ -45,7 +49,6 @@
         <div>
           <p class="page-context">Cómputo de plazos</p>
           <h1>Calendario operativo</h1>
-          <p class="dataset-dates"><span data-icon="refresh" aria-hidden="true"></span><span>Actualizado <time id="calendar-updated">—</time></span></p>
         </div>
         <div class="calendar-reading">
           <span id="reading-label">Días hábiles restantes</span>
@@ -60,24 +63,26 @@
             <h2>Autoridad</h2>
           </div>
           <div class="organ-chips" id="organ-chips" role="tablist" aria-label="Seleccionar órgano">
+            <span class="filter-indicator" aria-hidden="true"></span>
           </div>
           <label class="organ-select-label" for="organ-select">Órgano</label>
           <select class="organ-select" id="organ-select"></select>
         </aside>
 
-        <div class="calendar-stage" id="organ-calendar-panel" role="tabpanel" aria-label="Calendario del órgano seleccionado">
+        <div class="calendar-stage" id="calendar-panel" role="tabpanel" tabindex="-1">
           <header class="organ-subhead" id="organ-subhead"></header>
           <div class="cal-layout">
             <section class="month-stage" aria-label="Calendario mensual">
               <div class="month-controls">
-                <button class="month-btn pressable" id="cal-prev" type="button" aria-label="Mes anterior"><span data-icon="chevron-back" aria-hidden="true"></span></button>
-                <time class="month-label" id="cal-month-label" aria-live="polite">—</time>
-                <button class="month-btn pressable" id="cal-next" type="button" aria-label="Mes siguiente"><span data-icon="chevron-forward" aria-hidden="true"></span></button>
-                <button class="today-btn pressable" id="cal-today" type="button"><span data-icon="calendar" aria-hidden="true"></span><span>Ir a hoy</span></button>
+                <button class="month-btn" id="cal-prev" type="button" aria-label="Mes anterior">←</button>
+                <span class="month-label" id="cal-month-label" aria-live="polite">—</span>
+                <button class="month-btn" id="cal-next" type="button" aria-label="Mes siguiente">→</button>
+                <button class="today-btn" id="cal-today" type="button">Hoy</button>
               </div>
               <div class="cal-wrap">
                 <div class="cal-dow" aria-hidden="true"><span>Lun</span><span>Mar</span><span>Mié</span><span>Jue</span><span>Vie</span><span>Sáb</span><span>Dom</span></div>
                 <div class="cal-grid" id="cal-grid" role="grid" aria-label="Días del mes"></div>
+                <span class="cal-sweep" id="cal-sweep" aria-hidden="true"></span>
               </div>
               <div class="cal-legend" id="cal-legend">
                 <span class="legend-item" data-hl="habil"><span class="legend-swatch habil"></span> Hábil</span>
@@ -85,22 +90,20 @@
                 <span class="legend-item" data-hl="vacaciones"><span class="legend-swatch vacaciones"></span> Vacaciones</span>
                 <span class="legend-item"><span class="legend-swatch guardia"><span class="legend-dot" aria-hidden="true"></span></span> Guardia</span>
                 <span class="legend-item"><span class="legend-swatch today"></span> Hoy</span>
-                <a class="legend-guide-link" href="guardias.html"><span data-icon="book" aria-hidden="true"></span><span>Guía de guardias y plazos</span><span data-icon="arrow-forward" aria-hidden="true"></span></a>
+                <a class="legend-guide-link" href="guardias.html">Guía de guardias y plazos →</a>
               </div>
             </section>
 
-            <aside class="day-panel empty" id="day-panel">
-              <div class="day-panel-content" id="day-panel-content">
-                <p class="dp-empty">Selecciona un día para consultar su cómputo, motivo y fuente.</p>
-              </div>
-              <p class="sr-only calendar-status" id="calendar-status" role="status"></p>
-            </aside>
+            <dialog class="day-panel empty" id="day-panel" open aria-labelledby="day-panel-heading">
+              <h2 id="day-panel-heading" class="sr-only">Detalle del día</h2>
+              <button class="dp-close" id="dp-close" type="button" aria-label="Cerrar detalle">×</button>
+              <p class="dp-empty">Selecciona un día para consultar su cómputo, motivo y fuente.</p>
+            </dialog>
           </div>
         </div>
       </section>
     </main>
 
-    <div class="day-scrim" id="day-scrim" aria-hidden="true"></div>
     <footer class="site-footer">
       <div class="shell footer-inner">
         <p><strong>Radar Regulatorio MX</strong><br>Calendarios con evidencia oficial.</p>

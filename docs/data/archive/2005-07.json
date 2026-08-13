@@ -1,0 +1,45 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "items": [
+    {
+      "canonical_url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%28AF%29%2F05%2F1",
+      "case_amount": "",
+      "case_number": "ARB(AF)/05/1",
+      "case_outcome": "",
+      "case_parties": "Bayview Irrigation District and others v. United Mexican States",
+      "case_reasoning": "",
+      "case_status": "Concluded",
+      "case_treaty": "NAFTA (North American Free Trade Agreement)",
+      "categories": [
+        "Comercio exterior",
+        "Comercio internacional"
+      ],
+      "content_hash": "e833347bb5a0ba9c29111cb96cc2b50cfd00116ee5a055fe8a7984860569105c",
+      "country_or_org": "CIADI",
+      "detail_url": "notas/4f374a119d05c14b2132a02b.html",
+      "detected_at": "2026-08-13T02:52:43.173506+00:00",
+      "document_type": "Caso de arbitraje de inversión",
+      "editorial_status": "needs_review",
+      "first_seen_at": "2026-08-13T02:52:43.173506+00:00",
+      "id": "ciadi:ARB(AF)/05/1",
+      "importance": 4,
+      "issuing_body": "Centro Internacional de Arreglo de Diferencias relativas a Inversiones",
+      "jurisdiction": "internacional",
+      "last_seen_at": "2026-08-13T05:08:47.293425+00:00",
+      "official_published_at": "2005-07-01",
+      "official_title": "Bayview Irrigation District and others v. United Mexican States (ICSID Case No. ARB(AF)/05/1)",
+      "published_at": "2005-07-01",
+      "relevance_score": 6,
+      "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
+      "source": "CIADI",
+      "source_id": "ARB(AF)/05/1",
+      "summary": null,
+      "summary_teaser": null,
+      "title": null,
+      "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%28AF%29%2F05%2F1"
+    }
+  ],
+  "month": "2005-07",
+  "schema_version": 8,
+  "total_items": 1
+}

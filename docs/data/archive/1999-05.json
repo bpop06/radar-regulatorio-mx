@@ -1,0 +1,45 @@
+{
+  "cut_id": "eb601fec447d40cac59ba502",
+  "items": [
+    {
+      "canonical_url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%28AF%29%2F99%2F1",
+      "case_amount": "",
+      "case_number": "ARB(AF)/99/1",
+      "case_outcome": "",
+      "case_parties": "Marvin Roy Feldman Karpa v. United Mexican States",
+      "case_reasoning": "",
+      "case_status": "Concluded",
+      "case_treaty": "NAFTA (North American Free Trade Agreement)",
+      "categories": [
+        "Comercio exterior",
+        "Comercio internacional"
+      ],
+      "content_hash": "8284a8e49b0ea4467667d4a39f92d2dae956c59d8d26a375d3a00c92cf2ad2e0",
+      "country_or_org": "CIADI",
+      "detail_url": "notas/d2541ba2fc1eaeab5c462501.html",
+      "detected_at": "2026-08-13T02:52:43.724365+00:00",
+      "document_type": "Caso de arbitraje de inversión",
+      "editorial_status": "needs_review",
+      "first_seen_at": "2026-08-13T02:52:43.724365+00:00",
+      "id": "ciadi:ARB(AF)/99/1",
+      "importance": 4,
+      "issuing_body": "Centro Internacional de Arreglo de Diferencias relativas a Inversiones",
+      "jurisdiction": "internacional",
+      "last_seen_at": "2026-08-13T05:08:47.293425+00:00",
+      "official_published_at": "1999-05-27",
+      "official_title": "Marvin Roy Feldman Karpa v. United Mexican States (ICSID Case No. ARB(AF)/99/1)",
+      "published_at": "1999-05-27",
+      "relevance_score": 6,
+      "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
+      "source": "CIADI",
+      "source_id": "ARB(AF)/99/1",
+      "summary": null,
+      "summary_teaser": null,
+      "title": null,
+      "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB%28AF%29%2F99%2F1"
+    }
+  ],
+  "month": "1999-05",
+  "schema_version": 8,
+  "total_items": 1
+}
