@@ -153,6 +153,34 @@ def test_v8_rejects_complete_editorial_outside_word_contract() -> None:
     assert any("summary has 2 words" in error for error in report.errors)
 
 
+def test_v8_complete_editorial_requires_https_official_evidence() -> None:
+    payload = prepare_payload(extractive_payload(), force=True)
+    item = payload["items"][0]
+    item.update(
+        {
+            "editorial_status": "complete",
+            "review_reason": None,
+            "title": "SHCP modifica reglas aplicables",
+            "summary_teaser": "Teaser breve.",
+            "summary": " ".join(f"palabra{i}" for i in range(300)),
+            "card_body": (
+                "## Qué se publicó\n\nAcuerdo de SHCP.\n\n"
+                "## Sustancia\n\nCambio concreto.\n\n"
+                "## Fuente\n\nFuente oficial consultada."
+            ),
+            "official_evidence": {"status": "Pending"},
+        }
+    )
+
+    report = validate_publications_payload(payload)
+
+    assert not report.ok
+    assert any(
+        "official_evidence must contain an official HTTPS URL" in error
+        for error in report.errors
+    )
+
+
 def test_freshness_is_opt_in_and_timezone_aware() -> None:
     payload = extractive_payload()
     generated = datetime.fromisoformat(payload["generated_at"])

@@ -7,7 +7,7 @@ import json
 import re
 from dataclasses import dataclass
 from datetime import date
-from urllib.parse import urljoin, urlparse
+from urllib.parse import parse_qsl, urlencode, urljoin, urlparse, urlsplit, urlunsplit
 
 from bs4 import BeautifulSoup
 
@@ -193,6 +193,31 @@ class ArchiveItem:
     document_type: str
 
 
+def canonical_gobmx_url(value: str) -> str:
+    """Normaliza la URL oficial antes de derivar la identidad de Gob.mx."""
+
+    parts = urlsplit(value.strip())
+    query = [
+        (key, item)
+        for key, item in parse_qsl(parts.query, keep_blank_values=True)
+        if not key.lower().startswith("utm_")
+        and key.lower() not in {"fbclid", "gclid"}
+    ]
+    path = parts.path or "/"
+    if path != "/":
+        path = path.rstrip("/")
+    return urlunsplit(
+        (parts.scheme.lower(), parts.netloc.lower(), path, urlencode(query), "")
+    )
+
+
+def gobmx_source_id(value: str) -> str:
+    """Deriva un identificador estable de la URL canónica, no de variantes de rastreo."""
+
+    canonical_url = canonical_gobmx_url(value)
+    return hashlib.sha256(canonical_url.encode()).hexdigest()[:16]
+
+
 class GobMxCollector(Collector):
     source = "Gob.mx APF"
     index_url = "https://www.gob.mx/sitemap-gobierno.xml"
@@ -258,7 +283,18 @@ class GobMxCollector(Collector):
                 )
                 break
 
-            page_items = self.parse_archive(response.text, portal, kind)
+            try:
+                page_items, skipped = self.parse_archive_with_diagnostics(
+                    response.text, portal, kind
+                )
+            except SourceContractError as exc:
+                self.mark_degraded(f"{portal}/{kind} página {page}: {exc}")
+                break
+            if skipped:
+                self.mark_degraded(
+                    f"{portal}/{kind} página {page}: "
+                    f"{skipped} registros no pudieron interpretarse"
+                )
             if not page_items:
                 break
             collected.extend(item for item in page_items if item.published_at >= since)
@@ -295,10 +331,12 @@ class GobMxCollector(Collector):
                 f"detalle {item.url}: {type(exc).__name__}: {exc}; se conserva el extracto"
             )
 
+        canonical_url = canonical_gobmx_url(item.url)
         return Candidate(
             source=self.source,
-            source_id=hashlib.sha256(item.url.encode()).hexdigest()[:16],
+            source_id=gobmx_source_id(item.url),
             url=item.url,
+            canonical_url=canonical_url,
             official_title=item.title,
             description=description,
             published_at=item.published_at,
@@ -326,8 +364,19 @@ class GobMxCollector(Collector):
     def parse_archive(
         cls, payload: str, portal: str, kind: str
     ) -> list[ArchiveItem]:
+        return cls.parse_archive_with_diagnostics(payload, portal, kind)[0]
+
+    @classmethod
+    def parse_archive_with_diagnostics(
+        cls, payload: str, portal: str, kind: str
+    ) -> tuple[list[ArchiveItem], int]:
         html_fragments: list[str] = []
-        for match in APPEND_RE.finditer(payload):
+        matches = list(APPEND_RE.finditer(payload))
+        if not matches:
+            raise SourceContractError(
+                "Gob.mx APF: respuesta sin estructura de archivo reconocible"
+            )
+        for match in matches:
             quote, encoded = match.group(1), match.group(2)
             if quote == '"':
                 try:
@@ -339,19 +388,25 @@ class GobMxCollector(Collector):
 
         soup = BeautifulSoup("".join(html_fragments), "html.parser")
         items: list[ArchiveItem] = []
+        skipped = 0
         for article in soup.select("article"):
             time_element = article.find("time")
             title_element = article.find(["h2", "h3"])
             anchor = article.find("a", href=True)
             if not time_element or not title_element or not anchor:
+                skipped += 1
                 continue
             raw_date = time_element.get("datetime") or time_element.get("date")
             try:
                 published_at = parse_date(str(raw_date or time_element.get_text()))
             except ValueError:
+                skipped += 1
                 continue
             title = clean_text(title_element.get_text(" ", strip=True))
             url = urljoin("https://www.gob.mx", anchor["href"])
+            if not title or not url.lower().startswith(("http://", "https://")):
+                skipped += 1
+                continue
             items.append(
                 ArchiveItem(
                     url=url,
@@ -361,7 +416,7 @@ class GobMxCollector(Collector):
                     document_type="Comunicado" if kind == "prensa" else "Artículo",
                 )
             )
-        return items
+        return items, skipped
 
     @staticmethod
     def looks_relevant(title: str) -> bool:

@@ -5,13 +5,19 @@ from datetime import date
 import httpx
 import pytest
 
-from app.pipeline import _collect_source
+from app.models import Candidate
+from app.pipeline import _collect_source, _deduplicate
 from app.relevance import classify
 from app.sources.base import Collector, SourceContractError
 from app.sources.certification import RELAUNCH_SOURCES, certification_report
 from app.sources.diputados import DiputadosCollector, permanent_gaceta_url
 from app.sources.dof import DofCollector
-from app.sources.gobmx import ALWAYS_RELEVANT_PORTALS, GobMxCollector
+from app.sources.gobmx import (
+    ALWAYS_RELEVANT_PORTALS,
+    GobMxCollector,
+    canonical_gobmx_url,
+    gobmx_source_id,
+)
 from app.sources.icsid import IcsidCollector, parse_case_detail
 from app.sources.impi import ImpiCollector
 from app.sources.international import (
@@ -245,6 +251,34 @@ def test_gobmx_parser_reads_javascript_archive_response():
     assert not GobMxCollector.looks_relevant(
         "CONADE presenta su estrategia de masificación deportiva"
     )
+
+
+def test_gobmx_identity_uses_canonical_url_not_tracking_variants():
+    canonical = "https://www.gob.mx/se/prensa/publicacion-oficial"
+    variants = (
+        canonical,
+        "HTTPS://WWW.GOB.MX/se/prensa/publicacion-oficial/",
+        f"{canonical}?utm_source=boletin#contenido",
+    )
+
+    assert {canonical_gobmx_url(url) for url in variants} == {canonical}
+    assert len({gobmx_source_id(url) for url in variants}) == 1
+
+    candidates = [
+        Candidate(
+            source="Gob.mx APF",
+            source_id=gobmx_source_id(url),
+            url=url,
+            canonical_url=canonical_gobmx_url(url),
+            official_title="Publicación oficial",
+            description="Descripción " + ("ampliada" if index else "breve"),
+            published_at=date(2026, 8, 12),
+        )
+        for index, url in enumerate(variants[:2])
+    ]
+    deduplicated = _deduplicate(candidates)
+    assert len(deduplicated) == 1
+    assert deduplicated[0].description.endswith("ampliada")
 
 
 # --- Fuentes internacionales (fase 4, primera ola) ---------------------------
@@ -1365,6 +1399,51 @@ def test_gobmx_partial_403_is_exposed_as_degraded():
     collector = asyncio.run(run())
     assert collector.diagnostics.status == "degraded"
     assert "403" in collector.diagnostics.warnings[0]
+
+
+def test_gobmx_unexpected_http_200_body_is_degraded_not_false_green():
+    def handler(request: httpx.Request) -> httpx.Response:
+        return httpx.Response(
+            200,
+            request=request,
+            headers={"content-type": "application/javascript"},
+            text="window.unexpected = true;",
+        )
+
+    async def run() -> GobMxCollector:
+        async with httpx.AsyncClient(transport=httpx.MockTransport(handler)) as client:
+            collector = GobMxCollector(client)
+            assert await collector._collect_archive(
+                "se", "prensa", date(2026, 8, 1)
+            ) == []
+            return collector
+
+    collector = asyncio.run(run())
+    assert collector.diagnostics.status == "degraded"
+    assert "estructura de archivo" in collector.diagnostics.warnings[0]
+    assert collector.diagnostics.validated_endpoints == 1
+
+
+def test_gobmx_structural_empty_archive_is_a_valid_zero():
+    def handler(request: httpx.Request) -> httpx.Response:
+        return httpx.Response(
+            200,
+            request=request,
+            headers={"content-type": "application/javascript"},
+            text='$("#prensa").append("");',
+        )
+
+    async def run() -> GobMxCollector:
+        async with httpx.AsyncClient(transport=httpx.MockTransport(handler)) as client:
+            collector = GobMxCollector(client)
+            assert await collector._collect_archive(
+                "se", "prensa", date(2026, 8, 1)
+            ) == []
+            return collector
+
+    collector = asyncio.run(run())
+    assert collector.diagnostics.status == "certified"
+    assert collector.diagnostics.validated_endpoints == 1
 
 
 def test_rss_http_404_is_an_error_not_a_valid_zero():

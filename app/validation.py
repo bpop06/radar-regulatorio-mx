@@ -743,6 +743,10 @@ def _validate_item_v8(
                 errors.append(
                     f"{prefix}.card_body '{WHAT_PUBLISHED_SECTION}' must not contain an act number"
                 )
+        if not _has_official_evidence_url(evidence):
+            errors.append(
+                f"{prefix}.official_evidence must contain an official HTTPS URL when complete"
+            )
         if isinstance(title, str) and re.match(
             OFFICE_NUMBER_TITLE, title.strip(), flags=re.IGNORECASE
         ):
@@ -783,6 +787,21 @@ def _validate_item_v8(
         if field_name in item and not isinstance(item.get(field_name), str):
             errors.append(f"{prefix}.{field_name} must be str")
     _validate_stateful_case(prefix, item, errors)
+
+
+def _has_official_evidence_url(evidence: Any) -> bool:
+    if not isinstance(evidence, dict):
+        return False
+    for value in evidence.values():
+        if not isinstance(value, str):
+            continue
+        try:
+            parts = urlsplit(value.strip())
+        except ValueError:
+            continue
+        if parts.scheme == "https" and parts.netloc:
+            return True
+    return False
 
 
 def _validate_stateful_case(
