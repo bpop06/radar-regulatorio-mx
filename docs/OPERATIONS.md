@@ -71,6 +71,22 @@ escribe artefactos ni snapshots.
 automatización diaria ni a sus dos horarios. Después del bootstrap, los cortes
 normales vuelven a comparar contra `docs/data/state/{icsid,tmec}.json`.
 
+Las fichas históricas CIJ/CPI creadas antes de los extractores estrictos se
+enriquecen mediante otro comando **one-shot**, sin consultar la red:
+
+```bash
+.venv/bin/python -m app.cli rebuild-international-history --dry-run
+.venv/bin/python -m app.cli rebuild-international-history
+```
+
+El comando sólo lee `official_title`, `description` y `url` de los envelopes
+enumerados y autenticados por el manifiesto vigente. Conserva cualquier campo
+no vacío, añade únicamente metadatos literales reconocidos por los extractores
+CIJ/CPI y transporta los cambios como `_historical_items`; por ello no inserta
+casos antiguos en `publications.json` ni en las señales de `edition.json`. Un
+cambio de evidencia recalcula `content_hash` y devuelve la editorial a
+`needs_review`. El ensayo `--dry-run` no escribe ningún artefacto.
+
 Después de los dos cortes productivos de aceptación, la variable se omite. Así,
 una fuente aislada en estado `degraded` se informa en el corte sin bloquear a
 las demás; sólo el fallo total conserva el corte anterior.

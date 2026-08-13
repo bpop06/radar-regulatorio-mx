@@ -21,6 +21,7 @@ from app.sources.international import (
     OnuNoticiasCollector,
     TradeGovCollector,
     UstrCollector,
+    extract_international_case,
 )
 from app.sources.platiica import PlatiicaCollector
 from app.sources.senado import SenadoCollector
@@ -606,6 +607,36 @@ def test_cpi_parser_extracts_only_explicit_case_metadata_from_official_descripti
     }
 
 
+def test_cpi_extractor_reads_al_mahdi_case_only_from_literal_official_text():
+    description = (
+        "The Trust Fund has completed the implementation of the reparations programme "
+        "in the case of The Prosecutor v. Ahmad Al Faqi Al Mahdi. "
+        "Mr Al Mahdi was convicted for the war crime of intentionally directing attacks "
+        "against historic and religious monuments in Timbuktu in 2012. "
+        "ICC judges instructed him to pay EUR 2.7 million for reparations to the victims."
+    )
+
+    case = extract_international_case(
+        "CPI",
+        "ICC Trust Fund for Victims Completes Reparations Programme in Mali",
+        description,
+        "https://www.icc-cpi.int/news/al-mahdi-reparations",
+    )
+
+    assert not case.number
+    assert case.parties == "The Prosecutor v. Ahmad Al Faqi Al Mahdi"
+    assert case.claim == (
+        "the war crime of intentionally directing attacks against historic and religious "
+        "monuments in Timbuktu in 2012"
+    )
+    assert "completed the implementation of the reparations programme" in case.status
+    assert case.outcome == (
+        "ICC judges instructed him to pay EUR 2.7 million for reparations to the victims."
+    )
+    assert case.amount == "EUR 2.7 million"
+    assert "convicted for the war crime" in case.evidence["litis"]
+
+
 ICJ_HTML = """
 <div class="view view-press-releases"><div class="view-content row">
 <div class="views-row">
@@ -713,6 +744,42 @@ def test_cij_parser_keeps_procedural_update_as_status_without_inventing_outcome(
         "Monday 7 to Thursday 10 September 2026"
     )
     assert not item.case_outcome
+
+
+def test_cij_extractor_reads_explicit_case_block_from_stored_official_node():
+    case = extract_international_case(
+        "CIJ",
+        "Poland files a declaration of intervention in the proceedings under Article 63",
+        (
+            "Document Number 200-20260630-PRE-01-00-EN Document Type press_release "
+            "Case 200 - Alleged Smuggling of Migrants (Lithuania v. Belarus) "
+            "Number (Press Release, Order, etc) 2026/18 Date of the Document "
+            "Tue, 06/30/2026 - 12:00"
+        ),
+        "https://www.icj-cij.org/node/206437",
+    )
+
+    assert case.number == "200"
+    assert case.parties == "Lithuania v. Belarus"
+    assert case.claim == "Alleged Smuggling of Migrants"
+    assert case.status.startswith("Poland files a declaration")
+    assert not case.outcome
+    assert case.evidence["case_number"] == "200"
+    assert case.evidence["procedural_update"] == case.status
+
+
+def test_cij_extractor_does_not_trust_stored_case_block_from_non_official_url():
+    case = extract_international_case(
+        "CIJ",
+        "Declaration of intervention of Poland",
+        "Case 200 - Alleged Smuggling of Migrants (Lithuania v. Belarus) Date of the Document",
+        "https://example.test/node/206436",
+    )
+
+    assert not case.number
+    assert not case.parties
+    assert not case.claim
+    assert not case.evidence
 
 
 @pytest.mark.parametrize(
@@ -1223,6 +1290,37 @@ def test_rss_and_dof_report_malformed_blocks_for_degraded_coverage():
         b"<valueDate>12/08/2026</valueDate><broken></item></channel></rss>"
     )
     assert DofCollector.parse_with_diagnostics(dof, date(2026, 8, 1)) == ([], 1)
+
+
+def test_rss_reports_well_formed_but_incomplete_items_as_degraded():
+    incomplete = b"""<rss><channel>
+    <item><title>Missing link</title>
+      <pubDate>Wed, 12 Aug 2026 12:00:00 GMT</pubDate></item>
+    <item><title>Invalid date</title><link>https://news.un.org/example</link>
+      <pubDate>not-a-date</pubDate></item>
+    </channel></rss>"""
+
+    assert OnuNoticiasCollector.parse_with_diagnostics(
+        incomplete, date(2026, 8, 1)
+    ) == ([], 2)
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        return httpx.Response(
+            200,
+            request=request,
+            headers={"content-type": "application/rss+xml"},
+            content=incomplete,
+        )
+
+    async def run() -> OnuNoticiasCollector:
+        async with httpx.AsyncClient(transport=httpx.MockTransport(handler)) as client:
+            collector = OnuNoticiasCollector(client)
+            assert await collector.collect(date(2026, 8, 1)) == []
+            return collector
+
+    collector = asyncio.run(run())
+    assert collector.diagnostics.status == "degraded"
+    assert "2 bloques RSS" in collector.diagnostics.warnings[0]
 
 
 def test_html_collectors_reject_unexpected_pages_instead_of_false_green_zero():

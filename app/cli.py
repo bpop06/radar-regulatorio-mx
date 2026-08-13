@@ -12,6 +12,10 @@ from app.calendars import validate_calendars_payload
 from app.config import Settings
 from app.edition import prepare_payload, write_site_artifacts
 from app.editorial import EditorialError, apply_editorial
+from app.international_history import (
+    InternationalHistoryError,
+    rebuild_manifested_international_history,
+)
 from app.pipeline import collect
 from app.sources.base import SourceContractError
 from app.sources.certification import assert_relaunch_ready, certification_report
@@ -99,6 +103,18 @@ def build_parser() -> argparse.ArgumentParser:
     )
     editorial_parser.add_argument("--db", type=Path, default=None)
     editorial_parser.add_argument("--edition-output", type=Path, default=None)
+
+    international_history_parser = subparsers.add_parser(
+        "rebuild-international-history",
+        help="enriquece una sola vez fichas históricas CIJ/CPI desde evidencia ya almacenada",
+    )
+    international_history_parser.add_argument(
+        "--input",
+        type=Path,
+        default=Path("docs/data/publications.json"),
+    )
+    international_history_parser.add_argument("--edition-output", type=Path, default=None)
+    international_history_parser.add_argument("--dry-run", action="store_true")
 
     edition_parser = subparsers.add_parser(
         "build-edition",
@@ -234,6 +250,41 @@ def main() -> None:
         if not report.ok:
             raise SystemExit(1)
         print(f"Editorial aplicada a {applied} publicaciones en {args.input}")
+    elif args.command == "rebuild-international-history":
+        try:
+            historical = rebuild_manifested_international_history(args.input)
+        except InternationalHistoryError as exc:
+            print(f"Error de migración internacional: {exc}", file=sys.stderr)
+            raise SystemExit(1) from exc
+        preview = {
+            "dry_run": args.dry_run,
+            "total_items": len(historical),
+            "items": [
+                {
+                    "id": item.get("id"),
+                    "content_hash": item.get("content_hash"),
+                    "case_number": item.get("case_number"),
+                    "case_parties": item.get("case_parties"),
+                    "case_claim": item.get("case_claim"),
+                    "case_status": item.get("case_status"),
+                    "case_outcome": item.get("case_outcome"),
+                    "case_amount": item.get("case_amount"),
+                }
+                for item in historical
+            ],
+        }
+        if args.dry_run or not historical:
+            print(json.dumps(preview, ensure_ascii=False, indent=2))
+        else:
+            payload = json.loads(args.input.read_text(encoding="utf-8"))
+            payload["_historical_items"] = historical
+            # La migración no reordena ni reelige las señales vigentes; sólo
+            # cambia fichas permanentes y el cut_id que las autentica.
+            payload["_preserve_edition"] = True
+            write_site_artifacts(payload, args.input, args.edition_output)
+            print(
+                f"Migradas {len(historical)} fichas históricas CIJ/CPI en {args.input}"
+            )
     elif args.command == "build-edition":
         payload = prepare_payload(
             json.loads(args.input.read_text(encoding="utf-8")),

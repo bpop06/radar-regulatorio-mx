@@ -610,7 +610,7 @@ def _normalize_item(item: dict[str, Any], generated_at: str) -> dict[str, Any]:
     # de la evidencia oficial normalizada. Así, cambiar el título oficial u
     # otro dato sustantivo sin actualizar el hash no puede conservar una
     # editorial obsoleta.
-    result["content_hash"] = _valid_or_computed_hash(result)
+    result["content_hash"] = official_content_hash(result)
 
     if result.get("editorial_status") not in {"complete", "needs_review"}:
         result["editorial_status"] = "needs_review"
@@ -972,7 +972,9 @@ def compute_cut_id(
     return hashlib.sha256(encoded).hexdigest()[:24]
 
 
-def _valid_or_computed_hash(item: dict[str, Any]) -> str:
+def official_content_hash(item: dict[str, Any]) -> str:
+    """Deriva la huella de evidencia oficial, excluyendo interpretación editorial."""
+
     official = {
         field: item.get(field)
         for field in (

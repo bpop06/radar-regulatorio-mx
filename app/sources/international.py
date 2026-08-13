@@ -32,6 +32,14 @@ ICJ_CASE_PATH_RE = re.compile(
     r"^/sites/default/files/case-related/(?P<number>[1-9]\d{0,3})/[^/]+\.pdf$",
     re.IGNORECASE,
 )
+ICJ_STORED_CASE_RE = re.compile(
+    r"\bCase\s+(?P<number>[1-9]\d{0,3})\s*-\s*"
+    r"(?P<claim>[^()]{3,300}?)\s*"
+    r"\((?P<parties>[^()]{2,200}\bv\.?\s+[^()]{2,200})\)"
+    r"(?=\s+(?:Number\s*\(|Date\s+of\s+the\s+Document|Document\s+File|"
+    r"Document\s+Long\s+Title|Order)\b|$)",
+    re.IGNORECASE,
+)
 
 ICC_CASE_NUMBER_RE = re.compile(r"\bICC-\d{2}/\d{2}(?:-\d{2}/\d{2})?\b", re.IGNORECASE)
 ICC_PARTIES_RE = re.compile(
@@ -51,14 +59,25 @@ ICC_CHARGES_RE = re.compile(
     r"\bcharges?\s+(?:of|for)\s+(?P<claim>[^.;]{3,300})",
     re.IGNORECASE,
 )
+ICC_CONVICTION_CLAIM_RE = re.compile(
+    r"\bconvicted\s+for\s+"
+    r"(?P<claim>(?:the\s+)?(?:war\s+crime|crimes?\s+against\s+humanity|genocide)"
+    r"[^.;]{3,300})",
+    re.IGNORECASE,
+)
 ICC_OUTCOME_RE = re.compile(
     r"\b(?:convicts?|acquits?|sentences?|rejects?|dismisses?|confirms?|orders?|"
     r"terminates?|closes?|issues?\s+(?:an?\s+)?(?:warrants?\s+of\s+arrest|"
-    r"reparations?\s+orders?))\b",
+    r"reparations?\s+orders?))\b|\binstruct(?:s|ed)?\b[^.;]{0,160}\bto\s+pay\b",
     re.IGNORECASE,
 )
 EXPLICIT_STATUS_RE = re.compile(
     r"\b(?:is|are|remains?)\s+(?:pending|ongoing|final|closed|adjourned|outstanding)\b",
+    re.IGNORECASE,
+)
+ICC_REPARATIONS_COMPLETION_RE = re.compile(
+    r"\b(?:has\s+)?(?:fully\s+)?(?:completed\s+the\s+implementation\s+of|implemented)"
+    r"\s+the\s+reparations?\s+programme\b",
     re.IGNORECASE,
 )
 CIJ_OUTCOME_RE = re.compile(
@@ -152,6 +171,7 @@ class RssCollector(Collector):
             # <link> sin texto: se toma el primer <link> con contenido real.
             url = clean_text(_first_nonempty_text(item, "link"))
             if not title or not url.lower().startswith(("http://", "https://")):
+                skipped += 1
                 continue
             if cls.skip_title_re is not None and cls.skip_title_re.search(title):
                 continue
@@ -160,13 +180,14 @@ class RssCollector(Collector):
             try:
                 published_at = parsedate_to_datetime(raw_date).date()
             except (TypeError, ValueError):
+                skipped += 1
                 continue
             if published_at < since:
                 continue
 
             guid = clean_text(item.findtext("guid", "")) or url
             description = clean_text(item.findtext("description", "")) or title
-            case = _extract_case_metadata(cls.source, title, description)
+            case = extract_international_case(cls.source, title, description, url)
 
             candidates.append(
                 Candidate(
@@ -285,7 +306,7 @@ class CijCollector(Collector):
             url = urljoin(cls.url, str(number_anchor.get("href")))
             source_id = re.sub(r"^Press release No\.\s*", "", number, flags=re.IGNORECASE)
             description = f"{number}. {title}"
-            case = _extract_cij_case(title, description, url)
+            case = extract_international_case(cls.source, title, description, url)
             candidates.append(
                 Candidate(
                     source=cls.source,
@@ -388,9 +409,16 @@ class OmcCollector(RssCollector):
     default_document_type = "Noticia"
 
 
-def _extract_case_metadata(source: str, title: str, description: str) -> ExtractedCase:
+def extract_international_case(
+    source: str,
+    title: str,
+    description: str,
+    official_url: str = "",
+) -> ExtractedCase:
+    """Extrae sólo metadatos literales contenidos en evidencia oficial almacenada."""
+
     if source == "CIJ":
-        return _extract_cij_case(title, description)
+        return _extract_cij_case(title, description, official_url)
     if source == "CPI":
         return _extract_cpi_case(title, description)
     return ExtractedCase()
@@ -410,15 +438,37 @@ def _extract_cij_case(
         title,
         flags=re.IGNORECASE,
     )
-    if caption is None:
+    stored_case = None
+    if caption is None and _is_official_icj_url(official_url):
+        stored_case = ICJ_STORED_CASE_RE.search(description)
+        stored_number = clean_text(stored_case.group("number")) if stored_case else ""
+        # Una URL de expediente y un bloque de descripción contradictorios no
+        # se fusionan. Se conserva únicamente el número aportado por la ruta
+        # oficial, que es la evidencia más acotada.
+        if case_number and stored_number and stored_number != case_number:
+            stored_case = None
+        elif not case_number:
+            case_number = stored_number
+
+    if caption is None and stored_case is None:
         return ExtractedCase(
             number=case_number,
             evidence={"case_number": case_number} if case_number else {},
         )
 
-    parties = clean_text(caption.group("parties"))
-    claim = clean_text(title[: caption.start()].strip(" -"))
-    procedure = clean_text(title[caption.end() :].strip(" -"))
+    if caption is not None:
+        parties = clean_text(caption.group("parties"))
+        claim = clean_text(title[: caption.start()].strip(" -"))
+        procedure = clean_text(title[caption.end() :].strip(" -"))
+        literal_caption = clean_text(caption.group(0))
+    else:
+        assert stored_case is not None
+        parties = clean_text(stored_case.group("parties"))
+        claim = clean_text(stored_case.group("claim").strip(" -"))
+        # En los nodos históricos el título oficial es la actuación y el
+        # bloque estructurado ``Case N - ...`` aporta carátula y litis.
+        procedure = clean_text(title)
+        literal_caption = f"({parties})"
     amount = _explicit_amount(f"{title}. {description}")
     outcome = procedure if procedure and CIJ_OUTCOME_RE.search(procedure) else ""
     if outcome:
@@ -428,7 +478,7 @@ def _extract_cij_case(
         status = procedure
 
     evidence = {
-        "case_caption": clean_text(caption.group(0)),
+        "case_caption": literal_caption,
         "litis": claim,
     }
     if case_number:
@@ -470,11 +520,26 @@ def _icj_case_number_from_official_url(value: str) -> str:
     return match.group("number")
 
 
+def _is_official_icj_url(value: str) -> bool:
+    try:
+        parts = urlsplit(value)
+    except ValueError:
+        return False
+    return parts.scheme == "https" and (parts.hostname or "").casefold() in {
+        "icj-cij.org",
+        "www.icj-cij.org",
+    }
+
+
 def _extract_cpi_case(title: str, description: str) -> ExtractedCase:
     text = clean_text(f"{title}. {description}")
     number_match = ICC_CASE_NUMBER_RE.search(text)
     parties_match = ICC_PARTIES_RE.search(text)
-    claim_match = ICC_CLAIM_RE.search(text) or ICC_CHARGES_RE.search(text)
+    claim_match = (
+        ICC_CLAIM_RE.search(text)
+        or ICC_CHARGES_RE.search(text)
+        or ICC_CONVICTION_CLAIM_RE.search(text)
+    )
     # La descripción oficial suele expresar el resultado con más precisión
     # que el encabezado; se prioriza sin resumirla ni completar huecos.
     sentences = _sentences(description, title)
@@ -482,7 +547,13 @@ def _extract_cpi_case(title: str, description: str) -> ExtractedCase:
         (sentence for sentence in sentences if ICC_OUTCOME_RE.search(sentence)), ""
     )
     status_sentence = next(
-        (sentence for sentence in sentences if EXPLICIT_STATUS_RE.search(sentence)), ""
+        (
+            sentence
+            for sentence in sentences
+            if EXPLICIT_STATUS_RE.search(sentence)
+            or ICC_REPARATIONS_COMPLETION_RE.search(sentence)
+        ),
+        "",
     )
     amount = _explicit_amount(text)
 
@@ -500,7 +571,11 @@ def _extract_cpi_case(title: str, description: str) -> ExtractedCase:
                 sentence
                 for sentence in sentences
                 if claim in sentence
-                and re.search(r"\b(?:concerns?|involves?|relates?\s+to|charges?)\b", sentence, re.I)
+                and re.search(
+                    r"\b(?:concerns?|involves?|relates?\s+to|charges?|convicted\s+for)\b",
+                    sentence,
+                    re.I,
+                )
             ),
             clean_text(claim_match.group(0)),
         )
