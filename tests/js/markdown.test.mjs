@@ -3,8 +3,11 @@ import test from "node:test";
 import { JSDOM } from "jsdom";
 
 import {
+  createTime,
+  datePresentation,
   detailHref,
   formatDate,
+  formatDateTime,
   isSafeHttpUrl as safeUrl,
   renderMarkdown,
   translateCaseStatus as translateStatus,
@@ -36,8 +39,66 @@ test("formatDate formats ISO dates for Mexico without shifting the day", () => {
   assert.equal(formatDate("2026-08-12"), "12 de agosto de 2026");
   assert.equal(formatDate("2026-08-12", { short: true }), "12 ago 2026");
   assert.equal(formatDate("2026-08-12", { year: false }), "12 de agosto");
-  assert.equal(formatDate("12/08/2026"), "—");
-  assert.equal(formatDate(null), "—");
+  assert.equal(formatDate("12/08/2026"), "Fecha no disponible");
+  assert.equal(formatDate("2026-02-29"), "Fecha no disponible");
+  assert.equal(formatDate(null), "Fecha no disponible");
+});
+
+test("normalizeIsoDate accepts only real date-only ISO values", () => {
+  assert.equal(normalizeIsoDate(" 2026-08-12 "), "2026-08-12");
+  assert.equal(normalizeIsoDate("2024-02-29"), "2024-02-29");
+  assert.equal(normalizeIsoDate("2026-02-29"), null);
+  assert.equal(normalizeIsoDate("2026-08-12T00:00:00Z"), null);
+  assert.equal(normalizeIsoDate("2026-13-01"), null);
+});
+
+test("datePresentation returns a canonical machine value and an es-MX label", () => {
+  assert.deepEqual(datePresentation("2026-08-12"), {
+    dateTime: "2026-08-12",
+    label: "12 de agosto de 2026",
+  });
+  assert.deepEqual(datePresentation("not-a-date", { short: true }), {
+    dateTime: null,
+    label: "Fecha no disponible",
+  });
+});
+
+test("formatDateTime presents generated_at in Mexico City and normalizes datetime", () => {
+  const generatedAt = "2026-08-13T02:57:51.987493+00:00";
+  assert.equal(
+    formatDateTime(generatedAt),
+    "12 de agosto de 2026 a las 8:57 p.m. CDMX",
+  );
+  assert.deepEqual(datePresentation(generatedAt, { type: "datetime", short: true }), {
+    dateTime: "2026-08-13T02:57:51.987Z",
+    label: "12 ago 2026, 8:57 p.m. CDMX",
+  });
+  assert.equal(formatDateTime("2026-08-13T02:57:51"), "Fecha no disponible");
+  assert.equal(formatDateTime("invalid"), "Fecha no disponible");
+});
+
+test("createTime omits datetime entirely when the value is unavailable", () => {
+  const fakeDocument = {
+    createElement(tagName) {
+      return {
+        attributes: {},
+        tagName: tagName.toUpperCase(),
+        textContent: "",
+        setAttribute(name, value) {
+          this.attributes[name] = value;
+        },
+      };
+    },
+  };
+  const valid = createTime("2026-08-12", { short: true }, fakeDocument);
+  assert.equal(valid.tagName, "TIME");
+  assert.equal(valid.textContent, "12 ago 2026");
+  assert.deepEqual(valid.attributes, { datetime: "2026-08-12" });
+
+  const invalid = createTime("", {}, fakeDocument);
+  assert.equal(invalid.tagName, "SPAN");
+  assert.equal(invalid.textContent, "Fecha no disponible");
+  assert.equal(Object.hasOwn(invalid.attributes, "datetime"), false);
 });
 
 test("detailHref builds encoded local links and preserves existing queries", () => {

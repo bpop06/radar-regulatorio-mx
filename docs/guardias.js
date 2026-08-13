@@ -1,4 +1,4 @@
-import { renderMarkdown } from "./markdown.js?v=20260812a";
+import { renderMarkdown } from "./markdown.js?v=20260812b";
 
 const host = document.querySelector("#guardias-content");
 const status = document.querySelector("#guide-status");

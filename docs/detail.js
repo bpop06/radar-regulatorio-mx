@@ -54,13 +54,24 @@ const elements = {
 };
 
 function setBackLink(origin) {
+  const label = document.createElement("span");
   if (origin === "hoy") {
     elements.back.href = "index.html";
-    elements.back.textContent = "← Volver a Hoy";
+    label.textContent = "Volver a Hoy";
   } else {
     elements.back.href = "archivo.html";
-    elements.back.textContent = "← Volver al archivo";
+    label.textContent = "Volver al archivo";
   }
+  elements.back.replaceChildren();
+  appendIcon(elements.back, "arrow-back");
+  elements.back.append(label);
+}
+
+function setTime(element, value, options = {}) {
+  const presentation = datePresentation(value, options);
+  element.textContent = presentation.label;
+  if (presentation.dateTime) element.setAttribute("datetime", presentation.dateTime);
+  else element.removeAttribute("datetime");
 }
 
 function renderImportance(value) {
