@@ -192,7 +192,9 @@ class PagesContractTests(unittest.TestCase):
                     item["official_published_at"],
                 )
                 self.assertEqual(item["published_at"], item["official_published_at"])
-                for field in ("detected_at", "first_seen_at", "last_seen_at"):
+                # El índice público v8 es deliberadamente ligero. Las marcas
+                # first/last_seen viven en el envelope permanente/SQLite.
+                for field in ("detected_at",):
                     instant = datetime.fromisoformat(item[field].replace("Z", "+00:00"))
                     self.assertIsNotNone(
                         instant.tzinfo,

@@ -21,7 +21,8 @@ solo pull request abierto; nunca crea PR competidores y nunca empuja a
    sin degradación.
 3. Conservar la editorial completa cuyo `content_hash` no cambió.
 4. Revisar evidencia oficial de ítems nuevos o modificados y aplicar cambios
-   con `apply-editorial`. Lo no sustentado permanece `needs_review`.
+   con `apply-editorial`. Lo no sustentado permanece `needs_review` en la cola
+   privada y no se incluye en artefactos públicos.
 5. Generar el corte completo en staging, validar contrato, referencias y
    hashes, y hacer un único reemplazo.
 6. Ejecutar Ruff, pytest, validación del corte y calendarios, pruebas
@@ -32,6 +33,11 @@ solo pull request abierto; nunca crea PR competidores y nunca empuja a
    una ficha histórica en GitHub Pages.
 9. Informar totales completos/pendientes, fuentes degradadas, PR, merge,
    despliegue y tiempo de publicación.
+
+El helper diario se detiene deliberadamente tras preparar la cola privada.
+Sólo después de aplicar la editorial estructurada y cerrar las auditorías se
+reanuda con `RADAR_EDITORIAL_APPROVED=1`; la exportación siempre usa
+`--complete-only` y `docs/data/fichas`.
 
 ## Gates
 
@@ -55,6 +61,19 @@ Durante el relanzamiento, el helper local lo exige antes de generar el corte:
 ```bash
 RADAR_REQUIRE_RELAUNCH_CERTIFICATION=1 scripts/collect_daily.sh
 ```
+
+Antes del primer corte candidato v8 se ejecuta **una sola vez** la
+importación del archivo público actual a la cola privada:
+
+```bash
+.venv/bin/python -m app.cli prepare-editorial \
+  --bootstrap-input docs/data/publications.json \
+  --db "$RADAR_STATE_DIR/radar.sqlite3"
+```
+
+El bootstrap invalida cualquier interpretación heredada y vuelve a descargar,
+extraer y hashear cada fuente. Ningún registro entra al sitio hasta que
+`apply-editorial --db` lo complete y `export-site --complete-only` lo audite.
 
 Antes del primer corte candidato v8 se ejecuta **una sola vez** la
 reconstrucción del inventario permanente de CIADI y del Secretariado T-MEC:
@@ -122,11 +141,11 @@ La protección de `main` exige exclusivamente:
 Si el equipo local, la sesión de GitHub o Codex no están disponibles, no se
 publica `success`, el PR queda abierto y Pages conserva el corte anterior.
 
-## Estados públicos
+## Estados operativos
 
 - **Completa:** evidencia y editorial validadas.
-- **Revisión pendiente:** evidencia disponible, interpretación aún no
-  sustentada.
+- **Revisión pendiente (privado):** evidencia disponible, interpretación aún
+  no sustentada; nunca aparece en portada, archivo o fichas públicas.
 - **Cobertura degradada:** al menos una fuente no pudo certificarse en el
   corte; se muestran las fuentes afectadas.
 - **Sin novedades:** corte vigente y válido con cero publicaciones nuevas.

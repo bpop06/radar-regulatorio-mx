@@ -7,7 +7,7 @@ from pathlib import Path
 
 import httpx
 
-from app.edition import item_key, write_site_artifacts
+from app.edition import item_key, write_site_artifacts_legacy
 from app.models import Candidate
 from app.pipeline import _publication_from_classified
 from app.relevance import classify
@@ -359,7 +359,7 @@ def test_historical_transport_writes_only_permanent_artifacts(tmp_path: Path) ->
     docs = tmp_path / "docs"
     publications_path = docs / "data/publications.json"
 
-    manifest = write_site_artifacts(_empty_cut(historical), publications_path)
+    manifest = write_site_artifacts_legacy(_empty_cut(historical), publications_path)
 
     publications = json.loads(publications_path.read_text(encoding="utf-8"))
     edition = json.loads((docs / "data/edition.json").read_text(encoding="utf-8"))
@@ -454,10 +454,10 @@ def test_legacy_case_ids_are_replaced_once_and_do_not_resurrect(tmp_path: Path) 
         _publication(_icsid_candidate(), generated_at),
         _publication(_tmec_candidate(), generated_at),
     )
-    write_site_artifacts(corrected, publications_path)
+    write_site_artifacts_legacy(corrected, publications_path)
     # Una tercera corrida prueba que envelopes legacy huérfanos no vuelven a
     # entrar por el glob histórico.
-    manifest = write_site_artifacts(corrected, publications_path)
+    manifest = write_site_artifacts_legacy(corrected, publications_path)
 
     item_paths = [
         path

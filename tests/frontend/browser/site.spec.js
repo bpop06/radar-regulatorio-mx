@@ -13,6 +13,7 @@ const complete = {
   official_published_at: `${today}T08:00:00-06:00`,
   detected_at: `${today}T10:30:00-06:00`,
   editorial_status: "complete",
+  extraction_status: "complete",
   official_title: "Acuerdo oficial de prueba",
   title: "SHCP publica un acuerdo de prueba",
   summary_teaser: "El acuerdo establece una medida verificable para probar el corte público.",
@@ -83,11 +84,10 @@ test("portada muestra estados y pestañas APG operables", async ({ page }) => {
   const tabs = page.getByRole("tab");
   await tabs.first().focus();
   await page.keyboard.press("End");
-  await expect(tabs.nth(1)).toBeFocused();
-  await expect(tabs.nth(1)).toHaveAttribute("aria-selected", "true");
-  await expect(page.locator("#lead-panel").getByRole("heading", { name: pending.official_title })).toBeVisible();
-  await expect(page.getByText("Revisión pendiente").first()).toBeVisible();
-  await expect(page.locator("#today-total")).toHaveText("2 detecciones · 2 señales · 1 pendiente");
+  await expect(tabs).toHaveCount(1);
+  await expect(tabs.first()).toBeFocused();
+  await expect(page.getByText(pending.official_title)).not.toBeVisible();
+  await expect(page.locator("#today-total")).toHaveText("2 detecciones · 1 señal completa");
   await expect(page.getByRole("link", { name: "Explorar el archivo permanente" }))
     .toHaveAttribute("href", "archivo.html");
 });
@@ -189,14 +189,66 @@ test("ficha rechaza un envelope de otro corte", async ({ page }) => {
   await expect(page.getByRole("heading", { name: complete.title })).not.toBeVisible();
 });
 
-test("archivo mensual conserva ficha y estado editorial", async ({ page }) => {
+test("ficha v8 carga sólo su JSON y conserva reflow, tema, teclado y texto seguro", async ({ page }) => {
+  const detailPath = "data/fichas/cccccccccccccccccccccccc.json";
+  const requests = { detail: 0, edition: 0, publications: 0, items: 0 };
+  await page.route("**/data/manifest.json", (route) => route.fulfill({
+    contentType: "application/json",
+    body: JSON.stringify({
+      schema_version: 8, cut_id: "cut-test", generated_at: new Date().toISOString(),
+      artifacts: { [detailPath]: { sha256: "c".repeat(64), bytes: 100 } },
+    }),
+  }));
+  await page.route(`**/${detailPath}`, (route) => {
+    requests.detail += 1;
+    return route.fulfill({
+      contentType: "application/json",
+      body: JSON.stringify({
+        schema_version: 8, cut_id: "cut-test",
+        item: { ...complete, detail_data_url: detailPath },
+        executive_summary: ["Cambio sustantivo.", "<img src=x onerror=alert(1)>"],
+        detailed_summary: [{ heading: "Regla principal", paragraphs: ["Contenido íntegro."], evidence_refs: ["p1"] }],
+        impacts: {
+          general: { paragraphs: ["Sin impacto general directo."], evidence_refs: ["p1"] },
+          sectors: [{ sector: "Contribuyentes", paragraphs: ["Deben revisar CFDI."], evidence_refs: ["p1"] }],
+        },
+        recommended_actions: [{ affected_group: "Contribuyentes", paragraphs: ["Conservar evidencia."], trigger: "Recibir el CFDI", deadline: "30 días", legal_basis: "Artículo 49 Bis", evidence_refs: ["p1"] }],
+        evidence: { official_url: complete.canonical_url, retrieved_at: new Date().toISOString(), content_hash: "d".repeat(64), extraction_method: "html-adapter", locators: [{ id: "p1", label: "Cuerpo", location: "párrafo 1" }] },
+        coverage: [{ source_ref: "p1", disposition: "summarized", target_sections: ["detailed_summary"] }],
+      }),
+    });
+  });
+  for (const [pattern, key] of [["**/data/edition.json", "edition"], ["**/data/publications.json", "publications"], ["**/data/items/*.json", "items"]]) {
+    await page.route(pattern, (route) => { requests[key] += 1; return route.abort(); });
+  }
+
+  for (const viewport of [{ width: 390, height: 844 }, { width: 840, height: 900 }, { width: 1440, height: 1000 }]) {
+    await page.setViewportSize(viewport);
+    await page.goto(`/ficha.html?detail=${encodeURIComponent(detailPath)}`);
+    await expect(page.locator("#detail-content > section")).toHaveCount(4);
+    await expect(page.getByText("<img src=x onerror=alert(1)>")).toBeVisible();
+    await expect(page.locator("#detail-content img")).toHaveCount(0);
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+  }
+  await page.evaluate(() => { localStorage.setItem("radar-theme", "dark"); });
+  await page.reload();
+  await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
+  await page.evaluate(() => { document.documentElement.style.fontSize = "200%"; });
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+  await page.keyboard.press("Tab");
+  await expect(page.getByRole("link", { name: "Saltar al contenido" })).toBeFocused();
+  const accessibility = await new AxeBuilder({ page }).analyze();
+  expect(accessibility.violations).toEqual([]);
+  expect(requests).toEqual({ detail: 4, edition: 0, publications: 0, items: 0 });
+});
+
+test("archivo mensual omite registros pendientes", async ({ page }) => {
   await mockV8(page);
   await page.goto("/archivo.html");
   await expect(page.getByRole("heading", { name: complete.title })).toBeVisible();
-  const pendingLink = page.getByRole("link", { name: pending.official_title });
-  await expect(pendingLink).toHaveAttribute("href", /notas\/bbbbbbbbbbbbbbbbbbbbbbbb\.html/);
+  await expect(page.getByRole("link", { name: pending.official_title })).toHaveCount(0);
   await page.getByLabel("Buscar").fill("pendiente");
-  await expect(page.getByText("1 publicación")).toBeVisible();
+  await expect(page.getByText("0 publicaciones")).toBeVisible();
   await page.getByRole("button", { name: "Limpiar filtros" }).click();
   await expect(page.getByLabel("Buscar")).toBeFocused();
 });
@@ -283,7 +335,7 @@ test("archivo abre directamente el mes indicado por fecha", async ({ page }) => 
   });
 
   await page.goto(`/archivo.html?fecha=${requestedDate}`);
-  await expect(page.getByRole("heading", { name: pending.official_title })).toBeVisible();
+  await expect(page.getByRole("heading", { name: pending.official_title })).toHaveCount(0);
   expect(requestedMonthRequests).toBe(1);
   expect(latestMonthRequests).toBe(0);
   expect(recentMonthRequests).toBe(0);

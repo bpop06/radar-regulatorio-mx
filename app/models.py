@@ -105,6 +105,24 @@ class Publication:
     case_outcome: str = ""
     case_reasoning: str = ""
     case_amount: str = ""
+    # El ciclo editorial v8 distingue la extracción comprobable de la
+    # interpretación. Ambos estados viven en la cola privada; sólo un
+    # registro completo en ambos sentidos puede formar parte del corte
+    # público.
+    extraction_status: str = "pending"
+    # Ruta relativa al JSON canónico de la ficha. El writer la resuelve al
+    # publicar para que pueda cambiarse con --details-dir sin cambiar la
+    # identidad del documento.
+    detail_data_url: str = ""
+    # Ficha editorial estructurada. Los aliases title/summary/card_body se
+    # conservan durante la transición v7, pero ésta es la fuente canónica de
+    # la nota completa v8.
+    executive_summary: list[str] | None = None
+    detailed_summary: list[dict[str, Any]] | None = None
+    impacts: dict[str, Any] | None = None
+    recommended_actions: list[dict[str, Any]] | None = None
+    evidence: dict[str, Any] | None = None
+    coverage: list[dict[str, Any]] | None = None
 
     def to_dict(self) -> dict[str, object]:
         result = asdict(self)

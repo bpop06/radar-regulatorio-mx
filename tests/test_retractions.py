@@ -6,7 +6,7 @@ from pathlib import Path
 
 import pytest
 
-from app.edition import item_key, load_manifested_items, write_site_artifacts
+from app.edition import item_key, load_manifested_items, write_site_artifacts_legacy
 from app.retractions import RetractionError, restore_items, retract_items
 from app.validation import validate_site_artifacts
 from tests.test_contract_v8 import extractive_payload
@@ -36,7 +36,7 @@ def _two_items() -> dict:
 
 def test_retract_and_restore_are_transactional_and_keep_reason(tmp_path: Path) -> None:
     publications = tmp_path / "docs/data/publications.json"
-    write_site_artifacts(_two_items(), publications)
+    write_site_artifacts_legacy(_two_items(), publications)
     key = item_key("CPI:false-positive")
 
     assert retract_items(
@@ -64,7 +64,7 @@ def test_retract_and_restore_are_transactional_and_keep_reason(tmp_path: Path) -
 
 def test_retraction_rejects_missing_id_without_writing(tmp_path: Path) -> None:
     publications = tmp_path / "docs/data/publications.json"
-    write_site_artifacts(_two_items(), publications)
+    write_site_artifacts_legacy(_two_items(), publications)
     before = {
         path.relative_to(tmp_path): path.read_bytes()
         for path in tmp_path.rglob("*")
@@ -84,7 +84,7 @@ def test_retraction_rejects_missing_id_without_writing(tmp_path: Path) -> None:
 
 def test_restore_rejects_tampered_retraction_state(tmp_path: Path) -> None:
     publications = tmp_path / "docs/data/publications.json"
-    write_site_artifacts(_two_items(), publications)
+    write_site_artifacts_legacy(_two_items(), publications)
     retract_items(
         publications,
         ["CPI:false-positive"],
@@ -101,7 +101,7 @@ def test_restore_rejects_tampered_retraction_state(tmp_path: Path) -> None:
 
 def test_restore_rejects_uncommitted_retraction_state(tmp_path: Path) -> None:
     publications = tmp_path / "docs/data/publications.json"
-    write_site_artifacts(_two_items(), publications)
+    write_site_artifacts_legacy(_two_items(), publications)
     retract_items(
         publications,
         ["CPI:false-positive"],

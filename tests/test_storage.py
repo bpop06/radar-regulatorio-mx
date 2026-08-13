@@ -1,3 +1,7 @@
+from pathlib import Path
+
+import pytest
+
 from app.storage import Storage
 
 
@@ -58,3 +62,25 @@ def test_report_on_empty_database(tmp_path):
     assert report.runs == 0
     assert report.documents == 0
     assert report.last_generated_at is None
+
+
+def test_storage_never_chmods_existing_parent(tmp_path, monkeypatch):
+    parent = tmp_path / "existing"
+    parent.mkdir(mode=0o755)
+    before = parent.stat().st_mode & 0o777
+    monkeypatch.setattr(Path, "chmod", lambda *_: pytest.fail("no debe cambiar el parent"))
+    with Storage(parent / "radar.sqlite3"):
+        pass
+    assert parent.stat().st_mode & 0o777 == before
+
+
+def test_storage_rejects_database_directly_in_current_directory(tmp_path, monkeypatch):
+    monkeypatch.chdir(tmp_path)
+    with pytest.raises(ValueError, match="directorio dedicado"):
+        Storage(tmp_path / "radar.sqlite3")
+
+
+def test_storage_rejects_database_inside_repository():
+    repository_root = Path(__file__).resolve().parents[1]
+    with pytest.raises(ValueError, match="directorio dedicado"):
+        Storage(repository_root / "docs/data/private.sqlite3")

@@ -2,6 +2,17 @@ from __future__ import annotations
 
 import os
 from dataclasses import dataclass
+from pathlib import Path
+
+
+def _default_database_path() -> str:
+    state_dir = os.getenv("RADAR_STATE_DIR")
+    if state_dir:
+        return str(Path(state_dir).expanduser() / "radar.sqlite3")
+    return str(
+        Path.home()
+        / "Library/Application Support/Radar Regulatorio MX/radar.sqlite3"
+    )
 
 
 @dataclass(frozen=True)
@@ -14,7 +25,7 @@ class Settings:
         os.getenv("SOURCE_RETRY_BACKOFF_SECONDS", "1.25")
     )
     local_timezone: str = os.getenv("LOCAL_TIMEZONE", "America/Mexico_City")
-    database_path: str = os.getenv("RADAR_DB_PATH", "data/radar.sqlite3")
+    database_path: str = os.getenv("RADAR_DB_PATH", _default_database_path())
     user_agent: str = os.getenv(
         "USER_AGENT",
         "RadarRegulatorioMX/0.1 (+https://github.com/; contacto: administrador-del-sitio)",

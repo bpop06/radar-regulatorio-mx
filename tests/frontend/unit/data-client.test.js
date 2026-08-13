@@ -10,6 +10,7 @@ import {
   editorialLabel,
   fetchJson,
   isGeneratedCutOverdue,
+  loadStructuredDetail,
   olderArchivePaths,
   officialDate,
   stableDetailHref,
@@ -131,4 +132,30 @@ test("distingue fecha oficial y construye enlace permanente", () => {
 test("rechaza una URL de detalle absoluta o ascendente", () => {
   assert.equal(stableDetailHref({ id: "x", detail_url: "https://evil.example/ficha" }), "ficha.html?id=x&from=archivo");
   assert.equal(stableDetailHref({ id: "x", detail_url: "../secreto" }), "ficha.html?id=x&from=archivo");
+});
+
+test("la ficha estructurada debe estar en el manifiesto y compartir cut_id", async () => {
+  const originalFetch = globalThis.fetch;
+  const path = "data/fichas/aaaaaaaaaaaaaaaaaaaaaaaa.json";
+  const current = {
+    schema_version: 8,
+    cut_id: "cut-a",
+    artifacts: { [path]: { sha256: "a".repeat(64), bytes: 1 } },
+  };
+  try {
+    globalThis.fetch = async () => new Response(JSON.stringify({
+      schema_version: 8,
+      cut_id: "cut-b",
+      item: { editorial_status: "complete", extraction_status: "complete" },
+      executive_summary: ["Resumen"],
+      detailed_summary: [], impacts: {}, recommended_actions: [],
+    }), { status: 200, headers: { "content-type": "application/json" } });
+    await assert.rejects(loadStructuredDetail(path, current), /cut_id no coincide/);
+    await assert.rejects(
+      loadStructuredDetail("data/fichas/bbbbbbbbbbbbbbbbbbbbbbbb.json", current),
+      /no pertenece al manifiesto/,
+    );
+  } finally {
+    globalThis.fetch = originalFetch;
+  }
 });

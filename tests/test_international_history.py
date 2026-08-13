@@ -9,7 +9,7 @@ import pytest
 
 import app.edition as edition_module
 from app import cli
-from app.edition import item_key, load_manifested_items, write_site_artifacts
+from app.edition import item_key, load_manifested_items, write_site_artifacts_legacy
 from app.international_history import (
     enrich_manifested_international_item,
     rebuild_manifested_international_history,
@@ -152,7 +152,7 @@ def _historical_cut(tmp_path: Path) -> Path:
         ],
         "items": items,
     }
-    write_site_artifacts(initial, publications)
+    write_site_artifacts_legacy(initial, publications)
 
     later = deepcopy(initial)
     later["generated_at"] = "2026-10-01T16:30:00+00:00"
@@ -160,7 +160,7 @@ def _historical_cut(tmp_path: Path) -> Path:
     later["total_items"] = 0
     for source in later["sources"]:
         source["items_found"] = 0
-    write_site_artifacts(later, publications)
+    write_site_artifacts_legacy(later, publications)
     return publications
 
 
@@ -176,7 +176,7 @@ def _publish_migration(publications: Path, historical: list[dict]) -> None:
     payload = json.loads(publications.read_text(encoding="utf-8"))
     payload["_historical_items"] = historical
     payload["_preserve_edition"] = True
-    write_site_artifacts(payload, publications)
+    write_site_artifacts_legacy(payload, publications)
 
 
 def test_rebuild_international_history_extracts_required_literal_case_fields(

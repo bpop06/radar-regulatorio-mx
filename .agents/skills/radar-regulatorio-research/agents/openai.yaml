@@ -1,0 +1,4 @@
+interface:
+  display_name: "Radar regulatorio MX"
+  short_description: "Opera y audita los cortes regulatorios diarios"
+  default_prompt: "Usa $radar-regulatorio-research para preparar, auditar y publicar un corte regulatorio completo."
