@@ -17,6 +17,7 @@ from app.international_history import (
     rebuild_manifested_international_history,
 )
 from app.pipeline import collect
+from app.retractions import RetractionError, restore_items, retract_items
 from app.sources.base import SourceContractError
 from app.sources.certification import assert_relaunch_ready, certification_report
 from app.storage import Storage
@@ -115,6 +116,27 @@ def build_parser() -> argparse.ArgumentParser:
     )
     international_history_parser.add_argument("--edition-output", type=Path, default=None)
     international_history_parser.add_argument("--dry-run", action="store_true")
+
+    retract_parser = subparsers.add_parser(
+        "retract-items",
+        help="retira fichas falsas de forma transaccional y conserva rollback",
+    )
+    retract_parser.add_argument("ids", nargs="+")
+    retract_parser.add_argument("--reason", required=True)
+    retract_parser.add_argument(
+        "--input", type=Path, default=Path("docs/data/publications.json")
+    )
+    retract_parser.add_argument("--edition-output", type=Path, default=None)
+
+    restore_parser = subparsers.add_parser(
+        "restore-items",
+        help="restaura fichas desde el registro transaccional de retiros",
+    )
+    restore_parser.add_argument("ids", nargs="+")
+    restore_parser.add_argument(
+        "--input", type=Path, default=Path("docs/data/publications.json")
+    )
+    restore_parser.add_argument("--edition-output", type=Path, default=None)
 
     edition_parser = subparsers.add_parser(
         "build-edition",
@@ -285,6 +307,29 @@ def main() -> None:
             print(
                 f"Migradas {len(historical)} fichas históricas CIJ/CPI en {args.input}"
             )
+    elif args.command == "retract-items":
+        try:
+            count = retract_items(
+                args.input,
+                args.ids,
+                reason=args.reason,
+                edition_path=args.edition_output,
+            )
+        except RetractionError as exc:
+            print(f"Error de retiro: {exc}", file=sys.stderr)
+            raise SystemExit(1) from exc
+        print(f"Retiradas {count} fichas en {args.input}")
+    elif args.command == "restore-items":
+        try:
+            count = restore_items(
+                args.input,
+                args.ids,
+                edition_path=args.edition_output,
+            )
+        except RetractionError as exc:
+            print(f"Error de restauración: {exc}", file=sys.stderr)
+            raise SystemExit(1) from exc
+        print(f"Restauradas {count} fichas en {args.input}")
     elif args.command == "build-edition":
         payload = prepare_payload(
             json.loads(args.input.read_text(encoding="utf-8")),

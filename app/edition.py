@@ -16,7 +16,13 @@ from typing import Any
 from urllib.parse import parse_qs, urlsplit, urlunsplit
 from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 
+from app.identity import records_are_aliases, source_priority
+from app.models import Candidate
+from app.relevance import classify
+from app.sources.gobmx import sanitize_gobmx_title
+from app.sources.worldbank import canonical_worldbank_url
 from app.state import load_committed_state
+from app.taxonomy import enrich
 from app.text import words
 
 SCHEMA_VERSION = 8
@@ -145,6 +151,8 @@ def prepare_payload(
     historical_items = result.pop("_historical_items", None)
     result.pop("cut_id", None)
     result["schema_version"] = SCHEMA_VERSION
+    if not isinstance(result.get("collection_notes"), dict):
+        result["collection_notes"] = {"dof_previous_day_reviewed": False}
     generated_at = _iso_datetime(result.get("generated_at"))
     result["generated_at"] = generated_at
     result["items"] = [
@@ -317,14 +325,21 @@ def write_site_artifacts(
     current.pop("_pending_state", None)
     historical_transport = current.pop("_historical_items", [])
     current.pop("_preserve_edition", None)
+    baseline_inventory = current.pop("_baseline_inventory", False) is True
+    current.pop("_explicit_detection_ids", None)
+    state_payloads = _state_payloads(data_dir, pending_state)
+    retired_item_ids = _effective_retired_item_ids(
+        current.pop("_retired_item_ids", ()), state_payloads
+    )
     previous_by_case = _case_identity_index(previous_items)
     current_items = [
         _reconcile_item(
-            item,
-            _previous_item(item, previous_items, previous_by_case),
+            item, _previous_item(item, previous_items, previous_by_case),
             current["generated_at"],
+            preserve_detection=not baseline_inventory,
         )
         for item in current["items"]
+        if str(item.get("id") or "") not in retired_item_ids
     ]
     historical_items = [
         _reconcile_item(
@@ -334,6 +349,7 @@ def write_site_artifacts(
         )
         for item in historical_transport
         if isinstance(item, dict)
+        and str(item.get("id") or "") not in retired_item_ids
     ]
     current["items"] = current_items
     current["total_items"] = len(current_items)
@@ -343,11 +359,16 @@ def write_site_artifacts(
         )
 
     permanent_items = dict(previous_items)
-    superseded_item_ids: set[str] = set()
+    superseded_item_ids: set[str] = set(
+        _consolidate_identity_aliases(permanent_items)
+    )
+    for item_id in retired_item_ids:
+        if permanent_items.pop(item_id, None) is not None:
+            superseded_item_ids.add(item_id)
     for item in (*historical_items, *current_items):
         superseded_item_ids.update(_remove_legacy_case_aliases(permanent_items, item))
+        superseded_item_ids.update(_remove_identity_aliases(permanent_items, item))
         permanent_items[item["id"]] = item
-    state_payloads = _state_payloads(data_dir, pending_state)
     cut_id = compute_cut_id(
         current,
         permanent_items.values(),
@@ -527,33 +548,50 @@ def load_manifested_items(publications_path: Path) -> dict[str, dict[str, Any]]:
 
 def _normalize_item(item: dict[str, Any], generated_at: str) -> dict[str, Any]:
     result = deepcopy(item)
+    incoming_content_hash = str(result.get("content_hash") or "").strip()
+    incoming_editorial_status = result.get("editorial_status")
     source = str(result.get("source") or "Fuente desconocida").strip()
     source_id = str(result.get("source_id") or "").strip()
     item_id = str(result.get("id") or "").strip()
     if not source_id and ":" in item_id:
         source_id = item_id.split(":", 1)[1]
     url = str(result.get("canonical_url") or result.get("url") or "").strip()
+    public_url = str(result.get("url") or url).strip()
+    if source == "Banco Mundial":
+        url = canonical_worldbank_url(url)
+        public_url = canonical_worldbank_url(public_url)
     canonical_url = _canonical_url(url)
     source_id = source_id or canonical_url
     item_id = item_id or f"{source.casefold()}:{source_id}"
     official_date = str(
         result.get("official_published_at") or result.get("published_at") or generated_at[:10]
     )[:10]
-    detected_at = _iso_datetime(result.get("detected_at") or generated_at)
+    raw_detected_at = result.get("detected_at")
+    if raw_detected_at:
+        detected_at = _iso_datetime(raw_detected_at)
+    else:
+        # Un inventario v7 no registra cuándo fue detectado. Usar la hora del
+        # bootstrap anunciaría toda la ventana móvil como novedad del día.
+        # El mediodía UTC conserva la fecha oficial al convertirla a Ciudad
+        # de México y deja explícito que se trata de un fallback histórico.
+        detected_at = _iso_datetime(f"{official_date}T12:00:00+00:00")
 
     result.update(
         {
             "id": item_id,
             "source_id": source_id,
             "source": source,
-            "url": str(result.get("url") or canonical_url),
+            "url": public_url or canonical_url,
             "canonical_url": canonical_url,
             "detail_url": f"notas/{item_key(item_id)}.html",
             "official_published_at": official_date,
             "published_at": official_date,
             "detected_at": detected_at,
             "first_seen_at": _iso_datetime(result.get("first_seen_at") or detected_at),
-            "last_seen_at": _iso_datetime(result.get("last_seen_at") or detected_at),
+            "last_seen_at": _latest_iso_datetime(
+                result.get("last_seen_at") or generated_at,
+                result.get("first_seen_at") or detected_at,
+            ),
         }
     )
     case_number = _case_number(result)
@@ -594,6 +632,11 @@ def _normalize_item(item: dict[str, Any], generated_at: str) -> dict[str, Any]:
     result.setdefault("official_evidence", {"primary_url": result["url"]})
     if not isinstance(result["official_evidence"], dict) or not result["official_evidence"]:
         result["official_evidence"] = {"primary_url": result["url"]}
+    if source == "Banco Mundial":
+        result["official_evidence"] = {
+            key: canonical_worldbank_url(value) if isinstance(value, str) else value
+            for key, value in result["official_evidence"].items()
+        }
 
     for field in (
         "case_number",
@@ -607,11 +650,22 @@ def _normalize_item(item: dict[str, Any], generated_at: str) -> dict[str, Any]:
         "case_amount",
     ):
         result.setdefault(field, "")
+    derived_importance = _refresh_extractive_fields(result)
     # Nunca confiar en un digest aportado por el payload: la huella se deriva
     # de la evidencia oficial normalizada. Así, cambiar el título oficial u
     # otro dato sustantivo sin actualizar el hash no puede conservar una
     # editorial obsoleta.
     result["content_hash"] = official_content_hash(result)
+    if (
+        incoming_editorial_status == "complete"
+        and incoming_content_hash != result["content_hash"]
+    ):
+        result["editorial_status"] = "needs_review"
+        result["review_reason"] = (
+            "La evidencia oficial cambió durante la normalización; "
+            "requiere una nueva revisión editorial."
+        )
+        result["importance"] = derived_importance
 
     if result.get("editorial_status") not in {"complete", "needs_review"}:
         result["editorial_status"] = "needs_review"
@@ -633,15 +687,102 @@ def _normalize_item(item: dict[str, Any], generated_at: str) -> dict[str, Any]:
     return result
 
 
+def _refresh_extractive_fields(item: dict[str, Any]) -> int:
+    """Recalcula taxonomía derivada sólo desde evidencia oficial almacenada."""
+
+    source = str(item.get("source") or "").strip()
+    official_title = str(item.get("official_title") or "").strip()
+    if source in {"Gob.mx APF", "IMPI"}:
+        official_title = sanitize_gobmx_title(official_title)
+        item["official_title"] = official_title
+
+    official_date = date.fromisoformat(str(item["official_published_at"])[:10])
+    evidence = item.get("official_evidence")
+    official_evidence = (
+        {
+            str(key): value
+            for key, value in evidence.items()
+            if isinstance(key, str) and isinstance(value, str)
+        }
+        if isinstance(evidence, dict)
+        else {}
+    )
+    candidate = Candidate(
+        source=source,
+        source_id=str(item.get("source_id") or ""),
+        url=str(item.get("url") or item.get("canonical_url") or ""),
+        canonical_url=str(item.get("canonical_url") or ""),
+        official_title=official_title,
+        description=str(item.get("description") or ""),
+        published_at=official_date,
+        official_published_at=official_date,
+        authority=str(item.get("authority") or ""),
+        document_type=str(item.get("document_type") or ""),
+        case_number=str(item.get("case_number") or ""),
+        case_parties=str(item.get("case_parties") or ""),
+        case_status=str(item.get("case_status") or ""),
+        case_treaty=str(item.get("case_treaty") or ""),
+        case_claim=str(item.get("case_claim") or ""),
+        case_outcome=str(item.get("case_outcome") or ""),
+        case_reasoning=str(item.get("case_reasoning") or ""),
+        case_amount=str(item.get("case_amount") or ""),
+        official_evidence=official_evidence,
+    )
+    classified = classify(candidate)
+    taxonomy = enrich(classified)
+    item.update(
+        {
+            "issuing_body": taxonomy.issuing_body,
+            "government_branch": taxonomy.government_branch,
+            "jurisdiction": taxonomy.jurisdiction,
+            "country_or_org": taxonomy.country_or_org,
+            "published_year": taxonomy.published_year,
+            "published_month": taxonomy.published_month,
+            "published_day": taxonomy.published_day,
+            "categories": list(taxonomy.primary_categories),
+            "topic_tags": list(taxonomy.topic_tags),
+            "subtopic_tags": list(taxonomy.subtopic_tags),
+            "relevance_score": classified.relevance_score,
+        }
+    )
+    if item.get("editorial_status") != "complete":
+        item["importance"] = taxonomy.importance
+    return taxonomy.importance
+
+
 def _reconcile_item(
-    incoming: dict[str, Any], previous: dict[str, Any] | None, generated_at: str
+    incoming: dict[str, Any],
+    previous: dict[str, Any] | None,
+    generated_at: str,
+    *,
+    preserve_detection: bool = True,
 ) -> dict[str, Any]:
     item = deepcopy(incoming)
     if previous is None:
         return item
     previous = _normalize_item(previous, generated_at)
-    item["first_seen_at"] = previous.get("first_seen_at", item["first_seen_at"])
-    item["last_seen_at"] = generated_at
+    if (
+        str(previous.get("id") or "") != str(item.get("id") or "")
+        and records_are_aliases(previous, item)
+        and source_priority(str(previous.get("source") or ""))
+        > source_priority(str(item.get("source") or ""))
+    ):
+        # Si hoy sólo respondió el agregador, no degradar la identidad
+        # canónica elegida en un corte anterior. La copia específica sigue
+        # siendo la ficha pública y se marca como observada en este corte.
+        preferred = deepcopy(previous)
+        if not preserve_detection:
+            preferred["detected_at"] = item["detected_at"]
+            preferred["first_seen_at"] = item["first_seen_at"]
+        preferred["last_seen_at"] = _latest_iso_datetime(
+            generated_at, preferred.get("first_seen_at") or preferred["detected_at"]
+        )
+        return preferred
+    if preserve_detection:
+        item["first_seen_at"] = previous.get("first_seen_at", item["first_seen_at"])
+    item["last_seen_at"] = _latest_iso_datetime(
+        generated_at, item.get("first_seen_at") or item["detected_at"]
+    )
     if item["content_hash"] != previous.get("content_hash"):
         item["editorial_status"] = "needs_review"
         item["review_reason"] = "La fuente oficial cambió; requiere una nueva revisión editorial."
@@ -655,7 +796,8 @@ def _reconcile_item(
         item["ai_generated"] = False
         return item
 
-    item["detected_at"] = previous.get("detected_at", item["detected_at"])
+    if preserve_detection:
+        item["detected_at"] = previous.get("detected_at", item["detected_at"])
     if item.get("editorial_status") != "complete" and previous.get(
         "editorial_status"
     ) == "complete":
@@ -748,9 +890,113 @@ def _previous_item(
     previous_items: dict[str, dict[str, Any]],
     previous_by_case: dict[tuple[str, str], dict[str, Any]],
 ) -> dict[str, Any] | None:
-    return previous_items.get(str(incoming.get("id") or "")) or previous_by_case.get(
-        _case_identity(incoming)
+    exact = previous_items.get(str(incoming.get("id") or ""))
+    if exact is not None:
+        return exact
+    case_alias = previous_by_case.get(_case_identity(incoming))
+    if case_alias is not None:
+        return case_alias
+    aliases = [
+        previous
+        for previous in previous_items.values()
+        if records_are_aliases(incoming, previous)
+    ]
+    return max(aliases, key=_identity_preference) if aliases else None
+
+
+def _identity_preference(item: dict[str, Any]) -> tuple[int, int, str]:
+    return (
+        source_priority(str(item.get("source") or "")),
+        len(str(item.get("description") or "")),
+        str(item.get("id") or ""),
     )
+
+
+def _consolidate_identity_aliases(
+    permanent_items: dict[str, dict[str, Any]],
+) -> tuple[str, ...]:
+    """Colapsa todos los aliases ya archivados, incluidos los no vistos hoy."""
+
+    remaining = set(permanent_items)
+    removed: list[str] = []
+    while remaining:
+        seed = min(remaining)
+        remaining.remove(seed)
+        component = {seed}
+        frontier = [seed]
+        while frontier:
+            current_id = frontier.pop()
+            current = permanent_items[current_id]
+            aliases = {
+                candidate_id
+                for candidate_id in remaining
+                if records_are_aliases(current, permanent_items[candidate_id])
+            }
+            if aliases:
+                component.update(aliases)
+                remaining.difference_update(aliases)
+                frontier.extend(sorted(aliases))
+
+        if len(component) == 1:
+            continue
+        winner_id = max(
+            component,
+            key=lambda item_id: _identity_preference(permanent_items[item_id]),
+        )
+        winner = deepcopy(permanent_items[winner_id])
+        members = [permanent_items[item_id] for item_id in component]
+        winner["first_seen_at"] = _temporal_extreme(
+            (member.get("first_seen_at") for member in members),
+            fallback=str(winner.get("first_seen_at") or ""),
+            latest=False,
+        )
+        winner["detected_at"] = _temporal_extreme(
+            (member.get("detected_at") for member in members),
+            fallback=str(winner.get("detected_at") or ""),
+            latest=False,
+        )
+        winner["last_seen_at"] = _temporal_extreme(
+            (member.get("last_seen_at") for member in members),
+            fallback=str(winner.get("last_seen_at") or ""),
+            latest=True,
+        )
+        permanent_items[winner_id] = winner
+        for item_id in sorted(component - {winner_id}):
+            permanent_items.pop(item_id, None)
+            removed.append(item_id)
+    return tuple(removed)
+
+
+def _temporal_extreme(values: Any, *, fallback: str, latest: bool) -> str:
+    parsed: list[tuple[datetime, str]] = []
+    for value in values:
+        if not isinstance(value, str):
+            continue
+        try:
+            instant = datetime.fromisoformat(value.replace("Z", "+00:00"))
+        except ValueError:
+            continue
+        if instant.tzinfo is None:
+            instant = instant.replace(tzinfo=UTC)
+        parsed.append((instant.astimezone(UTC), instant.isoformat()))
+    if not parsed:
+        return fallback
+    selected = max(parsed) if latest else min(parsed)
+    return selected[1]
+
+
+def _remove_identity_aliases(
+    permanent_items: dict[str, dict[str, Any]], incoming: dict[str, Any]
+) -> tuple[str, ...]:
+    """Consolida aliases deterministas dentro de la misma transacción."""
+
+    incoming_id = str(incoming.get("id") or "")
+    removed: list[str] = []
+    for item_id, previous in tuple(permanent_items.items()):
+        if item_id != incoming_id and records_are_aliases(incoming, previous):
+            permanent_items.pop(item_id, None)
+            removed.append(item_id)
+    return tuple(removed)
 
 
 def _case_identity_index(
@@ -837,6 +1083,25 @@ def _state_payloads(data_dir: Path, pending: Any) -> dict[str, Any]:
     if isinstance(pending, dict):
         states.update(pending)
     return states
+
+
+def _effective_retired_item_ids(requested: Any, states: dict[str, Any]) -> set[str]:
+    result: set[str] = set()
+    if isinstance(requested, (list, tuple, set)):
+        result.update(
+            item_id.strip()
+            for item_id in requested
+            if isinstance(item_id, str) and item_id.strip()
+        )
+    ledger = states.get("retractions")
+    entries = ledger.get("items") if isinstance(ledger, dict) else None
+    if isinstance(entries, dict):
+        result.update(
+            item_id.strip()
+            for item_id in entries
+            if isinstance(item_id, str) and item_id.strip()
+        )
+    return result
 
 
 def _commit_staged_artifacts(
@@ -1017,6 +1282,14 @@ def _iso_datetime(value: Any) -> str:
                 parsed = parsed.replace(tzinfo=UTC)
             return parsed.isoformat()
     return datetime.now(UTC).isoformat()
+
+
+def _latest_iso_datetime(value: Any, floor: Any) -> str:
+    normalized = _iso_datetime(value)
+    normalized_floor = _iso_datetime(floor)
+    observed = datetime.fromisoformat(normalized.replace("Z", "+00:00"))
+    minimum = datetime.fromisoformat(normalized_floor.replace("Z", "+00:00"))
+    return normalized if observed >= minimum else normalized_floor
 
 
 def _json_bytes(value: Any) -> bytes:

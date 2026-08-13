@@ -10,6 +10,7 @@ import pytest
 
 from app.edition import (
     STATIC_ASSET_VERSION,
+    _consolidate_identity_aliases,
     item_key,
     prepare_payload,
     write_site_artifacts,
@@ -213,6 +214,300 @@ def test_second_run_is_idempotent_except_for_cut_observation_times(tmp_path: Pat
 
     assert second_manifest["cut_id"] == first_manifest["cut_id"]
     assert second == first
+
+
+def test_global_alias_consolidation_preserves_winner_times_and_diputados_anchors() -> None:
+    shared_url = "https://www.gob.mx/impi/prensa/aviso?idiom=es"
+    gaceta = "https://gaceta.diputados.gob.mx/Gaceta/66/2026/ago/20260812.html"
+    permanent = {
+        "gob.mx apf:copy": {
+            "id": "gob.mx apf:copy",
+            "source": "Gob.mx APF",
+            "source_id": "copy",
+            "url": shared_url,
+            "canonical_url": shared_url,
+            "description": "Copia agregada extensa.",
+            "first_seen_at": "2026-08-01T10:00:00+00:00",
+            "detected_at": "2026-08-01T10:00:00+00:00",
+            "last_seen_at": "2026-08-10T10:00:00+00:00",
+        },
+        "impi:official": {
+            "id": "impi:official",
+            "source": "IMPI",
+            "source_id": "official",
+            "url": shared_url,
+            "canonical_url": shared_url,
+            "description": "Original.",
+            "first_seen_at": "2026-08-03T10:00:00+00:00",
+            "detected_at": "2026-08-03T10:00:00+00:00",
+            "last_seen_at": "2026-08-12T10:00:00+00:00",
+        },
+        "diputados:one": {
+            "id": "diputados:one",
+            "source": "Diputados",
+            "source_id": "one",
+            "url": f"{gaceta}#Iniciativa1",
+            "canonical_url": gaceta,
+            "description": "Primera iniciativa.",
+        },
+        "diputados:two": {
+            "id": "diputados:two",
+            "source": "Diputados",
+            "source_id": "two",
+            "url": f"{gaceta}#Iniciativa2",
+            "canonical_url": gaceta,
+            "description": "Segunda iniciativa.",
+        },
+    }
+
+    removed = _consolidate_identity_aliases(permanent)
+
+    assert removed == ("gob.mx apf:copy",)
+    assert set(permanent) == {"impi:official", "diputados:one", "diputados:two"}
+    assert permanent["impi:official"]["first_seen_at"] == "2026-08-01T10:00:00+00:00"
+    assert permanent["impi:official"]["detected_at"] == "2026-08-01T10:00:00+00:00"
+    assert permanent["impi:official"]["last_seen_at"] == "2026-08-12T10:00:00+00:00"
+
+
+def test_second_day_keeps_mobile_window_but_publishes_empty_edition(tmp_path: Path) -> None:
+    docs = tmp_path / "docs"
+    publications = docs / "data/publications.json"
+    write_site_artifacts(extractive_payload(), publications)
+
+    next_day = extractive_payload()
+    next_day["generated_at"] = "2026-08-13T16:30:00+00:00"
+    write_site_artifacts(next_day, publications)
+
+    written = json.loads(publications.read_text(encoding="utf-8"))
+    edition = json.loads((docs / "data/edition.json").read_text(encoding="utf-8"))
+    assert written["total_items"] == 1
+    assert written["edition"]["state"] == "empty"
+    assert written["edition"]["total_today"] == 0
+    assert written["edition"]["signals"] == []
+    assert edition["state"] == "empty"
+    assert edition["total_today"] == 0
+    assert edition["signals"] == []
+
+
+def test_bootstrap_repairs_inflated_detection_without_hiding_explicit_change(
+    tmp_path: Path,
+) -> None:
+    docs = tmp_path / "docs"
+    publications = docs / "data/publications.json"
+    inflated = extractive_payload()
+    inflated["items"] = []
+    for item_id, official_date in (("inventory", "2026-08-10"), ("changed", "2026-04-27")):
+        record = deepcopy(extractive_payload()["items"][0])
+        record.update(
+            {
+                "id": f"DOF:{item_id}",
+                "source_id": item_id,
+                "url": f"https://dof.gob.mx/nota?id={item_id}",
+                "canonical_url": f"https://dof.gob.mx/nota?id={item_id}",
+                "published_at": official_date,
+                "detected_at": "2026-08-12T16:30:00+00:00",
+                "first_seen_at": "2026-08-12T16:30:00+00:00",
+                "last_seen_at": "2026-08-12T16:30:00+00:00",
+                "official_identifiers": {"source_id": item_id},
+                "official_evidence": {
+                    "primary_url": f"https://dof.gob.mx/nota?id={item_id}"
+                },
+            }
+        )
+        inflated["items"].append(record)
+    inflated["total_items"] = 2
+    write_site_artifacts(inflated, publications)
+
+    baseline = deepcopy(inflated)
+    baseline["generated_at"] = "2026-08-13T16:30:00+00:00"
+    baseline["_baseline_inventory"] = True
+    baseline["_explicit_detection_ids"] = ["DOF:changed"]
+    baseline["items"][0].update(
+        {
+            "detected_at": "2026-08-10T12:00:00+00:00",
+            "first_seen_at": "2026-08-10T12:00:00+00:00",
+            "last_seen_at": "2026-08-13T16:30:00+00:00",
+        }
+    )
+    baseline["items"][1].update(
+        {
+            "detected_at": "2026-08-13T16:30:00+00:00",
+            "first_seen_at": "2026-08-13T16:30:00+00:00",
+            "last_seen_at": "2026-08-13T16:30:00+00:00",
+        }
+    )
+    write_site_artifacts(baseline, publications)
+
+    written = json.loads(publications.read_text(encoding="utf-8"))
+    by_id = {item["id"]: item for item in written["items"]}
+    assert by_id["DOF:inventory"]["detected_at"] == "2026-08-10T12:00:00+00:00"
+    assert by_id["DOF:changed"]["detected_at"] == "2026-08-13T16:30:00+00:00"
+    assert written["edition"]["total_today"] == 1
+    assert [signal["id"] for signal in written["edition"]["signals"]] == ["DOF:changed"]
+    assert "_baseline_inventory" not in written
+    assert "_explicit_detection_ids" not in written
+
+
+def test_writer_transactionally_consolidates_cross_source_url_aliases(
+    tmp_path: Path,
+) -> None:
+    docs = tmp_path / "docs"
+    publications = docs / "data/publications.json"
+    official_url = "https://www.gob.mx/impi/prensa/aviso-oficial?idiom=es"
+    first = extractive_payload()
+    first_item = first["items"][0]
+    first_item.update(
+        {
+            "id": "gob.mx apf:gob-copy",
+            "source": "Gob.mx APF",
+            "source_id": "gob-copy",
+            "url": official_url,
+            "canonical_url": official_url,
+            "official_identifiers": {"source_id": "gob-copy"},
+            "official_evidence": {"primary_url": official_url},
+        }
+    )
+    write_site_artifacts(first, publications)
+    old_key = item_key("gob.mx apf:gob-copy")
+    assert (docs / f"data/items/{old_key}.json").exists()
+    assert (docs / f"notas/{old_key}.html").exists()
+
+    winner = extractive_payload()
+    winner["generated_at"] = "2026-08-13T16:30:00+00:00"
+    winner_item = winner["items"][0]
+    winner_item.update(
+        {
+            "id": "impi:impi-copy",
+            "source": "IMPI",
+            "source_id": "impi-copy",
+            "url": official_url,
+            "canonical_url": official_url,
+            "official_identifiers": {"source_id": "impi-copy"},
+            "official_evidence": {"primary_url": official_url},
+        }
+    )
+    write_site_artifacts(winner, publications)
+
+    archive = json.loads((docs / "data/archive/2026-08.json").read_text())
+    assert [item["id"] for item in archive["items"]] == ["impi:impi-copy"]
+    assert not (docs / f"data/items/{old_key}.json").exists()
+    assert not (docs / f"notas/{old_key}.html").exists()
+    assert validate_site_artifacts(docs / "data/manifest.json").ok
+
+
+def test_lower_priority_alias_cannot_replace_existing_specific_winner(
+    tmp_path: Path,
+) -> None:
+    docs = tmp_path / "docs"
+    publications = docs / "data/publications.json"
+    official_url = "https://www.gob.mx/impi/prensa/aviso-oficial?idiom=es"
+    specific = extractive_payload()
+    specific["items"][0].update(
+        {
+            "id": "impi:specific",
+            "source": "IMPI",
+            "source_id": "specific",
+            "url": official_url,
+            "canonical_url": official_url,
+            "official_identifiers": {"source_id": "specific"},
+            "official_evidence": {"primary_url": official_url},
+        }
+    )
+    write_site_artifacts(specific, publications)
+    winner_key = item_key("impi:specific")
+
+    aggregate_only = extractive_payload()
+    aggregate_only["generated_at"] = "2026-08-13T16:30:00+00:00"
+    aggregate_only["items"][0].update(
+        {
+            "id": "gob.mx apf:aggregate",
+            "source": "Gob.mx APF",
+            "source_id": "aggregate",
+            "url": official_url,
+            "canonical_url": official_url,
+            "official_identifiers": {"source_id": "aggregate"},
+            "official_evidence": {"primary_url": official_url},
+        }
+    )
+    write_site_artifacts(aggregate_only, publications)
+
+    written = json.loads(publications.read_text(encoding="utf-8"))
+    archive = json.loads((docs / "data/archive/2026-08.json").read_text())
+    assert [item["id"] for item in written["items"]] == ["impi:specific"]
+    assert [item["id"] for item in archive["items"]] == ["impi:specific"]
+    assert (docs / f"data/items/{winner_key}.json").exists()
+    assert validate_site_artifacts(docs / "data/manifest.json").ok
+
+
+def test_writer_consolidates_official_impi_article_alias_but_not_generic_same_source_ids(
+    tmp_path: Path,
+) -> None:
+    docs = tmp_path / "docs"
+    publications = docs / "data/publications.json"
+    article_url = (
+        "https://www.gob.mx/impi/es/articulos/"
+        "impi-asegura-mercancia-apocrifa-en-aduana-de-lazaro-cardenas-430469?idiom=es"
+    )
+    press_url = (
+        "https://www.gob.mx/impi/prensa/"
+        "impi-asegura-mercancia-apocrifa-en-aduana-de-lazaro-cardenas?idiom=es"
+    )
+    article = extractive_payload()
+    article["items"][0].update(
+        {
+            "id": "gob.mx apf:article",
+            "source": "Gob.mx APF",
+            "source_id": "article",
+            "url": article_url,
+            "canonical_url": article_url,
+            "official_identifiers": {"source_id": "article"},
+            "official_evidence": {"primary_url": article_url},
+        }
+    )
+    write_site_artifacts(article, publications)
+
+    press = extractive_payload()
+    press["generated_at"] = "2026-08-13T16:30:00+00:00"
+    press["items"][0].update(
+        {
+            "id": "gob.mx apf:press",
+            "source": "Gob.mx APF",
+            "source_id": "press",
+            "url": press_url,
+            "canonical_url": press_url,
+            "official_identifiers": {"source_id": "press"},
+            "official_evidence": {"primary_url": press_url},
+        }
+    )
+    write_site_artifacts(press, publications)
+    archive = json.loads((docs / "data/archive/2026-08.json").read_text())
+    assert [item["id"] for item in archive["items"]] == ["gob.mx apf:press"]
+
+    generic = "https://dof.gob.mx/nota"
+    first_dof = extractive_payload()
+    first_dof["generated_at"] = "2026-08-14T16:30:00+00:00"
+    first_dof["items"][0].update(
+        {
+            "id": "DOF:one",
+            "source_id": "one",
+            "url": generic,
+            "canonical_url": generic,
+            "official_identifiers": {"source_id": "one"},
+            "official_evidence": {"primary_url": generic},
+        }
+    )
+    write_site_artifacts(first_dof, publications)
+    second_dof = deepcopy(first_dof)
+    second_dof["generated_at"] = "2026-08-15T16:30:00+00:00"
+    second_dof["items"][0]["id"] = "DOF:two"
+    second_dof["items"][0]["source_id"] = "two"
+    second_dof["items"][0]["official_identifiers"] = {"source_id": "two"}
+    write_site_artifacts(second_dof, publications)
+
+    archive = json.loads((docs / "data/archive/2026-08.json").read_text())
+    archived_ids = {item["id"] for item in archive["items"]}
+    assert {"DOF:one", "DOF:two"} <= archived_ids
+    assert validate_site_artifacts(docs / "data/manifest.json").ok
 
 
 def test_manifest_hashes_exact_bytes(tmp_path: Path) -> None:

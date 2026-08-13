@@ -33,7 +33,8 @@ Artefactos:
 - `docs/data/archive/YYYY-MM.json`: índices mensuales permanentes.
 - `docs/data/items/<hash>.json`: evidencia y ficha estable por documento.
 - `docs/notas/<hash>.html`: nota estática con metadatos sociales.
-- `docs/data/state/{icsid,tmec}.json`: estado confirmado con el mismo corte.
+- `docs/data/state/{icsid,tmec,retractions}.json`: estado confirmado con el
+  mismo corte; `retractions` existe sólo cuando hay retiros vigentes.
 
 La generación ocurre en staging. Sólo después de validar contrato, referencias
 y hashes se reemplazan todos los artefactos; `--dry-run` no escribe ni consume
@@ -78,6 +79,18 @@ Aplicación editorial validada:
 
 La interpretación editorial la realiza Codex a partir de fuentes oficiales.
 Python no llama APIs de modelos.
+
+Retiro transaccional de una ficha que no constituye una novedad regulatoria:
+
+```bash
+.venv/bin/python -m app.cli retract-items SOURCE:ID \
+  --reason "Motivo verificable" --input docs/data/publications.json
+.venv/bin/python -m app.cli restore-items SOURCE:ID \
+  --input docs/data/publications.json
+```
+
+El retiro elimina ficha, nota e índices en el mismo corte y conserva motivo y
+respaldo en el estado autenticado por el manifiesto para permitir rollback.
 
 ## Operación
 

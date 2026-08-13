@@ -492,6 +492,11 @@ def _validate_top_level(payload: dict[str, Any], errors: list[str]) -> None:
             not isinstance(cut_id, str) or not re.fullmatch(r"[0-9a-f]{24}", cut_id)
         ):
             errors.append("cut_id must be a 24-character lowercase hex digest")
+        collection_notes = payload.get("collection_notes")
+        if not isinstance(collection_notes, dict):
+            errors.append("collection_notes must be an object")
+        elif not isinstance(collection_notes.get("dof_previous_day_reviewed"), bool):
+            errors.append("collection_notes.dof_previous_day_reviewed must be a boolean")
     if not isinstance(payload.get("generated_at"), str):
         errors.append("generated_at must be a string")
     else:

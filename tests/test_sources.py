@@ -5,8 +5,8 @@ from datetime import date
 import httpx
 import pytest
 
-from app.models import Candidate
-from app.pipeline import _collect_source, _deduplicate
+from app.models import Candidate, SourceResult
+from app.pipeline import _collect_source, _deduplicate, _dof_previous_day_reviewed
 from app.relevance import classify
 from app.sources.base import Collector, SourceContractError
 from app.sources.certification import RELAUNCH_SOURCES, certification_report
@@ -1552,3 +1552,18 @@ def test_pipeline_never_reports_ok_without_a_validated_endpoint():
     assert status["status"] == "degraded"
     assert status["validated_endpoints"] == 0
     assert "ningún endpoint" in status["warnings"][0]
+
+
+def test_dof_previous_day_review_requires_a_healthy_validated_result():
+    today = date(2026, 8, 12)
+    since = date(2026, 8, 11)
+    healthy = SourceResult(source="DOF", details={"validated_endpoints": 1})
+
+    assert _dof_previous_day_reviewed([healthy], since, today) is True
+
+    for result in (
+        SourceResult(source="DOF", degraded=True, details={"validated_endpoints": 1}),
+        SourceResult(source="DOF", error="falló", details={"validated_endpoints": 1}),
+        SourceResult(source="DOF", details={"validated_endpoints": 0}),
+    ):
+        assert _dof_previous_day_reviewed([result], since, today) is False

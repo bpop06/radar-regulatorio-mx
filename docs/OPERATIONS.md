@@ -16,6 +16,9 @@ solo pull request abierto; nunca crea PR competidores y nunca empuja a
 
 1. Actualizar `main` y recrear o poner al día el worktree aislado.
 2. Recolectar las 18 fuentes con límites de tiempo y reintentos acotados.
+   El payload registra `collection_notes.dof_previous_day_reviewed=true` sólo
+   si la ventana incluyó el día anterior y DOF validó transporte y estructura
+   sin degradación.
 3. Conservar la editorial completa cuyo `content_hash` no cambió.
 4. Revisar evidencia oficial de ítems nuevos o modificados y aplicar cambios
    con `apply-editorial`. Lo no sustentado permanece `needs_review`.
@@ -139,6 +142,30 @@ Free][downgrade] y [contactar GitHub Support][support].
 Un cero sólo es válido si HTTP, tipo de contenido y estructura pasan. HTML en
 un endpoint de feed, una estructura irreconocible o un error parcial se
 reportan como `degraded`.
+
+## Retiros y rollback
+
+Una ficha certificada como falso positivo se retira mediante el único canal
+transaccional autorizado; nunca se borran artefactos a mano:
+
+```bash
+.venv/bin/python -m app.cli retract-items SOURCE:ID \
+  --reason "Motivo verificable" --input docs/data/publications.json
+```
+
+El comando exige un corte v8 válido, elimina el registro de la ventana móvil,
+el inventario permanente, el índice mensual y la nota estática, y confirma el
+motivo junto con el nuevo `cut_id`. El estado de retiros sólo se consume si su
+envelope está enumerado y hasheado por el manifiesto vigente. Para revertir el
+retiro de forma igualmente transaccional:
+
+```bash
+.venv/bin/python -m app.cli restore-items SOURCE:ID \
+  --input docs/data/publications.json
+```
+
+Ambos comandos fallan sin escribir si el identificador no existe, el estado
+fue alterado o cualquier validación del corte no pasa.
 
 ## SLA y alertas
 

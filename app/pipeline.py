@@ -4,6 +4,7 @@ import asyncio
 import hashlib
 import json
 import ssl
+from collections import defaultdict
 from datetime import UTC, date, datetime, timedelta
 from pathlib import Path
 from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
@@ -13,6 +14,7 @@ import truststore
 
 from app.config import Settings
 from app.edition import edition_date_from_generated_at, prepare_payload
+from app.identity import official_semantic_alias, record_identity_url, source_priority
 from app.models import Candidate, ClassifiedCandidate, Publication, SourceResult
 from app.relevance import classify, is_relevant
 from app.sources import (
@@ -38,6 +40,27 @@ from app.sources import (
 from app.taxonomy import enrich
 
 
+def _dof_previous_day_reviewed(
+    results: list[SourceResult], since: date, local_today: date
+) -> bool:
+    """Indica si DOF validó un corte que alcanza al menos el día anterior."""
+    if since > local_today - timedelta(days=1):
+        return False
+
+    for result in results:
+        validated_endpoints = result.details.get("validated_endpoints")
+        if (
+            result.source == "DOF"
+            and result.error is None
+            and result.degraded is False
+            and isinstance(validated_endpoints, int)
+            and not isinstance(validated_endpoints, bool)
+            and validated_endpoints >= 1
+        ):
+            return True
+    return False
+
+
 async def collect(
     settings: Settings,
     days: int | None = None,
@@ -45,7 +68,8 @@ async def collect(
     rebuild_stateful_history: bool = False,
 ) -> dict[str, object]:
     lookback = days if days is not None else settings.lookback_days
-    since = _local_today(settings.local_timezone) - timedelta(days=lookback)
+    local_today = _local_today(settings.local_timezone)
+    since = local_today - timedelta(days=lookback)
     headers = {"User-Agent": settings.user_agent}
     timeout = httpx.Timeout(settings.request_timeout)
     ssl_context = truststore.SSLContext(ssl.PROTOCOL_TLS_CLIENT)
@@ -129,7 +153,18 @@ async def collect(
     )
 
     generated_at = datetime.now(UTC)
-    publications = [_publication_from_classified(item, generated_at) for item in classified]
+    edition_date = edition_date_from_generated_at(
+        generated_at.isoformat(), settings.local_timezone
+    )
+    publications = [
+        _publication_from_classified(
+            item,
+            generated_at,
+            edition_date=edition_date,
+            baseline_inventory=rebuild_stateful_history,
+        )
+        for item in classified
+    ]
 
     # Los inventarios de bootstrap se enriquecen con el mismo contrato que
     # las novedades, pero no pasan por el filtro temporal ni entran a
@@ -140,7 +175,9 @@ async def collect(
         for candidate in getattr(collector, "historical_candidates", ())
     )
     historical = [
-        _publication_from_classified(classify(candidate), generated_at)
+        _publication_from_classified(
+            classify(candidate), generated_at, edition_date=edition_date
+        )
         for candidate in historical_candidates
     ]
 
@@ -155,8 +192,23 @@ async def collect(
         "lookback_days": lookback,
         "total_items": len(publications),
         "sources": [result.status_dict() for result in results],
+        "collection_notes": {
+            "dof_previous_day_reviewed": _dof_previous_day_reviewed(
+                results, since, local_today
+            )
+        },
         "items": [publication.to_dict() for publication in publications],
     }
+    if rebuild_stateful_history:
+        # Transporte privado del relanzamiento: permite corregir un corte v8
+        # previo que hubiera marcado todo el inventario móvil como detectado
+        # hoy, sin apagar cambios explícitos de fuentes con estado.
+        payload["_baseline_inventory"] = True
+        payload["_explicit_detection_ids"] = [
+            publication.id
+            for classified_item, publication in zip(classified, publications, strict=True)
+            if classified_item.candidate.detected_at is not None
+        ]
     if pending_state:
         # Campo de transporte interno. `write_site_artifacts` lo excluye del
         # JSON público y sólo lo confirma dentro de la transacción del corte.
@@ -169,7 +221,11 @@ async def collect(
 
 
 def _publication_from_classified(
-    item: ClassifiedCandidate, generated_at: datetime
+    item: ClassifiedCandidate,
+    generated_at: datetime,
+    *,
+    edition_date: date | None = None,
+    baseline_inventory: bool = False,
 ) -> Publication:
     candidate = item.candidate
     taxonomy = enrich(item)
@@ -178,7 +234,21 @@ def _publication_from_classified(
     canonical_url = candidate.canonical_url.strip() or _canonical_url(candidate.url)
     official_date = candidate.official_published_at or candidate.published_at
     published_at = official_date.isoformat()
-    detected = candidate.detected_at or generated_at
+    if candidate.detected_at is not None:
+        # Los recolectores de estado usan este campo para anunciar hoy un
+        # cambio aun cuando la fecha oficial del expediente sea histórica.
+        detected = candidate.detected_at
+    elif baseline_inventory and edition_date is not None and official_date < edition_date:
+        # Una ventana móvil es inventario, no un digest de novedades. En el
+        # bootstrap, los actos antiguos sin señal explícita de detección se
+        # anclan a su fecha oficial para no publicar los 31 días como “hoy”.
+        detected = datetime.combine(
+            official_date,
+            datetime.min.time().replace(hour=12),
+            tzinfo=UTC,
+        )
+    else:
+        detected = generated_at
     detected_at = (
         detected.astimezone(UTC).isoformat()
         if detected.tzinfo
@@ -300,13 +370,73 @@ def write_output(payload: dict[str, object], output: Path) -> None:
 
 
 def _deduplicate(candidates) -> list[Candidate]:
-    selected: dict[tuple[str, str], Candidate] = {}
+    """Deduplica por identidad oficial sin recurrir a título+fecha.
+
+    La identidad primaria sigue siendo ``source + source_id``. Después se
+    conectan las copias que exponen la misma URL canónica, aunque provengan de
+    recolectores distintos (por ejemplo IMPI/Gob.mx o DOF/SNICE). Las anclas
+    de la Gaceta de Diputados son parte de la identidad del asunto y por ello
+    se conservan. Finalmente, Gob.mx tiene una equivalencia oficial y acotada
+    entre las rutas ``/impi/prensa/`` y ``/impi/es/articulos/``; esta permite
+    colapsar el espejo de artículo que Gob.mx genera para el mismo comunicado.
+    """
+
+    primary: dict[tuple[str, str], Candidate] = {}
     for candidate in candidates:
         key = _stable_identity(candidate)
-        current = selected.get(key)
-        if current is None or len(candidate.description) > len(current.description):
-            selected[key] = candidate
-    return list(selected.values())
+        current = primary.get(key)
+        if current is None or _same_source_rank(candidate) > _same_source_rank(current):
+            primary[key] = candidate
+
+    records = list(primary.values())
+    if len(records) < 2:
+        return records
+
+    parents = list(range(len(records)))
+
+    def find(index: int) -> int:
+        while parents[index] != index:
+            parents[index] = parents[parents[index]]
+            index = parents[index]
+        return index
+
+    def union(left: int, right: int) -> None:
+        left_root = find(left)
+        right_root = find(right)
+        if left_root != right_root:
+            parents[right_root] = left_root
+
+    url_aliases: dict[str, list[int]] = defaultdict(list)
+    semantic_aliases: dict[str, int] = {}
+    for index, candidate in enumerate(records):
+        canonical_url = record_identity_url(candidate)
+        if canonical_url:
+            # La URL es respaldo global entre recolectores. Dentro de una
+            # misma fuente, dos source_id oficiales distintos conservan su
+            # identidad aunque por error expongan una URL genérica igual.
+            for previous in url_aliases[canonical_url]:
+                if records[previous].source.casefold() != candidate.source.casefold():
+                    union(index, previous)
+            url_aliases[canonical_url].append(index)
+
+        semantic_alias = official_semantic_alias(candidate)
+        if semantic_alias:
+            previous = semantic_aliases.setdefault(semantic_alias, index)
+            union(index, previous)
+
+    groups: dict[int, list[Candidate]] = defaultdict(list)
+    for index, candidate in enumerate(records):
+        groups[find(index)].append(candidate)
+
+    winners = [max(group, key=_cross_source_rank) for group in groups.values()]
+    return sorted(
+        winners,
+        key=lambda candidate: (
+            candidate.source.casefold(),
+            candidate.source_id.casefold(),
+            candidate.url,
+        ),
+    )
 
 
 def _stable_identity(candidate: Candidate) -> tuple[str, str]:
@@ -316,6 +446,29 @@ def _stable_identity(candidate: Candidate) -> tuple[str, str]:
     if not identifier:
         identifier = candidate.canonical_url.strip() or _canonical_url(candidate.url)
     return source, identifier
+
+
+def _same_source_rank(candidate: Candidate) -> tuple[int, int, str, str]:
+    """Elige de forma reproducible la copia más informativa de una identidad."""
+
+    return (
+        len(candidate.description.strip()),
+        len(candidate.official_evidence),
+        candidate.canonical_url or candidate.url,
+        candidate.official_title,
+    )
+
+
+def _cross_source_rank(candidate: Candidate) -> tuple[int, int, int, str, str]:
+    """Prefiere el recolector oficial específico frente a un agregador."""
+
+    return (
+        source_priority(candidate.source),
+        len(candidate.description.strip()),
+        len(candidate.official_evidence),
+        candidate.source.casefold(),
+        candidate.source_id.casefold(),
+    )
 
 
 def _canonical_url(value: str) -> str:
