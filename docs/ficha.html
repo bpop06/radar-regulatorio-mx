@@ -18,10 +18,8 @@
     </script>
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="preload" href="fonts/fraunces-variable-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="assets/paper-card-deckled.webp" as="image">
-    <link rel="preload" href="assets/watercolor-paper.png" as="image">
-    <link rel="stylesheet" href="styles.css">
-    <script type="module" src="detail.js"></script>
+    <link rel="stylesheet" href="styles.css?v=20260812a">
+    <script type="module" src="detail.js?v=20260812a"></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Saltar al contenido</a>
@@ -42,8 +40,9 @@
       </nav>
     </header>
 
-    <main id="main" class="detail-main shell">
+    <main id="main" class="detail-main shell" tabindex="-1">
       <a id="detail-back" class="back-link" href="archivo.html">← Volver al archivo</a>
+      <p id="detail-status" class="sr-only" role="status">Cargando ficha…</p>
       <div class="detail-layout">
         <article class="detail-article">
           <header class="detail-header">
@@ -52,31 +51,31 @@
             <p id="detail-summary" class="detail-summary"></p>
           </header>
 
+          <aside class="evidence-rail" aria-labelledby="evidence-heading">
+            <h2 id="evidence-heading">Evidencia</h2>
+            <dl class="evidence-list">
+              <div><dt>Fecha</dt><dd id="detail-date">—</dd></div>
+              <div><dt>Órgano</dt><dd id="detail-organ">—</dd></div>
+              <div><dt>Fuente</dt><dd id="detail-source">—</dd></div>
+              <div><dt>Importancia</dt><dd><span id="detail-importance" class="importance-rail" aria-label="Importancia"></span></dd></div>
+              <div id="detail-case-row" hidden><dt>Estado del asunto</dt><dd id="detail-case">—</dd></div>
+              <div id="detail-parties-row" hidden><dt>Partes</dt><dd id="detail-parties">—</dd></div>
+              <div><dt>Materias</dt><dd id="detail-categories">—</dd></div>
+            </dl>
+            <a id="official-source" class="primary-action evidence-source" target="_blank" rel="noopener noreferrer" hidden>Consultar fuente oficial ↗</a>
+            <p class="evidence-note">La síntesis facilita la lectura. Para efectos jurídicos, consulta siempre el documento oficial.</p>
+          </aside>
+
           <section id="detail-why" class="detail-why" hidden aria-labelledby="detail-why-heading">
             <p class="section-kicker">Criterio editorial</p>
             <h2 id="detail-why-heading">Por qué está en el radar</h2>
             <p id="detail-why-copy"></p>
           </section>
 
-          <div id="detail-content" class="document-body" aria-live="polite">
+          <div id="detail-content" class="document-body">
             <p>Cargando documento.</p>
           </div>
         </article>
-
-        <aside class="evidence-rail" aria-labelledby="evidence-heading">
-          <h2 id="evidence-heading">Evidencia</h2>
-          <dl class="evidence-list">
-            <div><dt>Fecha</dt><dd id="detail-date">—</dd></div>
-            <div><dt>Órgano</dt><dd id="detail-organ">—</dd></div>
-            <div><dt>Fuente</dt><dd id="detail-source">—</dd></div>
-            <div><dt>Importancia</dt><dd><span id="detail-importance" class="importance-rail" aria-label="Importancia"></span></dd></div>
-            <div id="detail-case-row" hidden><dt>Estado del asunto</dt><dd id="detail-case">—</dd></div>
-            <div id="detail-parties-row" hidden><dt>Partes</dt><dd id="detail-parties">—</dd></div>
-            <div><dt>Materias</dt><dd id="detail-categories">—</dd></div>
-          </dl>
-          <a id="official-source" class="primary-action evidence-source" target="_blank" rel="noopener noreferrer" hidden>Consultar fuente oficial ↗</a>
-          <p class="evidence-note">La síntesis facilita la lectura. Para efectos jurídicos, consulta siempre el documento oficial.</p>
-        </aside>
       </div>
     </main>
 

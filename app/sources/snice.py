@@ -11,6 +11,17 @@ from app.models import Candidate
 from app.sources.base import Collector
 from app.text import clean_text, parse_date
 
+_DATE_PREFIX_RE = re.compile(r"^\d{2}[./]\d{2}[./]\d{4}\s*")
+_EMPTY_PROJECTS_STATUSES = {
+    "sin proyectos",
+    "sin proyectos en materia de comercio exterior",
+}
+
+
+def _is_empty_projects_status(title: str) -> bool:
+    status = _DATE_PREFIX_RE.sub("", title).strip(" .").casefold()
+    return status in _EMPTY_PROJECTS_STATUSES
+
 
 class SniceCollector(Collector):
     source = "SNICE"
@@ -28,7 +39,11 @@ class SniceCollector(Collector):
         seen: set[str] = set()
         for anchor in soup.select("a[href]"):
             title = clean_text(anchor.get_text(" ", strip=True))
-            if len(title) < 25 or "histórico" in title.lower():
+            if (
+                len(title) < 25
+                or "histórico" in title.lower()
+                or _is_empty_projects_status(title)
+            ):
                 continue
             context = clean_text(anchor.parent.get_text(" ", strip=True))
             date_match = re.search(r"\b\d{2}[./]\d{2}[./]\d{4}\b", context)
@@ -46,7 +61,7 @@ class SniceCollector(Collector):
                     source=cls.source,
                     source_id=hashlib.sha256(url.encode()).hexdigest()[:16],
                     url=url,
-                    official_title=re.sub(r"^\d{2}[./]\d{2}[./]\d{4}\s*", "", title),
+                    official_title=_DATE_PREFIX_RE.sub("", title),
                     description=context,
                     published_at=published_at,
                     authority="Secretaría de Economía",
@@ -54,4 +69,3 @@ class SniceCollector(Collector):
                 )
             )
         return candidates
-

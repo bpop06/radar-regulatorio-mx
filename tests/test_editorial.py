@@ -16,6 +16,11 @@ CARD_BODY_WITH_ACT_NUMBER = (
     "## Sustancia\n\nCambio sustantivo concreto.\n\n"
     "## Fuente\n\n[Abrir publicación oficial](https://example.gob.mx/doc)"
 )
+CARD_BODY_WITH_YEAR_RANGE = (
+    "## Qué se publicó\n\nPrograma institucional para el periodo 2026-2030.\n\n"
+    "## Sustancia\n\nCambio sustantivo concreto.\n\n"
+    "## Fuente\n\n[Abrir publicación oficial](https://example.gob.mx/doc)"
+)
 
 
 def publications_payload() -> dict:
@@ -123,6 +128,15 @@ def test_apply_editorial_updates_fields_and_marks_ai_generated(tmp_path):
     assert result["title"].startswith("SHCP actualiza")
     assert result["ai_generated"] is True
     assert result["published_at"] == "2026-07-03"
+
+
+def test_apply_editorial_accepts_year_range_in_what_published(tmp_path):
+    edits_file, pubs = write_files(tmp_path, [edit(card_body=CARD_BODY_WITH_YEAR_RANGE)])
+
+    apply_editorial(edits_file, pubs)
+
+    result = json.loads(pubs.read_text(encoding="utf-8"))["items"][0]
+    assert "2026-2030" in result["card_body"]
 
 
 def test_apply_editorial_updates_optional_importance(tmp_path):

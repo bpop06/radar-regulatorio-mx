@@ -1,0 +1,315 @@
+from __future__ import annotations
+
+import re
+import unittest
+from collections import defaultdict
+from html.parser import HTMLParser
+from pathlib import Path
+from typing import NamedTuple
+from urllib.parse import unquote, urlsplit
+
+REPOSITORY_ROOT = Path(__file__).resolve().parents[1]
+DOCS_ROOT = REPOSITORY_ROOT / "docs"
+HTML_PAGES = tuple(sorted(DOCS_ROOT.glob("*.html")))
+STATIC_ASSET_VERSION = "v=20260812a"
+MAX_PRELOADED_IMAGE_BYTES = 300 * 1024
+ARIA_IDREF_ATTRIBUTES = ("aria-labelledby", "aria-controls", "aria-describedby")
+COMPACT_LIVE_REGION_TAGS = frozenset({"output", "p", "span"})
+KNOWN_LIVE_COUNTER_IDS = frozenset(
+    {
+        "cal-month-label",
+        "page-indicator",
+        "reading-restantes",
+        "result-count",
+        "today-total",
+    }
+)
+SIMPLE_DOCUMENT_ID_SELECTOR_RE = re.compile(
+    r"document\.querySelector\(\s*([\"'])#([A-Za-z_][\w:.-]*)\1\s*\)"
+)
+
+
+class Element(NamedTuple):
+    tag: str
+    attributes: dict[str, str | None]
+    line: int
+
+
+class PageParser(HTMLParser):
+    def __init__(self) -> None:
+        super().__init__(convert_charrefs=True)
+        self.elements: list[Element] = []
+
+    def handle_starttag(
+        self,
+        tag: str,
+        attrs: list[tuple[str, str | None]],
+    ) -> None:
+        self._record(tag, attrs)
+
+    def handle_startendtag(
+        self,
+        tag: str,
+        attrs: list[tuple[str, str | None]],
+    ) -> None:
+        self._record(tag, attrs)
+
+    def _record(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        self.elements.append(Element(tag.casefold(), dict(attrs), self.getpos()[0]))
+
+
+def parse_page(page: Path) -> PageParser:
+    parser = PageParser()
+    parser.feed(page.read_text(encoding="utf-8"))
+    parser.close()
+    return parser
+
+
+def classes(element: Element) -> set[str]:
+    return set((element.attributes.get("class") or "").split())
+
+
+def local_path(page: Path, reference: str) -> Path | None:
+    parts = urlsplit(reference)
+    if parts.scheme or parts.netloc or not parts.path:
+        return None
+
+    path = unquote(parts.path)
+    if path.startswith("/"):
+        return DOCS_ROOT / path.lstrip("/")
+    return page.parent / path
+
+
+class PagesContractTests(unittest.TestCase):
+    def test_site_has_html_pages(self) -> None:
+        self.assertTrue(HTML_PAGES, "docs/ must contain at least one HTML page")
+
+    def test_each_page_has_exactly_one_main_and_h1(self) -> None:
+        for page in HTML_PAGES:
+            elements = parse_page(page).elements
+            with self.subTest(page=page.name):
+                for tag in ("main", "h1"):
+                    lines = [element.line for element in elements if element.tag == tag]
+                    self.assertEqual(
+                        len(lines),
+                        1,
+                        f"{page.name} must contain exactly one <{tag}>; found lines {lines}",
+                    )
+
+    def test_ids_are_nonempty_and_unique_per_page(self) -> None:
+        for page in HTML_PAGES:
+            ids: defaultdict[str, list[int]] = defaultdict(list)
+            for element in parse_page(page).elements:
+                if "id" not in element.attributes:
+                    continue
+                element_id = element.attributes["id"]
+                with self.subTest(page=page.name, line=element.line):
+                    self.assertTrue(element_id, f"{page.name}:{element.line} has an empty id")
+                if element_id:
+                    ids[element_id].append(element.line)
+
+            duplicates = {element_id: lines for element_id, lines in ids.items() if len(lines) > 1}
+            with self.subTest(page=page.name):
+                self.assertEqual(duplicates, {}, f"{page.name} has duplicate ids: {duplicates}")
+
+    def test_skip_links_point_to_targets_focusable_by_script(self) -> None:
+        for page in HTML_PAGES:
+            elements = parse_page(page).elements
+            ids = {
+                element.attributes.get("id"): element
+                for element in elements
+                if element.attributes.get("id")
+            }
+            skip_links = [element for element in elements if "skip-link" in classes(element)]
+            with self.subTest(page=page.name):
+                self.assertEqual(len(skip_links), 1, f"{page.name} must have one skip link")
+
+            for link in skip_links:
+                href = link.attributes.get("href") or ""
+                parts = urlsplit(href)
+                target = ids.get(unquote(parts.fragment))
+                with self.subTest(page=page.name, line=link.line, href=href):
+                    self.assertTrue(parts.fragment, "skip link must include a fragment target")
+                    self.assertIsNotNone(target, f"skip target {href!r} does not exist")
+                    if target is not None:
+                        self.assertEqual(
+                            target.attributes.get("tabindex"),
+                            "-1",
+                            f"skip target {href!r} must have tabindex=\"-1\"",
+                        )
+
+    def test_local_href_and_src_references_exist(self) -> None:
+        for page in HTML_PAGES:
+            elements = parse_page(page).elements
+            page_ids = {
+                element.attributes["id"]
+                for element in elements
+                if element.attributes.get("id")
+            }
+            for element in elements:
+                for attribute in ("href", "src"):
+                    reference = element.attributes.get(attribute)
+                    if not reference:
+                        continue
+                    parts = urlsplit(reference)
+                    with self.subTest(
+                        page=page.name,
+                        line=element.line,
+                        attribute=attribute,
+                        reference=reference,
+                    ):
+                        if (
+                            not parts.scheme
+                            and not parts.netloc
+                            and parts.fragment
+                            and not parts.path
+                        ):
+                            self.assertIn(
+                                unquote(parts.fragment),
+                                page_ids,
+                                f"fragment target {reference!r} does not exist in {page.name}",
+                            )
+
+                        target = local_path(page, reference)
+                        if target is not None:
+                            self.assertTrue(
+                                target.is_file(),
+                                f"local {attribute} {reference!r} resolves to missing {target}",
+                            )
+
+    def test_blank_targets_protect_the_opener(self) -> None:
+        for page in HTML_PAGES:
+            for element in parse_page(page).elements:
+                if (element.attributes.get("target") or "").casefold() != "_blank":
+                    continue
+                rel = set((element.attributes.get("rel") or "").casefold().split())
+                with self.subTest(page=page.name, line=element.line):
+                    self.assertIn(
+                        "noopener",
+                        rel,
+                        f"{page.name}:{element.line} target=_blank needs rel=noopener",
+                    )
+
+    def test_aria_id_references_exist_on_the_same_page(self) -> None:
+        for page in HTML_PAGES:
+            elements = parse_page(page).elements
+            ids = {
+                element.attributes["id"]
+                for element in elements
+                if element.attributes.get("id")
+            }
+            for element in elements:
+                for attribute in ARIA_IDREF_ATTRIBUTES:
+                    raw_references = element.attributes.get(attribute)
+                    if raw_references is None:
+                        continue
+                    references = raw_references.split()
+                    with self.subTest(page=page.name, line=element.line, attribute=attribute):
+                        self.assertTrue(references, f"{attribute} must not be empty")
+                        self.assertEqual(
+                            set(references) - ids,
+                            set(),
+                            f"{page.name}:{element.line} {attribute} has missing ids",
+                        )
+
+    def test_live_regions_are_compact_statuses_or_known_counters(self) -> None:
+        for page in HTML_PAGES:
+            for element in parse_page(page).elements:
+                if "aria-live" not in element.attributes:
+                    continue
+                element_id = element.attributes.get("id") or ""
+                permitted_id = (
+                    element_id.endswith("-status") or element_id in KNOWN_LIVE_COUNTER_IDS
+                )
+                with self.subTest(page=page.name, line=element.line, element_id=element_id):
+                    self.assertIn(
+                        element.tag,
+                        COMPACT_LIVE_REGION_TAGS,
+                        f"{page.name}:{element.line} aria-live must be on a compact element",
+                    )
+                    self.assertTrue(
+                        permitted_id,
+                        f"{page.name}:{element.line} aria-live id must end in -status "
+                        "or be an approved counter",
+                    )
+
+    def test_preloaded_local_images_stay_within_the_size_budget(self) -> None:
+        for page in HTML_PAGES:
+            for element in parse_page(page).elements:
+                rel = set((element.attributes.get("rel") or "").casefold().split())
+                if (
+                    element.tag != "link"
+                    or "preload" not in rel
+                    or (element.attributes.get("as") or "").casefold() != "image"
+                ):
+                    continue
+
+                reference = element.attributes.get("href") or ""
+                target = local_path(page, reference)
+                if target is None:
+                    continue
+                with self.subTest(page=page.name, line=element.line, reference=reference):
+                    self.assertTrue(target.is_file(), f"preloaded image {target} does not exist")
+                    if target.is_file():
+                        self.assertLessEqual(
+                            target.stat().st_size,
+                            MAX_PRELOADED_IMAGE_BYTES,
+                            f"preloaded image {reference!r} exceeds the 300 KiB budget",
+                        )
+
+    def test_local_css_and_javascript_references_are_versioned(self) -> None:
+        for page in HTML_PAGES:
+            for element in parse_page(page).elements:
+                for attribute in ("href", "src"):
+                    reference = element.attributes.get(attribute)
+                    if not reference or local_path(page, reference) is None:
+                        continue
+                    parts = urlsplit(reference)
+                    if Path(parts.path).suffix.casefold() not in {".css", ".js"}:
+                        continue
+                    with self.subTest(
+                        page=page.name,
+                        line=element.line,
+                        reference=reference,
+                    ):
+                        self.assertEqual(
+                            parts.query,
+                            STATIC_ASSET_VERSION,
+                            f"local asset {reference!r} must use ?{STATIC_ASSET_VERSION}",
+                        )
+
+    def test_literal_document_id_selectors_match_each_page(self) -> None:
+        for page in HTML_PAGES:
+            elements = parse_page(page).elements
+            page_ids = {
+                element.attributes["id"]
+                for element in elements
+                if element.attributes.get("id")
+            }
+            scripts = [
+                local_path(page, element.attributes["src"])
+                for element in elements
+                if element.tag == "script" and element.attributes.get("src")
+            ]
+            local_scripts = [script for script in scripts if script is not None]
+            for script in local_scripts:
+                if not script.is_file():
+                    continue
+                source = script.read_text(encoding="utf-8")
+                selectors = {
+                    match.group(2) for match in SIMPLE_DOCUMENT_ID_SELECTOR_RE.finditer(source)
+                }
+                with self.subTest(page=page.name, script=script.name):
+                    self.assertTrue(
+                        selectors,
+                        f"{script.name} should expose at least one static document id selector",
+                    )
+                    self.assertEqual(
+                        selectors - page_ids,
+                        set(),
+                        f"{script.name} queries ids absent from {page.name}",
+                    )
+
+
+if __name__ == "__main__":
+    unittest.main()

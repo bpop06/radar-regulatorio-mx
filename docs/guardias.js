@@ -1,6 +1,7 @@
-import { renderMarkdown } from "./markdown.js";
+import { renderMarkdown } from "./markdown.js?v=20260812a";
 
 const host = document.querySelector("#guardias-content");
+const status = document.querySelector("#guide-status");
 
 async function init() {
   if (!host) return;
@@ -10,11 +11,13 @@ async function init() {
     renderMarkdown(await response.text(), host);
     const duplicateHeading = host.querySelector("h1");
     if (duplicateHeading) duplicateHeading.remove();
+    status.textContent = "Guía cargada.";
   } catch (error) {
     host.replaceChildren();
     const message = document.createElement("p");
     message.textContent = "No fue posible cargar la guía de guardias y plazos.";
     host.append(message);
+    status.textContent = "No fue posible cargar la guía.";
     console.error(error);
   }
 }

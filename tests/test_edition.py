@@ -8,6 +8,7 @@ from app.edition import (
     prepare_payload,
     write_site_artifacts,
 )
+from app.text import ACT_NUMBER_RE
 from app.validation import validate_edition
 
 
@@ -74,6 +75,23 @@ def test_prepare_payload_builds_ready_v7_edition():
         "failed": ["SNICE"],
     }
     assert validate_edition(result["edition"], result["items"], result["sources"]) == []
+
+
+def test_default_edition_does_not_copy_act_number_into_automatic_reason():
+    record = item("snice:128")
+    record["summary"] = (
+        "Acuerdo No. 128 de la Comisión Administradora que comunica una actualización "
+        "oficial para las partes involucradas en el tratado comercial."
+    )
+    source_payload = payload([record])
+    assert ACT_NUMBER_RE.search(record["summary"]) is not None
+
+    edition = build_default_edition(source_payload, date(2026, 7, 7))
+
+    reason = edition["signals"][0]["why_it_matters"]
+    assert "Acuerdo No. 128" not in reason
+    assert ACT_NUMBER_RE.search(reason) is None
+    assert validate_edition(edition, source_payload["items"], source_payload["sources"]) == []
 
 
 def test_default_ranking_limits_signals_and_diversifies_first_pass():

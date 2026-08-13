@@ -1,64 +1,69 @@
 {
   "schema_version": 7,
-  "edition_date": "2026-07-07",
-  "generated_at": "2026-07-07T22:17:33.843455+00:00",
+  "edition_date": "2026-08-12",
+  "generated_at": "2026-08-13T02:57:51.987493+00:00",
   "state": "ready",
   "coverage": {
-    "state": "complete",
-    "ok": 18,
-    "failed": []
+    "state": "partial",
+    "ok": 15,
+    "failed": [
+      "IMPI",
+      "Gob.mx APF",
+      "CIJ"
+    ]
   },
-  "total_today": 79,
-  "last_available_date": "2026-07-07",
-  "lead_id": "diputados:794611c2ae0b0824",
+  "total_today": 13,
+  "last_available_date": "2026-08-12",
+  "lead_id": "diputados:57960ea48aabd3e0",
   "signals": [
     {
-      "id": "diputados:794611c2ae0b0824",
-      "title": "Congreso de Durango propone ampliar deducciones personales del ISR",
-      "summary": "El Congreso de Durango presentó ante la Comisión Permanente un proyecto de decreto que adiciona una fracción y reforma un párrafo de la Ley del Impuesto sobre la Renta, para modificar el régimen de deducciones personales de las personas físicas. La iniciativa se turnó para su análisis en la Cámara de Diputados dentro del proceso legislativo federal.",
+      "id": "diputados:57960ea48aabd3e0",
+      "title": "Comisión Permanente turna cuota juvenil de 5% y deducción de 25% para primeros empleos",
+      "summary": "La iniciativa obligaría a centros de trabajo con 40 o más personas a reservar al menos 5% de sus contrataciones para jóvenes de 18 a 29 años sin registro laboral previo. También propone deducir 25% del salario pagado en el primer empleo y replica la cuota en el sector público, con igualdad de género y multas por incumplimiento.",
       "source": "Diputados",
-      "url": "https://gaceta.diputados.gob.mx/Gaceta/66/2026/jul/20260707.html#Iniciativa1",
-      "detail_url": "ficha.html?id=diputados%3A794611c2ae0b0824",
-      "published_at": "2026-07-07",
+      "url": "https://gaceta.diputados.gob.mx/Gaceta/66/2026/ago/20260812.html#Iniciativa2",
+      "detail_url": "ficha.html?id=diputados%3A57960ea48aabd3e0",
+      "published_at": "2026-08-12",
       "issuing_body": "Cámara de Diputados",
       "categories": [
         "Fiscal",
         "Proceso legislativo"
       ],
-      "importance": 4,
-      "relevance_score": 7,
+      "importance": 3,
+      "relevance_score": 5,
       "jurisdiction": "nacional",
       "country_or_org": "México",
       "rank": 1,
-      "why_it_matters": "El Congreso de Durango presentó ante la Comisión Permanente un proyecto de decreto que adiciona una fracción y reforma un párrafo de la Ley del Impuesto sobre la Renta, para modificar el."
+      "why_it_matters": "La propuesta combina una cuota de contratación juvenil con un incentivo fiscal y obligaciones equivalentes para el sector público."
     },
     {
-      "id": "ciadi:49fc9ddbe9ff607f",
-      "title": "CIADI registra el arbitraje de Canadian Pacific Kansas City contra el Estado mexicano",
-      "summary": "El grupo ferroviario canadiense que controla la antigua concesión de Kansas City Southern de México inició un arbitraje de inversión contra el Estado mexicano, registrado este año ante el CIADI y aún en fase inicial. Para los abogados de comercio e inversión, el caso confirma que el sector ferroviario se suma a la ola de reclamaciones inversionista-Estado bajo los estándares de protección del T-MEC y su legado del TLCAN.",
-      "source": "CIADI",
-      "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB/26/19",
-      "detail_url": "ficha.html?id=ciadi%3A49fc9ddbe9ff607f",
-      "published_at": "2026-07-07",
-      "issuing_body": "Centro Internacional de Arreglo de Diferencias relativas a Inversiones",
+      "id": "diputados:7187b68324ad5ae3",
+      "title": "Comisión Permanente turna eliminación de prisión preventiva oficiosa y revisión de medidas vigentes",
+      "summary": "La iniciativa elimina del texto constitucional el catálogo que impone prisión preventiva de manera automática y deja su solicitud al Ministerio Público cuando otras cautelares sean insuficientes. También fija un máximo absoluto de dos años, ordena revisar las medidas vigentes y prevé libertad inmediata o sustitución cautelar cuando se exceda ese plazo.",
+      "source": "Diputados",
+      "url": "https://gaceta.diputados.gob.mx/Gaceta/66/2026/ago/20260812.html#Iniciativa30",
+      "detail_url": "ficha.html?id=diputados%3A7187b68324ad5ae3",
+      "published_at": "2026-08-12",
+      "issuing_body": "Cámara de Diputados",
       "categories": [
-        "Comercio internacional"
+        "Proceso legislativo",
+        "Penal"
       ],
-      "importance": 4,
+      "importance": 2,
       "relevance_score": 3,
-      "jurisdiction": "internacional",
-      "country_or_org": "CIADI",
+      "jurisdiction": "nacional",
+      "country_or_org": "México",
       "rank": 2,
-      "why_it_matters": "Canadian Pacific Kansas City demanda por medidas sobre su concesión ferroviaria de carga y el uso de vías para trenes de pasajeros."
+      "why_it_matters": "Eliminar la prisión preventiva automática cambiaría la imposición de cautelares y obligaría a revisar casos que ya superaron el límite constitucional."
     },
     {
-      "id": "ciadi:0d24aceaef6385be",
-      "title": "CIADI tramita la demanda de Doups Holdings contra el Estado mexicano",
-      "summary": "La sociedad estadounidense Doups Holdings mantiene un arbitraje de inversión pendiente contra México ante el CIADI. El expediente sigue el cauce inversionista-Estado: el reclamante sostiene que medidas atribuibles al Estado mexicano afectaron su inversión en violación de los estándares internacionales de protección. Sin laudo todavía, el caso integra el inventario de contingencias arbitrales del país y confirma el uso sostenido de esta vía por inversionistas estadounidenses.",
+      "id": "ciadi:15ef724c92e5cdc6",
+      "title": "CIADI registra arbitraje de Cadence Minerals y REM Mexico contra el Estado mexicano",
+      "summary": "La base oficial del CIADI registra desde el 24 de julio de 2026 el arbitraje promovido por Cadence Minerals y REM Mexico contra el Estado mexicano y lo mantiene pendiente. El registro consultado no identifica sector económico, materia de la controversia, instrumento invocado, reglas aplicables, integración del tribunal ni decisiones publicadas; por ello no permite atribuir hechos adicionales a la reclamación.",
       "source": "CIADI",
-      "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB/22/24",
-      "detail_url": "ficha.html?id=ciadi%3A0d24aceaef6385be",
-      "published_at": "2026-07-07",
+      "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB/26/36",
+      "detail_url": "ficha.html?id=ciadi%3A15ef724c92e5cdc6",
+      "published_at": "2026-08-12",
       "issuing_body": "Centro Internacional de Arreglo de Diferencias relativas a Inversiones",
       "categories": [
         "Comercio internacional"
@@ -68,85 +73,84 @@
       "jurisdiction": "internacional",
       "country_or_org": "CIADI",
       "rank": 3,
-      "why_it_matters": "La sociedad estadounidense Doups Holdings mantiene un arbitraje de inversión pendiente contra México ante el CIADI. El expediente sigue el cauce inversionista-Estado: el reclamante sostiene que medidas atribuibles al Estado mexicano afectaron."
+      "why_it_matters": "El nuevo arbitraje de inversión queda formalmente pendiente; la ficha aún no revela tratado, sector, medidas reclamadas ni tribunal."
     },
     {
-      "id": "dof:5792793",
-      "title": "Anticorrupción prohíbe contratar con Impulsora Cordobesa de Alimentos y Servicios",
-      "summary": "La Secretaría Anticorrupción y Buen Gobierno instruyó a toda la Administración Pública Federal, a las empresas públicas del Estado, a la Fiscalía General de la República, a las entidades federativas, municipios y alcaldías de la Ciudad de México abstenerse de recibir propuestas o celebrar contratos con Impulsora Cordobesa de Alimentos y Servicios, tras una sanción de inhabilitación como proveedor del sector público.",
-      "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5792793&fecha=07/07/2026",
-      "detail_url": "ficha.html?id=dof%3A5792793",
-      "published_at": "2026-07-07",
-      "issuing_body": "Presidencia de la República",
+      "id": "ciadi:a03c91191f859172",
+      "title": "CIADI registra la conclusión del arbitraje Legacy Vulcan contra México con un laudo",
+      "summary": "El CIADI registra como concluido el arbitraje promovido por Legacy Vulcan contra México sobre extracción y exportación de piedra caliza bajo el TLCAN. El expediente informa que el tribunal dictó el laudo el 27 de julio de 2026 y que se adjuntó una opinión disidente del árbitro Guido S. Tawil; la ficha oficial no publica el sentido ni los montos del laudo.",
+      "source": "CIADI",
+      "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB/19/1",
+      "detail_url": "ficha.html?id=ciadi%3Aa03c91191f859172",
+      "published_at": "2026-08-12",
+      "issuing_body": "Centro Internacional de Arreglo de Diferencias relativas a Inversiones",
       "categories": [
-        "Penal",
-        "Administración centralizada"
+        "Comercio internacional"
       ],
       "importance": 2,
       "relevance_score": 3,
-      "jurisdiction": "nacional",
-      "country_or_org": "México",
+      "jurisdiction": "internacional",
+      "country_or_org": "CIADI",
       "rank": 4,
-      "why_it_matters": "La Secretaría Anticorrupción y Buen Gobierno instruyó a toda la Administración Pública Federal, a las empresas públicas del Estado, a la Fiscalía General de la República, a las entidades federativas, municipios y."
+      "why_it_matters": "El expediente reporta laudo y conclusión del arbitraje sobre piedra caliza, pero todavía no publica su sentido ni sus montos."
     },
     {
-      "id": "dof:5792794",
-      "title": "Anticorrupción prohíbe contratar con la empresa ATV de Sahuayo",
-      "summary": "La Secretaría Anticorrupción y Buen Gobierno ordenó a la Administración Pública Federal, a las entidades federativas, a la Fiscalía General de la República, a las empresas públicas del Estado, municipios y demarcaciones de la Ciudad de México abstenerse de aceptar propuestas y celebrar contratos con la empresa ATV de Sahuayo, en cumplimiento de una sanción administrativa de inhabilitación como proveedor.",
+      "id": "dof:5796062",
+      "title": "SHCP actualiza la relación del sector paraestatal federal con 181 entidades",
+      "summary": "La SHCP publicó la relación anual de entidades paraestatales de la Administración Pública Federal. El instrumento enumera 181 entidades en el apartado general y 12 en apartados de desincorporación o exclusión, incorpora cambios de creación, sectorización, denominación y liquidación, y aclara que la relación tiene efectos declarativos, no constitutivos, conforme a la información disponible al 6 de agosto de 2026.",
       "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5792794&fecha=07/07/2026",
-      "detail_url": "ficha.html?id=dof%3A5792794",
-      "published_at": "2026-07-07",
-      "issuing_body": "Presidencia de la República",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796062&fecha=12/08/2026",
+      "detail_url": "ficha.html?id=dof%3A5796062",
+      "published_at": "2026-08-12",
+      "issuing_body": "Secretaría de Hacienda y Crédito Público",
       "categories": [
-        "Penal",
         "Administración centralizada"
       ],
       "importance": 2,
-      "relevance_score": 3,
+      "relevance_score": 2,
       "jurisdiction": "nacional",
       "country_or_org": "México",
       "rank": 5,
-      "why_it_matters": "La Secretaría Anticorrupción y Buen Gobierno ordenó a la Administración Pública Federal, a las entidades federativas, a la Fiscalía General de la República, a las empresas públicas del Estado, municipios y demarcaciones."
+      "why_it_matters": "La relación anual redefine el mapa operativo del sector paraestatal e incorpora altas, cambios de sectorización, denominaciones y procesos de salida."
     },
     {
-      "id": "dof:5792804",
-      "title": "IMPI suspende labores y frena plazos y términos administrativos",
-      "summary": "El Instituto Mexicano de la Propiedad Industrial suspendió labores y declaró que no corren plazos ni términos en los procedimientos a su cargo durante los días señalados. La medida paraliza el cómputo de plazos en trámites de marcas, patentes, contenciosos de propiedad industrial y demás gestiones ante el Instituto, en resguardo de la certeza jurídica de los usuarios.",
-      "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5792804&fecha=07/07/2026",
-      "detail_url": "ficha.html?id=dof%3A5792804",
-      "published_at": "2026-07-07",
-      "issuing_body": "Instituto Mexicano de la Propiedad Industrial",
+      "id": "anam:827d77cec754354b",
+      "title": "ANAM reporta récord mensual de operaciones y recauda 131,616 millones de pesos en julio",
+      "summary": "La ANAM informó que en julio de 2026 recaudó 131 mil 616 millones de pesos, su mayor monto mensual del año, 8.7% más que en junio y 5.4% por encima de julio de 2025. También registró 1 millón 957 mil 554 operaciones de comercio exterior, máximo desde enero de 2025; las aduanas marítimas concentraron 18.7% de los pedimentos y generaron 54.8% de la recaudación.",
+      "source": "ANAM",
+      "url": "https://www.anam.gob.mx/comunicado-prensa-58-2026/",
+      "detail_url": "ficha.html?id=anam%3A827d77cec754354b",
+      "published_at": "2026-08-12",
+      "issuing_body": "Agencia Nacional de Aduanas de México",
       "categories": [
-        "Administración descentralizada"
+        "Comercio exterior"
       ],
       "importance": 2,
-      "relevance_score": 3,
+      "relevance_score": 2,
       "jurisdiction": "nacional",
       "country_or_org": "México",
       "rank": 6,
-      "why_it_matters": "El instituto de la propiedad industrial suspendió labores y declaró que no corren plazos ni términos en sus trámites de marcas, patentes y contenciosos."
+      "why_it_matters": "Las cifras anticipan presión operativa en aduanas y muestran que las marítimas concentran más de la mitad de la recaudación."
     },
     {
-      "id": "dof:5792805",
-      "title": "IMPI publica datos de la indicación geográfica Textiles de Hueyapan",
-      "summary": "El Instituto Mexicano de la Propiedad Industrial dio a conocer los datos de la solicitud de declaración de protección de la indicación geográfica de los textiles artesanales de Hueyapan, Puebla. La publicación abre el periodo para que terceros interesados presenten observaciones u oposiciones antes de que el Instituto resuelva sobre el reconocimiento del producto.",
-      "source": "DOF",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5792805&fecha=07/07/2026",
-      "detail_url": "ficha.html?id=dof%3A5792805",
-      "published_at": "2026-07-07",
-      "issuing_body": "Instituto Mexicano de la Propiedad Industrial",
+      "id": "snice:85f084487cdd94ab",
+      "title": "Secretaría de Economía prorroga la dispensa de origen para textiles colombianos hasta julio de 2027",
+      "summary": "La Secretaría de Economía difundió la decisión bilateral que prorroga, del 22 de julio de 2026 al 21 de julio de 2027, una dispensa de origen para determinados textiles y prendas fabricados en Colombia con insumos de fuera de la zona de libre comercio. Los bienes podrán recibir trato arancelario preferencial si respetan cantidades, clasificación, certificación y verificación previstas en el Tratado México-Colombia.",
+      "source": "SNICE",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796065&fecha=12/08/2026",
+      "detail_url": "ficha.html?id=snice%3A85f084487cdd94ab",
+      "published_at": "2026-08-12",
+      "issuing_body": "Secretaría de Economía",
       "categories": [
-        "Administración descentralizada"
+        "Comercio exterior",
+        "Administración centralizada"
       ],
-      "importance": 2,
-      "relevance_score": 3,
+      "importance": 1,
+      "relevance_score": 1,
       "jurisdiction": "nacional",
       "country_or_org": "México",
       "rank": 7,
-      "why_it_matters": "Se publicaron los datos de la solicitud para proteger como indicación geográfica los textiles artesanales de Hueyapan, Puebla, abriendo la etapa de observaciones."
+      "why_it_matters": "La prórroga conserva el trato arancelario preferencial para ciertos textiles colombianos, sujeto a cupos, clasificación, certificación y verificación."
     }
   ]
 }

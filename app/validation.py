@@ -13,7 +13,7 @@ from app.edition import (
     WHY_MAX_WORDS,
     WHY_MIN_WORDS,
 )
-from app.text import words
+from app.text import ACT_NUMBER_RE, words
 
 REQUIRED_ITEM_FIELDS = {
     "id": str,
@@ -64,17 +64,6 @@ DIGEST_THEME_MAX_WORDS = 35
 
 # Un título editorial se rige por la temática, no por el número de acto.
 OFFICE_NUMBER_TITLE = r"^(oficio|acuerdo|circular|resoluci[oó]n|expediente)\s+[A-Z0-9/.-]*\d"
-
-# Patrón de número de acto (oficio/acuerdo/circular/expediente/clave). La sección
-# "Qué se publicó" describe QUÉ se publicó sin arrastrar el número del documento.
-# Se exporta para reuso en el gate editorial (`app.editorial`).
-ACT_NUMBER_RE = re.compile(
-    r"(?:oficio|acuerdo|circular|resoluci[oó]n|expediente|no\.|núm)\s*[:.]?\s*"
-    r"[A-Z0-9][A-Z0-9/.-]*\d"
-    r"|\b\d{3,}[-/][A-Z0-9/.-]*\d",
-    flags=re.IGNORECASE,
-)
-
 
 def card_section_text(card_body: str, heading: str) -> str:
     """Devuelve el texto de una sección del `card_body` (desde su encabezado

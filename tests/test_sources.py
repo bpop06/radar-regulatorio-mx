@@ -15,6 +15,7 @@ from app.sources.international import (
     UstrCollector,
 )
 from app.sources.senado import SenadoCollector
+from app.sources.snice import SniceCollector
 from app.sources.worldbank import WorldBankCollector
 from app.taxonomy import enrich
 
@@ -115,6 +116,41 @@ def test_senado_parser_excludes_points_of_agreement():
     }
 
     assert SenadoCollector.parse(payload, date(2026, 5, 1)) == []
+
+
+def test_snice_parser_ignores_empty_projects_status_and_keeps_documents():
+    payload = """
+    <section>
+      <h5>
+        <a href="https://www.herramientasregulatorias.gob.mx/Buscador">
+          <strong>12.08.2026 Sin proyectos en materia de Comercio Exterior .</strong>
+        </a>
+        <a href="/cs/avi/snice/historicos.conamer.html">
+          (Consulta aquí el histórico de ATDT)
+        </a>
+      </h5>
+      <h5>
+        <a href="/~oracle/SNICE_DOCS/AVISO-CUPOS_20260811.pdf">
+          <strong>11.08.2026 Aviso sobre los cupos de importación vigentes.</strong>
+        </a>
+      </h5>
+      <h5>
+        <a href="/~oracle/SNICE_DOCS/INFORME-PROYECTOS_20260810.pdf">
+          <strong>
+            10.08.2026 Informe sobre localidades sin proyectos en materia de Comercio Exterior.
+          </strong>
+        </a>
+      </h5>
+    </section>
+    """
+
+    items = SniceCollector.parse(payload, date(2026, 8, 1))
+
+    assert [item.official_title for item in items] == [
+        "Aviso sobre los cupos de importación vigentes.",
+        "Informe sobre localidades sin proyectos en materia de Comercio Exterior.",
+    ]
+    assert all(item.url != "https://www.herramientasregulatorias.gob.mx/Buscador" for item in items)
 
 
 def test_impi_parser_accepts_link_wrapping_heading():
@@ -683,6 +719,7 @@ def test_icsid_parser_filters_non_mexico_cases():
         ICSID_PAYLOAD,
         snapshot_path="/nonexistent/snapshot-should-not-be-read.json",
         today=date(2026, 7, 7),
+        persist_snapshot=False,
     )
     # El caso de Mozambique nunca debe aparecer, ni en la primera corrida.
     assert all("Mozambique" not in item.official_title for item in items)

@@ -18,10 +18,8 @@
     </script>
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="preload" href="fonts/fraunces-variable-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="assets/paper-card-deckled.webp" as="image">
-    <link rel="preload" href="assets/watercolor-paper.png" as="image">
-    <link rel="stylesheet" href="styles.css">
-    <script type="module" src="app.js"></script>
+    <link rel="stylesheet" href="styles.css?v=20260812a">
+    <script type="module" src="app.js?v=20260812a"></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Saltar al contenido</a>
@@ -44,20 +42,27 @@
       </nav>
     </header>
 
-    <main id="main" class="today-main">
+    <main id="main" class="today-main" tabindex="-1">
       <section class="edition shell" aria-labelledby="edition-heading">
         <header class="edition-heading">
-          <div>
-            <p class="edition-date" id="edition-date">Edición de hoy</p>
-            <h1 id="edition-heading">Lo que merece tu atención.</h1>
+          <div class="edition-heading-copy">
+            <p class="edition-date" id="edition-date">Corte diario</p>
+            <h1 id="edition-heading">Inteligencia regulatoria, sin ruido.</h1>
+            <p class="edition-deck">Señales oficiales priorizadas para decidir qué leer, qué vigilar y qué hacer después.</p>
+            <a class="coverage-indicator" id="coverage-indicator" href="#fuentes">
+              <span class="coverage-dot" aria-hidden="true"></span>
+              <span id="coverage-label">Verificando fuentes</span>
+            </a>
           </div>
-          <a class="coverage-indicator" id="coverage-indicator" href="#fuentes">
-            <span class="coverage-dot" aria-hidden="true"></span>
-            <span id="coverage-label">Verificando fuentes</span>
-          </a>
+          <figure class="edition-art" aria-hidden="true">
+            <img src="assets/editorial-signal-map-20260812.webp" alt="" width="1200" height="800" decoding="async" fetchpriority="high">
+          </figure>
         </header>
 
-        <div id="edition-loading" class="edition-loading" aria-live="polite">
+        <p id="edition-status" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></p>
+        <p id="signal-status" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></p>
+
+        <div id="edition-loading" class="edition-loading">
           <span class="loading-pulse" aria-hidden="true"></span>
           <p>Ordenando las señales del corte.</p>
         </div>
@@ -69,7 +74,7 @@
               <span class="desk-wash desk-wash-two"></span>
               <span class="desk-thread"></span>
             </div>
-            <article id="lead-panel" class="lead-panel" aria-live="polite" tabindex="-1">
+            <article id="lead-panel" class="lead-panel">
               <div class="lead-meta">
                 <span id="lead-rank">Señal 01</span>
                 <span id="lead-organ">—</span>
@@ -89,12 +94,12 @@
               <div class="impact-heading">
                 <div>
                   <p class="section-kicker">Selección editorial</p>
-                  <h2 id="impact-heading">Baraja del día</h2>
+                  <h2 id="impact-heading">Señales priorizadas</h2>
                 </div>
-                <p>El orden expresa prioridad. El pigmento, la materia.</p>
+                <p>El orden refleja urgencia e impacto jurídico.</p>
               </div>
-              <div id="signal-band" class="signal-band" role="tablist" aria-label="Señales de la edición"></div>
-              <p class="deck-help">Elige una carta para traerla al frente.</p>
+              <div id="signal-band" class="signal-band" role="group" aria-label="Señales de la edición"></div>
+              <p class="deck-help">Selecciona una señal para revisar su contexto.</p>
             </section>
           </div>
 
@@ -102,7 +107,7 @@
             <div class="section-heading-row">
               <div>
                 <p class="section-kicker">Lectura completa</p>
-                <h2 id="ledger-heading">Cartas sobre la mesa</h2>
+                <h2 id="ledger-heading">El resto del corte</h2>
               </div>
               <p id="today-total" class="section-count">—</p>
             </div>
@@ -110,16 +115,16 @@
           </section>
 
           <section class="edition-complete" aria-label="Fin de la edición">
-            <span class="completion-mark" aria-hidden="true">FIN</span>
+            <span class="completion-mark" aria-hidden="true">✓</span>
             <div>
-              <h2>Ya estás al día.</h2>
-              <p>La portada termina aquí. El resto del corte permanece disponible para consulta.</p>
+              <h2>Corte revisado.</h2>
+              <p>La portada es deliberadamente finita. El archivo conserva el universo consultable.</p>
             </div>
             <a id="archive-today-link" class="secondary-action" href="archivo.html">Ver todo el corte</a>
           </section>
         </section>
 
-        <section id="edition-empty" class="edition-state" aria-live="polite" hidden>
+        <section id="edition-empty" class="edition-state" hidden>
           <div class="state-glyph" aria-hidden="true"><span></span></div>
           <p class="state-label" id="empty-label">Estado del corte</p>
           <h2 id="empty-title">El corte de hoy todavía no está publicado.</h2>
@@ -132,7 +137,7 @@
           </div>
         </section>
 
-        <section id="edition-error" class="edition-state error-state" aria-live="assertive" hidden>
+        <section id="edition-error" class="edition-state error-state" hidden>
           <div class="state-glyph error" aria-hidden="true">!</div>
           <p class="state-label">Datos no verificables</p>
           <h2>No fue posible comprobar el corte.</h2>
@@ -159,7 +164,7 @@
 
     <footer class="site-footer">
       <div class="shell footer-inner">
-        <p><strong>Radar Regulatorio MX</strong><br>Una edición jurídica finita y verificable.</p>
+        <p><strong>Radar Regulatorio MX</strong><br>Inteligencia jurídica finita, trazable y verificable.</p>
         <p>Información pública sintetizada. No constituye asesoría legal.</p>
       </div>
     </footer>
