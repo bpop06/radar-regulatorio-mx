@@ -102,7 +102,7 @@ test("portada distingue sin novedades y corte pendiente", async ({ page }) => {
 });
 
 test("portada aplica los deadlines diarios de 12:00 y 20:00", async ({ page }) => {
-  await page.clock.install({ time: new Date("2026-08-12T11:59:59-06:00") });
+  await page.clock.setFixedTime(new Date("2026-08-12T11:59:59-06:00"));
   const previousEvening = {
     ...edition, edition_date: "2026-08-11", generated_at: "2026-08-11T18:30:00-06:00",
   };

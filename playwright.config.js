@@ -1,6 +1,7 @@
 import { defineConfig, devices } from "@playwright/test";
 
 const port = process.env.PLAYWRIGHT_PORT || "4173";
+const useSystemChrome = process.env.PLAYWRIGHT_USE_SYSTEM_CHROME === "1";
 
 export default defineConfig({
   testDir: "tests/frontend/browser",
@@ -14,7 +15,13 @@ export default defineConfig({
     trace: "retain-on-failure",
   },
   projects: [
-    { name: "chromium", use: { ...devices["Desktop Chrome"] } },
+    {
+      name: "chromium",
+      use: {
+        ...devices["Desktop Chrome"],
+        ...(useSystemChrome ? { channel: "chrome" } : {}),
+      },
+    },
   ],
   webServer: {
     command: `python3 -m http.server ${port} --directory docs`,
