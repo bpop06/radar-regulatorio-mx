@@ -2,57 +2,21 @@
   "collection_notes": {
     "dof_previous_day_reviewed": true
   },
-  "cut_id": "eb601fec447d40cac59ba502",
+  "cut_id": "f25f95a51e0dba261a6cd6aa",
   "edition": {
     "coverage": {
       "failed": [],
       "ok": 18,
       "state": "complete"
     },
-    "edition_date": "2026-08-12",
+    "edition_date": "2026-08-13",
     "last_available_date": "2026-08-12",
-    "lead_id": "dof:5796065",
-    "signals": [
-      {
-        "id": "dof:5796065",
-        "rank": 1,
-        "why_it_matters": "La dispensa permite que determinados textiles y prendas elaborados en Colombia con insumos de fuera de la zona de libre comercio reciban trato arancelario preferencial. Rige del 22 de julio de 2026."
-      },
-      {
-        "id": "diputados:57960ea48aabd3e0",
-        "rank": 2,
-        "why_it_matters": "Contenido nuevo o modificado; requiere revisión editorial. Consulta la fuente primaria para confirmar su alcance jurídico."
-      },
-      {
-        "id": "diputados:7187b68324ad5ae3",
-        "rank": 3,
-        "why_it_matters": "Contenido nuevo o modificado; requiere revisión editorial. Consulta la fuente primaria para confirmar su alcance jurídico."
-      },
-      {
-        "id": "anam:827d77cec754354b",
-        "rank": 4,
-        "why_it_matters": "Contenido nuevo o modificado; requiere revisión editorial. Consulta la fuente primaria para confirmar su alcance jurídico."
-      },
-      {
-        "id": "dof:5796062",
-        "rank": 5,
-        "why_it_matters": "Contenido nuevo o modificado; requiere revisión editorial. Consulta la fuente primaria para confirmar su alcance jurídico."
-      },
-      {
-        "id": "dof:5796068",
-        "rank": 6,
-        "why_it_matters": "Contenido nuevo o modificado; requiere revisión editorial. Consulta la fuente primaria para confirmar su alcance jurídico."
-      },
-      {
-        "id": "diputados:86ab138799a55169",
-        "rank": 7,
-        "why_it_matters": "Contenido nuevo o modificado; requiere revisión editorial. Consulta la fuente primaria para confirmar su alcance jurídico."
-      }
-    ],
-    "state": "ready",
-    "total_today": 9
+    "lead_id": null,
+    "signals": [],
+    "state": "empty",
+    "total_today": 0
   },
-  "generated_at": "2026-08-13T05:24:26.112750+00:00",
+  "generated_at": "2026-08-13T06:24:23.111815+00:00",
   "items": [
     {
       "ai_generated": false,
@@ -86,7 +50,7 @@
       "importance": 3,
       "issuing_body": "Cámara de Diputados",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://gaceta.diputados.gob.mx/Gaceta/66/2026/ago/20260812.html#Iniciativa2"
       },
@@ -149,7 +113,7 @@
       "importance": 2,
       "issuing_body": "Cámara de Diputados",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://gaceta.diputados.gob.mx/Gaceta/66/2026/ago/20260812.html#Iniciativa30"
       },
@@ -212,7 +176,7 @@
       "importance": 2,
       "issuing_body": "Cámara de Diputados",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://gaceta.diputados.gob.mx/Gaceta/66/2026/ago/20260812.html#Iniciativa18"
       },
@@ -274,7 +238,7 @@
       "importance": 2,
       "issuing_body": "Cámara de Diputados",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://gaceta.diputados.gob.mx/Gaceta/66/2026/ago/20260812.html#Iniciativa26"
       },
@@ -335,7 +299,7 @@
       "importance": 2,
       "issuing_body": "Secretaría de Hacienda y Crédito Público",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796062&fecha=12/08/2026"
       },
@@ -395,7 +359,7 @@
       "importance": 4,
       "issuing_body": "Secretaría de Economía",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796065&fecha=12/08/2026"
       },
@@ -455,7 +419,7 @@
       "importance": 2,
       "issuing_body": "Presidencia de la República",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796068&fecha=12/08/2026"
       },
@@ -515,7 +479,7 @@
       "importance": 2,
       "issuing_body": "Agencia Nacional de Aduanas de México",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://www.anam.gob.mx/comunicado-prensa-58-2026/"
       },
@@ -574,7 +538,7 @@
       "importance": 1,
       "issuing_body": "Secretaría de Hacienda y Crédito Público",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796063&fecha=12/08/2026"
       },
@@ -630,7 +594,7 @@
       "importance": 2,
       "issuing_body": "Presidencia de la República",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795910&fecha=11/08/2026"
       },
@@ -693,7 +657,7 @@
       "importance": 1,
       "issuing_body": "Secretaría de Economía",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://www.snice.gob.mx/~oracle/SNICE_DOCS/CONSTANCIAS016Y017-2026-LICITACION-ACTUALIDAD_20260811-20260811.pdf"
       },
@@ -754,7 +718,7 @@
       "importance": 3,
       "issuing_body": "Secretaría de Hacienda y Crédito Público",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://www.gob.mx/uif/prensa/shcp-fortalece-el-regimen-nacional-para-la-prevencion-del-lavado-de-dinero-con-la-publicacion-de-las-rcg-de-la-lfpiorpi?idiom=es"
       },
@@ -817,7 +781,7 @@
       "importance": 2,
       "issuing_body": "Presidencia de la República",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795832&fecha=10/08/2026"
       },
@@ -877,7 +841,7 @@
       "importance": 2,
       "issuing_body": "Presidencia de la República",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795834&fecha=10/08/2026"
       },
@@ -938,7 +902,7 @@
       "importance": 2,
       "issuing_body": "ORGANISMOS DESCONCENTRADOS O DESCENTRALIZADOS COMISION NACIONAL DE VIVIENDA",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795842&fecha=10/08/2026"
       },
@@ -997,7 +961,7 @@
       "importance": 1,
       "issuing_body": "Secretaría de Economía",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://www.snice.gob.mx/~oracle/SNICE_DOCS/AVISODISPONIBILIDAD-ACTUALIDAD_20260811-20260810.xlsx"
       },
@@ -1054,7 +1018,7 @@
       "importance": 3,
       "issuing_body": "Corte Penal Internacional",
       "jurisdiction": "internacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://www.icc-cpi.int/news/statement-presidency-assembly-states-parties-withdrawals-rome-statute-chad-and-venezuela"
       },
@@ -1116,7 +1080,7 @@
       "importance": 2,
       "issuing_body": "Secretaría de Hacienda y Crédito Público",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795723&fecha=07/08/2026"
       },
@@ -1177,7 +1141,7 @@
       "importance": 2,
       "issuing_body": "Secretaría de Hacienda y Crédito Público",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795724&fecha=07/08/2026"
       },
@@ -1238,7 +1202,7 @@
       "importance": 2,
       "issuing_body": "Secretaría de Hacienda y Crédito Público",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795725&fecha=07/08/2026"
       },
@@ -1299,7 +1263,7 @@
       "importance": 2,
       "issuing_body": "Secretaría de Hacienda y Crédito Público",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795726&fecha=07/08/2026"
       },
@@ -1360,7 +1324,7 @@
       "importance": 2,
       "issuing_body": "Secretaría de Hacienda y Crédito Público",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795727&fecha=07/08/2026"
       },
@@ -1420,7 +1384,7 @@
       "importance": 2,
       "issuing_body": "ORGANISMOS DESCONCENTRADOS O DESCENTRALIZADOS CONSEJO NACIONAL DE NORMALIZACION Y CERTIFICACION DE COMPETENCIAS LABORALES",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795750&fecha=07/08/2026"
       },
@@ -1481,7 +1445,7 @@
       "importance": 2,
       "issuing_body": "Agencia Nacional de Aduanas de México",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://www.anam.gob.mx/importacion-de-vehiculos-v2/"
       },
@@ -1540,7 +1504,7 @@
       "importance": 1,
       "issuing_body": "Secretaría de Hacienda y Crédito Público",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795722&fecha=07/08/2026"
       },
@@ -1597,7 +1561,7 @@
       "importance": 1,
       "issuing_body": "Secretaría de Economía",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795731&fecha=07/08/2026"
       },
@@ -1655,7 +1619,7 @@
       "importance": 3,
       "issuing_body": "Secretaría del Trabajo y Previsión Social",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://www.gob.mx/stps/prensa/mexico-concluye-la-investigacion-sobre-minera-penasquito-s-a-de-c-v-en-el-marco-del-mlrr-del-t-mec?idiom=es"
       },
@@ -1719,7 +1683,7 @@
       "importance": 1,
       "issuing_body": "Secretaría de Hacienda y Crédito Público",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795599&fecha=06/08/2026"
       },
@@ -1775,7 +1739,7 @@
       "importance": 3,
       "issuing_body": "Fiscalía General de la República",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795543&fecha=05/08/2026"
       },
@@ -1840,7 +1804,7 @@
       "importance": 2,
       "issuing_body": "Presidencia de la República",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795519&fecha=05/08/2026"
       },
@@ -1903,7 +1867,7 @@
       "importance": 2,
       "issuing_body": "Presidencia de la República",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795520&fecha=05/08/2026"
       },
@@ -1965,7 +1929,7 @@
       "importance": 2,
       "issuing_body": "Agencia Nacional de Aduanas de México",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://www.anam.gob.mx/guia-de-importacion-y-exportacion-ing/"
       },
@@ -2025,7 +1989,7 @@
       "importance": 2,
       "issuing_body": "Agencia Nacional de Aduanas de México",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://www.anam.gob.mx/guia-de-importacion-y-exportacion/"
       },
@@ -2086,7 +2050,7 @@
       "importance": 2,
       "issuing_body": "Organización Mundial del Comercio",
       "jurisdiction": "internacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://www.wto.org/english/news_e/news26_e/safe_gbr_05aug26_472_e.htm"
       },
@@ -2146,7 +2110,7 @@
       "importance": 2,
       "issuing_body": "Presidencia de la República",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795358&fecha=04/08/2026"
       },
@@ -2207,7 +2171,7 @@
       "importance": 1,
       "issuing_body": "Secretaría de Hacienda y Crédito Público",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795366&fecha=04/08/2026"
       },
@@ -2264,7 +2228,7 @@
       "importance": 1,
       "issuing_body": "Secretaría de Hacienda y Crédito Público",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795367&fecha=04/08/2026"
       },
@@ -2322,7 +2286,7 @@
       "importance": 2,
       "issuing_body": "Organización Mundial del Comercio",
       "jurisdiction": "internacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://www.wto.org/english/news_e/news26_e/dtech_03aug26_471_e.htm"
       },
@@ -2382,7 +2346,7 @@
       "importance": 2,
       "issuing_body": "Presidencia de la República",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795243&fecha=03/08/2026"
       },
@@ -2443,7 +2407,7 @@
       "importance": 1,
       "issuing_body": "Secretaría de Economía",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://www.snice.gob.mx/~oracle/SNICE_DOCS/ACLARACION0016Y017-2026-LICITACION-ACTUALIDAD_20260803-20260803.pdf"
       },
@@ -2503,7 +2467,7 @@
       "importance": 2,
       "issuing_body": "Instituto Mexicano de la Propiedad Industrial",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "official_notice": "https://www.gob.mx/impi/prensa/el-impi-anuncia-resultados-en-materia-de-propiedad-industrial-durante-el-primer-semestre-de-2026?idiom=es",
         "primary_url": "https://www.gob.mx/impi/prensa/el-impi-anuncia-resultados-en-materia-de-propiedad-industrial-durante-el-primer-semestre-de-2026?idiom=es"
@@ -2564,7 +2528,7 @@
       "importance": 2,
       "issuing_body": "Procuraduría Federal del Consumidor",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://www.gob.mx/profeco/prensa/revista-del-consumidor-detecta-incumplimientos-en-alimento-humedo-para-gato?idiom=es"
       },
@@ -2624,7 +2588,7 @@
       "importance": 3,
       "issuing_body": "Presidencia de la República",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795174&fecha=31/07/2026"
       },
@@ -2692,7 +2656,7 @@
       "importance": 3,
       "issuing_body": "Presidencia de la República",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795175&fecha=31/07/2026"
       },
@@ -2761,7 +2725,7 @@
       "importance": 2,
       "issuing_body": "Secretaría de Hacienda y Crédito Público",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795164&fecha=31/07/2026"
       },
@@ -2822,7 +2786,7 @@
       "importance": 2,
       "issuing_body": "Secretaría de Hacienda y Crédito Público",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795165&fecha=31/07/2026"
       },
@@ -2883,7 +2847,7 @@
       "importance": 2,
       "issuing_body": "Secretaría de Hacienda y Crédito Público",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795166&fecha=31/07/2026"
       },
@@ -2944,7 +2908,7 @@
       "importance": 2,
       "issuing_body": "Secretaría de Hacienda y Crédito Público",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795167&fecha=31/07/2026"
       },
@@ -3005,7 +2969,7 @@
       "importance": 2,
       "issuing_body": "Secretaría de Economía",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795170&fecha=31/07/2026"
       },
@@ -3065,7 +3029,7 @@
       "importance": 2,
       "issuing_body": "Fiscalía General de la República",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795194&fecha=31/07/2026"
       },
@@ -3124,7 +3088,7 @@
       "importance": 2,
       "issuing_body": "Corte Internacional de Justicia",
       "jurisdiction": "internacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "case_caption": "(Nicaragua v. Germany)",
         "case_number": "193",
@@ -3189,7 +3153,7 @@
       "importance": 2,
       "issuing_body": "Agencia Nacional de Aduanas de México",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://www.anam.gob.mx/comunicado-prensa-conjunto-53-2026/"
       },
@@ -3249,7 +3213,7 @@
       "importance": 1,
       "issuing_body": "Secretaría de Economía",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://www.snice.gob.mx/~oracle/SNICE_DOCS/FORMATOS-BASESLPN-016Y017-2026-LICITACION-ACTUALIDAD_20260731-20260731.pdf"
       },
@@ -3309,7 +3273,7 @@
       "importance": 1,
       "issuing_body": "Secretaría de Hacienda y Crédito Público",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795168&fecha=31/07/2026"
       },
@@ -3367,7 +3331,7 @@
       "importance": 3,
       "issuing_body": "Organización Mundial del Comercio",
       "jurisdiction": "internacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://www.wto.org/english/news_e/news26_e/ds646rfc_30jul26_468_e.htm"
       },
@@ -3429,7 +3393,7 @@
       "importance": 3,
       "issuing_body": "Presidencia de la República",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795031&fecha=30/07/2026"
       },
@@ -3497,7 +3461,7 @@
       "importance": 2,
       "issuing_body": "Fiscalía General de la República",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://www.gob.mx/profepa/prensa/profepa-asegura-vehiculos-y-pone-a-disposicion-de-la-fgr-a-siete-personas-en-edomex?idiom=es"
       },
@@ -3559,7 +3523,7 @@
       "importance": 2,
       "issuing_body": "Secretaría de Hacienda y Crédito Público",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795027&fecha=30/07/2026"
       },
@@ -3619,7 +3583,7 @@
       "importance": 1,
       "issuing_body": "Secretaría de Hacienda y Crédito Público",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795026&fecha=30/07/2026"
       },
@@ -3676,7 +3640,7 @@
       "importance": 1,
       "issuing_body": "Secretaría de Hacienda y Crédito Público",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795028&fecha=30/07/2026"
       },
@@ -3733,7 +3697,7 @@
       "importance": 1,
       "issuing_body": "Secretaría de Hacienda y Crédito Público",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795029&fecha=30/07/2026"
       },
@@ -3788,7 +3752,7 @@
       "importance": 2,
       "issuing_body": "Secretaría de Marina",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://www.gob.mx/semar/prensa/marina-sspc-y-fgr-rescatan-en-veracruz-a-tres-personas-privadas-de-su-libertad-431473?idiom=es"
       },
@@ -3849,7 +3813,7 @@
       "importance": 2,
       "issuing_body": "Agencia Nacional de Aduanas de México",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://www.anam.gob.mx/comunicado-prensa-conjunto-51-2026/"
       },
@@ -3911,7 +3875,7 @@
       "importance": 2,
       "issuing_body": "Organización Mundial del Comercio",
       "jurisdiction": "internacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://www.wto.org/english/news_e/news26_e/629r_465_e.htm"
       },
@@ -3972,7 +3936,7 @@
       "importance": 2,
       "issuing_body": "Organización Mundial del Comercio",
       "jurisdiction": "internacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://www.wto.org/english/news_e/pres26_e/pr996_466_e.htm"
       },
@@ -4032,7 +3996,7 @@
       "importance": 4,
       "issuing_body": "Secretaría del Trabajo y Previsión Social",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://www.gob.mx/stps/prensa/junta-de-gobierno-del-centro-federal-laboral-aprobo-por-unanimidad-nombramiento-de-director-general-interino?idiom=es"
       },
@@ -4097,7 +4061,7 @@
       "importance": 3,
       "issuing_body": "Secretaría de Economía",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://www.gob.mx/se/prensa/secretaria-de-economia-e-impi-conmemoran-el-dia-nacional-del-tequila-simbolo-de-identidad-tradicion-y-orgullo-de-mexico-431343?idiom=es"
       },
@@ -4159,7 +4123,7 @@
       "importance": 2,
       "issuing_body": "Organización Mundial del Comercio",
       "jurisdiction": "internacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://www.wto.org/english/news_e/news26_e/acc_27jul26_470_e.htm"
       },
@@ -4220,7 +4184,7 @@
       "importance": 2,
       "issuing_body": "Secretaría de Economía",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://www.gob.mx/se/prensa/posicion-de-mexico-ante-fallo-final-del-arbitraje-internacional-ante-el-ciadi-iniciado-por-filial-de-vulcan-materials-company?idiom=es"
       },
@@ -4280,7 +4244,7 @@
       "importance": 2,
       "issuing_body": "Secretaría de Marina",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://www.gob.mx/semar/prensa/en-sinaloa-marina-sspc-y-fgr-detienen-a-seis-generadores-de-violencia-y-aseguran-armamento-y-droga-431259?idiom=es"
       },
@@ -4340,7 +4304,7 @@
       "importance": 1,
       "issuing_body": "Secretaría de Hacienda y Crédito Público",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5794757&fecha=27/07/2026"
       },
@@ -4397,7 +4361,7 @@
       "importance": 2,
       "issuing_body": "Secretaría de Marina",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://www.gob.mx/semar/prensa/marina-sspc-y-fgr-detienen-en-jalisco-a-seis-generadores-de-violencia-y-aseguran-armamento?idiom=es"
       },
@@ -4458,7 +4422,7 @@
       "importance": 2,
       "issuing_body": "Secretaría de Hacienda y Crédito Público",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5794665&fecha=24/07/2026"
       },
@@ -4519,7 +4483,7 @@
       "importance": 2,
       "issuing_body": "Secretaría de Hacienda y Crédito Público",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5794666&fecha=24/07/2026"
       },
@@ -4580,7 +4544,7 @@
       "importance": 2,
       "issuing_body": "Secretaría de Hacienda y Crédito Público",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5794667&fecha=24/07/2026"
       },
@@ -4641,7 +4605,7 @@
       "importance": 2,
       "issuing_body": "Secretaría de Hacienda y Crédito Público",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5794668&fecha=24/07/2026"
       },
@@ -4702,7 +4666,7 @@
       "importance": 2,
       "issuing_body": "Secretaría de Hacienda y Crédito Público",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5794669&fecha=24/07/2026"
       },
@@ -4762,7 +4726,7 @@
       "importance": 2,
       "issuing_body": "Organización Mundial del Comercio",
       "jurisdiction": "internacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://www.wto.org/english/news_e/news26_e/dsb_24jul26_464_e.htm"
       },
@@ -4821,7 +4785,7 @@
       "importance": 2,
       "issuing_body": "Procuraduría Federal del Consumidor",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://www.gob.mx/profeco/prensa/gobierno-de-mexico-pone-a-disposicion-mapa-de-estaciones-que-no-cumplen-con-el-acuerdo-para-la-estabilizacion-del-precio-del-diesel?idiom=es"
       },
@@ -4883,7 +4847,7 @@
       "importance": 2,
       "issuing_body": "Secretaría de Economía",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5794672&fecha=24/07/2026"
       },
@@ -4943,7 +4907,7 @@
       "importance": 2,
       "issuing_body": "Agencia Nacional de Aduanas de México",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://www.anam.gob.mx/comunicado-prensa-conjunto-50-2026/"
       },
@@ -5002,7 +4966,7 @@
       "importance": 1,
       "issuing_body": "Secretaría de Hacienda y Crédito Público",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5794664&fecha=24/07/2026"
       },
@@ -5059,7 +5023,7 @@
       "importance": 1,
       "issuing_body": "Secretaría de Hacienda y Crédito Público",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5794670&fecha=24/07/2026"
       },
@@ -5117,7 +5081,7 @@
       "importance": 3,
       "issuing_body": "Unidad de Inteligencia Financiera",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://www.gob.mx/uif/prensa/la-uif-en-coordinacion-con-autoridades-de-estados-unidos-fortalece-acciones-contra-estructuras-financieras-vinculadas-al-cjng?idiom=es"
       },
@@ -5183,7 +5147,7 @@
       "importance": 3,
       "issuing_body": "Fiscalía General de la República",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://www.gob.mx/profepa/prensa/coadyuva-profepa-con-fgr-en-cateo-a-domicilio-con-ejemplares-de-vida-silvestre-en-san-luis-potosi?idiom=es"
       },
@@ -5248,7 +5212,7 @@
       "importance": 2,
       "issuing_body": "Organización Mundial del Comercio",
       "jurisdiction": "internacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://www.wto.org/english/news_e/news26_e/rese_23jul26_463_e.htm"
       },
@@ -5310,7 +5274,7 @@
       "importance": 2,
       "issuing_body": "Organización Mundial del Comercio",
       "jurisdiction": "internacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://www.wto.org/english/news_e/news26_e/blgrs_23jul26_462_e.htm"
       },
@@ -5371,7 +5335,7 @@
       "importance": 2,
       "issuing_body": "Presidencia de la República",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5794525&fecha=23/07/2026"
       },
@@ -5433,7 +5397,7 @@
       "importance": 2,
       "issuing_body": "Secretaría de Economía",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5794527&fecha=23/07/2026"
       },
@@ -5494,7 +5458,7 @@
       "importance": 2,
       "issuing_body": "Instituto Mexicano de la Propiedad Industrial",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "official_notice": "https://www.gob.mx/impi/prensa/asegura-impi-3-mil-300-juguetes-lego-apocrifos-en-aduana-de-queretaro?idiom=es",
         "primary_url": "https://www.gob.mx/impi/prensa/asegura-impi-3-mil-300-juguetes-lego-apocrifos-en-aduana-de-queretaro?idiom=es"
@@ -5556,7 +5520,7 @@
       "importance": 1,
       "issuing_body": "Secretaría de Economía",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5794528&fecha=23/07/2026"
       },
@@ -5611,7 +5575,7 @@
       "importance": 2,
       "issuing_body": "Presidencia de la República",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5794454&fecha=22/07/2026"
       },
@@ -5673,7 +5637,7 @@
       "importance": 2,
       "issuing_body": "Instituto Mexicano de la Propiedad Industrial",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "official_notice": "https://www.gob.mx/impi/prensa/el-impi-mete-gol-a-la-pirateria-durante-la-copa-mundial-de-la-fifa-2026?idiom=es",
         "primary_url": "https://www.gob.mx/impi/prensa/el-impi-mete-gol-a-la-pirateria-durante-la-copa-mundial-de-la-fifa-2026?idiom=es"
@@ -5734,7 +5698,7 @@
       "importance": 1,
       "issuing_body": "Secretaría de Hacienda y Crédito Público",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5794448&fecha=22/07/2026"
       },
@@ -5791,7 +5755,7 @@
       "importance": 1,
       "issuing_body": "Secretaría de Hacienda y Crédito Público",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5794449&fecha=22/07/2026"
       },
@@ -5849,7 +5813,7 @@
       "importance": 3,
       "issuing_body": "Presidencia de la República",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5794006&fecha=21/07/2026"
       },
@@ -5915,7 +5879,7 @@
       "importance": 2,
       "issuing_body": "Presidencia de la República",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5794007&fecha=21/07/2026"
       },
@@ -5978,7 +5942,7 @@
       "importance": 2,
       "issuing_body": "Presidencia de la República",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5794008&fecha=21/07/2026"
       },
@@ -6040,7 +6004,7 @@
       "importance": 2,
       "issuing_body": "Fiscalía General de la República",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5794142&fecha=21/07/2026"
       },
@@ -6099,7 +6063,7 @@
       "importance": 2,
       "issuing_body": "Corte Internacional de Justicia",
       "jurisdiction": "internacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "case_caption": "(Lithuania v. Belarus)",
         "case_number": "200",
@@ -6164,7 +6128,7 @@
       "importance": 1,
       "issuing_body": "Secretaría de Hacienda y Crédito Público",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5794001&fecha=21/07/2026"
       },
@@ -6221,7 +6185,7 @@
       "importance": 1,
       "issuing_body": "Secretaría de Hacienda y Crédito Público",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5794002&fecha=21/07/2026"
       },
@@ -6278,7 +6242,7 @@
       "importance": 2,
       "issuing_body": "Presidencia de la República",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793941&fecha=20/07/2026"
       },
@@ -6338,7 +6302,7 @@
       "importance": 3,
       "issuing_body": "Procuraduría Federal del Consumidor",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://www.gob.mx/profeco/prensa/actualizacion-del-numero-de-estaciones-de-servicio-que-no-cumplen-con-el-acuerdo-voluntario-para-la-estabilizacion-del-precio-del-diesel-430688?idiom=es"
       },
@@ -6400,7 +6364,7 @@
       "importance": 2,
       "issuing_body": "Secretaría de la Defensa Nacional",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://www.gob.mx/defensa/prensa/la-fiscalia-general-del-estado-de-guerrero-en-coordinacion-con-el-ejercito-mexicano-la-guardia-nacional-y-policia-estatal?idiom=es"
       },
@@ -6461,7 +6425,7 @@
       "importance": 2,
       "issuing_body": "Instituto Mexicano del Seguro Social",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793871&fecha=17/07/2026"
       },
@@ -6524,7 +6488,7 @@
       "importance": 2,
       "issuing_body": "Presidencia de la República",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793861&fecha=17/07/2026"
       },
@@ -6584,7 +6548,7 @@
       "importance": 1,
       "issuing_body": "Secretaría de Hacienda y Crédito Público",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793857&fecha=17/07/2026"
       },
@@ -6641,7 +6605,7 @@
       "importance": 1,
       "issuing_body": "Secretaría de Hacienda y Crédito Público",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793858&fecha=17/07/2026"
       },
@@ -6698,7 +6662,7 @@
       "importance": 1,
       "issuing_body": "Secretaría de Hacienda y Crédito Público",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793859&fecha=17/07/2026"
       },
@@ -6755,7 +6719,7 @@
       "importance": 3,
       "issuing_body": "Presidencia de la República",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793723&fecha=16/07/2026"
       },
@@ -6825,7 +6789,7 @@
       "importance": 2,
       "issuing_body": "Presidencia de la República",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793724&fecha=16/07/2026"
       },
@@ -6889,7 +6853,7 @@
       "importance": 2,
       "issuing_body": "Presidencia de la República",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793725&fecha=16/07/2026"
       },
@@ -6951,7 +6915,7 @@
       "importance": 2,
       "issuing_body": "Presidencia de la República",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793719&fecha=16/07/2026"
       },
@@ -7011,7 +6975,7 @@
       "importance": 2,
       "issuing_body": "Fiscalía General de la República",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793803&fecha=16/07/2026"
       },
@@ -7070,7 +7034,7 @@
       "importance": 3,
       "issuing_body": "Secretaría de Economía",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://www.gob.mx/se/prensa/mexico-impulsor-de-la-normalizacion-internacional-desde-ginebra-suiza-en-la-49-comision-del-codex-alimentarius?idiom=es"
       },
@@ -7133,7 +7097,7 @@
       "importance": 2,
       "issuing_body": "Presidencia de la República",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793641&fecha=15/07/2026"
       },
@@ -7195,7 +7159,7 @@
       "importance": 2,
       "issuing_body": "Presidencia de la República",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793643&fecha=15/07/2026"
       },
@@ -7258,7 +7222,7 @@
       "importance": 2,
       "issuing_body": "Instituto Mexicano de la Propiedad Industrial",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "official_notice": "https://www.gob.mx/impi/prensa/impi-asegura-mercancia-apocrifa-en-aduana-de-lazaro-cardenas-michoacan?idiom=es",
         "primary_url": "https://www.gob.mx/impi/prensa/impi-asegura-mercancia-apocrifa-en-aduana-de-lazaro-cardenas-michoacan?idiom=es"
@@ -7320,7 +7284,7 @@
       "importance": 2,
       "issuing_body": "Agencia Nacional de Aduanas de México",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://www.anam.gob.mx/informacion-publica-de-comercio-exterior-2025/"
       },
@@ -7379,7 +7343,7 @@
       "importance": 2,
       "issuing_body": "Presidencia de la República",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793471&fecha=14/07/2026"
       },
@@ -7439,7 +7403,7 @@
       "importance": 2,
       "issuing_body": "Presidencia de la República",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793477&fecha=14/07/2026"
       },
@@ -7500,7 +7464,7 @@
       "importance": 2,
       "issuing_body": "Fiscalía General de la República",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793559&fecha=14/07/2026"
       },
@@ -7559,7 +7523,7 @@
       "importance": 2,
       "issuing_body": "Fiscalía General de la República",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793592&fecha=14/07/2026"
       },
@@ -7618,7 +7582,7 @@
       "importance": 1,
       "issuing_body": "Secretaría de Hacienda y Crédito Público",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793462&fecha=14/07/2026"
       },
@@ -7675,7 +7639,7 @@
       "importance": 4,
       "issuing_body": "Secretaría de Economía",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://www.gob.mx/se/prensa/comunicado-economia-impi?idiom=es"
       },
@@ -7737,7 +7701,7 @@
       "importance": 2,
       "issuing_body": "Instituto Mexicano de la Propiedad Industrial",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "official_notice": "https://www.gob.mx/impi/prensa/recibe-impi-nombramiento-como-administracion-encargada-de-la-busqueda-internacional-y-del-examen-preliminar-internacional-de-patentes?idiom=es",
         "primary_url": "https://www.gob.mx/impi/prensa/recibe-impi-nombramiento-como-administracion-encargada-de-la-busqueda-internacional-y-del-examen-preliminar-internacional-de-patentes?idiom=es"
@@ -7798,7 +7762,7 @@
       "importance": 2,
       "issuing_body": "Procuraduría Federal del Consumidor",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://www.gob.mx/profeco/prensa/dos-de-cada-diez-gasolineras-venden-diesel-a-precios-injustificadamente-altos-profeco?idiom=es"
       },
@@ -7858,7 +7822,7 @@
       "importance": 2,
       "issuing_body": "Secretaría de Hacienda y Crédito Público",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793378&fecha=13/07/2026"
       },
@@ -7917,7 +7881,7 @@
       "importance": 2,
       "issuing_body": "Presidencia de la República",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793395&fecha=13/07/2026"
       },
@@ -7978,7 +7942,7 @@
       "importance": 1,
       "issuing_body": "Secretaría de Hacienda y Crédito Público",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
+      "last_seen_at": "2026-08-13T06:24:23.111815+00:00",
       "official_evidence": {
         "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793377&fecha=13/07/2026"
       },
@@ -8003,68 +7967,6 @@
         "Resolución"
       ],
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5793377&fecha=13/07/2026"
-    },
-    {
-      "ai_generated": false,
-      "authority": "Procuraduría Federal del Consumidor",
-      "canonical_url": "https://www.gob.mx/profeco/prensa/el-gobierno-de-mexico-informa-sobre-las-estaciones-de-servicio-que-no-se-han-adherido-al-acuerdo-para-la-estabilizacion-del-precio-de-diesel?idiom=es",
-      "card_body": null,
-      "case_amount": "",
-      "case_claim": "",
-      "case_facts": "",
-      "case_number": "",
-      "case_outcome": "",
-      "case_parties": "",
-      "case_reasoning": "",
-      "case_status": "",
-      "case_treaty": "",
-      "categories": [
-        "Fiscal"
-      ],
-      "content_hash": "cbd1d3e4129c1efc5d024bdf35c850386e075aec538a9e87547a0a25108d6f4d",
-      "country_or_org": "México",
-      "description": "El Gobierno de México, encabezado por la Presidenta Dra. Claudia Sheinbaum Pardo, reafirma su compromiso con la economía nacional al mantener una comunicación permanente y coordinada con el sector gasolinero. Esta alianza ha permitido operar con éxito la Estrategia para estabilizar el precio del Diésel en la República Mexicana, lo que ha generado beneficios directos para la población. La estrategia, que se mantiene vigente convoca a la participación voluntaria de las y los empresarios del sector junto con la acción directa de distintas entidades gubernamentales. Así, se ha logrado mantener el precio de este energético por debajo de los $ 27.00 pesos por litro a nivel nacional y en zonas fronterizas por debajo de $ 25.39 pesos por litro, derivado de la aplicación de una tasa de IVA del 8% en esas regiones. Para sostener este esfuerzo, el Gobierno de México aplica de manera coordinada los siguientes mecanismos de apoyo: Estímulos fiscales: Se mantiene de forma constante la aplicación de estímulos al Impuesto Especial sobre Producción y Servicios (IEPS); Reducción de comisiones: Se trabaja en coordinación con la Asociación de Bancos de México y la Asociación de Sociedades Emisoras de Vales, A.C. para disminuir las comisiones por pago con tarjetas, vales y medios electrónicos; Apoyo de PEMEX: Petróleos Mexicanos respalda esta iniciativa ofertando los combustibles a precios competitivos, además de incorporar cada vez más gasolineras a su transporte de última milla mejorando el costo del flete de los combustibles de sus Terminales de Almacenamiento y Despacho (TADs) hacia las estaciones de servicio. Logística y seguridad: Se refuerza continuamente la seguridad en estaciones de servicio y carreteras y se optimizan las cadenas logísticas de suministro de combustibles en todo el territorio nacional. A pesar de las medidas implementadas por el Gobierno Mexicano y el compromiso de la mayoría las y los empresarios gasolineros, aún se identifican algunas estaciones de servicio que no se han sumado a este esfuerzo conjunto y comercializan el diésel a precios significativamente superiores a los observados en el mercado. El Gobierno de México pone a disposición de la ciudadanía el listado de estaciones de servicio que no han realizado ningún esfuerzo en beneficio del pueblo de México y ofertan precios de diésel por encima de un margen razonablemente justo, el cual puede ser consultado mediante el siguiente código QR o liga electrónica adjunta: https://repositorio.energia.gob.mx/index.php/s/pfPybZZHTcAijEi Asimismo, reitera el llamado a estas estaciones de servicio para que reflejen el mismo compromiso en beneficio de México que ya han mostrado el 80% de las gasolineras que operan en el país, y reitera que continuará vigilando el mercado de combustibles para garantizar una competencia justa y proteger el bienestar de todas y todos los mexicanos.",
-      "detail_markdown": null,
-      "detail_url": "notas/e0a69887b3403ea473bd7f67.html",
-      "detected_at": "2026-07-12T12:00:00+00:00",
-      "document_type": "Comunicado",
-      "editorial_status": "needs_review",
-      "first_seen_at": "2026-07-12T12:00:00+00:00",
-      "government_branch": "Organismo descentralizado",
-      "id": "gob.mx apf:e41689152c5c519f",
-      "importance": 3,
-      "issuing_body": "Procuraduría Federal del Consumidor",
-      "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T05:24:26.112750+00:00",
-      "official_evidence": {
-        "primary_url": "https://www.gob.mx/profeco/prensa/el-gobierno-de-mexico-informa-sobre-las-estaciones-de-servicio-que-no-se-han-adherido-al-acuerdo-para-la-estabilizacion-del-precio-de-diesel?idiom=es"
-      },
-      "official_identifiers": {
-        "source_id": "e41689152c5c519f"
-      },
-      "official_published_at": "2026-07-12",
-      "official_title": "El Gobierno de México informa sobre las estaciones de servicio que no se han adherido al acuerdo para la estabilización del precio de diésel",
-      "published_at": "2026-07-12",
-      "published_day": 12,
-      "published_month": 7,
-      "published_year": 2026,
-      "relevance_score": 4,
-      "review_reason": "Contenido nuevo o modificado; requiere revisión editorial.",
-      "source": "Gob.mx APF",
-      "source_id": "e41689152c5c519f",
-      "subtopic_tags": [
-        "impuesto",
-        "iva",
-        "ieps"
-      ],
-      "summary": null,
-      "summary_teaser": null,
-      "title": null,
-      "topic_tags": [
-        "Fiscal",
-        "Acuerdo"
-      ],
-      "url": "https://www.gob.mx/profeco/prensa/el-gobierno-de-mexico-informa-sobre-las-estaciones-de-servicio-que-no-se-han-adherido-al-acuerdo-para-la-estabilizacion-del-precio-de-diesel?idiom=es"
     }
   ],
   "lookback_days": 31,
@@ -8121,10 +8023,10 @@
     {
       "attempts": 1,
       "error": null,
-      "items_found": 84,
+      "items_found": 82,
       "source": "Gob.mx APF",
       "status": "ok",
-      "validated_endpoints": 238
+      "validated_endpoints": 236
     },
     {
       "attempts": 1,
@@ -8215,5 +8117,5 @@
       "validated_endpoints": 1
     }
   ],
-  "total_items": 132
+  "total_items": 131
 }
