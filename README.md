@@ -67,6 +67,23 @@ ya existen snapshots), sin emitir el inventario como novedades del día:
 .venv/bin/python -m app.cli collect --days 31 --rebuild-stateful-history
 ```
 
+### Registro editorial y accesibilidad
+
+La interfaz se comporta como un registro editorial fechado, no como un tablero
+de tarjetas. La jerarquía nace de reglas, columnas, folios y espacio en blanco;
+prioriza superficies documentales planas y marca el estado activo con una regla
+azul estable.
+
+Las capas abstractas de papel y carbono de `docs/assets/` son decorativas y se
+marcan como tales para tecnologías asistivas; no sustituyen información. Su
+movimiento se desactiva con `prefers-reduced-motion` y las capas se ocultan en
+`forced-colors`.
+
+Fraunces se reserva para títulos de página y titulares principales; Atkinson
+Hyperlegible sirve navegación, lectura y títulos operativos; IBM Plex Mono se
+limita a fechas, folios y datos breves con un piso de 12 px. Las tres familias
+se sirven localmente desde `docs/fonts/` con sus licencias OFL.
+
 Esta bandera no se usa en la automatización diaria. Véase el runbook para el
 ensayo con `--dry-run` y los gates posteriores.
 

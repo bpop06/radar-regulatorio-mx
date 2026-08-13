@@ -163,25 +163,25 @@ Ante autoridad **no jurisdiccional** (SAT/autoridades fiscales), el principio es
 ## 10. Fuentes consultadas (fecha de consulta: 7 de julio de 2026)
 
 **Legislación (textos y referencias):**
-- Ley de Amparo (arts. 15, 17, 18, 19, 20, 21, 22, 23). Cámara de Diputados: https://www.diputados.gob.mx/LeyesBiblio/pdf/LAmp.pdf ; Justia México: https://mexico.justia.com/federales/leyes/ley-de-amparo/titulo-primero/capitulo-iii/
-- Ley Federal de Procedimiento Contencioso Administrativo (arts. 13, 74). Cámara de Diputados: https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPCA.pdf ; Justia México: https://mexico.justia.com/federales/leyes/ley-federal-de-procedimiento-contencioso-administrativo/titulo-ii/capitulo-i/ ; https://mexico.justia.com/federales/leyes/ley-federal-de-procedimiento-contencioso-administrativo/titulo-iv/capitulo-iii/
-- Código Fiscal de la Federación (arts. 12, 13, 121). https://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf ; https://leyes-mx.com/codigo_fiscal_de_la_federacion/13.htm
+- Ley de Amparo (arts. 15, 17, 18, 19, 20, 21, 22, 23): [texto oficial de la Cámara de Diputados](https://www.diputados.gob.mx/LeyesBiblio/pdf/LAmp.pdf) y [versión de consulta en Justia México](https://mexico.justia.com/federales/leyes/ley-de-amparo/titulo-primero/capitulo-iii/).
+- Ley Federal de Procedimiento Contencioso Administrativo (arts. 13, 74): [texto oficial de la Cámara de Diputados](https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPCA.pdf), [artículo 13 en Justia México](https://mexico.justia.com/federales/leyes/ley-federal-de-procedimiento-contencioso-administrativo/titulo-ii/capitulo-i/) y [artículo 74 en Justia México](https://mexico.justia.com/federales/leyes/ley-federal-de-procedimiento-contencioso-administrativo/titulo-iv/capitulo-iii/).
+- Código Fiscal de la Federación (arts. 12, 13, 121): [texto oficial de la Cámara de Diputados](https://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf) y [artículo 13 en Leyes-MX](https://leyes-mx.com/codigo_fiscal_de_la_federacion/13.htm).
 - Ley Federal del Trabajo (art. 74, días de descanso obligatorio) — referida en P./J. 14/2017 y en la normativa de días inhábiles del TFJA.
-- Ley Orgánica del Tribunal Federal de Justicia Administrativa. https://www.diputados.gob.mx/LeyesBiblio/pdf/LOTFJA.pdf
+- [Ley Orgánica del Tribunal Federal de Justicia Administrativa — Cámara de Diputados](https://www.diputados.gob.mx/LeyesBiblio/pdf/LOTFJA.pdf).
 
 **Acuerdos y normativa administrativa:**
-- TFJA, Acuerdos de Sala Superior 2026 (índice oficial, incluye SS/12/2026 "Guardias de las Oficialías de Partes del Tribunal durante el Primer Periodo Vacacional de 2026"). https://www.tfja.gob.mx/acuerdos/acuerdos_2026/ (PDF listado: `.../acuerdos_sala_superior/2026/SS-12-2026.pdf`)
-- TFJA, Días Inhábiles 2026. https://www.tfja.gob.mx/servicios/dinh2026/
+- [TFJA — Acuerdos de Sala Superior 2026](https://www.tfja.gob.mx/acuerdos/acuerdos_2026/) (índice oficial; incluye SS/12/2026, “Guardias de las Oficialías de Partes del Tribunal durante el Primer Periodo Vacacional de 2026”).
+- [TFJA — Días inhábiles 2026](https://www.tfja.gob.mx/servicios/dinh2026/).
 - CJF, Acuerdo General que establece las disposiciones en materia de actividad administrativa de los órganos jurisdiccionales (DOF 15 de enero de 2015) — citado en P./J. 14/2017.
 
 **Jurisprudencia y tesis (reproducciones consultadas):**
-- Tribunales Agrarios — reproducción de **VII.2o.T. J/38 (10a.)**: https://www.tribunalesagrarios.gob.mx/ta/?p=4031
-- Tribunales Agrarios — reproducción de **2a./J. 36/2018 (10a.)** (registro 2016696): https://www.tribunalesagrarios.gob.mx/ta/?p=3363
-- Reproducción de **PR.P.T.CS. J/53 L (11a.)** (registro 2030645) y de **2a./J. 69/2003** (registro 183230): https://jurisprudencia-mexico.tuabogadoenvivo.org/periodo-vacacional/
-- Semanario Judicial de la Federación (buscador oficial; **acceso automatizado bloqueado en esta consulta, HTTP 403**): https://sjf2.scjn.gob.mx/ — pendiente de cotejo manual para los registros marcados "por confirmar".
+- [Tribunales Agrarios — reproducción de VII.2o.T. J/38 (10a.)](https://www.tribunalesagrarios.gob.mx/ta/?p=4031).
+- [Tribunales Agrarios — reproducción de 2a./J. 36/2018 (10a.), registro 2016696](https://www.tribunalesagrarios.gob.mx/ta/?p=3363).
+- [Reproducción de PR.P.T.CS. J/53 L (11a.) y 2a./J. 69/2003](https://jurisprudencia-mexico.tuabogadoenvivo.org/periodo-vacacional/) (registros 2030645 y 183230).
+- [Semanario Judicial de la Federación — buscador oficial](https://sjf2.scjn.gob.mx/). El acceso automatizado quedó bloqueado en esta consulta (HTTP 403); los registros marcados “por confirmar” requieren cotejo manual.
 
 **Doctrina y material de apoyo:**
-- Ruiz Torres, H. E., *Plazos y términos en el proceso de amparo* (UNAM). https://revistas-colaboracion.juridicas.unam.mx/index.php/ars-iuris/article/viewFile/2331/2190
+- Ruiz Torres, H. E., [*Plazos y términos en el proceso de amparo* — UNAM](https://revistas-colaboracion.juridicas.unam.mx/index.php/ars-iuris/article/viewFile/2331/2190).
 - Notas prácticas sobre cómputo de plazos en materia fiscal y buzón tributario (fuentes secundarias de contraste).
 
 *Elaborado por el equipo de investigación jurídica del Radar Regulatorio MX. Este documento es una nota de análisis interno; los criterios marcados como "por confirmar" deben cotejarse en el Semanario Judicial de la Federación antes de invocarse en un escrito.*
