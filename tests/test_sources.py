@@ -683,6 +683,7 @@ def test_icsid_parser_filters_non_mexico_cases():
         ICSID_PAYLOAD,
         snapshot_path="/nonexistent/snapshot-should-not-be-read.json",
         today=date(2026, 7, 7),
+        persist_snapshot=False,
     )
     # El caso de Mozambique nunca debe aparecer, ni en la primera corrida.
     assert all("Mozambique" not in item.official_title for item in items)
