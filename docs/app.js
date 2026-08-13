@@ -146,7 +146,7 @@ function setLastEdition(data) {
     return;
   }
   elements.lastEdition.href = `archivo.html?fecha=${encodeURIComponent(data.last_available_date)}`;
-  elements.lastEdition.textContent = `Abrir edición del ${formatDate(data.last_available_date, { short: true })}`;
+  elements.lastEdition.textContent = `Ver publicaciones con fecha oficial del ${formatDate(data.last_available_date, { short: true })}`;
   elements.lastEdition.hidden = false;
 }
 
@@ -273,6 +273,7 @@ function importanceMeter(value) {
   const importance = Math.max(0, Math.min(5, Number(value) || 0));
   const meter = document.createElement("span");
   meter.className = "inline-importance";
+  meter.setAttribute("role", "img");
   meter.setAttribute("aria-label", `Importancia ${importance} de 5`);
   for (let index = 1; index <= 5; index += 1) {
     const bar = document.createElement("span");
@@ -324,8 +325,13 @@ function renderReady(data) {
   editionData = data;
   elements.date.textContent = `Corte del ${formatDate(data.edition_date)} · fecha de detección`;
   const pending = signals.filter((signal) => signal.editorial_status === "needs_review").length;
-  elements.total.textContent = `${data.total_today ?? signals.length} novedades · ${pending} pendientes`;
-  elements.archiveToday.href = `archivo.html?fecha=${encodeURIComponent(data.edition_date)}`;
+  const detected = data.total_today ?? signals.length;
+  const detectionLabel = detected === 1 ? "detección" : "detecciones";
+  const signalLabel = signals.length === 1 ? "señal" : "señales";
+  const pendingLabel = pending === 1 ? "pendiente" : "pendientes";
+  elements.total.textContent = `${detected} ${detectionLabel} · ${signals.length} ${signalLabel} · ${pending} ${pendingLabel}`;
+  elements.archiveToday.href = "archivo.html";
+  elements.archiveToday.textContent = "Explorar el archivo permanente";
   buildBand(signals);
   buildLedger(signals);
   selectSignal(0);

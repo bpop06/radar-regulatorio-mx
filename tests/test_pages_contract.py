@@ -11,7 +11,7 @@ from urllib.parse import unquote, urlsplit
 REPOSITORY_ROOT = Path(__file__).resolve().parents[1]
 DOCS_ROOT = REPOSITORY_ROOT / "docs"
 HTML_PAGES = tuple(sorted(DOCS_ROOT.glob("*.html")))
-STATIC_ASSET_VERSION = "v=20260812a"
+STATIC_ASSET_VERSION = "v=20260812b"
 MAX_PRELOADED_IMAGE_BYTES = 300 * 1024
 ARIA_IDREF_ATTRIBUTES = ("aria-labelledby", "aria-controls", "aria-describedby")
 COMPACT_LIVE_REGION_TAGS = frozenset({"output", "p", "span"})

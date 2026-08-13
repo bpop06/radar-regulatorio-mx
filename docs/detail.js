@@ -9,10 +9,7 @@ import {
 } from "./data-client.js";
 import {
   formatDate,
-  getSections,
   isSafeHttpUrl,
-  renderMarkdown,
-  renderSection,
   translateCaseStatus,
 } from "./markdown.js";
 
@@ -77,23 +74,16 @@ function renderImportance(value) {
   }
 }
 
-function fallbackMarkdown(item) {
-  const blocks = [
-    "## Qué se publicó", item.description || item.official_title || "Sin descripción disponible.",
-    "## Sustancia", item.summary || "La síntesis editorial no está disponible.",
-  ];
-  if (isSafeHttpUrl(item.url || item.canonical_url)) {
-    blocks.push("## Fuente oficial", `[Abrir documento oficial](${item.url || item.canonical_url})`);
-  }
-  return blocks.join("\n\n");
-}
-
 function renderDocument(item) {
-  const markdown = item.detail_markdown || item.card_body || fallbackMarkdown(item);
-  const sections = getSections(markdown);
   elements.content.replaceChildren();
-  if (sections.length) sections.forEach((section) => renderSection(section, elements.content));
-  else renderMarkdown(markdown, elements.content);
+  appendPlainSection(
+    "Qué se publicó",
+    item.description || item.official_title || "Sin descripción oficial disponible.",
+  );
+  appendPlainSection(
+    "Resumen editorial",
+    item.summary || "La síntesis editorial no está disponible.",
+  );
 }
 
 function appendPlainSection(title, value) {

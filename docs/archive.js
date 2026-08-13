@@ -162,6 +162,7 @@ function importanceMeter(value) {
   const meter = document.createElement("span");
   const importance = Math.max(0, Math.min(5, Number(value) || 0));
   meter.className = "inline-importance";
+  meter.setAttribute("role", "img");
   meter.setAttribute("aria-label", `Importancia ${importance} de 5`);
   for (let index = 1; index <= 5; index += 1) {
     const bar = document.createElement("span");
@@ -217,7 +218,7 @@ function buildRow(item, absoluteIndex) {
 
 function renderActiveQuery() {
   const labels = [];
-  if (state.exactDate) labels.push(`Edición del ${formatDate(state.exactDate)}`);
+  if (state.exactDate) labels.push(`Fecha oficial: ${formatDate(state.exactDate)}`);
   if (state.query) labels.push(`“${state.query}”`);
   if (state.category !== "Todas") labels.push(state.category);
   if (state.organ !== "Todas") labels.push(state.organ);

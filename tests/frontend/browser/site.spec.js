@@ -87,6 +87,9 @@ test("portada muestra estados y pestañas APG operables", async ({ page }) => {
   await expect(tabs.nth(1)).toHaveAttribute("aria-selected", "true");
   await expect(page.locator("#lead-panel").getByRole("heading", { name: pending.official_title })).toBeVisible();
   await expect(page.getByText("Revisión pendiente").first()).toBeVisible();
+  await expect(page.locator("#today-total")).toHaveText("2 detecciones · 2 señales · 1 pendiente");
+  await expect(page.getByRole("link", { name: "Explorar el archivo permanente" }))
+    .toHaveAttribute("href", "archivo.html");
 });
 
 test("portada distingue sin novedades y corte pendiente", async ({ page }) => {
@@ -267,7 +270,7 @@ test("archivo abre directamente el mes indicado por fecha", async ({ page }) => 
   await expect(page.locator("#active-query-copy")).toContainText("15 de enero de 2026");
 });
 
-test("ficha v7 renderiza Markdown y SEO sin asteriscos literales", async ({ page }) => {
+test("ficha de compatibilidad renderiza campos estructurados sin interpretar Markdown", async ({ page }) => {
   await page.route("**/data/manifest.json", (route) => route.fulfill({ status: 404 }));
   await page.route("**/data/publications.json", (route) => route.fulfill({
     contentType: "application/json",
@@ -276,8 +279,11 @@ test("ficha v7 renderiza Markdown y SEO sin asteriscos literales", async ({ page
   await page.route("**/data/edition.json", (route) => route.fulfill({ contentType: "application/json", body: JSON.stringify({ ...edition, schema_version: 7 }) }));
   await page.goto("/ficha.html?id=legacy");
   await expect(page.getByRole("heading", { name: complete.title })).toBeVisible();
-  await expect(page.locator("strong", { hasText: "evidencia oficial" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Resumen editorial" })).toBeVisible();
+  await expect(page.getByText(complete.summary, { exact: true })).toBeVisible();
+  await expect(page.locator("strong", { hasText: "evidencia oficial" })).toHaveCount(0);
   await expect(page.locator("main")).not.toContainText("**");
+  await expect(page.locator("main")).not.toContainText("Texto con evidencia oficial");
   await expect(page).toHaveTitle(new RegExp(complete.title));
 });
 
@@ -336,7 +342,7 @@ test("refluye a 320 px sin desplazamiento horizontal", async ({ page }) => {
     page: document.documentElement.scrollWidth,
   }));
   expect(widths.page).toBeLessThanOrEqual(widths.viewport);
-  await expect(page.getByRole("link", { name: "Archivo" })).toBeVisible();
+  await expect(page.getByRole("link", { name: "Archivo", exact: true })).toBeVisible();
 });
 
 for (const path of ["/index.html", "/archivo.html", "/ficha.html?id=legacy", "/calendario.html"]) {
@@ -352,7 +358,7 @@ for (const path of ["/index.html", "/archivo.html", "/ficha.html?id=legacy", "/c
     await page.goto(path);
     await page.locator("main").waitFor();
     const results = await new AxeBuilder({ page }).analyze();
-    const critical = results.violations.filter((violation) => violation.impact === "critical");
-    expect(critical).toEqual([]);
+    const blocking = results.violations.filter((violation) => ["serious", "critical"].includes(violation.impact));
+    expect(blocking).toEqual([]);
   });
 }
