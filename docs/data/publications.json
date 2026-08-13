@@ -1,7 +1,7 @@
 {
   "generated_at": "2026-08-13T02:57:51.987493+00:00",
   "lookback_days": 31,
-  "total_items": 112,
+  "total_items": 111,
   "sources": [
     {
       "source": "DOF",
@@ -592,44 +592,6 @@
       "importance": 1,
       "relevance_score": 1,
       "ai_generated": true,
-      "case_parties": "",
-      "case_status": "",
-      "case_facts": ""
-    },
-    {
-      "id": "snice:d5bbe89f6f98bbbd",
-      "source": "SNICE",
-      "url": "https://www.herramientasregulatorias.gob.mx/Buscador",
-      "detail_url": "ficha.html?id=snice%3Ad5bbe89f6f98bbbd",
-      "official_title": "Sin proyectos en materia de Comercio Exterior .",
-      "title": "12.08.2026 Sin proyectos en materia de Comercio Exterior . (Consulta aquí el",
-      "summary": "12.08.2026 Sin proyectos en materia de Comercio Exterior . (Consulta aquí el histórico de ATDT). Publicación oficial de Secretaría de Economía, relacionada con Comercio exterior. Consulta la fuente íntegra para confirmar su alcance, fechas de vigencia, obligaciones, requisitos, excepciones, autoridades responsables, procedimientos y efectos jurídicos aplicables.",
-      "description": "12.08.2026 Sin proyectos en materia de Comercio Exterior . (Consulta aquí el histórico de ATDT)",
-      "detail_markdown": "# 12.08.2026 Sin proyectos en materia de Comercio Exterior . (Consulta aquí el\n\n**Fecha:** 2026-08-12 · **Fuente:** SNICE · **Órgano:** Secretaría de Economía\n\n## Qué se publicó\n\nActualidad de SE.\n\n## Sustancia\n\n12.08.2026 Sin proyectos en materia de Comercio Exterior . (Consulta aquí el histórico de ATDT). Materias: Comercio exterior. Resumen extractivo pendiente de revisión editorial; consulta la fuente oficial para el alcance completo.\n\n## Clasificación\n\n**Materias:** Comercio exterior, Administración centralizada.\n\n## Fuente oficial\n\n*Sin proyectos en materia de Comercio Exterior .*\n\n[Abrir documento oficial](https://www.herramientasregulatorias.gob.mx/Buscador)",
-      "card_body": "## Qué se publicó\n\nActualidad de SE.\n\n## Sustancia\n\n12.08.2026 Sin proyectos en materia de Comercio Exterior . (Consulta aquí el histórico de ATDT). Materias: Comercio exterior. Resumen extractivo pendiente de revisión editorial; consulta la fuente oficial para el alcance completo.\n\n## Fuente\n\n[Abrir publicación oficial](https://www.herramientasregulatorias.gob.mx/Buscador)",
-      "published_at": "2026-08-12",
-      "authority": "Secretaría de Economía",
-      "document_type": "Actualidad",
-      "issuing_body": "Secretaría de Economía",
-      "government_branch": "Ejecutivo federal",
-      "jurisdiction": "nacional",
-      "country_or_org": "México",
-      "published_year": 2026,
-      "published_month": 8,
-      "published_day": 12,
-      "categories": [
-        "Comercio exterior",
-        "Administración centralizada"
-      ],
-      "topic_tags": [
-        "Comercio exterior"
-      ],
-      "subtopic_tags": [
-        "comercio exterior"
-      ],
-      "importance": 1,
-      "relevance_score": 1,
-      "ai_generated": false,
       "case_parties": "",
       "case_status": "",
       "case_facts": ""
@@ -4435,7 +4397,7 @@
         "CIJ"
       ]
     },
-    "total_today": 14,
+    "total_today": 13,
     "last_available_date": "2026-08-12",
     "lead_id": "diputados:57960ea48aabd3e0",
     "signals": [
