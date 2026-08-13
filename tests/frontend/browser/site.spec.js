@@ -233,15 +233,20 @@ test("archivo descarga meses anteriores sólo cuando se solicitan", async ({ pag
 
 test("archivo abre directamente el mes indicado por fecha", async ({ page }) => {
   let latestMonthRequests = 0;
+  let recentMonthRequests = 0;
   let requestedMonthRequests = 0;
+  let olderMonthRequests = 0;
   const requestedDate = "2026-01-15";
   await page.route("**/data/manifest.json", (route) => route.fulfill({
     contentType: "application/json",
     body: JSON.stringify({
-      schema_version: 8, cut_id: "cut-test", archive_months: [today.slice(0, 7), "2026-01"],
+      schema_version: 8, cut_id: "cut-test",
+      archive_months: [today.slice(0, 7), "2026-07", "2026-01", "2025-12"],
       artifacts: {
         [`data/archive/${today.slice(0, 7)}.json`]: { sha256: "a".repeat(64), bytes: 10 },
+        "data/archive/2026-07.json": { sha256: "b".repeat(64), bytes: 10 },
         "data/archive/2026-01.json": { sha256: "b".repeat(64), bytes: 10 },
+        "data/archive/2025-12.json": { sha256: "c".repeat(64), bytes: 10 },
       },
     }),
   }));
@@ -262,12 +267,33 @@ test("archivo abre directamente el mes indicado por fecha", async ({ page }) => 
       }),
     });
   });
+  await page.route("**/data/archive/2026-07.json", (route) => {
+    recentMonthRequests += 1;
+    return route.fulfill({
+      contentType: "application/json",
+      body: JSON.stringify({ schema_version: 8, cut_id: "cut-test", month: "2026-07", items: [] }),
+    });
+  });
+  await page.route("**/data/archive/2025-12.json", (route) => {
+    olderMonthRequests += 1;
+    return route.fulfill({
+      contentType: "application/json",
+      body: JSON.stringify({ schema_version: 8, cut_id: "cut-test", month: "2025-12", items: [] }),
+    });
+  });
 
   await page.goto(`/archivo.html?fecha=${requestedDate}`);
   await expect(page.getByRole("heading", { name: pending.official_title })).toBeVisible();
   expect(requestedMonthRequests).toBe(1);
   expect(latestMonthRequests).toBe(0);
+  expect(recentMonthRequests).toBe(0);
+  expect(olderMonthRequests).toBe(0);
   await expect(page.locator("#active-query-copy")).toContainText("15 de enero de 2026");
+  await page.getByRole("button", { name: "Cargar mes anterior" }).click();
+  expect(olderMonthRequests).toBe(1);
+  expect(recentMonthRequests).toBe(0);
+  expect(latestMonthRequests).toBe(0);
+  await expect(page.getByText("Archivo completo cargado.")).toBeVisible();
 });
 
 test("ficha de compatibilidad renderiza campos estructurados sin interpretar Markdown", async ({ page }) => {

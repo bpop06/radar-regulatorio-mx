@@ -8,10 +8,12 @@ from pathlib import Path
 from typing import NamedTuple
 from urllib.parse import unquote, urlsplit
 
+from app.edition import STATIC_ASSET_VERSION as EDITION_STATIC_ASSET_VERSION
+
 REPOSITORY_ROOT = Path(__file__).resolve().parents[1]
 DOCS_ROOT = REPOSITORY_ROOT / "docs"
 HTML_PAGES = tuple(sorted(DOCS_ROOT.glob("*.html")))
-STATIC_ASSET_VERSION = "v=20260812b"
+STATIC_ASSET_VERSION = f"v={EDITION_STATIC_ASSET_VERSION}"
 MAX_PRELOADED_IMAGE_BYTES = 300 * 1024
 ARIA_IDREF_ATTRIBUTES = ("aria-labelledby", "aria-controls", "aria-describedby")
 COMPACT_LIVE_REGION_TAGS = frozenset({"output", "p", "span"})

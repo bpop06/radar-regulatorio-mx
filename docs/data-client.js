@@ -99,6 +99,11 @@ export function archivePathForMonth(paths, month) {
   return paths.includes(expected) ? expected : "";
 }
 
+export function olderArchivePaths(paths, loadedPath) {
+  const index = paths.indexOf(loadedPath);
+  return index < 0 ? [] : paths.slice(index + 1);
+}
+
 const CUT_TIME_ZONE = "America/Mexico_City";
 
 function mexicoCityParts(instant) {
@@ -244,7 +249,7 @@ export async function loadArchive({ month = "" } = {}) {
       items: itemList(envelope),
       sources,
       loadedPaths: [initialPath],
-      remainingPaths: paths.filter((path) => path !== initialPath),
+      remainingPaths: olderArchivePaths(paths, initialPath),
       mode: "monthly",
     };
   }

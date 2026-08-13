@@ -10,6 +10,7 @@ import {
   editorialLabel,
   fetchJson,
   isGeneratedCutOverdue,
+  olderArchivePaths,
   officialDate,
   stableDetailHref,
   teaser,
@@ -32,6 +33,12 @@ test("resuelve rutas del manifiesto v8", () => {
   ]);
   assert.equal(archivePathForMonth(archivePaths(manifest), "2026-07"), "data/archive/2026-07.json");
   assert.equal(archivePathForMonth(archivePaths(manifest), "2025-12"), "");
+  assert.deepEqual(olderArchivePaths(archivePaths(manifest), "data/archive/2026-07.json"), []);
+  assert.deepEqual(olderArchivePaths([
+    "data/archive/2026-08.json",
+    "data/archive/2026-07.json",
+    "data/archive/2026-05.json",
+  ], "data/archive/2026-07.json"), ["data/archive/2026-05.json"]);
 });
 
 test("sólo un HTTP 404 permite omitir un JSON opcional", async () => {

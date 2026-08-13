@@ -8,15 +8,19 @@ from pathlib import Path
 
 import pytest
 
-from app.edition import item_key, prepare_payload, write_site_artifacts
+from app.edition import (
+    STATIC_ASSET_VERSION,
+    item_key,
+    prepare_payload,
+    write_site_artifacts,
+)
 from app.editorial import apply_editorial
 from app.validation import validate_site_artifacts
 from tests.test_contract_v8 import extractive_payload
 
 
-def _rewrite_and_rehash(docs: Path, relative: str, payload: dict) -> None:
+def _rewrite_bytes_and_rehash(docs: Path, relative: str, content: bytes) -> None:
     path = docs / relative
-    content = (json.dumps(payload, ensure_ascii=False, indent=2, sort_keys=True) + "\n").encode()
     path.write_bytes(content)
     manifest_path = docs / "data/manifest.json"
     manifest = json.loads(manifest_path.read_text())
@@ -27,6 +31,11 @@ def _rewrite_and_rehash(docs: Path, relative: str, payload: dict) -> None:
     manifest_path.write_text(
         json.dumps(manifest, ensure_ascii=False, indent=2, sort_keys=True) + "\n"
     )
+
+
+def _rewrite_and_rehash(docs: Path, relative: str, payload: dict) -> None:
+    content = (json.dumps(payload, ensure_ascii=False, indent=2, sort_keys=True) + "\n").encode()
+    _rewrite_bytes_and_rehash(docs, relative, content)
 
 
 def test_transaction_writes_cross_checked_permanent_artifacts(tmp_path: Path) -> None:
@@ -57,6 +66,19 @@ def test_transaction_writes_cross_checked_permanent_artifacts(tmp_path: Path) ->
     )
     assert 'class="editorial-badge is-needs-review"' in note
     assert "og:site_name" in note
+    assert f'../styles.css?v={STATIC_ASSET_VERSION}' in note
+    json_ld_match = re.search(
+        r'<script type="application/ld\+json">(.*?)</script>', note, flags=re.DOTALL
+    )
+    assert json_ld_match is not None
+    article = json.loads(json_ld_match.group(1))
+    assert article["@context"] == "https://schema.org"
+    assert article["@type"] == "Article"
+    assert article["headline"] == item["official_title"]
+    assert article["url"].endswith(f"notas/{key}.html")
+    assert article["mainEntityOfPage"]["@id"] == article["url"]
+    assert article["datePublished"] == item["official_published_at"]
+    assert article["isBasedOn"] == item["canonical_url"]
     assert validate_site_artifacts(docs / "data" / "manifest.json").ok
 
 
@@ -75,6 +97,45 @@ def test_static_note_bounds_metadata_without_truncating_official_item(tmp_path: 
     assert match is not None
     assert len(match.group(1)) <= 280
     assert len(item["description"]) > 10_000
+
+
+def test_static_note_json_ld_cannot_be_closed_by_official_text(tmp_path: Path) -> None:
+    docs = tmp_path / "docs"
+    publications = docs / "data/publications.json"
+    payload = extractive_payload()
+    payload["items"][0]["official_title"] = "Acuerdo </script><script>alert(1)</script>"
+
+    write_site_artifacts(payload, publications)
+
+    item = json.loads(publications.read_text(encoding="utf-8"))["items"][0]
+    note = (docs / item["detail_url"]).read_text(encoding="utf-8")
+    assert note.count('<script type="application/ld+json">') == 1
+    assert "</script><script>alert(1)</script>" not in note
+    match = re.search(r'<script type="application/ld\+json">(.*?)</script>', note, re.DOTALL)
+    assert match is not None
+    assert json.loads(match.group(1))["headline"] == item["official_title"]
+
+
+def test_manifest_rejects_static_note_without_article_json_ld_after_rehash(
+    tmp_path: Path,
+) -> None:
+    docs = tmp_path / "docs"
+    publications = docs / "data/publications.json"
+    write_site_artifacts(extractive_payload(), publications)
+    item = json.loads(publications.read_text(encoding="utf-8"))["items"][0]
+    note = (docs / item["detail_url"]).read_text(encoding="utf-8")
+    note = re.sub(
+        r'\s*<script type="application/ld\+json">.*?</script>',
+        "",
+        note,
+        flags=re.DOTALL,
+    )
+    _rewrite_bytes_and_rehash(docs, item["detail_url"], note.encode())
+
+    report = validate_site_artifacts(docs / "data/manifest.json")
+
+    assert not report.ok
+    assert any("must declare Article JSON-LD" in error for error in report.errors)
 
 
 def test_manifest_detects_artifact_tampering(tmp_path: Path) -> None:

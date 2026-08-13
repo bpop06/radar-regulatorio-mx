@@ -15,6 +15,7 @@ from app.edition import (
     MAX_SIGNALS,
     SCHEMA_VERSION,
     SIGNAL_REFERENCE_KEYS,
+    STATIC_ASSET_VERSION,
     SUMMARY_MAX_WORDS,
     SUMMARY_MIN_WORDS,
     TEASER_MAX_WORDS,
@@ -1072,6 +1073,41 @@ def validate_site_artifacts(
                 errors.append(f"{detail_url} does not render its permanent item title")
             if expected_canonical not in note:
                 errors.append(f"{detail_url} does not declare its stable canonical URL")
+            expected_stylesheet = f'../styles.css?v={STATIC_ASSET_VERSION}'
+            if f'<link rel="stylesheet" href="{expected_stylesheet}">' not in note:
+                errors.append(
+                    f"{detail_url} must use the versioned site stylesheet "
+                    f"{expected_stylesheet}"
+                )
+            json_ld_match = re.search(
+                r'<script type="application/ld\+json">(.*?)</script>',
+                note,
+                flags=re.DOTALL,
+            )
+            if json_ld_match is None:
+                errors.append(f"{detail_url} must declare Article JSON-LD")
+            else:
+                try:
+                    article = json.loads(json_ld_match.group(1))
+                except json.JSONDecodeError as exc:
+                    errors.append(f"{detail_url} has invalid JSON-LD: {exc}")
+                else:
+                    main_entity = (
+                        article.get("mainEntityOfPage") if isinstance(article, dict) else None
+                    )
+                    if not (
+                        isinstance(article, dict)
+                        and article.get("@context") == "https://schema.org"
+                        and article.get("@type") == "Article"
+                        and article.get("headline")
+                        == str(item.get("title") or item.get("official_title") or "")
+                        and article.get("url") == expected_canonical
+                        and isinstance(main_entity, dict)
+                        and main_entity.get("@id") == expected_canonical
+                    ):
+                        errors.append(
+                            f"{detail_url} JSON-LD must describe its canonical Article"
+                        )
 
     if isinstance(publications, dict):
         for current in publications.get("items", []):

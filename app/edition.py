@@ -27,6 +27,7 @@ TEASER_MAX_WORDS = 70
 SUMMARY_MIN_WORDS = 300
 SUMMARY_MAX_WORDS = 1000
 DEFAULT_TIMEZONE = "America/Mexico_City"
+STATIC_ASSET_VERSION = "20260812b"
 
 EDITION_KEYS = {
     "edition_date",
@@ -1071,6 +1072,13 @@ def _detail_html(item: dict[str, Any]) -> str:
         + str(item.get("detail_url") or f"notas/{item_key(str(item.get('id', '')))}.html")
     )
     canonical = html.escape(note_url, quote=True)
+    json_ld = _article_json_ld(
+        item,
+        title=str(title),
+        description=str(description or ""),
+        canonical_url=note_url,
+        source_url=str(item.get("canonical_url") or item.get("url") or ""),
+    )
     badge_class = (
         "is-complete" if item.get("editorial_status") == "complete" else "is-needs-review"
     )
@@ -1087,7 +1095,8 @@ def _detail_html(item: dict[str, Any]) -> str:
   <meta property="og:site_name" content="Radar Regulatorio MX">
   <meta property="og:url" content="{canonical}">
   <link rel="canonical" href="{canonical}">
-  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../styles.css?v={STATIC_ASSET_VERSION}">
+  <script type="application/ld+json">{json_ld}</script>
 </head>
 <body>
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
@@ -1118,6 +1127,45 @@ def _detail_html(item: dict[str, Any]) -> str:
 </body>
 </html>
 """
+
+
+def _article_json_ld(
+    item: dict[str, Any],
+    *,
+    title: str,
+    description: str,
+    canonical_url: str,
+    source_url: str,
+) -> str:
+    """Serializa metadata ``Article`` sin permitir cerrar el bloque ``script``."""
+    article: dict[str, Any] = {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "mainEntityOfPage": {"@type": "WebPage", "@id": canonical_url},
+        "url": canonical_url,
+        "headline": title,
+        "description": description,
+        "inLanguage": "es-MX",
+        "publisher": {"@type": "Organization", "name": "Radar Regulatorio MX"},
+    }
+    optional = {
+        "datePublished": item.get("official_published_at") or item.get("published_at"),
+        "dateModified": item.get("last_seen_at") or item.get("detected_at"),
+        "identifier": item.get("id"),
+        "isBasedOn": source_url if source_url.startswith(("http://", "https://")) else None,
+    }
+    article.update({key: value for key, value in optional.items() if value})
+    author = item.get("issuing_body") or item.get("authority")
+    if author:
+        article["author"] = {"@type": "Organization", "name": str(author)}
+    categories = item.get("categories")
+    if isinstance(categories, list) and any(
+        isinstance(value, str) and value for value in categories
+    ):
+        article["about"] = [value for value in categories if isinstance(value, str) and value]
+
+    encoded = json.dumps(article, ensure_ascii=False, separators=(",", ":"))
+    return encoded.replace("&", "\\u0026").replace("<", "\\u003c").replace(">", "\\u003e")
 
 
 def _metadata_description(value: Any, *, limit: int = 280) -> str:
