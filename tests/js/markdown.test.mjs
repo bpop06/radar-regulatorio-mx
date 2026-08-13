@@ -1,13 +1,28 @@
 import assert from "node:assert/strict";
 import test from "node:test";
+import { JSDOM } from "jsdom";
 
 import {
   detailHref,
   formatDate,
   isSafeHttpUrl as safeUrl,
-  parseInline,
+  renderMarkdown,
   translateCaseStatus as translateStatus,
 } from "../../docs/markdown.js";
+
+function render(markdown) {
+  const dom = new JSDOM("<!doctype html><main id='root'></main>");
+  const previousDocument = globalThis.document;
+  globalThis.document = dom.window.document;
+  try {
+    const root = document.querySelector("#root");
+    renderMarkdown(markdown, root);
+    return root;
+  } finally {
+    if (previousDocument === undefined) delete globalThis.document;
+    else globalThis.document = previousDocument;
+  }
+}
 
 test("safeUrl accepts HTTP(S) URLs and rejects unsafe values", () => {
   assert.equal(safeUrl("https://www.dof.gob.mx/nota_detalle.php"), true);
@@ -48,19 +63,14 @@ test("translateStatus localizes known case statuses and preserves unknown ones",
   assert.equal(translateStatus(undefined), "");
 });
 
-test("parseInline renders strong, emphasis, and safe links without literal markers", () => {
-  assert.deepEqual(
-    parseInline("**Materia:** *Título oficial* [Fuente](https://example.test/doc)"),
-    [
-      { type: "strong", value: "Materia:" },
-      { type: "text", value: " " },
-      { type: "emphasis", value: "Título oficial" },
-      { type: "text", value: " " },
-      { type: "link", value: "Fuente", url: "https://example.test/doc" },
-    ],
-  );
-  assert.deepEqual(
-    parseInline("[No abrir](javascript:alert(1))"),
-    [{ type: "text", value: "[No abrir](javascript:alert(1))" }],
-  );
+test("renderMarkdown crea sólo negritas y enlaces HTTP seguros", () => {
+  const root = render("**Materia:** [Fuente](https://example.test/doc)");
+  assert.equal(root.querySelector("strong")?.textContent, "Materia:");
+  assert.equal(root.querySelector("a")?.href, "https://example.test/doc");
+  assert.equal(root.querySelector("a")?.target, "_blank");
+  assert.match(root.querySelector("a")?.rel || "", /noopener/);
+
+  const unsafe = render("[No abrir](javascript:alert(1))");
+  assert.equal(unsafe.querySelector("a"), null);
+  assert.equal(unsafe.textContent, "[No abrir](javascript:alert(1))");
 });
