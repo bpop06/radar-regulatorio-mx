@@ -2,23 +2,27 @@
   "collection_notes": {
     "dof_previous_day_reviewed": false
   },
-  "cut_id": "84e7490661f4f2d27727e334",
+  "cut_id": "608f32e49282b3cb935d0f73",
   "edition": {
     "coverage": {
-      "failed": [
-        "ANAM"
-      ],
-      "ok": 17,
-      "state": "degraded"
+      "failed": [],
+      "ok": 18,
+      "state": "complete"
     },
     "edition_date": "2026-08-13",
     "last_available_date": "2026-08-07",
-    "lead_id": null,
-    "signals": [],
-    "state": "empty",
-    "total_today": 0
+    "lead_id": "snice:d41292059bc780c2",
+    "signals": [
+      {
+        "id": "snice:d41292059bc780c2",
+        "rank": 1,
+        "why_it_matters": "La Secretaría de Economía difundió enlaces y formatos de apoyo para acceder a las bases de las licitaciones públicas nacionales vinculadas con cupos de importación de leche condensada y evaporada. El aviso."
+      }
+    ],
+    "state": "ready",
+    "total_today": 1
   },
-  "generated_at": "2026-08-13T20:32:06.107949+00:00",
+  "generated_at": "2026-08-14T01:46:44.993982+00:00",
   "items": [
     {
       "ai_generated": true,
@@ -46,9 +50,39 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5795726",
-      "summary_teaser": "El SAT publicó a Group Irbenigi de México, S.A. de C.V., RFC GIM150409IG1, por no desvirtuar la presunción de falsedad de sus CFDI. Las operaciones amparadas carecen de efecto fiscal; quienes los usaron deben presentar declaración complementaria en 30 días naturales o se exponen a la restricción temporal de su certificado de sello digital.",
-      "title": "SAT da 30 días para revertir efectos de CFDI falsos de Group Irbenigi",
+      "summary_teaser": "El SAT publicó a Group Irbenigi de México, S.A. de C.V., RFC GIM150409IG1, tras determinar que no desvirtuó la presunción de falsedad de sus CFDI. Las operaciones amparadas no producen efectos fiscales; los terceros que les dieron efecto fiscal cuentan con 30 días naturales para presentar declaración complementaria o enfrentar la restricción temporal de su certificado de sello digital.",
+      "title": "SAT da 30 días para revertir efectos fiscales de CFDI falsos de Group Irbenigi de México",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5795726&fecha=07/08/2026"
+    },
+    {
+      "ai_generated": true,
+      "canonical_url": "https://www.snice.gob.mx/~oracle/SNICE_DOCS/FORMATOS-BASESLPN-016Y017-2026-LICITACION-ACTUALIDAD_20260731-20260731.pdf",
+      "categories": [
+        "Comercio exterior",
+        "Administración centralizada"
+      ],
+      "content_hash": "21cee0fde9654d42ae066f45332480fe63a220eec4b639716689d72d75b045bb",
+      "country_or_org": "México",
+      "detail_data_url": "data/fichas/7f5d2f7bcfe685dc67ffd67a.json",
+      "detail_url": "notas/7f5d2f7bcfe685dc67ffd67a.html",
+      "detected_at": "2026-08-14T00:35:49.179018+00:00",
+      "document_type": "Actualidad",
+      "editorial_status": "complete",
+      "extraction_status": "complete",
+      "id": "snice:d41292059bc780c2",
+      "importance": 1,
+      "issuing_body": "Secretaría de Economía",
+      "jurisdiction": "nacional",
+      "official_published_at": "2026-07-31",
+      "official_title": "Bases para participar en las LPN No. 016/2026 y 017/2026 para asignar los cupos de importación de leche condensada y leche evaporada establecidos en el Acuerdo por el que se dan a conocer los cupos de importación descritos en el Apéndice A-1 \"Contingentes arancelarios de México\" del anexo 2-D \"Compromisos arancelarios\" del TIPAT.",
+      "published_at": "2026-07-31",
+      "relevance_score": 1,
+      "review_reason": null,
+      "source": "SNICE",
+      "source_id": "d41292059bc780c2",
+      "summary_teaser": "La Secretaría de Economía difundió enlaces y formatos de apoyo para acceder a las bases de las licitaciones públicas nacionales vinculadas con cupos de importación de leche condensada y evaporada. El aviso incluye guía de registro, manifestación de no colusión, manual de encriptado y formatos de constancia y oferta; no reproduce requisitos, cantidades ni fechas del procedimiento.",
+      "title": "Economía abre acceso a bases para cupos de leche",
+      "url": "https://www.snice.gob.mx/~oracle/SNICE_DOCS/FORMATOS-BASESLPN-016Y017-2026-LICITACION-ACTUALIDAD_20260731-20260731.pdf"
     },
     {
       "ai_generated": true,
@@ -66,7 +100,7 @@
       "extraction_status": "complete",
       "id": "dof:5793941",
       "importance": 2,
-      "issuing_body": "Presidencia de la República",
+      "issuing_body": "Secretaría Anticorrupción y Buen Gobierno",
       "jurisdiction": "nacional",
       "official_published_at": "2026-07-20",
       "official_title": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a las entidades federativas, a los municipios, los entes públicos de unas y otros, así como a las demarcaciones territoriales de la Ciudad de México, que deberán abstenerse de aceptar propuestas y/o celebrar contratos con la empresa Bernabeu México, S.A. de C.V.",
@@ -75,8 +109,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5793941",
-      "summary_teaser": "La Secretaría Anticorrupción y Buen Gobierno ordenó que entidades federales, gobiernos locales y otros entes públicos rechacen propuestas y contratos de Bernabeu México durante dieciséis meses y veinticuatro días. La restricción inicia tras la publicación y registro en la Plataforma Digital de Contrataciones Públicas, y permanecerá si la multa no se paga.",
-      "title": "Buen Gobierno inhabilita a Bernabeu México en contrataciones públicas",
+      "summary_teaser": "Una circular de la Secretaría Anticorrupción y Buen Gobierno ordena a autoridades federales y a los demás entes señalados abstenerse de recibir proposiciones, adjudicar o, según el ámbito aplicable, celebrar contratos con Bernabeu México. La medida inicia al día siguiente de publicarse y registrarse, dura dieciséis meses y veinticuatro días, y puede subsistir hasta el pago de la multa.",
+      "title": "Buen Gobierno ordena abstención contractual con Bernabeu México",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5793941&fecha=20/07/2026"
     }
   ],
@@ -86,7 +120,7 @@
     {
       "attempts": 1,
       "error": null,
-      "items_found": 7466,
+      "items_found": 6124,
       "source": "DOF",
       "status": "ok"
     },
@@ -121,14 +155,14 @@
     {
       "attempts": 1,
       "error": null,
-      "items_found": 11,
+      "items_found": 12,
       "source": "IMPI",
       "status": "ok"
     },
     {
       "attempts": 1,
       "error": null,
-      "items_found": 83,
+      "items_found": 87,
       "source": "Gob.mx APF",
       "status": "ok"
     },
@@ -161,11 +195,11 @@
       "status": "ok"
     },
     {
-      "attempts": 3,
-      "error": "ReadTimeout: ",
-      "items_found": 0,
+      "attempts": 1,
+      "error": null,
+      "items_found": 39,
       "source": "ANAM",
-      "status": "error"
+      "status": "ok"
     },
     {
       "attempts": 1,
@@ -210,5 +244,5 @@
       "status": "ok"
     }
   ],
-  "total_items": 2
+  "total_items": 3
 }

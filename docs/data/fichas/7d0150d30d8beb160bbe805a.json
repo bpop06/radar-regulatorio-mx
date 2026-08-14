@@ -22,32 +22,42 @@
       ]
     }
   ],
-  "cut_id": "84e7490661f4f2d27727e334",
+  "cut_id": "608f32e49282b3cb935d0f73",
   "detailed_summary": [
     {
       "evidence_refs": [
         "chunk-1",
         "chunk-2"
       ],
-      "heading": "Alcance de la inhabilitación",
+      "heading": "Destinatarios y fundamento de la medida",
       "paragraphs": [
-        "La autoridad comunica que las dependencias y entidades de la Administración Pública Federal deben abstenerse de recibir proposiciones o adjudicar contratos a Bernabeu México, S.A. de C.V., de manera directa o por interpósita persona. El acto deriva de la conclusión del procedimiento administrativo sancionador contra la empresa.",
-        "El mandato se extiende a entidades federativas, municipios, entes públicos y demarcaciones territoriales de la Ciudad de México para los procedimientos, contratos y acuerdos marco que el texto identifica."
+        "La circular está dirigida a dependencias y entidades de la Administración Pública Federal, entidades federativas, municipios, entes públicos y demarcaciones territoriales de la Ciudad de México. El encabezado comunica que esas autoridades deberán abstenerse de aceptar propuestas y/o celebrar contratos con Bernabeu México, S.A. de C.V.",
+        "El texto cita disposiciones constitucionales, la Ley Orgánica de la Administración Pública Federal, la Ley de Adquisiciones, Arrendamientos y Servicios del Sector Público, su Reglamento y el Reglamento Interior de la Secretaría. Señala que se emite en cumplimiento del segundo párrafo del resolutivo CUARTO de la resolución de 1 de julio de 2026, dictada en el expediente SAN/055/2025, que concluyó el procedimiento administrativo de sanción contra la empresa."
       ]
     },
     {
       "evidence_refs": [
         "chunk-2"
       ],
-      "heading": "Vigencia, pago de multa y contratos existentes",
+      "heading": "Alcance federal y vigencia de la inhabilitación",
       "paragraphs": [
-        "La abstención opera a partir del día siguiente a la publicación de la circular y a su registro en la Plataforma Digital de Contrataciones Públicas, por dieciséis meses y veinticuatro días. Si al finalizar ese periodo la empresa no ha pagado la multa, la inhabilitación continúa hasta que se realice el pago.",
-        "La circular excluye de su aplicación los contratos que ya hubieran sido adjudicados o se encuentren formalizados con la empresa, por lo que el control recae en nuevas decisiones de contratación."
+        "Para las dependencias y entidades de la Administración Pública Federal, la circular ordena abstenerse de recibir proposiciones o adjudicar contratos a Bernabeu México, S.A. de C.V., de manera directa o por interpósita persona. El inicio se ubica el día siguiente a la publicación en el Diario Oficial de la Federación y al registro en la Plataforma Digital de Contrataciones Públicas.",
+        "El plazo de inhabilitación es de dieciséis meses y veinticuatro días. Si al cumplirse ese plazo la empresa no ha pagado la multa impuesta en la resolución de 1 de julio de 2026, la inhabilitación subsiste hasta que se realice el pago correspondiente; la publicación vincula esta consecuencia con el artículo 90, párrafo quinto, de la Ley de Adquisiciones, Arrendamientos y Servicios del Sector Público y el artículo 164, primer párrafo, de su Reglamento."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Contratos existentes y ámbito de los demás entes",
+      "paragraphs": [
+        "Los contratos ya adjudicados y los que actualmente estén formalizados con Bernabeu México, S.A. de C.V., no quedan comprendidos en la aplicación de la circular. El texto atribuye esta delimitación al artículo 163 del Reglamento de la Ley de Adquisiciones, Arrendamientos y Servicios del Sector Público.",
+        "Las entidades federativas, municipios, entes públicos y demarcaciones territoriales de la Ciudad de México deben cumplir lo señalado en procedimientos de contratación y en la celebración de contratos regulados por la Ley de Adquisiciones, Arrendamientos y Servicios del Sector Público, la Ley de Obras Públicas y Servicios Relacionados con las Mismas y la Ley de Asociaciones Público Privadas, así como para la suscripción de acuerdos marco."
       ]
     }
   ],
   "evidence": {
-    "content_hash": "e34fb2a5b280430c33f3dad5fd36ff91eea548107aeecdcf3d7954d3dec54dd9",
+    "content_hash": "5b595c33ee63156f3cd96a1d78b8d67225b27c83f38c4353ac5ff598dd67a5b1",
     "extraction_method": "html-adapter",
     "locators": [
       {
@@ -62,11 +72,11 @@
       }
     ],
     "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793941&fecha=20%2F07%2F2026",
-    "retrieved_at": "2026-08-13T19:42:44.333765+00:00"
+    "retrieved_at": "2026-08-14T00:36:52.405323+00:00"
   },
   "executive_summary": [
-    "La Secretaría Anticorrupción y Buen Gobierno ordenó a dependencias, entidades y otros entes públicos abstenerse de recibir propuestas o adjudicar contratos a Bernabeu México, S.A. de C.V., directamente o por interpósita persona. La medida deriva de la conclusión de un procedimiento administrativo de sanción.",
-    "La inhabilitación dura dieciséis meses y veinticuatro días desde el día siguiente a la publicación de la circular y su registro en la Plataforma Digital de Contrataciones Públicas. Si la multa permanece impaga al término, la inhabilitación subsiste hasta el pago; los contratos ya adjudicados o formalizados no están alcanzados por la circular."
+    "La Secretaría Anticorrupción y Buen Gobierno comunicó que las dependencias y entidades de la Administración Pública Federal deben abstenerse de recibir proposiciones o adjudicar contratos a Bernabeu México, S.A. de C.V., directamente o por interpósita persona. La circular se emite en cumplimiento de una resolución de 1 de julio de 2026 que concluyó el procedimiento administrativo de sanción contra la empresa.",
+    "La abstención inicia el día siguiente a la publicación de la circular en el Diario Oficial de la Federación y a su registro en la Plataforma Digital de Contrataciones Públicas, y dura dieciséis meses y veinticuatro días. Si la multa no se ha pagado al vencer ese plazo, la inhabilitación subsiste hasta el pago. Los contratos ya adjudicados o formalizados quedan fuera de la circular; para entidades locales, el texto manda cumplirla en los procedimientos, contratos y acuerdos marco que identifica."
   ],
   "impacts": {
     "general": {
@@ -74,8 +84,8 @@
         "chunk-2"
       ],
       "paragraphs": [
-        "La medida impone una prohibición operativa de contratación para una empresa determinada y exige que las autoridades contratantes verifiquen su elegibilidad antes de recibir ofertas, adjudicar o formalizar nuevos instrumentos.",
-        "El efecto puede prolongarse más allá del plazo indicado si la multa no se cubre, por lo que la revisión del estatus de pago resulta relevante al evaluar una eventual terminación de la inhabilitación."
+        "La circular comunica una inhabilitación aplicable a Bernabeu México, S.A. de C.V. y ordena a las dependencias y entidades federales abstenerse de recibir sus proposiciones o adjudicarle contratos en los términos indicados.",
+        "La medida puede continuar después de los dieciséis meses y veinticuatro días si la multa no se ha pagado, mientras que los contratos ya adjudicados o formalizados con la empresa no están comprendidos por la circular."
       ]
     },
     "sectors": [
@@ -84,18 +94,18 @@
           "chunk-2"
         ],
         "paragraphs": [
-          "Las unidades compradoras y áreas requirentes deben impedir que Bernabeu México participe o sea adjudicataria en procedimientos nuevos, incluso mediante interpósita persona, sin afectar los contratos ya adjudicados o formalizados que el texto excluye expresamente."
+          "Las dependencias y entidades de la Administración Pública Federal están sujetas a la abstención de recibir proposiciones o adjudicar contratos a la empresa, directa o indirectamente, desde el momento de vigencia señalado."
         ],
-        "sector": "Contratación pública"
+        "sector": "Contratación pública federal"
       },
       {
         "evidence_refs": [
           "chunk-2"
         ],
         "paragraphs": [
-          "Las entidades federativas, municipios, entes públicos y demarcaciones territoriales deben aplicar la abstención en los procedimientos y contratos regulados por los ordenamientos de adquisiciones, obra pública, asociaciones público-privadas y acuerdos marco referidos en la circular."
+          "Las entidades federativas, municipios, entes públicos y demarcaciones territoriales deben cumplir la circular en los procedimientos, contratos y acuerdos marco sujetos a los ordenamientos que la publicación enumera."
         ],
-        "sector": "Gobiernos estatales y municipales"
+        "sector": "Contratación pública estatal y municipal"
       }
     ]
   },
@@ -115,7 +125,7 @@
     "extraction_status": "complete",
     "id": "dof:5793941",
     "importance": 2,
-    "issuing_body": "Presidencia de la República",
+    "issuing_body": "Secretaría Anticorrupción y Buen Gobierno",
     "jurisdiction": "nacional",
     "official_published_at": "2026-07-20",
     "official_title": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a las entidades federativas, a los municipios, los entes públicos de unas y otros, así como a las demarcaciones territoriales de la Ciudad de México, que deberán abstenerse de aceptar propuestas y/o celebrar contratos con la empresa Bernabeu México, S.A. de C.V.",
@@ -124,35 +134,35 @@
     "review_reason": null,
     "source": "DOF",
     "source_id": "5793941",
-    "summary_teaser": "La Secretaría Anticorrupción y Buen Gobierno ordenó que entidades federales, gobiernos locales y otros entes públicos rechacen propuestas y contratos de Bernabeu México durante dieciséis meses y veinticuatro días. La restricción inicia tras la publicación y registro en la Plataforma Digital de Contrataciones Públicas, y permanecerá si la multa no se paga.",
-    "title": "Buen Gobierno inhabilita a Bernabeu México en contrataciones públicas",
+    "summary_teaser": "Una circular de la Secretaría Anticorrupción y Buen Gobierno ordena a autoridades federales y a los demás entes señalados abstenerse de recibir proposiciones, adjudicar o, según el ámbito aplicable, celebrar contratos con Bernabeu México. La medida inicia al día siguiente de publicarse y registrarse, dura dieciséis meses y veinticuatro días, y puede subsistir hasta el pago de la multa.",
+    "title": "Buen Gobierno ordena abstención contractual con Bernabeu México",
     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5793941&fecha=20/07/2026"
   },
   "recommended_actions": [
     {
       "affected_group": "Dependencias y entidades de la Administración Pública Federal",
-      "deadline": "Desde el día siguiente a la publicación y registro de la circular, por dieciséis meses y veinticuatro días; o hasta el pago de la multa si la inhabilitación subsiste",
+      "deadline": "Desde el día siguiente a la publicación de la circular en el Diario Oficial de la Federación y a su registro en la Plataforma Digital de Contrataciones Públicas, por dieciséis meses y veinticuatro días; si la multa no se ha pagado al vencimiento, hasta el pago correspondiente.",
       "evidence_refs": [
         "chunk-2"
       ],
-      "legal_basis": "Circular derivada de la Ley de Adquisiciones, Arrendamientos y Servicios del Sector Público y su Reglamento",
+      "legal_basis": "Circular emitida en cumplimiento del segundo párrafo del resolutivo CUARTO de la resolución de 1 de julio de 2026; para la subsistencia por falta de pago cita el artículo 90, párrafo quinto, de la Ley de Adquisiciones, Arrendamientos y Servicios del Sector Público y el artículo 164, primer párrafo, de su Reglamento.",
       "paragraphs": [
-        "Incorporar la inhabilitación de Bernabeu México a las revisiones de elegibilidad de procedimientos en curso y futuros; no recibir sus proposiciones ni adjudicarle contratos, directa o indirectamente, durante la vigencia aplicable.",
-        "Separar esta verificación de la administración de contratos ya adjudicados o formalizados, pues la circular los excluye de su aplicación."
+        "Si se tramita una proposición o una adjudicación que involucre a Bernabeu México, S.A. de C.V., la circular ordena abstenerse de recibir la proposición o adjudicar el contrato, incluso cuando la empresa intervenga por interpósita persona.",
+        "Los contratos que ya estaban adjudicados o formalizados con la empresa no quedan comprendidos en la aplicación de la circular."
       ],
-      "trigger": "Antes de recibir proposiciones, adjudicar o formalizar un nuevo contrato"
+      "trigger": "Al recibir proposiciones o adjudicar contratos a Bernabeu México, S.A. de C.V."
     },
     {
-      "affected_group": "Entidades federativas, municipios, entes públicos y demarcaciones territoriales",
-      "deadline": "Durante la vigencia de la inhabilitación y, si procede, hasta el pago de la multa",
+      "affected_group": "Entidades federativas, municipios, entes públicos y demarcaciones territoriales de la Ciudad de México",
+      "deadline": "Durante la vigencia indicada en la circular, incluida la subsistencia hasta el pago de la multa cuando se actualice el supuesto previsto.",
       "evidence_refs": [
         "chunk-2"
       ],
-      "legal_basis": "Circular y ordenamientos de adquisiciones, obra pública, asociaciones público-privadas y acuerdos marco citados en ella",
+      "legal_basis": "Circular; Ley de Adquisiciones, Arrendamientos y Servicios del Sector Público; Ley de Obras Públicas y Servicios Relacionados con las Mismas; Ley de Asociaciones Público Privadas; y acuerdos marco, dentro de los supuestos señalados por la publicación.",
       "paragraphs": [
-        "Aplicar el control de abstención en los procedimientos y contratos cubiertos por la circular, incluidos adquisiciones, obra pública, asociaciones público-privadas y acuerdos marco cuando corresponda."
+        "Si tramitan procedimientos de contratación, celebran contratos sujetos a los ordenamientos citados o suscriben acuerdos marco, la circular dispone cumplir con la abstención que comunica respecto de Bernabeu México, S.A. de C.V."
       ],
-      "trigger": "Al tramitar procedimientos de contratación o celebrar instrumentos comprendidos por la circular"
+      "trigger": "En procedimientos de contratación, celebración de contratos regulados por las leyes enumeradas o suscripción de acuerdos marco."
     }
   ],
   "schema_version": 8

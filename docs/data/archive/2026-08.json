@@ -1,5 +1,5 @@
 {
-  "cut_id": "84e7490661f4f2d27727e334",
+  "cut_id": "608f32e49282b3cb935d0f73",
   "items": [
     {
       "ai_generated": true,
@@ -28,7 +28,7 @@
       "importance": 2,
       "issuing_body": "Secretaría de Hacienda y Crédito Público",
       "jurisdiction": "nacional",
-      "last_seen_at": "2026-08-13T20:32:06.107949+00:00",
+      "last_seen_at": "2026-08-14T01:46:44.993982+00:00",
       "official_published_at": "2026-08-07",
       "official_title": "Oficio 500-05-00-00-00-2026-24291 mediante el cual se comunica el nombre y la clave en el Registro Federal de Contribuyentes a que se refiere la fracción X del artículo 49 Bis del Código Fiscal de la Federación.",
       "published_at": "2026-08-07",
@@ -36,8 +36,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5795726",
-      "summary_teaser": "El SAT publicó a Group Irbenigi de México, S.A. de C.V., RFC GIM150409IG1, por no desvirtuar la presunción de falsedad de sus CFDI. Las operaciones amparadas carecen de efecto fiscal; quienes los usaron deben presentar declaración complementaria en 30 días naturales o se exponen a la restricción temporal de su certificado de sello digital.",
-      "title": "SAT da 30 días para revertir efectos de CFDI falsos de Group Irbenigi",
+      "summary_teaser": "El SAT publicó a Group Irbenigi de México, S.A. de C.V., RFC GIM150409IG1, tras determinar que no desvirtuó la presunción de falsedad de sus CFDI. Las operaciones amparadas no producen efectos fiscales; los terceros que les dieron efecto fiscal cuentan con 30 días naturales para presentar declaración complementaria o enfrentar la restricción temporal de su certificado de sello digital.",
+      "title": "SAT da 30 días para revertir efectos fiscales de CFDI falsos de Group Irbenigi de México",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5795726&fecha=07/08/2026"
     }
   ],
