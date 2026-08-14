@@ -1,0 +1,173 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "608f32e49282b3cb935d0f73",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "heading": "Objeto y alcance del aviso",
+      "paragraphs": [
+        "El preámbulo identifica el asunto como ligas y formatos para las licitaciones públicas nacionales 016/2026 y 017/2026. El cuerpo señala que los documentos permiten acceder a las bases vinculadas con la asignación de cupos de importación de leche condensada y leche evaporada. El material revisado es un aviso de acceso y no la reproducción de las bases.",
+        "La descripción oficial vincula los cupos con el Apéndice A-1 de contingentes arancelarios de México del Anexo 2-D del TIPAT. La fuente extraída no desarrolla el contenido de ese instrumento ni permite derivar condiciones concretas de participación."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Documentación y canal de consulta",
+      "paragraphs": [
+        "El aviso enumera una guía de registro de participantes, una manifestación de no colusión y un manual de encriptados. Además, enlaza el formato para constancia SE-FO-01-006 y el formato de oferta SE-FO-03-034, ambos alojados en gob.mx.",
+        "También proporciona el correo dgfcce.licitaciones@economia.gob.mx para dudas o comentarios. La publicación no indica si los formatos sustituyen documentos adicionales ni especifica su forma de presentación."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "heading": "Límites y diferencia de numeración",
+      "paragraphs": [
+        "La fuente no contiene cantidades de cupo, mercancías clasificadas, requisitos de elegibilidad, criterios de evaluación, fases, fechas límite ni efectos de una eventual asignación. Esos elementos deben verificarse en las bases a las que remite el aviso.",
+        "El cuerpo del documento menciona 017/20226 y 017/2026, mientras el preámbulo identifica 016/2026 y 017/2026. Con esta publicación no es posible atribuir un formato a un procedimiento concreto ni corregir esa diferencia; la identificación aplicable debe confirmarse directamente en las bases o con la autoridad."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "999bfdde4e4de5a1b722d1cc7a760b6fd12cabcdbfc1afe31b46a3fc28b2e70a",
+    "extraction_method": "pdf-inspector",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "Preámbulo",
+        "location": "caracteres 0-156"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al público en general:",
+        "location": "caracteres 156-1155"
+      }
+    ],
+    "official_url": "https://www.snice.gob.mx/~oracle/SNICE_DOCS/FORMATOS-BASESLPN-016Y017-2026-LICITACION-ACTUALIDAD_20260731-20260731.pdf",
+    "retrieved_at": "2026-08-13T19:29:40.712286+00:00"
+  },
+  "executive_summary": [
+    "La Secretaría de Economía puso a disposición enlaces y formatos para acceder a las bases de licitaciones públicas nacionales relacionadas con cupos de importación de leche condensada y evaporada. La publicación funciona como un aviso de acceso documental; no incorpora el texto de las bases ni sus reglas operativas.",
+    "El aviso lista una guía de registro, una manifestación de no colusión, un manual de encriptado y formatos de constancia y oferta. No establece cantidades, requisitos de elegibilidad, calendario, mecanismo de presentación ni criterios de asignación, y contiene una discrepancia de numeración que debe confirmarse en las bases completas."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "paragraphs": [
+        "El efecto comprobable del aviso es facilitar la localización de documentos para consultar las bases. Por sí solo, no permite afirmar que se haya abierto un plazo, modificado el tratamiento arancelario, definido un volumen de cupo o asignado un derecho de importación."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "Quienes evalúen participar en cupos de importación de leche condensada o evaporada cuentan con rutas oficiales para ubicar las bases y formatos de apoyo. La fuente no acredita que un interesado reúna los requisitos ni que un formato baste para participar."
+        ],
+        "sector": "Operadores de comercio exterior de productos lácteos"
+      },
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "Los enlaces permiten identificar materiales de referencia para preparar una eventual participación. La diferencia de numeración en el aviso exige confirmar el procedimiento y la vigencia de los documentos antes de usarlos en una gestión."
+        ],
+        "sector": "Representantes y asesores de comercio exterior"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://www.snice.gob.mx/~oracle/SNICE_DOCS/FORMATOS-BASESLPN-016Y017-2026-LICITACION-ACTUALIDAD_20260731-20260731.pdf",
+    "categories": [
+      "Comercio exterior",
+      "Administración centralizada"
+    ],
+    "content_hash": "21cee0fde9654d42ae066f45332480fe63a220eec4b639716689d72d75b045bb",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/7f5d2f7bcfe685dc67ffd67a.json",
+    "detail_url": "notas/7f5d2f7bcfe685dc67ffd67a.html",
+    "detected_at": "2026-08-14T00:35:49.179018+00:00",
+    "document_type": "Actualidad",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "snice:d41292059bc780c2",
+    "importance": 1,
+    "issuing_body": "Secretaría de Economía",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-07-31",
+    "official_title": "Bases para participar en las LPN No. 016/2026 y 017/2026 para asignar los cupos de importación de leche condensada y leche evaporada establecidos en el Acuerdo por el que se dan a conocer los cupos de importación descritos en el Apéndice A-1 \"Contingentes arancelarios de México\" del anexo 2-D \"Compromisos arancelarios\" del TIPAT.",
+    "published_at": "2026-07-31",
+    "relevance_score": 1,
+    "review_reason": null,
+    "source": "SNICE",
+    "source_id": "d41292059bc780c2",
+    "summary_teaser": "La Secretaría de Economía difundió enlaces y formatos de apoyo para acceder a las bases de las licitaciones públicas nacionales vinculadas con cupos de importación de leche condensada y evaporada. El aviso incluye guía de registro, manifestación de no colusión, manual de encriptado y formatos de constancia y oferta; no reproduce requisitos, cantidades ni fechas del procedimiento.",
+    "title": "Economía abre acceso a bases para cupos de leche",
+    "url": "https://www.snice.gob.mx/~oracle/SNICE_DOCS/FORMATOS-BASESLPN-016Y017-2026-LICITACION-ACTUALIDAD_20260731-20260731.pdf"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Personas interesadas en participar en los cupos",
+      "deadline": null,
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "legal_basis": null,
+      "paragraphs": [
+        "Si contemplan participar, consulten las bases completas antes de preparar registro, oferta o documentación. Usen los enlaces y formatos identificados por el aviso como punto de acceso, sin inferir de ellos requisitos, cantidades o fechas que el aviso no publica."
+      ],
+      "trigger": "Si consideran participar en la asignación de cupos de importación de leche condensada o evaporada"
+    },
+    {
+      "affected_group": "Representantes y asesores de comercio exterior",
+      "deadline": null,
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "legal_basis": null,
+      "paragraphs": [
+        "Si preparan documentación para una eventual participación, confirmen en las bases y, de ser necesario, con el canal oficial de contacto cuál número de procedimiento corresponde y si los formatos enlazados siguen siendo aplicables. El aviso no fija un plazo ni una base jurídica específica para esa verificación."
+      ],
+      "trigger": "Si van a utilizar los formatos o a asesorar una participación"
+    }
+  ],
+  "schema_version": 8
+}

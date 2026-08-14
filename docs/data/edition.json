@@ -1,18 +1,47 @@
 {
   "coverage": {
-    "failed": [
-      "ANAM"
-    ],
-    "ok": 17,
-    "state": "degraded"
+    "failed": [],
+    "ok": 18,
+    "state": "complete"
   },
-  "cut_id": "84e7490661f4f2d27727e334",
+  "cut_id": "608f32e49282b3cb935d0f73",
   "edition_date": "2026-08-13",
-  "generated_at": "2026-08-13T20:32:06.107949+00:00",
+  "generated_at": "2026-08-14T01:46:44.993982+00:00",
   "last_available_date": "2026-08-07",
-  "lead_id": null,
+  "lead_id": "snice:d41292059bc780c2",
   "schema_version": 8,
-  "signals": [],
-  "state": "empty",
-  "total_today": 0
+  "signals": [
+    {
+      "ai_generated": true,
+      "canonical_url": "https://www.snice.gob.mx/~oracle/SNICE_DOCS/FORMATOS-BASESLPN-016Y017-2026-LICITACION-ACTUALIDAD_20260731-20260731.pdf",
+      "categories": [
+        "Comercio exterior",
+        "Administración centralizada"
+      ],
+      "country_or_org": "México",
+      "detail_data_url": "data/fichas/7f5d2f7bcfe685dc67ffd67a.json",
+      "detail_url": "notas/7f5d2f7bcfe685dc67ffd67a.html",
+      "detected_at": "2026-08-14T00:35:49.179018+00:00",
+      "editorial_status": "complete",
+      "extraction_status": "complete",
+      "id": "snice:d41292059bc780c2",
+      "importance": 1,
+      "issuing_body": "Secretaría de Economía",
+      "jurisdiction": "nacional",
+      "official_published_at": "2026-07-31",
+      "official_title": "Bases para participar en las LPN No. 016/2026 y 017/2026 para asignar los cupos de importación de leche condensada y leche evaporada establecidos en el Acuerdo por el que se dan a conocer los cupos de importación descritos en el Apéndice A-1 \"Contingentes arancelarios de México\" del anexo 2-D \"Compromisos arancelarios\" del TIPAT.",
+      "published_at": "2026-07-31",
+      "rank": 1,
+      "relevance_score": 1,
+      "review_reason": null,
+      "source": "SNICE",
+      "source_id": "d41292059bc780c2",
+      "summary_teaser": "La Secretaría de Economía difundió enlaces y formatos de apoyo para acceder a las bases de las licitaciones públicas nacionales vinculadas con cupos de importación de leche condensada y evaporada. El aviso incluye guía de registro, manifestación de no colusión, manual de encriptado y formatos de constancia y oferta; no reproduce requisitos, cantidades ni fechas del procedimiento.",
+      "title": "Economía abre acceso a bases para cupos de leche",
+      "url": "https://www.snice.gob.mx/~oracle/SNICE_DOCS/FORMATOS-BASESLPN-016Y017-2026-LICITACION-ACTUALIDAD_20260731-20260731.pdf",
+      "why_it_matters": "La Secretaría de Economía difundió enlaces y formatos de apoyo para acceder a las bases de las licitaciones públicas nacionales vinculadas con cupos de importación de leche condensada y evaporada. El aviso."
+    }
+  ],
+  "state": "ready",
+  "total_today": 1
 }
