@@ -583,6 +583,9 @@ def main() -> None:
             storage.update_document_fields_atomic(updates)
             post_payload = storage.export_payload()
             post_items = post_payload.get("items", [])
+            complete_items = sum(
+                item.get("extraction_status") == "complete" for item in post_items
+            )
             durations = [result.duration_seconds for result in results]
             reused_complete = sum(
                 item.get("extraction_status") == "complete"
@@ -620,8 +623,11 @@ def main() -> None:
                 "cache_bytes": storage_info.cache_bytes,
             }
             storage.save_cut_metrics(metrics)
-        completed = sum(result.status == "complete" for result in results)
-        print(f"Preparados {len(results)} registros; {completed} con extracción completa")
+        print(
+            "Cola preparada: "
+            f"total={len(post_items)}; extracción_completa={complete_items}; "
+            f"reutilizados={reused_complete}"
+        )
     elif args.command == "editorial-queue":
         requested_output = args.output.expanduser()
         output_parent = requested_output.parent.resolve()

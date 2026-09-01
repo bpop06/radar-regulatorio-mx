@@ -335,7 +335,7 @@ def test_cut_metrics_accumulate_reported_editorial_tokens(tmp_path: Path) -> Non
 
 
 def test_prepare_editorial_immediate_rerun_uses_zero_network_or_extraction(
-    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch, capsys: pytest.CaptureFixture[str]
 ) -> None:
     database = tmp_path / "state.sqlite3"
     payload = prepare_payload(extractive_payload(), force=True)
@@ -385,6 +385,10 @@ def test_prepare_editorial_immediate_rerun_uses_zero_network_or_extraction(
     assert metrics["cache_rate"] == 1.0
     assert metrics["run_reused"] is True
     assert metrics["duration_seconds"] <= 1.0
+    assert (
+        "Cola preparada: total=1; extracción_completa=1; reutilizados=1"
+        in capsys.readouterr().out
+    )
 
 
 def test_prepare_editorial_recollects_when_effective_window_changes(
