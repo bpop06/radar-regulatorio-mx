@@ -708,6 +708,31 @@ def test_invalidated_complete_item_retires_item_detail_and_note_transactionally(
     assert all(path.relative_to(docs).as_posix() not in manifest["artifacts"] for path in paths)
 
 
+def test_reconcile_rejects_stale_complete_editorial_after_source_changes() -> None:
+    previous = prepare_payload(extractive_payload(), force=True)["items"][0]
+    previous.update(
+        source_content_hash="b" * 64,
+        editorial_status="complete",
+        ai_generated=True,
+    )
+    stale = deepcopy(previous)
+    stale.update(
+        source_content_hash="c" * 64,
+        source_revalidation_status="complete",
+        evidence={"content_hash": "b" * 64},
+    )
+
+    reconciled = edition_module._reconcile_item(  # noqa: SLF001
+        stale,
+        previous,
+        "2026-08-14T12:00:00+00:00",
+    )
+
+    assert reconciled["editorial_status"] == "needs_review"
+    assert reconciled["ai_generated"] is False
+    assert reconciled["title"] is None
+
+
 def test_complete_only_writer_rejects_legacy_complete_without_source_hash(
     tmp_path: Path,
 ) -> None:

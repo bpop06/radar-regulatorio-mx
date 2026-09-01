@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import sys
+from copy import deepcopy
 from datetime import UTC, datetime
 from pathlib import Path
 
@@ -13,6 +14,7 @@ from app.edition import item_key, prepare_payload, write_site_artifacts
 from app.editorial import EditorialError, apply_editorial
 from app.extraction import EXTRACTOR_VERSION, DocumentExtractor, ExtractionResult
 from app.storage import Storage
+from app.validation import validate_site_artifacts
 from tests.test_contract_v8 import extractive_payload
 
 
@@ -732,6 +734,56 @@ def test_export_site_retires_previous_complete_when_current_becomes_pending(
     cli.main()
     assert json.loads(output.read_text())["items"] == []
     assert all(not path.exists() for path in paths)
+
+
+def test_export_site_keeps_reaudited_item_after_source_hash_changes(
+    tmp_path: Path,
+) -> None:
+    payload = prepare_payload(extractive_payload(), force=True)
+    complete = payload["items"][0]
+    complete.update(
+        extraction_status="complete",
+        source_revalidation_status="complete",
+        editorial_status="complete",
+        source_content_hash="b" * 64,
+        extraction_method="html-adapter",
+        extraction_retrieved_at="2026-08-13T12:00:00+00:00",
+        source_sections=[{"id": "p1", "label": "Cuerpo", "order": 1}],
+        title="SAT modifica obligaciones fiscales para contribuyentes afectados",
+        summary_teaser=" ".join(f"dato{i}" for i in range(45)),
+        summary=" ".join(f"resumen{i}" for i in range(320)),
+        card_body=(
+            "## Qué se publicó\n\nAcuerdo.\n\n## Sustancia\n\nCambio.\n\n"
+            "## Fuente\n\n[Fuente](https://dof.gob.mx/nota?id=abc)"
+        ),
+        ai_generated=True,
+        review_reason=None,
+        **_structured_fields(),
+    )
+    output = tmp_path / "docs/data/publications.json"
+    write_site_artifacts(
+        {**payload, "items": [complete]},
+        output,
+        complete_only=True,
+    )
+
+    reaudited = deepcopy(complete)
+    reaudited["source_content_hash"] = "c" * 64
+    reaudited["evidence"] = {
+        **reaudited["evidence"],
+        "content_hash": "c" * 64,
+    }
+    write_site_artifacts(
+        {**payload, "items": [reaudited]},
+        output,
+        complete_only=True,
+    )
+
+    key = item_key(complete["id"])
+    permanent = json.loads((output.parent / "items" / f"{key}.json").read_text())["item"]
+    assert permanent["id"] == complete["id"]
+    assert permanent["evidence"]["content_hash"] == "c" * 64
+    assert validate_site_artifacts(output.parent / "manifest.json").ok
 
 
 def test_long_source_queue_uses_contiguous_fragments_without_full_blob(

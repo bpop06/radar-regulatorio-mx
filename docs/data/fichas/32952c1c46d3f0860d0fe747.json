@@ -1,57 +1,55 @@
 {
   "coverage": [
     {
-      "disposition": "summarized",
-      "reason": null,
+      "disposition": "not_material",
+      "reason": "Versión continua que duplica los hechos desarrollados en el comunicado estructurado del fragmento 3.",
       "source_ref": "chunk-1",
-      "target_sections": [
-        "detailed_summary"
-      ]
+      "target_sections": []
     },
     {
-      "disposition": "summarized",
-      "reason": null,
+      "disposition": "not_material",
+      "reason": "Encabezado y fecha del comunicado; la sustancia se reproduce en el fragmento 3.",
       "source_ref": "chunk-2",
-      "target_sections": [
-        "detailed_summary"
-      ]
+      "target_sections": []
     },
     {
       "disposition": "summarized",
       "reason": null,
       "source_ref": "chunk-3",
       "target_sections": [
-        "detailed_summary"
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
       ]
     }
   ],
-  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "cut_id": "80ff8a726797f7b9e5131c53",
   "detailed_summary": [
     {
       "evidence_refs": [
-        "chunk-1",
         "chunk-3"
       ],
-      "heading": "Alcance de la publicación",
+      "heading": "Aseguramiento comunicado",
       "paragraphs": [
-        "El Instituto Mexicano de la Propiedad Industrial y la Agencia Nacional de Aduanas de México informaron el aseguramiento, en la Aduana de Manzanillo, de 379 cajas con 227 mil cajetillas de cigarrillos que ostentaban la denominación PALL MALL.",
-        "El comunicado informa que el IMPI continuará con las actuaciones correspondientes y la coordinación interinstitucional para el seguimiento del caso. La fuente se refiere a mercancías que pudieran infringir derechos marcarios; no acredita que la denominación PALL MALL sea una marca registrada ni contiene una determinación definitiva de infracción o del destino final de la mercancía."
+        "La fuente reporta la localización y aseguramiento de 379 cajas con productos que ostentaban la denominación PALL MALL en la Aduana de Manzanillo.",
+        "De acuerdo con el comunicado, se contabilizaron 60 paquetes por caja y 10 cajetillas por paquete, para un total de 227 mil cajetillas."
       ]
     },
     {
       "evidence_refs": [
-        "chunk-1",
         "chunk-3"
       ],
-      "heading": "Seguimiento operativo",
+      "heading": "Alcance institucional y límite probatorio",
       "paragraphs": [
-        "Las personas que reciban una notificación en las actuaciones posteriores deben atender el acto formal y conservar la documentación que corresponda a su intervención.",
-        "La ficha no extiende el alcance del acto a supuestos que la fuente no identifica."
+        "El IMPI señaló que continuará las actuaciones correspondientes en el ámbito de sus atribuciones y la coordinación interinstitucional para el seguimiento del caso.",
+        "El comunicado no informa una resolución administrativa, una determinación de infracción marcaria, una sanción o el desenlace del expediente."
       ]
     }
   ],
   "evidence": {
-    "content_hash": "d16b769722da479d13eee27363480e02a07f81b0867ffa8f20f56977cc34b4f9",
+    "content_hash": "6ddaec7a51b30c392f1e003dea5b29861a53083307315cbbc0559a345f3fea28",
     "extraction_method": "html-adapter",
     "locators": [
       {
@@ -71,32 +69,30 @@
       }
     ],
     "official_url": "https://www.anam.gob.mx/comunicado-prensa-conjunto-60-2026",
-    "retrieved_at": "2026-09-01T16:35:32.411596+00:00"
+    "retrieved_at": "2026-09-01T18:47:13.219247+00:00"
   },
   "executive_summary": [
-    "El Instituto Mexicano de la Propiedad Industrial y la Agencia Nacional de Aduanas de México informaron el aseguramiento, en la Aduana de Manzanillo, de 379 cajas con 227 mil cajetillas de cigarrillos que ostentaban la denominación PALL MALL.",
-    "El comunicado informa que el IMPI continuará con las actuaciones correspondientes y la coordinación interinstitucional para el seguimiento del caso. La fuente se refiere a mercancías que pudieran infringir derechos marcarios; no acredita que la denominación PALL MALL sea una marca registrada ni contiene una determinación definitiva de infracción o del destino final de la mercancía."
+    "ANAM e IMPI comunicaron el aseguramiento de 379 cajas con 227 mil cajetillas de cigarrillos que ostentaban la denominación PALL MALL, localizadas en un operativo coordinado en la Aduana de Manzanillo.",
+    "El IMPI informó que continuará las actuaciones de su competencia y la coordinación interinstitucional para el seguimiento del caso. La publicación no comunica una resolución final, una declaración de infracción ni sanciones."
   ],
   "impacts": {
     "general": {
       "evidence_refs": [
-        "chunk-1",
         "chunk-3"
       ],
       "paragraphs": [
-        "El comunicado informa que el IMPI continuará con las actuaciones correspondientes y la coordinación interinstitucional para el seguimiento del caso. La fuente se refiere a mercancías que pudieran infringir derechos marcarios; no acredita que la denominación PALL MALL sea una marca registrada ni contiene una determinación definitiva de infracción o del destino final de la mercancía."
+        "La publicación documenta un aseguramiento y el seguimiento anunciado por el IMPI, no una decisión final sobre la mercancía o sobre derechos marcarios."
       ]
     },
     "sectors": [
       {
         "evidence_refs": [
-          "chunk-1",
           "chunk-3"
         ],
         "paragraphs": [
-          "La incidencia para este grupo se limita al alcance expresamente descrito en la publicación y requiere contrastarse con cada caso concreto."
+          "El comunicado describe una actuación coordinada entre ANAM e IMPI y señala que continuará la coordinación interinstitucional para el seguimiento del caso."
         ],
-        "sector": "Personas vinculadas con la mercancía asegurada y autoridades que intervengan en el seguimiento"
+        "sector": "Autoridades aduaneras y de propiedad industrial"
       }
     ]
   },
@@ -110,7 +106,7 @@
     "country_or_org": "México",
     "detail_data_url": "data/fichas/32952c1c46d3f0860d0fe747.json",
     "detail_url": "notas/32952c1c46d3f0860d0fe747.html",
-    "detected_at": "2026-09-01T16:34:47.803209+00:00",
+    "detected_at": "2026-09-01T18:46:30.041123+00:00",
     "document_type": "Comunicado",
     "editorial_status": "complete",
     "extraction_status": "complete",
@@ -125,23 +121,22 @@
     "review_reason": null,
     "source": "ANAM",
     "source_id": "eedd3801e348eb0b",
-    "summary_teaser": "IMPI y ANAM informaron el aseguramiento de 379 cajas con 227 mil cajetillas de cigarrillos que ostentaban la denominación PALL MALL durante un operativo en la Aduana de Manzanillo. El comunicado anuncia actuaciones posteriores y señala que las mercancías pudieran infringir derechos marcarios. No contiene una determinación definitiva sobre infracción ni sobre la situación jurídica final de la mercancía.",
-    "title": "Aseguramiento de cajetillas abre seguimiento de derechos marcarios",
+    "summary_teaser": "Un operativo coordinado en la Aduana de Manzanillo localizó 379 cajas con 227 mil cajetillas de cigarrillos que ostentaban la denominación PALL MALL. El comunicado conjunto señala que el IMPI continuará las actuaciones de su competencia y la coordinación interinstitucional para el seguimiento del caso; no informa una determinación sobre infracción marcaria ni sanciones.",
+    "title": "IMPI confirma actuaciones tras aseguramiento de 227 mil cajetillas en Manzanillo",
     "url": "https://www.anam.gob.mx/comunicado-prensa-conjunto-60-2026/"
   },
   "recommended_actions": [
     {
-      "affected_group": "Personas vinculadas con la mercancía asegurada y autoridades que intervengan en el seguimiento",
+      "affected_group": "Personas que consulten el seguimiento del caso",
       "deadline": null,
       "evidence_refs": [
-        "chunk-1",
         "chunk-3"
       ],
       "legal_basis": null,
       "paragraphs": [
-        "Las personas que reciban una notificación en las actuaciones posteriores deben atender el acto formal y conservar la documentación que corresponda a su intervención."
+        "Para conocer el resultado del asunto, distingan el aseguramiento comunicado de las actuaciones posteriores que el IMPI indicó que continuará dentro de sus atribuciones."
       ],
-      "trigger": "Cuando la publicación resulte aplicable a la situación revisada."
+      "trigger": "Al revisar esta comunicación y cualquier actualización oficial posterior."
     }
   ],
   "schema_version": 8

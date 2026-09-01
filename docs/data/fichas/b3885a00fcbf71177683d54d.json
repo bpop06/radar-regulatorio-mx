@@ -1,0 +1,1149 @@
+{
+  "coverage": [
+    {
+      "disposition": "not_material",
+      "reason": "Encabezado que se desarrolla con el acuerdo, transitorios y anexos en los fragmentos posteriores.",
+      "source_ref": "chunk-1",
+      "target_sections": []
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-3",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-4",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-5",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-6",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-7",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-8",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-9",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-10",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-11",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-12",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-13",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-14",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-15",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-16",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-17",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-18",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-19",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-20",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-21",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-22",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-23",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-24",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-25",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-26",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-27",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-28",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-29",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-30",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-31",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-32",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-33",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-34",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-35",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-36",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-37",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-38",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-39",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-40",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-41",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-42",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-43",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-44",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-45",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-46",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-47",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-48",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-49",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-50",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-51",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-52",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-53",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-54",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-55",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Formatos emitidos y vigencia",
+      "paragraphs": [
+        "El artículo único enumera 22 formatos para permisos, autorización de producción o aprovechamiento, bitácoras, aviso de inicio de operaciones y solicitudes de modificación o suspensión, cesión y prórroga.",
+        "El transitorio primero dispone la entrada en vigor al día siguiente de la publicación en el Diario Oficial de la Federación; el segundo deja sin efectos el acuerdo de 13 de noviembre de 2009 que describe."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2",
+        "chunk-3",
+        "chunk-4",
+        "chunk-5",
+        "chunk-6",
+        "chunk-7",
+        "chunk-8",
+        "chunk-9",
+        "chunk-10",
+        "chunk-11",
+        "chunk-12",
+        "chunk-13",
+        "chunk-14",
+        "chunk-15",
+        "chunk-16",
+        "chunk-17",
+        "chunk-18",
+        "chunk-19",
+        "chunk-20",
+        "chunk-21",
+        "chunk-22",
+        "chunk-23",
+        "chunk-24",
+        "chunk-25",
+        "chunk-26",
+        "chunk-27",
+        "chunk-28"
+      ],
+      "heading": "Solicitudes y autorización",
+      "paragraphs": [
+        "Los Anexos 1 y 2 desarrollan formatos de solicitud de permiso para las actividades de biocombustibles y de autorización para producción o aprovechamiento.",
+        "Los formularios incluyen apartados para identificación de la persona solicitante, información del proyecto, instalaciones, operación, logística, trazabilidad, seguros, pagos y manifestaciones, según el trámite correspondiente."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-28",
+        "chunk-29",
+        "chunk-30",
+        "chunk-31",
+        "chunk-32",
+        "chunk-33",
+        "chunk-34",
+        "chunk-35",
+        "chunk-36",
+        "chunk-37",
+        "chunk-38",
+        "chunk-39",
+        "chunk-40",
+        "chunk-41",
+        "chunk-42",
+        "chunk-43",
+        "chunk-44",
+        "chunk-45",
+        "chunk-46",
+        "chunk-47",
+        "chunk-48",
+        "chunk-49",
+        "chunk-50",
+        "chunk-51",
+        "chunk-52",
+        "chunk-53",
+        "chunk-54",
+        "chunk-55"
+      ],
+      "heading": "Bitácoras, avisos y solicitudes posteriores",
+      "paragraphs": [
+        "El Anexo 3 contiene bitácoras para permisos y la autorización señalada; los Anexos 4 a 7 contienen el aviso de inicio de operaciones y las solicitudes de modificación o suspensión, cesión y prórroga.",
+        "Los anexos presentan campos específicos para cada trámite, incluidos datos del permiso o autorización, operación, trazabilidad y manifestaciones cuando corresponden."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "cfe5631b0a587e57fc51df128272bd6e74e86338be450abbb77f06633babaf61",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "ACUERDO por el que se emiten los formatos de solicitud de permisos y bitácoras para la producción, importación, exportación, almacenamiento, transporte, comercialización, distribución y expendio al público de biocombustibles, autorizaciones y bitácoras para la producción de biocombustibles, así como de avisos de inicio de operaciones, modificaciones o suspensiones, cesiones y prórroga de dichos permisos y autorizaciones.",
+        "location": "caracteres 0-428"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 1",
+        "location": "caracteres 428-12428"
+      },
+      {
+        "id": "chunk-3",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 2",
+        "location": "caracteres 12428-24428"
+      },
+      {
+        "id": "chunk-4",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 3",
+        "location": "caracteres 24428-36428"
+      },
+      {
+        "id": "chunk-5",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 4",
+        "location": "caracteres 36428-48428"
+      },
+      {
+        "id": "chunk-6",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 5",
+        "location": "caracteres 48428-60428"
+      },
+      {
+        "id": "chunk-7",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 6",
+        "location": "caracteres 60428-72428"
+      },
+      {
+        "id": "chunk-8",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 7",
+        "location": "caracteres 72428-84428"
+      },
+      {
+        "id": "chunk-9",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 8",
+        "location": "caracteres 84428-96428"
+      },
+      {
+        "id": "chunk-10",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 9",
+        "location": "caracteres 96428-108428"
+      },
+      {
+        "id": "chunk-11",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 10",
+        "location": "caracteres 108428-120428"
+      },
+      {
+        "id": "chunk-12",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 11",
+        "location": "caracteres 120428-132428"
+      },
+      {
+        "id": "chunk-13",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 12",
+        "location": "caracteres 132428-144428"
+      },
+      {
+        "id": "chunk-14",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 13",
+        "location": "caracteres 144428-156428"
+      },
+      {
+        "id": "chunk-15",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 14",
+        "location": "caracteres 156428-168428"
+      },
+      {
+        "id": "chunk-16",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 15",
+        "location": "caracteres 168428-180428"
+      },
+      {
+        "id": "chunk-17",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 16",
+        "location": "caracteres 180428-192428"
+      },
+      {
+        "id": "chunk-18",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 17",
+        "location": "caracteres 192428-204428"
+      },
+      {
+        "id": "chunk-19",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 18",
+        "location": "caracteres 204428-216428"
+      },
+      {
+        "id": "chunk-20",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 19",
+        "location": "caracteres 216428-228428"
+      },
+      {
+        "id": "chunk-21",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 20",
+        "location": "caracteres 228428-240428"
+      },
+      {
+        "id": "chunk-22",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 21",
+        "location": "caracteres 240428-252428"
+      },
+      {
+        "id": "chunk-23",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 22",
+        "location": "caracteres 252428-264428"
+      },
+      {
+        "id": "chunk-24",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 23",
+        "location": "caracteres 264428-276428"
+      },
+      {
+        "id": "chunk-25",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 24",
+        "location": "caracteres 276428-288428"
+      },
+      {
+        "id": "chunk-26",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 25",
+        "location": "caracteres 288428-300428"
+      },
+      {
+        "id": "chunk-27",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 26",
+        "location": "caracteres 300428-312428"
+      },
+      {
+        "id": "chunk-28",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 27",
+        "location": "caracteres 312428-324428"
+      },
+      {
+        "id": "chunk-29",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 28",
+        "location": "caracteres 324428-336428"
+      },
+      {
+        "id": "chunk-30",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 29",
+        "location": "caracteres 336428-348428"
+      },
+      {
+        "id": "chunk-31",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 30",
+        "location": "caracteres 348428-360428"
+      },
+      {
+        "id": "chunk-32",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 31",
+        "location": "caracteres 360428-372428"
+      },
+      {
+        "id": "chunk-33",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 32",
+        "location": "caracteres 372428-384428"
+      },
+      {
+        "id": "chunk-34",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 33",
+        "location": "caracteres 384428-396428"
+      },
+      {
+        "id": "chunk-35",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 34",
+        "location": "caracteres 396428-408428"
+      },
+      {
+        "id": "chunk-36",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 35",
+        "location": "caracteres 408428-420428"
+      },
+      {
+        "id": "chunk-37",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 36",
+        "location": "caracteres 420428-432428"
+      },
+      {
+        "id": "chunk-38",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 37",
+        "location": "caracteres 432428-444428"
+      },
+      {
+        "id": "chunk-39",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 38",
+        "location": "caracteres 444428-456428"
+      },
+      {
+        "id": "chunk-40",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 39",
+        "location": "caracteres 456428-468428"
+      },
+      {
+        "id": "chunk-41",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 40",
+        "location": "caracteres 468428-480428"
+      },
+      {
+        "id": "chunk-42",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 41",
+        "location": "caracteres 480428-492428"
+      },
+      {
+        "id": "chunk-43",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 42",
+        "location": "caracteres 492428-504428"
+      },
+      {
+        "id": "chunk-44",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 43",
+        "location": "caracteres 504428-516428"
+      },
+      {
+        "id": "chunk-45",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 44",
+        "location": "caracteres 516428-528428"
+      },
+      {
+        "id": "chunk-46",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 45",
+        "location": "caracteres 528428-540428"
+      },
+      {
+        "id": "chunk-47",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 46",
+        "location": "caracteres 540428-552428"
+      },
+      {
+        "id": "chunk-48",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 47",
+        "location": "caracteres 552428-564428"
+      },
+      {
+        "id": "chunk-49",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 48",
+        "location": "caracteres 564428-576428"
+      },
+      {
+        "id": "chunk-50",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 49",
+        "location": "caracteres 576428-588428"
+      },
+      {
+        "id": "chunk-51",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 50",
+        "location": "caracteres 588428-600428"
+      },
+      {
+        "id": "chunk-52",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 51",
+        "location": "caracteres 600428-612428"
+      },
+      {
+        "id": "chunk-53",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 52",
+        "location": "caracteres 612428-624428"
+      },
+      {
+        "id": "chunk-54",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 53",
+        "location": "caracteres 624428-636428"
+      },
+      {
+        "id": "chunk-55",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 54",
+        "location": "caracteres 636428-646759"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797477&fecha=31%2F08%2F2026",
+    "retrieved_at": "2026-09-01T16:35:05.873441+00:00"
+  },
+  "executive_summary": [
+    "La Secretaría de Energía emitió 22 formatos, agrupados en siete anexos, para permisos, autorizaciones, bitácoras, avisos y otras gestiones en materia de biocombustibles.",
+    "El acuerdo entra en vigor al día siguiente de su publicación en el Diario Oficial de la Federación y deja sin efectos el acuerdo de 2009 identificado en su segundo transitorio."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "paragraphs": [
+        "El acuerdo sustituye el instrumento de formatos de 2009 que identifica en su segundo transitorio y concentra los formatos actuales en siete anexos para las gestiones enumeradas."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-2",
+          "chunk-3",
+          "chunk-4",
+          "chunk-5",
+          "chunk-6",
+          "chunk-7",
+          "chunk-8",
+          "chunk-9",
+          "chunk-10",
+          "chunk-11",
+          "chunk-12",
+          "chunk-13",
+          "chunk-14",
+          "chunk-15",
+          "chunk-16",
+          "chunk-17",
+          "chunk-18",
+          "chunk-19",
+          "chunk-20",
+          "chunk-21",
+          "chunk-22",
+          "chunk-23",
+          "chunk-24",
+          "chunk-25",
+          "chunk-26",
+          "chunk-27",
+          "chunk-28",
+          "chunk-29",
+          "chunk-30",
+          "chunk-31",
+          "chunk-32",
+          "chunk-33",
+          "chunk-34",
+          "chunk-35",
+          "chunk-36",
+          "chunk-37",
+          "chunk-38",
+          "chunk-39",
+          "chunk-40",
+          "chunk-41",
+          "chunk-42",
+          "chunk-43",
+          "chunk-44",
+          "chunk-45",
+          "chunk-46",
+          "chunk-47",
+          "chunk-48",
+          "chunk-49",
+          "chunk-50",
+          "chunk-51",
+          "chunk-52",
+          "chunk-53",
+          "chunk-54",
+          "chunk-55"
+        ],
+        "paragraphs": [
+          "La publicación reúne formatos para sus solicitudes, bitácoras, avisos de inicio y gestiones de modificación o suspensión, cesión y prórroga, diferenciados por actividad y anexo."
+        ],
+        "sector": "Solicitantes y titulares de permisos o autorizaciones de biocombustibles"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797477&fecha=31%2F08%2F2026",
+    "categories": [
+      "Comercio exterior"
+    ],
+    "content_hash": "89d39d442b0e633f3d2286b659409ed3fbf659bb9853186acf54c5b0be8666fd",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/b3885a00fcbf71177683d54d.json",
+    "detail_url": "notas/b3885a00fcbf71177683d54d.html",
+    "detected_at": "2026-09-01T18:46:30.041123+00:00",
+    "document_type": "Acuerdo",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5797477",
+    "importance": 2,
+    "issuing_body": "Presidencia de la República",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-08-31",
+    "official_title": "Acuerdo por el que se emiten los formatos de solicitud de permisos y bitácoras para la producción, importación, exportación, almacenamiento, transporte, comercialización, distribución y expendio al público de biocombustibles, autorizaciones y bitácoras para la producción de biocombustibles, así como de avisos de inicio de operaciones, modificaciones o suspensiones, cesiones y prórroga de dichos permisos y autorizaciones.",
+    "published_at": "2026-08-31",
+    "relevance_score": 3,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5797477",
+    "summary_teaser": "La SENER emitió 22 formatos y siete anexos para permisos, autorizaciones, bitácoras, avisos y otros trámites de biocombustibles. El acuerdo entra en vigor al día siguiente de su publicación en el DOF y deja sin efectos el acuerdo de 2009 que contenía formatos para producción, almacenamiento, transporte y comercialización de ciertos bioenergéticos.",
+    "title": "SENER reemplaza formatos de 2009 con anexos para biocombustibles",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797477&fecha=31/08/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Solicitantes y titulares de permisos o autorizaciones de biocombustibles",
+      "deadline": null,
+      "evidence_refs": [
+        "chunk-2",
+        "chunk-3",
+        "chunk-4",
+        "chunk-5",
+        "chunk-6",
+        "chunk-7",
+        "chunk-8",
+        "chunk-9",
+        "chunk-10",
+        "chunk-11",
+        "chunk-12",
+        "chunk-13",
+        "chunk-14",
+        "chunk-15",
+        "chunk-16",
+        "chunk-17",
+        "chunk-18",
+        "chunk-19",
+        "chunk-20",
+        "chunk-21",
+        "chunk-22",
+        "chunk-23",
+        "chunk-24",
+        "chunk-25",
+        "chunk-26",
+        "chunk-27",
+        "chunk-28",
+        "chunk-29",
+        "chunk-30",
+        "chunk-31",
+        "chunk-32",
+        "chunk-33",
+        "chunk-34",
+        "chunk-35",
+        "chunk-36",
+        "chunk-37",
+        "chunk-38",
+        "chunk-39",
+        "chunk-40",
+        "chunk-41",
+        "chunk-42",
+        "chunk-43",
+        "chunk-44",
+        "chunk-45",
+        "chunk-46",
+        "chunk-47",
+        "chunk-48",
+        "chunk-49",
+        "chunk-50",
+        "chunk-51",
+        "chunk-52",
+        "chunk-53",
+        "chunk-54",
+        "chunk-55"
+      ],
+      "legal_basis": "Transitorio primero y artículo único del acuerdo.",
+      "paragraphs": [
+        "Al preparar las gestiones enumeradas en el acuerdo, identifiquen el formato y anexo que corresponden a la actividad o trámite de que se trate."
+      ],
+      "trigger": "A partir de la entrada en vigor del acuerdo, al presentar alguno de los trámites listados."
+    }
+  ],
+  "schema_version": 8
+}

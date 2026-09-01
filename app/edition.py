@@ -1082,7 +1082,17 @@ def _reconcile_item(
         if incoming_source_hash and previous_source_hash
         else item["content_hash"] != previous.get("content_hash")
     )
-    if source_changed:
+    reapproved_for_current_source = (
+        item.get("editorial_status") == "complete"
+        and item.get("ai_generated") is True
+        and item.get("extraction_status") == "complete"
+        and item.get("source_revalidation_status") == "complete"
+        and bool(incoming_source_hash)
+        and isinstance(item.get("evidence"), dict)
+        and str(item["evidence"].get("content_hash") or "")
+        == incoming_source_hash
+    )
+    if source_changed and not reapproved_for_current_source:
         item["editorial_status"] = "needs_review"
         item["review_reason"] = "La fuente oficial cambió; requiere una nueva revisión editorial."
         for field in ("title", "summary_teaser", "summary", "card_body", "detail_markdown"):

@@ -5,9 +5,9 @@
     "state": "complete",
     "total": 18
   },
-  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "cut_id": "80ff8a726797f7b9e5131c53",
   "edition_date": "2026-09-01",
-  "generated_at": "2026-09-01T16:34:47.803209+00:00",
+  "generated_at": "2026-09-01T18:46:30.041123+00:00",
   "last_available_date": "2026-09-01",
   "lead_id": "dof:5796407",
   "schema_version": 8,
@@ -81,7 +81,7 @@
       "country_or_org": "México",
       "detail_data_url": "data/fichas/abdd3ecdb954501e2ca2fb03.json",
       "detail_url": "notas/abdd3ecdb954501e2ca2fb03.html",
-      "detected_at": "2026-09-01T16:34:47.803209+00:00",
+      "detected_at": "2026-09-01T18:46:30.041123+00:00",
       "editorial_status": "complete",
       "extraction_status": "complete",
       "id": "anam:1c45bce94037e150",
@@ -96,10 +96,10 @@
       "review_reason": null,
       "source": "ANAM",
       "source_id": "1c45bce94037e150",
-      "summary_teaser": "IMPI y ANAM informaron medidas de inspección en Lázaro Cárdenas sobre perfumes y otros bienes con referencias a marcas. La comunicación reporta una medida temporal de suspensión de libre circulación y aseguramientos coordinados con la Fiscalía General de la República. El comunicado no determina por sí mismo una infracción definitiva de propiedad industrial.",
-      "title": "Operación IMPI-ANAM suspende circulación de perfumes en Lázaro Cárdenas",
+      "summary_teaser": "ANAM e IMPI informaron una inspección en la Aduana de Lázaro Cárdenas que incluyó la suspensión provisional de libre circulación de 48 perfumes y el aseguramiento de otros bienes con signos distintivos. El comunicado no determina una infracción, una sanción definitiva ni responsabilidades individuales.",
+      "title": "Medida provisional suspende libre circulación de 48 perfumes",
       "url": "https://www.anam.gob.mx/comunicado-prensa-conjunto-64-2026/",
-      "why_it_matters": "IMPI y ANAM informaron medidas de inspección en Lázaro Cárdenas sobre perfumes y otros bienes con referencias a marcas. La comunicación reporta una medida temporal de suspensión de libre circulación y aseguramientos."
+      "why_it_matters": "ANAM e IMPI informaron una inspección en la Aduana de Lázaro Cárdenas que incluyó la suspensión provisional de libre circulación de 48 perfumes y el aseguramiento de otros bienes con signos distintivos."
     },
     {
       "ai_generated": true,
@@ -222,5 +222,5 @@
     }
   ],
   "state": "ready",
-  "total_today": 84
+  "total_today": 86
 }

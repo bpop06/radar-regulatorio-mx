@@ -2,7 +2,7 @@
   "collection_notes": {
     "dof_previous_day_reviewed": false
   },
-  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "cut_id": "80ff8a726797f7b9e5131c53",
   "edition": {
     "coverage": {
       "failed": [],
@@ -27,7 +27,7 @@
       {
         "id": "anam:1c45bce94037e150",
         "rank": 3,
-        "why_it_matters": "IMPI y ANAM informaron medidas de inspección en Lázaro Cárdenas sobre perfumes y otros bienes con referencias a marcas. La comunicación reporta una medida temporal de suspensión de libre circulación y aseguramientos."
+        "why_it_matters": "ANAM e IMPI informaron una inspección en la Aduana de Lázaro Cárdenas que incluyó la suspensión provisional de libre circulación de 48 perfumes y el aseguramiento de otros bienes con signos distintivos."
       },
       {
         "id": "dof:5795543",
@@ -51,9 +51,9 @@
       }
     ],
     "state": "ready",
-    "total_today": 84
+    "total_today": 86
   },
-  "generated_at": "2026-09-01T16:34:47.803209+00:00",
+  "generated_at": "2026-09-01T18:46:30.041123+00:00",
   "items": [
     {
       "ai_generated": true,
@@ -232,6 +232,35 @@
     },
     {
       "ai_generated": true,
+      "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797477&fecha=31%2F08%2F2026",
+      "categories": [
+        "Comercio exterior"
+      ],
+      "content_hash": "89d39d442b0e633f3d2286b659409ed3fbf659bb9853186acf54c5b0be8666fd",
+      "country_or_org": "México",
+      "detail_data_url": "data/fichas/b3885a00fcbf71177683d54d.json",
+      "detail_url": "notas/b3885a00fcbf71177683d54d.html",
+      "detected_at": "2026-09-01T18:46:30.041123+00:00",
+      "document_type": "Acuerdo",
+      "editorial_status": "complete",
+      "extraction_status": "complete",
+      "id": "dof:5797477",
+      "importance": 2,
+      "issuing_body": "Presidencia de la República",
+      "jurisdiction": "nacional",
+      "official_published_at": "2026-08-31",
+      "official_title": "Acuerdo por el que se emiten los formatos de solicitud de permisos y bitácoras para la producción, importación, exportación, almacenamiento, transporte, comercialización, distribución y expendio al público de biocombustibles, autorizaciones y bitácoras para la producción de biocombustibles, así como de avisos de inicio de operaciones, modificaciones o suspensiones, cesiones y prórroga de dichos permisos y autorizaciones.",
+      "published_at": "2026-08-31",
+      "relevance_score": 3,
+      "review_reason": null,
+      "source": "DOF",
+      "source_id": "5797477",
+      "summary_teaser": "La SENER emitió 22 formatos y siete anexos para permisos, autorizaciones, bitácoras, avisos y otros trámites de biocombustibles. El acuerdo entra en vigor al día siguiente de su publicación en el DOF y deja sin efectos el acuerdo de 2009 que contenía formatos para producción, almacenamiento, transporte y comercialización de ciertos bioenergéticos.",
+      "title": "SENER reemplaza formatos de 2009 con anexos para biocombustibles",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797477&fecha=31/08/2026"
+    },
+    {
+      "ai_generated": true,
       "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797479&fecha=31%2F08%2F2026",
       "categories": [
         "Proceso legislativo",
@@ -331,7 +360,7 @@
       "country_or_org": "México",
       "detail_data_url": "data/fichas/abdd3ecdb954501e2ca2fb03.json",
       "detail_url": "notas/abdd3ecdb954501e2ca2fb03.html",
-      "detected_at": "2026-09-01T16:34:47.803209+00:00",
+      "detected_at": "2026-09-01T18:46:30.041123+00:00",
       "document_type": "Comunicado",
       "editorial_status": "complete",
       "extraction_status": "complete",
@@ -346,8 +375,8 @@
       "review_reason": null,
       "source": "ANAM",
       "source_id": "1c45bce94037e150",
-      "summary_teaser": "IMPI y ANAM informaron medidas de inspección en Lázaro Cárdenas sobre perfumes y otros bienes con referencias a marcas. La comunicación reporta una medida temporal de suspensión de libre circulación y aseguramientos coordinados con la Fiscalía General de la República. El comunicado no determina por sí mismo una infracción definitiva de propiedad industrial.",
-      "title": "Operación IMPI-ANAM suspende circulación de perfumes en Lázaro Cárdenas",
+      "summary_teaser": "ANAM e IMPI informaron una inspección en la Aduana de Lázaro Cárdenas que incluyó la suspensión provisional de libre circulación de 48 perfumes y el aseguramiento de otros bienes con signos distintivos. El comunicado no determina una infracción, una sanción definitiva ni responsabilidades individuales.",
+      "title": "Medida provisional suspende libre circulación de 48 perfumes",
       "url": "https://www.anam.gob.mx/comunicado-prensa-conjunto-64-2026/"
     },
     {
@@ -539,7 +568,7 @@
       "country_or_org": "México",
       "detail_data_url": "data/fichas/fe5377e3337fa53fe592c417.json",
       "detail_url": "notas/fe5377e3337fa53fe592c417.html",
-      "detected_at": "2026-09-01T16:34:47.803209+00:00",
+      "detected_at": "2026-09-01T18:46:30.041123+00:00",
       "document_type": "Comunicado",
       "editorial_status": "complete",
       "extraction_status": "complete",
@@ -554,8 +583,8 @@
       "review_reason": null,
       "source": "ANAM",
       "source_id": "780e101837f9bd31",
-      "summary_teaser": "ANAM mantiene disponible información pública histórica de operaciones de comercio exterior por aduana. La propia fuente advierte que se trata de datos sin procesar, sujetos a secreto fiscal y no sustitutos de estadísticas oficiales. También alerta que ciertos archivos tienen millones de registros y pueden requerir herramientas distintas de una hoja de cálculo convencional.",
-      "title": "ANAM permite descarga histórica de operaciones aduaneras públicas",
+      "summary_teaser": "La ANAM mantiene una consulta pública sobre operaciones de comercio exterior tramitadas ante las 50 aduanas del país. La página aclara que no genera estadísticas, protege la información de contribuyentes por secreto fiscal y remite la estadística de balanza comercial a Banco de México e INEGI. Algunos archivos superan un millón de registros.",
+      "title": "ANAM permite consulta histórica de operaciones aduaneras públicas",
       "url": "https://www.anam.gob.mx/informacion-publica-de-comercio-exterior-2025/"
     },
     {
@@ -948,7 +977,7 @@
       "country_or_org": "México",
       "detail_data_url": "data/fichas/7438ff5040e82818bea20414.json",
       "detail_url": "notas/7438ff5040e82818bea20414.html",
-      "detected_at": "2026-09-01T16:34:47.803209+00:00",
+      "detected_at": "2026-09-01T18:46:30.041123+00:00",
       "document_type": "Comunicado",
       "editorial_status": "complete",
       "extraction_status": "complete",
@@ -963,8 +992,8 @@
       "review_reason": null,
       "source": "ANAM",
       "source_id": "41a5756148946bba",
-      "summary_teaser": "La Agencia Nacional de Aduanas de México y la Secretaría de Marina informaron el aseguramiento de un cargamento proveniente de Vietnam con cincuenta y dos millones quinientos mil cigarros descritos como presuntamente apócrifos. El comunicado atribuye la detección a análisis de riesgo, revisión documental y verificación de perfiles operativos.",
-      "title": "ANAM confirma aseguramiento de cigarros presuntamente apócrifos en Lázaro Cárdenas",
+      "summary_teaser": "ANAM, Semar y autoridades del Gabinete de Seguridad comunicaron el aseguramiento de un cargamento procedente de Vietnam con 52 millones 500 mil cigarros descritos como presuntamente apócrifos. La publicación expone mecanismos de análisis de riesgo y control, pero no reporta sanciones, responsables ni una resolución definitiva.",
+      "title": "ANAM confirma aseguramiento de cigarros presuntamente apócrifos",
       "url": "https://www.anam.gob.mx/comunicado-prensa-63-2026/"
     },
     {
@@ -1036,7 +1065,7 @@
       "country_or_org": "México",
       "detail_data_url": "data/fichas/d91f18acd80ab948e002ad47.json",
       "detail_url": "notas/d91f18acd80ab948e002ad47.html",
-      "detected_at": "2026-09-01T16:34:47.803209+00:00",
+      "detected_at": "2026-09-01T18:46:30.041123+00:00",
       "document_type": "Comunicado",
       "editorial_status": "complete",
       "extraction_status": "complete",
@@ -1051,8 +1080,8 @@
       "review_reason": null,
       "source": "ANAM",
       "source_id": "a2488ef42c1b17bc",
-      "summary_teaser": "ANAM, Marina y autoridades del Gabinete de Seguridad informaron el aseguramiento precautorio de cuatro embarques con aproximadamente 5.8 millones de cigarros apócrifos en el AICM. La mercancía provenía de Asia y permanece en recinto fiscalizado mientras se determina su situación jurídica.",
-      "title": "Comunicado establece aseguramiento precautorio de cigarros en AICM",
+      "summary_teaser": "ANAM, Marina y autoridades del Gabinete de Seguridad informaron el aseguramiento precautorio de cuatro embarques con aproximadamente 5 millones 808 mil cigarros que el comunicado denomina apócrifos, en la Aduana del AICM. La mercancía permanece en recinto fiscalizado hasta determinar su situación jurídica; la fuente no comunica una resolución final.",
+      "title": "El comunicado confirma aseguramiento precautorio de cuatro embarques en AICM",
       "url": "https://www.anam.gob.mx/comunicado-prensa-conjunto-62-2026/"
     },
     {
@@ -1299,7 +1328,7 @@
       "country_or_org": "México",
       "detail_data_url": "data/fichas/32952c1c46d3f0860d0fe747.json",
       "detail_url": "notas/32952c1c46d3f0860d0fe747.html",
-      "detected_at": "2026-09-01T16:34:47.803209+00:00",
+      "detected_at": "2026-09-01T18:46:30.041123+00:00",
       "document_type": "Comunicado",
       "editorial_status": "complete",
       "extraction_status": "complete",
@@ -1314,8 +1343,8 @@
       "review_reason": null,
       "source": "ANAM",
       "source_id": "eedd3801e348eb0b",
-      "summary_teaser": "IMPI y ANAM informaron el aseguramiento de 379 cajas con 227 mil cajetillas de cigarrillos que ostentaban la denominación PALL MALL durante un operativo en la Aduana de Manzanillo. El comunicado anuncia actuaciones posteriores y señala que las mercancías pudieran infringir derechos marcarios. No contiene una determinación definitiva sobre infracción ni sobre la situación jurídica final de la mercancía.",
-      "title": "Aseguramiento de cajetillas abre seguimiento de derechos marcarios",
+      "summary_teaser": "Un operativo coordinado en la Aduana de Manzanillo localizó 379 cajas con 227 mil cajetillas de cigarrillos que ostentaban la denominación PALL MALL. El comunicado conjunto señala que el IMPI continuará las actuaciones de su competencia y la coordinación interinstitucional para el seguimiento del caso; no informa una determinación sobre infracción marcaria ni sanciones.",
+      "title": "IMPI confirma actuaciones tras aseguramiento de 227 mil cajetillas en Manzanillo",
       "url": "https://www.anam.gob.mx/comunicado-prensa-conjunto-60-2026/"
     },
     {
@@ -1797,7 +1826,7 @@
       "country_or_org": "EEUU",
       "detail_data_url": "data/fichas/85e14310cae203059644866e.json",
       "detail_url": "notas/85e14310cae203059644866e.html",
-      "detected_at": "2026-09-01T16:34:47.803209+00:00",
+      "detected_at": "2026-09-01T18:46:30.041123+00:00",
       "document_type": "Comunicado",
       "editorial_status": "complete",
       "extraction_status": "complete",
@@ -1812,8 +1841,8 @@
       "review_reason": null,
       "source": "USTR",
       "source_id": "3a51a827ecdfff57",
-      "summary_teaser": "La oficina comercial de Estados Unidos informó la resolución exitosa del mecanismo laboral de respuesta rápida del T-MEC en una planta de Grupo Yazaki en León, Guanajuato, y que Estados Unidos ya reanudó la liquidación de aranceles para sus bienes. El comunicado distingue ese resultado de la instrucción del embajador Greer al Secretario del Tesoro para reanudar la liquidación de entradas no liquidadas.",
-      "title": "Estados Unidos cierra caso laboral del T-MEC en Yazaki",
+      "summary_teaser": "USTR anunció la resolución del asunto del Mecanismo Laboral de Respuesta Rápida del T-MEC en la planta Grupo Yazaki de León, Guanajuato. Tras medidas de la empresa y del gobierno mexicano, Estados Unidos concluyó que no existe una denegación de derechos en curso y reanudó la liquidación de aranceles sobre las mercancías de la planta.",
+      "title": "USTR da por remediado asunto Yazaki y reanuda liquidación arancelaria",
       "url": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/august/united-states-announces-successful-resolution-rapid-response-labor-mechanism-matter-grupo-yazaki-sa"
     },
     {
@@ -1826,7 +1855,7 @@
       "country_or_org": "México",
       "detail_data_url": "data/fichas/c1607aef9f3217827e292d28.json",
       "detail_url": "notas/c1607aef9f3217827e292d28.html",
-      "detected_at": "2026-09-01T16:34:47.803209+00:00",
+      "detected_at": "2026-09-01T18:46:30.041123+00:00",
       "document_type": "Comunicado",
       "editorial_status": "complete",
       "extraction_status": "complete",
@@ -1841,8 +1870,8 @@
       "review_reason": null,
       "source": "ANAM",
       "source_id": "827d77cec754354b",
-      "summary_teaser": "La ANAM reportó para julio de 2026 una recaudación de 131,616 millones de pesos, la cifra mensual más alta del año, y 1,957,554 operaciones de comercio exterior, récord desde enero de 2025. El comunicado reporta aumentos de 8.7% frente a junio y 5.4% frente a julio de 2025, además de resultados acumulados y desagregados por aduana.",
-      "title": "ANAM fija récord mensual de recaudación y operaciones en julio",
+      "summary_teaser": "La ANAM informó que en julio de 2026 recaudó 131 mil 616 millones de pesos, cifra mensual más alta del año, y realizó 1 millón 957 mil 554 operaciones de comercio exterior, récord desde enero de 2025. El comunicado también reportó variaciones, acumulado, costo de captación y distribuciones por aduana.",
+      "title": "ANAM confirma récord de operaciones y mayor recaudación mensual",
       "url": "https://www.anam.gob.mx/comunicado-prensa-58-2026/"
     },
     {
@@ -2200,6 +2229,36 @@
     },
     {
       "ai_generated": true,
+      "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795726&fecha=07%2F08%2F2026",
+      "categories": [
+        "Fiscal",
+        "Administración centralizada"
+      ],
+      "content_hash": "07e91622a6c73aed4849235a26819ab1dad5f8c6125a9f9d453764895f286725",
+      "country_or_org": "México",
+      "detail_data_url": "data/fichas/b3aa6d83a1f245a299fb57a1.json",
+      "detail_url": "notas/b3aa6d83a1f245a299fb57a1.html",
+      "detected_at": "2026-09-01T18:46:30.041123+00:00",
+      "document_type": "Oficio",
+      "editorial_status": "complete",
+      "extraction_status": "complete",
+      "id": "dof:5795726",
+      "importance": 2,
+      "issuing_body": "Secretaría de Hacienda y Crédito Público",
+      "jurisdiction": "nacional",
+      "official_published_at": "2026-08-07",
+      "official_title": "Oficio 500-05-00-00-00-2026-24291 mediante el cual se comunica el nombre y la clave en el Registro Federal de Contribuyentes a que se refiere la fracción X del artículo 49 Bis del Código Fiscal de la Federación.",
+      "published_at": "2026-08-07",
+      "relevance_score": 3,
+      "review_reason": null,
+      "source": "DOF",
+      "source_id": "5795726",
+      "summary_teaser": "El SAT publicó a GROUP IRBENIGI DE MEXICO, S.A. DE C.V. y su RFC como contribuyente que no desvirtuó la presunción de falsedad de los CFDI emitidos. El aviso señala que esos comprobantes no producen efectos fiscales y que quienes les hayan dado efectos deben revertirlos mediante declaración complementaria dentro del plazo señalado.",
+      "title": "SAT exige revertir efectos de CFDI falsos en treinta días",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5795726&fecha=07/08/2026"
+    },
+    {
+      "ai_generated": true,
       "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795727&fecha=07%2F08%2F2026",
       "categories": [
         "Fiscal",
@@ -2535,7 +2594,7 @@
     {
       "attempts": 1,
       "error": null,
-      "items_found": 8,
+      "items_found": 7,
       "source": "SNICE",
       "status": "ok"
     },
@@ -2561,7 +2620,7 @@
       "status": "ok"
     },
     {
-      "attempts": 2,
+      "attempts": 1,
       "error": null,
       "items_found": 10,
       "source": "IMPI",
@@ -2584,7 +2643,7 @@
     {
       "attempts": 1,
       "error": null,
-      "items_found": 4,
+      "items_found": 5,
       "source": "USTR",
       "status": "ok"
     },
@@ -2652,5 +2711,5 @@
       "status": "ok"
     }
   ],
-  "total_items": 84
+  "total_items": 86
 }
