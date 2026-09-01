@@ -453,6 +453,106 @@ def test_extract_many_uses_sqlite_cache_only_on_calling_thread(
     assert all(result.cache_hit for result in second)
 
 
+def test_extract_many_batches_cache_writes(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    class BatchCache:
+        def __init__(self) -> None:
+            self.batches: list[list[tuple[dict, str, str]]] = []
+
+        def get_extraction(self, *_args):
+            return None
+
+        def put_extractions(self, values):
+            self.batches.append(list(values))
+
+    def fake_uncached(self, request):
+        return ExtractionResult(
+            request.document_id,
+            request.url,
+            "complete",
+            markdown="texto completo",
+            content_hash="c" * 64,
+        )
+
+    monkeypatch.setattr(DocumentExtractor, "_extract_uncached", fake_uncached)
+    cache = BatchCache()
+    extractor = DocumentExtractor(cache=cache)
+
+    extractor.extract_many([
+        ExtractionRequest("a", "https://example.test/a", "a"),
+        ExtractionRequest("b", "https://example.test/b", "b"),
+    ])
+
+    assert len(cache.batches) == 1
+    assert len(cache.batches[0]) == 2
+
+
+def test_tool_timeout_kills_its_process_group(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    class FakeProcess:
+        pid = 321
+        returncode = -9
+
+        def poll(self):
+            return None
+
+        def wait(self):
+            return self.returncode
+
+    created: dict[str, object] = {}
+    killed: list[tuple[int, int]] = []
+
+    def fake_popen(command, **kwargs):
+        created["command"] = command
+        created.update(kwargs)
+        return FakeProcess()
+
+    monkeypatch.setattr(extraction.subprocess, "Popen", fake_popen)
+    monkeypatch.setattr(extraction.os, "killpg", lambda pid, signal: killed.append((pid, signal)))
+
+    with pytest.raises(extraction.ExtractionError, match="tiempo agotado"):
+        extraction._run(["tool"], 0.01)  # noqa: SLF001 - process boundary contract
+
+    assert created["start_new_session"] is True
+    assert killed == [(321, extraction.signal.SIGKILL)]
+
+
+def test_tool_output_is_bounded_on_disk(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    class FinishedProcess:
+        pid = 322
+        returncode = 0
+
+        def poll(self):
+            return 0
+
+    def fake_popen(_command, **kwargs):
+        kwargs["stdout"].write(b"01234567890")
+        kwargs["stdout"].flush()
+        return FinishedProcess()
+
+    monkeypatch.setattr(extraction, "MAX_TOOL_OUTPUT_BYTES", 10)
+    monkeypatch.setattr(extraction.subprocess, "Popen", fake_popen)
+
+    with pytest.raises(extraction.ExtractionError, match="límite de salida"):
+        extraction._run(["tool"], 1)  # noqa: SLF001 - process boundary contract
+
+
+def test_extractor_fails_before_reserving_unavailable_temporary_space(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    class Disk:
+        free = 1
+
+    monkeypatch.setattr(extraction.shutil, "disk_usage", lambda _path: Disk())
+
+    with pytest.raises(extraction.ExtractionError, match="espacio temporal insuficiente"):
+        DocumentExtractor()._reserve_temporary_space()  # noqa: SLF001 - budget contract
+
+
 def _pdf_call(
     tmp_path: Path,
     monkeypatch: pytest.MonkeyPatch,

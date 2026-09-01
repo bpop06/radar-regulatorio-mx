@@ -1,0 +1,210 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-3",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-4",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-5",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "heading": "Reforma y calendario de implementación",
+      "paragraphs": [
+        "La Comisión Nacional Bancaria y de Valores reforma el segundo párrafo del artículo 46 de las Disposiciones de carácter general aplicables a las instituciones de crédito y sustituye los anexos 2 y 4. La resolución permite integrar un expediente por deudor, acreditado o contraparte que concentre la información de todas las operaciones celebradas con esa persona; para una nueva operación puede utilizarse documentación existente si está actualizada y vigente conforme a las disposiciones y a la política interna de la institución.",
+        "La resolución entra en vigor al día siguiente de su publicación. Las instituciones deben ajustarse a ella en un plazo que no exceda de noventa días naturales desde esa entrada en vigor. La exposición de motivos alude a digitalización, simplificación, reutilización documental, firma electrónica y verificaciones no presenciales, pero condiciona esas herramientas a la información y controles previstos en las disposiciones."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2",
+        "chunk-3"
+      ],
+      "heading": "Créditos al consumo",
+      "paragraphs": [
+        "El nuevo Anexo 2 ordena la documentación de los expedientes de crédito al consumo, incluyendo solicitud, información de capacidad de pago, identificación, seguimiento, garantías y documentos para cobranza, reestructuras o castigos cuando correspondan. Para algunos créditos contratados por medios electrónicos, el anexo distingue umbrales de tres mil UDIs y los supuestos de clientes del artículo 307 Bis. En ciertos casos de menor monto el expediente puede contener sólo el reporte de información crediticia, sin perjuicio de los requisitos del artículo 41 que la propia disposición preserva.",
+        "En otros créditos de consumo electrónicos, la institución puede usar, bajo políticas internas previamente documentadas, registros de abonos y cargos de por lo menos los últimos tres meses en cuentas que administra para el cliente, como parte de la evidencia de capacidad de pago. El texto no elimina la necesidad de identificación, comprobante de domicilio, reportes crediticios o información adicional cuando el anexo la exige; tampoco autoriza utilizar registros no sustentados en medios electrónicos o digitalizados derivados de operaciones y servicios bancarios automatizados."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-3",
+        "chunk-4",
+        "chunk-5"
+      ],
+      "heading": "Créditos comerciales y controles",
+      "paragraphs": [
+        "El Anexo 4 organiza la documentación de créditos comerciales con saldo menor a cuatro millones de UDIs por rangos de monto. Entre los elementos previstos se encuentran reportes de información crediticia, autorizaciones, estudios de crédito, contratos, estados financieros u otra evidencia de capacidad de pago, identificación del acreditado y garantes, seguimiento, garantías, expedientes de cobranza, reestructuras y créditos castigados. Para operaciones de factoraje, descuento o cesión de derechos, incorpora documentación relativa a la persona sobre la que recae el riesgo de crédito y al derecho transmitido.",
+        "La norma permite verificaciones no presenciales mediante medios electrónicos en los supuestos que describe, pero exige que la información esté vigente y que se actúe conforme a políticas internas documentadas. Las instituciones deben revisar sus expedientes, políticas, controles de autenticación, conservación documental y procedimientos de seguimiento antes de concluir que una práctica digital concreta satisface el nuevo texto."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "59a7f565e62048d6f8ac27498a0e4d9a46fce43b91f462f00ef90a4e8ce7cb17",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "RESOLUCIÓN que modifica las Disposiciones de carácter general aplicables a las instituciones de crédito.",
+        "location": "caracteres 0-108"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Comisión Nacional Bancaria y de Valores. · parte 1",
+        "location": "caracteres 108-12108"
+      },
+      {
+        "id": "chunk-3",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Comisión Nacional Bancaria y de Valores. · parte 2",
+        "location": "caracteres 12108-24108"
+      },
+      {
+        "id": "chunk-4",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Comisión Nacional Bancaria y de Valores. · parte 3",
+        "location": "caracteres 24108-36108"
+      },
+      {
+        "id": "chunk-5",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Comisión Nacional Bancaria y de Valores. · parte 4",
+        "location": "caracteres 36108-40537"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5790442&fecha=12/06/2026",
+    "retrieved_at": "2026-08-13T19:44:02.156979+00:00"
+  },
+  "executive_summary": [
+    "La Comisión Nacional Bancaria y de Valores reforma el segundo párrafo del artículo 46 de las Disposiciones de carácter general aplicables a las instituciones de crédito y sustituye los anexos 2 y 4. La resolución permite integrar un expediente por deudor, acreditado o contraparte que concentre la información de todas las operaciones celebradas con esa persona; para una nueva operación puede utilizarse documentación existente si está actualizada y vigente conforme a las disposiciones y a la política interna de la institución.",
+    "La resolución entra en vigor al día siguiente de su publicación. Las instituciones deben ajustarse a ella en un plazo que no exceda de noventa días naturales desde esa entrada en vigor. La exposición de motivos alude a digitalización, simplificación, reutilización documental, firma electrónica y verificaciones no presenciales, pero condiciona esas herramientas a la información y controles previstos en las disposiciones."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2",
+        "chunk-3",
+        "chunk-4",
+        "chunk-5"
+      ],
+      "paragraphs": [
+        "Las instituciones de crédito obtienen opciones de simplificación y digitalización de expedientes, pero deben conservar evidencia, actualización y controles de acuerdo con el tipo y monto del crédito."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2",
+          "chunk-3",
+          "chunk-4",
+          "chunk-5"
+        ],
+        "paragraphs": [
+          "Las instituciones de crédito obtienen opciones de simplificación y digitalización de expedientes, pero deben conservar evidencia, actualización y controles de acuerdo con el tipo y monto del crédito."
+        ],
+        "sector": "Instituciones de crédito y áreas de originación, riesgo y cumplimiento"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5790442&fecha=12/06/2026",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "8df23b65adf24ca555438a861a3e0a56ef03f807752c8594c41c589688e3bc33",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/f306aed8c49d113feaf49c5c.json",
+    "detail_url": "notas/f306aed8c49d113feaf49c5c.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Resolución Que Modifica",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5790442",
+    "importance": 1,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-06-12",
+    "official_title": "Resolución que modifica las Disposiciones de carácter general aplicables a las instituciones de crédito.",
+    "published_at": "2026-06-12",
+    "relevance_score": 1,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5790442",
+    "summary_teaser": "La CNBV reforma las disposiciones para instituciones de crédito y sustituye los anexos de expedientes de consumo y créditos comerciales menores a cuatro millones de UDIs. Permite reutilizar documentación vigente, admitir ciertos registros digitales y verificaciones no presenciales, sin eliminar los deberes de documentación, identificación y seguimiento; el ajuste debe implementarse en 90 días.",
+    "title": "CNBV actualiza expedientes de crédito con medios digitales",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5790442&fecha=12/06/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Instituciones de crédito y áreas de originación, riesgo y cumplimiento",
+      "deadline": "Máximo 90 días naturales desde la entrada en vigor",
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2",
+        "chunk-3",
+        "chunk-4",
+        "chunk-5"
+      ],
+      "legal_basis": "Resolución CNBV que modifica las Disposiciones de carácter general aplicables a las instituciones de crédito",
+      "paragraphs": [
+        "Dentro del plazo de ajuste, revise matrices documentales, políticas de reutilización, evidencias de abonos y cargos, firma electrónica, verificaciones no presenciales y expedientes por rango de crédito."
+      ],
+      "trigger": "Desde la entrada en vigor de la resolución"
+    }
+  ],
+  "schema_version": 8
+}

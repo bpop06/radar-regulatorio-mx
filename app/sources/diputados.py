@@ -3,13 +3,14 @@ from __future__ import annotations
 import hashlib
 import re
 from datetime import date
-from urllib.parse import urljoin, urlparse
+from urllib.parse import urlparse
 
 from bs4 import BeautifulSoup, Tag
 
 from app.models import Candidate
 from app.sources.base import Collector, SourceContractError
 from app.text import clean_text, parse_date
+from app.url_policy import OfficialUrlError, resolve_official_link
 
 # Nombre de archivo de los anexos del Pleno: /PDF/<legislatura>/AAAA/mes/AAAAMMDD-<n>.pdf
 # (ej. /PDF/66/2026/jul/20260706-I.pdf). No se ancla la legislatura ("66") ni
@@ -170,7 +171,10 @@ class DiputadosCollector(Collector):
                 description = full_text[len(label) :].strip(" :-")
             description = description or label or f"Anexo {number}"
 
-            url = urljoin(cls.url, href)
+            try:
+                url = resolve_official_link(cls.url, href)
+            except OfficialUrlError:
+                continue
             candidates.append(
                 Candidate(
                     source=cls.source,

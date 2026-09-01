@@ -1,0 +1,141 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "heading": "Sanción comunicada",
+      "paragraphs": [
+        "La circular del Área de Responsabilidades del Órgano Interno de Control en el IMSS comunica la resolución de 2 de junio de 2026 en el expediente PISI-A-NC-DS-0004/2024. Según el texto, el procedimiento concluyó con una inhabilitación de un año y tres meses para Maquinaria e Ingeniería, S.A. de C.V., además de la multa determinada en el resolutivo segundo, para impedir que presente propuestas o celebre determinados contratos por sí o mediante interpósita persona.",
+        "La medida se refiere a contratos regulados en materias de adquisiciones, arrendamientos, servicios, obras públicas y servicios relacionados con las mismas. La ficha no cuantifica la multa porque la circular sólo remite al resolutivo correspondiente sin expresarla en el texto extraído. Tampoco convierte la circular en una declaración sobre contratos o procedimientos que no caigan en el alcance temporal y material comunicado."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Efectos operativos y excepciones expresas",
+      "paragraphs": [
+        "Las dependencias, entidades, empresas públicas del Estado, Fiscalía General de la República, entidades federativas, municipios y demarcaciones territoriales destinatarias deben abstenerse de recibir propuestas o celebrar contratos con la empresa, directa o indirectamente, desde el día siguiente a la publicación y por el plazo comunicado. Para las entidades federativas, municipios y demarcaciones, la circular precisa el cumplimiento cuando las contrataciones se cubran total o parcialmente con fondos federales conforme a convenios con el Ejecutivo Federal.",
+        "La publicación excluye de su aplicación los contratos ya adjudicados y los que estén formalizados. Además, indica que si al concluir el plazo la multa no se ha pagado, la inhabilitación subsiste hasta el pago y la acreditación ante la Secretaría Anticorrupción y Buen Gobierno para eliminar el registro en Compras MX, sin requerir otro comunicado. Las áreas contratantes deben mantener la distinción entre nuevas propuestas o contratos y los instrumentos expresamente exceptuados."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "53ae3f9ad605be3be6ad16fc84d7f89ac793275bbd3c2ef352653c30fea13cd8",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "CIRCULAR por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a las empresas públicas del Estado, a la Fiscalía General de la República, a las entidades federativas y sus municipios, así como a las demarcaciones territoriales de la Ciudad de México, que deberán abstenerse de aceptar propuestas o celebrar contratos con la empresa Maquinaria e Ingeniería, S.A. de C.V.",
+        "location": "caracteres 0-411"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Buen Gobierno.- Secretaría Anticorrupción y Buen Gobierno.- Órgano Interno de Control en el Instituto Mexicano del Seguro Social.- Área de Responsabilidades.- Expediente No. PISI-A-NC-DS-0004/2024.",
+        "location": "caracteres 411-6768"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791269&fecha=22/06/2026",
+    "retrieved_at": "2026-08-13T19:43:52.956799+00:00"
+  },
+  "executive_summary": [
+    "La circular del Área de Responsabilidades del Órgano Interno de Control en el IMSS comunica la resolución de 2 de junio de 2026 en el expediente PISI-A-NC-DS-0004/2024. Según el texto, el procedimiento concluyó con una inhabilitación de un año y tres meses para Maquinaria e Ingeniería, S.A. de C.V., además de la multa determinada en el resolutivo segundo, para impedir que presente propuestas o celebre determinados contratos por sí o mediante interpósita persona.",
+    "La medida se refiere a contratos regulados en materias de adquisiciones, arrendamientos, servicios, obras públicas y servicios relacionados con las mismas. La ficha no cuantifica la multa porque la circular sólo remite al resolutivo correspondiente sin expresarla en el texto extraído. Tampoco convierte la circular en una declaración sobre contratos o procedimientos que no caigan en el alcance temporal y material comunicado."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "paragraphs": [
+        "La circular afecta la elegibilidad de la empresa en nuevas contrataciones comprendidas por el texto y ordena controles de abstención para los entes destinatarios, sin alcanzar los contratos que la propia publicación exceptúa."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "La circular afecta la elegibilidad de la empresa en nuevas contrataciones comprendidas por el texto y ordena controles de abstención para los entes destinatarios, sin alcanzar los contratos que la propia publicación exceptúa."
+        ],
+        "sector": "Unidades compradoras y contratantes públicas"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791269&fecha=22/06/2026",
+    "categories": [
+      "Penal",
+      "Administración centralizada"
+    ],
+    "content_hash": "067c76d419d8a38a19a32488f70e97bfc2310f5249748ded810abe94f91e8b08",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/045836e08302a607808aff37.json",
+    "detail_url": "notas/045836e08302a607808aff37.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Circular",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5791269",
+    "importance": 2,
+    "issuing_body": "Presidencia de la República",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-06-22",
+    "official_title": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a las empresas públicas del Estado, a la Fiscalía General de la República, a las entidades federativas y sus municipios, así como a las demarcaciones territoriales de la Ciudad de México, que deberán abstenerse de aceptar propuestas o celebrar contratos con la empresa Maquinaria e Ingeniería, S.A. de C.V.",
+    "published_at": "2026-06-22",
+    "relevance_score": 3,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5791269",
+    "summary_teaser": "Una circular del Órgano Interno de Control en el IMSS comunica la inhabilitación de Maquinaria e Ingeniería, S.A. de C.V. por un año y tres meses. Las entidades destinatarias deben abstenerse de aceptar propuestas o celebrar determinados contratos, con reglas expresas sobre multa pendiente, contratos vigentes y recursos federales.",
+    "title": "Autoridad inhabilita a Maquinaria e Ingeniería en contrataciones públicas",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5791269&fecha=22/06/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Unidades compradoras y contratantes públicas",
+      "deadline": "Un año y tres meses, con subsistencia condicionada al pago de la multa",
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "legal_basis": "Circular SABG/OICGYR/AR/3661/2026; expediente PISI-A-NC-DS-0004/2024",
+      "paragraphs": [
+        "Antes de admitir una propuesta o formalizar una contratación, verifique la identidad del participante, el plazo de la circular, la materia del contrato y si existen fondos federales; documente cualquier excepción de contrato previo."
+      ],
+      "trigger": "Desde el día siguiente a la publicación de la circular"
+    }
+  ],
+  "schema_version": 8
+}

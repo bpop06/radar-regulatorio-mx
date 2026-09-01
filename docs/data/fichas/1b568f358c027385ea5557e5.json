@@ -1,0 +1,143 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "heading": "Solicitud y producto declarado",
+      "paragraphs": [
+        "El IMPI publicó los datos de la solicitud de Declaración de Protección a la Indicación Geográfica “Textiles Artesanales de Hueyapan, Puebla”, presentada por la Secretaría de Desarrollo Económico y Trabajo del Gobierno del Estado de Puebla, representada por Víctor Gerardo Gabriel Chedrahui.",
+        "La solicitud describe prendas de vestir y otras piezas textiles elaboradas artesanalmente con fibras de lana ovina mediante hilado, urdido, teñido y tejido tradicionales. Señala el uso de colorantes naturales de origen vegetal, mineral e insectil y contempla también hilos de lana adquiridos y su combinación con hilos de acrílico."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "heading": "Zona, expediente y oposición",
+      "paragraphs": [
+        "La extracción de materias primas se realiza en Hueyapan, Puebla y, aunque algunos insumos complementarios provienen de regiones externas, la producción o elaboración declarada ocurre exclusivamente dentro del municipio.",
+        "El aviso no prejuzga la procedencia de la solicitud. Las terceras personas que justifiquen su interés pueden presentar oposición, observaciones u objeciones por escrito, con pruebas y comprobante de pago, dentro del plazo improrrogable de un mes contado desde la publicación."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "475764aca664d8f96e497c849b2986dd6e73e6ea0412be0c90d8b797b9f56b08",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "PUBLICACIÓN de datos relacionados con la Solicitud de Declaración de Protección a la Indicación Geográfica \" Textiles Artesanales de Hueyapan, Puebla \" .",
+        "location": "caracteres 0-157"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Economía.- Secretaría de Economía.- Instituto Mexicano de la Propiedad Industrial.",
+        "location": "caracteres 157-5036"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792805&fecha=07/07/2026",
+    "retrieved_at": "2026-08-13T19:43:09.174955+00:00"
+  },
+  "executive_summary": [
+    "El Instituto Mexicano de la Propiedad Industrial publicó los datos de una solicitud de Declaración de Protección a la Indicación Geográfica respecto de Textiles Artesanales de Hueyapan, Puebla. La solicitud fue presentada por la Secretaría de Desarrollo Económico y Trabajo del Gobierno del Estado de Puebla, representada por Víctor Gerardo Gabriel Chedrahui y describe prendas y piezas textiles elaboradas con fibras de lana ovina mediante hilado, urdido, teñido y tejido tradicionales, con colorantes naturales vegetales, minerales e insectiles y, en algunos casos, combinación con hilos adquiridos.",
+    "La extracción de materias primas y la elaboración se ubican en Hueyapan, Puebla; aunque existan insumos complementarios externos, la producción declarada se realiza exclusivamente dentro del municipio. El expediente queda disponible en la Dirección Divisional de Marcas del IMPI para consulta y recepción de documentos en el horario que publica el aviso, por lo que la delimitación y las características declaradas pueden revisarse en el expediente administrativo."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "paragraphs": [
+        "La publicación activa una etapa administrativa de publicidad y oposición; no transforma todavía la solicitud en una protección otorgada."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "Productores, autoridades locales y posibles opositores pueden revisar la descripción, la zona y el expediente antes de que el IMPI resuelva la solicitud."
+        ],
+        "sector": "Propiedad industrial y productores locales"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792805&fecha=07/07/2026",
+    "categories": [
+      "Administración descentralizada"
+    ],
+    "content_hash": "97f49f5a9d3c354cd865e8dd4d09947f31e2781134382f57a1f4dcbcdba835cb",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/1b568f358c027385ea5557e5.json",
+    "detail_url": "notas/1b568f358c027385ea5557e5.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Publicación De Datos",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5792805",
+    "importance": 2,
+    "issuing_body": "Instituto Mexicano de la Propiedad Industrial",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-07-07",
+    "official_title": "Publicación de datos relacionados con la Solicitud de Declaración de Protección a la Indicación Geográfica \"Textiles Artesanales de Hueyapan, Puebla\".",
+    "published_at": "2026-07-07",
+    "relevance_score": 3,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5792805",
+    "summary_teaser": "El IMPI publicó la solicitud de protección de la Indicación Geográfica Textiles Artesanales de Hueyapan, Puebla. La petición describe fibras de lana, hilado, urdido, teñido y tejido tradicionales, con elaboración exclusiva en Hueyapan. La publicación no concede protección; las personas con interés justificado pueden objetar dentro de un mes.",
+    "title": "IMPI abre solicitud de indicación para textiles Hueyapan",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5792805&fecha=07/07/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Personas con interés legítimo en la indicación o denominación",
+      "deadline": "un plazo improrrogable de un mes desde la publicación",
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "legal_basis": "Ley Federal de Protección a la Propiedad Industrial",
+      "paragraphs": [
+        "Si la solicitud puede afectar una denominación, indicación, producto o zona relacionada, consulte el expediente del IMPI y presente oposición, observaciones y pruebas sólo dentro de un plazo improrrogable de un mes."
+      ],
+      "trigger": "Publicación en el Diario Oficial de la Federación"
+    }
+  ],
+  "schema_version": 8
+}

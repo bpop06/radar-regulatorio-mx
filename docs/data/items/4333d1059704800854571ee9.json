@@ -1,0 +1,157 @@
+{
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "item": {
+    "ai_generated": true,
+    "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797186&fecha=26%2F08%2F2026",
+    "card_body": "## Qué se publicó\n\nLa Secretaría de Hacienda publicó incumplimientos de Tlaxcala en el primer y segundo trimestre de 2026; de Aguascalientes y Coahuila en el primer trimestre; y de Michoacán en el segundo trimestre, respecto de publicaciones trimestrales y tablas en Excel.\n\n## Sustancia\n\nLa obligación trimestral consiste en remitir por correo electrónico el PDF de la publicación oficial y las tablas en Excel dentro de un máximo de cinco días hábiles desde la publicación. En la obligación mensual, el listado identifica a Tlaxcala en marzo y al Estado de México en junio por no remitir los montos ministrados a municipios a más tardar diez días naturales posteriores al término del mes. El corte informado es al 17 de agosto de 2026.\n\n## Fuente\n\nLa síntesis se elaboró exclusivamente con la fuente oficial identificada en la evidencia y sus fragmentos extraídos.",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "285200e1ea74858cbe8a306d34444be8e431598b2af197e863b86834a7e74b48",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-1",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/4333d1059704800854571ee9.json",
+    "detail_url": "notas/4333d1059704800854571ee9.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "heading": "Alcance de la publicación",
+        "paragraphs": [
+          "La Secretaría de Hacienda publicó incumplimientos de Tlaxcala en el primer y segundo trimestre de 2026; de Aguascalientes y Coahuila en el primer trimestre; y de Michoacán en el segundo trimestre, respecto de publicaciones trimestrales y tablas en Excel.",
+          "La obligación trimestral consiste en remitir por correo electrónico el PDF de la publicación oficial y las tablas en Excel dentro de un máximo de cinco días hábiles desde la publicación. En la obligación mensual, el listado identifica a Tlaxcala en marzo y al Estado de México en junio por no remitir los montos ministrados a municipios a más tardar diez días naturales posteriores al término del mes. El corte informado es al 17 de agosto de 2026."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "heading": "Seguimiento operativo",
+        "paragraphs": [
+          "Las entidades listadas deben contrastar sus envíos trimestrales y mensuales con los plazos de cinco días hábiles y diez días naturales que señala el listado.",
+          "La ficha no extiende el alcance del acto a supuestos que la fuente no identifica."
+        ]
+      }
+    ],
+    "detected_at": "2026-09-01T16:34:47.803209+00:00",
+    "document_type": "Listado De Entidades",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "310c0be1efa5aac40216efa650bd42be70339fcbb9a73c72df34deaa1cc2f1f5",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "LISTADO de entidades federativas que incumplieron con la obligación prevista en el artículo 6o. de la Ley de Coordinación Fiscal.",
+          "location": "caracteres 0-133"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Unidad de Coordinación con Entidades Federativas.",
+          "location": "caracteres 133-3740"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797186&fecha=26%2F08%2F2026",
+      "retrieved_at": "2026-09-01T16:35:06.793368+00:00"
+    },
+    "executive_summary": [
+      "La Secretaría de Hacienda publicó incumplimientos de Tlaxcala en el primer y segundo trimestre de 2026; de Aguascalientes y Coahuila en el primer trimestre; y de Michoacán en el segundo trimestre, respecto de publicaciones trimestrales y tablas en Excel.",
+      "La obligación trimestral consiste en remitir por correo electrónico el PDF de la publicación oficial y las tablas en Excel dentro de un máximo de cinco días hábiles desde la publicación. En la obligación mensual, el listado identifica a Tlaxcala en marzo y al Estado de México en junio por no remitir los montos ministrados a municipios a más tardar diez días naturales posteriores al término del mes. El corte informado es al 17 de agosto de 2026."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-09-01T16:34:47.803209+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5797186",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "La obligación trimestral consiste en remitir por correo electrónico el PDF de la publicación oficial y las tablas en Excel dentro de un máximo de cinco días hábiles desde la publicación. En la obligación mensual, el listado identifica a Tlaxcala en marzo y al Estado de México en junio por no remitir los montos ministrados a municipios a más tardar diez días naturales posteriores al término del mes. El corte informado es al 17 de agosto de 2026."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-2"
+          ],
+          "paragraphs": [
+            "La incidencia para este grupo se limita al alcance expresamente descrito en la publicación y requiere contrastarse con cada caso concreto."
+          ],
+          "sector": "Entidades federativas incluidas en el listado"
+        }
+      ]
+    },
+    "importance": 1,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-09-01T18:46:30.041123+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797186&fecha=26/08/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5797186"
+    },
+    "official_published_at": "2026-08-26",
+    "official_title": "Listado de entidades federativas que incumplieron con la obligación prevista en el artículo 6o. de la Ley de Coordinación Fiscal.",
+    "published_at": "2026-08-26",
+    "published_day": 26,
+    "published_month": 8,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Entidades federativas incluidas en el listado",
+        "deadline": "PDF y tablas trimestrales: máximo 5 días hábiles desde la publicación; reporte mensual: a más tardar 10 días naturales posteriores al término del mes.",
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "legal_basis": "Numeral 8, incisos a) y b), de los Lineamientos para la publicación de la información del artículo 6 de la Ley de Coordinación Fiscal.",
+        "paragraphs": [
+          "Las entidades listadas deben contrastar sus envíos trimestrales y mensuales con los plazos de cinco días hábiles y diez días naturales que señala el listado."
+        ],
+        "trigger": "Cuando la publicación resulte aplicable a la situación revisada."
+      }
+    ],
+    "relevance_score": 1,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5797186",
+    "subtopic_tags": [],
+    "summary": "La Secretaría de Hacienda publicó incumplimientos de Tlaxcala en el primer y segundo trimestre de 2026; de Aguascalientes y Coahuila en el primer trimestre; y de Michoacán en el segundo trimestre, respecto de publicaciones trimestrales y tablas en Excel.\n\nLa obligación trimestral consiste en remitir por correo electrónico el PDF de la publicación oficial y las tablas en Excel dentro de un máximo de cinco días hábiles desde la publicación. En la obligación mensual, el listado identifica a Tlaxcala en marzo y al Estado de México en junio por no remitir los montos ministrados a municipios a más tardar diez días naturales posteriores al término del mes. El corte informado es al 17 de agosto de 2026.\n\nPara fines de seguimiento, Las entidades listadas deben contrastar sus envíos trimestrales y mensuales con los plazos de cinco días hábiles y diez días naturales que señala el listado. La revisión debe partir de la publicación oficial y de la documentación disponible para el caso concreto. El contenido debe mantenerse dentro de los límites del acto: no permite presumir efectos respecto de personas, operaciones, expedientes, contratos o procedimientos que la fuente no identifica. Cuando el documento comunica una autorización, una sanción, un trámite, una regla administrativa o un dato institucional, corresponde distinguir su alcance expreso de actuaciones posteriores que no estén acreditadas.\n\nEn términos probatorios, esta ficha se limita a los fragmentos oficiales y a sus localizadores. No atribuye efectos, plazos, montos, fundamentos, sujetos, resultados o hechos que no figuren en la fuente. La consulta del texto íntegro y, cuando corresponda, de la documentación del caso es necesaria para determinar cualquier consecuencia concreta. La verificación de una consecuencia particular exige identificar el acto aplicable, su fecha relevante, las personas efectivamente comprendidas y la evidencia que corresponda a la situación revisada. En ningún caso sustituye la consulta de expedientes, constancias o notificaciones individuales que puedan modificar la conclusión para una situación concreta. Esta delimitación evita convertir la información publicada en una conclusión definitiva sobre derechos, obligaciones o cumplimiento individual.",
+    "summary_teaser": "Hacienda listó a Tlaxcala por el primer y segundo trimestre de 2026; a Aguascalientes y Coahuila por el primer trimestre; y a Michoacán por el segundo trimestre en reportes trimestrales. También identificó a Tlaxcala en marzo y al Estado de México en junio por reportes mensuales. Los deberes tienen plazos de cinco días hábiles y diez días naturales.",
+    "title": "Hacienda determina incumplimientos estatales de participaciones federales",
+    "topic_tags": [],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797186&fecha=26/08/2026"
+  },
+  "schema_version": 8
+}

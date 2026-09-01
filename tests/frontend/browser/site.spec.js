@@ -45,7 +45,7 @@ const edition = {
   edition_date: today,
   generated_at: new Date().toISOString(),
   state: "ready",
-  coverage: { state: "degraded", ok: 17, failed: [{ source: "CIJ", error: "HTTP 404" }] },
+  coverage: { state: "degraded", ok: 17, total: 18, failed: ["CIJ"] },
   total_today: 2,
   last_available_date: today,
   signals: [{ ...complete, rank: 1, why_it_matters: "Cambia una obligación verificable." }, { ...pending, rank: 2 }],

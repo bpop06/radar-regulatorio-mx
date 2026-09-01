@@ -2,16 +2,19 @@ from __future__ import annotations
 
 import json
 import sys
+from copy import deepcopy
 from datetime import UTC, datetime
 from pathlib import Path
 
 import pytest
 
 from app import cli
+from app.config import Settings
 from app.edition import item_key, prepare_payload, write_site_artifacts
 from app.editorial import EditorialError, apply_editorial
 from app.extraction import EXTRACTOR_VERSION, DocumentExtractor, ExtractionResult
 from app.storage import Storage
+from app.validation import validate_site_artifacts
 from tests.test_contract_v8 import extractive_payload
 
 
@@ -334,7 +337,7 @@ def test_cut_metrics_accumulate_reported_editorial_tokens(tmp_path: Path) -> Non
 
 
 def test_prepare_editorial_immediate_rerun_uses_zero_network_or_extraction(
-    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch, capsys: pytest.CaptureFixture[str]
 ) -> None:
     database = tmp_path / "state.sqlite3"
     payload = prepare_payload(extractive_payload(), force=True)
@@ -350,6 +353,7 @@ def test_prepare_editorial_immediate_rerun_uses_zero_network_or_extraction(
         storage.save_cut_metrics({
             "generated_at": datetime.now(UTC).isoformat(),
             "last_network_collection_at": datetime.now(UTC).isoformat(),
+            "collection_fingerprint": cli._collection_fingerprint(Settings(), None),  # noqa: SLF001
             "duration_seconds": 4.0,
             "p50_seconds": 1.0,
             "p95_seconds": 2.0,
@@ -381,7 +385,75 @@ def test_prepare_editorial_immediate_rerun_uses_zero_network_or_extraction(
     with Storage(database) as storage:
         metrics = storage.latest_cut_metrics()
     assert metrics["cache_rate"] == 1.0
+    assert metrics["run_reused"] is True
     assert metrics["duration_seconds"] <= 1.0
+    assert (
+        "Cola preparada: total=1; extracción_completa=1; reutilizados=1"
+        in capsys.readouterr().out
+    )
+
+
+def test_prepare_editorial_recollects_when_effective_window_changes(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    database = tmp_path / "state.sqlite3"
+    payload = prepare_payload(extractive_payload(), force=True)
+    payload["items"][0].update(
+        extraction_status="complete",
+        source_revalidation_status="complete",
+        source_content_hash="b" * 64,
+        extracted_text="Texto oficial completo.",
+        source_sections=[{"id": "chunk-1", "label": "Documento", "order": 1}],
+    )
+    with Storage(database) as storage:
+        storage.save_run(payload)
+        storage.save_cut_metrics({
+            "generated_at": datetime.now(UTC).isoformat(),
+            "last_network_collection_at": datetime.now(UTC).isoformat(),
+            "collection_fingerprint": cli._collection_fingerprint(Settings(), None),  # noqa: SLF001
+            "duration_seconds": 1.0,
+            "p50_seconds": 0.2,
+            "p95_seconds": 0.4,
+            "cache_hits": 0,
+            "ocr_documents": 0,
+            "failures": 0,
+            "tokens": 0,
+            "retained_items": 0,
+            "total_items": 1,
+        })
+
+    calls: list[int | None] = []
+
+    async def collected(_settings, days):
+        calls.append(days)
+        return extractive_payload()
+
+    def extracted(_self, requests):
+        return [
+            ExtractionResult(
+                request.document_id,
+                request.url,
+                "complete",
+                markdown="Texto oficial completo.",
+                content_hash="c" * 64,
+                extraction_method="html-adapter",
+            )
+            for request in requests
+        ]
+
+    monkeypatch.setattr(cli, "collect", collected)
+    monkeypatch.setattr(DocumentExtractor, "extract_many", extracted)
+    monkeypatch.setattr(
+        sys,
+        "argv",
+        ["radar-regulatorio", "prepare-editorial", "--db", str(database), "--days", "7"],
+    )
+
+    cli.main()
+
+    assert calls == [7]
+    with Storage(database) as storage:
+        assert storage.latest_cut_metrics()["run_reused"] is False
 
 
 def test_apply_editorial_rejects_untrusted_token_usage_before_mutation(
@@ -662,6 +734,56 @@ def test_export_site_retires_previous_complete_when_current_becomes_pending(
     cli.main()
     assert json.loads(output.read_text())["items"] == []
     assert all(not path.exists() for path in paths)
+
+
+def test_export_site_keeps_reaudited_item_after_source_hash_changes(
+    tmp_path: Path,
+) -> None:
+    payload = prepare_payload(extractive_payload(), force=True)
+    complete = payload["items"][0]
+    complete.update(
+        extraction_status="complete",
+        source_revalidation_status="complete",
+        editorial_status="complete",
+        source_content_hash="b" * 64,
+        extraction_method="html-adapter",
+        extraction_retrieved_at="2026-08-13T12:00:00+00:00",
+        source_sections=[{"id": "p1", "label": "Cuerpo", "order": 1}],
+        title="SAT modifica obligaciones fiscales para contribuyentes afectados",
+        summary_teaser=" ".join(f"dato{i}" for i in range(45)),
+        summary=" ".join(f"resumen{i}" for i in range(320)),
+        card_body=(
+            "## Qué se publicó\n\nAcuerdo.\n\n## Sustancia\n\nCambio.\n\n"
+            "## Fuente\n\n[Fuente](https://dof.gob.mx/nota?id=abc)"
+        ),
+        ai_generated=True,
+        review_reason=None,
+        **_structured_fields(),
+    )
+    output = tmp_path / "docs/data/publications.json"
+    write_site_artifacts(
+        {**payload, "items": [complete]},
+        output,
+        complete_only=True,
+    )
+
+    reaudited = deepcopy(complete)
+    reaudited["source_content_hash"] = "c" * 64
+    reaudited["evidence"] = {
+        **reaudited["evidence"],
+        "content_hash": "c" * 64,
+    }
+    write_site_artifacts(
+        {**payload, "items": [reaudited]},
+        output,
+        complete_only=True,
+    )
+
+    key = item_key(complete["id"])
+    permanent = json.loads((output.parent / "items" / f"{key}.json").read_text())["item"]
+    assert permanent["id"] == complete["id"]
+    assert permanent["evidence"]["content_hash"] == "c" * 64
+    assert validate_site_artifacts(output.parent / "manifest.json").ok
 
 
 def test_long_source_queue_uses_contiguous_fragments_without_full_blob(

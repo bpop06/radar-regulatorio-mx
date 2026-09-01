@@ -1,0 +1,176 @@
+{
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "item": {
+    "ai_generated": true,
+    "authority": "PODER EJECUTIVO PRESIDENCIA DE LA REPUBLICA",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792560&fecha=03/07/2026",
+    "card_body": "## Qué se publicó\n\nEl Ejecutivo fijó directrices para contratar proyectos de infraestructura estratégica con bienestar.\n\n## Sustancia\n\nEl decreto habilita la posibilidad de contratar, no ordena hacerlo de inmediato. La aplicación del Título Noveno es opcional; SHCP administra la plataforma institucional y los OIC acompañan los procedimientos.\n\n## Fuente\n\n[Fuente oficial](https://dof.gob.mx/nota_detalle.php?codigo=5792560&fecha=03/07/2026)",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "e4acf17783602dd25d5ef3175d822ea5b3c36c41fe00dfc725e8909dab6e0b18",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-1",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/69087d98521a2cd5e5546cce.json",
+    "detail_url": "notas/69087d98521a2cd5e5546cce.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "heading": "Directrices y régimen de contratación",
+        "paragraphs": [
+          "El decreto permite a los sujetos interesados quedar en posibilidad de contratar Proyectos para el Desarrollo con Bienestar, sin ordenar una contratación inmediata.",
+          "La contratación se sujeta a las leyes de obras públicas y adquisiciones, además de la Ley de Infraestructura Estratégica; el uso del Título Noveno es opcional y debe expresarse en los documentos del procedimiento."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "heading": "Plataformas y acompañamiento",
+        "paragraphs": [
+          "La SHCP habilita, administra y regula la plataforma institucional; la Secretaría Anticorrupción puede brindar apoyo técnico y Compras MX difunde convocatorias, actas y fallos.",
+          "Los órganos internos de control acompañan los procedimientos y éstos pueden ser electrónicos, presenciales o mixtos."
+        ]
+      }
+    ],
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Decreto",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "9379edcff2237e66a6ac919ebd6cb490c87a38fd9b7d8547fb5e5f9379a2927d",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "DECRETO por el que se establecen directrices para que las dependencias y entidades de la Administración Pública Federal, realicen los procedimientos de contratación regulados en la Ley para el Fomento de la Inversión en Infraestructura Estratégica para el Desarrollo con Bienestar y su Reglamento .",
+          "location": "caracteres 0-302"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Presidencia de la República.",
+          "location": "caracteres 302-9832"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792560&fecha=03/07/2026",
+      "retrieved_at": "2026-08-13T19:43:24.382814+00:00"
+    },
+    "executive_summary": [
+      "El decreto establece directrices para que dependencias y entidades federales, el Fondo Nacional de Infraestructura y otros fideicomisos públicos que sean interesados en la Ley para el Fomento de la Inversión en Infraestructura Estratégica para el Desarrollo con Bienestar estén en posibilidad de realizar con inmediatez procedimientos de contratación para los Proyectos para el Desarrollo con Bienestar.",
+      "No contiene una orden de contratación inmediata para todos los sujetos. Los procedimientos y la ejecución se realizarán, en lo conducente, conforme a las leyes de obras públicas y de adquisiciones, sus reglamentos y disposiciones aplicables, además de la Ley de Infraestructura Estratégica. Los sujetos pueden determinar que se aplique el Título Noveno de esa ley, pero esa aplicación es potestativa y debe indicarse expresamente en convocatoria, bases, invitación o solicitud de cotización."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5792560",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "Las entidades interesadas cuentan con un marco de coordinación, plataforma y publicidad para procedimientos futuros, pero cada contratación requiere su propio acto y documentos."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-1",
+            "chunk-2"
+          ],
+          "paragraphs": [
+            "Dependencias, entidades, FONADIN y fideicomisos deben definir el régimen aplicable, la modalidad del procedimiento y las publicaciones antes de iniciar una contratación."
+          ],
+          "sector": "Infraestructura y contratación pública"
+        }
+      ]
+    },
+    "importance": 2,
+    "issuing_body": "Presidencia de la República",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-09-01T18:46:30.041123+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792560&fecha=03/07/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5792560"
+    },
+    "official_published_at": "2026-07-03",
+    "official_title": "Decreto por el que se establecen directrices para que las dependencias y entidades de la Administración Pública Federal, realicen los procedimientos de contratación regulados en la Ley para el Fomento de la Inversión en Infraestructura Estratégica para el Desarrollo con Bienestar y su Reglamento.",
+    "published_at": "2026-07-03",
+    "published_day": 3,
+    "published_month": 7,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Dependencias, entidades, FONADIN, fideicomisos y órganos internos de control",
+        "deadline": null,
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "legal_basis": "Ley para el Fomento de la Inversión en Infraestructura Estratégica para el Desarrollo con Bienestar",
+        "paragraphs": [
+          "Cuando se prepare un proyecto, determine expresamente si se aplicará el Título Noveno, use la plataforma que habilite SHCP y coordine el acompañamiento del OIC antes de publicar la convocatoria o solicitud."
+        ],
+        "trigger": "Preparación de un procedimiento para Proyectos para el Desarrollo con Bienestar"
+      }
+    ],
+    "relevance_score": 2,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5792560",
+    "subtopic_tags": [
+      "administracion publica federal"
+    ],
+    "summary": "El decreto establece directrices para que dependencias y entidades federales, el Fondo Nacional de Infraestructura y otros fideicomisos públicos que sean interesados en la Ley para el Fomento de la Inversión en Infraestructura Estratégica para el Desarrollo con Bienestar estén en posibilidad de realizar con inmediatez procedimientos de contratación para los Proyectos para el Desarrollo con Bienestar.\n\nNo contiene una orden de contratación inmediata para todos los sujetos. Los procedimientos y la ejecución se realizarán, en lo conducente, conforme a las leyes de obras públicas y de adquisiciones, sus reglamentos y disposiciones aplicables, además de la Ley de Infraestructura Estratégica. Los sujetos pueden determinar que se aplique el Título Noveno de esa ley, pero esa aplicación es potestativa y debe indicarse expresamente en convocatoria, bases, invitación o solicitud de cotización.\n\nLa Secretaría Anticorrupción y Buen Gobierno y la Secretaría de Hacienda deben establecer mecanismos de coordinación técnica para medios electrónicos y plataforma institucional. La SHCP debe habilitar y administrar la plataforma institucional, regular los procedimientos realizados en ella y puede recibir apoyo técnico de la Secretaría Anticorrupción. Compras MX difundirá convocatorias, actas y fallos, mientras la responsabilidad de los procedimientos corresponde a SHCP como ente rector y a las dependencias o entidades que los ejecuten.\n\nLos órganos internos de control acompañarán el desarrollo de los procedimientos de contratación. El decreto permite que los procedimientos sean electrónicos, presenciales o mixtos y entra en vigor al día siguiente de publicarse. La operación concreta depende de las convocatorias, habilitación de medios y decisiones de cada sujeto, de modo que el instrumento no acredita por sí mismo una contratación, adjudicación o proyecto específico.\n\nEl decreto permite a los sujetos interesados quedar en posibilidad de contratar Proyectos para el Desarrollo con Bienestar, sin ordenar una contratación inmediata. La contratación se sujeta a las leyes de obras públicas y adquisiciones, además de la Ley de Infraestructura Estratégica; el uso del Título Noveno es opcional y debe expresarse en los documentos del procedimiento. La SHCP habilita, administra y regula la plataforma institucional; la Secretaría Anticorrupción puede brindar apoyo técnico y Compras MX difunde convocatorias, actas y fallos. Los órganos internos de control acompañan los procedimientos y éstos pueden ser electrónicos, presenciales o mixtos.",
+    "summary_teaser": "El decreto fija directrices para que dependencias, entidades, FONADIN y fideicomisos puedan realizar procedimientos de contratación para Proyectos para el Desarrollo con Bienestar. No ordena contratar de inmediato: habilita la posibilidad y deja optativa la aplicación del Título Noveno. SHCP administra la plataforma y los OIC acompañan los procedimientos.",
+    "title": "Decreto permite contratación para infraestructura estratégica",
+    "topic_tags": [
+      "Derecho administrativo",
+      "Decreto",
+      "Reglamento"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5792560&fecha=03/07/2026"
+  },
+  "schema_version": 8
+}

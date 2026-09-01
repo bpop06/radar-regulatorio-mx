@@ -14,59 +14,37 @@
       "reason": null,
       "source_ref": "chunk-2",
       "target_sections": [
-        "executive_summary",
         "detailed_summary",
         "impacts.general",
-        "impacts.sectors",
         "recommended_actions"
       ]
     }
   ],
-  "cut_id": "608f32e49282b3cb935d0f73",
+  "cut_id": "80ff8a726797f7b9e5131c53",
   "detailed_summary": [
     {
       "evidence_refs": [
         "chunk-1",
         "chunk-2"
       ],
-      "heading": "Contribuyente y determinación comunicada",
+      "heading": "Publicación del contribuyente y sus CFDI",
       "paragraphs": [
-        "El oficio tiene por objeto comunicar el nombre y la clave en el Registro Federal de Contribuyentes a que se refiere la fracción X del artículo 49 Bis del Código Fiscal de la Federación. La Administración Central de Fiscalización Estratégica informa que, tras el procedimiento previsto en ese artículo, emitió una resolución en la que determinó que el contribuyente incluido en el Anexo 1 no desvirtuó la presunción de falsedad de los CFDI emitidos.",
-        "El Anexo 1 identifica al contribuyente como GROUP IRBENIGI DE MEXICO, S.A. DE C.V., RFC GIM150409IG1."
+        "El aviso identifica a GROUP IRBENIGI DE MEXICO, S.A. DE C.V. con RFC GIM150409IG1 y comunica que la presunción de falsedad de sus CFDI no fue desvirtuada; por ello el texto les atribuye falta de efectos fiscales con alcance general."
       ]
     },
     {
       "evidence_refs": [
+        "chunk-1",
         "chunk-2"
       ],
-      "heading": "Efecto fiscal señalado para los CFDI",
+      "heading": "Efecto para receptores",
       "paragraphs": [
-        "La autoridad comunica que los CFDI se consideran falsos con efectos generales por no cumplir lo establecido en el artículo 29-A, fracción IX, del Código Fiscal de la Federación. Por esa determinación, el oficio señala que las operaciones contenidas en los comprobantes no producen ni produjeron efecto fiscal alguno."
-      ]
-    },
-    {
-      "evidence_refs": [
-        "chunk-2"
-      ],
-      "heading": "Publicidad, plazos, corrección y consecuencia prevista",
-      "paragraphs": [
-        "El oficio refiere que la fracción X del artículo 49 Bis del Código Fiscal de la Federación prevé que el nombre y RFC del contribuyente se publiquen en el Portal del SAT y en el Diario Oficial de la Federación dentro de los cuarenta y cinco días hábiles siguientes a que surta efectos la notificación de la resolución.",
-        "La publicación busca que los terceros que recibieron los CFDI conozcan la situación y reviertan el efecto fiscal que les hubieran dado mediante declaración complementaria. Para ello, establece un plazo de treinta días naturales a partir de la publicación en el Diario Oficial de la Federación.",
-        "Si los terceros no realizan esa reversión dentro del plazo, la fuente indica que la autoridad les restringirá temporalmente el uso del certificado de sello digital para emitir CFDI, conforme al artículo 17-H Bis, fracción XIV, del Código Fiscal de la Federación."
-      ]
-    },
-    {
-      "evidence_refs": [
-        "chunk-2"
-      ],
-      "heading": "Datos de resolución y notificación en el anexo",
-      "paragraphs": [
-        "El Anexo 1 registra la resolución 500-05-00-00-00-2026-21617, de 7 de julio de 2026. También consigna notificación por Buzón Tributario el 13 de julio de 2026 y que la notificación surtió efectos el 14 de julio de 2026."
+        "La fuente ordena a terceros que hayan dado efectos fiscales a esos CFDI revertirlos mediante declaración complementaria en treinta días naturales desde la publicación y advierte la restricción temporal del certificado de sello digital ante el incumplimiento."
       ]
     }
   ],
   "evidence": {
-    "content_hash": "f88c1257e93e5cf593797dc725c669a9e91ff37db5e2fdcb852f7a636cefdd4b",
+    "content_hash": "48151489b0df9ad23fd574b8f2c9de04c92fc7ecb4f9999d9283d6428e18ba97",
     "extraction_method": "html-adapter",
     "locators": [
       {
@@ -81,30 +59,32 @@
       }
     ],
     "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795726&fecha=07%2F08%2F2026",
-    "retrieved_at": "2026-08-14T00:36:01.142640+00:00"
+    "retrieved_at": "2026-09-01T16:35:42.616696+00:00"
   },
   "executive_summary": [
-    "El Servicio de Administración Tributaria publicó el nombre y RFC de GROUP IRBENIGI DE MEXICO, S.A. DE C.V., RFC GIM150409IG1, al comunicar que la resolución emitida conforme al artículo 49 Bis del Código Fiscal de la Federación determinó que el contribuyente no desvirtuó la presunción de falsedad de los CFDI que emitió. La fuente señala que esos comprobantes son falsos con efectos generales y que las operaciones contenidas en ellos no producen ni produjeron efecto fiscal alguno.",
-    "El artículo 49 Bis, fracción X, prevé que el nombre y RFC se publiquen en el Portal del SAT y en el Diario Oficial de la Federación dentro de los cuarenta y cinco días hábiles siguientes a que surta efectos la notificación de la resolución. Los terceros que hubieran dado efecto fiscal a esos CFDI deben revertirlo mediante declaración complementaria dentro de los treinta días naturales siguientes a la publicación en el Diario Oficial. El oficio prevé que, si no lo hacen, la autoridad les restringirá temporalmente el uso del certificado de sello digital para emitir CFDI."
+    "El Servicio de Administración Tributaria publicó el nombre de GROUP IRBENIGI DE MEXICO, S.A. DE C.V. y el RFC GIM150409IG1 en el supuesto de la fracción X del artículo 49 Bis del Código Fiscal de la Federación. El anexo identifica a la persona contribuyente y el oficio de la resolución administrativa. Según el documento, la autoridad concluyó, tras el procedimiento previsto en ese artículo, que no se desvirtuó la presunción de falsedad de los comprobantes fiscales digitales por Internet emitidos por esa persona.",
+    "La consecuencia que la publicación atribuye a esos CFDI es que se consideran falsos con efectos generales por incumplir el requisito referido en el artículo 29-A, fracción IX, del Código Fiscal de la Federación. Por ello, el propio aviso indica que las operaciones asentadas en dichos comprobantes no producen ni produjeron efecto fiscal. Esta ficha no extiende esa conclusión a comprobantes distintos de los emitidos por la persona publicada ni a operaciones que el documento no identifica."
   ],
   "impacts": {
     "general": {
       "evidence_refs": [
+        "chunk-1",
         "chunk-2"
       ],
       "paragraphs": [
-        "La publicación comunica a los terceros que recibieron los CFDI la determinación y el mecanismo para revertir el efecto fiscal que les hubieran dado. El oficio prevé un plazo procedimental de cuarenta y cinco días hábiles para publicar el nombre y RFC y, para los terceros, un plazo de treinta días naturales desde la publicación para revertir ese efecto."
+        "El efecto directo recae en la trazabilidad fiscal de operaciones respaldadas por CFDI del emisor publicado y en las revisiones que correspondan a sus receptores."
       ]
     },
     "sectors": [
       {
         "evidence_refs": [
+          "chunk-1",
           "chunk-2"
         ],
         "paragraphs": [
-          "Quienes hubieran dado efecto fiscal a CFDI del contribuyente identificado deben revertirlo mediante declaración complementaria dentro del plazo indicado. La fuente prevé la restricción temporal del certificado de sello digital para emitir CFDI si no realizan esa reversión."
+          "Quienes hayan recibido CFDI de GROUP IRBENIGI DE MEXICO, S.A. DE C.V. deben ubicar los comprobantes y contrastar su tratamiento fiscal con la determinación y el plazo que el oficio comunica."
         ],
-        "sector": "Terceros que recibieron CFDI de Group Irbenigi de México, S.A. de C.V."
+        "sector": "Receptores de CFDI del contribuyente publicado"
       }
     ]
   },
@@ -119,7 +99,7 @@
     "country_or_org": "México",
     "detail_data_url": "data/fichas/b3aa6d83a1f245a299fb57a1.json",
     "detail_url": "notas/b3aa6d83a1f245a299fb57a1.html",
-    "detected_at": "2026-08-07T12:00:00+00:00",
+    "detected_at": "2026-09-01T18:46:30.041123+00:00",
     "document_type": "Oficio",
     "editorial_status": "complete",
     "extraction_status": "complete",
@@ -134,22 +114,23 @@
     "review_reason": null,
     "source": "DOF",
     "source_id": "5795726",
-    "summary_teaser": "El SAT publicó a Group Irbenigi de México, S.A. de C.V., RFC GIM150409IG1, tras determinar que no desvirtuó la presunción de falsedad de sus CFDI. Las operaciones amparadas no producen efectos fiscales; los terceros que les dieron efecto fiscal cuentan con 30 días naturales para presentar declaración complementaria o enfrentar la restricción temporal de su certificado de sello digital.",
-    "title": "SAT da 30 días para revertir efectos fiscales de CFDI falsos de Group Irbenigi de México",
+    "summary_teaser": "El SAT publicó a GROUP IRBENIGI DE MEXICO, S.A. DE C.V. y su RFC como contribuyente que no desvirtuó la presunción de falsedad de los CFDI emitidos. El aviso señala que esos comprobantes no producen efectos fiscales y que quienes les hayan dado efectos deben revertirlos mediante declaración complementaria dentro del plazo señalado.",
+    "title": "SAT exige revertir efectos de CFDI falsos en treinta días",
     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5795726&fecha=07/08/2026"
   },
   "recommended_actions": [
     {
-      "affected_group": "Terceros que recibieron CFDI de Group Irbenigi de México, S.A. de C.V.",
-      "deadline": "30 días naturales a partir de la publicación en el Diario Oficial de la Federación",
+      "affected_group": "Receptores de CFDI del contribuyente publicado",
+      "deadline": "Treinta días naturales contados a partir de la publicación en el Diario Oficial de la Federación",
       "evidence_refs": [
+        "chunk-1",
         "chunk-2"
       ],
-      "legal_basis": "Artículo 49 Bis, fracción X, y artículo 17-H Bis, fracción XIV, del Código Fiscal de la Federación",
+      "legal_basis": "Artículo 49 Bis, fracción X, y artículo 17-H Bis, fracción XIV, del Código Fiscal de la Federación, citados en el oficio",
       "paragraphs": [
-        "Si se hubiera dado efecto fiscal a CFDI de GROUP IRBENIGI DE MEXICO, S.A. DE C.V., RFC GIM150409IG1, presentar la declaración complementaria para revertir ese efecto dentro del plazo indicado por la publicación. La fuente señala que, de no hacerlo, la autoridad restringirá temporalmente el uso del certificado de sello digital para emitir CFDI."
+        "Identificar los CFDI recibidos de GROUP IRBENIGI DE MEXICO, S.A. DE C.V., revisar el efecto fiscal que se les dio y, si corresponde, presentar la declaración complementaria dentro del plazo publicado. Conservar expediente documental de la revisión."
       ],
-      "trigger": "Haber recibido CFDI de GROUP IRBENIGI DE MEXICO, S.A. DE C.V., RFC GIM150409IG1, y haberles dado efecto fiscal"
+      "trigger": "Haber recibido CFDI emitidos por el contribuyente publicado y haberles dado efectos fiscales"
     }
   ],
   "schema_version": 8

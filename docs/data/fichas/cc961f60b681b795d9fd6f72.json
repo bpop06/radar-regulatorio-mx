@@ -1,0 +1,185 @@
+{
+  "coverage": [
+    {
+      "disposition": "not_material",
+      "reason": "El locator inicial sólo reproduce el título; causa, relación individualizada y ruta de regularización aparecen en los cuatro locators posteriores.",
+      "source_ref": "chunk-1",
+      "target_sections": []
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-3",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-4",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-5",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    }
+  ],
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Base y primeros registros",
+      "paragraphs": [
+        "El primer segmento explica la obligación anual prevista para IMMEX y comienza la relación de titulares con identificadores, razón social y año de reporte. El texto no atribuye la suspensión a una infracción distinta: la causa declarada para esta relación es no presentar el reporte de 2025."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-3"
+      ],
+      "heading": "Continuación de la relación",
+      "paragraphs": [
+        "La segunda parte continúa el listado de programas suspendidos con datos individualizados. Es evidencia de la amplitud de la relación, no base para generalizar la suspensión a titulares que no aparecen identificados en el documento."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-4"
+      ],
+      "heading": "Tercera sección del listado",
+      "paragraphs": [
+        "El tercer bloque conserva empresas, RFC y anualidad asociados a la omisión reportada. La información debe leerse con la regla de subsanación y no confundir la lista de suspensión con una cancelación ya consumada."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-5"
+      ],
+      "heading": "Regularización y cancelación",
+      "paragraphs": [
+        "El cierre completa la relación y establece que quien subsane puede dejar sin efectos la suspensión dentro de dos días hábiles. Si no se presenta el reporte a más tardar el último día hábil de agosto de 2026, prevé cancelación definitiva del programa desde el 1 de septiembre de 2026."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "c4607be9d5424cc58d2ad9d70a783366afc214724feb7b50b4d19ade4b057d9a",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "AVISO por el que se dan a conocer los nombres de los titulares y números de Programas de la Industria Manufacturera, Maquiladora y de Servicios de Exportación suspendidos por falta de presentación del reporte anual correspondiente al ejercicio fiscal 2025.",
+        "location": "caracteres 0-260"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Economía. · parte 1",
+        "location": "caracteres 260-12260"
+      },
+      {
+        "id": "chunk-3",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Economía. · parte 2",
+        "location": "caracteres 12260-24260"
+      },
+      {
+        "id": "chunk-4",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Economía. · parte 3",
+        "location": "caracteres 24260-36260"
+      },
+      {
+        "id": "chunk-5",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Economía. · parte 4",
+        "location": "caracteres 36260-41179"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792091&fecha=30/06/2026",
+    "retrieved_at": "2026-08-13T19:43:39.048270+00:00"
+  },
+  "executive_summary": [
+    "La Secretaría de Economía publica una lista de titulares de programas IMMEX suspendidos por no presentar el reporte anual de operaciones de 2025. El aviso cita el deber de presentar el reporte electrónico de ventas totales y exportaciones del ejercicio fiscal inmediato anterior.",
+    "La suspensión se vincula a la omisión del reporte anual y afecta el beneficio de importar temporalmente mercancías bajo el programa hasta que se subsane. La fuente distingue regularización de cancelación definitiva y fija un último día hábil de agosto de 2026 para atender la omisión."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "paragraphs": [
+        "Titulares que figuran enfrentan interrupción del beneficio de importación temporal mientras regularizan el reporte. La distinción entre suspensión y cancelación es material para planeación de comercio exterior y seguimiento del expediente individual."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "Titulares IMMEX y áreas de comercio exterior deben cotejar RFC y razón social con el reporte anual de 2025 y el plazo comunicado."
+        ],
+        "sector": "Empresas con programa IMMEX"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792091&fecha=30/06/2026",
+    "categories": [
+      "Comercio exterior",
+      "Administración centralizada"
+    ],
+    "content_hash": "b99e944147adf034736b25804cd8dfe083952095f2a36a7a5951ff9dab2e1d7c",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/cc961f60b681b795d9fd6f72.json",
+    "detail_url": "notas/cc961f60b681b795d9fd6f72.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Aviso",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5792091",
+    "importance": 2,
+    "issuing_body": "Secretaría de Economía",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-06-30",
+    "official_title": "Aviso por el que se dan a conocer los nombres de los titulares y números de Programas de la Industria Manufacturera, Maquiladora y de Servicios de Exportación suspendidos por falta de presentación del reporte anual correspondiente al ejercicio fiscal 2025.",
+    "published_at": "2026-06-30",
+    "relevance_score": 2,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5792091",
+    "summary_teaser": "La Secretaría de Economía publica los titulares de programas IMMEX suspendidos por no presentar el reporte anual de operaciones de 2025. El aviso explica la regularización, fija como límite el último día hábil de agosto de 2026 y prevé cancelación desde septiembre si la omisión subsiste.",
+    "title": "Economía suspende programas IMMEX por reporte anual de 2025",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5792091&fecha=30/06/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Titulares IMMEX incluidos en la relación",
+      "deadline": "A más tardar el último día hábil de agosto de 2026; cancelación desde el 1 de septiembre de 2026 si no se subsana",
+      "evidence_refs": [
+        "chunk-2",
+        "chunk-5"
+      ],
+      "legal_basis": "Artículo 25 del Decreto IMMEX, según la publicación",
+      "paragraphs": [
+        "Verificar el registro individual y presentar el reporte electrónico de ventas totales y exportaciones de 2025 si subsiste la omisión. La fuente indica que la Secretaría deja sin efectos la suspensión dentro de dos días hábiles posteriores a subsanar."
+      ],
+      "trigger": "Si el titular aparece en la relación por falta del reporte anual de 2025"
+    }
+  ],
+  "schema_version": 8
+}

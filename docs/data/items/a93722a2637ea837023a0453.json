@@ -1,0 +1,178 @@
+{
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "item": {
+    "ai_generated": true,
+    "authority": "PODER EJECUTIVO SECRETARIA ANTICORRUPCION Y BUEN GOBIERNO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793725&fecha=16%2F07%2F2026",
+    "card_body": "## Qué se publicó\n\nEl Órgano Interno de Control en la Secretaría de la Defensa Nacional difundió la inhabilitación de Comercializadora Jass de Compresores, S.A. de C.V. y Juan Antonio Soria Yáñez para nuevas contrataciones dentro del alcance que publica.\n\n## Sustancia\n\nLa abstención comienza a partir del día siguiente de la publicación en el Diario Oficial, dura tres meses y puede continuar si la multa no se acredita como pagada. Los contratos adjudicados y los ya formalizados con la empresa o con la persona que la representó no quedan comprendidos.\n\n## Fuente\n\n[Fuente oficial](https://dof.gob.mx/nota_detalle.php?codigo=5793725&fecha=16%2F07%2F2026)",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Penal",
+      "Administración centralizada"
+    ],
+    "content_hash": "5d801dfb31159d4dd58202b68b572cb4b12ca23f240278469284708caae09cc1",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-1",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/a93722a2637ea837023a0453.json",
+    "detail_url": "notas/a93722a2637ea837023a0453.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "heading": "Sanción y alcance",
+        "paragraphs": [
+          "El Órgano Interno de Control en la Secretaría de la Defensa Nacional informa la sanción a Comercializadora Jass de Compresores, S.A. de C.V. y Juan Antonio Soria Yáñez: una multa de 191,843.19 pesos y una inhabilitación de tres meses para participar directamente en procedimientos o celebrar contratos regulados por la Ley de Adquisiciones, Arrendamientos y Servicios del Sector Público y su Reglamento.",
+          "La prohibición inicia a partir del día siguiente de la publicación en el Diario Oficial. Para Juan Antonio Soria Yáñez, la abstención comprende también su intervención como representante de empresas diversas a la sancionada."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "heading": "Condiciones de aplicación",
+        "paragraphs": [
+          "La inhabilitación continúa hasta acreditarse el pago de la multa si ésta permanece impaga al vencimiento. Los contratos adjudicados y los ya formalizados con la empresa o con la persona que la representó no quedan comprendidos.",
+          "Las entidades federativas, municipios y demarcaciones territoriales deben aplicar la circular cuando las adquisiciones, arrendamientos y servicios se financien total o parcialmente con fondos federales."
+        ]
+      }
+    ],
+    "detected_at": "2026-08-14T01:46:44.993982+00:00",
+    "document_type": "Circular",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "e406226fa142c7b874dfcdb08369ae375d6c255337e8185d4a303844c0dbac70",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "CIRCULAR por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a la Fiscalía General de la República, a las entidades federativas, municipios y demarcaciones territoriales de la Ciudad de México, que deberán abstenerse de aceptar propuestas o celebrar contratos con la empresa Comercializadora Jass de Compresores, S.A. de C.V. y la persona física que la representó el ciudadano Juan Antonio Soria Yáñez , incluso cuando este último pretenda representar a empresas diversas a la sancionada.",
+          "location": "caracteres 0-532"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Buen Gobierno.- Secretaría Anticorrupción y Buen Gobierno.- Órgano Interno de Control en la Secretaría de la Defensa Nacional.- Área de Responsabilidades.- Expediente: 021/PAS/2025.",
+          "location": "caracteres 532-6598"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793725&fecha=16%2F07%2F2026",
+      "retrieved_at": "2026-08-14T00:37:04.802818+00:00"
+    },
+    "executive_summary": [
+      "El Órgano Interno de Control en la Secretaría de la Defensa Nacional comunicó que Comercializadora Jass de Compresores, S.A. de C.V. y Juan Antonio Soria Yáñez recibió una multa de 191,843.19 pesos y una inhabilitación de tres meses para participar directamente en procedimientos o celebrar contratos regulados por la Ley de Adquisiciones, Arrendamientos y Servicios del Sector Público y su Reglamento. La circular deriva de una resolución administrativa identificada por la autoridad y delimita a los destinatarios públicos que deben abstenerse de contratar.",
+      "La abstención opera a partir del día siguiente de la publicación en el Diario Oficial. Para Juan Antonio Soria Yáñez, la abstención comprende también su intervención como representante de empresas diversas a la sancionada. La medida se refiere a propuestas y contratos futuros dentro del marco que describe la circular, por lo que la revisión debe hacerse frente al nombre de la empresa y, cuando procede, frente a la forma de representación expresamente señalada."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-08-14T01:46:44.993982+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5793725",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "La circular incorpora una restricción de elegibilidad para nuevas contrataciones públicas respecto de Comercializadora Jass de Compresores, S.A. de C.V. y Juan Antonio Soria Yáñez. Los contratos adjudicados y los ya formalizados con la empresa o con la persona que la representó no quedan comprendidos."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-1",
+            "chunk-2"
+          ],
+          "paragraphs": [
+            "Las áreas contratantes deben tratar la inhabilitación como un control de elegibilidad para los procedimientos y contratos que la circular comprende, sin extenderla a los contratos que el propio texto exceptúa."
+          ],
+          "sector": "Contratación pública"
+        }
+      ]
+    },
+    "importance": 2,
+    "issuing_body": "Presidencia de la República",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-09-01T18:46:30.041123+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793725&fecha=16/07/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5793725"
+    },
+    "official_published_at": "2026-07-16",
+    "official_title": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a la Fiscalía General de la República, a las entidades federativas, municipios y demarcaciones territoriales de la Ciudad de México, que deberán abstenerse de aceptar propuestas o celebrar contratos con la empresa Comercializadora Jass de Compresores, S.A. de C.V. y la persona física que la representó el ciudadano Juan Antonio Soria Yáñez, incluso cuando este último pretenda representar a empresas diversas a la sancionada.",
+    "published_at": "2026-07-16",
+    "published_day": 16,
+    "published_month": 7,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Entes públicos destinatarios y unidades contratantes",
+        "deadline": "tres meses; subsiste hasta acreditar el pago de la multa cuando corresponda",
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "legal_basis": "Ley de Adquisiciones, Arrendamientos y Servicios del Sector Público",
+        "paragraphs": [
+          "Cuando Comercializadora Jass de Compresores, S.A. de C.V. y Juan Antonio Soria Yáñez presente una propuesta, intervenga por interpósita persona o, en su caso, mediante la representación descrita por la circular, confronte la denominación y el procedimiento con la fuente antes de continuar la contratación."
+        ],
+        "trigger": "a partir del día siguiente de la publicación en el Diario Oficial"
+      }
+    ],
+    "relevance_score": 3,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5793725",
+    "subtopic_tags": [
+      "fiscalia",
+      "administracion publica federal"
+    ],
+    "summary": "El Órgano Interno de Control en la Secretaría de la Defensa Nacional comunicó que Comercializadora Jass de Compresores, S.A. de C.V. y Juan Antonio Soria Yáñez recibió una multa de 191,843.19 pesos y una inhabilitación de tres meses para participar directamente en procedimientos o celebrar contratos regulados por la Ley de Adquisiciones, Arrendamientos y Servicios del Sector Público y su Reglamento. La circular deriva de una resolución administrativa identificada por la autoridad y delimita a los destinatarios públicos que deben abstenerse de contratar.\n\nLa abstención opera a partir del día siguiente de la publicación en el Diario Oficial. Para Juan Antonio Soria Yáñez, la abstención comprende también su intervención como representante de empresas diversas a la sancionada. La medida se refiere a propuestas y contratos futuros dentro del marco que describe la circular, por lo que la revisión debe hacerse frente al nombre de la empresa y, cuando procede, frente a la forma de representación expresamente señalada.\n\nLa autoridad prevé que, si al terminar el plazo de inhabilitación no se cubre la multa, la restricción subsiste hasta que se acredite el pago ante la Secretaría Anticorrupción y Buen Gobierno para eliminar el registro correspondiente en Compras MX. Los contratos adjudicados y los ya formalizados con la empresa o con la persona que la representó no quedan comprendidos.\n\nPara las unidades compradoras y los entes que ejercen recursos federales, el dato operativo es verificar la identidad del participante y el alcance legal del procedimiento antes de admitir una propuesta o formalizar un contrato. Las entidades federativas, municipios y demarcaciones territoriales deben aplicar la circular cuando las adquisiciones, arrendamientos y servicios se financien total o parcialmente con fondos federales. La circular conserva separados el efecto sobre nuevas contrataciones, la comprobación posterior del pago y la continuidad de los contratos que la fuente excluye.",
+    "summary_teaser": "La circular ordena abstenerse de contratar con Comercializadora Jass de Compresores y con Juan Antonio Soria Yáñez, incluso cuando éste represente a otras empresas. La resolución impuso una multa de 191,843.19 pesos y tres meses de inhabilitación; los contratos previamente adjudicados o formalizados están exceptuados.",
+    "title": "Inhabilitación de Jass restringe a su representante",
+    "topic_tags": [
+      "Penal",
+      "Derecho administrativo",
+      "Circular"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5793725&fecha=16/07/2026"
+  },
+  "schema_version": 8
+}

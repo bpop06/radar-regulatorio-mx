@@ -1,0 +1,189 @@
+{
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "item": {
+    "ai_generated": true,
+    "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792784&fecha=07/07/2026",
+    "card_body": "## Qué se publicó\n\nUna reforma que incorpora el Anexo 35 de solicitudes para almacenes, casas de cambio y uniones de crédito.\n\n## Sustancia\n\nLos criterios requieren declaratoria de emergencia o desastre y afectación económica adversa; los registros se reservan a procesos de saneamiento financiero o reestructuración corporativa.\n\n## Fuente\n\n[Consultar fuente oficial](https://dof.gob.mx/nota_detalle.php?codigo=5792784&fecha=07/07/2026)",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "f458b4e64c0d779e687700dea0e1b71aa5d16e7016820366e55236fd043258b5",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "not_material",
+        "reason": "Es el encabezado de la resolución; las condiciones están en los fragmentos siguientes.",
+        "source_ref": "chunk-1",
+        "target_sections": []
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-3",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/41f1c1161cbe4d7f24c99a57.json",
+    "detail_url": "notas/41f1c1161cbe4d7f24c99a57.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-2",
+          "chunk-3"
+        ],
+        "heading": "Primera ruta: criterios por fenómeno declarado",
+        "paragraphs": [
+          "El formato de criterios o prórroga se vincula con declaratoria de emergencia o desastre natural, afectación a la economía e impacto adverso posible en solvencia, liquidez o estabilidad; pide zona, periodo e indicadores."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-2",
+          "chunk-3"
+        ],
+        "heading": "Segunda ruta: registros por proceso financiero",
+        "paragraphs": [
+          "Los registros especiales requieren que la entidad esté en saneamiento financiero o reestructuración corporativa y documente rubros, importes, causas, indicadores, remedios y aprobación competente."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "heading": "Regla aplicable a solicitantes",
+        "paragraphs": [
+          "El Anexo 35 se presenta con las firmas permitidas. La resolución ocurre en sesenta días hábiles; entretanto subsisten Anexos 1 y 5 para almacenes o casas de cambio y Anexo 4 para uniones de crédito."
+        ]
+      }
+    ],
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Resolución Que Modifica",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "09d6b1dcccad8a5130b82d8770187532e992197d99461c7e0113ae5913e1b9b0",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "RESOLUCIÓN que modifica las Disposiciones de carácter general aplicables a los almacenes generales de depósito, casas de cambio, uniones de crédito y sociedades financieras de objeto múltiple reguladas.",
+          "location": "caracteres 0-206"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Comisión Nacional Bancaria y de Valores. · parte 1",
+          "location": "caracteres 206-12206"
+        },
+        {
+          "id": "chunk-3",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Comisión Nacional Bancaria y de Valores. · parte 2",
+          "location": "caracteres 12206-20799"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792784&fecha=07/07/2026",
+      "retrieved_at": "2026-08-13T19:43:06.697237+00:00"
+    },
+    "executive_summary": [
+      "El Anexo 35 separa criterios contables especiales ante declaratoria de emergencia o desastre con afectación económica adversa de registros especiales para saneamiento financiero o reestructuración corporativa.",
+      "La Comisión resuelve en sesenta días hábiles y, mientras no notifique, se mantienen los criterios ordinarios aplicables a cada tipo de entidad."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5792784",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-2",
+          "chunk-3"
+        ],
+        "paragraphs": [
+          "La reforma organiza procedimientos condicionados y conserva contabilidades ordinarias durante la espera de una decisión, de modo que no autoriza un cambio automático por presentar el formato."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-2",
+            "chunk-3"
+          ],
+          "paragraphs": [
+            "Deben seleccionar el formato conforme a la causa comprobable de la solicitud y reconocer que la respuesta de la CNBV puede ser negativa por silencio."
+          ],
+          "sector": "Almacenes generales de depósito, casas de cambio y uniones de crédito"
+        }
+      ]
+    },
+    "importance": 1,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-09-01T18:46:30.041123+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792784&fecha=07/07/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5792784"
+    },
+    "official_published_at": "2026-07-07",
+    "official_title": "Resolución que modifica las Disposiciones de carácter general aplicables a los almacenes generales de depósito, casas de cambio, uniones de crédito y sociedades financieras de objeto múltiple reguladas.",
+    "published_at": "2026-07-07",
+    "published_day": 7,
+    "published_month": 7,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Entidades comprendidas en los artículos reformados",
+        "deadline": null,
+        "evidence_refs": [
+          "chunk-2",
+          "chunk-3"
+        ],
+        "legal_basis": "Artículos 9, 9 Bis, 141 y 141 Bis, y Anexo 35",
+        "paragraphs": [
+          "No presenten criterios especiales como petición genérica: comprueben la declaratoria de emergencia o desastre y afectación adversa, o bien integren el expediente de saneamiento o reestructuración para registros."
+        ],
+        "trigger": "Análisis previo de una solicitud ante la CNBV"
+      }
+    ],
+    "relevance_score": 1,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5792784",
+    "subtopic_tags": [],
+    "summary": "La Comisión Nacional Bancaria y de Valores modificó las disposiciones aplicables a almacenes generales de depósito, casas de cambio, uniones de crédito y sociedades financieras de objeto múltiple reguladas, e incorporó el Anexo 35 de formatos para remitir información. Los artículos reformados regulan la presentación y respuesta de solicitudes de autorización de criterios contables especiales y de registros contables especiales para los sujetos que identifica la norma. El cambio establece formatos y plazos, pero no elimina la necesidad de estar en el supuesto material que cada modalidad define.\n\nLa solicitud de autorización o prórroga de criterios contables especiales exige una declaratoria emitida por autoridades competentes de emergencia o desastre natural ante fenómenos naturales perturbadores que ocasionen afectaciones a la economía. Además, debe existir la posibilidad de un impacto adverso en solvencia o liquidez de las entidades y, en su caso, en la estabilidad del sistema financiero. El formato requiere describir criterios, periodo, área geográfica e impactos; para una prórroga, solicita información que demuestre persistencia de las afectaciones económicas. No basta que una entidad quiera modificar sus registros para usar esta ruta.\n\nLa solicitud de registros contables especiales, en cambio, se destina a entidades supervisadas que lleven procesos de saneamiento financiero o reestructuración corporativa para procurar estabilidad y correcto funcionamiento. Debe identificar rubros de estados financieros, importes, periodo de aplicación, causas del proceso, indicadores, medidas de remediación y evidencia de aprobación del consejo u órgano competente. La publicación asigna reglas de firma y criterios ordinarios distintos para almacenes o casas de cambio y para uniones de crédito, según los artículos y anexos que menciona.\n\nLa CNBV debe notificar su decisión dentro de sesenta días hábiles contados desde el día siguiente de recibir la solicitud. Hasta entonces, las entidades siguen aplicando sus criterios ordinarios: los Anexos 1 y 5 para almacenes o casas de cambio y el Anexo 4 para uniones de crédito. La falta de emisión o notificación dentro del plazo se entiende como respuesta negativa y la solicitud se desestima. Los transitorios preservan la tramitación de solicitudes previas y la vigencia de autorizaciones existentes hasta su conclusión.",
+    "summary_teaser": "La CNBV añadió el Anexo 35 para almacenes generales de depósito, casas de cambio y uniones de crédito, con rutas separadas para criterios contables especiales y registros especiales. Los criterios exigen declaratoria de emergencia o desastre y afectación económica adversa; los registros se limitan a saneamiento financiero o reestructuración corporativa.",
+    "title": "CNBV establece formatos condicionados para auxiliares financieros",
+    "topic_tags": [
+      "Resolución"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5792784&fecha=07/07/2026"
+  },
+  "schema_version": 8
+}

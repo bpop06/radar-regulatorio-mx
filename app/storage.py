@@ -3,9 +3,13 @@ from __future__ import annotations
 import json
 import os
 import sqlite3
+from collections.abc import Iterable
+from contextlib import nullcontext
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
+
+from app.locking import private_state_lock
 
 SCHEMA = """
 CREATE TABLE IF NOT EXISTS collection_runs (
@@ -67,9 +71,17 @@ CREATE TABLE IF NOT EXISTS cut_metrics (
 class StorageReport:
     database_path: str
     size_bytes: int
+    sidecar_bytes: int
+    state_max_bytes: int
     runs: int
     documents: int
+    cache_entries: int
+    cache_bytes: int
     last_generated_at: str | None
+
+
+class StorageCapacityError(RuntimeError):
+    """The private evidence store reached its fail-closed high-water mark."""
 
 
 class Storage:
@@ -77,7 +89,13 @@ class Storage:
     documentos deduplicados por id; el JSON público sigue siendo el contrato
     de publicación y se puede regenerar desde aquí con `export_payload`."""
 
-    def __init__(self, database_path: str | Path) -> None:
+    def __init__(
+        self,
+        database_path: str | Path,
+        *,
+        max_bytes: int | None = None,
+        lock_wait_seconds: float = 30.0,
+    ) -> None:
         self.path = Path(database_path).expanduser().resolve()
         parent = self.path.parent
         repository_root = Path(__file__).resolve().parents[1]
@@ -94,12 +112,37 @@ class Storage:
         # repositorio. Sólo endurecemos un directorio que acabamos de crear.
         if created_parent:
             parent.chmod(0o700)
-        self._connection = sqlite3.connect(self.path)
-        self._connection.executescript(SCHEMA)
-        os.chmod(self.path, 0o600)
+        configured_max = max_bytes if max_bytes is not None else int(
+            os.getenv("RADAR_STATE_MAX_BYTES", str(512 * 1024 * 1024))
+        )
+        if configured_max <= 0:
+            raise ValueError("RADAR_STATE_MAX_BYTES debe ser positivo")
+        self.max_bytes = configured_max
+        self._lock = (
+            nullcontext()
+            if os.getenv("RADAR_CUT_LOCK_HELD") == "1"
+            else private_state_lock(parent, wait_seconds=lock_wait_seconds)
+        )
+        self._lock.__enter__()
+        self._closed = False
+        try:
+            self._connection = sqlite3.connect(self.path, timeout=5.0)
+            self._connection.execute("PRAGMA busy_timeout = 5000")
+            self._connection.execute("PRAGMA foreign_keys = ON")
+            self._connection.executescript(SCHEMA)
+            os.chmod(self.path, 0o600)
+        except Exception:
+            self._lock.__exit__(None, None, None)
+            raise
 
     def close(self) -> None:
-        self._connection.close()
+        if self._closed:
+            return
+        self._closed = True
+        try:
+            self._connection.close()
+        finally:
+            self._lock.__exit__(None, None, None)
 
     def __enter__(self) -> Storage:
         return self
@@ -108,70 +151,76 @@ class Storage:
         self.close()
 
     def save_run(self, payload: dict[str, Any]) -> int:
+        self.ensure_capacity(_json_size(payload))
         cursor = self._connection.cursor()
-        cursor.execute(
-            "INSERT INTO collection_runs (generated_at, lookback_days, total_items)"
-            " VALUES (?, ?, ?)",
-            (
-                payload["generated_at"],
-                payload["lookback_days"],
-                payload["total_items"],
-            ),
-        )
-        run_id = int(cursor.lastrowid or 0)
-
-        for source in payload.get("sources", []):
+        try:
+            cursor.execute("BEGIN IMMEDIATE")
             cursor.execute(
-                "INSERT INTO source_status"
-                " (run_id, source, status, items_found, attempts, error)"
-                " VALUES (?, ?, ?, ?, ?, ?)",
+                "INSERT INTO collection_runs (generated_at, lookback_days, total_items)"
+                " VALUES (?, ?, ?)",
                 (
-                    run_id,
-                    source.get("source", ""),
-                    source.get("status", ""),
-                    source.get("items_found", 0),
-                    source.get("attempts", 1),
-                    source.get("error"),
+                    payload["generated_at"],
+                    payload["lookback_days"],
+                    payload["total_items"],
                 ),
             )
+            run_id = int(cursor.lastrowid or 0)
 
-        for item in payload.get("items", []):
-            item = dict(item)
-            previous = cursor.execute(
-                "SELECT payload FROM documents WHERE id = ?", (item["id"],)
-            ).fetchone()
-            if previous is not None:
-                previous_item = json.loads(previous[0])
-                item.setdefault("first_seen_at", previous_item.get("first_seen_at"))
-                same_identity = (
-                    item.get("canonical_url") or item.get("url")
-                ) == (previous_item.get("canonical_url") or previous_item.get("url"))
-                if same_identity:
-                    _preserve_private_analysis(item, previous_item)
-                    # El análisis se conserva para poder reutilizarlo por SHA,
-                    # pero un corte recién recolectado no queda publicable hasta
-                    # que la fuente oficial se revalide en esta ejecución.
-                    if previous_item.get("extraction_status") == "complete":
-                        item["source_revalidation_status"] = "pending"
-            item.setdefault("first_seen_at", payload["generated_at"])
-            item["last_seen_at"] = payload["generated_at"]
-            cursor.execute(
-                "INSERT INTO documents (id, published_at, first_seen_run,"
-                " last_seen_run, payload) VALUES (?, ?, ?, ?, ?)"
-                " ON CONFLICT(id) DO UPDATE SET"
-                " published_at = excluded.published_at,"
-                " last_seen_run = excluded.last_seen_run,"
-                " payload = excluded.payload",
-                (
-                    item["id"],
-                    item["published_at"],
-                    run_id,
-                    run_id,
-                    json.dumps(item, ensure_ascii=False),
-                ),
-            )
+            for source in payload.get("sources", []):
+                cursor.execute(
+                    "INSERT INTO source_status"
+                    " (run_id, source, status, items_found, attempts, error)"
+                    " VALUES (?, ?, ?, ?, ?, ?)",
+                    (
+                        run_id,
+                        source.get("source", ""),
+                        source.get("status", ""),
+                        source.get("items_found", 0),
+                        source.get("attempts", 1),
+                        source.get("error"),
+                    ),
+                )
 
-        self._connection.commit()
+            for item in payload.get("items", []):
+                item = dict(item)
+                previous = cursor.execute(
+                    "SELECT payload FROM documents WHERE id = ?", (item["id"],)
+                ).fetchone()
+                if previous is not None:
+                    previous_item = json.loads(previous[0])
+                    item.setdefault("first_seen_at", previous_item.get("first_seen_at"))
+                    same_identity = (
+                        item.get("canonical_url") or item.get("url")
+                    ) == (previous_item.get("canonical_url") or previous_item.get("url"))
+                    if same_identity:
+                        _preserve_private_analysis(item, previous_item)
+                        # El análisis se conserva para poder reutilizarlo por SHA,
+                        # pero un corte recién recolectado no queda publicable hasta
+                        # que la fuente oficial se revalide en esta ejecución.
+                        if previous_item.get("extraction_status") == "complete":
+                            item["source_revalidation_status"] = "pending"
+                item.setdefault("first_seen_at", payload["generated_at"])
+                item["last_seen_at"] = payload["generated_at"]
+                cursor.execute(
+                    "INSERT INTO documents (id, published_at, first_seen_run,"
+                    " last_seen_run, payload) VALUES (?, ?, ?, ?, ?)"
+                    " ON CONFLICT(id) DO UPDATE SET"
+                    " published_at = excluded.published_at,"
+                    " last_seen_run = excluded.last_seen_run,"
+                    " payload = excluded.payload",
+                    (
+                        item["id"],
+                        item["published_at"],
+                        run_id,
+                        run_id,
+                        json.dumps(item, ensure_ascii=False),
+                    ),
+                )
+
+            self._connection.commit()
+        except Exception:
+            self._connection.rollback()
+            raise
         return run_id
 
     def export_payload(self) -> dict[str, Any]:
@@ -223,19 +272,27 @@ class Storage:
         """Actualiza campos puntuales del payload de un documento existente.
         Devuelve False si el documento no está en la base."""
         cursor = self._connection.cursor()
-        row = cursor.execute(
-            "SELECT payload FROM documents WHERE id = ?", (document_id,)
-        ).fetchone()
-        if row is None:
-            return False
-        document = json.loads(row[0])
-        document.update(fields)
-        cursor.execute(
-            "UPDATE documents SET payload = ? WHERE id = ?",
-            (json.dumps(document, ensure_ascii=False), document_id),
-        )
-        self._connection.commit()
-        return True
+        try:
+            cursor.execute("BEGIN IMMEDIATE")
+            row = cursor.execute(
+                "SELECT payload FROM documents WHERE id = ?", (document_id,)
+            ).fetchone()
+            if row is None:
+                self._connection.rollback()
+                return False
+            document = json.loads(row[0])
+            document.update(fields)
+            serialized = json.dumps(document, ensure_ascii=False)
+            self.ensure_capacity(len(serialized.encode("utf-8")))
+            cursor.execute(
+                "UPDATE documents SET payload = ? WHERE id = ?",
+                (serialized, document_id),
+            )
+            self._connection.commit()
+            return True
+        except Exception:
+            self._connection.rollback()
+            raise
 
     def update_document_fields_atomic(
         self,
@@ -247,7 +304,7 @@ class Storage:
         """Aplica un lote completo o revierte todo ante un id inexistente."""
         cursor = self._connection.cursor()
         try:
-            cursor.execute("BEGIN")
+            cursor.execute("BEGIN IMMEDIATE")
             for document_id, fields in updates.items():
                 row = cursor.execute(
                     "SELECT payload FROM documents WHERE id = ?", (document_id,)
@@ -278,9 +335,11 @@ class Storage:
                             f"la extracción cambió durante la aplicación: {document_id}"
                         )
                 document.update(fields)
+                serialized = json.dumps(document, ensure_ascii=False)
+                self.ensure_capacity(len(serialized.encode("utf-8")))
                 cursor.execute(
                     "UPDATE documents SET payload = ? WHERE id = ?",
-                    (json.dumps(document, ensure_ascii=False), document_id),
+                    (serialized, document_id),
                 )
             self._connection.commit()
         except Exception:
@@ -341,61 +400,122 @@ class Storage:
     def put_extraction(
         self, result: dict[str, Any], extractor_version: str, evidence_hash: str = ""
     ) -> None:
-        source_url = str(result.get("source_url") or "")
-        source_hash = str(result.get("content_hash") or "")
-        if not source_url:
-            raise ValueError("la extracción no contiene source_url")
-        cached = dict(result)
-        cached["cache_hit"] = False
-        self._connection.execute(
-            "INSERT INTO extraction_cache_v2"
-            " (source_url, extractor_version, evidence_hash, source_hash, status, payload)"
-            " VALUES (?, ?, ?, ?, ?, ?)"
-            " ON CONFLICT(source_url, extractor_version, evidence_hash) DO UPDATE SET"
-            " source_hash=excluded.source_hash, status=excluded.status,"
-            " payload=excluded.payload, updated_at=CURRENT_TIMESTAMP",
-            (
-                source_url,
-                extractor_version,
-                evidence_hash,
-                source_hash,
-                str(result.get("status") or "failed"),
-                json.dumps(cached, ensure_ascii=False),
-            ),
+        self.put_extractions([(result, extractor_version, evidence_hash)])
+
+    def put_extractions(
+        self, entries: Iterable[tuple[dict[str, Any], str, str]]
+    ) -> None:
+        """Persiste una tanda de caché en una única transacción exclusiva."""
+        prepared: list[tuple[str, str, str, str, str, str]] = []
+        for result, extractor_version, evidence_hash in entries:
+            source_url = str(result.get("source_url") or "")
+            source_hash = str(result.get("content_hash") or "")
+            if not source_url:
+                raise ValueError("la extracción no contiene source_url")
+            cached = dict(result)
+            cached["cache_hit"] = False
+            prepared.append(
+                (
+                    source_url,
+                    extractor_version,
+                    evidence_hash,
+                    source_hash,
+                    str(result.get("status") or "failed"),
+                    json.dumps(cached, ensure_ascii=False),
+                )
+            )
+        if not prepared:
+            return
+        self.ensure_capacity(sum(len(entry[-1].encode("utf-8")) for entry in prepared))
+        cursor = self._connection.cursor()
+        try:
+            cursor.execute("BEGIN IMMEDIATE")
+            cursor.executemany(
+                "INSERT INTO extraction_cache_v2"
+                " (source_url, extractor_version, evidence_hash, source_hash, status, payload)"
+                " VALUES (?, ?, ?, ?, ?, ?)"
+                " ON CONFLICT(source_url, extractor_version, evidence_hash) DO UPDATE SET"
+                " source_hash=excluded.source_hash, status=excluded.status,"
+                " payload=excluded.payload, updated_at=CURRENT_TIMESTAMP",
+                prepared,
+            )
+            self._connection.commit()
+        except Exception:
+            self._connection.rollback()
+            raise
+
+    def ensure_capacity(self, additional_bytes: int = 0) -> None:
+        """Falla antes de ampliar el estado privado sobre su máximo explícito."""
+        if additional_bytes < 0:
+            raise ValueError("additional_bytes no puede ser negativo")
+        current = self._state_size_bytes()
+        overhead = max(4_096, min(65_536, additional_bytes // 10))
+        if current + additional_bytes + overhead > self.max_bytes:
+            raise StorageCapacityError(
+                "el estado privado alcanzaría "
+                f"{current + additional_bytes + overhead} bytes; máximo "
+                f"configurado: {self.max_bytes}"
+            )
+
+    def _state_size_bytes(self) -> int:
+        return sum(
+            candidate.stat().st_size
+            for candidate in _state_files(self.path)
+            if candidate.exists() and candidate.is_file()
         )
-        self._connection.commit()
+
+    def _cache_stats(self, cursor: sqlite3.Cursor) -> tuple[int, int]:
+        entries, payload_bytes = cursor.execute(
+            "SELECT COUNT(*), COALESCE(SUM(LENGTH(payload)), 0)"
+            " FROM extraction_cache_v2"
+        ).fetchone()
+        return int(entries), int(payload_bytes)
+
     def report(self) -> StorageReport:
         cursor = self._connection.cursor()
         runs = cursor.execute("SELECT COUNT(*) FROM collection_runs").fetchone()[0]
         documents = cursor.execute("SELECT COUNT(*) FROM documents").fetchone()[0]
+        cache_entries, cache_bytes = self._cache_stats(cursor)
         last = cursor.execute(
             "SELECT generated_at FROM collection_runs ORDER BY id DESC LIMIT 1"
         ).fetchone()
         size = self.path.stat().st_size if self.path.exists() else 0
+        total = self._state_size_bytes()
         return StorageReport(
             database_path=str(self.path),
             size_bytes=size,
+            sidecar_bytes=max(0, total - size),
+            state_max_bytes=self.max_bytes,
             runs=runs,
             documents=documents,
+            cache_entries=cache_entries,
+            cache_bytes=cache_bytes,
             last_generated_at=last[0] if last else None,
         )
 
     def save_cut_metrics(self, metrics: dict[str, Any]) -> None:
-        self._connection.execute(
-            "INSERT INTO cut_metrics"
-            " (generated_at, duration_seconds, p50_seconds, p95_seconds,"
-            " cache_hits, ocr_documents, failures, tokens, retained_items,"
-            " total_items, payload) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
-            (
-                metrics["generated_at"], metrics["duration_seconds"],
-                metrics["p50_seconds"], metrics["p95_seconds"],
-                metrics["cache_hits"], metrics["ocr_documents"],
-                metrics["failures"], metrics.get("tokens"),
-                metrics["retained_items"], metrics["total_items"],
-                json.dumps(metrics, ensure_ascii=False),
-            ),
-        )
-        self._connection.commit()
+        serialized = json.dumps(metrics, ensure_ascii=False)
+        self.ensure_capacity(len(serialized.encode("utf-8")))
+        cursor = self._connection.cursor()
+        try:
+            cursor.execute("BEGIN IMMEDIATE")
+            cursor.execute(
+                "INSERT INTO cut_metrics"
+                " (generated_at, duration_seconds, p50_seconds, p95_seconds,"
+                " cache_hits, ocr_documents, failures, tokens, retained_items,"
+                " total_items, payload) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+                (
+                    metrics["generated_at"], metrics["duration_seconds"],
+                    metrics["p50_seconds"], metrics["p95_seconds"],
+                    metrics["cache_hits"], metrics["ocr_documents"],
+                    metrics["failures"], metrics.get("tokens"),
+                    metrics["retained_items"], metrics["total_items"], serialized,
+                ),
+            )
+            self._connection.commit()
+        except Exception:
+            self._connection.rollback()
+            raise
 
     def latest_cut_metrics(self) -> dict[str, Any] | None:
         row = self._connection.execute(
@@ -407,18 +527,39 @@ class Storage:
         """Acumula uso reportado por agentes en las métricas del corte vigente."""
         if not isinstance(tokens, int) or isinstance(tokens, bool) or tokens < 0:
             raise ValueError("tokens debe ser un entero no negativo")
-        row = self._connection.execute(
-            "SELECT id, payload FROM cut_metrics ORDER BY id DESC LIMIT 1"
-        ).fetchone()
-        if row is None:
-            return
-        payload = json.loads(row[1])
-        payload["tokens"] = int(payload.get("tokens") or 0) + tokens
-        self._connection.execute(
-            "UPDATE cut_metrics SET tokens = ?, payload = ? WHERE id = ?",
-            (payload["tokens"], json.dumps(payload, ensure_ascii=False), row[0]),
-        )
-        self._connection.commit()
+        cursor = self._connection.cursor()
+        try:
+            cursor.execute("BEGIN IMMEDIATE")
+            row = cursor.execute(
+                "SELECT id, payload FROM cut_metrics ORDER BY id DESC LIMIT 1"
+            ).fetchone()
+            if row is None:
+                self._connection.rollback()
+                return
+            payload = json.loads(row[1])
+            payload["tokens"] = int(payload.get("tokens") or 0) + tokens
+            serialized = json.dumps(payload, ensure_ascii=False)
+            self.ensure_capacity(len(serialized.encode("utf-8")))
+            cursor.execute(
+                "UPDATE cut_metrics SET tokens = ?, payload = ? WHERE id = ?",
+                (payload["tokens"], serialized, row[0]),
+            )
+            self._connection.commit()
+        except Exception:
+            self._connection.rollback()
+            raise
+
+def _state_files(database_path: Path) -> tuple[Path, ...]:
+    return (
+        database_path,
+        database_path.with_name(f"{database_path.name}-wal"),
+        database_path.with_name(f"{database_path.name}-shm"),
+        database_path.with_name(f"{database_path.name}-journal"),
+    )
+
+
+def _json_size(value: object) -> int:
+    return len(json.dumps(value, ensure_ascii=False).encode("utf-8"))
 
 
 _PRESERVED_EXTRACTION_FIELDS = (

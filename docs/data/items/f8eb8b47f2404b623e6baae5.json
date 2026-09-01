@@ -1,0 +1,216 @@
+{
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "item": {
+    "ai_generated": true,
+    "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792397&fecha=02/07/2026",
+    "card_body": "## Qué se publicó\n\nLa CNBV precisó cuándo el efectivo aportado por terceros puede reconocerse como garantía financiera.\n\n## Sustancia\n\nLa cobertura se limita a la parte garantizada. El efectivo en otra institución se pondera por su riesgo salvo separación en custodia, y los instrumentos deben poder ejecutarse en un máximo de siete días después del incumplimiento.\n\n## Fuente\n\n[Fuente oficial](https://dof.gob.mx/nota_detalle.php?codigo=5792397&fecha=02/07/2026)",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "5f2f24f63f3f3cb0b5cae6575913341cd4b6fac874354437c61ff466a32cfc83",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-1",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-3",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-4",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/f8eb8b47f2404b623e6baae5.json",
+    "detail_url": "notas/f8eb8b47f2404b623e6baae5.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2",
+          "chunk-3",
+          "chunk-4"
+        ],
+        "heading": "Efectivo de terceros y parte cubierta",
+        "paragraphs": [
+          "El efectivo o instrumentos asimilables aportados por un tercero a nombre de la contraparte pueden ser garantía financiera con instrucción o mandato irrevocable e incondicional.",
+          "La aplicación se limita a la parte cubierta de la Operación Sujeta a Riesgo de Crédito."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2",
+          "chunk-3",
+          "chunk-4"
+        ],
+        "heading": "Riesgo, custodia y ejecución",
+        "paragraphs": [
+          "Si los instrumentos están en otra institución, se ponderan por el riesgo de esa institución, salvo custodia o mecanismo similar que separe los instrumentos de sus activos incluso en resolución o quiebra.",
+          "La documentación debe permitir liquidación o ejecución sin restricciones en un máximo de siete días tras el incumplimiento."
+        ]
+      }
+    ],
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Resolución Que Modifica",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "f50b77e5562adf4fa7bab2fd691deed53957bdfd78639b76f12308105113e5bc",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "RESOLUCIÓN que modifica las Disposiciones de carácter general aplicables a las instituciones de crédito (características y condiciones que deben cumplir los depósitos bancarios de dinero, así como los valores y medios de pago fácilmente convertibles en efectivo).",
+          "location": "caracteres 0-267"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Comisión Nacional Bancaria y de Valores. · parte 1",
+          "location": "caracteres 267-12267"
+        },
+        {
+          "id": "chunk-3",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Comisión Nacional Bancaria y de Valores. · parte 2",
+          "location": "caracteres 12267-24267"
+        },
+        {
+          "id": "chunk-4",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Comisión Nacional Bancaria y de Valores. · parte 3",
+          "location": "caracteres 24267-35961"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792397&fecha=02/07/2026",
+      "retrieved_at": "2026-08-13T19:43:27.704027+00:00"
+    },
+    "executive_summary": [
+      "La Comisión Nacional Bancaria y de Valores modificó reglas de garantías reales admisibles para instituciones de crédito e incorporó condiciones para efectivo, sus equivalentes y asimilables aportados por un tercero a nombre de la contraparte. Para que puedan reconocerse como garantía financiera deben existir instrucciones o mandatos irrevocables e incondicionales que permitan aplicar los recursos a la institución acreedora.",
+      "La aplicación está limitada a la parte de la Operación Sujeta a Riesgo de Crédito cubierta por los depósitos, certificados, pagarés o valores correspondientes. El texto exige que los recursos se encuentren en la propia institución acreedora o en otra institución, y que las instrucciones permitan aplicarlos hasta el monto de la parte efectivamente cubierta; no autoriza extender la cobertura a una porción distinta de la operación."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5792397",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2",
+          "chunk-3",
+          "chunk-4"
+        ],
+        "paragraphs": [
+          "Las instituciones de crédito deben rediseñar documentación, valuación de riesgo y procesos de ejecución de garantías de efectivo aportadas por terceros."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-1",
+            "chunk-2",
+            "chunk-3",
+            "chunk-4"
+          ],
+          "paragraphs": [
+            "Áreas de crédito, riesgos y jurídicas deben comprobar instrucciones irrevocables, límites de cobertura, custodia y posibilidad de ejecución antes de reconocer una garantía."
+          ],
+          "sector": "Banca y gestión de riesgo de crédito"
+        }
+      ]
+    },
+    "importance": 1,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-09-01T18:46:30.041123+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792397&fecha=02/07/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5792397"
+    },
+    "official_published_at": "2026-07-02",
+    "official_title": "Resolución que modifica las Disposiciones de carácter general aplicables a las instituciones de crédito (características y condiciones que deben cumplir los depósitos bancarios de dinero, así como los valores y medios de pago fácilmente convertibles en efectivo).",
+    "published_at": "2026-07-02",
+    "published_day": 2,
+    "published_month": 7,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Instituciones de crédito y áreas de crédito, riesgos y jurídico",
+        "deadline": "Seis meses para políticas y manuales; un año para garantías preexistentes según transitorios",
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2",
+          "chunk-3",
+          "chunk-4"
+        ],
+        "legal_basis": "Disposiciones de carácter general aplicables a las instituciones de crédito",
+        "paragraphs": [
+          "Al aceptar efectivo de un tercero, documente la instrucción irrevocable, identifique la parte cubierta, aplique la ponderación de riesgo cuando corresponda y confirme una ejecución posible en siete días."
+        ],
+        "trigger": "Constitución o revisión de garantía financiera de efectivo"
+      }
+    ],
+    "relevance_score": 1,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5792397",
+    "subtopic_tags": [],
+    "summary": "La Comisión Nacional Bancaria y de Valores modificó reglas de garantías reales admisibles para instituciones de crédito e incorporó condiciones para efectivo, sus equivalentes y asimilables aportados por un tercero a nombre de la contraparte. Para que puedan reconocerse como garantía financiera deben existir instrucciones o mandatos irrevocables e incondicionales que permitan aplicar los recursos a la institución acreedora.\n\nLa aplicación está limitada a la parte de la Operación Sujeta a Riesgo de Crédito cubierta por los depósitos, certificados, pagarés o valores correspondientes. El texto exige que los recursos se encuentren en la propia institución acreedora o en otra institución, y que las instrucciones permitan aplicarlos hasta el monto de la parte efectivamente cubierta; no autoriza extender la cobertura a una porción distinta de la operación.\n\nCuando los instrumentos estén en una institución distinta de la acreedora, su parte cubierta debe ponderarse conforme al riesgo de crédito de esa institución. Esa ponderación no aplica si la otra institución cuenta con un contrato de custodia o similar que garantice la separación de los instrumentos respecto de sus activos, incluso en resolución o quiebra.\n\nLos documentos de garantía deben prever que, tras el incumplimiento del deudor, no existan restricciones legales u operativas para liquidar depósitos o ejecutar certificados, pagarés o valores en un plazo no mayor a siete días. La resolución entra en vigor al día siguiente; las instituciones tienen seis meses para ajustar políticas y manuales y un año para adecuar garantías elegibles preexistentes en los supuestos transitorios.\n\nEl efectivo o instrumentos asimilables aportados por un tercero a nombre de la contraparte pueden ser garantía financiera con instrucción o mandato irrevocable e incondicional. La aplicación se limita a la parte cubierta de la Operación Sujeta a Riesgo de Crédito. Si los instrumentos están en otra institución, se ponderan por el riesgo de esa institución, salvo custodia o mecanismo similar que separe los instrumentos de sus activos incluso en resolución o quiebra. La documentación debe permitir liquidación o ejecución sin restricciones en un máximo de siete días tras el incumplimiento.",
+    "summary_teaser": "La CNBV permitió reconocer efectivo aportado por un tercero a nombre de la contraparte como garantía financiera bajo instrucciones irrevocables e incondicionales. La cobertura sólo alcanza la parte garantizada; si el efectivo está en otra institución, se pondera por su riesgo salvo custodia separada, y la ejecución debe poder ocurrir en siete días.",
+    "title": "CNBV permite garantías de efectivo de terceros",
+    "topic_tags": [
+      "Resolución"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5792397&fecha=02/07/2026"
+  },
+  "schema_version": 8
+}

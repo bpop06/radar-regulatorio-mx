@@ -1,0 +1,207 @@
+{
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "item": {
+    "ai_generated": true,
+    "authority": "PODER EJECUTIVO SECRETARIA DE ECONOMIA",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5794528&fecha=23%2F07%2F2026",
+    "card_body": "## Qué se publicó\n\nEl Programa Institucional de Exportadora de Sal para 2026-2030 con metas de ventas, estrategias y un indicador de competitividad.\n\n## Sustancia\n\nEl Programa proyecta ventas de sal industrial de 5 millones de toneladas métricas en 2026 a 7.5 millones en 2030. Sus acciones se realizarán con cargo a los recursos aprobados en el Presupuesto de Egresos respectivo e incluyen estrategias de comercialización, producción, transporte terrestre y capacidad marítima.\n\n## Fuente\n\n[Abrir publicación oficial](https://dof.gob.mx/nota_detalle.php?codigo=5794528&fecha=23%2F07%2F2026)",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "1673a8183db984a2e089bd3ddd2f2fbc79a40c49141cd77f58d71fe3f4c2e7b9",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-1",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-3",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/3b682567d504fa6813a5326c.json",
+    "detail_url": "notas/3b682567d504fa6813a5326c.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-1"
+        ],
+        "heading": "Objetivo y recursos",
+        "paragraphs": [
+          "El Programa establece como objetivo incrementar la competitividad de ESSA para satisfacer la demanda global de sal industrial. Todas sus acciones, objetivos, estrategias y líneas de acción se realizarán con cargo a los recursos aprobados en el Presupuesto de Egresos de la Federación del ejercicio respectivo."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "heading": "Proyección y estrategias",
+        "paragraphs": [
+          "La proyección de ventas anuales es de 5, 6, 6.5, 7 y 7.5 millones de toneladas métricas entre 2026 y 2030. El documento desarrolla estrategias de comercialización, procesos productivos, transporte terrestre, capacidad marítima e infraestructura portuaria."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-2",
+          "chunk-3"
+        ],
+        "heading": "Indicador y metas",
+        "paragraphs": [
+          "El indicador mide la participación de la producción de sal industrial de México en el mundo. Registra una línea base de 3.21 en 2024 y metas de 2.59 para 2026, 2.92 para 2027, 3.07 para 2028, 3.22 para 2029 y 3.37 para 2030."
+        ]
+      }
+    ],
+    "detected_at": "2026-08-14T01:46:44.993982+00:00",
+    "document_type": "Programa Institucional",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "f94e18408ea6dbdb5f9be11ec087153ccaa8ee6d0bd0f1fb7f96627baf60f2b8",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "PROGRAMA Institucional de Exportadora de Sal S.A. de C.V. 2026-2030. · parte 1",
+          "location": "caracteres 0-12000"
+        },
+        {
+          "id": "chunk-2",
+          "label": "PROGRAMA Institucional de Exportadora de Sal S.A. de C.V. 2026-2030. · parte 2",
+          "location": "caracteres 12000-24000"
+        },
+        {
+          "id": "chunk-3",
+          "label": "PROGRAMA Institucional de Exportadora de Sal S.A. de C.V. 2026-2030. · parte 3",
+          "location": "caracteres 24000-33244"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5794528&fecha=23%2F07%2F2026",
+      "retrieved_at": "2026-08-14T00:36:44.936663+00:00"
+    },
+    "executive_summary": [
+      "El Programa Institucional de Exportadora de Sal 2026-2030 busca incrementar la competitividad de ESSA para satisfacer la demanda global de sal industrial.",
+      "Las acciones, estrategias, coordinación y seguimiento se realizarán con cargo a los recursos aprobados a los ejecutores de gasto participantes en el Presupuesto de Egresos de la Federación del ejercicio respectivo.",
+      "La proyección de ventas va de 5 millones de toneladas métricas en 2026 a 7.5 millones en 2030; el indicador de participación de producción mexicana de sal industrial tiene línea base de 3.21 en 2024 y meta de 3.37 para 2030."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-08-14T01:46:44.993982+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5794528",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2",
+          "chunk-3"
+        ],
+        "paragraphs": [
+          "El Programa ordena las metas y líneas de acción institucionales de ESSA para competitividad, comercialización, producción y logística de sal industrial durante 2026-2030."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-1",
+            "chunk-2"
+          ],
+          "paragraphs": [
+            "Las estrategias se orientan a diversificación comercial, fortalecimiento de la capacidad de suministro y transporte de sal industrial hacia mercados internacionales."
+          ],
+          "sector": "Industria salinera y comercio exterior"
+        },
+        {
+          "evidence_refs": [
+            "chunk-1",
+            "chunk-3"
+          ],
+          "paragraphs": [
+            "El origen de recursos y el indicador anual integran la planeación, seguimiento y reporte de las acciones institucionales de ESSA."
+          ],
+          "sector": "Planeación y presupuesto de empresas estatales"
+        }
+      ]
+    },
+    "importance": 1,
+    "issuing_body": "Secretaría de Economía",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-09-01T18:46:30.041123+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5794528&fecha=23/07/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5794528"
+    },
+    "official_published_at": "2026-07-23",
+    "official_title": "Programa Institucional de Exportadora de Sal S.A. de C.V. 2026- 2030.",
+    "published_at": "2026-07-23",
+    "published_day": 23,
+    "published_month": 7,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Personas que analicen la ejecución del Programa de ESSA",
+        "deadline": null,
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2",
+          "chunk-3"
+        ],
+        "legal_basis": "Programa Institucional de Exportadora de Sal, S.A. de C.V. 2026-2030, apartado de origen de recursos e indicador 1.1",
+        "paragraphs": [
+          "Si requieren evaluar una acción, inversión, contratación o resultado concreto relacionado con el Programa, pueden usar la proyección y el indicador institucional junto con el presupuesto aprobado y los documentos de ejecución que correspondan."
+        ],
+        "trigger": "Análisis de una acción, inversión, contratación o resultado relacionado con el Programa Institucional de ESSA"
+      }
+    ],
+    "relevance_score": 1,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5794528",
+    "subtopic_tags": [],
+    "summary": "El Programa Institucional de Exportadora de Sal, S.A. de C.V. para 2026-2030 establece como objetivo incrementar la competitividad de ESSA para satisfacer la demanda global de sal industrial. El documento se emite con fundamento en la Constitución, la Ley de Planeación y la Ley Federal de las Entidades Paraestatales, y lo vincula con el Plan Nacional de Desarrollo 2025-2030 y el Programa Sectorial de Economía 2025-2030.\n\nEl apartado sobre el origen de los recursos dispone que las acciones del Programa, incluidos objetivos, estrategias, líneas de acción, coordinación, seguimiento, reporte y rendición de cuentas, se realizarán con cargo a los recursos aprobados a los ejecutores de gasto participantes en el Decreto de Presupuesto de Egresos de la Federación para el ejercicio respectivo. El Programa atribuye a ESSA la coordinación de su integración, publicación, ejecución, seguimiento y rendición de cuentas.\n\nLa proyección de ventas anuales de sal industrial para 2026-2030 es de 5 millones de toneladas métricas en 2026, 6 en 2027, 6.5 en 2028, 7 en 2029 y 7.5 en 2030. Las estrategias se concentran en comercialización, mejora continua de procesos productivos y proyectos de inversión, capacidad de transporte terrestre y capacidad marítima. Entre sus líneas de acción están mejorar la competitividad por precios, mantener márgenes mediante análisis de costos, diversificar usos del producto, fortalecer procesos productivos y mejorar infraestructura y logística portuaria.\n\nEl Programa fija el indicador de participación de la producción de sal industrial de México en el mundo. La línea base es 3.21 para 2024 y la meta 2030 es 3.37. Las metas anuales son 2.59 en 2026, 2.92 en 2027, 3.07 en 2028, 3.22 en 2029 y 3.37 en 2030. El indicador mide la proporción de la producción mexicana de sal industrial respecto de la producción mundial y su avance se reporta anualmente por ESSA. El documento fue firmado el 26 de junio de 2026 por el Director General de Exportadora de Sal.",
+    "summary_teaser": "El Programa Institucional 2026-2030 de Exportadora de Sal busca incrementar la competitividad para atender la demanda global de sal industrial. Proyecta ventas de 5 a 7.5 millones de toneladas métricas, incorpora estrategias comerciales, productivas y logísticas, y sujeta las acciones a los recursos aprobados en el Presupuesto de Egresos correspondiente.",
+    "title": "Exportadora de Sal establece metas de ventas hasta 2030",
+    "topic_tags": [],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5794528&fecha=23/07/2026"
+  },
+  "schema_version": 8
+}

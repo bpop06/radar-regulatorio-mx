@@ -1,0 +1,126 @@
+{
+  "coverage": [
+    {
+      "disposition": "not_material",
+      "reason": "El primer locator identifica el acuerdo de destino; ubicación, fines y condiciones están en el locator sustantivo siguiente.",
+      "source_ref": "chunk-1",
+      "target_sections": []
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    }
+  ],
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Ubicación, antecedentes y destino",
+      "paragraphs": [
+        "El acuerdo registra antecedentes de adquisición y una confirmación topográfica. Recoge referencias de INBAL sobre bienes artísticos y de INAH sobre ausencia de declaratoria o zona de monumentos históricos, además del uso de suelo señalado. La SICT ya tenía entrega provisional desde el 1 de abril de 2022."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Condiciones de uso, obras y devolución",
+      "paragraphs": [
+        "La SICT debe usar el inmueble para el destino autorizado, conservarlo y asegurarlo. Si cambia el uso sin autorización o deja de necesitarlo, debe ponerlo a disposición de INDAABIN con mejoras y sin pago de indemnización dentro de cuatro meses. Obras, reconstrucciones o modificaciones requieren licencias y autorizaciones, incluidas las aplicables ante INBAL."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "1234c342a23d93d9530f50579fff79d96784e066bf9a3124b6be5d41ddc2e581",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "ACUERDO por el que se destina a la Secretaría de Infraestructura, Comunicaciones y Transportes, el inmueble federal denominado Centro SCOP, con Registro Federal Inmobiliario 9-17175-1 y superficie de 58,143.24 metros cuadrados, que proviene de un inmueble de mayor extensión, ubicado en Avenida Xola número 1561, Colonia Narvarte Oriente, Código Postal 03020, Alcaldía Benito Juárez, Ciudad de México.",
+        "location": "caracteres 0-405"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Instituto de Administración y Avalúos de Bienes Nacionales.- DST-07/2026.",
+        "location": "caracteres 405-11068"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792088&fecha=30/06/2026",
+    "retrieved_at": "2026-08-13T19:43:37.107204+00:00"
+  },
+  "executive_summary": [
+    "INDAABIN destina a la Secretaría de Infraestructura, Comunicaciones y Transportes el inmueble federal Centro SCOP, con registro federal inmobiliario 9-17175-1. El acuerdo describe una superficie de 58,143.24 metros cuadrados en Xola 1561, colonia Narvarte Oriente, alcaldía Benito Juárez.",
+    "El destino comprende oficinas administrativas, el archivo histórico de la SICT y el Parque del Muralismo Mexicano. La asignación otorga un derecho de uso para esos fines, no transmite propiedad ni constituye un derecho real sobre el inmueble."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "paragraphs": [
+        "La SICT concentra custodia y uso administrativo, documental y cultural del Centro SCOP bajo condiciones específicas. Cualquier intervención física debe atender autorizaciones competentes, especialmente por los bienes artísticos señalados en antecedentes."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "Áreas patrimoniales y de infraestructura de SICT deben coordinar el uso, aseguramiento y permisos de intervención previstos."
+        ],
+        "sector": "Administración de inmuebles federales y patrimonio cultural"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792088&fecha=30/06/2026",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "45be03be1f931ee3273ffda9f3181dd99137285de595084670878c805a7ac924",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/e31b2cf06d77b7329113ea01.json",
+    "detail_url": "notas/e31b2cf06d77b7329113ea01.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Acuerdo",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5792088",
+    "importance": 1,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-06-30",
+    "official_title": "Acuerdo por el que se destina a la Secretaría de Infraestructura, Comunicaciones y Transportes, el inmueble federal denominado Centro SCOP, con Registro Federal Inmobiliario 9-17175-1 y superficie de 58,143.24 metros cuadrados, que proviene de un inmueble de mayor extensión, ubicado en Avenida Xola número 1561, Colonia Narvarte Oriente, Código Postal 03020, Alcaldía Benito Juárez, Ciudad de México.",
+    "published_at": "2026-06-30",
+    "relevance_score": 1,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5792088",
+    "summary_teaser": "INDAABIN destina el Centro SCOP a la SICT para oficinas administrativas, archivo histórico y el Parque del Muralismo Mexicano. El acuerdo asigna el uso del inmueble bajo condiciones de conservación, aseguramiento, autorizaciones para obras y devolución si cambia el destino o deja de ser necesario.",
+    "title": "INDAABIN establece destino del Centro SCOP para SICT y muralismo",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5792088&fecha=30/06/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Secretaría de Infraestructura, Comunicaciones y Transportes",
+      "deadline": "Cuatro meses para poner el inmueble a disposición de INDAABIN en los supuestos de devolución",
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "legal_basis": null,
+      "paragraphs": [
+        "Mantener el uso dentro de los tres destinos autorizados y obtener licencias antes de construir, reconstruir o modificar. Si deja de requerirse el inmueble o cambia destino sin autorización, activar la devolución prevista."
+      ],
+      "trigger": "Si se proyecta una obra, se modifica el uso o cesa la necesidad institucional"
+    }
+  ],
+  "schema_version": 8
+}

@@ -1,6 +1,7 @@
 import {
   displayTitle,
   editorialLabel,
+  coverageSummary,
   isGeneratedCutOverdue,
   isPublicEditorialItem,
   loadEdition,
@@ -95,27 +96,24 @@ function formatGeneratedAt(value) {
   }).format(instant);
 }
 
-function coverageRows(data) {
-  const coverage = data?.coverage || {};
-  if (Array.isArray(coverage.sources)) return coverage.sources;
-  const failed = Array.isArray(coverage.failed) ? coverage.failed : [];
-  const degraded = Array.isArray(coverage.degraded) ? coverage.degraded : [];
-  return [
-    ...degraded.map((source) => typeof source === "string" ? { source, status: "degraded" } : source),
-    ...failed.map((source) => typeof source === "string" ? { source, status: "error" } : source),
-  ];
-}
-
 function renderCoverage(data) {
-  const coverage = data?.coverage || {};
-  const rows = coverageRows(data);
-  const problematic = rows.filter((row) => !["ok", "success"].includes(row.status));
-  const declaredOk = Number(coverage.ok);
-  const ok = Number.isFinite(declaredOk)
-    ? declaredOk
-    : rows.filter((row) => ["ok", "success"].includes(row.status)).length;
-  const total = Number(coverage.total) || Math.max(18, ok + problematic.length);
-  const degraded = ["partial", "degraded"].includes(coverage.state) || problematic.length > 0;
+  const coverage = coverageSummary(data?.coverage);
+  if (!coverage) {
+    elements.coverageIndicator.classList.add("is-partial");
+    elements.coverageIndicator.dataset.status = "unknown";
+    elements.coverageLabel.textContent = "Cobertura no verificable";
+    elements.coverageCopy.textContent = "No fue posible verificar la cobertura de fuentes de este corte.";
+    setTime(elements.coverageUpdated, data?.generated_at, { type: "datetime", short: true });
+    elements.coverageDetail.replaceChildren();
+    const status = document.createElement("p");
+    status.className = "coverage-warning";
+    status.textContent = "No hay datos de cobertura verificables para este corte.";
+    elements.coverageDetail.append(status);
+    return;
+  }
+
+  const degraded = coverage.state === "degraded";
+  const { ok, total } = coverage;
 
   elements.coverageIndicator.classList.toggle("is-partial", degraded);
   elements.coverageIndicator.dataset.status = degraded ? "degraded" : "complete";
@@ -133,11 +131,9 @@ function renderCoverage(data) {
     title.className = "coverage-warning";
     title.textContent = "Fuentes con incidencia";
     const list = document.createElement("ul");
-    for (const row of problematic) {
+    for (const source of coverage.failed) {
       const item = document.createElement("li");
-      const name = row.source || row.name || "Fuente oficial";
-      const reason = row.error || row.message || row.reason || "respuesta no verificable";
-      item.textContent = `${name}: ${reason}`;
+      item.textContent = `${source}: respuesta no verificable`;
       list.append(item);
     }
     elements.coverageDetail.append(title, list);

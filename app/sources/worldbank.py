@@ -8,6 +8,7 @@ from urllib.parse import urlsplit, urlunsplit
 from app.models import Candidate
 from app.sources.base import Collector, SourceContractError
 from app.text import clean_text
+from app.url_policy import OfficialUrlError, validate_official_url
 
 WORLD_BANK_HTTPS_HOSTS = {
     "documents1.worldbank.org",
@@ -53,8 +54,14 @@ class WorldBankCollector(Collector):
                 continue
 
             title = _cdata_text(entry.get("title"))
-            url = canonical_worldbank_url(str(entry.get("url") or ""))
-            if not title or not url.lower().startswith(("http://", "https://")):
+            try:
+                url = validate_official_url(
+                    canonical_worldbank_url(str(entry.get("url") or "")),
+                    allowed_hosts=WORLD_BANK_HTTPS_HOSTS,
+                )
+            except OfficialUrlError:
+                continue
+            if not title:
                 continue
 
             published_at = _parse_wb_date(str(entry.get("lnchdt") or ""))

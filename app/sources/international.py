@@ -5,7 +5,7 @@ import re
 from dataclasses import dataclass, field
 from datetime import date
 from email.utils import parsedate_to_datetime
-from urllib.parse import urljoin, urlsplit
+from urllib.parse import urlsplit
 from xml.etree import ElementTree
 
 from bs4 import BeautifulSoup
@@ -18,6 +18,7 @@ from app.sources.base import (
     require_xml_channel,
 )
 from app.text import clean_text
+from app.url_policy import OfficialUrlError, resolve_official_link
 
 # Igual que el sumario del DOF (app/sources/dof.py): se aíslan bloques <item>
 # completos con una expresión regular y cada uno se parsea por separado, de
@@ -126,6 +127,7 @@ class RssCollector(Collector):
     url: str
     default_authority: str = ""
     default_document_type: str = "Comunicado"
+    allowed_hosts: tuple[str, ...] = ()
     # Patrón opcional de títulos a descartar (nodos que no son publicaciones,
     # p. ej. recursos multimedia cuyo título es el nombre del archivo).
     skip_title_re: re.Pattern[str] | None = None
@@ -169,8 +171,17 @@ class RssCollector(Collector):
             title = clean_text(item.findtext("title", ""))
             # Tras quitar prefijos, un <atom:link .../> del ítem se vuelve un
             # <link> sin texto: se toma el primer <link> con contenido real.
-            url = clean_text(_first_nonempty_text(item, "link"))
-            if not title or not url.lower().startswith(("http://", "https://")):
+            raw_url = clean_text(_first_nonempty_text(item, "link"))
+            try:
+                url = resolve_official_link(
+                    cls.url,
+                    raw_url,
+                    allowed_hosts=cls.allowed_hosts or None,
+                )
+            except OfficialUrlError:
+                skipped += 1
+                continue
+            if not title:
                 skipped += 1
                 continue
             if cls.skip_title_re is not None and cls.skip_title_re.search(title):
@@ -240,6 +251,9 @@ class UstrCollector(RssCollector):
     # Certificado en vivo: el feed general de Drupal expone contenido USTR
     # estructurado y pasa los contratos de transporte, tipo y estructura.
     url = "https://ustr.gov/rss.xml"
+    # El feed oficial también publica entradas antiguas de Tradeology en el
+    # subdominio institucional blog.trade.gov; no se permiten otros destinos.
+    allowed_hosts = ("ustr.gov", "blog.trade.gov")
     default_authority = "Oficina del Representante Comercial de Estados Unidos (USTR)"
     default_document_type = "Comunicado"
 
@@ -303,7 +317,10 @@ class CijCollector(Collector):
             published_at = _parse_html_date(raw_date)
             if not number or not title or published_at is None or published_at < since:
                 continue
-            url = urljoin(cls.url, str(number_anchor.get("href")))
+            try:
+                url = resolve_official_link(cls.url, str(number_anchor.get("href")))
+            except OfficialUrlError:
+                continue
             source_id = re.sub(r"^Press release No\.\s*", "", number, flags=re.IGNORECASE)
             description = f"{number}. {title}"
             case = extract_international_case(cls.source, title, description, url)
@@ -368,7 +385,10 @@ class TradeGovCollector(Collector):
             anchor = item.find("a", href=True)
             if anchor is None:
                 continue
-            url = urljoin(cls.url, str(anchor.get("href")))
+            try:
+                url = resolve_official_link(cls.url, str(anchor.get("href")))
+            except OfficialUrlError:
+                continue
             if "/press-release/" not in url and "/feature-article/" not in url:
                 continue
             strings = list(item.stripped_strings)

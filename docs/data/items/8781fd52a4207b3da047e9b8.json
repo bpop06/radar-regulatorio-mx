@@ -1,0 +1,168 @@
+{
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "item": {
+    "ai_generated": true,
+    "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5794448&fecha=22%2F07%2F2026",
+    "card_body": "## Qué se publicó\n\nUna modificación del anexo de información de mercado para valuar reservas de fianzas en vigor.\n\n## Sustancia\n\nLa tabla fija seis índices de reclamaciones pagadas y cuatro de gastos de administración para instituciones sin información propia suficiente; entran en vigor al día siguiente.\n\n## Fuente\n\n[Consultar fuente oficial](https://dof.gob.mx/nota_detalle.php?codigo=5794448&fecha=22%2F07%2F2026)",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "593776b8f1e3f439abcc64d41aae30066ee765f2d78e066901fd640ba3abae6a",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "not_material",
+        "reason": "No contiene contenido adicional distinto del encabezado de la Circular.",
+        "source_ref": "chunk-1",
+        "target_sections": []
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/8781fd52a4207b3da047e9b8.json",
+    "detail_url": "notas/8781fd52a4207b3da047e9b8.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "heading": "Supuesto de empleo del Anexo 5.15.3",
+        "paragraphs": [
+          "El método publicado está dirigido a instituciones que, mientras generan información propia, no cuenten con datos oportunos, homogéneos, confiables y suficientes para la valuación de la reserva de fianzas en vigor."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "heading": "Índices de reclamaciones pagadas",
+        "paragraphs": [
+          "La tabla fija 85.64% para fidelidad a primer riesgo; 1.36% para otras de fidelidad; 0.65% para judiciales de conductores; 0.82% para otras judiciales; 0.23% para administrativas; y 0.83% para crédito."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "heading": "Índices anuales de gastos de administración",
+        "paragraphs": [
+          "Los valores son 1.19% para fidelidad, 0.33% para judiciales, 0.09% para administrativas y 0.16% para crédito."
+        ]
+      }
+    ],
+    "detected_at": "2026-08-14T01:46:44.993982+00:00",
+    "document_type": "Circular Modificatoria",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "e5e1f92e97ae83ab73405516cb49c135c387211490522e12ff465022ba3aba67",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "CIRCULAR Modificatoria 4/26 de la Única de Seguros y Fianzas.",
+          "location": "caracteres 0-65"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Comisión Nacional de Seguros y Fianzas.",
+          "location": "caracteres 65-3565"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5794448&fecha=22%2F07%2F2026",
+      "retrieved_at": "2026-08-14T00:36:48.939116+00:00"
+    },
+    "executive_summary": [
+      "La CNSF actualiza parámetros del Anexo 5.15.3 para instituciones que no tengan información suficiente para valuar la reserva de fianzas en vigor.",
+      "Los índices de reclamaciones pagadas van de 0.23% para administrativas a 85.64% para fidelidad a primer riesgo; los cuatro gastos anuales van de 0.09% a 1.19%."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-08-14T01:46:44.993982+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5794448",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "La actualización proporciona parámetros de mercado para el supuesto de insuficiencia de información institucional y no sustituye la necesidad de verificar el ramo o tipo de fianza aplicable."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-2"
+          ],
+          "paragraphs": [
+            "Deben relacionar la categoría de reserva con el índice exacto del anexo y confirmar si se actualiza el supuesto de falta de información suficiente."
+          ],
+          "sector": "Instituciones de fianzas, áreas actuariales y contables"
+        }
+      ]
+    },
+    "importance": 1,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-09-01T18:46:30.041123+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5794448&fecha=22/07/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5794448"
+    },
+    "official_published_at": "2026-07-22",
+    "official_title": "Circular Modificatoria 4/26 de la Única de Seguros y Fianzas.",
+    "published_at": "2026-07-22",
+    "published_day": 22,
+    "published_month": 7,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Instituciones de fianzas que valoren reservas en vigor",
+        "deadline": null,
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "legal_basis": "Anexo 5.15.3 de la Circular Única de Seguros y Fianzas",
+        "paragraphs": [
+          "Antes de emplear la tabla, documenten el supuesto de información insuficiente e identifiquen el ramo o tipo de fianza para aplicar el índice oficial correspondiente."
+        ],
+        "trigger": "Valuación de la reserva de fianzas en vigor con información institucional insuficiente"
+      }
+    ],
+    "relevance_score": 1,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5794448",
+    "subtopic_tags": [],
+    "summary": "La Comisión Nacional de Seguros y Fianzas modificó el Anexo 5.15.3 de la Circular Única de Seguros y Fianzas, dedicado a información del mercado afianzador para valuar la reserva de fianzas en vigor. El anexo aplica al supuesto en que una institución no cuente con información oportuna, homogénea, confiable y suficiente para calcular la constitución, incremento y valuación de esa reserva. Mientras genera información propia, debe emplear el método de la Disposición 5.15.3 con los índices de reclamaciones pagadas y de gastos de administración publicados por la Comisión.\n\nLa tabla de índices de reclamaciones pagadas contiene seis valores exactos: fidelidad a primer riesgo, 85.64%; otras de fidelidad, 1.36%; judiciales que amparen a conductores de vehículos automotores, 0.65%; otras judiciales, 0.82%; administrativas, 0.23%; y de crédito, 0.83%. Estos porcentajes no son una estimación editorial ni un parámetro genérico: son los valores del anexo que la norma dirige a utilizar en el supuesto de insuficiencia de información de la institución.\n\nEl segundo bloque fija los índices anuales de gastos de administración: fidelidad, 1.19%; judiciales, 0.33%; administrativas, 0.09%; y de crédito, 0.16%. La publicación explica que los índices de reclamaciones se revisan durante el primer trimestre de cada año y se actualizan cuando se observa un cambio significativo. La Circular Modificatoria sustituye el anexo para que las instituciones puedan atender las reglas de valuación, sin publicar un cálculo individual de reserva ni un cambio de obligación distinto del supuesto que describe la disposición.\n\nLa modificación entra en vigor al día siguiente de su publicación en el DOF. La utilización de los parámetros depende de que se actualice el supuesto de información insuficiente; no se presenta como una opción libre para sustituir datos propios disponibles. Por ello, las áreas actuariales y contables deben distinguir los índices por ramo y tipo de fianza, y conservar la relación entre la categoría que valúan y el valor que la tabla oficial asigna.",
+    "summary_teaser": "La Comisión Nacional de Seguros y Fianzas modificó el Anexo 5.15.3 para la valuación de reservas de fianzas en vigor cuando una institución no cuente con información suficiente propia. La tabla publica seis índices de reclamaciones pagadas y cuatro índices anuales de gastos de administración, con entrada en vigor al día siguiente.",
+    "title": "CNSF actualiza índices de reservas para el mercado afianzador",
+    "topic_tags": [
+      "Circular"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5794448&fecha=22/07/2026"
+  },
+  "schema_version": 8
+}

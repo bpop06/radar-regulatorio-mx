@@ -1,0 +1,139 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "heading": "Suspensión jurisdiccional",
+      "paragraphs": [
+        "La Presidencia de la Sala Regional en Yucatán del Tribunal Federal de Justicia Administrativa acordó suspender labores el martes 2 de junio de 2026 por las lluvias extraordinarias y sus afectaciones en la ciudad y el estado. El acuerdo invoca el procedimiento de suspensión de labores en salas regionales por casos urgentes, fortuitos o de fuerza mayor y expresa que la medida busca salvaguardar a personal y personas usuarias.",
+        "El punto primero dispone que no corran los términos y plazos procesales previstos en la normativa del procedimiento contencioso administrativo federal durante ese día en esa Sala Regional. El documento no decreta una inhabilidad general para todas las salas del Tribunal ni para otras autoridades con sede en Yucatán."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Actuaciones posteriores",
+      "paragraphs": [
+        "El acuerdo ordena comunicar la medida a la Presidencia del TFJA por conducto de la Secretaría General de Acuerdos y colocar una copia en la ventanilla de la Oficialía de Partes de la Sala Regional en Yucatán. Para el cómputo de un expediente, importa comprobar que la actuación corresponda a esa sala y que el plazo estuviera sujeto a las reglas procesales alcanzadas por el acuerdo."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "677479069e33473775533021362b09722f40357ef9f942337b847d97fae651cc",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "ACUERDO SRYUC/02/2026 por el que se da a conocer la suspensión de actividades jurisdiccionales en la Sala Regional en Yucatán del Tribunal Federal de Justicia Administrativa por causa de fuerza mayor.",
+        "location": "caracteres 0-204"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Tribunal Federal de Justicia Administrativa.- Sala Regional en Yucatán.- Presidencia SRYUC/02/2026.",
+        "location": "caracteres 204-2765"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5790214&fecha=10/06/2026",
+    "retrieved_at": "2026-08-13T19:44:18.406404+00:00"
+  },
+  "executive_summary": [
+    "La Presidencia de la Sala Regional en Yucatán del Tribunal Federal de Justicia Administrativa acordó suspender labores el martes 2 de junio de 2026 por las lluvias extraordinarias y sus afectaciones en la ciudad y el estado. El acuerdo invoca el procedimiento de suspensión de labores en salas regionales por casos urgentes, fortuitos o de fuerza mayor y expresa que la medida busca salvaguardar a personal y personas usuarias.",
+    "El punto primero dispone que no corran los términos y plazos procesales previstos en la normativa del procedimiento contencioso administrativo federal durante ese día en esa Sala Regional. El documento no decreta una inhabilidad general para todas las salas del Tribunal ni para otras autoridades con sede en Yucatán."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "paragraphs": [
+        "Las partes de asuntos ante la Sala Regional en Yucatán obtienen un día de no cómputo procesal por la suspensión comunicada, limitado al 2 de junio de 2026."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "Las partes de asuntos ante la Sala Regional en Yucatán obtienen un día de no cómputo procesal por la suspensión comunicada, limitado al 2 de junio de 2026."
+        ],
+        "sector": "Partes y representantes en juicios ante la Sala Regional en Yucatán del TFJA"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5790214&fecha=10/06/2026",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "52bb5420700f9511a6ed390b1c5fa8f4ce519b52ce977d88195b33f38c8852f9",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/c8ce86cb5989cd0039035123.json",
+    "detail_url": "notas/c8ce86cb5989cd0039035123.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Acuerdo",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5790214",
+    "importance": 3,
+    "issuing_body": "Tribunal Federal de Justicia Administrativa",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-06-10",
+    "official_title": "Acuerdo SRYUC/02/2026 por el que se da a conocer la suspensión de actividades jurisdiccionales en la Sala Regional en Yucatán del Tribunal Federal de Justicia Administrativa por causa de fuerza mayor.",
+    "published_at": "2026-06-10",
+    "relevance_score": 4,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5790214",
+    "summary_teaser": "La Sala Regional en Yucatán del TFJA suspendió actividades jurisdiccionales el 2 de junio de 2026 por lluvias extraordinarias. Durante esa fecha no corrieron los términos y plazos del procedimiento contencioso administrativo federal ante esa Sala; el acuerdo instruye comunicación interna y publicación física en oficialía de partes.",
+    "title": "TFJA Yucatán suspende plazos por lluvias extraordinarias",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5790214&fecha=10/06/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Partes y representantes en juicios ante la Sala Regional en Yucatán del TFJA",
+      "deadline": "Día sin cómputo: 2 de junio de 2026",
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "legal_basis": "Acuerdo SRYUC/02/2026; Ley Federal de Procedimiento Contencioso Administrativo",
+      "paragraphs": [
+        "Verifique el órgano competente y el cómputo concreto del expediente; si el plazo fue afectado, documente la suspensión antes de presentar o calendarizar una promoción posterior."
+      ],
+      "trigger": "En asuntos de la Sala Regional en Yucatán durante el 2 de junio de 2026"
+    }
+  ],
+  "schema_version": 8
+}

@@ -1,0 +1,141 @@
+{
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "item": {
+    "ai_generated": true,
+    "authority": "CONVOCATORIAS PARA CONCURSOS DE ADQUISICIONES, ARRENDAMIENTOS, OBRAS Y SERVICIOS DEL SECTOR PUBLICO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5790789&fecha=16/06/2026",
+    "card_body": "## Qué se publicó\n\nEl IMPI abrió una licitación nacional electrónica para contratar un servicio plurianual de procesamiento de cómputo central.\n\n## Sustancia\n\nEl Instituto Mexicano de la Propiedad Industrial publica un resumen de convocatoria a la licitación pública electrónica nacional LA-10-K8V-010K8V001-N-60-2026. El objeto es un servicio plurianual de procesamiento de cómputo central para 2026-2028. El texto aclara que las bases, requisitos de participación, modelo de contrato y el volumen a adquirir se encuentran en la convocatoria disponible en Compras MX; el resumen no sustituye esos documentos.\n\nLa publicación indica que la convocatoria se publicó en Compras MX el 12 de junio de 2026. La junta de aclaraciones está programada para el 24 de junio de 2026 a las 10:00 horas; la presentación y apertura de proposiciones, para el 3 de julio de 2026 a las 10:00 horas; y el fallo, para el 10 de julio de 2026 a las 11:00 horas. Cada interesado debe corroborar cualquier ajuste oficial en la plataforma.\n\n## Fuente\n\nFuente oficial: resumen de convocatoria del Instituto Mexicano de la Propiedad Industrial para la licitación LA-10-K8V-010K8V001-N-60-2026. chunk-1 conserva el objeto del servicio, el acceso a la convocatoria completa en Compras MX y el calendario de aclaraciones, propuestas y fallo.",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración descentralizada"
+    ],
+    "content_hash": "243c157fa29186d6e156355f2adbfac09a07caf67984726920ea00307ebc7b0c",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-1",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/b0cc3929d8a32d954383a68f.json",
+    "detail_url": "notas/b0cc3929d8a32d954383a68f.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-1"
+        ],
+        "heading": "Objeto y acceso a la convocatoria",
+        "paragraphs": [
+          "El Instituto Mexicano de la Propiedad Industrial publica un resumen de convocatoria a la licitación pública electrónica nacional LA-10-K8V-010K8V001-N-60-2026. El objeto es un servicio plurianual de procesamiento de cómputo central para 2026-2028. El texto aclara que las bases, requisitos de participación, modelo de contrato y el volumen a adquirir se encuentran en la convocatoria disponible en Compras MX; el resumen no sustituye esos documentos.",
+          "La publicación indica que la convocatoria se publicó en Compras MX el 12 de junio de 2026. La junta de aclaraciones está programada para el 24 de junio de 2026 a las 10:00 horas; la presentación y apertura de proposiciones, para el 3 de julio de 2026 a las 10:00 horas; y el fallo, para el 10 de julio de 2026 a las 11:00 horas. Cada interesado debe corroborar cualquier ajuste oficial en la plataforma."
+        ]
+      }
+    ],
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Instituto Mexicano",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "106cb5378c26f06547391c1d242ec56b573b244e82ef8a89ccbdcc6ecfda1358",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "Documento",
+          "location": "caracteres 0-1355"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5790789&fecha=16/06/2026",
+      "retrieved_at": "2026-08-13T19:43:58.167860+00:00"
+    },
+    "executive_summary": [
+      "El Instituto Mexicano de la Propiedad Industrial publica un resumen de convocatoria a la licitación pública electrónica nacional LA-10-K8V-010K8V001-N-60-2026. El objeto es un servicio plurianual de procesamiento de cómputo central para 2026-2028. El texto aclara que las bases, requisitos de participación, modelo de contrato y el volumen a adquirir se encuentran en la convocatoria disponible en Compras MX; el resumen no sustituye esos documentos.",
+      "La publicación indica que la convocatoria se publicó en Compras MX el 12 de junio de 2026. La junta de aclaraciones está programada para el 24 de junio de 2026 a las 10:00 horas; la presentación y apertura de proposiciones, para el 3 de julio de 2026 a las 10:00 horas; y el fallo, para el 10 de julio de 2026 a las 11:00 horas. Cada interesado debe corroborar cualquier ajuste oficial en la plataforma."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Organismo descentralizado",
+    "id": "dof:5790789",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-1"
+        ],
+        "paragraphs": [
+          "El resumen abre una ruta de contratación para procesamiento de cómputo central del IMPI, pero los requisitos y cantidades sólo pueden verificarse en la convocatoria alojada en Compras MX."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-1"
+          ],
+          "paragraphs": [
+            "El resumen abre una ruta de contratación para procesamiento de cómputo central del IMPI, pero los requisitos y cantidades sólo pueden verificarse en la convocatoria alojada en Compras MX."
+          ],
+          "sector": "Proveedores de servicios de cómputo y contratación pública"
+        }
+      ]
+    },
+    "importance": 2,
+    "issuing_body": "Instituto Mexicano de la Propiedad Industrial",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-09-01T18:46:30.041123+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5790789&fecha=16/06/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5790789"
+    },
+    "official_published_at": "2026-06-16",
+    "official_title": "INSTITUTO MEXICANO DE LA PROPIEDAD INDUSTRIAL - REF:577212",
+    "published_at": "2026-06-16",
+    "published_day": 16,
+    "published_month": 6,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Proveedores de servicios de cómputo y contratación pública",
+        "deadline": "Presentación y apertura de proposiciones: 3 de julio de 2026, 10:00 horas",
+        "evidence_refs": [
+          "chunk-1"
+        ],
+        "legal_basis": "Resumen de convocatoria del IMPI; artículo 41 de la Ley de Adquisiciones, Arrendamientos y Servicios del Sector Público",
+        "paragraphs": [
+          "Quien pretenda participar debe consultar la convocatoria íntegra en Compras MX, atender la junta de aclaraciones y presentar su propuesta conforme a las bases y a cualquier modificación publicada oficialmente."
+        ],
+        "trigger": "Al evaluar la participación en la licitación LA-10-K8V-010K8V001-N-60-2026"
+      }
+    ],
+    "relevance_score": 3,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5790789",
+    "subtopic_tags": [
+      "propiedad industrial"
+    ],
+    "summary": "El Instituto Mexicano de la Propiedad Industrial publica un resumen de convocatoria a la licitación pública electrónica nacional LA-10-K8V-010K8V001-N-60-2026. El objeto es un servicio plurianual de procesamiento de cómputo central para 2026-2028. El texto aclara que las bases, requisitos de participación, modelo de contrato y el volumen a adquirir se encuentran en la convocatoria disponible en Compras MX; el resumen no sustituye esos documentos.\n\nLa publicación indica que la convocatoria se publicó en Compras MX el 12 de junio de 2026. La junta de aclaraciones está programada para el 24 de junio de 2026 a las 10:00 horas; la presentación y apertura de proposiciones, para el 3 de julio de 2026 a las 10:00 horas; y el fallo, para el 10 de julio de 2026 a las 11:00 horas. Cada interesado debe corroborar cualquier ajuste oficial en la plataforma.\n\nEl resumen no informa un presupuesto, volumen de cómputo, especificaciones técnicas, requisitos de solvencia ni criterios de evaluación. Esos datos materialmente relevantes se reservan para las bases y el modelo de contrato específico. El proveedor debe tratar el anuncio como una convocatoria de acceso y calendario, no como una descripción suficiente del objeto contractual. La fecha de fallo indicada tampoco prueba que se haya adjudicado el contrato ni identifica a una persona ganadora; cualquier resultado debe verificarse mediante el acto oficial posterior en Compras MX.\n\nLa licitación se describe como nacional y electrónica, de modo que la participación, documentación y comunicaciones deben seguir el medio y reglas que establezca la plataforma. El IMPI identifica el servicio como plurianual 2026-2028, pero no divulga en el resumen una adjudicación ni la identidad de posibles licitantes. Los calendarios operativos están fechados, por lo que cualquier persona interesada debe además buscar las actas posteriores, juntas de aclaraciones, diferimientos o fallo que eventualmente se publiquen. Esta advertencia preserva la diferencia entre convocatoria y resultado.",
+    "summary_teaser": "El IMPI publicó el resumen de la licitación nacional electrónica LA-10-K8V-010K8V001-N-60-2026 para un servicio plurianual de procesamiento de cómputo central 2026-2028. La convocatoria completa y el detalle de partidas se consultan en Compras MX; el resumen fija las fechas de aclaraciones, propuestas y fallo.",
+    "title": "IMPI abre licitación de cómputo central plurianual",
+    "topic_tags": [
+      "Propiedad intelectual"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5790789&fecha=16/06/2026"
+  },
+  "schema_version": 8
+}

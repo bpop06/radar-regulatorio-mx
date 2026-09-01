@@ -6,6 +6,12 @@ from datetime import date
 from app.models import Candidate
 from app.sources.base import Collector, require_mapping_list
 from app.text import clean_text, parse_date
+from app.url_policy import OfficialUrlError, validate_official_url
+
+SENADO_OFFICIAL_HOSTS = {
+    "transparenciaparlamentaria.senado.gob.mx",
+    "www.senado.gob.mx",
+}
 
 
 class SenadoCollector(Collector):
@@ -38,7 +44,13 @@ class SenadoCollector(Collector):
                 continue
             title = clean_text(str(entry.get("titulo_docuemnto", "")))
             theme = clean_text(str(entry.get("tema_documento", "")))
-            url = str(entry.get("link_documento", ""))
+            try:
+                url = validate_official_url(
+                    str(entry.get("link_documento", "")),
+                    allowed_hosts=SENADO_OFFICIAL_HOSTS,
+                )
+            except OfficialUrlError:
+                continue
             stable = "|".join((url, title, published_at.isoformat()))
             candidates.append(
                 Candidate(

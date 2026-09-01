@@ -1,0 +1,190 @@
+{
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "item": {
+    "ai_generated": true,
+    "authority": "ORGANISMOS DESCONCENTRADOS O DESCENTRALIZADOS INSTITUTO MEXICANO DEL SEGURO SOCIAL",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792414&fecha=02/07/2026",
+    "card_body": "## Qué se publicó\n\nUn aviso de suplencia para las ausencias de la titularidad del OOAD Estatal Guanajuato del IMSS.\n\n## Sustancia\n\nVeronica Flores Frias, titular de la Jefatura de Servicios Jurídicos, puede firmar y despachar documentación y suscribir resoluciones del órgano cuando supla las ausencias de Eusebio Rosales Partida.\n\n## Fuente\n\n[Consulta la fuente oficial](https://dof.gob.mx/nota_detalle.php?codigo=5792414&fecha=02/07/2026)",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "b1291a9c2d5d2fc6c20a0a89a63c873e8c0da265c7d1c97fd7e986e2e3541321",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-1",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.sectors"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/17ca5beeb349d65ce09ef3d2.json",
+    "detail_url": "notas/17ca5beeb349d65ce09ef3d2.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "heading": "Persona designada y supuesto de suplencia",
+        "paragraphs": [
+          "La licenciada Veronica Flores Frias, titular de la Jefatura de Servicios Jurídicos, fue designada para suplir las ausencias del doctor Eusebio Rosales Partida, titular del OOAD Estatal Guanajuato."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "heading": "Alcance de firma y despacho",
+        "paragraphs": [
+          "Cuando se actualice la suplencia, la persona designada puede firmar y despachar la documentación que corresponde al órgano, incluida la suscripción de las resoluciones que deba emitir."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "heading": "Marco citado en el aviso",
+        "paragraphs": [
+          "El aviso se emite para los efectos del artículo 158 del Reglamento Interior del IMSS y cita disposiciones de la Ley del Seguro Social y del propio reglamento."
+        ]
+      }
+    ],
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Aviso",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "0ec4f2ef2e443440b7616e63aa150340f8b680bf66fd9c7435817d10f63fd0c6",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "AVISO mediante el cual se designa a la Licenciada Veronica Flores Frias, Titular de la Jefatura de Servicios Jurídicos para que supla las ausencias del Doctor Eusebio Rosales Partida, Titular del Órgano de Operación Administrativa Desconcentrada Estatal Guanajuato del Instituto Mexicano del Seguro Social, autorizándole a firmar y despachar la documentación incluyendo la suscripción de las resoluciones que debe emitir este Órgano.",
+          "location": "caracteres 0-437"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al margen un logotipo, que dice: Instituto Mexicano del Seguro Social.- Órgano de Operación Administrativa Desconcentrada Estatal Guanajuato.",
+          "location": "caracteres 437-2352"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792414&fecha=02/07/2026",
+      "retrieved_at": "2026-08-13T19:43:31.308556+00:00"
+    },
+    "executive_summary": [
+      "El IMSS designó a Veronica Flores Frias, titular de la Jefatura de Servicios Jurídicos, para suplir las ausencias de Eusebio Rosales Partida en el OOAD Estatal Guanajuato.",
+      "Durante esas ausencias puede firmar y despachar la documentación que corresponde al órgano, incluida la suscripción de las resoluciones que éste deba emitir."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Organismo descentralizado",
+    "id": "dof:5792414",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "La publicación identifica a la persona autorizada para la firma, el despacho y la suscripción de resoluciones del OOAD Estatal Guanajuato durante las ausencias señaladas."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-1",
+            "chunk-2"
+          ],
+          "paragraphs": [
+            "El aviso permite identificar que la firma de Veronica Flores Frias se comunica como suplencia de ausencias de la titularidad del OOAD Estatal Guanajuato."
+          ],
+          "sector": "Personas usuarias y destinatarias de documentos del IMSS en Guanajuato"
+        },
+        {
+          "evidence_refs": [
+            "chunk-2"
+          ],
+          "paragraphs": [
+            "La designación reconoce a la titular de la Jefatura de Servicios Jurídicos para la documentación y las resoluciones del órgano durante el supuesto de suplencia."
+          ],
+          "sector": "Áreas administrativas y jurídicas del OOAD Estatal Guanajuato"
+        }
+      ]
+    },
+    "importance": 3,
+    "issuing_body": "Instituto Mexicano del Seguro Social",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-09-01T18:46:30.041123+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792414&fecha=02/07/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5792414"
+    },
+    "official_published_at": "2026-07-02",
+    "official_title": "Aviso mediante el cual se designa a la Licenciada Veronica Flores Frias, Titular de la Jefatura de Servicios Jurídicos para que supla las ausencias del Doctor Eusebio Rosales Partida, Titular del Órgano de Operación Administrativa Desconcentrada Estatal Guanajuato del Instituto Mexicano del Seguro Social, autorizándole a firmar y despachar la documentación incluyendo la suscripción de las resoluciones que debe emitir este Órgano.",
+    "published_at": "2026-07-02",
+    "published_day": 2,
+    "published_month": 7,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Personas que revisen un documento o resolución firmada en suplencia",
+        "deadline": null,
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "legal_basis": "Artículo 158 del Reglamento Interior del Instituto Mexicano del Seguro Social, citado en el aviso",
+        "paragraphs": [
+          "Si un documento o resolución del OOAD Estatal Guanajuato fue suscrito por Veronica Flores Frias, pueden cotejar el cargo indicado, el órgano emisor y el supuesto de ausencia con el aviso publicado."
+        ],
+        "trigger": "Revisión de la firma o el despacho de un acto del OOAD Estatal Guanajuato"
+      }
+    ],
+    "relevance_score": 4,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5792414",
+    "subtopic_tags": [
+      "designa",
+      "titular del organo",
+      "titular de la jefatura"
+    ],
+    "summary": "El aviso del Instituto Mexicano del Seguro Social comunica una designación de suplencia para el Órgano de Operación Administrativa Desconcentrada Estatal Guanajuato. El doctor Eusebio Rosales Partida, titular de ese órgano, designó a la licenciada Veronica Flores Frias, titular de la Jefatura de Servicios Jurídicos, como la persona que suplirá sus ausencias. La comunicación se dirige a autoridades federales, estatales y municipales con sede en Guanajuato, así como a patrones, personas aseguradas y público en general.\n\nLa designación se emite para los efectos del artículo 158 del Reglamento Interior del Instituto Mexicano del Seguro Social. El aviso también cita el artículo 251-A de la Ley del Seguro Social y los artículos 138, 139, 144 y 155, fracción X, del Reglamento Interior del IMSS. Como antecedente, la persona titular del OOAD refiere su propia designación por el Consejo Técnico del Instituto mediante un acuerdo de 7 de abril de 2026.\n\nLa autorización concedida a Veronica Flores Frias se actualiza cuando supla las ausencias del titular del OOAD Estatal Guanajuato. En ese supuesto puede firmar y despachar la documentación que corresponde al órgano. El aviso incluye expresamente la suscripción de las resoluciones que deba emitir el Órgano de Operación Administrativa Desconcentrada Estatal Guanajuato, por lo que la comunicación abarca tanto la documentación administrativa como las resoluciones que correspondan a ese órgano durante la suplencia.\n\nLa publicación fue suscrita el 16 de abril de 2026 por el doctor Eusebio Rosales Partida en su carácter de titular del OOAD Estatal Guanajuato. El acto publicado identifica a la persona designada, su cargo de origen, al titular cuyas ausencias se cubren y el alcance de firma, despacho y suscripción autorizado para ese supuesto. La designación cubre las ausencias de la titularidad del OOAD Estatal Guanajuato y autoriza firma, despacho y suscripción de resoluciones en ese supuesto. El aviso identifica a la Jefatura de Servicios Jurídicos como cargo de la persona designada.",
+    "summary_teaser": "El IMSS designó a Veronica Flores Frias, titular de la Jefatura de Servicios Jurídicos, para suplir las ausencias de Eusebio Rosales Partida en el Órgano de Operación Administrativa Desconcentrada Estatal Guanajuato. Durante ese supuesto puede firmar y despachar documentación, incluida la suscripción de las resoluciones que debe emitir el órgano.",
+    "title": "IMSS Guanajuato autoriza suplencia de Veronica Flores",
+    "topic_tags": [
+      "Derecho administrativo",
+      "Nombramientos federales",
+      "Resolución",
+      "Aviso"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5792414&fecha=02/07/2026"
+  },
+  "schema_version": 8
+}

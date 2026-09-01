@@ -1,0 +1,126 @@
+{
+  "coverage": [
+    {
+      "disposition": "not_material",
+      "reason": "Encabezado inicial sólo anuncia manual; contenido y propósito se describen en locator sustantivo.",
+      "source_ref": "chunk-1",
+      "target_sections": []
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    }
+  ],
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Contenido",
+      "paragraphs": [
+        "Aviso enumera antecedentes, base jurídica, estructura orgánica, misión, visión, objetivos, funciones directivas y mecanismos de apoyo. Fuente lo presenta como instrumento de organización interna disponible mediante enlace oficial."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Propósito",
+      "paragraphs": [
+        "ASIPONA explica que manual sirve de guía para personal y administración, apoyando claridad de funciones y evitando duplicidades. Menciona transparencia y rendición de cuentas, pero no crea nuevo trámite, permiso portuario o régimen sancionador."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "5c91901c723466c0b71a33ebc78e7d268a953bbdda5b4802c027f492eb1970bb",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "AVISO mediante el cual se da a conocer la página institucional donde puede consultarse el Manual de Organización de la Administración del Sistema Portuario Nacional Ensenada, S.A. de C.V.",
+        "location": "caracteres 0-191"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Marina.- Secretaría de Marina.- Unidad de Puertos y Marina Mercante.- Administración del Sistema Portuario Nacional Ensenada.",
+        "location": "caracteres 191-2912"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791366&fecha=23/06/2026",
+    "retrieved_at": "2026-08-13T19:43:51.633357+00:00"
+  },
+  "executive_summary": [
+    "Administración del Sistema Portuario Nacional Ensenada informa que Manual de Organización está disponible. Aviso describe documento con antecedentes, marco jurídico, estructura orgánica autorizada, misión, visión, objetivos y funciones de puestos de mando.",
+    "Según publicación, manual orienta a personas servidoras públicas en administración del sistema y busca evitar duplicidad de funciones. Incluye referencias a apoyo administrativo, transparencia y rendición de cuentas dentro de organización institucional."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "paragraphs": [
+        "Personal, usuarios institucionales y quienes necesiten conocer estructura pueden acudir al manual para identificar funciones. Difusión mejora trazabilidad interna sin reemplazar normativa portuaria."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "Personal ASIPONA Ensenada y usuarios que interactúan con entidad pueden consultar manual para ubicar estructura y funciones."
+        ],
+        "sector": "Administración portuaria"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791366&fecha=23/06/2026",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "81b9449556eed6520694a140cb747d5a2c79a6d3f02615a76560eaebc84053ed",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/02c8aa1603f6a0b4f3c48a4e.json",
+    "detail_url": "notas/02c8aa1603f6a0b4f3c48a4e.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Aviso",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5791366",
+    "importance": 2,
+    "issuing_body": "Secretaría de Marina",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-06-23",
+    "official_title": "Aviso mediante el cual se da a conocer la página institucional donde puede consultarse el Manual de Organización de la Administración del Sistema Portuario Nacional Ensenada, S.A. de C.V.",
+    "published_at": "2026-06-23",
+    "relevance_score": 2,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5791366",
+    "summary_teaser": "ASIPONA Ensenada informa la página institucional donde puede consultarse su Manual de Organización. El aviso señala que el documento contiene antecedentes, marco jurídico, estructura autorizada, funciones directivas, misión, visión y objetivos, pero remite al texto completo para identificar atribuciones específicas.",
+    "title": "ASIPONA Ensenada abre consulta de su Manual de Organización",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5791366&fecha=23/06/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Personas interesadas en organización de ASIPONA Ensenada",
+      "deadline": null,
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "legal_basis": null,
+      "paragraphs": [
+        "Consultar Manual de Organización en enlace oficial cuando se requiera identificar estructura, funciones directivas o mecanismos administrativos. Usar manual completo para atribuciones concretas, no sólo resumen del aviso."
+      ],
+      "trigger": null
+    }
+  ],
+  "schema_version": 8
+}

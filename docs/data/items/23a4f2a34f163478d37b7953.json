@@ -1,0 +1,169 @@
+{
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "item": {
+    "ai_generated": true,
+    "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797380&fecha=28%2F08%2F2026",
+    "card_body": "## Qué se publicó\n\nEl SAT comunicó la publicación de un contribuyente vinculado con CFDI sin efectos fiscales.\n\n## Sustancia\n\nLa fuente identifica al emisor y señala la obligación de revertir el efecto fiscal que se hubiera dado a sus comprobantes, en los términos y plazo que publica.\n\n## Fuente\n\n[Consulta la publicación oficial](https://dof.gob.mx/nota_detalle.php?codigo=5797380&fecha=28%2F08%2F2026)",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Fiscal",
+      "Administración centralizada"
+    ],
+    "content_hash": "b39938d4a40e0986ee7513d9f64c567129f181ae227e3355bafb1fe2289ced3e",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-1",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/23a4f2a34f163478d37b7953.json",
+    "detail_url": "notas/23a4f2a34f163478d37b7953.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "heading": "Publicación del contribuyente y sus CFDI",
+        "paragraphs": [
+          "El aviso identifica a INTEGRADORA EMPRESARIAL APE, A.C. con RFC IEA170925PN8 y comunica que la presunción de falsedad de sus CFDI no fue desvirtuada; por ello el texto les atribuye falta de efectos fiscales con alcance general."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "heading": "Efecto para receptores",
+        "paragraphs": [
+          "La fuente ordena a terceros que hayan dado efectos fiscales a esos CFDI revertirlos mediante declaración complementaria en treinta días naturales desde la publicación y advierte la restricción temporal del certificado de sello digital ante el incumplimiento."
+        ]
+      }
+    ],
+    "detected_at": "2026-09-01T16:34:47.803209+00:00",
+    "document_type": "Oficio",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "16bb3be283f5a0c1c0f34bab19d191cb274c229e9060814a94d7f75bc74ab0af",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "OFICIO 500-05-00-00-00-2026-24472 mediante el cual se comunica el nombre y la clave en el Registro Federal de Contribuyentes a que se refiere la fracción X del artículo 49 Bis del Código Fiscal de la Federación.",
+          "location": "caracteres 0-215"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Servicio de Administración Tributaria.- Administración General de Auditoría Fiscal Federal.- Administración Central de Fiscalización Estratégica.",
+          "location": "caracteres 215-7902"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797380&fecha=28%2F08%2F2026",
+      "retrieved_at": "2026-09-01T16:34:56.357505+00:00"
+    },
+    "executive_summary": [
+      "El Servicio de Administración Tributaria publicó el nombre de INTEGRADORA EMPRESARIAL APE, A.C. y el RFC IEA170925PN8 en el supuesto de la fracción X del artículo 49 Bis del Código Fiscal de la Federación. El anexo identifica a la persona contribuyente y el oficio de la resolución administrativa. Según el documento, la autoridad concluyó, tras el procedimiento previsto en ese artículo, que no se desvirtuó la presunción de falsedad de los comprobantes fiscales digitales por Internet emitidos por esa persona.",
+      "La consecuencia que la publicación atribuye a esos CFDI es que se consideran falsos con efectos generales por incumplir el requisito referido en el artículo 29-A, fracción IX, del Código Fiscal de la Federación. Por ello, el propio aviso indica que las operaciones asentadas en dichos comprobantes no producen ni produjeron efecto fiscal. Esta ficha no extiende esa conclusión a comprobantes distintos de los emitidos por la persona publicada ni a operaciones que el documento no identifica."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-09-01T16:34:47.803209+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5797380",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "El efecto directo recae en la trazabilidad fiscal de operaciones respaldadas por CFDI del emisor publicado y en las revisiones que correspondan a sus receptores."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-1",
+            "chunk-2"
+          ],
+          "paragraphs": [
+            "Quienes hayan recibido CFDI de INTEGRADORA EMPRESARIAL APE, A.C. deben ubicar los comprobantes y contrastar su tratamiento fiscal con la determinación y el plazo que el oficio comunica."
+          ],
+          "sector": "Receptores de CFDI del contribuyente publicado"
+        }
+      ]
+    },
+    "importance": 2,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-09-01T18:46:30.041123+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797380&fecha=28/08/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5797380"
+    },
+    "official_published_at": "2026-08-28",
+    "official_title": "Oficio 500-05-00-00-00-2026-24472 mediante el cual se comunica el nombre y la clave en el Registro Federal de Contribuyentes a que se refiere la fracción X del artículo 49 Bis del Código Fiscal de la Federación.",
+    "published_at": "2026-08-28",
+    "published_day": 28,
+    "published_month": 8,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Receptores de CFDI del contribuyente publicado",
+        "deadline": "Treinta días naturales contados a partir de la publicación en el Diario Oficial de la Federación",
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "legal_basis": "Artículo 49 Bis, fracción X, y artículo 17-H Bis, fracción XIV, del Código Fiscal de la Federación, citados en el oficio",
+        "paragraphs": [
+          "Identificar los CFDI recibidos de INTEGRADORA EMPRESARIAL APE, A.C., revisar el efecto fiscal que se les dio y, si corresponde, presentar la declaración complementaria dentro del plazo publicado. Conservar expediente documental de la revisión."
+        ],
+        "trigger": "Haber recibido CFDI emitidos por el contribuyente publicado y haberles dado efectos fiscales"
+      }
+    ],
+    "relevance_score": 3,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5797380",
+    "subtopic_tags": [
+      "codigo fiscal"
+    ],
+    "summary": "El Servicio de Administración Tributaria publicó el nombre de INTEGRADORA EMPRESARIAL APE, A.C. y el RFC IEA170925PN8 en el supuesto de la fracción X del artículo 49 Bis del Código Fiscal de la Federación. El anexo identifica a la persona contribuyente y el oficio de la resolución administrativa. Según el documento, la autoridad concluyó, tras el procedimiento previsto en ese artículo, que no se desvirtuó la presunción de falsedad de los comprobantes fiscales digitales por Internet emitidos por esa persona.\n\nLa consecuencia que la publicación atribuye a esos CFDI es que se consideran falsos con efectos generales por incumplir el requisito referido en el artículo 29-A, fracción IX, del Código Fiscal de la Federación. Por ello, el propio aviso indica que las operaciones asentadas en dichos comprobantes no producen ni produjeron efecto fiscal. Esta ficha no extiende esa conclusión a comprobantes distintos de los emitidos por la persona publicada ni a operaciones que el documento no identifica.\n\nEl oficio se dirige también a quienes recibieron CFDI del contribuyente citado. Les comunica que deben conocer la situación y revertir el efecto fiscal que hubieran dado a esos comprobantes mediante declaración complementaria. El texto fija treinta días naturales contados a partir de la publicación en el Diario Oficial de la Federación para hacerlo y señala que, si no se cumple, la autoridad restringirá temporalmente el uso del certificado de sello digital para emitir CFDI conforme al artículo 17-H Bis, fracción XIV, citado en el propio aviso.\n\nLa publicación funciona como comunicación oficial de la determinación respecto del emisor incluido en el anexo; no sustituye la revisión documental de cada receptor ni cuantifica ajustes, contribuciones, accesorios o efectos para un caso individual. La medida operativa verificable es revisar si se recibieron CFDI de la persona identificada, conservar la trazabilidad de las operaciones y, si procede, valorar la declaración complementaria dentro del plazo expresamente publicado.",
+    "summary_teaser": "El SAT publicó a INTEGRADORA EMPRESARIAL APE, A.C. y su RFC como contribuyente que no desvirtuó la presunción de falsedad de los CFDI emitidos. El aviso señala que esos comprobantes no producen efectos fiscales y que quienes les hayan dado efectos deben revertirlos mediante declaración complementaria dentro del plazo señalado.",
+    "title": "SAT exige revertir efectos de CFDI falsos de Integradora APE",
+    "topic_tags": [
+      "Fiscal",
+      "Oficio"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797380&fecha=28/08/2026"
+  },
+  "schema_version": 8
+}

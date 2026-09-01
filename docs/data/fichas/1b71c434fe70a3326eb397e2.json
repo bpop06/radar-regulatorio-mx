@@ -1,0 +1,344 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-3",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-4",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-5",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-6",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-7",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-8",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-9",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-10",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-11",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-12",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-13",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-14",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-15",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-16",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-17",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-18",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    }
+  ],
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-17",
+        "chunk-18"
+      ],
+      "heading": "Alcance de la publicación",
+      "paragraphs": [
+        "La Secretaría de Economía declaró concluida la investigación antidumping sobre sulfato de amonio originario de China e impuso una cuota compensatoria definitiva de 0.1488 dólares de los Estados Unidos de América por kilogramo a las importaciones que ingresen por la fracción arancelaria 3102.21.01 de la TIGIE o por cualquier otra.",
+        "La Secretaría de Hacienda y Crédito Público aplica la cuota en todo el territorio nacional. Las personas importadoras que deban pagarla no están obligadas si comprueban que el país de origen de la mercancía es distinto a China conforme a las normas para la determinación y certificación del origen no preferencial. La resolución entra en vigor el día siguiente de su publicación en el DOF."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-17",
+        "chunk-18"
+      ],
+      "heading": "Seguimiento operativo",
+      "paragraphs": [
+        "Las personas importadoras de sulfato de amonio deben revisar la clasificación declarada, el país de origen y la documentación aplicable para determinar si se actualiza la cuota o la excepción probatoria.",
+        "La ficha no extiende el alcance del acto a supuestos que la fuente no identifica."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "7a3150ebedbe6b5ae3e25db5e822cff6be5a84e64c6c16097e5e02bfe92c837c",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "RESOLUCIÓN Final del procedimiento administrativo de investigación antidumping sobre las importaciones de sulfato de amonio originarias de la República Popular China, independientemente del país de procedencia.",
+        "location": "caracteres 0-214"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Economía. · parte 1",
+        "location": "caracteres 214-12214"
+      },
+      {
+        "id": "chunk-3",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Economía. · parte 2",
+        "location": "caracteres 12214-24214"
+      },
+      {
+        "id": "chunk-4",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Economía. · parte 3",
+        "location": "caracteres 24214-36214"
+      },
+      {
+        "id": "chunk-5",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Economía. · parte 4",
+        "location": "caracteres 36214-48214"
+      },
+      {
+        "id": "chunk-6",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Economía. · parte 5",
+        "location": "caracteres 48214-60214"
+      },
+      {
+        "id": "chunk-7",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Economía. · parte 6",
+        "location": "caracteres 60214-72214"
+      },
+      {
+        "id": "chunk-8",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Economía. · parte 7",
+        "location": "caracteres 72214-84214"
+      },
+      {
+        "id": "chunk-9",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Economía. · parte 8",
+        "location": "caracteres 84214-96214"
+      },
+      {
+        "id": "chunk-10",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Economía. · parte 9",
+        "location": "caracteres 96214-108214"
+      },
+      {
+        "id": "chunk-11",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Economía. · parte 10",
+        "location": "caracteres 108214-120214"
+      },
+      {
+        "id": "chunk-12",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Economía. · parte 11",
+        "location": "caracteres 120214-132214"
+      },
+      {
+        "id": "chunk-13",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Economía. · parte 12",
+        "location": "caracteres 132214-144214"
+      },
+      {
+        "id": "chunk-14",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Economía. · parte 13",
+        "location": "caracteres 144214-156214"
+      },
+      {
+        "id": "chunk-15",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Economía. · parte 14",
+        "location": "caracteres 156214-168214"
+      },
+      {
+        "id": "chunk-16",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Economía. · parte 15",
+        "location": "caracteres 168214-180214"
+      },
+      {
+        "id": "chunk-17",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Economía. · parte 16",
+        "location": "caracteres 180214-192214"
+      },
+      {
+        "id": "chunk-18",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Economía. · parte 17",
+        "location": "caracteres 192214-193717"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796309&fecha=14%2F08%2F2026",
+    "retrieved_at": "2026-09-01T16:35:31.658165+00:00"
+  },
+  "executive_summary": [
+    "La Secretaría de Economía declaró concluida la investigación antidumping sobre sulfato de amonio originario de China e impuso una cuota compensatoria definitiva de 0.1488 dólares de los Estados Unidos de América por kilogramo a las importaciones que ingresen por la fracción arancelaria 3102.21.01 de la TIGIE o por cualquier otra.",
+    "La Secretaría de Hacienda y Crédito Público aplica la cuota en todo el territorio nacional. Las personas importadoras que deban pagarla no están obligadas si comprueban que el país de origen de la mercancía es distinto a China conforme a las normas para la determinación y certificación del origen no preferencial. La resolución entra en vigor el día siguiente de su publicación en el DOF."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-17",
+        "chunk-18"
+      ],
+      "paragraphs": [
+        "La Secretaría de Hacienda y Crédito Público aplica la cuota en todo el territorio nacional. Las personas importadoras que deban pagarla no están obligadas si comprueban que el país de origen de la mercancía es distinto a China conforme a las normas para la determinación y certificación del origen no preferencial. La resolución entra en vigor el día siguiente de su publicación en el DOF."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-17",
+          "chunk-18"
+        ],
+        "paragraphs": [
+          "La incidencia para este grupo se limita al alcance expresamente descrito en la publicación y requiere contrastarse con cada caso concreto."
+        ],
+        "sector": "Personas importadoras de sulfato de amonio"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796309&fecha=14%2F08%2F2026",
+    "categories": [
+      "Comercio exterior",
+      "Administración centralizada"
+    ],
+    "content_hash": "56b1f3dca57bb5452fcdcb99493275a19713bfc40067894661cbe33cf13fd5dd",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/1b71c434fe70a3326eb397e2.json",
+    "detail_url": "notas/1b71c434fe70a3326eb397e2.html",
+    "detected_at": "2026-09-01T16:34:47.803209+00:00",
+    "document_type": "Resolución Final",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5796309",
+    "importance": 2,
+    "issuing_body": "Secretaría de Economía",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-08-14",
+    "official_title": "Resolución Final del procedimiento administrativo de investigación antidumping sobre las importaciones de sulfato de amonio originarias de la República Popular China, independientemente del país de procedencia.",
+    "published_at": "2026-08-14",
+    "relevance_score": 2,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5796309",
+    "summary_teaser": "La Secretaría de Economía concluyó la investigación antidumping e impuso una cuota compensatoria definitiva de 0.1488 dólares por kilogramo al sulfato de amonio originario de China que ingrese por la fracción 3102.21.01 o cualquier otra. Entra en vigor al día siguiente de su publicación. Las personas importadoras quedan exentas si prueban origen distinto a China conforme a las normas no preferenciales aplicables.",
+    "title": "Sulfato de amonio chino queda sujeto a cuota definitiva",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796309&fecha=14/08/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Personas importadoras de sulfato de amonio",
+      "deadline": "Entrada en vigor al día siguiente de la publicación en el DOF.",
+      "evidence_refs": [
+        "chunk-17",
+        "chunk-18"
+      ],
+      "legal_basis": "Puntos 288 a 293 de la resolución antidumping.",
+      "paragraphs": [
+        "Las personas importadoras de sulfato de amonio deben revisar la clasificación declarada, el país de origen y la documentación aplicable para determinar si se actualiza la cuota o la excepción probatoria."
+      ],
+      "trigger": "Desde el día siguiente a la publicación de la resolución en el Diario Oficial de la Federación."
+    }
+  ],
+  "schema_version": 8
+}

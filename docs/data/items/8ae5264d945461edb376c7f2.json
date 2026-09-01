@@ -1,0 +1,355 @@
+{
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "item": {
+    "ai_generated": true,
+    "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5794757&fecha=27%2F07%2F2026",
+    "card_body": "## Qué se publicó\n\nEl informe mensual de recaudación federal participable, participaciones de junio y primer ajuste cuatrimestral de 2026.\n\n## Sustancia\n\nEl acuerdo publica fondos, coeficientes y montos por entidad y municipio, incluida la determinación de participaciones de gasolinas y diésel de mayo. También compara pagos provisionales y cálculos preliminares del primer cuatrimestre. Los montos finales pueden variar por ingresos efectivos, coeficientes y ajustes posteriores.\n\n## Fuente\n\n[Abrir publicación oficial](https://dof.gob.mx/nota_detalle.php?codigo=5794757&fecha=27%2F07%2F2026)",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "661eb34f51d68befc6521752d7443aebf8bf0271fe77fc6e3a2e714f92126f7c",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-1",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-3",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.sectors"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-4",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-5",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-6",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-7",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-8",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-9",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-10",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-11",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/8ae5264d945461edb376c7f2.json",
+    "detail_url": "notas/8ae5264d945461edb376c7f2.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2",
+          "chunk-3",
+          "chunk-4",
+          "chunk-5"
+        ],
+        "heading": "Participaciones de junio",
+        "paragraphs": [
+          "El acuerdo da a conocer la recaudación federal participable de mayo, la integración de fondos, coeficientes y participaciones provisionales de junio de 2026 conforme a la Ley de Coordinación Fiscal."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-6"
+        ],
+        "heading": "Gasolinas y diésel",
+        "paragraphs": [
+          "El Cuadro 14 contiene la determinación de las participaciones de gasolinas y diésel de mayo de 2026 conforme al artículo 4o.-A de la Ley de Coordinación Fiscal."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-8",
+          "chunk-9",
+          "chunk-10",
+          "chunk-11"
+        ],
+        "heading": "Primer ajuste cuatrimestral",
+        "paragraphs": [
+          "Los cuadros 26 a 37 reportan la recaudación de enero a abril, fondos, cálculos preliminares y diferencias del primer ajuste cuatrimestral de 2026, por entidad y, en los conceptos aplicables, por municipio."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-11"
+        ],
+        "heading": "Carácter ajustable de los importes",
+        "paragraphs": [
+          "El numeral tercero prevé que los montos de los fondos, conceptos participables y lo que finalmente reciba cada entidad pueden modificarse por ingresos efectivos, coeficientes y ajustes del ejercicio."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-7",
+          "chunk-8"
+        ],
+        "heading": "Coeficientes y participaciones del 0.136%",
+        "paragraphs": [
+          "El Cuadro 23 determina los coeficientes de las participaciones por el 0.136% de la recaudación federal participable para 2026; el Cuadro 24 publica las participaciones provisionales de junio por entidad y municipio."
+        ]
+      }
+    ],
+    "detected_at": "2026-08-26T02:19:57.735602+00:00",
+    "document_type": "Acuerdo",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "5e9f473b37227c2e46e53c36beec54dc4bcedf702868bda497bf12b06c41e687",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "ACUERDO por el cual se da a conocer el informe sobre la recaudación federal participable y las participaciones federales, así como los procedimientos de cálculo, por el mes de junio de 2026 y por el ajuste de participaciones del primer cuatrimestre de 2026.",
+          "location": "caracteres 0-261"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público. · parte 1",
+          "location": "caracteres 261-12261"
+        },
+        {
+          "id": "chunk-3",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público. · parte 2",
+          "location": "caracteres 12261-24261"
+        },
+        {
+          "id": "chunk-4",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público. · parte 3",
+          "location": "caracteres 24261-36261"
+        },
+        {
+          "id": "chunk-5",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público. · parte 4",
+          "location": "caracteres 36261-48261"
+        },
+        {
+          "id": "chunk-6",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público. · parte 5",
+          "location": "caracteres 48261-60261"
+        },
+        {
+          "id": "chunk-7",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público. · parte 6",
+          "location": "caracteres 60261-72261"
+        },
+        {
+          "id": "chunk-8",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público. · parte 7",
+          "location": "caracteres 72261-84261"
+        },
+        {
+          "id": "chunk-9",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público. · parte 8",
+          "location": "caracteres 84261-96261"
+        },
+        {
+          "id": "chunk-10",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público. · parte 9",
+          "location": "caracteres 96261-108261"
+        },
+        {
+          "id": "chunk-11",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público. · parte 10",
+          "location": "caracteres 108261-115602"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5794757&fecha=27%2F07%2F2026",
+      "retrieved_at": "2026-08-25T17:47:26.888595+00:00"
+    },
+    "executive_summary": [
+      "Hacienda reporta la recaudación federal participable de mayo utilizada para las participaciones de junio, los fondos y coeficientes de distribución por entidad y municipio, incluida la determinación de gasolinas y diésel de mayo.",
+      "El acuerdo también publica el primer ajuste cuatrimestral de 2026 y advierte que las cifras pueden cambiar por ingresos efectivos, coeficientes y ajustes posteriores. Las diferencias se presentan por fondo, entidad y, en ciertos conceptos, por municipio."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-08-26T02:19:57.735602+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5794757",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-2",
+          "chunk-8",
+          "chunk-11"
+        ],
+        "paragraphs": [
+          "La publicación transparenta el cálculo y distribución de participaciones de junio y sus ajustes, pero no vuelve inmutables los importes reportados."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-2",
+            "chunk-3",
+            "chunk-8",
+            "chunk-9",
+            "chunk-10",
+            "chunk-11"
+          ],
+          "paragraphs": [
+            "Cuentan con cuadros de integración, coeficientes y diferencias para conciliar los conceptos aplicables a su entidad, incluidos los ajustes del primer cuatrimestre."
+          ],
+          "sector": "Tesorerías estatales"
+        },
+        {
+          "evidence_refs": [
+            "chunk-6",
+            "chunk-8",
+            "chunk-9",
+            "chunk-10",
+            "chunk-11"
+          ],
+          "paragraphs": [
+            "Deben ubicar el cuadro correspondiente a su municipio y concepto, incluida la distribución de gasolinas y diésel y los componentes de frontera, litoral o exportación de hidrocarburos cuando procedan."
+          ],
+          "sector": "Municipios beneficiarios de participaciones específicas"
+        }
+      ]
+    },
+    "importance": 1,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-09-01T18:46:30.041123+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5794757&fecha=27/07/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5794757"
+    },
+    "official_published_at": "2026-07-27",
+    "official_title": "Acuerdo por el cual se da a conocer el informe sobre la recaudación federal participable y las participaciones federales, así como los procedimientos de cálculo, por el mes de junio de 2026 y por el ajuste de participaciones del primer cuatrimestre de 2026.",
+    "published_at": "2026-07-27",
+    "published_day": 27,
+    "published_month": 7,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Tesorerías estatales y municipales",
+        "deadline": null,
+        "evidence_refs": [
+          "chunk-2",
+          "chunk-6",
+          "chunk-8",
+          "chunk-9",
+          "chunk-10",
+          "chunk-11"
+        ],
+        "legal_basis": "Acuerdo 107/2026 y artículos de la Ley de Coordinación Fiscal citados en sus cuadros",
+        "paragraphs": [
+          "Si realizan una conciliación de participaciones, pueden ubicar el fondo, entidad o municipio aplicable y contrastar los cuadros de junio o del ajuste cuatrimestral con los registros correspondientes."
+        ],
+        "trigger": "Conciliación o programación de ingresos por participaciones federales"
+      }
+    ],
+    "relevance_score": 1,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5794757",
+    "subtopic_tags": [],
+    "summary": "La Secretaría de Hacienda y Crédito Público publicó el informe de recaudación federal participable utilizado para las participaciones federales de junio de 2026, así como sus procedimientos de cálculo, coeficientes y distribuciones por entidad federativa y, cuando corresponde, por municipio. El acuerdo comprende el Fondo General de Participaciones, Fondo de Fomento Municipal, participaciones específicas del impuesto especial sobre producción y servicios, Fondo de Compensación, Fondo de Extracción de Hidrocarburos, el componente de 0.136% y transferencias a municipios vinculadas con la exportación de hidrocarburos.\n\nEl Cuadro 1 reporta una recaudación federal participable de mayo de 384,983,202,184 pesos para el cálculo de junio. Los cuadros siguientes integran los fondos, determinan coeficientes y publican participaciones provisionales. El Cuadro 14 incorpora expresamente la determinación de las participaciones de gasolinas y diésel de mayo de 2026 conforme al artículo 4o.-A de la Ley de Coordinación Fiscal; el Cuadro 23 determina los coeficientes del componente de 0.136% y el Cuadro 24 publica sus participaciones provisionales por municipio.\n\nEl segundo bloque contiene el primer ajuste cuatrimestral de 2026 con la recaudación de enero a abril, los fondos resultantes, pagos provisionales, cálculos preliminares y diferencias. La recaudación federal participable del periodo asciende a 1,895,209,927,909 pesos. Los totales de diferencias publicados incluyen 14,563,040,980 pesos para el Fondo General de Participaciones, 728,152,048 pesos para el Fondo de Fomento Municipal, menos 139,737,652 pesos para las participaciones específicas del impuesto especial sobre producción y servicios y 99,028,682 pesos para el componente de 0.136%.\n\nEl numeral tercero prevé que los fondos, otros conceptos participables y los montos que finalmente reciba cada entidad federativa pueden variar por los ingresos efectivamente captados, cambios de coeficientes y diferencias derivadas de ajustes a pagos provisionales o del ajuste definitivo de 2026.\n\nEl acuerdo precisa que las cifras de junio no incluyen deducciones derivadas de compromisos financieros contraídos por las entidades federativas. Los cuadros presentan montos, coeficientes y cálculos preliminares por concepto, entidad y, en los supuestos indicados, por municipio.",
+    "summary_teaser": "Hacienda publicó la recaudación federal participable usada para las participaciones de junio de 2026 y el primer ajuste cuatrimestral. El acuerdo desglosa fondos, coeficientes y cifras por entidad y municipio, incluida la determinación de participaciones de gasolinas y diésel de mayo, y advierte que los montos pueden variar por ajustes posteriores.",
+    "title": "Hacienda determina participaciones de junio y ajuste cuatrimestral",
+    "topic_tags": [
+      "Acuerdo"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5794757&fecha=27/07/2026"
+  },
+  "schema_version": 8
+}

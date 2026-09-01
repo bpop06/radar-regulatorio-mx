@@ -1,0 +1,139 @@
+{
+  "coverage": [
+    {
+      "disposition": "not_material",
+      "reason": "Es el encabezado del acuerdo; las sedes y efectos se desarrollan en chunk-2.",
+      "source_ref": "chunk-1",
+      "target_sections": []
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Sede de Avenida de las Torres 855",
+      "paragraphs": [
+        "La primera dirección corresponde a la oficina titular del Secretariado Ejecutivo, Administración, Asuntos Jurídicos y Unidad de Transparencia."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Sede de Boulevard Adolfo Ruiz Cortines 3648",
+      "paragraphs": [
+        "La segunda dirección concentra doce unidades, entre ellas estándares, seguimiento, información y desarrollo tecnológico, fondos de ayuda federal, Academia Nacional, Registro Público Vehicular y planeación estratégica."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Efecto para actuaciones oficiales",
+      "paragraphs": [
+        "Notificaciones, citatorios, diligencias y recepción de documentos dirigidos a las unidades deben utilizar el domicilio asignado. El acuerdo entra en vigor con su publicación y abroga el aviso anterior."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "04768e45d6465c40e8e3ccd83e1fbe782b605409ab130536544937b12dea1fc3",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "ACUERDO por el que se dan a conocer los domicilios oficiales de las unidades administrativas y de la Unidad de Transparencia del Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública.",
+        "location": "caracteres 0-198"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Seguridad.- Secretaría de Seguridad y Protección Ciudadana.- Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública.",
+        "location": "caracteres 198-5014"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793719&fecha=16%2F07%2F2026",
+    "retrieved_at": "2026-08-14T00:37:04.484752+00:00"
+  },
+  "executive_summary": [
+    "El acuerdo distribuye cuatro unidades, incluida Transparencia, en Avenida de las Torres 855 y doce unidades técnicas, de información, fondos, academia y planeación en Boulevard Adolfo Ruiz Cortines 3648.",
+    "Esas sedes son los domicilios oficiales para notificaciones, citatorios, diligencias y recepción de documentos; el acuerdo reemplaza el aviso de mayo de 2026."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "paragraphs": [
+        "La publicación determina la sede aplicable de cada grupo de unidades para actuaciones formales y evita tratar como intercambiables las dos direcciones."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "Deben identificar la unidad destinataria y usar Avenida de las Torres 855 o Boulevard Adolfo Ruiz Cortines 3648 conforme a la distribución oficial."
+        ],
+        "sector": "Autoridades, personas servidoras públicas y personas que presenten documentos ante el Secretariado"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793719&fecha=16%2F07%2F2026",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "e2ba05e98c91486caddb237f4e3ae10bed4fa163dfd81b3d3a1efe82088b9d52",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/b7e475d8121b5ea3231c77be.json",
+    "detail_url": "notas/b7e475d8121b5ea3231c77be.html",
+    "detected_at": "2026-08-14T01:46:44.993982+00:00",
+    "document_type": "Acuerdo",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5793719",
+    "importance": 2,
+    "issuing_body": "Presidencia de la República",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-07-16",
+    "official_title": "Acuerdo por el que se dan a conocer los domicilios oficiales de las unidades administrativas y de la Unidad de Transparencia del Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública.",
+    "published_at": "2026-07-16",
+    "relevance_score": 2,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5793719",
+    "summary_teaser": "El Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública asignó sus unidades entre Avenida de las Torres 855 y Boulevard Adolfo Ruiz Cortines 3648, ambas en Álvaro Obregón. El primer grupo incluye oficina titular, administración, asuntos jurídicos y transparencia; el segundo concentra doce unidades técnicas, de información, fondos, academia y planeación.",
+    "title": "Secretariado de seguridad fija dos domicilios para actuaciones oficiales",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5793719&fecha=16/07/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Personas y autoridades que remitan actuaciones al Secretariado",
+      "deadline": null,
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "legal_basis": "Numerales Primero y Segundo del acuerdo",
+      "paragraphs": [
+        "Antes de notificar, citar, diligenciar o presentar documentación, confirmen la unidad destinataria y el domicilio que le asigna el numeral Primero."
+      ],
+      "trigger": "Preparación de una actuación dirigida a una unidad del Secretariado"
+    }
+  ],
+  "schema_version": 8
+}

@@ -1,0 +1,138 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Contenido publicado",
+      "paragraphs": [
+        "El acuerdo modifica el destino otorgado al INAH para que abarque la totalidad del inmueble federal denominado Ex Ateneo Peninsular, con superficie total de 6,532.956 metros cuadrados en el Centro Histórico de Mérida. La modificación incorpora la parte alta, de 4,933.87 metros cuadrados, para continuar de forma integral el proyecto de restauración y conservación del monumento histórico y las actividades de investigación, protección, recuperación y difusión del patrimonio cultural.",
+        "El acuerdo refiere que la planta baja fue destinada al INAH en 2024 y que la parte adicional fue entregada física y jurídicamente mediante acta administrativa de mayo de 2026. La operación fue revisada por las áreas técnicas y jurídicas del INDAABIN conforme al expediente administrativo e inmobiliario citado."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Alcance y lectura práctica",
+      "paragraphs": [
+        "La medida se limita al inmueble, registro y finalidad pública descritos. El INDAABIN vigilará el cumplimiento y el acuerdo ordena su publicación e inscripción en el Registro Público de la Propiedad Federal; entra en vigor al día siguiente de su publicación.",
+        "La ficha se dirige principalmente a inah, administradores de inmuebles federales y autoridades patrimoniales."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "2f9d3eea13745d75c2952212ea0a119836edb8e6068de6a6cfc364487c6dbdf5",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "ACUERDO mediante el cual se modifica el Acuerdo por el que se destinó al Instituto Nacional de Antropología e Historia, Órgano Administrativo Desconcentrado de la Secretaría de Cultura, la planta baja del inmueble federal denominado Ex Ateneo Peninsular, mismo que cuenta con Registro Federal Inmobiliario 31-11494-7, y una superficie total de terreno de 6,532.956 metros cuadrados, ubicado en Calle 60 número 502-B, Manzana I, Cuartel I, Centro Histórico de la Ciudad de Mérida, Código Postal 97000, Municipio de Mérida, Estado de Yucatán.",
+        "location": "caracteres 0-544"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Instituto de Administración y Avalúos de Bienes Nacionales.- MODIF-DST-02/ 2026.",
+        "location": "caracteres 544-10066"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796486&fecha=18%2F08%2F2026",
+    "retrieved_at": "2026-09-01T16:35:20.647622+00:00"
+  },
+  "executive_summary": [
+    "El Instituto de Administración y Avalúos de Bienes Nacionales difundió la modificación del destino de un inmueble federal a favor del INAH. El acuerdo modifica el destino otorgado al INAH para que abarque la totalidad del inmueble federal denominado Ex Ateneo Peninsular, con superficie total de 6,532.956 metros cuadrados en el Centro Histórico de Mérida. La modificación incorpora la parte alta, de 4,933.87 metros cuadrados, para continuar de forma integral el proyecto de restauración y conservación del monumento histórico y las actividades de investigación, protección, recuperación y difusión del patrimonio cultural.",
+    "La medida se limita al inmueble, registro y finalidad pública descritos. El INDAABIN vigilará el cumplimiento y el acuerdo ordena su publicación e inscripción en el Registro Público de la Propiedad Federal; entra en vigor al día siguiente de su publicación. La síntesis se limita a los hechos y condiciones expresamente visibles en la fuente oficial."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "paragraphs": [
+        "El efecto observable es el que la publicación atribuye al acto: La medida se limita al inmueble, registro y finalidad pública descritos. El INDAABIN vigilará el cumplimiento y el acuerdo ordena su publicación e inscripción en el Registro Público de la Propiedad Federal; entra en vigor al día siguiente de su publicación."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "Las personas comprendidas deben considerar el documento porque El acuerdo modifica el destino otorgado al INAH para que abarque la totalidad del inmueble federal denominado Ex Ateneo Peninsular, con superficie total de 6,532.956 metros cuadrados en el Centro Histórico de Mérida. La modificación incorpora la parte alta, de 4,933.87 metros cuadrados, para continuar de forma integral el proyecto de restauración y conservación del monumento histórico y las actividades de investigación, protección, recuperación y difusión del patrimonio cultural."
+        ],
+        "sector": "INAH, administradores de inmuebles federales y autoridades patrimoniales"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796486&fecha=18%2F08%2F2026",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "7a31edac0bbf1976693fac633d5ba9ddd5c411395f5e52055b7ba1e1bbb6aeaa",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/7f37bcf52cc33ca592dc4f12.json",
+    "detail_url": "notas/7f37bcf52cc33ca592dc4f12.html",
+    "detected_at": "2026-09-01T16:34:47.803209+00:00",
+    "document_type": "Acuerdo",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5796486",
+    "importance": 1,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-08-18",
+    "official_title": "Acuerdo mediante el cual se modifica el Acuerdo por el que se destinó al Instituto Nacional de Antropología e Historia, Órgano Administrativo Desconcentrado de la Secretaría de Cultura, la planta baja del inmueble federal denominado Ex Ateneo Peninsular, mismo que cuenta con Registro Federal Inmobiliario 31-11494-7, y una superficie total de terreno de 6,532.956 metros cuadrados, ubicado en Calle 60 número 502-B, Manzana I, Cuartel I, Centro Histórico de la Ciudad de Mérida, Código Postal 97000, Municipio de Mérida, Estado de Yucatán.",
+    "published_at": "2026-08-18",
+    "relevance_score": 1,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5796486",
+    "summary_teaser": "El INDAABIN modificó el destino del Ex Ateneo Peninsular para que el INAH use la totalidad del inmueble federal en Mérida. La medida incorpora la parte alta, entregada previamente, al destino para restauración, conservación, investigación y difusión del patrimonio cultural.",
+    "title": "INAH amplía uso del Ex Ateneo Peninsular",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796486&fecha=18/08/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "INAH, administradores de inmuebles federales y autoridades patrimoniales",
+      "deadline": null,
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "legal_basis": null,
+      "paragraphs": [
+        "Actualizar los registros administrativos del inmueble y alinear los instrumentos de uso, conservación y gestión con el destino integral formalizado por el acuerdo."
+      ],
+      "trigger": "Cuando la persona o entidad se ubique en el ámbito material descrito por la fuente oficial."
+    }
+  ],
+  "schema_version": 8
+}

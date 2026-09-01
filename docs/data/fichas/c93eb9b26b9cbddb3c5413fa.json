@@ -1,0 +1,210 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-3",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-4",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-5",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "heading": "Proyecto, partes y asignación",
+      "paragraphs": [
+        "La Secretaría de las Mujeres, el Gobierno de la Ciudad de México y la Fiscalía General de Justicia de la Ciudad de México celebran un convenio de coordinación y adhesión para el proyecto R-2026-082. Su objeto es aplicar recursos del Componente C de Apoyo para Espacios de Refugio Especializados para Mujeres Víctimas de Violencia de Género, sus Hijas e Hijos, dentro del Programa para la Prevención y Detección de las Violencias Feminicidas y la Atención de las Causas.",
+        "El comité de evaluación aprobó el proyecto por 5,000,000 de pesos. El convenio identifica esa cantidad como subsidio federal y señala que los recursos se radicarán a la Secretaría de Administración y Finanzas local para el proyecto, mediante una cuenta productiva específica. La publicación caracteriza los recursos como complementarios de las capacidades locales, no como sustitutos de la responsabilidad presupuestaria del espacio de refugio."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2",
+        "chunk-3",
+        "chunk-4",
+        "chunk-5"
+      ],
+      "heading": "Reglas de ejercicio y controles",
+      "paragraphs": [
+        "El instrumento remite a los Lineamientos de Operación del programa y a la Guía Operativa Refugios 2026. En ese marco, el espacio de refugio declara contar con capacidad técnica, jurídica, económica, de infraestructura y personal para acciones de atención psicológica, jurídica, trabajo social y salud, y declara que no recibe otros apoyos o estímulos federales para el objetivo autorizado. Las partes reconocen los deberes de aplicación de recursos públicos y de atención a mujeres, niñas, niños y personas dependientes en contexto de violencia.",
+        "Los antecedentes citan que los recursos no destinados a los fines autorizados, los no devengados al cierre del ejercicio o los no vinculados formalmente a compromisos y obligaciones de pago deben reintegrarse a la Tesorería de la Federación, conforme al régimen presupuestario referido. El convenio requiere que los recursos y rendimientos se manejen exclusivamente en la cuenta designada y sujeta el proyecto a los mecanismos de seguimiento, supervisión, evaluación y comprobación previstos por sus lineamientos."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-4",
+        "chunk-5"
+      ],
+      "heading": "Alcance jurídico de la publicación",
+      "paragraphs": [
+        "La publicación formaliza un instrumento de coordinación y subsidio para el proyecto identificado; no acredita por sí misma una erogación ya realizada ni el cumplimiento futuro de metas. La ejecución concreta debe evaluarse frente al convenio, la guía operativa, los lineamientos, la disponibilidad presupuestaria y los reportes que procedan. La ficha evita reproducir datos bancarios o personales que no son necesarios para explicar el alcance regulatorio del subsidio."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "a6f57ed21452e69a3db2c6f11a5d7067bb79c685395fb5f9fcdefaadf925bb85",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "CONVENIO de Coordinación y Adhesión que celebran la Secretaría de las Mujeres, la Ciudad de México y la Fiscalía General de Justicia de la Ciudad de México, que tiene por objeto el otorgamiento de subsidio para el Proyecto R-2026-082, que permita dar cumplimiento a la aplicación de recursos destinados al Componente C: Apoyo para Espacios de Refugio Especializados para Mujeres Víctimas de Violencia de Género, sus Hijas e Hijos.",
+        "location": "caracteres 0-434"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Mujeres.- Secretaría de las Mujeres. · parte 1",
+        "location": "caracteres 434-12434"
+      },
+      {
+        "id": "chunk-3",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Mujeres.- Secretaría de las Mujeres. · parte 2",
+        "location": "caracteres 12434-24434"
+      },
+      {
+        "id": "chunk-4",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Mujeres.- Secretaría de las Mujeres. · parte 3",
+        "location": "caracteres 24434-36434"
+      },
+      {
+        "id": "chunk-5",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Mujeres.- Secretaría de las Mujeres. · parte 4",
+        "location": "caracteres 36434-43993"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791136&fecha=19/06/2026",
+    "retrieved_at": "2026-08-13T19:43:54.014628+00:00"
+  },
+  "executive_summary": [
+    "La Secretaría de las Mujeres, el Gobierno de la Ciudad de México y la Fiscalía General de Justicia de la Ciudad de México celebran un convenio de coordinación y adhesión para el proyecto R-2026-082. Su objeto es aplicar recursos del Componente C de Apoyo para Espacios de Refugio Especializados para Mujeres Víctimas de Violencia de Género, sus Hijas e Hijos, dentro del Programa para la Prevención y Detección de las Violencias Feminicidas y la Atención de las Causas.",
+    "El comité de evaluación aprobó el proyecto por 5,000,000 de pesos. El convenio identifica esa cantidad como subsidio federal y señala que los recursos se radicarán a la Secretaría de Administración y Finanzas local para el proyecto, mediante una cuenta productiva específica. La publicación caracteriza los recursos como complementarios de las capacidades locales, no como sustitutos de la responsabilidad presupuestaria del espacio de refugio."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2",
+        "chunk-3",
+        "chunk-4",
+        "chunk-5"
+      ],
+      "paragraphs": [
+        "El convenio asigna recursos federales a un proyecto concreto de refugio en Ciudad de México y condiciona su ejercicio a reglas de destino, cuenta específica, seguimiento y reintegro."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2",
+          "chunk-3",
+          "chunk-4",
+          "chunk-5"
+        ],
+        "paragraphs": [
+          "El convenio asigna recursos federales a un proyecto concreto de refugio en Ciudad de México y condiciona su ejercicio a reglas de destino, cuenta específica, seguimiento y reintegro."
+        ],
+        "sector": "Entes responsables del espacio de refugio y administradores de subsidios públicos"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791136&fecha=19/06/2026",
+    "categories": [
+      "Penal"
+    ],
+    "content_hash": "ca6ac3040bd46f087ddd4ce24ad53573b1fb99e8aa20c6890da543aa9318688a",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/c93eb9b26b9cbddb3c5413fa.json",
+    "detail_url": "notas/c93eb9b26b9cbddb3c5413fa.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Convenio De Coordinación",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5791136",
+    "importance": 2,
+    "issuing_body": "Presidencia de la República",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-06-19",
+    "official_title": "Convenio de Coordinación y Adhesión que celebran la Secretaría de las Mujeres, la Ciudad de México y la Fiscalía General de Justicia de la Ciudad de México, que tiene por objeto el otorgamiento de subsidio para el Proyecto R-2026-082, que permita dar cumplimiento a la aplicación de recursos destinados al Componente C: Apoyo para Espacios de Refugio Especializados para Mujeres Víctimas de Violencia de Género, sus Hijas e Hijos.",
+    "published_at": "2026-06-19",
+    "relevance_score": 2,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5791136",
+    "summary_teaser": "La Secretaría de las Mujeres formalizó un subsidio de 5 millones de pesos para el proyecto R-2026-082 de la Ciudad de México y su Fiscalía. Los recursos se destinan al Componente C de apoyo a espacios de refugio y quedan sujetos a la guía operativa, cuenta específica, seguimiento, comprobación y reintegro previstos en el convenio.",
+    "title": "Mujeres concede subsidio federal para refugio de Ciudad de México",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5791136&fecha=19/06/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Entes responsables del espacio de refugio y administradores de subsidios públicos",
+      "deadline": null,
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2",
+        "chunk-3",
+        "chunk-4",
+        "chunk-5"
+      ],
+      "legal_basis": "Convenio MUJERES/CCA/REFUGIO/ENTE/CDMX/FGJCDMX/R-2026-082; Lineamientos y Guía Operativa Refugios 2026",
+      "paragraphs": [
+        "Las partes ejecutoras deben aplicar el subsidio sólo al proyecto R-2026-082, conservar la trazabilidad de los recursos y atender los informes, comprobaciones y reintegros exigidos por la guía y los lineamientos."
+      ],
+      "trigger": "A partir de la radicación y durante la ejecución del proyecto R-2026-082"
+    }
+  ],
+  "schema_version": 8
+}

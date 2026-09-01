@@ -1,0 +1,131 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    }
+  ],
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Alcance de la publicación",
+      "paragraphs": [
+        "El Órgano Interno de Control en el Instituto Mexicano del Seguro Social publicó una circular para comunicar el cumplimiento de la sentencia interlocutoria de medida cautelar emitida por la Sexta Sala Regional en la Ciudad de México del Tribunal Federal de Justicia Administrativa en el juicio de nulidad de Hima Promotions.",
+        "La Sexta Sala negó la medida cautelar respecto de los efectos de la inhabilitación por un año y de su publicación, y concedió suspensión definitiva respecto de la ejecución de la multa en los términos de la sentencia. La circular del OIC deja sin efectos la circular previa de 26 de junio y comunica que se mantiene la inhabilitación por un año. La publicación no resuelve el fondo del juicio de nulidad."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Seguimiento operativo",
+      "paragraphs": [
+        "Las dependencias y entidades destinatarias deben distinguir la continuidad de la inhabilitación de Hima Promotions del tratamiento cautelar de la multa y consultar la sentencia para el alcance exacto.",
+        "La ficha no extiende el alcance del acto a supuestos que la fuente no identifica."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "3826ba06cce88b35dc8c7152bd30e89ed44d915012abc3c0ce39aa2e6d033892",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "CIRCULAR por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a las empresas públicas del Estado, a la Fiscalía General de la República, a las entidades federativas y sus municipios, así como a las demarcaciones territoriales de la Ciudad de México, el cumplimiento a la sentencia interlocutoria, del primero de julio de dos mil veintiséis, emitida por la Sexta Sala Regional en la Ciudad de México del Tribunal Federal de Justicia Administrativa, en el juicio de nulidad 10988/26-17-06-3 , interpuesto por la representación legal de la empresa Hima Promotions, S.A. de C.V. , en donde se controvierte la resolución del primero de abril de dos mil veintiséis, emitida dentro del expediente administrativo número PISI-A-NC-DS-0001/2025.",
+        "location": "caracteres 0-778"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Buen Gobierno.- Secretaría Anticorrupción y Buen Gobierno.- Órgano Interno de Control en el Instituto Mexicano del Seguro Social.- Área de Responsabilidades.- Expediente: PISI-A-NC-DS-0001/2025.- No. Int.: JN-31/2026.",
+        "location": "caracteres 778-4417"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796637&fecha=19%2F08%2F2026",
+    "retrieved_at": "2026-09-01T16:35:18.526221+00:00"
+  },
+  "executive_summary": [
+    "El Órgano Interno de Control en el Instituto Mexicano del Seguro Social publicó una circular para comunicar el cumplimiento de la sentencia interlocutoria de medida cautelar emitida por la Sexta Sala Regional en la Ciudad de México del Tribunal Federal de Justicia Administrativa en el juicio de nulidad de Hima Promotions.",
+    "La Sexta Sala negó la medida cautelar respecto de los efectos de la inhabilitación por un año y de su publicación, y concedió suspensión definitiva respecto de la ejecución de la multa en los términos de la sentencia. La circular del OIC deja sin efectos la circular previa de 26 de junio y comunica que se mantiene la inhabilitación por un año. La publicación no resuelve el fondo del juicio de nulidad."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "paragraphs": [
+        "La Sexta Sala negó la medida cautelar respecto de los efectos de la inhabilitación por un año y de su publicación, y concedió suspensión definitiva respecto de la ejecución de la multa en los términos de la sentencia. La circular del OIC deja sin efectos la circular previa de 26 de junio y comunica que se mantiene la inhabilitación por un año. La publicación no resuelve el fondo del juicio de nulidad."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "La incidencia para este grupo se limita al alcance expresamente descrito en la publicación y requiere contrastarse con cada caso concreto."
+        ],
+        "sector": "Dependencias y entidades destinatarias de la circular y Hima Promotions"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796637&fecha=19%2F08%2F2026",
+    "categories": [
+      "Penal",
+      "Administración centralizada"
+    ],
+    "content_hash": "8230edb6267016f4468559ae2e4215f38fe7f41aca008b48f79feecdcc7a9c97",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/92617cd3a92785aac2a07e5b.json",
+    "detail_url": "notas/92617cd3a92785aac2a07e5b.html",
+    "detected_at": "2026-09-01T16:34:47.803209+00:00",
+    "document_type": "Circular",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5796637",
+    "importance": 3,
+    "issuing_body": "Presidencia de la República",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-08-19",
+    "official_title": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a las empresas públicas del Estado, a la Fiscalía General de la República, a las entidades federativas y sus municipios, así como a las demarcaciones territoriales de la Ciudad de México, el cumplimiento a la sentencia interlocutoria, del primero de julio de dos mil veintiséis, emitida por la Sexta Sala Regional en la Ciudad de México del Tribunal Federal de Justicia Administrativa, en el juicio de nulidad 10988/26-17-06-3, interpuesto por la representación legal de la empresa Hima Promotions, S.A. de C.V., en donde se controvierte la resolución del primero de abril de dos mil veintiséis, emitida dentro del expediente administrativo número PISI-A-NC-DS-0001/2025.",
+    "published_at": "2026-08-19",
+    "relevance_score": 5,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5796637",
+    "summary_teaser": "El Órgano Interno de Control en el IMSS publicó una circular de cumplimiento de la sentencia interlocutoria emitida por la Sexta Sala Regional Metropolitana del TFJA en el caso Hima Promotions. La Sala negó la medida cautelar sobre la inhabilitación y su publicación, pero concedió suspensión definitiva de la ejecución de la multa en los términos de la sentencia. No es una decisión definitiva de fondo.",
+    "title": "OIC del IMSS comunica cautelar que suspende multa de Hima",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796637&fecha=19/08/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Dependencias y entidades destinatarias de la circular y Hima Promotions",
+      "deadline": null,
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "legal_basis": null,
+      "paragraphs": [
+        "Las dependencias y entidades destinatarias deben distinguir la continuidad de la inhabilitación de Hima Promotions del tratamiento cautelar de la multa y consultar la sentencia para el alcance exacto."
+      ],
+      "trigger": "Cuando la publicación resulte aplicable a la situación revisada."
+    }
+  ],
+  "schema_version": 8
+}

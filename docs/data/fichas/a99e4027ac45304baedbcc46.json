@@ -1,0 +1,144 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "heading": "Sanción y alcance",
+      "paragraphs": [
+        "El Órgano Interno de Control en el Servicio Postal Mexicano informa la sanción a ATV de Sahuayo, S.A. de C.V.: una multa de 171,972.80 pesos y una inhabilitación de tres meses para aceptar propuestas, adjudicar o celebrar contratos regulados por las leyes de adquisiciones, obras públicas, asociaciones público-privadas o acuerdos marco.",
+        "La prohibición inicia a partir del día siguiente de la publicación en el Diario Oficial. La medida cubre a la empresa de manera directa o por interpósita persona."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "heading": "Condiciones de aplicación",
+      "paragraphs": [
+        "La inhabilitación continúa hasta acreditarse el pago de la multa si ésta permanece impaga al vencimiento. Los contratos adjudicados y los que ya estén formalizados con ATV de Sahuayo no quedan comprendidos.",
+        "Dependencias, entidades, empresas públicas, entidades federativas, municipios y demarcaciones territoriales deben cumplirla cuando los bienes, arrendamientos o servicios se contraten total o parcialmente con fondos federales."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "24bae7fb5e550538fa988f0cfa3003ebe120ca7c5fb5175b197cba0c32d5ed43",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "CIRCULAR por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a las entidades federativas, a la Fiscalía General de la República, a las empresas públicas del Estado, municipios y demarcaciones territoriales de la Ciudad de México, que deberán abstenerse de aceptar propuestas y celebrar contratos con la empresa ATV de Sahuayo, S.A. de C.V.",
+        "location": "caracteres 0-383"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Buen Gobierno.- Secretaría Anticorrupción y Buen Gobierno.- Órgano Interno de Control en el Servicio Postal Mexicano.- Área de Responsabilidades.- Expediente: INV0001/2025 PA-0001/2026.",
+        "location": "caracteres 383-5738"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792794&fecha=07/07/2026",
+    "retrieved_at": "2026-08-13T19:43:01.836465+00:00"
+  },
+  "executive_summary": [
+    "El Órgano Interno de Control en el Servicio Postal Mexicano comunicó que ATV de Sahuayo, S.A. de C.V. recibió una multa de 171,972.80 pesos y una inhabilitación de tres meses para aceptar propuestas, adjudicar o celebrar contratos regulados por las leyes de adquisiciones, obras públicas, asociaciones público-privadas o acuerdos marco. La circular deriva de una resolución administrativa identificada por la autoridad y delimita a los destinatarios públicos que deben abstenerse de contratar.",
+    "La abstención opera a partir del día siguiente de la publicación en el Diario Oficial. La medida cubre a la empresa de manera directa o por interpósita persona. La medida se refiere a propuestas y contratos futuros dentro del marco que describe la circular, por lo que la revisión debe hacerse frente al nombre de la empresa y, cuando procede, frente a la forma de representación expresamente señalada."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "paragraphs": [
+        "La circular incorpora una restricción de elegibilidad para nuevas contrataciones públicas respecto de ATV de Sahuayo, S.A. de C.V.. Los contratos adjudicados y los que ya estén formalizados con ATV de Sahuayo no quedan comprendidos."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "Las áreas contratantes deben tratar la inhabilitación como un control de elegibilidad para los procedimientos y contratos que la circular comprende, sin extenderla a los contratos que el propio texto exceptúa."
+        ],
+        "sector": "Contratación pública"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792794&fecha=07/07/2026",
+    "categories": [
+      "Penal",
+      "Administración centralizada"
+    ],
+    "content_hash": "68cd5e120e623400c82b4b32375f187dba1ca2b9a708818e9bf585a54e41e6f6",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/a99e4027ac45304baedbcc46.json",
+    "detail_url": "notas/a99e4027ac45304baedbcc46.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Circular",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5792794",
+    "importance": 2,
+    "issuing_body": "Presidencia de la República",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-07-07",
+    "official_title": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a las entidades federativas, a la Fiscalía General de la República, a las empresas públicas del Estado, municipios y demarcaciones territoriales de la Ciudad de México, que deberán abstenerse de aceptar propuestas y celebrar contratos con la empresa ATV de Sahuayo, S.A. de C.V.",
+    "published_at": "2026-07-07",
+    "relevance_score": 3,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5792794",
+    "summary_teaser": "La Secretaría Anticorrupción y Buen Gobierno comunicó tres meses de inhabilitación y una multa de 171,972.80 pesos para ATV de Sahuayo. La restricción cubre nuevas contrataciones bajo adquisiciones, obra pública, asociaciones público-privadas y acuerdos marco; los contratos ya adjudicados o formalizados quedan fuera de la circular.",
+    "title": "Inhabilitación de ATV restringe compras públicas",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5792794&fecha=07/07/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Entes públicos que realicen contrataciones con recursos federales",
+      "deadline": "tres meses; subsiste hasta acreditar el pago de la multa cuando corresponda",
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "legal_basis": "Ley de Adquisiciones, Ley de Obras Públicas y Ley de Asociaciones Público Privadas",
+      "paragraphs": [
+        "Cuando ATV de Sahuayo, S.A. de C.V. presente una propuesta, intervenga por interpósita persona o, en su caso, mediante la representación descrita por la circular, confronte la denominación y el procedimiento con la fuente antes de continuar la contratación."
+      ],
+      "trigger": "a partir del día siguiente de la publicación en el Diario Oficial"
+    }
+  ],
+  "schema_version": 8
+}

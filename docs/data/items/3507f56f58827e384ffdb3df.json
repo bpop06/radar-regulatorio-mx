@@ -1,0 +1,164 @@
+{
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "item": {
+    "ai_generated": true,
+    "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795366&fecha=04%2F08%2F2026",
+    "card_body": "## Qué se publicó\n\nEl Instituto de Administración y Avalúos de Bienes Nacionales modificó el destino de un inmueble federal para incorporar superficie adicional a favor de la Secretaría de Marina.\n\n## Sustancia\n\nEl acuerdo integra una superficie recuperada al inmueble destinado a la Marina y formaliza que la totalidad del predio continúe usándose para vivienda, alojamiento, recreación, oficinas, talleres y almacenes.\n\n## Fuente\n\nLa síntesis se elaboró exclusivamente con la fuente oficial identificada en la evidencia y sus fragmentos extraídos.",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "d48f03e4cf7d64089f07906797448ab9a48a8c68083d5271c09f428538dc9830",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-1",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/3507f56f58827e384ffdb3df.json",
+    "detail_url": "notas/3507f56f58827e384ffdb3df.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "heading": "Alcance de la publicación",
+        "paragraphs": [
+          "El Instituto de Administración y Avalúos de Bienes Nacionales modificó el destino de un inmueble federal para incorporar superficie adicional a favor de la Secretaría de Marina.",
+          "La modificación se refiere al inmueble federal identificado en Manzanillo y prevé publicación e inscripción en el Registro Público de la Propiedad Federal."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "heading": "Contenido relevante",
+        "paragraphs": [
+          "El acuerdo integra una superficie recuperada al inmueble destinado a la Marina y formaliza que la totalidad del predio continúe usándose para vivienda, alojamiento, recreación, oficinas, talleres y almacenes.",
+          "La Secretaría de Marina queda formalmente vinculada con la superficie total descrita en el acuerdo de destino. Las áreas patrimoniales deben revisar la inscripción, los datos del inmueble y los actos administrativos que deriven de la modificación publicada."
+        ]
+      }
+    ],
+    "detected_at": "2026-09-01T16:34:47.803209+00:00",
+    "document_type": "Acuerdo",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "89acebf598ab716162fa6b36057d569d1ce1732395280d07fa6bc12054b38a31",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "ACUERDO mediante el cual se modifica el Acuerdo por el que se destinó a la Secretaría de Marina una fracción de terreno con una superficie de 29,242.13 metros cuadrados, misma que forma parte de un inmueble de mayor extensión, ubicado en Bahía de Manzanillo, con el Estero Salahua, Municipio de Manzanillo, Estado de Colima, a efecto de que lo utilice para vivienda, alojamiento, áreas de recreación, oficinas, talleres y almacenes.",
+          "location": "caracteres 0-436"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Instituto de Administración y Avalúos de Bienes Nacionales.- MODIF-DST-01/ 2026.",
+          "location": "caracteres 436-11287"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795366&fecha=04%2F08%2F2026",
+      "retrieved_at": "2026-09-01T16:35:51.921311+00:00"
+    },
+    "executive_summary": [
+      "El Instituto de Administración y Avalúos de Bienes Nacionales modificó el destino de un inmueble federal para incorporar superficie adicional a favor de la Secretaría de Marina. El acuerdo integra una superficie recuperada al inmueble destinado a la Marina y formaliza que la totalidad del predio continúe usándose para vivienda, alojamiento, recreación, oficinas, talleres y almacenes.",
+      "La modificación se refiere al inmueble federal identificado en Manzanillo y prevé publicación e inscripción en el Registro Público de la Propiedad Federal. La publicación debe aplicarse sin extender sus alcances a situaciones no descritas en la fuente."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-09-01T16:34:47.803209+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5795366",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "La Secretaría de Marina queda formalmente vinculada con la superficie total descrita en el acuerdo de destino."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-1",
+            "chunk-2"
+          ],
+          "paragraphs": [
+            "La incidencia para este grupo se limita al alcance expresamente descrito en la publicación y requiere contrastarse con cada caso concreto."
+          ],
+          "sector": "Secretaría de Marina, autoridades patrimoniales y personas que consulten el registro inmobiliario federal"
+        }
+      ]
+    },
+    "importance": 1,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-09-01T18:46:30.041123+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795366&fecha=04/08/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5795366"
+    },
+    "official_published_at": "2026-08-04",
+    "official_title": "Acuerdo mediante el cual se modifica el Acuerdo por el que se destinó a la Secretaría de Marina una fracción de terreno con una superficie de 29,242.13 metros cuadrados, misma que forma parte de un inmueble de mayor extensión, ubicado en Bahía de Manzanillo, con el Estero Salahua, Municipio de Manzanillo, Estado de Colima, a efecto de que lo utilice para vivienda, alojamiento, áreas de recreación, oficinas, talleres y almacenes.",
+    "published_at": "2026-08-04",
+    "published_day": 4,
+    "published_month": 8,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Secretaría de Marina, autoridades patrimoniales y personas que consulten el registro inmobiliario federal",
+        "deadline": null,
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "legal_basis": null,
+        "paragraphs": [
+          "Las áreas patrimoniales deben revisar la inscripción, los datos del inmueble y los actos administrativos que deriven de la modificación publicada."
+        ],
+        "trigger": "Cuando la publicación resulte aplicable a la operación o situación revisada."
+      }
+    ],
+    "relevance_score": 1,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5795366",
+    "subtopic_tags": [],
+    "summary": "El documento oficial El Instituto de Administración y Avalúos de Bienes Nacionales modificó el destino de un inmueble federal para incorporar superficie adicional a favor de la Secretaría de Marina. El acuerdo integra una superficie recuperada al inmueble destinado a la Marina y formaliza que la totalidad del predio continúe usándose para vivienda, alojamiento, recreación, oficinas, talleres y almacenes.\n\nEl alcance debe leerse dentro de los límites que la propia fuente identifica: La modificación se refiere al inmueble federal identificado en Manzanillo y prevé publicación e inscripción en el Registro Público de la Propiedad Federal. La información ubica a Secretaría de Marina, autoridades patrimoniales y personas que consulten el registro inmobiliario federal como sujetos principalmente vinculados con el asunto. Por ello, la nota registra la existencia y el contenido comunicado, sin extender la conclusión a personas, operaciones, expedientes o contratos que el texto no menciona.\n\nDesde la gestión de cumplimiento, Las áreas patrimoniales deben revisar la inscripción, los datos del inmueble y los actos administrativos que deriven de la modificación publicada. La revisión debe partir de la publicación oficial y de la documentación disponible para cada situación concreta. Cuando el documento se refiera a una autorización, una sanción, un trámite, una regla administrativa, una medida de inspección o una propuesta legislativa, conviene distinguir el acto publicado de sus posibles actuaciones posteriores. La fuente no acredita por sí sola el cumplimiento individual, una afectación económica concreta, la procedencia de una solicitud ni un resultado distinto de los expresamente descritos.\n\nEn términos probatorios, esta síntesis se limita a la evidencia extraída y a los localizadores asociados. No atribuye efectos, tratados, montos, plazos, fundamentos, resultados o hechos que no estén contenidos en la publicación. La lectura operativa requiere consultar el texto íntegro, sus anexos y, cuando corresponda, la documentación de la persona o operación involucrada. Esta distinción es especialmente importante para no convertir un comunicado, una referencia registral, una actuación cautelar o una iniciativa en una conclusión definitiva sobre derechos u obligaciones individuales.",
+    "summary_teaser": "El Instituto de Administración y Avalúos de Bienes Nacionales modificó el destino de un inmueble federal en Manzanillo para incorporar una superficie adicional a favor de la Secretaría de Marina. El acuerdo formaliza la inclusión de la totalidad del predio para vivienda, oficinas, talleres y almacenes. También ordena su inscripción en el registro inmobiliario federal.",
+    "title": "Marina incorpora superficie adicional a inmueble federal de Manzanillo",
+    "topic_tags": [
+      "Acuerdo"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5795366&fecha=04/08/2026"
+  },
+  "schema_version": 8
+}

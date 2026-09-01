@@ -1,0 +1,173 @@
+{
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "item": {
+    "ai_generated": true,
+    "authority": "PODER EJECUTIVO SECRETARIA DE ECONOMIA",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791265&fecha=22/06/2026",
+    "card_body": "## Qué se publicó\n\nEconomía actualizó los cupos de importación del CPTPP para incluir mercancías originarias del Reino Unido en los supuestos de origen previstos.\n\n## Sustancia\n\nLa Secretaría de Economía modifica el acuerdo que da a conocer los cupos de importación del Apéndice A-1 del Anexo 2-D del CPTPP. La publicación explica que el Protocolo de Adhesión del Reino Unido requiere actualizar el acuerdo de cupos antes de que el Protocolo surta efectos para México, una vez realizada la notificación a Nueva Zelanda conforme a los procedimientos internos aplicables.\n\nEl acuerdo de cupos se vincula con mercancías originarias de ciertas Partes del Tratado, entre ellas productos lácteos y aceite de palma o de almendra de palma. La modificación no anuncia un cupo nuevo con una cantidad específica en esta publicación: reforma las fracciones I y II del numeral 1.1 para incluir al Reino Unido entre los países de origen contemplados en los supuestos correspondientes.\n\n## Fuente\n\nFuente oficial: Acuerdo de la Secretaría de Economía que modifica los cupos de importación del Apéndice A-1 del Anexo 2-D del CPTPP. chunk-1 identifica el acto; chunk-2 contiene los considerandos, la reforma al numeral de origen y el transitorio de vigencia.",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Comercio exterior",
+      "Administración centralizada"
+    ],
+    "content_hash": "1947150f59ce46797a4ca984e1eb40bbb9218ccb5874710d30548e8a272c793d",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-1",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/0aea017d1749ce72279df03d.json",
+    "detail_url": "notas/0aea017d1749ce72279df03d.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "heading": "Objeto de la modificación",
+        "paragraphs": [
+          "La Secretaría de Economía modifica el acuerdo que da a conocer los cupos de importación del Apéndice A-1 del Anexo 2-D del CPTPP. La publicación explica que el Protocolo de Adhesión del Reino Unido requiere actualizar el acuerdo de cupos antes de que el Protocolo surta efectos para México, una vez realizada la notificación a Nueva Zelanda conforme a los procedimientos internos aplicables.",
+          "El acuerdo de cupos se vincula con mercancías originarias de ciertas Partes del Tratado, entre ellas productos lácteos y aceite de palma o de almendra de palma. La modificación no anuncia un cupo nuevo con una cantidad específica en esta publicación: reforma las fracciones I y II del numeral 1.1 para incluir al Reino Unido entre los países de origen contemplados en los supuestos correspondientes."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "heading": "Reglas de origen y vigencia",
+        "paragraphs": [
+          "La redacción reformada exige que las mercancías cumplan el Capítulo 3 del CPTPP, relativo a reglas de origen y procedimientos relacionados. En la fracción I se agrega al Reino Unido a la lista de orígenes junto con Australia, Brunéi, Canadá, Japón, Malasia, Nueva Zelanda, Singapur y Vietnam; la fracción II también incorpora al Reino Unido en la lista prevista para ese supuesto.",
+          "El transitorio único dispone que el acuerdo entra en vigor el día de su publicación en el Diario Oficial de la Federación. Las personas interesadas deben revisar el acuerdo de cupos completo, la mercancía y fracción aplicable, las reglas de origen y el procedimiento administrativo que corresponda, pues la sola inclusión del Reino Unido no acredita por sí misma la elegibilidad de una operación concreta."
+        ]
+      }
+    ],
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Acuerdo Que Modifica",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "c2b2752174188baf43eda370f1f062ee1c0a5cc6e8522e0b26d302349383d1ab",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "ACUERDO que modifica el diverso por el que se dan a conocer los cupos de importación descritos en el Apéndice A-1 \" Contingentes arancelarios de México \" del Anexo 2-D \" Compromisos Arancelarios \" del Tratado Integral y Progresista de Asociación Transpacífico.",
+          "location": "caracteres 0-264"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Economía.",
+          "location": "caracteres 264-7312"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791265&fecha=22/06/2026",
+      "retrieved_at": "2026-08-13T19:43:52.422584+00:00"
+    },
+    "executive_summary": [
+      "La Secretaría de Economía modifica el acuerdo que da a conocer los cupos de importación del Apéndice A-1 del Anexo 2-D del CPTPP. La publicación explica que el Protocolo de Adhesión del Reino Unido requiere actualizar el acuerdo de cupos antes de que el Protocolo surta efectos para México, una vez realizada la notificación a Nueva Zelanda conforme a los procedimientos internos aplicables.",
+      "El acuerdo de cupos se vincula con mercancías originarias de ciertas Partes del Tratado, entre ellas productos lácteos y aceite de palma o de almendra de palma. La modificación no anuncia un cupo nuevo con una cantidad específica en esta publicación: reforma las fracciones I y II del numeral 1.1 para incluir al Reino Unido entre los países de origen contemplados en los supuestos correspondientes."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5791265",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "El cambio habilita la referencia de origen Reino Unido en los supuestos de cupos CPTPP, pero conserva las condiciones sustantivas de origen y administración previstas por el régimen de contingentes."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-1",
+            "chunk-2"
+          ],
+          "paragraphs": [
+            "El cambio habilita la referencia de origen Reino Unido en los supuestos de cupos CPTPP, pero conserva las condiciones sustantivas de origen y administración previstas por el régimen de contingentes."
+          ],
+          "sector": "Importadores de productos sujetos a contingentes CPTPP"
+        }
+      ]
+    },
+    "importance": 2,
+    "issuing_body": "Secretaría de Economía",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-09-01T18:46:30.041123+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791265&fecha=22/06/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5791265"
+    },
+    "official_published_at": "2026-06-22",
+    "official_title": "Acuerdo que modifica el diverso por el que se dan a conocer los cupos de importación descritos en el Apéndice A-1 \"Contingentes arancelarios de México\" del Anexo 2-D \"Compromisos Arancelarios\" del Tratado Integral y Progresista de Asociación Transpacífico.",
+    "published_at": "2026-06-22",
+    "published_day": 22,
+    "published_month": 6,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Importadores de productos sujetos a contingentes CPTPP",
+        "deadline": null,
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "legal_basis": "Apéndice A-1 del Anexo 2-D del CPTPP",
+        "paragraphs": [
+          "Antes de solicitar o utilizar un cupo, compruebe que la mercancía cumple la regla de origen, que cae en el supuesto del numeral 1.1 y que satisface los requisitos administrativos del acuerdo de cupos."
+        ],
+        "trigger": "Al tramitar un cupo CPTPP para mercancía originaria del Reino Unido"
+      }
+    ],
+    "relevance_score": 2,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5791265",
+    "subtopic_tags": [
+      "importacion"
+    ],
+    "summary": "La Secretaría de Economía modifica el acuerdo que da a conocer los cupos de importación del Apéndice A-1 del Anexo 2-D del CPTPP. La publicación explica que el Protocolo de Adhesión del Reino Unido requiere actualizar el acuerdo de cupos antes de que el Protocolo surta efectos para México, una vez realizada la notificación a Nueva Zelanda conforme a los procedimientos internos aplicables.\n\nEl acuerdo de cupos se vincula con mercancías originarias de ciertas Partes del Tratado, entre ellas productos lácteos y aceite de palma o de almendra de palma. La modificación no anuncia un cupo nuevo con una cantidad específica en esta publicación: reforma las fracciones I y II del numeral 1.1 para incluir al Reino Unido entre los países de origen contemplados en los supuestos correspondientes.\n\nLa redacción reformada exige que las mercancías cumplan el Capítulo 3 del CPTPP, relativo a reglas de origen y procedimientos relacionados. En la fracción I se agrega al Reino Unido a la lista de orígenes junto con Australia, Brunéi, Canadá, Japón, Malasia, Nueva Zelanda, Singapur y Vietnam; la fracción II también incorpora al Reino Unido en la lista prevista para ese supuesto.\n\nEl transitorio único dispone que el acuerdo entra en vigor el día de su publicación en el Diario Oficial de la Federación. Las personas interesadas deben revisar el acuerdo de cupos completo, la mercancía y fracción aplicable, las reglas de origen y el procedimiento administrativo que corresponda, pues la sola inclusión del Reino Unido no acredita por sí misma la elegibilidad de una operación concreta.\n\nLa reforma conserva la administración de contingentes arancelarios de México bajo el Apéndice A-1 del Anexo 2-D del CPTPP. En sus considerandos identifica como bienes comprendidos, según corresponda, leche y nata, leche en polvo, evaporada y condensada, productos constituidos por componentes naturales de la leche, mantequilla, quesos, preparaciones a base de lácteos, aceite de palma y aceite de almendra de palma. La Comisión de Comercio Exterior emitió la opinión que el texto refiere para la disposición. La incorporación del Reino Unido opera dentro de esa arquitectura de cupos y no modifica por sí sola cantidades, periodos de asignación o criterios de distribución que no aparecen reformados.",
+    "summary_teaser": "Economía modifica la administración de cupos del CPTPP para incorporar mercancías originarias del Reino Unido. El cambio alcanza los supuestos de origen del numeral 1.1 y mantiene el sistema de contingentes para productos lácteos y aceites de palma, sujeto a reglas de origen y a los requisitos que establezca el acuerdo de cupos.",
+    "title": "México incorpora Reino Unido a cupos de importación CPTPP",
+    "topic_tags": [
+      "Comercio exterior",
+      "Acuerdo"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5791265&fecha=22/06/2026"
+  },
+  "schema_version": 8
+}

@@ -1,0 +1,160 @@
+{
+  "coverage": [
+    {
+      "disposition": "not_material",
+      "reason": "No agrega reglas distintas del encabezado de la resolución.",
+      "source_ref": "chunk-1",
+      "target_sections": []
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-3",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-2",
+        "chunk-3"
+      ],
+      "heading": "Criterios especiales condicionados",
+      "paragraphs": [
+        "La solicitud o prórroga de criterios exige declaratoria de emergencia o desastre natural, afectaciones económicas y posible impacto adverso en solvencia o liquidez; el formato solicita información sobre criterios, área, periodo e impactos."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2",
+        "chunk-3"
+      ],
+      "heading": "Registros para saneamiento o reestructuración",
+      "paragraphs": [
+        "El formato de registros especiales se reserva a procesos de saneamiento financiero o reestructuración corporativa y exige describir rubros, importes, causas, indicadores, acciones de remediación y aprobación competente."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Tramitación y respuesta",
+      "paragraphs": [
+        "La solicitud se presenta conforme al Anexo AA. La CNBV tiene sesenta días hábiles para resolver, las reglas ordinarias continúan mientras no haya notificación y el silencio es negativo."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "a9a8aaf1d38ce09c62ca4efc31dca0b3330b2b8b820a2e93f7301a8732675e21",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "RESOLUCIÓN que modifica las Disposiciones de carácter general aplicables a las entidades de ahorro y crédito popular, organismos de integración, sociedades financieras comunitarias y organismos de integración financiera rural, a que se refiere la Ley de Ahorro y Crédito Popular.",
+        "location": "caracteres 0-283"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Comisión Nacional Bancaria y de Valores. · parte 1",
+        "location": "caracteres 283-12283"
+      },
+      {
+        "id": "chunk-3",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Comisión Nacional Bancaria y de Valores. · parte 2",
+        "location": "caracteres 12283-18482"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792787&fecha=07/07/2026",
+    "retrieved_at": "2026-08-13T19:43:03.574526+00:00"
+  },
+  "executive_summary": [
+    "El Anexo AA crea dos rutas: criterios contables especiales ante declaratoria de emergencia o desastre con afectación económica adversa, y registros contables para saneamiento financiero o reestructuración corporativa.",
+    "La CNBV resuelve en sesenta días hábiles; mientras no notifique, las Sofipos mantienen los criterios ordinarios del Anexo E y el silencio tiene sentido negativo."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-2",
+        "chunk-3"
+      ],
+      "paragraphs": [
+        "La reforma delimita la procedencia de dos autorizaciones distintas: no convierte el Anexo AA en un canal abierto para cualquier ajuste contable de una Sofipo."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-2",
+          "chunk-3"
+        ],
+        "paragraphs": [
+          "Deben identificar cuál de los dos supuestos existe y reunir evidencia específica de emergencia con afectación adversa o de un proceso de saneamiento o reestructuración."
+        ],
+        "sector": "Sociedades Financieras Populares, representantes legales y áreas de cumplimiento contable"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792787&fecha=07/07/2026",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "a526060a63b9410e6ecfbcf0e16665739652c4823b1bd0540caf6a006603a3a7",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/659532a1db4d6180a860a8f4.json",
+    "detail_url": "notas/659532a1db4d6180a860a8f4.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Resolución Que Modifica",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5792787",
+    "importance": 1,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-07-07",
+    "official_title": "Resolución que modifica las Disposiciones de carácter general aplicables a las entidades de ahorro y crédito popular, organismos de integración, sociedades financieras comunitarias y organismos de integración financiera rural, a que se refiere la Ley de Ahorro y Crédito Popular.",
+    "published_at": "2026-07-07",
+    "relevance_score": 1,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5792787",
+    "summary_teaser": "La CNBV incorporó al Anexo AA de las disposiciones de ahorro y crédito popular dos formatos distintos para Sofipos: criterios contables especiales ante declaratoria de emergencia o desastre con afectación económica adversa, y registros especiales únicamente para saneamiento financiero o reestructuración corporativa. La solicitud no es un canal general de tratamiento contable.",
+    "title": "CNBV establece límites de emergencia para criterios de Sofipos",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5792787&fecha=07/07/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Sociedades Financieras Populares y sus representantes legales",
+      "deadline": null,
+      "evidence_refs": [
+        "chunk-2",
+        "chunk-3"
+      ],
+      "legal_basis": "Artículos 210 Bis 1 y 210 Bis 2, y Anexo AA",
+      "paragraphs": [
+        "Usen el formato de criterios sólo si existe la declaratoria de emergencia o desastre y la afectación económica descrita; empleen el de registros únicamente si la entidad lleva un proceso de saneamiento financiero o reestructuración corporativa."
+      ],
+      "trigger": "Evaluación de una solicitud ante la CNBV"
+    }
+  ],
+  "schema_version": 8
+}

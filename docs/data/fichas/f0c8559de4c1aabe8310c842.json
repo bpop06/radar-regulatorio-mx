@@ -1,0 +1,126 @@
+{
+  "coverage": [
+    {
+      "disposition": "not_material",
+      "reason": "Primer locator sólo contiene título; facultades concretas y vigencia aparecen en locator sustantivo.",
+      "source_ref": "chunk-1",
+      "target_sections": []
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    }
+  ],
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Inmuebles y maniobras",
+      "paragraphs": [
+        "El Acuerdo delegatorio identifica dos grupos: autorizaciones sobre uso de fracciones de inmuebles ferroviarios concesionados o asignados, y permisos de maniobras en zonas federales. Mantiene potestades de otorgar, modificar y revocar dentro de competencia delegada."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Ejercicio y vigencia",
+      "paragraphs": [
+        "Subsecretaría puede apoyarse en unidades administrativas adscritas. Secretario conserva posibilidad de ejercer directamente facultades, por lo que el Acuerdo delegatorio no supone renuncia a competencia superior. Entrada en vigor es día hábil siguiente de publicación."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "409e9396b2239418fe093ba9855a36d503eb8faea8f2baa8b7ffc7755881568d",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "ACUERDO delegatorio de facultades a favor de la persona titular de la Subsecretaría de Infraestructura de la Secretaría de Infraestructura, Comunicaciones y Transportes.",
+        "location": "caracteres 0-173"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Comunicaciones.- Secretaría de Infraestructura, Comunicaciones y Transportes.",
+        "location": "caracteres 173-5978"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791267&fecha=22/06/2026",
+    "retrieved_at": "2026-08-13T19:43:52.223138+00:00"
+  },
+  "executive_summary": [
+    "SICT delega en titular de Subsecretaría de Infraestructura facultades ferroviarias. Delegación abarca autorizar, modificar o revocar autorizaciones sobre arrendamiento o comodato de fracciones de inmuebles ferroviarios concesionados o asignados.",
+    "También comprende otorgar, modificar o revocar permisos para servicios de maniobras en zonas federales. Titular puede apoyarse en unidades adscritas y delegación no impide que Secretario ejerza facultades directamente."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "paragraphs": [
+        "Concesionarios, asignatarios y prestadores de maniobras pueden identificar unidad competente para actos delegados. Solicitudes no quedan liberadas de requisitos por delegación; el Acuerdo delegatorio ubica ejercicio en Subsecretaría."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "Concesionarios, asignatarios y prestadores pueden dirigir seguimiento a Subsecretaría de Infraestructura conforme a delegación."
+        ],
+        "sector": "Ferrocarriles e infraestructura"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791267&fecha=22/06/2026",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "b2a9ff43fed2bf2e30b1eddcbfdeab2a149c93342c6ff2dfd4f5a9c77dc48442",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/f0c8559de4c1aabe8310c842.json",
+    "detail_url": "notas/f0c8559de4c1aabe8310c842.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Acuerdo Delegatorio",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5791267",
+    "importance": 2,
+    "issuing_body": "Presidencia de la República",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-06-22",
+    "official_title": "Acuerdo delegatorio de facultades a favor de la persona titular de la Subsecretaría de Infraestructura de la Secretaría de Infraestructura, Comunicaciones y Transportes.",
+    "published_at": "2026-06-22",
+    "relevance_score": 3,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5791267",
+    "summary_teaser": "La SICT delega en la Subsecretaría de Infraestructura facultades sobre autorizaciones relativas a fracciones de inmuebles ferroviarios y permisos de servicios de maniobras en zonas federales. El Acuerdo delegatorio permite otorgar, modificar o revocar los actos comprendidos y entra en vigor al día hábil siguiente de su publicación.",
+    "title": "SICT delega facultades ferroviarias y permite su ejercicio por la Subsecretaría de Infraestructura",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5791267&fecha=22/06/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Personas que tramiten actos ferroviarios comprendidos",
+      "deadline": "Día hábil siguiente a publicación para entrada en vigor",
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "legal_basis": null,
+      "paragraphs": [
+        "Identificar si solicitud se refiere a fracción de inmueble ferroviario o permiso de maniobras y dirigir seguimiento a Subsecretaría conforme a facultad delegada."
+      ],
+      "trigger": "Al solicitar, modificar o atender revocación de acto incluido"
+    }
+  ],
+  "schema_version": 8
+}

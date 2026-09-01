@@ -1,0 +1,131 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    }
+  ],
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Alcance de la publicación",
+      "paragraphs": [
+        "El Servicio de Administración Tributaria publicó el nombre y la clave en el RFC de Integradora Mexicana ASA Profesional, respecto de una resolución en la que no desvirtuó la presunción de falsedad de los comprobantes fiscales digitales por internet emitidos; por ello, se consideran falsos con efectos generales y las operaciones contenidas en ellos no producen ni produjeron efecto fiscal alguno.",
+        "Las personas que recibieron CFDI emitidos por la contribuyente deben revertir el efecto fiscal que les hubieren dado mediante la presentación de una declaración complementaria dentro de treinta días naturales a partir de la publicación en el DOF. Si no lo hacen, la autoridad restringirá temporalmente el uso del certificado de sello digital para emitir CFDI, conforme al artículo 17-H Bis, fracción XIV, del Código Fiscal de la Federación."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Seguimiento operativo",
+      "paragraphs": [
+        "Las personas receptoras deben identificar los CFDI involucrados y revisar la presentación de la declaración complementaria dentro del plazo de treinta días naturales contado desde la publicación en el DOF.",
+        "La ficha no extiende el alcance del acto a supuestos que la fuente no identifica."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "2d34cffc7d46b373bcbc0bc0ff546207dc60d0b9df658f82c8601a6aef45a90c",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "OFICIO 500-05-00-00-00-2026-24370 mediante el cual se comunica el nombre y la clave en el Registro Federal de Contribuyentes a que se refiere la fracción X del artículo 49 Bis del Código Fiscal de la Federación.",
+        "location": "caracteres 0-215"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Servicio de Administración Tributaria.- Administración General de Auditoría Fiscal Federal.- Administración Central de Fiscalización Estratégica.",
+        "location": "caracteres 215-7822"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796303&fecha=14%2F08%2F2026",
+    "retrieved_at": "2026-09-01T16:35:29.964211+00:00"
+  },
+  "executive_summary": [
+    "El Servicio de Administración Tributaria publicó el nombre y la clave en el RFC de Integradora Mexicana ASA Profesional, respecto de una resolución en la que no desvirtuó la presunción de falsedad de los comprobantes fiscales digitales por internet emitidos; por ello, se consideran falsos con efectos generales y las operaciones contenidas en ellos no producen ni produjeron efecto fiscal alguno.",
+    "Las personas que recibieron CFDI emitidos por la contribuyente deben revertir el efecto fiscal que les hubieren dado mediante la presentación de una declaración complementaria dentro de treinta días naturales a partir de la publicación en el DOF. Si no lo hacen, la autoridad restringirá temporalmente el uso del certificado de sello digital para emitir CFDI, conforme al artículo 17-H Bis, fracción XIV, del Código Fiscal de la Federación."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "paragraphs": [
+        "Las personas que recibieron CFDI emitidos por la contribuyente deben revertir el efecto fiscal que les hubieren dado mediante la presentación de una declaración complementaria dentro de treinta días naturales a partir de la publicación en el DOF. Si no lo hacen, la autoridad restringirá temporalmente el uso del certificado de sello digital para emitir CFDI, conforme al artículo 17-H Bis, fracción XIV, del Código Fiscal de la Federación."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "La incidencia para este grupo se limita al alcance expresamente descrito en la publicación y requiere contrastarse con cada caso concreto."
+        ],
+        "sector": "Personas receptoras de CFDI emitidos por la contribuyente identificada"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796303&fecha=14%2F08%2F2026",
+    "categories": [
+      "Fiscal",
+      "Administración centralizada"
+    ],
+    "content_hash": "37aa1bca622c193181c93b0a2017d3e344c2baf43e1915ec1cc65a4f28018f08",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/0df689b7ac602fefce01bb17.json",
+    "detail_url": "notas/0df689b7ac602fefce01bb17.html",
+    "detected_at": "2026-09-01T16:34:47.803209+00:00",
+    "document_type": "Oficio",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5796303",
+    "importance": 2,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-08-14",
+    "official_title": "Oficio 500-05-00-00-00-2026-24370 mediante el cual se comunica el nombre y la clave en el Registro Federal de Contribuyentes a que se refiere la fracción X del artículo 49 Bis del Código Fiscal de la Federación.",
+    "published_at": "2026-08-14",
+    "relevance_score": 3,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5796303",
+    "summary_teaser": "El SAT publicó la identificación de Integradora Mexicana ASA Profesional tras una resolución en la que no desvirtuó la presunción de falsedad de los CFDI emitidos. Las operaciones contenidas en esos comprobantes no producen efectos fiscales. Las personas receptoras deben presentar declaración complementaria para revertir el efecto fiscal dentro de treinta días naturales desde la publicación en el DOF; de no hacerlo, procede la restricción del certificado de sello digital.",
+    "title": "Integradora Mexicana ASA Profesional: plazo de 30 días para revertir efectos de CFDI falsos",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796303&fecha=14/08/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Personas receptoras de CFDI emitidos por la contribuyente identificada",
+      "deadline": "Treinta días naturales a partir de la publicación en el DOF.",
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "legal_basis": "Artículo 49 Bis, fracción X, y artículo 17-H Bis, fracción XIV, del Código Fiscal de la Federación.",
+      "paragraphs": [
+        "Las personas receptoras deben identificar los CFDI involucrados y revisar la presentación de la declaración complementaria dentro del plazo de treinta días naturales contado desde la publicación en el DOF."
+      ],
+      "trigger": "Desde la publicación del oficio en el Diario Oficial de la Federación."
+    }
+  ],
+  "schema_version": 8
+}

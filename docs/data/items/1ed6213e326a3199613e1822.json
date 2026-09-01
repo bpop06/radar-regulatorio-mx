@@ -1,0 +1,241 @@
+{
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "item": {
+    "ai_generated": true,
+    "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5794449&fecha=22%2F07%2F2026",
+    "card_body": "## Qué se publicó\n\nUna convocatoria de CONSAR para seleccionar a la AFORE prestadora de servicio de cuentas pendientes de asignación e inactivas.\n\n## Sustancia\n\nLa selección se decide por la comisión más baja entre propuestas solventes. La prestadora llevará registros, conciliaciones, atención e informes sobre las cuentas, con obligaciones de confidencialidad, continuidad y transferencia de información. El servicio dura 72 meses y puede prorrogarse hasta 12 más.\n\n## Fuente\n\n[Abrir publicación oficial](https://dof.gob.mx/nota_detalle.php?codigo=5794449&fecha=22%2F07%2F2026)",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "501e8553c27f3cb9a86e653fe41659c26e38723abc801b9eb350070de9f4b7f6",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-1",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-3",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-4",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-5",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-6",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/1ed6213e326a3199613e1822.json",
+    "detail_url": "notas/1ed6213e326a3199613e1822.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "heading": "Objeto, universo y calendario",
+        "paragraphs": [
+          "La convocatoria cubre cuentas de trabajadores de nuevo ingreso pendientes de asignación y cuentas inactivas. La fuente estima 9,315,584 cuentas y 118,958 millones de pesos al 31 de mayo de 2026 y fija hitos para aclaraciones, entrega de propuestas y fallo."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-2",
+          "chunk-3"
+        ],
+        "heading": "Selección, vigencia y contingencias",
+        "paragraphs": [
+          "La adjudicación se otorga a la comisión más baja que sea solvente y cumpla los requisitos. El servicio dura 72 meses, con posible prórroga de hasta 12, y la convocatoria contempla declararlo desierto o terminar anticipadamente en los supuestos establecidos."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-4",
+          "chunk-5",
+          "chunk-6"
+        ],
+        "heading": "Funciones y requisitos de las AFORE",
+        "paragraphs": [
+          "El anexo exige administración y conciliación de saldos, información a trabajadores y autoridades, cesión de cuentas en los supuestos previstos, confidencialidad y continuidad operativa. Las postulantes deben acreditar personalidad, operación, solvencia, infraestructura y controles de seguridad, además de presentar una propuesta económica."
+        ]
+      }
+    ],
+    "detected_at": "2026-08-14T01:46:44.993982+00:00",
+    "document_type": "Convocatoria Dirigida A",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "951d205628c0ac0612fd56733e0e23130d5e287ad69cdba9d74b4a2c9467a075",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "CONVOCATORIA dirigida a las Administradoras de Fondos para el Retiro interesadas en fungir como prestadoras de servicio para llevar el registro y control de los recursos de Cuentas Individuales pendientes de ser asignadas y Cuentas Individuales inactivas, en términos del artículo 76 de la Ley de los Sistemas de Ahorro para el Retiro.",
+          "location": "caracteres 0-339"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Comisión Nacional del Sistema de Ahorro para el Retiro. · parte 1",
+          "location": "caracteres 339-12339"
+        },
+        {
+          "id": "chunk-3",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Comisión Nacional del Sistema de Ahorro para el Retiro. · parte 2",
+          "location": "caracteres 12339-24339"
+        },
+        {
+          "id": "chunk-4",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Comisión Nacional del Sistema de Ahorro para el Retiro. · parte 3",
+          "location": "caracteres 24339-36339"
+        },
+        {
+          "id": "chunk-5",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Comisión Nacional del Sistema de Ahorro para el Retiro. · parte 4",
+          "location": "caracteres 36339-48339"
+        },
+        {
+          "id": "chunk-6",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Comisión Nacional del Sistema de Ahorro para el Retiro. · parte 5",
+          "location": "caracteres 48339-55785"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5794449&fecha=22%2F07%2F2026",
+      "retrieved_at": "2026-08-14T00:36:48.647521+00:00"
+    },
+    "executive_summary": [
+      "CONSAR abrió una licitación entre AFORE para seleccionar la prestadora de servicio que registre y controle cuentas pendientes de asignación y cuentas individuales inactivas.",
+      "La convocatoria combina un criterio de menor comisión solvente con requisitos de capacidad operativa, solvencia, seguridad de datos, continuidad e información a trabajadores."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-08-14T01:46:44.993982+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5794449",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-2",
+          "chunk-3",
+          "chunk-4"
+        ],
+        "paragraphs": [
+          "La convocatoria inicia la selección de la entidad que gestionará un universo relevante de cuentas no asignadas e inactivas bajo requisitos de servicio, trazabilidad, datos y comisión."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-4",
+            "chunk-5",
+            "chunk-6"
+          ],
+          "paragraphs": [
+            "Las AFORE interesadas deben preparar una propuesta técnica y económica completa; los trabajadores conservan derechos de información y de cesión de cuentas conforme a las reglas aplicables."
+          ],
+          "sector": "AFORE, trabajadores y operadores del sistema de ahorro para el retiro"
+        }
+      ]
+    },
+    "importance": 1,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-09-01T18:46:30.041123+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5794449&fecha=22/07/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5794449"
+    },
+    "official_published_at": "2026-07-22",
+    "official_title": "Convocatoria dirigida a las Administradoras de Fondos para el Retiro interesadas en fungir como prestadoras de servicio para llevar el registro y control de los recursos de Cuentas Individuales pendientes de ser asignadas y Cuentas Individuales inactivas, en términos del artículo 76 de la Ley de los Sistemas de Ahorro para el Retiro.",
+    "published_at": "2026-07-22",
+    "published_day": 22,
+    "published_month": 7,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "AFORE interesadas en fungir como prestadoras de servicio",
+        "deadline": "Junta de aclaraciones en el tercer día hábil y entrega de propuestas en el noveno día hábil posteriores a la publicación, conforme a las bases",
+        "evidence_refs": [
+          "chunk-2",
+          "chunk-3",
+          "chunk-5",
+          "chunk-6"
+        ],
+        "legal_basis": "Convocatoria, anexo técnico, Ley de los Sistemas de Ahorro para el Retiro y disposiciones citadas en la fuente",
+        "paragraphs": [
+          "Si se participa en la licitación, verifique los hitos desde la publicación, presente la propuesta dentro del plazo, integre los documentos de capacidad, solvencia, seguridad y confidencialidad, y contraste la comisión con las condiciones oficiales. Información jurídica general; revise íntegramente la convocatoria, el anexo y las aclaraciones."
+        ],
+        "trigger": "Decisión de participar en la licitación de CONSAR"
+      }
+    ],
+    "relevance_score": 1,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5794449",
+    "subtopic_tags": [],
+    "summary": "La Comisión Nacional del Sistema de Ahorro para el Retiro convocó a las Administradoras de Fondos para el Retiro interesadas en fungir como prestadoras de servicio para el registro y control de cuentas individuales pendientes de ser asignadas de trabajadores de nuevo ingreso y cuentas individuales inactivas. El objeto es seleccionar una administradora que ofrezca las mejores condiciones de niveles de servicio y precio bajo la Ley de los Sistemas de Ahorro para el Retiro, su Reglamento y las disposiciones de operaciones citadas.\n\nLa convocatoria estima que, al 31 de mayo de 2026, las cuentas administradas por prestadoras de servicio eran 9,315,584 y representaban 118,958 millones de pesos depositados en Banco de México, con un saldo promedio aproximado de 12,770 pesos por cuenta. El calendario fija la junta de aclaraciones en el tercer día hábil posterior a la publicación, la entrega de propuestas técnicas y económicas en el noveno día hábil y la notificación del fallo en el quinto día hábil posterior a esa entrega. Las dudas deben presentarse por el canal y con la anticipación señalados por la Comisión.\n\nLa adjudicación corresponde a la propuesta con la comisión más baja que resulte solvente y cumpla los requisitos legales, técnicos y económicos. La prestadora tendrá una vigencia de 72 meses desde la recepción de las cuentas, prorrogable hasta por 12 meses a consideración de la Comisión. Si no hay propuestas aceptables, el procedimiento puede declararse desierto; mientras se designa una nueva prestadora, la que está en operación continuará en los términos de su adjudicación vigente.\n\nEl anexo técnico exige recibir y conciliar información de cuotas y aportaciones, llevar registros y saldos de subcuentas, proporcionar información a trabajadores, entregar informes y proteger la integridad y confidencialidad de los datos. También prevé cesiones cuando los trabajadores se registren o sus cuentas entren a procesos de asignación. Las AFORE postulantes deben demostrar personalidad, capacidad de operación, solvencia financiera, infraestructura y controles de seguridad, y presentar una propuesta de comisión con al menos cuatro decimales e inferior a la comisión de mercado descrita. Esta ficha es información jurídica general y no sustituye las bases, anexos y actos posteriores del procedimiento.",
+    "summary_teaser": "CONSAR abrió una licitación entre AFORE para registrar y controlar cuentas individuales pendientes de asignación e inactivas. Al 31 de mayo de 2026, el universo estimado era de 9.3 millones de cuentas y 118,958 millones de pesos. La ganadora debe ofrecer la menor comisión solvente y cumplir requisitos operativos, financieros, de seguridad y confidencialidad.",
+    "title": "CONSAR abre licitación para cuentas individuales inactivas",
+    "topic_tags": [
+      "Convocatoria"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5794449&fecha=22/07/2026"
+  },
+  "schema_version": 8
+}

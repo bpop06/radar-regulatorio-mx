@@ -1,0 +1,201 @@
+{
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "item": {
+    "ai_generated": true,
+    "authority": "Agencia Nacional de Aduanas de México",
+    "canonical_url": "https://www.anam.gob.mx/comunicado-prensa-58-2026",
+    "card_body": "## Qué se publicó\n\nLa Agencia Nacional de Aduanas de México informó cifras de recaudación y operaciones de comercio exterior correspondientes a julio de 2026.\n\n## Sustancia\n\nEl comunicado reporta 131 mil 616 millones de pesos de recaudación mensual y 1 millón 957 mil 554 operaciones de comercio exterior. También expone el acumulado enero-julio, costo de captación, variaciones y desagregados por aduana y tipo de pedimento.\n\n## Fuente\n\nLa síntesis se elaboró exclusivamente con el comunicado oficial identificado en la evidencia y sus fragmentos extraídos.",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Comercio exterior"
+    ],
+    "content_hash": "9776a97b73c3f665635c43f6e9f88212592a7e66711af5de3d8f0c41efd317f9",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-1",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "detailed_summary",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-3",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/c1607aef9f3217827e292d28.json",
+    "detail_url": "notas/c1607aef9f3217827e292d28.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-3"
+        ],
+        "heading": "Resultados comunicados para julio",
+        "paragraphs": [
+          "La ANAM informó una recaudación de 131 mil 616 millones de pesos en julio de 2026, cifra mensual más alta del año según el comunicado, con crecimiento de 8.7 por ciento respecto de junio y de 5.4 por ciento frente a julio de 2025.",
+          "La fuente reportó 1 millón 957 mil 554 operaciones de comercio exterior, 2 por ciento más que en junio y récord desde enero de 2025."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-3"
+        ],
+        "heading": "Acumulado y distribución por aduana",
+        "paragraphs": [
+          "Entre enero y julio de 2026, el comunicado señala una recaudación acumulada de 791 mil 009 millones de pesos, un costo de captación de 25 centavos por cada 100 pesos recaudados y un gasto de 2 mil 007.9 millones de pesos para obtener esos ingresos.",
+          "La ANAM identifica a Nuevo Laredo, Ciudad Juárez, Tijuana, Manzanillo y Reynosa entre las aduanas con mayor número de operaciones; también informa participaciones de Manzanillo y Nuevo Laredo en la recaudación, y proporciones de pedimentos fronterizos y marítimos."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2",
+          "chunk-3"
+        ],
+        "heading": "Naturaleza de la fuente",
+        "paragraphs": [
+          "La publicación es un comunicado institucional fechado el 12 de agosto de 2026 y atribuye expresamente las cifras a la ANAM.",
+          "La ficha conserva el corte temporal y no deriva de las cifras una conclusión sobre una operación, una persona importadora o una obligación individual."
+        ]
+      }
+    ],
+    "detected_at": "2026-09-01T18:46:30.041123+00:00",
+    "document_type": "Comunicado",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "1696d44b98701c11eeb1e9a36460115f8967e24b67d22d7a5cdef7324acf2378",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "Preámbulo",
+          "location": "caracteres 0-2164"
+        },
+        {
+          "id": "chunk-2",
+          "label": "La ANAM alcanza en julio la mayor recaudación del año y registra récord de operaciones de comercio exterior",
+          "location": "caracteres 2164-2315"
+        },
+        {
+          "id": "chunk-3",
+          "label": "Comunicado de prensa conjunto 58/2026",
+          "location": "caracteres 2315-4345"
+        }
+      ],
+      "official_url": "https://www.anam.gob.mx/comunicado-prensa-58-2026",
+      "retrieved_at": "2026-09-01T18:47:22.434339+00:00"
+    },
+    "executive_summary": [
+      "La Agencia Nacional de Aduanas de México informó para julio de 2026 una recaudación de 131 mil 616 millones de pesos, que el comunicado identifica como la cifra mensual más alta del año.",
+      "La misma fuente reportó 1 millón 957 mil 554 operaciones de comercio exterior, récord desde enero de 2025, además de variaciones frente a junio y julio de 2025, cifras acumuladas y desagregados por aduana."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-09-01T18:46:30.041123+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "anam:827d77cec754354b",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-3"
+        ],
+        "paragraphs": [
+          "El comunicado ofrece un corte institucional de recaudación y operaciones de julio de 2026, con comparaciones temporales, acumulado y desagregados por aduana; no constituye por sí mismo una determinación individual."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-1",
+            "chunk-3"
+          ],
+          "paragraphs": [
+            "La información permite ubicar las cifras y el periodo que la ANAM reporta, incluidos los datos de operaciones, recaudación y distribución por aduana."
+          ],
+          "sector": "Personas usuarias de indicadores de comercio exterior"
+        }
+      ]
+    },
+    "importance": 2,
+    "issuing_body": "Agencia Nacional de Aduanas de México",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-09-01T18:46:30.041123+00:00",
+    "official_evidence": {
+      "primary_url": "https://www.anam.gob.mx/comunicado-prensa-58-2026/"
+    },
+    "official_identifiers": {
+      "source_id": "827d77cec754354b"
+    },
+    "official_published_at": "2026-08-12",
+    "official_title": "La ANAM alcanza en julio la mayor recaudación del año y registra récord de operaciones de comercio exterior",
+    "published_at": "2026-08-12",
+    "published_day": 12,
+    "published_month": 8,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Personas que citen las cifras del comunicado",
+        "deadline": null,
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2",
+          "chunk-3"
+        ],
+        "legal_basis": null,
+        "paragraphs": [
+          "Al usar los datos, pueden conservar la atribución a la ANAM, el corte de julio de 2026 y las unidades de medida que expresa el comunicado."
+        ],
+        "trigger": "Al analizar o citar las cifras comunicadas por la ANAM."
+      }
+    ],
+    "relevance_score": 2,
+    "review_reason": null,
+    "source": "ANAM",
+    "source_id": "827d77cec754354b",
+    "subtopic_tags": [
+      "comercio exterior"
+    ],
+    "summary": "La Agencia Nacional de Aduanas de México informó que en julio de 2026 alcanzó una recaudación de 131 mil 616 millones de pesos. El comunicado la presenta como la cifra mensual más alta de lo que iba del año y reporta un crecimiento de 8.7 por ciento respecto de junio y de 5.4 por ciento frente a julio de 2025. Esta ficha atribuye los resultados a la ANAM, tal como los comunica la fuente, y no convierte las afirmaciones institucionales sobre eficiencia o fiscalización en una evaluación independiente.\n\nEntre enero y julio de 2026, la ANAM reportó una recaudación acumulada de 791 mil 009 millones de pesos. Durante ese periodo, señaló un costo de captación de 25 centavos por cada 100 pesos recaudados y un gasto de 2 mil 007.9 millones de pesos para obtener los ingresos acumulados indicados. El comunicado ofrece esas cifras como datos institucionales del periodo y no identifica una liquidación individual, una determinación de contribuciones ni un resultado atribuible a una persona concreta.\n\nEn julio, la ANAM informó 1 millón 957 mil 554 operaciones de comercio exterior, 2 por ciento más que en junio y una cifra récord desde enero de 2025. Identificó a Nuevo Laredo con más de 500 mil operaciones; a Ciudad Juárez y Tijuana con más de 150 mil; y a Manzanillo y Reynosa con más de 100 mil. En recaudación, indicó que Manzanillo aportó más de 15 por ciento del total nacional y Nuevo Laredo 14 por ciento.\n\nLa fuente también reporta que las aduanas fronterizas concentraron 52.6 por ciento de los pedimentos y las marítimas 18.7 por ciento, mientras estas últimas generaron 54.8 por ciento de la recaudación total. El alcance verificable de la ficha es el contenido y el corte temporal del comunicado oficial. Las cifras no acreditan por sí solas el desempeño, cumplimiento o situación fiscal de una operación o persona determinada.",
+    "summary_teaser": "La ANAM informó que en julio de 2026 recaudó 131 mil 616 millones de pesos, cifra mensual más alta del año, y realizó 1 millón 957 mil 554 operaciones de comercio exterior, récord desde enero de 2025. El comunicado también reportó variaciones, acumulado, costo de captación y distribuciones por aduana.",
+    "title": "ANAM confirma récord de operaciones y mayor recaudación mensual",
+    "topic_tags": [
+      "Comercio exterior"
+    ],
+    "url": "https://www.anam.gob.mx/comunicado-prensa-58-2026/"
+  },
+  "schema_version": 8
+}

@@ -1,0 +1,126 @@
+{
+  "coverage": [
+    {
+      "disposition": "not_material",
+      "reason": "Primer locator sólo contiene título; alcance técnico y mecanismo de consulta están en fragmento posterior.",
+      "source_ref": "chunk-1",
+      "target_sections": []
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    }
+  ],
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Productos y objetivo",
+      "paragraphs": [
+        "Proyecto aplica a calentadores solares domésticos o comerciales de baja presión, con presión menor a 3.0 kgf/cm2, de termosifón o tanque integrado de hasta 0.5 m3, fabricados, importados o comercializados en México. Texto relaciona proyecto con protección de integridad, salud, vida y recursos naturales."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Contenido y participación",
+      "paragraphs": [
+        "Propuesta abarca desempeño térmico mínimo, ahorro de gas, seguridad, pruebas, información comercial, etiquetado y evaluación. Fuente señala que proyecto íntegro puede consultarse en PLATIICA y proporciona vías para comentarios en español durante periodo de consulta."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "ef9a1c73d10531730d62cdff046c800e5a0e7f3388bcb270c089f91d57584d89",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "AVISO de consulta pública del Proyecto de Norma Oficial Mexicana PROY-NOM-039-ENER/SE-2025, Rendimiento térmico, ahorro de gas y seguridad de los calentadores de agua solares de baja presión y de los calentadores de agua solares de baja presión con respaldo de un calentador de agua que utiliza como combustible gas L.P. o gas natural. Especificaciones, métodos de prueba y etiquetado.",
+        "location": "caracteres 0-389"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- SENER.- Secretaría de Energía.- Comisión Nacional para el Uso Eficiente de la Energía.- Economía.- Secretaría de Economía.",
+        "location": "caracteres 389-6657"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791368&fecha=23/06/2026",
+    "retrieved_at": "2026-08-13T19:43:49.771149+00:00"
+  },
+  "executive_summary": [
+    "Secretaría de Energía y Economía someten a consulta PROY-NOM-039-ENER/SE-2025 para calentadores solares de agua de baja presión, con o sin respaldo de gas LP, gas natural o electricidad. Proyecto busca requisitos de desempeño térmico, ahorro de gas, seguridad, pruebas, etiquetado y evaluación.",
+    "Consulta se abre por sesenta días naturales desde publicación. Observaciones deben presentarse en español ante comité competente, en domicilio o correos que publicación proporciona."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "paragraphs": [
+        "Fabricantes, importadores, laboratorios y usuarios técnicos pueden revisar parámetros propuestos antes de eventual conclusión normativa. Alcance incluye equipos con respaldo sólo dentro de descripción del proyecto."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "Fabricantes, importadores y organismos de evaluación pueden participar y contrastar equipos con presión, capacidad y configuración propuestas."
+        ],
+        "sector": "Eficiencia energética y calentadores solares"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791368&fecha=23/06/2026",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "ff4ecfedde667fc47ff7a9971c18569edd39b5a973ae3339aad85f8be8715ab5",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/c645ca9095359f607841f461.json",
+    "detail_url": "notas/c645ca9095359f607841f461.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Aviso De Consulta",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5791368",
+    "importance": 3,
+    "issuing_body": "Presidencia de la República",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-06-23",
+    "official_title": "Aviso de consulta pública del Proyecto de Norma Oficial Mexicana PROY-NOM-039-ENER/SE-2025, Rendimiento térmico, ahorro de gas y seguridad de los calentadores de agua solares de baja presión y de los calentadores de agua solares de baja presión con respaldo de un calentador de agua que utiliza como combustible gas L.P. o gas natural. Especificaciones, métodos de prueba y etiquetado.",
+    "published_at": "2026-06-23",
+    "relevance_score": 4,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5791368",
+    "summary_teaser": "El aviso abre consulta pública sobre el PROY-NOM-039-ENER/SE-2025, aplicable a calentadores solares de agua de baja presión. La propuesta aborda rendimiento térmico, ahorro de gas, seguridad, métodos de prueba y etiquetado; las observaciones pueden presentarse durante sesenta días naturales en los medios indicados.",
+    "title": "Consulta pública abre requisitos para calentadores solares de baja presión",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5791368&fecha=23/06/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Personas interesadas en PROY-NOM-039-ENER/SE-2025",
+      "deadline": "Sesenta días naturales desde publicación",
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "legal_basis": null,
+      "paragraphs": [
+        "Enviar comentarios en español al comité mediante domicilio o correos del aviso, identificando disposición técnica. Consultar texto íntegro en PLATIICA antes de observar."
+      ],
+      "trigger": "Durante consulta pública"
+    }
+  ],
+  "schema_version": 8
+}

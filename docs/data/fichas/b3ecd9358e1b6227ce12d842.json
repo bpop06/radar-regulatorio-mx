@@ -1,0 +1,143 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "heading": "Norma cancelada",
+      "paragraphs": [
+        "Se cancela la NOM-021/3-SCT3-2010, publicada en 2012, sobre estudios técnicos para modificaciones o alteraciones del diseño original de aeronaves.",
+        "La medida responde a cambios del marco internacional y a avances tecnológicos que el Comité Consultivo Nacional de Normalización de Transporte Aéreo tomó en cuenta."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "heading": "Marco técnico posterior",
+      "paragraphs": [
+        "El aviso cita la actualización de las SARPs de la OACI del Anexo 6 y la Circular Obligatoria CO AV-21.3/22 sobre modificaciones y reparaciones de aeronaves, motores y hélices.",
+        "La cancelación entra en vigor al día siguiente de la publicación y no equivale a una eliminación de los requisitos técnicos posteriores citados."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "447a8c4ff8e9693fedc1f5fdac9118a5ec6327e9c4112224e2de88cfa958c5a6",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "AVISO de Cancelación de la Norma Oficial Mexicana NOM-021/3-SCT3-2010, Que establece los requerimientos que deben cumplir los estudios técnicos para las modificaciones o alteraciones que afecten el diseño original de una aeronave.",
+        "location": "caracteres 0-234"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Comunicaciones.- Secretaría de Infraestructura, Comunicaciones y Transportes.",
+        "location": "caracteres 234-5300"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5794454&fecha=22%2F07%2F2026",
+    "retrieved_at": "2026-08-14T00:36:49.654854+00:00"
+  },
+  "executive_summary": [
+    "La Secretaría de Infraestructura, Comunicaciones y Transportes canceló la NOM-021/3-SCT3-2010, que establecía requerimientos para estudios técnicos de modificaciones o alteraciones que afectaran el diseño original de una aeronave. La norma cancelada había sido publicada en el Diario Oficial de la Federación el 18 de enero de 2012.",
+    "El Comité Consultivo Nacional de Normalización de Transporte Aéreo aprobó la cancelación en su sesión ordinaria de marzo de 2025. El aviso explica que el marco internacional se había modificado por avances tecnológicos y cita la actualización de julio de 2022 de las normas y métodos recomendados de la OACI incluidos en el Anexo 6 para aviones comerciales, aviación general y helicópteros."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "paragraphs": [
+        "La referencia normativa para modificaciones y reparaciones aeronáuticas deja de incluir la NOM-021/3-SCT3-2010 y debe actualizarse con el marco técnico citado."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "Talleres, operadores y personal de aeronavegabilidad deben ajustar listas de cumplimiento, manuales y expedientes técnicos que aún remitan a la NOM cancelada."
+        ],
+        "sector": "Aviación y mantenimiento aeronáutico"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5794454&fecha=22%2F07%2F2026",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "23b56767f793832e3dd88a05a95b3601179b3c8c3167fb2987d241a2af5925a6",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/b3ecd9358e1b6227ce12d842.json",
+    "detail_url": "notas/b3ecd9358e1b6227ce12d842.html",
+    "detected_at": "2026-08-14T01:46:44.993982+00:00",
+    "document_type": "Aviso De Cancelación",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5794454",
+    "importance": 2,
+    "issuing_body": "Presidencia de la República",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-07-22",
+    "official_title": "Aviso de Cancelación de la Norma Oficial Mexicana NOM-021/3- SCT3-2010, Que establece los requerimientos que deben cumplir los estudios técnicos para las modificaciones o alteraciones que afecten el diseño original de una aeronave.",
+    "published_at": "2026-07-22",
+    "relevance_score": 3,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5794454",
+    "summary_teaser": "La autoridad aeronáutica canceló la NOM-021/3-SCT3-2010 sobre estudios técnicos para modificaciones o alteraciones al diseño original de aeronaves. El aviso vincula la cancelación con la actualización de estándares internacionales de la OACI y con una circular obligatoria vigente sobre modificaciones, reparaciones, motores y hélices.",
+    "title": "Aviación elimina norma sobre modificaciones de aeronaves",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5794454&fecha=22/07/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Operadores, talleres y responsables de aeronavegabilidad",
+      "deadline": null,
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "legal_basis": "Ley de Infraestructura de la Calidad y normativa aeronáutica citada",
+      "paragraphs": [
+        "Al evaluar una modificación o reparación, retire la NOM cancelada de los controles internos y confirme los requisitos aplicables en la Circular Obligatoria CO AV-21.3/22 y demás disposiciones vigentes."
+      ],
+      "trigger": "Entrada en vigor del aviso de cancelación"
+    }
+  ],
+  "schema_version": 8
+}

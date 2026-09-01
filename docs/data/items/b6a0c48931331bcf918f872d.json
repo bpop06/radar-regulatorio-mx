@@ -1,0 +1,168 @@
+{
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "item": {
+    "ai_generated": true,
+    "authority": "ORGANISMOS DESCONCENTRADOS O DESCENTRALIZADOS CONSEJO NACIONAL DE NORMALIZACION Y CERTIFICACION DE COMPETENCIAS LABORALES",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795750&fecha=07%2F08%2F2026",
+    "card_body": "## Qué se publicó\n\nEl Comité Técnico del CONOCER aprobó estándares de competencia sobre inteligencia artificial, inclusión y bienestar de niñas, niños y adolescentes.\n\n## Sustancia\n\nLos estándares abarcan desarrollo de productos y servicios con inteligencia artificial, marketing asistido por esa tecnología, producción de videos generativos y competencias de inclusión, salud mental, prevención de violencia y crianza positiva.\n\n## Fuente\n\nLa síntesis se elaboró exclusivamente con la fuente oficial identificada en la evidencia y sus fragmentos extraídos.",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "cf405175599121a6c522508c97f5281cc6254ad7fa01072700d9737164a433df",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-1",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/b6a0c48931331bcf918f872d.json",
+    "detail_url": "notas/b6a0c48931331bcf918f872d.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "heading": "Alcance de la publicación",
+        "paragraphs": [
+          "El Comité Técnico del CONOCER aprobó estándares de competencia sobre inteligencia artificial, inclusión y bienestar de niñas, niños y adolescentes.",
+          "El acuerdo aprueba los estándares y enlaza sus contenidos, sin sustituir los procesos de evaluación o certificación de personas."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "heading": "Contenido relevante",
+        "paragraphs": [
+          "Los estándares abarcan desarrollo de productos y servicios con inteligencia artificial, marketing asistido por esa tecnología, producción de videos generativos y competencias de inclusión, salud mental, prevención de violencia y crianza positiva.",
+          "Instituciones, centros de evaluación y personas interesadas pueden consultar los perfiles de competencia aprobados por el sistema. Las personas interesadas deben revisar el contenido oficial de cada estándar y confirmar los requisitos de evaluación o certificación ante la instancia competente."
+        ]
+      }
+    ],
+    "detected_at": "2026-09-01T16:34:47.803209+00:00",
+    "document_type": "Acuerdo",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "f7c4af014203e3f79181d765aa8e87b49f718c77ecbbd68670b128dfbbde9c74",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "ACUERDO SE/III-26/05,R del Comité Técnico del Consejo Nacional de Normalización y Certificación de Competencias Laborales, mediante el cual se aprobaron los Estándares de Competencia que se indican.",
+          "location": "caracteres 0-202"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Educación.- Secretaría de Educación Pública.- Consejo Nacional de Normalización y Certificación de Competencias Laborales.",
+          "location": "caracteres 202-8384"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795750&fecha=07%2F08%2F2026",
+      "retrieved_at": "2026-09-01T16:35:41.685918+00:00"
+    },
+    "executive_summary": [
+      "El Comité Técnico del CONOCER aprobó estándares de competencia sobre inteligencia artificial, inclusión y bienestar de niñas, niños y adolescentes. Los estándares abarcan desarrollo de productos y servicios con inteligencia artificial, marketing asistido por esa tecnología, producción de videos generativos y competencias de inclusión, salud mental, prevención de violencia y crianza positiva.",
+      "El acuerdo aprueba los estándares y enlaza sus contenidos, sin sustituir los procesos de evaluación o certificación de personas. La publicación debe aplicarse sin extender sus alcances a situaciones no descritas en la fuente."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-09-01T16:34:47.803209+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5795750",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "Instituciones, centros de evaluación y personas interesadas pueden consultar los perfiles de competencia aprobados por el sistema."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-1",
+            "chunk-2"
+          ],
+          "paragraphs": [
+            "La incidencia para este grupo se limita al alcance expresamente descrito en la publicación y requiere contrastarse con cada caso concreto."
+          ],
+          "sector": "Instituciones de capacitación, centros de evaluación y personas candidatas a certificación"
+        }
+      ]
+    },
+    "importance": 2,
+    "issuing_body": "ORGANISMOS DESCONCENTRADOS O DESCENTRALIZADOS CONSEJO NACIONAL DE NORMALIZACION Y CERTIFICACION DE COMPETENCIAS LABORALES",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-09-01T18:46:30.041123+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795750&fecha=07/08/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5795750"
+    },
+    "official_published_at": "2026-08-07",
+    "official_title": "Acuerdo SE/III-26/05,R del Comité Técnico del Consejo Nacional de Normalización y Certificación de Competencias Laborales, mediante el cual se aprobaron los Estándares de Competencia que se indican.",
+    "published_at": "2026-08-07",
+    "published_day": 7,
+    "published_month": 8,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Instituciones de capacitación, centros de evaluación y personas candidatas a certificación",
+        "deadline": null,
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "legal_basis": null,
+        "paragraphs": [
+          "Las personas interesadas deben revisar el contenido oficial de cada estándar y confirmar los requisitos de evaluación o certificación ante la instancia competente."
+        ],
+        "trigger": "Cuando la publicación resulte aplicable a la operación o situación revisada."
+      }
+    ],
+    "relevance_score": 2,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5795750",
+    "subtopic_tags": [
+      "normalizacion"
+    ],
+    "summary": "El documento oficial El Comité Técnico del CONOCER aprobó estándares de competencia sobre inteligencia artificial, inclusión y bienestar de niñas, niños y adolescentes. Los estándares abarcan desarrollo de productos y servicios con inteligencia artificial, marketing asistido por esa tecnología, producción de videos generativos y competencias de inclusión, salud mental, prevención de violencia y crianza positiva.\n\nEl alcance debe leerse dentro de los límites que la propia fuente identifica: El acuerdo aprueba los estándares y enlaza sus contenidos, sin sustituir los procesos de evaluación o certificación de personas. La información ubica a Instituciones de capacitación, centros de evaluación y personas candidatas a certificación como sujetos principalmente vinculados con el asunto. Por ello, la nota registra la existencia y el contenido comunicado, sin extender la conclusión a personas, operaciones, expedientes o contratos que el texto no menciona.\n\nDesde la gestión de cumplimiento, Las personas interesadas deben revisar el contenido oficial de cada estándar y confirmar los requisitos de evaluación o certificación ante la instancia competente. La revisión debe partir de la publicación oficial y de la documentación disponible para cada situación concreta. Cuando el documento se refiera a una autorización, una sanción, un trámite, una regla administrativa, una medida de inspección o una propuesta legislativa, conviene distinguir el acto publicado de sus posibles actuaciones posteriores. La fuente no acredita por sí sola el cumplimiento individual, una afectación económica concreta, la procedencia de una solicitud ni un resultado distinto de los expresamente descritos.\n\nEn términos probatorios, esta síntesis se limita a la evidencia extraída y a los localizadores asociados. No atribuye efectos, tratados, montos, plazos, fundamentos, resultados o hechos que no estén contenidos en la publicación. La lectura operativa requiere consultar el texto íntegro, sus anexos y, cuando corresponda, la documentación de la persona o operación involucrada. Esta distinción es especialmente importante para no convertir un comunicado, una referencia registral, una actuación cautelar o una iniciativa en una conclusión definitiva sobre derechos u obligaciones individuales.",
+    "summary_teaser": "El Comité Técnico del CONOCER aprobó estándares de competencia sobre desarrollo y marketing con inteligencia artificial, producción audiovisual generativa e inclusión de niñas, niños y adolescentes. La publicación describe los perfiles generales y enlaza las versiones de cada estándar. El acuerdo no certifica por sí mismo a personas ni acredita una evaluación individual.",
+    "title": "CONOCER establece estándares sobre inteligencia artificial e inclusión",
+    "topic_tags": [
+      "Normalización",
+      "Acuerdo",
+      "Norma"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5795750&fecha=07/08/2026"
+  },
+  "schema_version": 8
+}

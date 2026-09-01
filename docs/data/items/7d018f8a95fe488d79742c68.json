@@ -1,0 +1,222 @@
+{
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "item": {
+    "ai_generated": true,
+    "authority": "PODER EJECUTIVO SECRETARIA DE ENERGIA",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793641&fecha=15%2F07%2F2026",
+    "card_body": "## Qué se publicó\n\nLa autoridad energética emitió una norma obligatoria para categorizar materiales fisionables y radiactivos y aplicar medidas de seguridad física en su transporte.\n\n## Sustancia\n\nLa norma usa requisitos graduados según la categoría del material, establece responsabilidades de los participantes en el traslado y entrará en vigor 180 días naturales después de su publicación.\n\n## Fuente\n\n[Consultar publicación oficial](https://dof.gob.mx/nota_detalle.php?codigo=5793641&fecha=15%2F07%2F2026)",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "68316e45e5c1897a587bd086897f4ad1d4f84713900c65895d2ed4176e621684",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-1",
+        "target_sections": [
+          "executive_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-3",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-4",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-5",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/7d018f8a95fe488d79742c68.json",
+    "detail_url": "notas/7d018f8a95fe488d79742c68.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-2",
+          "chunk-3"
+        ],
+        "heading": "Ámbito y categorización",
+        "paragraphs": [
+          "La norma aplica a sustancias fisionables y otros materiales radiactivos, sus bultos, envases y unidades de transporte. La categoría depende de parámetros del material y define el nivel de controles aplicable."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-4",
+          "chunk-5"
+        ],
+        "heading": "Cumplimiento y vigencia",
+        "paragraphs": [
+          "La publicación prevé evaluación de conformidad y verificación por la autoridad competente. Sus transitorios fijan entrada en vigor a los 180 días naturales siguientes a la publicación."
+        ]
+      }
+    ],
+    "detected_at": "2026-08-14T01:46:44.993982+00:00",
+    "document_type": "Norma Oficial Mexicana",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "f3178051144caea0e3b819587bb1f10f43b7da96e01c668ae188dfd5ee1cdeaf",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "NORMA Oficial Mexicana NOM-042-NUCL-2026, Categorización de sustancias fisionables y otros materiales radiactivos y requisitos de seguridad física nuclear para su transporte.",
+          "location": "caracteres 0-178"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Energía.- Secretaría de Energía.- Comisión Nacional de Seguridad Nuclear y Salvaguardias. · parte 1",
+          "location": "caracteres 178-12178"
+        },
+        {
+          "id": "chunk-3",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Energía.- Secretaría de Energía.- Comisión Nacional de Seguridad Nuclear y Salvaguardias. · parte 2",
+          "location": "caracteres 12178-24178"
+        },
+        {
+          "id": "chunk-4",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Energía.- Secretaría de Energía.- Comisión Nacional de Seguridad Nuclear y Salvaguardias. · parte 3",
+          "location": "caracteres 24178-36178"
+        },
+        {
+          "id": "chunk-5",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Energía.- Secretaría de Energía.- Comisión Nacional de Seguridad Nuclear y Salvaguardias. · parte 4",
+          "location": "caracteres 36178-39903"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793641&fecha=15%2F07%2F2026",
+      "retrieved_at": "2026-08-14T00:37:07.753986+00:00"
+    },
+    "executive_summary": [
+      "La nueva norma categoriza sustancias fisionables y materiales radiactivos para definir requisitos de seguridad física durante el transporte terrestre y acuático.",
+      "Entrará en vigor 180 días naturales después de su publicación y prevé obligaciones graduadas para expedidores, transportistas, destinatarios y titulares de autorizaciones."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-08-14T01:46:44.993982+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5793641",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-2",
+          "chunk-3",
+          "chunk-4",
+          "chunk-5"
+        ],
+        "paragraphs": [
+          "La norma establece un marco de obligaciones de seguridad física que debe aplicarse según la categoría de cada transporte regulado."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-3",
+            "chunk-4",
+            "chunk-5"
+          ],
+          "paragraphs": [
+            "Los participantes en transportes comprendidos deben identificar la categoría aplicable y distribuir responsabilidades de seguridad física conforme a la norma."
+          ],
+          "sector": "Permisionarios, expedidores y transportistas de materiales nucleares o radiactivos"
+        }
+      ]
+    },
+    "importance": 2,
+    "issuing_body": "Presidencia de la República",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-09-01T18:46:30.041123+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793641&fecha=15/07/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5793641"
+    },
+    "official_published_at": "2026-07-15",
+    "official_title": "Norma Oficial Mexicana NOM-042-NUCL-2026, Categorización de sustancias fisionables y otros materiales radiactivos y requisitos de seguridad física nuclear para su transporte.",
+    "published_at": "2026-07-15",
+    "published_day": 15,
+    "published_month": 7,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Titulares de autorizaciones y operadores de transporte regulado",
+        "deadline": "180 días naturales después de la publicación",
+        "evidence_refs": [
+          "chunk-2",
+          "chunk-3",
+          "chunk-4",
+          "chunk-5"
+        ],
+        "legal_basis": "Numerales 3 a 8 y transitorio primero de la norma",
+        "paragraphs": [
+          "Antes de la entrada en vigor, conviene revisar la categoría del material y comparar los procedimientos internos con los requisitos aplicables, protegiendo la información sensible. Esta es información jurídica general."
+        ],
+        "trigger": "Antes de transportar materiales comprendidos por la norma tras su entrada en vigor"
+      }
+    ],
+    "relevance_score": 3,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5793641",
+    "subtopic_tags": [
+      "norma oficial mexicana",
+      "nom-"
+    ],
+    "summary": "La Secretaría de Energía, por conducto de la Comisión Nacional de Seguridad Nuclear y Salvaguardias, expidió una Norma Oficial Mexicana para categorizar sustancias fisionables y otros materiales radiactivos y asignar requisitos de seguridad física durante su transporte. La norma es aplicable a materiales, bultos, embalajes, envases y unidades de transporte por vía terrestre y acuática. Su finalidad declarada es proteger la salud, integridad física, seguridad nacional y medio ambiente mediante un enfoque graduado según el material y el riesgo.\n\nLa norma distingue categorías de sustancias fisionables de acuerdo con enriquecimiento y cantidad, y categorías de otros materiales radiactivos de acuerdo con radionúclido y actividad. La clasificación determina las medidas de seguridad física que deben cumplirse durante la expedición. La publicación incluye responsabilidades para titulares de autorizaciones o licencias, transportistas, expedidores y destinatarios, y prevé que los contratos delimiten funciones cuando estas se compartan.\n\nEntre los requisitos generales, la norma contempla planes de seguridad física, protección de información sensible, control de acceso, supervisión, comunicación y rastreo, en la medida que corresponda a cada categoría. Para determinados materiales o categorías exige una autorización específica por traslado y puede requerir medidas de nivel superior cuando la amenaza lo justifique. La evaluación de la conformidad se basa en la verificación de la categorización y en evidencia documental o física del cumplimiento, mientras que la verificación queda a cargo de la Secretaría de Energía mediante la Comisión.\n\nLa norma entra en vigor 180 días naturales después de su publicación. No sustituye autorizaciones de transporte, planes específicos ni otras obligaciones previstas en la legislación nuclear aplicable. Las organizaciones que transporten materiales regulados deben identificar la categoría concreta y contrastar sus procedimientos con los requisitos que correspondan, sin divulgar información sensible de seguridad. El propio texto asigna sanciones conforme a la legislación aplicable cuando corresponda. Esta ficha ofrece información jurídica general y evita detallar mecanismos operativos de protección.",
+    "summary_teaser": "La NOM publicada establece cómo categorizar sustancias fisionables y otros materiales radiactivos para aplicar medidas de seguridad física durante su transporte terrestre y acuático. Entra en vigor 180 días naturales después de su publicación y prevé obligaciones graduadas por categoría.",
+    "title": "Norma establece seguridad física nuclear en transporte",
+    "topic_tags": [
+      "Normalización",
+      "Norma"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5793641&fecha=15/07/2026"
+  },
+  "schema_version": 8
+}

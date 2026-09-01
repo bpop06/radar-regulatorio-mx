@@ -1,0 +1,210 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-3",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-4",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-5",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2",
+        "chunk-3",
+        "chunk-4",
+        "chunk-5"
+      ],
+      "heading": "Corte bimestral",
+      "paragraphs": [
+        "El SAT publicó el listado de prestadores de servicios digitales residentes en el extranjero inscritos en el RFC, con corte al 30 de junio de 2026.",
+        "El tercer bimestre contiene 286 registros, nueve incorporaciones y una baja frente al listado anterior de 278."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2",
+        "chunk-3",
+        "chunk-4",
+        "chunk-5"
+      ],
+      "heading": "Datos del padrón",
+      "paragraphs": [
+        "El anexo incluye denominación o razón social, nombre comercial, país de origen, fecha de inscripción y RFC de cada prestador.",
+        "La publicación responde a la difusión bimestral prevista para residentes extranjeros sin establecimiento permanente que proporcionan servicios digitales a receptores en México."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "d2357147455cff23669a7f055a1e856b5ad776022000c54d624c524f1e51f224",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "OFICIO 700 04 00 00 00 2026-077 mediante el cual se da a conocer el listado de Prestadores de Servicios Digitales Inscritos en el Registro Federal de Contribuyentes, en términos del artículo 18-D, primer párrafo, fracción I, de la Ley del Impuesto al Valor Agregado vigente.",
+        "location": "caracteres 0-278"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Servicio de Administración Tributaria.- Administración General de Servicios al Contribuyente.- Administración Central de Operación de Padrones. · parte 1",
+        "location": "caracteres 278-12278"
+      },
+      {
+        "id": "chunk-3",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Servicio de Administración Tributaria.- Administración General de Servicios al Contribuyente.- Administración Central de Operación de Padrones. · parte 2",
+        "location": "caracteres 12278-24278"
+      },
+      {
+        "id": "chunk-4",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Servicio de Administración Tributaria.- Administración General de Servicios al Contribuyente.- Administración Central de Operación de Padrones. · parte 3",
+        "location": "caracteres 24278-36278"
+      },
+      {
+        "id": "chunk-5",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Servicio de Administración Tributaria.- Administración General de Servicios al Contribuyente.- Administración Central de Operación de Padrones. · parte 4",
+        "location": "caracteres 36278-37773"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5794665&fecha=24%2F07%2F2026",
+    "retrieved_at": "2026-08-14T00:36:44.484987+00:00"
+  },
+  "executive_summary": [
+    "El Servicio de Administración Tributaria difundió el listado de residentes en el extranjero sin establecimiento permanente en México que proporcionan servicios digitales a receptores ubicados en territorio nacional y están inscritos en el RFC. El documento corresponde al tercer bimestre de 2026 y tiene fecha de corte de información al 30 de junio de 2026.",
+    "El oficio informa 286 prestadores inscritos, con nueve registros incorporados y una baja respecto del listado de 278 prestadores publicado para el segundo bimestre. El anexo identifica para cada registro la denominación o razón social, nombre comercial, país de origen, fecha de inscripción y clave en el RFC."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2",
+        "chunk-3",
+        "chunk-4",
+        "chunk-5"
+      ],
+      "paragraphs": [
+        "El padrón ofrece un punto de referencia público para identificar a prestadores extranjeros de servicios digitales inscritos en el RFC."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2",
+          "chunk-3",
+          "chunk-4",
+          "chunk-5"
+        ],
+        "paragraphs": [
+          "Plataformas, usuarios empresariales y equipos fiscales pueden cotejar la identidad de un proveedor digital con la denominación y RFC publicados."
+        ],
+        "sector": "Servicios digitales y cumplimiento fiscal"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5794665&fecha=24%2F07%2F2026",
+    "categories": [
+      "Fiscal",
+      "Administración centralizada"
+    ],
+    "content_hash": "6975005bb30584b9a285116dac519e7b029bbf75629be7a67a7abc50ef1d153f",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/0d6cbd9dab7f83e45c24b942.json",
+    "detail_url": "notas/0d6cbd9dab7f83e45c24b942.html",
+    "detected_at": "2026-08-14T01:46:44.993982+00:00",
+    "document_type": "Oficio",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5794665",
+    "importance": 2,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-07-24",
+    "official_title": "Oficio 700 04 00 00 00 2026-077 mediante el cual se da a conocer el listado de Prestadores de Servicios Digitales Inscritos en el Registro Federal de Contribuyentes, en términos del artículo 18-D, primer párrafo, fracción I, de la Ley del Impuesto al Valor Agregado vigente.",
+    "published_at": "2026-07-24",
+    "relevance_score": 3,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5794665",
+    "summary_teaser": "El SAT publicó el listado del tercer bimestre de 2026 de residentes en el extranjero inscritos en el RFC como prestadores de servicios digitales. El corte al 30 de junio registra 286 prestadores, nueve altas y una baja frente al bimestre anterior, con datos de denominación, país, fecha y RFC.",
+    "title": "SAT actualiza padrón de prestadores digitales extranjeros",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5794665&fecha=24/07/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Prestadores de servicios digitales y áreas fiscales",
+      "deadline": null,
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2",
+        "chunk-3",
+        "chunk-4",
+        "chunk-5"
+      ],
+      "legal_basis": "Artículo 18-D de la Ley del IVA y regla 12.1.5. de la RMF",
+      "paragraphs": [
+        "Cuando sea necesario identificar a un prestador extranjero, coteje su denominación y RFC con el anexo del bimestre vigente y conserve la fecha de corte utilizada."
+      ],
+      "trigger": "Consulta o contratación de servicios digitales de residentes en el extranjero"
+    }
+  ],
+  "schema_version": 8
+}

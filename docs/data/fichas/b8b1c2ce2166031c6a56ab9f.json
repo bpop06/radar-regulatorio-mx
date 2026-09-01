@@ -1,0 +1,139 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "heading": "Sede y fecha afectadas",
+      "paragraphs": [
+        "El Instituto Mexicano de la Propiedad Industrial suspende por causa de fuerza mayor los plazos de trámites, servicios y procedimientos administrativos que se realizan en su sede de calle 33 número 501-A, departamento 3, colonia Gonzalo Guerrero, Mérida, Yucatán, el 2 de junio de 2026. El acuerdo vincula la medida con las lluvias, inundaciones y riesgos para usuarios y personal en Yucatán, así como con la suspensión local de actividades y plazos por el Decreto 191/2026.",
+        "El texto se fundamenta también en la posibilidad de suspender términos por caso fortuito o fuerza mayor prevista en la Ley Federal de Procedimiento Administrativo. La medida es territorial y temporalmente delimitada: no declara la suspensión de plazos en otras sedes del IMPI ni abarca por sí misma fechas distintas del 2 de junio de 2026."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Publicación y cómputo",
+      "paragraphs": [
+        "El acuerdo ordena su publicación en el sitio web del IMPI, la Gaceta de la Propiedad Industrial y el DOF, y entra en vigor el día hábil siguiente a su publicación. Quien necesite recalcular un vencimiento debe confirmar que el trámite correspondía a la sede de Mérida y revisar la regla aplicable al expediente, sin extrapolar la suspensión a oficinas que el texto no identifica."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "ff42aa7271fd324a221393b07405152013d162e4300671aa201c085a0d45eadc",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "ACUERDO por el que se suspenden los plazos por causa de fuerza mayor, en la sede del Instituto Mexicano de la Propiedad Industrial, con domicilio en Mérida, Estado de Yucatán.",
+        "location": "caracteres 0-179"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Economía.- Secretaría de Economía.- Instituto Mexicano de la Propiedad Industrial.",
+        "location": "caracteres 179-3367"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5790022&fecha=09/06/2026",
+    "retrieved_at": "2026-08-13T19:44:25.901638+00:00"
+  },
+  "executive_summary": [
+    "El Instituto Mexicano de la Propiedad Industrial suspende por causa de fuerza mayor los plazos de trámites, servicios y procedimientos administrativos que se realizan en su sede de calle 33 número 501-A, departamento 3, colonia Gonzalo Guerrero, Mérida, Yucatán, el 2 de junio de 2026. El acuerdo vincula la medida con las lluvias, inundaciones y riesgos para usuarios y personal en Yucatán, así como con la suspensión local de actividades y plazos por el Decreto 191/2026.",
+    "El texto se fundamenta también en la posibilidad de suspender términos por caso fortuito o fuerza mayor prevista en la Ley Federal de Procedimiento Administrativo. La medida es territorial y temporalmente delimitada: no declara la suspensión de plazos en otras sedes del IMPI ni abarca por sí misma fechas distintas del 2 de junio de 2026."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "paragraphs": [
+        "Los plazos de asuntos atendidos en la sede del IMPI en Mérida quedaron suspendidos el 2 de junio de 2026, por una contingencia localizada."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "Los plazos de asuntos atendidos en la sede del IMPI en Mérida quedaron suspendidos el 2 de junio de 2026, por una contingencia localizada."
+        ],
+        "sector": "Usuarios y representantes con trámites ante la sede Mérida del IMPI"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5790022&fecha=09/06/2026",
+    "categories": [
+      "Administración descentralizada"
+    ],
+    "content_hash": "c87b1f59c3c33c343d2ee36db1c065411e48ed7ed34b57fbfdc7168de1e4c777",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/b8b1c2ce2166031c6a56ab9f.json",
+    "detail_url": "notas/b8b1c2ce2166031c6a56ab9f.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Acuerdo",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5790022",
+    "importance": 2,
+    "issuing_body": "Instituto Mexicano de la Propiedad Industrial",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-06-09",
+    "official_title": "Acuerdo por el que se suspenden los plazos por causa de fuerza mayor, en la sede del Instituto Mexicano de la Propiedad Industrial, con domicilio en Mérida, Estado de Yucatán.",
+    "published_at": "2026-06-09",
+    "relevance_score": 3,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5790022",
+    "summary_teaser": "El IMPI suspendió los plazos de trámites, servicios y procedimientos en su sede de Mérida el 2 de junio de 2026 por las lluvias e inundaciones en Yucatán. El acuerdo aplica a esa oficina específica y no declara una suspensión nacional; prevé difusión oficial y entra en vigor el día hábil siguiente a su publicación.",
+    "title": "IMPI Mérida suspende plazos por fuerza mayor",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5790022&fecha=09/06/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Usuarios y representantes con trámites ante la sede Mérida del IMPI",
+      "deadline": "Día suspendido: 2 de junio de 2026",
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "legal_basis": "Acuerdo del IMPI en Mérida; artículo 28 de la Ley Federal de Procedimiento Administrativo",
+      "paragraphs": [
+        "Conserve evidencia de la sede y de la fecha de la actuación; para cualquier vencimiento, confirme el cómputo resultante con las reglas y avisos del IMPI aplicables al trámite."
+      ],
+      "trigger": "En procedimientos tramitados en la sede del IMPI en Mérida el 2 de junio de 2026"
+    }
+  ],
+  "schema_version": 8
+}

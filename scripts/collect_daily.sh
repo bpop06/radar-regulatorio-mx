@@ -35,7 +35,21 @@ export LOCAL_TIMEZONE="${LOCAL_TIMEZONE:-America/Mexico_City}"
 export REQUEST_TIMEOUT_SECONDS="${REQUEST_TIMEOUT_SECONDS:-45}"
 export SOURCE_RETRIES="${SOURCE_RETRIES:-3}"
 export SOURCE_RETRY_BACKOFF_SECONDS="${SOURCE_RETRY_BACKOFF_SECONDS:-1.5}"
+export SOURCE_DEADLINE_SECONDS="${SOURCE_DEADLINE_SECONDS:-120}"
+export COLLECTION_DEADLINE_SECONDS="${COLLECTION_DEADLINE_SECONDS:-300}"
+export RADAR_STATE_MAX_BYTES="${RADAR_STATE_MAX_BYTES:-536870912}"
 export RADAR_STATE_DIR="${RADAR_STATE_DIR:-$HOME/Library/Application Support/Radar Regulatorio MX}"
+
+# Un proceso padre mantiene el mismo bloqueo privado durante preparación,
+# revisión aprobada, exportación y validaciones. La reentrada evita que el
+# hijo vuelva a competir por su propio lock.
+if [[ "${RADAR_CUT_LOCK_HELD:-0}" != "1" ]]; then
+  export RADAR_CUT_LOCK_HELD=1
+  exec .venv/bin/python -m app.locking \
+    --state-dir "$RADAR_STATE_DIR" \
+    --wait-seconds "${RADAR_LOCK_WAIT_SECONDS:-30}" \
+    -- "$ROOT/scripts/collect_daily.sh" "$@"
+fi
 
 if [[ "${RADAR_REQUIRE_RELAUNCH_CERTIFICATION:-0}" == "1" ]]; then
   .venv/bin/python -m app.cli certify-sources --days "$LOOKBACK_DAYS"

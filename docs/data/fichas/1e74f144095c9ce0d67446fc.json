@@ -1,0 +1,137 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "heading": "Inhabilitación comunicada",
+      "paragraphs": [
+        "La circular ordena a las entidades destinatarias abstenerse de recibir propuestas y/o celebrar contratos con Eliana Díaz Magaña durante dos años, desde el día siguiente a su publicación, dentro de la materia contractual que delimita."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "heading": "Límites y continuidad de la medida",
+      "paragraphs": [
+        "Los contratos ya adjudicados o formalizados quedan fuera de la aplicación indicada. Si la multa permanece impaga al concluir el término, la inhabilitación continúa hasta que se acredite el pago según la propia circular."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "4ec034c81d600efdef01a20f0a57fc8360329e16321ba613dc75f7b6c27f5165",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "CIRCULAR por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a las empresas públicas del Estado, a la Fiscalía General de la República, a las entidades federativas y sus municipios, así como a las demarcaciones territoriales de la Ciudad de México, que deberán abstenerse de aceptar propuestas o celebrar contratos con la persona física Eliana Díaz Magaña.",
+        "location": "caracteres 0-400"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Buen Gobierno.- Secretaría Anticorrupción y Buen Gobierno.- Órgano Interno de Control en el Instituto Mexicano del Seguro Social.- Área de Responsabilidades.- Expediente: PISI-A-NC-DS-0005/2026.",
+        "location": "caracteres 400-7960"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795910&fecha=11%2F08%2F2026",
+    "retrieved_at": "2026-09-01T16:35:34.081451+00:00"
+  },
+  "executive_summary": [
+    "La circular comunica la resolución administrativa que impuso a Eliana Díaz Magaña una inhabilitación temporal de dos años. A partir del día siguiente a la publicación en el Diario Oficial de la Federación, las autoridades destinatarias deben abstenerse de recibir propuestas y/o celebrar contratos en las materias incluidas en el acto, ya sea directamente o por interpósita persona. La ficha se limita a la inhabilitación y al ámbito que la circular expresa.",
+    "El alcance material se refiere a adquisiciones, arrendamientos, servicios, obras públicas y servicios relacionados con las mismas. El documento dirige la comunicación a dependencias y entidades federales y, en los términos que precisa, a entidades federativas, municipios, demarcaciones territoriales y otros entes cuando las contrataciones se cubran total o parcialmente con recursos federales derivados de convenios con el Ejecutivo Federal. La circular no convierte por sí misma cualquier relación comercial ajena a ese ámbito en una prohibición."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "paragraphs": [
+        "La publicación incide en la validación de elegibilidad de proveedores y contratistas para procedimientos y contratos cubiertos por recursos federales."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "Las áreas contratantes deben abstenerse de recibir propuestas y/o celebrar contratos con la persona señalada sólo en el alcance que la circular fija; los contratos adjudicados o formalizados están excluidos de esa restricción."
+        ],
+        "sector": "Áreas contratantes y unidades de compras públicas"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795910&fecha=11%2F08%2F2026",
+    "categories": [
+      "Penal",
+      "Administración centralizada"
+    ],
+    "content_hash": "93956bc4eb2a0a12241db0b2f0941116a8e09975881ac10bcbfa315a7f77edef",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/1e74f144095c9ce0d67446fc.json",
+    "detail_url": "notas/1e74f144095c9ce0d67446fc.html",
+    "detected_at": "2026-09-01T16:34:47.803209+00:00",
+    "document_type": "Circular",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5795910",
+    "importance": 2,
+    "issuing_body": "Presidencia de la República",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-08-11",
+    "official_title": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a las empresas públicas del Estado, a la Fiscalía General de la República, a las entidades federativas y sus municipios, así como a las demarcaciones territoriales de la Ciudad de México, que deberán abstenerse de aceptar propuestas o celebrar contratos con la persona física Eliana Díaz Magaña.",
+    "published_at": "2026-08-11",
+    "relevance_score": 3,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5795910",
+    "summary_teaser": "La autoridad comunicó la inhabilitación de Eliana Díaz Magaña durante dos años. Desde el día siguiente a la publicación en el DOF, las entidades destinatarias deben abstenerse de recibir propuestas y/o celebrar contratos en las materias cubiertas. Los contratos ya adjudicados o formalizados quedan fuera de la circular y la fuente prevé continuidad si la multa sigue impaga.",
+    "title": "Autoridad inhabilita a Eliana Díaz para contratos públicos",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5795910&fecha=11/08/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Áreas contratantes y unidades de compras públicas",
+      "deadline": "dos años a partir del día siguiente a la publicación, con la extensión condicionada al pago de la multa que la fuente prevé",
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "legal_basis": "Ley de Adquisiciones, Arrendamientos y Servicios del Sector Público y términos de la circular",
+      "paragraphs": [
+        "Verificar la identidad de Eliana Díaz Magaña, el objeto contractual y el origen de los recursos antes de recibir propuestas o celebrar contratos. Identificar como excluidos de la circular los contratos ya adjudicados o formalizados."
+      ],
+      "trigger": "Tramitar un procedimiento o contrato comprendido en la circular"
+    }
+  ],
+  "schema_version": 8
+}

@@ -20,6 +20,7 @@ from app.edition import (
     STATIC_ASSET_VERSION,
     SUMMARY_MAX_WORDS,
     SUMMARY_MIN_WORDS,
+    TEASER_MAX_WORDS,
     WHY_MAX_WORDS,
     WHY_MIN_WORDS,
     build_edition_artifact,
@@ -115,6 +116,7 @@ V8_REQUIRED_ITEM_FIELDS = {
 TITLE_MIN_WORDS = 5
 TITLE_MAX_WORDS = 18
 TITLE_MAX_CHARACTERS = 120
+TEASER_MIN_WORDS = 40
 
 EDITORIAL_STATUSES = {"pending", "needs_review", "complete"}
 EXTRACTION_STATUSES = {
@@ -418,7 +420,7 @@ def _validate_coverage(coverage: Any, sources: list[Any]) -> list[str]:
     if not isinstance(coverage, dict):
         return ["edition.coverage must be an object"]
     errors: list[str] = []
-    unknown = set(coverage) - {"state", "ok", "failed"}
+    unknown = set(coverage) - {"state", "ok", "total", "failed"}
     if unknown:
         errors.append(f"edition.coverage has unknown keys: {sorted(unknown)}")
 
@@ -442,6 +444,16 @@ def _validate_coverage(coverage: Any, sources: list[Any]) -> list[str]:
         errors.append("edition.coverage.ok must be an integer")
     elif ok_count != expected_ok:
         errors.append("edition.coverage.ok must match sources in ok state")
+
+    total = coverage.get("total")
+    if not isinstance(total, int) or isinstance(total, bool) or total < 0:
+        errors.append("edition.coverage.total must be a non-negative integer")
+    elif total != len(source_records):
+        errors.append("edition.coverage.total must match registered sources")
+    elif isinstance(ok_count, int) and isinstance(failed, list) and (
+        ok_count + len(failed) != total
+    ):
+        errors.append("edition.coverage counters must match total")
 
     expected_states = {"partial", "degraded"} if expected_failed else {"complete"}
     if coverage.get("state") not in expected_states:
@@ -586,8 +598,13 @@ def _validate_public_index_item(index: int, item: Any, errors: list[str]) -> Non
     if isinstance(detail_path, str) and detail_path and not _is_safe_detail_data_url(detail_path):
         errors.append(f"{prefix}.detail_data_url must point to a safe detail JSON")
     teaser = item.get("summary_teaser")
-    if complete and isinstance(teaser, str) and not 40 <= len(words(teaser)) <= 80:
-        errors.append(f"{prefix}.summary_teaser must have 40-80 words")
+    if complete and isinstance(teaser, str) and not (
+        TEASER_MIN_WORDS <= len(words(teaser)) <= TEASER_MAX_WORDS
+    ):
+        errors.append(
+            f"{prefix}.summary_teaser must have "
+            f"{TEASER_MIN_WORDS}-{TEASER_MAX_WORDS} words"
+        )
     title = item.get("title")
     if complete and isinstance(title, str):
         title_words = len(words(title))
@@ -992,8 +1009,11 @@ def _validate_complete_editorial(
     teaser = item.get("summary_teaser")
     if not isinstance(teaser, str) or not teaser.strip():
         errors.append(f"{prefix}.summary_teaser must be non-empty when complete")
-    elif not 40 <= len(words(teaser)) <= 80:
-        errors.append(f"{prefix}.summary_teaser must contain 40-80 words")
+    elif not TEASER_MIN_WORDS <= len(words(teaser)) <= TEASER_MAX_WORDS:
+        errors.append(
+            f"{prefix}.summary_teaser must contain "
+            f"{TEASER_MIN_WORDS}-{TEASER_MAX_WORDS} words"
+        )
 
     summary = item.get("summary")
     if not isinstance(summary, str) or not summary.strip():
@@ -1356,6 +1376,8 @@ def validate_site_artifacts(
     errors: list[str] = []
     warnings: list[str] = []
     manifest_path = Path(manifest_path)
+    if manifest_path.is_symlink():
+        return ValidationReport(errors=["manifest cannot be a symbolic link"])
     try:
         manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     except (OSError, json.JSONDecodeError) as exc:
@@ -1378,8 +1400,11 @@ def validate_site_artifacts(
     if manifest.get("artifact_count") != len(artifact_map):
         errors.append("manifest.artifact_count must match manifest.artifacts")
 
-    root = Path(root) if root is not None else manifest_path.parent.parent
-    manifest_relative = manifest_path.relative_to(root)
+    root = (Path(root) if root is not None else manifest_path.parent.parent).resolve()
+    try:
+        manifest_relative = manifest_path.resolve().relative_to(root)
+    except (OSError, ValueError):
+        return ValidationReport(errors=[*errors, "manifest must remain under the site root"])
     data_prefix = manifest_relative.parent
     expected_publications = (data_prefix / "publications.json").as_posix()
     expected_edition = (data_prefix / "edition.json").as_posix()
@@ -1400,7 +1425,10 @@ def validate_site_artifacts(
         if not isinstance(metadata, dict):
             errors.append(f"manifest.artifacts[{path_text!r}] must be an object")
             continue
-        path = root / relative
+        path, path_error = _safe_artifact_path(root, relative)
+        if path_error:
+            errors.append(f"artifact {path_text} {path_error}")
+            continue
         try:
             content = path.read_bytes()
         except OSError as exc:
@@ -1712,7 +1740,17 @@ def validate_site_artifacts(
         if not isinstance(value.get("state"), dict):
             errors.append(f"{path_text}.state must be an object")
         else:
-            raw_states[Path(path_text).stem] = value["state"]
+            state_name = Path(path_text).stem
+            state = value["state"]
+            # The retraction ledger is always public once manifest-listed.  Its
+            # strict tombstone projection therefore applies even when validating
+            # a legacy-compatible cut; otherwise a correctly rehashed manifest
+            # could disclose the private reason or rollback record.
+            if require_complete_only or state_name == "retractions":
+                errors.extend(
+                    _validate_public_state(state_name, state, path_text=path_text)
+                )
+            raw_states[state_name] = state
     if isinstance(publications, dict):
         source_names = {
             source.get("source")
@@ -1733,3 +1771,76 @@ def validate_site_artifacts(
         if cut_id != expected_cut_id:
             errors.append("manifest.cut_id does not match transactional artifact content")
     return ValidationReport(errors=errors, warnings=warnings)
+
+
+def _safe_artifact_path(root: Path, relative: Path) -> tuple[Path, str | None]:
+    """Resolve an artifact only if no symlink can leave the staged site root."""
+
+    candidate = root / relative
+    current = root
+    for part in relative.parts:
+        current = current / part
+        try:
+            if current.is_symlink():
+                return candidate, "cannot be a symbolic link"
+        except OSError as exc:
+            return candidate, f"cannot be inspected safely: {exc}"
+    try:
+        candidate.resolve().relative_to(root)
+    except (OSError, ValueError):
+        return candidate, "resolves outside the site root"
+    return candidate, None
+
+
+def _validate_public_state(name: str, state: dict[str, Any], *, path_text: str) -> list[str]:
+    """Reject private/editorial material in every manifest-listed state file."""
+
+    errors: list[str] = []
+    if name == "retractions":
+        if state.get("version") != 2 or set(state) != {"version", "items"}:
+            return [f"{path_text}.state must use the public retractions tombstone schema"]
+        items = state.get("items")
+        if not isinstance(items, dict):
+            return [f"{path_text}.state.items must be an object"]
+        for item_id, entry in items.items():
+            if (
+                not isinstance(item_id, str)
+                or not isinstance(entry, dict)
+                or set(entry) != {"retracted_at"}
+                or not isinstance(entry.get("retracted_at"), str)
+                or not entry["retracted_at"]
+            ):
+                errors.append(
+                    f"{path_text}.state retraction tombstones must contain only retracted_at"
+                )
+        return errors
+
+    private_keys = {
+        "record",
+        "review_reason",
+        "extracted_text",
+        "source_content_hash",
+        "source_sections",
+        "extraction_diagnostics",
+    }
+
+    def walk(value: Any, trail: str) -> None:
+        if isinstance(value, dict):
+            forbidden = private_keys.intersection(value)
+            if forbidden:
+                errors.append(
+                    f"{path_text}.state{trail} contains private fields: {sorted(forbidden)}"
+                )
+            status = value.get("editorial_status")
+            if status is not None and status != "complete":
+                errors.append(
+                    f"{path_text}.state{trail}.editorial_status must be complete"
+                )
+            for key, nested in value.items():
+                walk(nested, f"{trail}.{key}")
+        elif isinstance(value, list):
+            for index, nested in enumerate(value):
+                walk(nested, f"{trail}[{index}]")
+
+    walk(state, "")
+    return errors

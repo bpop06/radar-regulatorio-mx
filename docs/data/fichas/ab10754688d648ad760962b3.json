@@ -1,0 +1,143 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "heading": "Razón de la nulidad",
+      "paragraphs": [
+        "La Sala Regional en Michoacán encontró ilegal la notificación inicial porque la autoridad no acreditó revisar otros domicilios ni requerir información a autoridades antes de notificar por instructivo.",
+        "Por esa irregularidad desde el inicio, el TFJA declaró la nulidad lisa y llana de la resolución sancionadora."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "heading": "Cumplimiento administrativo",
+      "paragraphs": [
+        "El acuerdo de cumplimiento dejó sin efectos la resolución impugnada, que había impuesto 45 meses de inhabilitación y una sanción económica de 99,043.20 pesos.",
+        "La circular comunica que también quedaron sin efectos las consecuencias de esa resolución dentro del procedimiento PA-031/2024."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "585c5258721eb76878da570f771fbcc24a8b75a6f9b61c810f44eaf53cc29f7e",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "CIRCULAR por la que se comunica a las dependencias y entidades de la Administración Pública Federal y a las entidades federativas el cumplimiento dado a la sentencia definitiva de veintitrés de marzo de dos mil veintiséis, dictada por la Sala Regional en Michoacán del Tribunal Federal de Justicia Administrativa, en el juicio de nulidad 937/25-21-01-9-OT, promovido por la C. María Guadalupe Banderas Chávez, mediante la cual se declaró la nulidad de la resolución contenida en el oficio OICE/00/637/19391/2024 de once de diciembre de dos mil veinticuatro, emitida dentro del procedimiento administrativo de sanción a licitantes, proveedores y contratistas PA-031/2024.",
+        "location": "caracteres 0-674"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Buen Gobierno.- Secretaría Anticorrupción y Buen Gobierno.- Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado.- Órgano Interno de Control en el Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado.- Área de Responsabilidades.- Unidad de Asuntos Jurídicos.- Expediente de Origen: PA-031/2024.- Expediente: 110-III-044/2025.",
+        "location": "caracteres 674-5330"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793723&fecha=16%2F07%2F2026",
+    "retrieved_at": "2026-08-14T00:37:05.314060+00:00"
+  },
+  "executive_summary": [
+    "El Órgano Interno de Control en el ISSSTE comunicó el cumplimiento de una sentencia definitiva de la Sala Regional en Michoacán del Tribunal Federal de Justicia Administrativa. La sentencia resolvió el juicio de nulidad promovido por María Guadalupe Banderas Chávez contra una resolución emitida en el procedimiento administrativo de sanción a licitantes, proveedores y contratistas PA-031/2024.",
+    "La resolución impugnada había impuesto una inhabilitación de 45 meses y una sanción económica de 99,043.20 pesos. La Sala consideró que la autoridad no acreditó haber agotado las verificaciones necesarias de domicilio antes de dejar citatorio y notificar por instructivo; calificó esa actuación como ilegal y declaró la nulidad lisa y llana."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "paragraphs": [
+        "La sanción anulada no debe conservar efectos en los controles administrativos vinculados con el expediente y la persona individualizados."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "Las áreas que administren expedientes de proveedores sancionados deben verificar la sentencia y el acuerdo de cumplimiento antes de mantener referencias a esa sanción."
+        ],
+        "sector": "Contratación pública y litigio administrativo"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793723&fecha=16%2F07%2F2026",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "9bf801771a3ad98b16dee3bcb5c406a5c726a8bca6a929c2d43d30c91f01e44b",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/ab10754688d648ad760962b3.json",
+    "detail_url": "notas/ab10754688d648ad760962b3.html",
+    "detected_at": "2026-08-14T01:46:44.993982+00:00",
+    "document_type": "Circular",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5793723",
+    "importance": 3,
+    "issuing_body": "Presidencia de la República",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-07-16",
+    "official_title": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal y a las entidades federativas el cumplimiento dado a la sentencia definitiva de veintitrés de marzo de dos mil veintiséis, dictada por la Sala Regional en Michoacán del Tribunal Federal de Justicia Administrativa, en el juicio de nulidad 937/25-21-01-9-OT, promovido por la C. María Guadalupe Banderas Chávez, mediante la cual se declaró la nulidad de la resolución contenida en el oficio OICE/00/637/19391/2024 de once de diciembre de dos mil veinticuatro, emitida dentro del procedimiento administrativo de sanción a licitantes, proveedores y contratistas PA-031/2024.",
+    "published_at": "2026-07-16",
+    "relevance_score": 5,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5793723",
+    "summary_teaser": "La Sala Regional en Michoacán declaró la nulidad lisa y llana de una sanción impuesta a María Guadalupe Banderas Chávez. El TFJA consideró ilegal la notificación inicial del procedimiento; en cumplimiento, el órgano interno de control dejó sin efectos la resolución sancionadora y sus consecuencias.",
+    "title": "TFJA anula sanción por notificación ilegal a contratista",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5793723&fecha=16/07/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Unidades contratantes y responsables de expedientes sancionadores",
+      "deadline": null,
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "legal_basis": "Ley Federal de Procedimiento Contencioso Administrativo",
+      "paragraphs": [
+        "Al revisar el expediente PA-031/2024, trate como dejados sin efectos la resolución impugnada y sus consecuencias, conforme al acuerdo de cumplimiento publicado."
+      ],
+      "trigger": "Sentencia definitiva y acuerdo de cumplimiento"
+    }
+  ],
+  "schema_version": 8
+}

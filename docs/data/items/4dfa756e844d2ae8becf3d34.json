@@ -1,0 +1,353 @@
+{
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "item": {
+    "ai_generated": true,
+    "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792569&fecha=03/07/2026",
+    "card_body": "## Qué se publicó\n\nUn listado global definitivo de 102 contribuyentes dentro del procedimiento fiscal que comunica el SAT.\n\n## Sustancia\n\nEl oficio establece que los comprobantes fiscales expedidos por las personas listadas no producen ni produjeron efecto fiscal alguno. La consecuencia no se extiende a terceros no identificados.\n\n## Fuente\n\n[Consultar fuente oficial](https://dof.gob.mx/nota_detalle.php?codigo=5792569&fecha=03/07/2026)",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Fiscal",
+      "Administración centralizada"
+    ],
+    "content_hash": "31a7347a96683ddbdcdaf00a79a2f25a508dc1f4b5032e389ca9aefd5fe535cd",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "not_material",
+        "reason": "Encabezado del oficio; el efecto y el Anexo están desarrollados en los demás fragmentos.",
+        "source_ref": "chunk-1",
+        "target_sections": []
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": "Filas del Anexo 1 con identificadores y datos de notificación.",
+        "source_ref": "chunk-3",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": "Filas del Anexo 1 con identificadores y datos de notificación.",
+        "source_ref": "chunk-4",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": "Filas del Anexo 1 con identificadores y datos de notificación.",
+        "source_ref": "chunk-5",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": "Filas del Anexo 1 con identificadores y datos de notificación.",
+        "source_ref": "chunk-6",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": "Filas del Anexo 1 con identificadores y datos de notificación.",
+        "source_ref": "chunk-7",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": "Filas del Anexo 1 con identificadores y datos de notificación.",
+        "source_ref": "chunk-8",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": "Filas del Anexo 1 con identificadores y datos de notificación.",
+        "source_ref": "chunk-9",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": "Filas del Anexo 1 con identificadores y datos de notificación.",
+        "source_ref": "chunk-10",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": "Filas del Anexo 1 con identificadores y datos de notificación.",
+        "source_ref": "chunk-11",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": "Cierra las filas de datos adicionales del Anexo 1.",
+        "source_ref": "chunk-12",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/4dfa756e844d2ae8becf3d34.json",
+    "detail_url": "notas/4dfa756e844d2ae8becf3d34.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "heading": "Procedimiento y efecto común",
+        "paragraphs": [
+          "El cuerpo del oficio describe la presunción, oportunidad de defensa, resoluciones definitivas y publicación del listado. Expresamente atribuye a los comprobantes de las personas listadas la falta de efecto fiscal presente y pasado."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-2",
+          "chunk-3",
+          "chunk-4",
+          "chunk-5",
+          "chunk-6",
+          "chunk-7",
+          "chunk-8",
+          "chunk-9",
+          "chunk-10",
+          "chunk-11",
+          "chunk-12"
+        ],
+        "heading": "Identificación de 102 contribuyentes",
+        "paragraphs": [
+          "Los fragmentos del Anexo contienen los RFC, nombres, oficios, notificaciones, resoluciones y datos adicionales de los 102 registros que integran el listado."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "heading": "Límite de la ficha",
+        "paragraphs": [
+          "La declaración se reporta respecto de comprobantes expedidos por los contribuyentes identificados; el oficio no permite extenderla a terceros no incluidos."
+        ]
+      }
+    ],
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Oficio",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "738fdc00206617754e32225a7542c3057c383dd4c61ccef0f6faaa5aa0210f5b",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "OFICIO 500-05-00-00-00-2026-16059 mediante el cual se comunica listado global definitivo en términos del artículo 69-B, párrafo cuarto del Código Fiscal de la Federación.",
+          "location": "caracteres 0-174"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Servicio de Administración Tributaria.- Administración General de Auditoría Fiscal Federal.- Administración Central de Fiscalización Estratégica. · parte 1",
+          "location": "caracteres 174-12174"
+        },
+        {
+          "id": "chunk-3",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Servicio de Administración Tributaria.- Administración General de Auditoría Fiscal Federal.- Administración Central de Fiscalización Estratégica. · parte 2",
+          "location": "caracteres 12174-24174"
+        },
+        {
+          "id": "chunk-4",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Servicio de Administración Tributaria.- Administración General de Auditoría Fiscal Federal.- Administración Central de Fiscalización Estratégica. · parte 3",
+          "location": "caracteres 24174-36174"
+        },
+        {
+          "id": "chunk-5",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Servicio de Administración Tributaria.- Administración General de Auditoría Fiscal Federal.- Administración Central de Fiscalización Estratégica. · parte 4",
+          "location": "caracteres 36174-48174"
+        },
+        {
+          "id": "chunk-6",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Servicio de Administración Tributaria.- Administración General de Auditoría Fiscal Federal.- Administración Central de Fiscalización Estratégica. · parte 5",
+          "location": "caracteres 48174-60174"
+        },
+        {
+          "id": "chunk-7",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Servicio de Administración Tributaria.- Administración General de Auditoría Fiscal Federal.- Administración Central de Fiscalización Estratégica. · parte 6",
+          "location": "caracteres 60174-72174"
+        },
+        {
+          "id": "chunk-8",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Servicio de Administración Tributaria.- Administración General de Auditoría Fiscal Federal.- Administración Central de Fiscalización Estratégica. · parte 7",
+          "location": "caracteres 72174-84174"
+        },
+        {
+          "id": "chunk-9",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Servicio de Administración Tributaria.- Administración General de Auditoría Fiscal Federal.- Administración Central de Fiscalización Estratégica. · parte 8",
+          "location": "caracteres 84174-96174"
+        },
+        {
+          "id": "chunk-10",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Servicio de Administración Tributaria.- Administración General de Auditoría Fiscal Federal.- Administración Central de Fiscalización Estratégica. · parte 9",
+          "location": "caracteres 96174-108174"
+        },
+        {
+          "id": "chunk-11",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Servicio de Administración Tributaria.- Administración General de Auditoría Fiscal Federal.- Administración Central de Fiscalización Estratégica. · parte 10",
+          "location": "caracteres 108174-120174"
+        },
+        {
+          "id": "chunk-12",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Servicio de Administración Tributaria.- Administración General de Auditoría Fiscal Federal.- Administración Central de Fiscalización Estratégica. · parte 11",
+          "location": "caracteres 120174-130096"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792569&fecha=03/07/2026",
+      "retrieved_at": "2026-08-13T19:43:27.140287+00:00"
+    },
+    "executive_summary": [
+      "El SAT publica un listado definitivo de 102 contribuyentes y sus datos procedimentales de presunción, notificación y resolución individual.",
+      "La consecuencia textual del oficio es que los comprobantes fiscales expedidos por las personas listadas no producen ni produjeron efecto fiscal alguno.",
+      "El efecto se limita a los registros identificados en el Anexo."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5792569",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "La publicación cambia la lectura fiscal de comprobantes expedidos por los 102 contribuyentes listados al declarar que no producen ni produjeron efecto fiscal alguno."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-2",
+            "chunk-3",
+            "chunk-4",
+            "chunk-5",
+            "chunk-6",
+            "chunk-7",
+            "chunk-8",
+            "chunk-9",
+            "chunk-10",
+            "chunk-11",
+            "chunk-12"
+          ],
+          "paragraphs": [
+            "Deben contrastar una operación con el RFC y nombre del Anexo antes de atribuir el efecto fiscal publicado a un comprobante específico."
+          ],
+          "sector": "Contribuyentes, áreas fiscales y asesores que revisen comprobantes de los registros listados"
+        }
+      ]
+    },
+    "importance": 2,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-09-01T18:46:30.041123+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792569&fecha=03/07/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5792569"
+    },
+    "official_published_at": "2026-07-03",
+    "official_title": "Oficio 500-05-00-00-00-2026-16059 mediante el cual se comunica listado global definitivo en términos del artículo 69-B, párrafo cuarto del Código Fiscal de la Federación.",
+    "published_at": "2026-07-03",
+    "published_day": 3,
+    "published_month": 7,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Personas que validen comprobantes fiscales",
+        "deadline": null,
+        "evidence_refs": [
+          "chunk-2",
+          "chunk-3",
+          "chunk-4",
+          "chunk-5",
+          "chunk-6",
+          "chunk-7",
+          "chunk-8",
+          "chunk-9",
+          "chunk-10",
+          "chunk-11",
+          "chunk-12"
+        ],
+        "legal_basis": "Artículo 69-B del Código Fiscal de la Federación, conforme al oficio",
+        "paragraphs": [
+          "Verifiquen si el emisor aparece entre los 102 registros del Anexo mediante RFC y razón social, y consideren el efecto fiscal expreso sólo para comprobantes expedidos por esas personas."
+        ],
+        "trigger": "Revisión de un comprobante fiscal atribuido a una persona listada"
+      }
+    ],
+    "relevance_score": 3,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5792569",
+    "subtopic_tags": [
+      "codigo fiscal"
+    ],
+    "summary": "La Administración Central de Fiscalización Estratégica del SAT comunica un listado global definitivo en términos del artículo 69-B del Código Fiscal de la Federación. El oficio y su Anexo 1 abarcan 102 personas contribuyentes. La autoridad relata que detectó emisión de comprobantes fiscales sin activos, personal, infraestructura o capacidad material para prestar servicios, producir, comercializar o entregar los bienes que dichos comprobantes amparan. La publicación organiza, a lo largo de sus fragmentos, RFC, nombre o razón social, oficios de presunción, notificaciones, resoluciones definitivas y datos adicionales de cada registro.\n\nEl procedimiento descrito comenzó con oficios individuales de presunción y una oportunidad de quince días hábiles, contados desde la última notificación, para manifestar lo que correspondiera y aportar pruebas. El SAT informa que las personas del anexo no se apersonaron o no presentaron elementos que desvirtuaran los hechos, por lo que se emitieron resoluciones individuales definitivas. También señala que transcurrieron treinta días hábiles desde esas notificaciones y que la autoridad no había recibido noticia de una resolución o sentencia favorable que ordenara suspender, anular o revocar los procedimientos mencionados.\n\nCon base en esos antecedentes, el SAT agrega los 102 nombres o razones sociales al listado de contribuyentes que no desvirtuaron los hechos imputados y que quedaron definitivamente en la situación del primer párrafo del artículo 69-B. El efecto jurídico central está formulado de manera expresa: los comprobantes fiscales expedidos por dichos contribuyentes no producen ni produjeron efecto fiscal alguno. La ficha reproduce esa consecuencia sin reducirla a una mención genérica del listado y sin presentar la publicación como una presunción todavía pendiente de defensa.\n\nEl alcance no se amplía a comprobantes de personas no incluidas ni a terceros que no aparecen en el Anexo. Para una revisión individual, la fuente oficial conserva los identificadores, notificaciones y resoluciones de cada contribuyente dentro de las tablas distribuidas entre los fragmentos 2 a 12. Esa distribución es material porque permite localizar la fila de una persona concreta, pero no altera la regla común sobre el efecto fiscal que el oficio declara para los comprobantes de las 102 personas listadas.",
+    "summary_teaser": "El SAT publicó un listado global definitivo de 102 contribuyentes en el procedimiento del artículo 69-B. El oficio dice que los comprobantes fiscales expedidos por las personas listadas no producen ni produjeron efecto fiscal alguno. La consecuencia se refiere a los registros del Anexo y no determina la situación de terceros ajenos al listado.",
+    "title": "Comprobantes de 102 contribuyentes carecen de efecto fiscal",
+    "topic_tags": [
+      "Fiscal",
+      "Oficio"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5792569&fecha=03/07/2026"
+  },
+  "schema_version": 8
+}

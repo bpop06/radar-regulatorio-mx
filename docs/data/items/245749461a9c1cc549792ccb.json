@@ -1,0 +1,174 @@
+{
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "item": {
+    "ai_generated": true,
+    "authority": "ORGANISMOS DESCONCENTRADOS O DESCENTRALIZADOS INSTITUTO MEXICANO DE LA PROPIEDAD INDUSTRIAL",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792807&fecha=07/07/2026",
+    "card_body": "## Qué se publicó\n\nEl IMPI publicó la solicitud relativa a Glorias de Nuevo León para abrir la etapa de observaciones de terceros.\n\n## Sustancia\n\nLa publicación describe el producto y los municipios de elaboración pretendidos. No otorga todavía la indicación geográfica; terceras personas con interés justificado tienen dos meses para presentar oposición y pruebas.\n\n## Fuente\n\n[Fuente oficial](https://dof.gob.mx/nota_detalle.php?codigo=5792807&fecha=07/07/2026)",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración descentralizada"
+    ],
+    "content_hash": "96e2a2a74cda40a734c9a096c9d1727d698f62136a99192ba3274691966e3127",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-1",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/245749461a9c1cc549792ccb.json",
+    "detail_url": "notas/245749461a9c1cc549792ccb.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "heading": "Solicitud y producto declarado",
+        "paragraphs": [
+          "El IMPI publicó los datos de la solicitud de Declaración de Protección a la Indicación Geográfica “Glorias de Nuevo León”, presentada por la Secretaría de Turismo del Gobierno del Estado de Nuevo León, representada por Maricarmen Martínez Villarreal.",
+          "La solicitud describe una confitería tradicional hecha con leche de cabra, de vaca o de ambas, azúcar, sal y nuez pecanera. Señala una cocción prolongada hasta el punto de leche quemada o cajeta concentrada y el moldeo en porciones individuales de 20 a 30 gramos envueltas tradicionalmente en celofán rojo."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "heading": "Zona, expediente y oposición",
+        "paragraphs": [
+          "La elaboración declarada se realiza en los municipios de Linares, Montemorelos y Vallecillo, Nuevo León, para los cuales el aviso proporciona las coordenadas de la zona geográfica señalada.",
+          "El aviso no prejuzga la procedencia de la solicitud. Las terceras personas que justifiquen su interés pueden presentar oposición, observaciones u objeciones por escrito, con pruebas y comprobante de pago, dentro del plazo improrrogable de dos meses contado desde la publicación."
+        ]
+      }
+    ],
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Publicación De Datos",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "698a911618133011d041790b8acf7af2eba6d161e8c3123f6cb00d0c83afc0fa",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "PUBLICACIÓN de datos relacionados con la Solicitud de Declaración de Protección a la Indicación Geográfica \" Glorias de Nuevo León \" .",
+          "location": "caracteres 0-138"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Economía.- Secretaría de Economía.- Instituto Mexicano de la Propiedad Industrial.",
+          "location": "caracteres 138-4293"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792807&fecha=07/07/2026",
+      "retrieved_at": "2026-08-13T19:43:08.717636+00:00"
+    },
+    "executive_summary": [
+      "El Instituto Mexicano de la Propiedad Industrial publicó los datos de una solicitud de Declaración de Protección a la Indicación Geográfica respecto de Glorias de Nuevo León. La solicitud fue presentada por la Secretaría de Turismo del Gobierno del Estado de Nuevo León, representada por Maricarmen Martínez Villarreal y describe una confitería tradicional de leche de cabra, de vaca o ambas, azúcar, sal y nuez pecanera, moldeada en porciones de 20 a 30 gramos y envuelta tradicionalmente en celofán rojo.",
+      "La elaboración declarada se realiza en los municipios de Linares, Montemorelos y Vallecillo, Nuevo León, para los cuales el aviso proporciona referencias geográficas. El expediente queda disponible en la Dirección Divisional de Marcas del IMPI para consulta y recepción de documentos en el horario que publica el aviso, por lo que la delimitación y las características declaradas pueden revisarse en el expediente administrativo."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Organismo descentralizado",
+    "id": "dof:5792807",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "La publicación activa una etapa administrativa de publicidad y oposición; no transforma todavía la solicitud en una protección otorgada."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-1",
+            "chunk-2"
+          ],
+          "paragraphs": [
+            "Productores, autoridades locales y posibles opositores pueden revisar la descripción, la zona y el expediente antes de que el IMPI resuelva la solicitud."
+          ],
+          "sector": "Propiedad industrial y productores locales"
+        }
+      ]
+    },
+    "importance": 2,
+    "issuing_body": "Instituto Mexicano de la Propiedad Industrial",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-09-01T18:46:30.041123+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792807&fecha=07/07/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5792807"
+    },
+    "official_published_at": "2026-07-07",
+    "official_title": "Publicación de datos relacionados con la Solicitud de Declaración de Protección a la Indicación Geográfica \"Glorias de Nuevo León\".",
+    "published_at": "2026-07-07",
+    "published_day": 7,
+    "published_month": 7,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Personas con interés legítimo en la indicación o denominación",
+        "deadline": "un plazo improrrogable de dos meses desde la publicación",
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "legal_basis": "Ley Federal de Protección a la Propiedad Industrial",
+        "paragraphs": [
+          "Si la solicitud puede afectar una denominación, indicación, producto o zona relacionada, consulte el expediente del IMPI y presente oposición, observaciones y pruebas sólo dentro de un plazo improrrogable de dos meses."
+        ],
+        "trigger": "Publicación en el Diario Oficial de la Federación"
+      }
+    ],
+    "relevance_score": 3,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5792807",
+    "subtopic_tags": [
+      "indicacion geografica"
+    ],
+    "summary": "El Instituto Mexicano de la Propiedad Industrial publicó los datos de la solicitud de Declaración de Protección a la Indicación Geográfica “Glorias de Nuevo León”. El aviso identifica como solicitante a la Secretaría de Turismo del Gobierno del Estado de Nuevo León, representada por Maricarmen Martínez Villarreal, y refiere el escrito recibido el 10 de octubre de 2025, así como los alcances presentados el 8 de diciembre de 2025 y el 3 de junio de 2026.\n\nLa solicitud describe un producto de confitería tradicional elaborado mediante cocción prolongada y reducción de una mezcla de leche de cabra, de vaca o de ambas, azúcar y sal. Al alcanzar el punto de leche quemada o cajeta concentrada, la preparación se enriquece con nuez pecanera y se moldea en porciones individuales de 20 a 30 gramos, envueltas tradicionalmente en papel celofán rojo.\n\nLa elaboración declarada se ubica en los municipios de Linares, Montemorelos y Vallecillo, en el Estado de Nuevo León. El aviso proporciona coordenadas para cada municipio, como parte de la delimitación geográfica vinculada con la solicitud. Esos datos describen la zona de producción cuya protección se solicita y no sustituyen la resolución posterior del Instituto.\n\nEl expediente está disponible para consulta pública en el archivo de la Dirección Divisional de Marcas del IMPI. En el mismo domicilio se reciben los documentos relacionados con la solicitud, dentro del horario publicado. Esa consulta permite revisar la descripción del producto, la zona geográfica declarada y los documentos presentados por la parte solicitante.\n\nLa publicación no prejuzga ni constituye un pronunciamiento del IMPI sobre la procedencia o improcedencia de la solicitud. Las terceras personas que justifiquen su interés pueden presentar oposición escrita, observaciones u objeciones, con pruebas y comprobante de pago de la tarifa. El plazo es improrrogable: dos meses contados desde la publicación en el Diario Oficial de la Federación, conforme al artículo 282 de la Ley Federal de Protección a la Propiedad Industrial.",
+    "summary_teaser": "El IMPI publicó la solicitud de protección de la Indicación Geográfica Glorias de Nuevo León. El producto se describe como confitería de leche, azúcar, sal y nuez pecanera, en porciones envueltas en celofán rojo, elaborada en Linares, Montemorelos y Vallecillo. La oposición fundada puede presentarse dentro de dos meses.",
+    "title": "IMPI abre solicitud de indicación para Glorias",
+    "topic_tags": [
+      "Propiedad intelectual"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5792807&fecha=07/07/2026"
+  },
+  "schema_version": 8
+}

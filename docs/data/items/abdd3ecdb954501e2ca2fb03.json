@@ -1,0 +1,211 @@
+{
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "item": {
+    "ai_generated": true,
+    "authority": "Agencia Nacional de Aduanas de México",
+    "canonical_url": "https://www.anam.gob.mx/comunicado-prensa-conjunto-64-2026",
+    "card_body": "## Qué se publicó\n\nComunicado conjunto sobre una inspección en la Aduana de Lázaro Cárdenas y las medidas reportadas respecto de mercancía con signos distintivos.\n\n## Sustancia\n\nLa fuente reporta la suspensión provisional de libre circulación de 48 perfumes, la toma de una muestra y el aseguramiento de otros bienes. No comunica una resolución final de infracción ni sanciones individuales.\n\n## Fuente\n\n[Comunicado oficial de ANAM](https://www.anam.gob.mx/comunicado-prensa-conjunto-64-2026)",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Comercio exterior",
+      "Administración centralizada"
+    ],
+    "content_hash": "3b8c622ec7321dbdcd1190ab2f19a80b214e013bda2773a89ee7a0e15c851676",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "summarized",
+        "reason": "Extracción lineal duplicada que contiene los hechos desarrollados en la publicación.",
+        "source_ref": "chunk-1",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": "Encabezado oficial y contexto temporal del comunicado.",
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "executive_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": "Texto estructurado que sustenta los hechos, alcance y recomendaciones cautelares.",
+        "source_ref": "chunk-3",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/abdd3ecdb954501e2ca2fb03.json",
+    "detail_url": "notas/abdd3ecdb954501e2ca2fb03.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-3"
+        ],
+        "heading": "Inspección y objeto de revisión",
+        "paragraphs": [
+          "El comunicado sitúa el operativo en la Aduana de Lázaro Cárdenas y lo vincula con la estrategia “Operación Limpieza”. Precisa que la diligencia verificó mercancía relacionada con los registros 936805 y 1019397 y con las denominaciones que la fuente identifica."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-3"
+        ],
+        "heading": "Medida provisional y muestra",
+        "paragraphs": [
+          "La medida descrita consiste en suspender provisionalmente la libre circulación de mercancía extranjera correspondiente a 48 perfumes. El texto añade que se extrajo una muestra física para los efectos que el IMPI considere conducentes, sin informar una determinación definitiva."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-3"
+        ],
+        "heading": "Aseguramientos adicionales y alcance",
+        "paragraphs": [
+          "ANAM, IMPI y FGR reportan el aseguramiento de envases, mochilas y bolsas con las leyendas o personaje descritos en la publicación. El cierre expresa un compromiso institucional de proteger la propiedad industrial y prevenir mercancías que pudieran vulnerar derechos marcarios; no comunica el desenlace posterior de la diligencia."
+        ]
+      }
+    ],
+    "detected_at": "2026-09-01T18:46:30.041123+00:00",
+    "document_type": "Comunicado",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "bb7727d0407679dda583abbafd02c4dafbb37e9457a0980e47f4e2317c248752",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "Preámbulo",
+          "location": "caracteres 0-2440"
+        },
+        {
+          "id": "chunk-2",
+          "label": "IMPI y la Agencia Nacional de Aduanas de México realizan operativo de inspección en la Aduana de Lázaro Cárdenas",
+          "location": "caracteres 2440-2595"
+        },
+        {
+          "id": "chunk-3",
+          "label": "Comunicado de prensa conjunto 64/2026",
+          "location": "caracteres 2595-4898"
+        }
+      ],
+      "official_url": "https://www.anam.gob.mx/comunicado-prensa-conjunto-64-2026",
+      "retrieved_at": "2026-09-01T18:46:48.355631+00:00"
+    },
+    "executive_summary": [
+      "ANAM e IMPI informaron una inspección en la Aduana de Lázaro Cárdenas, Michoacán, dentro de “Operación Limpieza”. La diligencia buscó verificar mercancía relacionada con dos registros marcarios y se realizó en una terminal portuaria identificada por la fuente.",
+      "La fuente reporta una medida provisional de suspensión de libre circulación para 48 perfumes y la toma de una muestra física. También comunica aseguramientos de otros bienes; no publica una resolución final de infracción, una sanción ni responsabilidades individuales."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-09-01T18:46:30.041123+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "anam:1c45bce94037e150",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-3"
+        ],
+        "paragraphs": [
+          "El efecto verificable del comunicado es informativo: documenta una inspección, una medida provisional y aseguramientos reportados por las autoridades. No publica una regla general, un plazo, una determinación definitiva de infracción ni una sanción para personas determinadas."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-3"
+          ],
+          "paragraphs": [
+            "La publicación es relevante como antecedente de una inspección coordinada en aduana. No permite extender la medida provisional descrita a todas las mercancías ni atribuir una infracción a operadores que el comunicado no identifica."
+          ],
+          "sector": "Importadores y comercializadores de bienes con signos distintivos"
+        },
+        {
+          "evidence_refs": [
+            "chunk-3"
+          ],
+          "paragraphs": [
+            "El texto identifica dos registros como objeto de verificación y describe medidas sobre mercancía relacionada. No reporta la decisión que eventualmente adopte el IMPI respecto de la muestra o de los bienes."
+          ],
+          "sector": "Titulares de registros marcarios"
+        }
+      ]
+    },
+    "importance": 3,
+    "issuing_body": "Agencia Nacional de Aduanas de México",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-09-01T18:46:30.041123+00:00",
+    "official_evidence": {
+      "primary_url": "https://www.anam.gob.mx/comunicado-prensa-conjunto-64-2026/"
+    },
+    "official_identifiers": {
+      "source_id": "1c45bce94037e150"
+    },
+    "official_published_at": "2026-08-28",
+    "official_title": "IMPI y la Agencia Nacional de Aduanas de México realizan operativo de inspección en la Aduana de Lázaro Cárdenas",
+    "published_at": "2026-08-28",
+    "published_day": 28,
+    "published_month": 8,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Operadores de comercio exterior",
+        "deadline": null,
+        "evidence_refs": [
+          "chunk-3"
+        ],
+        "legal_basis": null,
+        "paragraphs": [
+          "Como medida preventiva de gestión de riesgo, pueden conservar trazables los documentos y la identificación comercial de mercancías que usen signos distintivos. Esta recomendación no deriva un plazo ni un requisito nuevo: el comunicado sólo describe la diligencia concreta y las medidas reportadas."
+        ],
+        "trigger": "Inspecciones o revisiones de mercancía con signos distintivos"
+      },
+      {
+        "affected_group": "Lectores que citen la actuación",
+        "deadline": null,
+        "evidence_refs": [
+          "chunk-3"
+        ],
+        "legal_basis": null,
+        "paragraphs": [
+          "Al resumir la publicación, conviene distinguir la suspensión provisional aplicable a los 48 perfumes de los demás aseguramientos informados y evitar presentarlos como una resolución final de infracción o sanción."
+        ],
+        "trigger": "Difusión o análisis del comunicado"
+      }
+    ],
+    "relevance_score": 4,
+    "review_reason": null,
+    "source": "ANAM",
+    "source_id": "1c45bce94037e150",
+    "subtopic_tags": [
+      "aduana",
+      "agencia nacional de aduanas",
+      "impi"
+    ],
+    "summary": "El comunicado conjunto de la Agencia Nacional de Aduanas de México (ANAM) y el Instituto Mexicano de la Propiedad Industrial (IMPI) informa un operativo de inspección realizado en la Aduana de Lázaro Cárdenas, Michoacán, dentro de la estrategia denominada “Operación Limpieza”. La diligencia ocurrió en las instalaciones de L.C. Terminal Portuaria de Contenedores, S.A. de C.V. y tuvo por objeto verificar mercancía relacionada con los registros marcarios 936805 y 1019397, correspondientes a las denominaciones “PARIS HILTON” y “CAN CAN PARIS HILTON Y DISEÑO”.\n\nSegún la fuente, la visita incluyó una medida provisional de suspensión de libre circulación de mercancía extranjera relativa a 48 piezas de perfume. De esas piezas se obtuvo una muestra física para los efectos que el IMPI considere conducentes. Este dato identifica una actuación provisional descrita por la autoridad; el comunicado no publica una determinación final sobre infracción marcaria, propiedad, sanción o destino definitivo de la mercancía.\n\nEl comunicado también refiere que personal de ANAM e IMPI, junto con la Fiscalía General de la República, aseguró 31 cajas con 3 mil 348 envases transparentes con líquido y la leyenda “VICTORIA´S SECRET”, seis bultos con 720 mochilas identificadas con la leyenda “ALO” y una caja con 280 bolsas estampadas con el personaje “KUROMI”. La mención de esas leyendas y del personaje describe los bienes reportados; no equivale a que la fuente haya establecido de manera definitiva una vulneración de derechos.\n\nLa publicación presenta la intervención coordinada de ANAM, IMPI, FGR y autoridades de los tres órdenes de gobierno como una acción para fortalecer la protección de la propiedad industrial y prevenir la circulación de mercancías que pudieran vulnerar derechos marcarios. Para el lector, su alcance verificable es el de un reporte de inspección, medida provisional y aseguramientos comunicados por las autoridades. No establece un requisito general nuevo, un plazo, una sanción aplicable a personas determinadas ni un desenlace administrativo o judicial posterior.",
+    "summary_teaser": "ANAM e IMPI informaron una inspección en la Aduana de Lázaro Cárdenas que incluyó la suspensión provisional de libre circulación de 48 perfumes y el aseguramiento de otros bienes con signos distintivos. El comunicado no determina una infracción, una sanción definitiva ni responsabilidades individuales.",
+    "title": "Medida provisional suspende libre circulación de 48 perfumes",
+    "topic_tags": [
+      "Aduanero",
+      "Propiedad intelectual"
+    ],
+    "url": "https://www.anam.gob.mx/comunicado-prensa-conjunto-64-2026/"
+  },
+  "schema_version": 8
+}

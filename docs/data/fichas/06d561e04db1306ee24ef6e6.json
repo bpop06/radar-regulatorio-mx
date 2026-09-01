@@ -1,0 +1,200 @@
+{
+  "coverage": [
+    {
+      "disposition": "not_material",
+      "reason": "El primer locator es encabezado; procedimiento y 99 registros se desarrollan en cinco fragmentos posteriores.",
+      "source_ref": "chunk-1",
+      "target_sections": []
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-3",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-4",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-5",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-6",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    }
+  ],
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Presunción y aclaración",
+      "paragraphs": [
+        "La parte inicial describe supuesto del artículo 69-B y elementos que SAT considera ausentes. Establece que aclaraciones se presentan mediante escrito original y dos copias con documentación, atendiendo artículos 18, 18-A y 19 CFF. Plazo corre desde última notificación efectiva."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Primer tramo del anexo",
+      "paragraphs": [
+        "El mismo fragmento inicia Anexo 1 con RFC, nombre, localidad, actividad, autoridad emisora y motivo atribuido. Es etapa presuntiva, no relación definitiva del cuarto párrafo del artículo 69-B."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-3",
+        "chunk-4"
+      ],
+      "heading": "Tramos segundo y tercero",
+      "paragraphs": [
+        "Los locators amplían anexo individualizado y conservan datos y motivos administrativos de cada registro. No afirman que contribuyentes hayan agotado oportunidad de pruebas ni que exista decisión definitiva para todos."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-5",
+        "chunk-6"
+      ],
+      "heading": "Cierre de 99 registros",
+      "paragraphs": [
+        "Los últimos fragmentos completan anexo hasta registro 99. Junto con procedimiento inicial, confirman que difusión global acompaña notificaciones individuales y oportunidad de defensa antes de que, en su caso, opere lista definitiva."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "48cfc91762ded0faf9f44bfca68005b2187e9e51e302fb36300ae9df52b3063c",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "OFICIO 500-05-00-00-00-2026-16026 mediante el cual se comunica listado global de presunción de contribuyentes que se ubicaron en el supuesto previsto en el artículo 69-B, párrafo primero del Código Fiscal de la Federación.",
+        "location": "caracteres 0-226"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Servicio de Administración Tributaria.- Administración General de Auditoría Fiscal Federal .- Administración Central de Fiscalización Estratégica . · parte 1",
+        "location": "caracteres 226-12226"
+      },
+      {
+        "id": "chunk-3",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Servicio de Administración Tributaria.- Administración General de Auditoría Fiscal Federal .- Administración Central de Fiscalización Estratégica . · parte 2",
+        "location": "caracteres 12226-24226"
+      },
+      {
+        "id": "chunk-4",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Servicio de Administración Tributaria.- Administración General de Auditoría Fiscal Federal .- Administración Central de Fiscalización Estratégica . · parte 3",
+        "location": "caracteres 24226-36226"
+      },
+      {
+        "id": "chunk-5",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Servicio de Administración Tributaria.- Administración General de Auditoría Fiscal Federal .- Administración Central de Fiscalización Estratégica . · parte 4",
+        "location": "caracteres 36226-48226"
+      },
+      {
+        "id": "chunk-6",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Servicio de Administración Tributaria.- Administración General de Auditoría Fiscal Federal .- Administración Central de Fiscalización Estratégica . · parte 5",
+        "location": "caracteres 48226-54864"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791845&fecha=26/06/2026",
+    "retrieved_at": "2026-08-13T19:43:48.469579+00:00"
+  },
+  "executive_summary": [
+    "El SAT publica listado global bajo artículo 69-B del Código Fiscal de la Federación de contribuyentes respecto de los cuales presume emisión de comprobantes fiscales sin activos, personal, infraestructura o capacidad material para prestar servicios o entregar bienes.",
+    "La fuente explica que se trata de presunción y que autoridad notifica individualmente. Desde que surte efectos última notificación conforme a reglas citadas, la persona cuenta con quince días hábiles para presentar aclaraciones y documentación; lista definitiva es etapa posterior si no desvirtúa hechos."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "paragraphs": [
+        "Contribuyentes identificados deben ubicar su notificación individual y fecha de efectos, porque plazo no se calcula desde fecha única de publicación global. Terceros deben distinguir anexo presuntivo de lista definitiva posterior."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "Contribuyentes listados, asesores fiscales y contrapartes deben revisar etapa procedimental y datos individuales antes de atribuir consecuencias definitivas."
+        ],
+        "sector": "Cumplimiento fiscal y CFDI"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791845&fecha=26/06/2026",
+    "categories": [
+      "Fiscal",
+      "Administración centralizada"
+    ],
+    "content_hash": "412c789532eef91a0e65c0504488f4dd2ec40c1ccb09457bcab63f1af4f0d1f9",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/06d561e04db1306ee24ef6e6.json",
+    "detail_url": "notas/06d561e04db1306ee24ef6e6.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Oficio",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5791845",
+    "importance": 2,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-06-26",
+    "official_title": "Oficio 500-05-00-00-00-2026-16026 mediante el cual se comunica listado global de presunción de contribuyentes que se ubicaron en el supuesto previsto en el artículo 69-B, párrafo primero del Código Fiscal de la Federación.",
+    "published_at": "2026-06-26",
+    "relevance_score": 3,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5791845",
+    "summary_teaser": "El SAT publica un listado global de 99 contribuyentes respecto de los cuales presume emisión de CFDI sin activos, personal, infraestructura o capacidad material. La publicación describe la notificación individual y el plazo de quince días hábiles para aportar pruebas antes de una eventual resolución definitiva.",
+    "title": "SAT establece plazo de defensa en 99 presunciones de CFDI",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5791845&fecha=26/06/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Contribuyentes incluidos en Anexo 1",
+      "deadline": "Quince días hábiles desde última notificación efectiva",
+      "evidence_refs": [
+        "chunk-2",
+        "chunk-6"
+      ],
+      "legal_basis": "Artículo 69-B, segundo y cuarto párrafos, CFF",
+      "paragraphs": [
+        "Identificar última notificación efectiva y, si procede, presentar aclaraciones y documentación ante autoridad emisora. No confundir presunción global con lista definitiva prevista para etapa ulterior."
+      ],
+      "trigger": "Al ser notificado individualmente"
+    }
+  ],
+  "schema_version": 8
+}

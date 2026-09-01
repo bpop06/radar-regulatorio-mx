@@ -1,0 +1,150 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "heading": "Designación y fundamento",
+      "paragraphs": [
+        "El aviso designa a Jesús Pérez Ortega, titular de la Jefatura de Servicios Jurídicos, para suplir las ausencias de Víctor Gasca Martínez, titular del Órgano de Operación Administrativa Desconcentrada Estatal Quintana Roo."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "heading": "Alcance durante la ausencia",
+      "paragraphs": [
+        "La persona designada puede firmar y despachar la documentación que corresponde al órgano estatal, incluida la suscripción de las resoluciones que éste deba emitir, mientras supla las ausencias de la titularidad."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Marco citado por el aviso",
+      "paragraphs": [
+        "La publicación invoca el artículo 251-A de la Ley del Seguro Social y los artículos 138, 139, 144, 155, fracción XXIII, y 158 del Reglamento Interior del IMSS."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "bf89336cdb4a351be758cde57bcb98b6c45eefbf4b9c61bf8d4fcb579e4f7754",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "AVISO mediante el cual se designa al licenciado Jesús Pérez Ortega, Titular de la Jefatura de Servicios Jurídicos para que supla las ausencias del Doctor Víctor Gasca Martínez, Titular del Órgano de Operación Administrativa Desconcentrada Estatal Quintana Roo del Instituto Mexicano del Seguro Social, autorizándole a firmar y despachar la documentación incluyendo la suscripción de las resoluciones que debe emitir este Órgano.",
+        "location": "caracteres 0-432"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un logotipo, que dice: Instituto Mexicano del Seguro Social.- Órgano de Operación Administrativa Desconcentrada Estatal Quintana Roo.",
+        "location": "caracteres 432-2443"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5790695&fecha=16/06/2026",
+    "retrieved_at": "2026-08-13T19:43:58.293314+00:00"
+  },
+  "executive_summary": [
+    "El IMSS designó al licenciado Jesús Pérez Ortega, titular de la Jefatura de Servicios Jurídicos, para suplir las ausencias del titular del Órgano de Operación Administrativa Desconcentrada Estatal Quintana Roo.",
+    "Durante la ausencia puede firmar y despachar la documentación del órgano, incluida la suscripción de las resoluciones que corresponda emitir, conforme al aviso y al Reglamento Interior citado."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "paragraphs": [
+        "La designación establece quién puede suscribir y despachar la documentación del órgano estatal de Quintana Roo cuando se actualicen las ausencias de su titular."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "Durante las ausencias del titular, los documentos y resoluciones del órgano pueden ser firmados por la persona designada en el aviso."
+        ],
+        "sector": "Patrones, asegurados y autoridades que reciban actos del OOAD Quintana Roo"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5790695&fecha=16/06/2026",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "2a72ad974c94dfc54bc2cd65f18be5b6bd991131f9f892c24179144131e45efe",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/b4a90bb5e49dbc8cb4df098f.json",
+    "detail_url": "notas/b4a90bb5e49dbc8cb4df098f.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Aviso",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5790695",
+    "importance": 3,
+    "issuing_body": "Instituto Mexicano del Seguro Social",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-06-16",
+    "official_title": "Aviso mediante el cual se designa al licenciado Jesús Pérez Ortega, Titular de la Jefatura de Servicios Jurídicos para que supla las ausencias del Doctor Víctor Gasca Martínez, Titular del Órgano de Operación Administrativa Desconcentrada Estatal Quintana Roo del Instituto Mexicano del Seguro Social, autorizándole a firmar y despachar la documentación incluyendo la suscripción de las resoluciones que debe emitir este Órgano.",
+    "published_at": "2026-06-16",
+    "relevance_score": 4,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5790695",
+    "summary_teaser": "El IMSS designó al licenciado Jesús Pérez Ortega, titular de la Jefatura de Servicios Jurídicos, para suplir las ausencias del titular del Órgano de Operación Administrativa Desconcentrada Estatal Quintana Roo. Durante ese supuesto puede firmar y despachar documentación, incluida la suscripción de resoluciones que corresponden al órgano.",
+    "title": "IMSS autoriza suplencia jurídica en Quintana Roo",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5790695&fecha=16/06/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Personas que requieran identificar a la persona firmante de un acto del OOAD Quintana Roo",
+      "deadline": null,
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "legal_basis": "Artículo 158 del Reglamento Interior del Instituto Mexicano del Seguro Social, citado en el aviso",
+      "paragraphs": [
+        "Si un documento se suscribe durante una ausencia de la titularidad, puede contrastarse el nombre y cargo de la persona firmante con la designación publicada y con la materia del acto emitido por el órgano estatal."
+      ],
+      "trigger": "Firma o despacho de documentación durante una ausencia de la titularidad"
+    }
+  ],
+  "schema_version": 8
+}

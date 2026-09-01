@@ -1,0 +1,211 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-3",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-4",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-5",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-6",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-2",
+        "chunk-6"
+      ],
+      "heading": "Contenido publicado",
+      "paragraphs": [
+        "El decreto expide un nuevo Reglamento Interior que define la organización, funcionamiento, competencia y atribuciones de la Oficina de la Presidencia. Integra unidades de apoyo técnico, administrativo y operativo, entre ellas Jefatura de Oficina, Secretaría Particular, Secretaría Técnica del Gabinete, coordinaciones generales, Unidad de Administración y Finanzas, Unidad de Transparencia y direcciones generales de presupuesto, recursos humanos, materiales y tecnologías de la información.",
+        "El reglamento asigna funciones de seguimiento de proyectos prioritarios, agenda presidencial, logística, administración de recursos, transparencia, comunicación social, coordinación de programas de desarrollo, asuntos intergubernamentales, atención ciudadana y vinculación informativa. La Consejería Jurídica del Ejecutivo Federal brinda asesoría y representación en los términos indicados por el propio reglamento."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2",
+        "chunk-6"
+      ],
+      "heading": "Alcance y lectura práctica",
+      "paragraphs": [
+        "El decreto entra en vigor al día siguiente de su publicación en el Diario Oficial de la Federación y abroga el reglamento publicado en 2019. Las referencias a unidades que desaparecen, cambian de nombre o modifican atribuciones se entienden hechas a las unidades competentes. Los asuntos pendientes continúan su trámite conforme a la competencia nueva y a las disposiciones vigentes al inicio. La implementación se cubre con presupuesto aprobado y movimientos compensados, sin ampliación del presupuesto regularizable.",
+        "La ficha se dirige principalmente a unidades de la oficina de la presidencia y dependencias que interactúan con ella."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "1cec98e5b263d66158368ade55b515576f1d9f712309f2d829e3688a8a621439",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "DECRETO por el que se expide el Reglamento Interior de la Oficina de la Presidencia de la República.",
+        "location": "caracteres 0-104"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Presidencia de la República. · parte 1",
+        "location": "caracteres 104-12104"
+      },
+      {
+        "id": "chunk-3",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Presidencia de la República. · parte 2",
+        "location": "caracteres 12104-24104"
+      },
+      {
+        "id": "chunk-4",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Presidencia de la República. · parte 3",
+        "location": "caracteres 24104-36104"
+      },
+      {
+        "id": "chunk-5",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Presidencia de la República. · parte 4",
+        "location": "caracteres 36104-48104"
+      },
+      {
+        "id": "chunk-6",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Presidencia de la República. · parte 5",
+        "location": "caracteres 48104-50323"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795358&fecha=04%2F08%2F2026",
+    "retrieved_at": "2026-09-01T16:35:52.502628+00:00"
+  },
+  "executive_summary": [
+    "La Presidencia de la República difundió el nuevo Reglamento Interior de la Oficina de la Presidencia de la República. El decreto expide un nuevo Reglamento Interior que define la organización, funcionamiento, competencia y atribuciones de la Oficina de la Presidencia. Integra unidades de apoyo técnico, administrativo y operativo, entre ellas Jefatura de Oficina, Secretaría Particular, Secretaría Técnica del Gabinete, coordinaciones generales, Unidad de Administración y Finanzas, Unidad de Transparencia y direcciones generales de presupuesto, recursos humanos, materiales y tecnologías de la información.",
+    "El decreto entra en vigor al día siguiente de su publicación en el Diario Oficial de la Federación y abroga el reglamento publicado en 2019. Las referencias a unidades que desaparecen, cambian de nombre o modifican atribuciones se entienden hechas a las unidades competentes. Los asuntos pendientes continúan su trámite conforme a la competencia nueva y a las disposiciones vigentes al inicio. La implementación se cubre con presupuesto aprobado y movimientos compensados, sin ampliación del presupuesto regularizable. La síntesis se limita a los hechos y condiciones expresamente visibles en la fuente oficial."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-2",
+        "chunk-6"
+      ],
+      "paragraphs": [
+        "El efecto observable es el que la publicación atribuye al acto: El decreto entra en vigor al día siguiente de su publicación en el Diario Oficial de la Federación y abroga el reglamento publicado en 2019. Las referencias a unidades que desaparecen, cambian de nombre o modifican atribuciones se entienden hechas a las unidades competentes. Los asuntos pendientes continúan su trámite conforme a la competencia nueva y a las disposiciones vigentes al inicio. La implementación se cubre con presupuesto aprobado y movimientos compensados, sin ampliación del presupuesto regularizable."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-2",
+          "chunk-6"
+        ],
+        "paragraphs": [
+          "Las personas comprendidas deben considerar el documento porque El decreto expide un nuevo Reglamento Interior que define la organización, funcionamiento, competencia y atribuciones de la Oficina de la Presidencia. Integra unidades de apoyo técnico, administrativo y operativo, entre ellas Jefatura de Oficina, Secretaría Particular, Secretaría Técnica del Gabinete, coordinaciones generales, Unidad de Administración y Finanzas, Unidad de Transparencia y direcciones generales de presupuesto, recursos humanos, materiales y tecnologías de la información."
+        ],
+        "sector": "Unidades de la Oficina de la Presidencia y dependencias que interactúan con ella"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795358&fecha=04%2F08%2F2026",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "d981ec40d433ad76af6198eac2e10dce2fb81c12a6ed80c0b9a50fd99200175a",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/23cc68083152a7a4ede91e42.json",
+    "detail_url": "notas/23cc68083152a7a4ede91e42.html",
+    "detected_at": "2026-09-01T16:34:47.803209+00:00",
+    "document_type": "Decreto",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5795358",
+    "importance": 2,
+    "issuing_body": "Presidencia de la República",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-08-04",
+    "official_title": "Decreto por el que se expide el Reglamento Interior de la Oficina de la Presidencia de la República.",
+    "published_at": "2026-08-04",
+    "relevance_score": 2,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5795358",
+    "summary_teaser": "Un nuevo Reglamento Interior organiza la Oficina de la Presidencia, distribuye atribuciones entre unidades técnicas, administrativas y operativas, y abroga el reglamento de 2019. Los asuntos pendientes continúan ante la unidad competente y la implementación debe realizarse con presupuesto aprobado, sin ampliaciones regularizables.",
+    "title": "Presidencia establece unidades y atribuciones internas actualizadas",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5795358&fecha=04/08/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Unidades de la Oficina de la Presidencia y dependencias que interactúan con ella",
+      "deadline": null,
+      "evidence_refs": [
+        "chunk-2",
+        "chunk-6"
+      ],
+      "legal_basis": null,
+      "paragraphs": [
+        "Mapear los asuntos, instrumentos y flujos de coordinación a la unidad que el nuevo reglamento reconoce como competente y actualizar referencias administrativas internas."
+      ],
+      "trigger": "Cuando la persona o entidad se ubique en el ámbito material descrito por la fuente oficial."
+    }
+  ],
+  "schema_version": 8
+}

@@ -1,0 +1,136 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "heading": "Contenido publicado",
+      "paragraphs": [
+        "El aviso pone a disposición el Manual de Organización General de la Universidad y explica que regula su estructura y funciones internas."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "heading": "Alcance práctico",
+      "paragraphs": [
+        "La fuente señala que el instrumento no aumenta obligaciones ni costos para particulares y debe consultarse íntegramente para una atribución específica."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "6116bab72d11727dd2a054503ec1d8e57b67658ac1e8fed915504035be27b488",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "AVISO mediante el cual se informa de la publicación en la página Web de la Universidad Nacional Rosario Castellanos del Manual de Organización General de la Universidad Nacional Rosario Castellanos 2026-2030.",
+        "location": "caracteres 0-212"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Ciencia, Humanidades, Tecnología e Innovación.- Universidad Nacional Rosario Castellanos.",
+        "location": "caracteres 212-3977"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796068&fecha=12%2F08%2F2026",
+    "retrieved_at": "2026-09-01T16:35:32.873564+00:00"
+  },
+  "executive_summary": [
+    "La Universidad Nacional Rosario Castellanos publicó un aviso para informar la disponibilidad de su Manual de Organización General 2026-2030 en una dirección electrónica institucional. El documento explica que el manual es el instrumento normativo-administrativo que establece la estructura orgánica, las atribuciones, funciones y responsabilidades de las unidades administrativas de la Universidad. La publicación busca cumplir la obligación de difusión oficial de manuales de organización y facilitar su consulta pública.",
+    "La fuente refiere que la Dirección General de Recursos Humanos y Organización de la Secretaría de Ciencia, Humanidades, Tecnología e Innovación emitió visto bueno al manual. Asimismo, cita una constancia de exención de análisis de impacto regulatorio de la Agencia de Transformación Digital y Telecomunicaciones. La razón expresada es que el manual se refiere a organización y funcionamiento interno y no modifica ni incrementa obligaciones para particulares, ni adiciona costos burocráticos."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "paragraphs": [
+        "La publicación mejora la transparencia de la organización interna y la identificación de áreas competentes de la Universidad."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "El personal debe usar el manual vigente y las personas usuarias pueden consultar la versión oficial para ubicar atribuciones internas."
+        ],
+        "sector": "Personal y personas usuarias de la Universidad Nacional Rosario Castellanos"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796068&fecha=12%2F08%2F2026",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "4cfdaa08cc8d6fdce1d6adac12134e1c2990e9bcdd6180e7150a03be0a10764e",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/28321b36e1f2ca77e6105a3c.json",
+    "detail_url": "notas/28321b36e1f2ca77e6105a3c.html",
+    "detected_at": "2026-09-01T16:34:47.803209+00:00",
+    "document_type": "Aviso",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5796068",
+    "importance": 2,
+    "issuing_body": "Presidencia de la República",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-08-12",
+    "official_title": "Aviso mediante el cual se informa de la publicación en la página Web de la Universidad Nacional Rosario Castellanos del Manual de Organización General de la Universidad Nacional Rosario Castellanos 2026-2030.",
+    "published_at": "2026-08-12",
+    "relevance_score": 2,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5796068",
+    "summary_teaser": "La Universidad Nacional Rosario Castellanos informó la publicación electrónica de su Manual de Organización General para el periodo dos mil veintiséis a dos mil treinta. El aviso señala que el manual regula estructura, atribuciones, funciones y responsabilidades internas, y refiere una constancia de exención de impacto regulatorio por no crear obligaciones para particulares.",
+    "title": "Manual de Rosario Castellanos establece su organización interna",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796068&fecha=12/08/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Personal y personas usuarias de la Universidad Nacional Rosario Castellanos",
+      "deadline": null,
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "legal_basis": "Aviso institucional y normativa de organización administrativa citada en él",
+      "paragraphs": [
+        "Actualizar referencias institucionales y consultar el manual íntegro antes de dirigir escritos o solicitudes a una unidad administrativa específica."
+      ],
+      "trigger": "Gestionar un asunto o identificar una unidad competente de la Universidad"
+    }
+  ],
+  "schema_version": 8
+}

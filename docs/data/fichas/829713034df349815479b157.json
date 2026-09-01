@@ -1,0 +1,136 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "heading": "Contenido publicado",
+      "paragraphs": [
+        "El acuerdo publica la existencia de reformas al Estatuto Orgánico y al Manual de Organización para armonizarlos con el marco jurídico y fortalecer reglas internas."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "heading": "Alcance práctico",
+      "paragraphs": [
+        "Las versiones íntegras se consultan en enlaces oficiales; su aplicación es obligatoria para el personal del Instituto y comienza al día siguiente de la publicación."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "5d4bdcfca8892fd616c49e2d9d9cc705aba0fe2baa323556d9363f90ad2524e3",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "ACUERDO por el que se dan a conocer las reformas al Estatuto Orgánico del Instituto Mexicano de Tecnología del Agua, así como las modificaciones a su Manual de Organización.",
+        "location": "caracteres 0-177"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Medio Ambiente.- Secretaría de Medio Ambiente y Recursos Naturales.- Instituto Mexicano de Tecnología del Agua.",
+        "location": "caracteres 177-5052"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797277&fecha=27%2F08%2F2026",
+    "retrieved_at": "2026-09-01T16:35:06.221326+00:00"
+  },
+  "executive_summary": [
+    "El Instituto Mexicano de Tecnología del Agua dio a conocer reformas a su Estatuto Orgánico y modificaciones a su Manual de Organización. La autoridad explica que la actualización busca armonizar esos instrumentos con cambios recientes del marco jurídico de la Administración Pública Federal, fortalecer las disposiciones de transparencia, acceso a la información y protección de datos personales, e incorporar lenguaje incluyente y no sexista.",
+    "El acuerdo indica que las versiones reformadas son de observancia obligatoria para todas las personas servidoras públicas adscritas a las unidades administrativas del Instituto. No reproduce en el Diario Oficial el texto completo de cada modificación; en su lugar, ofrece enlaces oficiales para consultar el acuerdo, el Estatuto Orgánico vigente y el Manual de Organización. Por esa razón, la ficha no atribuye cambios puntuales de facultades que el documento publicado no detalla."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "paragraphs": [
+        "El cambio es organizacional e interno al Instituto, aunque puede afectar la identificación de áreas competentes y documentos aplicables."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "El personal debe aplicar los instrumentos actualizados y quienes tramiten asuntos con el Instituto deben consultar las versiones íntegras para ubicar competencias."
+        ],
+        "sector": "Personal y personas usuarias de trámites del Instituto Mexicano de Tecnología del Agua"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797277&fecha=27%2F08%2F2026",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "e3ee0c1af117a4fc96169d721e943a9a230f4e585aea0d8b53e290315b9a82b9",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/829713034df349815479b157.json",
+    "detail_url": "notas/829713034df349815479b157.html",
+    "detected_at": "2026-09-01T16:34:47.803209+00:00",
+    "document_type": "Acuerdo",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5797277",
+    "importance": 2,
+    "issuing_body": "ORGANISMOS DESCONCENTRADOS O DESCENTRALIZADOS INSTITUTO MEXICANO DE TECNOLOGIA DEL AGUA",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-08-27",
+    "official_title": "Acuerdo por el que se dan a conocer las reformas al Estatuto Orgánico del Instituto Mexicano de Tecnología del Agua, así como las modificaciones a su Manual de Organización.",
+    "published_at": "2026-08-27",
+    "relevance_score": 3,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5797277",
+    "summary_teaser": "El Instituto Mexicano de Tecnología del Agua dio a conocer reformas a su Estatuto Orgánico y modificaciones a su Manual de Organización. Son obligatorias para su personal, entran en vigor al día siguiente de la publicación y pueden consultarse íntegramente en los enlaces oficiales indicados por el propio acuerdo.",
+    "title": "IMTA actualiza su estatuto y manual de organización",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797277&fecha=27/08/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Personal y personas usuarias de trámites del Instituto Mexicano de Tecnología del Agua",
+      "deadline": null,
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "legal_basis": "Acuerdo del Instituto Mexicano de Tecnología del Agua",
+      "paragraphs": [
+        "Consultar los enlaces oficiales y actualizar referencias internas a estructura, atribuciones o manuales antes de iniciar gestiones con el Instituto."
+      ],
+      "trigger": "Aplicar o invocar el Estatuto Orgánico o el Manual de Organización del Instituto"
+    }
+  ],
+  "schema_version": 8
+}

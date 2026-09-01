@@ -2,7 +2,7 @@ from pathlib import Path
 
 import pytest
 
-from app.storage import Storage
+from app.storage import Storage, StorageCapacityError
 
 
 def sample_payload(generated_at: str, item_id: str = "dof:1") -> dict:
@@ -84,3 +84,12 @@ def test_storage_rejects_database_inside_repository():
     repository_root = Path(__file__).resolve().parents[1]
     with pytest.raises(ValueError, match="directorio dedicado"):
         Storage(repository_root / "docs/data/private.sqlite3")
+
+
+def test_storage_fails_closed_at_configured_capacity(tmp_path):
+    database = tmp_path / "state" / "radar.sqlite3"
+    with (
+        Storage(database, max_bytes=1) as storage,
+        pytest.raises(StorageCapacityError, match="máximo configurado"),
+    ):
+        storage.save_run(sample_payload("2026-07-03T10:00:00+00:00"))

@@ -25,6 +25,8 @@ def load_committed_state(path: Path, *, source: str) -> dict[str, Any] | None:
     """
 
     path = Path(path)
+    if path.is_symlink():
+        return None
     try:
         content = path.read_bytes()
         payload = json.loads(content)
@@ -68,6 +70,8 @@ def manifest_context(state_path: Path) -> ManifestContext:
     manifest_path = data_dir / "manifest.json"
     if not manifest_path.exists():
         return ManifestContext("absent", manifest_path, site_root)
+    if manifest_path.is_symlink():
+        return ManifestContext("invalid", manifest_path, site_root)
     try:
         payload = json.loads(manifest_path.read_text(encoding="utf-8"))
     except (OSError, json.JSONDecodeError):

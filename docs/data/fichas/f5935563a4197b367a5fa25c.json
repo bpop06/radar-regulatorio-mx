@@ -1,0 +1,140 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "heading": "Porcentajes aplicables en julio de 2026",
+      "paragraphs": [
+        "El Acuerdo 92/2026 da a conocer los porcentajes de estímulos fiscales aplicables en todo el territorio nacional durante julio de 2026, conforme al acuerdo de estímulos a gasolina y diésel para los sectores pesquero y agropecuario. La tabla oficial fija en 0.00 por ciento el estímulo para gasolina menor a 91 octanos, diésel para el sector pesquero y diésel para el sector agropecuario.",
+        "La publicación no enuncia una cuota monetaria de IEPS ni un beneficio alterno para ese mes. Su alcance es informar los porcentajes que se aplican sobre las cuotas disminuidas correspondientes a los combustibles señalados. Las condiciones que habilitan a una persona como beneficiaria siguen sujetas al acuerdo de estímulos y a la normativa que éste remite, no a la sola publicación de esta tabla mensual."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Mecánica prevista",
+      "paragraphs": [
+        "El artículo tercero indica que el porcentaje se aplica sobre las cuotas disminuidas de gasolina y diésel; el resultado se adiciona con el IVA para obtener la cantidad que se aplica a reducir el precio de los combustibles en su enajenación a los beneficiarios correspondientes. Las cuotas disminuidas se publican en los acuerdos generales de combustibles que especifican cada periodo.",
+        "El transitorio único dispone que el acuerdo entra en vigor el día de su publicación en el DOF. Para julio de 2026, un porcentaje de cero no autoriza a estimar un descuento distinto: las personas que participen en la cadena deben usar la cuota disminuida y el tratamiento fiscal que resulte de las disposiciones vigentes y de la operación concreta."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "4195d6c84c2f796efe5f2d98a11fb99202ccfebad5b90b75e6fe47aaddc5e4a0",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "ACUERDO por el que se dan a conocer los estímulos fiscales a la gasolina y al diésel en los sectores pesquero y agropecuario para el mes de julio de 2026 .",
+        "location": "caracteres 0-159"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.",
+        "location": "caracteres 159-3823"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791117&fecha=19/06/2026",
+    "retrieved_at": "2026-08-13T19:43:53.067630+00:00"
+  },
+  "executive_summary": [
+    "El Acuerdo 92/2026 da a conocer los porcentajes de estímulos fiscales aplicables en todo el territorio nacional durante julio de 2026, conforme al acuerdo de estímulos a gasolina y diésel para los sectores pesquero y agropecuario. La tabla oficial fija en 0.00 por ciento el estímulo para gasolina menor a 91 octanos, diésel para el sector pesquero y diésel para el sector agropecuario.",
+    "La publicación no enuncia una cuota monetaria de IEPS ni un beneficio alterno para ese mes. Su alcance es informar los porcentajes que se aplican sobre las cuotas disminuidas correspondientes a los combustibles señalados. Las condiciones que habilitan a una persona como beneficiaria siguen sujetas al acuerdo de estímulos y a la normativa que éste remite, no a la sola publicación de esta tabla mensual."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "paragraphs": [
+        "Durante julio de 2026 la tabla oficial no añade un porcentaje de estímulo a los tres combustibles y sectores que identifica; el cálculo aplicable permanece sujeto a la mecánica de cuotas disminuidas e IVA señalada por Hacienda."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "Durante julio de 2026 la tabla oficial no añade un porcentaje de estímulo a los tres combustibles y sectores que identifica; el cálculo aplicable permanece sujeto a la mecánica de cuotas disminuidas e IVA señalada por Hacienda."
+        ],
+        "sector": "Beneficiarios y comercializadores de combustibles en sectores pesquero y agropecuario"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791117&fecha=19/06/2026",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "d7cf12c2fbcf207bf7a15ac323ac54f5ad5f7d0c9e5aebbc4507ff743e669cf2",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/f5935563a4197b367a5fa25c.json",
+    "detail_url": "notas/f5935563a4197b367a5fa25c.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Acuerdo",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5791117",
+    "importance": 1,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-06-19",
+    "official_title": "Acuerdo por el que se dan a conocer los estímulos fiscales a la gasolina y al diésel en los sectores pesquero y agropecuario para el mes de julio de 2026.",
+    "published_at": "2026-06-19",
+    "relevance_score": 1,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5791117",
+    "summary_teaser": "Hacienda publicó los porcentajes de estímulo fiscal aplicables en julio de 2026 a gasolina menor a 91 octanos y diésel para los sectores pesquero y agropecuario. Los tres porcentajes son 0.00 %, sin que la publicación modifique los requisitos de acceso ni el mecanismo legal de cálculo de cuotas disminuidas e IVA.",
+    "title": "Hacienda fija estímulos cero para combustibles del campo en julio",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5791117&fecha=19/06/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Beneficiarios y comercializadores de combustibles en sectores pesquero y agropecuario",
+      "deadline": "Julio de 2026",
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "legal_basis": "Acuerdo 92/2026; Ley de Energía para el Campo",
+      "paragraphs": [
+        "Al determinar el tratamiento de una venta de julio, use el porcentaje oficial de 0.00 %, confirme la cuota disminuida del periodo y verifique los requisitos del régimen de estímulos aplicable al beneficiario."
+      ],
+      "trigger": "En operaciones de gasolina o diésel de los sectores indicados durante julio de 2026"
+    }
+  ],
+  "schema_version": 8
+}

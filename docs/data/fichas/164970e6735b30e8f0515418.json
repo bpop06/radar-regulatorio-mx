@@ -1,0 +1,136 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "heading": "Contenido publicado",
+      "paragraphs": [
+        "La CNBV actualizó la autorización de la casa de bolsa para que refleje la denominación TRF Casa de Bolsa."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "heading": "Alcance práctico",
+      "paragraphs": [
+        "El oficio exige publicaciones oficiales y el aviso posterior a la Comisión dentro de los plazos que expresamente fija."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "d13d55bbbc1cb228b70f2687c2483701619d31316e99bf95a7392cdb8969068c",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "OFICIO mediante el cual se modifican los términos de la autorización para la organización y operación de TRF Casa de Bolsa, S.A. de C.V. (antes CI Casa de Bolsa, S.A. de C.V.).",
+        "location": "caracteres 0-180"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Comisión Nacional Bancaria y de Valores.- Vicepresidencia de Normatividad.- Dirección General de Autorizaciones al Sistema Financiero.- Vicepresidencia de Supervisión Bursátil.- Dirección General de Supervisión de Entidades e Intermediarios Bursátiles.- Oficio Núm.: 312-1/709190/2026.- Exp.: CNBV.3S.1.312 (5584).",
+        "location": "caracteres 180-4311"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796403&fecha=17%2F08%2F2026",
+    "retrieved_at": "2026-09-01T16:35:22.122625+00:00"
+  },
+  "executive_summary": [
+    "La Comisión Nacional Bancaria y de Valores modificó los términos de la autorización para la organización y operación de TRF Casa de Bolsa, S.A. de C.V., antes CI Casa de Bolsa, S.A. de C.V. La modificación responde a la reforma del artículo primero de sus estatutos sociales y a la escritura pública que formalizó el cambio de denominación. La Comisión ajustó la base segunda de la autorización para que la casa de bolsa use la denominación TRF Casa de Bolsa seguida de su régimen societario.",
+    "El oficio no describe un cambio de objeto, de capital, de control o de las actividades autorizadas a la intermediaria. Su contenido sustantivo es reflejar en la autorización el cambio de nombre corporativo. La fuente narra que la entidad remitió la documentación formalizada e inscrita en el Registro Público de la Propiedad y del Comercio. El alcance debe leerse como actualización de la autorización existente, no como una nueva autorización independiente."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "paragraphs": [
+        "La modificación ordena la identificación corporativa de una casa de bolsa dentro de su autorización administrativa existente."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "La entidad debe cumplir las publicaciones requeridas y clientes o contrapartes deben actualizar datos de denominación sin presumir cambios adicionales no publicados."
+        ],
+        "sector": "TRF Casa de Bolsa, clientes y contrapartes"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796403&fecha=17%2F08%2F2026",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "65e2d8499bb9bde691a7ae21ed9f74149c261cd519f44a6c5e4bed93646b81c8",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/164970e6735b30e8f0515418.json",
+    "detail_url": "notas/164970e6735b30e8f0515418.html",
+    "detected_at": "2026-09-01T16:34:47.803209+00:00",
+    "document_type": "Oficio",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5796403",
+    "importance": 1,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-08-17",
+    "official_title": "Oficio mediante el cual se modifican los términos de la autorización para la organización y operación de TRF Casa de Bolsa, S.A. de C.V. (antes CI Casa de Bolsa, S.A. de C.V.).",
+    "published_at": "2026-08-17",
+    "relevance_score": 1,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5796403",
+    "summary_teaser": "La Comisión Nacional Bancaria y de Valores modificó la autorización de TRF Casa de Bolsa para reflejar su nueva denominación, antes CI Casa de Bolsa. La entidad debe publicar el oficio en el Diario Oficial y en dos periódicos de circulación amplia, e informar la fecha de esas publicaciones a la Comisión.",
+    "title": "CNBV modifica autorización de TRF Casa de Bolsa",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796403&fecha=17/08/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "TRF Casa de Bolsa, S.A. de C.V.",
+      "deadline": "Las publicaciones deben tramitarse dentro de quince días hábiles de la recepción; el aviso a la CNBV vence diez días hábiles después de las publicaciones",
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "legal_basis": "Artículo 114 de la Ley del Mercado de Valores y términos del oficio de la CNBV",
+      "paragraphs": [
+        "Tramitar la publicación del oficio en los medios señalados, informar sus fechas a la CNBV y actualizar registros, formatos y comunicaciones que usen la denominación anterior."
+      ],
+      "trigger": "Haber recibido el oficio de modificación de autorización"
+    }
+  ],
+  "schema_version": 8
+}

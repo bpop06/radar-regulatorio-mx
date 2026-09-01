@@ -1,0 +1,185 @@
+{
+  "coverage": [
+    {
+      "disposition": "not_material",
+      "reason": "El primer locator sólo reproduce el encabezado del instrumento; las reglas operativas y transitorias aparecen en los fragmentos posteriores.",
+      "source_ref": "chunk-1",
+      "target_sections": []
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-3",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-4",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-5",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    }
+  ],
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Inversionistas, sistemas y estados financieros",
+      "paragraphs": [
+        "El texto distingue inversionistas básicos, sofisticados y quienes pueden participar en ofertas restringidas por promedios de valores o ingresos expresados en UDIs. Define STIV y STIV-2 y modifica supuestos de estados financieros auditados, comparativos, proforma y de asociaciones financieras según el tipo de emisor u oferta."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-3"
+      ],
+      "heading": "Certificados fiduciarios y actualización registral",
+      "paragraphs": [
+        "Para certificados bursátiles fiduciarios de desarrollo, inmobiliarios, de energía, infraestructura y proyectos, las variaciones en número, clase o serie derivadas de llamadas de capital se informan a la CNBV a más tardar el tercer día hábil posterior al cierre del periodo de la llamada. La Comisión actualiza la inscripción con el aviso previsto."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-4"
+      ],
+      "heading": "Divulgación y relevancia",
+      "paragraphs": [
+        "La resolución vincula la transmisión de información al sistema de divulgación y conserva criterios cuantitativos para hechos relevantes: cinco por ciento de activos, pasivos o capital contable consolidado, o tres por ciento de ventas o ingresos del ejercicio previo, sin excluir la valoración de asuntos no cuantificables."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-5"
+      ],
+      "heading": "Auditoría y vigencia",
+      "paragraphs": [
+        "El último fragmento precisa documentos ligados a auditoría externa y una certificación del secretario del consejo o representante común sobre vigencia de facultades. Las transitorias señalan que la resolución entra en vigor al día siguiente de su publicación."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "fb3f0f6305b06bd255ba185672cfcdea6cb2eba264b40bf20f0a56840ef3bc26",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "RESOLUCIÓN que modifica las Disposiciones de carácter general aplicables a las emisoras de valores y a otros participantes del mercado de valores.",
+        "location": "caracteres 0-150"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Comisión Nacional Bancaria y de Valores. · parte 1",
+        "location": "caracteres 150-12150"
+      },
+      {
+        "id": "chunk-3",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Comisión Nacional Bancaria y de Valores. · parte 2",
+        "location": "caracteres 12150-24150"
+      },
+      {
+        "id": "chunk-4",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Comisión Nacional Bancaria y de Valores. · parte 3",
+        "location": "caracteres 24150-36150"
+      },
+      {
+        "id": "chunk-5",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Comisión Nacional Bancaria y de Valores. · parte 4",
+        "location": "caracteres 36150-37417"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792399&fecha=02/07/2026",
+    "retrieved_at": "2026-08-13T19:43:29.415609+00:00"
+  },
+  "executive_summary": [
+    "La resolución de la CNBV modifica disposiciones aplicables a emisoras y otros participantes del mercado de valores. Incorpora reglas para actualizar la inscripción de certificados bursátiles fiduciarios de desarrollo, inmobiliarios, de energía, infraestructura y proyectos cuando una llamada de capital altera su número, clase o serie.",
+    "También redefine umbrales de inversión e ingresos para categorías de inversionista, ajusta documentación financiera y de auditoría, y ordena canales de entrega de información a la Comisión y a las bolsas. La fuente conserva supuestos distintos para cada instrumento y no presenta esos requisitos como una regla única para todas las emisiones."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "paragraphs": [
+        "Emisoras y participantes deben distinguir el tipo de certificado, oferta o información financiera aplicable. El cambio es relevante para avisos de capital y para el umbral de divulgación de hechos relevantes, porque la resolución describe canales y momentos de comunicación diferenciados."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "Emisoras, representantes comunes, bolsas y auditores externos encuentran ajustes en documentación, divulgación y certificaciones ligadas a valores inscritos."
+        ],
+        "sector": "Mercado de valores"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792399&fecha=02/07/2026",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "80aff9900f74e984a51d6e98bc22b8b07369ee7ae11b003556fa6a5b80a73ab5",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/6474fd0eef3f70bddb8b227e.json",
+    "detail_url": "notas/6474fd0eef3f70bddb8b227e.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Resolución Que Modifica",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5792399",
+    "importance": 1,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-07-02",
+    "official_title": "Resolución que modifica las Disposiciones de carácter general aplicables a las emisoras de valores y a otros participantes del mercado de valores.",
+    "published_at": "2026-07-02",
+    "relevance_score": 1,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5792399",
+    "summary_teaser": "La CNBV modifica reglas aplicables a emisoras y participantes del mercado de valores. Ajusta categorías de inversionista, requisitos financieros, canales de envío de información, avisos derivados de llamadas de capital y criterios para valorar eventos relevantes; la resolución entra en vigor al día siguiente de su publicación.",
+    "title": "CNBV actualiza avisos de capital y divulgación de emisoras",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5792399&fecha=02/07/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Emisoras y participantes sujetos a la resolución",
+      "deadline": "Tercer día hábil posterior al cierre del periodo de la llamada de capital, para el aviso específicamente previsto",
+      "evidence_refs": [
+        "chunk-3",
+        "chunk-4",
+        "chunk-5"
+      ],
+      "legal_basis": null,
+      "paragraphs": [
+        "Identificar si una llamada de capital modifica número, clase o serie de los certificados referidos y contrastar el aviso aplicable con el canal previsto por la CNBV. Para hechos relevantes, revisar el criterio cuantitativo y la materialidad no cuantificable descritos en la fuente."
+      ],
+      "trigger": "Cuando exista una llamada de capital o un hecho relevante en los supuestos modificados"
+    }
+  ],
+  "schema_version": 8
+}

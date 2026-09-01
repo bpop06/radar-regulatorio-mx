@@ -1,0 +1,207 @@
+{
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "item": {
+    "ai_generated": true,
+    "authority": "Agencia Nacional de Aduanas de México",
+    "canonical_url": "https://www.anam.gob.mx/comunicado-prensa-63-2026",
+    "card_body": "## Qué se publicó\n\nComunicado conjunto sobre el aseguramiento reportado de un cargamento de cigarros durante una operación de transbordo en la Aduana de Lázaro Cárdenas.\n\n## Sustancia\n\nLa fuente describe el análisis de riesgo, la revisión documental y el control aduanero que precedieron al aseguramiento. No informa una sanción, responsables identificados ni una resolución definitiva sobre los bienes.\n\n## Fuente\n\n[Comunicado oficial de ANAM](https://www.anam.gob.mx/comunicado-prensa-63-2026)",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Comercio exterior"
+    ],
+    "content_hash": "e68c0e92179bfee30b0de156358d2bb30a7215d327e9e0aa75aabf375b5a9702",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "summarized",
+        "reason": "Extracción lineal duplicada que contiene los hechos desarrollados en la publicación.",
+        "source_ref": "chunk-1",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": "Encabezado oficial y contexto temporal del comunicado.",
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "executive_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": "Texto estructurado que sustenta los hechos, alcance y recomendaciones cautelares.",
+        "source_ref": "chunk-3",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/7438ff5040e82818bea20414.json",
+    "detail_url": "notas/7438ff5040e82818bea20414.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-3"
+        ],
+        "heading": "Aseguramiento reportado",
+        "paragraphs": [
+          "Las autoridades informan que identificaron y aseguraron, durante una operación de transbordo, un cargamento de Vietnam con 52 millones 500 mil cigarros. La publicación combina la denominación “apócrifos” con la precisión posterior de que serían presumiblemente apócrifos."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-3"
+        ],
+        "heading": "Herramientas de control descritas",
+        "paragraphs": [
+          "El texto menciona análisis documental, antecedentes comerciales y perfiles operativos. También vincula las acciones con inteligencia operativa, gestión de riesgo y análisis estratégico para detectar inconsistencias documentales, perfiles atípicos y operaciones susceptibles de revisión especializada."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-3"
+        ],
+        "heading": "Alcance de la información",
+        "paragraphs": [
+          "La fuente indica que el análisis integral fortaleció trazabilidad documental, revisión operativa y validación de perfiles comerciales. No publica la identidad de una empresa, un expediente, una sanción, una clasificación arancelaria ni el desenlace de una investigación."
+        ]
+      }
+    ],
+    "detected_at": "2026-09-01T18:46:30.041123+00:00",
+    "document_type": "Comunicado",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "32cabcd482b001e0851e5ddd056da10526513912b7826678a869cd36771ac489",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "Preámbulo",
+          "location": "caracteres 0-2283"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Marina y ANAM aseguran más de 52 millones de cigarros apócrifos en Aduana de Michoacán",
+          "location": "caracteres 2283-2412"
+        },
+        {
+          "id": "chunk-3",
+          "label": "Comunicado de prensa conjunto 63/2026",
+          "location": "caracteres 2412-4587"
+        }
+      ],
+      "official_url": "https://www.anam.gob.mx/comunicado-prensa-63-2026",
+      "retrieved_at": "2026-09-01T18:47:02.675381+00:00"
+    },
+    "executive_summary": [
+      "ANAM, Semar, autoridades del Gabinete de Seguridad y la Aduana de Lázaro Cárdenas informaron el aseguramiento de un cargamento procedente de Vietnam durante un transbordo. La fuente reporta 52 millones 500 mil cigarros y posteriormente usa la calificación de presumiblemente apócrifos.",
+      "El comunicado atribuye la detección a análisis de riesgo, revisión documental, antecedentes comerciales y perfiles operativos. Describe mecanismos permanentes de inteligencia y control, pero no identifica responsables, una sanción, un expediente ni una decisión definitiva sobre los bienes."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-09-01T18:46:30.041123+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "anam:41a5756148946bba",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-3"
+        ],
+        "paragraphs": [
+          "El comunicado tiene alcance informativo y operativo: hace público un aseguramiento y las herramientas de control que las autoridades describen. No establece por sí mismo un nuevo deber general, un plazo, una sanción ni una determinación definitiva sobre los cigarros."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-3"
+          ],
+          "paragraphs": [
+            "La fuente es relevante porque expone que la autoridad asocia su control con revisión documental, antecedentes comerciales y perfiles operativos. No convierte esa descripción en una obligación nueva ni vincula el aseguramiento a un operador específico."
+          ],
+          "sector": "Operadores de transbordo e importación"
+        },
+        {
+          "evidence_refs": [
+            "chunk-3"
+          ],
+          "paragraphs": [
+            "El uso del comunicado debe conservar la calificación presuntiva de los bienes y distinguir un aseguramiento reportado de una decisión definitiva sobre autenticidad, propiedad, sanciones o responsabilidades."
+          ],
+          "sector": "Asesores y comunicadores de comercio exterior"
+        }
+      ]
+    },
+    "importance": 2,
+    "issuing_body": "Agencia Nacional de Aduanas de México",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-09-01T18:46:30.041123+00:00",
+    "official_evidence": {
+      "primary_url": "https://www.anam.gob.mx/comunicado-prensa-63-2026/"
+    },
+    "official_identifiers": {
+      "source_id": "41a5756148946bba"
+    },
+    "official_published_at": "2026-08-20",
+    "official_title": "Marina y ANAM asegura más de 52 millones de cigarros apócrifos en Aduana de Michoacán",
+    "published_at": "2026-08-20",
+    "published_day": 20,
+    "published_month": 8,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Operadores de comercio exterior",
+        "deadline": null,
+        "evidence_refs": [
+          "chunk-3"
+        ],
+        "legal_basis": null,
+        "paragraphs": [
+          "Ante operaciones de transbordo o importación, pueden revisar de forma preventiva la congruencia de su documentación comercial y de los datos de la operación. La recomendación se limita a la gestión de riesgo que sugiere la descripción oficial; el comunicado no fija un plazo ni una obligación adicional."
+        ],
+        "trigger": "Operaciones de transbordo o importación sometidas a revisión aduanera"
+      },
+      {
+        "affected_group": "Quienes analicen o difundan el comunicado",
+        "deadline": null,
+        "evidence_refs": [
+          "chunk-3"
+        ],
+        "legal_basis": null,
+        "paragraphs": [
+          "Conviene presentar el hecho como un aseguramiento comunicado por autoridades y conservar la calificación presuntiva de los cigarros. No debe transformarse en una conclusión sobre responsabilidad, sanción o desenlace que el texto oficial no comunica."
+        ],
+        "trigger": "Elaboración de análisis, notas o reportes sobre el aseguramiento"
+      }
+    ],
+    "relevance_score": 2,
+    "review_reason": null,
+    "source": "ANAM",
+    "source_id": "41a5756148946bba",
+    "subtopic_tags": [
+      "aduana"
+    ],
+    "summary": "La Agencia Nacional de Aduanas de México (ANAM), en coordinación con la Secretaría de Marina (Semar), autoridades del Gabinete de Seguridad y la Unidad Administrativa de la Aduana de Lázaro Cárdenas, informó que identificó y aseguró durante una operación de transbordo un cargamento procedente de Vietnam. El comunicado reporta 52 millones 500 mil cigarros. En una parte los denomina apócrifos y, al describir el resultado de las medidas, los califica como presumiblemente apócrifos; esta ficha conserva esa cautela y no atribuye una conclusión definitiva.\n\nSegún la fuente, la operación fue detectada mediante mecanismos institucionales de análisis de riesgo y control aduanero. Menciona el análisis documental, la revisión de antecedentes comerciales y la verificación de perfiles operativos como elementos que fortalecieron las acciones de control y vigilancia. El comunicado no identifica a una empresa responsable, no incluye un expediente, ni informa una sanción, un decomiso definitivo o una resolución administrativa o judicial sobre autenticidad, propiedad o responsabilidades.\n\nEl texto sitúa las acciones dentro de mecanismos permanentes de inteligencia operativa, gestión de riesgo y análisis estratégico de la ANAM con la Aduana de Lázaro Cárdenas. Explica que esos mecanismos buscan detectar inconsistencias documentales, perfiles atípicos y operaciones susceptibles de revisión especializada. También dice que el análisis integral fortaleció la trazabilidad documental, la revisión operativa y la validación de perfiles comerciales. Esas descripciones explican el enfoque operativo reportado, no anuncian un requisito adicional para todos los operadores.\n\nEl alcance verificable de la publicación es, por tanto, informativo y operativo: documenta un aseguramiento comunicado por autoridades y las herramientas de control que describen. No es prueba de una condena, una infracción atribuible a una empresa determinada ni una consecuencia fiscal o aduanera posterior. Quienes usen el comunicado para análisis de riesgo pueden tomarlo como referencia de las prácticas de revisión que la autoridad expone, sin extrapolar obligaciones, plazos, fundamentos jurídicos o desenlaces que el documento no publica.",
+    "summary_teaser": "ANAM, Semar y autoridades del Gabinete de Seguridad comunicaron el aseguramiento de un cargamento procedente de Vietnam con 52 millones 500 mil cigarros descritos como presuntamente apócrifos. La publicación expone mecanismos de análisis de riesgo y control, pero no reporta sanciones, responsables ni una resolución definitiva.",
+    "title": "ANAM confirma aseguramiento de cigarros presuntamente apócrifos",
+    "topic_tags": [
+      "Aduanero"
+    ],
+    "url": "https://www.anam.gob.mx/comunicado-prensa-63-2026/"
+  },
+  "schema_version": 8
+}

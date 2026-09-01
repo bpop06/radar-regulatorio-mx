@@ -1,0 +1,163 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-3",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2",
+        "chunk-3"
+      ],
+      "heading": "Convenio y plataforma anunciados",
+      "paragraphs": [
+        "Las autoridades acordaron establecer como primer paso un convenio de colaboración y anunciaron una plataforma para registrar, revisar y validar documentación de sustancias, materiales y equipos de investigación."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2",
+        "chunk-3"
+      ],
+      "heading": "Coordinación y límites funcionales",
+      "paragraphs": [
+        "SECIHTI planteó identificar insumos respaldados por ella y por instituciones académicas, con diálogo con Cofepris y SAT. ANAM señaló que no define condiciones de importación ni certifica el contenido de los productos."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "55989d5f27597f43c8a3334026f5d62365962013d03a5a89cfe8d7e547c17edd",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "Preámbulo",
+        "location": "caracteres 0-3769"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Secihti y la Agencia Nacional de Aduanas crearán plataforma digital para agilizar importación de insumos científicos",
+        "location": "caracteres 3769-3928"
+      },
+      {
+        "id": "chunk-3",
+        "label": "Comunicado de prensa conjunto 51/2026",
+        "location": "caracteres 3928-7564"
+      }
+    ],
+    "official_url": "https://www.anam.gob.mx/comunicado-prensa-conjunto-51-2026",
+    "retrieved_at": "2026-08-29T00:50:55.747738+00:00"
+  },
+  "executive_summary": [
+    "SECIHTI y ANAM anunciaron una plataforma tecnológica y el establecimiento preparatorio de un convenio para documentación de importación y exportación de insumos científicos.",
+    "El comunicado mantiene los controles sanitarios, aduaneros y de seguridad, y aclara que ANAM no determina condiciones de importación ni certifica productos."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2",
+        "chunk-3"
+      ],
+      "paragraphs": [
+        "La publicación documenta una etapa de coordinación para agilizar la revisión documental, sin desplazar los controles sanitarios, aduaneros y de seguridad que el propio comunicado refiere."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2",
+          "chunk-3"
+        ],
+        "paragraphs": [
+          "El mecanismo proyectado se orienta a entidades que requieren materiales especializados para investigación o desarrollo científico-tecnológico."
+        ],
+        "sector": "Universidades y centros de investigación"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://www.anam.gob.mx/comunicado-prensa-conjunto-51-2026",
+    "categories": [
+      "Comercio exterior"
+    ],
+    "content_hash": "be9a594a21c227784d5239ca4f0765f38125c99b87a513d3a8d1306523a2d28c",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/f1484ed6c825e89110f0b1d3.json",
+    "detail_url": "notas/f1484ed6c825e89110f0b1d3.html",
+    "detected_at": "2026-08-29T00:48:33.849617+00:00",
+    "document_type": "Comunicado",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "anam:295bbaaca4a98829",
+    "importance": 2,
+    "issuing_body": "Agencia Nacional de Aduanas de México",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-07-28",
+    "official_title": "Secihti y la Agencia Nacional de Aduanas crearán plataforma digital para agilizar importación de insumos científicos",
+    "published_at": "2026-07-28",
+    "relevance_score": 3,
+    "review_reason": null,
+    "source": "ANAM",
+    "source_id": "295bbaaca4a98829",
+    "summary_teaser": "SECIHTI y ANAM informaron que crearán una plataforma tecnológica y prepararán un convenio para registrar, revisar y validar documentación de importación y exportación de insumos científicos. El comunicado conserva la aplicación de controles sanitarios, aduaneros y de seguridad vigentes; no fija requisitos de operación, catálogo de bienes ni fecha para activar el mecanismo.",
+    "title": "Plataforma prevista abre coordinación para insumos científicos",
+    "url": "https://www.anam.gob.mx/comunicado-prensa-conjunto-51-2026/"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Instituciones que importan o exportan insumos para investigación",
+      "deadline": null,
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2",
+        "chunk-3"
+      ],
+      "legal_basis": null,
+      "paragraphs": [
+        "Mientras se formalizan los instrumentos anunciados, conservar la documentación y los permisos exigibles bajo el régimen aplicable y seguir las disposiciones oficiales posteriores que, en su caso, definan el mecanismo."
+      ],
+      "trigger": "Cuando la institución realice operaciones de importación o exportación de insumos científicos"
+    }
+  ],
+  "schema_version": 8
+}

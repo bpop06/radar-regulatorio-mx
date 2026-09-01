@@ -6,10 +6,11 @@ import io
 import ipaddress
 import json
 import mimetypes
+import os
 import posixpath
 import re
 import shutil
-import socket
+import signal
 import subprocess
 import tempfile
 import threading
@@ -31,9 +32,18 @@ from bs4 import BeautifulSoup, Tag
 from httpcore._backends.sync import SyncBackend
 from httpx._transports.default import HTTPTransport
 
+from app.url_policy import (
+    OfficialUrlError,
+    redirect_target_allowed,
+    resolve_official_link,
+    resolve_public_addresses,
+    validate_official_url,
+)
+
 EXTRACTOR_VERSION = "document-tools-v2"
 MAX_WORKERS = 3
 MAX_DOWNLOAD_BYTES = 50 * 1024 * 1024
+MAX_TOOL_OUTPUT_BYTES = 50 * 1024 * 1024
 SUPPORTED_OFFICE_EXTENSIONS = {
     ".doc",
     ".docx",
@@ -69,10 +79,11 @@ MAX_DOF_ANNEXES = 20
 
 def _redirect_host_allowed(original_url: str, target_url: str) -> bool:
     original = (urlsplit(original_url).hostname or "").casefold()
-    target = (urlsplit(target_url).hostname or "").casefold()
     if original in DOF_ANNEX_HOSTS:
-        return target in DOF_ANNEX_HOSTS
-    return target == original
+        return redirect_target_allowed(
+            original_url, target_url, allowed_hosts=DOF_ANNEX_HOSTS
+        )
+    return redirect_target_allowed(original_url, target_url, allowed_hosts={original})
 
 
 class _PinnedDNSBackend(SyncBackend):
@@ -147,7 +158,8 @@ class DocumentExtractor:
 
     El cache es duck-typed para evitar acoplar esta capa a SQLite: cuando se
     proporciona debe exponer ``get_extraction(url, version, evidence_hash)`` y
-    ``put_extraction(result, version, evidence_hash)``.
+    ``put_extraction(result, version, evidence_hash)``. Si además expone
+    ``put_extractions``, los resultados paralelos se persisten en un lote.
     """
 
     def __init__(
@@ -163,6 +175,8 @@ class DocumentExtractor:
         self.max_download_bytes = max_download_bytes
         self.user_agent = user_agent
         self._thread_state = threading.local()
+        self._temporary_budget_lock = threading.Lock()
+        self._reserved_temporary_bytes = 0
 
     def extract_many(
         self, requests: Iterable[ExtractionRequest], *, max_workers: int = MAX_WORKERS
@@ -182,6 +196,7 @@ class DocumentExtractor:
             uncached = list(
                 pool.map(self._extract_safely, (request for _, request in representatives))
             )
+        pending_stores: list[tuple[ExtractionRequest, ExtractionResult]] = []
         for (_, representative), result in zip(representatives, uncached, strict=True):
             group = missing_by_key[representative.url]
             for index, request in group:
@@ -189,7 +204,8 @@ class DocumentExtractor:
                 # Cada alias puede traer un hash de metadatos distinto. La
                 # descarga/extracción es única por URL, pero todos los aliases
                 # deben quedar enlazados al mismo SHA de bytes en la caché.
-                self._store(request, result)
+                pending_stores.append((request, result))
+        self._store_many(pending_stores)
         return [result for result in results if result is not None]
 
     def extract(self, request: ExtractionRequest) -> ExtractionResult:
@@ -317,34 +333,79 @@ class DocumentExtractor:
                 result.to_dict(), EXTRACTOR_VERSION, request.evidence_hash
             )
 
+    def _store_many(
+        self, entries: Iterable[tuple[ExtractionRequest, ExtractionResult]]
+    ) -> None:
+        values = list(entries)
+        if self.cache is None or not values:
+            return
+        if hasattr(self.cache, "put_extractions"):
+            self.cache.put_extractions(
+                [
+                    (result.to_dict(), EXTRACTOR_VERSION, request.evidence_hash)
+                    for request, result in values
+                ]
+            )
+            return
+        for request, result in values:
+            self._store(request, result)
+
     def _extract_uncached(self, request: ExtractionRequest) -> ExtractionResult:
-        with tempfile.TemporaryDirectory(prefix="radar-extract-") as temporary:
-            directory = Path(temporary)
-            downloaded, media_type, digest = self._download(request.url, directory)
-            suffix = downloaded.suffix.lower()
-            if media_type == "application/pdf" or suffix == ".pdf":
-                return self._extract_pdf(request, downloaded, media_type, digest, directory)
-            if suffix in SUPPORTED_OFFICE_EXTENSIONS:
-                return self._extract_office(request, downloaded, media_type, digest, directory)
-            if media_type in {"text/html", "application/xhtml+xml"} or suffix in {
-                ".html",
-                ".htm",
-                ".php",
-                "",
-            }:
-                adapter_name = HTML_ADAPTERS.get(
-                    (urlsplit(request.url).hostname or "").casefold(), "_extract_generic_html"
+        reservation = self._reserve_temporary_space()
+        try:
+            with tempfile.TemporaryDirectory(prefix="radar-extract-") as temporary:
+                directory = Path(temporary)
+                downloaded, media_type, digest = self._download(request.url, directory)
+                suffix = downloaded.suffix.lower()
+                if media_type == "application/pdf" or suffix == ".pdf":
+                    return self._extract_pdf(
+                        request, downloaded, media_type, digest, directory
+                    )
+                if suffix in SUPPORTED_OFFICE_EXTENSIONS:
+                    return self._extract_office(
+                        request, downloaded, media_type, digest, directory
+                    )
+                if media_type in {"text/html", "application/xhtml+xml"} or suffix in {
+                    ".html",
+                    ".htm",
+                    ".php",
+                    "",
+                }:
+                    adapter_name = HTML_ADAPTERS.get(
+                        (urlsplit(request.url).hostname or "").casefold(),
+                        "_extract_generic_html",
+                    )
+                    return getattr(self, adapter_name)(
+                        request, downloaded, media_type, digest
+                    )
+                return ExtractionResult(
+                    document_id=request.document_id,
+                    source_url=request.url,
+                    status="unsupported",
+                    content_hash=digest,
+                    media_type=media_type,
+                    error=f"formato no soportado: {media_type or suffix or 'desconocido'}",
                 )
-                return getattr(self, adapter_name)(
-                    request, downloaded, media_type, digest
+        finally:
+            self._release_temporary_space(reservation)
+
+    def _reserve_temporary_space(self) -> int:
+        """Reserve worst-case disk space per worker before it downloads bytes."""
+
+        reservation = self.max_download_bytes + MAX_TOOL_OUTPUT_BYTES
+        with self._temporary_budget_lock:
+            available = shutil.disk_usage(tempfile.gettempdir()).free
+            if available < self._reserved_temporary_bytes + reservation:
+                raise ExtractionError(
+                    "espacio temporal insuficiente para una extracción verificable"
                 )
-            return ExtractionResult(
-                document_id=request.document_id,
-                source_url=request.url,
-                status="unsupported",
-                content_hash=digest,
-                media_type=media_type,
-                error=f"formato no soportado: {media_type or suffix or 'desconocido'}",
+            self._reserved_temporary_bytes += reservation
+        return reservation
+
+    def _release_temporary_space(self, reservation: int) -> None:
+        with self._temporary_budget_lock:
+            self._reserved_temporary_bytes = max(
+                0, self._reserved_temporary_bytes - reservation
             )
 
     def _download(self, url: str, directory: Path) -> tuple[Path, str, str]:
@@ -435,6 +496,7 @@ class DocumentExtractor:
                     diagnostics={"detection": original_detection},
                     error=_bounded_error(completed.stderr or "OCR local falló"),
                 )
+            _assert_tool_output_size(ocr_output)
             detection = _run_json(
                 [detector, "detect", str(ocr_output), "--json"], self.timeout
             )
@@ -543,6 +605,7 @@ class DocumentExtractor:
         completed = _run([anydoc, str(source), "-o", str(output)], self.timeout * 2)
         if completed.returncode != 0 or not output.exists():
             raise ExtractionError(_bounded_error(completed.stderr or "AnyDoc falló"))
+        _assert_tool_output_size(output)
         markdown = output.read_text(encoding="utf-8").strip()
         if not markdown:
             raise ExtractionError("AnyDoc devolvió una extracción vacía")
@@ -594,6 +657,7 @@ class DocumentExtractor:
         if main_validators:
             diagnostics["http_validators"] = main_validators
         candidates: list[str] = []
+        rejected_annexes: list[str] = []
         for link in root.select("a[href], iframe[src], object[data], embed[src]"):
             attribute = (
                 "href" if link.name == "a" else "data" if link.name == "object" else "src"
@@ -610,15 +674,19 @@ class DocumentExtractor:
                 )
             )
             if value and (is_embed or is_named_attachment):
-                candidates.append(urljoin(request.url, value))
+                try:
+                    candidates.append(
+                        resolve_official_link(
+                            request.url,
+                            value,
+                            allowed_hosts=DOF_ANNEX_HOSTS,
+                        )
+                    )
+                except OfficialUrlError:
+                    rejected_annexes.append(value)
         candidates = sorted(set(candidates) - {request.url})
-        annexes = [
-            url
-            for url in candidates
-            if (urlsplit(url).hostname or "").casefold() in DOF_ANNEX_HOSTS
-            and urlsplit(url).scheme == "https"
-        ]
-        rejected_annexes = sorted(set(candidates) - set(annexes))
+        annexes = candidates
+        rejected_annexes = sorted(set(rejected_annexes))
         if rejected_annexes or len(annexes) > MAX_DOF_ANNEXES:
             diagnostics["annex_links"] = annexes[:MAX_DOF_ANNEXES]
             diagnostics["rejected_annex_links"] = rejected_annexes
@@ -1519,16 +1587,61 @@ def _require_command(name: str) -> str:
 
 
 def _run(command: list[str], timeout: float) -> subprocess.CompletedProcess[str]:
-    try:
-        return subprocess.run(
+    if not command:
+        raise ExtractionError("la herramienta documental no recibió comando")
+    if shutil.disk_usage(tempfile.gettempdir()).free < MAX_TOOL_OUTPUT_BYTES:
+        raise ExtractionError("espacio temporal insuficiente para la herramienta documental")
+    with tempfile.TemporaryFile() as stdout_file, tempfile.TemporaryFile() as stderr_file:
+        process = subprocess.Popen(
             command,
-            capture_output=True,
-            check=False,
-            text=True,
-            timeout=timeout,
+            stdout=stdout_file,
+            stderr=stderr_file,
+            start_new_session=True,
         )
-    except subprocess.TimeoutExpired as exc:
-        raise ExtractionError(f"tiempo agotado al ejecutar {Path(command[0]).name}") from exc
+        deadline = time.monotonic() + timeout
+        while process.poll() is None:
+            if _stream_size(stdout_file) + _stream_size(stderr_file) > MAX_TOOL_OUTPUT_BYTES:
+                _kill_process_group(process)
+                process.wait()
+                raise ExtractionError("la herramienta documental excedió el límite de salida")
+            remaining = deadline - time.monotonic()
+            if remaining <= 0:
+                _kill_process_group(process)
+                process.wait()
+                raise ExtractionError(
+                    f"tiempo agotado al ejecutar {Path(command[0]).name}"
+                )
+            time.sleep(min(0.05, remaining))
+        if _stream_size(stdout_file) + _stream_size(stderr_file) > MAX_TOOL_OUTPUT_BYTES:
+            raise ExtractionError("la herramienta documental excedió el límite de salida")
+        stdout_file.seek(0)
+        stderr_file.seek(0)
+        stdout = stdout_file.read().decode("utf-8", errors="replace")
+        stderr = stderr_file.read().decode("utf-8", errors="replace")
+    return subprocess.CompletedProcess(command, process.returncode, stdout, stderr)
+
+
+def _stream_size(handle: Any) -> int:
+    return int(os.fstat(handle.fileno()).st_size)
+
+
+def _kill_process_group(process: subprocess.Popen[bytes]) -> None:
+    try:
+        if hasattr(os, "killpg"):
+            os.killpg(process.pid, signal.SIGKILL)
+        else:  # pragma: no cover - fallback para intérpretes sin POSIX.
+            process.kill()
+    except ProcessLookupError:
+        pass
+
+
+def _assert_tool_output_size(path: Path) -> None:
+    try:
+        size = path.stat().st_size
+    except OSError as exc:
+        raise ExtractionError("no se pudo medir la salida de la herramienta documental") from exc
+    if size > MAX_TOOL_OUTPUT_BYTES:
+        raise ExtractionError("la salida de la herramienta documental excede el límite")
 
 
 def _run_json(command: list[str], timeout: float) -> dict[str, Any]:
@@ -1549,35 +1662,19 @@ def _bounded_error(value: str) -> str:
 
 
 def _validate_remote_url(parts: Any, *, resolve_dns: bool = False) -> None:
-    if parts.scheme != "https" or not parts.hostname:
-        raise ExtractionError("la fuente debe usar HTTPS")
-    host = parts.hostname.casefold().rstrip(".")
-    if host == "localhost" or host.endswith(".local"):
-        raise ExtractionError("host de fuente no permitido")
     try:
-        address = ipaddress.ip_address(host)
-    except ValueError:
-        if not resolve_dns:
-            return
-        _resolved_public_addresses(host, parts.port or 443)
-        return
-    if not address.is_global:
-        raise ExtractionError("dirección privada o reservada no permitida")
+        validate_official_url(parts.geturl(), resolve_dns=resolve_dns)
+    except OfficialUrlError as exc:
+        raise ExtractionError(str(exc)) from exc
 
 
 def _resolved_public_addresses(
     host: str, port: int
 ) -> tuple[ipaddress.IPv4Address | ipaddress.IPv6Address, ...]:
     try:
-        addresses = {
-            ipaddress.ip_address(record[4][0])
-            for record in socket.getaddrinfo(host, port, type=socket.SOCK_STREAM)
-        }
-    except socket.gaierror as exc:
-        raise ExtractionError("no se pudo resolver el host oficial") from exc
-    if not addresses or any(not address.is_global for address in addresses):
-        raise ExtractionError("el host oficial resuelve a una red no permitida")
-    return tuple(sorted(addresses, key=str))
+        return resolve_public_addresses(host, port)
+    except OfficialUrlError as exc:
+        raise ExtractionError(str(exc)) from exc
 
 
 def _for_request(result: ExtractionResult, request: ExtractionRequest) -> ExtractionResult:

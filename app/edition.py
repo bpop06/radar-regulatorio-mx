@@ -17,6 +17,7 @@ from urllib.parse import parse_qs, urlsplit, urlunsplit
 from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 
 from app.identity import records_are_aliases, source_priority
+from app.locking import site_writer_lock
 from app.models import Candidate
 from app.relevance import classify
 from app.sources.gobmx import sanitize_gobmx_title
@@ -296,6 +297,7 @@ def build_default_edition(
         "coverage": {
             "state": "degraded" if failed else "complete",
             "ok": ok_count,
+            "total": len(sources),
             "failed": failed,
         },
         "total_today": len(today_items),
@@ -343,6 +345,29 @@ def build_edition_artifact(payload: dict[str, Any]) -> dict[str, Any]:
 
 
 def write_site_artifacts(
+    payload: dict[str, Any],
+    publications_path: Path,
+    edition_path: Path | None = None,
+    *,
+    complete_only: bool = True,
+    details_dir: Path | None = None,
+) -> dict[str, Any]:
+    """Serializa todo el read-modify-write de un corte público."""
+
+    normalized_publications = Path(publications_path)
+    data_dir = normalized_publications.parent
+    site_root = data_dir.parent if data_dir.name == "data" else data_dir
+    with site_writer_lock(site_root):
+        return _write_site_artifacts_locked(
+            payload,
+            normalized_publications,
+            edition_path,
+            complete_only=complete_only,
+            details_dir=details_dir,
+        )
+
+
+def _write_site_artifacts_locked(
     payload: dict[str, Any],
     publications_path: Path,
     edition_path: Path | None = None,
@@ -752,7 +777,9 @@ def load_manifested_items(publications_path: Path) -> dict[str, dict[str, Any]]:
 
     publications_path = Path(publications_path)
     data_dir = publications_path.parent
+    site_root = data_dir.parent if data_dir.name == "data" else data_dir
     manifest_path = data_dir / "manifest.json"
+    _safe_site_file(site_root, manifest_path)
     if not manifest_path.exists():
         return {}
     try:
@@ -1055,7 +1082,17 @@ def _reconcile_item(
         if incoming_source_hash and previous_source_hash
         else item["content_hash"] != previous.get("content_hash")
     )
-    if source_changed:
+    reapproved_for_current_source = (
+        item.get("editorial_status") == "complete"
+        and item.get("ai_generated") is True
+        and item.get("extraction_status") == "complete"
+        and item.get("source_revalidation_status") == "complete"
+        and bool(incoming_source_hash)
+        and isinstance(item.get("evidence"), dict)
+        and str(item["evidence"].get("content_hash") or "")
+        == incoming_source_hash
+    )
+    if source_changed and not reapproved_for_current_source:
         item["editorial_status"] = "needs_review"
         item["review_reason"] = "La fuente oficial cambió; requiere una nueva revisión editorial."
         for field in ("title", "summary_teaser", "summary", "card_body", "detail_markdown"):
@@ -1095,9 +1132,11 @@ def _load_permanent_items(
     data_dir: Path, publications_path: Path
 ) -> dict[str, dict[str, Any]]:
     result: dict[str, dict[str, Any]] = {}
+    site_root = data_dir.parent if data_dir.name == "data" else data_dir
     # Los índices ligeros sirven únicamente como fallback de migraciones que
     # todavía no cuenten con envelopes de detalle.
     for path in sorted(data_dir.joinpath("archive").glob("????-??.json")):
+        _safe_site_file(site_root, path)
         try:
             payload = json.loads(path.read_text(encoding="utf-8"))
         except (OSError, json.JSONDecodeError):
@@ -1120,6 +1159,7 @@ def _load_permanent_items(
             result[item["id"]] = _normalize_item(item, generated_at)
 
     if publications_path.exists():
+        _safe_site_file(site_root, publications_path)
         try:
             payload = json.loads(publications_path.read_text(encoding="utf-8"))
         except (OSError, json.JSONDecodeError):
@@ -1144,15 +1184,22 @@ def _manifest_item_paths(data_dir: Path) -> tuple[Path, ...]:
     huérfanos evita resucitar ids legacy sustituidos en corridas posteriores.
     """
 
+    site_root = data_dir.parent if data_dir.name == "data" else data_dir
     manifest_path = data_dir / "manifest.json"
+    _safe_site_file(site_root, manifest_path)
     try:
         manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     except (OSError, json.JSONDecodeError):
-        return tuple(sorted(data_dir.joinpath("items").glob("*.json")))
+        paths = tuple(sorted(data_dir.joinpath("items").glob("*.json")))
+        for path in paths:
+            _safe_site_file(site_root, path)
+        return paths
     artifacts = manifest.get("artifacts") if isinstance(manifest, dict) else None
     if not isinstance(artifacts, dict):
-        return tuple(sorted(data_dir.joinpath("items").glob("*.json")))
-    site_root = data_dir.parent if data_dir.name == "data" else data_dir
+        paths = tuple(sorted(data_dir.joinpath("items").glob("*.json")))
+        for path in paths:
+            _safe_site_file(site_root, path)
+        return paths
     prefix = data_dir.relative_to(site_root) / "items"
     paths: list[Path] = []
     for relative_text in artifacts:
@@ -1166,8 +1213,32 @@ def _manifest_item_paths(data_dir: Path) -> tuple[Path, ...]:
             or relative.suffix != ".json"
         ):
             continue
-        paths.append(site_root / relative)
+        candidate = site_root / relative
+        _safe_site_file(site_root, candidate)
+        paths.append(candidate)
     return tuple(sorted(paths))
+
+
+def _safe_site_file(site_root: Path, candidate: Path) -> Path:
+    """Reject direct/intermediate symlinks before a prior public cut is read."""
+
+    root = Path(site_root)
+    if root.is_symlink():
+        raise PublishError("la raíz pública no puede ser un enlace simbólico")
+    try:
+        relative = Path(candidate).relative_to(root)
+    except ValueError as exc:
+        raise PublishError("ruta pública fuera del sitio") from exc
+    current = root
+    for component in relative.parts:
+        current = current / component
+        if current.is_symlink():
+            raise PublishError(f"artefacto público no puede ser un enlace: {relative}")
+    try:
+        Path(candidate).resolve().relative_to(root.resolve())
+    except ValueError as exc:
+        raise PublishError(f"artefacto público fuera del sitio: {relative}") from exc
+    return Path(candidate)
 
 
 def _previous_item(
@@ -1357,17 +1428,44 @@ def _state_payloads(data_dir: Path, pending: Any) -> dict[str, Any]:
     for path in state_dir.glob("*.json") if state_dir.exists() else ():
         payload = load_committed_state(path, source=path.stem)
         if payload is not None:
-            states[path.stem] = payload
+            states[path.stem] = _public_state_payload(path.stem, payload)
     legacy = {"icsid": data_dir / "icsid_snapshot.json", "tmec": data_dir / "tmec_snapshot.json"}
     for name, path in legacy.items():
         if name in states or not path.exists():
             continue
         payload = load_committed_state(path, source=name)
         if payload is not None:
-            states[name] = payload
+            states[name] = _public_state_payload(name, payload)
     if isinstance(pending, dict):
-        states.update(pending)
+        states.update(
+            {
+                name: _public_state_payload(name, payload)
+                for name, payload in pending.items()
+            }
+        )
     return states
+
+
+def _public_state_payload(name: str, payload: Any) -> Any:
+    """Keep legacy state compatible while stripping retraction rollback data.
+
+    A historical v8 retractions envelope may contain the complete withdrawn
+    record. It is no longer a public representation: exporting any new cut
+    converts it to an opaque tombstone before it participates in the cut hash.
+    """
+
+    if name != "retractions" or not isinstance(payload, dict):
+        return payload
+    raw_items = payload.get("items")
+    tombstones: dict[str, dict[str, str]] = {}
+    if isinstance(raw_items, dict):
+        for item_id, entry in raw_items.items():
+            if not isinstance(item_id, str) or not isinstance(entry, dict):
+                continue
+            retracted_at = entry.get("retracted_at")
+            if isinstance(retracted_at, str) and retracted_at:
+                tombstones[item_id] = {"retracted_at": retracted_at}
+    return {"version": 2, "items": tombstones}
 
 
 def _effective_retired_item_ids(requested: Any, states: dict[str, Any]) -> set[str]:

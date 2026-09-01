@@ -1,0 +1,189 @@
+{
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "item": {
+    "ai_generated": true,
+    "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5790543&fecha=15/06/2026",
+    "card_body": "## Qué se publicó\n\nLa Comisión Nacional de Seguros y Fianzas autorizó a Aseguradora Consolidación Patrimonial para organizarse y operar en el ramo de vida, sujeta a la condición previa indicada.\n\n## Sustancia\n\nLa Comisión Nacional de Seguros y Fianzas, previo acuerdo de su Junta de Gobierno, otorga autorización a Aseguradora Consolidación Patrimonial, S.A. de C.V. para organizarse, operar y funcionar como institución de seguros. El artículo segundo de la autorización delimita la operación autorizada a seguros de vida en la República Mexicana. El texto identifica a Adolfo Díaz López y Norberto Gerardo Vázquez Peñaloza como las personas a quienes se otorgó la autorización para llevar a cabo la organización, operación y funcionamiento.\n\nLa publicación prevé domicilio social en Ciudad de México, sujeción a la Ley de Instituciones de Seguros y de Fianzas, disposiciones derivadas, Ley General de Sociedades Mercantiles y demás normas aplicables. También señala que la institución debe contar con el capital mínimo pagado que corresponda a las operaciones y ramos autorizados, en los términos de la Ley de Instituciones de Seguros y de Fianzas y de las disposiciones de la Comisión.\n\n## Fuente\n\nFuente oficial: oficio de la Comisión Nacional de Seguros y Fianzas que otorga autorización a Aseguradora Consolidación Patrimonial, S.A. de C.V. chunk-1 identifica la autorización; chunk-2 y chunk-3 contienen las condiciones previas al inicio de operaciones, publicaciones y efectos del acto.",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "af857276f62302f78cdc6e35cf1fa573e9b3005c5fba17f7fa8fe044b632010e",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-1",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-3",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/570b6e8bf3c17ee4c91d8578.json",
+    "detail_url": "notas/570b6e8bf3c17ee4c91d8578.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "heading": "Autorización concedida",
+        "paragraphs": [
+          "La Comisión Nacional de Seguros y Fianzas, previo acuerdo de su Junta de Gobierno, otorga autorización a Aseguradora Consolidación Patrimonial, S.A. de C.V. para organizarse, operar y funcionar como institución de seguros. El artículo segundo de la autorización delimita la operación autorizada a seguros de vida en la República Mexicana. El texto identifica a Adolfo Díaz López y Norberto Gerardo Vázquez Peñaloza como las personas a quienes se otorgó la autorización para llevar a cabo la organización, operación y funcionamiento.",
+          "La publicación prevé domicilio social en Ciudad de México, sujeción a la Ley de Instituciones de Seguros y de Fianzas, disposiciones derivadas, Ley General de Sociedades Mercantiles y demás normas aplicables. También señala que la institución debe contar con el capital mínimo pagado que corresponda a las operaciones y ramos autorizados, en los términos de la Ley de Instituciones de Seguros y de Fianzas y de las disposiciones de la Comisión."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-2",
+          "chunk-3"
+        ],
+        "heading": "Condiciones previas y publicación",
+        "paragraphs": [
+          "El inicio de operaciones está sujeto a obtener el dictamen favorable de la Comisión conforme al artículo 47 de la Ley de Instituciones de Seguros y de Fianzas. El oficio indica que ese dictamen debe solicitarse dentro de ciento ochenta días contados desde la aprobación del instrumento público que contenga los estatutos sociales. Si no se obtiene el dictamen favorable, la autorización no surtirá efectos.",
+          "La autorización es intransmisible y coloca a la institución bajo inspección y vigilancia de la CNSF. Además, el oficio debe publicarse en el DOF y en dos periódicos de amplia circulación del domicilio social dentro de los ciento veinte días siguientes a su notificación, a costa de los interesados. El propio texto aclara que no prejuzga ni convalida otros actos que requieran autorizaciones o aprobaciones de autoridades financieras, administrativas, fiscales o de otra naturaleza."
+        ]
+      }
+    ],
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Oficio",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "60cfe6d0c2dc21f4978a5b844a329c3f1453d26de77afd8cfc03ef9e5245b018",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "OFICIO mediante el cual se otorga autorización a Aseguradora Consolidación Patrimonial, S.A. de C.V., para organizarse, operar y funcionar como institución de seguros.",
+          "location": "caracteres 0-171"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Comisión Nacional de Seguros y Fianzas.- Presidencia.- Expediente: C00.411.3S.2\"24\".- Oficio No. 06-C00-41100-09428/2026.- Vicepresidencia Jurídica.- Dirección General Jurídica Consultiva y de Intermediarios. · parte 1",
+          "location": "caracteres 171-12171"
+        },
+        {
+          "id": "chunk-3",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Comisión Nacional de Seguros y Fianzas.- Presidencia.- Expediente: C00.411.3S.2\"24\".- Oficio No. 06-C00-41100-09428/2026.- Vicepresidencia Jurídica.- Dirección General Jurídica Consultiva y de Intermediarios. · parte 2",
+          "location": "caracteres 12171-13587"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5790543&fecha=15/06/2026",
+      "retrieved_at": "2026-08-13T19:44:00.864661+00:00"
+    },
+    "executive_summary": [
+      "La Comisión Nacional de Seguros y Fianzas, previo acuerdo de su Junta de Gobierno, otorga autorización a Aseguradora Consolidación Patrimonial, S.A. de C.V. para organizarse, operar y funcionar como institución de seguros. El artículo segundo de la autorización delimita la operación autorizada a seguros de vida en la República Mexicana. El texto identifica a Adolfo Díaz López y Norberto Gerardo Vázquez Peñaloza como las personas a quienes se otorgó la autorización para llevar a cabo la organización, operación y funcionamiento.",
+      "La publicación prevé domicilio social en Ciudad de México, sujeción a la Ley de Instituciones de Seguros y de Fianzas, disposiciones derivadas, Ley General de Sociedades Mercantiles y demás normas aplicables. También señala que la institución debe contar con el capital mínimo pagado que corresponda a las operaciones y ramos autorizados, en los términos de la Ley de Instituciones de Seguros y de Fianzas y de las disposiciones de la Comisión."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5790543",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2",
+          "chunk-3"
+        ],
+        "paragraphs": [
+          "La sociedad obtiene una autorización de organización y operación en seguros de vida, pero no puede iniciar operaciones sin el dictamen favorable que el oficio condiciona expresamente."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-1",
+            "chunk-2",
+            "chunk-3"
+          ],
+          "paragraphs": [
+            "La sociedad obtiene una autorización de organización y operación en seguros de vida, pero no puede iniciar operaciones sin el dictamen favorable que el oficio condiciona expresamente."
+          ],
+          "sector": "Mercado asegurador y personas relacionadas con la nueva institución"
+        }
+      ]
+    },
+    "importance": 1,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-09-01T18:46:30.041123+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5790543&fecha=15/06/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5790543"
+    },
+    "official_published_at": "2026-06-15",
+    "official_title": "Oficio mediante el cual se otorga autorización a Aseguradora Consolidación Patrimonial, S.A. de C.V., para organizarse, operar y funcionar como institución de seguros.",
+    "published_at": "2026-06-15",
+    "published_day": 15,
+    "published_month": 6,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Mercado asegurador y personas relacionadas con la nueva institución",
+        "deadline": "Solicitud de dictamen: 180 días desde la aprobación del instrumento público; publicación: 120 días desde la notificación",
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2",
+          "chunk-3"
+        ],
+        "legal_basis": "Oficio 06-C00-41100-09428/2026; Ley de Instituciones de Seguros y de Fianzas",
+        "paragraphs": [
+          "Antes de tratar a la sociedad como operativa, confirme el dictamen favorable de la CNSF y el cumplimiento de las condiciones de publicación y capital; no sustituya otros permisos que correspondan."
+        ],
+        "trigger": "Antes del inicio de operaciones de Aseguradora Consolidación Patrimonial"
+      }
+    ],
+    "relevance_score": 1,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5790543",
+    "subtopic_tags": [],
+    "summary": "La Comisión Nacional de Seguros y Fianzas, previo acuerdo de su Junta de Gobierno, otorga autorización a Aseguradora Consolidación Patrimonial, S.A. de C.V. para organizarse, operar y funcionar como institución de seguros. El artículo segundo de la autorización delimita la operación autorizada a seguros de vida en la República Mexicana. El texto identifica a Adolfo Díaz López y Norberto Gerardo Vázquez Peñaloza como las personas a quienes se otorgó la autorización para llevar a cabo la organización, operación y funcionamiento.\n\nLa publicación prevé domicilio social en Ciudad de México, sujeción a la Ley de Instituciones de Seguros y de Fianzas, disposiciones derivadas, Ley General de Sociedades Mercantiles y demás normas aplicables. También señala que la institución debe contar con el capital mínimo pagado que corresponda a las operaciones y ramos autorizados, en los términos de la Ley de Instituciones de Seguros y de Fianzas y de las disposiciones de la Comisión.\n\nEl inicio de operaciones está sujeto a obtener el dictamen favorable de la Comisión conforme al artículo 47 de la Ley de Instituciones de Seguros y de Fianzas. El oficio indica que ese dictamen debe solicitarse dentro de ciento ochenta días contados desde la aprobación del instrumento público que contenga los estatutos sociales. Si no se obtiene el dictamen favorable, la autorización no surtirá efectos.\n\nLa autorización es intransmisible y coloca a la institución bajo inspección y vigilancia de la CNSF. Además, el oficio debe publicarse en el DOF y en dos periódicos de amplia circulación del domicilio social dentro de los ciento veinte días siguientes a su notificación, a costa de los interesados. El propio texto aclara que no prejuzga ni convalida otros actos que requieran autorizaciones o aprobaciones de autoridades financieras, administrativas, fiscales o de otra naturaleza.\n\nLos antecedentes narran solicitud, acuerdo de Junta de Gobierno, pago de derechos, presentación de la escritura y aprobación de estatutos; ese itinerario explica la autorización, pero no suple la condición posterior de dictamen favorable. La autorización se limita a la operación de vida y no menciona otros ramos. El oficio conserva el control de inspección y vigilancia de la CNSF y precisa que su contenido se emite con base en información de los solicitantes, sin prejuzgar otros actos que puedan requerir autorización. De esta forma, la existencia de la sociedad y la publicación oficial no bastan para afirmar que ya ofrece seguros al público.",
+    "summary_teaser": "La Comisión Nacional de Seguros y Fianzas autorizó a Aseguradora Consolidación Patrimonial, S.A. de C.V. para organizarse, operar y funcionar en el ramo de vida. La autorización está condicionada al dictamen favorable previo al inicio de operaciones y exige publicación en el DOF y periódicos, sin convalidar otros permisos que puedan requerirse.",
+    "title": "CNSF autoriza nueva aseguradora para operar seguros de vida",
+    "topic_tags": [
+      "Oficio"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5790543&fecha=15/06/2026"
+  },
+  "schema_version": 8
+}

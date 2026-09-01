@@ -23,6 +23,8 @@ from app.validation import (
     SUBSTANTIVE_HEADLINE_RE,
     SUMMARY_MAX_WORDS,
     SUMMARY_MIN_WORDS,
+    TEASER_MAX_WORDS,
+    TEASER_MIN_WORDS,
     WHAT_PUBLISHED_SECTION,
     card_section_text,
     contains_act_number,
@@ -370,10 +372,10 @@ def _validate_edit(
         )
 
     teaser_words = len(words(fields["summary_teaser"]))
-    if not 40 <= teaser_words <= 80:
+    if not TEASER_MIN_WORDS <= teaser_words <= TEASER_MAX_WORDS:
         raise EditorialError(
             f"items[{index}] ({edit_id}): el teaser tiene {teaser_words} palabras, "
-            "debe tener 40-80"
+            f"debe tener {TEASER_MIN_WORDS}-{TEASER_MAX_WORDS}"
         )
 
     for section in CARD_BODY_SECTIONS:

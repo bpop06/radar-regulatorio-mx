@@ -1,0 +1,168 @@
+{
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "item": {
+    "ai_generated": true,
+    "authority": "PODER JUDICIAL ORGANO DE ADMINISTRACION JUDICIAL",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797580&fecha=01%2F09%2F2026",
+    "card_body": "## Qué se publicó\n\nEl Órgano de Administración Judicial habilitó órganos federales para conocer amparos penales.\n\n## Sustancia\n\nLa medida añade esa competencia desde la fecha indicada sin cambiar la especialización ni las atribuciones penales que los juzgados ya ejercen.\n\n## Fuente\n\n[Consulta la publicación oficial](https://dof.gob.mx/nota_detalle.php?codigo=5797580&fecha=01%2F09%2F2026)",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Penal"
+    ],
+    "content_hash": "9f8c494e883e5401acdd8611104897af47088bf6c01d8fb22650159514bf1fe9",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-1",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/0d1e233f14474a7d3eda1570.json",
+    "detail_url": "notas/0d1e233f14474a7d3eda1570.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "heading": "Contenido publicado",
+        "paragraphs": [
+          "Se habilita a los tres juzgados de procesos penales federales con residencia en Matamoros para conocer de amparo en materia penal."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "heading": "Alcance práctico",
+        "paragraphs": [
+          "La competencia adicional inicia el primero de septiembre de dos mil veintiséis y no altera su especialización ni la competencia preexistente sobre procesos penales federales."
+        ]
+      }
+    ],
+    "detected_at": "2026-09-01T16:34:47.803209+00:00",
+    "document_type": "Acuerdo General",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "a51f0a69addf5af85eab085ea5b6ceda7f6e6cc2a0a2f70c280faaa09ed72394",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "ACUERDO General del Pleno del Órgano de Administración Judicial por el que se habilita a los Juzgados de Distrito de Procesos Penales Federales en Matamoros, Tamaulipas, para conocer de amparo en materia penal.",
+          "location": "caracteres 0-214"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Órgano de Administración Judicial.- AG-POAJ-020/2026.",
+          "location": "caracteres 214-7679"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797580&fecha=01%2F09%2F2026",
+      "retrieved_at": "2026-09-01T16:34:51.291058+00:00"
+    },
+    "executive_summary": [
+      "El Pleno del Órgano de Administración Judicial habilitó a los Juzgados Primero, Segundo y Tercero de Distrito de Procesos Penales Federales en Tamaulipas, con residencia en Matamoros, para conocer de amparo en materia penal. El acuerdo explica que estos órganos presentan capacidad jurisdiccional disponible debido a la disminución sostenida de cargas de trabajo asociada a la implementación del sistema penal acusatorio y que esa capacidad puede aprovecharse en apoyo de otros órganos.",
+      "La ampliación se ejerce a partir del primero de septiembre de dos mil veintiséis, en los términos que el acuerdo remite al artículo 53 de la Ley Orgánica del Poder Judicial de la Federación. La decisión se presenta como medida inmediata dentro de un programa de análisis y reorganización de los juzgados de procesos penales federales. El instrumento conserva la competencia existente de los órganos respecto de los procesos penales federales."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-09-01T16:34:47.803209+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5797580",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "La medida abre una capacidad adicional para asuntos de amparo penal sin sustituir las funciones penales federales de los órganos habilitados."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-1",
+            "chunk-2"
+          ],
+          "paragraphs": [
+            "Quienes promuevan o sigan amparos penales deben considerar la habilitación al revisar la competencia y los canales de trámite aplicables."
+          ],
+          "sector": "Personas litigantes y defensorías en asuntos de amparo penal"
+        }
+      ]
+    },
+    "importance": 2,
+    "issuing_body": "PODER JUDICIAL ORGANO DE ADMINISTRACION JUDICIAL",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-09-01T18:46:30.041123+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797580&fecha=01/09/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5797580"
+    },
+    "official_published_at": "2026-09-01",
+    "official_title": "Acuerdo General del Pleno del Órgano de Administración Judicial por el que se habilita a los Juzgados de Distrito de Procesos Penales Federales en Matamoros, Tamaulipas, para conocer de amparo en materia penal.",
+    "published_at": "2026-09-01",
+    "published_day": 1,
+    "published_month": 9,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Personas litigantes y defensorías en asuntos de amparo penal",
+        "deadline": null,
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "legal_basis": "Acuerdo General del Órgano de Administración Judicial y artículo 53 de la Ley Orgánica del Poder Judicial de la Federación, citado en el acto",
+        "paragraphs": [
+          "Verificar la competencia del órgano que corresponda conforme al acuerdo y a las reglas procesales aplicables antes de presentar promociones o solicitudes."
+        ],
+        "trigger": "Promover o tramitar un amparo en materia penal"
+      }
+    ],
+    "relevance_score": 2,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5797580",
+    "subtopic_tags": [
+      "penal"
+    ],
+    "summary": "El Pleno del Órgano de Administración Judicial habilitó a los Juzgados Primero, Segundo y Tercero de Distrito de Procesos Penales Federales en Tamaulipas, con residencia en Matamoros, para conocer de amparo en materia penal. El acuerdo explica que estos órganos presentan capacidad jurisdiccional disponible debido a la disminución sostenida de cargas de trabajo asociada a la implementación del sistema penal acusatorio y que esa capacidad puede aprovecharse en apoyo de otros órganos.\n\nLa ampliación se ejerce a partir del primero de septiembre de dos mil veintiséis, en los términos que el acuerdo remite al artículo 53 de la Ley Orgánica del Poder Judicial de la Federación. La decisión se presenta como medida inmediata dentro de un programa de análisis y reorganización de los juzgados de procesos penales federales. El instrumento conserva la competencia existente de los órganos respecto de los procesos penales federales.\n\nEl acuerdo expresa que la habilitación no modifica la especialización ni la competencia que los juzgados ya ejercen. Por ello, el documento no anuncia una conversión orgánica permanente ni la desaparición de sus funciones penales; permite que conozcan además de amparos en materia penal. Las consultas sobre interpretación del acuerdo serán resueltas por la Comisión de Creación y Seguimiento de Órganos Jurisdiccionales, a propuesta de su Secretaría Ejecutiva.\n\nEl cambio verificable es de competencia jurisdiccional para los juzgados señalados y su fecha de operación. La publicación no identifica expedientes concretos, reglas de turno adicionales ni resultados de una futura redistribución; esos aspectos no se atribuyen en esta ficha. Personas litigantes y defensorías deben revisar la aplicación de la habilitación al presentar o seguir un asunto específico.\n\nPara fines de seguimiento, la publicación debe leerse con la normativa que expresamente cita. Esta ficha sólo reporta el alcance verificable del documento oficial: no anticipa decisiones posteriores, requisitos no publicados ni consecuencias que el texto no atribuye de manera directa.",
+    "summary_teaser": "El Órgano de Administración Judicial habilitó a tres juzgados federales de procesos penales en Matamoros para conocer amparos en materia penal. La competencia ampliada inicia el primero de septiembre de dos mil veintiséis, no sustituye su especialización ni desplaza la competencia que ya ejercen sobre procesos penales federales.",
+    "title": "Acuerdo amplía competencia de juzgados penales de Matamoros",
+    "topic_tags": [
+      "Penal",
+      "Acuerdo"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797580&fecha=01/09/2026"
+  },
+  "schema_version": 8
+}

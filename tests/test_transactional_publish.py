@@ -166,6 +166,73 @@ def test_manifest_detects_artifact_tampering(tmp_path: Path) -> None:
     assert any("hash does not match" in error for error in report.errors)
 
 
+@pytest.mark.parametrize("kind", ["item", "archive", "state"])
+def test_manifest_rejects_symlinked_artifacts(tmp_path: Path, kind: str) -> None:
+    docs = tmp_path / "docs"
+    publications = docs / "data/publications.json"
+    payload = extractive_payload()
+    payload["_pending_state"] = {"icsid": {"ARB/26/1": "Pending"}}
+    write_site_artifacts_legacy(payload, publications)
+    item_path = docs / "data/items" / f"{item_key(payload['items'][0]['id'])}.json"
+    relative = {
+        "item": item_path,
+        "archive": docs / "data/archive/2026-08.json",
+        "state": docs / "data/state/icsid.json",
+    }[kind]
+    external = tmp_path / f"outside-{kind}.json"
+    external.write_bytes(relative.read_bytes())
+    relative.unlink()
+    relative.symlink_to(external)
+
+    report = validate_site_artifacts(docs / "data/manifest.json")
+
+    assert not report.ok
+    assert any("symbolic link" in error for error in report.errors)
+
+
+def test_writer_refuses_to_read_a_symlinked_previous_item(tmp_path: Path) -> None:
+    docs = tmp_path / "docs"
+    publications = docs / "data/publications.json"
+    payload = extractive_payload()
+    write_site_artifacts_legacy(payload, publications)
+    item_path = docs / "data/items" / f"{item_key(payload['items'][0]['id'])}.json"
+    external = tmp_path / "outside.json"
+    external.write_bytes(item_path.read_bytes())
+    item_path.unlink()
+    item_path.symlink_to(external)
+
+    with pytest.raises(PublishError, match="no puede ser un enlace"):
+        write_site_artifacts_legacy(payload, publications)
+
+
+def test_manifest_rejects_private_retraction_rollback_material(tmp_path: Path) -> None:
+    docs = tmp_path / "docs"
+    publications = docs / "data/publications.json"
+    payload = extractive_payload()
+    payload["_pending_state"] = {
+        "retractions": {
+            "version": 1,
+            "items": {
+                "dof:1": {
+                    "retracted_at": "2026-08-13T00:00:00+00:00",
+                    "reason": "no público",
+                    "record": {"id": "dof:1"},
+                }
+            },
+        }
+    }
+    write_site_artifacts_legacy(payload, publications)
+    path = "data/state/retractions.json"
+    envelope = json.loads((docs / path).read_text(encoding="utf-8"))
+    envelope["state"] = payload["_pending_state"]["retractions"]
+    _rewrite_and_rehash(docs, path, envelope)
+
+    report = validate_site_artifacts(docs / "data/manifest.json")
+
+    assert not report.ok
+    assert any("public retractions tombstone schema" in error for error in report.errors)
+
+
 def test_manifest_rejects_semantically_mismatched_archive_even_with_valid_hash(
     tmp_path: Path,
 ) -> None:
@@ -639,6 +706,31 @@ def test_invalidated_complete_item_retires_item_detail_and_note_transactionally(
     assert all(not path.exists() for path in paths)
     manifest = json.loads((docs / "data/manifest.json").read_text())
     assert all(path.relative_to(docs).as_posix() not in manifest["artifacts"] for path in paths)
+
+
+def test_reconcile_rejects_stale_complete_editorial_after_source_changes() -> None:
+    previous = prepare_payload(extractive_payload(), force=True)["items"][0]
+    previous.update(
+        source_content_hash="b" * 64,
+        editorial_status="complete",
+        ai_generated=True,
+    )
+    stale = deepcopy(previous)
+    stale.update(
+        source_content_hash="c" * 64,
+        source_revalidation_status="complete",
+        evidence={"content_hash": "b" * 64},
+    )
+
+    reconciled = edition_module._reconcile_item(  # noqa: SLF001
+        stale,
+        previous,
+        "2026-08-14T12:00:00+00:00",
+    )
+
+    assert reconciled["editorial_status"] == "needs_review"
+    assert reconciled["ai_generated"] is False
+    assert reconciled["title"] is None
 
 
 def test_complete_only_writer_rejects_legacy_complete_without_source_hash(

@@ -1,0 +1,168 @@
+{
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "item": {
+    "ai_generated": true,
+    "authority": "PODER EJECUTIVO SECRETARIA ANTICORRUPCION Y BUEN GOBIERNO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796634&fecha=19%2F08%2F2026",
+    "card_body": "## Qué se publicó\n\nLa autoridad difundió una restricción temporal de contratación aplicable a la empresa señalada.\n\n## Sustancia\n\nLa circular precisa la duración, la materia contractual cubierta, que el mandato requiere publicación en el DOF y registro en ComprasMX, la excepción para contratos adjudicados o ya formalizados y la regla de continuidad vinculada al pago de la multa.\n\n## Fuente\n\n[Consulta la publicación oficial](https://dof.gob.mx/nota_detalle.php?codigo=5796634&fecha=19%2F08%2F2026)",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "f250cde3b852813f6365c4c21c73de0b8b6cbcb3ce568266de2bd092d59e79ee",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-1",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/88334d5680026c67dff234a4.json",
+    "detail_url": "notas/88334d5680026c67dff234a4.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "heading": "Inhabilitación comunicada",
+        "paragraphs": [
+          "La circular comunica una inhabilitación de tres meses y quince días y ordena abstenerse de recibir propuestas y/o celebrar contratos dentro de la materia delimitada desde el día siguiente a que se publique en el DOF y se registre en ComprasMX."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "heading": "Límites y continuidad de la medida",
+        "paragraphs": [
+          "Los contratos ya adjudicados o formalizados quedan fuera de la aplicación indicada. Si la multa permanece impaga al concluir el término, la inhabilitación continúa hasta que se acredite el pago según la propia circular."
+        ]
+      }
+    ],
+    "detected_at": "2026-09-01T16:34:47.803209+00:00",
+    "document_type": "Circular",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "4ec948c3a9cf94a6a0c583c5903686c674c465a0f30c6b96ee23c4b7b86c6661",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "CIRCULAR SABG/420/OICSICT/AR/476/2026 por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a las entidades federativas y sus municipios, a los entes públicos de unas y otros, así como a las demarcaciones territoriales de la Ciudad de México, que deberán abstenerse de aceptar propuestas o celebrar contratos con la empresa Teleconstrucciones Marver, S. de R.L. de C.V.",
+          "location": "caracteres 0-411"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Buen Gobierno.- Secretaría Anticorrupción y Buen Gobierno.- Órgano Interno de Control en la Secretaría de Infraestructura, Comunicaciones y Transportes.- Área de Responsabilidades.- Expediente: SAN/004/2025-SPR.",
+          "location": "caracteres 411-6978"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796634&fecha=19%2F08%2F2026",
+      "retrieved_at": "2026-09-01T16:35:16.731711+00:00"
+    },
+    "executive_summary": [
+      "La circular comunica la resolución administrativa que impuso a Teleconstrucciones Marver, S. de R.L. de C.V. una inhabilitación temporal de tres meses y quince días. El mandato dirigido a las autoridades destinatarias se activa a partir del día siguiente a que la circular se publique en el Diario Oficial de la Federación y se registre en ComprasMX. A partir de esa condición, deben abstenerse de recibir propuestas y/o celebrar contratos en la materia que el acto delimita, de manera directa o por interpósita persona. La fuente extraída no aporta la fecha del registro, por lo que esta ficha no fija inicio ni vencimiento efectivos.",
+      "El alcance material se refiere a procedimientos y contratos en materia de obras públicas y servicios relacionados con las mismas. El documento dirige la comunicación a dependencias y entidades federales y, en los términos que precisa, a entidades federativas, municipios, demarcaciones territoriales y otros entes cuando las contrataciones se cubran total o parcialmente con recursos federales derivados de convenios con el Ejecutivo Federal. La circular no convierte por sí misma cualquier relación comercial ajena a ese ámbito en una prohibición."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-09-01T16:34:47.803209+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5796634",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "La publicación incide en la validación de elegibilidad de proveedores y contratistas para procedimientos y contratos cubiertos por recursos federales."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-1",
+            "chunk-2"
+          ],
+          "paragraphs": [
+            "Las áreas contratantes deben, cuando se actualicen la publicación y el registro indicados, abstenerse de recibir propuestas y/o celebrar contratos con la empresa dentro del alcance de la circular y conservar evidencia de la verificación."
+          ],
+          "sector": "Áreas contratantes y unidades de compras públicas"
+        }
+      ]
+    },
+    "importance": 2,
+    "issuing_body": "Presidencia de la República",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-09-01T18:46:30.041123+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796634&fecha=19/08/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5796634"
+    },
+    "official_published_at": "2026-08-19",
+    "official_title": "Circular SABG/420/OICSICT/AR/476/2026 por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a las entidades federativas y sus municipios, a los entes públicos de unas y otros, así como a las demarcaciones territoriales de la Ciudad de México, que deberán abstenerse de aceptar propuestas o celebrar contratos con la empresa Teleconstrucciones Marver, S. de R.L. de C.V.",
+    "published_at": "2026-08-19",
+    "published_day": 19,
+    "published_month": 8,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Áreas contratantes y unidades de compras públicas",
+        "deadline": "Tres meses y quince días desde el día siguiente a que concurran la publicación en el DOF y el registro en ComprasMX; debe confirmarse el registro para fijar el inicio",
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "legal_basis": "Ley de Obras Públicas y Servicios Relacionados con las Mismas y términos de la circular",
+        "paragraphs": [
+          "Verificar la identidad de Teleconstrucciones Marver, S. de R.L. de C.V., el objeto contractual y el origen de los recursos; confirmar la publicación y el registro en ComprasMX antes de recibir propuestas o celebrar contratos. Identificar como excluidos de la circular los contratos ya adjudicados o formalizados."
+        ],
+        "trigger": "Tramitar un procedimiento o contrato comprendido en la circular"
+      }
+    ],
+    "relevance_score": 2,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5796634",
+    "subtopic_tags": [
+      "administracion publica federal"
+    ],
+    "summary": "La circular comunica la resolución administrativa que impuso a Teleconstrucciones Marver, S. de R.L. de C.V. una inhabilitación temporal de tres meses y quince días. El mandato dirigido a las autoridades destinatarias se activa a partir del día siguiente a que la circular se publique en el Diario Oficial de la Federación y se registre en ComprasMX. A partir de esa condición, deben abstenerse de recibir propuestas y/o celebrar contratos en la materia que el acto delimita, de manera directa o por interpósita persona. La fuente extraída no aporta la fecha del registro, por lo que esta ficha no fija inicio ni vencimiento efectivos.\n\nEl alcance material se refiere a procedimientos y contratos en materia de obras públicas y servicios relacionados con las mismas. El documento dirige la comunicación a dependencias y entidades federales y, en los términos que precisa, a entidades federativas, municipios, demarcaciones territoriales y otros entes cuando las contrataciones se cubran total o parcialmente con recursos federales derivados de convenios con el Ejecutivo Federal. La circular no convierte por sí misma cualquier relación comercial ajena a ese ámbito en una prohibición.\n\nLa fuente separa los procedimientos futuros de los contratos ya adjudicados o formalizados: éstos no quedan comprendidos en la aplicación de la circular. También establece que, si al vencer la inhabilitación no se ha pagado la multa impuesta, la restricción subsiste hasta que se acredite el pago ante la Secretaría Anticorrupción y Buen Gobierno para eliminar el registro de la sancionada en ComprasMX. No se infiere una fecha de liberación distinta de la que resulta de esas condiciones.\n\nPara quienes compran con recursos públicos, el dato operativo es verificar la identidad de la persona o empresa, el tipo de procedimiento y la fuente de financiamiento; además, deben confirmar la publicación y el registro en ComprasMX antes de recibir propuestas o celebrar contratos. La publicación no describe los hechos de fondo del procedimiento ni sustituye la consulta del expediente, de ComprasMX o de las reglas específicas aplicables a una contratación concreta.",
+    "summary_teaser": "La autoridad comunicó la inhabilitación de Teleconstrucciones Marver, S. de R.L. de C.V. por tres meses y quince días. El mandato a las entidades destinatarias es abstenerse de recibir propuestas y/o celebrar contratos en la materia cubierta desde el día siguiente a que la circular se publique en el DOF y se registre en ComprasMX; la fecha efectiva requiere confirmar ese registro.",
+    "title": "Autoridad inhabilita a Teleconstrucciones Marver para obras federales",
+    "topic_tags": [
+      "Derecho administrativo",
+      "Circular"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796634&fecha=19/08/2026"
+  },
+  "schema_version": 8
+}

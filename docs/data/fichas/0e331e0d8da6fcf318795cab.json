@@ -1,0 +1,139 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "heading": "Suspensión del 11 de junio",
+      "paragraphs": [
+        "El Instituto Mexicano de la Propiedad Industrial suspende las labores y los plazos de los trámites, servicios y procedimientos administrativos que realiza en ejercicio de sus atribuciones el 11 de junio de 2026. El acuerdo señala que el evento inaugural de la Copa Mundial de la FIFA 2026 generará condiciones extraordinarias de movilidad en Ciudad de México, con alta afluencia, tránsito, posible saturación de servicios urbanos y cierres viales que afectarían especialmente a oficinas centrales.",
+        "La finalidad expresada es garantizar seguridad jurídica a usuarios y el desempeño institucional frente a las afectaciones previstas. La publicación no individualiza trámites que continúen operando ni difiere una serie de fechas adicionales; el alcance temporal que formula es el día 11 de junio de 2026. Las reglas de cómputo posteriores deben confirmarse en el expediente, plataforma o servicio correspondiente."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Difusión y vigencia",
+      "paragraphs": [
+        "El acuerdo ordena su publicación en el sitio web del IMPI, la Gaceta de la Propiedad Industrial y el DOF. Entra en vigor el día hábil siguiente a su publicación. Para trámites con vencimiento o actuación en la fecha suspendida, la fuente sirve para verificar el día no laborable, pero no reemplaza la consulta de comunicaciones específicas del Instituto o de las reglas particulares de cada procedimiento."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "a0f40a15e5bc0b43197c6d4ec5110e55fb567d11bb2146cb89e05127fd70a544",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "ACUERDO por el que se suspenden las labores y los plazos en el Instituto Mexicano de la Propiedad Industrial.",
+        "location": "caracteres 0-113"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Economía.- Secretaría de Economía.- Instituto Mexicano de la Propiedad Industrial.",
+        "location": "caracteres 113-2941"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5790195&fecha=10/06/2026",
+    "retrieved_at": "2026-08-13T19:44:25.601776+00:00"
+  },
+  "executive_summary": [
+    "El Instituto Mexicano de la Propiedad Industrial suspende las labores y los plazos de los trámites, servicios y procedimientos administrativos que realiza en ejercicio de sus atribuciones el 11 de junio de 2026. El acuerdo señala que el evento inaugural de la Copa Mundial de la FIFA 2026 generará condiciones extraordinarias de movilidad en Ciudad de México, con alta afluencia, tránsito, posible saturación de servicios urbanos y cierres viales que afectarían especialmente a oficinas centrales.",
+    "La finalidad expresada es garantizar seguridad jurídica a usuarios y el desempeño institucional frente a las afectaciones previstas. La publicación no individualiza trámites que continúen operando ni difiere una serie de fechas adicionales; el alcance temporal que formula es el día 11 de junio de 2026. Las reglas de cómputo posteriores deben confirmarse en el expediente, plataforma o servicio correspondiente."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "paragraphs": [
+        "Usuarios del IMPI deben considerar que el 11 de junio de 2026 se suspendieron labores y plazos de los servicios y procedimientos cubiertos por el acuerdo."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "Usuarios del IMPI deben considerar que el 11 de junio de 2026 se suspendieron labores y plazos de los servicios y procedimientos cubiertos por el acuerdo."
+        ],
+        "sector": "Solicitantes y titulares de trámites ante el Instituto Mexicano de la Propiedad Industrial"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5790195&fecha=10/06/2026",
+    "categories": [
+      "Administración descentralizada"
+    ],
+    "content_hash": "a3fc26c0cb51436aa361cb5e3150518570d97d149af5a142c4b3aa7aef56c37f",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/0e331e0d8da6fcf318795cab.json",
+    "detail_url": "notas/0e331e0d8da6fcf318795cab.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Acuerdo",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5790195",
+    "importance": 2,
+    "issuing_body": "Instituto Mexicano de la Propiedad Industrial",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-06-10",
+    "official_title": "Acuerdo por el que se suspenden las labores y los plazos en el Instituto Mexicano de la Propiedad Industrial.",
+    "published_at": "2026-06-10",
+    "relevance_score": 3,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5790195",
+    "summary_teaser": "El IMPI suspendió sus labores y plazos para todos sus trámites, servicios y procedimientos el 11 de junio de 2026. El acuerdo cita afectaciones extraordinarias de movilidad en Ciudad de México vinculadas con el evento inaugural de la Copa Mundial FIFA 2026; la medida está limitada a ese día y no anuncia un cierre permanente.",
+    "title": "IMPI suspende labores y plazos por evento inaugural del Mundial",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5790195&fecha=10/06/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Solicitantes y titulares de trámites ante el Instituto Mexicano de la Propiedad Industrial",
+      "deadline": "Día suspendido: 11 de junio de 2026",
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "legal_basis": "Acuerdo del IMPI sobre suspensión de labores y plazos",
+      "paragraphs": [
+        "Si una actuación o vencimiento coincidió con el 11 de junio de 2026, documente el acuerdo y confirme el cómputo posterior con el sistema o área competente del IMPI."
+      ],
+      "trigger": "En trámites, servicios o procedimientos del IMPI con actuación el 11 de junio de 2026"
+    }
+  ],
+  "schema_version": 8
+}

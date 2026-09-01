@@ -1,0 +1,174 @@
+{
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "item": {
+    "ai_generated": true,
+    "authority": "ORGANISMOS DESCONCENTRADOS O DESCENTRALIZADOS INSTITUTO MEXICANO DE LA PROPIEDAD INDUSTRIAL",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792808&fecha=07/07/2026",
+    "card_body": "## Qué se publicó\n\nEl IMPI publicó la solicitud relativa a Raicilla para abrir la etapa de observaciones de terceros.\n\n## Sustancia\n\nLa petición busca ampliar la zona de la Denominación de Origen para incluir Cocula. El IMPI no ha decidido su procedencia; se abre un plazo improrrogable de dos meses para oposición y pruebas.\n\n## Fuente\n\n[Fuente oficial](https://dof.gob.mx/nota_detalle.php?codigo=5792808&fecha=07/07/2026)",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración descentralizada"
+    ],
+    "content_hash": "415841cad4ec8cff3528970726d9043527e95919e1c87338473c27e6c76286a7",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-1",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/b523566d2da4138ce69a8b37.json",
+    "detail_url": "notas/b523566d2da4138ce69a8b37.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "heading": "Solicitud y modificación pretendida",
+        "paragraphs": [
+          "El IMPI publicó la solicitud para modificar la Declaración General de Protección a la Denominación de Origen Raicilla. El aviso identifica a LESAAC Mis Raíces, S. de R.L. de C.V., representada por Prisma Janeth Aguilar Cuenca, como persona solicitante y refiere la presentación inicial del Ayuntamiento Constitucional de Cocula, Jalisco.",
+          "La modificación solicitada consiste en incluir al municipio de Cocula, Jalisco, dentro de la región geográfica protegida por la declaratoria de la Denominación de Origen Raicilla. La publicación describe el producto como una bebida alcohólica destilada denominada Raicilla."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "heading": "Justificación, expediente y oposición",
+        "paragraphs": [
+          "La solicitud invoca elementos históricos, técnicos y culturales sobre producción tradicional en comunidades serranas de Cocula, así como la presencia de Agave maximiliana. También refiere un estudio técnico presentado para sustentar el vínculo entre el territorio y la materia prima.",
+          "El aviso no prejuzga la procedencia de la modificación. Las terceras personas que justifiquen su interés pueden presentar oposición, observaciones u objeciones por escrito, con pruebas y comprobante de pago, dentro del plazo improrrogable de dos meses contado desde la publicación."
+        ]
+      }
+    ],
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Solicitud Para Modificar",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "f760fb8fe787bc699e83d88933820c50b038ec3953cc971f81c96cc98331811b",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "SOLICITUD para modificar la \" Declaración General de Protección a la Denominación de Origen Raicilla \" .",
+          "location": "caracteres 0-108"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Economía.- Secretaría de Economía.- Instituto Mexicano de la Propiedad Industrial.",
+          "location": "caracteres 108-6644"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792808&fecha=07/07/2026",
+      "retrieved_at": "2026-08-13T19:43:01.382079+00:00"
+    },
+    "executive_summary": [
+      "El Instituto Mexicano de la Propiedad Industrial publicó la solicitud para modificar la Declaración General de Protección a la Denominación de Origen Raicilla. El aviso refiere una presentación inicial del Ayuntamiento Constitucional de Cocula, Jalisco, y un alcance presentado por Prisma Janeth Aguilar Cuenca en representación de LESAAC Mis Raíces, S. de R.L. de C.V., identificada como persona solicitante.",
+      "La modificación pretendida consiste en incluir al municipio de Cocula, Jalisco, dentro de la zona geográfica protegida por la Denominación de Origen Raicilla. La solicitud invoca elementos históricos, técnicos y culturales, y refiere un estudio técnico para sustentar el vínculo entre el territorio y la materia prima."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Organismo descentralizado",
+    "id": "dof:5792808",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "La publicación activa una etapa administrativa de publicidad y oposición; no transforma todavía la solicitud en una protección otorgada."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-1",
+            "chunk-2"
+          ],
+          "paragraphs": [
+            "Productores, autoridades locales y posibles opositores pueden revisar la descripción, la zona y el expediente antes de que el IMPI resuelva la solicitud."
+          ],
+          "sector": "Propiedad industrial y productores locales"
+        }
+      ]
+    },
+    "importance": 2,
+    "issuing_body": "Instituto Mexicano de la Propiedad Industrial",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-09-01T18:46:30.041123+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792808&fecha=07/07/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5792808"
+    },
+    "official_published_at": "2026-07-07",
+    "official_title": "Solicitud para modificar la \"Declaración General de Protección a la Denominación de Origen Raicilla\".",
+    "published_at": "2026-07-07",
+    "published_day": 7,
+    "published_month": 7,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Personas con interés legítimo en la indicación o denominación",
+        "deadline": "un plazo improrrogable de dos meses desde la publicación",
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "legal_basis": "Ley Federal de Protección a la Propiedad Industrial",
+        "paragraphs": [
+          "Si la solicitud puede afectar una denominación, indicación, producto o zona relacionada, consulte el expediente del IMPI y presente oposición, observaciones y pruebas sólo dentro de un plazo improrrogable de dos meses."
+        ],
+        "trigger": "Publicación en el Diario Oficial de la Federación"
+      }
+    ],
+    "relevance_score": 3,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5792808",
+    "subtopic_tags": [
+      "denominacion de origen"
+    ],
+    "summary": "El Instituto Mexicano de la Propiedad Industrial publicó la solicitud para modificar la Declaración General de Protección a la Denominación de Origen Raicilla. El aviso refiere una presentación inicial del 10 de febrero de 2026 por el Presidente Municipal y la Síndico del Ayuntamiento Constitucional de Cocula, Jalisco, y un alcance del 30 de marzo presentado por Prisma Janeth Aguilar Cuenca en representación de LESAAC Mis Raíces, S. de R.L. de C.V., para acreditar los extremos del artículo 273 de la Ley Federal de Protección a la Propiedad Industrial.\n\nLa publicación identifica a LESAAC Mis Raíces, S. de R.L. de C.V., representada por Prisma Janeth Aguilar Cuenca, como persona solicitante y describe el producto como la bebida alcohólica destilada denominada Raicilla. La modificación pretendida consiste en ampliar la zona geográfica protegida por la declaratoria para incluir al municipio de Cocula, Jalisco, además de las zonas ya señaladas en la declaratoria publicada en 2019.\n\nSegún la solicitud, la ampliación se sustenta en elementos históricos, técnicos y culturales que buscan evidenciar producción tradicional de Raicilla en comunidades serranas de Cocula. El texto menciona zonas boscosas, la presencia de agaves silvestres y el uso de Agave maximiliana. También refiere la relación territorial con Tecolotlán y comunidades rurales como La Taberna, El Saucillo y Arroyo Colorado.\n\nPara sustentar el vínculo entre territorio y materia prima, la parte solicitante exhibió un estudio técnico elaborado conjuntamente por el Centro de Investigación y Asistencia en Tecnología y Diseño, el Instituto Tecnológico de Tlajomulco y el Consejo Nacional de Humanidades, Ciencias y Tecnologías. El expediente está disponible para consulta en la Dirección Divisional de Marcas del IMPI, donde además se reciben documentos relacionados con la solicitud dentro del horario publicado.\n\nLa publicación no prejuzga ni constituye un pronunciamiento del Instituto sobre la procedencia de la modificación. Cualquier tercera persona que justifique su interés puede presentar oposición, observaciones u objeciones por escrito, con pruebas y comprobante de pago de la tarifa. El plazo es improrrogable: dos meses contados desde la publicación en el Diario Oficial de la Federación, conforme al artículo 282 de la Ley Federal de Protección a la Propiedad Industrial.",
+    "summary_teaser": "El IMPI publicó una solicitud para ampliar la zona protegida de la Denominación de Origen Raicilla al municipio de Cocula, Jalisco. La petición invoca producción tradicional, agaves silvestres y un estudio técnico; las personas con interés justificado pueden oponerse con pruebas dentro de dos meses. No se concede aún la modificación.",
+    "title": "IMPI abre solicitud para ampliar Raicilla a Cocula",
+    "topic_tags": [
+      "Propiedad intelectual"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5792808&fecha=07/07/2026"
+  },
+  "schema_version": 8
+}

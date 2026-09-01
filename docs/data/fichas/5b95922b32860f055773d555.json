@@ -1,0 +1,166 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-3",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-4",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-4"
+      ],
+      "heading": "Contenido publicado",
+      "paragraphs": [
+        "Los lineamientos homologan las etapas de ingreso, desarrollo, permanencia, promoción, reconocimiento, reingreso y terminación del servicio profesional."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-4"
+      ],
+      "heading": "Alcance práctico",
+      "paragraphs": [
+        "Cada institución debe contar con reglamento, unidad responsable, órgano colegiado y mecanismos de registro, y armonizar su normativa dentro del plazo transitorio."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "e65b0939cb4cef8280040daca5581491c260fb8d3cf359653bf7dfc3256dc581",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "LINEAMIENTOS Generales para el Servicio Profesional de Carrera de las Personas Integrantes de las Instituciones de Seguridad Pública.",
+        "location": "caracteres 0-137"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Seguridad.- Secretaría de Seguridad y Protección Ciudadana.- Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública. · parte 1",
+        "location": "caracteres 137-12137"
+      },
+      {
+        "id": "chunk-3",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Seguridad.- Secretaría de Seguridad y Protección Ciudadana.- Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública. · parte 2",
+        "location": "caracteres 12137-24137"
+      },
+      {
+        "id": "chunk-4",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Seguridad.- Secretaría de Seguridad y Protección Ciudadana.- Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública. · parte 3",
+        "location": "caracteres 24137-35119"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797183&fecha=26%2F08%2F2026",
+    "retrieved_at": "2026-09-01T16:35:07.800910+00:00"
+  },
+  "executive_summary": [
+    "El Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública emitió los Lineamientos Generales para el Servicio Profesional de Carrera de las Personas Integrantes de las Instituciones de Seguridad Pública. Son de aplicación general y obligatoria para las instituciones de los tres órdenes de gobierno. Su objeto es establecer bases, principios, estándares y criterios homologados para regular e implementar los procesos de desarrollo institucional, con énfasis en mérito, profesionalismo, igualdad sustantiva, no discriminación, transparencia y derechos humanos.",
+    "El instrumento define el servicio profesional de carrera como un sistema obligatorio y permanente que abarca reclutamiento, selección, ingreso, registro, profesionalización, certificación individual, permanencia, promoción, reconocimiento, reingreso y terminación. Exige a las instituciones emitir un reglamento propio, una unidad responsable y un órgano colegiado; para instituciones policiales, este último debe incluir representación policial. También requiere expedientes electrónicos, medidas de protección de datos y convocatorias con reglas expresas."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-4"
+      ],
+      "paragraphs": [
+        "La publicación establece un marco común de carrera y desarrollo institucional para las instituciones de seguridad pública de los tres órdenes de gobierno."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-4"
+        ],
+        "paragraphs": [
+          "Las instituciones deben revisar sus reglamentos, órganos colegiados, expedientes electrónicos y procesos de carrera para alinearlos con los estándares publicados."
+        ],
+        "sector": "Instituciones de seguridad pública y sus áreas de carrera, recursos humanos y formación"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797183&fecha=26%2F08%2F2026",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "7a3727ede7fcf9b6b7dc9228842e66acc5a7b3351c9e99b251811a6cc6d3916b",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/5b95922b32860f055773d555.json",
+    "detail_url": "notas/5b95922b32860f055773d555.html",
+    "detected_at": "2026-09-01T16:34:47.803209+00:00",
+    "document_type": "Lineamientos Generales Para",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5797183",
+    "importance": 2,
+    "issuing_body": "Presidencia de la República",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-08-26",
+    "official_title": "Lineamientos Generales para el Servicio Profesional de Carrera de las Personas Integrantes de las Instituciones de Seguridad Pública.",
+    "published_at": "2026-08-26",
+    "relevance_score": 2,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5797183",
+    "summary_teaser": "El Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública emitió lineamientos obligatorios para homologar la carrera de sus integrantes. Las instituciones de los tres órdenes de gobierno tienen doce meses desde la entrada en vigor para emitir o armonizar su normativa, conforme a sus capacidades y suficiencia presupuestaria.",
+    "title": "Lineamientos establecen obligación de armonizar carrera en seguridad pública",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797183&fecha=26/08/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Instituciones de seguridad pública y sus áreas de carrera, recursos humanos y formación",
+      "deadline": "Doce meses contados a partir de la entrada en vigor de los lineamientos",
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-4"
+      ],
+      "legal_basis": "Lineamientos Generales y Ley General del Sistema Nacional de Seguridad Pública, citada en el acto",
+      "paragraphs": [
+        "Inventariar la normativa vigente, identificar brechas frente a los lineamientos y calendarizar la emisión o armonización institucional dentro del plazo transitorio."
+      ],
+      "trigger": "Operar o actualizar un servicio profesional de carrera en una institución de seguridad pública"
+    }
+  ],
+  "schema_version": 8
+}

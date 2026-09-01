@@ -1,0 +1,143 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "heading": "Días y actuaciones suspendidas",
+      "paragraphs": [
+        "No corren plazos del 20 al 31 de julio y del 17 al 31 de diciembre de 2026 para actos, procedimientos y servicios de SEDATU y su órgano desconcentrado.",
+        "La suspensión comprende trámites, actuaciones, diligencias, notificaciones, requerimientos y medios de impugnación."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "heading": "Excepciones y cese provisional",
+      "paragraphs": [
+        "La suspensión puede cesar provisionalmente por causa fundada de beneficio social para permitir el ejercicio válido de atribuciones por la unidad que lo justifique.",
+        "No aplica a contratación regida por adquisiciones u obras públicas ni a procedimientos administrativos de expropiación."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "87f4359c0eb59b1f77dab7bac7490ddd88041521b4fbe212ffaa8f9924ba8476",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "NOTA Aclaratoria al Acuerdo por el que se hace del conocimiento del público en general los días del año 2026, que serán considerados como inhábiles para efectos de los actos, procedimientos, y servicios que presta la Secretaría de Desarrollo Agrario, Territorial y Urbano, dependencia de la Administración Pública Federal Centralizada y su Órgano Desconcentrado, tanto en oficinas centrales, como en sus oficinas de representación en las entidades federativas o regiones, publicado el 11 de diciembre de 2025.",
+        "location": "caracteres 0-513"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Desarrollo Territorial.- Secretaría de Desarrollo Agrario, Territorial y Urbano.",
+        "location": "caracteres 513-6830"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793471&fecha=14%2F07%2F2026",
+    "retrieved_at": "2026-08-14T00:37:09.643615+00:00"
+  },
+  "executive_summary": [
+    "La Secretaría de Desarrollo Agrario, Territorial y Urbano publicó una nota aclaratoria sobre los días inhábiles de 2026 para sus actos, procedimientos y servicios, incluidos los de su órgano desconcentrado y oficinas de representación. No se computan plazos y términos del 20 al 31 de julio y del 17 al 31 de diciembre de 2026.",
+    "La suspensión comprende la recepción de documentos e informes, acuerdos, inicio y sustanciación, audiencias, resoluciones, notificaciones, citatorios, emplazamientos, requerimientos, solicitudes de información y medios de impugnación. También detiene el cómputo en procedimientos administrativos, judiciales y jurisdiccionales que se sustancien en la Secretaría y su órgano desconcentrado."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "paragraphs": [
+        "Las personas y unidades que intervengan en trámites SEDATU deben recalcular plazos con las fechas de suspensión y sus excepciones expresas."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "Particulares y áreas públicas deben separar procedimientos ordinarios de contratación y expropiación, que no quedan suspendidos por la nota."
+        ],
+        "sector": "Administración pública y desarrollo territorial"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793471&fecha=14%2F07%2F2026",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "767caa340b78a767185df6b41b0ec120a4fd93920b005f156376a65c2074fba8",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/3d15763ce7dd4127806b0e29.json",
+    "detail_url": "notas/3d15763ce7dd4127806b0e29.html",
+    "detected_at": "2026-08-14T01:46:44.993982+00:00",
+    "document_type": "Nota Aclaratoria Al",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5793471",
+    "importance": 2,
+    "issuing_body": "Presidencia de la República",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-07-14",
+    "official_title": "Nota Aclaratoria al Acuerdo por el que se hace del conocimiento del público en general los días del año 2026, que serán considerados como inhábiles para efectos de los actos, procedimientos, y servicios que presta la Secretaría de Desarrollo Agrario, Territorial y Urbano, dependencia de la Administración Pública Federal Centralizada y su Órgano Desconcentrado, tanto en oficinas centrales, como en sus oficinas de representación en las entidades federativas o regiones, publicado el 11 de diciembre de 2025.",
+    "published_at": "2026-07-14",
+    "relevance_score": 2,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5793471",
+    "summary_teaser": "SEDATU aclaró que no correrán plazos del 20 al 31 de julio y del 17 al 31 de diciembre de 2026. La suspensión incluye actuaciones y medios de impugnación, pero puede cesar provisionalmente por beneficio social; tampoco aplica a contratación pública ni a procedimientos de expropiación.",
+    "title": "SEDATU aclara suspensión de plazos administrativos en 2026",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5793471&fecha=14/07/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Personas usuarias y unidades administrativas de SEDATU",
+      "deadline": null,
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "legal_basis": "Ley Federal de Procedimiento Administrativo y nota aclaratoria de SEDATU",
+      "paragraphs": [
+        "Al contar un plazo de SEDATU, excluya los periodos publicados salvo que se trate de contratación pública o expropiación, y revise si existe un cese provisional fundado en beneficio social."
+      ],
+      "trigger": "Cómputo de plazos en trámites o procedimientos SEDATU"
+    }
+  ],
+  "schema_version": 8
+}

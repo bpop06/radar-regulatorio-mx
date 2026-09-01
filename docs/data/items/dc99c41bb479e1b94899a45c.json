@@ -1,0 +1,170 @@
+{
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "item": {
+    "ai_generated": true,
+    "authority": "Secretaría de Economía",
+    "canonical_url": "https://www.snice.gob.mx/~oracle/SNICE_DOCS/FORMATOS-BASESLPN-001Y002-2027-LICITACION-ACTUALIDAD_20260831-20260831.pdf",
+    "card_body": "## Qué se publicó\n\nLa Dirección General de Facilitación Comercial y de Comercio Exterior puso a disposición ligas y formatos para licitaciones públicas nacionales de cupos de exportación textiles.\n\n## Sustancia\n\nLa página de acceso ofrece las bases, una guía de registro, una manifestación de no colusión, un manual de encriptado y enlaces a los formatos SE-FO-01-006 y SE-FO-03-034. Abarca prendas de algodón o fibras artificiales o sintéticas (TPL1) y prendas de lana (TPL2) elegibles para trato preferencial en el T-MEC. La fuente no informa resultados o adjudicaciones.\n\n## Fuente\n\nLa síntesis se elaboró exclusivamente con la fuente oficial identificada en la evidencia y sus fragmentos extraídos.",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Comercio exterior",
+      "Administración centralizada"
+    ],
+    "content_hash": "54f934f834063709555fca8da69c1e44687fc1df55c12a0b31efd8d846884f57",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-1",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/dc99c41bb479e1b94899a45c.json",
+    "detail_url": "notas/dc99c41bb479e1b94899a45c.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "heading": "Alcance de la publicación",
+        "paragraphs": [
+          "La Dirección General de Facilitación Comercial y de Comercio Exterior puso a disposición las ligas y formatos de las licitaciones públicas nacionales 001/2027 y 002/2027 para asignar cupos de exportación de prendas textiles.",
+          "La página de acceso ofrece las bases, una guía de registro, una manifestación de no colusión, un manual de encriptado y enlaces a los formatos SE-FO-01-006 y SE-FO-03-034. Abarca prendas de algodón o fibras artificiales o sintéticas (TPL1) y prendas de lana (TPL2) elegibles para trato preferencial en el T-MEC. La fuente no informa resultados o adjudicaciones."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "heading": "Seguimiento operativo",
+        "paragraphs": [
+          "Las personas interesadas en participar deben consultar las bases y los formatos enlazados antes de preparar su registro u oferta.",
+          "La ficha no extiende el alcance del acto a supuestos que la fuente no identifica."
+        ]
+      }
+    ],
+    "detected_at": "2026-09-01T16:34:47.803209+00:00",
+    "document_type": "Actualidad",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "96f6730a6d76f0bc2d6bc1a1c2630ac14683fd5de67286366678b01c4baa66ab",
+      "extraction_method": "pdf-inspector",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "Preámbulo",
+          "location": "caracteres 0-156"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al público en general:",
+          "location": "caracteres 156-1258"
+        }
+      ],
+      "official_url": "https://www.snice.gob.mx/~oracle/SNICE_DOCS/FORMATOS-BASESLPN-001Y002-2027-LICITACION-ACTUALIDAD_20260831-20260831.pdf",
+      "retrieved_at": "2026-09-01T16:34:53.337196+00:00"
+    },
+    "executive_summary": [
+      "La Dirección General de Facilitación Comercial y de Comercio Exterior puso a disposición las ligas y formatos de las licitaciones públicas nacionales 001/2027 y 002/2027 para asignar cupos de exportación de prendas textiles.",
+      "La página de acceso ofrece las bases, una guía de registro, una manifestación de no colusión, un manual de encriptado y enlaces a los formatos SE-FO-01-006 y SE-FO-03-034. Abarca prendas de algodón o fibras artificiales o sintéticas (TPL1) y prendas de lana (TPL2) elegibles para trato preferencial en el T-MEC. La fuente no informa resultados o adjudicaciones."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-09-01T16:34:47.803209+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "snice:89a32ee3936c6570",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "La página de acceso ofrece las bases, una guía de registro, una manifestación de no colusión, un manual de encriptado y enlaces a los formatos SE-FO-01-006 y SE-FO-03-034. Abarca prendas de algodón o fibras artificiales o sintéticas (TPL1) y prendas de lana (TPL2) elegibles para trato preferencial en el T-MEC. La fuente no informa resultados o adjudicaciones."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-1",
+            "chunk-2"
+          ],
+          "paragraphs": [
+            "La incidencia para este grupo se limita al alcance expresamente descrito en la publicación y requiere contrastarse con cada caso concreto."
+          ],
+          "sector": "Participantes potenciales en las licitaciones de cupos TPL1 y TPL2"
+        }
+      ]
+    },
+    "importance": 2,
+    "issuing_body": "Secretaría de Economía",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-09-01T18:46:30.041123+00:00",
+    "official_evidence": {
+      "primary_url": "https://www.snice.gob.mx/~oracle/SNICE_DOCS/FORMATOS-BASESLPN-001Y002-2027-LICITACION-ACTUALIDAD_20260831-20260831.pdf"
+    },
+    "official_identifiers": {
+      "source_id": "89a32ee3936c6570"
+    },
+    "official_published_at": "2026-08-31",
+    "official_title": "Bases para participar en la LPN No. 001/2027 para asignar el cupo de exportación de prendas de vestir de algodón o fibras artificiales o sintéticas (TPL1) y 002/2027 para asignar el cupo de exportación de prendas de vestir de lana (TPL2), establecidos en el acuerdo por el que se dan a conocer los cupos de exportación e importación de mercancías textiles y prendas de vestir no originarias, susceptibles de recibir el trato arancelario preferencial, conforme al Tratado entre los Estados Unidos de América, los Estados Unidos Mexicanos y Canadá..",
+    "published_at": "2026-08-31",
+    "published_day": 31,
+    "published_month": 8,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Participantes potenciales en las licitaciones de cupos TPL1 y TPL2",
+        "deadline": null,
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "legal_basis": null,
+        "paragraphs": [
+          "Las personas interesadas en participar deben consultar las bases y los formatos enlazados antes de preparar su registro u oferta."
+        ],
+        "trigger": "Cuando la publicación resulte aplicable a la situación revisada."
+      }
+    ],
+    "relevance_score": 3,
+    "review_reason": null,
+    "source": "SNICE",
+    "source_id": "89a32ee3936c6570",
+    "subtopic_tags": [
+      "importacion",
+      "exportacion",
+      "cupo"
+    ],
+    "summary": "La Dirección General de Facilitación Comercial y de Comercio Exterior puso a disposición las ligas y formatos de las licitaciones públicas nacionales 001/2027 y 002/2027 para asignar cupos de exportación de prendas textiles.\n\nLa página de acceso ofrece las bases, una guía de registro, una manifestación de no colusión, un manual de encriptado y enlaces a los formatos SE-FO-01-006 y SE-FO-03-034. Abarca prendas de algodón o fibras artificiales o sintéticas (TPL1) y prendas de lana (TPL2) elegibles para trato preferencial en el T-MEC. La fuente no informa resultados o adjudicaciones.\n\nPara fines de seguimiento, Las personas interesadas en participar deben consultar las bases y los formatos enlazados antes de preparar su registro u oferta. La revisión debe partir de la publicación oficial y de la documentación disponible para el caso concreto. El contenido debe mantenerse dentro de los límites del acto: no permite presumir efectos respecto de personas, operaciones, expedientes, contratos o procedimientos que la fuente no identifica. Cuando el documento comunica una autorización, una sanción, un trámite, una regla administrativa o un dato institucional, corresponde distinguir su alcance expreso de actuaciones posteriores que no estén acreditadas.\n\nEn términos probatorios, esta ficha se limita a los fragmentos oficiales y a sus localizadores. No atribuye efectos, plazos, montos, fundamentos, sujetos, resultados o hechos que no figuren en la fuente. La consulta del texto íntegro y, cuando corresponda, de la documentación del caso es necesaria para determinar cualquier consecuencia concreta. La verificación de una consecuencia particular exige identificar el acto aplicable, su fecha relevante, las personas efectivamente comprendidas y la evidencia que corresponda a la situación revisada. En ningún caso sustituye la consulta de expedientes, constancias o notificaciones individuales que puedan modificar la conclusión para una situación concreta. Esta delimitación evita convertir la información publicada en una conclusión definitiva sobre derechos, obligaciones o cumplimiento individual.",
+    "summary_teaser": "La SNICE puso a disposición ligas a las bases y documentos de las licitaciones públicas nacionales 001/2027 y 002/2027 para cupos de exportación de prendas de vestir. Incluye guía de registro, manifestación de no colusión, manual de encriptado y enlaces a dos formatos. La publicación no informa adjudicaciones ni resultados.",
+    "title": "SNICE permite acceso a formatos para cupos textiles",
+    "topic_tags": [
+      "Comercio exterior",
+      "Acuerdo"
+    ],
+    "url": "https://www.snice.gob.mx/~oracle/SNICE_DOCS/FORMATOS-BASESLPN-001Y002-2027-LICITACION-ACTUALIDAD_20260831-20260831.pdf"
+  },
+  "schema_version": 8
+}

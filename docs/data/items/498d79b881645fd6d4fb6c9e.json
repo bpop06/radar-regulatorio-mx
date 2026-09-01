@@ -1,0 +1,172 @@
+{
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "item": {
+    "ai_generated": true,
+    "authority": "PODER EJECUTIVO SECRETARIA DE ECONOMIA",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5790186&fecha=10/06/2026",
+    "card_body": "## Qué se publicó\n\nLa Secretaría de Economía delegó a su Secretaría Particular autorizaciones administrativas relativas al personal adscrito directamente a la oficina de su titular.\n\n## Sustancia\n\nEl Secretario de Economía delega en la Secretaría Particular facultades administrativas respecto de las personas servidoras públicas adscritas a la oficina de la persona titular. La delegación incluye autorizar el disfrute de días de vacaciones que correspondan directamente al titular, establecer y autorizar acciones de capacitación, evaluar anualmente el desempeño y realizar las acciones derivadas, así como gestionar asuntos administrativos que corresponda firmar o autorizar respecto del personal directamente adscrito.\n\nLa publicación se apoya en la posibilidad legal de delegar facultades en personas servidoras públicas subalternas, salvo aquellas que la ley o el reglamento interior reserve al titular. El acuerdo no transfiere una competencia general sobre toda la Secretaría ni enumera atribuciones sustantivas de comercio exterior, regulación o política económica: su objeto se delimita a la administración del personal adscrito directamente a la oficina titular.\n\n## Fuente\n\nFuente oficial: Acuerdo por el que la Secretaría de Economía delega facultades a su Secretaría Particular. chunk-1 identifica la delegación; chunk-2 enumera las materias autorizadas, la conservación del ejercicio directo y el deber de informe.",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "1b839a3cfbe1a05f3eac7a45bc81f68d900835696c59db669f5b724386003888",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-1",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/498d79b881645fd6d4fb6c9e.json",
+    "detail_url": "notas/498d79b881645fd6d4fb6c9e.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "heading": "Facultades delegadas",
+        "paragraphs": [
+          "El Secretario de Economía delega en la Secretaría Particular facultades administrativas respecto de las personas servidoras públicas adscritas a la oficina de la persona titular. La delegación incluye autorizar el disfrute de días de vacaciones que correspondan directamente al titular, establecer y autorizar acciones de capacitación, evaluar anualmente el desempeño y realizar las acciones derivadas, así como gestionar asuntos administrativos que corresponda firmar o autorizar respecto del personal directamente adscrito.",
+          "La publicación se apoya en la posibilidad legal de delegar facultades en personas servidoras públicas subalternas, salvo aquellas que la ley o el reglamento interior reserve al titular. El acuerdo no transfiere una competencia general sobre toda la Secretaría ni enumera atribuciones sustantivas de comercio exterior, regulación o política económica: su objeto se delimita a la administración del personal adscrito directamente a la oficina titular."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "heading": "Controles y vigencia",
+        "paragraphs": [
+          "La persona titular de la Secretaría Particular debe acordar lo conducente con la persona titular de la Secretaría de Economía al ejercer las facultades delegadas. Dentro de los treinta días naturales siguientes a la terminación de cada ejercicio fiscal debe informar sobre ese ejercicio, sin perjuicio de los informes exigibles ante otras instancias. El acuerdo exige cumplir las disposiciones legales, reglamentarias y administrativas aplicables y entra en vigor el día siguiente de su publicación."
+        ]
+      }
+    ],
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Acuerdo",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "8b24514e7dcac63fe79a22e3084e175e0407fe3970346ca666569caa0710b0af",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "ACUERDO por el que se delegan facultades a la Secretaría Particular de la persona Titular de la Secretaría de Economía.",
+          "location": "caracteres 0-123"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Economía.",
+          "location": "caracteres 123-6464"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5790186&fecha=10/06/2026",
+      "retrieved_at": "2026-08-13T19:44:25.200059+00:00"
+    },
+    "executive_summary": [
+      "El Secretario de Economía delega en la Secretaría Particular facultades administrativas respecto de las personas servidoras públicas adscritas a la oficina de la persona titular. La delegación incluye autorizar el disfrute de días de vacaciones que correspondan directamente al titular, establecer y autorizar acciones de capacitación, evaluar anualmente el desempeño y realizar las acciones derivadas, así como gestionar asuntos administrativos que corresponda firmar o autorizar respecto del personal directamente adscrito.",
+      "La publicación se apoya en la posibilidad legal de delegar facultades en personas servidoras públicas subalternas, salvo aquellas que la ley o el reglamento interior reserve al titular. El acuerdo no transfiere una competencia general sobre toda la Secretaría ni enumera atribuciones sustantivas de comercio exterior, regulación o política económica: su objeto se delimita a la administración del personal adscrito directamente a la oficina titular."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5790186",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "La medida reorganiza aprobaciones administrativas internas de la oficina titular de Economía, con rendición de cuentas y coordinación obligatoria, sin convertir a la Secretaría Particular en autoridad general de la dependencia."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-1",
+            "chunk-2"
+          ],
+          "paragraphs": [
+            "La medida reorganiza aprobaciones administrativas internas de la oficina titular de Economía, con rendición de cuentas y coordinación obligatoria, sin convertir a la Secretaría Particular en autoridad general de la dependencia."
+          ],
+          "sector": "Personas servidoras públicas adscritas a la oficina de la persona titular de Economía"
+        }
+      ]
+    },
+    "importance": 2,
+    "issuing_body": "Secretaría de Economía",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-09-01T18:46:30.041123+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5790186&fecha=10/06/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5790186"
+    },
+    "official_published_at": "2026-06-10",
+    "official_title": "Acuerdo por el que se delegan facultades a la Secretaría Particular de la persona Titular de la Secretaría de Economía.",
+    "published_at": "2026-06-10",
+    "published_day": 10,
+    "published_month": 6,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Personas servidoras públicas adscritas a la oficina de la persona titular de Economía",
+        "deadline": "Informe: dentro de los 30 días naturales posteriores a cada ejercicio fiscal",
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "legal_basis": "Acuerdo de delegación de facultades de la Secretaría de Economía",
+        "paragraphs": [
+          "Las áreas involucradas deben identificar si el asunto corresponde a personal directamente adscrito y documentar el acuerdo, la autorización y el informe anual conforme al instrumento publicado."
+        ],
+        "trigger": "Desde el día siguiente a la publicación del acuerdo"
+      }
+    ],
+    "relevance_score": 3,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5790186",
+    "subtopic_tags": [
+      "delegan facultades",
+      "titular de la secretaria"
+    ],
+    "summary": "El Secretario de Economía delega en la Secretaría Particular facultades administrativas respecto de las personas servidoras públicas adscritas a la oficina de la persona titular. La delegación incluye autorizar el disfrute de días de vacaciones que correspondan directamente al titular, establecer y autorizar acciones de capacitación, evaluar anualmente el desempeño y realizar las acciones derivadas, así como gestionar asuntos administrativos que corresponda firmar o autorizar respecto del personal directamente adscrito.\n\nLa publicación se apoya en la posibilidad legal de delegar facultades en personas servidoras públicas subalternas, salvo aquellas que la ley o el reglamento interior reserve al titular. El acuerdo no transfiere una competencia general sobre toda la Secretaría ni enumera atribuciones sustantivas de comercio exterior, regulación o política económica: su objeto se delimita a la administración del personal adscrito directamente a la oficina titular.\n\nLa persona titular de la Secretaría Particular debe acordar lo conducente con la persona titular de la Secretaría de Economía al ejercer las facultades delegadas. Dentro de los treinta días naturales siguientes a la terminación de cada ejercicio fiscal debe informar sobre ese ejercicio, sin perjuicio de los informes exigibles ante otras instancias. El acuerdo exige cumplir las disposiciones legales, reglamentarias y administrativas aplicables y entra en vigor el día siguiente de su publicación.\n\nLa exposición reconoce a la Secretaría Particular como parte del gabinete de apoyo encargado de coordinación de audiencias, agendas, compromisos oficiales y seguimiento de instrucciones. El acuerdo aprovecha ese carácter para asignar decisiones administrativas de personal cercano a la oficina titular. En todo caso, el texto mantiene que la persona titular de la Secretaría puede ejercer directamente las facultades y que la Secretaría Particular actúa sujeta a las disposiciones aplicables. La publicación no designa una persona concreta ni altera plazas, remuneraciones, condiciones laborales o procedimientos del Servicio Profesional de Carrera fuera de las gestiones que enumera.",
+    "summary_teaser": "La Secretaría de Economía delegó a su Secretaría Particular autorizaciones administrativas sobre personas adscritas directamente a la oficina de su titular. La delegación comprende vacaciones, capacitación, evaluación de desempeño y gestiones relacionadas, exige acuerdo con la persona titular y un informe anual, y no desplaza el ejercicio directo de las facultades de la Secretaría.",
+    "title": "Economía establece delegación administrativa a su Secretaría Particular",
+    "topic_tags": [
+      "Derecho administrativo",
+      "Acuerdo"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5790186&fecha=10/06/2026"
+  },
+  "schema_version": 8
+}

@@ -1,0 +1,139 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "heading": "Alcance territorial y temporal",
+      "paragraphs": [
+        "El Acuerdo General 003/2026 suspende actividades y declara inhábil el martes 2 de junio de 2026 únicamente para la Delegación Yucatán de la Procuraduría de la Defensa del Contribuyente. El texto relaciona la medida con las fuertes lluvias en el estado, el aviso meteorológico que pronosticó lluvias torrenciales y la necesidad preventiva de salvaguardar la integridad de personas servidoras públicas y contribuyentes.",
+        "Como efecto, no corren términos ni plazos legales en actos, trámites y procedimientos sustanciados o que deban sustanciarse ante esa delegación durante el día indicado. La publicación no declara una suspensión general de PRODECON ni contempla por sí misma plazos de otros órganos o procedimientos ajenos a la Delegación Yucatán."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Entrada en vigor y difusión",
+      "paragraphs": [
+        "El acuerdo entra en vigor en la fecha de su emisión. Ordena su publicación en el DOF, en la página oficial de PRODECON y, cuando las condiciones lo permitan, en un lugar visible de la delegación. Para cualquier gestión concreta, debe verificarse que el asunto se hubiera tramitado ante la unidad afectada y que el cómputo alcanzado sea el del 2 de junio de 2026."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "77da7f4d82181d08f03b554fd6d8cda369dcc2a70ce87cbc898041e2ebec0922",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "ACUERDO General número 003/2026 por el que se suspenden actividades y se declara inhábil el día martes 02 de junio de 2026, para la Delegación Yucatán de la Procuraduría de la Defensa del Contribuyente, por motivos de fuerza mayor, derivado de las fuertes lluvias en el Estado de Yucatán.",
+        "location": "caracteres 0-292"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- GOBIERNO DE MÉXICO.- Procuraduría de la Defensa del Contribuyente.",
+        "location": "caracteres 292-6661"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5790202&fecha=10/06/2026",
+    "retrieved_at": "2026-08-13T19:44:18.108586+00:00"
+  },
+  "executive_summary": [
+    "El Acuerdo General 003/2026 suspende actividades y declara inhábil el martes 2 de junio de 2026 únicamente para la Delegación Yucatán de la Procuraduría de la Defensa del Contribuyente. El texto relaciona la medida con las fuertes lluvias en el estado, el aviso meteorológico que pronosticó lluvias torrenciales y la necesidad preventiva de salvaguardar la integridad de personas servidoras públicas y contribuyentes.",
+    "Como efecto, no corren términos ni plazos legales en actos, trámites y procedimientos sustanciados o que deban sustanciarse ante esa delegación durante el día indicado. La publicación no declara una suspensión general de PRODECON ni contempla por sí misma plazos de otros órganos o procedimientos ajenos a la Delegación Yucatán."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "paragraphs": [
+        "La suspensión preserva el cómputo de plazos de asuntos ante la Delegación Yucatán de PRODECON durante un solo día inhábil comunicado por fuerza mayor."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "La suspensión preserva el cómputo de plazos de asuntos ante la Delegación Yucatán de PRODECON durante un solo día inhábil comunicado por fuerza mayor."
+        ],
+        "sector": "Contribuyentes y representantes con asuntos ante PRODECON Yucatán"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5790202&fecha=10/06/2026",
+    "categories": [
+      "Fiscal"
+    ],
+    "content_hash": "ce65db00ac270803852ea3434c4e44b55e455b4562e8f1ac7b1d2d14dafb1a45",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/f525ac27e6c2db68ffb984b7.json",
+    "detail_url": "notas/f525ac27e6c2db68ffb984b7.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Acuerdo General Número",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5790202",
+    "importance": 2,
+    "issuing_body": "Procuraduría de la Defensa del Contribuyente",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-06-10",
+    "official_title": "Acuerdo General número 003/2026 por el que se suspenden actividades y se declara inhábil el día martes 02 de junio de 2026, para la Delegación Yucatán de la Procuraduría de la Defensa del Contribuyente, por motivos de fuerza mayor, derivado de las fuertes lluvias en el Estado de Yucatán.",
+    "published_at": "2026-06-10",
+    "relevance_score": 2,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5790202",
+    "summary_teaser": "PRODECON declaró inhábil el martes 2 de junio de 2026 exclusivamente para su Delegación Yucatán por lluvias intensas y fuerza mayor. No corrieron términos ni plazos legales de actos, trámites o procedimientos ante esa unidad; el acuerdo no extiende la medida a otras delegaciones ni a días distintos.",
+    "title": "PRODECON suspende términos en Yucatán por lluvias",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5790202&fecha=10/06/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Contribuyentes y representantes con asuntos ante PRODECON Yucatán",
+      "deadline": "Día inhábil: 2 de junio de 2026",
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "legal_basis": "Acuerdo General 003/2026; Ley Federal de Procedimiento Administrativo",
+      "paragraphs": [
+        "Si un plazo vencía el 2 de junio de 2026 ante esa delegación, conserve el acuerdo y revise la regla de cómputo aplicable al trámite antes de calcular la fecha subsecuente."
+      ],
+      "trigger": "En expedientes, actos o trámites ante la Delegación Yucatán el 2 de junio de 2026"
+    }
+  ],
+  "schema_version": 8
+}

@@ -1,0 +1,162 @@
+{
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "item": {
+    "ai_generated": true,
+    "authority": "PODER EJECUTIVO SECRETARIA ANTICORRUPCION Y BUEN GOBIERNO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792310&fecha=01/07/2026",
+    "card_body": "## Qué se publicó\n\nEl Diario Oficial de la Federación publicó un oficio circular de la Unidad de Contrataciones Públicas sobre umbrales en moneda nacional para compras federales cubiertas por tratados comerciales.\n\n## Sustancia\n\nEl documento separa importes para dependencias y entidades paraestatales de la Administración Pública Federal, y les asigna vigencia del 1 de julio al 31 de diciembre de 2026.\n\n## Fuente\n\n[Consultar el oficio circular individual de la Unidad de Contrataciones Públicas en el DOF](https://dof.gob.mx/nota_detalle.php?codigo=5792310&fecha=01/07/2026)",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "43ca65b2f4cd670e52983160e3bf66cbaf85994dcdf4bdab1afadf81c3706425",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-1",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/fd44b31fc2ac7514da0bdb28.json",
+    "detail_url": "notas/fd44b31fc2ac7514da0bdb28.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-1"
+        ],
+        "heading": "Tratados y destinatarios de la circular",
+        "paragraphs": [
+          "La parte inicial identifica la circular para unidades contratantes y los acuerdos comerciales a los que se asocian los umbrales. El texto se refiere a procedimientos de contratación de dependencias y entidades federales, sin convertir esa lista en una regla aplicable a contrataciones fuera de esos sujetos."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "heading": "Montos en dólares y pesos",
+        "paragraphs": [
+          "Para dependencias federales se comunican 105,767 dólares en bienes, arrendamientos de bienes muebles y servicios, incluidos los relacionados con obra pública, y 13,749,689 dólares en obra pública. Para entidades paraestatales señala 528,833 y 16,923,484 dólares. Con la conversión indicada, publica los cuatro importes en pesos para el segundo semestre."
+        ]
+      }
+    ],
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Oficio Circular",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "3c795ff354164c4ce6cb18c5e914bdb29bfc9b87cc6c2fec953f1db6895b50df",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "OFICIO Circular con el que se dará a conocer a las dependencias, entidades, órganos administrativos desconcentrados de la Administración Pública Federal, sujetos a la cobertura de los Tratados de Libre Comercio que se indican, la conversión a moneda nacional de los umbrales determinados y actualizados conforme a los capítulos de compras del sector público respectivos, que tendrán vigencia del 1 de julio al 31 de diciembre de 2026.",
+          "location": "caracteres 0-438"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Buen Gobierno.- Secretaría Anticorrupción y Buen Gobierno.- Subsecretaría de Buen Gobierno.- Unidad de Contrataciones Públicas.- Oficio No. UCP/ 230/120/2026.",
+          "location": "caracteres 438-10201"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792310&fecha=01/07/2026",
+      "retrieved_at": "2026-08-13T19:43:32.182625+00:00"
+    },
+    "executive_summary": [
+      "La circular de la Unidad de Contrataciones Públicas comunica montos de contratación cubiertos por tratados comerciales para dependencias y entidades de la Administración Pública Federal. Incluye instrumentos con Estados Unidos y Canadá, Israel, AELC, Unión Europea, Japón, Chile, Alianza del Pacífico, TIPAT y Reino Unido.",
+      "La conversión utiliza el tipo de cambio de 17.3780 pesos por dólar publicado por Banco de México el 2 de junio de 2026. Los importes resultantes se señalan para el periodo del 1 de julio al 31 de diciembre de 2026, con diferencias entre bienes y servicios, obra pública y tipo de entidad."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5792310",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-1"
+        ],
+        "paragraphs": [
+          "Las unidades contratantes federales cuentan con importes convertidos a pesos para contrastar si una contratación cae en el ámbito de los tratados enlistados. La separación entre dependencias y entidades paraestatales evita trasladar un umbral de una categoría institucional a otra."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-1"
+          ],
+          "paragraphs": [
+            "Las áreas de compras de dependencias y entidades paraestatales deben atender a la categoría de contratación y al tratado que corresponda antes de usar el monto comunicado."
+          ],
+          "sector": "Contratación pública federal"
+        }
+      ]
+    },
+    "importance": 2,
+    "issuing_body": "Presidencia de la República",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-09-01T18:46:30.041123+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792310&fecha=01/07/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5792310"
+    },
+    "official_published_at": "2026-07-01",
+    "official_title": "Oficio Circular con el que se dará a conocer a las dependencias, entidades, órganos administrativos desconcentrados de la Administración Pública Federal, sujetos a la cobertura de los Tratados de Libre Comercio que se indican, la conversión a moneda nacional de los umbrales determinados y actualizados conforme a los capítulos de compras del sector público respectivos, que tendrán vigencia del 1 de julio al 31 de diciembre de 2026.",
+    "published_at": "2026-07-01",
+    "published_day": 1,
+    "published_month": 7,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Unidades contratantes federales",
+        "deadline": "Del 1 de julio al 31 de diciembre de 2026",
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "legal_basis": null,
+        "paragraphs": [
+          "Para contrataciones del periodo indicado, contrastar el tipo de sujeto y el objeto contractual con los cuatro umbrales convertidos a pesos y con el tratado listado por la circular."
+        ],
+        "trigger": "Al preparar una contratación potencialmente cubierta por los tratados enumerados"
+      }
+    ],
+    "relevance_score": 3,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5792310",
+    "subtopic_tags": [
+      "administracion publica federal",
+      "organos administrativos desconcentrados"
+    ],
+    "summary": "La circular de la Unidad de Contrataciones Públicas comunica montos de contratación cubiertos por tratados comerciales para dependencias y entidades de la Administración Pública Federal. Incluye instrumentos con Estados Unidos y Canadá, Israel, AELC, Unión Europea, Japón, Chile, Alianza del Pacífico, TIPAT y Reino Unido.\n\nLa conversión utiliza el tipo de cambio de 17.3780 pesos por dólar publicado por Banco de México el 2 de junio de 2026. Los importes resultantes se señalan para el periodo del 1 de julio al 31 de diciembre de 2026, con diferencias entre bienes y servicios, obra pública y tipo de entidad.\n\nLa parte inicial identifica la circular para unidades contratantes y los acuerdos comerciales a los que se asocian los umbrales. El texto se refiere a procedimientos de contratación de dependencias y entidades federales, sin convertir esa lista en una regla aplicable a contrataciones fuera de esos sujetos.\n\nPara dependencias federales se comunican 105,767 dólares en bienes, arrendamientos de bienes muebles y servicios, incluidos los relacionados con obra pública, y 13,749,689 dólares en obra pública. Para entidades paraestatales señala 528,833 y 16,923,484 dólares. Con la conversión indicada, publica los cuatro importes en pesos para el segundo semestre.\n\nLos montos en pesos publicados son 1,838,019 y 238,942,095 para dependencias, y 9,190,060 y 294,096,305 para entidades paraestatales, según la categoría. La circular no sustituye la revisión del tratado aplicable, del sujeto contratante ni del objeto de la contratación; identifica umbrales comunicados para la ventana temporal señalada. Cada cifra conserva una relación con la categoría institucional, de modo que no corresponde usar el importe de una entidad paraestatal como si fuera el de una dependencia federal.\n\nLas unidades contratantes federales cuentan con importes convertidos a pesos para contrastar si una contratación cae en el ámbito de los tratados enlistados. La separación entre dependencias y entidades paraestatales evita trasladar un umbral de una categoría institucional a otra. Las áreas de compras de dependencias y entidades paraestatales deben atender a la categoría de contratación y al tratado que corresponda antes de usar el monto comunicado.\n\nPor ello, la circular debe usarse junto con la categoría institucional, el objeto de la contratación y el tratado respectivo; los montos no constituyen un umbral único para toda compra pública federal.",
+    "summary_teaser": "La Unidad de Contrataciones Públicas comunica los montos en pesos aplicables, del 1 de julio al 31 de diciembre de 2026, a procedimientos federales cubiertos por los tratados comerciales que enumera. Separa los umbrales según dependencias, entidades paraestatales y tipo de contratación para evitar trasladar una categoría a otra.",
+    "title": "Unidad de Contrataciones fija umbrales en pesos para tratados",
+    "topic_tags": [
+      "Derecho administrativo",
+      "Oficio",
+      "Circular"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5792310&fecha=01/07/2026"
+  },
+  "schema_version": 8
+}

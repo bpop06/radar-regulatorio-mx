@@ -1,0 +1,139 @@
+{
+  "coverage": [
+    {
+      "disposition": "not_material",
+      "reason": "Sólo contiene el título de la resolución; la regla de composición y transitorios están en chunk-2.",
+      "source_ref": "chunk-1",
+      "target_sections": []
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Aleación determinada",
+      "paragraphs": [
+        "La parte central de la moneda de diez pesos queda sujeta a acero recubierto de níquel, en lugar de la alpaca plateada señalada como composición previa."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Acuñación futura",
+      "paragraphs": [
+        "Las nuevas monedas pueden comenzar a acuñarse desde el ejercicio 2026 una vez realizados los ajustes técnicos correspondientes."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Vigencia de monedas previas",
+      "paragraphs": [
+        "Las piezas cuya composición se sustituye continúan con el poder liberatorio establecido por la Ley Monetaria hasta que Banco de México las retire de circulación."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "9633c163e3d1c7435b271422ce9895962aecea7293ce1c69b205208ed3180bce",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "RESOLUCIÓN por la que se establece la aleación que se utilizará en la composición metálica de la parte central de la moneda de diez pesos.",
+        "location": "caracteres 0-142"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Gobierno de México.- Hacienda.- Secretaría de Hacienda y Crédito Público.",
+        "location": "caracteres 142-5378"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793377&fecha=13%2F07%2F2026",
+    "retrieved_at": "2026-08-13T19:42:57.229310+00:00"
+  },
+  "executive_summary": [
+    "Hacienda reemplaza la alpaca plateada por acero recubierto de níquel en la parte central de monedas de diez pesos, a partir de la determinación publicada.",
+    "Las piezas con nueva aleación pueden acuñarse desde 2026 después de ajustes técnicos; las anteriores siguen con poder liberatorio hasta que Banco de México las retire."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "paragraphs": [
+        "La resolución fija la aleación de acero recubierto de níquel para la parte central de las monedas de diez pesos y prevé que las piezas con la composición sustituida conserven el poder liberatorio indicado hasta que Banco de México las retire de circulación."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "La fuente distingue la acuñación posible de monedas con la nueva aleación, a partir de 2026 y tras los ajustes técnicos, de la continuidad del poder liberatorio de las monedas cuya composición se sustituye."
+        ],
+        "sector": "Emisión monetaria y recepción de efectivo"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793377&fecha=13%2F07%2F2026",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "4ebad0382f36cde717af7fac2273c0dc9ba50449000ba89957dfe562b1280b03",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/7c5e6c5a60d70ad733f96bf8.json",
+    "detail_url": "notas/7c5e6c5a60d70ad733f96bf8.html",
+    "detected_at": "2026-07-13T12:00:00+00:00",
+    "document_type": "Resolución",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5793377",
+    "importance": 1,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-07-13",
+    "official_title": "Resolución por la que se establece la aleación que se utilizará en la composición metálica de la parte central de la moneda de diez pesos.",
+    "published_at": "2026-07-13",
+    "relevance_score": 1,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5793377",
+    "summary_teaser": "Hacienda determinó que la parte central de las monedas de diez pesos será de acero recubierto de níquel, en sustitución de la alpaca plateada utilizada hasta ahora. Las nuevas piezas podrán acuñarse desde 2026 tras ajustes técnicos. Las monedas anteriores conservan poder liberatorio hasta que Banco de México las retire.",
+    "title": "Hacienda cambia centro de monedas de diez pesos",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5793377&fecha=13/07/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Personas y organizaciones que reciben monedas de diez pesos",
+      "deadline": null,
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "legal_basis": "Transitorio tercero de la Resolución y artículo 5° de la Ley Monetaria de los Estados Unidos Mexicanos",
+      "paragraphs": [
+        "Al recibir monedas de diez pesos cuya composición se sustituye, considerar el transitorio que mantiene su poder liberatorio hasta que Banco de México disponga su retiro de la circulación."
+      ],
+      "trigger": "Recepción de monedas de diez pesos cuya composición se sustituye"
+    }
+  ],
+  "schema_version": 8
+}

@@ -1,0 +1,182 @@
+{
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "item": {
+    "ai_generated": true,
+    "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796484&fecha=18%2F08%2F2026",
+    "card_body": "## Qué se publicó\n\nLa Secretaría de Hacienda autorizó la constitución de una empresa estatal para infraestructura estratégica fronteriza en Piedras Negras.\n\n## Sustancia\n\nLa empresa tendrá por objeto promover, estructurar, administrar, supervisar y financiar proyectos de infraestructura logística, fronteriza y aduanera, incluido el puente internacional que identifica el acuerdo.\n\n## Fuente\n\nLa síntesis se elaboró exclusivamente con la fuente oficial identificada en la evidencia y sus fragmentos extraídos.",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "81c59bea19e7f13c78c68a0394c00ef7ba2640b90329e42d9107aaf9356e2156",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-1",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-3",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/0ad705d51444c7f30d27d25f.json",
+    "detail_url": "notas/0ad705d51444c7f30d27d25f.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2",
+          "chunk-3"
+        ],
+        "heading": "Alcance de la publicación",
+        "paragraphs": [
+          "La Secretaría de Hacienda autorizó la constitución de una empresa estatal para infraestructura estratégica fronteriza en Piedras Negras.",
+          "El acuerdo define el objeto y la integración inicial de la sociedad, y conserva el control estatal sobre los títulos y decisiones previstas."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2",
+          "chunk-3"
+        ],
+        "heading": "Contenido relevante",
+        "paragraphs": [
+          "La empresa tendrá por objeto promover, estructurar, administrar, supervisar y financiar proyectos de infraestructura logística, fronteriza y aduanera, incluido el puente internacional que identifica el acuerdo.",
+          "La autorización crea un vehículo societario para la planeación y gestión de los proyectos estratégicos incluidos en su objeto. Las dependencias y potenciales participantes deben revisar el objeto social, la integración autorizada y los instrumentos específicos que se emitan para cada proyecto."
+        ]
+      }
+    ],
+    "detected_at": "2026-09-01T16:34:47.803209+00:00",
+    "document_type": "Resolución",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "9f63684e8d76f22c7196d5d3a0d0ebdf1b8b521748785f7b2d6f47377463be7e",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "RESOLUCIÓN por la que se autoriza la constitución de una Empresa de Participación Estatal Mayoritaria denominada \" Inversión Mixta Piedras Negras \" , S.A. de C.V.",
+          "location": "caracteres 0-166"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público. · parte 1",
+          "location": "caracteres 166-12166"
+        },
+        {
+          "id": "chunk-3",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público. · parte 2",
+          "location": "caracteres 12166-19901"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796484&fecha=18%2F08%2F2026",
+      "retrieved_at": "2026-09-01T16:35:21.327742+00:00"
+    },
+    "executive_summary": [
+      "La Secretaría de Hacienda autorizó la constitución de una empresa estatal para infraestructura estratégica fronteriza en Piedras Negras. La empresa tendrá por objeto promover, estructurar, administrar, supervisar y financiar proyectos de infraestructura logística, fronteriza y aduanera, incluido el puente internacional que identifica el acuerdo.",
+      "El acuerdo define el objeto y la integración inicial de la sociedad, y conserva el control estatal sobre los títulos y decisiones previstas. La publicación debe aplicarse sin extender sus alcances a situaciones no descritas en la fuente."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-09-01T16:34:47.803209+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5796484",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2",
+          "chunk-3"
+        ],
+        "paragraphs": [
+          "La autorización crea un vehículo societario para la planeación y gestión de los proyectos estratégicos incluidos en su objeto."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-1",
+            "chunk-2",
+            "chunk-3"
+          ],
+          "paragraphs": [
+            "La incidencia para este grupo se limita al alcance expresamente descrito en la publicación y requiere contrastarse con cada caso concreto."
+          ],
+          "sector": "Entidades públicas, posibles participantes privados y usuarios de infraestructura fronteriza"
+        }
+      ]
+    },
+    "importance": 1,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-09-01T18:46:30.041123+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796484&fecha=18/08/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5796484"
+    },
+    "official_published_at": "2026-08-18",
+    "official_title": "Resolución por la que se autoriza la constitución de una Empresa de Participación Estatal Mayoritaria denominada \"Inversión Mixta Piedras Negras\", S.A. de C.V.",
+    "published_at": "2026-08-18",
+    "published_day": 18,
+    "published_month": 8,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Entidades públicas, posibles participantes privados y usuarios de infraestructura fronteriza",
+        "deadline": null,
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2",
+          "chunk-3"
+        ],
+        "legal_basis": null,
+        "paragraphs": [
+          "Las dependencias y potenciales participantes deben revisar el objeto social, la integración autorizada y los instrumentos específicos que se emitan para cada proyecto."
+        ],
+        "trigger": "Cuando la publicación resulte aplicable a la operación o situación revisada."
+      }
+    ],
+    "relevance_score": 1,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5796484",
+    "subtopic_tags": [],
+    "summary": "El documento oficial La Secretaría de Hacienda autorizó la constitución de una empresa estatal para infraestructura estratégica fronteriza en Piedras Negras. La empresa tendrá por objeto promover, estructurar, administrar, supervisar y financiar proyectos de infraestructura logística, fronteriza y aduanera, incluido el puente internacional que identifica el acuerdo.\n\nEl alcance debe leerse dentro de los límites que la propia fuente identifica: El acuerdo define el objeto y la integración inicial de la sociedad, y conserva el control estatal sobre los títulos y decisiones previstas. La información ubica a Entidades públicas, posibles participantes privados y usuarios de infraestructura fronteriza como sujetos principalmente vinculados con el asunto. Por ello, la nota registra la existencia y el contenido comunicado, sin extender la conclusión a personas, operaciones, expedientes o contratos que el texto no menciona.\n\nDesde la gestión de cumplimiento, Las dependencias y potenciales participantes deben revisar el objeto social, la integración autorizada y los instrumentos específicos que se emitan para cada proyecto. La revisión debe partir de la publicación oficial y de la documentación disponible para cada situación concreta. Cuando el documento se refiera a una autorización, una sanción, un trámite, una regla administrativa, una medida de inspección o una propuesta legislativa, conviene distinguir el acto publicado de sus posibles actuaciones posteriores. La fuente no acredita por sí sola el cumplimiento individual, una afectación económica concreta, la procedencia de una solicitud ni un resultado distinto de los expresamente descritos.\n\nEn términos probatorios, esta síntesis se limita a la evidencia extraída y a los localizadores asociados. No atribuye efectos, tratados, montos, plazos, fundamentos, resultados o hechos que no estén contenidos en la publicación. La lectura operativa requiere consultar el texto íntegro, sus anexos y, cuando corresponda, la documentación de la persona o operación involucrada. Esta distinción es especialmente importante para no convertir un comunicado, una referencia registral, una actuación cautelar o una iniciativa en una conclusión definitiva sobre derechos u obligaciones individuales.",
+    "summary_teaser": "Hacienda autorizó la constitución de una empresa de participación estatal mayoritaria para estructurar y administrar infraestructura estratégica en Piedras Negras. El objeto comprende proyectos logísticos, fronterizos, aduaneros y el puente internacional señalado en la publicación. El acuerdo describe su integración accionaria inicial y la conservación del control estatal.",
+    "title": "Hacienda autoriza empresa estatal para infraestructura fronteriza en Piedras Negras",
+    "topic_tags": [
+      "Resolución"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796484&fecha=18/08/2026"
+  },
+  "schema_version": 8
+}

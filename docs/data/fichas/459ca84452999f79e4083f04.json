@@ -1,0 +1,232 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-3",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-4",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-5",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-6",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2",
+        "chunk-3",
+        "chunk-4",
+        "chunk-5",
+        "chunk-6"
+      ],
+      "heading": "Metodología obligatoria",
+      "paragraphs": [
+        "INDAABIN establece una metodología obligatoria para sus peritos valuadores y servicios regulados en tabuladores de valor promedio de tierra y renta anual de sectores hidrocarburos y eléctrico.",
+        "Los tabuladores son referencia para negociaciones y no sustituyen la valuación individualizada de un predio."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2",
+        "chunk-3",
+        "chunk-4",
+        "chunk-5",
+        "chunk-6"
+      ],
+      "heading": "Vigencias y solicitudes",
+      "paragraphs": [
+        "El dictamen puede durar hasta el 31 de diciembre del año de emisión; para tabuladores que cubran todo el año siguiente, la solicitud debe hacerse antes del 31 de octubre del año previo.",
+        "Las solicitudes presentadas antes del 30 de abril del año vigente pueden producir tabuladores con vigencia del 1 de julio al 31 de diciembre; otras solicitudes rigen desde su emisión hasta el cierre del año."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "011aef1d19861613c9cb42f6a3369c8fbdca3ae751349f1b43bfdeed0c6978ba",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "METODOLOGÍA del Instituto de Administración y Avalúos de Bienes Nacionales para determinar y emitir los Tabuladores sobre los valores promedio de la tierra y de renta anual para los sectores hidrocarburos y eléctrico.",
+        "location": "caracteres 0-221"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Instituto de Administración y Avalúos de Bienes Nacionales. · parte 1",
+        "location": "caracteres 221-12221"
+      },
+      {
+        "id": "chunk-3",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Instituto de Administración y Avalúos de Bienes Nacionales. · parte 2",
+        "location": "caracteres 12221-24221"
+      },
+      {
+        "id": "chunk-4",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Instituto de Administración y Avalúos de Bienes Nacionales. · parte 3",
+        "location": "caracteres 24221-36221"
+      },
+      {
+        "id": "chunk-5",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Instituto de Administración y Avalúos de Bienes Nacionales. · parte 4",
+        "location": "caracteres 36221-48221"
+      },
+      {
+        "id": "chunk-6",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Instituto de Administración y Avalúos de Bienes Nacionales. · parte 5",
+        "location": "caracteres 48221-50222"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792789&fecha=07/07/2026",
+    "retrieved_at": "2026-08-13T19:43:05.458021+00:00"
+  },
+  "executive_summary": [
+    "El Instituto de Administración y Avalúos de Bienes Nacionales emitió una metodología para determinar y publicar tabuladores de valor promedio de la tierra y de renta anual aplicables a proyectos de hidrocarburos y del sector eléctrico. Los valores se usan como referencia inicial en negociaciones sobre uso, goce, ocupación, servidumbre o adquisición de terrenos y derechos asociados.",
+    "La metodología es obligatoria para INDAABIN y para los Peritos Valuadores de Bienes Nacionales en servicios valuatorios regulados solicitados por empresas públicas del Estado o personas interesadas, como permisionarios, asignatarios o contratistas. La guía técnica ordena ocho etapas y exige que el perito observe criterios, procedimientos, enfoques y métodos valuatorios para elaborar el dictamen que contiene los tabuladores."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2",
+        "chunk-3",
+        "chunk-4",
+        "chunk-5",
+        "chunk-6"
+      ],
+      "paragraphs": [
+        "Peritos, empresas públicas, asignatarios, permisionarios y contratistas tienen un método obligatorio y plazos definidos para solicitar tabuladores en sectores energéticos."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2",
+          "chunk-3",
+          "chunk-4",
+          "chunk-5",
+          "chunk-6"
+        ],
+        "paragraphs": [
+          "Las negociaciones territoriales de proyectos de hidrocarburos y electricidad deben distinguir el tabulador regional de un avalúo específico y atender sus fechas de vigencia."
+        ],
+        "sector": "Energía, valuación e inmuebles"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792789&fecha=07/07/2026",
+    "categories": [
+      "Fiscal",
+      "Administración centralizada"
+    ],
+    "content_hash": "d5d6d7d18c212fe2bfee1c5d5c87bedc2917cf2c2197053f56d0d0b8f6f0e3a3",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/459ca84452999f79e4083f04.json",
+    "detail_url": "notas/459ca84452999f79e4083f04.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Metodología Del Instituto",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5792789",
+    "importance": 2,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-07-07",
+    "official_title": "Metodología del Instituto de Administración y Avalúos de Bienes Nacionales para determinar y emitir los Tabuladores sobre los valores promedio de la tierra y de renta anual para los sectores hidrocarburos y eléctrico.",
+    "published_at": "2026-07-07",
+    "relevance_score": 2,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5792789",
+    "summary_teaser": "INDAABIN emitió una metodología obligatoria para sus peritos valuadores en tabuladores de valor promedio de tierra y renta anual para hidrocarburos y electricidad. Los tabuladores sirven como referencia de negociación, no como avalúos individuales. La vigencia puede llegar al 31 de diciembre; solicitudes para el año siguiente deben presentarse antes del 31 de octubre.",
+    "title": "INDAABIN actualiza metodología de valores territoriales energéticos",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5792789&fecha=07/07/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "PVBN, empresas públicas, asignatarios, permisionarios y contratistas",
+      "deadline": "31 de octubre del ejercicio anterior; 30 de abril para vigencia del 1 de julio al 31 de diciembre",
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2",
+        "chunk-3",
+        "chunk-4",
+        "chunk-5",
+        "chunk-6"
+      ],
+      "legal_basis": "Ley del Sector Hidrocarburos, Ley del Sector Eléctrico y metodología INDAABIN",
+      "paragraphs": [
+        "Para contar con valores aplicables al año siguiente, solicite los tabuladores antes del 31 de octubre; si la solicitud se presenta durante el año, confirme la vigencia que la metodología asigna según la fecha."
+      ],
+      "trigger": "Solicitud de servicio valuatorio regulado"
+    }
+  ],
+  "schema_version": 8
+}

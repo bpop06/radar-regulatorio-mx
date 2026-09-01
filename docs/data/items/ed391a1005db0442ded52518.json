@@ -1,0 +1,171 @@
+{
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "item": {
+    "ai_generated": true,
+    "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797382&fecha=28%2F08%2F2026",
+    "card_body": "## Qué se publicó\n\nEl Servicio de Administración Tributaria publicó la publicación de un contribuyente respecto del cual se determinó la falsedad general de sus comprobantes fiscales.\n\n## Sustancia\n\nEl anexo identifica a Limpor Asistencia, S.A. de C.V., con RFC LAS2302282S5. El SAT comunica que el contribuyente no desvirtuó la presunción de falsedad de los comprobantes fiscales digitales por Internet emitidos, por lo que éstos se consideran falsos con efectos generales y las operaciones contenidas en ellos no producen ni produjeron efecto fiscal. La publicación se formula conforme al artículo 49 Bis del Código Fiscal de la Federación. Los terceros que recibieron CFDI del contribuyente publicado deben revertir el efecto fiscal que les hubieran dado mediante declaración complementaria. La fuente señala un plazo de 30 días naturales desde la publicación y advierte la restricción temporal del certificado de sello digital en caso de omisión.\n\n## Fuente\n\nFuente oficial: https://dof.gob.mx/nota_detalle.php?codigo=5797382&fecha=28%2F08%2F2026. Extracción: html-adapter; recuperada el 2026-09-01T16:34:55.669310+00:00.",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Fiscal",
+      "Administración centralizada"
+    ],
+    "content_hash": "7d523180170640245ef0bd76ce6c30acbefd75096aacc97dc80e9554528d7fee",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-1",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/ed391a1005db0442ded52518.json",
+    "detail_url": "notas/ed391a1005db0442ded52518.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "heading": "Contenido publicado",
+        "paragraphs": [
+          "El anexo identifica a Limpor Asistencia, S.A. de C.V., con RFC LAS2302282S5. El SAT comunica que el contribuyente no desvirtuó la presunción de falsedad de los comprobantes fiscales digitales por Internet emitidos, por lo que éstos se consideran falsos con efectos generales y las operaciones contenidas en ellos no producen ni produjeron efecto fiscal. La publicación se formula conforme al artículo 49 Bis del Código Fiscal de la Federación.",
+          "La autoridad explica que la difusión en su portal y en el Diario Oficial permite que terceros receptores conozcan la situación. El documento vincula la consecuencia con el incumplimiento del requisito previsto en el artículo 29-A, fracción IX, sin exponer hechos distintos a los contenidos en la resolución notificada al contribuyente."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "heading": "Alcance y lectura práctica",
+        "paragraphs": [
+          "Los terceros que recibieron CFDI del contribuyente publicado deben revertir el efecto fiscal que les hubieran dado mediante declaración complementaria. La fuente señala un plazo de 30 días naturales desde la publicación y advierte la restricción temporal del certificado de sello digital en caso de omisión.",
+          "La ficha se dirige principalmente a receptores de cfdi y responsables fiscales con operaciones documentadas por el contribuyente publicado."
+        ]
+      }
+    ],
+    "detected_at": "2026-09-01T16:34:47.803209+00:00",
+    "document_type": "Oficio",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "2ae94a8ed812bee708157dc68a1a9ceb507fd5c55b9928495891e3943caa1e35",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "OFICIO 500-05-00-00-00-2026-24525 mediante el cual se comunica el nombre y la clave en el Registro Federal de Contribuyentes a que se refiere la fracción X del artículo 49 Bis del Código Fiscal de la Federación.",
+          "location": "caracteres 0-215"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Servicio de Administración Tributaria.- Administración General de Auditoría Fiscal Federal.- Administración Central de Fiscalización Estratégica.",
+          "location": "caracteres 215-7814"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797382&fecha=28%2F08%2F2026",
+      "retrieved_at": "2026-09-01T16:34:55.669310+00:00"
+    },
+    "executive_summary": [
+      "El Servicio de Administración Tributaria difundió la publicación de un contribuyente respecto del cual se determinó la falsedad general de sus comprobantes fiscales. El anexo identifica a Limpor Asistencia, S.A. de C.V., con RFC LAS2302282S5. El SAT comunica que el contribuyente no desvirtuó la presunción de falsedad de los comprobantes fiscales digitales por Internet emitidos, por lo que éstos se consideran falsos con efectos generales y las operaciones contenidas en ellos no producen ni produjeron efecto fiscal. La publicación se formula conforme al artículo 49 Bis del Código Fiscal de la Federación.",
+      "Los terceros que recibieron CFDI del contribuyente publicado deben revertir el efecto fiscal que les hubieran dado mediante declaración complementaria. La fuente señala un plazo de 30 días naturales desde la publicación y advierte la restricción temporal del certificado de sello digital en caso de omisión. La síntesis se limita a los hechos y condiciones expresamente visibles en la fuente oficial."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-09-01T16:34:47.803209+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5797382",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "El efecto observable es el que la publicación atribuye al acto: Los terceros que recibieron CFDI del contribuyente publicado deben revertir el efecto fiscal que les hubieran dado mediante declaración complementaria. La fuente señala un plazo de 30 días naturales desde la publicación y advierte la restricción temporal del certificado de sello digital en caso de omisión."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-2"
+          ],
+          "paragraphs": [
+            "Las personas comprendidas deben considerar el documento porque El anexo identifica a Limpor Asistencia, S.A. de C.V., con RFC LAS2302282S5. El SAT comunica que el contribuyente no desvirtuó la presunción de falsedad de los comprobantes fiscales digitales por Internet emitidos, por lo que éstos se consideran falsos con efectos generales y las operaciones contenidas en ellos no producen ni produjeron efecto fiscal. La publicación se formula conforme al artículo 49 Bis del Código Fiscal de la Federación."
+          ],
+          "sector": "Receptores de CFDI y responsables fiscales con operaciones documentadas por el contribuyente publicado"
+        }
+      ]
+    },
+    "importance": 2,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-09-01T18:46:30.041123+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797382&fecha=28/08/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5797382"
+    },
+    "official_published_at": "2026-08-28",
+    "official_title": "Oficio 500-05-00-00-00-2026-24525 mediante el cual se comunica el nombre y la clave en el Registro Federal de Contribuyentes a que se refiere la fracción X del artículo 49 Bis del Código Fiscal de la Federación.",
+    "published_at": "2026-08-28",
+    "published_day": 28,
+    "published_month": 8,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Receptores de CFDI y responsables fiscales con operaciones documentadas por el contribuyente publicado",
+        "deadline": "30 días naturales contados a partir de la publicación en el DOF.",
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "legal_basis": "Artículo 49 Bis, fracción X, del Código Fiscal de la Federación; artículo 17-H Bis, fracción XIV, del mismo Código para la restricción temporal del certificado de sello digital por incumplimiento.",
+        "paragraphs": [
+          "Localizar CFDI emitidos por el contribuyente identificado, evaluar el efecto fiscal previamente aplicado y atender, si corresponde, el mecanismo y plazo expresamente señalados por el SAT."
+        ],
+        "trigger": "Cuando la persona o entidad se ubique en el ámbito material descrito por la fuente oficial."
+      }
+    ],
+    "relevance_score": 3,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5797382",
+    "subtopic_tags": [
+      "codigo fiscal"
+    ],
+    "summary": "El Servicio de Administración Tributaria publicó la publicación de un contribuyente respecto del cual se determinó la falsedad general de sus comprobantes fiscales. El anexo identifica a Limpor Asistencia, S.A. de C.V., con RFC LAS2302282S5. El SAT comunica que el contribuyente no desvirtuó la presunción de falsedad de los comprobantes fiscales digitales por Internet emitidos, por lo que éstos se consideran falsos con efectos generales y las operaciones contenidas en ellos no producen ni produjeron efecto fiscal. La publicación se formula conforme al artículo 49 Bis del Código Fiscal de la Federación.\n\nLa autoridad explica que la difusión en su portal y en el Diario Oficial permite que terceros receptores conozcan la situación. El documento vincula la consecuencia con el incumplimiento del requisito previsto en el artículo 29-A, fracción IX, sin exponer hechos distintos a los contenidos en la resolución notificada al contribuyente.\n\nLos terceros que recibieron CFDI del contribuyente publicado deben revertir el efecto fiscal que les hubieran dado mediante declaración complementaria. La fuente señala un plazo de 30 días naturales desde la publicación y advierte la restricción temporal del certificado de sello digital en caso de omisión.\n\nLa utilidad práctica de la publicación depende de si la persona o entidad se encuentra dentro del ámbito descrito. La información se presenta con base en el documento oficial disponible y no permite extender efectos a supuestos, periodos, personas o actos que no estén expresamente identificados. Cuando el documento incorpora requisitos, condiciones o mecanismos, éstos deben contrastarse con la ficha, resolución, contrato, expediente o norma específica que corresponda.\n\nPara fines de cumplimiento y trazabilidad, conviene conservar la fuente oficial, su fecha de publicación y los documentos que acrediten la situación concreta. Esta síntesis no sustituye el texto íntegro ni una determinación individual de la autoridad; describe el alcance observable del acto y distingue las consecuencias expresamente publicadas de cualquier inferencia que no está respaldada por la evidencia disponible.",
+    "summary_teaser": "El SAT publicó a Limpor Asistencia, S.A. de C.V. en el supuesto del artículo 49 Bis del Código Fiscal. La autoridad señala que no desvirtuó la presunción de falsedad de los CFDI emitidos; terceros receptores deben revisar el efecto fiscal que dieron a esas operaciones.",
+    "title": "SAT determina efectos fiscales de CFDI falsos de Limpor",
+    "topic_tags": [
+      "Fiscal",
+      "Oficio"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797382&fecha=28/08/2026"
+  },
+  "schema_version": 8
+}

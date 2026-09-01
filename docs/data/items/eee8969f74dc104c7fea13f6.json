@@ -1,0 +1,403 @@
+{
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "item": {
+    "ai_generated": true,
+    "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791844&fecha=26/06/2026",
+    "card_body": "## Qué se publicó\n\nEl Diario Oficial de la Federación publicó el informe de Hacienda sobre participaciones federales de mayo de 2026 y el ajuste definitivo de 2025.\n\n## Sustancia\n\nEl informe presenta recaudación federal participable, fondos, coeficientes y montos para entidades federativas y municipios, con cuadros separados para cada mecánica de distribución.\n\n## Fuente\n\nLa fuente oficial es el Diario Oficial de la Federación. El acto revisado es el acuerdo de Hacienda que da a conocer el informe de participaciones federales y sus procedimientos de cálculo.",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "ac6fc26ba820d346238a8f7907c452751298570c1a5ed0f79dbc29b38936a69c",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "not_material",
+        "reason": "El locator inicial sólo identifica el informe; cifras, fondos, coeficientes y advertencia final están en los quince locators siguientes.",
+        "source_ref": "chunk-1",
+        "target_sections": []
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-3",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-4",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-5",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-6",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-7",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-8",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-9",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-10",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-11",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-12",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-13",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-14",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-15",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-16",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/eee8969f74dc104c7fea13f6.json",
+    "detail_url": "notas/eee8969f74dc104c7fea13f6.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-2",
+          "chunk-3"
+        ],
+        "heading": "Base de mayo y fondos",
+        "paragraphs": [
+          "Los primeros cuadros presentan la base de recaudación federal participable de abril y el cálculo de fondos para mayo. Entre importes comunicados están Fondo General, Fondo de Fomento Municipal, IEPS, compensación, extracción de hidrocarburos y 0.136 por ciento municipal, con fórmulas y coeficientes."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-4",
+          "chunk-5"
+        ],
+        "heading": "Coeficientes y componentes",
+        "paragraphs": [
+          "Las tablas siguientes desarrollan coeficientes de distribución para entidades y municipios, así como componentes del Fondo General y Fondo de Fomento Municipal. La fuente desagrega operaciones y porcentajes usados para cálculo de mayo en lugar de una cifra agregada."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-6"
+        ],
+        "heading": "IEPS, combustibles y compensación",
+        "paragraphs": [
+          "El informe incorpora cuadros de participaciones por IEPS y venta final de gasolina y diésel, además de compensación aplicable. Estos renglones siguen mecanismos propios y se presentan con coeficientes por entidad participante."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-7"
+        ],
+        "heading": "Distribución mensual e hidrocarburos",
+        "paragraphs": [
+          "La integración provisional de mayo suma 100,016,758,076 pesos y muestra componentes de Fondo General, Fondo Municipal, IEPS, Fondo de Extracción y compensación. El fragmento aborda también recursos vinculados con hidrocarburos y su asignación."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-8",
+          "chunk-9"
+        ],
+        "heading": "Municipios y ajuste 2025",
+        "paragraphs": [
+          "Los locators continúan distribución del 0.136 por ciento y abren ajuste definitivo de 2025. El reporte identifica recaudación federal participable final de 4,909,481,973,757 pesos y fondos que se recalculan con información definitiva."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-10",
+          "chunk-11",
+          "chunk-12"
+        ],
+        "heading": "Ajustes de fondos",
+        "paragraphs": [
+          "Las tablas desarrollan ajuste del Fondo General, Fondo de Fomento Municipal e IEPS por entidad. Reportan diferencias al comparar participaciones provisionales con cifras definitivas; son ajustes de 2025 y no una fórmula aislada de mayo."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-13",
+          "chunk-14",
+          "chunk-15"
+        ],
+        "heading": "Fiscalización y 0.136 por ciento",
+        "paragraphs": [
+          "La parte final incorpora coeficientes, fondos de fiscalización, extracción de hidrocarburos y cierre del ajuste municipal del 0.136 por ciento. Las relaciones por entidad y municipio permiten identificar beneficiario y diferencia correspondiente."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-16"
+        ],
+        "heading": "Variabilidad de cifras",
+        "paragraphs": [
+          "La cláusula final aclara que participaciones del mes y cantidades finalmente recibidas pueden variar por ingresos captados, coeficientes aplicables y diferencias de ajuste. Esta precisión limita una lectura de montos provisionales como definitivos."
+        ]
+      }
+    ],
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Acuerdo",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "fc8b42fb1400288a15e4a1f87f31239f2bd724d89c544ffe236f5ff69435e7ad",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "ACUERDO por el cual se da a conocer el informe sobre la recaudación federal participable y las participaciones federales, así como los procedimientos de cálculo, por el mes de mayo de 2026 y por el ajuste definitivo de participaciones del ejercicio de 2025.",
+          "location": "caracteres 0-261"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público. · parte 1",
+          "location": "caracteres 261-12261"
+        },
+        {
+          "id": "chunk-3",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público. · parte 2",
+          "location": "caracteres 12261-24261"
+        },
+        {
+          "id": "chunk-4",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público. · parte 3",
+          "location": "caracteres 24261-36261"
+        },
+        {
+          "id": "chunk-5",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público. · parte 4",
+          "location": "caracteres 36261-48261"
+        },
+        {
+          "id": "chunk-6",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público. · parte 5",
+          "location": "caracteres 48261-60261"
+        },
+        {
+          "id": "chunk-7",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público. · parte 6",
+          "location": "caracteres 60261-72261"
+        },
+        {
+          "id": "chunk-8",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público. · parte 7",
+          "location": "caracteres 72261-84261"
+        },
+        {
+          "id": "chunk-9",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público. · parte 8",
+          "location": "caracteres 84261-96261"
+        },
+        {
+          "id": "chunk-10",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público. · parte 9",
+          "location": "caracteres 96261-108261"
+        },
+        {
+          "id": "chunk-11",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público. · parte 10",
+          "location": "caracteres 108261-120261"
+        },
+        {
+          "id": "chunk-12",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público. · parte 11",
+          "location": "caracteres 120261-132261"
+        },
+        {
+          "id": "chunk-13",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público. · parte 12",
+          "location": "caracteres 132261-144261"
+        },
+        {
+          "id": "chunk-14",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público. · parte 13",
+          "location": "caracteres 144261-156261"
+        },
+        {
+          "id": "chunk-15",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público. · parte 14",
+          "location": "caracteres 156261-168261"
+        },
+        {
+          "id": "chunk-16",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público. · parte 15",
+          "location": "caracteres 168261-168559"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791844&fecha=26/06/2026",
+      "retrieved_at": "2026-08-13T19:43:46.157908+00:00"
+    },
+    "executive_summary": [
+      "El informe de Hacienda comunica distribución de participaciones federales de mayo de 2026 y ajuste definitivo de 2025. La fuente reporta una recaudación federal participable de abril de 466,239,679 miles de pesos para integrar participaciones del mes siguiente.",
+      "El documento separa Fondo General de Participaciones, Fondo de Fomento Municipal, IEPS, compensación, extracción de hidrocarburos y el 0.136 por ciento para municipios fronterizos o litorales. Sus tablas combinan distribución mensual, coeficientes y ajustes anuales, no un pago homogéneo para todas las entidades."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5791844",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-2",
+          "chunk-3"
+        ],
+        "paragraphs": [
+          "Gobiernos locales y tesorerías pueden identificar componentes y diferencias de ajuste en cuadros oficiales. Distinguir mayo provisional de ajuste definitivo 2025 es relevante para conciliaciones, proyecciones y lectura de transferencias."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-2",
+            "chunk-3"
+          ],
+          "paragraphs": [
+            "Tesorerías y órganos de fiscalización locales deben revisar fondo, coeficiente y beneficiario en tablas antes de atribuir un monto a una participación específica."
+          ],
+          "sector": "Finanzas públicas estatales y municipales"
+        }
+      ]
+    },
+    "importance": 1,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-09-01T18:46:30.041123+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791844&fecha=26/06/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5791844"
+    },
+    "official_published_at": "2026-06-26",
+    "official_title": "Acuerdo por el cual se da a conocer el informe sobre la recaudación federal participable y las participaciones federales, así como los procedimientos de cálculo, por el mes de mayo de 2026 y por el ajuste definitivo de participaciones del ejercicio de 2025.",
+    "published_at": "2026-06-26",
+    "published_day": 26,
+    "published_month": 6,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Gobiernos de entidades federativas y municipios participantes",
+        "deadline": null,
+        "evidence_refs": [
+          "chunk-7",
+          "chunk-10",
+          "chunk-15",
+          "chunk-16"
+        ],
+        "legal_basis": null,
+        "paragraphs": [
+          "Conciliar importes con cuadros y coeficientes del fondo correspondiente, separando distribución provisional de mayo del ajuste definitivo de 2025. Considerar variabilidad por ingresos, coeficientes y ajustes que la cláusula final señala."
+        ],
+        "trigger": null
+      }
+    ],
+    "relevance_score": 1,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5791844",
+    "subtopic_tags": [],
+    "summary": "El informe de Hacienda comunica distribución de participaciones federales de mayo de 2026 y ajuste definitivo de 2025. La fuente reporta una recaudación federal participable de abril de 466,239,679 miles de pesos para integrar participaciones del mes siguiente.\n\nEl documento separa Fondo General de Participaciones, Fondo de Fomento Municipal, IEPS, compensación, extracción de hidrocarburos y el 0.136 por ciento para municipios fronterizos o litorales. Sus tablas combinan distribución mensual, coeficientes y ajustes anuales, no un pago homogéneo para todas las entidades.\n\nLos primeros cuadros presentan la base de recaudación federal participable de abril y el cálculo de fondos para mayo. Entre importes comunicados están Fondo General, Fondo de Fomento Municipal, IEPS, compensación, extracción de hidrocarburos y 0.136 por ciento municipal, con fórmulas y coeficientes.\n\nLas tablas siguientes desarrollan coeficientes de distribución para entidades y municipios, así como componentes del Fondo General y Fondo de Fomento Municipal. La fuente desagrega operaciones y porcentajes usados para cálculo de mayo en lugar de una cifra agregada.\n\nEl informe incorpora cuadros de participaciones por IEPS y venta final de gasolina y diésel, además de compensación aplicable. Estos renglones siguen mecanismos propios y se presentan con coeficientes por entidad participante.\n\nLa integración provisional de mayo suma 100,016,758,076 pesos y muestra componentes de Fondo General, Fondo Municipal, IEPS, Fondo de Extracción y compensación. El fragmento aborda también recursos vinculados con hidrocarburos y su asignación.\n\nLos locators continúan distribución del 0.136 por ciento y abren ajuste definitivo de 2025. El reporte identifica recaudación federal participable final de 4,909,481,973,757 pesos y fondos que se recalculan con información definitiva.\n\nLas tablas desarrollan ajuste del Fondo General, Fondo de Fomento Municipal e IEPS por entidad. Reportan diferencias al comparar participaciones provisionales con cifras definitivas; son ajustes de 2025 y no una fórmula aislada de mayo.\n\nLa parte final incorpora coeficientes, fondos de fiscalización, extracción de hidrocarburos y cierre del ajuste municipal del 0.136 por ciento. Las relaciones por entidad y municipio permiten identificar beneficiario y diferencia correspondiente.\n\nLa cláusula final aclara que participaciones del mes y cantidades finalmente recibidas pueden variar por ingresos captados, coeficientes aplicables y diferencias de ajuste. Esta precisión limita una lectura de montos provisionales como definitivos.\n\nLa publicación es un reporte financiero y distributivo con dos temporalidades: mayo de 2026 para participaciones provisionales y 2025 para ajuste definitivo. Las cifras deben conservarse junto con fondo, beneficiario y cuadro de procedencia. La fuente no anuncia obligación general para particulares ni un plazo de cumplimiento distinto de su mecánica pública de distribución.\n\nGobiernos locales y tesorerías pueden identificar componentes y diferencias de ajuste en cuadros oficiales. Distinguir mayo provisional de ajuste definitivo 2025 es relevante para conciliaciones, proyecciones y lectura de transferencias. Tesorerías y órganos de fiscalización locales deben revisar fondo, coeficiente y beneficiario en tablas antes de atribuir un monto a una participación específica. Conciliar importes con cuadros y coeficientes del fondo correspondiente, separando distribución provisional de mayo del ajuste definitivo de 2025. Considerar variabilidad por ingresos, coeficientes y ajustes que la cláusula final señala.",
+    "summary_teaser": "Hacienda publica la distribución de participaciones federales de mayo de 2026 y el ajuste definitivo del ejercicio 2025. El informe separa fondos, coeficientes y montos por entidad y municipio, por lo que las cifras deben leerse conforme al cuadro y mecanismo de cálculo que corresponda.",
+    "title": "Hacienda determina participaciones de mayo y ajuste definitivo de 2025",
+    "topic_tags": [
+      "Acuerdo"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5791844&fecha=26/06/2026"
+  },
+  "schema_version": 8
+}

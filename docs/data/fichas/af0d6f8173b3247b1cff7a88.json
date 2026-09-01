@@ -1,0 +1,139 @@
+{
+  "coverage": [
+    {
+      "disposition": "not_material",
+      "reason": "Sólo enuncia el título del acto.",
+      "source_ref": "chunk-1",
+      "target_sections": []
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Disposición CUARTA: criterios de contingencia declarada",
+      "paragraphs": [
+        "La solicitud o prórroga requiere declaratoria de emergencia o desastre, afectación económica e impacto adverso posible, y pide criterios, zona, tiempo, indicadores y persistencia si se solicita prórroga."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Disposición CUARTA Bis: registros de reorganización",
+      "paragraphs": [
+        "El formato de registros exige un proceso de saneamiento financiero o reestructuración corporativa y evidencia de rubros, importes, causas, indicadores, medidas y aprobación competente."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Aplicación de reglas ordinarias",
+      "paragraphs": [
+        "Las entidades continúan los Anexos 1 y 2 mientras la CNBV resuelve en sesenta días hábiles; el vencimiento sin notificación produce una respuesta negativa."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "7005202649bea5fe1bba3dff125589d73b7cda200748fe48d4bc4f3d97f24aa4",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "RESOLUCIÓN que modifica las Disposiciones de carácter general que establecen los criterios de contabilidad a los que se sujetarán los participantes del mercado de contratos de derivados.",
+        "location": "caracteres 0-190"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Comisión Nacional Bancaria y de Valores.",
+        "location": "caracteres 190-8757"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792666&fecha=06/07/2026",
+    "retrieved_at": "2026-08-13T19:43:12.884997+00:00"
+  },
+  "executive_summary": [
+    "Cámaras de compensación y socios liquidadores reciben dos formatos del Anexo 3: criterios ante emergencia o desastre con afectación económica adversa y registros para saneamiento financiero o reestructuración corporativa.",
+    "Hasta que la CNBV notifique, continúan los criterios de los Anexos 1 y 2; la autoridad tiene sesenta días hábiles y el silencio es negativo."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "paragraphs": [
+        "La reforma preserva criterios ordinarios y exige evidencia delimitada para cualquier excepción contable de cámaras de compensación o socios liquidadores."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "Deben documentar la causal adecuada y la aprobación correspondiente antes de remitir el formato, sin dar efectos anticipados a una solicitud."
+        ],
+        "sector": "Cámaras de compensación, socios liquidadores y áreas de riesgo del mercado de derivados"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792666&fecha=06/07/2026",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "439544ce15637a8a0883a0b3d79a4f050568db93fb66149c226e6926b42577fb",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/af0d6f8173b3247b1cff7a88.json",
+    "detail_url": "notas/af0d6f8173b3247b1cff7a88.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Resolución Que Modifica",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5792666",
+    "importance": 1,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-07-06",
+    "official_title": "Resolución que modifica las Disposiciones de carácter general que establecen los criterios de contabilidad a los que se sujetarán los participantes del mercado de contratos de derivados.",
+    "published_at": "2026-07-06",
+    "relevance_score": 1,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5792666",
+    "summary_teaser": "La CNBV incorporó el Anexo 3 para cámaras de compensación y socios liquidadores del mercado de derivados. Los criterios especiales requieren declaratoria de emergencia o desastre y afectación económica adversa; los registros especiales se vinculan exclusivamente con saneamiento financiero o reestructuración corporativa. Ningún formato autoriza por sí mismo un cambio contable.",
+    "title": "CNBV establece vías contables condicionadas para participantes de derivados",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5792666&fecha=06/07/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Cámaras de Compensación y Socios Liquidadores",
+      "deadline": null,
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "legal_basis": "Disposiciones CUARTA y CUARTA Bis, y Anexo 3",
+      "paragraphs": [
+        "Usen la solicitud de criterios cuando exista declaratoria de emergencia o desastre con el impacto económico requerido; reserven registros para un proceso de saneamiento financiero o reestructuración corporativa acreditable."
+      ],
+      "trigger": "Determinación del tipo de solicitud contable especial"
+    }
+  ],
+  "schema_version": 8
+}

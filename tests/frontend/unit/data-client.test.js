@@ -6,6 +6,7 @@ import {
   archivePathForMonth,
   assertMatchingCut,
   artifactPath,
+  coverageSummary,
   displayTitle,
   editorialLabel,
   fetchJson,
@@ -71,6 +72,19 @@ test("rechaza artefactos v8 cuyo cut_id no coincide", () => {
   assert.throws(() => assertMatchingCut(
     cutManifest, { schema_version: 8 }, "Ficha",
   ), /cut_id no coincide/);
+});
+
+test("la cobertura sólo es completa o degradada con contadores verificables", () => {
+  assert.deepEqual(coverageSummary({
+    state: "degraded", ok: 17, total: 18, failed: ["CIJ"],
+  }), { state: "degraded", ok: 17, total: 18, failed: ["CIJ"] });
+  assert.equal(coverageSummary({ state: "complete", ok: 18, failed: [] }), null);
+  assert.equal(coverageSummary({
+    state: "complete", ok: 18, total: 18, failed: ["CIJ"],
+  }), null);
+  assert.equal(coverageSummary({
+    state: "degraded", ok: 18, total: 18, failed: [], extra: true,
+  }), null);
 });
 
 test("el SLA usa las ventanas de 10:30 y 18:30 de Ciudad de México", () => {

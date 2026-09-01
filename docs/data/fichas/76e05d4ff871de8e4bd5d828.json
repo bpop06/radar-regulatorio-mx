@@ -1,0 +1,115 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    }
+  ],
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-1"
+      ],
+      "heading": "Corrección de la tabla 6",
+      "paragraphs": [
+        "En página 105, tabla 6, la fe de erratas cambia la expresión numérica '= 7 000' por '7 000'. La publicación individualiza la referencia mediante la tabla y no acompaña esa corrección con una modificación adicional de los demás parámetros de la norma."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-1"
+      ],
+      "heading": "Corrección del numeral 5.4.4.4",
+      "paragraphs": [
+        "En página 116, primera línea del segundo párrafo del numeral 5.4.4.4, sustituye una redacción que inicia con 'l as longitudes adicionales inicio' por la frase 'las longitudes adicionales al inicio'. La errata ubica la corrección lingüística en ese pasaje concreto."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "369a4f3ef7b0273648bfcd9b51ff4c348cd51c909ffd40c64b97784cb1e3e8ed",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "FE de erratas a la Norma Oficial Mexicana NOM-037-SICT2-2026, Barreras de protección en carreteras y vías urbanas, publicada el 19 de mayo de 2026.",
+        "location": "caracteres 0-681"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792094&fecha=30/06/2026",
+    "retrieved_at": "2026-08-13T19:43:39.356842+00:00"
+  },
+  "executive_summary": [
+    "La Secretaría publica una fe de erratas relativa a la NOM-037-SICT2-2026 sobre barreras de protección en carreteras y vías urbanas. El documento identifica dos correcciones puntuales dentro de una norma previamente publicada.",
+    "Una corrección recae en la tabla 6 de la página 105 y la otra en la primera línea del segundo párrafo del numeral 5.4.4.4 de la página 116. El texto muestra la lectura que dice y la que debe decir en cada caso."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-1"
+      ],
+      "paragraphs": [
+        "Quienes consulten la norma para diseño, evaluación o documentación de barreras viales deben usar la lectura corregida de tabla 6 y numeral 5.4.4.4. La precisión importa porque la fuente identifica literalmente ambos cambios."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-1"
+        ],
+        "paragraphs": [
+          "Responsables técnicos y verificadores que trabajen con la NOM-037-SICT2-2026 deben incorporar las dos rectificaciones en sus copias de consulta."
+        ],
+        "sector": "Infraestructura carretera y seguridad vial"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792094&fecha=30/06/2026",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "62ff4dad656facdd4370293974d3343bb48914b91cc50756a961d5ab5aa046c7",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/76e05d4ff871de8e4bd5d828.json",
+    "detail_url": "notas/76e05d4ff871de8e4bd5d828.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Fe De Erratas",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5792094",
+    "importance": 2,
+    "issuing_body": "Presidencia de la República",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-06-30",
+    "official_title": "Fe de erratas a la Norma Oficial Mexicana NOM-037-SICT2-2026, Barreras de protección en carreteras y vías urbanas, publicada el 19 de mayo de 2026.",
+    "published_at": "2026-06-30",
+    "relevance_score": 3,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5792094",
+    "summary_teaser": "La fe de erratas de la NOM-037-SICT2-2026 corrige una expresión numérica de la tabla 6 y una frase del numeral 5.4.4.4 sobre barreras de protección en carreteras y vías urbanas. La publicación identifica ambos puntos y no modifica integralmente la norma.",
+    "title": "Fe de erratas modifica dos pasajes de NOM sobre barreras viales",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5792094&fecha=30/06/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Personas que apliquen la NOM-037-SICT2-2026",
+      "deadline": null,
+      "evidence_refs": [
+        "chunk-1"
+      ],
+      "legal_basis": null,
+      "paragraphs": [
+        "Actualizar referencias internas de tabla 6 y segundo párrafo del numeral 5.4.4.4 con las dos lecturas que la fe de erratas ordena. No extender la corrección a disposiciones no modificadas."
+      ],
+      "trigger": null
+    }
+  ],
+  "schema_version": 8
+}

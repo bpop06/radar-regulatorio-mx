@@ -1,0 +1,176 @@
+{
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "item": {
+    "ai_generated": true,
+    "authority": "PODER EJECUTIVO SECRETARIA DE ECONOMIA",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792577&fecha=03/07/2026",
+    "card_body": "## Qué se publicó\n\nEconomía añadió deberes obligatorios de compatibilidad y actualización al marco mexicano de control de bienes de uso dual.\n\n## Sustancia\n\nLas dependencias asegurarán compatibilidad con cuatro regímenes multilaterales; México modificará anexos I a VI y actualizará el acuerdo por controles adicionales de Estados Unidos cuando exista notificación escrita.\n\n## Fuente\n\n[Fuente oficial](https://dof.gob.mx/nota_detalle.php?codigo=5792577&fecha=03/07/2026)",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Comercio exterior",
+      "Administración centralizada"
+    ],
+    "content_hash": "a34a9ca8f4849e8b698d74736bc1cd46f4a96518fcf654809265f06242f1ca3e",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-1",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/cb7491903441bd986ed4d50c.json",
+    "detail_url": "notas/cb7491903441bd986ed4d50c.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "heading": "Deber de compatibilidad",
+        "paragraphs": [
+          "Las dependencias y entidades de la Administración Pública Federal asegurarán la compatibilidad de los controles mexicanos con las listas de Wassenaar, Grupo Australia, Grupo de Suministradores Nucleares y Régimen de Control de Tecnología de Misiles.",
+          "La regla utiliza un mandato de asegurar compatibilidad, no una fórmula de mera conveniencia."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "heading": "Actualización de anexos",
+        "paragraphs": [
+          "México modificará los anexos I a VI para volverlos consistentes con los controles acordados en esos regímenes multilaterales.",
+          "México actualizará oportunamente el acuerdo para adoptar y mantener controles adicionales de exportación vigentes en Estados Unidos cuando exista notificación escrita de ese país."
+        ]
+      }
+    ],
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Acuerdo",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "96172171cbf1e99305dff4d72d31d420a781d7439a84ab1525d283d64f44e46f",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "ACUERDO por el que se modifica el diverso que establece los bienes de uso dual, software y tecnologías cuya exportación está sujeta a regulación por parte de la Secretaría de Economía.",
+          "location": "caracteres 0-188"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Economía.",
+          "location": "caracteres 188-4854"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792577&fecha=03/07/2026",
+      "retrieved_at": "2026-08-13T19:43:17.461385+00:00"
+    },
+    "executive_summary": [
+      "La Secretaría de Economía adicionó los artículos vigésimo octavo, vigésimo noveno y trigésimo al acuerdo que regula la exportación de bienes de uso dual, software y tecnologías. El acuerdo se orienta a las mercancías susceptibles de desvío para proliferación y fabricación de armas convencionales y de destrucción masiva.",
+      "El nuevo artículo vigésimo octavo ordena que las dependencias y entidades de la Administración Pública Federal asegurarán que los controles de México sean compatibles con las listas del Arreglo de Wassenaar, Grupo Australia, Grupo de Suministradores Nucleares y Régimen de Control de Tecnología de Misiles. El verbo empleado es obligatorio y no se limita a una recomendación de coordinación."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5792577",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "El régimen de control de exportaciones queda sujeto a actualizaciones obligatorias que pueden modificar los anexos y controles aplicables a bienes, software y tecnologías duales."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-1",
+            "chunk-2"
+          ],
+          "paragraphs": [
+            "Exportadores y áreas de cumplimiento deben revisar cambios de anexos y controles antes de asumir que una clasificación o requisito previo permanece vigente."
+          ],
+          "sector": "Comercio exterior y controles de exportación"
+        }
+      ]
+    },
+    "importance": 2,
+    "issuing_body": "Secretaría de Economía",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-09-01T18:46:30.041123+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792577&fecha=03/07/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5792577"
+    },
+    "official_published_at": "2026-07-03",
+    "official_title": "Acuerdo por el que se modifica el diverso que establece los bienes de uso dual, software y tecnologías cuya exportación está sujeta a regulación por parte de la Secretaría de Economía.",
+    "published_at": "2026-07-03",
+    "published_day": 3,
+    "published_month": 7,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Dependencias, exportadores y áreas de cumplimiento",
+        "deadline": null,
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "legal_basis": "Ley de Comercio Exterior y acuerdo de bienes de uso dual",
+        "paragraphs": [
+          "Antes de una exportación de bienes, software o tecnología dual, verifique la versión vigente de los anexos y cualquier actualización publicada conforme a los nuevos artículos."
+        ],
+        "trigger": "Actualización normativa o evaluación de exportación de uso dual"
+      }
+    ],
+    "relevance_score": 2,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5792577",
+    "subtopic_tags": [
+      "exportacion"
+    ],
+    "summary": "La Secretaría de Economía adicionó los artículos vigésimo octavo, vigésimo noveno y trigésimo al acuerdo que regula la exportación de bienes de uso dual, software y tecnologías. El acuerdo se orienta a las mercancías susceptibles de desvío para proliferación y fabricación de armas convencionales y de destrucción masiva.\n\nEl nuevo artículo vigésimo octavo ordena que las dependencias y entidades de la Administración Pública Federal asegurarán que los controles de México sean compatibles con las listas del Arreglo de Wassenaar, Grupo Australia, Grupo de Suministradores Nucleares y Régimen de Control de Tecnología de Misiles. El verbo empleado es obligatorio y no se limita a una recomendación de coordinación.\n\nEl artículo vigésimo noveno establece que México modificará los anexos I a VI del acuerdo para hacerlos consistentes con los controles acordados en esos cuatro regímenes multilaterales. El artículo trigésimo añade que México actualizará oportunamente el instrumento para adoptar y mantener los controles adicionales a la exportación vigentes en Estados Unidos, con base en una notificación escrita de ese país.\n\nLa modificación no identifica en el aviso una mercancía concreta ni declara una restricción individual para una exportación específica; establece directrices y deberes de actualización del marco de control. Exportadores y equipos de cumplimiento deben vigilar las modificaciones de anexos y no asumir que los listados anteriores permanecen intactos cuando se publiquen los ajustes ordenados.\n\nLas dependencias y entidades de la Administración Pública Federal asegurarán la compatibilidad de los controles mexicanos con las listas de Wassenaar, Grupo Australia, Grupo de Suministradores Nucleares y Régimen de Control de Tecnología de Misiles. La regla utiliza un mandato de asegurar compatibilidad, no una fórmula de mera conveniencia. México modificará los anexos I a VI para volverlos consistentes con los controles acordados en esos regímenes multilaterales. México actualizará oportunamente el acuerdo para adoptar y mantener controles adicionales de exportación vigentes en Estados Unidos cuando exista notificación escrita de ese país.",
+    "summary_teaser": "Economía modificó el acuerdo de bienes de uso dual para obligar a dependencias y entidades a asegurar compatibilidad con los principales regímenes multilaterales de control. México deberá modificar los anexos y actualizar oportunamente el acuerdo para mantener controles adicionales vigentes en Estados Unidos cuando exista notificación escrita.",
+    "title": "México obliga compatibilidad de controles para bienes duales",
+    "topic_tags": [
+      "Comercio exterior",
+      "Acuerdo"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5792577&fecha=03/07/2026"
+  },
+  "schema_version": 8
+}

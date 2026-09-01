@@ -1,0 +1,214 @@
+{
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "item": {
+    "ai_generated": true,
+    "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792788&fecha=07/07/2026",
+    "card_body": "## Qué se publicó\n\nINDAABIN reguló la operación de sus órganos colegiados de aprovechamiento inmobiliario.\n\n## Sustancia\n\nLos proyectos de acta y minuta se envían en cinco días hábiles, hay otros cinco días para observaciones y el silencio implica aceptación. Los acuerdos se siguen hasta su conclusión y pueden modificarse con nueva información.\n\n## Fuente\n\n[Fuente oficial](https://dof.gob.mx/nota_detalle.php?codigo=5792788&fecha=07/07/2026)",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "7646beded3f6251f913172a7b75fcbdbe98c231dd2358926bc88e78ab557051e",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-1",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-3",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-4",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/1aabed1279ea09ad4e01846d.json",
+    "detail_url": "notas/1aabed1279ea09ad4e01846d.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2",
+          "chunk-3",
+          "chunk-4"
+        ],
+        "heading": "Objeto y operación colegiada",
+        "paragraphs": [
+          "Las reglas organizan el Comité y Subcomité de Aprovechamiento Inmobiliario para analizar el mejor uso de inmuebles federales y dar seguimiento a sus acuerdos.",
+          "El Subcomité revisa los asuntos antes de que lleguen al Comité, salvo modificaciones a acuerdos ya aprobados."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2",
+          "chunk-3",
+          "chunk-4"
+        ],
+        "heading": "Actas, observaciones y acuerdos",
+        "paragraphs": [
+          "Los proyectos de acta o minuta deben circularse dentro de cinco días hábiles posteriores a la sesión; sus destinatarios cuentan con los mismos cinco días hábiles para observarlos.",
+          "La falta de observaciones implica aceptación; las versiones aprobadas se resguardan y los acuerdos pueden modificarse en sesión si surge información o circunstancias nuevas."
+        ]
+      }
+    ],
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Reglas Para",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "ef6aa838cf56b82cdaf3ce84a445a9230bf0b76dc8a594c54c560d94ca39df70",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "REGLAS para la integración y operación del Comité y Subcomité de Aprovechamiento Inmobiliario del Instituto de Administración y Avalúos de Bienes Nacionales.",
+          "location": "caracteres 0-161"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Instituto de Administración y Avalúos de Bienes Nacionales. · parte 1",
+          "location": "caracteres 161-12161"
+        },
+        {
+          "id": "chunk-3",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Instituto de Administración y Avalúos de Bienes Nacionales. · parte 2",
+          "location": "caracteres 12161-24161"
+        },
+        {
+          "id": "chunk-4",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Instituto de Administración y Avalúos de Bienes Nacionales. · parte 3",
+          "location": "caracteres 24161-31928"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792788&fecha=07/07/2026",
+      "retrieved_at": "2026-08-13T19:43:10.162248+00:00"
+    },
+    "executive_summary": [
+      "El Instituto de Administración y Avalúos de Bienes Nacionales emitió reglas para integrar y operar el Comité de Aprovechamiento Inmobiliario y su Subcomité. El Comité analiza y determina acciones para el mejor uso y aprovechamiento de inmuebles federales competencia de la Secretaría de Hacienda cuando no resulten útiles al servicio público o no sean de uso común.",
+      "Las reglas fijan integrantes, voto, suplencias, sesiones ordinarias y extraordinarias, convocatorias, integración de expedientes, seguimiento de acuerdos y uso de tecnologías. El Comité celebra cuatro sesiones ordinarias por ejercicio, mientras que los asuntos que lleguen al Comité deben ser previamente revisados por el Subcomité, salvo cambios a acuerdos ya aprobados."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5792788",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2",
+          "chunk-3",
+          "chunk-4"
+        ],
+        "paragraphs": [
+          "Las unidades integrantes del Comité y Subcomité tienen una ruta procedimental y plazos concretos para documentar sesiones y dar seguimiento a acuerdos inmobiliarios."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-1",
+            "chunk-2",
+            "chunk-3",
+            "chunk-4"
+          ],
+          "paragraphs": [
+            "Las áreas del INDAABIN deben organizar expedientes, actas y seguimiento de acuerdos con los plazos y responsabilidades que fijan las reglas."
+          ],
+          "sector": "Administración de inmuebles federales"
+        }
+      ]
+    },
+    "importance": 1,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-09-01T18:46:30.041123+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792788&fecha=07/07/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5792788"
+    },
+    "official_published_at": "2026-07-07",
+    "official_title": "Reglas para la integración y operación del Comité y Subcomité de Aprovechamiento Inmobiliario del Instituto de Administración y Avalúos de Bienes Nacionales.",
+    "published_at": "2026-07-07",
+    "published_day": 7,
+    "published_month": 7,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Integrantes del Comité y Subcomité de Aprovechamiento Inmobiliario",
+        "deadline": "Cinco días hábiles para circular acta o minuta y cinco días hábiles para observaciones",
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2",
+          "chunk-3",
+          "chunk-4"
+        ],
+        "legal_basis": "Reglas de integración y operación del Comité y Subcomité de Aprovechamiento Inmobiliario",
+        "paragraphs": [
+          "Después de cada sesión o reunión, envíe el proyecto de acta o minuta dentro de cinco días hábiles y remita observaciones dentro del mismo plazo si se requieren cambios."
+        ],
+        "trigger": "Celebración de sesión del Comité o reunión del Subcomité"
+      }
+    ],
+    "relevance_score": 1,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5792788",
+    "subtopic_tags": [],
+    "summary": "El Instituto de Administración y Avalúos de Bienes Nacionales emitió reglas para integrar y operar el Comité de Aprovechamiento Inmobiliario y su Subcomité. El Comité analiza y determina acciones para el mejor uso y aprovechamiento de inmuebles federales competencia de la Secretaría de Hacienda cuando no resulten útiles al servicio público o no sean de uso común.\n\nLas reglas fijan integrantes, voto, suplencias, sesiones ordinarias y extraordinarias, convocatorias, integración de expedientes, seguimiento de acuerdos y uso de tecnologías. El Comité celebra cuatro sesiones ordinarias por ejercicio, mientras que los asuntos que lleguen al Comité deben ser previamente revisados por el Subcomité, salvo cambios a acuerdos ya aprobados.\n\nLos artículos 41 a 44 establecen plazos operativos concretos: los proyectos de acta y minuta se envían por correo institucional dentro de los cinco días hábiles posteriores a la sesión o reunión; integrantes y asistentes tienen un plazo igual desde su recepción para remitir observaciones o adiciones. Si ese plazo vence sin observaciones, los proyectos se tienen por aceptados en todos sus términos.\n\nEl acta y minuta aprobadas quedan bajo resguardo de la Secretaría Ejecutiva o de la Coordinación respectiva. Los integrantes del Comité están obligados a cumplir sus acuerdos e informar periódicamente su estatus y avance, y los acuerdos pueden modificarse si hay nueva información u otras circunstancias que permitan replantearlos mediante decisión adoptada en sesión.\n\nLas reglas organizan el Comité y Subcomité de Aprovechamiento Inmobiliario para analizar el mejor uso de inmuebles federales y dar seguimiento a sus acuerdos. El Subcomité revisa los asuntos antes de que lleguen al Comité, salvo modificaciones a acuerdos ya aprobados. Los proyectos de acta o minuta deben circularse dentro de cinco días hábiles posteriores a la sesión; sus destinatarios cuentan con los mismos cinco días hábiles para observarlos. La falta de observaciones implica aceptación; las versiones aprobadas se resguardan y los acuerdos pueden modificarse en sesión si surge información o circunstancias nuevas.",
+    "summary_teaser": "INDAABIN emitió reglas para su Comité y Subcomité de Aprovechamiento Inmobiliario. Los proyectos de acta o minuta deben enviarse dentro de cinco días hábiles, sus destinatarios tienen el mismo plazo para observarlos y el silencio implica aceptación. Las reglas regulan decisiones sobre inmuebles federales y reemplazan disposiciones internas anteriores.",
+    "title": "INDAABIN fija plazos para actas de aprovechamiento inmobiliario",
+    "topic_tags": [],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5792788&fecha=07/07/2026"
+  },
+  "schema_version": 8
+}

@@ -6,7 +6,7 @@ import httpx
 import pytest
 
 from app.models import Candidate, SourceResult
-from app.pipeline import _collect_source, _deduplicate, _dof_previous_day_reviewed
+from app.pipeline import _collect_results, _collect_source, _deduplicate, _dof_previous_day_reviewed
 from app.relevance import classify
 from app.sources.base import Collector, SourceContractError
 from app.sources.certification import RELAUNCH_SOURCES, certification_report
@@ -135,6 +135,23 @@ def test_senado_parser_excludes_points_of_agreement():
     assert SenadoCollector.parse(payload, date(2026, 5, 1)) == []
 
 
+def test_senado_parser_rejects_external_document_link():
+    payload = {
+        "data": [
+            {
+                "fecha_documento": "01/06/2026",
+                "titulo_docuemnto": "Proyecto de decreto fiscal.",
+                "tema_documento": "Impuestos",
+                "link_documento": "https://evil.example/documento/1",
+                "organo": "Senado",
+                "tipo_documento": "Iniciativa de Ley",
+            }
+        ]
+    }
+
+    assert SenadoCollector.parse(payload, date(2026, 5, 1)) == []
+
+
 def test_platiica_parser_accepts_valid_empty_list_and_stable_post_id():
     assert PlatiicaCollector.parse([], date(2026, 8, 1)) == []
 
@@ -167,6 +184,25 @@ def test_snice_parser_uses_official_actualidad_block():
     assert len(items) == 1
     assert items[0].published_at == date(2026, 8, 12)
     assert items[0].url == "https://www.snice.gob.mx/~oracle/SNICE_DOCS/aviso.pdf"
+
+
+@pytest.mark.parametrize(
+    "href",
+    [
+        "https://evil.example/act.pdf",
+        "//evil.example/act.pdf",
+        "https://usuario@www.snice.gob.mx/act.pdf",
+    ],
+)
+def test_snice_parser_rejects_off_domain_or_credentialed_links(href: str) -> None:
+    payload = f"""
+    <html><body><!-- ACTUALIDAD -->
+    <section id=\"actualidad\"><p><a href=\"{href}\">
+    12.08.2026 Aviso sobre cupos de importación y compromisos arancelarios del TIPAT
+    </a></p></section></body></html>
+    """
+
+    assert SniceCollector.parse(payload, date(2026, 8, 1)) == []
 
 
 def test_snice_parser_ignores_empty_projects_status_and_keeps_documents():
@@ -857,7 +893,12 @@ def test_cij_parser_does_not_infer_case_number_from_non_official_or_non_case_url
         href,
     )
 
-    item = CijCollector.parse(payload, date(2026, 7, 1))[0]
+    items = CijCollector.parse(payload, date(2026, 7, 1))
+
+    if href.startswith("https://example.test"):
+        assert items == []
+        return
+    item = items[0]
 
     assert not item.case_number
     assert "case_number" not in item.official_evidence
@@ -1048,6 +1089,22 @@ def test_worldbank_parser_filters_by_since():
     items = WorldBankCollector.parse(WB_PAYLOAD, date(2026, 1, 1))
     urls = [item.url for item in items]
     assert not any("2019" in url for url in urls)
+
+
+def test_worldbank_parser_rejects_external_url():
+    payload = {
+        "documents": {
+            "doc": {
+                "id": "doc",
+                "url": "https://evil.example/noticia",
+                "title": {"cdata!": "Comunicado aparente"},
+                "descr": {"cdata!": "Descripción aparente"},
+                "lnchdt": "2026-07-01T18:04:00Z",
+            }
+        }
+    }
+
+    assert WorldBankCollector.parse(payload, date(2026, 6, 1)) == []
 
 
 # --- CIADI (ICSID) ----------------------------------------------------------
@@ -1552,6 +1609,73 @@ def test_pipeline_never_reports_ok_without_a_validated_endpoint():
     assert status["status"] == "degraded"
     assert status["validated_endpoints"] == 0
     assert "ningún endpoint" in status["warnings"][0]
+
+
+def test_pipeline_deadline_degrades_only_the_hanging_source() -> None:
+    class HangingCollector(Collector):
+        source = "Fuente lenta"
+
+        def __init__(self) -> None:
+            super().__init__(client=None)
+            self.unfinished_work = {"queued_pages": 7}
+
+        async def collect(self, since: date):
+            del since
+            await asyncio.Event().wait()
+
+    class FastCollector(Collector):
+        source = "Fuente rápida"
+
+        async def collect(self, since: date):
+            del since
+            self.diagnostics.validated_endpoints = 1
+            return []
+
+    results = asyncio.run(
+        _collect_results(
+            [HangingCollector(), FastCollector(client=None)],
+            date(2026, 8, 1),
+            attempts=1,
+            backoff_seconds=0,
+            source_deadline_seconds=0.01,
+            collection_deadline_seconds=0.5,
+        )
+    )
+
+    assert [result.status_dict()["status"] for result in results] == ["degraded", "ok"]
+    assert results[0].details["unfinished_work"] == {"queued_pages": 7}
+    assert results[0].details["deadline_scope"] == "fuente"
+
+
+def test_pipeline_total_deadline_marks_only_unfinished_collectors() -> None:
+    class HangingCollector(Collector):
+        source = "Fuente lenta"
+
+        async def collect(self, since: date):
+            del since
+            await asyncio.Event().wait()
+
+    class FastCollector(Collector):
+        source = "Fuente rápida"
+
+        async def collect(self, since: date):
+            del since
+            self.diagnostics.validated_endpoints = 1
+            return []
+
+    results = asyncio.run(
+        _collect_results(
+            [FastCollector(client=None), HangingCollector(client=None)],
+            date(2026, 8, 1),
+            attempts=1,
+            backoff_seconds=0,
+            source_deadline_seconds=1,
+            collection_deadline_seconds=0.01,
+        )
+    )
+
+    assert [result.status_dict()["status"] for result in results] == ["ok", "degraded"]
+    assert results[1].details["deadline_scope"] == "colección completa"
 
 
 def test_dof_previous_day_review_requires_a_healthy_validated_result():

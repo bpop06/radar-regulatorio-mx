@@ -1,0 +1,141 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "heading": "Resolución y periodo de inhabilitación",
+      "paragraphs": [
+        "La circular deriva de la resolución contenida en el oficio SABG/OICKDN/AR/238/2026, de 14 de mayo de 2026, en el expediente PA-001/2026 AICM. El Área de Responsabilidades del Órgano Interno de Control en el AICM comunica para Garza Gas, S.A. de C.V. una multa de 967,896 pesos y una inhabilitación temporal de veintiún meses y dieciocho días para participar directamente o por interpósita persona en procedimientos de contratación o celebrar contratos regulados por la Ley de Adquisiciones, Arrendamientos y Servicios del Sector Público.",
+        "Los destinatarios incluyen dependencias y entidades federales, la Fiscalía General de la República, empresas públicas del Estado, demarcaciones de Ciudad de México y entidades federativas y municipios. La circular no formula una prohibición comercial general fuera de la materia de adquisiciones que expresa, por lo que su aplicación debe respetar el ámbito material de la resolución."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Abstención, pago y excepción",
+      "paragraphs": [
+        "La instrucción de abstenerse de aceptar propuestas o celebrar contratos opera desde el día siguiente a la publicación y durante el periodo de inhabilitación. Si Garza Gas no paga la multa al concluir el plazo, la inhabilitación subsiste hasta el pago y la entrega de la prueba correspondiente ante la Secretaría Anticorrupción y Buen Gobierno para la eliminación del registro en Compras MX.",
+        "Los contratos adjudicados y los formalizados con la empresa no quedan comprendidos en la aplicación de la circular, conforme a la disposición reglamentaria que cita. La exclusión no releva de analizar obligaciones contractuales, modificaciones o nuevos procedimientos que se puedan presentar fuera de los instrumentos preexistentes."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "ef59a4a5bef37d9726e45bee73cee8c429fd0a1bc10ab26053d39c8451fe9645",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "CIRCULAR por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a la Fiscalía General de la República, a las empresas públicas del Estado, a las demarcaciones territoriales de la Ciudad de México, así como a las entidades federativas y sus municipios, que deberán abstenerse de aceptar propuestas o celebrar contratos con la empresa Garza Gas, S. A. de C.V.",
+        "location": "caracteres 0-398"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Buen Gobierno.- Secretaría Anticorrupción y Buen Gobierno.- Órgano Interno de Control en el Aeropuerto Internacional de la Ciudad de México, S.A. de C.V.- Área de Responsabilidades.- Expediente: PA-001/2026 AICM.",
+        "location": "caracteres 398-8178"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5790010&fecha=09/06/2026",
+    "retrieved_at": "2026-08-13T19:44:27.217342+00:00"
+  },
+  "executive_summary": [
+    "La circular deriva de la resolución contenida en el oficio SABG/OICKDN/AR/238/2026, de 14 de mayo de 2026, en el expediente PA-001/2026 AICM. El Área de Responsabilidades del Órgano Interno de Control en el AICM comunica para Garza Gas, S.A. de C.V. una multa de 967,896 pesos y una inhabilitación temporal de veintiún meses y dieciocho días para participar directamente o por interpósita persona en procedimientos de contratación o celebrar contratos regulados por la Ley de Adquisiciones, Arrendamientos y Servicios del Sector Público.",
+    "Los destinatarios incluyen dependencias y entidades federales, la Fiscalía General de la República, empresas públicas del Estado, demarcaciones de Ciudad de México y entidades federativas y municipios. La circular no formula una prohibición comercial general fuera de la materia de adquisiciones que expresa, por lo que su aplicación debe respetar el ámbito material de la resolución."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "paragraphs": [
+        "Garza Gas no puede intervenir en nuevas contrataciones cubiertas por la circular durante el plazo de inhabilitación, pero los contratos adjudicados y formalizados se tratan conforme a la excepción expresada."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "Garza Gas no puede intervenir en nuevas contrataciones cubiertas por la circular durante el plazo de inhabilitación, pero los contratos adjudicados y formalizados se tratan conforme a la excepción expresada."
+        ],
+        "sector": "Unidades compradoras y participantes en procedimientos de contratación pública"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5790010&fecha=09/06/2026",
+    "categories": [
+      "Penal",
+      "Administración centralizada"
+    ],
+    "content_hash": "df9c6777b4d54364a8550e3d59542d1795d788e4c957bbf88d2abbb4c6c4b7d6",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/4a65fcc3cf0d92efc74e8239.json",
+    "detail_url": "notas/4a65fcc3cf0d92efc74e8239.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Circular",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5790010",
+    "importance": 2,
+    "issuing_body": "Presidencia de la República",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-06-09",
+    "official_title": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a la Fiscalía General de la República, a las empresas públicas del Estado, a las demarcaciones territoriales de la Ciudad de México, así como a las entidades federativas y sus municipios, que deberán abstenerse de aceptar propuestas o celebrar contratos con la empresa Garza Gas, S.A. de C.V.",
+    "published_at": "2026-06-09",
+    "relevance_score": 3,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5790010",
+    "summary_teaser": "El Órgano Interno de Control en el AICM comunicó la inhabilitación temporal de Garza Gas, S.A. de C.V. por veintiún meses y dieciocho días, junto con una multa de 967,896 pesos. La circular obliga a abstenerse de aceptar propuestas o contratar con la empresa en los supuestos señalados y preserva los contratos previamente adjudicados o formalizados.",
+    "title": "Autoridad inhabilita a Garza Gas en contratación pública",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5790010&fecha=09/06/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Unidades compradoras y participantes en procedimientos de contratación pública",
+      "deadline": "Veintiún meses y dieciocho días, con posible subsistencia hasta pago de multa",
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "legal_basis": "Circular del expediente PA-001/2026 AICM; Ley de Adquisiciones, Arrendamientos y Servicios del Sector Público",
+      "paragraphs": [
+        "Verifique la razón social, el plazo aplicable y si la operación es un nuevo procedimiento o contrato; conserve el soporte de la verificación antes de aceptar una propuesta o formalizar una contratación."
+      ],
+      "trigger": "Desde el día siguiente a la publicación de la circular"
+    }
+  ],
+  "schema_version": 8
+}

@@ -38,6 +38,25 @@ from app.validation import (
     validate_site_artifacts,
 )
 
+COLLECTION_REUSE_FINGERPRINT_VERSION = 1
+
+
+def _collection_fingerprint(settings: Settings, days: int | None) -> dict[str, Any]:
+    """Describe los parámetros que pueden cambiar una corrida reutilizable."""
+
+    return {
+        "version": COLLECTION_REUSE_FINGERPRINT_VERSION,
+        "lookback_days": days if days is not None else settings.lookback_days,
+        "minimum_relevance": settings.minimum_relevance,
+        "local_timezone": settings.local_timezone,
+        "request_timeout": settings.request_timeout,
+        "source_retries": settings.source_retries,
+        "source_retry_backoff_seconds": settings.source_retry_backoff_seconds,
+        "source_deadline_seconds": settings.source_deadline_seconds,
+        "collection_deadline_seconds": settings.collection_deadline_seconds,
+        "extractor_version": EXTRACTOR_VERSION,
+    }
+
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="Recolecta novedades regulatorias mexicanas")
@@ -167,6 +186,12 @@ def build_parser() -> argparse.ArgumentParser:
     retract_parser.add_argument(
         "--input", type=Path, default=Path("docs/data/publications.json")
     )
+    retract_parser.add_argument(
+        "--db",
+        type=Path,
+        default=None,
+        help="base privada cuyo directorio conserva la bitácora de restauración",
+    )
     retract_parser.add_argument("--edition-output", type=Path, default=None)
 
     restore_parser = subparsers.add_parser(
@@ -176,6 +201,12 @@ def build_parser() -> argparse.ArgumentParser:
     restore_parser.add_argument("ids", nargs="+")
     restore_parser.add_argument(
         "--input", type=Path, default=Path("docs/data/publications.json")
+    )
+    restore_parser.add_argument(
+        "--db",
+        type=Path,
+        default=None,
+        help="base privada cuyo directorio conserva la bitácora de restauración",
     )
     restore_parser.add_argument("--edition-output", type=Path, default=None)
 
@@ -265,7 +296,9 @@ def main() -> None:
         )
         raise SystemExit(2)
     elif args.command == "export-site":
-        with Storage(args.db or settings.database_path) as storage:
+        with Storage(
+            args.db or settings.database_path, max_bytes=settings.state_max_bytes
+        ) as storage:
             payload = storage.export_payload()
             all_private_items = storage.all_documents()
         if args.complete_only:
@@ -330,6 +363,7 @@ def main() -> None:
         database = args.db or Path(settings.database_path)
         reused_run = False
         collection_clock: str | None = None
+        collection_fingerprint = _collection_fingerprint(settings, args.days)
         private_payload: dict[str, Any] | None = None
         if args.bootstrap_input is not None:
             raw_bootstrap = json.loads(
@@ -372,7 +406,7 @@ def main() -> None:
             private_payload["total_items"] = len(private_payload.get("items", []))
             collection_clock = datetime.now(UTC).isoformat()
         elif Path(database).exists():
-            with Storage(database) as existing:
+            with Storage(database, max_bytes=settings.state_max_bytes) as existing:
                 metrics = existing.latest_cut_metrics()
                 generated = (
                     metrics.get("last_network_collection_at")
@@ -386,7 +420,11 @@ def main() -> None:
                     ).total_seconds()
                 except (TypeError, ValueError):
                     age = float("inf")
-                if 0 <= age <= 600:
+                if (
+                    0 <= age <= 600
+                    and metrics is not None
+                    and metrics.get("collection_fingerprint") == collection_fingerprint
+                ):
                     private_payload = existing.export_payload()
                     reused_run = not any(
                         item.get("source_revalidation_status") == "pending"
@@ -400,7 +438,7 @@ def main() -> None:
                 payload, settings.local_timezone, force=True
             )
             collection_clock = datetime.now(UTC).isoformat()
-        with Storage(database) as storage:
+        with Storage(database, max_bytes=settings.state_max_bytes) as storage:
             if not reused_run:
                 storage.save_run(private_payload)
             extractor = DocumentExtractor(
@@ -545,6 +583,9 @@ def main() -> None:
             storage.update_document_fields_atomic(updates)
             post_payload = storage.export_payload()
             post_items = post_payload.get("items", [])
+            complete_items = sum(
+                item.get("extraction_status") == "complete" for item in post_items
+            )
             durations = [result.duration_seconds for result in results]
             reused_complete = sum(
                 item.get("extraction_status") == "complete"
@@ -553,9 +594,12 @@ def main() -> None:
                 for item in post_items
             )
             cached_results = sum(result.cache_hit for result in results)
+            storage_info = storage.report()
             metrics = {
                 "generated_at": datetime.now(UTC).isoformat(),
                 "last_network_collection_at": collection_clock,
+                "collection_fingerprint": collection_fingerprint,
+                "run_reused": reused_run,
                 "duration_seconds": time.monotonic() - started,
                 "p50_seconds": statistics.median(durations) if durations else 0.0,
                 "p95_seconds": _percentile(durations, 0.95),
@@ -573,10 +617,17 @@ def main() -> None:
                     for item in post_items
                 ),
                 "total_items": len(post_items),
+                "state_size_bytes": storage_info.size_bytes + storage_info.sidecar_bytes,
+                "state_max_bytes": storage_info.state_max_bytes,
+                "cache_entries": storage_info.cache_entries,
+                "cache_bytes": storage_info.cache_bytes,
             }
             storage.save_cut_metrics(metrics)
-        completed = sum(result.status == "complete" for result in results)
-        print(f"Preparados {len(results)} registros; {completed} con extracción completa")
+        print(
+            "Cola preparada: "
+            f"total={len(post_items)}; extracción_completa={complete_items}; "
+            f"reutilizados={reused_complete}"
+        )
     elif args.command == "editorial-queue":
         requested_output = args.output.expanduser()
         output_parent = requested_output.parent.resolve()
@@ -591,7 +642,9 @@ def main() -> None:
                 file=sys.stderr,
             )
             raise SystemExit(2)
-        with Storage(args.db or settings.database_path) as storage:
+        with Storage(
+            args.db or settings.database_path, max_bytes=settings.state_max_bytes
+        ) as storage:
             items = storage.pending_editorial_items()
         grouped: dict[str, dict[str, Any]] = {}
         for item in items:
@@ -636,15 +689,23 @@ def main() -> None:
             f"en {output_path}"
         )
     elif args.command == "storage-report":
-        with Storage(args.db or settings.database_path) as storage:
+        with Storage(
+            args.db or settings.database_path, max_bytes=settings.state_max_bytes
+        ) as storage:
             info = storage.report()
         size_kb = info.size_bytes / 1024
+        sidecar_kb = info.sidecar_bytes / 1024
+        maximum_kb = info.state_max_bytes / 1024
         print(f"Base local: {info.database_path}")
-        print(f"Tamaño: {size_kb:.1f} KB")
+        print(f"Tamaño: {size_kb:.1f} KB (+{sidecar_kb:.1f} KB de sidecars)")
+        print(f"Máximo fail-closed: {maximum_kb:.1f} KB")
         print(f"Corridas: {info.runs}")
         print(f"Publicaciones únicas: {info.documents}")
+        print(f"Caché: {info.cache_entries} entradas, {info.cache_bytes / 1024:.1f} KB")
         print(f"Última corrida: {info.last_generated_at or 'sin corridas'}")
-        with Storage(args.db or settings.database_path) as storage:
+        with Storage(
+            args.db or settings.database_path, max_bytes=settings.state_max_bytes
+        ) as storage:
             metrics = storage.latest_cut_metrics()
         if metrics:
             print("Métricas del último corte: " + json.dumps(metrics, ensure_ascii=False))
@@ -684,7 +745,7 @@ def main() -> None:
             print(f"Error editorial: {exc}", file=sys.stderr)
             raise SystemExit(1) from exc
         if database is not None:
-            with Storage(database) as storage:
+            with Storage(database, max_bytes=settings.state_max_bytes) as storage:
                 payload = prepare_payload(
                     storage.export_payload(), settings.local_timezone, force=True
                 )
@@ -744,6 +805,9 @@ def main() -> None:
                 args.ids,
                 reason=args.reason,
                 edition_path=args.edition_output,
+                ledger_path=(args.db or Path(settings.database_path)).with_name(
+                    "retractions.json"
+                ),
             )
         except RetractionError as exc:
             print(f"Error de retiro: {exc}", file=sys.stderr)
@@ -755,28 +819,21 @@ def main() -> None:
                 args.input,
                 args.ids,
                 edition_path=args.edition_output,
+                ledger_path=(args.db or Path(settings.database_path)).with_name(
+                    "retractions.json"
+                ),
             )
         except RetractionError as exc:
             print(f"Error de restauración: {exc}", file=sys.stderr)
             raise SystemExit(1) from exc
         print(f"Restauradas {count} fichas en {args.input}")
     elif args.command == "build-edition":
-        payload = prepare_payload(
-            json.loads(args.input.read_text(encoding="utf-8")),
-            settings.local_timezone,
-            force=True,
-        )
-        report = validate_publications_payload(payload)
-        _print_validation_report(report)
-        if not report.ok:
-            raise SystemExit(1)
-        write_site_artifacts(
-            payload, args.input, args.output, complete_only=True
-        )
         print(
-            f"Edición {payload['edition']['edition_date']} generada en "
-            f"{args.output or args.input.with_name('edition.json')}"
+            "Error: build-edition no puede publicar schema v8 sin atestación "
+            "privada; usa export-site --db ... --complete-only.",
+            file=sys.stderr,
         )
+        raise SystemExit(2)
     elif args.command == "validate":
         payload = json.loads(args.input.read_text(encoding="utf-8"))
         manifest_path = args.input.with_name("manifest.json")

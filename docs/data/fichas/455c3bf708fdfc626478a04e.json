@@ -1,0 +1,139 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "heading": "Hecho de fuerza mayor y alcance",
+      "paragraphs": [
+        "La Sala Regional en Oaxaca del Tribunal Federal de Justicia Administrativa informa que el 27 de mayo de 2026, a las 18:21 horas, ocurrió una falla en el suministro de energía eléctrica y que el proveedor comunicó que no conocía cuándo se restablecería el servicio. La Sala calificó la situación como caso fortuito y de fuerza mayor que impedía sus funciones técnicas y laborales y afectaba a personal y personas usuarias.",
+        "El acuerdo suspende las actividades jurisdiccionales desde esa hora del 27 de mayo y durante el 28 de mayo de 2026. Como consecuencia, no corren términos ni plazos procesales de la normativa que regula el procedimiento contencioso administrativo federal en esa Sala Regional. La medida no declara una suspensión para otras fechas, salas o tribunales."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Comunicación institucional",
+      "paragraphs": [
+        "La Sala ordena comunicar el acuerdo a la Presidencia del TFJA por conducto de la Secretaría General de Acuerdos y colocar copia en la ventanilla de Oficialía de Partes. Las personas con asuntos en Oaxaca deben vincular el día y la hora de la suspensión con el expediente concreto antes de definir un vencimiento o una estrategia procesal posterior."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "c2a04d3849b316bc1f8dcb4d2d67672171e389f7f1de84a093372fa71c150ba1",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "ACUERDO SROAX/02/2026 por el que se da a conocer la suspensión de actividades jurisdiccionales en la Sala Regional en Oaxaca del Tribunal Federal de Justicia Administrativa por causa de fuerza mayor.",
+        "location": "caracteres 0-203"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Tribunal Federal de Justicia Administrativa.- Sala Regional en Oaxaca.- Presidencia.- SROAX/02/2026.",
+        "location": "caracteres 203-3175"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5790039&fecha=09/06/2026",
+    "retrieved_at": "2026-08-13T19:44:27.622204+00:00"
+  },
+  "executive_summary": [
+    "La Sala Regional en Oaxaca del Tribunal Federal de Justicia Administrativa informa que el 27 de mayo de 2026, a las 18:21 horas, ocurrió una falla en el suministro de energía eléctrica y que el proveedor comunicó que no conocía cuándo se restablecería el servicio. La Sala calificó la situación como caso fortuito y de fuerza mayor que impedía sus funciones técnicas y laborales y afectaba a personal y personas usuarias.",
+    "El acuerdo suspende las actividades jurisdiccionales desde esa hora del 27 de mayo y durante el 28 de mayo de 2026. Como consecuencia, no corren términos ni plazos procesales de la normativa que regula el procedimiento contencioso administrativo federal en esa Sala Regional. La medida no declara una suspensión para otras fechas, salas o tribunales."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "paragraphs": [
+        "Las actuaciones procesales de la Sala Regional en Oaxaca no generaron cómputo desde las 18:21 horas del 27 de mayo y durante el 28 de mayo de 2026, por la falta de energía eléctrica comunicada."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "Las actuaciones procesales de la Sala Regional en Oaxaca no generaron cómputo desde las 18:21 horas del 27 de mayo y durante el 28 de mayo de 2026, por la falta de energía eléctrica comunicada."
+        ],
+        "sector": "Partes y representantes en juicios ante la Sala Regional en Oaxaca del TFJA"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5790039&fecha=09/06/2026",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "1da4747b7683e4de6ee06b8b4e95834771645eac68e550bead780d56f6883563",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/455c3bf708fdfc626478a04e.json",
+    "detail_url": "notas/455c3bf708fdfc626478a04e.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Acuerdo",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5790039",
+    "importance": 3,
+    "issuing_body": "Tribunal Federal de Justicia Administrativa",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-06-09",
+    "official_title": "Acuerdo SROAX/02/2026 por el que se da a conocer la suspensión de actividades jurisdiccionales en la Sala Regional en Oaxaca del Tribunal Federal de Justicia Administrativa por causa de fuerza mayor.",
+    "published_at": "2026-06-09",
+    "relevance_score": 4,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5790039",
+    "summary_teaser": "La Sala Regional en Oaxaca del TFJA suspendió actividades jurisdiccionales desde las 18:21 horas del 27 de mayo y durante el 28 de mayo de 2026 por una falla en el suministro eléctrico. En ese periodo no corrieron términos ni plazos procesales ante la Sala; el acuerdo se limita a esa contingencia y órgano jurisdiccional.",
+    "title": "TFJA Oaxaca suspende actividades por falla eléctrica",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5790039&fecha=09/06/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Partes y representantes en juicios ante la Sala Regional en Oaxaca del TFJA",
+      "deadline": "Suspensión desde 27 de mayo de 2026, 18:21 horas, y durante 28 de mayo de 2026",
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "legal_basis": "Acuerdo SROAX/02/2026; Ley Federal de Procedimiento Contencioso Administrativo",
+      "paragraphs": [
+        "Para plazos que comprendan esas fechas, documente la hora y el órgano afectados y recalcule el término conforme a la legislación procesal y al expediente específico."
+      ],
+      "trigger": "En expedientes de la Sala Regional en Oaxaca con actuaciones el 27 o 28 de mayo de 2026"
+    }
+  ],
+  "schema_version": 8
+}

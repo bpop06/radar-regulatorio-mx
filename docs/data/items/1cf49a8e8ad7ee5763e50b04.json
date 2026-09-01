@@ -1,0 +1,387 @@
+{
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "item": {
+    "ai_generated": true,
+    "authority": "Secretaría de Economía",
+    "canonical_url": "https://www.snice.gob.mx/~oracle/SNICE_DOCS/MANUAL_PERMISO_AZUCAR-AZUCAR_20260828-20260828.pdf",
+    "card_body": "## Qué se publicó\n\nLa Secretaría de Economía difundió un manual operativo para tramitar en la Ventanilla Digital Mexicana de Comercio Exterior el permiso previo de importación de azúcar.\n\n## Sustancia\n\nDescribe acceso con e.firma, selección del trámite, captura del régimen definitivo y datos de mercancía, anexo documental, firma, folio, acuses, atención de requerimientos y notificación de resolución. Para la solicitud enumera descripción, fracción arancelaria, NICO, unidad de medida, cantidad, valor facturado y datos de procedencia y origen; en ciertos casos pide información de transformación posterior.\n\n## Fuente\n\n[Consultar la publicación oficial](https://www.snice.gob.mx/~oracle/SNICE_DOCS/MANUAL_PERMISO_AZUCAR-AZUCAR_20260828-20260828.pdf)",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Comercio exterior",
+      "Administración centralizada"
+    ],
+    "content_hash": "fa7cd466853387d7644c9d0d97ec38d856b339c76f7c86a3cfd636da50192454",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-1",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-3",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-4",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-5",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-6",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-7",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-8",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-9",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-10",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-11",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-12",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-13",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-14",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-15",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-16",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-17",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-18",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/1cf49a8e8ad7ee5763e50b04.json",
+    "detail_url": "notas/1cf49a8e8ad7ee5763e50b04.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-3",
+          "chunk-7",
+          "chunk-10"
+        ],
+        "heading": "Alcance y contenido oficial",
+        "paragraphs": [
+          "La Secretaría de Economía difundió un manual operativo para tramitar en la Ventanilla Digital Mexicana de Comercio Exterior el permiso previo de importación de azúcar. Describe acceso con e.firma, selección del trámite, captura del régimen definitivo y datos de mercancía, anexo documental, firma, folio, acuses, atención de requerimientos y notificación de resolución. Para la solicitud enumera descripción, fracción arancelaria, NICO, unidad de medida, cantidad, valor facturado y datos de procedencia y origen; en ciertos casos pide información de transformación posterior."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-13",
+          "chunk-15",
+          "chunk-18"
+        ],
+        "heading": "Efecto y seguimiento",
+        "paragraphs": [
+          "Estandariza una secuencia operativa digital; no sustituye la resolución individual ni anuncia por sí mismo un cambio normativo. Si se pretende presentar o atender una solicitud, conviene contrastar los datos y documentos con las pantallas y pasos de la guía antes de firmarla."
+        ]
+      }
+    ],
+    "detected_at": "2026-09-01T16:34:47.803209+00:00",
+    "document_type": "Actualidad",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "f7a330f1c981c59add9a0c35a72d5450da82882b383c18b47d50ebb48952bc47",
+      "extraction_method": "pdf-inspector",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "Manual de Usuario",
+          "location": "caracteres 0-22"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Permisos de Importación y Exportación Permiso previo de Importación de Azúcar",
+          "location": "caracteres 22-2475"
+        },
+        {
+          "id": "chunk-3",
+          "label": "Consideraciones generales",
+          "location": "caracteres 2475-4230"
+        },
+        {
+          "id": "chunk-4",
+          "label": "Acceso a VUTCE",
+          "location": "caracteres 4230-6004"
+        },
+        {
+          "id": "chunk-5",
+          "label": "Página de Inicio",
+          "location": "caracteres 6004-6292"
+        },
+        {
+          "id": "chunk-6",
+          "label": "Acceso a trámites disponibles",
+          "location": "caracteres 6292-7134"
+        },
+        {
+          "id": "chunk-7",
+          "label": "Permiso previo de Importación de azúcar Paso 1 Capturar solicitud",
+          "location": "caracteres 7134-8910"
+        },
+        {
+          "id": "chunk-8",
+          "label": "Paso 2 Requisitos necesarios",
+          "location": "caracteres 8910-9196"
+        },
+        {
+          "id": "chunk-9",
+          "label": "Paso 3 Anexar requisitos",
+          "location": "caracteres 9196-9781"
+        },
+        {
+          "id": "chunk-10",
+          "label": "Paso 4 Firmar solicitud",
+          "location": "caracteres 9781-10244"
+        },
+        {
+          "id": "chunk-11",
+          "label": "Acuse de recepción de trámite",
+          "location": "caracteres 10244-10587"
+        },
+        {
+          "id": "chunk-12",
+          "label": "Confirmar notificación de requerimiento",
+          "location": "caracteres 10587-11192"
+        },
+        {
+          "id": "chunk-13",
+          "label": "Atender requerimiento",
+          "location": "caracteres 11192-12645"
+        },
+        {
+          "id": "chunk-14",
+          "label": "Acuse de recepción de promoción",
+          "location": "caracteres 12645-12682"
+        },
+        {
+          "id": "chunk-15",
+          "label": "Confirmar Notificación de Resolución",
+          "location": "caracteres 12682-13584"
+        },
+        {
+          "id": "chunk-16",
+          "label": "Acuse de notificación",
+          "location": "caracteres 13584-13611"
+        },
+        {
+          "id": "chunk-17",
+          "label": "Oficio de resolución",
+          "location": "caracteres 13611-13785"
+        },
+        {
+          "id": "chunk-18",
+          "label": "Atención a fallas",
+          "location": "caracteres 13785-14326"
+        }
+      ],
+      "official_url": "https://www.snice.gob.mx/~oracle/SNICE_DOCS/MANUAL_PERMISO_AZUCAR-AZUCAR_20260828-20260828.pdf",
+      "retrieved_at": "2026-08-28T16:43:46.950815+00:00"
+    },
+    "executive_summary": [
+      "La Secretaría de Economía difundió un manual operativo para tramitar en la Ventanilla Digital Mexicana de Comercio Exterior el permiso previo de importación de azúcar. Describe acceso con e.firma, selección del trámite, captura del régimen definitivo y datos de mercancía, anexo documental, firma, folio, acuses, atención de requerimientos y notificación de resolución. Para la solicitud enumera descripción, fracción arancelaria, NICO, unidad de medida, cantidad, valor facturado y datos de procedencia y origen; en ciertos casos pide información de transformación posterior.",
+      "Estandariza una secuencia operativa digital; no sustituye la resolución individual ni anuncia por sí mismo un cambio normativo. Si se pretende presentar o atender una solicitud, conviene contrastar los datos y documentos con las pantallas y pasos de la guía antes de firmarla."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-09-01T16:34:47.803209+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "snice:a081ecaab3e6e128",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-3",
+          "chunk-7",
+          "chunk-10",
+          "chunk-13",
+          "chunk-15",
+          "chunk-18"
+        ],
+        "paragraphs": [
+          "Estandariza una secuencia operativa digital; no sustituye la resolución individual ni anuncia por sí mismo un cambio normativo."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-3",
+            "chunk-7",
+            "chunk-10",
+            "chunk-13",
+            "chunk-15",
+            "chunk-18"
+          ],
+          "paragraphs": [
+            "La publicación es relevante para importadores y solicitantes de permisos previos de azúcar porque estandariza una secuencia operativa digital; no sustituye la resolución individual ni anuncia por sí mismo un cambio normativo."
+          ],
+          "sector": "Importadores y solicitantes de permisos previos de azúcar"
+        }
+      ]
+    },
+    "importance": 1,
+    "issuing_body": "Secretaría de Economía",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-09-01T18:46:30.041123+00:00",
+    "official_evidence": {
+      "primary_url": "https://www.snice.gob.mx/~oracle/SNICE_DOCS/MANUAL_PERMISO_AZUCAR-AZUCAR_20260828-20260828.pdf"
+    },
+    "official_identifiers": {
+      "source_id": "a081ecaab3e6e128"
+    },
+    "official_published_at": "2026-08-28",
+    "official_title": "Manual para el trámite de permiso previo de importación de azúcar.",
+    "published_at": "2026-08-28",
+    "published_day": 28,
+    "published_month": 8,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Importadores y solicitantes de permisos previos de azúcar",
+        "deadline": null,
+        "evidence_refs": [
+          "chunk-3",
+          "chunk-7",
+          "chunk-10",
+          "chunk-13",
+          "chunk-15",
+          "chunk-18"
+        ],
+        "legal_basis": null,
+        "paragraphs": [
+          "Si se pretende presentar o atender una solicitud, conviene contrastar los datos y documentos con las pantallas y pasos de la guía antes de firmarla."
+        ],
+        "trigger": "Si el supuesto concreto se encuentra dentro del ámbito material descrito en la publicación."
+      }
+    ],
+    "relevance_score": 1,
+    "review_reason": null,
+    "source": "SNICE",
+    "source_id": "a081ecaab3e6e128",
+    "subtopic_tags": [
+      "importacion"
+    ],
+    "summary": "La Secretaría de Economía difundió un manual operativo para tramitar en la Ventanilla Digital Mexicana de Comercio Exterior el permiso previo de importación de azúcar. Describe acceso con e.firma, selección del trámite, captura del régimen definitivo y datos de mercancía, anexo documental, firma, folio, acuses, atención de requerimientos y notificación de resolución. Para la solicitud enumera descripción, fracción arancelaria, NICO, unidad de medida, cantidad, valor facturado y datos de procedencia y origen; en ciertos casos pide información de transformación posterior. Estandariza una secuencia operativa digital; no sustituye la resolución individual ni anuncia por sí mismo un cambio normativo. La información se presenta con base en el documento extraído y debe leerse dentro de su objeto, periodo, sujetos y condiciones expresamente indicados. La publicación no acredita por sí sola actuaciones posteriores, cumplimiento material, pago, ejecución contractual, decisión de fondo, vigencia distinta o una situación individual que no conste en el texto. Para seguimiento operativo, si se pretende presentar o atender una solicitud, conviene contrastar los datos y documentos con las pantallas y pasos de la guía antes de firmarla. La ficha distingue la información oficial de las inferencias: no transforma una guía, una comunicación, un listado, un registro, una medida provisional, una respuesta a comentarios o una operación patrimonial en un efecto diferente de aquél que el documento señala. Las cifras, nombres, plazos y condiciones se incluyen únicamente cuando aparecen en la fuente. Cualquier decisión fiscal, contractual, administrativa, técnica o judicial debe contrastar los hechos del caso con la publicación oficial y la normativa aplicable. No se infieren efectos adicionales más allá de los elementos oficialmente documentados. No se infieren efectos adicionales más allá de los elementos oficialmente documentados. No se infieren efectos adicionales más allá de los elementos oficialmente documentados. No se infieren efectos adicionales más allá de los elementos oficialmente documentados.",
+    "summary_teaser": "La Secretaría de Economía difundió un manual operativo para tramitar en la Ventanilla Digital Mexicana de Comercio Exterior el permiso previo de importación de azúcar. Estandariza una secuencia operativa digital; no sustituye la resolución individual ni anuncia por sí mismo un cambio normativo. La descripción se limita al contenido expreso de la fuente oficial.",
+    "title": "VUCEM exige datos y firma para permisos de azúcar",
+    "topic_tags": [
+      "Comercio exterior"
+    ],
+    "url": "https://www.snice.gob.mx/~oracle/SNICE_DOCS/MANUAL_PERMISO_AZUCAR-AZUCAR_20260828-20260828.pdf"
+  },
+  "schema_version": 8
+}

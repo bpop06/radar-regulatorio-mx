@@ -166,6 +166,8 @@ main() {
   else
     post_status "$repository" "$sha" "$target_url" failure "$PYTHON_CONTEXT" \
       "Python checks failed"
+    post_status "$repository" "$sha" "$target_url" failure "$FRONTEND_CONTEXT" \
+      "Frontend checks not run: Python checks failed"
     return 1
   fi
 

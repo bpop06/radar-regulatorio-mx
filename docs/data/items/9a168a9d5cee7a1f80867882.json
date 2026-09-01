@@ -1,0 +1,176 @@
+{
+  "cut_id": "80ff8a726797f7b9e5131c53",
+  "item": {
+    "ai_generated": true,
+    "authority": "PODER EJECUTIVO SECRETARIA DE AGRICULTURA Y DESARROLLO RURAL",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791121&fecha=19/06/2026",
+    "card_body": "## Qué se publicó\nEl comité del sector cañero difundió modificaciones a su estatuto organizacional mediante sus páginas institucionales y un aviso oficial.\n\n## Sustancia\nLa publicación comunica la disponibilidad del texto y su carácter obligatorio dentro del organismo. No reproduce de forma completa las reformas ni acredita nuevas obligaciones directas para productores, ingenios o comercializadores; esas conclusiones requieren cotejar el estatuto actualizado.\n\n## Fuente\nAviso oficial del Comité Nacional para el Desarrollo Sustentable de la Caña de Azúcar publicado en el Diario Oficial de la Federación.",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "a33be04c59d0fc4af67851e1a87139a3a8fbb7049755f505846027021e34c628",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-1",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/9a168a9d5cee7a1f80867882.json",
+    "detail_url": "notas/9a168a9d5cee7a1f80867882.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "heading": "Alcance y contenido verificable",
+        "paragraphs": [
+          "La fuente identifica el aviso y las páginas de consulta del Estatuto Orgánico modificado. Señala que sus disposiciones obligan a personas servidoras públicas del CONADESUCA dentro de sus atribuciones y prevé vigencia posterior a la publicación. El extracto no presenta una tabla de reformas ni el texto completo de cada disposición; por ello no acredita cambios específicos de estructura, facultades o procedimientos frente a terceros."
+        ]
+      }
+    ],
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Aviso",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "ac87307fcee5ddbf81e8295e927fb116011631e58cd1d12ffe51d3a64985e8a6",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "AVISO mediante el cual se da a conocer las modificaciones al Estatuto Orgánico del Comité Nacional para el Desarrollo Sustentable de la Caña de Azúcar (CONADESUCA).",
+          "location": "caracteres 0-168"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Agricultura.- Secretaría de Agricultura y Desarrollo Rural.- Comité Nacional para el Desarrollo Sustentable de la Caña de Azúcar.",
+          "location": "caracteres 168-2214"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791121&fecha=19/06/2026",
+      "retrieved_at": "2026-08-13T19:43:54.472876+00:00"
+    },
+    "executive_summary": [
+      "CONADESUCA dio a conocer modificaciones a su Estatuto Orgánico mediante enlaces institucionales.",
+      "El aviso acredita su difusión y efecto interno para el personal del organismo, pero no contiene el detalle completo de los cambios. No es posible inferir nuevas cargas externas sin revisar el texto actualizado y el supuesto concreto."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5791121",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "El personal del CONADESUCA debe atender la publicidad oficial de sus reglas internas conforme a sus funciones."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-1",
+            "chunk-2"
+          ],
+          "paragraphs": [
+            "Actores externos pueden requerir verificar canales, áreas o atribuciones vigentes antes de presentar gestiones ante el organismo."
+          ],
+          "sector": "Personas y organizaciones potencialmente relacionadas"
+        }
+      ]
+    },
+    "importance": 2,
+    "issuing_body": "Presidencia de la República",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-09-01T18:46:30.041123+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791121&fecha=19/06/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5791121"
+    },
+    "official_published_at": "2026-06-19",
+    "official_title": "Aviso mediante el cual se da a conocer las modificaciones al Estatuto Orgánico del Comité Nacional para el Desarrollo Sustentable de la Caña de Azúcar (CONADESUCA) .",
+    "published_at": "2026-06-19",
+    "published_day": 19,
+    "published_month": 6,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Personas y organizaciones potencialmente relacionadas",
+        "deadline": null,
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "legal_basis": null,
+        "paragraphs": [
+          "Quienes se relacionen con CONADESUCA podrían consultar el Estatuto Orgánico actualizado en las páginas institucionales enlazadas por el aviso."
+        ],
+        "trigger": null
+      },
+      {
+        "affected_group": "Personas y organizaciones potencialmente relacionadas",
+        "deadline": null,
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "legal_basis": null,
+        "paragraphs": [
+          "Antes de ajustar una gestión o un trámite, conviene confirmar la competencia del área y el texto vigente aplicable al caso."
+        ],
+        "trigger": null
+      }
+    ],
+    "relevance_score": 2,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5791121",
+    "subtopic_tags": [
+      "estatuto organico"
+    ],
+    "summary": "El Diario Oficial publicó un aviso por el que el Comité Nacional para el Desarrollo Sustentable de la Caña de Azúcar (CONADESUCA) da a conocer modificaciones a su Estatuto Orgánico. La fuente identifica al organismo en el sector de Agricultura y señala páginas institucionales en las que puede consultarse el texto de las modificaciones. El aviso funciona como medio de difusión oficial del instrumento organizacional, pero el extracto no reproduce íntegramente todas las disposiciones modificadas.\n\nDe acuerdo con la publicación, las modificaciones se relacionan con la organización interna del CONADESUCA y resultan obligatorias para sus personas servidoras públicas dentro del ámbito de sus atribuciones. El documento prevé su entrada en vigor al día siguiente de su publicación, según la cláusula transitoria transcrita. Esta referencia acredita el régimen temporal del aviso, pero no permite extender obligaciones internas a particulares sin revisar el texto completo del estatuto y la competencia específica del organismo.\n\nLa fuente no describe nuevas cuotas, requisitos comerciales, permisos, sanciones, apoyos, reglas de mercado de azúcar ni obligaciones directas para productores, ingenios o comercializadores. Tampoco publica, en el contenido extraído, una comparación artículo por artículo entre la versión anterior y la modificada. Por ello, no es posible concluir cuál área, atribución, estructura o procedimiento interno cambió sin cotejar el documento alojado en las páginas señaladas.\n\nEl efecto verificable de esta publicación es la puesta a disposición oficial de las modificaciones estatutarias y su vinculación interna para el personal del CONADESUCA. Para organizaciones externas que interactúan con el comité, la utilidad práctica es identificar que podría haber cambios de organización, competencias o canales institucionales. Antes de basar una gestión en esos cambios, debe revisarse directamente el texto actualizado y el acto administrativo específico que resulte aplicable. La fuente disponible no documenta otros efectos, decisiones o actuaciones concretas fuera de lo descrito. Cualquier alcance adicional requeriría revisar actos oficiales, documentación, competencia material y circunstancias particulares, que no aparecen individualizadas en el aviso publicado. No es posible inferirlos de esta comunicación.",
+    "summary_teaser": "El Comité Nacional para el Desarrollo Sustentable de la Caña de Azúcar dio a conocer modificaciones a su Estatuto Orgánico mediante páginas institucionales. El aviso identifica los enlaces de consulta, comunica la publicidad oficial del texto y prevé efectos internos para las personas servidoras públicas del organismo.",
+    "title": "CONADESUCA da a conocer modificaciones a su estatuto orgánico",
+    "topic_tags": [
+      "Derecho administrativo",
+      "Aviso"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5791121&fecha=19/06/2026"
+  },
+  "schema_version": 8
+}
