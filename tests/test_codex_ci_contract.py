@@ -165,3 +165,13 @@ def test_both_contexts_are_reset_to_pending_before_gates() -> None:
 
     assert python_pending < python_gate
     assert frontend_pending < python_gate
+
+
+def test_python_failure_marks_frontend_context_as_terminal() -> None:
+    script = SCRIPT.read_text(encoding="utf-8")
+    python_failure = script.index('failure "$PYTHON_CONTEXT"')
+    frontend_failure = script.index('failure "$FRONTEND_CONTEXT"', python_failure)
+    return_after_failure = script.index("return 1", python_failure)
+
+    assert python_failure < frontend_failure < return_after_failure
+    assert "Frontend checks not run: Python checks failed" in script
