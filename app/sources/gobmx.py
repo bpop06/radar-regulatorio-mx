@@ -7,7 +7,7 @@ import json
 import re
 from dataclasses import dataclass
 from datetime import date
-from urllib.parse import parse_qsl, urlencode, urljoin, urlparse, urlsplit, urlunsplit
+from urllib.parse import parse_qsl, urlencode, urlparse, urlsplit, urlunsplit
 
 from bs4 import BeautifulSoup
 
@@ -25,6 +25,7 @@ from app.relevance import (
 )
 from app.sources.base import Collector, SourceContractError
 from app.text import clean_text, normalized, parse_date
+from app.url_policy import OfficialUrlError, resolve_official_link
 
 APPEND_RE = re.compile(r"""append\((["'])((?:\\.|(?!\1).)*)\1\)""", re.DOTALL)
 SITEMAP_LOCATION_RE = re.compile(rb"<loc>\s*(.*?)\s*</loc>", re.DOTALL)
@@ -252,6 +253,9 @@ class GobMxCollector(Collector):
         # moderada. Serializar evita convertir archivos accesibles en falsos
         # 403; ``gather`` conserva el aislamiento entre portales.
         self._request_limit = asyncio.Semaphore(1)
+        self.unfinished_work: dict[str, int] = {}
+        self._archive_jobs_total = 0
+        self._archive_jobs_finished = 0
 
     async def collect(self, since: date) -> list[Candidate]:
         # El catálogo ya está certificado y versionado. No depender del
@@ -259,14 +263,26 @@ class GobMxCollector(Collector):
         # forma silenciosa y que un 403 transitorio del índice derribe todos
         # los archivos oficiales que siguen disponibles.
         portals = sorted(CERTIFIED_APF_PORTALS)
-
-        archive_results = await asyncio.gather(
-            *(
-                self._collect_archive(portal, kind, since)
-                for portal in portals
-                for kind in ARCHIVE_KINDS
+        self._archive_jobs_total = len(portals) * len(ARCHIVE_KINDS)
+        self._archive_jobs_finished = 0
+        self.unfinished_work = {}
+        try:
+            archive_results = await asyncio.gather(
+                *(
+                    self._collect_archive(portal, kind, since)
+                    for portal in portals
+                    for kind in ARCHIVE_KINDS
+                )
             )
-        )
+        except asyncio.CancelledError:
+            self.unfinished_work = {
+                "archive_jobs_total": self._archive_jobs_total,
+                "archive_jobs_finished": self._archive_jobs_finished,
+                "archive_jobs_unfinished": max(
+                    0, self._archive_jobs_total - self._archive_jobs_finished
+                ),
+            }
+            raise
         items = {
             item.url: item
             for result in archive_results
@@ -282,49 +298,55 @@ class GobMxCollector(Collector):
         self, portal: str, kind: str, since: date
     ) -> list[ArchiveItem]:
         collected: list[ArchiveItem] = []
-        for page in range(1, MAX_ARCHIVE_PAGES + 1):
-            url = f"https://www.gob.mx/{portal}/archivo/{kind}"
-            try:
-                async with self._request_limit:
-                    response = await self.client.get(
-                        url,
-                        params={"idiom": "es", "order": "DESC", "page": page},
+        completed = False
+        try:
+            for page in range(1, MAX_ARCHIVE_PAGES + 1):
+                url = f"https://www.gob.mx/{portal}/archivo/{kind}"
+                try:
+                    async with self._request_limit:
+                        response = await self.client.get(
+                            url,
+                            params={"idiom": "es", "order": "DESC", "page": page},
+                        )
+                    if response.status_code == 404:
+                        break
+                    self.validate_response(
+                        response,
+                        content_types={
+                            "application/javascript",
+                            "application/json",
+                            "text/html",
+                            "text/javascript",
+                        },
                     )
-                if response.status_code == 404:
+                except Exception as exc:
+                    self.mark_degraded(
+                        f"{portal}/{kind} página {page}: {type(exc).__name__}: {exc}"
+                    )
                     break
-                self.validate_response(
-                    response,
-                    content_types={
-                        "application/javascript",
-                        "application/json",
-                        "text/html",
-                        "text/javascript",
-                    },
-                )
-            except Exception as exc:
-                self.mark_degraded(
-                    f"{portal}/{kind} página {page}: {type(exc).__name__}: {exc}"
-                )
-                break
 
-            try:
-                page_items, skipped = self.parse_archive_with_diagnostics(
-                    response.text, portal, kind
-                )
-            except SourceContractError as exc:
-                self.mark_degraded(f"{portal}/{kind} página {page}: {exc}")
-                break
-            if skipped:
-                self.mark_degraded(
-                    f"{portal}/{kind} página {page}: "
-                    f"{skipped} registros no pudieron interpretarse"
-                )
-            if not page_items:
-                break
-            collected.extend(item for item in page_items if item.published_at >= since)
-            if min(item.published_at for item in page_items) < since:
-                break
-        return collected
+                try:
+                    page_items, skipped = self.parse_archive_with_diagnostics(
+                        response.text, portal, kind
+                    )
+                except SourceContractError as exc:
+                    self.mark_degraded(f"{portal}/{kind} página {page}: {exc}")
+                    break
+                if skipped:
+                    self.mark_degraded(
+                        f"{portal}/{kind} página {page}: "
+                        f"{skipped} registros no pudieron interpretarse"
+                    )
+                if not page_items:
+                    break
+                collected.extend(item for item in page_items if item.published_at >= since)
+                if min(item.published_at for item in page_items) < since:
+                    break
+            completed = True
+            return collected
+        finally:
+            if completed:
+                self._archive_jobs_finished += 1
 
     async def _enrich(self, item: ArchiveItem) -> Candidate | None:
         description = item.title
@@ -427,8 +449,12 @@ class GobMxCollector(Collector):
                 skipped += 1
                 continue
             title = sanitize_gobmx_title(title_element.get_text(" ", strip=True))
-            url = urljoin("https://www.gob.mx", anchor["href"])
-            if not title or not url.lower().startswith(("http://", "https://")):
+            try:
+                url = resolve_official_link("https://www.gob.mx", str(anchor["href"]))
+            except OfficialUrlError:
+                skipped += 1
+                continue
+            if not title:
                 skipped += 1
                 continue
             items.append(

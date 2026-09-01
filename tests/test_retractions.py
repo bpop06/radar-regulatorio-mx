@@ -34,6 +34,10 @@ def _two_items() -> dict:
     return payload
 
 
+def _ledger(tmp_path: Path) -> Path:
+    return tmp_path / "private-state/retractions.json"
+
+
 def test_retract_and_restore_are_transactional_and_keep_reason(tmp_path: Path) -> None:
     publications = tmp_path / "docs/data/publications.json"
     write_site_artifacts_legacy(_two_items(), publications)
@@ -43,6 +47,7 @@ def test_retract_and_restore_are_transactional_and_keep_reason(tmp_path: Path) -
         publications,
         ["CPI:false-positive"],
         reason="Vacante laboral, no novedad regulatoria.",
+        ledger_path=_ledger(tmp_path),
     ) == 1
     assert "CPI:false-positive" not in load_manifested_items(publications)
     assert not (tmp_path / f"docs/data/items/{key}.json").exists()
@@ -50,12 +55,22 @@ def test_retract_and_restore_are_transactional_and_keep_reason(tmp_path: Path) -
     state = json.loads(
         (tmp_path / "docs/data/state/retractions.json").read_text(encoding="utf-8")
     )
-    assert state["state"]["items"]["CPI:false-positive"]["reason"] == (
-        "Vacante laboral, no novedad regulatoria."
+    retracted_at = state["state"]["items"]["CPI:false-positive"]["retracted_at"]
+    assert state["state"] == {
+        "version": 2,
+        "items": {"CPI:false-positive": {"retracted_at": retracted_at}},
+    }
+    private = json.loads(_ledger(tmp_path).read_text(encoding="utf-8"))
+    assert (
+        private["items"]["CPI:false-positive"]["reason"]
+        == "Vacante laboral, no novedad regulatoria."
     )
+    assert "record" in private["items"]["CPI:false-positive"]
     assert validate_site_artifacts(publications.with_name("manifest.json")).ok
 
-    assert restore_items(publications, ["CPI:false-positive"]) == 1
+    assert restore_items(
+        publications, ["CPI:false-positive"], ledger_path=_ledger(tmp_path)
+    ) == 1
     assert "CPI:false-positive" in load_manifested_items(publications)
     assert (tmp_path / f"docs/data/items/{key}.json").exists()
     assert (tmp_path / f"docs/notas/{key}.html").exists()
@@ -89,14 +104,15 @@ def test_restore_rejects_tampered_retraction_state(tmp_path: Path) -> None:
         publications,
         ["CPI:false-positive"],
         reason="Vacante laboral, no novedad regulatoria.",
+        ledger_path=_ledger(tmp_path),
     )
     state_path = tmp_path / "docs/data/state/retractions.json"
     state = json.loads(state_path.read_text(encoding="utf-8"))
-    state["state"]["items"]["CPI:false-positive"]["reason"] = "alterado"
+    state["state"]["items"]["CPI:false-positive"]["retracted_at"] = "alterado"
     state_path.write_text(json.dumps(state), encoding="utf-8")
 
-    with pytest.raises(RetractionError, match="corte confirmado"):
-        restore_items(publications, ["CPI:false-positive"])
+    with pytest.raises(RetractionError, match="corte base no es válido"):
+        restore_items(publications, ["CPI:false-positive"], ledger_path=_ledger(tmp_path))
 
 
 def test_restore_rejects_uncommitted_retraction_state(tmp_path: Path) -> None:
@@ -106,11 +122,12 @@ def test_restore_rejects_uncommitted_retraction_state(tmp_path: Path) -> None:
         publications,
         ["CPI:false-positive"],
         reason="Vacante laboral, no novedad regulatoria.",
+        ledger_path=_ledger(tmp_path),
     )
     manifest_path = tmp_path / "docs/data/manifest.json"
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     manifest["artifacts"].pop("data/state/retractions.json")
     manifest_path.write_text(json.dumps(manifest), encoding="utf-8")
 
-    with pytest.raises(RetractionError, match="corte confirmado"):
-        restore_items(publications, ["CPI:false-positive"])
+    with pytest.raises(RetractionError, match="corte base no es válido"):
+        restore_items(publications, ["CPI:false-positive"], ledger_path=_ledger(tmp_path))

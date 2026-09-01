@@ -107,8 +107,9 @@ Retiro transaccional de una ficha que no constituye una novedad regulatoria:
   --input docs/data/publications.json
 ```
 
-El retiro elimina ficha, nota e índices en el mismo corte y conserva motivo y
-respaldo en el estado autenticado por el manifiesto para permitir rollback.
+El retiro elimina ficha, nota e índices en el mismo corte. El sitio conserva
+sólo el tombstone de id y fecha; motivo y respaldo de rollback permanecen en
+la bitácora privada asociada a la base local.
 
 ## Operación
 

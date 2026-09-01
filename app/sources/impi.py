@@ -2,7 +2,6 @@ from __future__ import annotations
 
 import hashlib
 from datetime import date
-from urllib.parse import urljoin
 
 from bs4 import BeautifulSoup
 
@@ -10,6 +9,7 @@ from app.models import Candidate
 from app.sources.base import Collector, SourceContractError
 from app.sources.gobmx import GobMxCollector
 from app.text import clean_text, parse_date
+from app.url_policy import OfficialUrlError, resolve_official_link
 
 
 class ImpiCollector(Collector):
@@ -80,7 +80,10 @@ class ImpiCollector(Collector):
             description = clean_text(
                 description_element.get_text(" ", strip=True) if description_element else title
             )
-            url = urljoin(cls.url, anchor["href"])
+            try:
+                url = resolve_official_link(cls.url, str(anchor["href"]))
+            except OfficialUrlError:
+                continue
             candidates.append(
                 _candidate(url, title, published_at, description=description)
             )

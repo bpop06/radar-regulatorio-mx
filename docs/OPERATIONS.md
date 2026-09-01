@@ -15,7 +15,9 @@ solo pull request abierto; nunca crea PR competidores y nunca empuja a
 ## Secuencia de un corte
 
 1. Actualizar `main` y recrear o poner al día el worktree aislado.
-2. Recolectar las 18 fuentes con límites de tiempo y reintentos acotados.
+2. Recolectar las 18 fuentes con límites por fuente y por corte, y reintentos
+   acotados. Una fuente que vence su presupuesto queda `degraded` con sus
+   unidades pendientes; no bloquea ni simula cobertura de las demás.
    El payload registra `collection_notes.dof_previous_day_reviewed=true` sólo
    si la ventana incluyó el día anterior y DOF validó transporte y estructura
    sin degradación.
@@ -38,6 +40,13 @@ El helper diario se detiene deliberadamente tras preparar la cola privada.
 Sólo después de aplicar la editorial estructurada y cerrar las auditorías se
 reanuda con `RADAR_EDITORIAL_APPROVED=1`; la exportación siempre usa
 `--complete-only` y `docs/data/fichas`.
+
+El helper mantiene un lock exclusivo del estado privado durante preparación,
+aplicación, exportación y validación. La reutilización de una corrida reciente
+exige que coincidan su ventana, configuración efectiva y versión de extractor;
+un cambio vuelve a recolectar. El estado privado tiene un máximo fail-closed
+configurable mediante `RADAR_STATE_MAX_BYTES` (512 MiB por defecto); no poda
+evidencia ni caché automáticamente.
 
 ## Gates
 
@@ -165,11 +174,12 @@ transaccional autorizado; nunca se borran artefactos a mano:
   --reason "Motivo verificable" --input docs/data/publications.json
 ```
 
-El comando exige un corte v8 válido, elimina el registro de la ventana móvil,
-el inventario permanente, el índice mensual y la nota estática, y confirma el
-motivo junto con el nuevo `cut_id`. El estado de retiros sólo se consume si su
-envelope está enumerado y hasheado por el manifiesto vigente. Para revertir el
-retiro de forma igualmente transaccional:
+El comando exige un corte v8 válido y elimina el registro de la ventana móvil,
+el inventario permanente, el índice mensual y la nota estática. El sitio sólo
+conserva tombstones de `id` y fecha; el motivo y el respaldo para rollback se
+guardan en la bitácora privada junto a la base. El estado público de retiros
+sólo se consume si su envelope está enumerado y hasheado por el manifiesto
+vigente. Para revertir el retiro de forma igualmente transaccional:
 
 ```bash
 .venv/bin/python -m app.cli restore-items SOURCE:ID \

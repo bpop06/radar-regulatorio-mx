@@ -72,6 +72,7 @@ def test_prepare_payload_builds_ready_v8_edition():
     assert result["edition"]["coverage"] == {
         "state": "degraded",
         "ok": 1,
+        "total": 2,
         "failed": ["SNICE"],
     }
     assert validate_edition(result["edition"], result["items"], result["sources"]) == []

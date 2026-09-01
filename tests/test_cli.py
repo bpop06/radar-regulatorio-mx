@@ -109,3 +109,16 @@ def test_validate_require_v8_rejects_legacy_payload_without_manifest(
 
     assert exc_info.value.code == 1
     assert "schema_version 8" in capsys.readouterr().err
+
+
+def test_build_edition_cannot_bypass_private_export_gate(
+    monkeypatch: pytest.MonkeyPatch,
+    capsys: pytest.CaptureFixture[str],
+) -> None:
+    monkeypatch.setattr(sys, "argv", ["radar-regulatorio", "build-edition"])
+
+    with pytest.raises(SystemExit) as exc_info:
+        cli.main()
+
+    assert exc_info.value.code == 2
+    assert "export-site --db" in capsys.readouterr().err

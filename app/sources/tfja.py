@@ -4,11 +4,11 @@ import hashlib
 import re
 from datetime import date
 from html import unescape
-from urllib.parse import urljoin
 
 from app.models import Candidate
 from app.sources.base import Collector, require_html_marker
 from app.text import SPANISH_MONTHS, clean_text
+from app.url_policy import OfficialUrlError, resolve_official_link
 
 
 class TfjaCollector(Collector):
@@ -73,7 +73,10 @@ class TfjaCollector(Collector):
             description = clean_text(re.sub(r"<[^>]+>", " ", unescape(match.group("desc"))))
             if not description:
                 description = number
-            url = urljoin(cls.base_url, match.group("href"))
+            try:
+                url = resolve_official_link(cls.base_url, match.group("href"))
+            except OfficialUrlError:
+                continue
             candidates.append(
                 Candidate(
                     source=cls.source,

@@ -6,13 +6,16 @@ import json
 import threading
 from collections.abc import Iterator
 from contextlib import contextmanager
+from email.message import Message
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
+from urllib.error import HTTPError
 from urllib.parse import urlsplit
 
 import pytest
 
-from scripts.verify_pages import SmokeError, _oldest_item, verify
+import scripts.verify_pages as verify_pages
+from scripts.verify_pages import SmokeError, _oldest_item, _verify_official_link, verify
 
 CUT_ID = "a" * 24
 
@@ -71,8 +74,8 @@ def _install_site(
     old_note_has_official_link: bool = True,
     artifact_cut_id: str = CUT_ID,
 ) -> dict[str, object]:
-    old_official = f"{base_url}official?case=old&language=es"
-    new_official = f"{base_url}official?case=new"
+    old_official = "https://official.example.test/official?case=old&language=es"
+    new_official = "https://official.example.test/official?case=new"
     old_item = {
         "id": "source:old",
         "official_published_at": "1999-12-31",
@@ -144,10 +147,22 @@ def _install_site(
 
 def test_verify_fetches_and_hashes_every_artifact_and_oldest_history(
     tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
 ) -> None:
     with _serve() as (server, base_url):
         expected = tmp_path / "manifest.json"
         manifest = _install_site(server, base_url, expected)
+        verified: list[tuple[str, float]] = []
+        monkeypatch.setattr(
+            verify_pages,
+            "_verify_official_link",
+            lambda url, *, timeout: verified.append((url, timeout)),
+        )
+        monkeypatch.setattr(
+            verify_pages,
+            "validate_official_url",
+            lambda value, **_kwargs: value,
+        )
 
         result = verify(base_url, expected, timeout=2, workers=3)
 
@@ -162,11 +177,13 @@ def test_verify_fetches_and_hashes_every_artifact_and_oldest_history(
             "official_published_at": "1999-12-31",
             "item_path": "data/items/old.json",
             "note_path": "notas/old.html",
-            "official_url": f"{base_url}official?case=old&language=es",
+            "official_url": "https://official.example.test/official?case=old&language=es",
         }
         assert "index.html" in requested_paths
         assert "data/manifest.json" in requested_paths
-        assert any(request.startswith("/official?case=old") for request in server.requests)
+        assert verified == [
+            ("https://official.example.test/official?case=old&language=es", 2)
+        ]
 
 
 def test_verify_rejects_a_tampered_artifact(tmp_path: Path) -> None:
@@ -246,3 +263,26 @@ def test_verify_requires_oldest_note_to_link_official_source(tmp_path: Path) -> 
             match=r"notas/old\.html: la nota histórica más antigua no enlaza",
         ):
             verify(base_url, expected, timeout=2, workers=2)
+
+
+def test_verify_official_link_rejects_loopback_before_network() -> None:
+    with pytest.raises(SmokeError, match="URL oficial insegura"):
+        _verify_official_link("https://127.0.0.1/internal", timeout=0.1)
+
+
+def test_verify_official_link_rejects_cross_origin_redirect(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    headers = Message()
+    headers["Location"] = "https://evil.example/redirected"
+
+    class RedirectingOpener:
+        def open(self, request, *, timeout):
+            raise HTTPError(request.full_url, 302, "Found", headers, None)
+
+    monkeypatch.setattr(verify_pages, "validate_official_url", lambda value, **_kwargs: value)
+    monkeypatch.setattr(verify_pages, "redirect_target_allowed", lambda *_args, **_kwargs: False)
+    monkeypatch.setattr(verify_pages, "build_opener", lambda *_args: RedirectingOpener())
+
+    with pytest.raises(SmokeError, match="redirección fuera del origen"):
+        _verify_official_link("https://official.example/source", timeout=1)

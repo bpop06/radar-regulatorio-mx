@@ -3,13 +3,13 @@ from __future__ import annotations
 import hashlib
 import re
 from datetime import date
-from urllib.parse import urljoin
 
 from bs4 import BeautifulSoup
 
 from app.models import Candidate
 from app.sources.base import Collector, require_html_marker
 from app.text import clean_text, parse_date
+from app.url_policy import OfficialUrlError, resolve_official_link
 
 _DATE_PREFIX_RE = re.compile(r"^\d{2}[./]\d{2}[./]\d{4}\s*")
 _EMPTY_PROJECTS_STATUSES = {
@@ -53,7 +53,12 @@ class SniceCollector(Collector):
             published_at = parse_date(date_match.group())
             if published_at < since:
                 continue
-            url = urljoin(cls.url, anchor["href"])
+            try:
+                url = resolve_official_link(cls.url, str(anchor["href"]))
+            except OfficialUrlError:
+                # Un enlace absoluto ajeno no adquiere procedencia oficial
+                # sólo porque apareció en la portada de SNICE.
+                continue
             if url in seen:
                 continue
             seen.add(url)

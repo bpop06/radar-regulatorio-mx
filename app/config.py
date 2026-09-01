@@ -24,6 +24,13 @@ class Settings:
     source_retry_backoff_seconds: float = float(
         os.getenv("SOURCE_RETRY_BACKOFF_SECONDS", "1.25")
     )
+    source_deadline_seconds: float = float(
+        os.getenv("SOURCE_DEADLINE_SECONDS", "120")
+    )
+    collection_deadline_seconds: float = float(
+        os.getenv("COLLECTION_DEADLINE_SECONDS", "300")
+    )
+    state_max_bytes: int = int(os.getenv("RADAR_STATE_MAX_BYTES", str(512 * 1024 * 1024)))
     local_timezone: str = os.getenv("LOCAL_TIMEZONE", "America/Mexico_City")
     database_path: str = os.getenv("RADAR_DB_PATH", _default_database_path())
     user_agent: str = os.getenv(

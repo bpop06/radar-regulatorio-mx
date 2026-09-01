@@ -156,7 +156,7 @@ def edition_block() -> dict:
     return {
         "edition_date": "2026-07-07",
         "state": "ready",
-        "coverage": {"state": "complete", "ok": 1, "failed": []},
+        "coverage": {"state": "complete", "ok": 1, "total": 1, "failed": []},
         "total_today": 1,
         "last_available_date": "2026-07-07",
         "lead_id": "dof:1",
@@ -258,6 +258,7 @@ def test_apply_editorial_updates_local_database(tmp_path):
         (edit(id="dof:999"), "id inexistente"),
         (edit(summary="muy corto"), "palabras"),
         (edit(summary=" ".join(f"palabra{i}" for i in range(1001))), "palabras"),
+        (edit(summary_teaser=" ".join(f"avance{i}" for i in range(71))), "teaser tiene 71"),
         (edit(card_body="## Qué se publicó\n\nSolo una sección"), "sección"),
         (edit(card_body=CARD_BODY_WITH_ACT_NUMBER), "número de acto"),
         (edit(title="Oficio 500-05-2026-1 comunica listado"), "número de oficio"),

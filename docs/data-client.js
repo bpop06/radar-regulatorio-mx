@@ -8,6 +8,25 @@ export function isSupportedEnvelope(value) {
   return isRecord(value) && SUPPORTED_SCHEMAS.has(Number(value.schema_version));
 }
 
+export function coverageSummary(value) {
+  if (!isRecord(value)) return null;
+  const allowed = new Set(["state", "ok", "total", "failed"]);
+  if (Object.keys(value).some((key) => !allowed.has(key))) return null;
+  const { state, ok, total, failed } = value;
+  if (!["complete", "degraded"].includes(state)
+    || !Number.isInteger(ok) || ok < 0
+    || !Number.isInteger(total) || total < 1
+    || !Array.isArray(failed)
+    || failed.some((source) => typeof source !== "string" || !source.trim())
+    || new Set(failed).size !== failed.length
+    || ok + failed.length !== total
+    || (state === "complete" && failed.length !== 0)
+    || (state === "degraded" && failed.length === 0)) {
+    return null;
+  }
+  return { state, ok, total, failed };
+}
+
 export async function fetchJson(path, { optional = false } = {}) {
   const response = await fetch(path, {
     cache: "no-store",

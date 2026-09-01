@@ -17,9 +17,11 @@ from pathlib import Path, PurePosixPath
 from typing import Any
 from urllib.error import HTTPError, URLError
 from urllib.parse import urljoin, urlsplit
-from urllib.request import Request, urlopen
+from urllib.request import HTTPRedirectHandler, HTTPSHandler, Request, build_opener, urlopen
 
 import truststore
+
+from app.url_policy import OfficialUrlError, redirect_target_allowed, validate_official_url
 
 DEFAULT_BASE_URL = "https://bpop06.github.io/radar-regulatorio-mx/"
 DEFAULT_WORKERS = 8
@@ -41,6 +43,16 @@ SSL_CONTEXT = _ssl_context()
 
 class SmokeError(RuntimeError):
     pass
+
+
+class _NoRedirect(HTTPRedirectHandler):
+    """Expose redirects so every hop can be checked against the same origin."""
+
+    def redirect_request(self, *_args: Any, **_kwargs: Any) -> None:
+        return None
+
+
+_OFFICIAL_REDIRECT_CODES = {301, 302, 303, 307, 308}
 
 
 def _fetch(base_url: str, path: str, *, timeout: float) -> bytes:
@@ -260,17 +272,20 @@ def _verify_oldest_history(
             f"{item_path}: falta la nota {note_path} de la ficha histórica más antigua"
         )
 
-    official_url = item.get("canonical_url") or item.get("url")
-    if not isinstance(official_url, str) or urlsplit(official_url).scheme not in {
-        "http",
-        "https",
-    }:
+    raw_official_url = item.get("canonical_url") or item.get("url")
+    if not isinstance(raw_official_url, str):
         raise SmokeError(f"{item_path}: la ficha histórica más antigua no tiene URL oficial")
-    escaped_url = html.escape(official_url, quote=True).encode("utf-8")
-    if official_url.encode("utf-8") not in note and escaped_url not in note:
+    escaped_url = html.escape(raw_official_url, quote=True).encode("utf-8")
+    if raw_official_url.encode("utf-8") not in note and escaped_url not in note:
         raise SmokeError(
             f"{note_path}: la nota histórica más antigua no enlaza su fuente oficial"
         )
+    try:
+        official_url = validate_official_url(raw_official_url, resolve_dns=True)
+    except OfficialUrlError as exc:
+        raise SmokeError(
+            f"{item_path}: la ficha histórica más antigua no tiene URL oficial segura"
+        ) from exc
 
     archive_path = f"data/archive/{published:%Y-%m}.json"
     archive = decoded.get(archive_path)
@@ -292,17 +307,45 @@ def _verify_oldest_history(
 
 
 def _verify_official_link(url: str, *, timeout: float) -> None:
-    request = Request(
-        url,
-        headers={"User-Agent": USER_AGENT, "Range": "bytes=0-0"},
-    )
     try:
-        with urlopen(request, timeout=timeout, context=SSL_CONTEXT) as response:
-            if not 200 <= response.status < 400:
-                raise SmokeError(f"{url}: HTTP {response.status}")
-            response.read(1)
-    except (HTTPError, URLError, TimeoutError, OSError) as exc:
-        raise SmokeError(f"{url}: {type(exc).__name__}: {exc}") from exc
+        original_url = validate_official_url(url, resolve_dns=True)
+    except OfficialUrlError as exc:
+        raise SmokeError(f"URL oficial insegura: {exc}") from exc
+    current_url = original_url
+    opener = build_opener(_NoRedirect(), HTTPSHandler(context=SSL_CONTEXT))
+    for _ in range(6):
+        request = Request(
+            current_url,
+            headers={"User-Agent": USER_AGENT, "Range": "bytes=0-0"},
+        )
+        try:
+            with opener.open(request, timeout=timeout) as response:
+                if not 200 <= response.status < 300:
+                    raise SmokeError(f"{current_url}: HTTP {response.status}")
+                response.read(1)
+                return
+        except HTTPError as exc:
+            if exc.code not in _OFFICIAL_REDIRECT_CODES:
+                raise SmokeError(
+                    f"{current_url}: HTTPError: HTTP Error {exc.code}: {exc.reason}"
+                ) from exc
+            location = exc.headers.get("Location")
+            if not location:
+                raise SmokeError(f"{current_url}: redirección sin destino") from exc
+            candidate = urljoin(current_url, location)
+            if not redirect_target_allowed(original_url, candidate, resolve_dns=True):
+                raise SmokeError(
+                    f"{current_url}: redirección fuera del origen oficial permitido"
+                ) from exc
+            try:
+                current_url = validate_official_url(candidate, resolve_dns=True)
+            except OfficialUrlError as validation_error:
+                raise SmokeError(
+                    f"{current_url}: destino oficial inseguro: {validation_error}"
+                ) from validation_error
+        except (URLError, TimeoutError, OSError) as exc:
+            raise SmokeError(f"{current_url}: {type(exc).__name__}: {exc}") from exc
+    raise SmokeError(f"{original_url}: demasiadas redirecciones oficiales")
 
 
 def verify(

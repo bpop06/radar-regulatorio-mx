@@ -123,11 +123,13 @@ async def collect(
             CpiCollector(client),
             CijCollector(client),
         ]
-        results = await asyncio.gather(
-            *(
-                _collect_source(collector, since, source_retries, retry_backoff)
-                for collector in collectors
-            )
+        results = await _collect_results(
+            collectors,
+            since,
+            attempts=source_retries,
+            backoff_seconds=retry_backoff,
+            source_deadline_seconds=settings.source_deadline_seconds,
+            collection_deadline_seconds=settings.collection_deadline_seconds,
         )
 
     unique: dict[tuple[str, str], Candidate] = {}
@@ -359,6 +361,122 @@ async def _collect_source(
     else:
         error = f"{type(last_error).__name__}: {str(last_error)[:240]}"
     return SourceResult(source=collector.source, error=error, attempts=attempts)
+
+
+async def _collect_results(
+    collectors: list[object],
+    since: date,
+    *,
+    attempts: int,
+    backoff_seconds: float,
+    source_deadline_seconds: float,
+    collection_deadline_seconds: float,
+) -> list[SourceResult]:
+    """Bound each official collector and the whole fan-out without false green.
+
+    A stalled official portal becomes an explicit degraded source rather than
+    holding the remaining 17 sources indefinitely.  The collector object may
+    expose ``unfinished_work`` to report queue counts honestly on cancellation.
+    """
+
+    per_source = max(0.1, float(source_deadline_seconds))
+    total_budget = max(0.1, float(collection_deadline_seconds))
+    pairs = [
+        (
+            collector,
+            asyncio.create_task(
+                _collect_with_deadline(
+                    collector,
+                    since,
+                    attempts=attempts,
+                    backoff_seconds=backoff_seconds,
+                    deadline_seconds=per_source,
+                )
+            ),
+        )
+        for collector in collectors
+    ]
+    done, pending = await asyncio.wait(
+        [task for _, task in pairs], timeout=total_budget
+    )
+    task_results: dict[asyncio.Task[SourceResult], SourceResult] = {}
+    for task in done:
+        try:
+            task_results[task] = task.result()
+        except Exception as exc:  # Defensive boundary around an unexpected task failure.
+            collector = next(
+                candidate for candidate, candidate_task in pairs if candidate_task is task
+            )
+            task_results[task] = SourceResult(
+                source=str(getattr(collector, "source", "Fuente desconocida")),
+                error=f"{type(exc).__name__}: {str(exc)[:240]}",
+                attempts=attempts,
+            )
+    if pending:
+        for collector, task in pairs:
+            if task not in pending:
+                continue
+            task.cancel()
+            task_results[task] = _deadline_result(
+                collector,
+                attempts=attempts,
+                deadline_seconds=total_budget,
+                scope="colección completa",
+            )
+        await asyncio.gather(*pending, return_exceptions=True)
+    return [task_results[task] for _, task in pairs]
+
+
+async def _collect_with_deadline(
+    collector: object,
+    since: date,
+    *,
+    attempts: int,
+    backoff_seconds: float,
+    deadline_seconds: float,
+) -> SourceResult:
+    try:
+        return await asyncio.wait_for(
+            _collect_source(collector, since, attempts, backoff_seconds),
+            timeout=deadline_seconds,
+        )
+    except TimeoutError:
+        return _deadline_result(
+            collector,
+            attempts=attempts,
+            deadline_seconds=deadline_seconds,
+            scope="fuente",
+        )
+
+
+def _deadline_result(
+    collector: object,
+    *,
+    attempts: int,
+    deadline_seconds: float,
+    scope: str,
+) -> SourceResult:
+    source = str(getattr(collector, "source", "Fuente desconocida"))
+    diagnostics = getattr(collector, "diagnostics", None)
+    validated_endpoints = int(getattr(diagnostics, "validated_endpoints", 0) or 0)
+    warning = f"{scope} agotó su presupuesto de {deadline_seconds:g} segundos"
+    if hasattr(collector, "mark_degraded"):
+        collector.mark_degraded(warning)
+    details: dict[str, object] = {
+        "warnings": [warning],
+        "validated_endpoints": validated_endpoints,
+        "deadline_seconds": deadline_seconds,
+        "deadline_scope": scope,
+    }
+    unfinished = getattr(collector, "unfinished_work", None)
+    if isinstance(unfinished, dict) and unfinished:
+        details["unfinished_work"] = dict(unfinished)
+    return SourceResult(
+        source=source,
+        attempts=attempts,
+        degraded=True,
+        details=details,
+    )
 
 
 def write_output(payload: dict[str, object], output: Path) -> None:

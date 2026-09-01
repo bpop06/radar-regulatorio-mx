@@ -166,6 +166,73 @@ def test_manifest_detects_artifact_tampering(tmp_path: Path) -> None:
     assert any("hash does not match" in error for error in report.errors)
 
 
+@pytest.mark.parametrize("kind", ["item", "archive", "state"])
+def test_manifest_rejects_symlinked_artifacts(tmp_path: Path, kind: str) -> None:
+    docs = tmp_path / "docs"
+    publications = docs / "data/publications.json"
+    payload = extractive_payload()
+    payload["_pending_state"] = {"icsid": {"ARB/26/1": "Pending"}}
+    write_site_artifacts_legacy(payload, publications)
+    item_path = docs / "data/items" / f"{item_key(payload['items'][0]['id'])}.json"
+    relative = {
+        "item": item_path,
+        "archive": docs / "data/archive/2026-08.json",
+        "state": docs / "data/state/icsid.json",
+    }[kind]
+    external = tmp_path / f"outside-{kind}.json"
+    external.write_bytes(relative.read_bytes())
+    relative.unlink()
+    relative.symlink_to(external)
+
+    report = validate_site_artifacts(docs / "data/manifest.json")
+
+    assert not report.ok
+    assert any("symbolic link" in error for error in report.errors)
+
+
+def test_writer_refuses_to_read_a_symlinked_previous_item(tmp_path: Path) -> None:
+    docs = tmp_path / "docs"
+    publications = docs / "data/publications.json"
+    payload = extractive_payload()
+    write_site_artifacts_legacy(payload, publications)
+    item_path = docs / "data/items" / f"{item_key(payload['items'][0]['id'])}.json"
+    external = tmp_path / "outside.json"
+    external.write_bytes(item_path.read_bytes())
+    item_path.unlink()
+    item_path.symlink_to(external)
+
+    with pytest.raises(PublishError, match="no puede ser un enlace"):
+        write_site_artifacts_legacy(payload, publications)
+
+
+def test_manifest_rejects_private_retraction_rollback_material(tmp_path: Path) -> None:
+    docs = tmp_path / "docs"
+    publications = docs / "data/publications.json"
+    payload = extractive_payload()
+    payload["_pending_state"] = {
+        "retractions": {
+            "version": 1,
+            "items": {
+                "dof:1": {
+                    "retracted_at": "2026-08-13T00:00:00+00:00",
+                    "reason": "no público",
+                    "record": {"id": "dof:1"},
+                }
+            },
+        }
+    }
+    write_site_artifacts_legacy(payload, publications)
+    path = "data/state/retractions.json"
+    envelope = json.loads((docs / path).read_text(encoding="utf-8"))
+    envelope["state"] = payload["_pending_state"]["retractions"]
+    _rewrite_and_rehash(docs, path, envelope)
+
+    report = validate_site_artifacts(docs / "data/manifest.json")
+
+    assert not report.ok
+    assert any("public retractions tombstone schema" in error for error in report.errors)
+
+
 def test_manifest_rejects_semantically_mismatched_archive_even_with_valid_hash(
     tmp_path: Path,
 ) -> None:
