@@ -1,0 +1,159 @@
+{
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "item": {
+    "ai_generated": true,
+    "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797561&fecha=01%2F09%2F2026",
+    "card_body": "## Qué se publicó\n\nLa Comisión Nacional Bancaria y de Valores revocó, a solicitud de SDMX Superdigital, la autorización para organizarse y operar como institución de fondos de pago electrónico. El Comité Interinstitucional aprobó la revocación.\n\n## Sustancia\n\nLa Comisión requiere tramitar la inscripción de la escritura de protocolización dentro de quince días hábiles posteriores a esa protocolización. También requiere entregar copia del instrumento con los datos de inscripción en el Registro Público de Comercio dentro de cuarenta y cinco días hábiles contados desde el día siguiente a la inscripción. El oficio no convalida ni prejuzga otros actos.\n\n## Fuente\n\nLa síntesis se elaboró exclusivamente con la fuente oficial identificada en la evidencia y sus fragmentos extraídos.",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "7f2098284628f69377e998dc8f8b68ef59d217f605f9b3596f0e912ba98fdd7f",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-1",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/2fef473fc7a4cb4dd02b63b1.json",
+    "detail_url": "notas/2fef473fc7a4cb4dd02b63b1.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "heading": "Alcance de la publicación",
+        "paragraphs": [
+          "La Comisión Nacional Bancaria y de Valores revocó, a solicitud de SDMX Superdigital, la autorización para organizarse y operar como institución de fondos de pago electrónico. El Comité Interinstitucional aprobó la revocación.",
+          "La Comisión requiere tramitar la inscripción de la escritura de protocolización dentro de quince días hábiles posteriores a esa protocolización. También requiere entregar copia del instrumento con los datos de inscripción en el Registro Público de Comercio dentro de cuarenta y cinco días hábiles contados desde el día siguiente a la inscripción. El oficio no convalida ni prejuzga otros actos."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "heading": "Seguimiento operativo",
+        "paragraphs": [
+          "SDMX Superdigital, sus representantes y los fedatarios intervinientes deben verificar ambas gestiones y conservar evidencia de las fechas de protocolización e inscripción.",
+          "La ficha no extiende el alcance del acto a supuestos que la fuente no identifica."
+        ]
+      }
+    ],
+    "detected_at": "2026-09-01T16:34:47.803209+00:00",
+    "document_type": "Oficio",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "fcdbae88b55e928430e3360afb4242c6f98e9d7ffa01c4e1db7241bf4461ff2e",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "OFICIO mediante el cual se resuelve la solicitud de revocación de la autorización para organizarse y operar como institución de fondos de pago electrónico a SDMX Superdigital, S.A. de C.V., Institución de Fondos de Pago Electrónico.",
+          "location": "caracteres 0-236"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Comisión Nacional Bancaria y de Valores.- Vicepresidencia de Normatividad.- Dirección General de Autorizaciones Especializadas.- Vicepresidencia de Supervisión de Grupos e Intermediarios Financieros B.- Dirección General de Supervisión de Grupos e Intermediarios Financieros F.- Oficio No. 311-42220061/2026.",
+          "location": "caracteres 236-8744"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797561&fecha=01%2F09%2F2026",
+      "retrieved_at": "2026-09-01T16:34:50.945457+00:00"
+    },
+    "executive_summary": [
+      "La Comisión Nacional Bancaria y de Valores revocó, a solicitud de SDMX Superdigital, la autorización para organizarse y operar como institución de fondos de pago electrónico. El Comité Interinstitucional aprobó la revocación.",
+      "La Comisión requiere tramitar la inscripción de la escritura de protocolización dentro de quince días hábiles posteriores a esa protocolización. También requiere entregar copia del instrumento con los datos de inscripción en el Registro Público de Comercio dentro de cuarenta y cinco días hábiles contados desde el día siguiente a la inscripción. El oficio no convalida ni prejuzga otros actos."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-09-01T16:34:47.803209+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5797561",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "La Comisión requiere tramitar la inscripción de la escritura de protocolización dentro de quince días hábiles posteriores a esa protocolización. También requiere entregar copia del instrumento con los datos de inscripción en el Registro Público de Comercio dentro de cuarenta y cinco días hábiles contados desde el día siguiente a la inscripción. El oficio no convalida ni prejuzga otros actos."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-2"
+          ],
+          "paragraphs": [
+            "La incidencia para este grupo se limita al alcance expresamente descrito en la publicación y requiere contrastarse con cada caso concreto."
+          ],
+          "sector": "SDMX Superdigital, sus representantes legales y fedatarios intervinientes"
+        }
+      ]
+    },
+    "importance": 1,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-09-01T16:34:47.803209+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797561&fecha=01/09/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5797561"
+    },
+    "official_published_at": "2026-09-01",
+    "official_title": "Oficio mediante el cual se resuelve la solicitud de revocación de la autorización para organizarse y operar como institución de fondos de pago electrónico a SDMX Superdigital, S.A. de C.V., Institución de Fondos de Pago Electrónico.",
+    "published_at": "2026-09-01",
+    "published_day": 1,
+    "published_month": 9,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "SDMX Superdigital, sus representantes legales y fedatarios intervinientes",
+        "deadline": "Inscripción: 15 días hábiles posteriores a la protocolización; copia inscrita a la CNBV: 45 días hábiles desde el día siguiente a la inscripción.",
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "legal_basis": "Artículo 69, penúltimo párrafo, de la Ley para Regular las Instituciones de Tecnología Financiera.",
+        "paragraphs": [
+          "SDMX Superdigital, sus representantes y los fedatarios intervinientes deben verificar ambas gestiones y conservar evidencia de las fechas de protocolización e inscripción."
+        ],
+        "trigger": "A partir de la formalización de la protocolización de la revocación."
+      }
+    ],
+    "relevance_score": 1,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5797561",
+    "subtopic_tags": [],
+    "summary": "La Comisión Nacional Bancaria y de Valores revocó, a solicitud de SDMX Superdigital, la autorización para organizarse y operar como institución de fondos de pago electrónico. El Comité Interinstitucional aprobó la revocación.\n\nLa Comisión requiere tramitar la inscripción de la escritura de protocolización dentro de quince días hábiles posteriores a esa protocolización. También requiere entregar copia del instrumento con los datos de inscripción en el Registro Público de Comercio dentro de cuarenta y cinco días hábiles contados desde el día siguiente a la inscripción. El oficio no convalida ni prejuzga otros actos.\n\nPara fines de seguimiento, SDMX Superdigital, sus representantes y los fedatarios intervinientes deben verificar ambas gestiones y conservar evidencia de las fechas de protocolización e inscripción. La revisión debe partir de la publicación oficial y de la documentación disponible para el caso concreto. El contenido debe mantenerse dentro de los límites del acto: no permite presumir efectos respecto de personas, operaciones, expedientes, contratos o procedimientos que la fuente no identifica. Cuando el documento comunica una autorización, una sanción, un trámite, una regla administrativa o un dato institucional, corresponde distinguir su alcance expreso de actuaciones posteriores que no estén acreditadas.\n\nEn términos probatorios, esta ficha se limita a los fragmentos oficiales y a sus localizadores. No atribuye efectos, plazos, montos, fundamentos, sujetos, resultados o hechos que no figuren en la fuente. La consulta del texto íntegro y, cuando corresponda, de la documentación del caso es necesaria para determinar cualquier consecuencia concreta. La verificación de una consecuencia particular exige identificar el acto aplicable, su fecha relevante, las personas efectivamente comprendidas y la evidencia que corresponda a la situación revisada. En ningún caso sustituye la consulta de expedientes, constancias o notificaciones individuales que puedan modificar la conclusión para una situación concreta. Esta delimitación evita convertir la información publicada en una conclusión definitiva sobre derechos, obligaciones o cumplimiento individual.",
+    "summary_teaser": "La CNBV revocó, a solicitud de SDMX Superdigital, su autorización como institución de fondos de pago electrónico. La inscripción de la escritura de protocolización debe tramitarse dentro de quince días hábiles posteriores a esa protocolización; la copia inscrita debe entregarse a la CNBV dentro de cuarenta y cinco días hábiles desde el día siguiente a la inscripción.",
+    "title": "CNBV revoca autorización de Superdigital y fija gestiones registrales",
+    "topic_tags": [
+      "Oficio"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797561&fecha=01/09/2026"
+  },
+  "schema_version": 8
+}

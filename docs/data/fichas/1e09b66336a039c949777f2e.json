@@ -1,0 +1,139 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Contenido publicado",
+      "paragraphs": [
+        "La resolución sancionadora impuso a Fedang de México, S.A. de C.V. una multa y una inhabilitación de 30 meses para participar, directamente o por interpósita persona, en procedimientos de contratación y para celebrar contratos regulados por la Ley de Adquisiciones, Arrendamientos y Servicios del Sector Público. La abstención opera desde el día siguiente a la publicación de la circular. Si la multa no se acredita pagada al concluir el periodo, la inhabilitación subsiste hasta el pago.",
+        "La circular se dirige a dependencias y entidades federales, la Fiscalía General de la República, entidades federativas, municipios y demarcaciones. Señala que el registro se elimina de ComprasMX cuando se acredite el pago en los términos indicados por la autoridad."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Alcance y lectura práctica",
+      "paragraphs": [
+        "El aviso excluye los contratos adjudicados o formalizados previamente. Para entidades federativas, municipios y demarcaciones, la obligación de observarlo se refiere a adquisiciones, arrendamientos y servicios con cargo total o parcial a fondos federales conforme a convenios con el Ejecutivo Federal.",
+        "La ficha se dirige principalmente a áreas compradoras y responsables de contratación con recursos federales."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "b324315664f188779d22ce5e68268f00751604af390c1ed87a5405ac92f4b02e",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "CIRCULAR por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a la Fiscalía General de la República, a las entidades federativas y sus municipios, así como a las demarcaciones territoriales de la Ciudad de México, que deberán abstenerse de aceptar propuestas o celebrar contratos con la persona moral Fedang de México S.A. de C.V.",
+        "location": "caracteres 0-373"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Buen Gobierno.- Secretaría Anticorrupción y Buen Gobierno.- Órgano Interno de Control en el Instituto para Devolver al Pueblo lo Robado.- Área de Responsabilidades.- Expediente: SANC/INDEP/001/2024.",
+        "location": "caracteres 373-8191"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797480&fecha=31%2F08%2F2026",
+    "retrieved_at": "2026-09-01T16:34:52.656753+00:00"
+  },
+  "executive_summary": [
+    "El Órgano Interno de Control en el Instituto para Devolver al Pueblo lo Robado difundió una circular que ordena abstenerse de aceptar propuestas o celebrar contratos con una empresa sancionada. La resolución sancionadora impuso a Fedang de México, S.A. de C.V. una multa y una inhabilitación de 30 meses para participar, directamente o por interpósita persona, en procedimientos de contratación y para celebrar contratos regulados por la Ley de Adquisiciones, Arrendamientos y Servicios del Sector Público. La abstención opera desde el día siguiente a la publicación de la circular. Si la multa no se acredita pagada al concluir el periodo, la inhabilitación subsiste hasta el pago.",
+    "El aviso excluye los contratos adjudicados o formalizados previamente. Para entidades federativas, municipios y demarcaciones, la obligación de observarlo se refiere a adquisiciones, arrendamientos y servicios con cargo total o parcial a fondos federales conforme a convenios con el Ejecutivo Federal. La síntesis se limita a los hechos y condiciones expresamente visibles en la fuente oficial."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "paragraphs": [
+        "El efecto observable es el que la publicación atribuye al acto: El aviso excluye los contratos adjudicados o formalizados previamente. Para entidades federativas, municipios y demarcaciones, la obligación de observarlo se refiere a adquisiciones, arrendamientos y servicios con cargo total o parcial a fondos federales conforme a convenios con el Ejecutivo Federal."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "Las personas comprendidas deben considerar el documento porque La resolución sancionadora impuso a Fedang de México, S.A. de C.V. una multa y una inhabilitación de 30 meses para participar, directamente o por interpósita persona, en procedimientos de contratación y para celebrar contratos regulados por la Ley de Adquisiciones, Arrendamientos y Servicios del Sector Público. La abstención opera desde el día siguiente a la publicación de la circular. Si la multa no se acredita pagada al concluir el periodo, la inhabilitación subsiste hasta el pago."
+        ],
+        "sector": "Áreas compradoras y responsables de contratación con recursos federales"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797480&fecha=31%2F08%2F2026",
+    "categories": [
+      "Penal",
+      "Administración centralizada"
+    ],
+    "content_hash": "d3a6f1540a759f9e790351bace764c1402cf949b71321823d99ba609275912a9",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/1e09b66336a039c949777f2e.json",
+    "detail_url": "notas/1e09b66336a039c949777f2e.html",
+    "detected_at": "2026-09-01T16:34:47.803209+00:00",
+    "document_type": "Circular",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5797480",
+    "importance": 2,
+    "issuing_body": "Presidencia de la República",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-08-31",
+    "official_title": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a la Fiscalía General de la República, a las entidades federativas y sus municipios, así como a las demarcaciones territoriales de la Ciudad de México, que deberán abstenerse de aceptar propuestas o celebrar contratos con la persona moral Fedang de México S.A. de C.V.",
+    "published_at": "2026-08-31",
+    "relevance_score": 3,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5797480",
+    "summary_teaser": "Una circular del órgano interno de control del Instituto para Devolver al Pueblo lo Robado comunica la inhabilitación de Fedang de México, S.A. de C.V. por 30 meses para participar o contratar bajo la legislación federal de adquisiciones. Los contratos ya formalizados no quedan comprendidos.",
+    "title": "Fedang de México recibe prohibición para contratar con gobierno",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797480&fecha=31/08/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Áreas compradoras y responsables de contratación con recursos federales",
+      "deadline": "Desde el día siguiente a la publicación de la circular en el DOF, por 30 meses; si la multa no se acredita pagada al concluir ese plazo, la inhabilitación subsiste hasta el pago.",
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "legal_basis": "Resolutivo Sexto de la resolución; artículo 60, antepenúltimo párrafo, de la Ley de Adquisiciones, Arrendamientos y Servicios del Sector Público y artículo 113 de su Reglamento.",
+      "paragraphs": [
+        "Incorporar la abstención en la revisión de propuestas y contrataciones futuras dentro del ámbito señalado, sin tratar como cancelados los contratos preexistentes que la circular excluye."
+      ],
+      "trigger": "Cuando la persona o entidad se ubique en el ámbito material descrito por la fuente oficial."
+    }
+  ],
+  "schema_version": 8
+}

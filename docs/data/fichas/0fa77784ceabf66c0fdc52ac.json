@@ -1,0 +1,136 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "heading": "Contenido publicado",
+      "paragraphs": [
+        "La sentencia firme del Tribunal anuló la resolución administrativa sancionadora impugnada por Industrias Danjur."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "heading": "Alcance práctico",
+      "paragraphs": [
+        "La autoridad informó que dejó insubsistentes la resolución y las sanciones que contenía, sin publicar un nuevo procedimiento."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "764282d0a3f9326653e0e439e1d84b579bfdd488f50412071b2d1920aa1d9114",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "CIRCULAR por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a las empresas públicas del Estado, así como a las entidades federativas, municipios y demarcaciones territoriales de la Ciudad de México, el cumplimiento a la sentencia definitiva de diez de marzo de dos mil veinticinco, dictada en el juicio contencioso administrativo 16636/24-17-05-4, promovido por el C. Rodrigo Vidal Aguilar, en representación legal de la empresa Industrias Danjur, S.A. de C.V., en la cual la Quinta Sala Regional Metropolitana del Tribunal Federal de Justicia Administrativa declaró la nulidad lisa y llana de la resolución de diecisiete de junio de dos mil veinticuatro, dictada por el titular del Área de Responsabilidades del entonces Órgano Interno de Control Específico en Servicios de Salud del Instituto Mexicano del Seguro Social para el Bienestar (IMSS-BIENESTAR), en el procedimiento administrativo de sanción número PA/0002/2023.",
+        "location": "caracteres 0-969"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Buen Gobierno.- Secretaría Anticorrupción y Buen Gobierno.- Órgano Interno de Control en Servicios de Salud del Instituto Mexicano del Seguro Social para el Bienestar (IMSS-BIENESTAR).- Área de Responsabilidades.- Expediente: PA/0002/ 2023.- Industrias Danjur, S.A. de C.V.",
+        "location": "caracteres 969-5155"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796708&fecha=20%2F08%2F2026",
+    "retrieved_at": "2026-09-01T16:35:12.205194+00:00"
+  },
+  "executive_summary": [
+    "El Área de Responsabilidades del Órgano Interno de Control en Servicios de Salud del IMSS-BIENESTAR publicó una circular para comunicar el cumplimiento de una sentencia definitiva del Tribunal Federal de Justicia Administrativa. La sentencia, notificada como firme según la fuente, declaró la nulidad de la resolución emitida dentro de un procedimiento administrativo de sanción seguido contra Industrias Danjur, S.A. de C.V. La circular reproduce que la Sala resolvió que la parte actora probó los hechos constitutivos de su pretensión y anuló la resolución impugnada.",
+    "La comunicación identifica que la resolución administrativa había impuesto a la empresa una multa y una inhabilitación para celebrar contratos. En cumplimiento de la sentencia, un acuerdo posterior dejó insubsistente esa resolución y las sanciones que contenía. El efecto reportado por la autoridad es la eliminación de esas sanciones específicas; no es una declaración general sobre cualquier procedimiento, contrato o situación distinta de la resolución administrativa anulada."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "paragraphs": [
+        "La circular actualiza el estado de una sanción específica que ya no debe tratarse como vigente por las autoridades destinatarias."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "Las áreas contratantes deben ajustar sus expedientes y verificaciones para reflejar que la resolución sancionadora descrita fue dejada sin efectos."
+        ],
+        "sector": "Áreas contratantes y la empresa involucrada"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796708&fecha=20%2F08%2F2026",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "9f536c4e6541b83d280374362ac52a182002d7b2c1f77ff2b92dd70e8dfeee60",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/0fa77784ceabf66c0fdc52ac.json",
+    "detail_url": "notas/0fa77784ceabf66c0fdc52ac.html",
+    "detected_at": "2026-09-01T16:34:47.803209+00:00",
+    "document_type": "Circular",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5796708",
+    "importance": 3,
+    "issuing_body": "Presidencia de la República",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-08-20",
+    "official_title": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a las empresas públicas del Estado, así como a las entidades federativas, municipios y demarcaciones territoriales de la Ciudad de México, el cumplimiento a la sentencia definitiva de diez de marzo de dos mil veinticinco, dictada en el juicio contencioso administrativo 16636/24-17- 05-4, promovido por el C. Rodrigo Vidal Aguilar, en representación legal de la empresa Industrias Danjur, S.A. de C.V., en la cual la Quinta Sala Regional Metropolitana del Tribunal Federal de Justicia Administrativa declaró la nulidad lisa y llana de la resolución de diecisiete de junio de dos mil veinticuatro, dictada por el titular del Área de Responsabilidades del entonces Órgano Interno de Control Específico en Servicios de Salud del Instituto Mexicano del Seguro Social para el Bienestar (IMSS-BIENESTAR), en el procedimiento administrativo de sanción número PA/0002/2023.",
+    "published_at": "2026-08-20",
+    "relevance_score": 5,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5796708",
+    "summary_teaser": "El órgano interno de control de IMSS-BIENESTAR comunicó que dejó insubsistente la resolución que sancionó a Industrias Danjur. La circular da cumplimiento a una sentencia firme de la Sala Regional en Ciudad de México del Tribunal Federal de Justicia Administrativa que declaró la nulidad de la resolución impugnada.",
+    "title": "TFJA invalida sanciones impuestas a Industrias Danjur",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796708&fecha=20/08/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Áreas contratantes y la empresa involucrada",
+      "deadline": null,
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "legal_basis": "Sentencia del Tribunal Federal de Justicia Administrativa y circular de cumplimiento",
+      "paragraphs": [
+        "Identificar referencias internas a la resolución anulada y actualizar la verificación de elegibilidad con base en la circular y en los registros oficiales vigentes."
+      ],
+      "trigger": "Consultar o aplicar la sanción administrativa identificada en la circular"
+    }
+  ],
+  "schema_version": 8
+}

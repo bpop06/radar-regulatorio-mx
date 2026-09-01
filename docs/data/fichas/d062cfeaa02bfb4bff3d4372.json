@@ -1,0 +1,162 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-3",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2",
+        "chunk-3"
+      ],
+      "heading": "Calendario del permiso previo",
+      "paragraphs": [
+        "El Boletín B.SNICE 002/2026 informa el calendario de implementación del permiso previo de importación de azúcar y preparaciones alimenticias previsto en la modificación a las reglas y criterios de comercio exterior publicada el 28 de mayo de 2026. El aviso no abre el requisito de forma inmediata para el despacho: organiza tres hitos consecutivos para que las personas importadoras obtengan primero el informe técnico y después presenten la solicitud del permiso.",
+        "Desde el 21 de agosto de 2026 las personas interesadas pueden iniciar ante el Centro Nacional de Metrología el procedimiento para obtener un Informe de Atestación o un Informe de Cumplimiento. El boletín señala que el apartado de la Ventanilla Única de Trámites de Comercio Exterior estará disponible el 31 de agosto para presentar las solicitudes del permiso previo. Esa secuencia conecta el informe emitido por CENAM con la posterior gestión electrónica del permiso."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2",
+        "chunk-3"
+      ],
+      "heading": "Preparación para el despacho aduanero",
+      "paragraphs": [
+        "El 28 de septiembre de 2026 el permiso previo pasa a ser obligatorio para el despacho aduanero de las mercancías sujetas a la regulación. El anuncio identifica expresamente azúcar y preparaciones alimenticias, pero no enumera fracciones arancelarias ni detalla excepciones adicionales. Por ello, la obligación indicada se refiere a los bienes que queden sujetos al instrumento modificatorio citado por el boletín y a su despacho a partir de la fecha de exigibilidad.",
+        "Los importadores de mercancías alcanzadas pueden ordenar sus expedientes en función del calendario publicado: solicitar el informe ante CENAM, usar VUTCE cuando el apartado esté habilitado y contar con el permiso antes del 28 de septiembre. El boletín recomienda considerar el tiempo necesario para ambas gestiones; las consultas adicionales se canalizan al correo institucional indicado por el SNICE.",
+        "El calendario establece una transición regulatoria para las importaciones sujetas al permiso previo: la obtención del informe y la presentación por VUTCE anteceden a la exigencia documental en el despacho aduanero. Los importadores de azúcar y preparaciones alimenticias sujetas a la medida necesitan coordinar el informe técnico con la solicitud electrónica para no llegar al 28 de septiembre sin el permiso requerido en aduana."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "3cb3d1795cd80aaa09947baaef8cf009ebb094f2e98992dde4b7b83a79ee4465",
+    "extraction_method": "pdf-inspector",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "Servicio Nacional de Información de Comercio Exterior",
+        "location": "caracteres 0-58"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Boletín B.SNICE 002/2026",
+        "location": "caracteres 58-130"
+      },
+      {
+        "id": "chunk-3",
+        "label": "Permiso Previo de Importación de Azúcar y Preparaciones Alimenticias",
+        "location": "caracteres 130-1618"
+      }
+    ],
+    "official_url": "https://www.snice.gob.mx/~oracle/SNICE_DOCS/Bolet%C3%ADn-BSNICE-002-2026-ACTUALIDAD_20260821-20260821.pdf",
+    "retrieved_at": "2026-08-24T17:44:24.070032+00:00"
+  },
+  "executive_summary": [
+    "El Boletín B.SNICE 002/2026 informa el calendario de implementación del permiso previo de importación de azúcar y preparaciones alimenticias previsto en la modificación a las reglas y criterios de comercio exterior publicada el 28 de mayo de 2026. El aviso no abre el requisito de forma inmediata para el despacho: organiza tres hitos consecutivos para que las personas importadoras obtengan primero el informe técnico y después presenten la solicitud del permiso.",
+    "Los importadores de mercancías alcanzadas pueden ordenar sus expedientes en función del calendario publicado: solicitar el informe ante CENAM, usar VUTCE cuando el apartado esté habilitado y contar con el permiso antes del 28 de septiembre. El boletín recomienda considerar el tiempo necesario para ambas gestiones; las consultas adicionales se canalizan al correo institucional indicado por el SNICE."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2",
+        "chunk-3"
+      ],
+      "paragraphs": [
+        "El calendario establece una transición regulatoria para las importaciones sujetas al permiso previo: la obtención del informe y la presentación por VUTCE anteceden a la exigencia documental en el despacho aduanero."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2",
+          "chunk-3"
+        ],
+        "paragraphs": [
+          "Los importadores de azúcar y preparaciones alimenticias sujetas a la medida necesitan coordinar el informe técnico con la solicitud electrónica para no llegar al 28 de septiembre sin el permiso requerido en aduana."
+        ],
+        "sector": "Importación de alimentos y comercio exterior"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://www.snice.gob.mx/~oracle/SNICE_DOCS/Bolet%C3%ADn-BSNICE-002-2026-ACTUALIDAD_20260821-20260821.pdf",
+    "categories": [
+      "Comercio exterior",
+      "Administración centralizada"
+    ],
+    "content_hash": "9674cd366c03de7b3ee91524f01528188901c4908a531021a868c679df631136",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/d062cfeaa02bfb4bff3d4372.json",
+    "detail_url": "notas/d062cfeaa02bfb4bff3d4372.html",
+    "detected_at": "2026-09-01T16:34:47.803209+00:00",
+    "document_type": "Actualidad",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "snice:0de53fcd353ba826",
+    "importance": 1,
+    "issuing_body": "Secretaría de Economía",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-08-21",
+    "official_title": "Boletín B.SNICE 002/2026. Permiso Previo de Importación de Azúcar y Preparaciones Alimenticias.",
+    "published_at": "2026-08-21",
+    "relevance_score": 1,
+    "review_reason": null,
+    "source": "SNICE",
+    "source_id": "0de53fcd353ba826",
+    "summary_teaser": "El SNICE fijó el calendario para el permiso previo de importación de azúcar y preparaciones alimenticias: el informe técnico puede gestionarse desde el 21 de agosto, la solicitud abre el 31 de agosto en VUTCE y el permiso será exigible en aduana el 28 de septiembre de 2026.",
+    "title": "Permiso previo exige trámite antes del despacho de azúcar",
+    "url": "https://www.snice.gob.mx/~oracle/SNICE_DOCS/Bolet%C3%ADn-BSNICE-002-2026-ACTUALIDAD_20260821-20260821.pdf"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Importadores de azúcar y preparaciones alimenticias sujetas al permiso",
+      "deadline": "Contar con el permiso antes del despacho aduanero a partir del 28 de septiembre de 2026",
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2",
+        "chunk-3"
+      ],
+      "legal_basis": "Modificación a las reglas y criterios generales de comercio exterior publicada el 28 de mayo de 2026",
+      "paragraphs": [
+        "Iniciar el trámite del Informe de Atestación o de Cumplimiento ante CENAM y presentar la solicitud mediante VUTCE cuando se habilite el apartado, con anticipación a la fecha de obligatoriedad."
+      ],
+      "trigger": "Disponibilidad del trámite de informe desde el 21 de agosto y de la solicitud en VUTCE desde el 31 de agosto de 2026"
+    }
+  ],
+  "schema_version": 8
+}

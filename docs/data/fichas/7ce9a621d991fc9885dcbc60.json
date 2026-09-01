@@ -1,0 +1,256 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-3",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-4",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-5",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-6",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-7",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-8",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-9",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-10",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-10"
+      ],
+      "heading": "Contenido publicado",
+      "paragraphs": [
+        "El acuerdo publica la recaudación federal participable de junio, las participaciones de julio y la metodología de cálculo y distribución."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-10"
+      ],
+      "heading": "Alcance práctico",
+      "paragraphs": [
+        "Incluye fondos generales, municipales, hidrocarburos, IEPS y el Fondo de Fiscalización y Recaudación del segundo trimestre, mediante cuadros y coeficientes oficiales."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "b228fe315e6eafdc7e5ec9a54ca6b99750e096980653f223323cc13fd1d2b93c",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "ACUERDO por el cual se da a conocer el informe sobre la recaudación federal participable y las participaciones federales, así como los procedimientos de cálculo, por el mes de julio de 2026 y las participaciones del Fondo de Fiscalización y Recaudación del segundo trimestre de 2026.",
+        "location": "caracteres 0-287"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público. · parte 1",
+        "location": "caracteres 287-12287"
+      },
+      {
+        "id": "chunk-3",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público. · parte 2",
+        "location": "caracteres 12287-24287"
+      },
+      {
+        "id": "chunk-4",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público. · parte 3",
+        "location": "caracteres 24287-36287"
+      },
+      {
+        "id": "chunk-5",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público. · parte 4",
+        "location": "caracteres 36287-48287"
+      },
+      {
+        "id": "chunk-6",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público. · parte 5",
+        "location": "caracteres 48287-60287"
+      },
+      {
+        "id": "chunk-7",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público. · parte 6",
+        "location": "caracteres 60287-72287"
+      },
+      {
+        "id": "chunk-8",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público. · parte 7",
+        "location": "caracteres 72287-84287"
+      },
+      {
+        "id": "chunk-9",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público. · parte 8",
+        "location": "caracteres 84287-96287"
+      },
+      {
+        "id": "chunk-10",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público. · parte 9",
+        "location": "caracteres 96287-102981"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796402&fecha=17%2F08%2F2026",
+    "retrieved_at": "2026-09-01T16:35:25.100199+00:00"
+  },
+  "executive_summary": [
+    "La Secretaría de Hacienda y Crédito Público publicó el informe sobre la recaudación federal participable de junio de dos mil veintiséis y las participaciones en ingresos federales de julio del mismo año. El acuerdo explica los procedimientos de cálculo y distribución por entidades federativas y, cuando corresponde, por municipios. Las cifras de julio no incluyen deducciones derivadas de compromisos financieros contraídos por las entidades federativas, según la precisión que contiene el texto.",
+    "El documento integra cuadros para el Fondo General de Participaciones, Fondo de Fomento Municipal, participaciones específicas del impuesto especial sobre producción y servicios, gasolinas y diésel, Fondo de Compensación, Fondo de Extracción de Hidrocarburos, participaciones provisionales, el componente de cero punto ciento treinta y seis por ciento de la recaudación federal participable y transferencias relacionadas con municipios por los que salen hidrocarburos. También da a conocer coeficientes y distribuciones del Fondo de Fiscalización y Recaudación del segundo trimestre de dos mil veintiséis."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-10"
+      ],
+      "paragraphs": [
+        "La información sirve para transparencia y conciliación de transferencias federales a entidades y municipios; no cambia por sí misma la normativa tributaria."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-10"
+        ],
+        "paragraphs": [
+          "Las áreas financieras pueden contrastar sus registros y previsiones con las tablas oficiales y los procedimientos que el acuerdo publica."
+        ],
+        "sector": "Entidades federativas, municipios y áreas de finanzas públicas"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796402&fecha=17%2F08%2F2026",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "d5a0f1296f2060049c8f45e0a6420f5eb005b584cca4914356ce2404eebb1d58",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/7ce9a621d991fc9885dcbc60.json",
+    "detail_url": "notas/7ce9a621d991fc9885dcbc60.html",
+    "detected_at": "2026-09-01T16:34:47.803209+00:00",
+    "document_type": "Acuerdo",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5796402",
+    "importance": 1,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-08-17",
+    "official_title": "Acuerdo por el cual se da a conocer el informe sobre la recaudación federal participable y las participaciones federales, así como los procedimientos de cálculo, por el mes de julio de 2026 y las participaciones del Fondo de Fiscalización y Recaudación del segundo trimestre de 2026.",
+    "published_at": "2026-08-17",
+    "relevance_score": 1,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5796402",
+    "summary_teaser": "La Secretaría de Hacienda publicó la recaudación federal participable de junio y los cálculos de participaciones de julio de dos mil veintiséis, incluidos fondos generales, municipales, hidrocarburos, IEPS, fronteras y litorales. El acuerdo también informa las participaciones del Fondo de Fiscalización y Recaudación correspondientes al segundo trimestre.",
+    "title": "Hacienda determina participaciones federales de julio",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796402&fecha=17/08/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Entidades federativas, municipios y áreas de finanzas públicas",
+      "deadline": null,
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-10"
+      ],
+      "legal_basis": "Ley de Coordinación Fiscal y artículo 26 de la Ley del Servicio de Administración Tributaria, citados en el acuerdo",
+      "paragraphs": [
+        "Conciliar participaciones, coeficientes y transferencias con el cuadro aplicable; documentar cualquier diferencia usando la metodología oficial."
+      ],
+      "trigger": "Preparar registros, presupuestos o conciliaciones de participaciones federales"
+    }
+  ],
+  "schema_version": 8
+}

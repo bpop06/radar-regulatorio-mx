@@ -1,0 +1,205 @@
+{
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "item": {
+    "ai_generated": true,
+    "authority": "PODER EJECUTIVO SECRETARIA DE ECONOMIA",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791264&fecha=22/06/2026",
+    "card_body": "## Qué se publicó\n\nEconomía incorporó al Reino Unido a los supuestos de mercancías originarias que pueden acceder al trato arancelario del CPTPP, conforme a las listas, apéndices y condiciones del régimen.\n\n## Sustancia\n\nLa Secretaría de Economía modifica el acuerdo de 2022 que da a conocer la tasa aplicable del impuesto general de importación para mercancías originarias de la región CPTPP. El cambio responde al Protocolo de Adhesión del Reino Unido: el texto señala que México notificó al depositario el 23 de abril de 2026 la conclusión de sus procedimientos jurídicos y que, conforme al propio Protocolo, éste entra en vigor para México el 22 de junio de 2026.\n\nLa reforma incorpora expresamente al Reino Unido en la denominación, en el punto Primero y en diversos puntos del acuerdo original. Para mercancías originarias de los territorios enumerados, el punto Primero mantiene como regla la exención arancelaria, salvo los casos para los que el propio acuerdo disponga algo distinto. La preferencia presupone la calidad de originaria conforme al Tratado y al Protocolo; no se aplica únicamente por procedencia comercial.\n\n## Fuente\n\nFuente oficial: Acuerdo de la Secretaría de Economía que modifica la tasa aplicable del impuesto general de importación para mercancías de la región CPTPP. El objeto del acuerdo aparece en chunk-1; la incorporación del Reino Unido, los apéndices, los requisitos de cupo y la vigencia se localizan en chunk-2 y chunk-3.",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Fiscal",
+      "Comercio exterior",
+      "Administración centralizada"
+    ],
+    "content_hash": "abaf2ef8cd150e32ee0f4c16d200d2d5b6ac258766aee3a4d2d7344a646e92e5",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-1",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-3",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/54abdbfdefb170755567503e.json",
+    "detail_url": "notas/54abdbfdefb170755567503e.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "heading": "Incorporación del Reino Unido",
+        "paragraphs": [
+          "La Secretaría de Economía modifica el acuerdo de 2022 que da a conocer la tasa aplicable del impuesto general de importación para mercancías originarias de la región CPTPP. El cambio responde al Protocolo de Adhesión del Reino Unido: el texto señala que México notificó al depositario el 23 de abril de 2026 la conclusión de sus procedimientos jurídicos y que, conforme al propio Protocolo, éste entra en vigor para México el 22 de junio de 2026.",
+          "La reforma incorpora expresamente al Reino Unido en la denominación, en el punto Primero y en diversos puntos del acuerdo original. Para mercancías originarias de los territorios enumerados, el punto Primero mantiene como regla la exención arancelaria, salvo los casos para los que el propio acuerdo disponga algo distinto. La preferencia presupone la calidad de originaria conforme al Tratado y al Protocolo; no se aplica únicamente por procedencia comercial."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-2",
+          "chunk-3"
+        ],
+        "heading": "Listas, apéndices y requisitos preservados",
+        "paragraphs": [
+          "El texto conserva listas con tratamientos distintos: el Apéndice I identifica fracciones que conservan el arancel de la LIGIE sin reducción; los apéndices y puntos posteriores fijan aranceles preferenciales o fechas de liberación para fracciones y modalidades determinadas. Las fechas de liberación que el acuerdo menciona incluyen 2025, 2027, 2028, 2029, 2030, 2032 y 2033, según la fracción, apéndice o modalidad de mercancía de que se trate.",
+          "Para determinados códigos anotados en el Apéndice I, los puntos vigésimo segundo y vigésimo tercero condicionan la exención a un certificado de cupo expedido por la Secretaría de Economía; si no se cumple el requisito, se aplica la tasa del artículo 1 de la LIGIE sin reducción. El acuerdo declara además que la desgravación no exime del cumplimiento de regulaciones y restricciones no arancelarias, normas oficiales mexicanas, requisitos previos de importación ni del despacho aduanero que correspondan."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-3"
+        ],
+        "heading": "Vigencia",
+        "paragraphs": [
+          "El transitorio único dispone que la modificación entra en vigor el día de su publicación en el Diario Oficial de la Federación. La lectura operativa exige revisar la fracción arancelaria, la nota o apéndice aplicable, el origen bajo las reglas del CPTPP y, cuando proceda, el certificado de cupo. El documento no fija una tasa uniforme para todas las mercancías británicas ni sustituye las obligaciones aduaneras o no arancelarias aplicables."
+        ]
+      }
+    ],
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Acuerdo",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "759aaa0a3246114fda5773c7a42638b75fce1aba10957493ecba714e0204c7f9",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "ACUERDO por el que se modifica el diverso por el que se da a conocer la Tasa Aplicable del Impuesto General de Importación para las mercancías originarias de la región conformada por México, Australia, Brunéi, Canadá, Chile, Japón, Malasia, Nueva Zelanda, Perú, Singapur y Vietnam, que corresponden a Australia, Brunéi, Canadá, Chile, Japón, Malasia, Nueva Zelanda, Perú y Singapur.",
+          "location": "caracteres 0-386"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Economía. · parte 1",
+          "location": "caracteres 386-12386"
+        },
+        {
+          "id": "chunk-3",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Economía. · parte 2",
+          "location": "caracteres 12386-23680"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791264&fecha=22/06/2026",
+      "retrieved_at": "2026-08-13T19:43:52.076959+00:00"
+    },
+    "executive_summary": [
+      "La Secretaría de Economía modifica el acuerdo de 2022 que da a conocer la tasa aplicable del impuesto general de importación para mercancías originarias de la región CPTPP. El cambio responde al Protocolo de Adhesión del Reino Unido: el texto señala que México notificó al depositario el 23 de abril de 2026 la conclusión de sus procedimientos jurídicos y que, conforme al propio Protocolo, éste entra en vigor para México el 22 de junio de 2026.",
+      "La reforma incorpora expresamente al Reino Unido en la denominación, en el punto Primero y en diversos puntos del acuerdo original. Para mercancías originarias de los territorios enumerados, el punto Primero mantiene como regla la exención arancelaria, salvo los casos para los que el propio acuerdo disponga algo distinto. La preferencia presupone la calidad de originaria conforme al Tratado y al Protocolo; no se aplica únicamente por procedencia comercial."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5791264",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2",
+          "chunk-3"
+        ],
+        "paragraphs": [
+          "Importadores de mercancías británicas obtienen la referencia normativa para ubicar el trato CPTPP, pero el resultado depende de la fracción, origen, nota y, en algunos casos, del certificado de cupo."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-1",
+            "chunk-2",
+            "chunk-3"
+          ],
+          "paragraphs": [
+            "Importadores de mercancías británicas obtienen la referencia normativa para ubicar el trato CPTPP, pero el resultado depende de la fracción, origen, nota y, en algunos casos, del certificado de cupo."
+          ],
+          "sector": "Importadores, agentes aduanales y operadores de comercio exterior"
+        }
+      ]
+    },
+    "importance": 2,
+    "issuing_body": "Secretaría de Economía",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T13:53:50.681449+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791264&fecha=22/06/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5791264"
+    },
+    "official_published_at": "2026-06-22",
+    "official_title": "Acuerdo por el que se modifica el diverso por el que se da a conocer la Tasa Aplicable del Impuesto General de Importación para las mercancías originarias de la región conformada por México, Australia, Brunéi, Canadá, Chile, Japón, Malasia, Nueva Zelanda, Perú, Singapur y Vietnam, que corresponden a Australia, Brunéi, Canadá, Chile, Japón, Malasia, Nueva Zelanda, Perú y Singapur.",
+    "published_at": "2026-06-22",
+    "published_day": 22,
+    "published_month": 6,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Importadores, agentes aduanales y operadores de comercio exterior",
+        "deadline": null,
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2",
+          "chunk-3"
+        ],
+        "legal_basis": "Tratado Integral y Progresista de Asociación Transpacífico y Protocolo de Adhesión del Reino Unido",
+        "paragraphs": [
+          "Antes de pedimentar mercancía del Reino Unido bajo el CPTPP, verifique la fracción, apéndice, regla de origen, nota de cupo y requisitos no arancelarios; no asuma exención por la sola procedencia."
+        ],
+        "trigger": "Al importar mercancía que pretenda recibir trato CPTPP del Reino Unido"
+      }
+    ],
+    "relevance_score": 3,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5791264",
+    "subtopic_tags": [
+      "impuesto",
+      "importacion"
+    ],
+    "summary": "La Secretaría de Economía modifica el acuerdo de 2022 que da a conocer la tasa aplicable del impuesto general de importación para mercancías originarias de la región CPTPP. El cambio responde al Protocolo de Adhesión del Reino Unido: el texto señala que México notificó al depositario el 23 de abril de 2026 la conclusión de sus procedimientos jurídicos y que, conforme al propio Protocolo, éste entra en vigor para México el 22 de junio de 2026.\n\nLa reforma incorpora expresamente al Reino Unido en la denominación, en el punto Primero y en diversos puntos del acuerdo original. Para mercancías originarias de los territorios enumerados, el punto Primero mantiene como regla la exención arancelaria, salvo los casos para los que el propio acuerdo disponga algo distinto. La preferencia presupone la calidad de originaria conforme al Tratado y al Protocolo; no se aplica únicamente por procedencia comercial.\n\nEl texto conserva listas con tratamientos distintos: el Apéndice I identifica fracciones que conservan el arancel de la LIGIE sin reducción; los apéndices y puntos posteriores fijan aranceles preferenciales o fechas de liberación para fracciones y modalidades determinadas. Las fechas de liberación que el acuerdo menciona incluyen 2025, 2027, 2028, 2029, 2030, 2032 y 2033, según la fracción, apéndice o modalidad de mercancía de que se trate.\n\nPara determinados códigos anotados en el Apéndice I, los puntos vigésimo segundo y vigésimo tercero condicionan la exención a un certificado de cupo expedido por la Secretaría de Economía; si no se cumple el requisito, se aplica la tasa del artículo 1 de la LIGIE sin reducción. El acuerdo declara además que la desgravación no exime del cumplimiento de regulaciones y restricciones no arancelarias, normas oficiales mexicanas, requisitos previos de importación ni del despacho aduanero que correspondan.\n\nEl transitorio único dispone que la modificación entra en vigor el día de su publicación en el Diario Oficial de la Federación. La lectura operativa exige revisar la fracción arancelaria, la nota o apéndice aplicable, el origen bajo las reglas del CPTPP y, cuando proceda, el certificado de cupo. El documento no fija una tasa uniforme para todas las mercancías británicas ni sustituye las obligaciones aduaneras o no arancelarias aplicables.",
+    "summary_teaser": "Economía actualiza el acuerdo de tasas preferenciales del CPTPP para incluir mercancías originarias del Reino Unido. El instrumento incorpora a ese país en la denominación, las listas y los apéndices arancelarios, sin relevar a los importadores de reglas de origen, cupos, regulaciones no arancelarias ni despacho aduanero.",
+    "title": "México incorpora Reino Unido a preferencias arancelarias del CPTPP",
+    "topic_tags": [
+      "Fiscal",
+      "Comercio exterior",
+      "Acuerdo"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5791264&fecha=22/06/2026"
+  },
+  "schema_version": 8
+}

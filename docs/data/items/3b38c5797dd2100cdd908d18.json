@@ -1,0 +1,180 @@
+{
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "item": {
+    "ai_generated": true,
+    "authority": "ORGANISMOS DESCONCENTRADOS O DESCENTRALIZADOS INSTITUTO MEXICANO DEL SEGURO SOCIAL",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792415&fecha=02/07/2026",
+    "card_body": "## Qué se publicó\nEl instituto informó una suplencia jurídica para asegurar la continuidad de firma y despacho de documentos en su órgano estatal de Oaxaca.\n\n## Sustancia\nLa persona titular de Servicios Jurídicos fue habilitada para suplir ausencias de la titularidad estatal y suscribir documentación y resoluciones que corresponda emitir al órgano. La medida opera durante esas ausencias y no equivale a un nombramiento permanente.\n\n## Fuente\nAviso del Instituto Mexicano del Seguro Social publicado en el Diario Oficial de la Federación.",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "777336660165431e10db1c4e1441a4a6148ce4184104d15f6ef4e0b4b1c8817f",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-1",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/3b38c5797dd2100cdd908d18.json",
+    "detail_url": "notas/3b38c5797dd2100cdd908d18.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "heading": "Alcance y contenido verificable",
+        "paragraphs": [
+          "La publicación identifica al titular suplido, a la persona designada desde la Jefatura de Servicios Jurídicos y al órgano estatal de Oaxaca. El alcance es administrativo y condicionado a las ausencias: permite firmar y despachar documentación, incluidas resoluciones que el órgano deba emitir. No se publican expedientes ni una causa individual de ausencia. Para revisar un acto particular son necesarios sus propios datos de competencia, fecha y firma."
+        ]
+      }
+    ],
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Aviso",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "be4ec21b906b6b7cd1a0bdb3d9c2cb7946d7fefc76cdf9f0b46938b66fde7ccf",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "AVISO mediante el cual se designa al Titular de la Jefatura de Servicios Jurídicos, Lic. Everardo Jaime Casas López, para que supla las ausencias del Dr. Gabriel Padrón Segura, Titular del Órgano de Operación Administrativa Desconcentrada Estatal Oaxaca del Instituto Mexicano del Seguro Social, autorizándole a firmar y despachar la documentación incluyendo la suscripción de las resoluciones que debe emitir este Órgano.",
+          "location": "caracteres 0-426"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al margen un logotipo, que dice: Instituto Mexicano del Seguro Social.- Órgano de Operación Administrativa Desconcentrada Estatal Oaxaca.",
+          "location": "caracteres 426-2381"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792415&fecha=02/07/2026",
+      "retrieved_at": "2026-08-13T19:43:30.300223+00:00"
+    },
+    "executive_summary": [
+      "El IMSS designó a Everardo Jaime Casas López para suplir ausencias de la titularidad del órgano estatal de Oaxaca.",
+      "La habilitación comprende firma, despacho y resoluciones dentro de la competencia del órgano durante la suplencia. No acredita una modificación permanente de titularidad ni cambios de derechos para particulares."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Organismo descentralizado",
+    "id": "dof:5792415",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "Personas que reciban documentos del órgano de Oaxaca pueden identificar una base oficial de suplencia cuando se actualice el supuesto publicado."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-1",
+            "chunk-2"
+          ],
+          "paragraphs": [
+            "El aviso no modifica por sí mismo prestaciones, obligaciones patronales ni procedimientos sustantivos."
+          ],
+          "sector": "Personas y organizaciones potencialmente relacionadas"
+        }
+      ]
+    },
+    "importance": 3,
+    "issuing_body": "Instituto Mexicano del Seguro Social",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T13:53:50.681449+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792415&fecha=02/07/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5792415"
+    },
+    "official_published_at": "2026-07-02",
+    "official_title": "Aviso mediante el cual se designa al Titular de la Jefatura de Servicios Jurídicos, Lic. Everardo Jaime Casas López, para que supla las ausencias del Dr. Gabriel Padrón Segura, Titular del Órgano de Operación Administrativa Desconcentrada Estatal Oaxaca del Instituto Mexicano del Seguro Social, autorizándole a firmar y despachar la documentación incluyendo la suscripción de las resoluciones que debe emitir este Órgano.",
+    "published_at": "2026-07-02",
+    "published_day": 2,
+    "published_month": 7,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Personas y organizaciones potencialmente relacionadas",
+        "deadline": null,
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "legal_basis": null,
+        "paragraphs": [
+          "Si se requiere verificar un documento individual, podría cotejarse la firma, fecha y competencia con sus constancias administrativas."
+        ],
+        "trigger": null
+      },
+      {
+        "affected_group": "Personas y organizaciones potencialmente relacionadas",
+        "deadline": null,
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "legal_basis": null,
+        "paragraphs": [
+          "Las áreas de archivo y gestión jurídica pueden conservar el aviso como referencia de representación temporal del órgano."
+        ],
+        "trigger": null
+      }
+    ],
+    "relevance_score": 4,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5792415",
+    "subtopic_tags": [
+      "designa",
+      "titular del organo",
+      "titular de la jefatura"
+    ],
+    "summary": "El Instituto Mexicano del Seguro Social publicó un aviso de suplencia para el Órgano de Operación Administrativa Desconcentrada Estatal Oaxaca. El documento designa al licenciado Everardo Jaime Casas López, titular de la Jefatura de Servicios Jurídicos, para suplir las ausencias del doctor Gabriel Padrón Segura, titular de ese órgano administrativo. La fuente identifica la unidad administrativa y el carácter jurídico de la persona designada.\n\nEl aviso autoriza a la persona suplente a firmar y despachar la documentación que corresponda al órgano, incluida la suscripción de las resoluciones que deba emitir. Ese alcance debe entenderse dentro de la competencia del órgano y durante las ausencias de la titularidad señalada. La publicación no anuncia una sustitución definitiva, una modificación de la estructura del IMSS ni un cambio de reglas sustantivas para asegurados, empleadores, prestadores o personas servidoras públicas.\n\nEl texto oficial no individualiza procedimientos, expedientes, resoluciones pendientes o actos que necesariamente serán firmados por la suplencia. Tampoco precisa una causa de ausencia ni una fecha de terminación en el contenido extraído. En consecuencia, la información acreditada consiste en una habilitación administrativa general para asegurar que la función de firma y despacho pueda continuar cuando se actualice el supuesto de ausencia.\n\nLa relevancia práctica es documental. Quien necesite revisar la representación de un acto emitido por el órgano de Oaxaca puede usar el aviso como referencia para identificar el mecanismo de suplencia, pero la validez de un documento concreto depende también de la fecha, la firma, la atribución material, el expediente y las reglas aplicables. El aviso no resuelve un asunto individual ni permite asumir efectos en trámites o derechos distintos de los expresamente publicados. La fuente disponible no documenta otros efectos, decisiones o actuaciones concretas fuera de lo descrito. Cualquier alcance adicional requeriría revisar actos oficiales, documentación, competencia material y circunstancias particulares, que no aparecen individualizadas en el aviso publicado. No es posible inferirlos de esta comunicación.",
+    "summary_teaser": "El IMSS designó al titular de Servicios Jurídicos del órgano estatal de Oaxaca para suplir ausencias de su titular. El aviso permite firmar y despachar documentación, incluidas las resoluciones que corresponda emitir, con el propósito de asegurar continuidad administrativa durante la suplencia.",
+    "title": "IMSS autoriza suplencia jurídica en el órgano de Oaxaca",
+    "topic_tags": [
+      "Derecho administrativo",
+      "Nombramientos federales",
+      "Resolución",
+      "Aviso"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5792415&fecha=02/07/2026"
+  },
+  "schema_version": 8
+}

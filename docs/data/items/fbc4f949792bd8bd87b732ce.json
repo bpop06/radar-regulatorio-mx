@@ -1,0 +1,421 @@
+{
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "item": {
+    "ai_generated": true,
+    "authority": "Cámara de Diputados",
+    "canonical_url": "https://gaceta.diputados.gob.mx/Gaceta/66/2026/jul/20260707.html",
+    "card_body": "## Qué se publicó\n\nLa Gaceta Parlamentaria publicó una comunicación del Congreso de Durango sobre una iniciativa para adicionar la fracción IX y reformar el último párrafo del artículo 151 de la Ley del Impuesto sobre la Renta.\n\n## Sustancia\n\nEl oficio informa que la Septuagésima Legislatura de Durango aprobó un dictamen de acuerdo y anexó un tanto para que se siga el trámite legislativo. El fragmento no transcribe el anexo ni desarrolla el contenido de la fracción IX o del último párrafo referido.\n\n## Fuente\n\nLa síntesis se limita al oficio publicado en la Gaceta Parlamentaria y al fragmento oficial identificado en la evidencia.",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Fiscal",
+      "Proceso legislativo"
+    ],
+    "content_hash": "c2013d1cb1d872c69f38f5e13933c47c95f8d4e9d93bd28414312f7db18a11d2",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "not_material",
+        "reason": "Índice general de la Gaceta; el oficio material de la iniciativa está en el fragmento 3.",
+        "source_ref": "chunk-1",
+        "target_sections": []
+      },
+      {
+        "disposition": "not_material",
+        "reason": "Fragmento de la Gaceta ajeno al oficio del Congreso de Durango sobre el artículo 151 de la Ley del Impuesto sobre la Renta.",
+        "source_ref": "chunk-2",
+        "target_sections": []
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-3",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "not_material",
+        "reason": "Fragmento de la Gaceta ajeno al oficio del Congreso de Durango sobre el artículo 151 de la Ley del Impuesto sobre la Renta.",
+        "source_ref": "chunk-4",
+        "target_sections": []
+      },
+      {
+        "disposition": "not_material",
+        "reason": "Fragmento de la Gaceta ajeno al oficio del Congreso de Durango sobre el artículo 151 de la Ley del Impuesto sobre la Renta.",
+        "source_ref": "chunk-5",
+        "target_sections": []
+      },
+      {
+        "disposition": "not_material",
+        "reason": "Fragmento de la Gaceta ajeno al oficio del Congreso de Durango sobre el artículo 151 de la Ley del Impuesto sobre la Renta.",
+        "source_ref": "chunk-6",
+        "target_sections": []
+      },
+      {
+        "disposition": "not_material",
+        "reason": "Fragmento de la Gaceta ajeno al oficio del Congreso de Durango sobre el artículo 151 de la Ley del Impuesto sobre la Renta.",
+        "source_ref": "chunk-7",
+        "target_sections": []
+      },
+      {
+        "disposition": "not_material",
+        "reason": "Fragmento de la Gaceta ajeno al oficio del Congreso de Durango sobre el artículo 151 de la Ley del Impuesto sobre la Renta.",
+        "source_ref": "chunk-8",
+        "target_sections": []
+      },
+      {
+        "disposition": "not_material",
+        "reason": "Fragmento de la Gaceta ajeno al oficio del Congreso de Durango sobre el artículo 151 de la Ley del Impuesto sobre la Renta.",
+        "source_ref": "chunk-9",
+        "target_sections": []
+      },
+      {
+        "disposition": "not_material",
+        "reason": "Fragmento de la Gaceta ajeno al oficio del Congreso de Durango sobre el artículo 151 de la Ley del Impuesto sobre la Renta.",
+        "source_ref": "chunk-10",
+        "target_sections": []
+      },
+      {
+        "disposition": "not_material",
+        "reason": "Fragmento de la Gaceta ajeno al oficio del Congreso de Durango sobre el artículo 151 de la Ley del Impuesto sobre la Renta.",
+        "source_ref": "chunk-11",
+        "target_sections": []
+      },
+      {
+        "disposition": "not_material",
+        "reason": "Fragmento de la Gaceta ajeno al oficio del Congreso de Durango sobre el artículo 151 de la Ley del Impuesto sobre la Renta.",
+        "source_ref": "chunk-12",
+        "target_sections": []
+      },
+      {
+        "disposition": "not_material",
+        "reason": "Fragmento de la Gaceta ajeno al oficio del Congreso de Durango sobre el artículo 151 de la Ley del Impuesto sobre la Renta.",
+        "source_ref": "chunk-13",
+        "target_sections": []
+      },
+      {
+        "disposition": "not_material",
+        "reason": "Fragmento de la Gaceta ajeno al oficio del Congreso de Durango sobre el artículo 151 de la Ley del Impuesto sobre la Renta.",
+        "source_ref": "chunk-14",
+        "target_sections": []
+      },
+      {
+        "disposition": "not_material",
+        "reason": "Fragmento de la Gaceta ajeno al oficio del Congreso de Durango sobre el artículo 151 de la Ley del Impuesto sobre la Renta.",
+        "source_ref": "chunk-15",
+        "target_sections": []
+      },
+      {
+        "disposition": "not_material",
+        "reason": "Fragmento de la Gaceta ajeno al oficio del Congreso de Durango sobre el artículo 151 de la Ley del Impuesto sobre la Renta.",
+        "source_ref": "chunk-16",
+        "target_sections": []
+      },
+      {
+        "disposition": "not_material",
+        "reason": "Fragmento de la Gaceta ajeno al oficio del Congreso de Durango sobre el artículo 151 de la Ley del Impuesto sobre la Renta.",
+        "source_ref": "chunk-17",
+        "target_sections": []
+      },
+      {
+        "disposition": "not_material",
+        "reason": "Fragmento de la Gaceta ajeno al oficio del Congreso de Durango sobre el artículo 151 de la Ley del Impuesto sobre la Renta.",
+        "source_ref": "chunk-18",
+        "target_sections": []
+      },
+      {
+        "disposition": "not_material",
+        "reason": "Fragmento de la Gaceta ajeno al oficio del Congreso de Durango sobre el artículo 151 de la Ley del Impuesto sobre la Renta.",
+        "source_ref": "chunk-19",
+        "target_sections": []
+      },
+      {
+        "disposition": "not_material",
+        "reason": "Fragmento de la Gaceta ajeno al oficio del Congreso de Durango sobre el artículo 151 de la Ley del Impuesto sobre la Renta.",
+        "source_ref": "chunk-20",
+        "target_sections": []
+      },
+      {
+        "disposition": "not_material",
+        "reason": "Fragmento de la Gaceta ajeno al oficio del Congreso de Durango sobre el artículo 151 de la Ley del Impuesto sobre la Renta.",
+        "source_ref": "chunk-21",
+        "target_sections": []
+      },
+      {
+        "disposition": "not_material",
+        "reason": "Fragmento de la Gaceta ajeno al oficio del Congreso de Durango sobre el artículo 151 de la Ley del Impuesto sobre la Renta.",
+        "source_ref": "chunk-22",
+        "target_sections": []
+      },
+      {
+        "disposition": "not_material",
+        "reason": "Fragmento de la Gaceta ajeno al oficio del Congreso de Durango sobre el artículo 151 de la Ley del Impuesto sobre la Renta.",
+        "source_ref": "chunk-23",
+        "target_sections": []
+      },
+      {
+        "disposition": "not_material",
+        "reason": "Fragmento de la Gaceta ajeno al oficio del Congreso de Durango sobre el artículo 151 de la Ley del Impuesto sobre la Renta.",
+        "source_ref": "chunk-24",
+        "target_sections": []
+      },
+      {
+        "disposition": "not_material",
+        "reason": "Fragmento de la Gaceta ajeno al oficio del Congreso de Durango sobre el artículo 151 de la Ley del Impuesto sobre la Renta.",
+        "source_ref": "chunk-25",
+        "target_sections": []
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/fbc4f949792bd8bd87b732ce.json",
+    "detail_url": "notas/fbc4f949792bd8bd87b732ce.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-3"
+        ],
+        "heading": "Contenido acreditado",
+        "paragraphs": [
+          "El encabezado de la Gaceta identifica una iniciativa del Congreso de Durango para adicionar la fracción IX y reformar el último párrafo del artículo 151 de la Ley del Impuesto sobre la Renta.",
+          "El oficio señala que la Septuagésima Legislatura de Durango aprobó el 21 de mayo de 2026 un dictamen de acuerdo presentado por la Comisión de Hacienda, Presupuesto y Cuenta Pública."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-3"
+        ],
+        "heading": "Alcance del oficio",
+        "paragraphs": [
+          "La comunicación informa que se anexa un tanto del dictamen de referencia para que se siga el trámite legislativo.",
+          "El fragmento no reproduce el anexo ni especifica el contenido de la fracción IX propuesta o del último párrafo que se pretende reformar."
+        ]
+      }
+    ],
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Iniciativas",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "58b03ebd94d84f76d509f85b55468e19c85e1c86cfe365e4f969594dfcc8ce10",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "Documento · parte 1",
+          "location": "caracteres 0-12000"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Documento · parte 2",
+          "location": "caracteres 12000-24000"
+        },
+        {
+          "id": "chunk-3",
+          "label": "Documento · parte 3",
+          "location": "caracteres 24000-36000"
+        },
+        {
+          "id": "chunk-4",
+          "label": "Documento · parte 4",
+          "location": "caracteres 36000-48000"
+        },
+        {
+          "id": "chunk-5",
+          "label": "Documento · parte 5",
+          "location": "caracteres 48000-60000"
+        },
+        {
+          "id": "chunk-6",
+          "label": "Documento · parte 6",
+          "location": "caracteres 60000-72000"
+        },
+        {
+          "id": "chunk-7",
+          "label": "Documento · parte 7",
+          "location": "caracteres 72000-84000"
+        },
+        {
+          "id": "chunk-8",
+          "label": "Documento · parte 8",
+          "location": "caracteres 84000-96000"
+        },
+        {
+          "id": "chunk-9",
+          "label": "Documento · parte 9",
+          "location": "caracteres 96000-108000"
+        },
+        {
+          "id": "chunk-10",
+          "label": "Documento · parte 10",
+          "location": "caracteres 108000-120000"
+        },
+        {
+          "id": "chunk-11",
+          "label": "Documento · parte 11",
+          "location": "caracteres 120000-132000"
+        },
+        {
+          "id": "chunk-12",
+          "label": "Documento · parte 12",
+          "location": "caracteres 132000-144000"
+        },
+        {
+          "id": "chunk-13",
+          "label": "Documento · parte 13",
+          "location": "caracteres 144000-156000"
+        },
+        {
+          "id": "chunk-14",
+          "label": "Documento · parte 14",
+          "location": "caracteres 156000-168000"
+        },
+        {
+          "id": "chunk-15",
+          "label": "Documento · parte 15",
+          "location": "caracteres 168000-180000"
+        },
+        {
+          "id": "chunk-16",
+          "label": "Documento · parte 16",
+          "location": "caracteres 180000-192000"
+        },
+        {
+          "id": "chunk-17",
+          "label": "Documento · parte 17",
+          "location": "caracteres 192000-204000"
+        },
+        {
+          "id": "chunk-18",
+          "label": "Documento · parte 18",
+          "location": "caracteres 204000-216000"
+        },
+        {
+          "id": "chunk-19",
+          "label": "Documento · parte 19",
+          "location": "caracteres 216000-228000"
+        },
+        {
+          "id": "chunk-20",
+          "label": "Documento · parte 20",
+          "location": "caracteres 228000-240000"
+        },
+        {
+          "id": "chunk-21",
+          "label": "Documento · parte 21",
+          "location": "caracteres 240000-252000"
+        },
+        {
+          "id": "chunk-22",
+          "label": "Documento · parte 22",
+          "location": "caracteres 252000-264000"
+        },
+        {
+          "id": "chunk-23",
+          "label": "Documento · parte 23",
+          "location": "caracteres 264000-276000"
+        },
+        {
+          "id": "chunk-24",
+          "label": "Documento · parte 24",
+          "location": "caracteres 276000-288000"
+        },
+        {
+          "id": "chunk-25",
+          "label": "Documento · parte 25",
+          "location": "caracteres 288000-298001"
+        }
+      ],
+      "official_url": "https://gaceta.diputados.gob.mx/Gaceta/66/2026/jul/20260707.html",
+      "retrieved_at": "2026-08-13T19:37:12.059738+00:00"
+    },
+    "executive_summary": [
+      "La Gaceta Parlamentaria publicó una comunicación del Congreso de Durango sobre una iniciativa para adicionar la fracción IX y reformar el último párrafo del artículo 151 de la Ley del Impuesto sobre la Renta.",
+      "El oficio informa que la Septuagésima Legislatura de Durango aprobó un dictamen de acuerdo y anexó un tanto para que se siga el trámite legislativo. El fragmento no transcribe el anexo ni desarrolla el contenido de la propuesta."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Legislativo federal",
+    "id": "diputados:794611c2ae0b0824",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-3"
+        ],
+        "paragraphs": [
+          "El oficio acredita la aprobación local de un dictamen de acuerdo y la remisión de un tanto para que se siga el trámite legislativo."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-3"
+          ],
+          "paragraphs": [
+            "La información disponible para este grupo se limita al acto comunicado y a la referencia a la adición de la fracción IX y a la reforma del último párrafo del artículo 151; el anexo no está transcrito."
+          ],
+          "sector": "Personas que consulten el expediente legislativo"
+        }
+      ]
+    },
+    "importance": 4,
+    "issuing_body": "Cámara de Diputados",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T13:53:50.681449+00:00",
+    "official_evidence": {
+      "primary_url": "https://gaceta.diputados.gob.mx/Gaceta/66/2026/jul/20260707.html"
+    },
+    "official_identifiers": {
+      "source_id": "794611c2ae0b0824"
+    },
+    "official_published_at": "2026-07-07",
+    "official_title": "Del Congreso de Durango, con proyecto de decreto por el que se adiciona la fracción IX y se reforma el último párrafo del artículo 151 de la Ley del Impuesto sobre la Renta, recibida en la sesión de la Comisión Permanente del miércoles 1 de julio de 2026",
+    "published_at": "2026-07-07",
+    "published_day": 7,
+    "published_month": 7,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Personas que consulten el expediente legislativo",
+        "deadline": null,
+        "evidence_refs": [
+          "chunk-3"
+        ],
+        "legal_basis": null,
+        "paragraphs": [
+          "Al revisar esta publicación, pueden distinguir el oficio publicado del dictamen anexo, cuyo texto no se transcribe en el fragmento disponible."
+        ],
+        "trigger": "Al consultar la comunicación publicada en la Gaceta Parlamentaria."
+      }
+    ],
+    "relevance_score": 6,
+    "review_reason": null,
+    "source": "Diputados",
+    "source_id": "794611c2ae0b0824",
+    "subtopic_tags": [
+      "impuesto",
+      "renta",
+      "proyecto de decreto"
+    ],
+    "summary": "La Gaceta Parlamentaria publica una comunicación del Congreso de Durango con proyecto de decreto para adicionar la fracción IX y reformar el último párrafo del artículo 151 de la Ley del Impuesto sobre la Renta. El encabezado de la Gaceta identifica el asunto como recibido en la sesión de la Comisión Permanente del miércoles 1 de julio de 2026.\n\nEl oficio está dirigido a la Presidencia de la Mesa Directiva de la Cámara de Diputados. Informa que, en sesión ordinaria de la Septuagésima Legislatura del Estado de Durango, celebrada el 21 de mayo de 2026, se aprobó un dictamen de acuerdo presentado por la Comisión de Hacienda, Presupuesto y Cuenta Pública. Según el propio oficio, ese dictamen adiciona la fracción IX y reforma el último párrafo del artículo 151 de la Ley del Impuesto sobre la Renta.\n\nLa comunicación añade que se anexa un tanto del dictamen de referencia para que se siga el trámite legislativo. Está fechada en Durango, Durango, el 25 de mayo de 2026 y la suscribe la Secretaria de Servicios Legislativos. Esos son los datos de emisión, aprobación local y remisión que el fragmento transcrito permite identificar.\n\nEl fragmento no transcribe el anexo ni desarrolla el contenido de la fracción IX propuesta o del último párrafo que se pretende reformar. Tampoco identifica destinatarios, requisitos, importes, consecuencias fiscales o fechas de aplicación de la iniciativa. Por esa razón, esta ficha describe únicamente el acto comunicado y la operación legislativa mencionada en el oficio; no atribuye contenido adicional a la propuesta.\n\nLa evidencia disponible permite ubicar la publicación como una comunicación legislativa local remitida para trámite. Para conocer el texto de la iniciativa, o cualquier elemento distinto de los que consta en el oficio, sería necesario acudir al dictamen anexo o a los documentos oficiales posteriores que lo reproduzcan. La ficha conserva la referencia al artículo 151 de la Ley del Impuesto sobre la Renta porque así aparece en el encabezado y en el oficio, sin traducirla en una categoría material que el fragmento no establece.",
+    "summary_teaser": "La Gaceta Parlamentaria publicó la comunicación del Congreso de Durango sobre una iniciativa para adicionar la fracción IX y reformar el último párrafo del artículo 151 de la Ley del Impuesto sobre la Renta. El oficio informa la aprobación de un dictamen de acuerdo por la Legislatura local y la remisión de un tanto para que se siga el trámite legislativo. El anexo no se transcribe en el fragmento.",
+    "title": "Iniciativa de Durango incorpora fracción IX y reforma último párrafo del artículo 151",
+    "topic_tags": [
+      "Fiscal",
+      "Iniciativa",
+      "Decreto"
+    ],
+    "url": "https://gaceta.diputados.gob.mx/Gaceta/66/2026/jul/20260707.html#Iniciativa1"
+  },
+  "schema_version": 8
+}

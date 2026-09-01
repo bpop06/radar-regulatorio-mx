@@ -1,0 +1,150 @@
+{
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "item": {
+    "ai_generated": true,
+    "authority": "Oficina del Representante Comercial de Estados Unidos (USTR)",
+    "canonical_url": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/august/united-states-announces-successful-resolution-rapid-response-labor-mechanism-matter-grupo-yazaki-sa",
+    "card_body": "## Qué se publicó\n\nEstados Unidos comunicó la resolución de un asunto laboral bilateral en una instalación automotriz.\n\n## Sustancia\n\nLa fuente vincula el cierre con medidas de libertad sindical y anuncia la reanudación de la liquidación de aranceles para mercancías de la planta.\n\n## Fuente\n\n[Consulta la publicación oficial](https://ustr.gov/about/policy-offices/press-office/press-releases/2026/august/united-states-announces-successful-resolution-rapid-response-labor-mechanism-matter-grupo-yazaki-sa)",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Comercio exterior",
+      "Comercio internacional"
+    ],
+    "content_hash": "77eab1e166d27d4219a6e52f30d41d90f2c1a004917ce5d937c9d2f233b0853d",
+    "country_or_org": "EEUU",
+    "coverage": [
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-1",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/85e14310cae203059644866e.json",
+    "detail_url": "notas/85e14310cae203059644866e.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-1"
+        ],
+        "heading": "Contenido publicado",
+        "paragraphs": [
+          "Estados Unidos informó que el asunto laboral del T-MEC en la planta de Yazaki en León fue remediado y resuelto."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-1"
+        ],
+        "heading": "Alcance práctico",
+        "paragraphs": [
+          "El comunicado vincula el resultado con medidas de libertad sindical, capacitación y monitoreo, y anuncia la reanudación de liquidación de aranceles para bienes de la instalación."
+        ]
+      }
+    ],
+    "detected_at": "2026-09-01T16:34:47.803209+00:00",
+    "document_type": "Comunicado",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "a8183743f840d11abfe7c79e984502b1c96be5ce342f56c472c37b44fb132aa3",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "Documento",
+          "location": "caracteres 0-3111"
+        }
+      ],
+      "official_url": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/august/united-states-announces-successful-resolution-rapid-response-labor-mechanism-matter-grupo-yazaki-sa",
+      "retrieved_at": "2026-09-01T16:35:30.987288+00:00"
+    },
+    "executive_summary": [
+      "La Oficina del Representante Comercial de Estados Unidos anunció que el asunto del Mecanismo Laboral de Respuesta Rápida del T-MEC relacionado con la instalación de Grupo Yazaki, S.A. de C.V. en León, Guanajuato, fue resuelto exitosamente. La instalación fabrica componentes automotrices, arneses y componentes electrónicos. El comunicado dice que Estados Unidos reanudó la liquidación de aranceles sobre las mercancías de esa instalación y que su conclusión es que ya no existe una denegación continua de derechos.",
+      "La fuente atribuye la solución a medidas de Yazaki: una declaración de neutralidad y lineamientos sobre libertad de asociación y negociación colectiva; una política de respeto a sindicatos minoritarios que no poseen el contrato colectivo; y una carta de compromiso para difundir esas reglas, capacitar a trabajadores y facilitar capacitación de la Secretaría del Trabajo y Previsión Social. También menciona capacitaciones presenciales del gobierno mexicano para el personal y monitoreo de la instalación durante el periodo de revisión."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-09-01T16:34:47.803209+00:00",
+    "government_branch": "Gobierno de EEUU",
+    "id": "ustr:3a51a827ecdfff57",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-1"
+        ],
+        "paragraphs": [
+          "El efecto comunicado se concentra en la planta identificada, sus mercancías y el mecanismo laboral bilateral; no constituye una regla general para toda la industria."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-1"
+          ],
+          "paragraphs": [
+            "Las partes involucradas deben tomar como alcance oficial la resolución del asunto y la reanudación comunicada, sin extenderla a otras plantas o procedimientos."
+          ],
+          "sector": "Yazaki, trabajadores de la instalación y operadores de comercio vinculados con sus mercancías"
+        }
+      ]
+    },
+    "importance": 2,
+    "issuing_body": "Oficina del Representante Comercial de EEUU",
+    "jurisdiction": "internacional",
+    "last_seen_at": "2026-09-01T16:34:47.803209+00:00",
+    "official_evidence": {
+      "primary_url": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/august/united-states-announces-successful-resolution-rapid-response-labor-mechanism-matter-grupo-yazaki-sa"
+    },
+    "official_identifiers": {
+      "source_id": "3a51a827ecdfff57"
+    },
+    "official_published_at": "2026-08-13",
+    "official_title": "United States Announces Successful Resolution of Rapid Response Labor Mechanism Matter at Grupo Yazaki, S.A. de C.V.",
+    "published_at": "2026-08-13",
+    "published_day": 13,
+    "published_month": 8,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Yazaki, trabajadores de la instalación y operadores de comercio vinculados con sus mercancías",
+        "deadline": null,
+        "evidence_refs": [
+          "chunk-1"
+        ],
+        "legal_basis": "Mecanismo Laboral de Respuesta Rápida del T-MEC, identificado expresamente por USTR",
+        "paragraphs": [
+          "Mantener evidencia de las políticas, capacitaciones y mecanismos de seguimiento aplicables a la instalación; para operaciones comerciales, confirmar la cobertura de mercancías con las autoridades competentes."
+        ],
+        "trigger": "Participar en relaciones laborales o comercio vinculados con la instalación de Yazaki en León"
+      }
+    ],
+    "relevance_score": 3,
+    "review_reason": null,
+    "source": "USTR",
+    "source_id": "3a51a827ecdfff57",
+    "subtopic_tags": [
+      "tariffs",
+      "usmca"
+    ],
+    "summary": "La Oficina del Representante Comercial de Estados Unidos anunció que el asunto del Mecanismo Laboral de Respuesta Rápida del T-MEC relacionado con la instalación de Grupo Yazaki, S.A. de C.V. en León, Guanajuato, fue resuelto exitosamente. La instalación fabrica componentes automotrices, arneses y componentes electrónicos. El comunicado dice que Estados Unidos reanudó la liquidación de aranceles sobre las mercancías de esa instalación y que su conclusión es que ya no existe una denegación continua de derechos.\n\nLa fuente atribuye la solución a medidas de Yazaki: una declaración de neutralidad y lineamientos sobre libertad de asociación y negociación colectiva; una política de respeto a sindicatos minoritarios que no poseen el contrato colectivo; y una carta de compromiso para difundir esas reglas, capacitar a trabajadores y facilitar capacitación de la Secretaría del Trabajo y Previsión Social. También menciona capacitaciones presenciales del gobierno mexicano para el personal y monitoreo de la instalación durante el periodo de revisión.\n\nEl antecedente que narra el comunicado es una petición de SINTTIA recibida por el comité interinstitucional estadounidense en octubre de dos mil veinticinco. La petición alegaba interferencia en la actividad sindical y represalias por intentos de organización independiente. Después de que Estados Unidos pidió a México revisar el asunto, México aceptó, investigó y trabajó con la empresa para implementar medidas. El comunicado no es una sentencia judicial mexicana ni define un estándar aplicable a otras instalaciones.\n\nEl resultado oficial se limita a la instalación de Yazaki identificada y al asunto del mecanismo laboral de respuesta rápida. Empresas del sector automotriz pueden tomar nota de las prácticas citadas, pero no deben presentarlas como obligaciones nuevas universales derivadas de esta comunicación. La información relevante para importadores y exportadores es que Estados Unidos informa la reanudación de la liquidación de aranceles para bienes de esa instalación.\n\nPara fines de seguimiento, la publicación debe leerse con la normativa que expresamente cita. Esta ficha sólo reporta el alcance verificable del documento oficial: no anticipa decisiones posteriores, requisitos no publicados ni consecuencias que el texto no atribuye de manera directa.",
+    "summary_teaser": "La oficina comercial de Estados Unidos informó la resolución exitosa del mecanismo laboral de respuesta rápida del T-MEC en una planta de Grupo Yazaki en León, Guanajuato, y que Estados Unidos ya reanudó la liquidación de aranceles para sus bienes. El comunicado distingue ese resultado de la instrucción del embajador Greer al Secretario del Tesoro para reanudar la liquidación de entradas no liquidadas.",
+    "title": "Estados Unidos cierra caso laboral del T-MEC en Yazaki",
+    "topic_tags": [
+      "Comercio exterior",
+      "Comercio internacional"
+    ],
+    "url": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/august/united-states-announces-successful-resolution-rapid-response-labor-mechanism-matter-grupo-yazaki-sa"
+  },
+  "schema_version": 8
+}

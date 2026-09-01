@@ -1,0 +1,167 @@
+{
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "item": {
+    "ai_generated": true,
+    "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797560&fecha=01%2F09%2F2026",
+    "card_body": "## Qué se publicó\n\nLa Comisión Nacional Bancaria y de Valores publicó una modificación a las disposiciones aplicables a las instituciones de crédito sobre los mecanismos de autenticación usados mediante comisionistas de base tecnológica.\n\n## Sustancia\n\nLa modificación incorpora el número móvil habilitado para mensajes SMS como medio de contacto para entregar un Factor de Autenticación Categoría 3. Para consultas de saldos y movimientos realizadas a través de esos comisionistas, la institución puede requerir sólo el Factor de Autenticación Categoría 2. Las instituciones deben mantener una opción o enlace explícito, claro y visible que redireccione a su infraestructura para modificar ese factor o el medio de contacto. El alcance se limita a instituciones de crédito que celebren operaciones mediante los comisionistas regulados y a sus flujos tecnológicos de autenticación. La resolución entra en vigor al día siguiente de su publicación.\n\n## Fuente\n\nFuente oficial: https://dof.gob.mx/nota_detalle.php?codigo=5797560&fecha=01%2F09%2F2026. Extracción: html-adapter; recuperada el 2026-09-01T16:34:50.958385+00:00.",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "7cd5c49dfc41f6476eab6c18e69cf06ef3fd988397ab290f974a26fcd69155fa",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-1",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/28c445f89e77869bf24c4e01.json",
+    "detail_url": "notas/28c445f89e77869bf24c4e01.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "heading": "Contenido publicado",
+        "paragraphs": [
+          "La modificación incorpora el número móvil habilitado para mensajes SMS como medio de contacto para entregar un Factor de Autenticación Categoría 3. Para consultas de saldos y movimientos realizadas a través de esos comisionistas, la institución puede requerir sólo el Factor de Autenticación Categoría 2. Las instituciones deben mantener una opción o enlace explícito, claro y visible que redireccione a su infraestructura para modificar ese factor o el medio de contacto.",
+          "El texto sitúa el cambio en el esquema que permite a comisionistas de base tecnológica abrir cuentas nivel 2, efectuar transferencias asociadas, otorgar determinados créditos, procesar pagos y mostrar información de productos financieros. La resolución responde a la ausencia previa de SMS como canal para el segundo factor y al tratamiento diferenciado de operaciones de menor riesgo."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "heading": "Alcance y lectura práctica",
+        "paragraphs": [
+          "El alcance se limita a instituciones de crédito que celebren operaciones mediante los comisionistas regulados y a sus flujos tecnológicos de autenticación. La resolución entra en vigor al día siguiente de su publicación.",
+          "La ficha se dirige principalmente a instituciones de crédito y comisionistas de base tecnológica."
+        ]
+      }
+    ],
+    "detected_at": "2026-09-01T16:34:47.803209+00:00",
+    "document_type": "Resolución Que Modifica",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "8ec89c1112eab1e8f258c30367afcfa8fb56b10d42e4e5a46047a58ca9ee1c17",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "RESOLUCIÓN que modifica las Disposiciones de carácter general aplicables a las instituciones de crédito.",
+          "location": "caracteres 0-108"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Comisión Nacional Bancaria y de Valores.",
+          "location": "caracteres 108-7890"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797560&fecha=01%2F09%2F2026",
+      "retrieved_at": "2026-09-01T16:34:50.958385+00:00"
+    },
+    "executive_summary": [
+      "La Comisión Nacional Bancaria y de Valores difundió una modificación a las disposiciones aplicables a las instituciones de crédito sobre los mecanismos de autenticación usados mediante comisionistas de base tecnológica. La modificación incorpora el número móvil habilitado para mensajes SMS como medio de contacto para entregar un Factor de Autenticación Categoría 3. Para consultas de saldos y movimientos realizadas a través de esos comisionistas, la institución puede requerir sólo el Factor de Autenticación Categoría 2. Las instituciones deben mantener una opción o enlace explícito, claro y visible que redireccione a su infraestructura para modificar ese factor o el medio de contacto.",
+      "El alcance se limita a instituciones de crédito que celebren operaciones mediante los comisionistas regulados y a sus flujos tecnológicos de autenticación. La resolución entra en vigor al día siguiente de su publicación. La síntesis se limita a los hechos y condiciones expresamente visibles en la fuente oficial."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-09-01T16:34:47.803209+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5797560",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "El efecto observable es el que la publicación atribuye al acto: El alcance se limita a instituciones de crédito que celebren operaciones mediante los comisionistas regulados y a sus flujos tecnológicos de autenticación. La resolución entra en vigor al día siguiente de su publicación."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-2"
+          ],
+          "paragraphs": [
+            "Las personas comprendidas deben considerar el documento porque La modificación incorpora el número móvil habilitado para mensajes SMS como medio de contacto para entregar un Factor de Autenticación Categoría 3. Para consultas de saldos y movimientos realizadas a través de esos comisionistas, la institución puede requerir sólo el Factor de Autenticación Categoría 2. Las instituciones deben mantener una opción o enlace explícito, claro y visible que redireccione a su infraestructura para modificar ese factor o el medio de contacto."
+          ],
+          "sector": "Instituciones de crédito y comisionistas de base tecnológica"
+        }
+      ]
+    },
+    "importance": 1,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-09-01T16:34:47.803209+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797560&fecha=01/09/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5797560"
+    },
+    "official_published_at": "2026-09-01",
+    "official_title": "Resolución que modifica las Disposiciones de carácter general aplicables a las instituciones de crédito.",
+    "published_at": "2026-09-01",
+    "published_day": 1,
+    "published_month": 9,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Instituciones de crédito y comisionistas de base tecnológica",
+        "deadline": null,
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "legal_basis": null,
+        "paragraphs": [
+          "Revisar los flujos de autenticación, los medios de contacto disponibles y la interfaz de redirección a la institución antes de habilitar el nuevo canal o la excepción para consultas."
+        ],
+        "trigger": "Cuando la persona o entidad se ubique en el ámbito material descrito por la fuente oficial."
+      }
+    ],
+    "relevance_score": 1,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5797560",
+    "subtopic_tags": [],
+    "summary": "La Comisión Nacional Bancaria y de Valores publicó una modificación a las disposiciones aplicables a las instituciones de crédito sobre los mecanismos de autenticación usados mediante comisionistas de base tecnológica. La modificación incorpora el número móvil habilitado para mensajes SMS como medio de contacto para entregar un Factor de Autenticación Categoría 3. Para consultas de saldos y movimientos realizadas a través de esos comisionistas, la institución puede requerir sólo el Factor de Autenticación Categoría 2. Las instituciones deben mantener una opción o enlace explícito, claro y visible que redireccione a su infraestructura para modificar ese factor o el medio de contacto.\n\nEl texto sitúa el cambio en el esquema que permite a comisionistas de base tecnológica abrir cuentas nivel 2, efectuar transferencias asociadas, otorgar determinados créditos, procesar pagos y mostrar información de productos financieros. La resolución responde a la ausencia previa de SMS como canal para el segundo factor y al tratamiento diferenciado de operaciones de menor riesgo.\n\nEl alcance se limita a instituciones de crédito que celebren operaciones mediante los comisionistas regulados y a sus flujos tecnológicos de autenticación. La resolución entra en vigor al día siguiente de su publicación.\n\nLa utilidad práctica de la publicación depende de si la persona o entidad se encuentra dentro del ámbito descrito. La información se presenta con base en el documento oficial disponible y no permite extender efectos a supuestos, periodos, personas o actos que no estén expresamente identificados. Cuando el documento incorpora requisitos, condiciones o mecanismos, éstos deben contrastarse con la ficha, resolución, contrato, expediente o norma específica que corresponda.\n\nPara fines de cumplimiento y trazabilidad, conviene conservar la fuente oficial, su fecha de publicación y los documentos que acrediten la situación concreta. Esta síntesis no sustituye el texto íntegro ni una determinación individual de la autoridad; describe el alcance observable del acto y distingue las consecuencias expresamente publicadas de cualquier inferencia que no está respaldada por la evidencia disponible.",
+    "summary_teaser": "La CNBV permite que las instituciones de crédito envíen por SMS el factor de autenticación de categoría 3 en operaciones con comisionistas de base tecnológica. También autoriza usar únicamente el factor de categoría 2 para consultas de saldos y movimientos, con obligaciones de información y redirección al sistema bancario.",
+    "title": "Banca incorpora SMS en autenticación de comisionistas digitales",
+    "topic_tags": [
+      "Resolución"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797560&fecha=01/09/2026"
+  },
+  "schema_version": 8
+}

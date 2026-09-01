@@ -1,0 +1,165 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-3",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2",
+        "chunk-3"
+      ],
+      "heading": "Reporte único mensual",
+      "paragraphs": [
+        "La CNBV deroga A-0815, A-0816 y A-0819 y concentra la serie R08 en el A-0811 mensual sobre captación tradicional y préstamos interbancarios y de otros organismos.",
+        "El formato incorpora TASA DE REFERENCIA y TASA, y exige coherencia con el catálogo mínimo por tipo de moneda."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2",
+        "chunk-3"
+      ],
+      "heading": "Entrega, calidad y consecuencia",
+      "paragraphs": [
+        "El A-0811 debe enviarse una sola vez y no puede modificarse después; el SITI genera acuse sólo tras las validaciones y estándares de calidad.",
+        "Un envío incompleto, inconsistente o sin calidad se considera incumplimiento de la obligación y puede generar sanciones aplicables."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "f35b37867e426a13029e3c4ef1f703fed616e591fba29f49f8344f25eb7bcc92",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "RESOLUCIÓN que modifica las Disposiciones de carácter general aplicables a las instituciones de crédito.",
+        "location": "caracteres 0-108"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Comisión Nacional Bancaria y de Valores. · parte 1",
+        "location": "caracteres 108-12108"
+      },
+      {
+        "id": "chunk-3",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Comisión Nacional Bancaria y de Valores. · parte 2",
+        "location": "caracteres 12108-13569"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792571&fecha=03/07/2026",
+    "retrieved_at": "2026-08-13T19:43:22.790269+00:00"
+  },
+  "executive_summary": [
+    "La Comisión Nacional Bancaria y de Valores derogó los reportes regulatorios A-0815, A-0816 y A-0819 de la serie R08 Captación y concentró la información en el reporte A-0811, Captación tradicional y préstamos interbancarios y de otros organismos. La serie queda integrada por un solo reporte mensual sobre saldos al cierre de mes, principal e intereses devengados no pagados.",
+    "El nuevo formato incorpora las columnas TASA DE REFERENCIA y TASA en sustitución de referencias anteriores, aplicables a productos de captación y a préstamos interbancarios u obtenidos de otros organismos en moneda nacional. Las cifras se presentan para moneda nacional, moneda extranjera, VSM, UMA y UDIS valorizadas en pesos, y los saldos deben coincidir con los rubros correspondientes del catálogo mínimo."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2",
+        "chunk-3"
+      ],
+      "paragraphs": [
+        "Las instituciones de crédito deben ajustar controles de datos y aprobación previa porque el reporte A-0811 no admite corrección posterior mediante otro envío."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2",
+          "chunk-3"
+        ],
+        "paragraphs": [
+          "Equipos de tesorería, contabilidad y cumplimiento necesitan conciliar saldos y validar el formato antes de transmitir la información al sistema de la CNBV."
+        ],
+        "sector": "Banca y reporte regulatorio"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792571&fecha=03/07/2026",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "4838da815f074b80b04d5b9a1b3687067f3345bf18a616f6353cff0d4160f4f5",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/87b7944f5b6b64a1769958b4.json",
+    "detail_url": "notas/87b7944f5b6b64a1769958b4.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Resolución Que Modifica",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5792571",
+    "importance": 1,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-07-03",
+    "official_title": "Resolución que modifica las Disposiciones de carácter general aplicables a las instituciones de crédito.",
+    "published_at": "2026-07-03",
+    "relevance_score": 1,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5792571",
+    "summary_teaser": "La CNBV sustituyó reportes de captación por el A-0811 mensual y ordenó que la información se envíe una sola vez, sin posibilidad de modificación. Si el envío es incompleto, inconsistente o no supera las validaciones de calidad, se considera incumplida la obligación y pueden imponerse las sanciones aplicables.",
+    "title": "CNBV reemplaza reportes por entrega única A-0811",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5792571&fecha=03/07/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Instituciones de crédito",
+      "deadline": "Periodicidad mensual conforme al Anexo 36",
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2",
+        "chunk-3"
+      ],
+      "legal_basis": "Disposiciones de carácter general aplicables a las instituciones de crédito",
+      "paragraphs": [
+        "Antes de enviar el A-0811, valide integridad, calidad y consistencia con los reportes relacionados; el envío es único y un archivo deficiente se tratará como incumplimiento."
+      ],
+      "trigger": "Preparación del reporte mensual A-0811"
+    }
+  ],
+  "schema_version": 8
+}

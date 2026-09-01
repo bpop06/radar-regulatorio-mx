@@ -1,0 +1,140 @@
+{
+  "coverage": [
+    {
+      "disposition": "not_material",
+      "reason": "El primer locator sólo es el encabezado; definiciones, transitorios y plazos se encuentran en los dos locators siguientes.",
+      "source_ref": "chunk-1",
+      "target_sections": []
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-3",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    }
+  ],
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Motivación y nueva clasificación",
+      "paragraphs": [
+        "El CONAC vincula la reforma con armonización contable y presupuestaria. Enumera como ejemplos de X funciones aduaneras, recaudación tributaria, catastro, registros, control vehicular, regulación de mercados, patrimonio documental, expropiaciones, energía, sistema penitenciario e inteligencia en seguridad."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-3"
+      ],
+      "heading": "Uso, difusión y registro",
+      "paragraphs": [
+        "Las transitorias señalan que el clasificador entra en vigor al día siguiente y se utilizará desde la elaboración del Proyecto de Presupuesto de Egresos de 2027. Entidades federativas deben publicarlo dentro de treinta días hábiles y consejos locales remitir información de adopción dentro de quince días hábiles contados desde que vence ese plazo."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "b709c46608c84ce6aeddd45c5b709495ee34141144930ff5d2bf3ae89deb5865",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "ACUERDO por el que se reforma y adiciona la Clasificación Programática (Tipología general).",
+        "location": "caracteres 0-95"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un logotipo, que dice: Consejo Nacional de Armonización Contable. · parte 1",
+        "location": "caracteres 95-12095"
+      },
+      {
+        "id": "chunk-3",
+        "label": "Al margen un logotipo, que dice: Consejo Nacional de Armonización Contable. · parte 2",
+        "location": "caracteres 12095-13696"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791987&fecha=29/06/2026",
+    "retrieved_at": "2026-08-13T19:43:39.929662+00:00"
+  },
+  "executive_summary": [
+    "El Consejo Nacional de Armonización Contable reforma la Clasificación Programática, Tipología general, al incorporar la modalidad X, Funciones para la gobernanza institucional, y al redefinir las características de la modalidad E, Prestación de Servicios Públicos.",
+    "El acuerdo explica que E se concentra en servicios regulares y continuos recibidos directamente por la población, mientras X agrupa funciones sustantivas del Estado dirigidas principalmente a otras instituciones públicas o con corresponsabilidad entre gobierno y población sin atender directamente una demanda específica."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "paragraphs": [
+        "Entes públicos y responsables de clasificación programática deberán analizar si intervenciones son servicios directos o funciones de gobernanza institucional. La diferenciación puede afectar codificación y lectura de programas, sin sustituir autorización presupuestal anual."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "Unidades de planeación, presupuesto y contabilidad de los tres órdenes de gobierno deben conocer nueva categoría y redefinición de E."
+        ],
+        "sector": "Contabilidad gubernamental y presupuesto público"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791987&fecha=29/06/2026",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "cc435ebc9c9cf88afecbacbc12834426da523e47e6dfee20fb6e280f9e9e3694",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/d22fad4e7861499fc0a56aae.json",
+    "detail_url": "notas/d22fad4e7861499fc0a56aae.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Acuerdo",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5791987",
+    "importance": 1,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-06-29",
+    "official_title": "Acuerdo por el que se reforma y adiciona la Clasificación Programática (Tipología general).",
+    "published_at": "2026-06-29",
+    "relevance_score": 1,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5791987",
+    "summary_teaser": "El CONAC incorpora una modalidad de funciones para la gobernanza institucional y redefine la modalidad de prestación de servicios públicos en la Clasificación Programática. El acuerdo entra en vigor al día siguiente de publicarse y dispone su uso para elaborar el proyecto de Presupuesto de Egresos de 2027.",
+    "title": "CONAC incorpora modalidad de gobernanza en clasificación programática",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5791987&fecha=29/06/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Entidades federativas y consejos de armonización contable",
+      "deadline": "Publicación estatal: treinta días hábiles; remisión: quince días hábiles tras concluir ese plazo",
+      "evidence_refs": [
+        "chunk-2",
+        "chunk-3"
+      ],
+      "legal_basis": "Artículos 7 y 15 de la Ley General de Contabilidad Gubernamental, citados por la fuente",
+      "paragraphs": [
+        "Publicar el acuerdo en medios oficiales y remitir a la Secretaría Técnica información sobre actos de adopción, además de incorporar la distinción E/X al trabajo preparatorio del proyecto presupuestario de 2027."
+      ],
+      "trigger": "Tras la publicación del acuerdo"
+    }
+  ],
+  "schema_version": 8
+}

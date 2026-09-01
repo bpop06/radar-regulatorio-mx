@@ -1,0 +1,136 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "heading": "Destino y uso autorizado",
+      "paragraphs": [
+        "El acuerdo destina el inmueble a la Procuraduría Federal de Protección al Ambiente para continuar utilizándolo como oficinas de representación de protección ambiental en el estado, con un derecho de aprovechamiento limitado a esa finalidad y sin transmisión de propiedad."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "heading": "Custodia y condicionantes",
+      "paragraphs": [
+        "La destinataria debe conservar, asegurar y vigilar el inmueble; un cambio de uso o falta de necesidad activa la puesta a disposición prevista. Las obras requieren autorizaciones previas conforme al acto."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "fed495700bd37b00897ec1b142d96806dc28237fc3a83d5f204bf067c7f2276d",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "ACUERDO por el que se destina a la Procuraduría Federal de Protección al Ambiente, Órgano Administrativo Desconcentrado de la Secretaría de Medio Ambiente y Recursos Naturales, el inmueble federal denominado \" Oficinas de Representación de Protección Ambiental en el Estado de Veracruz \" , con Registro Federal Inmobiliario 30-8825-2 y superficie de 305.220 metros cuadrados, ubicado en Calle 5 de Febrero número 11, Colonia Centro, Código Postal 91000, Municipio de Xalapa, Estado de Veracruz de Ignacio de la Llave.",
+        "location": "caracteres 0-521"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Instituto de Administración y Avalúos de Bienes Nacionales.- DST.-14/2026.",
+        "location": "caracteres 521-11724"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796488&fecha=18%2F08%2F2026",
+    "retrieved_at": "2026-09-01T16:35:19.876490+00:00"
+  },
+  "executive_summary": [
+    "El Instituto de Administración y Avalúos de Bienes Nacionales destinó a la Procuraduría Federal de Protección al Ambiente el inmueble federal Oficinas de Representación de Protección Ambiental en el Estado de Veracruz, ubicado en Xalapa, Veracruz, para continuar utilizándolo como oficinas de representación de protección ambiental en el estado. El acuerdo individualiza el bien mediante sus datos inmobiliarios y señala que la destinación busca permitir la continuidad o ejecución del servicio público referido. Su entrada en vigor ocurre al día siguiente de la publicación.",
+    "La destinación confiere a la institución destinataria el derecho de aprovechar el inmueble únicamente para el uso autorizado. El instrumento aclara que no transmite la propiedad ni otorga derecho real alguno. Si el bien se usa para una finalidad distinta sin autorización previa de Hacienda por conducto del Instituto, o deja de utilizarse o necesitarse, deberá ponerse a disposición del Instituto con mejoras y accesiones, sin compensación, dentro de los cuatro meses que establece el acuerdo."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "paragraphs": [
+        "El acuerdo regulariza el uso administrativo de un bien federal y asigna obligaciones de conservación y control a la institución destinataria."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "Las áreas responsables deben mantener el uso dentro de la finalidad autorizada, resguardar el bien y tramitar las autorizaciones antes de intervenirlo."
+        ],
+        "sector": "Institución destinataria y áreas responsables del inmueble"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796488&fecha=18%2F08%2F2026",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "77284f0b2188fa731672280ad19001fdf19bf0f36e710d9019ea6b2b37ef50f1",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/6633440ab8c6a9a4bb810d9a.json",
+    "detail_url": "notas/6633440ab8c6a9a4bb810d9a.html",
+    "detected_at": "2026-09-01T16:34:47.803209+00:00",
+    "document_type": "Acuerdo",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5796488",
+    "importance": 1,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-08-18",
+    "official_title": "Acuerdo por el que se destina a la Procuraduría Federal de Protección al Ambiente, Órgano Administrativo Desconcentrado de la Secretaría de Medio Ambiente y Recursos Naturales, el inmueble federal denominado \"Oficinas de Representación de Protección Ambiental en el Estado de Veracruz\", con Registro Federal Inmobiliario 30-8825-2 y superficie de 305.220 metros cuadrados, ubicado en Calle 5 de Febrero número 11, Colonia Centro, Código Postal 91000, Municipio de Xalapa, Estado de Veracruz de Ignacio de la Llave.",
+    "published_at": "2026-08-18",
+    "relevance_score": 1,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5796488",
+    "summary_teaser": "El Instituto de Administración y Avalúos de Bienes Nacionales destinó el inmueble federal descrito a la Procuraduría Federal de Protección al Ambiente para continuar utilizándolo como oficinas de representación de protección ambiental en el estado. El acuerdo confiere derecho de aprovechamiento para ese uso, no transmite la propiedad y establece obligaciones de custodia, conservación y permisos para intervenciones.",
+    "title": "Acuerdo concede a Profepa oficinas ambientales federales en Veracruz",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796488&fecha=18/08/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Institución destinataria y áreas responsables del inmueble",
+      "deadline": "Cuatro meses para poner el inmueble a disposición si deja de ser útil, cuando se actualice ese supuesto",
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "legal_basis": "Ley General de Bienes Nacionales y términos expresos del acuerdo de destino",
+      "paragraphs": [
+        "Documentar la finalidad autorizada, conservar evidencia de custodia, mantenimiento y aseguramiento, y gestionar los permisos que correspondan antes de ejecutar obras."
+      ],
+      "trigger": "Administrar el inmueble o proyectar una intervención material"
+    }
+  ],
+  "schema_version": 8
+}

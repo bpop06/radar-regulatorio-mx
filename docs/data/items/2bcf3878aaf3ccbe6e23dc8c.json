@@ -1,0 +1,287 @@
+{
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "item": {
+    "ai_generated": true,
+    "authority": "PODER EJECUTIVO SECRETARIA DE ECONOMIA",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797188&fecha=26%2F08%2F2026",
+    "card_body": "## Qué se publicó\n\nLa Comisión publicó la agenda complementaria de normalización, estandarización y metrología para el año.\n\n## Sustancia\n\nEl suplemento organiza propuestas futuras y cancelaciones por sector; no expide de inmediato las normas que enumera.\n\n## Fuente\n\n[Consulta la publicación oficial](https://dof.gob.mx/nota_detalle.php?codigo=5797188&fecha=26%2F08%2F2026)",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "7630f9ca2cbdca1f860f1bd05ad4873266c71a304d58e038e467dcd1c046629c",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-1",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-3",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-4",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-5",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-6",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-7",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-8",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-9",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-10",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/2bcf3878aaf3ccbe6e23dc8c.json",
+    "detail_url": "notas/2bcf3878aaf3ccbe6e23dc8c.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-10"
+        ],
+        "heading": "Contenido publicado",
+        "paragraphs": [
+          "El programa complementa la agenda anual de normalización con proyectos, modificaciones, reprogramaciones y cancelaciones en múltiples sectores."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-10"
+        ],
+        "heading": "Alcance práctico",
+        "paragraphs": [
+          "Las fichas describen objetivos y periodos estimados, pero la fuente no expide por sí misma las normas futuras ni convierte sus propuestas en obligaciones vigentes."
+        ]
+      }
+    ],
+    "detected_at": "2026-09-01T16:34:47.803209+00:00",
+    "document_type": "Suplemento Del Programa",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "792118b75d85276bacaa73f0ab98b16999056f68fa5f75fdf0459ada3b291cbd",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "SUPLEMENTO del Programa Nacional de Infraestructura de la Calidad 2026. · parte 1",
+          "location": "caracteres 0-12000"
+        },
+        {
+          "id": "chunk-2",
+          "label": "SUPLEMENTO del Programa Nacional de Infraestructura de la Calidad 2026. · parte 2",
+          "location": "caracteres 12000-24000"
+        },
+        {
+          "id": "chunk-3",
+          "label": "SUPLEMENTO del Programa Nacional de Infraestructura de la Calidad 2026. · parte 3",
+          "location": "caracteres 24000-36000"
+        },
+        {
+          "id": "chunk-4",
+          "label": "SUPLEMENTO del Programa Nacional de Infraestructura de la Calidad 2026. · parte 4",
+          "location": "caracteres 36000-48000"
+        },
+        {
+          "id": "chunk-5",
+          "label": "SUPLEMENTO del Programa Nacional de Infraestructura de la Calidad 2026. · parte 5",
+          "location": "caracteres 48000-60000"
+        },
+        {
+          "id": "chunk-6",
+          "label": "SUPLEMENTO del Programa Nacional de Infraestructura de la Calidad 2026. · parte 6",
+          "location": "caracteres 60000-72000"
+        },
+        {
+          "id": "chunk-7",
+          "label": "SUPLEMENTO del Programa Nacional de Infraestructura de la Calidad 2026. · parte 7",
+          "location": "caracteres 72000-84000"
+        },
+        {
+          "id": "chunk-8",
+          "label": "SUPLEMENTO del Programa Nacional de Infraestructura de la Calidad 2026. · parte 8",
+          "location": "caracteres 84000-96000"
+        },
+        {
+          "id": "chunk-9",
+          "label": "SUPLEMENTO del Programa Nacional de Infraestructura de la Calidad 2026. · parte 9",
+          "location": "caracteres 96000-108000"
+        },
+        {
+          "id": "chunk-10",
+          "label": "SUPLEMENTO del Programa Nacional de Infraestructura de la Calidad 2026. · parte 10",
+          "location": "caracteres 108000-116207"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797188&fecha=26%2F08%2F2026",
+      "retrieved_at": "2026-09-01T16:35:07.759913+00:00"
+    },
+    "executive_summary": [
+      "La Comisión Nacional de Infraestructura de la Calidad publicó el Suplemento del Programa Nacional de Infraestructura de la Calidad 2026. El documento es un instrumento de planeación, conducción, coordinación e información sobre actividades de normalización, estandarización y metrología. Recoge propuestas aprobadas por la Comisión y las clasifica como temas nuevos, modificaciones, reprogramaciones o cancelaciones; por ello, la publicación no equivale a la expedición inmediata de todas las normas que enumera.",
+      "El suplemento incorpora, entre otros asuntos, propuestas sobre seguridad de embarcaciones menores, contingencias atmosféricas, emisiones de industrias metalúrgicas, exploración minera, presas de jales, medición de aguas nacionales, transformadores de distribución, seguridad de vehículos pesados, Talavera y Raicilla. También programa trabajos relativos a importación de carne, productos veterinarios, pesca y acuacultura, transporte de mercancías peligrosas, salud, seguridad y salud en el trabajo, productos sanitarios, aviación y sistema ferroviario. Varias fichas señalan agosto a diciembre de 2026 como periodo estimado de inicio y terminación."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-09-01T16:34:47.803209+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5797188",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-10"
+        ],
+        "paragraphs": [
+          "La publicación ofrece una señal regulatoria temprana para industrias sujetas a normalización, sin crear por sí sola obligaciones técnicas nuevas."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-1",
+            "chunk-10"
+          ],
+          "paragraphs": [
+            "Los sectores marítimo, ambiental, energético, automotor, agroalimentario, transporte, salud, aeronáutico y ferroviario pueden priorizar vigilancia de los proyectos que les resulten aplicables."
+          ],
+          "sector": "Industrias reguladas y áreas de cumplimiento técnico"
+        }
+      ]
+    },
+    "importance": 2,
+    "issuing_body": "Secretaría de Economía",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-09-01T16:34:47.803209+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797188&fecha=26/08/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5797188"
+    },
+    "official_published_at": "2026-08-26",
+    "official_title": "Suplemento del Programa Nacional de Infraestructura de la Calidad 2026.",
+    "published_at": "2026-08-26",
+    "published_day": 26,
+    "published_month": 8,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Industrias reguladas y áreas de cumplimiento técnico",
+        "deadline": null,
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-10"
+        ],
+        "legal_basis": "Ley de Infraestructura de la Calidad y Suplemento del Programa Nacional de Infraestructura de la Calidad 2026",
+        "paragraphs": [
+          "Mapear los temas del suplemento relevantes para cada operación y dar seguimiento a consultas públicas, proyectos y publicaciones definitivas antes de modificar controles o certificar cumplimiento."
+        ],
+        "trigger": "Identificar una propuesta del suplemento vinculada con la actividad propia"
+      }
+    ],
+    "relevance_score": 2,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5797188",
+    "subtopic_tags": [
+      "infraestructura de la calidad"
+    ],
+    "summary": "La Comisión Nacional de Infraestructura de la Calidad publicó el Suplemento del Programa Nacional de Infraestructura de la Calidad 2026. El documento es un instrumento de planeación, conducción, coordinación e información sobre actividades de normalización, estandarización y metrología. Recoge propuestas aprobadas por la Comisión y las clasifica como temas nuevos, modificaciones, reprogramaciones o cancelaciones; por ello, la publicación no equivale a la expedición inmediata de todas las normas que enumera.\n\nEl suplemento incorpora, entre otros asuntos, propuestas sobre seguridad de embarcaciones menores, contingencias atmosféricas, emisiones de industrias metalúrgicas, exploración minera, presas de jales, medición de aguas nacionales, transformadores de distribución, seguridad de vehículos pesados, Talavera y Raicilla. También programa trabajos relativos a importación de carne, productos veterinarios, pesca y acuacultura, transporte de mercancías peligrosas, salud, seguridad y salud en el trabajo, productos sanitarios, aviación y sistema ferroviario. Varias fichas señalan agosto a diciembre de 2026 como periodo estimado de inicio y terminación.\n\nEl texto registra cancelaciones o bajas de temas previos y no presenta esas decisiones como obligaciones nuevas. Por ejemplo, refiere cancelaciones o sustituciones de determinados proyectos de normalización, y propone fusionar temas de marcado y etiquetado de mercancías peligrosas en una sola regulación futura. Las propuestas describen objetivos, ámbitos de aplicación proyectados y justificaciones, pero su contenido final depende de que cada procedimiento normativo continúe y llegue, en su caso, a publicación definitiva.\n\nPara empresas y autoridades, el valor inmediato del suplemento es anticipatorio: permite identificar materias que podrían entrar a desarrollo o modificación regulatoria. No es procedente tratar cada tema listado como NOM vigente, requisito exigible o fecha definitiva de cumplimiento. La acción prudente es seguir el expediente de cada proyecto, las consultas públicas y las publicaciones posteriores, usando el suplemento como mapa de seguimiento y no como sustituto del texto normativo final.\n\nPara fines de seguimiento, la publicación debe leerse con la normativa que expresamente cita. Esta ficha sólo reporta el alcance verificable del documento oficial: no anticipa decisiones posteriores, requisitos no publicados ni consecuencias que el texto no atribuye de manera directa.",
+    "summary_teaser": "La Comisión Nacional de Infraestructura de la Calidad publicó el suplemento de su programa anual con temas nuevos, modificaciones y cancelaciones normativas. Abarca sectores marítimo, ambiental, energético, industrial, agroalimentario, transporte, salud, aeronáutico, ferroviario y metrología, con periodos estimados de elaboración durante dos mil veintiséis.",
+    "title": "Suplemento incorpora agenda nacional de normas para dos mil veintiséis",
+    "topic_tags": [
+      "Normalización"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797188&fecha=26/08/2026"
+  },
+  "schema_version": 8
+}

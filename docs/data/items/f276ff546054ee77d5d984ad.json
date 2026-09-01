@@ -1,0 +1,155 @@
+{
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "item": {
+    "ai_generated": true,
+    "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791563&fecha=24/06/2026",
+    "card_body": "## Qué se publicó\n\nEl Diario Oficial de la Federación publicó un oficio de la CNBV que modifica la autorización de Expansive Realty.\n\n## Sustancia\n\nEl oficio actualiza las condiciones ligadas al objeto social de la institución de financiamiento colectivo y enumera las operaciones y servicios bajo la ley fintech aplicable.\n\n## Fuente\n\nLa fuente oficial es el Diario Oficial de la Federación. El acto revisado es el oficio de la CNBV que modifica los términos de autorización para organizarse y operar de Expansive Realty.",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "751f65615c0cc40b74cf799d56ef836ec183f9ffbb336a5ccb0fafc0e797db20",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "not_material",
+        "reason": "Primer locator es encabezado; asamblea, objeto y servicios modificados constan en fragmento siguiente.",
+        "source_ref": "chunk-1",
+        "target_sections": []
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/f276ff546054ee77d5d984ad.json",
+    "detail_url": "notas/f276ff546054ee77d5d984ad.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "heading": "Objeto y operaciones",
+        "paragraphs": [
+          "El oficio incorpora objeto social actualizado y vincula operaciones con fracciones expresamente listadas de artículos 16 y 19 de ley fintech. La fuente presenta enumeración como contenido de condiciones modificadas, no como autorización ajena al marco aplicable."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "heading": "Deuda y regalías",
+        "paragraphs": [
+          "Octava condición refiere servicios de financiamiento colectivo de deuda y regalías, sujetos a ley fintech, disposiciones generales de CNBV, disposiciones de Banco de México y normativa de prevención de operaciones con recursos de procedencia ilícita y financiamiento al terrorismo."
+        ]
+      }
+    ],
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Oficio",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "503f1d044d18e42f6c87a479697d386a1cb22b907afb325fa3a2dc91042d480d",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "OFICIO mediante el cual se modifican los términos de la autorización para organizarse y operar de Expansive Realty, S.A.P.I. de C.V., Institución de Financiamiento Colectivo.",
+          "location": "caracteres 0-178"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Comisión Nacional Bancaria y de Valores.- Vicepresidencia de Normatividad.- Dirección General de Autorizaciones Especializadas.- Vicepresidencia de Supervisión de Grupos e Intermediarios Financieros B.- Dirección General de Supervisión de Grupos e Intermediarios Financieros E.- Oficio No. 311-752373/2026.",
+          "location": "caracteres 178-5259"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791563&fecha=24/06/2026",
+      "retrieved_at": "2026-08-13T19:43:49.050888+00:00"
+    },
+    "executive_summary": [
+      "La CNBV modifica quinta y octava condición de autorización de Expansive Realty, S.A.P.I. de C.V., como institución de financiamiento colectivo. El cambio deriva de asamblea general extraordinaria de 19 de mayo de 2026 que modificó objeto social.",
+      "La condición quinta remite al objeto del artículo 15 de Ley para Regular Instituciones de Tecnología Financiera y enumera operaciones y servicios de artículos 16 y 19 citados. La octava delimita servicios de financiamiento colectivo de deuda y regalías."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5791563",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "Institución y usuarios deben identificar cambio de objeto y servicios enumerados. Áreas de cumplimiento conservan necesidad de contrastar operaciones con ley fintech, reglas CNBV, Banco de México y obligaciones antilavado mencionadas."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-2"
+          ],
+          "paragraphs": [
+            "Expansive Realty y participantes de plataformas pueden revisar objeto actualizado y delimitación de deuda y regalías."
+          ],
+          "sector": "Instituciones de tecnología financiera"
+        }
+      ]
+    },
+    "importance": 1,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T13:53:50.681449+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791563&fecha=24/06/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5791563"
+    },
+    "official_published_at": "2026-06-24",
+    "official_title": "Oficio mediante el cual se modifican los términos de la autorización para organizarse y operar de Expansive Realty, S.A.P.I. de C.V., Institución de Financiamiento Colectivo.",
+    "published_at": "2026-06-24",
+    "published_day": 24,
+    "published_month": 6,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Expansive Realty y áreas de cumplimiento",
+        "deadline": null,
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "legal_basis": "Artículos 15, 16 y 19 de Ley para Regular Instituciones de Tecnología Financiera, citados",
+        "paragraphs": [
+          "Alinear documentación corporativa, operación de plataforma y divulgaciones con objeto y servicios enumerados; verificar cada operación frente a normas a las que el oficio remite."
+        ],
+        "trigger": null
+      }
+    ],
+    "relevance_score": 1,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5791563",
+    "subtopic_tags": [],
+    "summary": "La CNBV modifica quinta y octava condición de autorización de Expansive Realty, S.A.P.I. de C.V., como institución de financiamiento colectivo. El cambio deriva de asamblea general extraordinaria de 19 de mayo de 2026 que modificó objeto social.\n\nLa condición quinta remite al objeto del artículo 15 de Ley para Regular Instituciones de Tecnología Financiera y enumera operaciones y servicios de artículos 16 y 19 citados. La octava delimita servicios de financiamiento colectivo de deuda y regalías.\n\nEl oficio incorpora objeto social actualizado y vincula operaciones con fracciones expresamente listadas de artículos 16 y 19 de ley fintech. La fuente presenta enumeración como contenido de condiciones modificadas, no como autorización ajena al marco aplicable.\n\nOctava condición refiere servicios de financiamiento colectivo de deuda y regalías, sujetos a ley fintech, disposiciones generales de CNBV, disposiciones de Banco de México y normativa de prevención de operaciones con recursos de procedencia ilícita y financiamiento al terrorismo.\n\nLa publicación ajusta condiciones de autorización existente a partir de modificación societaria concreta. No enumera producto nuevo fuera de servicios señalados ni libera a institución de normas legales y regulatorias que la propia condición conserva. El alcance debe leerse con fracciones y normas a las que remite. La asamblea explicada es antecedente de cambio de objeto, no un sustituto del oficio de la CNBV.\n\nInstitución y usuarios deben identificar cambio de objeto y servicios enumerados. Áreas de cumplimiento conservan necesidad de contrastar operaciones con ley fintech, reglas CNBV, Banco de México y obligaciones antilavado mencionadas. Expansive Realty y participantes de plataformas pueden revisar objeto actualizado y delimitación de deuda y regalías.\n\nLa modificación se circunscribe a las condiciones de autorización de Expansive Realty y al objeto social que el oficio describe. La enumeración de operaciones debe leerse junto con las disposiciones financieras a las que la CNBV remite. No habilita actividades ajenas a ese objeto.",
+    "summary_teaser": "La CNBV modifica las condiciones de autorización de Expansive Realty como institución de financiamiento colectivo después de un cambio de objeto social. El oficio vincula las operaciones y servicios autorizados con los artículos aplicables de la ley fintech, incluidos deuda y regalías.",
+    "title": "CNBV actualiza objeto y alcance operativo de Expansive Realty",
+    "topic_tags": [
+      "Oficio"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5791563&fecha=24/06/2026"
+  },
+  "schema_version": 8
+}

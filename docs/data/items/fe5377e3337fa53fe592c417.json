@@ -1,0 +1,310 @@
+{
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "item": {
+    "ai_generated": true,
+    "authority": "Agencia Nacional de Aduanas de México",
+    "canonical_url": "https://www.anam.gob.mx/informacion-publica-de-comercio-exterior-2025",
+    "card_body": "## Qué se publicó\n\nLa ANAM mantiene disponible una consulta histórica de información pública de operaciones de comercio exterior por aduana.\n\n## Sustancia\n\nLa página describe archivos públicos de años anteriores, advierte que contienen datos sin procesar y señala que las estadísticas de balanza comercial corresponden a Banco de México e INEGI.\n\n## Fuente\n\nLa síntesis se elaboró exclusivamente con la fuente oficial identificada en la evidencia y sus fragmentos extraídos.",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Comercio exterior"
+    ],
+    "content_hash": "c760357d770bcea143d99297bcb1e86c32d7dda9b938e20901a0d92d5141fdc9",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-1",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-3",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-4",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-5",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-6",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-7",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-8",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-9",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-10",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/fe5377e3337fa53fe592c417.json",
+    "detail_url": "notas/fe5377e3337fa53fe592c417.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2",
+          "chunk-3",
+          "chunk-4",
+          "chunk-5",
+          "chunk-6",
+          "chunk-7",
+          "chunk-8",
+          "chunk-9",
+          "chunk-10"
+        ],
+        "heading": "Alcance de la publicación",
+        "paragraphs": [
+          "La ANAM mantiene disponible una consulta histórica de información pública de operaciones de comercio exterior por aduana.",
+          "La disponibilidad se limita a los archivos y salvaguardas de confidencialidad identificados por la ANAM, sin convertirlos en una estadística oficial procesada."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2",
+          "chunk-3",
+          "chunk-4",
+          "chunk-5",
+          "chunk-6",
+          "chunk-7",
+          "chunk-8",
+          "chunk-9",
+          "chunk-10"
+        ],
+        "heading": "Contenido relevante",
+        "paragraphs": [
+          "La página describe archivos públicos de años anteriores, advierte que contienen datos sin procesar y señala que las estadísticas de balanza comercial corresponden a Banco de México e INEGI.",
+          "Las personas usuarias pueden localizar archivos históricos, pero deben considerar sus límites técnicos, fiscales y metodológicos antes de analizarlos. Quienes usen los archivos deben preservar las restricciones de confidencialidad, documentar su metodología y utilizar herramientas capaces de procesar archivos de gran volumen."
+        ]
+      }
+    ],
+    "detected_at": "2026-09-01T16:34:47.803209+00:00",
+    "document_type": "Comunicado",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "16e844a299305aea27f3b873a9fdc936d9f2d153d9cdb02df89436cc06b0326e",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "Preámbulo",
+          "location": "caracteres 0-2351"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Información pública de operaciones de comercio exterior",
+          "location": "caracteres 2351-3862"
+        },
+        {
+          "id": "chunk-3",
+          "label": "Información pública 2026",
+          "location": "caracteres 3862-3891"
+        },
+        {
+          "id": "chunk-4",
+          "label": "Información pública 2025",
+          "location": "caracteres 3891-3920"
+        },
+        {
+          "id": "chunk-5",
+          "label": "Información pública 2024",
+          "location": "caracteres 3920-3949"
+        },
+        {
+          "id": "chunk-6",
+          "label": "Información pública 2023",
+          "location": "caracteres 3949-3978"
+        },
+        {
+          "id": "chunk-7",
+          "label": "Información pública 2022",
+          "location": "caracteres 3978-4007"
+        },
+        {
+          "id": "chunk-8",
+          "label": "Información pública 2021",
+          "location": "caracteres 4007-4036"
+        },
+        {
+          "id": "chunk-9",
+          "label": "Información pública 2020",
+          "location": "caracteres 4036-4065"
+        },
+        {
+          "id": "chunk-10",
+          "label": "Información pública 2011-2019",
+          "location": "caracteres 4065-4097"
+        }
+      ],
+      "official_url": "https://www.anam.gob.mx/informacion-publica-de-comercio-exterior-2025",
+      "retrieved_at": "2026-09-01T16:35:15.583809+00:00"
+    },
+    "executive_summary": [
+      "La ANAM mantiene disponible una consulta histórica de información pública de operaciones de comercio exterior por aduana. La página describe archivos públicos de años anteriores, advierte que contienen datos sin procesar y señala que las estadísticas de balanza comercial corresponden a Banco de México e INEGI.",
+      "La disponibilidad se limita a los archivos y salvaguardas de confidencialidad identificados por la ANAM, sin convertirlos en una estadística oficial procesada. La publicación debe aplicarse sin extender sus alcances a situaciones no descritas en la fuente."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-09-01T16:34:47.803209+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "anam:780e101837f9bd31",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2",
+          "chunk-3",
+          "chunk-4",
+          "chunk-5",
+          "chunk-6",
+          "chunk-7",
+          "chunk-8",
+          "chunk-9",
+          "chunk-10"
+        ],
+        "paragraphs": [
+          "Las personas usuarias pueden localizar archivos históricos, pero deben considerar sus límites técnicos, fiscales y metodológicos antes de analizarlos."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-1",
+            "chunk-2",
+            "chunk-3",
+            "chunk-4",
+            "chunk-5",
+            "chunk-6",
+            "chunk-7",
+            "chunk-8",
+            "chunk-9",
+            "chunk-10"
+          ],
+          "paragraphs": [
+            "La incidencia para este grupo se limita al alcance expresamente descrito en la publicación y requiere contrastarse con cada caso concreto."
+          ],
+          "sector": "Analistas de comercio exterior, importadores y personas usuarias de datos aduaneros"
+        }
+      ]
+    },
+    "importance": 2,
+    "issuing_body": "Agencia Nacional de Aduanas de México",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-09-01T16:34:47.803209+00:00",
+    "official_evidence": {
+      "primary_url": "https://www.anam.gob.mx/informacion-publica-de-comercio-exterior-2025/"
+    },
+    "official_identifiers": {
+      "source_id": "780e101837f9bd31"
+    },
+    "official_published_at": "2026-08-27",
+    "official_title": "Información Pública de Comercio Exterior",
+    "published_at": "2026-08-27",
+    "published_day": 27,
+    "published_month": 8,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Analistas de comercio exterior, importadores y personas usuarias de datos aduaneros",
+        "deadline": null,
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2",
+          "chunk-3",
+          "chunk-4",
+          "chunk-5",
+          "chunk-6",
+          "chunk-7",
+          "chunk-8",
+          "chunk-9",
+          "chunk-10"
+        ],
+        "legal_basis": null,
+        "paragraphs": [
+          "Quienes usen los archivos deben preservar las restricciones de confidencialidad, documentar su metodología y utilizar herramientas capaces de procesar archivos de gran volumen."
+        ],
+        "trigger": "Cuando la publicación resulte aplicable a la operación o situación revisada."
+      }
+    ],
+    "relevance_score": 2,
+    "review_reason": null,
+    "source": "ANAM",
+    "source_id": "780e101837f9bd31",
+    "subtopic_tags": [
+      "comercio exterior"
+    ],
+    "summary": "El documento oficial La ANAM mantiene disponible una consulta histórica de información pública de operaciones de comercio exterior por aduana. La página describe archivos públicos de años anteriores, advierte que contienen datos sin procesar y señala que las estadísticas de balanza comercial corresponden a Banco de México e INEGI.\n\nEl alcance debe leerse dentro de los límites que la propia fuente identifica: La disponibilidad se limita a los archivos y salvaguardas de confidencialidad identificados por la ANAM, sin convertirlos en una estadística oficial procesada. La información ubica a Analistas de comercio exterior, importadores y personas usuarias de datos aduaneros como sujetos principalmente vinculados con el asunto. Por ello, la nota registra la existencia y el contenido comunicado, sin extender la conclusión a personas, operaciones, expedientes o contratos que el texto no menciona.\n\nDesde la gestión de cumplimiento, Quienes usen los archivos deben preservar las restricciones de confidencialidad, documentar su metodología y utilizar herramientas capaces de procesar archivos de gran volumen. La revisión debe partir de la publicación oficial y de la documentación disponible para cada situación concreta. Cuando el documento se refiera a una autorización, una sanción, un trámite, una regla administrativa, una medida de inspección o una propuesta legislativa, conviene distinguir el acto publicado de sus posibles actuaciones posteriores. La fuente no acredita por sí sola el cumplimiento individual, una afectación económica concreta, la procedencia de una solicitud ni un resultado distinto de los expresamente descritos.\n\nEn términos probatorios, esta síntesis se limita a la evidencia extraída y a los localizadores asociados. No atribuye efectos, tratados, montos, plazos, fundamentos, resultados o hechos que no estén contenidos en la publicación. La lectura operativa requiere consultar el texto íntegro, sus anexos y, cuando corresponda, la documentación de la persona o operación involucrada. Esta distinción es especialmente importante para no convertir un comunicado, una referencia registral, una actuación cautelar o una iniciativa en una conclusión definitiva sobre derechos u obligaciones individuales.",
+    "summary_teaser": "ANAM mantiene disponible información pública histórica de operaciones de comercio exterior por aduana. La propia fuente advierte que se trata de datos sin procesar, sujetos a secreto fiscal y no sustitutos de estadísticas oficiales. También alerta que ciertos archivos tienen millones de registros y pueden requerir herramientas distintas de una hoja de cálculo convencional.",
+    "title": "ANAM permite descarga histórica de operaciones aduaneras públicas",
+    "topic_tags": [
+      "Comercio exterior"
+    ],
+    "url": "https://www.anam.gob.mx/informacion-publica-de-comercio-exterior-2025/"
+  },
+  "schema_version": 8
+}

@@ -1,0 +1,227 @@
+{
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "item": {
+    "ai_generated": true,
+    "authority": "PODER EJECUTIVO SECRETARIA DE ENERGIA",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797266&fecha=27%2F08%2F2026",
+    "card_body": "## Qué se publicó\n\nEl Instituto publicó su Estatuto Orgánico con una nueva definición de estructura y competencias.\n\n## Sustancia\n\nEl documento ordena las atribuciones de sus órganos y áreas, incorpora funciones de innovación, transferencia tecnológica y operación, y sustituye el estatuto anterior.\n\n## Fuente\n\n[Consulta la publicación oficial](https://dof.gob.mx/nota_detalle.php?codigo=5797266&fecha=27%2F08%2F2026)",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "655011c7ba994fe1eca293432d9a59b6511f9194960d525e134174ebfc28f295",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-1",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-3",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-4",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-5",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-6",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/fc02f0a3e8f888b8cca81118.json",
+    "detail_url": "notas/fc02f0a3e8f888b8cca81118.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-6"
+        ],
+        "heading": "Contenido publicado",
+        "paragraphs": [
+          "El estatuto redefine el objeto institucional, la estructura orgánica y las atribuciones del Consejo, la Dirección General y las unidades administrativas."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-6"
+        ],
+        "heading": "Alcance práctico",
+        "paragraphs": [
+          "El nuevo instrumento entra en vigor al día siguiente de su publicación y sustituye el estatuto anterior, conservando de forma transitoria las reglas no incompatibles."
+        ]
+      }
+    ],
+    "detected_at": "2026-09-01T16:34:47.803209+00:00",
+    "document_type": "Estatuto Orgánico",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "5a7944d09a9ad539181c3824acc632054622fdf0cd57cf70b7609653838fa60a",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "ESTATUTO Orgánico del Instituto Mexicano del Petróleo.",
+          "location": "caracteres 0-58"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- SENER.- Secretaría de Energía.- Instituto Mexicano del Petróleo. · parte 1",
+          "location": "caracteres 58-12058"
+        },
+        {
+          "id": "chunk-3",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- SENER.- Secretaría de Energía.- Instituto Mexicano del Petróleo. · parte 2",
+          "location": "caracteres 12058-24058"
+        },
+        {
+          "id": "chunk-4",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- SENER.- Secretaría de Energía.- Instituto Mexicano del Petróleo. · parte 3",
+          "location": "caracteres 24058-36058"
+        },
+        {
+          "id": "chunk-5",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- SENER.- Secretaría de Energía.- Instituto Mexicano del Petróleo. · parte 4",
+          "location": "caracteres 36058-48058"
+        },
+        {
+          "id": "chunk-6",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- SENER.- Secretaría de Energía.- Instituto Mexicano del Petróleo. · parte 5",
+          "location": "caracteres 48058-58441"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797266&fecha=27%2F08%2F2026",
+      "retrieved_at": "2026-09-01T16:35:06.420244+00:00"
+    },
+    "executive_summary": [
+      "El Instituto Mexicano del Petróleo publicó un nuevo Estatuto Orgánico para regular su organización y funcionamiento. El texto lo define como organismo público descentralizado sectorizado a la Secretaría de Energía, con carácter científico, técnico, tecnológico, educativo y cultural. Su objeto abarca investigación, desarrollo tecnológico, innovación, escalamiento, formación de talento, servicios tecnológicos, transferencia de tecnología y captura de valor, tanto para la cadena de hidrocarburos como para la transición energética sostenible.",
+      "El estatuto determina una estructura integrada por la Dirección General, la Unidad de Asuntos Jurídicos y direcciones de investigación en exploración y extracción, innovación y transición energética, tecnología, transferencia de tecnología, exploración y extracción, ingeniería y servicios, operación institucional, administración y finanzas. También atribuye funciones al Consejo de Administración, a la Dirección General y a cada unidad, incluidas facultades de representación, planeación, proyectos, gestión de tecnologías, propiedad intelectual, servicios, capacitación y control interno."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-09-01T16:34:47.803209+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5797266",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-6"
+        ],
+        "paragraphs": [
+          "La reforma ordena internamente las competencias con las que el Instituto desarrollará investigación, servicios tecnológicos, transferencia y operación institucional."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-1",
+            "chunk-6"
+          ],
+          "paragraphs": [
+            "Las áreas del Instituto y quienes tramiten asuntos con él deben identificar la unidad competente a partir de la estructura y atribuciones publicadas."
+          ],
+          "sector": "Unidades administrativas, usuarios y contrapartes del Instituto Mexicano del Petróleo"
+        }
+      ]
+    },
+    "importance": 2,
+    "issuing_body": "Presidencia de la República",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-09-01T16:34:47.803209+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797266&fecha=27/08/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5797266"
+    },
+    "official_published_at": "2026-08-27",
+    "official_title": "Estatuto Orgánico del Instituto Mexicano del Petróleo.",
+    "published_at": "2026-08-27",
+    "published_day": 27,
+    "published_month": 8,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Unidades administrativas, usuarios y contrapartes del Instituto Mexicano del Petróleo",
+        "deadline": null,
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-6"
+        ],
+        "legal_basis": "Estatuto Orgánico publicado por el Instituto Mexicano del Petróleo",
+        "paragraphs": [
+          "Actualizar matrices de atribuciones, flujos de aprobación y referencias internas al estatuto anterior; verificar qué disposiciones transitorias siguen aplicando."
+        ],
+        "trigger": "Gestionar un asunto, proyecto o instrumento jurídico con el Instituto Mexicano del Petróleo"
+      }
+    ],
+    "relevance_score": 2,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5797266",
+    "subtopic_tags": [
+      "estatuto organico"
+    ],
+    "summary": "El Instituto Mexicano del Petróleo publicó un nuevo Estatuto Orgánico para regular su organización y funcionamiento. El texto lo define como organismo público descentralizado sectorizado a la Secretaría de Energía, con carácter científico, técnico, tecnológico, educativo y cultural. Su objeto abarca investigación, desarrollo tecnológico, innovación, escalamiento, formación de talento, servicios tecnológicos, transferencia de tecnología y captura de valor, tanto para la cadena de hidrocarburos como para la transición energética sostenible.\n\nEl estatuto determina una estructura integrada por la Dirección General, la Unidad de Asuntos Jurídicos y direcciones de investigación en exploración y extracción, innovación y transición energética, tecnología, transferencia de tecnología, exploración y extracción, ingeniería y servicios, operación institucional, administración y finanzas. También atribuye funciones al Consejo de Administración, a la Dirección General y a cada unidad, incluidas facultades de representación, planeación, proyectos, gestión de tecnologías, propiedad intelectual, servicios, capacitación y control interno.\n\nEn materia jurídica y operativa, el documento contempla que la Unidad de Asuntos Jurídicos represente al Instituto en diversos procedimientos, revise instrumentos jurídicos y atienda asuntos de amparo y contencioso administrativo. Las áreas especializadas reciben competencias para investigación, innovación, transferencia y comercialización de tecnologías, servicios de ingeniería, laboratorios, ciberseguridad institucional y desarrollo de talento. El estatuto prevé reglas de suplencia y deja la interpretación de sus dudas a la Dirección General con acompañamiento de la Unidad de Asuntos Jurídicos.\n\nEl estatuto entra en vigor al día siguiente de su publicación y abroga el aprobado en dos mil veinticuatro. Las disposiciones previas que no se opongan permanecen vigentes hasta que se modifiquen o dejen sin efecto. La publicación describe la arquitectura institucional y sus atribuciones; no acredita por sí misma la ejecución de proyectos, la celebración de contratos o la adopción de políticas específicas por las áreas del Instituto.\n\nPara fines de seguimiento, la publicación debe leerse con la normativa que expresamente cita. Esta ficha sólo reporta el alcance verificable del documento oficial: no anticipa decisiones posteriores, requisitos no publicados ni consecuencias que el texto no atribuye de manera directa.",
+    "summary_teaser": "El Instituto Mexicano del Petróleo publicó su nuevo Estatuto Orgánico, que define su objeto, estructura y atribuciones. El instrumento abroga el estatuto aprobado en dos mil veinticuatro, entra en vigor al día siguiente de su publicación y mantiene disposiciones previas que no se le opongan mientras se modifican o dejan sin efecto.",
+    "title": "Estatuto establece atribuciones del Instituto Mexicano del Petróleo",
+    "topic_tags": [
+      "Derecho administrativo"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797266&fecha=27/08/2026"
+  },
+  "schema_version": 8
+}

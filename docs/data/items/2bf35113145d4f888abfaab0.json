@@ -1,0 +1,155 @@
+{
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "item": {
+    "ai_generated": true,
+    "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792089&fecha=30/06/2026",
+    "card_body": "## Qué se publicó\n\nEl Diario Oficial de la Federación publicó un acuerdo de INDAABIN que destina el CADER Calera de Víctor Rosales a la Secretaría de Agricultura y Desarrollo Rural.\n\n## Sustancia\n\nEl inmueble se asigna para fomento agroindustrial y oficinas de atención regional a productores, bajo condiciones de conservación, obras, aseguramiento y devolución.\n\n## Fuente\n\nLa fuente oficial es el Diario Oficial de la Federación. El acto revisado es el acuerdo de destino de INDAABIN relativo al inmueble federal CADER Calera de Víctor Rosales.",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "099f67b81c6a12c944be4938f0c21a1207226a420505b45179c31dd6950db0ab",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "not_material",
+        "reason": "El primer fragmento sólo identifica el acuerdo; superficie, finalidad y condiciones se encuentran en el locator sustantivo.",
+        "source_ref": "chunk-1",
+        "target_sections": []
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/2bf35113145d4f888abfaab0.json",
+    "detail_url": "notas/2bf35113145d4f888abfaab0.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "heading": "Antecedentes y características",
+        "paragraphs": [
+          "La fuente refiere una donación municipal de 2016, diferencia entre superficie documental y topográfica vinculada con alineamientos de calles, y compatibilidad de uso para oficinas. También señala que la unidad administrativa reportó ausencia de características históricas o artísticas y que no se advirtieron invasiones."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "heading": "Uso, obras y administración",
+        "paragraphs": [
+          "Sader debe conservar, custodiar y asegurar el inmueble y usarlo para el destino definido. Un uso distinto sin autorización, o dejar de requerirlo, activa deber de ponerlo a disposición de INDAABIN con mejoras y sin indemnización dentro de cuatro meses. Para obras se requieren licencias y permisos correspondientes."
+        ]
+      }
+    ],
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Acuerdo",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "2acc168c6e9927c233a544091434b072645731008387d04f308cb254eb7022ba",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "ACUERDO por el que se destina a la Secretaría de Agricultura y Desarrollo Rural, el inmueble federal denominado CADER Calera de Víctor Rosales, con Registro Federal Inmobiliario 32-7982-4 y superficie de 397.473 metros cuadrados, ubicado en Calle Cristóbal Colón número 16 Ote., Fraccionamiento Ampliación América, Código Postal 98503, Localidad de Víctor Rosales, Municipio de Calera, Estado de Zacatecas.",
+          "location": "caracteres 0-410"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Instituto de Administración y Avalúos de Bienes Nacionales.- DST-08/2026.",
+          "location": "caracteres 410-11441"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792089&fecha=30/06/2026",
+      "retrieved_at": "2026-08-13T19:43:39.517034+00:00"
+    },
+    "executive_summary": [
+      "INDAABIN destina a la Secretaría de Agricultura y Desarrollo Rural el inmueble CADER Calera de Víctor Rosales, con registro federal inmobiliario 32-7982-4. La superficie de destino es de 397.473 metros cuadrados en Cristóbal Colón 16 Oriente, Calera, Zacatecas.",
+      "El acuerdo asigna el predio al fomento de la actividad agroindustrial y a oficinas para atención de productores de la región. El instrumento concede un derecho de uso para esos fines, sin transmitir propiedad ni un derecho real sobre el inmueble."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5792089",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "Sader obtiene un espacio federal con uso delimitado para funciones regionales en Calera. Áreas de patrimonio y obras deben separar administración ordinaria, conservación y cualquier modificación física."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-2"
+          ],
+          "paragraphs": [
+            "Unidades de Sader que operen el CADER deben mantener el destino institucional y coordinar permisos antes de intervenir el inmueble."
+          ],
+          "sector": "Administración agropecuaria regional"
+        }
+      ]
+    },
+    "importance": 1,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T13:53:50.681449+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792089&fecha=30/06/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5792089"
+    },
+    "official_published_at": "2026-06-30",
+    "official_title": "Acuerdo por el que se destina a la Secretaría de Agricultura y Desarrollo Rural, el inmueble federal denominado CADER Calera de Víctor Rosales, con Registro Federal Inmobiliario 32-7982-4 y superficie de 397.473 metros cuadrados, ubicado en Calle Cristóbal Colón número 16 Ote., Fraccionamiento Ampliación América, Código Postal 98503, Localidad de Víctor Rosales, Municipio de Calera, Estado de Zacatecas.",
+    "published_at": "2026-06-30",
+    "published_day": 30,
+    "published_month": 6,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Secretaría de Agricultura y Desarrollo Rural",
+        "deadline": "Cuatro meses para poner el inmueble a disposición de INDAABIN en supuestos de devolución",
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "legal_basis": null,
+        "paragraphs": [
+          "Usar el predio para fomento agroindustrial y atención regional, conservarlo y asegurarlo. Obtener licencias antes de obras y preparar devolución si hay cambio de destino sin autorización o deja de requerirse."
+        ],
+        "trigger": "Si se modifica el uso autorizado, cesa necesidad o se proyecta una obra"
+      }
+    ],
+    "relevance_score": 1,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5792089",
+    "subtopic_tags": [],
+    "summary": "INDAABIN destina a la Secretaría de Agricultura y Desarrollo Rural el inmueble CADER Calera de Víctor Rosales, con registro federal inmobiliario 32-7982-4. La superficie de destino es de 397.473 metros cuadrados en Cristóbal Colón 16 Oriente, Calera, Zacatecas.\n\nEl acuerdo asigna el predio al fomento de la actividad agroindustrial y a oficinas para atención de productores de la región. El instrumento concede un derecho de uso para esos fines, sin transmitir propiedad ni un derecho real sobre el inmueble.\n\nLa fuente refiere una donación municipal de 2016, diferencia entre superficie documental y topográfica vinculada con alineamientos de calles, y compatibilidad de uso para oficinas. También señala que la unidad administrativa reportó ausencia de características históricas o artísticas y que no se advirtieron invasiones.\n\nSader debe conservar, custodiar y asegurar el inmueble y usarlo para el destino definido. Un uso distinto sin autorización, o dejar de requerirlo, activa deber de ponerlo a disposición de INDAABIN con mejoras y sin indemnización dentro de cuatro meses. Para obras se requieren licencias y permisos correspondientes.\n\nLa asignación define una finalidad institucional concreta: fomento agroindustrial y atención regional a productores. No convierte el destino en transferencia de dominio ni habilita usos no previstos. INDAABIN conserva facultades de vigilancia y el acuerdo surte efectos al día siguiente de su publicación. La diferencia topográfica explicada por el instrumento no altera la superficie de destino que éste consigna.\n\nSader obtiene un espacio federal con uso delimitado para funciones regionales en Calera. Áreas de patrimonio y obras deben separar administración ordinaria, conservación y cualquier modificación física. Unidades de Sader que operen el CADER deben mantener el destino institucional y coordinar permisos antes de intervenir el inmueble.\n\nEl destino se ciñe a fomento agroindustrial y atención regional a productores. El acuerdo conserva las condiciones administrativas del bien y no transmite propiedad a la Secretaría de Agricultura y Desarrollo Rural.",
+    "summary_teaser": "INDAABIN destina el inmueble federal CADER Calera de Víctor Rosales a la Secretaría de Agricultura y Desarrollo Rural para fomento agroindustrial y oficinas de atención regional. El acuerdo mantiene condiciones de uso, conservación, permisos de obra y devolución, sin transferir dominio sobre el inmueble.",
+    "title": "INDAABIN establece destino del CADER Calera para Sader",
+    "topic_tags": [
+      "Acuerdo"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5792089&fecha=30/06/2026"
+  },
+  "schema_version": 8
+}

@@ -1,0 +1,152 @@
+{
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "item": {
+    "ai_generated": true,
+    "authority": "CONVOCATORIAS PARA CONCURSOS DE ADQUISICIONES, ARRENDAMIENTOS, OBRAS Y SERVICIOS DEL SECTOR PUBLICO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792866&fecha=07/07/2026",
+    "card_body": "## Qué se publicó\n\nLa Fiscalía General de la República abrió una licitación electrónica para capacitación de personal técnico aeronáutico.\n\n## Sustancia\n\nEl procedimiento LA-49-830-049000975-N-51-2026 tiene calendario oficial de aclaraciones, apertura y fallo. La convocatoria inicia la competencia; no comunica un proveedor ganador ni un contrato.\n\n## Fuente\n\n[Fuente oficial](https://dof.gob.mx/nota_detalle.php?codigo=5792866&fecha=07/07/2026)",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Penal"
+    ],
+    "content_hash": "a08669a5a7aa5274374e173832631c6879a1ff4987cb0cb3f40ff3d156d6c957",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-1",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/49e15213066b9fd33189b5ce.json",
+    "detail_url": "notas/49e15213066b9fd33189b5ce.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-1"
+        ],
+        "heading": "Procedimiento convocado",
+        "paragraphs": [
+          "La Fiscalía General de la República convocó la licitación pública nacional electrónica LA-49-830-049000975-N-51-2026 para capacitación teórico-práctica recurrente y formación de instructores para personal técnico aeronáutico, incluidos aviones Embraer, Bombardier, Hawker, Gulfstream, King Air y Cessna, helicópteros Airbus y Bell, motores, pruebas no destructivas, almacenes e instrucción de vuelo visual nocturno.",
+          "La convocatoria remite a Compras MX para bases, requisitos, modelos contractuales y, en su caso, el detalle técnico de las partidas."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-1"
+        ],
+        "heading": "Fechas y límite del aviso",
+        "paragraphs": [
+          "Las etapas publicadas son: aclaraciones 9 de julio de 2026 a las 10:30 horas, presentación y apertura 20 de julio de 2026 a las 10:30 horas y fallo 21 de julio de 2026 a las 17:00 horas. El detalle de partidas se determina en la convocatoria y su anexo técnico.",
+          "El aviso no contiene adjudicación ni contrato; esos resultados dependen de los actos posteriores del procedimiento."
+        ]
+      }
+    ],
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Fiscalia General",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "874ab1cb9b736deb25124547f749edc1c315cbf52f6cd48d6bbe5a4461cc79fd",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "Documento",
+          "location": "caracteres 0-2203"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792866&fecha=07/07/2026",
+      "retrieved_at": "2026-08-13T19:43:04.201826+00:00"
+    },
+    "executive_summary": [
+      "La Fiscalía General de la República difundió una convocatoria de licitación pública nacional electrónica para capacitación teórico-práctica recurrente y formación de instructores para personal técnico aeronáutico, incluidos aviones Embraer, Bombardier, Hawker, Gulfstream, King Air y Cessna, helicópteros Airbus y Bell, motores, pruebas no destructivas, almacenes e instrucción de vuelo visual nocturno. El identificador del procedimiento es LA-49-830-049000975-N-51-2026 y las bases, requisitos de participación, modelo contractual y detalle de partidas se remiten a Compras MX o a los medios de consulta que la convocatoria señala.",
+      "El calendario publicado fija la difusión en Compras MX el 3 de julio de 2026, junta de aclaraciones el 9 de julio de 2026 a las 10:30 horas, presentación y apertura de proposiciones el 20 de julio de 2026 a las 10:30 horas y fallo el 21 de julio de 2026 a las 17:00 horas. El detalle de partidas se determina en la convocatoria y su anexo técnico."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Organismo autónomo",
+    "id": "dof:5792866",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-1"
+        ],
+        "paragraphs": [
+          "La convocatoria habilita la participación en un procedimiento de contratación identificado y fija fechas que deben revisarse directamente en Compras MX."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-1"
+          ],
+          "paragraphs": [
+            "Proveedores y áreas compradoras pueden ubicar la oportunidad con el número de licitación y distinguir el aviso inicial de una eventual adjudicación o formalización."
+          ],
+          "sector": "Compras públicas"
+        }
+      ]
+    },
+    "importance": 2,
+    "issuing_body": "Fiscalía General de la República",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T13:53:50.681449+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792866&fecha=07/07/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5792866"
+    },
+    "official_published_at": "2026-07-07",
+    "official_title": "FISCALIA GENERAL DE LA REPUBLICA - REF:578095",
+    "published_at": "2026-07-07",
+    "published_day": 7,
+    "published_month": 7,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Personas proveedoras y áreas de adquisiciones",
+        "deadline": "Presentación y apertura de proposiciones: 20 de julio de 2026 a las 10:30 horas",
+        "evidence_refs": [
+          "chunk-1"
+        ],
+        "legal_basis": "Acuerdos A/OM/06/2025 y A/OM/08/2025 de la Fiscalía General de la República",
+        "paragraphs": [
+          "Si existe interés en participar, consulte las bases de LA-49-830-049000975-N-51-2026 en Compras MX y confirme requisitos, anexos y cambios derivados de la junta de aclaraciones antes de presentar una proposición."
+        ],
+        "trigger": "Publicación de la convocatoria en Compras MX"
+      }
+    ],
+    "relevance_score": 2,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5792866",
+    "subtopic_tags": [
+      "fiscalia"
+    ],
+    "summary": "La Fiscalía General de la República difundió una convocatoria de licitación pública nacional electrónica para capacitación teórico-práctica recurrente y formación de instructores para personal técnico aeronáutico, incluidos aviones Embraer, Bombardier, Hawker, Gulfstream, King Air y Cessna, helicópteros Airbus y Bell, motores, pruebas no destructivas, almacenes e instrucción de vuelo visual nocturno. El identificador del procedimiento es LA-49-830-049000975-N-51-2026 y las bases, requisitos de participación, modelo contractual y detalle de partidas se remiten a Compras MX o a los medios de consulta que la convocatoria señala.\n\nEl calendario publicado fija la difusión en Compras MX el 3 de julio de 2026, junta de aclaraciones el 9 de julio de 2026 a las 10:30 horas, presentación y apertura de proposiciones el 20 de julio de 2026 a las 10:30 horas y fallo el 21 de julio de 2026 a las 17:00 horas. El detalle de partidas se determina en la convocatoria y su anexo técnico.\n\nLa publicación sólo abre el procedimiento competitivo y no acredita una adjudicación, contrato formalizado, proveedor seleccionado, inicio del servicio ni pago. El alcance material queda delimitado por capacitación teórico-práctica recurrente y formación de instructores para personal técnico aeronáutico, incluidos aviones Embraer, Bombardier, Hawker, Gulfstream, King Air y Cessna, helicópteros Airbus y Bell, motores, pruebas no destructivas, almacenes e instrucción de vuelo visual nocturno, mientras que cantidades, especificaciones y condiciones técnicas se reservan a la convocatoria y, cuando aplica, al anexo técnico.\n\nLas personas interesadas deben utilizar el número de licitación y el calendario para localizar las bases vigentes y preparar una participación conforme a los requisitos oficiales. Las áreas que den seguimiento al proceso pueden verificar después las actas y el fallo en la plataforma, diferenciando la convocatoria inicial de los actos posteriores que eventualmente se publiquen.\n\nLa Fiscalía General de la República convocó la licitación pública nacional electrónica LA-49-830-049000975-N-51-2026 para capacitación teórico-práctica recurrente y formación de instructores para personal técnico aeronáutico, incluidos aviones Embraer, Bombardier, Hawker, Gulfstream, King Air y Cessna, helicópteros Airbus y Bell, motores, pruebas no destructivas, almacenes e instrucción de vuelo visual nocturno. La convocatoria remite a Compras MX para bases, requisitos, modelos contractuales y, en su caso, el detalle técnico de las partidas. Las etapas publicadas son: aclaraciones 9 de julio de 2026 a las 10:30 horas, presentación y apertura 20 de julio de 2026 a las 10:30 horas y fallo 21 de julio de 2026 a las 17:00 horas. El detalle de partidas se determina en la convocatoria y su anexo técnico. El aviso no contiene adjudicación ni contrato; esos resultados dependen de los actos posteriores del procedimiento.",
+    "summary_teaser": "La Fiscalía General de la República abrió la licitación LA-49-830-049000975-N-51-2026 para capacitación teórico-práctica de personal técnico aeronáutico. El alcance incluye aeronaves de ala fija y rotativa, motores, pruebas no destructivas, almacenes e instrucción de vuelo; la apertura es el 20 de julio de 2026 y el fallo el 21 de julio.",
+    "title": "Fiscalía abre licitación de capacitación aeronáutica",
+    "topic_tags": [
+      "Penal"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5792866&fecha=07/07/2026"
+  },
+  "schema_version": 8
+}

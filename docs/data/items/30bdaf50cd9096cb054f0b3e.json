@@ -1,0 +1,192 @@
+{
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "item": {
+    "ai_generated": true,
+    "authority": "PODER EJECUTIVO SECRETARIA DE ECONOMIA",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797563&fecha=01%2F09%2F2026",
+    "card_body": "## Qué se publicó\n\nLa Secretaría de Economía publicó el inicio del procedimiento para examinar la vigencia de la cuota compensatoria aplicable al ftalato de dioctilo.\n\n## Sustancia\n\nLa autoridad inició el expediente EC_18-26 respecto de importaciones de ftalato de dioctilo, también identificado como DOP, originarias de Corea y de Estados Unidos, independientemente del país de procedencia. El producto se identifica en la fracción 2917.32.01 de la TIGIE. La cuota definitiva de 0.27 dólares por kilogramo continuará vigente mientras se tramita el examen. El periodo de examen corre del 1 de julio de 2025 al 30 de junio de 2026 y el de análisis del 1 de julio de 2021 al 30 de junio de 2026. Productoras nacionales, importadoras, exportadoras, personas morales extranjeras y demás personas con interés jurídico cuentan con 28 días hábiles, contados desde el día siguiente a la publicación, para acreditar su interés, responder el formulario y aportar argumentos y pruebas.\n\n## Fuente\n\nFuente oficial: https://dof.gob.mx/nota_detalle.php?codigo=5797563&fecha=01%2F09%2F2026. Extracción: html-adapter; recuperada el 2026-09-01T16:34:51.380452+00:00.",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Comercio exterior",
+      "Administración centralizada"
+    ],
+    "content_hash": "cecebed84887965446acf8da56fa2686771a1b9f73afa991d67d0b79dc6a2621",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-1",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-3",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/30bdaf50cd9096cb054f0b3e.json",
+    "detail_url": "notas/30bdaf50cd9096cb054f0b3e.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-2",
+          "chunk-3"
+        ],
+        "heading": "Contenido publicado",
+        "paragraphs": [
+          "La autoridad inició el expediente EC_18-26 respecto de importaciones de ftalato de dioctilo, también identificado como DOP, originarias de Corea y de Estados Unidos, independientemente del país de procedencia. El producto se identifica en la fracción 2917.32.01 de la TIGIE. La cuota definitiva de 0.27 dólares por kilogramo continuará vigente mientras se tramita el examen. El periodo de examen corre del 1 de julio de 2025 al 30 de junio de 2026 y el de análisis del 1 de julio de 2021 al 30 de junio de 2026.",
+          "La resolución refiere la medida definitiva de 2021 y la manifestación de interés presentada por una productora nacional antes del vencimiento de la cuota. También identifica posibles importadoras, un exportador y al gobierno estadounidense, sin que esa mención agote las personas que podrían demostrar interés jurídico."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-2",
+          "chunk-3"
+        ],
+        "heading": "Alcance y lectura práctica",
+        "paragraphs": [
+          "Productoras nacionales, importadoras, exportadoras, personas morales extranjeras y demás personas con interés jurídico cuentan con 28 días hábiles, contados desde el día siguiente a la publicación, para acreditar su interés, responder el formulario y aportar argumentos y pruebas.",
+          "La ficha se dirige principalmente a importadores, exportadores y productores de ftalato de dioctilo."
+        ]
+      }
+    ],
+    "detected_at": "2026-09-01T16:34:47.803209+00:00",
+    "document_type": "Resolución",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "098ab7ed1f9ddf028bf1d7551c0fff30f6fbf89841493e829dc53cf42109288b",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "RESOLUCIÓN por la que se declara el inicio del procedimiento administrativo de examen de vigencia de la cuota compensatoria impuesta a las importaciones de ftalato de dioctilo originarias de la República de Corea y de los Estados Unidos de América , independientemente del país de procedencia.",
+          "location": "caracteres 0-297"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Economía. · parte 1",
+          "location": "caracteres 297-12297"
+        },
+        {
+          "id": "chunk-3",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Economía. · parte 2",
+          "location": "caracteres 12297-17217"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797563&fecha=01%2F09%2F2026",
+      "retrieved_at": "2026-09-01T16:34:51.380452+00:00"
+    },
+    "executive_summary": [
+      "La Secretaría de Economía difundió el inicio del procedimiento para examinar la vigencia de la cuota compensatoria aplicable al ftalato de dioctilo. La autoridad inició el expediente EC_18-26 respecto de importaciones de ftalato de dioctilo, también identificado como DOP, originarias de Corea y de Estados Unidos, independientemente del país de procedencia. El producto se identifica en la fracción 2917.32.01 de la TIGIE. La cuota definitiva de 0.27 dólares por kilogramo continuará vigente mientras se tramita el examen. El periodo de examen corre del 1 de julio de 2025 al 30 de junio de 2026 y el de análisis del 1 de julio de 2021 al 30 de junio de 2026.",
+      "Productoras nacionales, importadoras, exportadoras, personas morales extranjeras y demás personas con interés jurídico cuentan con 28 días hábiles, contados desde el día siguiente a la publicación, para acreditar su interés, responder el formulario y aportar argumentos y pruebas. La síntesis se limita a los hechos y condiciones expresamente visibles en la fuente oficial."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-09-01T16:34:47.803209+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5797563",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-2",
+          "chunk-3"
+        ],
+        "paragraphs": [
+          "El efecto observable es el que la publicación atribuye al acto: Productoras nacionales, importadoras, exportadoras, personas morales extranjeras y demás personas con interés jurídico cuentan con 28 días hábiles, contados desde el día siguiente a la publicación, para acreditar su interés, responder el formulario y aportar argumentos y pruebas."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-2",
+            "chunk-3"
+          ],
+          "paragraphs": [
+            "Las personas comprendidas deben considerar el documento porque La autoridad inició el expediente EC_18-26 respecto de importaciones de ftalato de dioctilo, también identificado como DOP, originarias de Corea y de Estados Unidos, independientemente del país de procedencia. El producto se identifica en la fracción 2917.32.01 de la TIGIE. La cuota definitiva de 0.27 dólares por kilogramo continuará vigente mientras se tramita el examen. El periodo de examen corre del 1 de julio de 2025 al 30 de junio de 2026 y el de análisis del 1 de julio de 2021 al 30 de junio de 2026."
+          ],
+          "sector": "Importadores, exportadores y productores de ftalato de dioctilo"
+        }
+      ]
+    },
+    "importance": 2,
+    "issuing_body": "Secretaría de Economía",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-09-01T16:34:47.803209+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797563&fecha=01/09/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5797563"
+    },
+    "official_published_at": "2026-09-01",
+    "official_title": "Resolución por la que se declara el inicio del procedimiento administrativo de examen de vigencia de la cuota compensatoria impuesta a las importaciones de ftalato de dioctilo originarias de la República de Corea y de los Estados Unidos de América, independientemente del país de procedencia.",
+    "published_at": "2026-09-01",
+    "published_day": 1,
+    "published_month": 9,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Productoras nacionales, importadoras, exportadoras, personas morales extranjeras y demás personas con interés jurídico",
+        "deadline": "28 días hábiles contados a partir del día siguiente a la publicación en el DOF",
+        "evidence_refs": [
+          "chunk-3"
+        ],
+        "legal_basis": "Punto 31 de la Resolución; artículos 6.1 y 11.4 del Acuerdo Antidumping, y 3o., último párrafo y 89 F de la Ley de Comercio Exterior.",
+        "paragraphs": [
+          "Quienes pretendan intervenir deben acreditar su interés jurídico y presentar la respuesta al formulario oficial, junto con los argumentos y pruebas que consideren convenientes."
+        ],
+        "trigger": "Cuando la persona o entidad pretenda comparecer en el procedimiento de examen de vigencia publicado."
+      }
+    ],
+    "relevance_score": 3,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5797563",
+    "subtopic_tags": [
+      "cuota compensatoria"
+    ],
+    "summary": "La Secretaría de Economía publicó el inicio del procedimiento para examinar la vigencia de la cuota compensatoria aplicable al ftalato de dioctilo. La autoridad inició el expediente EC_18-26 respecto de importaciones de ftalato de dioctilo, también identificado como DOP, originarias de Corea y de Estados Unidos, independientemente del país de procedencia. El producto se identifica en la fracción 2917.32.01 de la TIGIE. La cuota definitiva de 0.27 dólares por kilogramo continuará vigente mientras se tramita el examen. El periodo de examen corre del 1 de julio de 2025 al 30 de junio de 2026 y el de análisis del 1 de julio de 2021 al 30 de junio de 2026.\n\nLa resolución refiere la medida definitiva de 2021 y la manifestación de interés presentada por una productora nacional antes del vencimiento de la cuota. También identifica posibles importadoras, un exportador y al gobierno estadounidense, sin que esa mención agote las personas que podrían demostrar interés jurídico.\n\nProductoras nacionales, importadoras, exportadoras, personas morales extranjeras y demás personas con interés jurídico cuentan con 28 días hábiles, contados desde el día siguiente a la publicación, para acreditar su interés, responder el formulario y aportar argumentos y pruebas.\n\nLa utilidad práctica de la publicación depende de si la persona o entidad se encuentra dentro del ámbito descrito. La información se presenta con base en el documento oficial disponible y no permite extender efectos a supuestos, periodos, personas o actos que no estén expresamente identificados. Cuando el documento incorpora requisitos, condiciones o mecanismos, éstos deben contrastarse con la ficha, resolución, contrato, expediente o norma específica que corresponda.\n\nPara fines de cumplimiento y trazabilidad, conviene conservar la fuente oficial, su fecha de publicación y los documentos que acrediten la situación concreta. Esta síntesis no sustituye el texto íntegro ni una determinación individual de la autoridad; describe el alcance observable del acto y distingue las consecuencias expresamente publicadas de cualquier inferencia que no está respaldada por la evidencia disponible.",
+    "summary_teaser": "La Secretaría de Economía abrió el examen de vigencia de la cuota compensatoria aplicable al ftalato de dioctilo originario de Corea y Estados Unidos. La cuota definitiva continúa durante el procedimiento; importadores, exportadores, productores y personas con interés jurídico tienen 28 días hábiles para comparecer.",
+    "title": "México abre examen de cuota antidumping al ftalato de dioctilo",
+    "topic_tags": [
+      "Comercio exterior",
+      "Resolución"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797563&fecha=01/09/2026"
+  },
+  "schema_version": 8
+}

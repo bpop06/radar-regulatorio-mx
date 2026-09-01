@@ -1,0 +1,175 @@
+{
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "item": {
+    "ai_generated": true,
+    "authority": "PODER EJECUTIVO SECRETARIA ANTICORRUPCION Y BUEN GOBIERNO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793861&fecha=17%2F07%2F2026",
+    "card_body": "## Qué se publicó\n\nEl Órgano Interno de Control en la Secretaría de Cultura difundió la inhabilitación de Comercializadora Hermanos del Valle, S.A. de C.V. para nuevas contrataciones dentro del alcance que publica.\n\n## Sustancia\n\nLa abstención comienza a partir del día siguiente de la publicación de la circular, dura tres meses y puede continuar si la multa no se acredita como pagada. Los contratos adjudicados o ya formalizados con la empresa quedan fuera de la aplicación de la circular.\n\n## Fuente\n\n[Fuente oficial](https://dof.gob.mx/nota_detalle.php?codigo=5793861&fecha=17%2F07%2F2026)",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "dcc1a95f820d29264d5ba4bece514ca3460f75e2aff97ed1ff8bc1cf470bc8c3",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-1",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/e43f220a5b119bbc22b28158.json",
+    "detail_url": "notas/e43f220a5b119bbc22b28158.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "heading": "Sanción y alcance",
+        "paragraphs": [
+          "El Órgano Interno de Control en la Secretaría de Cultura informa la sanción a Comercializadora Hermanos del Valle, S.A. de C.V.: una multa de 171,972.80 pesos y una inhabilitación de tres meses para participar o contratar, directa o indirectamente, bajo la Ley de Adquisiciones, la Ley de Obras Públicas, la Ley de Asociaciones Público Privadas o acuerdos marco.",
+          "La prohibición inicia a partir del día siguiente de la publicación de la circular. La resolución también contempla que la empresa no participe por interpósita persona."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "heading": "Condiciones de aplicación",
+        "paragraphs": [
+          "La inhabilitación continúa hasta acreditarse el pago de la multa si ésta permanece impaga al vencimiento. Los contratos adjudicados o ya formalizados con la empresa quedan fuera de la aplicación de la circular.",
+          "Entidades federativas, municipios y demarcaciones territoriales deben observarla cuando las adquisiciones, arrendamientos, servicios u obra pública se contraten con recursos federales totales o parciales."
+        ]
+      }
+    ],
+    "detected_at": "2026-08-14T01:46:44.993982+00:00",
+    "document_type": "Circular",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "6c16c32b5347a713106227670d88d5023c8fa227023ec2d3dd05b16ff2397355",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "CIRCULAR por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a las entidades federativas y sus municipios, los entes públicos de unas y otros, así como a las demarcaciones territoriales de la Ciudad de México, que deberán abstenerse de aceptar propuestas o celebrar contratos con la empresa Comercializadora Hermanos del Valle, S.A. de C.V.",
+          "location": "caracteres 0-384"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Buen Gobierno.- Secretaría Anticorrupción y Buen Gobierno.- Órgano Interno de Control en la Secretaría de Cultura.- Área de Responsabilidades.- Expediente No.: CULTURA-PAS-01/2026.",
+          "location": "caracteres 384-6673"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793861&fecha=17%2F07%2F2026",
+      "retrieved_at": "2026-08-14T00:37:02.834854+00:00"
+    },
+    "executive_summary": [
+      "El Órgano Interno de Control en la Secretaría de Cultura comunicó que Comercializadora Hermanos del Valle, S.A. de C.V. recibió una multa de 171,972.80 pesos y una inhabilitación de tres meses para participar o contratar, directa o indirectamente, bajo la Ley de Adquisiciones, la Ley de Obras Públicas, la Ley de Asociaciones Público Privadas o acuerdos marco. La circular deriva de una resolución administrativa identificada por la autoridad y delimita a los destinatarios públicos que deben abstenerse de contratar.",
+      "La abstención opera a partir del día siguiente de la publicación de la circular. La resolución también contempla que la empresa no participe por interpósita persona. La medida se refiere a propuestas y contratos futuros dentro del marco que describe la circular, por lo que la revisión debe hacerse frente al nombre de la empresa y, cuando procede, frente a la forma de representación expresamente señalada."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-08-14T01:46:44.993982+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5793861",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "La circular incorpora una restricción de elegibilidad para nuevas contrataciones públicas respecto de Comercializadora Hermanos del Valle, S.A. de C.V.. Los contratos adjudicados o ya formalizados con la empresa quedan fuera de la aplicación de la circular."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-1",
+            "chunk-2"
+          ],
+          "paragraphs": [
+            "Las áreas contratantes deben tratar la inhabilitación como un control de elegibilidad para los procedimientos y contratos que la circular comprende, sin extenderla a los contratos que el propio texto exceptúa."
+          ],
+          "sector": "Contratación pública"
+        }
+      ]
+    },
+    "importance": 2,
+    "issuing_body": "Presidencia de la República",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-14T01:46:44.993982+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793861&fecha=17/07/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5793861"
+    },
+    "official_published_at": "2026-07-17",
+    "official_title": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a las entidades federativas y sus municipios, los entes públicos de unas y otros, así como a las demarcaciones territoriales de la Ciudad de México, que deberán abstenerse de aceptar propuestas o celebrar contratos con la empresa Comercializadora Hermanos del Valle, S.A. de C.V.",
+    "published_at": "2026-07-17",
+    "published_day": 17,
+    "published_month": 7,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Dependencias, entidades y entes que contraten con recursos federales",
+        "deadline": "tres meses; subsiste hasta acreditar el pago de la multa cuando corresponda",
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "legal_basis": "Ley de Adquisiciones, Ley de Obras Públicas y Ley de Asociaciones Público Privadas",
+        "paragraphs": [
+          "Cuando Comercializadora Hermanos del Valle, S.A. de C.V. presente una propuesta, intervenga por interpósita persona o, en su caso, mediante la representación descrita por la circular, confronte la denominación y el procedimiento con la fuente antes de continuar la contratación."
+        ],
+        "trigger": "a partir del día siguiente de la publicación de la circular"
+      }
+    ],
+    "relevance_score": 2,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5793861",
+    "subtopic_tags": [
+      "administracion publica federal"
+    ],
+    "summary": "El Órgano Interno de Control en la Secretaría de Cultura comunicó que Comercializadora Hermanos del Valle, S.A. de C.V. recibió una multa de 171,972.80 pesos y una inhabilitación de tres meses para participar o contratar, directa o indirectamente, bajo la Ley de Adquisiciones, la Ley de Obras Públicas, la Ley de Asociaciones Público Privadas o acuerdos marco. La circular deriva de una resolución administrativa identificada por la autoridad y delimita a los destinatarios públicos que deben abstenerse de contratar.\n\nLa abstención opera a partir del día siguiente de la publicación de la circular. La resolución también contempla que la empresa no participe por interpósita persona. La medida se refiere a propuestas y contratos futuros dentro del marco que describe la circular, por lo que la revisión debe hacerse frente al nombre de la empresa y, cuando procede, frente a la forma de representación expresamente señalada.\n\nLa autoridad prevé que, si al terminar el plazo de inhabilitación no se cubre la multa, la restricción subsiste hasta que se acredite el pago ante la Secretaría Anticorrupción y Buen Gobierno para eliminar el registro correspondiente en Compras MX. Los contratos adjudicados o ya formalizados con la empresa quedan fuera de la aplicación de la circular.\n\nPara las unidades compradoras y los entes que ejercen recursos federales, el dato operativo es verificar la identidad del participante y el alcance legal del procedimiento antes de admitir una propuesta o formalizar un contrato. Entidades federativas, municipios y demarcaciones territoriales deben observarla cuando las adquisiciones, arrendamientos, servicios u obra pública se contraten con recursos federales totales o parciales. La circular conserva separados el efecto sobre nuevas contrataciones, la comprobación posterior del pago y la continuidad de los contratos que la fuente excluye.\n\nEl Órgano Interno de Control en la Secretaría de Cultura informa la sanción a Comercializadora Hermanos del Valle, S.A. de C.V.: una multa de 171,972.80 pesos y una inhabilitación de tres meses para participar o contratar, directa o indirectamente, bajo la Ley de Adquisiciones, la Ley de Obras Públicas, la Ley de Asociaciones Público Privadas o acuerdos marco. La prohibición inicia a partir del día siguiente de la publicación de la circular. La resolución también contempla que la empresa no participe por interpósita persona. La inhabilitación continúa hasta acreditarse el pago de la multa si ésta permanece impaga al vencimiento. Los contratos adjudicados o ya formalizados con la empresa quedan fuera de la aplicación de la circular. Entidades federativas, municipios y demarcaciones territoriales deben observarla cuando las adquisiciones, arrendamientos, servicios u obra pública se contraten con recursos federales totales o parciales.",
+    "summary_teaser": "La Secretaría Anticorrupción y Buen Gobierno comunicó una multa de 171,972.80 pesos y tres meses de inhabilitación para Comercializadora Hermanos del Valle. La restricción alcanza nuevas contrataciones bajo adquisiciones, obra pública, asociaciones público-privadas y acuerdos marco; no abarca contratos ya adjudicados o formalizados.",
+    "title": "Inhabilitación a Hermanos del Valle restringe contratación pública",
+    "topic_tags": [
+      "Derecho administrativo",
+      "Circular"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5793861&fecha=17/07/2026"
+  },
+  "schema_version": 8
+}

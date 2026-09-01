@@ -1,0 +1,139 @@
+{
+  "coverage": [
+    {
+      "disposition": "not_material",
+      "reason": "Encabezado de la resolución; los cambios están contenidos en chunk-2.",
+      "source_ref": "chunk-1",
+      "target_sections": []
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Criterios bajo un supuesto de fenómeno declarado",
+      "paragraphs": [
+        "El artículo 15 y el Anexo 21 exigen declaratoria de emergencia o desastre, afectación a la economía y posible impacto adverso, con datos de criterios, territorio, periodo, indicadores y persistencia para prórroga."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Registros por saneamiento o reorganización",
+      "paragraphs": [
+        "El artículo 15 Bis limita los registros especiales a instituciones que realicen saneamiento financiero o reestructuración corporativa y exige soportes financieros, remediales y corporativos."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Efecto mientras se tramita",
+      "paragraphs": [
+        "La entidad presenta la solicitud con la firma permitida. Hasta una notificación, conserva los criterios de Anexos 6 y 7 y, al vencer los sesenta días hábiles sin respuesta, la solicitud se desestima en sentido negativo."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "1a20188dbc56d56be9a4f3e45a79cc836663f065dc101230950549fb5ebeb325",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "RESOLUCIÓN que modifica las Disposiciones de carácter general aplicables a las instituciones de tecnología financiera.",
+        "location": "caracteres 0-122"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Comisión Nacional Bancaria y de Valores.",
+        "location": "caracteres 122-8498"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792667&fecha=06/07/2026",
+    "retrieved_at": "2026-08-13T19:43:12.484069+00:00"
+  },
+  "executive_summary": [
+    "El Anexo 21 reserva criterios contables especiales a emergencia o desastre con afectación económica adversa y registros especiales a procesos de saneamiento financiero o reestructuración corporativa.",
+    "La CNBV resuelve en sesenta días hábiles; sin notificación, las instituciones fintech siguen los Anexos 6 y 7 y la falta de respuesta es negativa."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "paragraphs": [
+        "La reforma mantiene la regla de contabilidad ordinaria durante la tramitación y distingue una emergencia declarada de un proceso de reorganización financiera."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "Deben sustentar la causal concreta y no asumir que la publicación del formato permite anticipar registros o criterios especiales."
+        ],
+        "sector": "Instituciones de tecnología financiera, consejos y áreas regulatorias"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792667&fecha=06/07/2026",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "1c82c6cda5384d5703823cd51c5cfd0206fca8504509bcd55bf7a00818d4730b",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/b412cbb58e2f07753018f7e0.json",
+    "detail_url": "notas/b412cbb58e2f07753018f7e0.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Resolución Que Modifica",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5792667",
+    "importance": 1,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-07-06",
+    "official_title": "Resolución que modifica las Disposiciones de carácter general aplicables a las instituciones de tecnología financiera.",
+    "published_at": "2026-07-06",
+    "relevance_score": 1,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5792667",
+    "summary_teaser": "La CNBV agregó el Anexo 21 para instituciones de tecnología financiera con dos formatos no intercambiables: criterios contables especiales ante declaratoria de emergencia o desastre y afectación económica adversa, y registros especiales si existe saneamiento financiero o reestructuración corporativa. La solicitud no modifica la contabilidad mientras la Comisión no notifique una autorización.",
+    "title": "CNBV establece rutas contables condicionadas para instituciones fintech",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5792667&fecha=06/07/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Instituciones de tecnología financiera",
+      "deadline": null,
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "legal_basis": "Artículos 15 y 15 Bis, y Anexo 21",
+      "paragraphs": [
+        "Elijan el Anexo 21 conforme al supuesto acreditable: emergencia o desastre con afectación adversa para criterios, o saneamiento o reestructuración corporativa para registros, y conserven la contabilidad ordinaria hasta recibir notificación."
+      ],
+      "trigger": "Preparación y seguimiento de una solicitud ante la CNBV"
+    }
+  ],
+  "schema_version": 8
+}

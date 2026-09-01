@@ -1,0 +1,124 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    }
+  ],
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-1"
+      ],
+      "heading": "Aranceles e inversión",
+      "paragraphs": [
+        "La fuente describe compromisos arancelarios en ambos sentidos con formulaciones distintas: reducción por Uzbekistán y consideración favorable por Estados Unidos. También señala que gobiernos fortalecerán cooperación de inversión y explorarán vías para promover y facilitar inversiones bilaterales."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-1"
+      ],
+      "heading": "Negociación y contexto",
+      "paragraphs": [
+        "Ambos países acuerdan acelerar negociaciones hacia un Acuerdo sobre Comercio e Inversión Recíprocos. USTR vincula anuncio con reuniones presidenciales de 2025 y operaciones comerciales anunciadas el año anterior, incluido acuerdo con Boeing y sectores estratégicos."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-1"
+      ],
+      "heading": "OMC y formalización",
+      "paragraphs": [
+        "Estados Unidos expresa apoyo al proceso de adhesión de Uzbekistán a OMC y reconoce avances. Comunicado dice que gobiernos formalizarán paquete inicial en semanas siguientes; no adjunta tratado ni calendario arancelario por producto."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "24c8a3d77350cf1aa5da32d1f33489484cdf8bfce141793807997b674f1f4abb",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "Documento",
+        "location": "caracteres 0-1961"
+      }
+    ],
+    "official_url": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/june/united-states-and-uzbekistan-announce-early-harvest-trade-accelerate-agreement-reciprocal-trade-and",
+    "retrieved_at": "2026-08-13T19:37:46.784785+00:00"
+  },
+  "executive_summary": [
+    "La USTR informa que Estados Unidos y Uzbekistán acordaron un conjunto inicial de compromisos comerciales durante visita del embajador Jamieson Greer a Taskent. El objetivo declarado es fortalecer relación económica y de inversión bilateral bajo reciprocidad, equilibrio y resiliencia.",
+    "El anuncio incluye compromiso de Uzbekistán para eliminar o reducir aranceles sobre una amplia gama de bienes industriales y agrícolas estadounidenses, y consideración favorable estadounidense para acciones arancelarias sobre bienes uzbekos, en la medida apropiada y consistente con legislación estadounidense."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-1"
+      ],
+      "paragraphs": [
+        "Empresas con comercio o inversión bilateral pueden identificar señales de apertura, pero no asumir preferencia arancelaria concreta sin instrumento posterior. La fuente separa intención de negociación de obligación textual publicada."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-1"
+        ],
+        "paragraphs": [
+          "Exportadores, inversionistas y asesores pueden vigilar formalización anunciada y evolución de adhesión uzbeka a OMC."
+        ],
+        "sector": "Comercio e inversión Estados Unidos-Uzbekistán"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/june/united-states-and-uzbekistan-announce-early-harvest-trade-accelerate-agreement-reciprocal-trade-and",
+    "categories": [
+      "Comercio exterior"
+    ],
+    "content_hash": "98c5a7f66f04c11212c19f12bd024c7d3b1649ddb09bf84fe9eaa37977357e3f",
+    "country_or_org": "EEUU",
+    "detail_data_url": "data/fichas/d35858773e9f57546a2435f3.json",
+    "detail_url": "notas/d35858773e9f57546a2435f3.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Comunicado",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "ustr:39a52ef5c710cb04",
+    "importance": 2,
+    "issuing_body": "Oficina del Representante Comercial de EEUU",
+    "jurisdiction": "internacional",
+    "official_published_at": "2026-06-25",
+    "official_title": "The United States and Uzbekistan Announce Early Harvest on Trade, Accelerate Agreement on Reciprocal Trade and Investment Talks",
+    "published_at": "2026-06-25",
+    "relevance_score": 3,
+    "review_reason": null,
+    "source": "USTR",
+    "source_id": "39a52ef5c710cb04",
+    "summary_teaser": "Estados Unidos y Uzbekistán anunciaron compromisos iniciales sobre aranceles, inversión y la negociación de un acuerdo recíproco de comercio e inversión. La USTR indica que los compromisos se formalizarían en semanas posteriores, por lo que el comunicado no publica todavía un texto de tratado.",
+    "title": "Acuerdo bilateral establece compromisos comerciales iniciales con Uzbekistán",
+    "url": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/june/united-states-and-uzbekistan-announce-early-harvest-trade-accelerate-agreement-reciprocal-trade-and"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Operadores con intereses comerciales bilaterales",
+      "deadline": "La USTR prevé formalización en semanas siguientes, sin fecha concreta",
+      "evidence_refs": [
+        "chunk-1"
+      ],
+      "legal_basis": null,
+      "paragraphs": [
+        "Seguir formalización del paquete inicial y textos que definan productos, aranceles o mecanismos. Usar comunicado como referencia de compromisos anunciados, no como tabla arancelaria aplicable."
+      ],
+      "trigger": null
+    }
+  ],
+  "schema_version": 8
+}

@@ -1,0 +1,186 @@
+{
+  "coverage": [
+    {
+      "disposition": "not_material",
+      "reason": "El primer fragmento sólo identifica la resolución; reglas de uso, seguridad y plazos están en los locators posteriores.",
+      "source_ref": "chunk-1",
+      "target_sections": []
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-3",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-4",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-5",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    }
+  ],
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Alcance, cotejo y aviso",
+      "paragraphs": [
+        "La resolución modifica artículos 51 Bis e incorpora Anexo 71. Para las bases biométricas indica cotejo con INE, SRE, autoridad fiscal u otra autoridad federal, conservación de evidencia y notificación a la CNBV a más tardar veinte días hábiles después de comenzar a utilizarlas. Prohíbe vender, transferir o compartir la base entre instituciones o con terceros."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-3"
+      ],
+      "heading": "Proceso alterno y bases existentes",
+      "paragraphs": [
+        "El procedimiento alterno exige aprobación del consejo y condiciones de tecnología, transmisión, almacenamiento e integridad. Para ciertos documentos establece coincidencia en línea de al menos noventa por ciento. Las bases existentes deben notificarse dentro de treinta días naturales y adecuarse dentro de noventa días hábiles."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-4"
+      ],
+      "heading": "Seguridad y huella dactilar",
+      "paragraphs": [
+        "El Anexo 71 exige segregación lógica, infraestructura dedicada, configuración segura, accesos, cifrado y pruebas. También contiene especificaciones de captura de huellas, incluida toma inicial de seis huellas cuando no concurra una imposibilidad permanente prevista por el anexo."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-5"
+      ],
+      "heading": "Rostro y definiciones",
+      "paragraphs": [
+        "El último fragmento desarrolla requisitos y definiciones de biometría facial y completa controles aplicables a las bases. La fuente limita inicialmente la base a huellas y rostro hasta que existan especificaciones para otras características biométricas."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "d6468bbab3d255bc8cacf2570a55410ec59acecc7fd933034a29eb49540fbe04",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "RESOLUCIÓN que modifica las Disposiciones de carácter general aplicables a las instituciones de crédito (biométricos).",
+        "location": "caracteres 0-122"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Comisión Nacional Bancaria y de Valores. · parte 1",
+        "location": "caracteres 122-12122"
+      },
+      {
+        "id": "chunk-3",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Comisión Nacional Bancaria y de Valores. · parte 2",
+        "location": "caracteres 12122-24122"
+      },
+      {
+        "id": "chunk-4",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Comisión Nacional Bancaria y de Valores. · parte 3",
+        "location": "caracteres 24122-36122"
+      },
+      {
+        "id": "chunk-5",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Comisión Nacional Bancaria y de Valores. · parte 4",
+        "location": "caracteres 36122-42219"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792307&fecha=01/07/2026",
+    "retrieved_at": "2026-08-13T19:43:38.059441+00:00"
+  },
+  "executive_summary": [
+    "La resolución de la CNBV actualiza reglas sobre identificación de clientes e incorpora biometría facial junto con huellas dactilares en los supuestos definidos. Abarca contrataciones presenciales vinculadas con cuentas de nivel 3 y 4 y operaciones que el texto asocia a esos niveles.",
+    "La fuente regula una base biométrica para verificación de identidad, cotejo con autoridades autorizadas, conservación de evidencia y restricciones para compartir datos. Además contiene avisos a la CNBV, adecuación para bases existentes y exigencias técnicas detalladas en el Anexo 71."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "paragraphs": [
+        "Instituciones bancarias que operen las bases contempladas deben alinear identificación con cotejo y controles del Anexo 71. La prohibición de compartir la base y la conservación de evidencia afectan diseño de proveedores, infraestructura y resguardo de datos."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "Áreas de cumplimiento, tecnología, seguridad de la información y protección de datos deben atender requisitos de uso, validación, aviso y adecuación de bases biométricas."
+        ],
+        "sector": "Banca y servicios de identificación digital"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792307&fecha=01/07/2026",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "e2223e807a95f475d5dbc97550bd58660d831c9dbb962ee795ef4d5e019df8e6",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/3e839aa962458f82b1107b9d.json",
+    "detail_url": "notas/3e839aa962458f82b1107b9d.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Resolución Que Modifica",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5792307",
+    "importance": 1,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-07-01",
+    "official_title": "Resolución que modifica las Disposiciones de carácter general aplicables a las instituciones de crédito (biométricos).",
+    "published_at": "2026-07-01",
+    "relevance_score": 1,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5792307",
+    "summary_teaser": "La CNBV incorpora biometría facial a reglas de identificación bancaria y fija requisitos para bases de datos biométricos, cotejo de identidad, seguridad y conservación de evidencia. Las instituciones que ya operaban una base deben atender avisos y periodos de adecuación distintos de los previstos para el inicio de uso.",
+    "title": "CNBV incorpora biometría facial y controles para bases bancarias",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5792307&fecha=01/07/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Instituciones de crédito que utilicen una base biométrica",
+      "deadline": "Aviso de inicio: veinte días hábiles posteriores; bases existentes: aviso en treinta días naturales y adecuación en noventa días hábiles",
+      "evidence_refs": [
+        "chunk-2",
+        "chunk-3",
+        "chunk-4",
+        "chunk-5"
+      ],
+      "legal_basis": null,
+      "paragraphs": [
+        "Documentar el cotejo, conservación de evidencia y controles del Anexo 71; verificar si ya existía una base al entrar en vigor, pues el texto prevé aviso y adecuación específicos."
+      ],
+      "trigger": "Al iniciar el uso de una base biométrica o si ya existía una al entrar en vigor"
+    }
+  ],
+  "schema_version": 8
+}

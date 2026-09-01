@@ -1,0 +1,150 @@
+{
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "item": {
+    "ai_generated": true,
+    "authority": "CONVOCATORIAS PARA CONCURSOS DE ADQUISICIONES, ARRENDAMIENTOS, OBRAS Y SERVICIOS DEL SECTOR PUBLICO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793803&fecha=16%2F07%2F2026",
+    "card_body": "## Qué se publicó\n\nUn resumen de convocatoria para contratar servicios de sanitización en inmuebles centrales de la Fiscalía General de la República.\n\n## Sustancia\n\nLas bases se consultan en Compras MX. El calendario fija plataforma el 14 de julio, aclaraciones el 17, apertura el 30 y fallo el 31 de julio de 2026.\n\n## Fuente\n\n[Consultar fuente oficial](https://dof.gob.mx/nota_detalle.php?codigo=5793803&fecha=16%2F07%2F2026)",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Penal"
+    ],
+    "content_hash": "1f64c491fa1ba57416e177afe3bad748ef8cc7adeb6a58c97f89075a35cc8e5c",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-1",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/146cbfc3a1f8e8297788fcdf.json",
+    "detail_url": "notas/146cbfc3a1f8e8297788fcdf.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-1"
+        ],
+        "heading": "Objeto y consulta de las bases",
+        "paragraphs": [
+          "La licitación cubre servicios de desinfección y sanitización en inmuebles centrales de la FGR. El detalle de partidas se remite a la convocatoria y Anexo Técnico, disponibles mediante Compras MX y la dirección publicada."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-1"
+        ],
+        "heading": "Calendario del procedimiento",
+        "paragraphs": [
+          "La plataforma publica el 14 de julio de 2026; la junta de aclaraciones es el 17 de julio a las 10:30; la presentación y apertura el 30 de julio a las 10:30; y el fallo el 31 de julio a las 17:30."
+        ]
+      }
+    ],
+    "detected_at": "2026-08-14T01:46:44.993982+00:00",
+    "document_type": "Fiscalia General",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "825aae1c460c8635e561de39ba5ad0c340c1d0190e129d9a884176227574f954",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "Documento",
+          "location": "caracteres 0-1684"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793803&fecha=16%2F07%2F2026",
+      "retrieved_at": "2026-08-14T00:37:04.256127+00:00"
+    },
+    "executive_summary": [
+      "La FGR convoca una licitación pública nacional para sanitización de inmuebles a nivel central durante 2026; partidas y requisitos se desarrollan en las bases y Anexo Técnico.",
+      "El calendario oficial fija publicación en plataforma el 14 de julio, junta de aclaraciones el 17 a las 10:30, apertura el 30 a las 10:30 y fallo el 31 a las 17:30."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-08-14T01:46:44.993982+00:00",
+    "government_branch": "Organismo autónomo",
+    "id": "dof:5793803",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-1"
+        ],
+        "paragraphs": [
+          "El resumen abre la etapa de consulta y participación, pero no adjudica el servicio ni sustituye las bases y anexos técnicos del procedimiento."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-1"
+          ],
+          "paragraphs": [
+            "Deben revisar la documentación de Compras MX para conocer partidas, requisitos y condiciones antes de presentar una proposición."
+          ],
+          "sector": "Proveedores de servicios de sanitización y contratación pública"
+        }
+      ]
+    },
+    "importance": 2,
+    "issuing_body": "Fiscalía General de la República",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-14T01:46:44.993982+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793803&fecha=16/07/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5793803"
+    },
+    "official_published_at": "2026-07-16",
+    "official_title": "FISCALIA GENERAL DE LA REPUBLICA - REF:578481",
+    "published_at": "2026-07-16",
+    "published_day": 16,
+    "published_month": 7,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Posibles licitantes",
+        "deadline": "Junta: 17 de julio de 2026, 10:30; apertura: 30 de julio, 10:30; fallo: 31 de julio, 17:30",
+        "evidence_refs": [
+          "chunk-1"
+        ],
+        "legal_basis": null,
+        "paragraphs": [
+          "Consulten las bases y el Anexo Técnico en Compras MX y organicen su participación conforme a las fechas publicadas para aclaraciones, apertura y fallo."
+        ],
+        "trigger": "Interés en presentar una proposición"
+      }
+    ],
+    "relevance_score": 2,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5793803",
+    "subtopic_tags": [
+      "fiscalia"
+    ],
+    "summary": "La Unidad Especializada de Recursos, Servicios e Infraestructura Inmobiliaria de la Fiscalía General de la República difundió el resumen de la licitación pública nacional LA-49-830-049000975-N-57-2026. Su objeto es el servicio de desinfección o sanitización en los inmuebles de la FGR a nivel central para el ejercicio 2026. La publicación presenta un resumen de convocatoria: el detalle de partidas se remite a la convocatoria y al Anexo Técnico, por lo que no fija en este extracto volúmenes desagregados, especificaciones técnicas ni criterios de evaluación.\n\nLas bases de participación están disponibles para consulta en Compras MX y también en la dirección de Río Elba 17, piso 2, colonia Cuauhtémoc, Ciudad de México, en el horario indicado de lunes a viernes. El hecho de que el resumen remita a las bases es relevante para posibles participantes: la ficha no sustituye los documentos de la plataforma ni convierte el resumen en una lista completa de requisitos. La convocatoria invoca las disposiciones de recursos materiales, servicios generales y contrataciones públicas propias de la Fiscalía que cita el texto.\n\nEl calendario oficial concentra cuatro actos. La fecha de publicación en la plataforma es el 14 de julio de 2026. La junta de aclaraciones está prevista para el 17 de julio de 2026 a las 10:30 horas. La presentación y apertura de proposiciones se fijan para el 30 de julio de 2026 a las 10:30 horas. El fallo se señala para el 31 de julio de 2026 a las 17:30 horas. Son fechas concretas del procedimiento; no deben reemplazarse por una descripción genérica de que existe calendario.\n\nLa publicación no adjudica el contrato ni identifica un proveedor ganador. Su función es convocar y orientar la consulta de la documentación que contiene las bases, detalle de partidas y Anexo Técnico. Quienes tengan interés deberán contrastar estos datos con la versión vigente alojada en Compras MX y atender las reglas del procedimiento allí incorporadas.",
+    "summary_teaser": "La Fiscalía General de la República publicó el resumen de una licitación pública nacional para desinfección y sanitización de inmuebles centrales durante 2026. La convocatoria y sus bases se consultan en Compras MX. El calendario señala publicación en plataforma el 14 de julio, junta el 17, apertura el 30 y fallo el 31 de julio.",
+    "title": "FGR abre licitación de sanitización para inmuebles centrales",
+    "topic_tags": [
+      "Penal"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5793803&fecha=16/07/2026"
+  },
+  "schema_version": 8
+}

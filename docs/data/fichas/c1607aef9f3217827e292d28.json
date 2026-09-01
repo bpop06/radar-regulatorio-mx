@@ -1,0 +1,148 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-3",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    }
+  ],
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-3"
+      ],
+      "heading": "Alcance de la publicación",
+      "paragraphs": [
+        "La Agencia Nacional de Aduanas de México reportó para julio de 2026 una recaudación de 131,616 millones de pesos, la cifra mensual más alta del año, y 1,957,554 operaciones de comercio exterior, cifra récord desde enero de 2025.",
+        "La fuente reporta que la recaudación mensual creció 8.7% respecto de junio y 5.4% frente a julio de 2025. Entre enero y julio acumuló 791,009 millones de pesos, con un costo de captación de 25 centavos por cada 100 pesos recaudados y un gasto de 2,007.9 millones de pesos. También identifica a Manzanillo con más de 15% de la recaudación y a Nuevo Laredo con 14%, así como una participación de 52.6% de las aduanas fronterizas y 54.8% de la recaudación por las marítimas."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-3"
+      ],
+      "heading": "Seguimiento operativo",
+      "paragraphs": [
+        "Las personas que utilicen estas cifras deben distinguir los datos de julio de los acumulados enero-julio y citar el comunicado oficial al comparar las series reportadas.",
+        "La ficha no extiende el alcance del acto a supuestos que la fuente no identifica."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "9ee4ec6c922b6ea33460fbaf04dd566dd8862bb3affbefdf7fa12f150d82f6e4",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "Preámbulo",
+        "location": "caracteres 0-2164"
+      },
+      {
+        "id": "chunk-2",
+        "label": "La ANAM alcanza en julio la mayor recaudación del año y registra récord de operaciones de comercio exterior",
+        "location": "caracteres 2164-2315"
+      },
+      {
+        "id": "chunk-3",
+        "label": "Comunicado de prensa conjunto 58/2026",
+        "location": "caracteres 2315-4345"
+      }
+    ],
+    "official_url": "https://www.anam.gob.mx/comunicado-prensa-58-2026",
+    "retrieved_at": "2026-09-01T16:35:43.272996+00:00"
+  },
+  "executive_summary": [
+    "La Agencia Nacional de Aduanas de México reportó para julio de 2026 una recaudación de 131,616 millones de pesos, la cifra mensual más alta del año, y 1,957,554 operaciones de comercio exterior, cifra récord desde enero de 2025.",
+    "La fuente reporta que la recaudación mensual creció 8.7% respecto de junio y 5.4% frente a julio de 2025. Entre enero y julio acumuló 791,009 millones de pesos, con un costo de captación de 25 centavos por cada 100 pesos recaudados y un gasto de 2,007.9 millones de pesos. También identifica a Manzanillo con más de 15% de la recaudación y a Nuevo Laredo con 14%, así como una participación de 52.6% de las aduanas fronterizas y 54.8% de la recaudación por las marítimas."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-3"
+      ],
+      "paragraphs": [
+        "La fuente reporta que la recaudación mensual creció 8.7% respecto de junio y 5.4% frente a julio de 2025. Entre enero y julio acumuló 791,009 millones de pesos, con un costo de captación de 25 centavos por cada 100 pesos recaudados y un gasto de 2,007.9 millones de pesos. También identifica a Manzanillo con más de 15% de la recaudación y a Nuevo Laredo con 14%, así como una participación de 52.6% de las aduanas fronterizas y 54.8% de la recaudación por las marítimas."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-3"
+        ],
+        "paragraphs": [
+          "La incidencia para este grupo se limita al alcance expresamente descrito en la publicación y requiere contrastarse con cada caso concreto."
+        ],
+        "sector": "Personas analistas de información aduanera y de comercio exterior"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://www.anam.gob.mx/comunicado-prensa-58-2026",
+    "categories": [
+      "Comercio exterior"
+    ],
+    "content_hash": "9776a97b73c3f665635c43f6e9f88212592a7e66711af5de3d8f0c41efd317f9",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/c1607aef9f3217827e292d28.json",
+    "detail_url": "notas/c1607aef9f3217827e292d28.html",
+    "detected_at": "2026-09-01T16:34:47.803209+00:00",
+    "document_type": "Comunicado",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "anam:827d77cec754354b",
+    "importance": 2,
+    "issuing_body": "Agencia Nacional de Aduanas de México",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-08-12",
+    "official_title": "La ANAM alcanza en julio la mayor recaudación del año y registra récord de operaciones de comercio exterior",
+    "published_at": "2026-08-12",
+    "relevance_score": 2,
+    "review_reason": null,
+    "source": "ANAM",
+    "source_id": "827d77cec754354b",
+    "summary_teaser": "La ANAM reportó para julio de 2026 una recaudación de 131,616 millones de pesos, la cifra mensual más alta del año, y 1,957,554 operaciones de comercio exterior, récord desde enero de 2025. El comunicado reporta aumentos de 8.7% frente a junio y 5.4% frente a julio de 2025, además de resultados acumulados y desagregados por aduana.",
+    "title": "ANAM fija récord mensual de recaudación y operaciones en julio",
+    "url": "https://www.anam.gob.mx/comunicado-prensa-58-2026/"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Personas analistas de información aduanera y de comercio exterior",
+      "deadline": null,
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-3"
+      ],
+      "legal_basis": null,
+      "paragraphs": [
+        "Las personas que utilicen estas cifras deben distinguir los datos de julio de los acumulados enero-julio y citar el comunicado oficial al comparar las series reportadas."
+      ],
+      "trigger": "Cuando la publicación resulte aplicable a la situación revisada."
+    }
+  ],
+  "schema_version": 8
+}

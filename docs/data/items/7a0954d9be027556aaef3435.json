@@ -1,0 +1,174 @@
+{
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "item": {
+    "ai_generated": true,
+    "authority": "ORGANISMOS DESCONCENTRADOS O DESCENTRALIZADOS INSTITUTO MEXICANO DE LA PROPIEDAD INDUSTRIAL",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792806&fecha=07/07/2026",
+    "card_body": "## Qué se publicó\n\nEl IMPI publicó la solicitud relativa a Papel Picado de San Salvador Huixcolotla, Puebla para abrir la etapa de observaciones de terceros.\n\n## Sustancia\n\nLa solicitud describe técnica artesanal y producción exclusiva en San Salvador Huixcolotla. El IMPI no ha concedido la indicación; terceras personas con interés justificado cuentan con un mes para objetar con pruebas.\n\n## Fuente\n\n[Fuente oficial](https://dof.gob.mx/nota_detalle.php?codigo=5792806&fecha=07/07/2026)",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración descentralizada"
+    ],
+    "content_hash": "2be0068c79b6103095aa32707dc1b5ffa6adbc4940d84455823ea92683e6266d",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-1",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/7a0954d9be027556aaef3435.json",
+    "detail_url": "notas/7a0954d9be027556aaef3435.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "heading": "Solicitud y técnica declarada",
+        "paragraphs": [
+          "El IMPI publicó los datos de la solicitud de Declaración de Protección a la Indicación Geográfica “Papel Picado de San Salvador Huixcolotla, Puebla”, presentada por la Secretaría de Desarrollo Económico y Trabajo del Gobierno del Estado de Puebla, representada por Víctor Gerardo Gabriel Chedrahui.",
+          "La solicitud describe una artesanía elaborada mediante perforación manual por impacto con herramientas metálicas, como cinceles, sacabocados y medias cañas, aplicadas sobre bloques superpuestos de papel de china o materiales plásticos. El procedimiento reproduce patrones ornamentales y genera composiciones visuales mediante cavidades."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "heading": "Zona, expediente y oposición",
+        "paragraphs": [
+          "La solicitud indica que la producción se realiza exclusivamente en el municipio de San Salvador Huixcolotla, Puebla, e incorpora los paralelos, meridianos, altitud y municipios colindantes de la zona declarada.",
+          "El aviso no prejuzga la procedencia de la solicitud. Las terceras personas que justifiquen su interés pueden presentar oposición, observaciones u objeciones por escrito, con pruebas y comprobante de pago, dentro del plazo improrrogable de un mes contado desde la publicación."
+        ]
+      }
+    ],
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Publicación De Datos",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "dd820bb0961af06f543624ee82069d8524c12fd08bb35d6e86833f6dbdbae826",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "PUBLICACIÓN de datos relacionados con la Solicitud de Declaración de Protección a la Indicación Geográfica \" Papel Picado de San Salvador Huixcolotla, Puebla \" .",
+          "location": "caracteres 0-165"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Economía.- Secretaría de Economía.- Instituto Mexicano de la Propiedad Industrial.",
+          "location": "caracteres 165-5021"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792806&fecha=07/07/2026",
+      "retrieved_at": "2026-08-13T19:43:03.130897+00:00"
+    },
+    "executive_summary": [
+      "El Instituto Mexicano de la Propiedad Industrial publicó los datos de una solicitud de Declaración de Protección a la Indicación Geográfica respecto de Papel Picado de San Salvador Huixcolotla, Puebla. La solicitud fue presentada por la Secretaría de Desarrollo Económico y Trabajo del Gobierno del Estado de Puebla, representada por Víctor Gerardo Gabriel Chedrahui y describe una artesanía elaborada mediante perforación manual por impacto con herramientas metálicas sobre bloques de papel de china o materiales plásticos, siguiendo patrones ornamentales.",
+      "La solicitud indica que la producción sólo se realiza en el municipio de San Salvador Huixcolotla, Puebla, y proporciona su delimitación geográfica y colindancias. El expediente queda disponible en la Dirección Divisional de Marcas del IMPI para consulta y recepción de documentos en el horario que publica el aviso, por lo que la delimitación y las características declaradas pueden revisarse en el expediente administrativo."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Organismo descentralizado",
+    "id": "dof:5792806",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "La publicación activa una etapa administrativa de publicidad y oposición; no transforma todavía la solicitud en una protección otorgada."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-1",
+            "chunk-2"
+          ],
+          "paragraphs": [
+            "Productores, autoridades locales y posibles opositores pueden revisar la descripción, la zona y el expediente antes de que el IMPI resuelva la solicitud."
+          ],
+          "sector": "Propiedad industrial y productores locales"
+        }
+      ]
+    },
+    "importance": 2,
+    "issuing_body": "Instituto Mexicano de la Propiedad Industrial",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T13:53:50.681449+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792806&fecha=07/07/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5792806"
+    },
+    "official_published_at": "2026-07-07",
+    "official_title": "Publicación de datos relacionados con la Solicitud de Declaración de Protección a la Indicación Geográfica \"Papel Picado de San Salvador Huixcolotla, Puebla\".",
+    "published_at": "2026-07-07",
+    "published_day": 7,
+    "published_month": 7,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Personas con interés legítimo en la indicación o denominación",
+        "deadline": "un plazo improrrogable de un mes desde la publicación",
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "legal_basis": "Ley Federal de Protección a la Propiedad Industrial",
+        "paragraphs": [
+          "Si la solicitud puede afectar una denominación, indicación, producto o zona relacionada, consulte el expediente del IMPI y presente oposición, observaciones y pruebas sólo dentro de un plazo improrrogable de un mes."
+        ],
+        "trigger": "Publicación en el Diario Oficial de la Federación"
+      }
+    ],
+    "relevance_score": 3,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5792806",
+    "subtopic_tags": [
+      "indicacion geografica"
+    ],
+    "summary": "El Instituto Mexicano de la Propiedad Industrial publicó los datos de la solicitud de Declaración de Protección a la Indicación Geográfica “Papel Picado de San Salvador Huixcolotla, Puebla”. La solicitud fue presentada por la Secretaría de Desarrollo Económico y Trabajo del Gobierno del Estado de Puebla, representada por Víctor Gerardo Gabriel Chedrahui, mediante escrito recibido en el Instituto el 30 de abril de 2026.\n\nEl producto se describe como una manifestación artesanal elaborada mediante perforación manual por impacto. El aviso menciona el uso de cinceles, sacabocados y medias cañas sobre bloques superpuestos de papel de china o materiales plásticos colocados sobre una base de soporte. Explica que el procedimiento reproduce un patrón previamente diseñado y genera cavidades que forman composiciones visuales complejas.\n\nLa solicitud sitúa la producción exclusivamente en el municipio de San Salvador Huixcolotla, Puebla, y proporciona los paralelos, meridianos y altitud señalados para su delimitación. También identifica los municipios colindantes. Estos datos integran la zona geográfica cuya relación con el producto se expone en la solicitud publicada.\n\nEl expediente puede consultarse en el archivo de la Dirección Divisional de Marcas del IMPI y en ese mismo domicilio se reciben los documentos relacionados con la solicitud, dentro del horario indicado. La consulta pública permite examinar las características declaradas, la delimitación territorial y los documentos que forman parte del expediente administrativo.\n\nLa publicación no prejuzga ni constituye un pronunciamiento del IMPI sobre la procedencia o improcedencia de la solicitud. Cualquier tercera persona que justifique su interés puede presentar oposición escrita, observaciones u objeciones relativas al cumplimiento de los requisitos legales, acompañadas de pruebas y del comprobante de pago de la tarifa. El plazo para hacerlo es improrrogable: un mes desde la publicación en el Diario Oficial de la Federación, en los términos del artículo 282 de la Ley Federal de Protección a la Propiedad Industrial.",
+    "summary_teaser": "El IMPI publicó la solicitud de protección de la Indicación Geográfica Papel Picado de San Salvador Huixcolotla, Puebla. Describe la perforación manual mediante cinceles, sacabocados y medias cañas y sitúa la producción exclusivamente en ese municipio. La publicación no otorga protección; la oposición fundada vence en un mes.",
+    "title": "IMPI abre solicitud de indicación para papel picado",
+    "topic_tags": [
+      "Propiedad intelectual"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5792806&fecha=07/07/2026"
+  },
+  "schema_version": 8
+}

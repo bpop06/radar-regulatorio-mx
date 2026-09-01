@@ -1,0 +1,209 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-3",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-4",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-5",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "heading": "Asignación del proyecto",
+      "paragraphs": [
+        "La Secretaría de las Mujeres, el Estado de Campeche y la Fiscalía General del Estado de Campeche formalizan el proyecto CE-2026-037 dentro del Componente C de apoyo a espacios de refugio especializados para mujeres víctimas de violencia de género, sus hijas e hijos. El comité de evaluación aprobó 962,166 pesos para su ejecución, y el convenio identifica esa suma como subsidio federal sujeto a los Lineamientos de Operación y a la Guía Operativa Refugios 2026.",
+        "Los recursos se radicarán a la Secretaría estatal y el espacio de refugio debe contar con una cuenta bancaria productiva específica para depositar y manejar exclusivamente los recursos federales y sus rendimientos. La Secretaría estatal cuenta con un máximo de cinco días hábiles, después de la notificación de radicación, para transferir los recursos al espacio de refugio; la transferencia exige la factura electrónica prevista por la guía operativa."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-3",
+        "chunk-4",
+        "chunk-5"
+      ],
+      "heading": "Plazos y manejo de recursos",
+      "paragraphs": [
+        "El convenio obliga a iniciar las acciones del proyecto en un plazo no mayor a quince días naturales contado desde el depósito de los recursos federales en la cuenta establecida. Los recursos deben devengarse a más tardar el 31 de diciembre de 2026 y conservarán su carácter federal durante su administración, compromiso, devengo, justificación, comprobación, pago, ejercicio y contabilización.",
+        "Los rendimientos financieros y los saldos no devengados al 31 de diciembre de 2026 deben reintegrarse a la Tesorería de la Federación conforme a las disposiciones aplicables. También deben reintegrarse los recursos que no se apliquen a los fines autorizados. El espacio de refugio es responsable del resguardo de la documentación original justificativa y comprobatoria, y la vigencia del convenio llega al 31 de diciembre de 2026 sin relevar la comprobación posterior ni los reintegros que procedan."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-5"
+      ],
+      "heading": "Alcance",
+      "paragraphs": [
+        "El convenio acredita la asignación y las reglas de ejecución del subsidio, no la realización final de todas las actividades o el cumplimiento de resultados. Las partes deben seguir los lineamientos, la guía, la normativa federal de adquisiciones cuando corresponda y las obligaciones de transparencia y control que el documento incorpora. Los datos bancarios y personales incluidos en la fuente no son necesarios para explicar su contenido regulatorio."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "b80c66a253c64f0fd4d8e3e464394d847da2ef8f86e29d12e954460234ddf3a0",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "CONVENIO de Coordinación y Adhesión que celebran la Secretaría de las Mujeres, el Estado de Campeche y la Fiscalía General del Estado de Campeche, que tiene por objeto el otorgamiento de subsidio para el Proyecto CE-2026-037, que permita dar cumplimiento a la aplicación de recursos destinados al Componente C: Apoyo para Espacios de Refugio Especializados para Mujeres Víctimas de Violencia de Género, sus Hijas e Hijos.",
+        "location": "caracteres 0-425"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Mujeres.- Secretaría de las Mujeres. · parte 1",
+        "location": "caracteres 425-12425"
+      },
+      {
+        "id": "chunk-3",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Mujeres.- Secretaría de las Mujeres. · parte 2",
+        "location": "caracteres 12425-24425"
+      },
+      {
+        "id": "chunk-4",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Mujeres.- Secretaría de las Mujeres. · parte 3",
+        "location": "caracteres 24425-36425"
+      },
+      {
+        "id": "chunk-5",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Mujeres.- Secretaría de las Mujeres. · parte 4",
+        "location": "caracteres 36425-43767"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5790554&fecha=15/06/2026",
+    "retrieved_at": "2026-08-13T19:44:01.351470+00:00"
+  },
+  "executive_summary": [
+    "La Secretaría de las Mujeres, el Estado de Campeche y la Fiscalía General del Estado de Campeche formalizan el proyecto CE-2026-037 dentro del Componente C de apoyo a espacios de refugio especializados para mujeres víctimas de violencia de género, sus hijas e hijos. El comité de evaluación aprobó 962,166 pesos para su ejecución, y el convenio identifica esa suma como subsidio federal sujeto a los Lineamientos de Operación y a la Guía Operativa Refugios 2026.",
+    "Los recursos se radicarán a la Secretaría estatal y el espacio de refugio debe contar con una cuenta bancaria productiva específica para depositar y manejar exclusivamente los recursos federales y sus rendimientos. La Secretaría estatal cuenta con un máximo de cinco días hábiles, después de la notificación de radicación, para transferir los recursos al espacio de refugio; la transferencia exige la factura electrónica prevista por la guía operativa."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2",
+        "chunk-3",
+        "chunk-4",
+        "chunk-5"
+      ],
+      "paragraphs": [
+        "El subsidio habilita un proyecto concreto de refugio en Campeche, bajo plazos de transferencia, inicio, devengo y reintegro que condicionan el uso legal de los recursos federales."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2",
+          "chunk-3",
+          "chunk-4",
+          "chunk-5"
+        ],
+        "paragraphs": [
+          "El subsidio habilita un proyecto concreto de refugio en Campeche, bajo plazos de transferencia, inicio, devengo y reintegro que condicionan el uso legal de los recursos federales."
+        ],
+        "sector": "Entes ejecutores de refugios y administradores de subsidios en Campeche"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5790554&fecha=15/06/2026",
+    "categories": [
+      "Penal"
+    ],
+    "content_hash": "b76a2efdd07343ce7790d58e93355d12d9312f1a7c4788efe0415e1ad9bdedc1",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/39f9e1f1a05b29dc9e759eed.json",
+    "detail_url": "notas/39f9e1f1a05b29dc9e759eed.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Convenio De Coordinación",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5790554",
+    "importance": 2,
+    "issuing_body": "Presidencia de la República",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-06-15",
+    "official_title": "Convenio de Coordinación y Adhesión que celebran la Secretaría de las Mujeres, el Estado de Campeche y la Fiscalía General del Estado de Campeche, que tiene por objeto el otorgamiento de subsidio para el Proyecto CE-2026-037, que permita dar cumplimiento a la aplicación de recursos destinados al Componente C: Apoyo para Espacios de Refugio Especializados para Mujeres Víctimas de Violencia de Género, sus Hijas e Hijos.",
+    "published_at": "2026-06-15",
+    "relevance_score": 2,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5790554",
+    "summary_teaser": "La Secretaría de las Mujeres formalizó un subsidio federal de 962,166 pesos para el proyecto CE-2026-037 del Estado y Fiscalía de Campeche. El convenio exige cuenta productiva específica, inicio oportuno de acciones, devengo antes de fin de año, comprobación y reintegro de remanentes o recursos fuera del objeto autorizado.",
+    "title": "Mujeres concede subsidio federal para refugio especializado en Campeche",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5790554&fecha=15/06/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Entes ejecutores de refugios y administradores de subsidios en Campeche",
+      "deadline": "Inicio: 15 días naturales desde el depósito; devengo: 31 de diciembre de 2026",
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2",
+        "chunk-3",
+        "chunk-4",
+        "chunk-5"
+      ],
+      "legal_basis": "Convenio CE-2026-037; Lineamientos y Guía Operativa Refugios 2026",
+      "paragraphs": [
+        "El espacio de refugio debe mantener la cuenta específica, iniciar el proyecto dentro de quince días del depósito, documentar el gasto y gestionar a tiempo el reintegro de rendimientos o saldos no aplicados."
+      ],
+      "trigger": "Tras el depósito de recursos federales para CE-2026-037"
+    }
+  ],
+  "schema_version": 8
+}

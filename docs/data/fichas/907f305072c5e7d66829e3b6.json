@@ -1,0 +1,136 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "heading": "Destino y uso autorizado",
+      "paragraphs": [
+        "El acuerdo destina el inmueble a la Procuraduría Federal de Protección al Ambiente para continuar utilizándolo como Archivo Institucional, con un derecho de aprovechamiento limitado a esa finalidad y sin transmisión de propiedad."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "heading": "Custodia y condicionantes",
+      "paragraphs": [
+        "La destinataria debe conservar, asegurar y vigilar el inmueble; un cambio de uso o falta de necesidad activa la puesta a disposición prevista. Las obras requieren autorizaciones previas conforme al acto."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "c6c9260c2051d84e55d4140e59e16babb73a42818021d28b1d1ef3a38fb98c8c",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "ACUERDO por el que se destina a la Procuraduría Federal de Protección al Ambiente, Órgano Administrativo Desconcentrado de la Secretaría de Medio Ambiente y Recursos Naturales, el inmueble federal denominado \" Renacimiento 175 \" , con Registro Federal Inmobiliario 9-17555-4 y superficie de 230.00 metros cuadrados, que actualmente consta de 211.200 metros cuadrados derivado del área ocupada por vialidad ubicado en Calzada Renacimiento número 175, Colonia Petrolera, Código Postal 02480, Alcaldía Azcapotzalco, Ciudad de México.",
+        "location": "caracteres 0-534"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Instituto de Administración y Avalúos de Bienes Nacionales.- DST-15/2026.",
+        "location": "caracteres 534-12480"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796487&fecha=18%2F08%2F2026",
+    "retrieved_at": "2026-09-01T16:35:20.254138+00:00"
+  },
+  "executive_summary": [
+    "El Instituto de Administración y Avalúos de Bienes Nacionales destinó a la Procuraduría Federal de Protección al Ambiente el inmueble federal Renacimiento 175, ubicado en Azcapotzalco, Ciudad de México, para continuar utilizándolo como Archivo Institucional. El acuerdo individualiza el bien mediante sus datos inmobiliarios y señala que la destinación busca permitir la continuidad o ejecución del servicio público referido. Su entrada en vigor ocurre al día siguiente de la publicación.",
+    "La destinación confiere a la institución destinataria el derecho de aprovechar el inmueble únicamente para el uso autorizado. El instrumento aclara que no transmite la propiedad ni otorga derecho real alguno. Si el bien se usa para una finalidad distinta sin autorización previa de Hacienda por conducto del Instituto, o deja de utilizarse o necesitarse, deberá ponerse a disposición del Instituto con mejoras y accesiones, sin compensación, dentro de los cuatro meses que establece el acuerdo."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "paragraphs": [
+        "El acuerdo regulariza el uso administrativo de un bien federal y asigna obligaciones de conservación y control a la institución destinataria."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "Las áreas responsables deben mantener el uso dentro de la finalidad autorizada, resguardar el bien y tramitar las autorizaciones antes de intervenirlo."
+        ],
+        "sector": "Institución destinataria y áreas responsables del inmueble"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796487&fecha=18%2F08%2F2026",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "ec966cf15d972bd025c5266a42736f0e45c72a4e36967833b32530903c81c71c",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/907f305072c5e7d66829e3b6.json",
+    "detail_url": "notas/907f305072c5e7d66829e3b6.html",
+    "detected_at": "2026-09-01T16:34:47.803209+00:00",
+    "document_type": "Acuerdo",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5796487",
+    "importance": 1,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-08-18",
+    "official_title": "Acuerdo por el que se destina a la Procuraduría Federal de Protección al Ambiente, Órgano Administrativo Desconcentrado de la Secretaría de Medio Ambiente y Recursos Naturales, el inmueble federal denominado \"Renacimiento 175\", con Registro Federal Inmobiliario 9- 17555-4 y superficie de 230.00 metros cuadrados, que actualmente consta de 211.200 metros cuadrados derivado del área ocupada por vialidad ubicado en Calzada Renacimiento número 175, Colonia Petrolera, Código Postal 02480, Alcaldía Azcapotzalco, Ciudad de México.",
+    "published_at": "2026-08-18",
+    "relevance_score": 1,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5796487",
+    "summary_teaser": "El Instituto de Administración y Avalúos de Bienes Nacionales destinó el inmueble federal descrito a la Procuraduría Federal de Protección al Ambiente para continuar utilizándolo como Archivo Institucional. El acuerdo confiere derecho de aprovechamiento para ese uso, no transmite la propiedad y establece obligaciones de custodia, conservación y permisos para intervenciones.",
+    "title": "Acuerdo concede a Profepa archivo institucional en Azcapotzalco",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796487&fecha=18/08/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Institución destinataria y áreas responsables del inmueble",
+      "deadline": "Cuatro meses para poner el inmueble a disposición si deja de ser útil, cuando se actualice ese supuesto",
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "legal_basis": "Ley General de Bienes Nacionales y términos expresos del acuerdo de destino",
+      "paragraphs": [
+        "Documentar la finalidad autorizada, conservar evidencia de custodia, mantenimiento y aseguramiento, y gestionar los permisos que correspondan antes de ejecutar obras."
+      ],
+      "trigger": "Administrar el inmueble o proyectar una intervención material"
+    }
+  ],
+  "schema_version": 8
+}

@@ -1,0 +1,189 @@
+{
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "item": {
+    "ai_generated": true,
+    "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792570&fecha=03/07/2026",
+    "card_body": "## Qué se publicó\n\nUn listado definitivo que incorpora a CARYRA bajo la versión histórica del procedimiento fiscal señalado por el SAT.\n\n## Sustancia\n\nEl oficio atribuye a los comprobantes expedidos por la contribuyente el efecto de no producir ni haber producido efecto fiscal alguno; la ficha no extiende esa consecuencia a terceros.\n\n## Fuente\n\n[Consultar fuente oficial](https://dof.gob.mx/nota_detalle.php?codigo=5792570&fecha=03/07/2026)",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Fiscal",
+      "Administración centralizada"
+    ],
+    "content_hash": "c2e0c0c31b785fbbe5e87787b768b7473dfeddc7417d35b0c43d351a4faf8eca",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "not_material",
+        "reason": "Es el título del oficio; el procedimiento y el efecto fiscal se exponen en los fragmentos restantes.",
+        "source_ref": "chunk-1",
+        "target_sections": []
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": "Continúa el Anexo 1 con datos del contribuyente y notificaciones.",
+        "source_ref": "chunk-3",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.sectors"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/797c2c511755de273288f467.json",
+    "detail_url": "notas/797c2c511755de273288f467.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-2",
+          "chunk-3"
+        ],
+        "heading": "Listado definitivo bajo versión histórica",
+        "paragraphs": [
+          "El oficio aplica el artículo 69-B vigente hasta el 24 de julio de 2018 y ubica a CARYRA en el Anexo 1 después del procedimiento individual que describe."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "heading": "Etapas relatadas por la autoridad",
+        "paragraphs": [
+          "La fuente refiere oficio de presunción, quince días hábiles para defenderse, resolución definitiva y el lapso previo a la publicación del listado."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "heading": "Efecto fiscal expreso",
+        "paragraphs": [
+          "El SAT señala que, con efectos generales, los comprobantes fiscales expedidos por los contribuyentes listados no producen ni produjeron efecto fiscal alguno."
+        ]
+      }
+    ],
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Oficio",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "58a2a81ab78aa54fc396630d01f48186f6df8a4bc2a19b56c94e52f7e2a61e9d",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "OFICIO 500-05-00-00-00-2026-16084 mediante el cual se comunica listado global definitivo en términos del artículo 69-B, párrafo tercero del Código Fiscal de la Federación vigente hasta el 24 de julio de 2018.",
+          "location": "caracteres 0-212"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Servicio de Administración Tributaria.- Administración General de Auditoría Fiscal Federal.- Administración Central de Fiscalización Estratégica. · parte 1",
+          "location": "caracteres 212-12212"
+        },
+        {
+          "id": "chunk-3",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Servicio de Administración Tributaria.- Administración General de Auditoría Fiscal Federal.- Administración Central de Fiscalización Estratégica. · parte 2",
+          "location": "caracteres 12212-14656"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792570&fecha=03/07/2026",
+      "retrieved_at": "2026-08-13T19:43:23.510232+00:00"
+    },
+    "executive_summary": [
+      "El SAT incorpora a CARYRA al listado definitivo previsto por la versión histórica del artículo 69-B y relata las etapas de presunción, defensa y resolución individual.",
+      "La consecuencia publicada es que los comprobantes fiscales expedidos por la contribuyente no producen ni produjeron efecto fiscal alguno."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5792570",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "La publicación comunica un efecto fiscal expreso para los comprobantes expedidos por el contribuyente identificado, sin definir consecuencias para personas distintas o documentos no identificados."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-2",
+            "chunk-3"
+          ],
+          "paragraphs": [
+            "Deben reconocer que el oficio atribuye a esos comprobantes la falta de efecto fiscal y contrastar el alcance con el registro individual y el texto oficial."
+          ],
+          "sector": "Contribuyentes y asesores que revisen comprobantes de CARYRA"
+        }
+      ]
+    },
+    "importance": 2,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T13:53:50.681449+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792570&fecha=03/07/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5792570"
+    },
+    "official_published_at": "2026-07-03",
+    "official_title": "Oficio 500-05-00-00-00-2026-16084 mediante el cual se comunica listado global definitivo en términos del artículo 69-B, párrafo tercero del Código Fiscal de la Federación vigente hasta el 24 de julio de 2018.",
+    "published_at": "2026-07-03",
+    "published_day": 3,
+    "published_month": 7,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Personas que evalúen comprobantes expedidos por CARYRA",
+        "deadline": null,
+        "evidence_refs": [
+          "chunk-2",
+          "chunk-3"
+        ],
+        "legal_basis": "Artículo 69-B del Código Fiscal de la Federación vigente hasta el 24 de julio de 2018, conforme al oficio",
+        "paragraphs": [
+          "Verifiquen el RFC, razón social y datos del Anexo 1 antes de tomar decisiones documentales, y consideren el efecto fiscal expreso que el oficio atribuye a los comprobantes del registro identificado."
+        ],
+        "trigger": "Revisión de comprobantes atribuidos a la contribuyente listada"
+      }
+    ],
+    "relevance_score": 3,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5792570",
+    "subtopic_tags": [
+      "codigo fiscal"
+    ],
+    "summary": "La Administración Central de Fiscalización Estratégica del SAT comunicó un listado global definitivo relativo al artículo 69-B del Código Fiscal de la Federación en su versión vigente hasta el 24 de julio de 2018. El Anexo 1 identifica a CARYRA, S. de R.L. de C.V. La fuente explica que la autoridad detectó la emisión de comprobantes fiscales sin activos, personal, infraestructura o capacidad material para prestar los servicios o producir, comercializar o entregar los bienes que los comprobantes amparan. La referencia a una versión histórica de la norma es parte expresa del oficio y acota el marco procedimental que la autoridad comunica.\n\nDe acuerdo con el texto, primero se emitió y notificó un oficio individual de presunción y se concedieron quince días hábiles desde la última de las notificaciones para manifestar lo que conviniera y aportar pruebas. Después de que la persona identificada no se apersonó ni ofreció documentación para desvirtuar los hechos, la autoridad emitió una resolución individual definitiva. La publicación también refiere el transcurso de treinta días hábiles desde la notificación de esa resolución y dice que las autoridades no habían sido notificadas de resolución o sentencia favorable que ordenara suspensión, nulidad o revocación del procedimiento.\n\nCon esos antecedentes, el SAT agrega el nombre del contribuyente al listado de quienes no desvirtuaron los hechos y se encuentran definitivamente en la situación que describe el primer párrafo del artículo 69-B histórico. El efecto jurídico que el oficio expresa es concreto: los comprobantes fiscales expedidos por dichos contribuyentes no producen ni produjeron efecto fiscal alguno. No se trata de una fórmula ambigua sobre efectos de una versión anterior de la norma, sino de la consecuencia general que el propio oficio atribuye a los comprobantes del registro listado.\n\nLa ficha no extiende esa consecuencia a terceros, a comprobantes que no hayan sido expedidos por la persona identificada ni a operaciones no comprendidas en la publicación. Tampoco recalifica la situación tributaria de personas ajenas. Su alcance es explicar el registro definitivo y el efecto fiscal textual que el SAT comunica para los comprobantes de CARYRA dentro del listado histórico.",
+    "summary_teaser": "El SAT incorporó a CARYRA, S. de R.L. de C.V., al listado global definitivo bajo la versión del artículo 69-B vigente hasta el 24 de julio de 2018. La publicación expresa que los comprobantes expedidos por la contribuyente no producen ni produjeron efecto fiscal alguno. La consecuencia se limita al registro identificado en el oficio.",
+    "title": "Comprobantes de CARYRA no producen efecto fiscal bajo listado histórico",
+    "topic_tags": [
+      "Fiscal",
+      "Oficio"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5792570&fecha=03/07/2026"
+  },
+  "schema_version": 8
+}

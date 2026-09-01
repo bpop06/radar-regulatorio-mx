@@ -1,0 +1,152 @@
+{
+  "coverage": [
+    {
+      "disposition": "not_material",
+      "reason": "Encabezado o duplicado técnico sin contenido sustantivo adicional frente a los demás fragmentos revisados.",
+      "source_ref": "chunk-1",
+      "target_sections": []
+    },
+    {
+      "disposition": "not_material",
+      "reason": "Encabezado o duplicado técnico sin contenido sustantivo adicional frente a los demás fragmentos revisados.",
+      "source_ref": "chunk-2",
+      "target_sections": []
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-3",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-3"
+      ],
+      "heading": "Contenido oficial",
+      "paragraphs": [
+        "informa que, tras acciones de análisis documental, riesgo e inteligencia en Manzanillo, se identificaron 8,436,000 cigarrillos provenientes del extranjero presumiblemente apócrifos.",
+        "el comunicado describe el caso como parte de mecanismos permanentes de control, trazabilidad documental, revisión operativa y validación de perfiles comerciales."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-3"
+      ],
+      "heading": "Alcance y condiciones",
+      "paragraphs": [
+        "la actuación se atribuye a ANAM, la Unidad Administrativa de la Aduana de Manzanillo y autoridades del Gabinete de Seguridad.",
+        "la fuente califica los cigarrillos como presuntamente apócrifos y no publica una resolución definitiva sobre responsabilidad, decomiso o sanciones."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-3"
+      ],
+      "heading": "Seguimiento general",
+      "paragraphs": [
+        "operadores de comercio exterior pueden revisar sus controles documentales y de trazabilidad, sin extrapolar el comunicado a una determinación individual no publicada."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "03ccfa78c7b022dba7f470c1e6f99cba12e2f820f0dcfdceb7dd7f315c694dc1",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "Preámbulo",
+        "location": "caracteres 0-2465"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Autoridades federales aseguran más de 8 millones de cigarrillos en la Aduana de Manzanillo, Colima",
+        "location": "caracteres 2465-2606"
+      },
+      {
+        "id": "chunk-3",
+        "label": "Comunicado de prensa conjunto 50/2026",
+        "location": "caracteres 2606-4952"
+      }
+    ],
+    "official_url": "https://www.anam.gob.mx/comunicado-prensa-conjunto-50-2026",
+    "retrieved_at": "2026-08-24T20:05:58.443528+00:00"
+  },
+  "executive_summary": [
+    "La publicación oficial informa que, tras acciones de análisis documental, riesgo e inteligencia en Manzanillo, se identificaron 8,436,000 cigarrillos provenientes del extranjero presumiblemente apócrifos.",
+    "El efecto comunicado es que el comunicado describe el caso como parte de mecanismos permanentes de control, trazabilidad documental, revisión operativa y validación de perfiles comerciales la fuente califica los cigarrillos como presuntamente apócrifos y no publica una resolución definitiva sobre responsabilidad, decomiso o sanciones."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-3"
+      ],
+      "paragraphs": [
+        "El comunicado visibiliza la detección oficial y el uso de análisis de riesgo en una operación de importación."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-3"
+        ],
+        "paragraphs": [
+          "El comunicado visibiliza la detección oficial y el uso de análisis de riesgo en una operación de importación."
+        ],
+        "sector": "Aduanas, comercio exterior y control de mercancías"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://www.anam.gob.mx/comunicado-prensa-conjunto-50-2026",
+    "categories": [
+      "Comercio exterior"
+    ],
+    "content_hash": "ad78f50f1538b9b18b31659cab1e87862c3e9bcc01d8f5552661173fb3a98bcf",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/7ae932fe0bf77a75bd160c39.json",
+    "detail_url": "notas/7ae932fe0bf77a75bd160c39.html",
+    "detected_at": "2026-08-24T20:00:01.762524+00:00",
+    "document_type": "Comunicado",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "anam:cd0b70b388aac7cd",
+    "importance": 2,
+    "issuing_body": "Agencia Nacional de Aduanas de México",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-07-24",
+    "official_title": "Autoridades federales aseguran más de 8 millones de cigarrillos en la }Aduana de Manzanillo, Colima",
+    "published_at": "2026-07-24",
+    "relevance_score": 2,
+    "review_reason": null,
+    "source": "ANAM",
+    "source_id": "cd0b70b388aac7cd",
+    "summary_teaser": "informa que, tras acciones de análisis documental, riesgo e inteligencia en Manzanillo, se identificaron 8,436,000 cigarrillos provenientes del extranjero presumiblemente apócrifos. el comunicado describe el caso como parte de mecanismos permanentes de control, trazabilidad documental, revisión operativa y validación de perfiles comerciales. La publicación precisa destinatarios, alcance y condiciones expresamente señaladas; debe leerse con la fuente oficial sin extender sus efectos a supuestos no cubiertos..",
+    "title": "ANAM confirma hallazgo de cigarrillos presuntamente apócrifos",
+    "url": "https://www.anam.gob.mx/comunicado-prensa-conjunto-50-2026/"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Importadores, agentes y operadores de comercio exterior",
+      "deadline": null,
+      "evidence_refs": [
+        "chunk-3"
+      ],
+      "legal_basis": null,
+      "paragraphs": [
+        "Si gestionan importaciones de mercancías similares, revisen controles documentales y de trazabilidad conforme a sus obligaciones aplicables."
+      ],
+      "trigger": null
+    }
+  ],
+  "schema_version": 8
+}

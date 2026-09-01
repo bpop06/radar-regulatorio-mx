@@ -1,0 +1,202 @@
+{
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "item": {
+    "ai_generated": true,
+    "authority": "ORGANISMOS DESCONCENTRADOS O DESCENTRALIZADOS INSTITUTO MEXICANO DEL SEGURO SOCIAL",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791682&fecha=25/06/2026",
+    "card_body": "## Qué se publicó\n\nUn aviso de suplencia para las ausencias de la titularidad del OOAD Estatal Morelos del IMSS.\n\n## Sustancia\n\nSergio Vallejo Barragán, titular de la Jefatura de Servicios Jurídicos, puede firmar, despachar documentación y suscribir resoluciones del OOAD Estatal Morelos sólo durante las ausencias de Mónica Arriaga Arroyo.\n\n## Fuente\n\n[Consulta la fuente oficial](https://dof.gob.mx/nota_detalle.php?codigo=5791682&fecha=25/06/2026)",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "2764a1bce0d906916ffe3600712e911a27983b5c807578e8df9e71bd330ddde9",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-1",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/d736b552b10d2dc252796af8.json",
+    "detail_url": "notas/d736b552b10d2dc252796af8.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "heading": "Suplente designado",
+        "paragraphs": [
+          "El aviso identifica a Sergio Vallejo Barragán, titular de la Jefatura de Servicios Jurídicos, como suplente de las ausencias de la doctora Mónica Arriaga Arroyo, titular del OOAD Estatal Morelos."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "heading": "Facultades condicionadas",
+        "paragraphs": [
+          "Cuando se actualicen esas ausencias, el suplente puede firmar y despachar la documentación del órgano, incluida la suscripción de las resoluciones que éste deba emitir."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "heading": "Marco comunicado",
+        "paragraphs": [
+          "La publicación invoca el artículo 158 del Reglamento Interior del IMSS y cita la Ley del Seguro Social y reglas internas del Instituto como fundamento de la designación."
+        ]
+      }
+    ],
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Aviso",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "6672cee93c5501ebe3d0fb1a838534e96d2c73fdaa1f8ade10640ea07b747013",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "AVISO mediante el cual se designa al Titular de la Jefatura de Servicios Jurídicos para que supla las ausencias de la Dra. Mónica Arriaga Arroyo , Titular del Órgano de Operación Administrativa Desconcentrada Estatal Morelos del Instituto Mexicano del Seguro Social, autorizándole a firmar y despachar la documentación incluyendo la suscripción de las resoluciones que debe emitir este Órgano.",
+          "location": "caracteres 0-397"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al margen un logotipo, que dice: Instituto Mexicano del Seguro Social.- Órgano de Operación Administrativa Desconcentrada Estatal Morelos.",
+          "location": "caracteres 397-2342"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791682&fecha=25/06/2026",
+      "retrieved_at": "2026-08-13T19:43:46.955673+00:00"
+    },
+    "executive_summary": [
+      "El IMSS designa a Sergio Vallejo Barragán, titular de la Jefatura de Servicios Jurídicos, para suplir las ausencias de Mónica Arriaga Arroyo en el OOAD Estatal Morelos.",
+      "Sólo durante esas ausencias, puede firmar y despachar la documentación del órgano e incluir la suscripción de las resoluciones que debe emitir.",
+      "El aviso se presenta para los efectos del artículo 158 del Reglamento Interior del IMSS y mantiene la condición de ausencia como límite de la autorización."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Organismo descentralizado",
+    "id": "dof:5791682",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "El aviso proporciona un referente público de quién puede dar continuidad documental y resolutiva al OOAD Estatal Morelos cuando se actualicen las ausencias de su titular."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-1",
+            "chunk-2"
+          ],
+          "paragraphs": [
+            "Pueden identificar que Sergio Vallejo Barragán firma o despacha como suplente únicamente dentro del supuesto de ausencia comunicado para el OOAD Estatal Morelos."
+          ],
+          "sector": "Personas usuarias del IMSS en Morelos"
+        },
+        {
+          "evidence_refs": [
+            "chunk-2"
+          ],
+          "paragraphs": [
+            "La publicación identifica la jefatura que asume la suplencia y el alcance documental y resolutivo que puede ejercer durante las ausencias."
+          ],
+          "sector": "Áreas jurídicas y administrativas del OOAD Estatal Morelos"
+        }
+      ]
+    },
+    "importance": 3,
+    "issuing_body": "Instituto Mexicano del Seguro Social",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T13:53:50.681449+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791682&fecha=25/06/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5791682"
+    },
+    "official_published_at": "2026-06-25",
+    "official_title": "Aviso mediante el cual se designa al Titular de la Jefatura de Servicios Jurídicos para que supla las ausencias de la Dra. Mónica Arriaga Arroyo, Titular del Órgano de Operación Administrativa Desconcentrada Estatal Morelos del Instituto Mexicano del Seguro Social, autorizándole a firmar y despachar la documentación incluyendo la suscripción de las resoluciones que debe emitir este Órgano.",
+    "published_at": "2026-06-25",
+    "published_day": 25,
+    "published_month": 6,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Personas que revisen documentos o resoluciones del OOAD Estatal Morelos",
+        "deadline": null,
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "legal_basis": "Artículo 158 del Reglamento Interior del Instituto Mexicano del Seguro Social, citado en el aviso.",
+        "paragraphs": [
+          "Si un documento o resolución aparece suscrito por Sergio Vallejo Barragán, pueden verificar el cargo, el órgano emisor y la relación con una ausencia de la titular antes de atribuirle la suplencia comunicada."
+        ],
+        "trigger": "Al verificar una firma o despacho emitido en sustitución."
+      },
+      {
+        "affected_group": "Áreas de trámite del IMSS en Morelos",
+        "deadline": null,
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "legal_basis": "Aviso de designación y disposiciones internas citadas en él.",
+        "paragraphs": [
+          "Si se actualiza una ausencia de la titular, pueden identificar en el aviso al suplente y las funciones de firma, despacho y suscripción de resoluciones que se le autorizan."
+        ],
+        "trigger": "Cuando se actualice una ausencia de la titularidad del OOAD Estatal Morelos."
+      }
+    ],
+    "relevance_score": 4,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5791682",
+    "subtopic_tags": [
+      "designa",
+      "titular del organo",
+      "titular de la jefatura"
+    ],
+    "summary": "El Instituto Mexicano del Seguro Social publica un aviso de suplencia para el Órgano de Operación Administrativa Desconcentrada Estatal Morelos. La doctora Mónica Arriaga Arroyo, titular de ese órgano, designa al licenciado Sergio Vallejo Barragán, titular de la Jefatura de Servicios Jurídicos, como la persona que suplirá sus ausencias. El aviso identifica a la titular, al suplente y al órgano administrativo al que corresponde la autorización.\n\nLa autorización está condicionada a las ausencias de la titular. Durante ese supuesto, Sergio Vallejo Barragán puede firmar y despachar la documentación que corresponde al OOAD Estatal Morelos, incluida la suscripción de las resoluciones que deba emitir el propio órgano. La designación se vincula expresamente con la suplencia de las ausencias comunicadas.\n\nEl aviso se emite para los efectos del artículo 158 del Reglamento Interior del IMSS. También cita el artículo 251-A de la Ley del Seguro Social y los artículos 138, 139, 144 y 155, fracción XVII, del Reglamento Interior, además de la designación de la titular por el Consejo Técnico. Estas referencias integran el fundamento de la comunicación y el ámbito funcional de la suplencia.\n\nLa publicación se dirige a autoridades federales, estatales y municipales con sede en Morelos, patrones, asegurados y público en general. Identifica quién puede firmar, despachar documentación y suscribir resoluciones del OOAD Estatal Morelos cuando se actualicen las ausencias de la titular.\n\nLa titular del OOAD Estatal Morelos hizo la designación para los efectos del artículo 158 del Reglamento Interior del IMSS. El aviso enlaza la continuidad de firma, despacho y suscripción de resoluciones con el supuesto de ausencia de Mónica Arriaga Arroyo, sin modificar la identificación del órgano que emite esos actos. La persona designada conserva el cargo de titular de la Jefatura de Servicios Jurídicos que el propio aviso indica. El aviso fue suscrito en Cuernavaca, Morelos, el 11 de mayo de 2026 por la titular del OOAD Estatal Morelos.",
+    "summary_teaser": "El IMSS designa a Sergio Vallejo Barragán, titular de la Jefatura de Servicios Jurídicos, para suplir las ausencias de Mónica Arriaga Arroyo en el OOAD Estatal Morelos. Durante esas ausencias puede firmar y despachar documentación y suscribir las resoluciones que debe emitir el órgano, sin que el aviso disponga una sustitución permanente.",
+    "title": "IMSS Morelos autoriza suplencia de Sergio Vallejo Barragán",
+    "topic_tags": [
+      "Derecho administrativo",
+      "Nombramientos federales",
+      "Resolución",
+      "Aviso"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5791682&fecha=25/06/2026"
+  },
+  "schema_version": 8
+}

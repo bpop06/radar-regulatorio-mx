@@ -1,0 +1,199 @@
+{
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "item": {
+    "ai_generated": true,
+    "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792567&fecha=03/07/2026",
+    "card_body": "## Qué se publicó\n\nEl SAT informó medios de defensa favorables que dejaron sin efectos procedimientos individuales del artículo 69-B.\n\n## Sustancia\n\nEl anexo separa cuatro juicios de nulidad y un recurso de revocación, identifica cinco RFC y aclara que Bluehouse y Concrat no habían aparecido en listados globales definitivos. Los efectos se circunscriben a los actos individualizados.\n\n## Fuente\n\n[Fuente oficial](https://dof.gob.mx/nota_detalle.php?codigo=5792567&fecha=03/07/2026)",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Fiscal",
+      "Administración centralizada"
+    ],
+    "content_hash": "cc31850527802815569713041726d1d699ec371fd9f95a9bf0b0ddb683834920",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-1",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-3",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/745a1005ef40ca16e50ad49c.json",
+    "detail_url": "notas/745a1005ef40ca16e50ad49c.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2",
+          "chunk-3"
+        ],
+        "heading": "Contribuyentes y procedimientos sin efectos",
+        "paragraphs": [
+          "Los registros son ANJ120329KL8, Alternativas de Negocios Jurídicos; CIS071227J47, Corporativa Integral de Servicios Logísticos; DCB1211286U6, Diseños y Construcciones Bluehouse; INT1505121S5, Intacsa; y SIC101118JD9, Servicios Industriales Concrat. Bluehouse y Servicios Industriales Concrat no habían sido publicados en listados globales definitivos.",
+          "El oficio vincula a cada registro con la resolución definitiva, datos adicionales y, cuando existió, su publicación previa en el listado global."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2",
+          "chunk-3"
+        ],
+        "heading": "Medios de defensa",
+        "paragraphs": [
+          "Alternativas de Negocios Jurídicos, Corporativa Integral de Servicios Logísticos, Intacsa y Servicios Industriales Concrat obtuvieron resoluciones en juicios de nulidad; en los casos de Alternativas, Intacsa y Concrat se declara nulidad lisa y llana, mientras que para Corporativa Integral se declara nulidad de la resolución impugnada. Diseños y Construcciones Bluehouse obtuvo en el recurso de revocación RRL2019001543, resuelto el 28 de febrero de 2019, que se dejara sin efectos su resolución recurrida.",
+          "La autoridad comunica que los procedimientos quedaron sin efectos sólo respecto de los actos y personas identificados, y deja a salvo sus facultades sobre otros comprobantes."
+        ]
+      }
+    ],
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Oficio",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "0f659744d7cae59801f150d99050e5f77344a693872eb778d1abeeb476c176b9",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "OFICIO 500-05-00-00-00-2026-16021 mediante el cual se comunica listado de contribuyentes que promovieron algún medio de defensa en contra del oficio de presunción a que se refiere el artículo 69-B primer párrafo del Código Fiscal de la Federación, vigente hasta el 24 de julio de 2018, o en contra de la resolución a que se refiere el tercer párrafo del artículo en comento, y una vez resuelto el mismo, el órgano jurisdiccional o administrativo dejó insubsistente el referido acto.",
+          "location": "caracteres 0-486"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Servicio de Administración Tributaria.- Administración General de Auditoría Fiscal Federal.- Administración Central de Fiscalización Estratégica. · parte 1",
+          "location": "caracteres 486-12486"
+        },
+        {
+          "id": "chunk-3",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Servicio de Administración Tributaria.- Administración General de Auditoría Fiscal Federal.- Administración Central de Fiscalización Estratégica. · parte 2",
+          "location": "caracteres 12486-12683"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792567&fecha=03/07/2026",
+      "retrieved_at": "2026-08-13T19:43:24.039356+00:00"
+    },
+    "executive_summary": [
+      "El Servicio de Administración Tributaria comunicó que procedimientos del artículo 69-B del Código Fiscal de la Federación quedaron sin efectos como consecuencia de medios de defensa favorables. Los registros son ANJ120329KL8, Alternativas de Negocios Jurídicos; CIS071227J47, Corporativa Integral de Servicios Logísticos; DCB1211286U6, Diseños y Construcciones Bluehouse; INT1505121S5, Intacsa; y SIC101118JD9, Servicios Industriales Concrat. Bluehouse y Servicios Industriales Concrat no habían sido publicados en listados globales definitivos. El oficio conserva los RFC, resoluciones definitivas, publicaciones previas y datos de los procedimientos.",
+      "Alternativas de Negocios Jurídicos, Corporativa Integral de Servicios Logísticos, Intacsa y Servicios Industriales Concrat obtuvieron resoluciones en juicios de nulidad; en los casos de Alternativas, Intacsa y Concrat se declara nulidad lisa y llana, mientras que para Corporativa Integral se declara nulidad de la resolución impugnada. Diseños y Construcciones Bluehouse obtuvo en el recurso de revocación RRL2019001543, resuelto el 28 de febrero de 2019, que se dejara sin efectos su resolución recurrida. La fuente identifica el tipo de medio de defensa, la fecha de resolución o sentencia firme, la autoridad que resolvió y el efecto concedido en cada caso, con lo que distingue las nulidades lisas y llanas de los actos que se dejaron sin efectos por la vía administrativa."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5792567",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2",
+          "chunk-3"
+        ],
+        "paragraphs": [
+          "Los registros oficiales de estatus 69-B deben reflejar el efecto de las sentencias o resoluciones individuales, sin ampliar su alcance a otros actos."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-1",
+            "chunk-2",
+            "chunk-3"
+          ],
+          "paragraphs": [
+            "Áreas fiscales y de cumplimiento pueden verificar el RFC, el expediente y el medio de defensa antes de usar un listado 69-B como señal de estatus."
+          ],
+          "sector": "Fiscal y contabilidad"
+        }
+      ]
+    },
+    "importance": 2,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T13:53:50.681449+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792567&fecha=03/07/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5792567"
+    },
+    "official_published_at": "2026-07-03",
+    "official_title": "Oficio 500-05-00-00-00-2026-16021 mediante el cual se comunica listado de contribuyentes que promovieron algún medio de defensa en contra del oficio de presunción a que se refiere el artículo 69-B primer párrafo del Código Fiscal de la Federación, vigente hasta el 24 de julio de 2018, o en contra de la resolución a que se refiere el tercer párrafo del artículo en comento, y una vez resuelto el mismo, el órgano jurisdiccional o administrativo dejó insubsistente el referido acto.",
+    "published_at": "2026-07-03",
+    "published_day": 3,
+    "published_month": 7,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Contribuyentes, áreas fiscales y responsables de controles de proveedores",
+        "deadline": null,
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2",
+          "chunk-3"
+        ],
+        "legal_basis": "Artículo 69-B del Código Fiscal de la Federación",
+        "paragraphs": [
+          "Cuando el RFC de una contraparte coincida con el anexo, revise el juicio o recurso y la resolución firme individualizados antes de mantener una referencia a ese procedimiento 69-B."
+        ],
+        "trigger": "Consulta de antecedentes de contribuyentes listados en el artículo 69-B"
+      }
+    ],
+    "relevance_score": 3,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5792567",
+    "subtopic_tags": [
+      "codigo fiscal"
+    ],
+    "summary": "El Servicio de Administración Tributaria comunicó que procedimientos del artículo 69-B del Código Fiscal de la Federación quedaron sin efectos como consecuencia de medios de defensa favorables. Los registros son ANJ120329KL8, Alternativas de Negocios Jurídicos; CIS071227J47, Corporativa Integral de Servicios Logísticos; DCB1211286U6, Diseños y Construcciones Bluehouse; INT1505121S5, Intacsa; y SIC101118JD9, Servicios Industriales Concrat. Bluehouse y Servicios Industriales Concrat no habían sido publicados en listados globales definitivos. El oficio conserva los RFC, resoluciones definitivas, publicaciones previas y datos de los procedimientos.\n\nAlternativas de Negocios Jurídicos, Corporativa Integral de Servicios Logísticos, Intacsa y Servicios Industriales Concrat obtuvieron resoluciones en juicios de nulidad; en los casos de Alternativas, Intacsa y Concrat se declara nulidad lisa y llana, mientras que para Corporativa Integral se declara nulidad de la resolución impugnada. Diseños y Construcciones Bluehouse obtuvo en el recurso de revocación RRL2019001543, resuelto el 28 de febrero de 2019, que se dejara sin efectos su resolución recurrida. La fuente identifica el tipo de medio de defensa, la fecha de resolución o sentencia firme, la autoridad que resolvió y el efecto concedido en cada caso, con lo que distingue las nulidades lisas y llanas de los actos que se dejaron sin efectos por la vía administrativa.\n\nLa comunicación retira los efectos de los procedimientos del artículo 69-B respecto de las personas y actos que enlista. No equivale a una declaración general sobre todos los comprobantes emitidos por esas personas: el propio oficio deja a salvo las facultades de la autoridad respecto de otros comprobantes que pudieran haber sido emitidos sin activos, personal, infraestructura o capacidad material.\n\nPara consultas de estatus fiscal o de proveedores, el análisis debe asociar el RFC, la persona, el número de juicio o recurso y la sentencia o resolución que el anexo individualiza. No corresponde trasladar la nulidad o la revocación a procedimientos, ejercicios, comprobantes o contribuyentes que no aparezcan en las tablas oficiales.",
+    "summary_teaser": "El SAT informó que cinco procedimientos 69-B, bajo el texto vigente antes del 24 de julio de 2018, quedaron sin efectos por cuatro juicios de nulidad y un recurso de revocación. El aviso identifica los cinco RFC y personas, y precisa que dos no habían sido publicados en listados globales definitivos.",
+    "title": "Resoluciones dejan sin efecto cinco procedimientos 69-B",
+    "topic_tags": [
+      "Fiscal",
+      "Resolución",
+      "Oficio"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5792567&fecha=03/07/2026"
+  },
+  "schema_version": 8
+}

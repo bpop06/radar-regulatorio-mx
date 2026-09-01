@@ -1,0 +1,208 @@
+{
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "item": {
+    "ai_generated": true,
+    "authority": "PODER EJECUTIVO SECRETARIA DE TURISMO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791670&fecha=25/06/2026",
+    "card_body": "## Qué se publicó\n\nEl Diario Oficial de la Federación publicó un convenio de coordinación entre Turismo federal y Nuevo León para verificar prestadores de servicios turísticos.\n\n## Sustancia\n\nEl instrumento distribuye actividades de verificación, intercambio de información, asistencia técnica y remisión de expedientes, sin desplazar las facultades federales para ordenar y resolver procedimientos.\n\n## Fuente\n\nLa fuente oficial es el Diario Oficial de la Federación. El acto revisado es el convenio de coordinación entre la Secretaría de Turismo y el Estado de Nuevo León.",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "b3dc6aa70059c1c047a97f8576ba693cd66cb15cce2805006168c051a095ede8",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "not_material",
+        "reason": "Primer locator reproduce título; objeto, funciones, reportes y vigencia están en tres locators posteriores.",
+        "source_ref": "chunk-1",
+        "target_sections": []
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-3",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-4",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/6b1636e50a4227e99471d04c.json",
+    "detail_url": "notas/6b1636e50a4227e99471d04c.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-2",
+          "chunk-3"
+        ],
+        "heading": "Objeto y acciones conjuntas",
+        "paragraphs": [
+          "Partes acuerdan intercambio de información para base de datos, asistencia técnica, reuniones digitales, atención de casos por quejas y medidas para promover cumplimiento. Procedimiento se ajusta a legislación turística, LFPA y Manual de verificación incorporado como Anexo Único."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-3"
+        ],
+        "heading": "Responsabilidades federales",
+        "paragraphs": [
+          "Secretaría se coordina para verificaciones estatales, emite órdenes, instruye y resuelve procedimiento, evalúa actividades, da seguimiento a visitas, expide oficios-credencial cuando corresponde y puede requerir documentos. También comunica resultados anuales y resuelve consultas para capacitación virtual."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-3"
+        ],
+        "heading": "Responsabilidades y reportes de Nuevo León",
+        "paragraphs": [
+          "Estado ejecuta verificaciones y prioriza órdenes respecto de prestadores con quejas o inconformidades. Debe capturar información y enviar datos del mes anterior y expedientes digitales certificados a Dirección General de Normalización y Verificación dentro de primeros diez días naturales de cada mes."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-3",
+          "chunk-4"
+        ],
+        "heading": "Vigencia y supervisión",
+        "paragraphs": [
+          "Secretaría puede supervisar en todo tiempo y estado debe permitir acceso. Convenio tiene vigencia desde firma hasta 30 de septiembre de 2027; modificaciones requieren instrumento escrito y terminación anticipada aviso con al menos quince días naturales."
+        ]
+      }
+    ],
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Convenio De Coordinación",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "41df93b60f7c3bab365af7029fb6ec38a355f449de78fd982d329a54aff8ca2b",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "CONVENIO de Coordinación que celebran la Secretaría de Turismo y el Estado de Nuevo León, que tiene por objeto verificar el cumplimiento de la Ley General de Turismo, su Reglamento, la Ley de Infraestructura de la Calidad y las normas oficiales mexicanas en la materia, así como el fortalecimiento de las atribuciones en el procedimiento de verificación de los prestadores de servicios turísticos en la entidad.",
+          "location": "caracteres 0-415"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- TURISMO.- Secretaría de Turismo. · parte 1",
+          "location": "caracteres 415-12415"
+        },
+        {
+          "id": "chunk-3",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- TURISMO.- Secretaría de Turismo. · parte 2",
+          "location": "caracteres 12415-24415"
+        },
+        {
+          "id": "chunk-4",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- TURISMO.- Secretaría de Turismo. · parte 3",
+          "location": "caracteres 24415-30312"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791670&fecha=25/06/2026",
+      "retrieved_at": "2026-08-13T19:43:49.032798+00:00"
+    },
+    "executive_summary": [
+      "La Secretaría de Turismo y Nuevo León celebran convenio para verificar cumplimiento de Ley General de Turismo, Reglamento, Ley de Infraestructura de la Calidad y NOM del sector. El objeto es fortalecer verificación de prestadores de servicios turísticos en la entidad.",
+      "El convenio distribuye tareas: Nuevo León realiza verificaciones mediante su personal, mientras Secretaría federal emite órdenes y desarrolla procedimiento administrativo de infracción hasta resolverlo con expedientes estatales. Federación conserva facultades originarias de supervisión."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5791670",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-2",
+          "chunk-3"
+        ],
+        "paragraphs": [
+          "Prestadores en Nuevo León pueden ser objeto de verificaciones dentro de esquema federal de órdenes, supervisión y procedimiento. Para autoridades, reportes mensuales y priorización de quejas estructuran flujo de información."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-2",
+            "chunk-3"
+          ],
+          "paragraphs": [
+            "Secretarías de turismo, unidades de cumplimiento y prestadores deben entender separación entre ejecución estatal, supervisión federal y resolución federal."
+          ],
+          "sector": "Prestadores de servicios turísticos en Nuevo León"
+        }
+      ]
+    },
+    "importance": 2,
+    "issuing_body": "Presidencia de la República",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T13:53:50.681449+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791670&fecha=25/06/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5791670"
+    },
+    "official_published_at": "2026-06-25",
+    "official_title": "Convenio de Coordinación que celebran la Secretaría de Turismo y el Estado de Nuevo León, que tiene por objeto verificar el cumplimiento de la Ley General de Turismo, su Reglamento, la Ley de Infraestructura de la Calidad y las normas oficiales mexicanas en la materia, así como el fortalecimiento de las atribuciones en el procedimiento de verificación de los prestadores de servicios turísticos en la entidad.",
+    "published_at": "2026-06-25",
+    "published_day": 25,
+    "published_month": 6,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Secretaría de Turismo del Estado de Nuevo León",
+        "deadline": "Dentro de primeros diez días naturales de cada mes",
+        "evidence_refs": [
+          "chunk-3",
+          "chunk-4"
+        ],
+        "legal_basis": "Cláusulas Primera a Cuarta del convenio",
+        "paragraphs": [
+          "Capturar y remitir información del mes anterior y expedientes en formatos y destinatarios definidos. Priorizar órdenes sobre prestadores con quejas y atender requerimientos federales."
+        ],
+        "trigger": "En ejecución mensual del convenio"
+      }
+    ],
+    "relevance_score": 2,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5791670",
+    "subtopic_tags": [
+      "infraestructura de la calidad"
+    ],
+    "summary": "La Secretaría de Turismo y Nuevo León celebran convenio para verificar cumplimiento de Ley General de Turismo, Reglamento, Ley de Infraestructura de la Calidad y NOM del sector. El objeto es fortalecer verificación de prestadores de servicios turísticos en la entidad.\n\nEl convenio distribuye tareas: Nuevo León realiza verificaciones mediante su personal, mientras Secretaría federal emite órdenes y desarrolla procedimiento administrativo de infracción hasta resolverlo con expedientes estatales. Federación conserva facultades originarias de supervisión.\n\nPartes acuerdan intercambio de información para base de datos, asistencia técnica, reuniones digitales, atención de casos por quejas y medidas para promover cumplimiento. Procedimiento se ajusta a legislación turística, LFPA y Manual de verificación incorporado como Anexo Único.\n\nSecretaría se coordina para verificaciones estatales, emite órdenes, instruye y resuelve procedimiento, evalúa actividades, da seguimiento a visitas, expide oficios-credencial cuando corresponde y puede requerir documentos. También comunica resultados anuales y resuelve consultas para capacitación virtual.\n\nEstado ejecuta verificaciones y prioriza órdenes respecto de prestadores con quejas o inconformidades. Debe capturar información y enviar datos del mes anterior y expedientes digitales certificados a Dirección General de Normalización y Verificación dentro de primeros diez días naturales de cada mes.\n\nSecretaría puede supervisar en todo tiempo y estado debe permitir acceso. Convenio tiene vigencia desde firma hasta 30 de septiembre de 2027; modificaciones requieren instrumento escrito y terminación anticipada aviso con al menos quince días naturales.\n\nEl convenio no transfiere resolución sancionadora al estado: texto reserva a Secretaría federal emisión de órdenes y desarrollo del procedimiento hasta resolución. Tampoco prevé contraprestación; cada parte cubre gastos. Coordinación se rige por enlaces, confidencialidad y transparencia. La continuidad de acciones iniciadas se conserva aun si existe terminación anticipada, en los términos del propio instrumento.\n\nPrestadores en Nuevo León pueden ser objeto de verificaciones dentro de esquema federal de órdenes, supervisión y procedimiento. Para autoridades, reportes mensuales y priorización de quejas estructuran flujo de información. Secretarías de turismo, unidades de cumplimiento y prestadores deben entender separación entre ejecución estatal, supervisión federal y resolución federal.\n\nEl convenio distribuye tareas sin desplazar las facultades federales que la Secretaría conserva para ordenar y resolver los procedimientos. La verificación estatal se ciñe al ámbito y la coordinación documentada por el instrumento.",
+    "summary_teaser": "La Secretaría de Turismo federal y Nuevo León celebran un convenio para verificar el cumplimiento de normas turísticas. El estado realizará verificaciones y remitirá información, mientras la autoridad federal conserva las facultades para emitir órdenes y resolver procedimientos de infracción.",
+    "title": "Turismo establece coordinación para verificar prestadores en Nuevo León",
+    "topic_tags": [
+      "Normalización",
+      "Norma",
+      "Reglamento"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5791670&fecha=25/06/2026"
+  },
+  "schema_version": 8
+}

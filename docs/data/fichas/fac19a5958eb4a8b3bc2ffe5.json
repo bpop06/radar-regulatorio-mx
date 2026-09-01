@@ -1,0 +1,139 @@
+{
+  "coverage": [
+    {
+      "disposition": "not_material",
+      "reason": "Es el título del acuerdo; la suspensión y alcance están en chunk-2.",
+      "source_ref": "chunk-1",
+      "target_sections": []
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Suspensión de labores centrales",
+      "paragraphs": [
+        "Las oficinas de Periférico Sur 3106 y Arenal 550 suspenden labores el 30 de junio de 2026."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Regla de plazos para todas las oficinas",
+      "paragraphs": [
+        "Ese día es inhábil y no corren plazos ni términos en ninguna oficina del IMPI, según el artículo segundo."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Excepción laboral regional",
+      "paragraphs": [
+        "El transitorio preserva labores del personal regional, pero no altera la suspensión de cómputo de plazos que la publicación establece para todas las oficinas."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "0ab58fea1f155ffc20cbcefc7732b42865ab4cbe859203863355f38a4ae5e8f9",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "ACUERDO por el que se suspenden las labores y no corren plazos ni términos en el Instituto Mexicano de la Propiedad Industrial.",
+        "location": "caracteres 0-131"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Economía.- Secretaría de Economía.- Instituto Mexicano de la Propiedad Industrial.",
+        "location": "caracteres 131-3396"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792804&fecha=07/07/2026",
+    "retrieved_at": "2026-08-13T19:43:00.154850+00:00"
+  },
+  "executive_summary": [
+    "El IMPI suspende labores centrales el 30 de junio de 2026 y declara esa fecha inhábil para plazos y términos en todas sus oficinas.",
+    "Aunque el personal regional no queda suspendido de labores, el acuerdo no exceptúa a las oficinas regionales del cómputo inhábil."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "paragraphs": [
+        "La publicación obliga a distinguir entre la disponibilidad laboral del personal regional y el cómputo de plazos, que permanece suspendido para todo el Instituto en la fecha señalada."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "Deben excluir el 30 de junio de 2026 del cómputo de plazos del IMPI, incluso si su asunto se gestiona ante una oficina regional."
+        ],
+        "sector": "Titulares de derechos, solicitantes y representantes ante el IMPI"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792804&fecha=07/07/2026",
+    "categories": [
+      "Administración descentralizada"
+    ],
+    "content_hash": "cf6096fcc972bd02fc24af855a77366e4980fb99703791be23f349f149374936",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/fac19a5958eb4a8b3bc2ffe5.json",
+    "detail_url": "notas/fac19a5958eb4a8b3bc2ffe5.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Acuerdo",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5792804",
+    "importance": 2,
+    "issuing_body": "Instituto Mexicano de la Propiedad Industrial",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-07-07",
+    "official_title": "Acuerdo por el que se suspenden las labores y no corren plazos ni términos en el Instituto Mexicano de la Propiedad Industrial.",
+    "published_at": "2026-07-07",
+    "relevance_score": 3,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5792804",
+    "summary_teaser": "El IMPI suspendió labores en sus oficinas centrales el 30 de junio de 2026 y declaró inhábil esa fecha para plazos y términos en todas sus oficinas. El personal regional no quedó suspendido de labores, pero esa excepción laboral no reanuda el cómputo de plazos para las oficinas regionales.",
+    "title": "IMPI suspende cómputo de plazos en todas sus oficinas",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5792804&fecha=07/07/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Personas con trámites o plazos ante el IMPI",
+      "deadline": "30 de junio de 2026 es inhábil para plazos y términos en todas las oficinas",
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "legal_basis": "Artículo 2o. del acuerdo",
+      "paragraphs": [
+        "Recalculen los vencimientos excluyendo el 30 de junio de 2026 y no traten la continuidad laboral regional como una excepción al cómputo inhábil."
+      ],
+      "trigger": "Cómputo de un plazo o término del IMPI que abarque el 30 de junio de 2026"
+    }
+  ],
+  "schema_version": 8
+}

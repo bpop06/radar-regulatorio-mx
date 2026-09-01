@@ -1,0 +1,138 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Contenido publicado",
+      "paragraphs": [
+        "La circular comunica que Limpieza Géminis, S.A. de C.V. recibió una inhabilitación de tres meses para no participar en procedimientos de contratación ni celebrar contratos regulados por la Ley de Adquisiciones, Arrendamientos y Servicios del Sector Público, además de una multa. La abstención comienza el día siguiente a la publicación y al registro en el directorio de proveedores y contratistas sancionados de ComprasMX.",
+        "La autoridad prevé que, si la multa no se paga al concluir el periodo, la inhabilitación subsista hasta acreditarse el pago y se elimine el registro correspondiente. La circular identifica el procedimiento administrativo de sanción, pero no expone hechos adicionales que permitan atribuir responsabilidades más allá de la sanción comunicada."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Alcance y lectura práctica",
+      "paragraphs": [
+        "Los contratos adjudicados y los ya formalizados con la empresa no quedan comprendidos. Las entidades federativas, municipios y demarcaciones deben observar la circular en procedimientos y contratos cubiertos por la ley señalada, según el texto publicado.",
+        "La ficha se dirige principalmente a áreas compradoras y responsables de contratación pública."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "d342f0a180eaedd4309f04f17517c8973edccc4465587c1a6d02dc706141910b",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "CIRCULAR por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a las entidades federativas y sus municipios, a los entes públicos de unas y otros, así como a las demarcaciones territoriales de la Ciudad de México, que deberán abstenerse de aceptar propuestas y/o celebrar contratos con la persona moral denominada Limpieza Géminis, S.A. de C.V.",
+        "location": "caracteres 0-386"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Buen Gobierno.- Secretaría Anticorrupción y Buen Gobierno.- Órgano Interno de Control en la Secretaría de Medio Ambiente y Recursos Naturales.- Área de Responsabilidades.- Expediente SANC-PA-0001/2025.",
+        "location": "caracteres 386-7610"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796941&fecha=24%2F08%2F2026",
+    "retrieved_at": "2026-09-01T16:35:09.587055+00:00"
+  },
+  "executive_summary": [
+    "El Órgano Interno de Control en Semarnat difundió una circular de abstención para contratar con una empresa inhabilitada. La circular comunica que Limpieza Géminis, S.A. de C.V. recibió una inhabilitación de tres meses para no participar en procedimientos de contratación ni celebrar contratos regulados por la Ley de Adquisiciones, Arrendamientos y Servicios del Sector Público, además de una multa. La abstención comienza el día siguiente a la publicación y al registro en el directorio de proveedores y contratistas sancionados de ComprasMX.",
+    "Los contratos adjudicados y los ya formalizados con la empresa no quedan comprendidos. Las entidades federativas, municipios y demarcaciones deben observar la circular en procedimientos y contratos cubiertos por la ley señalada, según el texto publicado. La síntesis se limita a los hechos y condiciones expresamente visibles en la fuente oficial."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "paragraphs": [
+        "El efecto observable es el que la publicación atribuye al acto: Los contratos adjudicados y los ya formalizados con la empresa no quedan comprendidos. Las entidades federativas, municipios y demarcaciones deben observar la circular en procedimientos y contratos cubiertos por la ley señalada, según el texto publicado."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "Las personas comprendidas deben considerar el documento porque La circular comunica que Limpieza Géminis, S.A. de C.V. recibió una inhabilitación de tres meses para no participar en procedimientos de contratación ni celebrar contratos regulados por la Ley de Adquisiciones, Arrendamientos y Servicios del Sector Público, además de una multa. La abstención comienza el día siguiente a la publicación y al registro en el directorio de proveedores y contratistas sancionados de ComprasMX."
+        ],
+        "sector": "Áreas compradoras y responsables de contratación pública"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796941&fecha=24%2F08%2F2026",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "f360b64f0336253d7d9751b7873e975663c8b0534d166a774e749c27b31360c2",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/99d781c2e1201492c6f83839.json",
+    "detail_url": "notas/99d781c2e1201492c6f83839.html",
+    "detected_at": "2026-09-01T16:34:47.803209+00:00",
+    "document_type": "Circular",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5796941",
+    "importance": 2,
+    "issuing_body": "Presidencia de la República",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-08-24",
+    "official_title": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a las entidades federativas y sus municipios, a los entes públicos de unas y otros, así como a las demarcaciones territoriales de la Ciudad de México, que deberán abstenerse de aceptar propuestas y/o celebrar contratos con la persona moral denominada Limpieza Géminis, S.A. de C.V.",
+    "published_at": "2026-08-24",
+    "relevance_score": 2,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5796941",
+    "summary_teaser": "El órgano interno de control de Semarnat comunicó que Limpieza Géminis, S.A. de C.V. fue inhabilitada por tres meses para participar o contratar bajo la ley federal de adquisiciones. La abstención inicia tras publicación y registro en ComprasMX; contratos previamente formalizados quedan fuera.",
+    "title": "Limpieza Géminis recibe prohibición en contrataciones públicas",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796941&fecha=24/08/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Áreas compradoras y responsables de contratación pública",
+      "deadline": "Desde el día siguiente a la publicación de la circular en el DOF y a su registro en el Directorio de Proveedores y Contratistas Sancionados de ComprasMX, por tres meses; si la multa no se acredita pagada al concluir ese plazo, la inhabilitación subsiste hasta el pago.",
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "legal_basis": "Resolutivo Quinto de la resolución; artículo 60, antepenúltimo párrafo, de la Ley de Adquisiciones, Arrendamientos y Servicios del Sector Público y artículo 113, primer párrafo, de su Reglamento.",
+      "paragraphs": [
+        "Aplicar la abstención a procedimientos futuros dentro del ámbito legal indicado y distinguirlos de los contratos preexistentes que la propia circular excluye."
+      ],
+      "trigger": "Cuando la persona o entidad se ubique en el ámbito material descrito por la fuente oficial."
+    }
+  ],
+  "schema_version": 8
+}

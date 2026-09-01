@@ -1,0 +1,126 @@
+{
+  "coverage": [
+    {
+      "disposition": "not_material",
+      "reason": "Encabezado inicial no aporta condiciones operativas; ubicación, destino y obligaciones aparecen en locator siguiente.",
+      "source_ref": "chunk-1",
+      "target_sections": []
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    }
+  ],
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Antecedentes y características",
+      "paragraphs": [
+        "Fuente refiere compraventa federal de 1976 y diferencia topográfica de 11.460 metros cuadrados dentro de parámetro indicado. Reporta que INBAL no identificó valor artístico e INAH no ubicó afectación histórica, y señala zonificación HC/6/25 y potencial de construcción de 4,422.68 metros cuadrados."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Destino y administración",
+      "paragraphs": [
+        "Sedatu debe usar, custodiar, conservar y asegurar inmueble para destino indicado. Si cambia uso sin autorización o deja de necesitarlo, debe devolverlo a INDAABIN con mejoras y sin indemnización en cuatro meses. Obras requieren licencias y autorizaciones aplicables, e INDAABIN conserva vigilancia."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "3e21c63e27096ecdb090c6b3f340b88a4c88595310c5baa01bce876574615b6e",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "ACUERDO por el que se destina a la Secretaría de Desarrollo Agrario, Territorial y Urbano, el Inmueble Federal denominado CENDI Carolina, con Registro Federal Inmobiliario 9-3189-5, y superficie de 971.843 metros cuadrados, ubicado en calle Carolina número 77, Colonia Ciudad de los Deportes, Código Postal 03710, Alcaldía Benito Juárez, Ciudad de México .",
+        "location": "caracteres 0-360"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Instituto de Administración y Avalúos de Bienes Nacionales.- DST-06/2026.",
+        "location": "caracteres 360-10796"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791565&fecha=24/06/2026",
+    "retrieved_at": "2026-08-13T19:43:49.398990+00:00"
+  },
+  "executive_summary": [
+    "INDAABIN destina a Sedatu inmueble federal CENDI Carolina, registro federal inmobiliario 9-3189-5. Predio se ubica en Carolina 77, colonia Ciudad de los Deportes, Benito Juárez, y tiene superficie de 971.843 metros cuadrados.",
+    "Destino es oficinas de Unidad de Asuntos Jurídicos de Sedatu y resguardo de acervo documental. Asignación otorga derecho de uso sujeto a condiciones; no transmite dominio ni constituye derecho real a favor de Secretaría."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "paragraphs": [
+        "Unidad de Asuntos Jurídicos obtiene inmueble federal para oficinas y acervo, con deberes de administración y conservación. Áreas de infraestructura deben separar asignación de uso de permisos necesarios para intervención física."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "Sedatu, INDAABIN y áreas de patrimonio deben atender destino, custodia, aseguramiento y permisos de obra previstos."
+        ],
+        "sector": "Administración inmobiliaria federal"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791565&fecha=24/06/2026",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "82dd492e984c05b7f8287fc3203586fdf5a530440f425e69ac24c20ac0442c5b",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/c34943480afa4ec466854903.json",
+    "detail_url": "notas/c34943480afa4ec466854903.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Acuerdo",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5791565",
+    "importance": 1,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-06-24",
+    "official_title": "Acuerdo por el que se destina a la Secretaría de Desarrollo Agrario, Territorial y Urbano, el Inmueble Federal denominado CENDI Carolina, con Registro Federal Inmobiliario 9- 3189-5, y superficie de 971.843 metros cuadrados, ubicado en calle Carolina número 77, Colonia Ciudad de los Deportes, Código Postal 03710, Alcaldía Benito Juárez, Ciudad de México.",
+    "published_at": "2026-06-24",
+    "relevance_score": 1,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5791565",
+    "summary_teaser": "INDAABIN destina el inmueble CENDI Carolina a la Secretaría de Desarrollo Agrario, Territorial y Urbano para oficinas de su Unidad de Asuntos Jurídicos y resguardo documental. El acuerdo define el uso institucional, conservación, autorizaciones de obra y devolución, sin transmitir el dominio del bien.",
+    "title": "INDAABIN establece destino de CENDI Carolina para Sedatu",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5791565&fecha=24/06/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Secretaría de Desarrollo Agrario, Territorial y Urbano",
+      "deadline": "Cuatro meses para poner inmueble a disposición de INDAABIN",
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "legal_basis": null,
+      "paragraphs": [
+        "Usar inmueble para oficinas y resguardo documental; obtener autorizaciones para obras y devolverlo si hay cambio de destino no autorizado o falta de necesidad."
+      ],
+      "trigger": "Si se proyecta intervención física o cambia o cesa uso autorizado"
+    }
+  ],
+  "schema_version": 8
+}

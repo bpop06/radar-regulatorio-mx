@@ -1,0 +1,136 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.sectors"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "heading": "Acceso oficial al manual",
+      "paragraphs": [
+        "La entidad comunica la página institucional y la ruta en el sitio del DOF donde puede consultarse el Manual de Organización de ASIPONA Dos Bocas."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Contenido y finalidad declarados",
+      "paragraphs": [
+        "Según el aviso, el manual ordena antecedentes, marco jurídico, estructura orgánica, código de ética, misión, visión, objetivos y funciones de puestos de mando; busca apoyar la gestión y evitar duplicidades."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "f3059ef27443c808142b303d060a65efa255e162f272da95f469c402d47da591",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "AVISO por el que se da a conocer la página institucional, donde puede consultarse el Manual de Organización de la Administración del Sistema Portuario Nacional Dos Bocas, S.A. de C.V.",
+        "location": "caracteres 0-187"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Marina.- Secretaría de Marina.- Unidad de Puertos y Marina Mercante.- Administración del Sistema Portuario Nacional Dos Bocas, S.A. de C.V.",
+        "location": "caracteres 187-2911"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5790440&fecha=12/06/2026",
+    "retrieved_at": "2026-08-13T19:44:16.633395+00:00"
+  },
+  "executive_summary": [
+    "ASIPONA Dos Bocas hizo públicas las rutas institucionales para consultar su Manual de Organización.",
+    "El aviso describe al manual como una guía de estructura, marco jurídico, objetivos y funciones de mando, orientada a apoyo administrativo, transparencia y prevención de duplicidades."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "paragraphs": [
+        "La publicación mejora la trazabilidad del instrumento organizativo al señalar dónde consultarlo oficialmente, pero por sí sola no prueba el contenido de una atribución particular."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "Quienes requieran verificar estructura o responsabilidades tienen una ruta oficial al manual, cuya consulta íntegra es necesaria para analizar una función específica."
+        ],
+        "sector": "Usuarios, personas servidoras públicas y contrapartes de ASIPONA Dos Bocas"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5790440&fecha=12/06/2026",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "5dc0042a6b090b6889f218e23c0e090da3afc9e3644c0b73415f80913e5cfc97",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/937ca2f51e4891b34a8026da.json",
+    "detail_url": "notas/937ca2f51e4891b34a8026da.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Aviso",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5790440",
+    "importance": 2,
+    "issuing_body": "Secretaría de Marina",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-06-12",
+    "official_title": "Aviso por el que se da a conocer la página institucional, donde puede consultarse el Manual de Organización de la Administración del Sistema Portuario Nacional Dos Bocas, S.A. de C.V.",
+    "published_at": "2026-06-12",
+    "relevance_score": 2,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5790440",
+    "summary_teaser": "La Administración del Sistema Portuario Nacional Dos Bocas informó las páginas institucionales para consultar su Manual de Organización. El aviso describe el documento como una guía de antecedentes, marco jurídico, estructura, misión, funciones y responsabilidades de mandos. La publicación facilita acceso al manual, pero no contiene por sí misma el texto íntegro de cada función ni modifica una atribución específica.",
+    "title": "ASIPONA Dos Bocas abre consulta de su manual organizativo",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5790440&fecha=12/06/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Personas que requieran verificar una atribución o responsabilidad de ASIPONA Dos Bocas",
+      "deadline": null,
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "legal_basis": "Aviso de difusión y marco normativo citado por la entidad",
+      "paragraphs": [
+        "Si una decisión depende de una función, estructura o responsabilidad, consulte el manual en las rutas oficiales señaladas y contraste la versión aplicable con la normativa correspondiente. Información jurídica general; el aviso de difusión no sustituye esa verificación."
+      ],
+      "trigger": "Necesidad de identificar una función o responsabilidad organizativa"
+    }
+  ],
+  "schema_version": 8
+}

@@ -1,0 +1,219 @@
+{
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "item": {
+    "ai_generated": true,
+    "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791259&fecha=22/06/2026",
+    "card_body": "## Qué se publicó\n\nHacienda autorizó a la Comisión Nacional Bancaria y de Valores a cobrar veinte aprovechamientos por servicios y vigilancia, con cuotas fijas o fórmulas diferenciadas según el servicio y la entidad supervisada.\n\n## Sustancia\n\nLa Unidad de Política de Ingresos no Tributarios y sobre Hidrocarburos de Hacienda autorizó a la Comisión Nacional Bancaria y de Valores a cobrar veinte aprovechamientos por prestación de servicios. El oficio refiere la solicitud 411-2/119/2026, folio 17 y proceso 697300 en DEPAMIN, y señala que los importes propuestos fueron determinados a partir del costo total del bien o servicio. La autorización se ubica en el marco del Código Fiscal de la Federación y de la Ley de Ingresos de la Federación para 2026.\n\nEl instrumento dispone que los ingresos generados por los conceptos autorizados deben concentrarse en la Tesorería de la Federación mediante las oficinas autorizadas, el sistema de pago electrónico aprobado por el SAT y las claves de referencia asignadas por la autoridad competente. La publicación no crea por sí sola una autorización individual para cada persona: identifica los conceptos que la CNBV puede cobrar bajo la naturaleza jurídica de aprovechamientos.\n\n## Fuente\n\nFuente oficial: Oficio 349-B-129 de la Unidad de Política de Ingresos no Tributarios y sobre Hidrocarburos de Hacienda, que autoriza a la CNBV a cobrar veinte aprovechamientos por prestación de servicios. La identificación y autorización constan en chunk-1; la tabla de conceptos, cuotas, formas de pago y reglas de vigilancia se desarrolla en chunk-2, chunk-3 y chunk-4.",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "2cb445508735606cd41196509bd77b5416212654433e9550bb263e3ac0321a7d",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-1",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-3",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-4",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/64cd3e6b6e7dcc72ef8f213e.json",
+    "detail_url": "notas/64cd3e6b6e7dcc72ef8f213e.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "heading": "Autorización y destino de los ingresos",
+        "paragraphs": [
+          "La Unidad de Política de Ingresos no Tributarios y sobre Hidrocarburos de Hacienda autorizó a la Comisión Nacional Bancaria y de Valores a cobrar veinte aprovechamientos por prestación de servicios. El oficio refiere la solicitud 411-2/119/2026, folio 17 y proceso 697300 en DEPAMIN, y señala que los importes propuestos fueron determinados a partir del costo total del bien o servicio. La autorización se ubica en el marco del Código Fiscal de la Federación y de la Ley de Ingresos de la Federación para 2026.",
+          "El instrumento dispone que los ingresos generados por los conceptos autorizados deben concentrarse en la Tesorería de la Federación mediante las oficinas autorizadas, el sistema de pago electrónico aprobado por el SAT y las claves de referencia asignadas por la autoridad competente. La publicación no crea por sí sola una autorización individual para cada persona: identifica los conceptos que la CNBV puede cobrar bajo la naturaleza jurídica de aprovechamientos."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-2",
+          "chunk-3"
+        ],
+        "heading": "Conceptos, cuotas y modalidades de pago",
+        "paragraphs": [
+          "La tabla incluye, entre otros, el estudio y trámite de solicitudes vinculadas con modelos novedosos, instituciones de fondos de pago electrónico e instituciones de financiamiento colectivo; para varios de esos servicios señala una cuota fija de 36,706 pesos, pagadera antes de la prestación. También incorpora cuotas por la creación de mecanismos electrónicos de negociación de acciones de fondos de inversión y por su autorización, además de conceptos de inspección y vigilancia para entidades y participantes definidos en el propio texto.",
+          "Para diversas entidades supervisadas, el documento prevé cuotas anuales, pagos en doce parcialidades y fechas de entero que dependen de la obtención de autorización o del primer día hábil mensual. Algunas categorías permiten pagar durante el primer trimestre con una disminución de cinco por ciento, con las condiciones expresamente indicadas. En ciertos supuestos de sociedades financieras de objeto múltiple, asesores en inversiones y otras figuras, la cuota se formula con variables como pasivos, cartera, activos administrados o número de clientes, e incluye mínimos específicos."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-3",
+          "chunk-4"
+        ],
+        "heading": "Alcance de la vigilancia y situaciones de pérdida de supervisión",
+        "paragraphs": [
+          "El oficio también enumera cuotas fijas o variables para vigilancia de subcontroladoras, participantes en redes de pagos con tarjeta, sociedades relacionadas con fondos de inversión, instituciones que valoran fondos y sociedades autorizadas para operar modelos novedosos. En el caso de una entidad que pierda el carácter de supervisada por un acto firme o por otro supuesto previsto en ley, el texto contempla que deje de estar obligada por los aprovechamientos de inspección y vigilancia desde que surta efectos la notificación o se actualice el supuesto legal.",
+          "Si el acto que produjo esa pérdida de supervisión queda sin efectos por resolución de autoridad competente, la publicación señala que deberán cubrirse las cuotas que se hubieran dejado de pagar conforme a las disposiciones aplicables. Las entidades sujetas a alguno de los veinte conceptos necesitan identificar el supuesto exacto de la tabla, la fórmula o cuota correspondiente y las reglas de pago antes de calcular o enterar un importe."
+        ]
+      }
+    ],
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Oficio Número",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "34d39e652ca5cf75c24a2e743dfa33fc24408b4c594df021a4025f8b55d0440f",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "OFICIO número 349-B-129 mediante el cual la Unidad de Política de Ingresos no Tributarios y sobre Hidrocarburos de la Subsecretaría de Ingresos de la Secretaría de Hacienda y Crédito Público autoriza a la Comisión Nacional Bancaria y de Valores, cobrar bajo la naturaleza jurídica de aprovechamientos, 20 aprovechamientos por concepto de Prestación de Servicios.",
+          "location": "caracteres 0-366"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Subsecretaría de Ingresos.- Unidad de Política de Ingresos no Tributarios y sobre Hidrocarburos.- Oficio No. 349-B-129. · parte 1",
+          "location": "caracteres 366-12366"
+        },
+        {
+          "id": "chunk-3",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Subsecretaría de Ingresos.- Unidad de Política de Ingresos no Tributarios y sobre Hidrocarburos.- Oficio No. 349-B-129. · parte 2",
+          "location": "caracteres 12366-24366"
+        },
+        {
+          "id": "chunk-4",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Subsecretaría de Ingresos.- Unidad de Política de Ingresos no Tributarios y sobre Hidrocarburos.- Oficio No. 349-B-129. · parte 3",
+          "location": "caracteres 24366-25219"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791259&fecha=22/06/2026",
+      "retrieved_at": "2026-08-13T19:43:51.633480+00:00"
+    },
+    "executive_summary": [
+      "La Unidad de Política de Ingresos no Tributarios y sobre Hidrocarburos de Hacienda autorizó a la Comisión Nacional Bancaria y de Valores a cobrar veinte aprovechamientos por prestación de servicios. El oficio refiere la solicitud 411-2/119/2026, folio 17 y proceso 697300 en DEPAMIN, y señala que los importes propuestos fueron determinados a partir del costo total del bien o servicio. La autorización se ubica en el marco del Código Fiscal de la Federación y de la Ley de Ingresos de la Federación para 2026.",
+      "El instrumento dispone que los ingresos generados por los conceptos autorizados deben concentrarse en la Tesorería de la Federación mediante las oficinas autorizadas, el sistema de pago electrónico aprobado por el SAT y las claves de referencia asignadas por la autoridad competente. La publicación no crea por sí sola una autorización individual para cada persona: identifica los conceptos que la CNBV puede cobrar bajo la naturaleza jurídica de aprovechamientos."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5791259",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2",
+          "chunk-3",
+          "chunk-4"
+        ],
+        "paragraphs": [
+          "La autorización ordena el marco de cobro de veinte servicios de la CNBV y distingue cuotas fijas de fórmulas de vigilancia, de modo que su efecto práctico depende del servicio, figura supervisada y supuesto de la tabla oficial."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-1",
+            "chunk-2",
+            "chunk-3",
+            "chunk-4"
+          ],
+          "paragraphs": [
+            "La autorización ordena el marco de cobro de veinte servicios de la CNBV y distingue cuotas fijas de fórmulas de vigilancia, de modo que su efecto práctico depende del servicio, figura supervisada y supuesto de la tabla oficial."
+          ],
+          "sector": "Entidades financieras y personas que solicitan servicios ante la CNBV"
+        }
+      ]
+    },
+    "importance": 1,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T13:53:50.681449+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791259&fecha=22/06/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5791259"
+    },
+    "official_published_at": "2026-06-22",
+    "official_title": "Oficio número 349-B-129 mediante el cual la Unidad de Política de Ingresos no Tributarios y sobre Hidrocarburos de la Subsecretaría de Ingresos de la Secretaría de Hacienda y Crédito Público autoriza a la Comisión Nacional Bancaria y de Valores, cobrar bajo la naturaleza jurídica de aprovechamientos, 20 aprovechamientos por concepto de Prestación de Servicios.",
+    "published_at": "2026-06-22",
+    "published_day": 22,
+    "published_month": 6,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Entidades financieras y personas que solicitan servicios ante la CNBV",
+        "deadline": null,
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2",
+          "chunk-3",
+          "chunk-4"
+        ],
+        "legal_basis": "Oficio 349-B-129; Ley de Ingresos de la Federación para 2026",
+        "paragraphs": [
+          "Si una entidad solicita o recibe un servicio incluido, debe cotejar el concepto exacto, la cuota o fórmula, la regla de pago y la clave de referencia aplicable antes de enterar el aprovechamiento."
+        ],
+        "trigger": "Al solicitar, recibir o quedar sujeto al concepto de servicio o vigilancia listado"
+      }
+    ],
+    "relevance_score": 1,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5791259",
+    "subtopic_tags": [],
+    "summary": "La Unidad de Política de Ingresos no Tributarios y sobre Hidrocarburos de Hacienda autorizó a la Comisión Nacional Bancaria y de Valores a cobrar veinte aprovechamientos por prestación de servicios. El oficio refiere la solicitud 411-2/119/2026, folio 17 y proceso 697300 en DEPAMIN, y señala que los importes propuestos fueron determinados a partir del costo total del bien o servicio. La autorización se ubica en el marco del Código Fiscal de la Federación y de la Ley de Ingresos de la Federación para 2026.\n\nEl instrumento dispone que los ingresos generados por los conceptos autorizados deben concentrarse en la Tesorería de la Federación mediante las oficinas autorizadas, el sistema de pago electrónico aprobado por el SAT y las claves de referencia asignadas por la autoridad competente. La publicación no crea por sí sola una autorización individual para cada persona: identifica los conceptos que la CNBV puede cobrar bajo la naturaleza jurídica de aprovechamientos.\n\nLa tabla incluye, entre otros, el estudio y trámite de solicitudes vinculadas con modelos novedosos, instituciones de fondos de pago electrónico e instituciones de financiamiento colectivo; para varios de esos servicios señala una cuota fija de 36,706 pesos, pagadera antes de la prestación. También incorpora cuotas por la creación de mecanismos electrónicos de negociación de acciones de fondos de inversión y por su autorización, además de conceptos de inspección y vigilancia para entidades y participantes definidos en el propio texto.\n\nPara diversas entidades supervisadas, el documento prevé cuotas anuales, pagos en doce parcialidades y fechas de entero que dependen de la obtención de autorización o del primer día hábil mensual. Algunas categorías permiten pagar durante el primer trimestre con una disminución de cinco por ciento, con las condiciones expresamente indicadas. En ciertos supuestos de sociedades financieras de objeto múltiple, asesores en inversiones y otras figuras, la cuota se formula con variables como pasivos, cartera, activos administrados o número de clientes, e incluye mínimos específicos.\n\nEl oficio también enumera cuotas fijas o variables para vigilancia de subcontroladoras, participantes en redes de pagos con tarjeta, sociedades relacionadas con fondos de inversión, instituciones que valoran fondos y sociedades autorizadas para operar modelos novedosos. En el caso de una entidad que pierda el carácter de supervisada por un acto firme o por otro supuesto previsto en ley, el texto contempla que deje de estar obligada por los aprovechamientos de inspección y vigilancia desde que surta efectos la notificación o se actualice el supuesto legal.\n\nSi el acto que produjo esa pérdida de supervisión queda sin efectos por resolución de autoridad competente, la publicación señala que deberán cubrirse las cuotas que se hubieran dejado de pagar conforme a las disposiciones aplicables. Las entidades sujetas a alguno de los veinte conceptos necesitan identificar el supuesto exacto de la tabla, la fórmula o cuota correspondiente y las reglas de pago antes de calcular o enterar un importe.",
+    "summary_teaser": "Hacienda autorizó a la Comisión Nacional Bancaria y de Valores cobrar veinte aprovechamientos por servicios y vigilancia. La publicación identifica cuotas fijas y fórmulas aplicables a actividades financieras específicas, así como reglas de pago, concentración en Tesorería y consecuencias para entidades que dejen de estar supervisadas.",
+    "title": "Hacienda autoriza veinte aprovechamientos de servicios de la CNBV",
+    "topic_tags": [
+      "Oficio"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5791259&fecha=22/06/2026"
+  },
+  "schema_version": 8
+}

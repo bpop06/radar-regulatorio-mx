@@ -1,0 +1,130 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    }
+  ],
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Alcance de la publicación",
+      "paragraphs": [
+        "La Unidad de Contrataciones Públicas de la Secretaría Anticorrupción y Buen Gobierno difundió el listado de bienes y servicios a consolidar durante 2027 y, de forma anticipada, durante 2028.",
+        "El listado incluye medallas, vales de despensa e insumos de limpieza para 2027; y, anticipadamente para 2028, vales, papel, combustible y servicios de aseguramiento de bienes, aeronaves, embarcaciones y parque vehicular. También actualiza los listados de 2026 y 2027 para sustituir dos procedimientos de blancos y ropa hospitalaria por una adquisición consolidada conjunta. Debe considerarse para programar contrataciones de las instituciones bajo administración de las personas destinatarias."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Seguimiento operativo",
+      "paragraphs": [
+        "Las áreas de adquisiciones de las dependencias y entidades destinatarias deben revisar el listado difundido al programar las contrataciones comprendidas.",
+        "La ficha no extiende el alcance del acto a supuestos que la fuente no identifica."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "49317fd4f006371a7d04420cbcea334274f1135a3265774152c737e31e3d667c",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "OFICIO Circular por el que se da a conocer a las dependencias, entidades y órganos administrativos desconcentrados de la Administración Pública Federal, el listado de bienes y servicios a consolidar para el ejercicio fiscal 2027, así como de manera anticipada para el ejercicio fiscal 2028; y la actualización del listado de bienes y servicios a consolidar para el ejercicio fiscal 2026, así como de manera anticipada para el ejercicio fiscal 2027.",
+        "location": "caracteres 0-452"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Buen Gobierno.- Secretaría Anticorrupción y Buen Gobierno.- Subsecretaría de Buen Gobierno.- Unidad de Contrataciones Públicas.",
+        "location": "caracteres 452-5518"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796632&fecha=19%2F08%2F2026",
+    "retrieved_at": "2026-09-01T16:35:17.793769+00:00"
+  },
+  "executive_summary": [
+    "La Unidad de Contrataciones Públicas de la Secretaría Anticorrupción y Buen Gobierno difundió el listado de bienes y servicios a consolidar durante 2027 y, de forma anticipada, durante 2028.",
+    "El listado incluye medallas, vales de despensa e insumos de limpieza para 2027; y, anticipadamente para 2028, vales, papel, combustible y servicios de aseguramiento de bienes, aeronaves, embarcaciones y parque vehicular. También actualiza los listados de 2026 y 2027 para sustituir dos procedimientos de blancos y ropa hospitalaria por una adquisición consolidada conjunta. Debe considerarse para programar contrataciones de las instituciones bajo administración de las personas destinatarias."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "paragraphs": [
+        "El listado incluye medallas, vales de despensa e insumos de limpieza para 2027; y, anticipadamente para 2028, vales, papel, combustible y servicios de aseguramiento de bienes, aeronaves, embarcaciones y parque vehicular. También actualiza los listados de 2026 y 2027 para sustituir dos procedimientos de blancos y ropa hospitalaria por una adquisición consolidada conjunta. Debe considerarse para programar contrataciones de las instituciones bajo administración de las personas destinatarias."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "La incidencia para este grupo se limita al alcance expresamente descrito en la publicación y requiere contrastarse con cada caso concreto."
+        ],
+        "sector": "Oficialías mayores y unidades de administración y finanzas destinatarias"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796632&fecha=19%2F08%2F2026",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "2fe2df0d8bc9477910fe9d4dd8e9c48887edbfed295fd6e339bf420bde3934c4",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/8d377c1fbceb84ad16659325.json",
+    "detail_url": "notas/8d377c1fbceb84ad16659325.html",
+    "detected_at": "2026-09-01T16:34:47.803209+00:00",
+    "document_type": "Oficio Circular",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5796632",
+    "importance": 2,
+    "issuing_body": "Presidencia de la República",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-08-19",
+    "official_title": "Oficio Circular por el que se da a conocer a las dependencias, entidades y órganos administrativos desconcentrados de la Administración Pública Federal, el listado de bienes y servicios a consolidar para el ejercicio fiscal 2027, así como de manera anticipada para el ejercicio fiscal 2028; y la actualización del listado de bienes y servicios a consolidar para el ejercicio fiscal 2026, así como de manera anticipada para el ejercicio fiscal 2027.",
+    "published_at": "2026-08-19",
+    "relevance_score": 3,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5796632",
+    "summary_teaser": "La Unidad de Contrataciones Públicas de la Secretaría Anticorrupción y Buen Gobierno difundió el listado de bienes y servicios a consolidar en 2027 y anticipadamente en 2028. También comunicó la actualización para 2026 y 2027, incluida la integración de blancos y ropa quirúrgica. El oficio sirve para programar contrataciones, no constituye una convocatoria ni adjudicación.",
+    "title": "Lista federal actualiza compras consolidadas para 2027 y 2028",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796632&fecha=19/08/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Oficialías mayores y unidades de administración y finanzas destinatarias",
+      "deadline": null,
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "legal_basis": null,
+      "paragraphs": [
+        "Las áreas de adquisiciones de las dependencias y entidades destinatarias deben revisar el listado difundido al programar las contrataciones comprendidas."
+      ],
+      "trigger": "Cuando la publicación resulte aplicable a la situación revisada."
+    }
+  ],
+  "schema_version": 8
+}

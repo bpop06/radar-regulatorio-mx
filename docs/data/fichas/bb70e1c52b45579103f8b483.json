@@ -1,0 +1,139 @@
+{
+  "coverage": [
+    {
+      "disposition": "not_material",
+      "reason": "Repite el encabezado del acuerdo; la autorización y sus condiciones están desarrolladas en el cuerpo.",
+      "source_ref": "chunk-1",
+      "target_sections": []
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Autorización patrimonial, no convocatoria",
+      "paragraphs": [
+        "Se desincorpora el inmueble del dominio público y se autoriza su enajenación Ad Corpus, onerosa y mediante licitación pública. La fuente no publica bases, requisitos de participación ni fechas del procedimiento."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Precio y costos de una eventual adquisición",
+      "paragraphs": [
+        "El pago debe hacerse en una sola exhibición y no puede ser menor al dictamen valuatorio de INDAABIN. Los impuestos, derechos, honorarios y gastos derivados de la operación corresponden al adquirente."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Antecedentes del inmueble",
+      "paragraphs": [
+        "El acuerdo ubica el predio, refiere el uso de suelo agropecuario y documenta que no tiene las protecciones artísticas o históricas señaladas en los considerandos."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "9c5cc1182f16a0ce1c1266633967517291347ddfee43fa5d1a7415fca6bd9839",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "ACUERDO por el que se desincorpora del régimen de dominio público de la Federación, para su enajenación Ad Corpus a título oneroso, mediante licitación pública, el inmueble federal denominado \" Productora Nacional de Semillas \" , con una superficie de terreno de 4-03-20 hectáreas, con Registro Federal Inmobiliario 2-2357-9, ubicado en Carretera Federal número 5, Mexicali-San Felipe km 14+/-500, sin número, Lote 28 Fracción Porción Intermedia, Colonia 4 División 2 (Colorado IV), Código Postal 21703, Municipio de Mexicali, Estado de Baja California.",
+        "location": "caracteres 0-557"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Instituto de Administración y Avalúos de Bienes Nacionales.- AD-014-2026.",
+        "location": "caracteres 557-11009"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5794670&fecha=24%2F07%2F2026",
+    "retrieved_at": "2026-08-14T00:36:36.258323+00:00"
+  },
+  "executive_summary": [
+    "La Federación autorizó que INDAABIN enajene mediante licitación pública un predio de 4-03-20 hectáreas en Mexicali.",
+    "El acuerdo no abre ni calendariza una licitación; sólo fija la autorización, la regla de precio mínimo valuatorio y la asignación de costos al adquirente."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "paragraphs": [
+        "La medida habilita a INDAABIN para instrumentar una venta futura, sin crear todavía derechos de participación para potenciales postores."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "Deben distinguir entre la autorización de enajenar y la eventual convocatoria que contenga bases y condiciones de una licitación."
+        ],
+        "sector": "Interesados en inmuebles federales y asesores patrimoniales"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5794670&fecha=24%2F07%2F2026",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "96251071625282c5a8f35d4c9aca0cf9113af1adc1b2c943ce2fdc54a9e84472",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/bb70e1c52b45579103f8b483.json",
+    "detail_url": "notas/bb70e1c52b45579103f8b483.html",
+    "detected_at": "2026-08-14T01:46:44.993982+00:00",
+    "document_type": "Acuerdo",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5794670",
+    "importance": 1,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-07-24",
+    "official_title": "Acuerdo por el que se desincorpora del régimen de dominio público de la Federación, para su enajenación Ad Corpus a título oneroso, mediante licitación pública, el inmueble federal denominado \"Productora Nacional de Semillas\", con una superficie de terreno de 4-03-20 hectáreas, con Registro Federal Inmobiliario 2-2357-9, ubicado en Carretera Federal número 5, Mexicali- San Felipe km 14+/-500, sin número, Lote 28 Fracción Porción Intermedia, Colonia 4 División 2 (Colorado IV), Código Postal 21703, Municipio de Mexicali, Estado de Baja California.",
+    "published_at": "2026-07-24",
+    "relevance_score": 1,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5794670",
+    "summary_teaser": "El Gobierno Federal desincorporó un predio de 4-03-20 hectáreas en Mexicali y autorizó su enajenación onerosa Ad Corpus mediante licitación pública. El acuerdo no publica una convocatoria, bases ni fechas de participación. El eventual adquirente deberá cubrir el precio en una exhibición y asumir impuestos, derechos, honorarios y gastos de la operación.",
+    "title": "INDAABIN autoriza enajenación de predio federal en Mexicali",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5794670&fecha=24/07/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Personas interesadas en la eventual operación",
+      "deadline": null,
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "legal_basis": null,
+      "paragraphs": [
+        "Monitoreen la publicación de una convocatoria o bases específicas antes de preparar documentación o asumir condiciones de participación; el acuerdo no fija un calendario ni requisitos de postulación."
+      ],
+      "trigger": "Publicación de una eventual convocatoria de licitación"
+    }
+  ],
+  "schema_version": 8
+}

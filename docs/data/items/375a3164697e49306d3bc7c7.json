@@ -1,0 +1,166 @@
+{
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "item": {
+    "ai_generated": true,
+    "authority": "PODER EJECUTIVO SECRETARIA ANTICORRUPCION Y BUEN GOBIERNO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791849&fecha=26/06/2026",
+    "card_body": "## Qué se publicó\n\nEl Diario Oficial de la Federación publicó una circular que comunica el cumplimiento de una medida cautelar sobre la publicación de una sanción a Hima Promotions, S.A. de C.V.\n\n## Sustancia\n\nLa circular distingue la negativa de suspensión provisional respecto de la inhabilitación de un año de la medida precautoria para abstenerse de publicar o suprimir la publicación de la sanción mientras se resuelve el incidente.\n\n## Fuente\n\nLa fuente oficial es el Diario Oficial de la Federación. El acto revisado es la circular de cumplimiento de la suspensión provisional decretada por la Sexta Sala Regional en la Ciudad de México del TFJA.",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Penal",
+      "Administración centralizada"
+    ],
+    "content_hash": "0db89e46371a1470efb781fad630bb8fa6d6076c2c84fe3fad27bbc0e6f876c5",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "not_material",
+        "reason": "El primer locator sólo identifica la comunicación; distinción entre negativa y cautelar está en fragmento sustantivo.",
+        "source_ref": "chunk-1",
+        "target_sections": []
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/375a3164697e49306d3bc7c7.json",
+    "detail_url": "notas/375a3164697e49306d3bc7c7.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "heading": "Contenido diferenciado",
+        "paragraphs": [
+          "La fuente distingue negativa de suspensión provisional contra inhabilitación de un año por orden público e interés social, y concesión cautelar relativa a publicidad. El alcance temporal de esta última queda ligado a resolución del incidente de suspensión."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "heading": "Acto de publicidad sin efectos",
+        "paragraphs": [
+          "El Órgano Interno de Control en IMSS informa que, para cumplir orden, deja sin efectos circular de inhabilitación publicada 6 de mayo de 2026 dentro del expediente PISI-A-NC-DS-0001/2025. La medida se conecta con publicación, no con cancelación definitiva de fundamento administrativo."
+        ]
+      }
+    ],
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Circular",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "e284b300fda756ea15f2607544dd085bbd7074dfd7d1cd2a3233e9aaaa3d8ac0",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "CIRCULAR por la que se comunica a las dependencias y entidades de la Administración Pública Federal, empresas públicas del Estado, a la Fiscalía General de la República, a las entidades federativas y sus municipios, así como a las demarcaciones territoriales de la Ciudad de México, el cumplimiento a la suspensión provisional, decretada por la Sexta Sala Regional en la Ciudad de México del Tribunal Federal de Justicia Administrativa, en el juicio de nulidad 10988/26-17-06-3 , interpuesto por la representación legal de la empresa Hima Promotions, S.A. de C.V. , en donde se controvierte la resolución del primero de abril de dos mil veintiséis, emitida dentro del expediente administrativo número PISI-A-NC-DS-0001/2025.",
+          "location": "caracteres 0-728"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Buen Gobierno.- Secretaría Anticorrupción y Buen Gobierno.- Órgano Interno de Control en el Instituto Mexicano del Seguro Social.- Área de Responsabilidades.- Expedientes: PISI-A-NC-DS-0001/2025.- No. Int.: JN-31/2026.",
+          "location": "caracteres 728-3981"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791849&fecha=26/06/2026",
+      "retrieved_at": "2026-08-13T19:43:44.036792+00:00"
+    },
+    "executive_summary": [
+      "La publicación comunica cumplimiento de una medida provisional dictada por la Sexta Sala Regional en la Ciudad de México del TFJA. La resolución negó suspensión provisional respecto de la inhabilitación por un año impuesta a Hima Promotions, S.A. de C.V.",
+      "Al mismo tiempo, concedió medida cautelar provisional para abstenerse de publicar la sanción en Diario Oficial y Compranet, o retirar publicaciones existentes, mientras se resuelve incidente de suspensión. La medida no declara nulidad de la sanción."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5791849",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "Autoridades que administran registros de sanciones deben atender alcance exacto de medida cautelar. Para empresa y terceros, texto confirma que publicidad se trata separadamente de inhabilitación."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-2"
+          ],
+          "paragraphs": [
+            "Áreas de control interno y plataformas de contratación deben diferenciar retirada temporal de publicaciones de subsistencia de sanción mientras continúa incidente."
+          ],
+          "sector": "Contratación pública y responsabilidad administrativa"
+        }
+      ]
+    },
+    "importance": 3,
+    "issuing_body": "Presidencia de la República",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T13:53:50.681449+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791849&fecha=26/06/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5791849"
+    },
+    "official_published_at": "2026-06-26",
+    "official_title": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, empresas públicas del Estado, a la Fiscalía General de la República, a las entidades federativas y sus municipios, así como a las demarcaciones territoriales de la Ciudad de México, el cumplimiento a la suspensión provisional, decretada por la Sexta Sala Regional en la Ciudad de México del Tribunal Federal de Justicia Administrativa, en el juicio de nulidad 10988/26-17-06-3, interpuesto por la representación legal de la empresa Hima Promotions, S.A. de C.V., en donde se controvierte la resolución del primero de abril de dos mil veintiséis, emitida dentro del expediente administrativo número PISI-A-NC-DS-0001/2025.",
+    "published_at": "2026-06-26",
+    "published_day": 26,
+    "published_month": 6,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Autoridades destinatarias de medida cautelar",
+        "deadline": null,
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "legal_basis": null,
+        "paragraphs": [
+          "Abstenerse de publicar sanción o retirar publicaciones existentes en medios identificados, respetando que orden se refiere a publicidad y no declara sin efectos inhabilitación."
+        ],
+        "trigger": "Mientras se resuelve incidente de suspensión"
+      }
+    ],
+    "relevance_score": 5,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5791849",
+    "subtopic_tags": [
+      "fiscalia",
+      "administracion publica federal",
+      "juicio de nulidad",
+      "tribunal federal de justicia administrativa",
+      "sala regional"
+    ],
+    "summary": "La publicación comunica cumplimiento de una medida provisional dictada por la Sexta Sala Regional en la Ciudad de México del TFJA. La resolución negó suspensión provisional respecto de la inhabilitación por un año impuesta a Hima Promotions, S.A. de C.V.\n\nAl mismo tiempo, concedió medida cautelar provisional para abstenerse de publicar la sanción en Diario Oficial y Compranet, o retirar publicaciones existentes, mientras se resuelve incidente de suspensión. La medida no declara nulidad de la sanción.\n\nLa fuente distingue negativa de suspensión provisional contra inhabilitación de un año por orden público e interés social, y concesión cautelar relativa a publicidad. El alcance temporal de esta última queda ligado a resolución del incidente de suspensión.\n\nEl Órgano Interno de Control en IMSS informa que, para cumplir orden, deja sin efectos circular de inhabilitación publicada 6 de mayo de 2026 dentro del expediente PISI-A-NC-DS-0001/2025. La medida se conecta con publicación, no con cancelación definitiva de fundamento administrativo.\n\nEl documento tiene naturaleza cautelar y provisional. La diferencia entre inhabilitación y difusión pública evita leerlo como resolución de fondo o exoneración. La fuente sitúa abstención o retiro de publicidad hasta que se emita interlocutoria del incidente, sin aportar una fecha de resolución. Por eso la actuación de registro debe separarse de la situación material de la sanción que la sala no suspendió provisionalmente.\n\nAutoridades que administran registros de sanciones deben atender alcance exacto de medida cautelar. Para empresa y terceros, texto confirma que publicidad se trata separadamente de inhabilitación. Áreas de control interno y plataformas de contratación deben diferenciar retirada temporal de publicaciones de subsistencia de sanción mientras continúa incidente.\n\nEl alcance cautelar informado se limita a la publicidad de la sanción y rige mientras se resuelve el incidente de suspensión. La fuente conserva separada la negativa de suspensión provisional respecto de la inhabilitación.",
+    "summary_teaser": "Una circular comunica una medida cautelar provisional relacionada con la publicación de una sanción de inhabilitación impuesta a Hima Promotions, S.A. de C.V. La Sexta Sala Regional en la Ciudad de México distinguió esa medida de la negativa de suspensión provisional frente a la inhabilitación.",
+    "title": "TFJA dispone medida cautelar sobre publicación de sanción a Hima Promotions",
+    "topic_tags": [
+      "Penal",
+      "Derecho administrativo",
+      "Contencioso administrativo",
+      "Resolución",
+      "Circular"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5791849&fecha=26/06/2026"
+  },
+  "schema_version": 8
+}

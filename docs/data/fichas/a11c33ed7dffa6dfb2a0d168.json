@@ -1,0 +1,152 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-3",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    }
+  ],
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-1"
+      ],
+      "heading": "Naturaleza y primer tramo",
+      "paragraphs": [
+        "El primer locator identifica la comunicación como información previa para usuarios y no como el aviso del Diario Oficial. Explica la obligación anual IMMEX y comienza listado con datos de titulares que, según el documento, no presentaron reporte de 2025."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Continuación individualizada",
+      "paragraphs": [
+        "El segundo fragmento continúa empresas y RFC asociados a la omisión. Permite cotejar registros específicos, pero no extender el estatus comunicado a quienes no aparezcan en la lista oficial reproducida."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-3"
+      ],
+      "heading": "Subsanación y cancelación",
+      "paragraphs": [
+        "El tramo final completa registros y señala que la suspensión puede dejarse sin efectos dentro de dos días hábiles tras subsanar. Fija último día hábil de agosto de 2026 y menciona cancelación desde 1 de septiembre si no se cumple."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "ccd823d0d654c2e6a330496818b1df9671b6f8513ade2acc048b080f5655d811",
+    "extraction_method": "pdf-inspector",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "Documento · parte 1",
+        "location": "caracteres 0-12000"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Documento · parte 2",
+        "location": "caracteres 12000-24000"
+      },
+      {
+        "id": "chunk-3",
+        "label": "Documento · parte 3",
+        "location": "caracteres 24000-34503"
+      }
+    ],
+    "official_url": "https://www.snice.gob.mx/~oracle/SNICE_DOCS/IMMEX_SUSPENDIDOS_2026-ACTUALIDAD_20260626-20260626.pdf",
+    "retrieved_at": "2026-08-13T19:37:43.478068+00:00"
+  },
+  "executive_summary": [
+    "La comunicación de SNICE informa anticipadamente una relación de titulares IMMEX suspendidos por no presentar el reporte anual de operaciones de 2025. El propio texto aclara que tiene carácter informativo y que el aviso correspondiente será publicado en el Diario Oficial de la Federación.",
+    "La fuente reproduce la ruta de regularización: presentar reporte de ventas totales y exportaciones del ejercicio anterior, dejar sin efectos la suspensión tras subsanar y evitar la cancelación definitiva prevista si la omisión continúa al terminar agosto de 2026."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-1"
+      ],
+      "paragraphs": [
+        "Titulares IMMEX pueden usar la comunicación para revisar anticipadamente su situación, pero deben distinguirla del aviso DOF que el portal anuncia. Es relevante para reportes 2025 y para evitar que suspensión evolucione a cancelación."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-1"
+        ],
+        "paragraphs": [
+          "Empresas IMMEX y asesores pueden cotejar datos del listado y preparar reporte anual, con el carácter informativo declarado por SNICE."
+        ],
+        "sector": "Comercio exterior e IMMEX"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://www.snice.gob.mx/~oracle/SNICE_DOCS/IMMEX_SUSPENDIDOS_2026-ACTUALIDAD_20260626-20260626.pdf",
+    "categories": [
+      "Comercio exterior",
+      "Administración centralizada"
+    ],
+    "content_hash": "5689008e9bf43ec5349fc3f63631126008add65f9fbc3c05d3451b4107b172a9",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/a11c33ed7dffa6dfb2a0d168.json",
+    "detail_url": "notas/a11c33ed7dffa6dfb2a0d168.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Actualidad",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "snice:cdf15f1048aee277",
+    "importance": 1,
+    "issuing_body": "Secretaría de Economía",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-06-26",
+    "official_title": "Comunicado IMMEX suspendidas 2026.",
+    "published_at": "2026-06-26",
+    "relevance_score": 1,
+    "review_reason": null,
+    "source": "SNICE",
+    "source_id": "cdf15f1048aee277",
+    "summary_teaser": "SNICE publica una comunicación informativa sobre titulares IMMEX suspendidos por omitir el reporte anual de 2025. El texto anticipa que el aviso se difundirá en el Diario Oficial de la Federación y describe la regularización antes del último día hábil de agosto de 2026.",
+    "title": "SNICE aclara carácter informativo del listado IMMEX suspendido",
+    "url": "https://www.snice.gob.mx/~oracle/SNICE_DOCS/IMMEX_SUSPENDIDOS_2026-ACTUALIDAD_20260626-20260626.pdf"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Titulares IMMEX en la relación informativa",
+      "deadline": "Último día hábil de agosto de 2026; cancelación desde 1 de septiembre si no se subsana",
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-3"
+      ],
+      "legal_basis": "Artículo 25 del Decreto IMMEX, citado",
+      "paragraphs": [
+        "Revisar registro individual y, si subsiste omisión, presentar reporte anual 2025; seguir también publicación formal que comunicación anuncia. La fuente indica levantamiento tras subsanar."
+      ],
+      "trigger": "Si el titular figura por falta del reporte anual"
+    }
+  ],
+  "schema_version": 8
+}

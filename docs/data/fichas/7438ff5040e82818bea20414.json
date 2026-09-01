@@ -1,0 +1,151 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-3",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-3"
+      ],
+      "heading": "Contenido publicado",
+      "paragraphs": [
+        "La ANAM y la Marina informaron el aseguramiento de un cargamento de cigarros provenientes de Vietnam, descritos oficialmente como presuntamente apócrifos."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-3"
+      ],
+      "heading": "Alcance práctico",
+      "paragraphs": [
+        "La fuente atribuye la detección a análisis de riesgo, revisión documental, antecedentes comerciales y verificación de perfiles operativos."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "2aa6c8efe2ab298cc4a351ade9017bde0600cd5a33850822dd12e1a5297caf27",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "Preámbulo",
+        "location": "caracteres 0-2283"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Marina y ANAM aseguran más de 52 millones de cigarros apócrifos en Aduana de Michoacán",
+        "location": "caracteres 2283-2412"
+      },
+      {
+        "id": "chunk-3",
+        "label": "Comunicado de prensa conjunto 63/2026",
+        "location": "caracteres 2412-4587"
+      }
+    ],
+    "official_url": "https://www.anam.gob.mx/comunicado-prensa-63-2026",
+    "retrieved_at": "2026-09-01T16:35:21.187269+00:00"
+  },
+  "executive_summary": [
+    "La Agencia Nacional de Aduanas de México, en coordinación con la Secretaría de Marina, autoridades del Gabinete de Seguridad y la Unidad Administrativa de la Aduana de Lázaro Cárdenas, informó que identificó y aseguró durante una operación de transbordo un cargamento proveniente de Vietnam. El comunicado refiere cincuenta y dos millones quinientos mil cigarros que describe como presuntamente apócrifos. La calificación de presuntamente es relevante: la fuente no comunica en este texto una resolución administrativa o judicial definitiva sobre autenticidad, propiedad o responsabilidades.",
+    "Según el comunicado conjunto, la operación fue detectada mediante mecanismos institucionales de análisis de riesgo y control aduanero. La autoridad menciona análisis documental, revisión de antecedentes comerciales y verificación de perfiles operativos. También presenta la acción como parte de mecanismos permanentes de inteligencia operativa, gestión de riesgo y análisis estratégico orientados a identificar inconsistencias documentales, perfiles atípicos y operaciones susceptibles de revisión especializada."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-3"
+      ],
+      "paragraphs": [
+        "La comunicación ilustra el uso de controles aduaneros para revisar operaciones de comercio exterior y detectar inconsistencias documentales."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-3"
+        ],
+        "paragraphs": [
+          "Los operadores pueden reforzar la congruencia documental y la trazabilidad de sus operaciones, sin tratar el comunicado como determinación definitiva sobre un tercero."
+        ],
+        "sector": "Importadores, agentes y operadores de comercio exterior"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://www.anam.gob.mx/comunicado-prensa-63-2026",
+    "categories": [
+      "Comercio exterior"
+    ],
+    "content_hash": "e68c0e92179bfee30b0de156358d2bb30a7215d327e9e0aa75aabf375b5a9702",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/7438ff5040e82818bea20414.json",
+    "detail_url": "notas/7438ff5040e82818bea20414.html",
+    "detected_at": "2026-09-01T16:34:47.803209+00:00",
+    "document_type": "Comunicado",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "anam:41a5756148946bba",
+    "importance": 2,
+    "issuing_body": "Agencia Nacional de Aduanas de México",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-08-20",
+    "official_title": "Marina y ANAM asegura más de 52 millones de cigarros apócrifos en Aduana de Michoacán",
+    "published_at": "2026-08-20",
+    "relevance_score": 2,
+    "review_reason": null,
+    "source": "ANAM",
+    "source_id": "41a5756148946bba",
+    "summary_teaser": "La Agencia Nacional de Aduanas de México y la Secretaría de Marina informaron el aseguramiento de un cargamento proveniente de Vietnam con cincuenta y dos millones quinientos mil cigarros descritos como presuntamente apócrifos. El comunicado atribuye la detección a análisis de riesgo, revisión documental y verificación de perfiles operativos.",
+    "title": "ANAM confirma aseguramiento de cigarros presuntamente apócrifos en Lázaro Cárdenas",
+    "url": "https://www.anam.gob.mx/comunicado-prensa-63-2026/"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Importadores, agentes y operadores de comercio exterior",
+      "deadline": null,
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-3"
+      ],
+      "legal_basis": null,
+      "paragraphs": [
+        "Revisar controles de trazabilidad, documentación comercial y perfiles operativos en operaciones de mayor exposición a revisión aduanera."
+      ],
+      "trigger": "Operar importaciones, transbordos o movimientos sujetos a control aduanero"
+    }
+  ],
+  "schema_version": 8
+}

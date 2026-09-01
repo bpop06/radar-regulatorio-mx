@@ -1,0 +1,139 @@
+{
+  "coverage": [
+    {
+      "disposition": "not_material",
+      "reason": "No aporta contenido más allá del encabezado.",
+      "source_ref": "chunk-1",
+      "target_sections": []
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Artículo 171 y criterios por emergencia",
+      "paragraphs": [
+        "El formato de criterios o prórroga requiere declaratoria de emergencia o desastre, afectación económica e impacto posible en solvencia, liquidez o estabilidad, con detalle de medidas y persistencia para prórroga."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Artículo 171 Bis y registros corporativos",
+      "paragraphs": [
+        "Los registros especiales exigen un proceso de saneamiento financiero o reestructuración corporativa, rubros e importes, indicadores, remedios y aprobación del consejo u órgano competente."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Respuesta de la Comisión",
+      "paragraphs": [
+        "Mientras se decide en sesenta días hábiles, continúa el Anexo 5. La falta de emisión o notificación convierte la petición en negativa y desestimada."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "b3f44929dac4937363bd2b14d01d80e8f4122fe3e9965064a85cd6185d51f53e",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "RESOLUCIÓN que modifica las Disposiciones de carácter general aplicables a las casas de bolsa.",
+        "location": "caracteres 0-98"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Comisión Nacional Bancaria y de Valores.",
+        "location": "caracteres 98-8113"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792665&fecha=06/07/2026",
+    "retrieved_at": "2026-08-13T19:43:16.350943+00:00"
+  },
+  "executive_summary": [
+    "El Anexo 20 regula dos solicitudes de casas de bolsa: criterios especiales bajo emergencia o desastre con afectación económica adversa y registros especiales bajo saneamiento financiero o reestructuración corporativa.",
+    "La CNBV tiene sesenta días hábiles para decidir; sin notificación, la casa de bolsa debe seguir el Anexo 5 y la solicitud se entiende negativa."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "paragraphs": [
+        "Las casas de bolsa conservan sus criterios ordinarios durante la tramitación y deben sustentar una causal cerrada antes de pretender una autorización contable especial."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "Deben elegir el formato según la causal verificable y reunir la evidencia de afectación declarada o del proceso de saneamiento o reestructuración."
+        ],
+        "sector": "Casas de bolsa, representantes legales y áreas de cumplimiento financiero"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792665&fecha=06/07/2026",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "1892267fbbc8e89ffb70e0307b0ff170fd2dc393c2ef053ed014ac453665589d",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/22913b7e843f7f31595e3000.json",
+    "detail_url": "notas/22913b7e843f7f31595e3000.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Resolución Que Modifica",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5792665",
+    "importance": 1,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-07-06",
+    "official_title": "Resolución que modifica las Disposiciones de carácter general aplicables a las casas de bolsa.",
+    "published_at": "2026-07-06",
+    "relevance_score": 1,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5792665",
+    "summary_teaser": "La CNBV añadió el Anexo 20 para casas de bolsa con solicitudes separadas de criterios y registros contables especiales. Los criterios del artículo 171 requieren declaratoria de emergencia o desastre con afectación económica adversa; los registros del 171 Bis se reservan a saneamiento financiero o reestructuración corporativa. La reforma no crea un trámite genérico de excepción contable.",
+    "title": "CNBV establece formatos condicionados para casas de bolsa",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5792665&fecha=06/07/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Casas de bolsa",
+      "deadline": null,
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "legal_basis": "Artículos 171 y 171 Bis, y Anexo 20",
+      "paragraphs": [
+        "No utilicen el Anexo 20 como solicitud genérica: acrediten la declaratoria de emergencia o desastre y afectación adversa para criterios, o el proceso de saneamiento o reestructuración para registros."
+      ],
+      "trigger": "Valoración de una solicitud contable especial"
+    }
+  ],
+  "schema_version": 8
+}

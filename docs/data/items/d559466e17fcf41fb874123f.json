@@ -1,0 +1,152 @@
+{
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "item": {
+    "ai_generated": true,
+    "authority": "CONVOCATORIAS PARA CONCURSOS DE ADQUISICIONES, ARRENDAMIENTOS, OBRAS Y SERVICIOS DEL SECTOR PUBLICO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792923&fecha=07/07/2026",
+    "card_body": "## Qué se publicó\n\nLa Agencia Nacional de Aduanas de México abrió una licitación electrónica para telefonía IP y troncales SIP.\n\n## Sustancia\n\nEl procedimiento LA-06-H00-006H00999-N-19-2026 tiene calendario oficial de aclaraciones, apertura y fallo. La convocatoria inicia la competencia; no comunica un proveedor ganador ni un contrato.\n\n## Fuente\n\n[Fuente oficial](https://dof.gob.mx/nota_detalle.php?codigo=5792923&fecha=07/07/2026)",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Comercio exterior"
+    ],
+    "content_hash": "ba0a46c9230f140be2a6d32322119941766babe40a20307181f191f519fe9be7",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-1",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/d559466e17fcf41fb874123f.json",
+    "detail_url": "notas/d559466e17fcf41fb874123f.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-1"
+        ],
+        "heading": "Procedimiento convocado",
+        "paragraphs": [
+          "La Agencia Nacional de Aduanas de México convocó la licitación pública nacional electrónica LA-06-H00-006H00999-N-19-2026 para la continuidad operativa del servicio de telefonía IP con troncales SIP 2.0, COSIP 2.0.",
+          "La convocatoria remite a Compras MX para bases, requisitos, modelos contractuales y, en su caso, el detalle técnico de las partidas."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-1"
+        ],
+        "heading": "Fechas y límite del aviso",
+        "paragraphs": [
+          "Las etapas publicadas son: aclaraciones 7 de julio de 2026 a las 11:00 horas, presentación y apertura 14 de julio de 2026 a las 11:00 horas y fallo 16 de julio de 2026 a las 17:00 horas. Las bases pueden consultarse en Compras MX y en el domicilio de la convocante.",
+          "El aviso no contiene adjudicación ni contrato; esos resultados dependen de los actos posteriores del procedimiento."
+        ]
+      }
+    ],
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Agencia Nacional",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "75441ed48d4bf3b977a041885d8a5e98d23a0aa84903de62d389fd5b6e998217",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "Documento",
+          "location": "caracteres 0-1346"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792923&fecha=07/07/2026",
+      "retrieved_at": "2026-08-13T19:43:00.753933+00:00"
+    },
+    "executive_summary": [
+      "La Agencia Nacional de Aduanas de México difundió una convocatoria de licitación pública nacional electrónica para la continuidad operativa del servicio de telefonía IP con troncales SIP 2.0, COSIP 2.0. El identificador del procedimiento es LA-06-H00-006H00999-N-19-2026 y las bases, requisitos de participación, modelo contractual y detalle de partidas se remiten a Compras MX o a los medios de consulta que la convocatoria señala.",
+      "El calendario publicado fija la difusión en Compras MX el 3 de julio de 2026, junta de aclaraciones el 7 de julio de 2026 a las 11:00 horas, presentación y apertura de proposiciones el 14 de julio de 2026 a las 11:00 horas y fallo el 16 de julio de 2026 a las 17:00 horas. Las bases pueden consultarse en Compras MX y en el domicilio de la convocante."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5792923",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-1"
+        ],
+        "paragraphs": [
+          "La convocatoria habilita la participación en un procedimiento de contratación identificado y fija fechas que deben revisarse directamente en Compras MX."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-1"
+          ],
+          "paragraphs": [
+            "Proveedores y áreas compradoras pueden ubicar la oportunidad con el número de licitación y distinguir el aviso inicial de una eventual adjudicación o formalización."
+          ],
+          "sector": "Compras públicas"
+        }
+      ]
+    },
+    "importance": 2,
+    "issuing_body": "Agencia Nacional de Aduanas de México",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T13:53:50.681449+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792923&fecha=07/07/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5792923"
+    },
+    "official_published_at": "2026-07-07",
+    "official_title": "AGENCIA NACIONAL DE ADUANAS DE MEXICO - REF:578100",
+    "published_at": "2026-07-07",
+    "published_day": 7,
+    "published_month": 7,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Personas proveedoras y áreas de adquisiciones",
+        "deadline": "Presentación y apertura de proposiciones: 14 de julio de 2026 a las 11:00 horas",
+        "evidence_refs": [
+          "chunk-1"
+        ],
+        "legal_basis": "Artículo 41 de la Ley de Adquisiciones, Arrendamientos y Servicios del Sector Público",
+        "paragraphs": [
+          "Si existe interés en participar, consulte las bases de LA-06-H00-006H00999-N-19-2026 en Compras MX y confirme requisitos, anexos y cambios derivados de la junta de aclaraciones antes de presentar una proposición."
+        ],
+        "trigger": "Publicación de la convocatoria en Compras MX"
+      }
+    ],
+    "relevance_score": 2,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5792923",
+    "subtopic_tags": [
+      "agencia nacional de aduanas"
+    ],
+    "summary": "La Agencia Nacional de Aduanas de México difundió una convocatoria de licitación pública nacional electrónica para la continuidad operativa del servicio de telefonía IP con troncales SIP 2.0, COSIP 2.0. El identificador del procedimiento es LA-06-H00-006H00999-N-19-2026 y las bases, requisitos de participación, modelo contractual y detalle de partidas se remiten a Compras MX o a los medios de consulta que la convocatoria señala.\n\nEl calendario publicado fija la difusión en Compras MX el 3 de julio de 2026, junta de aclaraciones el 7 de julio de 2026 a las 11:00 horas, presentación y apertura de proposiciones el 14 de julio de 2026 a las 11:00 horas y fallo el 16 de julio de 2026 a las 17:00 horas. Las bases pueden consultarse en Compras MX y en el domicilio de la convocante.\n\nLa publicación sólo abre el procedimiento competitivo y no acredita una adjudicación, contrato formalizado, proveedor seleccionado, inicio del servicio ni pago. El alcance material queda delimitado por la continuidad operativa del servicio de telefonía IP con troncales SIP 2.0, COSIP 2.0, mientras que cantidades, especificaciones y condiciones técnicas se reservan a la convocatoria y, cuando aplica, al anexo técnico.\n\nLas personas interesadas deben utilizar el número de licitación y el calendario para localizar las bases vigentes y preparar una participación conforme a los requisitos oficiales. Las áreas que den seguimiento al proceso pueden verificar después las actas y el fallo en la plataforma, diferenciando la convocatoria inicial de los actos posteriores que eventualmente se publiquen.\n\nLa Agencia Nacional de Aduanas de México convocó la licitación pública nacional electrónica LA-06-H00-006H00999-N-19-2026 para la continuidad operativa del servicio de telefonía IP con troncales SIP 2.0, COSIP 2.0. La convocatoria remite a Compras MX para bases, requisitos, modelos contractuales y, en su caso, el detalle técnico de las partidas. Las etapas publicadas son: aclaraciones 7 de julio de 2026 a las 11:00 horas, presentación y apertura 14 de julio de 2026 a las 11:00 horas y fallo 16 de julio de 2026 a las 17:00 horas. Las bases pueden consultarse en Compras MX y en el domicilio de la convocante. El aviso no contiene adjudicación ni contrato; esos resultados dependen de los actos posteriores del procedimiento.",
+    "summary_teaser": "La ANAM abrió la licitación electrónica nacional LA-06-H00-006H00999-N-19-2026 para la continuidad operativa de telefonía IP con troncales SIP COSIP 2.0. La convocatoria prevé aclaraciones el 7 de julio, apertura el 14 de julio y fallo el 16 de julio de 2026; no informa proveedor ganador ni contrato formalizado.",
+    "title": "ANAM abre licitación de telefonía IP y SIP",
+    "topic_tags": [
+      "Aduanero"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5792923&fecha=07/07/2026"
+  },
+  "schema_version": 8
+}

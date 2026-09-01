@@ -1,0 +1,161 @@
+{
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "item": {
+    "ai_generated": true,
+    "authority": "PODER EJECUTIVO SECRETARIA DE ENERGIA",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791368&fecha=23/06/2026",
+    "card_body": "## Qué se publicó\n\nEl Diario Oficial de la Federación publicó un aviso de consulta pública sobre calentadores solares de agua de baja presión.\n\n## Sustancia\n\nEl proyecto aborda rendimiento térmico, ahorro de gas, seguridad, métodos de prueba, etiquetado y evaluación de la conformidad, y abre un periodo de observaciones de sesenta días naturales.\n\n## Fuente\n\nLa fuente oficial es el Diario Oficial de la Federación. El acto revisado es el aviso de consulta pública del PROY-NOM-039-ENER/SE-2025.",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "ff4ecfedde667fc47ff7a9971c18569edd39b5a973ae3339aad85f8be8715ab5",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "not_material",
+        "reason": "Primer locator sólo contiene título; alcance técnico y mecanismo de consulta están en fragmento posterior.",
+        "source_ref": "chunk-1",
+        "target_sections": []
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/c645ca9095359f607841f461.json",
+    "detail_url": "notas/c645ca9095359f607841f461.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "heading": "Productos y objetivo",
+        "paragraphs": [
+          "Proyecto aplica a calentadores solares domésticos o comerciales de baja presión, con presión menor a 3.0 kgf/cm2, de termosifón o tanque integrado de hasta 0.5 m3, fabricados, importados o comercializados en México. Texto relaciona proyecto con protección de integridad, salud, vida y recursos naturales."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "heading": "Contenido y participación",
+        "paragraphs": [
+          "Propuesta abarca desempeño térmico mínimo, ahorro de gas, seguridad, pruebas, información comercial, etiquetado y evaluación. Fuente señala que proyecto íntegro puede consultarse en PLATIICA y proporciona vías para comentarios en español durante periodo de consulta."
+        ]
+      }
+    ],
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Aviso De Consulta",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "ef9a1c73d10531730d62cdff046c800e5a0e7f3388bcb270c089f91d57584d89",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "AVISO de consulta pública del Proyecto de Norma Oficial Mexicana PROY-NOM-039-ENER/SE-2025, Rendimiento térmico, ahorro de gas y seguridad de los calentadores de agua solares de baja presión y de los calentadores de agua solares de baja presión con respaldo de un calentador de agua que utiliza como combustible gas L.P. o gas natural. Especificaciones, métodos de prueba y etiquetado.",
+          "location": "caracteres 0-389"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- SENER.- Secretaría de Energía.- Comisión Nacional para el Uso Eficiente de la Energía.- Economía.- Secretaría de Economía.",
+          "location": "caracteres 389-6657"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791368&fecha=23/06/2026",
+      "retrieved_at": "2026-08-13T19:43:49.771149+00:00"
+    },
+    "executive_summary": [
+      "Secretaría de Energía y Economía someten a consulta PROY-NOM-039-ENER/SE-2025 para calentadores solares de agua de baja presión, con o sin respaldo de gas LP, gas natural o electricidad. Proyecto busca requisitos de desempeño térmico, ahorro de gas, seguridad, pruebas, etiquetado y evaluación.",
+      "Consulta se abre por sesenta días naturales desde publicación. Observaciones deben presentarse en español ante comité competente, en domicilio o correos que publicación proporciona."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5791368",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "Fabricantes, importadores, laboratorios y usuarios técnicos pueden revisar parámetros propuestos antes de eventual conclusión normativa. Alcance incluye equipos con respaldo sólo dentro de descripción del proyecto."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-2"
+          ],
+          "paragraphs": [
+            "Fabricantes, importadores y organismos de evaluación pueden participar y contrastar equipos con presión, capacidad y configuración propuestas."
+          ],
+          "sector": "Eficiencia energética y calentadores solares"
+        }
+      ]
+    },
+    "importance": 3,
+    "issuing_body": "Presidencia de la República",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T13:53:50.681449+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791368&fecha=23/06/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5791368"
+    },
+    "official_published_at": "2026-06-23",
+    "official_title": "Aviso de consulta pública del Proyecto de Norma Oficial Mexicana PROY-NOM-039-ENER/SE-2025, Rendimiento térmico, ahorro de gas y seguridad de los calentadores de agua solares de baja presión y de los calentadores de agua solares de baja presión con respaldo de un calentador de agua que utiliza como combustible gas L.P. o gas natural. Especificaciones, métodos de prueba y etiquetado.",
+    "published_at": "2026-06-23",
+    "published_day": 23,
+    "published_month": 6,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Personas interesadas en PROY-NOM-039-ENER/SE-2025",
+        "deadline": "Sesenta días naturales desde publicación",
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "legal_basis": null,
+        "paragraphs": [
+          "Enviar comentarios en español al comité mediante domicilio o correos del aviso, identificando disposición técnica. Consultar texto íntegro en PLATIICA antes de observar."
+        ],
+        "trigger": "Durante consulta pública"
+      }
+    ],
+    "relevance_score": 4,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5791368",
+    "subtopic_tags": [
+      "norma oficial mexicana",
+      "proy-nom",
+      "nom-"
+    ],
+    "summary": "Secretaría de Energía y Economía someten a consulta PROY-NOM-039-ENER/SE-2025 para calentadores solares de agua de baja presión, con o sin respaldo de gas LP, gas natural o electricidad. Proyecto busca requisitos de desempeño térmico, ahorro de gas, seguridad, pruebas, etiquetado y evaluación.\n\nConsulta se abre por sesenta días naturales desde publicación. Observaciones deben presentarse en español ante comité competente, en domicilio o correos que publicación proporciona.\n\nProyecto aplica a calentadores solares domésticos o comerciales de baja presión, con presión menor a 3.0 kgf/cm2, de termosifón o tanque integrado de hasta 0.5 m3, fabricados, importados o comercializados en México. Texto relaciona proyecto con protección de integridad, salud, vida y recursos naturales.\n\nPropuesta abarca desempeño térmico mínimo, ahorro de gas, seguridad, pruebas, información comercial, etiquetado y evaluación. Fuente señala que proyecto íntegro puede consultarse en PLATIICA y proporciona vías para comentarios en español durante periodo de consulta.\n\nSe trata de proyecto en consulta, no norma definitiva obligatoria. Documento define población por presión, configuración y capacidad, y no afirma que todos los calentadores solares estén cubiertos sin esos elementos. Observaciones se rigen por ventana de sesenta días. El respaldo energético de gas o electricidad se incluye dentro de la descripción técnica, no como regla separada de aplicación inmediata.\n\nFabricantes, importadores, laboratorios y usuarios técnicos pueden revisar parámetros propuestos antes de eventual conclusión normativa. Alcance incluye equipos con respaldo sólo dentro de descripción del proyecto. Fabricantes, importadores y organismos de evaluación pueden participar y contrastar equipos con presión, capacidad y configuración propuestas.\n\nLa publicación abre una consulta sobre un proyecto, no una norma definitiva. El alcance y los requisitos técnicos deben consultarse en el proyecto puesto a disposición pública antes de tratarlos como obligaciones aún vigentes. El aviso sólo ofrece el mecanismo de participación pública y no anuncia la emisión definitiva de la norma.",
+    "summary_teaser": "El aviso abre consulta pública sobre el PROY-NOM-039-ENER/SE-2025, aplicable a calentadores solares de agua de baja presión. La propuesta aborda rendimiento térmico, ahorro de gas, seguridad, métodos de prueba y etiquetado; las observaciones pueden presentarse durante sesenta días naturales en los medios indicados.",
+    "title": "Consulta pública abre requisitos para calentadores solares de baja presión",
+    "topic_tags": [
+      "Normalización",
+      "Aviso",
+      "Norma"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5791368&fecha=23/06/2026"
+  },
+  "schema_version": 8
+}

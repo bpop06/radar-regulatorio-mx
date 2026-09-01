@@ -1,0 +1,202 @@
+{
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "item": {
+    "ai_generated": true,
+    "authority": "ORGANISMOS DESCONCENTRADOS O DESCENTRALIZADOS INSTITUTO MEXICANO DEL SEGURO SOCIAL",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792413&fecha=02/07/2026",
+    "card_body": "## Qué se publicó\n\nUn aviso de suplencia para las ausencias del titular del OOAD Regional Estado de México Oriente del IMSS.\n\n## Sustancia\n\nLenin Miguel Ángel Vega Velasco, titular de la Jefatura de Servicios de Desarrollo de Personal, puede firmar y despachar documentación y suscribir resoluciones del órgano sólo cuando supla las ausencias de Jorge Martínez Torres.\n\n## Fuente\n\n[Consulta la fuente oficial](https://dof.gob.mx/nota_detalle.php?codigo=5792413&fecha=02/07/2026)",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "3af98feb2708bc0f724ed79208a3327aa3d51ceb6c23db54bb3a75810562b324",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-1",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/642d6761ea71b3a8769850c2.json",
+    "detail_url": "notas/642d6761ea71b3a8769850c2.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "heading": "Designación identificada",
+        "paragraphs": [
+          "El maestro Lenin Miguel Ángel Vega Velasco, titular de la Jefatura de Servicios de Desarrollo de Personal, es designado para suplir las ausencias del doctor Jorge Martínez Torres."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "heading": "Alcance durante la ausencia",
+        "paragraphs": [
+          "En las ausencias del titular, el suplente puede firmar y despachar la documentación del OOAD Regional Estado de México Oriente e incluir la suscripción de las resoluciones que éste deba emitir."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "heading": "Referencias del aviso",
+        "paragraphs": [
+          "La publicación se emite para efectos del artículo 158 del Reglamento Interior del IMSS y cita disposiciones de la Ley del Seguro Social y del reglamento interno."
+        ]
+      }
+    ],
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Aviso",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "c3b6cd8a7583d6f4525395a7b709209c6dd613e3cfb3069423e24babf22c4478",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "AVISO mediante el cual se designa al Titular de la Jefatura de Servicios de Desarrollo de Personal, para que supla las ausencias del Dr. Jorge Martínez Torres, Titular del Órgano de Operación Administrativa Desconcentrada Regional Estado de México Oriente del Instituto Mexicano del Seguro Social, autorizándole a firmar y despachar la documentación, incluyendo la suscripción de las resoluciones que debe emitir este Órgano.",
+          "location": "caracteres 0-429"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al margen un logotipo, que dice: Instituto Mexicano del Seguro Social.- Órgano de Operación Administrativa Desconcentrada Regional Estado de México Oriente.",
+          "location": "caracteres 429-2710"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792413&fecha=02/07/2026",
+      "retrieved_at": "2026-08-13T19:43:30.775444+00:00"
+    },
+    "executive_summary": [
+      "El IMSS designa a Lenin Miguel Ángel Vega Velasco, titular de la Jefatura de Servicios de Desarrollo de Personal, para suplir las ausencias de Jorge Martínez Torres en el OOAD Regional Estado de México Oriente.",
+      "Cuando se actualicen esas ausencias, puede firmar y despachar la documentación que corresponde al órgano, incluida la suscripción de sus resoluciones.",
+      "El aviso vincula el alcance de esa autorización al supuesto de suplencia y refiere el artículo 158 del Reglamento Interior del IMSS."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Organismo descentralizado",
+    "id": "dof:5792413",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "El aviso identifica la continuidad de firma, despacho y suscripción de resoluciones del OOAD Regional Estado de México Oriente bajo una condición concreta de ausencia."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-1",
+            "chunk-2"
+          ],
+          "paragraphs": [
+            "Pueden reconocer la suplencia de Lenin Miguel Ángel Vega Velasco cuando un documento corresponda al OOAD Regional Estado de México Oriente y se actualice la ausencia del titular."
+          ],
+          "sector": "Personas usuarias y destinatarias de documentos del IMSS Oriente"
+        },
+        {
+          "evidence_refs": [
+            "chunk-2"
+          ],
+          "paragraphs": [
+            "El aviso identifica la Jefatura de Servicios de Desarrollo de Personal como la unidad de la persona designada para firmar, despachar y suscribir dentro del supuesto comunicado."
+          ],
+          "sector": "Áreas administrativas del OOAD Regional Estado de México Oriente"
+        }
+      ]
+    },
+    "importance": 3,
+    "issuing_body": "Instituto Mexicano del Seguro Social",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T13:53:50.681449+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792413&fecha=02/07/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5792413"
+    },
+    "official_published_at": "2026-07-02",
+    "official_title": "Aviso mediante el cual se designa al Titular de la Jefatura de Servicios de Desarrollo de Personal, para que supla las ausencias del Dr. Jorge Martínez Torres, Titular del Órgano de Operación Administrativa Desconcentrada Regional Estado de México Oriente del Instituto Mexicano del Seguro Social, autorizándole a firmar y despachar la documentación, incluyendo la suscripción de las resoluciones que debe emitir este Órgano.",
+    "published_at": "2026-07-02",
+    "published_day": 2,
+    "published_month": 7,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Personas que revisen una resolución o documento suscrito en sustitución",
+        "deadline": null,
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "legal_basis": "Artículo 158 del Reglamento Interior del Instituto Mexicano del Seguro Social, citado en el aviso.",
+        "paragraphs": [
+          "Si un acto del OOAD Regional Estado de México Oriente aparece firmado por Lenin Miguel Ángel Vega Velasco, pueden contrastar el órgano, el cargo y la actualización de la ausencia del titular con la información del aviso."
+        ],
+        "trigger": "Al verificar una firma o despacho emitido por suplencia."
+      },
+      {
+        "affected_group": "Áreas de trámite del IMSS Oriente",
+        "deadline": null,
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "legal_basis": "Aviso de designación y disposiciones internas del IMSS citadas en él.",
+        "paragraphs": [
+          "Si necesitan continuar la atención de documentación durante una ausencia, pueden usar el aviso para identificar el alcance de la suplencia y conservar la condición de ausencia como límite de la autorización."
+        ],
+        "trigger": "Cuando se actualice una ausencia del titular del OOAD Regional Estado de México Oriente."
+      }
+    ],
+    "relevance_score": 4,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5792413",
+    "subtopic_tags": [
+      "designa",
+      "titular del organo",
+      "titular de la jefatura"
+    ],
+    "summary": "El aviso del Instituto Mexicano del Seguro Social comunica una suplencia para el Órgano de Operación Administrativa Desconcentrada Regional Estado de México Oriente. El doctor Jorge Martínez Torres, titular del órgano, designa al maestro Lenin Miguel Ángel Vega Velasco, titular de la Jefatura de Servicios de Desarrollo de Personal, como la persona que suplirá sus ausencias. La publicación identifica tanto el puesto institucional del suplente como la titularidad que será suplida, lo que permite delimitar la actuación autorizada.\n\nEl alcance de la designación depende de que existan ausencias del titular del OOAD Regional Estado de México Oriente. En ese supuesto, Lenin Miguel Ángel Vega Velasco queda autorizado para firmar y despachar la documentación que corresponde al órgano, incluida la suscripción de las resoluciones que éste deba emitir. El aviso no comunica una asignación permanente de la titularidad ni una autorización que subsista al margen de las ausencias. Esa condición debe mantenerse al interpretar la firma de documentación o resoluciones emitidas bajo la suplencia.\n\nLa comunicación invoca el artículo 251-A de la Ley del Seguro Social y los artículos 138, 139, 141, 144 y 155, fracción XIV, del Reglamento Interior del IMSS. También señala que se emite para los efectos del artículo 158 del mismo reglamento y menciona el acuerdo del Consejo Técnico que designó al titular. Estas referencias explican el marco invocado por el propio aviso; no añaden facultades distintas de las que éste formula de manera expresa para el suplente.\n\nEl aviso se dirige a autoridades federales, estatales y municipales con sede en la circunscripción territorial del Estado de México Oriente, así como a patrones, asegurados y público en general. Para una verificación jurídica general de un documento concreto, es relevante relacionar la firma con la Jefatura de Servicios de Desarrollo de Personal, el OOAD Regional Estado de México Oriente y el supuesto de ausencia. La publicación no señala una fecha de terminación específica de la suplencia ni modifica el contenido de las resoluciones; informa la persona que puede firmarlas y despacharlas cuando se actualice la condición indicada.",
+    "summary_teaser": "El IMSS designa a Lenin Miguel Ángel Vega Velasco, titular de la Jefatura de Servicios de Desarrollo de Personal, para suplir las ausencias de Jorge Martínez Torres en el OOAD Regional Estado de México Oriente. Sólo en ese supuesto puede firmar y despachar documentación y suscribir las resoluciones que debe emitir el órgano.",
+    "title": "IMSS Oriente autoriza suplencia de Lenin Vega Velasco",
+    "topic_tags": [
+      "Derecho administrativo",
+      "Nombramientos federales",
+      "Resolución",
+      "Aviso"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5792413&fecha=02/07/2026"
+  },
+  "schema_version": 8
+}

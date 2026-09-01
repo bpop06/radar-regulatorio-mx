@@ -1,0 +1,140 @@
+{
+  "coverage": [
+    {
+      "disposition": "not_material",
+      "reason": "El locator inicial contiene sólo el título del acuerdo; los cambios de claves, formatos y transitorios se desarrollan después.",
+      "source_ref": "chunk-1",
+      "target_sections": []
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-3",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    }
+  ],
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Formatos que sustituyen escritos libres",
+      "paragraphs": [
+        "La primera parte cambia nombres de procedimientos y reemplaza escritos libres por formatos en asuntos relacionados con estatutos de grupos corporativos, inversionistas institucionales, seguros y fianzas. El acuerdo incorpora formatos identificados para las solicitudes que describe, por lo que no basta trasladar una denominación anterior a un expediente nuevo."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-3"
+      ],
+      "heading": "Fusión, requisitos y plazos",
+      "paragraphs": [
+        "El acuerdo integra las claves SHCP-01-040 y SHCP-01-172 bajo la primera para interpretaciones administrativas. Mantiene la exigencia de acreditar representación sólo cuando el documento no obre ya en poder de Hacienda y reduce los máximos de respuesta de 180 a 90, de 90 a 70 y de 90 a 60 días naturales en los trámites señalados. También elimina dos procedimientos del portal."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "d2dbd082ce9bf353b591b6e7bcc25e11a193028eef94644ee11bd43e59b4ec2c",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "ACUERDO por el que se eliminan y se establecen acciones de simplificación y mejora administrativa de trámites que se realizan ante la Secretaría de Hacienda y Crédito Público.",
+        "location": "caracteres 0-179"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público. · parte 1",
+        "location": "caracteres 179-12179"
+      },
+      {
+        "id": "chunk-3",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público. · parte 2",
+        "location": "caracteres 12179-19790"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792306&fecha=01/07/2026",
+    "retrieved_at": "2026-08-13T19:43:32.781258+00:00"
+  },
+  "executive_summary": [
+    "El acuerdo de la Unidad de Seguros, Pensiones y Seguridad Social de Hacienda modifica denominaciones, formatos y requisitos de procedimientos del sector. Sustituye escritos libres por formatos oficiales en diversos trámites y vincula las modificaciones a identificadores concretos del catálogo de la dependencia.",
+    "También fusiona dos solicitudes de interpretación administrativa bajo la clave SHCP-01-040 y reduce plazos máximos de respuesta en tres trámites. Las reglas transitorias distinguen los asuntos ingresados antes de la entrada en vigor de los que se presenten bajo el nuevo esquema."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "paragraphs": [
+        "Las personas promoventes y las áreas reguladas por la Unidad deben revisar la clave vigente, el formato aplicable y la regla transitoria antes de presentar una solicitud. La disminución de plazos es un máximo de respuesta, no una garantía de sentido favorable."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "Entidades y representantes que usen los procedimientos de la Unidad enfrentan cambios en forma de presentación, identificación del trámite y tiempo máximo de respuesta."
+        ],
+        "sector": "Seguros, fianzas y servicios financieros"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792306&fecha=01/07/2026",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "abf0d4be260eaf42fab75947d95765ce23a58546abfee79508f2e105064ab79d",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/ee1a6c4bf8f915114c05a693.json",
+    "detail_url": "notas/ee1a6c4bf8f915114c05a693.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Acuerdo",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5792306",
+    "importance": 1,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-07-01",
+    "official_title": "Acuerdo por el que se eliminan y se establecen acciones de simplificación y mejora administrativa de trámites que se realizan ante la Secretaría de Hacienda y Crédito Público.",
+    "published_at": "2026-07-01",
+    "relevance_score": 1,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5792306",
+    "summary_teaser": "El acuerdo de Hacienda simplifica trámites de seguros, fianzas y sistemas de ahorro para el retiro: sustituye escritos libres por formatos, integra dos solicitudes de interpretación y reduce plazos máximos de respuesta en procedimientos identificados. También establece reglas transitorias para los expedientes presentados antes de la entrada en vigor.",
+    "title": "Hacienda reemplaza escritos libres y reduce tres plazos regulatorios",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5792306&fecha=01/07/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Personas promoventes ante la Unidad de Seguros, Pensiones y Seguridad Social",
+      "deadline": "El acuerdo entra en vigor el día de su publicación; la adecuación normativa y del portal se prevé dentro del año siguiente",
+      "evidence_refs": [
+        "chunk-2",
+        "chunk-3"
+      ],
+      "legal_basis": null,
+      "paragraphs": [
+        "Usar el formato y la clave vigente del trámite, y verificar si el expediente fue ingresado antes de la entrada en vigor para aplicar la disposición transitoria correspondiente. Conservar la referencia de representación cuando no conste previamente ante la Secretaría."
+      ],
+      "trigger": "Al presentar o dar seguimiento a un procedimiento afectado"
+    }
+  ],
+  "schema_version": 8
+}

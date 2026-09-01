@@ -1,0 +1,159 @@
+{
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "item": {
+    "ai_generated": true,
+    "authority": "ORGANISMOS AUTONOMOS TRIBUNAL FEDERAL DE JUSTICIA ADMINISTRATIVA",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791405&fecha=23/06/2026",
+    "card_body": "## Qué se publicó\n\nEl Diario Oficial de la Federación publicó la suspensión de actividades jurisdiccionales de la Sala Regional en Tabasco y Auxiliar del TFJA.\n\n## Sustancia\n\nEl acuerdo suspende labores, términos y plazos procesales sólo el 15 de junio de 2026 por la presencia de personas armadas en el recinto, cuya identidad e institución no se precisan.\n\n## Fuente\n\nLa fuente oficial es el Diario Oficial de la Federación. El acto revisado contiene el acuerdo de suspensión de actividades jurisdiccionales de la Sala Regional en Tabasco y Auxiliar.",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "2e9c6aa9f209d503d9af2b025e02fa4533e7d4d7064084f6ee7b950fb64cd441",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "not_material",
+        "reason": "Título inicial no contiene hecho ni alcance procesal; ambos se explican en locator siguiente.",
+        "source_ref": "chunk-1",
+        "target_sections": []
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/d795da29404086980f902994.json",
+    "detail_url": "notas/d795da29404086980f902994.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "heading": "Hecho y suspensión",
+        "paragraphs": [
+          "El documento se refiere al acceso y permanencia de personas armadas sin identificar institución o motivo. Con base en hecho, sala acuerda suspensión de labores, términos y plazos únicamente el 15 de junio de 2026. Fuente no declara suspensión indefinida."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "heading": "Alcance y comunicaciones",
+        "paragraphs": [
+          "La medida cubre los plazos y términos de la normatividad que regula el procedimiento administrativo federal durante el día señalado. El acuerdo dispone comunicarlo al Presidente del Tribunal y al Visitador, hacerlo del conocimiento de las autoridades jurisdiccionales pertenecientes al Poder Judicial de la Federación con sede en este Circuito y colocar el aviso en la entrada principal y la ventanilla de Oficialía de Partes."
+        ]
+      }
+    ],
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Suspensión De Actividades",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "620b0072f903643de29a619dcb11c5952df5c492236fd183445c75415ab698a4",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "SUSPENSIÓN de actividades jurisdiccionales en la Sala Regional en Tabasco y Auxiliar del Tribunal Federal de Justicia Administrativa.",
+          "location": "caracteres 0-137"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Tribunal Federal de Justicia Administrativa.- Sala Regional en Tabasco y Auxiliar.- SRT/04/2026.",
+          "location": "caracteres 137-2798"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791405&fecha=23/06/2026",
+      "retrieved_at": "2026-08-13T19:43:49.671134+00:00"
+    },
+    "executive_summary": [
+      "Sala Regional en Tabasco y Auxiliar del TFJA comunica suspensión de labores, términos y plazos procesales durante 15 de junio de 2026. Decisión se adoptó después de que personas armadas, cuya identidad e institución no se identifican, ingresaran y permanecieran en recinto.",
+      "El texto señala que, por esa circunstancia, no corrieron términos ni plazos de la normatividad que regula el procedimiento administrativo federal. Ordena comunicar la medida al Presidente y al Visitador del Tribunal, hacerla del conocimiento de las autoridades jurisdiccionales pertenecientes al Poder Judicial de la Federación con sede en este Circuito y colocar el aviso."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Órgano jurisdiccional",
+    "id": "dof:5791405",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "Litigantes y autoridades con asuntos ante sala deben considerar 15 de junio como día sin cómputo. Para actuaciones posteriores, atender reglas procesales y comunicaciones específicas del órgano."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-2"
+          ],
+          "paragraphs": [
+            "Representantes, partes y personal TFJA deben incorporar suspensión de esa jornada al seguimiento de plazos vinculados con la Sala."
+          ],
+          "sector": "Justicia administrativa federal en Tabasco"
+        }
+      ]
+    },
+    "importance": 3,
+    "issuing_body": "Tribunal Federal de Justicia Administrativa",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T13:53:50.681449+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791405&fecha=23/06/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5791405"
+    },
+    "official_published_at": "2026-06-23",
+    "official_title": "Suspensión de actividades jurisdiccionales en la Sala Regional en Tabasco y Auxiliar del Tribunal Federal de Justicia Administrativa.",
+    "published_at": "2026-06-23",
+    "published_day": 23,
+    "published_month": 6,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Partes y representantes con asuntos ante Sala Regional en Tabasco y Auxiliar",
+        "deadline": "15 de junio de 2026",
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "legal_basis": null,
+        "paragraphs": [
+          "Registrar que términos no corrieron 15 de junio de 2026 y revisar notificaciones del expediente para actuaciones posteriores. No extender suspensión a fechas no incluidas."
+        ],
+        "trigger": "Al calcular plazo que comprendió fecha señalada"
+      }
+    ],
+    "relevance_score": 4,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5791405",
+    "subtopic_tags": [
+      "actividades jurisdiccionales",
+      "tribunal federal de justicia administrativa",
+      "sala regional"
+    ],
+    "summary": "Sala Regional en Tabasco y Auxiliar del TFJA comunica suspensión de labores, términos y plazos procesales durante 15 de junio de 2026. Decisión se adoptó después de que personas armadas, cuya identidad e institución no se identifican, ingresaran y permanecieran en recinto.\n\nEl texto señala que, por esa circunstancia, no corrieron términos ni plazos de la normatividad que regula el procedimiento administrativo federal. Ordena comunicar la medida al Presidente y al Visitador del Tribunal, hacerla del conocimiento de las autoridades jurisdiccionales pertenecientes al Poder Judicial de la Federación con sede en este Circuito y colocar el aviso.\n\nEl documento se refiere al acceso y permanencia de personas armadas sin identificar institución o motivo. Con base en hecho, sala acuerda suspensión de labores, términos y plazos únicamente el 15 de junio de 2026. Fuente no declara suspensión indefinida.\n\nLa medida cubre los plazos y términos de la normatividad que regula el procedimiento administrativo federal durante el día señalado. El acuerdo dispone comunicarlo al Presidente del Tribunal y al Visitador, hacerlo del conocimiento de las autoridades jurisdiccionales pertenecientes al Poder Judicial de la Federación con sede en este Circuito y colocar el aviso en la entrada principal y la ventanilla de Oficialía de Partes.\n\nPublicación organiza medida de continuidad jurisdiccional de un día ante hecho de seguridad descrito limitadamente. No identifica partes de expedientes, decisiones de fondo ni nueva fecha general para audiencias. Efecto verificable es que términos no corrieron en fecha precisa. La identidad de las personas y la causa del ingreso no son hechos que el texto determine, por lo que no deben completarse con inferencias.\n\nLitigantes y autoridades con asuntos ante sala deben considerar 15 de junio como día sin cómputo. Para actuaciones posteriores, atender reglas procesales y comunicaciones específicas del órgano. Representantes, partes y personal TFJA deben incorporar suspensión de esa jornada al seguimiento de plazos vinculados con la Sala.\n\nEl acuerdo limita la suspensión a la jornada señalada y a la Sala Regional en Tabasco y Auxiliar. No aporta base para extender la suspensión a fechas posteriores ni para atribuir el ingreso al recinto a una institución determinada. La medida no es indefinida.",
+    "summary_teaser": "La Sala Regional en Tabasco y Auxiliar del TFJA suspendió labores, términos y plazos procesales el 15 de junio de 2026 tras el ingreso y permanencia de personas armadas en el recinto. El acuerdo limita la medida a esa fecha y ordena comunicaciones institucionales.",
+    "title": "Sala Regional en Tabasco y Auxiliar suspende términos el 15 de junio",
+    "topic_tags": [
+      "Contencioso administrativo"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5791405&fecha=23/06/2026"
+  },
+  "schema_version": 8
+}

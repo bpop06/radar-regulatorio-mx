@@ -1,0 +1,205 @@
+{
+  "coverage": [
+    {
+      "disposition": "not_material",
+      "reason": "Es el encabezado del oficio; la regla de presunción y defensa se desarrolla en chunk-2.",
+      "source_ref": "chunk-1",
+      "target_sections": []
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": "Continúa las filas de identificación y notificación del Anexo 1.",
+      "source_ref": "chunk-3",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.sectors"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": "Continúa las filas de identificación y notificación del Anexo 1.",
+      "source_ref": "chunk-4",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.sectors"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": "Continúa las filas de identificación y notificación del Anexo 1.",
+      "source_ref": "chunk-5",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.sectors"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": "Continúa las filas de identificación y notificación del Anexo 1.",
+      "source_ref": "chunk-6",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.sectors"
+      ]
+    }
+  ],
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-2",
+        "chunk-3",
+        "chunk-4",
+        "chunk-5",
+        "chunk-6"
+      ],
+      "heading": "Naturaleza del listado y anexos",
+      "paragraphs": [
+        "El oficio comunica una presunción del artículo 69-B y el Anexo 1 identifica a las personas, sus oficios individuales, autoridades emisoras y datos de notificación."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Defensa y cómputo del plazo",
+      "paragraphs": [
+        "Cada contribuyente puede presentar escrito libre con documentación e información para desvirtuar los hechos. El plazo es de 15 días hábiles contados desde que surta efectos la última notificación."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Consecuencia condicionada",
+      "paragraphs": [
+        "La fuente prevé una resolución y publicación posteriores si no se aportan elementos o éstos no desvirtúan los hechos; no describe el listado actual como definitivo."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "ce8703b1b08dda2af5c4ffd1c64a719c38f5cdc440e2f174f81b9d63955485f4",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "OFICIO 500-05-00-00-00-2026-16354 mediante el cual se comunica listado global de presunción de contribuyentes que se ubicaron en el supuesto previsto en el artículo 69-B, párrafo primero del Código Fiscal de la Federación.",
+        "location": "caracteres 0-226"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Servicio de Administración Tributaria.- Administración General de Auditoría Fiscal Federal.- Administración Central de Fiscalización Estratégica. · parte 1",
+        "location": "caracteres 226-12226"
+      },
+      {
+        "id": "chunk-3",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Servicio de Administración Tributaria.- Administración General de Auditoría Fiscal Federal.- Administración Central de Fiscalización Estratégica. · parte 2",
+        "location": "caracteres 12226-24226"
+      },
+      {
+        "id": "chunk-4",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Servicio de Administración Tributaria.- Administración General de Auditoría Fiscal Federal.- Administración Central de Fiscalización Estratégica. · parte 3",
+        "location": "caracteres 24226-36226"
+      },
+      {
+        "id": "chunk-5",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Servicio de Administración Tributaria.- Administración General de Auditoría Fiscal Federal.- Administración Central de Fiscalización Estratégica. · parte 4",
+        "location": "caracteres 36226-48226"
+      },
+      {
+        "id": "chunk-6",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Servicio de Administración Tributaria.- Administración General de Auditoría Fiscal Federal.- Administración Central de Fiscalización Estratégica. · parte 5",
+        "location": "caracteres 48226-60182"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5794667&fecha=24%2F07%2F2026",
+    "retrieved_at": "2026-08-14T00:36:42.755535+00:00"
+  },
+  "executive_summary": [
+    "El SAT comunica una presunción respecto de contribuyentes del Anexo 1 por falta de activos, personal, infraestructura o capacidad material en los términos que indica la fuente.",
+    "Las personas listadas pueden desvirtuar los hechos ante la autoridad emisora de su oficio individual dentro de 15 días hábiles desde la última notificación que surta efectos.",
+    "La publicación distingue la presunción de una eventual etapa definitiva posterior."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "paragraphs": [
+        "El efecto inmediato es procesal para los contribuyentes del Anexo 1: tienen una oportunidad de defensa individual ante la autoridad emisora de su oficio de presunción."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-2",
+          "chunk-3",
+          "chunk-4",
+          "chunk-5",
+          "chunk-6"
+        ],
+        "paragraphs": [
+          "Deben localizar el oficio individual y la autoridad emisora consignados en el anexo para revisar su notificación y preparar, si procede, la respuesta documentada."
+        ],
+        "sector": "Contribuyentes incluidos y sus representantes legales"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5794667&fecha=24%2F07%2F2026",
+    "categories": [
+      "Fiscal",
+      "Administración centralizada"
+    ],
+    "content_hash": "f77109e210bc85ccd88986ee2940d258919b4de8a24022a5e2f30b06c3254b43",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/83aa22b1c58240ad2a63397e.json",
+    "detail_url": "notas/83aa22b1c58240ad2a63397e.html",
+    "detected_at": "2026-08-14T01:46:44.993982+00:00",
+    "document_type": "Oficio",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5794667",
+    "importance": 2,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-07-24",
+    "official_title": "Oficio 500-05-00-00-00-2026-16354 mediante el cual se comunica listado global de presunción de contribuyentes que se ubicaron en el supuesto previsto en el artículo 69-B, párrafo primero del Código Fiscal de la Federación.",
+    "published_at": "2026-07-24",
+    "relevance_score": 3,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5794667",
+    "summary_teaser": "El SAT difundió un listado global de presunción del artículo 69-B para contribuyentes señalados por falta de activos, personal, infraestructura o capacidad material. Cada persona listada puede presentar escrito, documentación e información ante la autoridad emisora dentro de 15 días hábiles contados desde la última notificación que surta efectos.",
+    "title": "SAT fija plazo de defensa en listado de presunción",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5794667&fecha=24/07/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Contribuyentes incluidos en el Anexo 1 y sus representantes legales",
+      "deadline": "15 días hábiles contados desde que surta efectos la última de las notificaciones",
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "legal_basis": "Artículo 69-B, segundo párrafo, del Código Fiscal de la Federación, conforme al oficio",
+      "paragraphs": [
+        "Revisen el oficio individual de presunción, identifiquen la última notificación que surtió efectos y, si procede, presenten directamente ante la autoridad emisora el escrito libre firmado con sus pruebas."
+      ],
+      "trigger": "Inclusión en el listado global de presunción"
+    }
+  ],
+  "schema_version": 8
+}

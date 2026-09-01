@@ -1,0 +1,187 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-3",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-4",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2",
+        "chunk-3",
+        "chunk-4"
+      ],
+      "heading": "Distribución de atribuciones",
+      "paragraphs": [
+        "Sectur coordina, emite órdenes de verificación, desarrolla el procedimiento de infracción, resuelve y supervisa las actuaciones.",
+        "el Estado de Aguascalientes realiza visitas y verificaciones con su personal turístico, con prioridad para prestadores que registren quejas o inconformidades."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2",
+        "chunk-3",
+        "chunk-4"
+      ],
+      "heading": "Reportes y vigencia",
+      "paragraphs": [
+        "el Estado de Aguascalientes debe enviar las actividades del mes anterior y los expedientes digitales certificados dentro de los primeros diez días naturales de cada mes.",
+        "La vigencia corre desde la firma hasta el 30 de septiembre de 2027; las partes pueden modificar el convenio mediante instrumento jurídico escrito."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "61b33e74e52354b29cf755bfc2e2bd681926d5fd12ca2b2567cee5a7f080852c",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "CONVENIO de Coordinación que celebran la Secretaría de Turismo y el Estado de Aguascalientes, que tiene por objeto verificar el cumplimiento de la Ley General de Turismo, su Reglamento, la Ley de Infraestructura de la Calidad y las Normas Oficiales Mexicanas en la materia, así como el fortalecimiento de las atribuciones en el procedimiento de verificación de los prestadores de servicios turísticos en la entidad.",
+        "location": "caracteres 0-419"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- TURISMO.- Secretaría de Turismo. · parte 1",
+        "location": "caracteres 419-12419"
+      },
+      {
+        "id": "chunk-3",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- TURISMO.- Secretaría de Turismo. · parte 2",
+        "location": "caracteres 12419-24419"
+      },
+      {
+        "id": "chunk-4",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- TURISMO.- Secretaría de Turismo. · parte 3",
+        "location": "caracteres 24419-27092"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793395&fecha=13%2F07%2F2026",
+    "retrieved_at": "2026-08-13T19:42:56.900556+00:00"
+  },
+  "executive_summary": [
+    "La Secretaría de Turismo celebró un convenio de coordinación con el Estado de Aguascalientes para verificar el cumplimiento de la Ley General de Turismo, su Reglamento, la Ley de Infraestructura de la Calidad y las normas oficiales mexicanas aplicables a prestadores de servicios turísticos dentro de su territorio.",
+    "La autoridad federal conserva la emisión de órdenes de verificación, el desarrollo del procedimiento de infracción hasta su resolución, la evaluación de actividades y la supervisión. el Estado de Aguascalientes ejecutará las verificaciones mediante su personal turístico, priorizando órdenes dirigidas a prestadores con quejas o inconformidades registradas."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2",
+        "chunk-3",
+        "chunk-4"
+      ],
+      "paragraphs": [
+        "El convenio distribuye tareas de verificación turística sin desplazar las facultades federales originarias de Sectur."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2",
+          "chunk-3",
+          "chunk-4"
+        ],
+        "paragraphs": [
+          "Prestadores turísticos pueden recibir visitas ejecutadas por personal local, pero las órdenes y el procedimiento sancionador corresponden al esquema federal que el convenio mantiene."
+        ],
+        "sector": "Turismo y verificación administrativa"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793395&fecha=13%2F07%2F2026",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "f91ff6490f1f14fa1a779913246b0713d032785e2043e3c7c8a045fb4f08c1c8",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/95ceec2e1d8f155582fa5810.json",
+    "detail_url": "notas/95ceec2e1d8f155582fa5810.html",
+    "detected_at": "2026-07-13T12:00:00+00:00",
+    "document_type": "Convenio De Coordinación",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5793395",
+    "importance": 2,
+    "issuing_body": "Presidencia de la República",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-07-13",
+    "official_title": "Convenio de Coordinación que celebran la Secretaría de Turismo y el Estado de Aguascalientes, que tiene por objeto verificar el cumplimiento de la Ley General de Turismo, su Reglamento, la Ley de Infraestructura de la Calidad y las Normas Oficiales Mexicanas en la materia, así como el fortalecimiento de las atribuciones en el procedimiento de verificación de los prestadores de servicios turísticos en la entidad.",
+    "published_at": "2026-07-13",
+    "relevance_score": 2,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5793395",
+    "summary_teaser": "Sectur y Aguascalientes firmaron un convenio para verificar a prestadores de servicios turísticos. La Federación conserva las órdenes, el procedimiento y la supervisión; la autoridad estatal realiza las visitas y reporta actividades y expedientes en los primeros diez días naturales de cada mes. El convenio rige hasta el 30 de septiembre de 2027.",
+    "title": "Sectur establece verificación turística con Aguascalientes",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5793395&fecha=13/07/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Autoridades turísticas locales y prestadores de servicios turísticos",
+      "deadline": "Primeros diez días naturales de cada mes para reportes y expedientes locales",
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2",
+        "chunk-3",
+        "chunk-4"
+      ],
+      "legal_basis": "Ley General de Turismo y convenio de coordinación",
+      "paragraphs": [
+        "Las autoridades locales deben remitir actividades y expedientes en los primeros diez días naturales de cada mes; los prestadores deben atender una verificación conforme a la orden y al procedimiento aplicable, no al calendario de reporte intergubernamental."
+      ],
+      "trigger": "Ejecución de verificaciones coordinadas"
+    }
+  ],
+  "schema_version": 8
+}

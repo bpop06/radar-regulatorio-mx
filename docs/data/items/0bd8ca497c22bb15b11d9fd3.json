@@ -1,0 +1,155 @@
+{
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "item": {
+    "ai_generated": true,
+    "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791564&fecha=24/06/2026",
+    "card_body": "## Qué se publicó\n\nEl Diario Oficial de la Federación publicó un oficio de la CNBV que modifica la autorización de Briq Fund.\n\n## Sustancia\n\nEl oficio actualiza condiciones vinculadas con el objeto social de la institución de financiamiento colectivo y enumera las modalidades de deuda, capital y copropiedad o regalías.\n\n## Fuente\n\nLa fuente oficial es el Diario Oficial de la Federación. El acto revisado es el oficio de la CNBV que modifica los términos de autorización para organizarse y operar de Briq Fund.",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "05c19e443bf14bb80a74fb49f3e117aee69e2883f767dfd54889832399eb6192",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "not_material",
+        "reason": "El primer locator sólo identifica el oficio; cambio societario y condiciones modificadas están en locator material.",
+        "source_ref": "chunk-1",
+        "target_sections": []
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/0bd8ca497c22bb15b11d9fd3.json",
+    "detail_url": "notas/0bd8ca497c22bb15b11d9fd3.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "heading": "Objeto y operaciones",
+        "paragraphs": [
+          "Quinta condición sustituida incorpora objeto social actualizado y fracciones de operaciones y servicios especificadas. Enumeración debe leerse dentro de ley fintech citada, pues instrumento no desvincula a Briq de disposiciones generales."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "heading": "Modalidades y regulación",
+        "paragraphs": [
+          "Octava condición identifica servicios de deuda, capital y copropiedad o regalías. Fuente mantiene sujeción a ley, disposiciones CNBV, normas Banco de México y régimen de prevención de operaciones con recursos de procedencia ilícita y financiamiento al terrorismo."
+        ]
+      }
+    ],
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Oficio",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "fa91cbac0086c37312b2ffdff297c3465e3267c77507768fa140c7cfe7634a93",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "OFICIO mediante el cual se modifican los términos de la autorización para organizarse y operar de Briq Fund, S.A.P.I. de C.V., Institución de Financiamiento Colectivo .",
+          "location": "caracteres 0-172"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Comisión Nacional Bancaria y de Valores.- Vicepresidencia de Normatividad.- Dirección General de Autorizaciones Especializadas.- Vicepresidencia de Supervisión de Grupos e Intermediarios Financieros B.- Dirección General de Supervisión de Grupos e Intermediarios Financieros E.- Oficio No. 311-752383/2026.",
+          "location": "caracteres 172-5273"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791564&fecha=24/06/2026",
+      "retrieved_at": "2026-08-13T19:43:49.398557+00:00"
+    },
+    "executive_summary": [
+      "La CNBV modifica quinta y octava condición de autorización de Briq Fund, S.A.P.I. de C.V., Institución de Financiamiento Colectivo. Ajuste se apoya en asamblea general extraordinaria de 7 de mayo de 2026 que modificó objeto social.",
+      "El oficio relaciona objeto con artículo 15 de Ley para Regular Instituciones de Tecnología Financiera y enumera operaciones y servicios de artículos 16 y 19. Octava condición incluye financiamiento colectivo de deuda, capital y copropiedad o regalías."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5791564",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "Briq y participantes deben reconocer tres modalidades señaladas y marco regulatorio conservado. Decisiones operativas y de divulgación deben distinguir deuda, capital y copropiedad o regalías."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-2"
+          ],
+          "paragraphs": [
+            "Institución, inversionistas y receptores pueden revisar delimitación actualizada de servicios y fuentes regulatorias."
+          ],
+          "sector": "Fintech y financiamiento colectivo"
+        }
+      ]
+    },
+    "importance": 1,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T13:53:50.681449+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791564&fecha=24/06/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5791564"
+    },
+    "official_published_at": "2026-06-24",
+    "official_title": "Oficio mediante el cual se modifican los términos de la autorización para organizarse y operar de Briq Fund, S.A.P.I. de C.V., Institución de Financiamiento Colectivo.",
+    "published_at": "2026-06-24",
+    "published_day": 24,
+    "published_month": 6,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Briq Fund y áreas de cumplimiento",
+        "deadline": null,
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "legal_basis": "Artículos 15, 16 y 19 de Ley para Regular Instituciones de Tecnología Financiera, citados",
+        "paragraphs": [
+          "Actualizar documentación corporativa y operativa para reflejar objeto y modalidades. Verificar que cada servicio siga disposiciones CNBV, Banco de México y prevención de lavado referidas."
+        ],
+        "trigger": null
+      }
+    ],
+    "relevance_score": 1,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5791564",
+    "subtopic_tags": [],
+    "summary": "La CNBV modifica quinta y octava condición de autorización de Briq Fund, S.A.P.I. de C.V., Institución de Financiamiento Colectivo. Ajuste se apoya en asamblea general extraordinaria de 7 de mayo de 2026 que modificó objeto social.\n\nEl oficio relaciona objeto con artículo 15 de Ley para Regular Instituciones de Tecnología Financiera y enumera operaciones y servicios de artículos 16 y 19. Octava condición incluye financiamiento colectivo de deuda, capital y copropiedad o regalías.\n\nQuinta condición sustituida incorpora objeto social actualizado y fracciones de operaciones y servicios especificadas. Enumeración debe leerse dentro de ley fintech citada, pues instrumento no desvincula a Briq de disposiciones generales.\n\nOctava condición identifica servicios de deuda, capital y copropiedad o regalías. Fuente mantiene sujeción a ley, disposiciones CNBV, normas Banco de México y régimen de prevención de operaciones con recursos de procedencia ilícita y financiamiento al terrorismo.\n\nModificación no crea régimen independiente para Briq; actualiza condiciones de autorización individual frente a objeto social. Servicios mencionados están delimitados por condición y normas remitidas, sin que publicación detalle oferta, plazo o rendimiento para usuarios. La fuente distingue tres modalidades de financiamiento colectivo y no las presenta como equivalentes en cada operación concreta.\n\nBriq y participantes deben reconocer tres modalidades señaladas y marco regulatorio conservado. Decisiones operativas y de divulgación deben distinguir deuda, capital y copropiedad o regalías. Institución, inversionistas y receptores pueden revisar delimitación actualizada de servicios y fuentes regulatorias.\n\nLa modificación se circunscribe a las condiciones de autorización y al objeto social de Briq Fund. Las tres modalidades enumeradas no eliminan la aplicación de las disposiciones generales de la CNBV, Banco de México y prevención de lavado referidas por el oficio. La fuente enumera expresamente deuda, capital y copropiedad o regalías como servicios de financiamiento colectivo, y no permite inferir servicios adicionales. Ese límite es expreso. Sólo esas modalidades constan.",
+    "summary_teaser": "La CNBV modifica las condiciones de autorización de Briq Fund como institución de financiamiento colectivo tras el cambio de su objeto social. El oficio identifica las modalidades de deuda, capital y copropiedad o regalías, dentro de las disposiciones financieras a las que expresamente remite.",
+    "title": "CNBV actualiza autorización de Briq Fund en financiamiento colectivo",
+    "topic_tags": [
+      "Oficio"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5791564&fecha=24/06/2026"
+  },
+  "schema_version": 8
+}

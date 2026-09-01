@@ -1,0 +1,136 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.sectors"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "heading": "Designación de suplencia",
+      "paragraphs": [
+        "El aviso identifica a la titular de la Jefatura de Servicios de Finanzas como suplente de la titular del OOAD Sur del Distrito Federal del IMSS."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Alcance documental",
+      "paragraphs": [
+        "La designación autoriza a la suplente a firmar y despachar la documentación correspondiente al órgano, incluida la suscripción de las resoluciones que deba emitir."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "6855d38031d1e42c09afa4c4d0b0e2ea9ab13475afe5906a2396fa26447bc3a6",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "AVISO mediante el cual se designa a la Titular de la Jefatura de Servicios de Finanzas para que supla las ausencias de la Doctora Karla Guadalupe López López, Titular del Órgano de Operación Administrativa Desconcentrada Sur del Distrito Federal del Instituto Mexicano del Seguro Social, autorizándole a firmar y despachar la documentación incluyendo la suscripción de las resoluciones que debe emitir este Órgano.",
+        "location": "caracteres 0-418"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un logotipo, que dice: Instituto Mexicano del Seguro Social.- Órgano de Operación Administrativa Desconcentrada Sur del Distrito Federal.",
+        "location": "caracteres 418-2360"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5790955&fecha=18/06/2026",
+    "retrieved_at": "2026-08-13T19:43:55.974134+00:00"
+  },
+  "executive_summary": [
+    "El OOAD Sur del Distrito Federal del IMSS designó a Miriam Rubio Sánchez, titular de Servicios de Finanzas, para suplir las ausencias de la titular del órgano.",
+    "La suplente queda autorizada para firmar y despachar documentación, incluidas las resoluciones que deba emitir el órgano, en el supuesto de ausencia comunicado."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "paragraphs": [
+        "La publicación permite identificar públicamente la persona autorizada para ejercer la suplencia y suscribir documentos institucionales durante las ausencias de la titular."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "Las personas destinatarias pueden contrastar la firma de documentos del órgano con el aviso cuando la actuación se atribuya a la suplente."
+        ],
+        "sector": "Patrones, asegurados y autoridades que interactúan con el OOAD Sur"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5790955&fecha=18/06/2026",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "c6a000e31cf88294b43e359d39d20d9c96738ef7dff18e3922d6489807bc5373",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/61d2b1a3736cf2cf5d2dcaa3.json",
+    "detail_url": "notas/61d2b1a3736cf2cf5d2dcaa3.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Aviso",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5790955",
+    "importance": 3,
+    "issuing_body": "Instituto Mexicano del Seguro Social",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-06-18",
+    "official_title": "Aviso mediante el cual se designa a la Titular de la Jefatura de Servicios de Finanzas para que supla las ausencias de la Doctora Karla Guadalupe López López, Titular del Órgano de Operación Administrativa Desconcentrada Sur del Distrito Federal del Instituto Mexicano del Seguro Social, autorizándole a firmar y despachar la documentación incluyendo la suscripción de las resoluciones que debe emitir este Órgano.",
+    "published_at": "2026-06-18",
+    "relevance_score": 4,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5790955",
+    "summary_teaser": "El Órgano de Operación Administrativa Desconcentrada Sur del Distrito Federal del IMSS designó a Miriam Rubio Sánchez, titular de Servicios de Finanzas, para suplir las ausencias de su titular. El aviso le autoriza a firmar y despachar la documentación correspondiente, incluida la suscripción de las resoluciones que deba emitir ese órgano. La designación opera en el supuesto de ausencia indicado.",
+    "title": "IMSS establece suplencia financiera para sus resoluciones",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5790955&fecha=18/06/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Personas y autoridades que reciban una actuación del OOAD Sur firmada en suplencia",
+      "deadline": null,
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "legal_basis": "Aviso y artículos de la Ley del Seguro Social y Reglamento Interior del IMSS citados en la fuente",
+      "paragraphs": [
+        "Si una actuación se suscribe por la suplente, confronte la identidad de la firmante, la fecha y el supuesto de ausencia con el aviso y el expediente correspondiente. Información jurídica general; el análisis de validez requiere revisar el acto concreto."
+      ],
+      "trigger": "Recepción de un documento o resolución firmado por la suplente"
+    }
+  ],
+  "schema_version": 8
+}

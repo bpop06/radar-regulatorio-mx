@@ -1,0 +1,185 @@
+{
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "item": {
+    "ai_generated": true,
+    "authority": "ORGANISMOS DESCONCENTRADOS O DESCENTRALIZADOS INSTITUTO MEXICANO DEL SEGURO SOCIAL",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793871&fecha=17%2F07%2F2026",
+    "card_body": "## Qué se publicó\n\nUna designación de suplencia para mantener la firma y el despacho documental en la UMAE de Gineco Obstetricia de Guadalajara.\n\n## Sustancia\n\nDaniel Estrada García, Director Médico, suplirá las ausencias de la titularidad de la UMAE. Durante ese supuesto puede firmar y despachar documentación, incluida la suscripción de las resoluciones que corresponde emitir al órgano.\n\n## Fuente\n\n[Abrir publicación oficial](https://dof.gob.mx/nota_detalle.php?codigo=5793871&fecha=17%2F07%2F2026)",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "781551cd8f2e9da359235244a806d36f711aa687f2f0254b27afb6620dcad59f",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-1",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/684d05fedc56006378a79c57.json",
+    "detail_url": "notas/684d05fedc56006378a79c57.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "heading": "Designación en la UMAE",
+        "paragraphs": [
+          "El aviso designa al doctor Daniel Estrada García, Director Médico, como suplente de las ausencias de la titularidad de la UMAE Hospital de Gineco Obstetricia del Centro Médico Nacional de Occidente en Guadalajara."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "heading": "Firma, despacho y resoluciones",
+        "paragraphs": [
+          "Durante el supuesto de ausencia, la persona designada puede firmar y despachar la documentación que corresponde al órgano. El título del aviso incluye la suscripción de las resoluciones que debe emitir la unidad."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "heading": "Fundamento normativo citado",
+        "paragraphs": [
+          "La publicación refiere el artículo 251-A de la Ley del Seguro Social y los artículos 138, 148 y 157, último párrafo, del Reglamento Interior del IMSS."
+        ]
+      }
+    ],
+    "detected_at": "2026-08-14T01:46:44.993982+00:00",
+    "document_type": "Aviso",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "13fa052e0533a2e7bc94fb3048bb6462bea9c8797fd1137c88add27e57aa9458",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "AVISO mediante el cual se designa al Doctor Daniel Estrada García, en su carácter de Director Médico, como el funcionario que suplirá las ausencias del Titular de la Unidad Médica de Alta Especialidad (UMAE): Hospital de Gineco Obstetricia del Centro Médico Nacional de Occidente en Guadalajara, Jalisco del Instituto Mexicano del Seguro Social, autorizándole a firmar y despachar la documentación incluyendo la suscripción de las resoluciones que debe emitir este Órgano.",
+          "location": "caracteres 0-476"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al margen un logotipo, que dice: Instituto Mexicano del Seguro Social.- Unidad Médica de Alta Especialidad.- Hospital de Gineco Obstetricia del Centro Médico Nacional de Occidente en Guadalajara, Jalisco.",
+          "location": "caracteres 476-2651"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793871&fecha=17%2F07%2F2026",
+      "retrieved_at": "2026-08-14T00:37:03.186381+00:00"
+    },
+    "executive_summary": [
+      "El IMSS designó al doctor Daniel Estrada García, Director Médico, para suplir las ausencias de la titularidad de la UMAE Hospital de Gineco Obstetricia del Centro Médico Nacional de Occidente en Guadalajara.",
+      "Durante la ausencia puede firmar y despachar la documentación correspondiente al órgano, incluida la suscripción de las resoluciones que debe emitir, en los términos del aviso y del Reglamento Interior citado."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-08-14T01:46:44.993982+00:00",
+    "government_branch": "Organismo descentralizado",
+    "id": "dof:5793871",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "La designación identifica quién puede suscribir y despachar la documentación de la UMAE durante las ausencias de su titularidad."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-1",
+            "chunk-2"
+          ],
+          "paragraphs": [
+            "Durante las ausencias de la titularidad, los documentos y resoluciones de la unidad pueden ser suscritos por la persona designada en el aviso."
+          ],
+          "sector": "Usuarios, patrones y autoridades que reciban actos de la UMAE"
+        }
+      ]
+    },
+    "importance": 2,
+    "issuing_body": "Instituto Mexicano del Seguro Social",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-14T01:46:44.993982+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793871&fecha=17/07/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5793871"
+    },
+    "official_published_at": "2026-07-17",
+    "official_title": "Aviso mediante el cual se designa al Doctor Daniel Estrada García, en su carácter de Director Médico, como el funcionario que suplirá las ausencias del Titular de la Unidad Médica de Alta Especialidad (UMAE): Hospital de Gineco Obstetricia del Centro Médico Nacional de Occidente en Guadalajara, Jalisco del Instituto Mexicano del Seguro Social, autorizándole a firmar y despachar la documentación incluyendo la suscripción de las resoluciones que debe emitir este Órgano.",
+    "published_at": "2026-07-17",
+    "published_day": 17,
+    "published_month": 7,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Personas que requieran identificar a la persona firmante de un acto de la UMAE",
+        "deadline": null,
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "legal_basis": "Artículos 148 y 157, último párrafo, del Reglamento Interior del Instituto Mexicano del Seguro Social, citados en el aviso",
+        "paragraphs": [
+          "Si un documento se suscribe durante una ausencia de la titularidad, puede contrastarse el nombre y cargo de la persona firmante con la designación publicada y con la materia del acto emitido por la unidad médica."
+        ],
+        "trigger": "Firma o despacho de documentación durante una ausencia de la titularidad"
+      }
+    ],
+    "relevance_score": 3,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5793871",
+    "subtopic_tags": [
+      "designa",
+      "titular de la unidad"
+    ],
+    "summary": "El Instituto Mexicano del Seguro Social publicó un aviso de designación para la Unidad Médica de Alta Especialidad Hospital de Gineco Obstetricia del Centro Médico Nacional de Occidente, en Guadalajara, Jalisco. La publicación señala al doctor Daniel Estrada García, en su carácter de Director Médico, como la persona que suplirá las ausencias de la titularidad de la unidad. El aviso está dirigido a autoridades federales, estatales y municipales, patrones, asegurados y público en general.\n\nLa designación se formula con fundamento en el artículo 251-A de la Ley del Seguro Social y en los artículos 138 y 148 del Reglamento Interior del IMSS, para los efectos de los artículos 148 y 157, último párrafo, del propio Reglamento. La publicación identifica a Julio César Cárdenas Valdez como titular de la Dirección de la UMAE y menciona el acuerdo del Consejo Técnico de 25 de noviembre de 2025 relativo a su designación.\n\nDurante las ausencias de la titularidad, Daniel Estrada García queda autorizado para firmar y despachar la documentación que corresponde al órgano. El título del aviso incluye la suscripción de las resoluciones que debe emitir la unidad. La habilitación se conecta expresamente con la suplencia de las ausencias de la Dirección de la UMAE Hospital de Gineco Obstetricia del Centro Médico Nacional de Occidente.\n\nEl aviso establece la persona y el cargo que intervienen para la continuidad de las funciones documentales de la unidad durante ese supuesto. La publicación identifica la unidad médica, la relación de suplencia, el marco normativo citado y el alcance de firma y despacho. El documento está fechado en Guadalajara el 10 de junio de 2026 y se atribuye al titular de la Dirección de la UMAE. La publicación identifica a Julio César Cárdenas Valdez como titular de esa Dirección y cita el acuerdo de Consejo Técnico de 25 de noviembre de 2025.",
+    "summary_teaser": "El IMSS designó al doctor Daniel Estrada García, Director Médico, para suplir las ausencias de la titularidad de la UMAE Hospital de Gineco Obstetricia del Centro Médico Nacional de Occidente, en Guadalajara. Durante ese supuesto puede firmar y despachar la documentación, incluida la suscripción de resoluciones que corresponde al órgano.",
+    "title": "IMSS autoriza suplencia médica en UMAE de Guadalajara",
+    "topic_tags": [
+      "Derecho administrativo",
+      "Nombramientos federales",
+      "Resolución",
+      "Aviso"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5793871&fecha=17/07/2026"
+  },
+  "schema_version": 8
+}

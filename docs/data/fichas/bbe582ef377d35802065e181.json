@@ -1,0 +1,116 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    }
+  ],
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-1"
+      ],
+      "heading": "Revisión conjunta y posición estadounidense",
+      "paragraphs": [
+        "La fuente atribuye la reunión al mecanismo de revisión conjunta y describe la participación de los tres gobiernos. La posición reportada es que Estados Unidos no aceptó renovar el instrumento en su forma vigente; el comunicado no anuncia una modificación textual acordada por las tres partes."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-1"
+      ],
+      "heading": "Continuidad y próximos contactos",
+      "paragraphs": [
+        "La declaración dice que el T-MEC permanece en vigor mientras se atiendan las cuestiones señaladas o se llegue a una terminación. Añade que Estados Unidos seguirá dialogando con México y Canadá sobre lo que considera deficiencias y déficits comerciales, y ubica una ronda bilateral con México en la semana del 20 de julio de 2026."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "4321b44cd2395f812822948c7c84e1ab0f3bf48a2ca3b4d025891bbb6565c56c",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "Documento",
+        "location": "caracteres 0-955"
+      }
+    ],
+    "official_url": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/july/ambassador-greer-issues-statement-usmca-joint-review",
+    "retrieved_at": "2026-08-13T19:37:37.200666+00:00"
+  },
+  "executive_summary": [
+    "La Oficina del Representante Comercial de Estados Unidos informó que Estados Unidos, México y Canadá celebraron virtualmente el 1 de julio de 2026 la revisión conjunta prevista en el T-MEC. Según la declaración, Estados Unidos no acordó renovar el tratado en su forma actual.",
+    "La comunicación distingue esa falta de renovación de la terminación del acuerdo: señala expresamente que el T-MEC continúa en vigor mientras se resuelven los asuntos pendientes o se produzca una terminación. También anuncia una tercera ronda bilateral Estados Unidos-México para la semana del 20 de julio."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-1"
+      ],
+      "paragraphs": [
+        "Operadores con exposición al comercio regional deben diferenciar la falta de acuerdo estadounidense para renovar de una terminación efectiva. La información oficial disponible mantiene el tratado en vigor y anuncia contactos posteriores, sin describir un nuevo régimen arancelario o aduanero."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-1"
+        ],
+        "paragraphs": [
+          "Empresas que operan bajo el T-MEC pueden seguir la revisión y la ronda bilateral anunciada, sin asumir que la declaración por sí sola terminó los compromisos vigentes."
+        ],
+        "sector": "Comercio México-Estados Unidos-Canadá"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/july/ambassador-greer-issues-statement-usmca-joint-review",
+    "categories": [
+      "Comercio exterior",
+      "Comercio internacional"
+    ],
+    "content_hash": "f87fa1e4c421e8925340f7ee9efaf520cdd23b292bd2f1b0d9036214e85a286b",
+    "country_or_org": "EEUU",
+    "detail_data_url": "data/fichas/bbe582ef377d35802065e181.json",
+    "detail_url": "notas/bbe582ef377d35802065e181.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Comunicado",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "ustr:9b31a40d568e7cd7",
+    "importance": 2,
+    "issuing_body": "Oficina del Representante Comercial de EEUU",
+    "jurisdiction": "internacional",
+    "official_published_at": "2026-07-01",
+    "official_title": "Ambassador Greer Issues Statement on the USMCA Joint Review",
+    "published_at": "2026-07-01",
+    "relevance_score": 3,
+    "review_reason": null,
+    "source": "USTR",
+    "source_id": "9b31a40d568e7cd7",
+    "summary_teaser": "La USTR informó que Estados Unidos no aceptó renovar el T-MEC en la revisión conjunta celebrada el 1 de julio de 2026. El comunicado distingue esa posición de una terminación: afirma que el tratado continúa vigente mientras se resuelven cuestiones pendientes o no ocurra una terminación.",
+    "title": "Estados Unidos declara no renovar el T-MEC en julio",
+    "url": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/july/ambassador-greer-issues-statement-usmca-joint-review"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Operadores que utilizan preferencias o disciplinas del T-MEC",
+      "deadline": null,
+      "evidence_refs": [
+        "chunk-1"
+      ],
+      "legal_basis": null,
+      "paragraphs": [
+        "Distinguir entre la posición sobre renovación y la continuidad del tratado que la USTR afirma en el mismo comunicado; vigilar información oficial posterior de las partes sobre la revisión conjunta."
+      ],
+      "trigger": null
+    }
+  ],
+  "schema_version": 8
+}

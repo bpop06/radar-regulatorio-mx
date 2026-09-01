@@ -1,0 +1,160 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-3",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2",
+        "chunk-3"
+      ],
+      "heading": "Solicitud y alcance geográfico propuesto",
+      "paragraphs": [
+        "El Instituto Mexicano de la Propiedad Industrial publica, con fundamento en los artículos 275 y 281 de la Ley Federal de Protección a la Propiedad Industrial, los datos de la solicitud de declaración de protección de la indicación geográfica Venado Bura del Desierto de Sonora. La solicitante identificada es la Secretaría de Agricultura, Ganadería, Recursos Hidráulicos, Pesca y Acuacultura del Estado de Sonora, y el IMPI recibió la solicitud el 15 de abril de 2026 con un alcance posterior de 28 de mayo.",
+        "La publicación describe al producto como un mamífero herbívoro de la familia Cervidae asociado a zonas áridas y semiáridas del desierto sonorense, y detalla una zona de distribución total o parcial en municipios de Sonora. La delimitación incluye coordenadas, altitudes y colindancias de municipios enumerados en los cuadros oficiales. La ficha no valida científicamente esa descripción ni delimita de manera abreviada un derecho; reporta los datos presentados en la solicitud."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-3"
+      ],
+      "heading": "Oposición y ausencia de decisión",
+      "paragraphs": [
+        "El expediente queda disponible para consulta pública en la Dirección Divisional de Marcas del IMPI en el domicilio y horario señalados por la publicación. Cualquier tercera persona que justifique interés puede presentar oposición escrita, observaciones u objeciones sobre el cumplimiento de los artículos 271 y 275 de la ley, acompañando pruebas y comprobante de pago de tarifa, dentro de un plazo improrrogable de un mes desde la publicación en el DOF.",
+        "El propio IMPI aclara que la publicación no prejuzga ni constituye un pronunciamiento sobre la procedencia o improcedencia de la solicitud. Por eso no debe describirse como una indicación geográfica ya declarada o protegida: el texto únicamente abre la etapa pública del procedimiento y preserva la decisión posterior del Instituto."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "8079c0b14053219fd2a28140701d389d7bee596750f70241c2d35541ea060924",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "PUBLICACIÓN de datos relacionados con la Solicitud de Declaración de Protección a la Indicación Geográfica \" Venado Bura del Desierto de Sonora \" .",
+        "location": "caracteres 0-151"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Economía.- Secretaría de Economía.- Instituto Mexicano de la Propiedad Industrial. · parte 1",
+        "location": "caracteres 151-12151"
+      },
+      {
+        "id": "chunk-3",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Economía.- Secretaría de Economía.- Instituto Mexicano de la Propiedad Industrial. · parte 2",
+        "location": "caracteres 12151-17076"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5789898&fecha=08/06/2026",
+    "retrieved_at": "2026-08-13T19:44:29.136928+00:00"
+  },
+  "executive_summary": [
+    "El Instituto Mexicano de la Propiedad Industrial publica, con fundamento en los artículos 275 y 281 de la Ley Federal de Protección a la Propiedad Industrial, los datos de la solicitud de declaración de protección de la indicación geográfica Venado Bura del Desierto de Sonora. La solicitante identificada es la Secretaría de Agricultura, Ganadería, Recursos Hidráulicos, Pesca y Acuacultura del Estado de Sonora, y el IMPI recibió la solicitud el 15 de abril de 2026 con un alcance posterior de 28 de mayo.",
+    "La publicación describe al producto como un mamífero herbívoro de la familia Cervidae asociado a zonas áridas y semiáridas del desierto sonorense, y detalla una zona de distribución total o parcial en municipios de Sonora. La delimitación incluye coordenadas, altitudes y colindancias de municipios enumerados en los cuadros oficiales. La ficha no valida científicamente esa descripción ni delimita de manera abreviada un derecho; reporta los datos presentados en la solicitud."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2",
+        "chunk-3"
+      ],
+      "paragraphs": [
+        "Terceros con interés en la denominación o en la delimitación propuesta cuentan con una etapa formal de oposición, mientras que la protección solicitada aún no ha sido concedida."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2",
+          "chunk-3"
+        ],
+        "paragraphs": [
+          "Terceros con interés en la denominación o en la delimitación propuesta cuentan con una etapa formal de oposición, mientras que la protección solicitada aún no ha sido concedida."
+        ],
+        "sector": "Productores, comunidades, titulares y terceros con interés en indicaciones geográficas de Sonora"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5789898&fecha=08/06/2026",
+    "categories": [
+      "Administración descentralizada"
+    ],
+    "content_hash": "8293b58e8554f58612372f2987177ff4472d609064c09e52bd7ee0a686d59019",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/970ad831b59a2e7821578a00.json",
+    "detail_url": "notas/970ad831b59a2e7821578a00.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Publicación De Datos",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5789898",
+    "importance": 2,
+    "issuing_body": "Instituto Mexicano de la Propiedad Industrial",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-06-08",
+    "official_title": "Publicación de datos relacionados con la Solicitud de Declaración de Protección a la Indicación Geográfica \"Venado Bura del Desierto de Sonora\".",
+    "published_at": "2026-06-08",
+    "relevance_score": 3,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5789898",
+    "summary_teaser": "El IMPI publicó los datos de una solicitud de protección de la indicación geográfica Venado Bura del Desierto de Sonora. La publicación no concede la protección: abre un plazo improrrogable de un mes para que terceros con interés justificado presenten oposición, observaciones u objeciones con pruebas y pago de tarifa.",
+    "title": "IMPI abre oposición a indicación geográfica Venado Bura",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5789898&fecha=08/06/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Productores, comunidades, titulares y terceros con interés en indicaciones geográficas de Sonora",
+      "deadline": "Un mes improrrogable desde la publicación",
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2",
+        "chunk-3"
+      ],
+      "legal_basis": "Artículos 275, 281 y 282 de la Ley Federal de Protección a la Propiedad Industrial",
+      "paragraphs": [
+        "Quien considere afectado debe revisar el expediente completo, reunir prueba y presentar oportunamente su oposición, observaciones u objeciones con el comprobante de pago dentro del mes improrrogable."
+      ],
+      "trigger": "Desde la publicación de datos de la solicitud en el DOF"
+    }
+  ],
+  "schema_version": 8
+}

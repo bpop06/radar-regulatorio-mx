@@ -1,0 +1,110 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-1"
+      ],
+      "heading": "Licitación y objeto",
+      "paragraphs": [
+        "La Unidad Especializada de Recursos, Servicios e Infraestructura Inmobiliaria de la Fiscalía General de la República publica el resumen de la licitación pública internacional bajo cobertura de los tratados LA-49-830-049830002-T-15-2026. El objeto es la adquisición de cartuchos, tanques de tinta, botellas de tinta y tóneres. La publicación remite al anexo técnico y a la convocatoria para el detalle de las partidas y condiciones de participación.",
+        "La convocatoria se publicó en la Plataforma Digital de Contrataciones Públicas el 12 de junio de 2026 y puede consultarse en Compras MX. La junta de aclaraciones se fija para el 3 de julio de 2026 a las 10:30 horas; la presentación y apertura de proposiciones, para el 23 de julio de 2026 a las 10:30 horas; y el fallo, para el 30 de julio de 2026 a las 17:00 horas. Las fechas operan con el texto íntegro y sus eventuales modificaciones oficiales."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "431a86577ab1054516050d30fb4b0edb0990633ea9ce73235945aeb818423577",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "Documento",
+        "location": "caracteres 0-1797"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5790744&fecha=16/06/2026",
+    "retrieved_at": "2026-08-13T19:43:58.674099+00:00"
+  },
+  "executive_summary": [
+    "La Unidad Especializada de Recursos, Servicios e Infraestructura Inmobiliaria de la Fiscalía General de la República publica el resumen de la licitación pública internacional bajo cobertura de los tratados LA-49-830-049830002-T-15-2026. El objeto es la adquisición de cartuchos, tanques de tinta, botellas de tinta y tóneres. La publicación remite al anexo técnico y a la convocatoria para el detalle de las partidas y condiciones de participación.",
+    "La convocatoria se publicó en la Plataforma Digital de Contrataciones Públicas el 12 de junio de 2026 y puede consultarse en Compras MX. La junta de aclaraciones se fija para el 3 de julio de 2026 a las 10:30 horas; la presentación y apertura de proposiciones, para el 23 de julio de 2026 a las 10:30 horas; y el fallo, para el 30 de julio de 2026 a las 17:00 horas. Las fechas operan con el texto íntegro y sus eventuales modificaciones oficiales."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-1"
+      ],
+      "paragraphs": [
+        "El aviso activa un procedimiento de compra internacional de insumos de impresión de la FGR, sin revelar en el resumen el volumen o las especificaciones de cada partida."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-1"
+        ],
+        "paragraphs": [
+          "El aviso activa un procedimiento de compra internacional de insumos de impresión de la FGR, sin revelar en el resumen el volumen o las especificaciones de cada partida."
+        ],
+        "sector": "Proveedores de consumibles de impresión y contratación pública"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5790744&fecha=16/06/2026",
+    "categories": [
+      "Penal"
+    ],
+    "content_hash": "7b8e4fb6f14dbe7febbd3f0ca93d81bbfd138cbe695d7096a0d11664e3ff7b10",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/86a25b003a3d195537c01e46.json",
+    "detail_url": "notas/86a25b003a3d195537c01e46.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Fiscalia General",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5790744",
+    "importance": 2,
+    "issuing_body": "Fiscalía General de la República",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-06-16",
+    "official_title": "FISCALIA GENERAL DE LA REPUBLICA - REF:577210",
+    "published_at": "2026-06-16",
+    "relevance_score": 2,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5790744",
+    "summary_teaser": "La Fiscalía General de la República convocó la licitación pública internacional bajo cobertura de tratados LA-49-830-049830002-T-15-2026 para cartuchos, tanques y botellas de tinta y tóneres. Las bases y las partidas se consultan en Compras MX; el aviso proporciona las fechas de aclaraciones, propuestas y fallo.",
+    "title": "FGR abre compra internacional de insumos de impresión",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5790744&fecha=16/06/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Proveedores de consumibles de impresión y contratación pública",
+      "deadline": "Presentación y apertura de proposiciones: 23 de julio de 2026, 10:30 horas",
+      "evidence_refs": [
+        "chunk-1"
+      ],
+      "legal_basis": "Resumen de convocatoria FGR; Acuerdo A/OM/06/2025",
+      "paragraphs": [
+        "Las personas interesadas deben descargar las bases y el anexo técnico en Compras MX, formular preguntas en la junta de aclaraciones y preparar la propuesta conforme a la convocatoria vigente."
+      ],
+      "trigger": "Al considerar la participación en la licitación LA-49-830-049830002-T-15-2026"
+    }
+  ],
+  "schema_version": 8
+}

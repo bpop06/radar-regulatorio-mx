@@ -1,0 +1,178 @@
+{
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "item": {
+    "ai_generated": true,
+    "authority": "PODER EJECUTIVO SECRETARIA ANTICORRUPCION Y BUEN GOBIERNO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793643&fecha=15%2F07%2F2026",
+    "card_body": "## Qué se publicó\n\nEl Órgano Interno de Control en la Secretaría de Salud difundió la inhabilitación de Galmar Proyectos Integrales, S. de R.L. de C.V. para nuevas contrataciones dentro del alcance que publica.\n\n## Sustancia\n\nLa abstención comienza a partir del día siguiente de la publicación en el Diario Oficial, dura tres meses y puede continuar si la multa no se acredita como pagada. Los contratos adjudicados y los ya formalizados con Galmar Proyectos Integrales no quedan comprendidos.\n\n## Fuente\n\n[Fuente oficial](https://dof.gob.mx/nota_detalle.php?codigo=5793643&fecha=15%2F07%2F2026)",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Penal",
+      "Administración centralizada"
+    ],
+    "content_hash": "30687ea87b3f3a987ffc567a79e7cc1b61a28f32dfac815fa8989ce47e872f90",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-1",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/cb5ed8256556d8b42f1d15ab.json",
+    "detail_url": "notas/cb5ed8256556d8b42f1d15ab.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "heading": "Sanción y alcance",
+        "paragraphs": [
+          "El Órgano Interno de Control en la Secretaría de Salud informa la sanción a Galmar Proyectos Integrales, S. de R.L. de C.V.: la multa descrita en la resolución administrativa y una inhabilitación de tres meses para participar directa o indirectamente en procedimientos de contratación o celebrar contratos regulados por la Ley de Adquisiciones, Arrendamientos y Servicios del Sector Público.",
+          "La prohibición inicia a partir del día siguiente de la publicación en el Diario Oficial. La circular cubre propuestas y contratos con la empresa de manera directa o por interpósita persona."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "heading": "Condiciones de aplicación",
+        "paragraphs": [
+          "La inhabilitación continúa hasta acreditarse el pago de la multa si ésta permanece impaga al vencimiento. Los contratos adjudicados y los ya formalizados con Galmar Proyectos Integrales no quedan comprendidos.",
+          "Entidades federativas, municipios y demarcaciones territoriales deben observarla cuando las adquisiciones, arrendamientos y servicios se contraten total o parcialmente con fondos federales."
+        ]
+      }
+    ],
+    "detected_at": "2026-08-14T01:46:44.993982+00:00",
+    "document_type": "Circular",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "655b12830dcc70145305e497034717dbfe64899fe9bbcc4a806eb3ff48047df0",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "CIRCULAR por la que se comunica a las dependencias y entidades de la Administración Pública Federal, empresas públicas del Estado, Fiscalía General de la República, entidades federativas, y sus municipios, así como las demarcaciones territoriales de la Ciudad de México, que deberán abstenerse de aceptar propuestas o celebrar contratos con la empresa Galmar Proyectos Integrales, S. de R.L. de C.V.",
+          "location": "caracteres 0-403"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Buen Gobierno.- Secretaría Anticorrupción y Buen Gobierno.- Órgano Interno de Control en la Secretaría de Salud.- Área de Responsabilidades.- Expediente: SP-001/2026-INCAR.",
+          "location": "caracteres 403-5712"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793643&fecha=15%2F07%2F2026",
+      "retrieved_at": "2026-08-14T00:37:07.394372+00:00"
+    },
+    "executive_summary": [
+      "El Órgano Interno de Control en la Secretaría de Salud comunicó que Galmar Proyectos Integrales, S. de R.L. de C.V. recibió la multa descrita en la resolución administrativa y una inhabilitación de tres meses para participar directa o indirectamente en procedimientos de contratación o celebrar contratos regulados por la Ley de Adquisiciones, Arrendamientos y Servicios del Sector Público. La circular deriva de una resolución administrativa identificada por la autoridad y delimita a los destinatarios públicos que deben abstenerse de contratar.",
+      "La abstención opera a partir del día siguiente de la publicación en el Diario Oficial. La circular cubre propuestas y contratos con la empresa de manera directa o por interpósita persona. La medida se refiere a propuestas y contratos futuros dentro del marco que describe la circular, por lo que la revisión debe hacerse frente al nombre de la empresa y, cuando procede, frente a la forma de representación expresamente señalada."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-08-14T01:46:44.993982+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5793643",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "La circular incorpora una restricción de elegibilidad para nuevas contrataciones públicas respecto de Galmar Proyectos Integrales, S. de R.L. de C.V.. Los contratos adjudicados y los ya formalizados con Galmar Proyectos Integrales no quedan comprendidos."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-1",
+            "chunk-2"
+          ],
+          "paragraphs": [
+            "Las áreas contratantes deben tratar la inhabilitación como un control de elegibilidad para los procedimientos y contratos que la circular comprende, sin extenderla a los contratos que el propio texto exceptúa."
+          ],
+          "sector": "Contratación pública"
+        }
+      ]
+    },
+    "importance": 2,
+    "issuing_body": "Presidencia de la República",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-14T01:46:44.993982+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793643&fecha=15/07/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5793643"
+    },
+    "official_published_at": "2026-07-15",
+    "official_title": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, empresas públicas del Estado, Fiscalía General de la República, entidades federativas, y sus municipios, así como las demarcaciones territoriales de la Ciudad de México, que deberán abstenerse de aceptar propuestas o celebrar contratos con la empresa Galmar Proyectos Integrales, S. de R.L. de C.V.",
+    "published_at": "2026-07-15",
+    "published_day": 15,
+    "published_month": 7,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Dependencias, entidades y entes que contraten con recursos federales",
+        "deadline": "tres meses; subsiste hasta acreditar el pago de la multa cuando corresponda",
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "legal_basis": "Ley de Adquisiciones, Arrendamientos y Servicios del Sector Público",
+        "paragraphs": [
+          "Cuando Galmar Proyectos Integrales, S. de R.L. de C.V. presente una propuesta, intervenga por interpósita persona o, en su caso, mediante la representación descrita por la circular, confronte la denominación y el procedimiento con la fuente antes de continuar la contratación."
+        ],
+        "trigger": "a partir del día siguiente de la publicación en el Diario Oficial"
+      }
+    ],
+    "relevance_score": 3,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5793643",
+    "subtopic_tags": [
+      "fiscalia",
+      "administracion publica federal"
+    ],
+    "summary": "El Órgano Interno de Control en la Secretaría de Salud comunicó que Galmar Proyectos Integrales, S. de R.L. de C.V. recibió la multa descrita en la resolución administrativa y una inhabilitación de tres meses para participar directa o indirectamente en procedimientos de contratación o celebrar contratos regulados por la Ley de Adquisiciones, Arrendamientos y Servicios del Sector Público. La circular deriva de una resolución administrativa identificada por la autoridad y delimita a los destinatarios públicos que deben abstenerse de contratar.\n\nLa abstención opera a partir del día siguiente de la publicación en el Diario Oficial. La circular cubre propuestas y contratos con la empresa de manera directa o por interpósita persona. La medida se refiere a propuestas y contratos futuros dentro del marco que describe la circular, por lo que la revisión debe hacerse frente al nombre de la empresa y, cuando procede, frente a la forma de representación expresamente señalada.\n\nLa autoridad prevé que, si al terminar el plazo de inhabilitación no se cubre la multa, la restricción subsiste hasta que se acredite el pago ante la Secretaría Anticorrupción y Buen Gobierno para eliminar el registro correspondiente en Compras MX. Los contratos adjudicados y los ya formalizados con Galmar Proyectos Integrales no quedan comprendidos.\n\nPara las unidades compradoras y los entes que ejercen recursos federales, el dato operativo es verificar la identidad del participante y el alcance legal del procedimiento antes de admitir una propuesta o formalizar un contrato. Entidades federativas, municipios y demarcaciones territoriales deben observarla cuando las adquisiciones, arrendamientos y servicios se contraten total o parcialmente con fondos federales. La circular conserva separados el efecto sobre nuevas contrataciones, la comprobación posterior del pago y la continuidad de los contratos que la fuente excluye.\n\nEl Órgano Interno de Control en la Secretaría de Salud informa la sanción a Galmar Proyectos Integrales, S. de R.L. de C.V.: la multa descrita en la resolución administrativa y una inhabilitación de tres meses para participar directa o indirectamente en procedimientos de contratación o celebrar contratos regulados por la Ley de Adquisiciones, Arrendamientos y Servicios del Sector Público. La prohibición inicia a partir del día siguiente de la publicación en el Diario Oficial. La circular cubre propuestas y contratos con la empresa de manera directa o por interpósita persona. La inhabilitación continúa hasta acreditarse el pago de la multa si ésta permanece impaga al vencimiento. Los contratos adjudicados y los ya formalizados con Galmar Proyectos Integrales no quedan comprendidos. Entidades federativas, municipios y demarcaciones territoriales deben observarla cuando las adquisiciones, arrendamientos y servicios se contraten total o parcialmente con fondos federales.",
+    "summary_teaser": "La Secretaría Anticorrupción y Buen Gobierno comunicó tres meses de inhabilitación para Galmar Proyectos Integrales en procedimientos y contratos sujetos a la Ley de Adquisiciones. Si la multa no se paga al vencimiento, la restricción subsiste hasta acreditarse el pago; los contratos adjudicados o formalizados quedan fuera de la circular.",
+    "title": "Inhabilitación de Galmar restringe procedimientos de adquisiciones",
+    "topic_tags": [
+      "Penal",
+      "Derecho administrativo",
+      "Circular"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5793643&fecha=15/07/2026"
+  },
+  "schema_version": 8
+}

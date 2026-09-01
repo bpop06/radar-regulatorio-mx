@@ -1,0 +1,116 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary"
+      ]
+    }
+  ],
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-1"
+      ],
+      "heading": "Contenido publicado",
+      "paragraphs": [
+        "El resumen identifica una licitación electrónica nacional para un servicio de ciberseguridad y remite a ComprasMX para las bases y condiciones completas."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-1"
+      ],
+      "heading": "Alcance práctico",
+      "paragraphs": [
+        "Las fechas del extracto son internamente inconsistentes, por lo que no respaldan un calendario actual verificable sin revisar el expediente oficial."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "399cf437f761ef308b18d550d61bf0dc752cb8c524520adc580dc882e9bdfe95",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "Documento",
+        "location": "caracteres 0-1394"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5790754&fecha=16/06/2026",
+    "retrieved_at": "2026-08-13T19:43:57.873810+00:00"
+  },
+  "executive_summary": [
+    "El Instituto Mexicano de la Propiedad Industrial publicó un resumen de convocatoria a licitación pública electrónica nacional para un servicio integral de ciberseguridad de infraestructura crítica de información y bases de datos. El texto dirige a las personas interesadas a ComprasMX para consultar las bases, los requisitos de participación y el modelo de contrato. También identifica el procedimiento de licitación y explica que los detalles de volumen se determinan en la propia convocatoria.",
+    "El extracto contiene un problema de consistencia temporal que impide reportar como confiable su calendario operativo. Aunque señala una publicación en ComprasMX y una fecha de emisión en dos mil veintiséis, los renglones de junta de aclaraciones, presentación y apertura de proposiciones, y fallo muestran fechas de dos mil veinticinco. La fuente disponible no explica si esas fechas son erratas, referencias heredadas o datos vigentes, por lo que no es posible afirmar un plazo actual de participación sólo con este resumen."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-1"
+      ],
+      "paragraphs": [
+        "La información permite detectar una contratación de ciberseguridad, pero no acreditar la vigencia de plazos o la etapa procedimental."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-1"
+        ],
+        "paragraphs": [
+          "Las personas interesadas deben verificar el procedimiento en ComprasMX y no basar su participación en las fechas contradictorias del extracto."
+        ],
+        "sector": "Proveedores potenciales de servicios de ciberseguridad"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5790754&fecha=16/06/2026",
+    "categories": [
+      "Administración descentralizada"
+    ],
+    "content_hash": "23b37482ffdb99c28c33b0d441d0e0a5249da729fabcc6b2cfaccea4ec11612d",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/c2bb8da9d117d853b0b5d9d3.json",
+    "detail_url": "notas/c2bb8da9d117d853b0b5d9d3.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Instituto Mexicano",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5790754",
+    "importance": 2,
+    "issuing_body": "Instituto Mexicano de la Propiedad Industrial",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-06-16",
+    "official_title": "INSTITUTO MEXICANO DE LA PROPIEDAD INDUSTRIAL - REF:577213",
+    "published_at": "2026-06-16",
+    "relevance_score": 3,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5790754",
+    "summary_teaser": "El IMPI publicó un resumen de licitación electrónica nacional para un servicio integral de ciberseguridad de infraestructura crítica y bases de datos. El extracto identifica el procedimiento y ComprasMX, pero contiene fechas que no son internamente consistentes con el año y la fecha de emisión que el propio texto indica.",
+    "title": "Licitación del IMPI establece un calendario internamente inconsistente",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5790754&fecha=16/06/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Proveedores potenciales de servicios de ciberseguridad",
+      "deadline": null,
+      "evidence_refs": [
+        "chunk-1"
+      ],
+      "legal_basis": "Resumen de convocatoria y portal ComprasMX señalado en la fuente",
+      "paragraphs": [
+        "Abrir el expediente oficial en ComprasMX, confirmar el calendario y conservar evidencia de cualquier aclaración o modificación antes de presentar una propuesta."
+      ],
+      "trigger": "Considerar participación en la licitación publicada por el IMPI"
+    }
+  ],
+  "schema_version": 8
+}

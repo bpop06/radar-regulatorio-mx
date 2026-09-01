@@ -1,0 +1,141 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "heading": "Sanción comunicada",
+      "paragraphs": [
+        "El Órgano Interno de Control en el Aeropuerto Internacional de la Ciudad de México comunica la resolución contenida en el oficio SABG/OICKDN/AR/243/2026, de 14 de mayo de 2026, dentro del expediente PA-002/2026 AICM. La circular señala una multa de 967,896 pesos y una inhabilitación temporal de veintiún meses y dieciocho días para Servicios Especiales de Gas LP, S.A. de C.V., a fin de que no participe directamente o por interpósita persona en procedimientos de contratación ni celebre contratos regulados por la Ley de Adquisiciones, Arrendamientos y Servicios del Sector Público.",
+        "La medida se dirige a dependencias y entidades federales, Fiscalía General de la República, empresas públicas del Estado, entidades federativas, municipios y demarcaciones territoriales de la Ciudad de México. La circular comunica el alcance de una resolución administrativa; no permite extender la inhabilitación a sociedades distintas ni a actividades contractuales ajenas al régimen que el texto especifica."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Efectos y límite sobre contratos previos",
+      "paragraphs": [
+        "La abstención rige desde el día siguiente de la publicación y durante veintiún meses y dieciocho días. Si al vencimiento la multa no está pagada, la inhabilitación subsiste hasta que se cubra y se presente ante la Secretaría Anticorrupción y Buen Gobierno la prueba de pago para eliminar el registro en Compras MX. El texto no exige una nueva publicación para esa eliminación.",
+        "La circular excluye los contratos adjudicados y los que ya estén formalizados con la empresa, en los términos que cita del reglamento aplicable. Las unidades contratantes deben verificar si la actuación es un procedimiento o contrato nuevo y diferenciarla de los instrumentos previos que el propio documento exceptúa."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "df6345a6de0aac002a4a34eb401316416df28f9b01952b93ead11b1ecdf46ed0",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "CIRCULAR por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a la Fiscalía General de la República, a las empresas públicas del Estado, a las entidades federativas y sus municipios, así como a las demarcaciones territoriales de la Ciudad de México que deberán abstenerse de participar en procedimientos de contratación o celebrar contratos con la persona moral Servicios Especiales de Gas LP, S.A. de C.V.",
+        "location": "caracteres 0-449"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Buen Gobierno.- Secretaría Anticorrupción y Buen Gobierno.- Órgano Interno de Control en el Aeropuerto Internacional de la Ciudad de México, S.A. de C.V.- Área de Responsabilidades.- Expediente: PA-002/2026 AICM.",
+        "location": "caracteres 449-8694"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5790011&fecha=09/06/2026",
+    "retrieved_at": "2026-08-13T19:44:26.226140+00:00"
+  },
+  "executive_summary": [
+    "El Órgano Interno de Control en el Aeropuerto Internacional de la Ciudad de México comunica la resolución contenida en el oficio SABG/OICKDN/AR/243/2026, de 14 de mayo de 2026, dentro del expediente PA-002/2026 AICM. La circular señala una multa de 967,896 pesos y una inhabilitación temporal de veintiún meses y dieciocho días para Servicios Especiales de Gas LP, S.A. de C.V., a fin de que no participe directamente o por interpósita persona en procedimientos de contratación ni celebre contratos regulados por la Ley de Adquisiciones, Arrendamientos y Servicios del Sector Público.",
+    "La medida se dirige a dependencias y entidades federales, Fiscalía General de la República, empresas públicas del Estado, entidades federativas, municipios y demarcaciones territoriales de la Ciudad de México. La circular comunica el alcance de una resolución administrativa; no permite extender la inhabilitación a sociedades distintas ni a actividades contractuales ajenas al régimen que el texto especifica."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "paragraphs": [
+        "La empresa queda impedida para nuevas contrataciones del alcance legal comunicado, mientras que los contratos ya adjudicados o formalizados quedan fuera de la aplicación de la circular."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "La empresa queda impedida para nuevas contrataciones del alcance legal comunicado, mientras que los contratos ya adjudicados o formalizados quedan fuera de la aplicación de la circular."
+        ],
+        "sector": "Unidades compradoras y proveedores en contratación pública"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5790011&fecha=09/06/2026",
+    "categories": [
+      "Penal",
+      "Administración centralizada"
+    ],
+    "content_hash": "fb040492ce001b576e518e4ed82b913f539d7915dbb3374d4fa8c6bf17a49182",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/7a6c0cf07634e443b9ea88c8.json",
+    "detail_url": "notas/7a6c0cf07634e443b9ea88c8.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Circular",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5790011",
+    "importance": 2,
+    "issuing_body": "Presidencia de la República",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-06-09",
+    "official_title": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a la Fiscalía General de la República, a las empresas públicas del Estado, a las entidades federativas y sus municipios, así como a las demarcaciones territoriales de la Ciudad de México que deberán abstenerse de participar en procedimientos de contratación o celebrar contratos con la persona moral Servicios Especiales de Gas LP, S.A. de C.V.",
+    "published_at": "2026-06-09",
+    "relevance_score": 3,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5790011",
+    "summary_teaser": "Una circular del Órgano Interno de Control en el AICM comunica la inhabilitación de Servicios Especiales de Gas LP, S.A. de C.V. por veintiún meses y dieciocho días y una multa de 967,896 pesos. La abstención aplica a nuevas contrataciones cubiertas por la ley de adquisiciones, con reglas sobre pago pendiente y contratos ya formalizados.",
+    "title": "Autoridad inhabilita a Servicios Especiales de Gas LP",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5790011&fecha=09/06/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Unidades compradoras y proveedores en contratación pública",
+      "deadline": "Veintiún meses y dieciocho días, con subsistencia hasta pago de multa si procede",
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "legal_basis": "Circular del expediente PA-002/2026 AICM; Ley de Adquisiciones, Arrendamientos y Servicios del Sector Público",
+      "paragraphs": [
+        "Antes de admitir la participación de la empresa, consulte la circular, la identidad del proveedor, el plazo de inhabilitación y la naturaleza de la contratación; documente si un contrato es previo y formalizado."
+      ],
+      "trigger": "Desde el día siguiente a la publicación de la circular"
+    }
+  ],
+  "schema_version": 8
+}

@@ -1,0 +1,143 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "heading": "Bases modificadas",
+      "paragraphs": [
+        "La CNBV modificó las bases quinta y octava de la autorización de Expansive Realty después de la modificación de su objeto social.",
+        "La base quinta vincula el objeto y los servicios de la institución con los artículos 15, 16 y 19 de la Ley Fintech."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "heading": "Servicios y regulación aplicable",
+      "paragraphs": [
+        "Los servicios de financiamiento colectivo de deuda y regalías quedan sujetos a la Ley Fintech, disposiciones de la CNBV, reglas del Banco de México y demás normas aplicables.",
+        "El oficio cambia términos de una autorización existente y no sustituye la evaluación de operaciones específicas."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "93b81717c9a0981d22998e2438809597cf7668e98d61dc60bbeb7b643db7b09d",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "OFICIO mediante el cual se modifican los términos de la autorización para organizarse y operar de Expansive Realty, S.A.P.I. de C.V., Institución de Financiamiento Colectivo.",
+        "location": "caracteres 0-178"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Comisión Nacional Bancaria y de Valores.- Vicepresidencia de Normatividad.- Dirección General de Autorizaciones Especializadas.- Vicepresidencia de Supervisión de Grupos e Intermediarios Financieros B.- Dirección General de Supervisión de Grupos e Intermediarios Financieros E.- Oficio No. 311-752461/2026.",
+        "location": "caracteres 178-5310"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793462&fecha=14%2F07%2F2026",
+    "retrieved_at": "2026-08-14T00:37:08.524496+00:00"
+  },
+  "executive_summary": [
+    "La Comisión Nacional Bancaria y de Valores modificó las bases quinta y octava de la autorización de Expansive Realty, S.A.P.I. de C.V., Institución de Financiamiento Colectivo. La modificación responde a la protocolización de una asamblea extraordinaria de accionistas de mayo de 2026 que alteró el objeto social de la entidad.",
+    "La nueva base quinta señala que el objeto social corresponderá a las actividades del artículo 15 de la Ley para Regular las Instituciones de Tecnología Financiera y que realizará las operaciones y servicios previstos en los artículos 16, fracciones I y III, y 19, fracciones I a XI, de esa ley."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "paragraphs": [
+        "La autorización de Expansive debe leerse con sus bases modificadas para identificar el objeto social y el marco regulatorio de sus servicios de financiamiento colectivo."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "La plataforma, sus usuarios y sus áreas de cumplimiento deben alinear documentación y operación con las bases modificadas y la regulación aplicable."
+        ],
+        "sector": "Tecnología financiera"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793462&fecha=14%2F07%2F2026",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "2fcb05c46048440907854be9a7c7216ecc041924879fe656e29239af2306f1b3",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/c6e42af1a4a8a6ed55b107d9.json",
+    "detail_url": "notas/c6e42af1a4a8a6ed55b107d9.html",
+    "detected_at": "2026-08-14T01:46:44.993982+00:00",
+    "document_type": "Oficio",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5793462",
+    "importance": 1,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-07-14",
+    "official_title": "Oficio mediante el cual se modifican los términos de la autorización para organizarse y operar de Expansive Realty, S.A.P.I. de C.V., Institución de Financiamiento Colectivo.",
+    "published_at": "2026-07-14",
+    "relevance_score": 1,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5793462",
+    "summary_teaser": "La CNBV modificó las bases de autorización de Expansive Realty como institución de financiamiento colectivo después de una modificación de objeto social. El oficio precisa actividades de la Ley Fintech y confirma que los servicios de financiamiento colectivo de deuda y regalías siguen sujetos a la regulación aplicable.",
+    "title": "CNBV modifica autorización de Expansive para financiamiento colectivo",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5793462&fecha=14/07/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Expansive Realty, usuarios e inversionistas de financiamiento colectivo",
+      "deadline": null,
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "legal_basis": "Ley para Regular las Instituciones de Tecnología Financiera",
+      "paragraphs": [
+        "Al evaluar un servicio de Expansive, revise las bases quinta y octava modificadas junto con la Ley Fintech y las disposiciones aplicables; no trate el oficio como aprobación de una operación individual."
+      ],
+      "trigger": "Operación o revisión de servicios de financiamiento colectivo"
+    }
+  ],
+  "schema_version": 8
+}

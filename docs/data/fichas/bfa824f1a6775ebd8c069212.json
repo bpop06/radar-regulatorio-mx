@@ -1,0 +1,141 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "heading": "Resolución y alcance subjetivo",
+      "paragraphs": [
+        "El Área de Responsabilidades del Órgano Interno de Control en la Secretaría de la Defensa Nacional comunica la resolución de 30 de abril de 2026 en el procedimiento 039/PAS/2025. Según la circular, se impuso a Ingeniería y Desarrollo de Obras Suma, S.A. de C.V. y a Omar Suárez Márquez una multa de 3,197,386.50 pesos y una inhabilitación por cinco años para participar directamente en procedimientos de contratación o celebrar contratos regulados por la Ley de Adquisiciones, Arrendamientos y Servicios del Sector Público y su Reglamento.",
+        "El texto extiende expresamente la medida respecto de Omar Suárez Márquez cuando pretenda representar empresas distintas de la sancionada. Esa precisión es parte del alcance comunicado; no autoriza a presumir la inhabilitación de otras personas morales que no se encuentren en el supuesto de representación que la circular identifica."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Efectos, pago y contratos excluidos",
+      "paragraphs": [
+        "Las dependencias y entidades federales, la Fiscalía General de la República, entidades federativas, municipios y demarcaciones territoriales deben abstenerse de aceptar propuestas o celebrar contratos con la empresa, directamente o por interpósita persona, y con la persona física en el supuesto de representación indicado, desde el día siguiente a la publicación y por cinco años. Para autoridades subnacionales, el texto conecta el cumplimiento con contrataciones cubiertas total o parcialmente con fondos federales conforme a convenios con el Ejecutivo Federal.",
+        "Si al vencimiento del plazo los sancionados no pagaron la multa, la inhabilitación subsiste hasta el pago, cuya acreditación debe presentarse ante la Secretaría Anticorrupción y Buen Gobierno para retirar el registro en Compras MX. La circular excluye los contratos adjudicados y los que ya estén formalizados con la empresa y la persona física señaladas. Las unidades contratantes deben separar el análisis de nuevos procedimientos de la situación de contratos preexistentes."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "1cb01a2ca43ef424086c54fd2b72a413bbd87d5cf6c8f39ecd889684dcf56e9a",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "CIRCULAR por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a la Fiscalía General de la República, a las entidades federativas, municipios y demarcaciones territoriales de la Ciudad de México, que deberán abstenerse de aceptar propuestas o celebrar contratos con la empresa Ingeniería y Desarrollo de Obras Suma, S.A. de C.V. y la persona física que la representó el Ciudadano Omar Suárez Márquez, incluso cuando este último pretenda representar a empresas diversas a la sancionada.",
+        "location": "caracteres 0-527"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Buen Gobierno.- Secretaría Anticorrupción y Buen Gobierno.- Órgano Interno de Control en la Secretaría de la Defensa Nacional.- Área de Responsabilidades.- Expediente: 039/PAS/2025.",
+        "location": "caracteres 527-6626"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5790546&fecha=15/06/2026",
+    "retrieved_at": "2026-08-13T19:44:00.240242+00:00"
+  },
+  "executive_summary": [
+    "El Área de Responsabilidades del Órgano Interno de Control en la Secretaría de la Defensa Nacional comunica la resolución de 30 de abril de 2026 en el procedimiento 039/PAS/2025. Según la circular, se impuso a Ingeniería y Desarrollo de Obras Suma, S.A. de C.V. y a Omar Suárez Márquez una multa de 3,197,386.50 pesos y una inhabilitación por cinco años para participar directamente en procedimientos de contratación o celebrar contratos regulados por la Ley de Adquisiciones, Arrendamientos y Servicios del Sector Público y su Reglamento.",
+    "El texto extiende expresamente la medida respecto de Omar Suárez Márquez cuando pretenda representar empresas distintas de la sancionada. Esa precisión es parte del alcance comunicado; no autoriza a presumir la inhabilitación de otras personas morales que no se encuentren en el supuesto de representación que la circular identifica."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "paragraphs": [
+        "La medida restringe la participación contractual de la empresa y de su representante en el alcance expresamente comunicado, con un control adicional sobre la representación de otras empresas y una condición de subsistencia por multa impaga."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "La medida restringe la participación contractual de la empresa y de su representante en el alcance expresamente comunicado, con un control adicional sobre la representación de otras empresas y una condición de subsistencia por multa impaga."
+        ],
+        "sector": "Unidades compradoras y participantes en contratación pública"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5790546&fecha=15/06/2026",
+    "categories": [
+      "Penal",
+      "Administración centralizada"
+    ],
+    "content_hash": "fc03dbae92816cc4063d8a1631aca37ea12d10e86b645a870ae21b6c54a522cf",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/bfa824f1a6775ebd8c069212.json",
+    "detail_url": "notas/bfa824f1a6775ebd8c069212.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Circular",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5790546",
+    "importance": 2,
+    "issuing_body": "Presidencia de la República",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-06-15",
+    "official_title": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a la Fiscalía General de la República, a las entidades federativas, municipios y demarcaciones territoriales de la Ciudad de México, que deberán abstenerse de aceptar propuestas o celebrar contratos con la empresa Ingeniería y Desarrollo de Obras Suma, S.A. de C.V. y la persona física que la representó el Ciudadano Omar Suárez Márquez, incluso cuando este último pretenda representar a empresas diversas a la sancionada.",
+    "published_at": "2026-06-15",
+    "relevance_score": 3,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5790546",
+    "summary_teaser": "La Secretaría Anticorrupción y Buen Gobierno comunicó la inhabilitación por cinco años de Ingeniería y Desarrollo de Obras Suma, S.A. de C.V. y de Omar Suárez Márquez, incluso cuando éste represente empresas distintas. La circular añade una multa de 3.19 millones de pesos, reglas de subsistencia y la excepción de contratos ya formalizados.",
+    "title": "Autoridad inhabilita a Suma y su representante por cinco años",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5790546&fecha=15/06/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Unidades compradoras y participantes en contratación pública",
+      "deadline": "Cinco años, con subsistencia hasta cubrir la multa si queda impaga",
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "legal_basis": "Circular AR07-07/2026; procedimiento 039/PAS/2025; Ley de Adquisiciones, Arrendamientos y Servicios del Sector Público",
+      "paragraphs": [
+        "Antes de admitir una propuesta o formalizar un contrato, valide la identidad de la empresa, de quien la representa y el alcance temporal de la circular; trate por separado los contratos ya adjudicados o formalizados."
+      ],
+      "trigger": "Desde el día siguiente a la publicación de la circular"
+    }
+  ],
+  "schema_version": 8
+}

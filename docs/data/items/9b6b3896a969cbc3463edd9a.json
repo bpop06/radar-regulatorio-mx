@@ -1,0 +1,158 @@
+{
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "item": {
+    "ai_generated": true,
+    "authority": "ORGANISMOS DESCONCENTRADOS O DESCENTRALIZADOS INSTITUTO MEXICANO DE LA PROPIEDAD INDUSTRIAL",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791381&fecha=23/06/2026",
+    "card_body": "## Qué se publicó\n\nEl Diario Oficial de la Federación publicó un acuerdo del IMPI que declara días inhábiles para oficinas específicas.\n\n## Sustancia\n\nEl acuerdo fija un día inhábil para la Oficina Regional 2 en Zapopan y otro para dos domicilios centrales en Ciudad de México, con alcance limitado a las sedes y fechas nombradas.\n\n## Fuente\n\nLa fuente oficial es el Diario Oficial de la Federación. El acto revisado es el acuerdo del Instituto Mexicano de la Propiedad Industrial que declara días inhábiles.",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración descentralizada"
+    ],
+    "content_hash": "91f770d281051776a7733a94f0df602905a791f31210b73b1957833a52260236",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "not_material",
+        "reason": "Primer locator es título; fechas y direcciones delimitan medida en locator material.",
+        "source_ref": "chunk-1",
+        "target_sections": []
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/9b6b3896a969cbc3463edd9a.json",
+    "detail_url": "notas/9b6b3896a969cbc3463edd9a.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "heading": "Oficina Regional 2",
+        "paragraphs": [
+          "Publicación identifica Oficina Regional 2 en Zapopan y fija 18 de junio de 2026 como día inhábil para esa sede. Alcance territorial y temporal depende de oficina y fecha nombradas."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "heading": "Oficinas centrales",
+        "paragraphs": [
+          "Para 24 de junio de 2026, el Acuerdo menciona oficinas centrales en Periférico Sur 3106, Jardines del Pedregal, y Arenal 550, Pueblo Santa María Tepepan, ambas en Ciudad de México. Disposición surte efectos desde publicación oficial."
+        ]
+      }
+    ],
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Acuerdo",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "6f78af1be10fb84d38078243827908511fa93cf77f50a25f0643a236f4f1aeb9",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "ACUERDO por el que se declaran días inhábiles en el Instituto Mexicano de la Propiedad Industrial.",
+          "location": "caracteres 0-102"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Economía.- Secretaría de Economía.- Instituto Mexicano de la Propiedad Industrial.",
+          "location": "caracteres 102-3050"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791381&fecha=23/06/2026",
+      "retrieved_at": "2026-08-13T19:43:50.053019+00:00"
+    },
+    "executive_summary": [
+      "IMPI declara inhábil 18 de junio de 2026 para Oficina Regional 2 ubicada en Zapopan, Jalisco. Declara también inhábil 24 de junio de 2026 para oficinas centrales de Periférico Sur 3106 y Arenal 550, Ciudad de México.",
+      "El Acuerdo individualiza fechas y domicilios afectados y dispone vigencia desde publicación. No describe inhabilidad general para todas unidades IMPI ni formula regla adicional sobre plataformas electrónicas."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Organismo descentralizado",
+    "id": "dof:5791381",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "Personas con actuaciones presenciales o trámites vinculados con sedes listadas deben considerar fechas inhábiles individualizadas. Relevancia para plazos depende de trámite, oficina y fecha cubiertos."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-2"
+          ],
+          "paragraphs": [
+            "Titulares, representantes y personal IMPI pueden verificar domicilio competente antes de ajustar seguimiento de actuación por días declarados inhábiles."
+          ],
+          "sector": "Propiedad industrial"
+        }
+      ]
+    },
+    "importance": 2,
+    "issuing_body": "Instituto Mexicano de la Propiedad Industrial",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T13:53:50.681449+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791381&fecha=23/06/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5791381"
+    },
+    "official_published_at": "2026-06-23",
+    "official_title": "Acuerdo por el que se declaran días inhábiles en el Instituto Mexicano de la Propiedad Industrial.",
+    "published_at": "2026-06-23",
+    "published_day": 23,
+    "published_month": 6,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Personas con gestiones ante sedes identificadas IMPI",
+        "deadline": "18 de junio en Zapopan; 24 de junio en los dos domicilios centrales, ambos de 2026",
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "legal_basis": null,
+        "paragraphs": [
+          "Verificar si trámite corresponde a Oficina Regional 2 o dos oficinas centrales y considerar fecha inhábil. No extrapolar el Acuerdo a oficinas o sistemas no mencionados."
+        ],
+        "trigger": "Cuando actuación dependa de una oficina señalada"
+      }
+    ],
+    "relevance_score": 3,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5791381",
+    "subtopic_tags": [
+      "propiedad industrial"
+    ],
+    "summary": "IMPI declara inhábil 18 de junio de 2026 para Oficina Regional 2 ubicada en Zapopan, Jalisco. Declara también inhábil 24 de junio de 2026 para oficinas centrales de Periférico Sur 3106 y Arenal 550, Ciudad de México.\n\nEl Acuerdo individualiza fechas y domicilios afectados y dispone vigencia desde publicación. No describe inhabilidad general para todas unidades IMPI ni formula regla adicional sobre plataformas electrónicas.\n\nPublicación identifica Oficina Regional 2 en Zapopan y fija 18 de junio de 2026 como día inhábil para esa sede. Alcance territorial y temporal depende de oficina y fecha nombradas.\n\nPara 24 de junio de 2026, el Acuerdo menciona oficinas centrales en Periférico Sur 3106, Jardines del Pedregal, y Arenal 550, Pueblo Santa María Tepepan, ambas en Ciudad de México. Disposición surte efectos desde publicación oficial.\n\nMedida contiene dos supuestos concretos, no calendario general de días inhábiles del Instituto. Precisión de cada domicilio evita inferir alcance a oficinas regionales diferentes, trámites fuera de sedes o canales no mencionados. La fuente debe leerse con procedimiento específico. Los dos días no son intercambiables: cada uno está asociado a una localización institucional determinada.\n\nPersonas con actuaciones presenciales o trámites vinculados con sedes listadas deben considerar fechas inhábiles individualizadas. Relevancia para plazos depende de trámite, oficina y fecha cubiertos. Titulares, representantes y personal IMPI pueden verificar domicilio competente antes de ajustar seguimiento de actuación por días declarados inhábiles.\n\nLas inhabilidades se asignan a oficinas y fechas concretas; el acuerdo no declara una suspensión general del Instituto ni describe el cierre de sistemas que no menciona. Para la Oficina Regional 2, la inhabilidad se refiere a la sede de Zapopan el 18 de junio. Para las oficinas centrales, se limita a los domicilios de Periférico Sur 3106 y Arenal 550 el 24 de junio. Ningún otro domicilio queda expresamente comprendido por el Acuerdo.",
+    "summary_teaser": "El IMPI declara inhábil el 18 de junio de 2026 para su Oficina Regional 2 en Zapopan y el 24 de junio para dos domicilios centrales en Ciudad de México. El acuerdo individualiza sedes y fechas, sin extender la medida a todas las oficinas o plataformas.",
+    "title": "IMPI declara inhábiles el 18 y 24 de junio en oficinas específicas",
+    "topic_tags": [
+      "Propiedad intelectual",
+      "Acuerdo"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5791381&fecha=23/06/2026"
+  },
+  "schema_version": 8
+}

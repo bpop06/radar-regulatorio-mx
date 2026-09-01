@@ -1,0 +1,175 @@
+{
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "item": {
+    "ai_generated": true,
+    "authority": "PODER EJECUTIVO SECRETARIA ANTICORRUPCION Y BUEN GOBIERNO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792793&fecha=07/07/2026",
+    "card_body": "## Qué se publicó\n\nUna circular que ordena abstenerse de contratar con Impulsora Cordobesa de Alimentos y Servicios.\n\n## Sustancia\n\nLa inhabilitación opera por un año desde el día siguiente de la publicación y subsiste hasta pagar la multa si ésta sigue impaga al terminar ese periodo. La cuantía no se publica.\n\n## Fuente\n\n[Consultar fuente oficial](https://dof.gob.mx/nota_detalle.php?codigo=5792793&fecha=07/07/2026)",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Penal",
+      "Administración centralizada"
+    ],
+    "content_hash": "46128dbbfb6b4d7f8a72f12db11674773868e0206bb964ee08427bdca0036323",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "not_material",
+        "reason": "Es el encabezado de la Circular; la prohibición, plazo y excepciones están en chunk-2.",
+        "source_ref": "chunk-1",
+        "target_sections": []
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/4e92bb97b7ba88bd223d0d2f.json",
+    "detail_url": "notas/4e92bb97b7ba88bd223d0d2f.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "heading": "Alcance de la abstención",
+        "paragraphs": [
+          "La Circular prohíbe aceptar propuestas o celebrar contratos con la empresa, directa o indirectamente, en adquisiciones, arrendamientos, servicios, obra pública y servicios relacionados."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "heading": "Plazo y condición de pago",
+        "paragraphs": [
+          "La inhabilitación es de un año desde el día siguiente de la publicación. Si la multa no se paga al concluir ese periodo, subsiste hasta acreditarse el pago; el importe no se publica."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "heading": "Registro y contratos previos",
+        "paragraphs": [
+          "La acreditación de pago ante la Secretaría permite eliminar el registro de Compras MX sin otro comunicado. Los contratos adjudicados o formalizados previamente están excluidos."
+        ]
+      }
+    ],
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Circular",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "0c85d6cb3dfbf490a11771688927a9521e3be03f6df46aaa0a865cc601d5ba70",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "CIRCULAR por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a las empresas públicas del Estado, a la Fiscalía General de la República, a las entidades federativas y sus municipios, así como a las demarcaciones territoriales de la Ciudad de México, que deberán abstenerse de aceptar propuestas o celebrar contratos con la empresa Impulsora Cordobesa de Alimentos y Servicios, S.A. de C.V.",
+          "location": "caracteres 0-432"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Buen Gobierno.- Secretaría Anticorrupción y Buen Gobierno.- Órgano Interno de Control en el Instituto Mexicano del Seguro Social.- Área de Responsabilidades.- Expediente No. PISI-A-NC-DS-0006/2025.",
+          "location": "caracteres 432-7656"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792793&fecha=07/07/2026",
+      "retrieved_at": "2026-08-13T19:43:03.898618+00:00"
+    },
+    "executive_summary": [
+      "Las entidades señaladas deben abstenerse de recibir propuestas o celebrar nuevas contrataciones con Impulsora Cordobesa durante un año desde el día siguiente de la publicación.",
+      "Si la multa continúa impaga al cumplirse ese año, la inhabilitación se mantiene hasta el pago; la Circular no divulga el monto de la multa.",
+      "Los contratos ya adjudicados o formalizados no quedan comprendidos en la medida."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5792793",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "La medida afecta nuevas propuestas y contrataciones en las materias indicadas, con una duración que puede extenderse por la falta de pago de la multa."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-2"
+          ],
+          "paragraphs": [
+            "Deben revisar la identidad de la contratista y aplicar la abstención a nuevas operaciones dentro del ámbito material y financiero que describe la Circular."
+          ],
+          "sector": "Unidades compradoras y autoridades que ejercen recursos federales"
+        }
+      ]
+    },
+    "importance": 2,
+    "issuing_body": "Presidencia de la República",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T13:53:50.681449+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792793&fecha=07/07/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5792793"
+    },
+    "official_published_at": "2026-07-07",
+    "official_title": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a las empresas públicas del Estado, a la Fiscalía General de la República, a las entidades federativas y sus municipios, así como a las demarcaciones territoriales de la Ciudad de México, que deberán abstenerse de aceptar propuestas o celebrar contratos con la empresa Impulsora Cordobesa de Alimentos y Servicios, S.A. de C.V.",
+    "published_at": "2026-07-07",
+    "published_day": 7,
+    "published_month": 7,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Unidades compradoras y áreas de contratación pública",
+        "deadline": "Un año desde el día siguiente de la publicación, con subsistencia hasta el pago de la multa si sigue impaga",
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "legal_basis": "Circular y resolución sancionadora referida en la publicación",
+        "paragraphs": [
+          "Antes de aceptar una propuesta o formalizar una nueva contratación en las materias indicadas, verifiquen el alcance de la abstención respecto de la empresa y sus actuaciones por interpósita persona."
+        ],
+        "trigger": "Evaluación de una nueva propuesta o contratación con la empresa"
+      }
+    ],
+    "relevance_score": 3,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5792793",
+    "subtopic_tags": [
+      "fiscalia",
+      "administracion publica federal"
+    ],
+    "summary": "La Circular comunica a dependencias y entidades de la Administración Pública Federal, empresas públicas del Estado, Fiscalía General de la República, entidades federativas, municipios y demarcaciones territoriales de Ciudad de México que deben abstenerse de aceptar propuestas o celebrar contratos con Impulsora Cordobesa de Alimentos y Servicios, S.A. de C.V. La orden abarca contrataciones de adquisiciones, arrendamientos y servicios, obras públicas y servicios relacionados, tanto de manera directa como por interpósita persona. Deriva de la resolución dictada el 16 de junio de 2026 en el expediente administrativo citado por la fuente.\n\nLa inhabilitación dura un año a partir del día siguiente de la publicación de la Circular. El documento no revela el monto de la multa impuesta junto con la sanción, por lo que no permite cuantificar esa obligación. Sin embargo, sí describe una condición adicional para el término efectivo de la inhabilitación: si al cumplirse el año la empresa no ha pagado la multa, la inhabilitación subsiste hasta que se realice ese pago. La condición de pago existe aunque la cifra no se publique.\n\nPara acreditar el pago y eliminar el registro de la sancionada del portal Compras MX, la empresa debe presentar a la Secretaría Anticorrupción y Buen Gobierno el documento probatorio correspondiente. La fuente aclara que no será necesaria la publicación de otro comunicado para eliminar el registro. Esta explicación no reduce el periodo inicial de un año; regula la situación posterior en la que la multa siga pendiente de pago.\n\nLa Circular excluye de su aplicación los contratos adjudicados y los que ya estén formalizados con la empresa. También señala que entidades federativas, municipios y demarcaciones territoriales deben observar la abstención cuando contraten adquisiciones, arrendamientos, servicios u obra pública con cargo total o parcial a fondos federales, conforme a los convenios con el Ejecutivo Federal. La ficha no infiere efectos sobre contratos distintos de los que la fuente identifica ni sobre sanciones no publicadas.",
+    "summary_teaser": "La autoridad ordenó abstenerse de recibir propuestas o contratar con Impulsora Cordobesa de Alimentos y Servicios durante un año desde el día siguiente de la publicación. Si la multa sigue impaga al concluir el año, la inhabilitación subsiste hasta el pago. El aviso no publica el monto de la multa y excluye contratos ya formalizados.",
+    "title": "Inhabilitación de Impulsora Cordobesa se extiende hasta pagar multa",
+    "topic_tags": [
+      "Penal",
+      "Derecho administrativo",
+      "Circular"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5792793&fecha=07/07/2026"
+  },
+  "schema_version": 8
+}

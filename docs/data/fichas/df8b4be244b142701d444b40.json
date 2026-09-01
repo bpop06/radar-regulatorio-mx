@@ -1,0 +1,187 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-3",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-4",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2",
+        "chunk-3",
+        "chunk-4"
+      ],
+      "heading": "Distribución de atribuciones",
+      "paragraphs": [
+        "Sectur coordina, emite órdenes de verificación, desarrolla el procedimiento de infracción, resuelve y supervisa las actuaciones.",
+        "la Ciudad de México realiza visitas y verificaciones con su personal turístico, con prioridad para prestadores que registren quejas o inconformidades."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2",
+        "chunk-3",
+        "chunk-4"
+      ],
+      "heading": "Reportes y vigencia",
+      "paragraphs": [
+        "la Ciudad de México debe enviar las actividades del mes anterior y los expedientes digitales certificados dentro de los primeros diez días naturales de cada mes.",
+        "La vigencia corre desde la firma hasta el 4 de octubre de 2030; las partes pueden modificar el convenio mediante instrumento jurídico escrito."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "c75ab1247149ea654dfc62d82d639cdae06f8d57c8023e5a4c3ea9224dae83c8",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "CONVENIO de Coordinación que celebran la Secretaría de Turismo y la Ciudad de México, que tiene por objeto verificar el cumplimiento de la Ley General de Turismo, su Reglamento, la Ley de Infraestructura de la Calidad y las normas oficiales mexicanas en la materia, así como el fortalecimiento de las atribuciones que tienen encomendadas por ministerio de Ley, en el procedimiento de verificación de los prestadores de servicios turísticos en la entidad.",
+        "location": "caracteres 0-458"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Turismo.- Secretaría de Turismo. · parte 1",
+        "location": "caracteres 458-12458"
+      },
+      {
+        "id": "chunk-3",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Turismo.- Secretaría de Turismo. · parte 2",
+        "location": "caracteres 12458-24458"
+      },
+      {
+        "id": "chunk-4",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Turismo.- Secretaría de Turismo. · parte 3",
+        "location": "caracteres 24458-27518"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793477&fecha=14%2F07%2F2026",
+    "retrieved_at": "2026-08-14T00:37:09.324775+00:00"
+  },
+  "executive_summary": [
+    "La Secretaría de Turismo celebró un convenio de coordinación con la Ciudad de México para verificar el cumplimiento de la Ley General de Turismo, su Reglamento, la Ley de Infraestructura de la Calidad y las normas oficiales mexicanas aplicables a prestadores de servicios turísticos dentro de su territorio.",
+    "La autoridad federal conserva la emisión de órdenes de verificación, el desarrollo del procedimiento de infracción hasta su resolución, la evaluación de actividades y la supervisión. la Ciudad de México ejecutará las verificaciones mediante su personal turístico, priorizando órdenes dirigidas a prestadores con quejas o inconformidades registradas."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2",
+        "chunk-3",
+        "chunk-4"
+      ],
+      "paragraphs": [
+        "El convenio distribuye tareas de verificación turística sin desplazar las facultades federales originarias de Sectur."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2",
+          "chunk-3",
+          "chunk-4"
+        ],
+        "paragraphs": [
+          "Prestadores turísticos pueden recibir visitas ejecutadas por personal local, pero las órdenes y el procedimiento sancionador corresponden al esquema federal que el convenio mantiene."
+        ],
+        "sector": "Turismo y verificación administrativa"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793477&fecha=14%2F07%2F2026",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "08c11915fe649e49297b838ebbce14b9e4476b4f2d4fa320d8fd519baea4b666",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/df8b4be244b142701d444b40.json",
+    "detail_url": "notas/df8b4be244b142701d444b40.html",
+    "detected_at": "2026-08-14T01:46:44.993982+00:00",
+    "document_type": "Convenio De Coordinación",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5793477",
+    "importance": 2,
+    "issuing_body": "Presidencia de la República",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-07-14",
+    "official_title": "Convenio de Coordinación que celebran la Secretaría de Turismo y la Ciudad de México, que tiene por objeto verificar el cumplimiento de la Ley General de Turismo, su Reglamento, la Ley de Infraestructura de la Calidad y las normas oficiales mexicanas en la materia, así como el fortalecimiento de las atribuciones que tienen encomendadas por ministerio de Ley, en el procedimiento de verificación de los prestadores de servicios turísticos en la entidad.",
+    "published_at": "2026-07-14",
+    "relevance_score": 2,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5793477",
+    "summary_teaser": "Sectur y Ciudad de México firmaron un convenio para verificar a prestadores de servicios turísticos. La Federación conserva las órdenes, el procedimiento y la supervisión; la autoridad capitalina realiza las visitas y reporta actividades y expedientes en los primeros diez días naturales de cada mes. El convenio rige hasta el 4 de octubre de 2030.",
+    "title": "Sectur establece verificación turística con Ciudad de México",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5793477&fecha=14/07/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Autoridades turísticas locales y prestadores de servicios turísticos",
+      "deadline": "Primeros diez días naturales de cada mes para reportes y expedientes locales",
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2",
+        "chunk-3",
+        "chunk-4"
+      ],
+      "legal_basis": "Ley General de Turismo y convenio de coordinación",
+      "paragraphs": [
+        "Las autoridades locales deben remitir actividades y expedientes en los primeros diez días naturales de cada mes; los prestadores deben atender una verificación conforme a la orden y al procedimiento aplicable, no al calendario de reporte intergubernamental."
+      ],
+      "trigger": "Ejecución de verificaciones coordinadas"
+    }
+  ],
+  "schema_version": 8
+}

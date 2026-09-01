@@ -1,0 +1,4294 @@
+{
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "item": {
+    "ai_generated": true,
+    "authority": "PODER EJECUTIVO SECRETARIA DE SALUD",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796409&fecha=17%2F08%2F2026",
+    "card_body": "## Qué se publicó\n\nLa Secretaría publicó el expediente de respuestas a comentarios sobre un proyecto de norma sanitaria.\n\n## Sustancia\n\nEl anexo documenta decisiones variadas del grupo de trabajo y ajustes potenciales, sin emitir una norma final en este acto.\n\n## Fuente\n\n[Consulta la publicación oficial](https://dof.gob.mx/nota_detalle.php?codigo=5796409&fecha=17%2F08%2F2026)",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "3ee9f889bcd74ff69aba37941265983510c43f98a8d61810ae22ad40ade73b89",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-1",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-3",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-4",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-5",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-6",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-7",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-8",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-9",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-10",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-11",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-12",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-13",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-14",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-15",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-16",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-17",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-18",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-19",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-20",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-21",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-22",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-23",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-24",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-25",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-26",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-27",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-28",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-29",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-30",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-31",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-32",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-33",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-34",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-35",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-36",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-37",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-38",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-39",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-40",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-41",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-42",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-43",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-44",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-45",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-46",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-47",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-48",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-49",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-50",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-51",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-52",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-53",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-54",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-55",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-56",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-57",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-58",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-59",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-60",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-61",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-62",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-63",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-64",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-65",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-66",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-67",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-68",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-69",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-70",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-71",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-72",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-73",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-74",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-75",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-76",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-77",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-78",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-79",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-80",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-81",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-82",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-83",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-84",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-85",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-86",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-87",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-88",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-89",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-90",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-91",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-92",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-93",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-94",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-95",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-96",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-97",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-98",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-99",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-100",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-101",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-102",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-103",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-104",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-105",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-106",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-107",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-108",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-109",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-110",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-111",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-112",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-113",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-114",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-115",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-116",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-117",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-118",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-119",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-120",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-121",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-122",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-123",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-124",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-125",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-126",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-127",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-128",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-129",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-130",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-131",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-132",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-133",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-134",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-135",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-136",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-137",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-138",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-139",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-140",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-141",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-142",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-143",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-144",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-145",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-146",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-147",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-148",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-149",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-150",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-151",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-152",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-153",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-154",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-155",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-156",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-157",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-158",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-159",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-160",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-161",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-162",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-163",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-164",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-165",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-166",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-167",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-168",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-169",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-170",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-171",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-172",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-173",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-174",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-175",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-176",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-177",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-178",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-179",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-180",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-181",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-182",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-183",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-184",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-185",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-186",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-187",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-188",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-189",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-190",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-191",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-192",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-193",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-194",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-195",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-196",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-197",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-198",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-199",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-200",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-201",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-202",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-203",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-204",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-205",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-206",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-207",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-208",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-209",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-210",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-211",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-212",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-213",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-214",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-215",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-216",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-217",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-218",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-219",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-220",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-221",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-222",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-223",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-224",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-225",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-226",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-227",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-228",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-229",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-230",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-231",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-232",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-233",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-234",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-235",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-236",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-237",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-238",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-239",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-240",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-241",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-242",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-243",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-244",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-245",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-246",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-247",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-248",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-249",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-250",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-251",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-252",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-253",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-254",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-255",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-256",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-257",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-258",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-259",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-260",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-261",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-262",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-263",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-264",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-265",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-266",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-267",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-268",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-269",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-270",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-271",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-272",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-273",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-274",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-275",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-276",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-277",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/8cb9a105fd4c1971ba402914.json",
+    "detail_url": "notas/8cb9a105fd4c1971ba402914.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-277"
+        ],
+        "heading": "Expediente de consulta",
+        "paragraphs": [
+          "La publicación integra el anexo completo de comentarios y respuestas sobre el proyecto de norma de sangre terapéutica, con determinaciones del grupo de trabajo para cada observación."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-277"
+        ],
+        "heading": "Alcance normativo",
+        "paragraphs": [
+          "Las respuestas muestran ajustes y decisiones diversas durante la consulta; no constituyen por sí mismas la expedición ni la entrada en vigor de una NOM final."
+        ]
+      }
+    ],
+    "detected_at": "2026-09-01T16:34:47.803209+00:00",
+    "document_type": "Respuesta A",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "a0f9563e9e95ec0578fed152a51fedf0ae7cddee2f9f52c6d8837d01cf9b59e0",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "Preámbulo",
+          "location": "caracteres 0-235"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Anexo 1",
+          "location": "caracteres 235-330"
+        },
+        {
+          "id": "chunk-3",
+          "label": "SECRETARIA DE SALUD",
+          "location": "caracteres 330-5677"
+        },
+        {
+          "id": "chunk-4",
+          "label": "DIARIO OFICIAL",
+          "location": "caracteres 5677-10348"
+        },
+        {
+          "id": "chunk-5",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 10348-15627"
+        },
+        {
+          "id": "chunk-6",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 15627-26752"
+        },
+        {
+          "id": "chunk-7",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 26752-33880"
+        },
+        {
+          "id": "chunk-8",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 33880-39356"
+        },
+        {
+          "id": "chunk-9",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 39356-50730"
+        },
+        {
+          "id": "chunk-10",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 50730-56044"
+        },
+        {
+          "id": "chunk-11",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 56044-62047"
+        },
+        {
+          "id": "chunk-12",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 62047-67191"
+        },
+        {
+          "id": "chunk-13",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 67191-73595"
+        },
+        {
+          "id": "chunk-14",
+          "label": "Lunes 17 de agosto de 2026 · parte 1",
+          "location": "caracteres 73595-85595"
+        },
+        {
+          "id": "chunk-15",
+          "label": "Lunes 17 de agosto de 2026 · parte 2",
+          "location": "caracteres 85595-90943"
+        },
+        {
+          "id": "chunk-16",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 90943-95615"
+        },
+        {
+          "id": "chunk-17",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 95615-102743"
+        },
+        {
+          "id": "chunk-18",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 102743-105608"
+        },
+        {
+          "id": "chunk-19",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 105608-115856"
+        },
+        {
+          "id": "chunk-20",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 115856-119534"
+        },
+        {
+          "id": "chunk-21",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 119534-124940"
+        },
+        {
+          "id": "chunk-22",
+          "label": "Lunes 17 de agosto de 2026 · parte 1",
+          "location": "caracteres 124940-136940"
+        },
+        {
+          "id": "chunk-23",
+          "label": "Lunes 17 de agosto de 2026 · parte 2",
+          "location": "caracteres 136940-139300"
+        },
+        {
+          "id": "chunk-24",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 139300-144334"
+        },
+        {
+          "id": "chunk-25",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 144334-153582"
+        },
+        {
+          "id": "chunk-26",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 153582-157770"
+        },
+        {
+          "id": "chunk-27",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 157770-162554"
+        },
+        {
+          "id": "chunk-28",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 162554-168057"
+        },
+        {
+          "id": "chunk-29",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 168057-173171"
+        },
+        {
+          "id": "chunk-30",
+          "label": "Lunes 17 de agosto de 2026 · parte 1",
+          "location": "caracteres 173171-185171"
+        },
+        {
+          "id": "chunk-31",
+          "label": "Lunes 17 de agosto de 2026 · parte 2",
+          "location": "caracteres 185171-185530"
+        },
+        {
+          "id": "chunk-32",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 185530-189514"
+        },
+        {
+          "id": "chunk-33",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 189514-193351"
+        },
+        {
+          "id": "chunk-34",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 193351-198154"
+        },
+        {
+          "id": "chunk-35",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 198154-202984"
+        },
+        {
+          "id": "chunk-36",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 202984-207170"
+        },
+        {
+          "id": "chunk-37",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 207170-211052"
+        },
+        {
+          "id": "chunk-38",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 211052-214856"
+        },
+        {
+          "id": "chunk-39",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 214856-218849"
+        },
+        {
+          "id": "chunk-40",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 218849-223525"
+        },
+        {
+          "id": "chunk-41",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 223525-228874"
+        },
+        {
+          "id": "chunk-42",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 228874-233090"
+        },
+        {
+          "id": "chunk-43",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 233090-237967"
+        },
+        {
+          "id": "chunk-44",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 237967-242326"
+        },
+        {
+          "id": "chunk-45",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 242326-245843"
+        },
+        {
+          "id": "chunk-46",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 245843-252099"
+        },
+        {
+          "id": "chunk-47",
+          "label": "Lunes 17 de agosto de 2026 · parte 1",
+          "location": "caracteres 252099-264099"
+        },
+        {
+          "id": "chunk-48",
+          "label": "Lunes 17 de agosto de 2026 · parte 2",
+          "location": "caracteres 264099-270779"
+        },
+        {
+          "id": "chunk-49",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 270779-277608"
+        },
+        {
+          "id": "chunk-50",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 277608-282305"
+        },
+        {
+          "id": "chunk-51",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 282305-287007"
+        },
+        {
+          "id": "chunk-52",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 287007-292110"
+        },
+        {
+          "id": "chunk-53",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 292110-296209"
+        },
+        {
+          "id": "chunk-54",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 296209-303102"
+        },
+        {
+          "id": "chunk-55",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 303102-307466"
+        },
+        {
+          "id": "chunk-56",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 307466-311076"
+        },
+        {
+          "id": "chunk-57",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 311076-316056"
+        },
+        {
+          "id": "chunk-58",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 316056-322836"
+        },
+        {
+          "id": "chunk-59",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 322836-327983"
+        },
+        {
+          "id": "chunk-60",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 327983-332374"
+        },
+        {
+          "id": "chunk-61",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 332374-337525"
+        },
+        {
+          "id": "chunk-62",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 337525-342733"
+        },
+        {
+          "id": "chunk-63",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 342733-347091"
+        },
+        {
+          "id": "chunk-64",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 347091-352485"
+        },
+        {
+          "id": "chunk-65",
+          "label": "Lunes 17 de agosto de 2026 · parte 1",
+          "location": "caracteres 352485-364485"
+        },
+        {
+          "id": "chunk-66",
+          "label": "Lunes 17 de agosto de 2026 · parte 2",
+          "location": "caracteres 364485-366542"
+        },
+        {
+          "id": "chunk-67",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 366542-371735"
+        },
+        {
+          "id": "chunk-68",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 371735-376613"
+        },
+        {
+          "id": "chunk-69",
+          "label": "Lunes 17 de agosto de 2026 · parte 1",
+          "location": "caracteres 376613-388613"
+        },
+        {
+          "id": "chunk-70",
+          "label": "Lunes 17 de agosto de 2026 · parte 2",
+          "location": "caracteres 388613-394757"
+        },
+        {
+          "id": "chunk-71",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 394757-399679"
+        },
+        {
+          "id": "chunk-72",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 399679-403761"
+        },
+        {
+          "id": "chunk-73",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 403761-408568"
+        },
+        {
+          "id": "chunk-74",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 408568-413055"
+        },
+        {
+          "id": "chunk-75",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 413055-419029"
+        },
+        {
+          "id": "chunk-76",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 419029-423252"
+        },
+        {
+          "id": "chunk-77",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 423252-427435"
+        },
+        {
+          "id": "chunk-78",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 427435-438653"
+        },
+        {
+          "id": "chunk-79",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 438653-442049"
+        },
+        {
+          "id": "chunk-80",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 442049-449582"
+        },
+        {
+          "id": "chunk-81",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 449582-450670"
+        },
+        {
+          "id": "chunk-82",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 450670-453759"
+        },
+        {
+          "id": "chunk-83",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 453759-457308"
+        },
+        {
+          "id": "chunk-84",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 457308-459287"
+        },
+        {
+          "id": "chunk-85",
+          "label": "DIARIO OFICIAL",
+          "location": "caracteres 459287-461144"
+        },
+        {
+          "id": "chunk-86",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 461144-464486"
+        },
+        {
+          "id": "chunk-87",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 464486-468408"
+        },
+        {
+          "id": "chunk-88",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 468408-474964"
+        },
+        {
+          "id": "chunk-89",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 474964-479232"
+        },
+        {
+          "id": "chunk-90",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 479232-482176"
+        },
+        {
+          "id": "chunk-91",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 482176-488000"
+        },
+        {
+          "id": "chunk-92",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 488000-492399"
+        },
+        {
+          "id": "chunk-93",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 492399-496952"
+        },
+        {
+          "id": "chunk-94",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 496952-502114"
+        },
+        {
+          "id": "chunk-95",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 502114-506006"
+        },
+        {
+          "id": "chunk-96",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 506006-508885"
+        },
+        {
+          "id": "chunk-97",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 508885-513366"
+        },
+        {
+          "id": "chunk-98",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 513366-517893"
+        },
+        {
+          "id": "chunk-99",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 517893-521209"
+        },
+        {
+          "id": "chunk-100",
+          "label": "DIARIO OFICIAL",
+          "location": "caracteres 521209-523390"
+        },
+        {
+          "id": "chunk-101",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 523390-531456"
+        },
+        {
+          "id": "chunk-102",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 531456-535892"
+        },
+        {
+          "id": "chunk-103",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 535892-541027"
+        },
+        {
+          "id": "chunk-104",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 541027-543455"
+        },
+        {
+          "id": "chunk-105",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 543455-546942"
+        },
+        {
+          "id": "chunk-106",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 546942-550372"
+        },
+        {
+          "id": "chunk-107",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 550372-554446"
+        },
+        {
+          "id": "chunk-108",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 554446-558652"
+        },
+        {
+          "id": "chunk-109",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 558652-564055"
+        },
+        {
+          "id": "chunk-110",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 564055-568530"
+        },
+        {
+          "id": "chunk-111",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 568530-571984"
+        },
+        {
+          "id": "chunk-112",
+          "label": "Lunes 17 de agosto de 2026 · parte 1",
+          "location": "caracteres 571984-583984"
+        },
+        {
+          "id": "chunk-113",
+          "label": "Lunes 17 de agosto de 2026 · parte 2",
+          "location": "caracteres 583984-592904"
+        },
+        {
+          "id": "chunk-114",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 592904-596308"
+        },
+        {
+          "id": "chunk-115",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 596308-598311"
+        },
+        {
+          "id": "chunk-116",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 598311-603598"
+        },
+        {
+          "id": "chunk-117",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 603598-612444"
+        },
+        {
+          "id": "chunk-118",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 612444-616211"
+        },
+        {
+          "id": "chunk-119",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 616211-620094"
+        },
+        {
+          "id": "chunk-120",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 620094-625431"
+        },
+        {
+          "id": "chunk-121",
+          "label": "Lunes 17 de agosto de 2026 · parte 1",
+          "location": "caracteres 625431-637431"
+        },
+        {
+          "id": "chunk-122",
+          "label": "Lunes 17 de agosto de 2026 · parte 2",
+          "location": "caracteres 637431-641274"
+        },
+        {
+          "id": "chunk-123",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 641274-644497"
+        },
+        {
+          "id": "chunk-124",
+          "label": "Lunes 17 de agosto de 2026 · parte 1",
+          "location": "caracteres 644497-656497"
+        },
+        {
+          "id": "chunk-125",
+          "label": "Lunes 17 de agosto de 2026 · parte 2",
+          "location": "caracteres 656497-659367"
+        },
+        {
+          "id": "chunk-126",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 659367-664217"
+        },
+        {
+          "id": "chunk-127",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 664217-668631"
+        },
+        {
+          "id": "chunk-128",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 668631-672924"
+        },
+        {
+          "id": "chunk-129",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 672924-675307"
+        },
+        {
+          "id": "chunk-130",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 675307-681189"
+        },
+        {
+          "id": "chunk-131",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 681189-684546"
+        },
+        {
+          "id": "chunk-132",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 684546-690096"
+        },
+        {
+          "id": "chunk-133",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 690096-693676"
+        },
+        {
+          "id": "chunk-134",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 693676-698620"
+        },
+        {
+          "id": "chunk-135",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 698620-703998"
+        },
+        {
+          "id": "chunk-136",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 703998-708713"
+        },
+        {
+          "id": "chunk-137",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 708713-713290"
+        },
+        {
+          "id": "chunk-138",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 713290-719550"
+        },
+        {
+          "id": "chunk-139",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 719550-724795"
+        },
+        {
+          "id": "chunk-140",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 724795-729583"
+        },
+        {
+          "id": "chunk-141",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 729583-733945"
+        },
+        {
+          "id": "chunk-142",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 733945-739319"
+        },
+        {
+          "id": "chunk-143",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 739319-742688"
+        },
+        {
+          "id": "chunk-144",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 742688-747615"
+        },
+        {
+          "id": "chunk-145",
+          "label": "Lunes 17 de agosto de 2026 · parte 1",
+          "location": "caracteres 747615-759615"
+        },
+        {
+          "id": "chunk-146",
+          "label": "Lunes 17 de agosto de 2026 · parte 2",
+          "location": "caracteres 759615-761243"
+        },
+        {
+          "id": "chunk-147",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 761243-765846"
+        },
+        {
+          "id": "chunk-148",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 765846-769954"
+        },
+        {
+          "id": "chunk-149",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 769954-773697"
+        },
+        {
+          "id": "chunk-150",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 773697-777915"
+        },
+        {
+          "id": "chunk-151",
+          "label": "Lunes 17 de agosto de 2026 · parte 1",
+          "location": "caracteres 777915-789915"
+        },
+        {
+          "id": "chunk-152",
+          "label": "Lunes 17 de agosto de 2026 · parte 2",
+          "location": "caracteres 789915-790041"
+        },
+        {
+          "id": "chunk-153",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 790041-794151"
+        },
+        {
+          "id": "chunk-154",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 794151-797073"
+        },
+        {
+          "id": "chunk-155",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 797073-803624"
+        },
+        {
+          "id": "chunk-156",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 803624-806775"
+        },
+        {
+          "id": "chunk-157",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 806775-809665"
+        },
+        {
+          "id": "chunk-158",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 809665-815431"
+        },
+        {
+          "id": "chunk-159",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 815431-819906"
+        },
+        {
+          "id": "chunk-160",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 819906-824458"
+        },
+        {
+          "id": "chunk-161",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 824458-828074"
+        },
+        {
+          "id": "chunk-162",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 828074-830987"
+        },
+        {
+          "id": "chunk-163",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 830987-835498"
+        },
+        {
+          "id": "chunk-164",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 835498-839353"
+        },
+        {
+          "id": "chunk-165",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 839353-843155"
+        },
+        {
+          "id": "chunk-166",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 843155-845449"
+        },
+        {
+          "id": "chunk-167",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 845449-853782"
+        },
+        {
+          "id": "chunk-168",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 853782-858495"
+        },
+        {
+          "id": "chunk-169",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 858495-862871"
+        },
+        {
+          "id": "chunk-170",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 862871-866319"
+        },
+        {
+          "id": "chunk-171",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 866319-869840"
+        },
+        {
+          "id": "chunk-172",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 869840-873303"
+        },
+        {
+          "id": "chunk-173",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 873303-877412"
+        },
+        {
+          "id": "chunk-174",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 877412-882503"
+        },
+        {
+          "id": "chunk-175",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 882503-888425"
+        },
+        {
+          "id": "chunk-176",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 888425-892627"
+        },
+        {
+          "id": "chunk-177",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 892627-898598"
+        },
+        {
+          "id": "chunk-178",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 898598-902108"
+        },
+        {
+          "id": "chunk-179",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 902108-907579"
+        },
+        {
+          "id": "chunk-180",
+          "label": "Lunes 17 de agosto de 2026 · parte 1",
+          "location": "caracteres 907579-919579"
+        },
+        {
+          "id": "chunk-181",
+          "label": "Lunes 17 de agosto de 2026 · parte 2",
+          "location": "caracteres 919579-925316"
+        },
+        {
+          "id": "chunk-182",
+          "label": "Lunes 17 de agosto de 2026 · parte 1",
+          "location": "caracteres 925316-937316"
+        },
+        {
+          "id": "chunk-183",
+          "label": "Lunes 17 de agosto de 2026 · parte 2",
+          "location": "caracteres 937316-939967"
+        },
+        {
+          "id": "chunk-184",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 939967-944852"
+        },
+        {
+          "id": "chunk-185",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 944852-950896"
+        },
+        {
+          "id": "chunk-186",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 950896-952951"
+        },
+        {
+          "id": "chunk-187",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 952951-958927"
+        },
+        {
+          "id": "chunk-188",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 958927-963507"
+        },
+        {
+          "id": "chunk-189",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 963507-973377"
+        },
+        {
+          "id": "chunk-190",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 973377-977485"
+        },
+        {
+          "id": "chunk-191",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 977485-982339"
+        },
+        {
+          "id": "chunk-192",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 982339-986746"
+        },
+        {
+          "id": "chunk-193",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 986746-991371"
+        },
+        {
+          "id": "chunk-194",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 991371-995809"
+        },
+        {
+          "id": "chunk-195",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 995809-1001920"
+        },
+        {
+          "id": "chunk-196",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1001920-1006355"
+        },
+        {
+          "id": "chunk-197",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1006355-1011986"
+        },
+        {
+          "id": "chunk-198",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1011986-1017974"
+        },
+        {
+          "id": "chunk-199",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1017974-1023777"
+        },
+        {
+          "id": "chunk-200",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1023777-1029942"
+        },
+        {
+          "id": "chunk-201",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1029942-1035005"
+        },
+        {
+          "id": "chunk-202",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1035005-1040949"
+        },
+        {
+          "id": "chunk-203",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1040949-1045588"
+        },
+        {
+          "id": "chunk-204",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1045588-1053237"
+        },
+        {
+          "id": "chunk-205",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1053237-1058505"
+        },
+        {
+          "id": "chunk-206",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1058505-1062483"
+        },
+        {
+          "id": "chunk-207",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1062483-1070566"
+        },
+        {
+          "id": "chunk-208",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1070566-1074986"
+        },
+        {
+          "id": "chunk-209",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1074986-1080263"
+        },
+        {
+          "id": "chunk-210",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1080263-1084981"
+        },
+        {
+          "id": "chunk-211",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1084981-1089568"
+        },
+        {
+          "id": "chunk-212",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1089568-1094006"
+        },
+        {
+          "id": "chunk-213",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1094006-1098057"
+        },
+        {
+          "id": "chunk-214",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1098057-1100463"
+        },
+        {
+          "id": "chunk-215",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1100463-1108611"
+        },
+        {
+          "id": "chunk-216",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1108611-1112942"
+        },
+        {
+          "id": "chunk-217",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1112942-1117855"
+        },
+        {
+          "id": "chunk-218",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1117855-1123756"
+        },
+        {
+          "id": "chunk-219",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1123756-1130125"
+        },
+        {
+          "id": "chunk-220",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1130125-1136176"
+        },
+        {
+          "id": "chunk-221",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1136176-1143237"
+        },
+        {
+          "id": "chunk-222",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1143237-1148180"
+        },
+        {
+          "id": "chunk-223",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1148180-1154491"
+        },
+        {
+          "id": "chunk-224",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1154491-1158465"
+        },
+        {
+          "id": "chunk-225",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1158465-1168350"
+        },
+        {
+          "id": "chunk-226",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1168350-1177365"
+        },
+        {
+          "id": "chunk-227",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1177365-1181561"
+        },
+        {
+          "id": "chunk-228",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1181561-1186683"
+        },
+        {
+          "id": "chunk-229",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1186683-1193039"
+        },
+        {
+          "id": "chunk-230",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1193039-1198753"
+        },
+        {
+          "id": "chunk-231",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1198753-1210146"
+        },
+        {
+          "id": "chunk-232",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1210146-1215501"
+        },
+        {
+          "id": "chunk-233",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1215501-1221401"
+        },
+        {
+          "id": "chunk-234",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1221401-1226122"
+        },
+        {
+          "id": "chunk-235",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1226122-1231065"
+        },
+        {
+          "id": "chunk-236",
+          "label": "Lunes 17 de agosto de 2026 · parte 1",
+          "location": "caracteres 1231065-1243065"
+        },
+        {
+          "id": "chunk-237",
+          "label": "Lunes 17 de agosto de 2026 · parte 2",
+          "location": "caracteres 1243065-1243875"
+        },
+        {
+          "id": "chunk-238",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1243875-1247235"
+        },
+        {
+          "id": "chunk-239",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1247235-1250434"
+        },
+        {
+          "id": "chunk-240",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1250434-1254129"
+        },
+        {
+          "id": "chunk-241",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1254129-1257484"
+        },
+        {
+          "id": "chunk-242",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1257484-1261313"
+        },
+        {
+          "id": "chunk-243",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1261313-1263326"
+        },
+        {
+          "id": "chunk-244",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1263326-1271876"
+        },
+        {
+          "id": "chunk-245",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1271876-1278309"
+        },
+        {
+          "id": "chunk-246",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1278309-1283608"
+        },
+        {
+          "id": "chunk-247",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1283608-1288796"
+        },
+        {
+          "id": "chunk-248",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1288796-1290439"
+        },
+        {
+          "id": "chunk-249",
+          "label": "DIARIO OFICIAL",
+          "location": "caracteres 1290439-1291121"
+        },
+        {
+          "id": "chunk-250",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1291121-1296461"
+        },
+        {
+          "id": "chunk-251",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1296461-1300974"
+        },
+        {
+          "id": "chunk-252",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1300974-1305447"
+        },
+        {
+          "id": "chunk-253",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1305447-1310034"
+        },
+        {
+          "id": "chunk-254",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1310034-1314086"
+        },
+        {
+          "id": "chunk-255",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1314086-1318822"
+        },
+        {
+          "id": "chunk-256",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1318822-1322284"
+        },
+        {
+          "id": "chunk-257",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1322284-1327105"
+        },
+        {
+          "id": "chunk-258",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1327105-1330212"
+        },
+        {
+          "id": "chunk-259",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1330212-1333480"
+        },
+        {
+          "id": "chunk-260",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1333480-1336665"
+        },
+        {
+          "id": "chunk-261",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1336665-1339841"
+        },
+        {
+          "id": "chunk-262",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1339841-1344213"
+        },
+        {
+          "id": "chunk-263",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1344213-1347861"
+        },
+        {
+          "id": "chunk-264",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1347861-1350901"
+        },
+        {
+          "id": "chunk-265",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1350901-1353827"
+        },
+        {
+          "id": "chunk-266",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1353827-1357962"
+        },
+        {
+          "id": "chunk-267",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1357962-1363346"
+        },
+        {
+          "id": "chunk-268",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1363346-1368520"
+        },
+        {
+          "id": "chunk-269",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1368520-1372129"
+        },
+        {
+          "id": "chunk-270",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1372129-1376527"
+        },
+        {
+          "id": "chunk-271",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1376527-1380788"
+        },
+        {
+          "id": "chunk-272",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1380788-1382245"
+        },
+        {
+          "id": "chunk-273",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1382245-1384278"
+        },
+        {
+          "id": "chunk-274",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1384278-1388043"
+        },
+        {
+          "id": "chunk-275",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1388043-1389252"
+        },
+        {
+          "id": "chunk-276",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1389252-1393138"
+        },
+        {
+          "id": "chunk-277",
+          "label": "Lunes 17 de agosto de 2026",
+          "location": "caracteres 1393138-1393368"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796409&fecha=17%2F08%2F2026",
+      "retrieved_at": "2026-09-01T16:35:28.582962+00:00"
+    },
+    "executive_summary": [
+      "La Secretaría de Salud publicó la respuesta a los comentarios recibidos respecto del Proyecto de Norma Oficial Mexicana NOM-253-SSA1-2024, relativo a la disposición de sangre humana y sus componentes con fines terapéuticos. El anexo reúne el expediente de comentarios y respuestas del grupo de trabajo. La fuente no se presenta como la expedición de una NOM final: comunica cómo fueron analizadas las observaciones hechas al proyecto y qué decisiones se tomaron en relación con propuestas concretas.",
+      "La evidencia íntegra contiene numerosos registros de comentarios, justificaciones y respuestas. A lo largo del anexo se observan decisiones de aceptación, aceptación parcial, no aceptación y modificaciones de texto. Las materias tratadas abarcan, entre otras, establecimientos y servicios de sangre, responsables sanitarios, procedimientos, controles de calidad, hemovigilancia, registros, etiquetado, pruebas y referencias técnicas. La pluralidad de respuestas impide atribuir una sola decisión uniforme a todos los temas del proyecto."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-09-01T16:34:47.803209+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5796409",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-277"
+        ],
+        "paragraphs": [
+          "La información permite seguir la evolución técnica y regulatoria del proyecto, pero no crea por sí misma nuevos requisitos exigibles."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-1",
+            "chunk-277"
+          ],
+          "paragraphs": [
+            "Los sujetos que operan bancos, centros o servicios de sangre pueden contrastar los temas discutidos con sus controles actuales y esperar el texto final aplicable."
+          ],
+          "sector": "Establecimientos y servicios vinculados con sangre y componentes sanguíneos"
+        }
+      ]
+    },
+    "importance": 2,
+    "issuing_body": "Presidencia de la República",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-09-01T16:34:47.803209+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796409&fecha=17/08/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5796409"
+    },
+    "official_published_at": "2026-08-17",
+    "official_title": "Respuesta a los comentarios recibidos respecto del Proyecto de Norma Oficial Mexicana NOM-253-SSA1-2024, Para la disposición de sangre humana y sus componentes con fines terapéuticos, publicado el 8 de noviembre de 2024.",
+    "published_at": "2026-08-17",
+    "published_day": 17,
+    "published_month": 8,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Establecimientos y servicios vinculados con sangre y componentes sanguíneos",
+        "deadline": null,
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-277"
+        ],
+        "legal_basis": "Respuesta oficial a comentarios sobre el proyecto de norma",
+        "paragraphs": [
+          "Conservar una matriz de los temas discutidos y dar seguimiento a la publicación de la NOM definitiva antes de modificar obligaciones internas como si ya fueran exigibles."
+        ],
+        "trigger": "Evaluar el posible impacto de la futura norma sobre sangre y componentes terapéuticos"
+      }
+    ],
+    "relevance_score": 3,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5796409",
+    "subtopic_tags": [
+      "norma oficial mexicana",
+      "nom-"
+    ],
+    "summary": "La Secretaría de Salud publicó la respuesta a los comentarios recibidos respecto del Proyecto de Norma Oficial Mexicana NOM-253-SSA1-2024, relativo a la disposición de sangre humana y sus componentes con fines terapéuticos. El anexo reúne el expediente de comentarios y respuestas del grupo de trabajo. La fuente no se presenta como la expedición de una NOM final: comunica cómo fueron analizadas las observaciones hechas al proyecto y qué decisiones se tomaron en relación con propuestas concretas.\n\nLa evidencia íntegra contiene numerosos registros de comentarios, justificaciones y respuestas. A lo largo del anexo se observan decisiones de aceptación, aceptación parcial, no aceptación y modificaciones de texto. Las materias tratadas abarcan, entre otras, establecimientos y servicios de sangre, responsables sanitarios, procedimientos, controles de calidad, hemovigilancia, registros, etiquetado, pruebas y referencias técnicas. La pluralidad de respuestas impide atribuir una sola decisión uniforme a todos los temas del proyecto.\n\nVarias respuestas indican que se modifica la redacción considerando el conjunto de propuestas recibidas; otras conservan o ajustan el proyecto por las razones que el grupo de trabajo expone. Esa trazabilidad es relevante para entender la evolución del texto en consulta, pero las respuestas no sustituyen una lectura del texto final que llegue a publicarse. La fuente tampoco fija en este acto una fecha de entrada en vigor de una NOM definitiva ni identifica obligaciones nuevas exigibles a partir de la sola publicación de las respuestas.\n\nLos bancos de sangre, centros de procesamiento, centros de colecta, centros de distribución, centros de calificación biológica y servicios de transfusión pueden usar el documento para anticipar los temas discutidos y preservar comentarios o matrices de cumplimiento. Sin embargo, deben evitar tratar una respuesta aislada como obligación vigente hasta que el texto normativo final se publique y se determine su vigencia. La ficha resume el expediente completo sin convertirlo en una NOM final.",
+    "summary_teaser": "La Secretaría de Salud publicó las respuestas a los comentarios recibidos sobre el proyecto de norma para la disposición de sangre humana y sus componentes con fines terapéuticos. El anexo registra determinaciones del grupo de trabajo, incluidas aceptaciones, aceptaciones parciales, no aceptaciones y modificaciones de redacción.",
+    "title": "Salud incorpora ajustes al proyecto de norma sanguínea",
+    "topic_tags": [
+      "Normalización",
+      "Norma"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796409&fecha=17/08/2026"
+  },
+  "schema_version": 8
+}

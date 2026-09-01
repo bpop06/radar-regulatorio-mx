@@ -1,0 +1,168 @@
+{
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "item": {
+    "ai_generated": true,
+    "authority": "PODER EJECUTIVO SECRETARIA ANTICORRUPCION Y BUEN GOBIERNO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795243&fecha=03%2F08%2F2026",
+    "card_body": "## Qué se publicó\n\nLa autoridad difundió una restricción temporal de contratación aplicable a la empresa señalada.\n\n## Sustancia\n\nLa circular precisa la duración, la materia contractual cubierta, la excepción para contratos adjudicados o ya formalizados y la regla de continuidad vinculada al pago de la multa.\n\n## Fuente\n\n[Consulta la publicación oficial](https://dof.gob.mx/nota_detalle.php?codigo=5795243&fecha=03%2F08%2F2026)",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "b71c89bb1772f3a84c19e6c564970aa6336006576587d392f000ac678168c4b9",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-1",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/a3b98fbbecbc5d5660bcd744.json",
+    "detail_url": "notas/a3b98fbbecbc5d5660bcd744.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "heading": "Inhabilitación comunicada",
+        "paragraphs": [
+          "La circular ordena a las entidades destinatarias abstenerse de aceptar propuestas o celebrar contratos con Profesionales en Vigilancia y Seguridad Privada, S.A. de C.V. durante tres meses, desde el día siguiente a su publicación, dentro de la materia contractual que delimita."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "heading": "Límites y continuidad de la medida",
+        "paragraphs": [
+          "Los contratos ya adjudicados o formalizados quedan fuera de la aplicación indicada. Si la multa permanece impaga al concluir el término, la inhabilitación continúa hasta que se acredite el pago según la propia circular."
+        ]
+      }
+    ],
+    "detected_at": "2026-09-01T16:34:47.803209+00:00",
+    "document_type": "Circular",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "4395f3278244fdbadae5e2586104ca02b4b8f3f2b0c6b04594028606d2b4d699",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "CIRCULAR por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a las entidades federativas y sus municipios, los entes públicos de unas y otros, así como a las demarcaciones territoriales de la Ciudad de México, que deberán abstenerse de aceptar propuestas o celebrar contratos con la empresa Profesionales en Vigilancia y Seguridad Privada, S.A. de C.V.",
+          "location": "caracteres 0-396"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Buen Gobierno.- Secretaría Anticorrupción y Buen Gobierno.- Órgano Interno de Control en la Secretaría de Cultura.- Área de Responsabilidades.- Expediente No.: CULTURA-PAS-03/2026.",
+          "location": "caracteres 396-8772"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795243&fecha=03%2F08%2F2026",
+      "retrieved_at": "2026-09-01T16:35:53.287427+00:00"
+    },
+    "executive_summary": [
+      "La circular comunica la resolución administrativa que impuso a Profesionales en Vigilancia y Seguridad Privada, S.A. de C.V. una inhabilitación temporal de tres meses. A partir del día siguiente a la publicación en el Diario Oficial de la Federación, las autoridades destinatarias deben abstenerse de aceptar propuestas o celebrar contratos regulados por las leyes de adquisiciones, obras públicas y asociaciones público privadas con la empresa, de manera directa o por interpósita persona. La ficha se limita a la inhabilitación y al ámbito que la circular expresa.",
+      "El alcance material se refiere a procedimientos y contratos regulados por las leyes de adquisiciones, obras públicas y asociaciones público privadas. El documento dirige la comunicación a dependencias y entidades federales y, en los términos que precisa, a entidades federativas, municipios, demarcaciones territoriales y otros entes cuando las contrataciones se cubran total o parcialmente con recursos federales derivados de convenios con el Ejecutivo Federal. La circular no convierte por sí misma cualquier relación comercial ajena a ese ámbito en una prohibición."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-09-01T16:34:47.803209+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5795243",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "La publicación incide en la validación de elegibilidad de proveedores y contratistas para procedimientos y contratos cubiertos por recursos federales."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-1",
+            "chunk-2"
+          ],
+          "paragraphs": [
+            "Las áreas contratantes deben abstenerse de aceptar propuestas o celebrar contratos con la empresa señalada sólo en el alcance que la circular fija; los contratos adjudicados o formalizados están excluidos de esa restricción."
+          ],
+          "sector": "Áreas contratantes y unidades de compras públicas"
+        }
+      ]
+    },
+    "importance": 2,
+    "issuing_body": "Presidencia de la República",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-09-01T16:34:47.803209+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795243&fecha=03/08/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5795243"
+    },
+    "official_published_at": "2026-08-03",
+    "official_title": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a las entidades federativas y sus municipios, los entes públicos de unas y otros, así como a las demarcaciones territoriales de la Ciudad de México, que deberán abstenerse de aceptar propuestas o celebrar contratos con la empresa Profesionales en Vigilancia y Seguridad Privada, S.A. de C.V.",
+    "published_at": "2026-08-03",
+    "published_day": 3,
+    "published_month": 8,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Áreas contratantes y unidades de compras públicas",
+        "deadline": "tres meses a partir del día siguiente a la publicación, con la extensión condicionada al pago de la multa que la fuente prevé",
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "legal_basis": "Leyes de Adquisiciones, Arrendamientos y Servicios del Sector Público; de Obras Públicas y Servicios Relacionados con las Mismas; y de Asociaciones Público Privadas, así como términos de la circular",
+        "paragraphs": [
+          "Verificar la identidad de Profesionales en Vigilancia y Seguridad Privada, S.A. de C.V., el objeto contractual y el origen de los recursos antes de aceptar propuestas o celebrar contratos. Identificar como excluidos de la circular los contratos ya adjudicados o formalizados."
+        ],
+        "trigger": "Tramitar un procedimiento o contrato comprendido en la circular"
+      }
+    ],
+    "relevance_score": 2,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5795243",
+    "subtopic_tags": [
+      "administracion publica federal"
+    ],
+    "summary": "La circular comunica la resolución administrativa que impuso a Profesionales en Vigilancia y Seguridad Privada, S.A. de C.V. una inhabilitación temporal de tres meses. A partir del día siguiente a la publicación en el Diario Oficial de la Federación, las autoridades destinatarias deben abstenerse de aceptar propuestas o celebrar contratos regulados por las leyes de adquisiciones, obras públicas y asociaciones público privadas con la empresa, de manera directa o por interpósita persona. La ficha se limita a la inhabilitación y al ámbito que la circular expresa.\n\nEl alcance material se refiere a procedimientos y contratos regulados por las leyes de adquisiciones, obras públicas y asociaciones público privadas. El documento dirige la comunicación a dependencias y entidades federales y, en los términos que precisa, a entidades federativas, municipios, demarcaciones territoriales y otros entes cuando las contrataciones se cubran total o parcialmente con recursos federales derivados de convenios con el Ejecutivo Federal. La circular no convierte por sí misma cualquier relación comercial ajena a ese ámbito en una prohibición.\n\nLa fuente establece como excepción los contratos ya adjudicados o formalizados: no quedan comprendidos en la aplicación de la circular. También establece que, si al vencer la inhabilitación no se ha pagado la multa impuesta, la restricción subsiste hasta que se acredite el pago ante la Secretaría Anticorrupción y Buen Gobierno para eliminar el registro de la sancionada en ComprasMX. No se infiere una fecha de liberación distinta de la que resulta de esas condiciones.\n\nPara quienes compran con recursos públicos, el dato operativo es verificar la identidad de la persona o empresa, el tipo de procedimiento y la fuente de financiamiento antes de aceptar propuestas o celebrar contratos. La publicación no describe los hechos de fondo del procedimiento ni sustituye la consulta del expediente, de ComprasMX o de las reglas específicas aplicables a una contratación concreta.",
+    "summary_teaser": "La autoridad comunicó la inhabilitación de Profesionales en Vigilancia y Seguridad Privada, S.A. de C.V. por tres meses. Desde el día siguiente a la publicación en el DOF, las entidades destinatarias deben abstenerse de aceptar propuestas o celebrar contratos en las materias cubiertas. Los contratos ya adjudicados o formalizados quedan fuera de la circular y la fuente prevé continuidad si la multa sigue impaga.",
+    "title": "Autoridad inhabilita empresa de vigilancia para contrataciones públicas",
+    "topic_tags": [
+      "Derecho administrativo",
+      "Circular"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5795243&fecha=03/08/2026"
+  },
+  "schema_version": 8
+}

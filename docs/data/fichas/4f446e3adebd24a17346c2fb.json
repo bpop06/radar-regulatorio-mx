@@ -1,0 +1,151 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-3",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-3"
+      ],
+      "heading": "Contenido publicado",
+      "paragraphs": [
+        "El acuerdo incorpora sostenibilidad como normativa supletoria y actualiza conceptos, referencias y la estructura de los informes gubernamentales."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-3"
+      ],
+      "heading": "Alcance práctico",
+      "paragraphs": [
+        "Su aplicación obligatoria inicia el primero de enero de dos mil veintisiete y los transitorios fijan deberes de publicación y reporte para entidades federativas."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "82da4a278008e1c1a09cd5b76a646383009fc869207e910cd14eeece8a42c014",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "ACUERDO por el que se reforma el Marco Conceptual de Contabilidad Gubernamental.",
+        "location": "caracteres 0-84"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un logotipo, que dice: Consejo Nacional de Armonización Contable. · parte 1",
+        "location": "caracteres 84-12084"
+      },
+      {
+        "id": "chunk-3",
+        "label": "Al margen un logotipo, que dice: Consejo Nacional de Armonización Contable. · parte 2",
+        "location": "caracteres 12084-21300"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796158&fecha=13%2F08%2F2026",
+    "retrieved_at": "2026-09-01T16:35:32.007596+00:00"
+  },
+  "executive_summary": [
+    "El Consejo Nacional de Armonización Contable reformó el Marco Conceptual de Contabilidad Gubernamental para alinear la información financiera de los entes públicos con la normativa emitida por el propio Consejo. El acuerdo incorpora como normativa supletoria las Normas de Información de Sostenibilidad, actualiza referencias y conceptos, y precisa el tratamiento aplicable a entes públicos regulados por la Comisión Nacional Bancaria y de Valores y la Comisión Nacional de Seguros y Fianzas.",
+    "La reforma también cambia la presentación de diversos apartados. Entre ellos, deja los postulados básicos solamente enlistados, renombra las cualidades de la información financiera y actualiza la sección sobre estados e informes contables, presupuestarios, programáticos e indicadores de postura fiscal. La fuente enumera información contable, presupuestaria y programática que debe generarse conforme al Manual de Contabilidad Gubernamental, incluidos estados financieros, notas, indicadores y clasificaciones del presupuesto."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-3"
+      ],
+      "paragraphs": [
+        "El cambio afecta la armonización y presentación de información financiera de entes públicos, con preparación previa antes de la aplicación obligatoria."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-3"
+        ],
+        "paragraphs": [
+          "Las áreas responsables deben revisar impactos en políticas contables, sistemas de reporte, manuales y mecanismos de adopción institucional."
+        ],
+        "sector": "Entes públicos, entidades federativas y áreas de contabilidad gubernamental"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796158&fecha=13%2F08%2F2026",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "baccdb34d1e15a1e61ad572135dc1780858324348317b6765804487391ce3580",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/4f446e3adebd24a17346c2fb.json",
+    "detail_url": "notas/4f446e3adebd24a17346c2fb.html",
+    "detected_at": "2026-09-01T16:34:47.803209+00:00",
+    "document_type": "Acuerdo",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5796158",
+    "importance": 1,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-08-13",
+    "official_title": "Acuerdo por el que se reforma el Marco Conceptual de Contabilidad Gubernamental.",
+    "published_at": "2026-08-13",
+    "relevance_score": 1,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5796158",
+    "summary_teaser": "El Consejo Nacional de Armonización Contable reformó el Marco Conceptual de Contabilidad Gubernamental. La aplicación obligatoria comienza el primero de enero de dos mil veintisiete; las entidades federativas deben publicar el acuerdo dentro de treinta días hábiles y sus consejos deben informar actos de adopción en el plazo posterior indicado.",
+    "title": "Contabilidad gubernamental incorpora sostenibilidad y actualiza sus reportes",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796158&fecha=13/08/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Entes públicos, entidades federativas y áreas de contabilidad gubernamental",
+      "deadline": "Aplicación obligatoria desde el primero de enero de dos mil veintisiete; publicación estatal en treinta días hábiles y reporte de adopción en quince días hábiles después del plazo de publicación",
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-3"
+      ],
+      "legal_basis": "Ley General de Contabilidad Gubernamental y acuerdo del CONAC",
+      "paragraphs": [
+        "Planear la adopción antes de la fecha obligatoria, publicar el acuerdo cuando corresponda y documentar los actos de implementación para el reporte a la Secretaría Técnica."
+      ],
+      "trigger": "Preparar, publicar o armonizar información financiera gubernamental"
+    }
+  ],
+  "schema_version": 8
+}

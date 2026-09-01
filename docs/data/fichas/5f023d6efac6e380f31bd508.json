@@ -1,0 +1,121 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-1"
+      ],
+      "heading": "Contenido publicado",
+      "paragraphs": [
+        "La convocatoria corresponde a una segunda vuelta para adquirir DVD, CD, memorias USB, discos duros y diversos materiales y bienes informáticos. Las bases se pusieron a consulta en ComprasMX y en la sede indicada por la autoridad. El calendario publicado fija junta de aclaraciones el 4 de septiembre de 2026 a las 10:30 horas, presentación y apertura de proposiciones el 17 de septiembre de 2026 a las 10:30 horas y fallo el 24 de septiembre de 2026 a las 17:00 horas.",
+        "El resumen remite al anexo técnico para el detalle de las partidas y no identifica adjudicatarios ni un resultado, porque el documento es una convocatoria. La referencia oficial precisa que la publicación en la plataforma de contrataciones ocurrió el 27 de agosto de 2026."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-1"
+      ],
+      "heading": "Alcance y lectura práctica",
+      "paragraphs": [
+        "La información interesa a proveedores capaces de atender las partidas y a áreas de compras que deban seguir un procedimiento internacional abierto. Los requisitos técnicos, económicos y de participación deben tomarse de las bases disponibles en la plataforma, no del resumen publicado.",
+        "La ficha se dirige principalmente a proveedores de bienes informáticos y participantes en contrataciones públicas."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "6adb8a96f875164377779b1e65474f0a9ed2037ff8392a9156998833f514cb59",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "Documento",
+        "location": "caracteres 0-1775"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797666&fecha=01%2F09%2F2026",
+    "retrieved_at": "2026-09-01T16:34:50.918583+00:00"
+  },
+  "executive_summary": [
+    "La Fiscalía General de la República difundió el resumen de una convocatoria de licitación pública internacional abierta para adquirir soportes de almacenamiento y otros bienes informáticos. La convocatoria corresponde a una segunda vuelta para adquirir DVD, CD, memorias USB, discos duros y diversos materiales y bienes informáticos. Las bases se pusieron a consulta en ComprasMX y en la sede indicada por la autoridad. El calendario publicado fija junta de aclaraciones el 4 de septiembre de 2026 a las 10:30 horas, presentación y apertura de proposiciones el 17 de septiembre de 2026 a las 10:30 horas y fallo el 24 de septiembre de 2026 a las 17:00 horas.",
+    "La información interesa a proveedores capaces de atender las partidas y a áreas de compras que deban seguir un procedimiento internacional abierto. Los requisitos técnicos, económicos y de participación deben tomarse de las bases disponibles en la plataforma, no del resumen publicado. La síntesis se limita a los hechos y condiciones expresamente visibles en la fuente oficial."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-1"
+      ],
+      "paragraphs": [
+        "El efecto observable es el que la publicación atribuye al acto: La información interesa a proveedores capaces de atender las partidas y a áreas de compras que deban seguir un procedimiento internacional abierto. Los requisitos técnicos, económicos y de participación deben tomarse de las bases disponibles en la plataforma, no del resumen publicado."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-1"
+        ],
+        "paragraphs": [
+          "Las personas comprendidas deben considerar el documento porque La convocatoria corresponde a una segunda vuelta para adquirir DVD, CD, memorias USB, discos duros y diversos materiales y bienes informáticos. Las bases se pusieron a consulta en ComprasMX y en la sede indicada por la autoridad. El calendario publicado fija junta de aclaraciones el 4 de septiembre de 2026 a las 10:30 horas, presentación y apertura de proposiciones el 17 de septiembre de 2026 a las 10:30 horas y fallo el 24 de septiembre de 2026 a las 17:00 horas."
+        ],
+        "sector": "Proveedores de bienes informáticos y participantes en contrataciones públicas"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797666&fecha=01%2F09%2F2026",
+    "categories": [
+      "Penal"
+    ],
+    "content_hash": "9187d73270d8ea3f0275eba06f73e19e22284bffa443f5ed0256aacad877df83",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/5f023d6efac6e380f31bd508.json",
+    "detail_url": "notas/5f023d6efac6e380f31bd508.html",
+    "detected_at": "2026-09-01T16:34:47.803209+00:00",
+    "document_type": "Fiscalia General",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5797666",
+    "importance": 2,
+    "issuing_body": "Fiscalía General de la República",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-09-01",
+    "official_title": "FISCALIA GENERAL DE LA REPUBLICA - REF:579847",
+    "published_at": "2026-09-01",
+    "relevance_score": 2,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5797666",
+    "summary_teaser": "La Fiscalía General de la República difundió una licitación pública internacional abierta para adquirir DVD, CD, memorias USB, discos duros y otros bienes informáticos en segunda vuelta. Las bases se consultan en ComprasMX; el calendario publicado contempla aclaraciones, presentación de propuestas y fallo durante septiembre.",
+    "title": "Fiscalía abre licitación internacional de insumos informáticos",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797666&fecha=01/09/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Proveedores de bienes informáticos y participantes en contrataciones públicas",
+      "deadline": "Presentación y apertura de proposiciones: 17 de septiembre de 2026, 10:30 horas.",
+      "evidence_refs": [
+        "chunk-1"
+      ],
+      "legal_basis": null,
+      "paragraphs": [
+        "Consultar las bases y el anexo técnico en la fuente institucional, verificar las partidas aplicables y preparar preguntas o propuesta conforme al calendario oficial."
+      ],
+      "trigger": "Cuando la persona o entidad se ubique en el ámbito material descrito por la fuente oficial."
+    }
+  ],
+  "schema_version": 8
+}

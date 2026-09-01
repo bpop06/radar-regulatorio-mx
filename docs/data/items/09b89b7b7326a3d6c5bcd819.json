@@ -1,0 +1,321 @@
+{
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "item": {
+    "ai_generated": true,
+    "authority": "PODER EJECUTIVO SECRETARIA DE ECONOMIA",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791664&fecha=25/06/2026",
+    "card_body": "## Qué se publicó\n\nEl Diario Oficial de la Federación publicó una resolución final que prorroga cuotas compensatorias a tubería estadounidense.\n\n## Sustancia\n\nLa resolución concluye el examen de vigencia, individualiza la mercancía de tubería de acero al carbono con costura longitudinal recta y expone el análisis de dumping, daño y capacidad exportadora.\n\n## Fuente\n\nLa fuente oficial es el Diario Oficial de la Federación. El acto revisado es la resolución final del examen de vigencia de cuotas compensatorias sobre la tubería examinada.",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "604bf4126b05e3c816365351a62a3625c70d99c90ce6e521f45432fa1c924c44",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "not_material",
+        "reason": "Primer locator sólo contiene título; antecedentes, análisis y parte resolutiva están en once fragmentos posteriores.",
+        "source_ref": "chunk-1",
+        "target_sections": []
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-3",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-4",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-5",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-6",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-7",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-8",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-9",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-10",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-11",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-12",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/09b89b7b7326a3d6c5bcd819.json",
+    "detail_url": "notas/09b89b7b7326a3d6c5bcd819.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-2",
+          "chunk-3"
+        ],
+        "heading": "Antecedentes, producto y procedimiento",
+        "paragraphs": [
+          "Resolución recorre investigaciones y exámenes previos, solicitud de Tubacero e inicio del examen. Describe diámetros, espesores, fracciones, procesos de fabricación, usos en conducción de fluidos y desarrollo probatorio con productora y otras personas requeridas."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-4",
+          "chunk-5",
+          "chunk-6"
+        ],
+        "heading": "Dumping y rama nacional",
+        "paragraphs": [
+          "Secretaría analiza precio de exportación, ajustes y valor normal con información de Tubacero y concluye que existen elementos suficientes para prever repetición de dumping si se eliminan cuotas. El expediente identifica a Tubacero como rama de producción nacional para procedimiento."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-7",
+          "chunk-8"
+        ],
+        "heading": "Importaciones y precio",
+        "paragraphs": [
+          "La decisión depura operaciones para separar mercancía examinada y evalúa escenario prospectivo de eliminación sobre participación de mercado, precios y producción nacional. Considera que importaciones estadounidenses fueron discretas en periodo analizado, pero estudia probabilidad de retorno en escenario hipotético."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-9",
+          "chunk-10",
+          "chunk-11"
+        ],
+        "heading": "Proyecciones y potencial exportador",
+        "paragraphs": [
+          "Resolución revisa indicadores financieros, análisis contrafactual y capacidad estadounidense. Observa información insuficiente sobre algunos proyectos de gasoductos y concluye que potencial exportador y capacidad disponible superan producción y mercado mexicano. Esa conclusión se integra con evaluación de daño."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-12"
+        ],
+        "heading": "Parte resolutiva y origen",
+        "paragraphs": [
+          "Parte resolutiva declara concluido examen, aplica tasas y señala que importadores no pagan si prueban origen distinto a Estados Unidos conforme a reglas de origen no preferencial citadas. Entra en vigor día siguiente de publicación."
+        ]
+      }
+    ],
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Resolución Final",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "07fb4ad25fea1a26e47c48d195131f7be2eead01d7d50100a5626383552bb0cc",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "RESOLUCIÓN final del procedimiento administrativo de examen de vigencia de las cuotas compensatorias impuestas a las importaciones de tubería de acero al carbono con costura longitudinal recta originarias de los Estados Unidos de América, independientemente del país de procedencia.",
+          "location": "caracteres 0-286"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Economía. · parte 1",
+          "location": "caracteres 286-12286"
+        },
+        {
+          "id": "chunk-3",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Economía. · parte 2",
+          "location": "caracteres 12286-24286"
+        },
+        {
+          "id": "chunk-4",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Economía. · parte 3",
+          "location": "caracteres 24286-36286"
+        },
+        {
+          "id": "chunk-5",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Economía. · parte 4",
+          "location": "caracteres 36286-48286"
+        },
+        {
+          "id": "chunk-6",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Economía. · parte 5",
+          "location": "caracteres 48286-60286"
+        },
+        {
+          "id": "chunk-7",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Economía. · parte 6",
+          "location": "caracteres 60286-72286"
+        },
+        {
+          "id": "chunk-8",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Economía. · parte 7",
+          "location": "caracteres 72286-84286"
+        },
+        {
+          "id": "chunk-9",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Economía. · parte 8",
+          "location": "caracteres 84286-96286"
+        },
+        {
+          "id": "chunk-10",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Economía. · parte 9",
+          "location": "caracteres 96286-108286"
+        },
+        {
+          "id": "chunk-11",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Economía. · parte 10",
+          "location": "caracteres 108286-120286"
+        },
+        {
+          "id": "chunk-12",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Economía. · parte 11",
+          "location": "caracteres 120286-121683"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791664&fecha=25/06/2026",
+      "retrieved_at": "2026-08-13T19:43:49.330396+00:00"
+    },
+    "executive_summary": [
+      "La Secretaría de Economía concluye examen de vigencia de cuotas compensatorias sobre importaciones de tubería de acero al carbono con costura longitudinal recta originarias de Estados Unidos. Cubre mercancía por fracciones 7305.11.02 y 7305.12.91 TIGIE, entre referencias históricas del expediente.",
+      "La decisión prorroga por cinco años desde 28 de mayo de 2025 tasas de 6.77 por ciento para Berg Steel Pipe Corporation, actualmente Berg Europipe Holding, 4.04 por ciento para producto fabricado y exportado por esa empresa, y 25.43 por ciento para Oregon Steel Mills y demás exportadoras."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5791664",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-2",
+          "chunk-3"
+        ],
+        "paragraphs": [
+          "Importadores, productores y compradores de tubería deben considerar vigencia prorrogada y que aplicación corresponde a Hacienda. Precisión de origen es relevante: resolución prevé excepción de pago si se acredita origen distinto a Estados Unidos."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-2",
+            "chunk-3"
+          ],
+          "paragraphs": [
+            "Importadores, agentes aduanales y productores deben revisar fracción, características, tasa aplicable y documentación de origen."
+          ],
+          "sector": "Acero, tubería y comercio exterior"
+        }
+      ]
+    },
+    "importance": 1,
+    "issuing_body": "Secretaría de Economía",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T13:53:50.681449+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791664&fecha=25/06/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5791664"
+    },
+    "official_published_at": "2026-06-25",
+    "official_title": "Resolución final del procedimiento administrativo de examen de vigencia de las cuotas compensatorias impuestas a las importaciones de tubería de acero al carbono con costura longitudinal recta originarias de los Estados Unidos de América, independientemente del país de procedencia.",
+    "published_at": "2026-06-25",
+    "published_day": 25,
+    "published_month": 6,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Importadores de la tubería examinada",
+        "deadline": "Entrada en vigor día siguiente a publicación; vigencia prorrogada por cinco años desde 28 de mayo de 2025",
+        "evidence_refs": [
+          "chunk-11",
+          "chunk-12"
+        ],
+        "legal_basis": "Artículo 66 LCE y reglas de origen no preferencial citadas",
+        "paragraphs": [
+          "Contrastar mercancía con fracciones y descripción examinadas y, si se invoca origen distinto, reunir comprobación conforme a reglas no preferenciales citadas. Considerar tres tasas según productor o exportador."
+        ],
+        "trigger": "Al importar mercancía objeto de resolución"
+      }
+    ],
+    "relevance_score": 1,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5791664",
+    "subtopic_tags": [],
+    "summary": "La Secretaría de Economía concluye examen de vigencia de cuotas compensatorias sobre importaciones de tubería de acero al carbono con costura longitudinal recta originarias de Estados Unidos. Cubre mercancía por fracciones 7305.11.02 y 7305.12.91 TIGIE, entre referencias históricas del expediente.\n\nLa decisión prorroga por cinco años desde 28 de mayo de 2025 tasas de 6.77 por ciento para Berg Steel Pipe Corporation, actualmente Berg Europipe Holding, 4.04 por ciento para producto fabricado y exportado por esa empresa, y 25.43 por ciento para Oregon Steel Mills y demás exportadoras.\n\nResolución recorre investigaciones y exámenes previos, solicitud de Tubacero e inicio del examen. Describe diámetros, espesores, fracciones, procesos de fabricación, usos en conducción de fluidos y desarrollo probatorio con productora y otras personas requeridas.\n\nSecretaría analiza precio de exportación, ajustes y valor normal con información de Tubacero y concluye que existen elementos suficientes para prever repetición de dumping si se eliminan cuotas. El expediente identifica a Tubacero como rama de producción nacional para procedimiento.\n\nLa decisión depura operaciones para separar mercancía examinada y evalúa escenario prospectivo de eliminación sobre participación de mercado, precios y producción nacional. Considera que importaciones estadounidenses fueron discretas en periodo analizado, pero estudia probabilidad de retorno en escenario hipotético.\n\nResolución revisa indicadores financieros, análisis contrafactual y capacidad estadounidense. Observa información insuficiente sobre algunos proyectos de gasoductos y concluye que potencial exportador y capacidad disponible superan producción y mercado mexicano. Esa conclusión se integra con evaluación de daño.\n\nParte resolutiva declara concluido examen, aplica tasas y señala que importadores no pagan si prueban origen distinto a Estados Unidos conforme a reglas de origen no preferencial citadas. Entra en vigor día siguiente de publicación.\n\nLa decisión no se basa sólo en importaciones actuales; integra historia de medidas, comparación de precios, indicadores nacionales, estimaciones prospectivas y capacidad estadounidense. Proyecciones son análisis del expediente para evaluar eliminación hipotética, no afirmación de que cada flujo futuro ocurrirá necesariamente. La tasa aplicable exige distinguir empresa y condición que la parte resolutiva individualiza.\n\nImportadores, productores y compradores de tubería deben considerar vigencia prorrogada y que aplicación corresponde a Hacienda. Precisión de origen es relevante: resolución prevé excepción de pago si se acredita origen distinto a Estados Unidos. Importadores, agentes aduanales y productores deben revisar fracción, características, tasa aplicable y documentación de origen.\n\nLa resolución prorroga las cuotas para la mercancía examinada en los términos y tasas que individualiza. Su alcance se delimita por la descripción del producto, el origen y las condiciones de comprobación señaladas, no por cualquier tubería de acero.",
+    "summary_teaser": "La Secretaría de Economía concluye el examen de vigencia de cuotas compensatorias para tubería de acero al carbono con costura longitudinal recta originaria de Estados Unidos. La resolución prorroga las cuotas durante cinco años desde el 28 de mayo de 2025 y expone el análisis de dumping y daño.",
+    "title": "Economía extiende cinco años cuotas a tubería estadounidense",
+    "topic_tags": [
+      "Resolución"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5791664&fecha=25/06/2026"
+  },
+  "schema_version": 8
+}

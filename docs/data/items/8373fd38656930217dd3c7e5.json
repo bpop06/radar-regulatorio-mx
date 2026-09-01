@@ -1,0 +1,165 @@
+{
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "item": {
+    "ai_generated": true,
+    "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795599&fecha=06%2F08%2F2026",
+    "card_body": "## Qué se publicó\n\nEl Fondo de Protección de Sociedades Financieras Populares y de Protección a sus Ahorradores publicó la lista de sociedades financieras populares participantes en el Fondo de Protección durante el primer semestre de 2026.\n\n## Sustancia\n\nLa publicación enumera 34 Sociedades Financieras Populares que participaron en el Fondo de Protección durante el primer semestre de 2026. La lista contiene, entre otras, Crediclub, Financiera Broxel, Fincomún, Klar Technologies, Nu México Financiera, Stori México y Unagra. La nota se publica con fundamento en el artículo 98 de la Ley de Ahorro y Crédito Popular. El listado acredita la participación en el Fondo durante el periodo señalado; no sustituye información individual sobre autorización, solvencia, productos, cobertura concreta o resultado de procedimientos de cada sociedad. Las dos notas deben leerse con el alcance limitado que el propio documento les da.\n\n## Fuente\n\nFuente oficial: https://dof.gob.mx/nota_detalle.php?codigo=5795599&fecha=06%2F08%2F2026. Extracción: html-adapter; recuperada el 2026-09-01T16:35:43.688705+00:00.",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "c5c78fa86f468c9d4f5f1f40e83f0c4e68c2a6dba87d20aaa8091296018d781c",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-1",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/8373fd38656930217dd3c7e5.json",
+    "detail_url": "notas/8373fd38656930217dd3c7e5.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "heading": "Contenido publicado",
+        "paragraphs": [
+          "La publicación enumera 34 Sociedades Financieras Populares que participaron en el Fondo de Protección durante el primer semestre de 2026. La lista contiene, entre otras, Crediclub, Financiera Broxel, Fincomún, Klar Technologies, Nu México Financiera, Stori México y Unagra. La nota se publica con fundamento en el artículo 98 de la Ley de Ahorro y Crédito Popular.",
+          "El documento acompaña dos precisiones expresas. Acción y Evolución figura clasificada en categoría 4 en el nivel de capitalización y sujeta a un estudio técnico para valorar lo previsto en el artículo 90 de la ley. Impulso para el Desarrollo de México aparece pendiente de resolución firme por los medios de defensa interpuestos contra un oficio de revocación."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "heading": "Alcance y lectura práctica",
+        "paragraphs": [
+          "El listado acredita la participación en el Fondo durante el periodo señalado; no sustituye información individual sobre autorización, solvencia, productos, cobertura concreta o resultado de procedimientos de cada sociedad. Las dos notas deben leerse con el alcance limitado que el propio documento les da.",
+          "La ficha se dirige principalmente a ahorradores, sofipos y personas que consultan información del fondo de protección."
+        ]
+      }
+    ],
+    "detected_at": "2026-09-01T16:34:47.803209+00:00",
+    "document_type": "Lista De Las",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "272e85f645c17b3f1e81ac9494e5e60a8850b9e181f5ee98a2ef989f0fdf8e08",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "LISTA de las Sociedades Financieras Populares que participan en el Fondo de Protección de Sociedades Financieras Populares y de Protección a sus Ahorradores.",
+          "location": "caracteres 0-161"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al margen un logotipo, que dice: Fondo de Protección de Sociedades Financieras Populares y de Protección a sus Ahorradores.- BANSEFI FID 10216.- FP/258/2026.",
+          "location": "caracteres 161-3521"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795599&fecha=06%2F08%2F2026",
+      "retrieved_at": "2026-09-01T16:35:43.688705+00:00"
+    },
+    "executive_summary": [
+      "El Fondo de Protección de Sociedades Financieras Populares y de Protección a sus Ahorradores difundió la lista de sociedades financieras populares participantes en el Fondo de Protección durante el primer semestre de 2026. La publicación enumera 34 Sociedades Financieras Populares que participaron en el Fondo de Protección durante el primer semestre de 2026. La lista contiene, entre otras, Crediclub, Financiera Broxel, Fincomún, Klar Technologies, Nu México Financiera, Stori México y Unagra. La nota se publica con fundamento en el artículo 98 de la Ley de Ahorro y Crédito Popular.",
+      "El listado acredita la participación en el Fondo durante el periodo señalado; no sustituye información individual sobre autorización, solvencia, productos, cobertura concreta o resultado de procedimientos de cada sociedad. Las dos notas deben leerse con el alcance limitado que el propio documento les da. La síntesis se limita a los hechos y condiciones expresamente visibles en la fuente oficial."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-09-01T16:34:47.803209+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5795599",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "El efecto observable es el que la publicación atribuye al acto: El listado acredita la participación en el Fondo durante el periodo señalado; no sustituye información individual sobre autorización, solvencia, productos, cobertura concreta o resultado de procedimientos de cada sociedad. Las dos notas deben leerse con el alcance limitado que el propio documento les da."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-2"
+          ],
+          "paragraphs": [
+            "Las personas comprendidas deben considerar el documento porque La publicación enumera 34 Sociedades Financieras Populares que participaron en el Fondo de Protección durante el primer semestre de 2026. La lista contiene, entre otras, Crediclub, Financiera Broxel, Fincomún, Klar Technologies, Nu México Financiera, Stori México y Unagra. La nota se publica con fundamento en el artículo 98 de la Ley de Ahorro y Crédito Popular."
+          ],
+          "sector": "Ahorradores, Sofipos y personas que consultan información del Fondo de Protección"
+        }
+      ]
+    },
+    "importance": 1,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-09-01T16:34:47.803209+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795599&fecha=06/08/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5795599"
+    },
+    "official_published_at": "2026-08-06",
+    "official_title": "Lista de las Sociedades Financieras Populares que participan en el Fondo de Protección de Sociedades Financieras Populares y de Protección a sus Ahorradores.",
+    "published_at": "2026-08-06",
+    "published_day": 6,
+    "published_month": 8,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Ahorradores, Sofipos y personas que consultan información del Fondo de Protección",
+        "deadline": null,
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "legal_basis": null,
+        "paragraphs": [
+          "Usar el listado para confirmar la participación durante el semestre y consultar fuentes regulatorias específicas antes de tomar decisiones sobre una sociedad, producto o procedimiento particular."
+        ],
+        "trigger": "Cuando la persona o entidad se ubique en el ámbito material descrito por la fuente oficial."
+      }
+    ],
+    "relevance_score": 1,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5795599",
+    "subtopic_tags": [],
+    "summary": "El Fondo de Protección de Sociedades Financieras Populares y de Protección a sus Ahorradores publicó la lista de sociedades financieras populares participantes en el Fondo de Protección durante el primer semestre de 2026. La publicación enumera 34 Sociedades Financieras Populares que participaron en el Fondo de Protección durante el primer semestre de 2026. La lista contiene, entre otras, Crediclub, Financiera Broxel, Fincomún, Klar Technologies, Nu México Financiera, Stori México y Unagra. La nota se publica con fundamento en el artículo 98 de la Ley de Ahorro y Crédito Popular.\n\nEl documento acompaña dos precisiones expresas. Acción y Evolución figura clasificada en categoría 4 en el nivel de capitalización y sujeta a un estudio técnico para valorar lo previsto en el artículo 90 de la ley. Impulso para el Desarrollo de México aparece pendiente de resolución firme por los medios de defensa interpuestos contra un oficio de revocación.\n\nEl listado acredita la participación en el Fondo durante el periodo señalado; no sustituye información individual sobre autorización, solvencia, productos, cobertura concreta o resultado de procedimientos de cada sociedad. Las dos notas deben leerse con el alcance limitado que el propio documento les da.\n\nLa utilidad práctica de la publicación depende de si la persona o entidad se encuentra dentro del ámbito descrito. La información se presenta con base en el documento oficial disponible y no permite extender efectos a supuestos, periodos, personas o actos que no estén expresamente identificados. Cuando el documento incorpora requisitos, condiciones o mecanismos, éstos deben contrastarse con la ficha, resolución, contrato, expediente o norma específica que corresponda.\n\nPara fines de cumplimiento y trazabilidad, conviene conservar la fuente oficial, su fecha de publicación y los documentos que acrediten la situación concreta. Esta síntesis no sustituye el texto íntegro ni una determinación individual de la autoridad; describe el alcance observable del acto y distingue las consecuencias expresamente publicadas de cualquier inferencia que no está respaldada por la evidencia disponible.",
+    "summary_teaser": "El Fondo de Protección de Sociedades Financieras Populares publicó las 34 Sofipos que participaron durante el primer semestre de 2026. El listado incluye dos notas: Acción y Evolución está en categoría 4 con estudio técnico, e Impulso para el Desarrollo de México tiene medios de defensa pendientes.",
+    "title": "Fondo de Protección confirma Sofipos participantes del semestre",
+    "topic_tags": [],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5795599&fecha=06/08/2026"
+  },
+  "schema_version": 8
+}

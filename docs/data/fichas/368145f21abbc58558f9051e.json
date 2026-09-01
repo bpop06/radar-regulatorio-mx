@@ -1,0 +1,209 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-3",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-4",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-5",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "heading": "Naturaleza y consulta pública",
+      "paragraphs": [
+        "SEMARNAT publica el Proyecto de Norma Oficial Mexicana PROY-NOM-160-SEMARNAT-2026 para establecer elementos y procedimientos de formulación de planes de manejo de residuos peligrosos. El proyecto fue aprobado por el Comité Consultivo Nacional de Normalización de Medio Ambiente y Recursos Naturales para consulta pública. Las personas interesadas pueden formular comentarios durante los sesenta días naturales siguientes a la publicación, ante el Comité o por el correo y plataforma que la publicación señala.",
+        "Por su carácter de proyecto sometido a consulta, el documento no equivale todavía a una NOM obligatoria vigente. La fuente explica que el proyecto deriva de la revisión integral del PROY-NOM-160-SEMARNAT-2011 y de cambios sustanciales que requieren una nueva consulta. Las empresas deben evitar tratar sus elementos como un requisito ya exigible sin verificar la conclusión del proceso de normalización y la publicación definitiva."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2",
+        "chunk-3",
+        "chunk-4"
+      ],
+      "heading": "Sujetos y contenido propuesto",
+      "paragraphs": [
+        "El proyecto organiza los elementos de los planes por modalidad: grandes generadores; productores, importadores, exportadores, distribuidores y comercializadores de productos que al desecharse se convierten en residuos peligrosos; y generadores de los residuos de las fracciones XII a XV del artículo 31 de la LGPGIR. El texto parte de la obligación legal de formular y ejecutar planes de manejo y del principio de responsabilidad compartida, pero precisa que los consumidores participan en la entrega de residuos conforme al plan que corresponda.",
+        "Entre los contenidos propuestos están información general del solicitante, diagnóstico, volumen de generación, formas de manejo interno y externo, logística para acopio, almacenamiento, transporte, reciclaje, tratamiento o disposición final, y mecanismos de trazabilidad. El proyecto contempla que determinados planes puedan presentarse digitalmente e incluir una versión pública, así como adhesión o incorporación a planes previamente registrados bajo los mecanismos y obligaciones que éstos establezcan."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-4",
+        "chunk-5"
+      ],
+      "heading": "Cambios y transición propuesta",
+      "paragraphs": [
+        "La exposición indica que se eliminan anexos del proyecto de 2011 porque su contenido se integra en los numerales 5, 6 y 7 o en la LGPGIR; se adiciona un procedimiento de baja de registro y uno de evaluación de la conformidad. El texto del proyecto establece una futura entrada en vigor a los ciento ochenta días naturales posteriores a su publicación como norma y prevé que solicitudes de registro en trámite antes de esa entrada se atiendan bajo la normativa aplicable al momento de presentación. Esas disposiciones transitorias describen el proyecto y no sustituyen la consulta en curso."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "d7b5f67b1ef10f9ca5b464f204aca01132b43969afe339b3d13f1e1c78b5a418",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "PROYECTO de Norma Oficial Mexicana PROY-NOM-160-SEMARNAT-2026, Que establece los elementos y procedimientos para formular los planes de manejo de residuos peligrosos.",
+        "location": "caracteres 0-170"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Medio Ambiente y Recursos Naturales. · parte 1",
+        "location": "caracteres 170-12170"
+      },
+      {
+        "id": "chunk-3",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Medio Ambiente y Recursos Naturales. · parte 2",
+        "location": "caracteres 12170-24170"
+      },
+      {
+        "id": "chunk-4",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Medio Ambiente y Recursos Naturales. · parte 3",
+        "location": "caracteres 24170-36170"
+      },
+      {
+        "id": "chunk-5",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Medio Ambiente y Recursos Naturales. · parte 4",
+        "location": "caracteres 36170-42580"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5790008&fecha=09/06/2026",
+    "retrieved_at": "2026-08-13T19:44:28.101627+00:00"
+  },
+  "executive_summary": [
+    "SEMARNAT publica el Proyecto de Norma Oficial Mexicana PROY-NOM-160-SEMARNAT-2026 para establecer elementos y procedimientos de formulación de planes de manejo de residuos peligrosos. El proyecto fue aprobado por el Comité Consultivo Nacional de Normalización de Medio Ambiente y Recursos Naturales para consulta pública. Las personas interesadas pueden formular comentarios durante los sesenta días naturales siguientes a la publicación, ante el Comité o por el correo y plataforma que la publicación señala.",
+    "Por su carácter de proyecto sometido a consulta, el documento no equivale todavía a una NOM obligatoria vigente. La fuente explica que el proyecto deriva de la revisión integral del PROY-NOM-160-SEMARNAT-2011 y de cambios sustanciales que requieren una nueva consulta. Las empresas deben evitar tratar sus elementos como un requisito ya exigible sin verificar la conclusión del proceso de normalización y la publicación definitiva."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2",
+        "chunk-3",
+        "chunk-4",
+        "chunk-5"
+      ],
+      "paragraphs": [
+        "El proyecto anuncia una posible reorganización de los planes de manejo de residuos peligrosos y abre una oportunidad formal de comentarios; no crea obligaciones nuevas vigentes mientras no concluya el procedimiento normativo."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2",
+          "chunk-3",
+          "chunk-4",
+          "chunk-5"
+        ],
+        "paragraphs": [
+          "El proyecto anuncia una posible reorganización de los planes de manejo de residuos peligrosos y abre una oportunidad formal de comentarios; no crea obligaciones nuevas vigentes mientras no concluya el procedimiento normativo."
+        ],
+        "sector": "Grandes generadores y cadenas de productos que se convierten en residuos peligrosos"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5790008&fecha=09/06/2026",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "adf5cbece87d1df87e1510cc6be2a4ef3023139f473f54d5c643b063192e81e0",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/368145f21abbc58558f9051e.json",
+    "detail_url": "notas/368145f21abbc58558f9051e.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Proyecto De Norma",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5790008",
+    "importance": 3,
+    "issuing_body": "Presidencia de la República",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-06-09",
+    "official_title": "Proyecto de Norma Oficial Mexicana PROY-NOM-160- SEMARNAT-2026, Que establece los elementos y procedimientos para formular los planes de manejo de residuos peligrosos.",
+    "published_at": "2026-06-09",
+    "relevance_score": 4,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5790008",
+    "summary_teaser": "SEMARNAT sometió a consulta pública el PROY-NOM-160-SEMARNAT-2026 sobre elementos y procedimientos de planes de manejo de residuos peligrosos. El proyecto reorganiza requisitos por tipo de sujeto, incorpora una vía de baja de registro y evaluación de conformidad, y admite comentarios por 60 días; todavía no es una norma obligatoria vigente.",
+    "title": "SEMARNAT abre consulta sobre planes de manejo de residuos peligrosos",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5790008&fecha=09/06/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Grandes generadores y cadenas de productos que se convierten en residuos peligrosos",
+      "deadline": "60 días naturales siguientes a la publicación para comentarios",
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2",
+        "chunk-3",
+        "chunk-4",
+        "chunk-5"
+      ],
+      "legal_basis": "PROY-NOM-160-SEMARNAT-2026; LGPGIR",
+      "paragraphs": [
+        "Revise el proyecto frente a los procesos y planes actuales, identifique observaciones técnicas y preséntelas dentro de los 60 días de consulta; mantenga cumplimiento con la normativa vigente hasta una publicación definitiva."
+      ],
+      "trigger": "Durante la consulta pública del PROY-NOM-160-SEMARNAT-2026"
+    }
+  ],
+  "schema_version": 8
+}

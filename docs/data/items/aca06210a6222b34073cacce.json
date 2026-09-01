@@ -1,0 +1,171 @@
+{
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "item": {
+    "ai_generated": true,
+    "authority": "ORGANISMOS AUTONOMOS TRIBUNAL FEDERAL DE JUSTICIA ADMINISTRATIVA",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5790707&fecha=16/06/2026",
+    "card_body": "## Qué se publicó\n\nEl TFJA comunicó la inhabilitación por tres meses de RMCH Construcciones y de José Ricardo Montiel Chavarría para propuestas y contratos de las materias indicadas.\n\n## Sustancia\n\nLa circular se emite en cumplimiento de la sentencia definitiva de 5 de agosto de 2022 dictada en el procedimiento de responsabilidad administrativa 606/20-RA1-01-7. El texto reproduce que el órgano resolutor tuvo por acreditados los hechos atribuidos a RMCH Construcciones, S.A. de C.V. y a José Ricardo Montiel Chavarría, y que impuso a cada uno una inhabilitación temporal de tres meses para participar en adquisiciones, arrendamientos, servicios u obras públicas.\n\nLa publicación identifica como fundamento de la sanción el artículo 81, párrafo primero, fracción II, inciso b), de la Ley General de Responsabilidades Administrativas, y alude a su ejecución conforme a los artículos 84, fracción II, y 226, fracción I, de la misma ley. La ficha se limita a la medida que el texto comunica y no formula una calificación adicional sobre los hechos del procedimiento.\n\n## Fuente\n\nFuente oficial: circular del Tribunal Federal de Justicia Administrativa sobre la inhabilitación de RMCH Construcciones y José Ricardo Montiel Chavarría. chunk-1 identifica el acto y los destinatarios; chunk-2 reproduce la sentencia, la medida de abstención y el plazo comunicado.",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "088c7fae2ddfe6e3b5b8f249785748d33b5222018b0fd48ca4e6026fca98252d",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-1",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/aca06210a6222b34073cacce.json",
+    "detail_url": "notas/aca06210a6222b34073cacce.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "heading": "Sentencia y personas sancionadas",
+        "paragraphs": [
+          "La circular se emite en cumplimiento de la sentencia definitiva de 5 de agosto de 2022 dictada en el procedimiento de responsabilidad administrativa 606/20-RA1-01-7. El texto reproduce que el órgano resolutor tuvo por acreditados los hechos atribuidos a RMCH Construcciones, S.A. de C.V. y a José Ricardo Montiel Chavarría, y que impuso a cada uno una inhabilitación temporal de tres meses para participar en adquisiciones, arrendamientos, servicios u obras públicas.",
+          "La publicación identifica como fundamento de la sanción el artículo 81, párrafo primero, fracción II, inciso b), de la Ley General de Responsabilidades Administrativas, y alude a su ejecución conforme a los artículos 84, fracción II, y 226, fracción I, de la misma ley. La ficha se limita a la medida que el texto comunica y no formula una calificación adicional sobre los hechos del procedimiento."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "heading": "Abstención comunicada",
+        "paragraphs": [
+          "Las dependencias y entidades de la Administración Pública Federal, empresas productivas del Estado, entidades federativas, municipios y alcaldías de la Ciudad de México deben abstenerse de aceptar propuestas o celebrar contratos con ambos particulares, de manera directa o por interpósita persona, desde el día siguiente de la publicación de la circular y durante tres meses. El texto no detalla una excepción para contratos previamente adjudicados, por lo que la aplicación debe sujetarse a la sentencia y a la normativa que corresponda."
+        ]
+      }
+    ],
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Circular",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "b2e486907c0bd12cae31d0cbabc0091b05643ddb2237d0b37877d6695d4fcfff",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "CIRCULAR por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a las empresas productivas del Estado, así como a las entidades federativas, municipios y alcaldías de la Ciudad de México, que la empresa RMCH Construcciones S.A. de C.V. y el C. José Ricardo Montiel Chavarría fueron inhabilitadas por el periodo de tres meses.",
+          "location": "caracteres 0-366"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Tribunal Federal de Justicia Administrativa.- Sala Auxiliar en Materia de Responsabilidades Administrativas Graves y Segunda Sala Auxiliar.- Particular Presunto Responsable: RMCH Construcciones S.A. de C.V.- Particular Presunto Responsable: José Ricardo Montiel Chavarría.- Expediente: 606/20-RA1-01-7.",
+          "location": "caracteres 366-5039"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5790707&fecha=16/06/2026",
+      "retrieved_at": "2026-08-13T19:43:59.188339+00:00"
+    },
+    "executive_summary": [
+      "La circular se emite en cumplimiento de la sentencia definitiva de 5 de agosto de 2022 dictada en el procedimiento de responsabilidad administrativa 606/20-RA1-01-7. El texto reproduce que el órgano resolutor tuvo por acreditados los hechos atribuidos a RMCH Construcciones, S.A. de C.V. y a José Ricardo Montiel Chavarría, y que impuso a cada uno una inhabilitación temporal de tres meses para participar en adquisiciones, arrendamientos, servicios u obras públicas.",
+      "La publicación identifica como fundamento de la sanción el artículo 81, párrafo primero, fracción II, inciso b), de la Ley General de Responsabilidades Administrativas, y alude a su ejecución conforme a los artículos 84, fracción II, y 226, fracción I, de la misma ley. La ficha se limita a la medida que el texto comunica y no formula una calificación adicional sobre los hechos del procedimiento."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Órgano jurisdiccional",
+    "id": "dof:5790707",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "La circular afecta la elegibilidad de la empresa y de la persona física sancionadas en nuevas propuestas y contratos del alcance indicado, durante el periodo de tres meses comunicado."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-1",
+            "chunk-2"
+          ],
+          "paragraphs": [
+            "La circular afecta la elegibilidad de la empresa y de la persona física sancionadas en nuevas propuestas y contratos del alcance indicado, durante el periodo de tres meses comunicado."
+          ],
+          "sector": "Unidades compradoras y contratantes públicas"
+        }
+      ]
+    },
+    "importance": 2,
+    "issuing_body": "Tribunal Federal de Justicia Administrativa",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T13:53:50.681449+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5790707&fecha=16/06/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5790707"
+    },
+    "official_published_at": "2026-06-16",
+    "official_title": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a las empresas productivas del Estado, así como a las entidades federativas, municipios y alcaldías de la Ciudad de México, que la empresa RMCH Construcciones S.A. de C.V. y el C. José Ricardo Montiel Chavarría fueron inhabilitadas por el periodo de tres meses.",
+    "published_at": "2026-06-16",
+    "published_day": 16,
+    "published_month": 6,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Unidades compradoras y contratantes públicas",
+        "deadline": "Tres meses",
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "legal_basis": "Circular del TFJA; expediente 606/20-RA1-01-7; Ley General de Responsabilidades Administrativas",
+        "paragraphs": [
+          "Antes de recibir una propuesta o celebrar un contrato, las unidades contratantes deben verificar la identidad de RMCH Construcciones, S.A. de C.V. y de José Ricardo Montiel Chavarría, el periodo de la circular y la posible actuación mediante interpósita persona."
+        ],
+        "trigger": "Desde el día siguiente a la publicación de la circular"
+      }
+    ],
+    "relevance_score": 2,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5790707",
+    "subtopic_tags": [
+      "administracion publica federal"
+    ],
+    "summary": "La circular se emite en cumplimiento de la sentencia definitiva de 5 de agosto de 2022 dictada en el procedimiento de responsabilidad administrativa 606/20-RA1-01-7. El texto reproduce que el órgano resolutor tuvo por acreditados los hechos atribuidos a RMCH Construcciones, S.A. de C.V. y a José Ricardo Montiel Chavarría, y que impuso a cada uno una inhabilitación temporal de tres meses para participar en adquisiciones, arrendamientos, servicios u obras públicas.\n\nLa publicación identifica como fundamento de la sanción el artículo 81, párrafo primero, fracción II, inciso b), de la Ley General de Responsabilidades Administrativas, y alude a su ejecución conforme a los artículos 84, fracción II, y 226, fracción I, de la misma ley. La ficha se limita a la medida que el texto comunica y no formula una calificación adicional sobre los hechos del procedimiento.\n\nLas dependencias y entidades de la Administración Pública Federal, empresas productivas del Estado, entidades federativas, municipios y alcaldías de la Ciudad de México deben abstenerse de aceptar propuestas o celebrar contratos con ambos particulares, de manera directa o por interpósita persona, desde el día siguiente de la publicación de la circular y durante tres meses. El texto no detalla una excepción para contratos previamente adjudicados, por lo que la aplicación debe sujetarse a la sentencia y a la normativa que corresponda.\n\nLa circular se dirige a varios órdenes de gobierno y utiliza la fórmula de abstención en propuestas y contratos. La resolución reproducida determina responsabilidades administrativas, pero la publicación no describe el supuesto fáctico que originó el procedimiento ni informa multas u otras sanciones. Tampoco expone una fecha distinta de inicio a la regla general del día siguiente de publicación. En consecuencia, la ficha centra la utilidad práctica en el control de elegibilidad de las dos personas identificadas, sin transformar la circular en una conclusión sobre licitaciones, contratos o terceros que no aparezcan en sus términos.",
+    "summary_teaser": "Una Sala Auxiliar del Tribunal Federal de Justicia Administrativa comunicó la inhabilitación por tres meses de RMCH Construcciones, S.A. de C.V. y José Ricardo Montiel Chavarría. La abstención para aceptar propuestas o contratar inicia al día siguiente de la publicación y se extiende a actuaciones mediante interpósita persona.",
+    "title": "TFJA inhabilita a RMCH y José Ricardo Montiel Chavarría",
+    "topic_tags": [
+      "Derecho administrativo",
+      "Circular"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5790707&fecha=16/06/2026"
+  },
+  "schema_version": 8
+}

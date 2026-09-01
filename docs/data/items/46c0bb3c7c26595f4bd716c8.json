@@ -1,0 +1,146 @@
+{
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "item": {
+    "ai_generated": true,
+    "authority": "CONVOCATORIAS PARA CONCURSOS DE ADQUISICIONES, ARRENDAMIENTOS, OBRAS Y SERVICIOS DEL SECTOR PUBLICO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791533&fecha=23/06/2026",
+    "card_body": "## Qué se publicó\n\nEl Diario Oficial de la Federación publicó el resumen de una licitación internacional de la Fiscalía General de la República para bienes informáticos.\n\n## Sustancia\n\nLa convocatoria abarca medios de almacenamiento y otros bienes, e informa las fechas de consulta de bases, junta de aclaraciones, apertura de propuestas y fallo.\n\n## Fuente\n\nLa fuente oficial es el Diario Oficial de la Federación. El acto revisado es el resumen de convocatoria de la Fiscalía General de la República para la licitación internacional abierta de bienes informáticos.",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Penal"
+    ],
+    "content_hash": "567e9254f935a0312b64a9f1555a9d5543299aa4b32f9aad44102a5c6fcf6385",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-1",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/46c0bb3c7c26595f4bd716c8.json",
+    "detail_url": "notas/46c0bb3c7c26595f4bd716c8.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-1"
+        ],
+        "heading": "Objeto y bases",
+        "paragraphs": [
+          "Convocatoria se dirige a adquisición de medios de almacenamiento y otros bienes informáticos. Identifica licitación internacional abierta y remite a ComprasMX y domicilio de Fiscalía para acceder a bases, por lo que requisitos de participación deben revisarse allí."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-1"
+        ],
+        "heading": "Calendario",
+        "paragraphs": [
+          "Publicación sitúa difusión de bases en ComprasMX el 17 de junio de 2026; junta de aclaraciones 30 de junio a 10:30; presentación y apertura 8 de julio a 10:30; y fallo 15 de julio a 17:00. No proporciona resultado de adjudicación."
+        ]
+      }
+    ],
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Fiscalia General",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "0e2d9350cbffcff79d4836e8593cb78f51deb1611a93e564e88862ffc31d6a7a",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "Documento",
+          "location": "caracteres 0-1745"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791533&fecha=23/06/2026",
+      "retrieved_at": "2026-08-13T19:43:50.114217+00:00"
+    },
+    "executive_summary": [
+      "Fiscalía General de la República publica convocatoria LA-49-830-049830002-I-17-2026, licitación pública internacional abierta para adquirir DVD, CD, USB, discos duros y diversos bienes informáticos. Fuente identifica procedimiento, objeto y espacios donde están bases.",
+      "Bases se publican en ComprasMX y pueden consultarse en domicilio indicado. Calendario incluye publicación en plataforma 17 de junio, junta de aclaraciones 30 de junio, presentación y apertura 8 de julio y fallo 15 de julio de 2026, con horas expresas."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Organismo autónomo",
+    "id": "dof:5791533",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-1"
+        ],
+        "paragraphs": [
+          "Proveedores de medios de almacenamiento y bienes informáticos pueden identificar oportunidad y calendario. Participación debe ajustarse a bases, pues aviso no detalla especificaciones, evaluación, garantías o suministro."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-1"
+          ],
+          "paragraphs": [
+            "Proveedores y áreas comerciales pueden revisar bases en ComprasMX y preparar actuaciones según fechas comunicadas."
+          ],
+          "sector": "Contratación pública de tecnología"
+        }
+      ]
+    },
+    "importance": 2,
+    "issuing_body": "Fiscalía General de la República",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T13:53:50.681449+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791533&fecha=23/06/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5791533"
+    },
+    "official_published_at": "2026-06-23",
+    "official_title": "FISCALIA GENERAL DE LA REPUBLICA - REF:577432",
+    "published_at": "2026-06-23",
+    "published_day": 23,
+    "published_month": 6,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Personas interesadas en licitación LA-49-830-049830002-I-17-2026",
+        "deadline": "Junta: 30 junio 10:30; apertura: 8 julio 10:30; fallo: 15 julio 17:00, todos de 2026",
+        "evidence_refs": [
+          "chunk-1"
+        ],
+        "legal_basis": null,
+        "paragraphs": [
+          "Consultar bases en ComprasMX o domicilio indicado y atender cada fase. Formular aclaraciones y preparar proposiciones conforme a requisitos de bases."
+        ],
+        "trigger": "Al participar en licitación"
+      }
+    ],
+    "relevance_score": 2,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5791533",
+    "subtopic_tags": [
+      "fiscalia"
+    ],
+    "summary": "Fiscalía General de la República publica convocatoria LA-49-830-049830002-I-17-2026, licitación pública internacional abierta para adquirir DVD, CD, USB, discos duros y diversos bienes informáticos. Fuente identifica procedimiento, objeto y espacios donde están bases.\n\nBases se publican en ComprasMX y pueden consultarse en domicilio indicado. Calendario incluye publicación en plataforma 17 de junio, junta de aclaraciones 30 de junio, presentación y apertura 8 de julio y fallo 15 de julio de 2026, con horas expresas.\n\nConvocatoria se dirige a adquisición de medios de almacenamiento y otros bienes informáticos. Identifica licitación internacional abierta y remite a ComprasMX y domicilio de Fiscalía para acceder a bases, por lo que requisitos de participación deben revisarse allí.\n\nPublicación sitúa difusión de bases en ComprasMX el 17 de junio de 2026; junta de aclaraciones 30 de junio a 10:30; presentación y apertura 8 de julio a 10:30; y fallo 15 de julio a 17:00. No proporciona resultado de adjudicación.\n\nAviso comunica etapa de convocatoria, no adjudicación ni celebración de contrato. Bienes se describen de forma general y condiciones técnicas, administrativas y económicas están en bases referidas. Cada fecha corresponde a fase concreta y no sustituye reglas detalladas de ComprasMX. La referencia internacional abierta identifica modalidad del procedimiento, sin que fuente asigne proveedor alguno.\n\nProveedores de medios de almacenamiento y bienes informáticos pueden identificar oportunidad y calendario. Participación debe ajustarse a bases, pues aviso no detalla especificaciones, evaluación, garantías o suministro. Proveedores y áreas comerciales pueden revisar bases en ComprasMX y preparar actuaciones según fechas comunicadas.\n\nEl resumen de la convocatoria comunica el objeto y el calendario, pero las bases disponibles en ComprasMX rigen los requisitos de participación, evaluación, garantías y documentación. El aviso no detalla las especificaciones técnicas de cada bien ni sustituye las condiciones que establezcan dichas bases. La convocatoria requiere contrastarlas cuidadosamente antes de preparar cualquier proposición.",
+    "summary_teaser": "La Fiscalía General de la República convoca una licitación pública internacional abierta para adquirir DVD, CD, USB, discos duros y otros bienes informáticos. El resumen fija la consulta de bases, la junta de aclaraciones, la apertura de propuestas y el fallo durante junio y julio de 2026.",
+    "title": "Licitación internacional abre compra de medios y bienes informáticos",
+    "topic_tags": [
+      "Penal"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5791533&fecha=23/06/2026"
+  },
+  "schema_version": 8
+}

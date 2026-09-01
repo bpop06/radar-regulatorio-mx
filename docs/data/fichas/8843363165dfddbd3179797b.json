@@ -1,0 +1,279 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-3",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-4",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.sectors"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-5",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.sectors"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-6",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.sectors"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-7",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-8",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "not_material",
+      "reason": "El fragmento sólo contiene el cierre de firma y no aporta una regla, tabla, listado o especificación material adicional.",
+      "source_ref": "chunk-9",
+      "target_sections": []
+    }
+  ],
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Criterio y tabla de factores",
+      "paragraphs": [
+        "El criterio 43/ISR/PI identifica como práctica indebida ciertos esquemas de pagos a trabajadores, socios o accionistas mediante asociaciones o sociedades. El Anexo 9 publica la tabla para la opción de actualización de deducciones en la enajenación de inmuebles."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-3",
+        "chunk-4",
+        "chunk-5",
+        "chunk-6",
+        "chunk-7"
+      ],
+      "heading": "Donatarias y claves vehiculares",
+      "paragraphs": [
+        "El Anexo 14 actualiza el listado de donatarias autorizadas e incluye autorizaciones, cambios de rubro o denominación, revocaciones y cancelaciones. El Anexo 15 actualiza el código de claves vehiculares."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-7",
+        "chunk-8"
+      ],
+      "heading": "Controles volumétricos y CFDI",
+      "paragraphs": [
+        "Los Anexos 21 y 22 contienen especificaciones y certificados vinculados con controles volumétricos; para los sujetos indicados, el certificado anual vence a más tardar el 31 de diciembre. El Anexo 29 añade validaciones de Complemento Nómina para CFDI N y Complemento para recepción de Pagos para CFDI P."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "0b751d98631e4bcb40375eb46969b9b2e1daa2d5efeb0c064fd3b2ebe23c0e5e",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "ANEXOS 3, 9, 14, 15, 21, 22 y 29 de la Primera Resolución de Modificaciones a la Resolución Miscelánea Fiscal para 2026, publicada el 9 de julio de 2026.",
+        "location": "caracteres 0-157"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Servicio de Administración Tributaria. · parte 1",
+        "location": "caracteres 157-12157"
+      },
+      {
+        "id": "chunk-3",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Servicio de Administración Tributaria. · parte 2",
+        "location": "caracteres 12157-24157"
+      },
+      {
+        "id": "chunk-4",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Servicio de Administración Tributaria. · parte 3",
+        "location": "caracteres 24157-36157"
+      },
+      {
+        "id": "chunk-5",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Servicio de Administración Tributaria. · parte 4",
+        "location": "caracteres 36157-48157"
+      },
+      {
+        "id": "chunk-6",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Servicio de Administración Tributaria. · parte 5",
+        "location": "caracteres 48157-60157"
+      },
+      {
+        "id": "chunk-7",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Servicio de Administración Tributaria. · parte 6",
+        "location": "caracteres 60157-72157"
+      },
+      {
+        "id": "chunk-8",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Servicio de Administración Tributaria. · parte 7",
+        "location": "caracteres 72157-84157"
+      },
+      {
+        "id": "chunk-9",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Servicio de Administración Tributaria. · parte 8",
+        "location": "caracteres 84157-84187"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793859&fecha=17%2F07%2F2026",
+    "retrieved_at": "2026-08-14T00:36:54.849651+00:00"
+  },
+  "executive_summary": [
+    "La modificación de los Anexos 3, 9, 14, 15, 21, 22 y 29 combina un criterio no vinculativo sobre pagos mediante terceros, una tabla de factores, movimientos de donatarias, claves vehiculares, controles volumétricos y validaciones de CFDI.",
+    "Los contribuyentes sujetos a controles volumétricos deben atender la especificación y certificación aplicable; el Anexo 22 contempla certificado anual a más tardar el 31 de diciembre para los sujetos de la regla que identifica. El Anexo 29 añade validaciones de complementos para CFDI de nómina y pagos."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2",
+        "chunk-3",
+        "chunk-7",
+        "chunk-8"
+      ],
+      "paragraphs": [
+        "Los siete anexos actualizan referencias fiscales y técnicas que operan por materia; su aplicación exige revisar el supuesto legal y la regla correspondiente."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "El criterio 43/ISR/PI es relevante para esquemas de pagos laborales o similares realizados mediante terceros, sus retenciones, deducciones y acreditamiento de IVA."
+        ],
+        "sector": "Patrones, socios, accionistas y asesores fiscales"
+      },
+      {
+        "evidence_refs": [
+          "chunk-3",
+          "chunk-4",
+          "chunk-5",
+          "chunk-6",
+          "chunk-7",
+          "chunk-8"
+        ],
+        "paragraphs": [
+          "Deben identificar el anexo que les corresponda: listado de donatarias, claves vehiculares, certificación de controles volumétricos o validación de complementos de CFDI."
+        ],
+        "sector": "Donatarias, sector automotriz, contribuyentes con controles volumétricos y emisores de CFDI"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793859&fecha=17%2F07%2F2026",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "6946c9b184e3d3a7f29df787483578611f3d6992d7542a01bfa594533229d453",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/8843363165dfddbd3179797b.json",
+    "detail_url": "notas/8843363165dfddbd3179797b.html",
+    "detected_at": "2026-08-14T01:46:44.993982+00:00",
+    "document_type": "Anexos",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5793859",
+    "importance": 1,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-07-17",
+    "official_title": "Anexos 3, 9, 14, 15, 21, 22 y 29 de la Primera Resolución de Modificaciones a la Resolución Miscelánea Fiscal para 2026, publicada el 9 de julio de 2026.",
+    "published_at": "2026-07-17",
+    "relevance_score": 1,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5793859",
+    "summary_teaser": "Los anexos publicados con la primera modificación a la RMF 2026 abarcan un criterio sobre pagos laborales mediante terceros, la tabla para actualizar deducciones en enajenación de inmuebles, movimientos de donatarias, claves vehiculares, controles volumétricos y validaciones de CFDI. Cada anexo opera en su materia y debe revisarse junto con la regla aplicable.",
+    "title": "RMF actualiza criterios, donatarias, vehículos y controles volumétricos",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5793859&fecha=17/07/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Contribuyentes y áreas fiscales con pagos mediante terceros",
+      "deadline": null,
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "legal_basis": "Anexo 3, criterio no vinculativo 43/ISR/PI",
+      "paragraphs": [
+        "Si realizan pagos a trabajadores, socios o accionistas mediante asociaciones o sociedades, pueden revisar la caracterización fiscal, las retenciones, las deducciones y el acreditamiento de IVA conforme al criterio y la legislación aplicable."
+      ],
+      "trigger": "Uso de esquemas de pago a trabajadores, socios o accionistas mediante terceros"
+    },
+    {
+      "affected_group": "Sujetos obligados a controles volumétricos y emisores de CFDI",
+      "deadline": "El certificado anual previsto en el Anexo 22 debe obtenerse a más tardar el 31 de diciembre del ejercicio aplicable",
+      "evidence_refs": [
+        "chunk-7",
+        "chunk-8"
+      ],
+      "legal_basis": "Anexos 21, 22 y 29 de la Resolución Miscelánea Fiscal para 2026",
+      "paragraphs": [
+        "Si están comprendidos en la regla 2.6.1.2, verifiquen la certificación anual de equipos y programas, incluidas sus modificaciones. Para CFDI N o P, revisen que se integre el complemento que el Anexo 29 exige."
+      ],
+      "trigger": "Estar sujeto a controles volumétricos o emitir CFDI de tipo N o P"
+    }
+  ],
+  "schema_version": 8
+}

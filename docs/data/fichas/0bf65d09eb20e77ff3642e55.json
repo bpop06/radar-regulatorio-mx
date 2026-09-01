@@ -1,0 +1,154 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-3",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    }
+  ],
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2",
+        "chunk-3"
+      ],
+      "heading": "Alcance de la publicación",
+      "paragraphs": [
+        "El Órgano Interno de Control de la Fiscalía General de la República publicó reglas de suplencia por ausencia o excusa.",
+        "Las reglas se aplican al titular del órgano de control y a las unidades administrativas que lo integran, con previsiones específicas para ausencia definitiva."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2",
+        "chunk-3"
+      ],
+      "heading": "Contenido relevante",
+      "paragraphs": [
+        "El acuerdo fija el orden de personas titulares que pueden suplir, exige designación temporal cuando corresponda y evita que una misma persona concentre funciones de investigación, substanciación y resolución en un caso.",
+        "El acuerdo ordena la continuidad y la separación funcional en procedimientos de responsabilidades administrativas dentro de la institución. Las unidades involucradas deben documentar las designaciones, excusas y remisiones de expedientes conforme al orden y salvaguardas publicados."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "d45544f4d470da167053ab6fb494ab1f29d4527a2816cbc6b875b6c050685cfe",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "ACUERDO A/OIC/002/2026 por el que la persona Titular del Órgano Interno de Control de la Fiscalía General de la República establece las reglas a las que se sujetará su suplencia, en los casos de excusas y ausencias y de las personas titulares de las unidades que integran el Órgano Interno de Control de la Fiscalía General de la República.",
+        "location": "caracteres 0-344"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Fiscalía General de la República. · parte 1",
+        "location": "caracteres 344-12344"
+      },
+      {
+        "id": "chunk-3",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Fiscalía General de la República. · parte 2",
+        "location": "caracteres 12344-14231"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795543&fecha=05%2F08%2F2026",
+    "retrieved_at": "2026-09-01T16:35:51.135395+00:00"
+  },
+  "executive_summary": [
+    "El Órgano Interno de Control de la Fiscalía General de la República publicó reglas de suplencia por ausencia o excusa. El acuerdo fija el orden de personas titulares que pueden suplir, exige designación temporal cuando corresponda y evita que una misma persona concentre funciones de investigación, substanciación y resolución en un caso.",
+    "Las reglas se aplican al titular del órgano de control y a las unidades administrativas que lo integran, con previsiones específicas para ausencia definitiva. La publicación debe aplicarse sin extender sus alcances a situaciones no descritas en la fuente."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2",
+        "chunk-3"
+      ],
+      "paragraphs": [
+        "El acuerdo ordena la continuidad y la separación funcional en procedimientos de responsabilidades administrativas dentro de la institución."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2",
+          "chunk-3"
+        ],
+        "paragraphs": [
+          "La incidencia para este grupo se limita al alcance expresamente descrito en la publicación y requiere contrastarse con cada caso concreto."
+        ],
+        "sector": "Personal del órgano interno de control de la Fiscalía General de la República"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795543&fecha=05%2F08%2F2026",
+    "categories": [
+      "Penal",
+      "Administración centralizada"
+    ],
+    "content_hash": "4b8ae75f0be9e7f48eec7e93a1b3d862e11832e2cde5dfdc2884033e13e507fd",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/0bf65d09eb20e77ff3642e55.json",
+    "detail_url": "notas/0bf65d09eb20e77ff3642e55.html",
+    "detected_at": "2026-09-01T16:34:47.803209+00:00",
+    "document_type": "Acuerdo",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5795543",
+    "importance": 3,
+    "issuing_body": "Fiscalía General de la República",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-08-05",
+    "official_title": "Acuerdo A/OIC/002/2026 por el que la persona Titular del Órgano Interno de Control de la Fiscalía General de la República establece las reglas a las que se sujetará su suplencia, en los casos de excusas y ausencias y de las personas titulares de las unidades que integran el Órgano Interno de Control de la Fiscalía General de la República.",
+    "published_at": "2026-08-05",
+    "relevance_score": 4,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5795543",
+    "summary_teaser": "El Órgano Interno de Control de la Fiscalía General de la República publicó reglas para suplencias por ausencia o excusa de su titular y de sus unidades. El acuerdo establece un orden de prelación y salvaguardas para evitar concentración de funciones investigadoras, substanciadoras y resolutoras. También prevé continuidad administrativa en caso de ausencia definitiva.",
+    "title": "Órgano interno de control de FGR fija reglas de suplencia",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5795543&fecha=05/08/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Personal del órgano interno de control de la Fiscalía General de la República",
+      "deadline": null,
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2",
+        "chunk-3"
+      ],
+      "legal_basis": null,
+      "paragraphs": [
+        "Las unidades involucradas deben documentar las designaciones, excusas y remisiones de expedientes conforme al orden y salvaguardas publicados."
+      ],
+      "trigger": "Cuando la publicación resulte aplicable a la operación o situación revisada."
+    }
+  ],
+  "schema_version": 8
+}

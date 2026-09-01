@@ -1,0 +1,168 @@
+{
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "item": {
+    "ai_generated": true,
+    "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792398&fecha=02/07/2026",
+    "card_body": "## Qué se publicó\n\nUna resolución que actualiza perfiles de inversionista calificado y una constancia corporativa para actas de emisión.\n\n## Sustancia\n\nLos perfiles usan umbrales expresos en UDIs. La constancia la firma el secretario del consejo del representante común y acredita que las facultades de su apoderado no han sido revocadas, modificadas ni limitadas.\n\n## Fuente\n\n[Consultar fuente oficial](https://dof.gob.mx/nota_detalle.php?codigo=5792398&fecha=02/07/2026)",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "227d65f2b9b317e6ec35b08f8f8fe8fc9bdf2e18dbfe87557d9b528901f4c089",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "not_material",
+        "reason": "Título de la resolución; todas las reglas sustantivas se desarrollan en chunk-2.",
+        "source_ref": "chunk-1",
+        "target_sections": []
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/c13a1425daee04dc49a17ffa.json",
+    "detail_url": "notas/c13a1425daee04dc49a17ffa.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "heading": "Umbrales para perfiles básico y sofisticado",
+        "paragraphs": [
+          "El perfil básico usa 1,500,000 UDIs en inversiones promedio de doce meses o 500,000 UDIs de ingresos en cada uno de dos años; el sofisticado eleva esos parámetros a 3,000,000 y 1,000,000 de UDIs."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "heading": "Oferta pública restringida",
+        "paragraphs": [
+          "La categoría para participar en ofertas públicas restringidas requiere inversiones promedio del último año equivalentes en moneda nacional a cuando menos 20,000,000 de UDIs."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "heading": "Constancia de facultades del apoderado",
+        "paragraphs": [
+          "La constancia debe suscribirla el secretario del consejo de administración del representante común y autentica que las facultades de su apoderado no se han revocado, modificado ni limitado a la firma del acta."
+        ]
+      }
+    ],
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Resolución Que Modifica",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "5a24a9ea82a4b330c988095797971acd72e08194be760e70052b4316df5c4018",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "RESOLUCIÓN que modifica las Disposiciones de carácter general aplicables a las instituciones de crédito ( inversionista calificado) .",
+          "location": "caracteres 0-137"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Comisión Nacional Bancaria y de Valores.",
+          "location": "caracteres 137-3606"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792398&fecha=02/07/2026",
+      "retrieved_at": "2026-08-13T19:43:28.109038+00:00"
+    },
+    "executive_summary": [
+      "La CNBV define perfil básico con 1,500,000 UDIs en inversiones promedio o 500,000 UDIs de ingresos; sofisticado con 3,000,000 o 1,000,000, y oferta restringida con 20,000,000 UDIs.",
+      "El Anexo 74 exige que el secretario del consejo de administración del representante común suscriba una constancia sobre las facultades no revocadas, modificadas o limitadas de su apoderado."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5792398",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "La reforma da parámetros medibles para clasificar perfiles y corrige el sujeto y objeto de la constancia corporativa en actas de emisión."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-2"
+          ],
+          "paragraphs": [
+            "Deben verificar el umbral y periodo que corresponde al perfil aplicable y cuidar que la constancia provenga del secretario del consejo del representante común sobre las facultades de su apoderado."
+          ],
+          "sector": "Instituciones de crédito, representantes comunes e inversionistas en valores"
+        }
+      ]
+    },
+    "importance": 1,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T13:53:50.681449+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792398&fecha=02/07/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5792398"
+    },
+    "official_published_at": "2026-07-02",
+    "official_title": "Resolución que modifica las Disposiciones de carácter general aplicables a las instituciones de crédito (inversionista calificado).",
+    "published_at": "2026-07-02",
+    "published_day": 2,
+    "published_month": 7,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Instituciones de crédito y representantes comunes",
+        "deadline": null,
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "legal_basis": "Artículo 1, fracción XCI, y Anexo 74, inciso c), numeral 2",
+        "paragraphs": [
+          "Al clasificar a una persona, documenten el umbral de UDIs y periodo del perfil correspondiente; al integrar un acta de emisión, revisen que la constancia sea suscrita por el secretario del consejo y se refiera al apoderado."
+        ],
+        "trigger": "Clasificación de inversionista o formalización de acta de emisión"
+      }
+    ],
+    "relevance_score": 1,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5792398",
+    "subtopic_tags": [],
+    "summary": "La Comisión Nacional Bancaria y de Valores reformó la definición de inversionista calificado en las disposiciones aplicables a instituciones de crédito y el Anexo 74 relativo a actas de emisión. El objetivo señalado es homologar la definición con otras disposiciones y aportar certeza a instituciones de crédito y a personas que operan valores y derivados emitidos por ellas. La publicación no transforma automáticamente a una persona en inversionista calificado: conserva parámetros cuantitativos de inversiones o ingresos, expresados en UDIs, que deben cumplirse según el perfil de que se trate.\n\nEl perfil básico corresponde a quien mantenga en promedio durante los últimos doce meses inversiones en valores de al menos 1,500,000 UDIs, o haya obtenido en cada uno de los dos últimos años ingresos brutos anuales iguales o mayores a 500,000 UDIs. El perfil sofisticado exige inversiones promedio durante los últimos doce meses de al menos 3,000,000 de UDIs en una o varias entidades financieras, o ingresos brutos anuales de por lo menos 1,000,000 de UDIs en cada uno de los dos últimos años. La regla formula alternativas y ventanas temporales concretas, no una simple referencia a capacidad patrimonial general.\n\nPara participar en ofertas públicas restringidas, la definición exige haber mantenido en promedio durante el último año inversiones en valores equivalentes en moneda nacional a por lo menos 20,000,000 de UDIs. Esta categoría tiene su propio umbral y periodo, distinto de los perfiles básico y sofisticado. La resolución entra en vigor al día siguiente de su publicación, por lo que las instituciones y participantes deben atender los parámetros reformados en ese momento, sin que la ficha establezca requisitos adicionales que el texto no contiene.\n\nLa reforma del Anexo 74 también precisa una constancia dentro del instructivo para hacer constar ante la Comisión la declaración unilateral de voluntad mediante el acta de emisión. El documento debe ser suscrito por el secretario del consejo de administración del representante común. Su función es autenticar que las facultades de su apoderado no han sido revocadas, modificadas o limitadas a la fecha de firma del acta de emisión o de la modificación al acta correspondiente. No certifica las facultades del secretario ni atribuye esa condición al representante común en abstracto.",
+    "summary_teaser": "La CNBV actualizó los umbrales de inversión e ingresos en UDIs para perfiles básico, sofisticado y participantes de ofertas públicas restringidas. También precisó la constancia para actas de emisión: la suscribe el secretario del consejo del representante común y certifica que no se han revocado, modificado o limitado las facultades de su apoderado.",
+    "title": "CNBV actualiza perfiles de inversionista calificado y constancia corporativa",
+    "topic_tags": [
+      "Resolución"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5792398&fecha=02/07/2026"
+  },
+  "schema_version": 8
+}

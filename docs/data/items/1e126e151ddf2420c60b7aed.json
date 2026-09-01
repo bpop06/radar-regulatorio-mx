@@ -1,0 +1,560 @@
+{
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "item": {
+    "ai_generated": true,
+    "authority": "PODER EJECUTIVO SECRETARIA DE LA DEFENSA NACIONAL",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791257&fecha=22/06/2026",
+    "card_body": "## Qué se publicó\n\nDefensa Nacional expidió un manual que ordena su misión, estructura orgánica, órganos militares y funciones de sus unidades, y deja sin efecto el manual anterior en los términos transitorios publicados.\n\n## Sustancia\n\nLa Secretaría de la Defensa Nacional expide un Manual de Organización General con introducción, antecedentes, marco jurídico-administrativo, atribuciones, misión y visión, estructura orgánica, organigrama y objetivos y funciones por área. El texto sitúa el manual en las reglas de la Ley Orgánica de la Administración Pública Federal y del Reglamento Interior de la Secretaría, y reúne normas vinculadas con las Fuerzas Armadas, educación militar, seguridad nacional, disciplina y operación institucional.\n\nLa misión descrita se relaciona con organizar, administrar y preparar al Ejército, Fuerza Aérea y Guardia Nacional para cumplir sus misiones generales; la visión menciona capacidades polivalentes, interoperables y multipropósito, así como apego a los valores fundamentales y a los derechos humanos. Estas formulaciones caracterizan los objetivos organizacionales expuestos por el manual; no sustituyen mandatos jurídicos específicos previstos en leyes, reglamentos o instrucciones aplicables.\n\n## Fuente\n\nFuente oficial: Manual de Organización General de la Secretaría de la Defensa Nacional. La identificación, el marco y la estructura del manual se distribuyen de chunk-1 a chunk-20; la entrada en vigor y la sustitución del manual previo constan en chunk-21.",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "5330fb56a3a4292128e77ff117b408776803deab9959d078b1fbcb373ae95e77",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-1",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-3",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-4",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-5",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-6",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-7",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-8",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-9",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-10",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-11",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-12",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-13",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-14",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-15",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-16",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-17",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-18",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-19",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-20",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-21",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "recommended_actions"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/1e126e151ddf2420c60b7aed.json",
+    "detail_url": "notas/1e126e151ddf2420c60b7aed.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2",
+          "chunk-3"
+        ],
+        "heading": "Objeto, marco y misión institucional",
+        "paragraphs": [
+          "La Secretaría de la Defensa Nacional expide un Manual de Organización General con introducción, antecedentes, marco jurídico-administrativo, atribuciones, misión y visión, estructura orgánica, organigrama y objetivos y funciones por área. El texto sitúa el manual en las reglas de la Ley Orgánica de la Administración Pública Federal y del Reglamento Interior de la Secretaría, y reúne normas vinculadas con las Fuerzas Armadas, educación militar, seguridad nacional, disciplina y operación institucional.",
+          "La misión descrita se relaciona con organizar, administrar y preparar al Ejército, Fuerza Aérea y Guardia Nacional para cumplir sus misiones generales; la visión menciona capacidades polivalentes, interoperables y multipropósito, así como apego a los valores fundamentales y a los derechos humanos. Estas formulaciones caracterizan los objetivos organizacionales expuestos por el manual; no sustituyen mandatos jurídicos específicos previstos en leyes, reglamentos o instrucciones aplicables."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-3",
+          "chunk-4",
+          "chunk-5",
+          "chunk-6",
+          "chunk-7"
+        ],
+        "heading": "Estructura y órganos comprendidos",
+        "paragraphs": [
+          "El organigrama incluye, entre otras áreas, la Secretaría de la Defensa Nacional, Tribunal Superior Militar, Fiscalía General de Justicia Militar, Defensoría de Oficio Militar, Unidad de Asuntos Jurídicos, Subsecretaría, Oficialía Mayor y órganos de educación, seguridad social, sanidad, materiales, transportes, industria militar, comunicaciones, adiestramiento y justicia militar. El manual describe objetivos y funciones de las áreas, incluida la atención de asuntos jurídicos, reclamaciones, inmuebles, responsabilidad patrimonial, educación y coordinación de información institucional.",
+          "En las secciones dedicadas a órganos operativos y de apoyo se describen funciones relacionadas con planeación, adiestramiento, logística, personal, seguridad, control de armas y explosivos, meteorología, atención jurídica y administración de recursos. La publicación distribuye responsabilidades internas entre unidades y mandos; no constituye, por sí misma, un procedimiento individual de autorización, sanción o contratación para personas externas a la Secretaría."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-8",
+          "chunk-9",
+          "chunk-10",
+          "chunk-11",
+          "chunk-12",
+          "chunk-13",
+          "chunk-14",
+          "chunk-15",
+          "chunk-16",
+          "chunk-17",
+          "chunk-18",
+          "chunk-19",
+          "chunk-20",
+          "chunk-21"
+        ],
+        "heading": "Funciones por área y alcance práctico",
+        "paragraphs": [
+          "La parte final desarrolla objetivos y funciones de áreas militares, administrativas y de servicio, incluyendo comandos, direcciones generales, unidades de información, comunicaciones, salud, educación, justicia, industria y atención de derechos humanos. La descripción incorpora tareas de coordinación, supervisión, administración, capacitación, preservación documental y enlace con otras autoridades dentro de las competencias señaladas para cada unidad.",
+          "Para trámites, consultas o actuaciones ante la Secretaría, el valor práctico del manual es identificar la unidad que aparece encargada de una función y contrastar esa referencia con la norma sustantiva, el procedimiento vigente y los actos de autoridad aplicables. La ficha no atribuye al manual efectos reglamentarios adicionales ni modifica por inferencia la competencia legal de las áreas que no esté expresamente descrita en el texto oficial."
+        ]
+      }
+    ],
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Manual De Organización",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "3b7cdf2ae5f74884a688f484c4a47efd72c339a6851e7cc7602d0872f313e616",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "MANUAL de Organización General de la Secretaría de la Defensa Nacional.",
+          "location": "caracteres 0-75"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de la Defensa Nacional. · parte 1",
+          "location": "caracteres 75-12075"
+        },
+        {
+          "id": "chunk-3",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de la Defensa Nacional. · parte 2",
+          "location": "caracteres 12075-24075"
+        },
+        {
+          "id": "chunk-4",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de la Defensa Nacional. · parte 3",
+          "location": "caracteres 24075-36075"
+        },
+        {
+          "id": "chunk-5",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de la Defensa Nacional. · parte 4",
+          "location": "caracteres 36075-48075"
+        },
+        {
+          "id": "chunk-6",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de la Defensa Nacional. · parte 5",
+          "location": "caracteres 48075-60075"
+        },
+        {
+          "id": "chunk-7",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de la Defensa Nacional. · parte 6",
+          "location": "caracteres 60075-72075"
+        },
+        {
+          "id": "chunk-8",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de la Defensa Nacional. · parte 7",
+          "location": "caracteres 72075-84075"
+        },
+        {
+          "id": "chunk-9",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de la Defensa Nacional. · parte 8",
+          "location": "caracteres 84075-96075"
+        },
+        {
+          "id": "chunk-10",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de la Defensa Nacional. · parte 9",
+          "location": "caracteres 96075-108075"
+        },
+        {
+          "id": "chunk-11",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de la Defensa Nacional. · parte 10",
+          "location": "caracteres 108075-120075"
+        },
+        {
+          "id": "chunk-12",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de la Defensa Nacional. · parte 11",
+          "location": "caracteres 120075-132075"
+        },
+        {
+          "id": "chunk-13",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de la Defensa Nacional. · parte 12",
+          "location": "caracteres 132075-144075"
+        },
+        {
+          "id": "chunk-14",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de la Defensa Nacional. · parte 13",
+          "location": "caracteres 144075-156075"
+        },
+        {
+          "id": "chunk-15",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de la Defensa Nacional. · parte 14",
+          "location": "caracteres 156075-168075"
+        },
+        {
+          "id": "chunk-16",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de la Defensa Nacional. · parte 15",
+          "location": "caracteres 168075-180075"
+        },
+        {
+          "id": "chunk-17",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de la Defensa Nacional. · parte 16",
+          "location": "caracteres 180075-192075"
+        },
+        {
+          "id": "chunk-18",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de la Defensa Nacional. · parte 17",
+          "location": "caracteres 192075-204075"
+        },
+        {
+          "id": "chunk-19",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de la Defensa Nacional. · parte 18",
+          "location": "caracteres 204075-216075"
+        },
+        {
+          "id": "chunk-20",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de la Defensa Nacional. · parte 19",
+          "location": "caracteres 216075-228075"
+        },
+        {
+          "id": "chunk-21",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de la Defensa Nacional. · parte 20",
+          "location": "caracteres 228075-239860"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791257&fecha=22/06/2026",
+      "retrieved_at": "2026-08-13T19:43:53.925093+00:00"
+    },
+    "executive_summary": [
+      "La Secretaría de la Defensa Nacional expide un Manual de Organización General con introducción, antecedentes, marco jurídico-administrativo, atribuciones, misión y visión, estructura orgánica, organigrama y objetivos y funciones por área. El texto sitúa el manual en las reglas de la Ley Orgánica de la Administración Pública Federal y del Reglamento Interior de la Secretaría, y reúne normas vinculadas con las Fuerzas Armadas, educación militar, seguridad nacional, disciplina y operación institucional.",
+      "La misión descrita se relaciona con organizar, administrar y preparar al Ejército, Fuerza Aérea y Guardia Nacional para cumplir sus misiones generales; la visión menciona capacidades polivalentes, interoperables y multipropósito, así como apego a los valores fundamentales y a los derechos humanos. Estas formulaciones caracterizan los objetivos organizacionales expuestos por el manual; no sustituyen mandatos jurídicos específicos previstos en leyes, reglamentos o instrucciones aplicables."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5791257",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2",
+          "chunk-3",
+          "chunk-4",
+          "chunk-5",
+          "chunk-6",
+          "chunk-7",
+          "chunk-8",
+          "chunk-9",
+          "chunk-10",
+          "chunk-11",
+          "chunk-12",
+          "chunk-13",
+          "chunk-14",
+          "chunk-15",
+          "chunk-16",
+          "chunk-17",
+          "chunk-18",
+          "chunk-19",
+          "chunk-20",
+          "chunk-21"
+        ],
+        "paragraphs": [
+          "El manual ordena la referencia pública de la estructura y las funciones internas de Defensa Nacional, útil para ubicar áreas responsables sin desplazar la legislación o los procedimientos particulares."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-1",
+            "chunk-2",
+            "chunk-3",
+            "chunk-4",
+            "chunk-5",
+            "chunk-6",
+            "chunk-7",
+            "chunk-8",
+            "chunk-9",
+            "chunk-10",
+            "chunk-11",
+            "chunk-12",
+            "chunk-13",
+            "chunk-14",
+            "chunk-15",
+            "chunk-16",
+            "chunk-17",
+            "chunk-18",
+            "chunk-19",
+            "chunk-20",
+            "chunk-21"
+          ],
+          "paragraphs": [
+            "El manual ordena la referencia pública de la estructura y las funciones internas de Defensa Nacional, útil para ubicar áreas responsables sin desplazar la legislación o los procedimientos particulares."
+          ],
+          "sector": "Personas servidoras públicas y usuarios de trámites vinculados con Defensa Nacional"
+        }
+      ]
+    },
+    "importance": 2,
+    "issuing_body": "Presidencia de la República",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T13:53:50.681449+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791257&fecha=22/06/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5791257"
+    },
+    "official_published_at": "2026-06-22",
+    "official_title": "Manual de Organización General de la Secretaría de la Defensa Nacional.",
+    "published_at": "2026-06-22",
+    "published_day": 22,
+    "published_month": 6,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Personas servidoras públicas y usuarios de trámites vinculados con Defensa Nacional",
+        "deadline": null,
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2",
+          "chunk-3",
+          "chunk-4",
+          "chunk-5",
+          "chunk-6",
+          "chunk-7",
+          "chunk-8",
+          "chunk-9",
+          "chunk-10",
+          "chunk-11",
+          "chunk-12",
+          "chunk-13",
+          "chunk-14",
+          "chunk-15",
+          "chunk-16",
+          "chunk-17",
+          "chunk-18",
+          "chunk-19",
+          "chunk-20",
+          "chunk-21"
+        ],
+        "legal_basis": "Manual de Organización General de la Secretaría de la Defensa Nacional",
+        "paragraphs": [
+          "Para canalizar una gestión, identifique la unidad que el manual describe y confirme el fundamento y trámite específico en la norma aplicable y en los canales oficiales de la Secretaría."
+        ],
+        "trigger": "Al requerir ubicar un área o función dentro de la Secretaría de la Defensa Nacional"
+      }
+    ],
+    "relevance_score": 2,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5791257",
+    "subtopic_tags": [
+      "manual de organizacion"
+    ],
+    "summary": "La Secretaría de la Defensa Nacional expide un Manual de Organización General con introducción, antecedentes, marco jurídico-administrativo, atribuciones, misión y visión, estructura orgánica, organigrama y objetivos y funciones por área. El texto sitúa el manual en las reglas de la Ley Orgánica de la Administración Pública Federal y del Reglamento Interior de la Secretaría, y reúne normas vinculadas con las Fuerzas Armadas, educación militar, seguridad nacional, disciplina y operación institucional.\n\nLa misión descrita se relaciona con organizar, administrar y preparar al Ejército, Fuerza Aérea y Guardia Nacional para cumplir sus misiones generales; la visión menciona capacidades polivalentes, interoperables y multipropósito, así como apego a los valores fundamentales y a los derechos humanos. Estas formulaciones caracterizan los objetivos organizacionales expuestos por el manual; no sustituyen mandatos jurídicos específicos previstos en leyes, reglamentos o instrucciones aplicables.\n\nEl organigrama incluye, entre otras áreas, la Secretaría de la Defensa Nacional, Tribunal Superior Militar, Fiscalía General de Justicia Militar, Defensoría de Oficio Militar, Unidad de Asuntos Jurídicos, Subsecretaría, Oficialía Mayor y órganos de educación, seguridad social, sanidad, materiales, transportes, industria militar, comunicaciones, adiestramiento y justicia militar. El manual describe objetivos y funciones de las áreas, incluida la atención de asuntos jurídicos, reclamaciones, inmuebles, responsabilidad patrimonial, educación y coordinación de información institucional.\n\nEn las secciones dedicadas a órganos operativos y de apoyo se describen funciones relacionadas con planeación, adiestramiento, logística, personal, seguridad, control de armas y explosivos, meteorología, atención jurídica y administración de recursos. La publicación distribuye responsabilidades internas entre unidades y mandos; no constituye, por sí misma, un procedimiento individual de autorización, sanción o contratación para personas externas a la Secretaría.\n\nLa parte final desarrolla objetivos y funciones de áreas militares, administrativas y de servicio, incluyendo comandos, direcciones generales, unidades de información, comunicaciones, salud, educación, justicia, industria y atención de derechos humanos. La descripción incorpora tareas de coordinación, supervisión, administración, capacitación, preservación documental y enlace con otras autoridades dentro de las competencias señaladas para cada unidad.\n\nPara trámites, consultas o actuaciones ante la Secretaría, el valor práctico del manual es identificar la unidad que aparece encargada de una función y contrastar esa referencia con la norma sustantiva, el procedimiento vigente y los actos de autoridad aplicables. La ficha no atribuye al manual efectos reglamentarios adicionales ni modifica por inferencia la competencia legal de las áreas que no esté expresamente descrita en el texto oficial.",
+    "summary_teaser": "La Secretaría de la Defensa Nacional expidió su Manual de Organización General, que describe misión, estructura orgánica, órganos militares y objetivos funcionales por área. Es un instrumento de organización interna que concentra atribuciones y relaciones de trabajo de unidades militares, jurídicas, administrativas, educativas y operativas.",
+    "title": "Defensa Nacional establece su estructura en Manual de Organización",
+    "topic_tags": [
+      "Derecho administrativo"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5791257&fecha=22/06/2026"
+  },
+  "schema_version": 8
+}

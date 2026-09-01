@@ -1,0 +1,152 @@
+{
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "item": {
+    "ai_generated": true,
+    "authority": "CONVOCATORIAS PARA CONCURSOS DE ADQUISICIONES, ARRENDAMIENTOS, OBRAS Y SERVICIOS DEL SECTOR PUBLICO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797319&fecha=27%2F08%2F2026",
+    "card_body": "## Qué se publicó\n\nLa Fiscalía General de la República publicó los fallos de una licitación internacional para adquirir papelería y artículos de oficina.\n\n## Sustancia\n\nEl aviso informa los resultados de una licitación pública internacional bajo la cobertura de tratados para adquirir papelería y artículos de oficina para unidades administrativas en Ciudad de México y fiscalías federales durante 2026. La publicación identifica a las personas físicas y morales adjudicadas, sus RFC, domicilios, partidas y el importe total con IVA de cada adjudicación. El fallo se emitió el 12 de junio de 2026. La fuente no sustituye los contratos, las bases o el expediente de contratación. Su alcance es informativo sobre los resultados de la licitación identificada y no permite inferir condiciones de entrega, ejecución o pagos que no figuren en el aviso.\n\n## Fuente\n\nFuente oficial: https://dof.gob.mx/nota_detalle.php?codigo=5797319&fecha=27%2F08%2F2026. Extracción: html-adapter; recuperada el 2026-09-01T16:35:05.823889+00:00.",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Penal"
+    ],
+    "content_hash": "fdabb6eb6fc7c65db963c3de35b15c77f54fefc34346fc26d637da639c6d548b",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-1",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/8b2e67157ea7c8e627fc5796.json",
+    "detail_url": "notas/8b2e67157ea7c8e627fc5796.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-1"
+        ],
+        "heading": "Contenido publicado",
+        "paragraphs": [
+          "El aviso informa los resultados de una licitación pública internacional bajo la cobertura de tratados para adquirir papelería y artículos de oficina para unidades administrativas en Ciudad de México y fiscalías federales durante 2026. La publicación identifica a las personas físicas y morales adjudicadas, sus RFC, domicilios, partidas y el importe total con IVA de cada adjudicación. El fallo se emitió el 12 de junio de 2026.",
+          "La información cumple la función de aviso de fallo y adjudicación. El documento incluye proveedores como Adelina Hernández del Ángel, Distribuidora Sustentable Aisha, Grupo Papelero Gutiérrez, Henki IX Distribuciones, Papelera Anzures y otros, vinculados a partidas específicas."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-1"
+        ],
+        "heading": "Alcance y lectura práctica",
+        "paragraphs": [
+          "La fuente no sustituye los contratos, las bases o el expediente de contratación. Su alcance es informativo sobre los resultados de la licitación identificada y no permite inferir condiciones de entrega, ejecución o pagos que no figuren en el aviso.",
+          "La ficha se dirige principalmente a proveedores, áreas de adquisiciones y personas que consulten resultados de contratación pública."
+        ]
+      }
+    ],
+    "detected_at": "2026-09-01T16:34:47.803209+00:00",
+    "document_type": "Fiscalia General",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "94dc019b7ba0576f873d4fb0c17eb8471f3661475f7cad1e4d3bada48b0d050e",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "Documento",
+          "location": "caracteres 0-3823"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797319&fecha=27%2F08%2F2026",
+      "retrieved_at": "2026-09-01T16:35:05.823889+00:00"
+    },
+    "executive_summary": [
+      "La Fiscalía General de la República difundió los fallos de una licitación internacional para adquirir papelería y artículos de oficina. El aviso informa los resultados de una licitación pública internacional bajo la cobertura de tratados para adquirir papelería y artículos de oficina para unidades administrativas en Ciudad de México y fiscalías federales durante 2026. La publicación identifica a las personas físicas y morales adjudicadas, sus RFC, domicilios, partidas y el importe total con IVA de cada adjudicación. El fallo se emitió el 12 de junio de 2026.",
+      "La fuente no sustituye los contratos, las bases o el expediente de contratación. Su alcance es informativo sobre los resultados de la licitación identificada y no permite inferir condiciones de entrega, ejecución o pagos que no figuren en el aviso. La síntesis se limita a los hechos y condiciones expresamente visibles en la fuente oficial."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-09-01T16:34:47.803209+00:00",
+    "government_branch": "Organismo autónomo",
+    "id": "dof:5797319",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-1"
+        ],
+        "paragraphs": [
+          "El efecto observable es el que la publicación atribuye al acto: La fuente no sustituye los contratos, las bases o el expediente de contratación. Su alcance es informativo sobre los resultados de la licitación identificada y no permite inferir condiciones de entrega, ejecución o pagos que no figuren en el aviso."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-1"
+          ],
+          "paragraphs": [
+            "Las personas comprendidas deben considerar el documento porque El aviso informa los resultados de una licitación pública internacional bajo la cobertura de tratados para adquirir papelería y artículos de oficina para unidades administrativas en Ciudad de México y fiscalías federales durante 2026. La publicación identifica a las personas físicas y morales adjudicadas, sus RFC, domicilios, partidas y el importe total con IVA de cada adjudicación. El fallo se emitió el 12 de junio de 2026."
+          ],
+          "sector": "Proveedores, áreas de adquisiciones y personas que consulten resultados de contratación pública"
+        }
+      ]
+    },
+    "importance": 2,
+    "issuing_body": "Fiscalía General de la República",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-09-01T16:34:47.803209+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797319&fecha=27/08/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5797319"
+    },
+    "official_published_at": "2026-08-27",
+    "official_title": "FISCALIA GENERAL DE LA REPUBLICA - REF:579802",
+    "published_at": "2026-08-27",
+    "published_day": 27,
+    "published_month": 8,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Proveedores, áreas de adquisiciones y personas que consulten resultados de contratación pública",
+        "deadline": null,
+        "evidence_refs": [
+          "chunk-1"
+        ],
+        "legal_basis": null,
+        "paragraphs": [
+          "Contrastar la partida, proveedor e importe de interés con el aviso oficial y acudir al expediente o bases cuando se requiera conocer obligaciones contractuales específicas."
+        ],
+        "trigger": "Cuando la persona o entidad se ubique en el ámbito material descrito por la fuente oficial."
+      }
+    ],
+    "relevance_score": 2,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5797319",
+    "subtopic_tags": [
+      "fiscalia"
+    ],
+    "summary": "La Fiscalía General de la República publicó los fallos de una licitación internacional para adquirir papelería y artículos de oficina. El aviso informa los resultados de una licitación pública internacional bajo la cobertura de tratados para adquirir papelería y artículos de oficina para unidades administrativas en Ciudad de México y fiscalías federales durante 2026. La publicación identifica a las personas físicas y morales adjudicadas, sus RFC, domicilios, partidas y el importe total con IVA de cada adjudicación. El fallo se emitió el 12 de junio de 2026.\n\nLa información cumple la función de aviso de fallo y adjudicación. El documento incluye proveedores como Adelina Hernández del Ángel, Distribuidora Sustentable Aisha, Grupo Papelero Gutiérrez, Henki IX Distribuciones, Papelera Anzures y otros, vinculados a partidas específicas.\n\nLa fuente no sustituye los contratos, las bases o el expediente de contratación. Su alcance es informativo sobre los resultados de la licitación identificada y no permite inferir condiciones de entrega, ejecución o pagos que no figuren en el aviso.\n\nLa utilidad práctica de la publicación depende de si la persona o entidad se encuentra dentro del ámbito descrito. La información se presenta con base en el documento oficial disponible y no permite extender efectos a supuestos, periodos, personas o actos que no estén expresamente identificados. Cuando el documento incorpora requisitos, condiciones o mecanismos, éstos deben contrastarse con la ficha, resolución, contrato, expediente o norma específica que corresponda.\n\nPara fines de cumplimiento y trazabilidad, conviene conservar la fuente oficial, su fecha de publicación y los documentos que acrediten la situación concreta. Esta síntesis no sustituye el texto íntegro ni una determinación individual de la autoridad; describe el alcance observable del acto y distingue las consecuencias expresamente publicadas de cualquier inferencia que no está respaldada por la evidencia disponible.\n\nLa revisión completa de la evidencia oficial es necesaria antes de adoptar una decisión que dependa de requisitos particulares.",
+    "summary_teaser": "La Fiscalía General de la República publicó los fallos de una licitación internacional cubierta por tratados para adquirir papelería y artículos de oficina en 2026. El aviso identifica partidas adjudicadas, proveedores, RFC, domicilios e importes con IVA para las unidades administrativas y fiscalías federales.",
+    "title": "Fiscalía determina adjudicaciones de papelería y artículos de oficina",
+    "topic_tags": [
+      "Penal"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797319&fecha=27/08/2026"
+  },
+  "schema_version": 8
+}

@@ -1,0 +1,267 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-3",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-4",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-5",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-6",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-7",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-8",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2",
+        "chunk-3"
+      ],
+      "heading": "Objeto y enfoque de atención",
+      "paragraphs": [
+        "La NOM-005-SSA-2026 regula los servicios de planificación familiar y anticoncepción. Su índice comprende objetivo y campo de aplicación, definiciones, disposiciones generales, clasificación de métodos anticonceptivos, infertilidad, evaluación de la conformidad, vigilancia y vigencia. La exposición sitúa la regulación en el derecho a decidir de manera libre, responsable e informada y en el acceso a información, consejería y métodos seguros y eficaces, con referencias a derechos humanos, igualdad, no discriminación e interculturalidad.",
+        "La norma define la consejería como una comunicación presencial o a distancia basada en evidencia científica, con privacidad, confidencialidad y respeto a la autonomía. Reconoce que el consentimiento informado se formaliza mediante carta en métodos cuya aplicación depende del personal de salud, incluidos dispositivos intrauterinos, implantes subdérmicos y métodos quirúrgicos como oclusión tubaria bilateral y vasectomía. La decisión debe ser libre y no inducida ni forzada."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-4",
+        "chunk-5",
+        "chunk-6"
+      ],
+      "heading": "Prestación de servicios y métodos",
+      "paragraphs": [
+        "Las disposiciones generales ordenan brindar información sobre beneficios, riesgos y efectos secundarios, ofrecer atención con calidad y calidez y, en instituciones públicas del Sistema Nacional de Salud, otorgar gratuitamente anticonceptivos durante el tiempo necesario para asegurar continuidad. El personal debe respetar la elección informada, guardar confidencialidad, evitar juicios de valor y contar con competencias en metodología anticonceptiva, consejería, derechos humanos, género, discapacidad e interculturalidad.",
+        "La norma distingue métodos de barrera, emergencia, hormonales y no hormonales. Los métodos de barrera y la anticoncepción de emergencia hormonal pueden utilizarse sin prescripción o historia clínica previa en los términos que explica; para otros métodos se requiere historia clínica orientada a identificar factores de riesgo, aunque la dificultad para integrarla no debe limitar el otorgamiento oportuno. Para oclusión tubaria bilateral y vasectomía exige historia clínica completa. También prevé valoración de riesgo reproductivo y referencia de casos con probable infertilidad."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-7",
+        "chunk-8"
+      ],
+      "heading": "Vigencia y sustitución normativa",
+      "paragraphs": [
+        "La vigilancia y aplicación corresponden a la Secretaría de Salud y a los gobiernos de las entidades federativas en sus ámbitos de competencia. La norma entra en vigor ciento ochenta días después de su publicación en el DOF. A partir de esa entrada en vigor deja sin efectos la NOM-005-SSA2-1993 y la resolución que la modificó en 2004. La transición exige distinguir la fecha de publicación de la fecha efectiva en que inicia el nuevo marco."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "999fbae12c956bf2afbd4f7728c1cc993e419f9b1640229bc207a2b7d20c39c9",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "NORMA Oficial Mexicana NOM-005-SSA-2026, De los Servicios de Planificación Familiar y Anticoncepción. · parte 1",
+        "location": "caracteres 0-12000"
+      },
+      {
+        "id": "chunk-2",
+        "label": "NORMA Oficial Mexicana NOM-005-SSA-2026, De los Servicios de Planificación Familiar y Anticoncepción. · parte 2",
+        "location": "caracteres 12000-24000"
+      },
+      {
+        "id": "chunk-3",
+        "label": "NORMA Oficial Mexicana NOM-005-SSA-2026, De los Servicios de Planificación Familiar y Anticoncepción. · parte 3",
+        "location": "caracteres 24000-36000"
+      },
+      {
+        "id": "chunk-4",
+        "label": "NORMA Oficial Mexicana NOM-005-SSA-2026, De los Servicios de Planificación Familiar y Anticoncepción. · parte 4",
+        "location": "caracteres 36000-48000"
+      },
+      {
+        "id": "chunk-5",
+        "label": "NORMA Oficial Mexicana NOM-005-SSA-2026, De los Servicios de Planificación Familiar y Anticoncepción. · parte 5",
+        "location": "caracteres 48000-60000"
+      },
+      {
+        "id": "chunk-6",
+        "label": "NORMA Oficial Mexicana NOM-005-SSA-2026, De los Servicios de Planificación Familiar y Anticoncepción. · parte 6",
+        "location": "caracteres 60000-72000"
+      },
+      {
+        "id": "chunk-7",
+        "label": "NORMA Oficial Mexicana NOM-005-SSA-2026, De los Servicios de Planificación Familiar y Anticoncepción. · parte 7",
+        "location": "caracteres 72000-84000"
+      },
+      {
+        "id": "chunk-8",
+        "label": "NORMA Oficial Mexicana NOM-005-SSA-2026, De los Servicios de Planificación Familiar y Anticoncepción. · parte 8",
+        "location": "caracteres 84000-84148"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5790446&fecha=12/06/2026",
+    "retrieved_at": "2026-08-13T19:44:04.510649+00:00"
+  },
+  "executive_summary": [
+    "La NOM-005-SSA-2026 regula los servicios de planificación familiar y anticoncepción. Su índice comprende objetivo y campo de aplicación, definiciones, disposiciones generales, clasificación de métodos anticonceptivos, infertilidad, evaluación de la conformidad, vigilancia y vigencia. La exposición sitúa la regulación en el derecho a decidir de manera libre, responsable e informada y en el acceso a información, consejería y métodos seguros y eficaces, con referencias a derechos humanos, igualdad, no discriminación e interculturalidad.",
+    "La norma define la consejería como una comunicación presencial o a distancia basada en evidencia científica, con privacidad, confidencialidad y respeto a la autonomía. Reconoce que el consentimiento informado se formaliza mediante carta en métodos cuya aplicación depende del personal de salud, incluidos dispositivos intrauterinos, implantes subdérmicos y métodos quirúrgicos como oclusión tubaria bilateral y vasectomía. La decisión debe ser libre y no inducida ni forzada."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2",
+        "chunk-3",
+        "chunk-4",
+        "chunk-5",
+        "chunk-6",
+        "chunk-7",
+        "chunk-8"
+      ],
+      "paragraphs": [
+        "La norma redefine el marco operativo de planificación familiar y anticoncepción para prestadores de servicios, con un periodo de 180 días antes de desplazar la NOM de 1993."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2",
+          "chunk-3",
+          "chunk-4",
+          "chunk-5",
+          "chunk-6",
+          "chunk-7",
+          "chunk-8"
+        ],
+        "paragraphs": [
+          "La norma redefine el marco operativo de planificación familiar y anticoncepción para prestadores de servicios, con un periodo de 180 días antes de desplazar la NOM de 1993."
+        ],
+        "sector": "Instituciones y personal de salud que prestan servicios de planificación familiar"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5790446&fecha=12/06/2026",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "938bfc3f811e122fb09296c08828891f0328c602838a6af618a1b5f9d3795981",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/d23567aabcc9cf5ad1337d97.json",
+    "detail_url": "notas/d23567aabcc9cf5ad1337d97.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Norma Oficial Mexicana",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5790446",
+    "importance": 2,
+    "issuing_body": "Presidencia de la República",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-06-12",
+    "official_title": "Norma Oficial Mexicana NOM-005-SSA-2026, De los Servicios de Planificación Familiar y Anticoncepción.",
+    "published_at": "2026-06-12",
+    "relevance_score": 3,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5790446",
+    "summary_teaser": "La NOM-005-SSA-2026 reemplazará a la norma de 1993 sobre servicios de planificación familiar 180 días después de su publicación. Establece reglas para información, consejería, consentimiento, selección y aplicación de métodos, atención sin discriminación y vigilancia sanitaria, con obligaciones específicas para prestadores de salud públicos, sociales y privados.",
+    "title": "NOM establece reglas de planificación familiar y anticoncepción",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5790446&fecha=12/06/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Instituciones y personal de salud que prestan servicios de planificación familiar",
+      "deadline": "180 días posteriores a la publicación en el DOF",
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2",
+        "chunk-3",
+        "chunk-4",
+        "chunk-5",
+        "chunk-6",
+        "chunk-7",
+        "chunk-8"
+      ],
+      "legal_basis": "NOM-005-SSA-2026",
+      "paragraphs": [
+        "Antes de la entrada en vigor, actualice protocolos de consejería, consentimiento, expediente clínico, capacitación, oferta de métodos y referencia; mantenga los requisitos aplicables hasta que la nueva NOM sea exigible."
+      ],
+      "trigger": "Durante la preparación para la entrada en vigor de la NOM-005-SSA-2026"
+    }
+  ],
+  "schema_version": 8
+}

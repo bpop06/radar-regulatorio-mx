@@ -1,0 +1,131 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    }
+  ],
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Alcance de la publicación",
+      "paragraphs": [
+        "La circular del Órgano Interno de Control en la Comisión Nacional del Agua comunicó una inhabilitación de Transmareli por seis meses y veintiún días para participar, directa o indirectamente, en procedimientos de contratación, celebrar contratos en adquisiciones, obras y asociaciones público-privadas, o suscribir acuerdos marco.",
+        "La abstención de aceptar propuestas o celebrar contratos inicia al día siguiente de la publicación de la circular en el DOF y en el Directorio de Proveedores y Contratistas Sancionados, interconectado con ComprasMX. Si la multa no se cubre al vencer el plazo, la inhabilitación subsiste hasta el pago. Los contratos adjudicados o formalizados no quedan comprendidos."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Seguimiento operativo",
+      "paragraphs": [
+        "Las áreas contratantes deben verificar el estatus de Transmareli y abstenerse de aceptar propuestas o celebrar contratos durante la medida comunicada.",
+        "La ficha no extiende el alcance del acto a supuestos que la fuente no identifica."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "80ea1a5c35044f46913318fc6f373c0f3fab0f292d065d13bc37ef7e2b8e0e75",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "CIRCULAR por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a la Fiscalía General de la República, a las entidades federativas, a los municipios y a las demarcaciones territoriales de la Ciudad de México, que deberán abstenerse de aceptar propuestas o celebrar contratos con la empresa Transmareli, S.A. de C.V.",
+        "location": "caracteres 0-356"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Buen Gobierno.- Secretaría Anticorrupción y Buen Gobierno.- Órgano Interno de Control en la Comisión Nacional del Agua.- Área de Responsabilidades.- Expediente: PA-0001/2026.",
+        "location": "caracteres 356-6228"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796707&fecha=20%2F08%2F2026",
+    "retrieved_at": "2026-09-01T16:35:11.420506+00:00"
+  },
+  "executive_summary": [
+    "La circular del Órgano Interno de Control en la Comisión Nacional del Agua comunicó una inhabilitación de Transmareli por seis meses y veintiún días para participar, directa o indirectamente, en procedimientos de contratación, celebrar contratos en adquisiciones, obras y asociaciones público-privadas, o suscribir acuerdos marco.",
+    "La abstención de aceptar propuestas o celebrar contratos inicia al día siguiente de la publicación de la circular en el DOF y en el Directorio de Proveedores y Contratistas Sancionados, interconectado con ComprasMX. Si la multa no se cubre al vencer el plazo, la inhabilitación subsiste hasta el pago. Los contratos adjudicados o formalizados no quedan comprendidos."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "paragraphs": [
+        "La abstención de aceptar propuestas o celebrar contratos inicia al día siguiente de la publicación de la circular en el DOF y en el Directorio de Proveedores y Contratistas Sancionados, interconectado con ComprasMX. Si la multa no se cubre al vencer el plazo, la inhabilitación subsiste hasta el pago. Los contratos adjudicados o formalizados no quedan comprendidos."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "La incidencia para este grupo se limita al alcance expresamente descrito en la publicación y requiere contrastarse con cada caso concreto."
+        ],
+        "sector": "Áreas contratantes y ejecutoras de obra destinatarias de la circular"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796707&fecha=20%2F08%2F2026",
+    "categories": [
+      "Penal",
+      "Administración centralizada"
+    ],
+    "content_hash": "f1a880972d91262abcfb512cd4f20492a9b0be73cb3965de0e9e6c6a48307b14",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/7337a5f3bc631df3c895653f.json",
+    "detail_url": "notas/7337a5f3bc631df3c895653f.html",
+    "detected_at": "2026-09-01T16:34:47.803209+00:00",
+    "document_type": "Circular",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5796707",
+    "importance": 2,
+    "issuing_body": "Presidencia de la República",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-08-20",
+    "official_title": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a la Fiscalía General de la República, a las entidades federativas, a los municipios y a las demarcaciones territoriales de la Ciudad de México, que deberán abstenerse de aceptar propuestas o celebrar contratos con la empresa Transmareli, S.A. de C.V.",
+    "published_at": "2026-08-20",
+    "relevance_score": 3,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5796707",
+    "summary_teaser": "La circular del Órgano Interno de Control en la CONAGUA comunicó la inhabilitación de Transmareli por seis meses y veintiún días en adquisiciones, obra pública, asociaciones público-privadas y acuerdos marco. La abstención de aceptar propuestas o celebrar contratos inicia el día siguiente de la publicación en el DOF y en el Directorio de Proveedores y Contratistas Sancionados. La multa impaga prolonga la medida hasta el pago.",
+    "title": "OIC inhabilita a Transmareli seis meses y 21 días",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796707&fecha=20/08/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Áreas contratantes y ejecutoras de obra destinatarias de la circular",
+      "deadline": "Seis meses y 21 días; si la multa no se paga al concluirlos, la inhabilitación subsiste hasta el pago.",
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "legal_basis": null,
+      "paragraphs": [
+        "Las áreas contratantes deben verificar el estatus de Transmareli y abstenerse de aceptar propuestas o celebrar contratos durante la medida comunicada."
+      ],
+      "trigger": "Desde el día siguiente a la publicación en el DOF y en el Directorio de Proveedores y Contratistas Sancionados."
+    }
+  ],
+  "schema_version": 8
+}

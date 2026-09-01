@@ -1,0 +1,160 @@
+{
+  "coverage": [
+    {
+      "disposition": "not_material",
+      "reason": "No desarrolla contenido normativo adicional.",
+      "source_ref": "chunk-1",
+      "target_sections": []
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-3",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-2",
+        "chunk-3"
+      ],
+      "heading": "Criterios bajo declaratoria de emergencia o desastre",
+      "paragraphs": [
+        "El formato de los artículos 195 exige una declaratoria de emergencia o desastre natural, afectación económica y posible impacto adverso en solvencia, liquidez o estabilidad, con descripción de criterios, zona, periodo e indicadores."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2",
+        "chunk-3"
+      ],
+      "heading": "Registros vinculados a procesos corporativos",
+      "paragraphs": [
+        "La solicitud de registros del artículo 195 Bis corresponde a saneamiento financiero o reestructuración corporativa y pide identificar rubros, importes, causas, indicadores, medidas y la aprobación competente."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Regla de respuesta",
+      "paragraphs": [
+        "La Comisión resuelve en sesenta días hábiles desde la recepción; hasta la notificación, la cooperativa conserva los criterios del Anexo E y el silencio es negativo."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "3943b5c40cdf8fd9c1b371037060adeaad6f7e5f092d71b0b378a972c6a21b06",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "RESOLUCIÓN que modifica las Disposiciones de carácter general aplicables a las actividades de las sociedades cooperativas de ahorro y préstamo.",
+        "location": "caracteres 0-147"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Comisión Nacional Bancaria y de Valores. · parte 1",
+        "location": "caracteres 147-12147"
+      },
+      {
+        "id": "chunk-3",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Comisión Nacional Bancaria y de Valores. · parte 2",
+        "location": "caracteres 12147-17514"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792786&fecha=07/07/2026",
+    "retrieved_at": "2026-08-13T19:43:05.921615+00:00"
+  },
+  "executive_summary": [
+    "Las cooperativas tienen dos formatos del Anexo V: criterios contables especiales ante emergencia o desastre con afectación económica adversa, y registros especiales si cursan saneamiento financiero o reestructuración corporativa.",
+    "La CNBV tiene sesenta días hábiles para resolver; mientras no notifique, continúan los criterios ordinarios del Anexo E y el silencio es negativo."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-2",
+        "chunk-3"
+      ],
+      "paragraphs": [
+        "El Anexo V no abre una vía discrecional de ajuste contable: la procedencia depende de la causa de emergencia con afectación adversa o del proceso de saneamiento o reestructuración que se acredite."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-2",
+          "chunk-3"
+        ],
+        "paragraphs": [
+          "Deben separar evidencia de fenómenos declarados e impacto económico para criterios, de la información financiera y corporativa que justifica registros especiales."
+        ],
+        "sector": "Sociedades Cooperativas de Ahorro y Préstamo, consejos y áreas contables"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792786&fecha=07/07/2026",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "c6462a16736856f84591919f98ea596cc5b3312f48182e6d1abbf698baa361df",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/4428c11b019b238fb67a1b0c.json",
+    "detail_url": "notas/4428c11b019b238fb67a1b0c.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Resolución Que Modifica",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5792786",
+    "importance": 1,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-07-07",
+    "official_title": "Resolución que modifica las Disposiciones de carácter general aplicables a las actividades de las sociedades cooperativas de ahorro y préstamo.",
+    "published_at": "2026-07-07",
+    "relevance_score": 1,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5792786",
+    "summary_teaser": "La CNBV añadió el Anexo V para Sociedades Cooperativas de Ahorro y Préstamo con dos solicitudes distintas: criterios contables especiales ante una declaratoria de emergencia o desastre con afectación económica adversa, y registros especiales para saneamiento financiero o reestructuración corporativa. Los formatos no habilitan tratamientos contables para cualquier circunstancia.",
+    "title": "CNBV establece rutas condicionadas para cooperativas de ahorro",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5792786&fecha=07/07/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Sociedades Cooperativas de Ahorro y Préstamo",
+      "deadline": null,
+      "evidence_refs": [
+        "chunk-2",
+        "chunk-3"
+      ],
+      "legal_basis": "Artículos 195 y 195 Bis, y Anexo V",
+      "paragraphs": [
+        "Determinen primero cuál de los supuestos existe: declaratoria de emergencia o desastre con afectación adversa para criterios, o proceso de saneamiento o reestructuración para registros; después integren el formato y sus soportes."
+      ],
+      "trigger": "Preparación de una solicitud de autorización ante la CNBV"
+    }
+  ],
+  "schema_version": 8
+}

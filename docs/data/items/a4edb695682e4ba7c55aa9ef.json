@@ -1,0 +1,172 @@
+{
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "item": {
+    "ai_generated": true,
+    "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795725&fecha=07%2F08%2F2026",
+    "card_body": "## Qué se publicó\n\nEl Servicio de Administración Tributaria publicó la determinación de falsedad general de los CFDI emitidos por MEC Competitividad Americana, A.C.\n\n## Sustancia\n\nEl SAT señala que MEC Competitividad Americana, A.C. no desvirtuó la presunción de falsedad de sus CFDI, por lo que se consideran falsos con efectos generales y las operaciones documentadas no producen ni produjeron efecto fiscal. Los receptores de esos CFDI deben revertir el efecto fiscal mediante declaración complementaria dentro de 30 días naturales contados a partir de la publicación en el DOF. La restricción temporal del certificado de sello digital sólo procede si incumplen esa reversión.\n\n## Fuente\n\nFuente oficial: https://dof.gob.mx/nota_detalle.php?codigo=5795725&fecha=07%2F08%2F2026. Extracción: html-adapter; recuperada el 2026-09-01T16:35:42.977833+00:00.",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Fiscal",
+      "Administración centralizada"
+    ],
+    "content_hash": "331e223ae9d6b886b6258886e1589957e74769bc61967ebd0ce3a08f0b613d8e",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-1",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/a4edb695682e4ba7c55aa9ef.json",
+    "detail_url": "notas/a4edb695682e4ba7c55aa9ef.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "heading": "Determinación publicada",
+        "paragraphs": [
+          "El anexo identifica a MEC Competitividad Americana, A.C., RFC MCA201104E44. El SAT señala que la asociación no desvirtuó la presunción de falsedad de los CFDI emitidos y que éstos se consideran falsos con efectos generales.",
+          "Según el oficio, las operaciones consignadas en esos comprobantes no producen ni produjeron efecto fiscal. La publicación se realiza conforme al artículo 49 Bis del Código Fiscal de la Federación."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "heading": "Deber de los receptores",
+        "paragraphs": [
+          "Los terceros que recibieron CFDI del emisor identificado deben revertir el efecto fiscal que hubieren dado a esos comprobantes a través de una declaración complementaria.",
+          "El plazo publicado es de 30 días naturales contados a partir de la publicación en el DOF. Sólo si no se cumple con esa reversión, el oficio prevé la restricción temporal del certificado de sello digital para emitir CFDI."
+        ]
+      }
+    ],
+    "detected_at": "2026-09-01T16:34:47.803209+00:00",
+    "document_type": "Oficio",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "35f5d1459b9ed826651f73750c22efde400dc37820886c8e57eb27773ff21104",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "OFICIO 500-05-00-00-00-2026-21601 mediante el cual se comunica el nombre y la clave en el Registro Federal de Contribuyentes a que se refiere la fracción X del artículo 49 Bis del Código Fiscal de la Federación.",
+          "location": "caracteres 0-215"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Servicio de Administración Tributaria.- Administración General de Auditoría Fiscal Federal.- Administración Central de Fiscalización Estratégica.",
+          "location": "caracteres 215-7886"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795725&fecha=07%2F08%2F2026",
+      "retrieved_at": "2026-09-01T16:35:42.977833+00:00"
+    },
+    "executive_summary": [
+      "El Servicio de Administración Tributaria difundió la publicación de MEC Competitividad Americana, A.C., RFC MCA201104E44, dentro del procedimiento del artículo 49 Bis del Código Fiscal de la Federación. La fuente establece que sus CFDI se consideran falsos con efectos generales y que las operaciones contenidas no producen ni produjeron efecto fiscal.",
+      "Los terceros que recibieron esos CFDI deben revertir el efecto fiscal otorgado mediante declaración complementaria dentro de 30 días naturales contados a partir de la publicación en el DOF. La restricción temporal del certificado de sello digital está prevista únicamente si el receptor incumple esa reversión."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-09-01T16:34:47.803209+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5795725",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "La publicación atribuye efectos fiscales generales de falsedad a los CFDI emitidos por MEC Competitividad Americana, A.C. Para sus receptores identificables, la consecuencia operativa indicada es revertir el efecto fiscal mediante declaración complementaria dentro del plazo publicado; la eventual restricción temporal del CSD está condicionada al incumplimiento."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-2"
+          ],
+          "paragraphs": [
+            "Los receptores deben identificar los CFDI del emisor publicado y el efecto fiscal que les hubieren dado, porque el oficio les exige revertirlo mediante declaración complementaria dentro del plazo expresamente señalado."
+          ],
+          "sector": "Receptores de CFDI emitidos por MEC Competitividad Americana, A.C."
+        }
+      ]
+    },
+    "importance": 2,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-09-01T16:34:47.803209+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795725&fecha=07/08/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5795725"
+    },
+    "official_published_at": "2026-08-07",
+    "official_title": "Oficio 500-05-00-00-00-2026-21601 mediante el cual se comunica el nombre y la clave en el Registro Federal de Contribuyentes a que se refiere la fracción X del artículo 49 Bis del Código Fiscal de la Federación.",
+    "published_at": "2026-08-07",
+    "published_day": 7,
+    "published_month": 8,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Receptores de CFDI emitidos por MEC Competitividad Americana, A.C.",
+        "deadline": "30 días naturales contados a partir de la publicación en el DOF",
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "legal_basis": "Artículo 49 Bis, fracción X, del Código Fiscal de la Federación.",
+        "paragraphs": [
+          "Identificar los CFDI emitidos por la asociación publicada y revertir el efecto fiscal que se les hubiere dado mediante la declaración complementaria correspondiente."
+        ],
+        "trigger": "Cuando se hayan recibido CFDI emitidos por MEC Competitividad Americana, A.C., RFC MCA201104E44."
+      }
+    ],
+    "relevance_score": 3,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5795725",
+    "subtopic_tags": [
+      "codigo fiscal"
+    ],
+    "summary": "El Servicio de Administración Tributaria publicó el nombre y RFC de MEC Competitividad Americana, A.C., dentro del procedimiento previsto en el artículo 49 Bis del Código Fiscal de la Federación. La fuente señala que la asociación no desvirtuó la presunción de falsedad de los comprobantes fiscales digitales por Internet que emitió. En consecuencia, esos CFDI se consideran falsos con efectos generales y las operaciones consignadas en ellos no producen ni produjeron efecto fiscal.\n\nLa difusión en el Portal del SAT y en el Diario Oficial tiene la finalidad expresamente indicada de que los terceros que recibieron esos comprobantes conozcan la determinación. La publicación identifica a la asociación como MEC Competitividad Americana, A.C., con RFC MCA201104E44, y remite a la resolución notificada dentro del procedimiento. La fuente no permite extender la conclusión a comprobantes, operaciones o personas distintos de los expresamente identificados.\n\nPara los receptores de CFDI emitidos por la asociación publicada, el deber indicado es revertir el efecto fiscal que hubieren dado a esos comprobantes mediante la presentación de una declaración complementaria. El plazo es de 30 días naturales contados a partir de la publicación en el Diario Oficial de la Federación. El oficio prevé que, si esos terceros no realizan esa reversión, la autoridad restringirá temporalmente el uso de su certificado de sello digital para emitir CFDI; esa consecuencia está condicionada al incumplimiento, no se reporta como automática para todos los receptores.\n\nLa medida exige identificar los comprobantes realmente recibidos y el efecto fiscal otorgado a cada uno antes de presentar la declaración complementaria que corresponda. No se infiere una conclusión individual para contribuyentes que no hayan recibido CFDI del emisor identificado ni se atribuyen efectos distintos de los descritos en el oficio.\n\nEsta ficha describe el alcance observable de la publicación oficial. La aplicación concreta requiere contrastar los comprobantes, declaraciones y demás documentación del receptor con la determinación difundida por el SAT.",
+    "summary_teaser": "El SAT publicó a MEC Competitividad Americana, A.C. dentro del procedimiento del artículo 49 Bis del Código Fiscal. Sus CFDI se consideran falsos con efectos generales. Los receptores deben revertir el efecto fiscal mediante declaración complementaria dentro de 30 días naturales; la restricción temporal del CSD sólo procede si incumplen.",
+    "title": "SAT determina falsedad general y reversión fiscal de CFDI de MEC",
+    "topic_tags": [
+      "Fiscal",
+      "Oficio"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5795725&fecha=07/08/2026"
+  },
+  "schema_version": 8
+}

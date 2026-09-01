@@ -1,0 +1,188 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-3",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-4",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2",
+        "chunk-3",
+        "chunk-4"
+      ],
+      "heading": "Listado definitivo",
+      "paragraphs": [
+        "El SAT da a conocer un listado global definitivo conforme al artículo 69-B del Código Fiscal de la Federación, con los registros individualizados del Anexo 1.",
+        "Los contribuyentes incluidos sí presentaron información, documentación y argumentos durante el plazo del artículo 69-B; las autoridades los admitieron y valoraron, pero concluyeron que no desvirtuaban los hechos de los oficios de presunción."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2",
+        "chunk-3",
+        "chunk-4"
+      ],
+      "heading": "Efecto fiscal publicado",
+      "paragraphs": [
+        "Después de treinta días hábiles desde la notificación de las resoluciones, y sin noticia de suspensión, nulidad o revocación favorable, el SAT incorporó los nombres al listado definitivo.",
+        "Los comprobantes de las personas incluidas no producen ni produjeron efecto fiscal alguno, en los términos que el oficio atribuye al quinto párrafo del artículo 69-B."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "37cedc6113fed36c6a514136e1eaea00cac726e6aeb8050ea7f4c13c6eca428e",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "OFICIO 500-05-00-00-00-2026-21472 mediante el cual se comunica listado global definitivo en términos del artículo 69-B, párrafo cuarto del Código Fiscal de la Federación.",
+        "location": "caracteres 0-174"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Servicio de Administración Tributaria.- Administración General de Auditoría Fiscal Federal.- Administración Central de Fiscalización Estratégica. · parte 1",
+        "location": "caracteres 174-12174"
+      },
+      {
+        "id": "chunk-3",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Servicio de Administración Tributaria.- Administración General de Auditoría Fiscal Federal.- Administración Central de Fiscalización Estratégica. · parte 2",
+        "location": "caracteres 12174-24174"
+      },
+      {
+        "id": "chunk-4",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Servicio de Administración Tributaria.- Administración General de Auditoría Fiscal Federal.- Administración Central de Fiscalización Estratégica. · parte 3",
+        "location": "caracteres 24174-30676"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5794669&fecha=24%2F07%2F2026",
+    "retrieved_at": "2026-08-14T00:36:40.347457+00:00"
+  },
+  "executive_summary": [
+    "El Servicio de Administración Tributaria publicó un listado global definitivo del artículo 69-B del Código Fiscal de la Federación. El oficio parte de presunciones individuales relativas a comprobantes emitidos sin activos, personal, infraestructura o capacidad material para prestar los servicios o entregar los bienes amparados.",
+    "Los contribuyentes incluidos sí presentaron información, documentación y argumentos durante el plazo del artículo 69-B; las autoridades los admitieron y valoraron, pero concluyeron que no desvirtuaban los hechos de los oficios de presunción. Tras la etapa individual, las autoridades notificaron resoluciones definitivas y agregaron a las personas del Anexo 1 al listado de quienes no desvirtuaron los hechos. El anexo conserva RFC, denominación, autoridad emisora, medios y fechas de notificación, además de datos adicionales del procedimiento."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2",
+        "chunk-3",
+        "chunk-4"
+      ],
+      "paragraphs": [
+        "La publicación identifica contribuyentes y comprobantes con el efecto fiscal general que el artículo 69-B atribuye a los listados definitivos; la individualización está en el Anexo 1."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2",
+          "chunk-3",
+          "chunk-4"
+        ],
+        "paragraphs": [
+          "Los controles fiscales y contables deben cotejar RFC, denominación y datos de notificación del Anexo 1 antes de asociar un proveedor o comprobante con el listado."
+        ],
+        "sector": "Fiscal y contabilidad"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5794669&fecha=24%2F07%2F2026",
+    "categories": [
+      "Fiscal",
+      "Administración centralizada"
+    ],
+    "content_hash": "cb8d0c960ea314492f5050663a1a024bb9c0373bb742e1aa4200b747876eebbd",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/7baa1841fbf2960e18bde988.json",
+    "detail_url": "notas/7baa1841fbf2960e18bde988.html",
+    "detected_at": "2026-08-14T01:46:44.993982+00:00",
+    "document_type": "Oficio",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5794669",
+    "importance": 2,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-07-24",
+    "official_title": "Oficio 500-05-00-00-00-2026-21472 mediante el cual se comunica listado global definitivo en términos del artículo 69-B, párrafo cuarto del Código Fiscal de la Federación.",
+    "published_at": "2026-07-24",
+    "relevance_score": 3,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5794669",
+    "summary_teaser": "El SAT publicó un listado global definitivo del artículo 69-B del Código Fiscal de la Federación. Las personas incluidas presentaron información, documentos y argumentos, pero la autoridad concluyó que no desvirtuaron los hechos imputados; sus comprobantes quedan sin efecto fiscal general conforme al oficio.",
+    "title": "SAT incorpora listado definitivo tras valorar argumentos",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5794669&fecha=24/07/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Contribuyentes, áreas fiscales y de cuentas por pagar",
+      "deadline": null,
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2",
+        "chunk-3",
+        "chunk-4"
+      ],
+      "legal_basis": "Artículo 69-B del Código Fiscal de la Federación",
+      "paragraphs": [
+        "Si una revisión interna localiza un proveedor o CFDI potencialmente relacionado, compare el RFC y la razón social con el Anexo 1 y documente la coincidencia antes de tomar una determinación."
+      ],
+      "trigger": "Revisión de proveedores o comprobantes fiscales"
+    }
+  ],
+  "schema_version": 8
+}

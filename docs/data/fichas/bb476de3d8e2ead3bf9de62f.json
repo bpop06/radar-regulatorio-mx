@@ -1,0 +1,157 @@
+{
+  "coverage": [
+    {
+      "disposition": "not_material",
+      "reason": "Es el encabezado del acto; el contenido regulatorio se desarrolla en los dos fragmentos siguientes.",
+      "source_ref": "chunk-1",
+      "target_sections": []
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-3",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Cuota y antecedentes del examen",
+      "paragraphs": [
+        "La resolución identifica la cuota compensatoria definitiva de 0.49 dólares de Estados Unidos por kilogramo, impuesta a importaciones de alambrón chinas, y los antecedentes de su prórroga."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-3"
+      ],
+      "heading": "Inicio y continuidad de la medida",
+      "paragraphs": [
+        "Se abre el examen para las fracciones y mercancía descritas. La cuota preexistente continúa vigente mientras se tramita el procedimiento y puede garantizarse en los términos que refiere la resolución."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-3"
+      ],
+      "heading": "Participación procesal",
+      "paragraphs": [
+        "Quienes acrediten interés jurídico pueden contestar el formulario y presentar argumentos y pruebas en 28 días hábiles bajo las vías oficiales indicadas."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "c5a53febf6d89cd90bbafb2f790b3953aedf059f66032751890a2290fe5d1e89",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "RESOLUCIÓN por la que se declara el inicio del procedimiento administrativo de examen de vigencia de la cuota compensatoria impuesta a las importaciones de alambrón de acero originarias de la República Popular China , independientemente del país de procedencia.",
+        "location": "caracteres 0-265"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Economía. · parte 1",
+        "location": "caracteres 265-12265"
+      },
+      {
+        "id": "chunk-3",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Economía. · parte 2",
+        "location": "caracteres 12265-20425"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5794527&fecha=23%2F07%2F2026",
+    "retrieved_at": "2026-08-14T00:36:45.590367+00:00"
+  },
+  "executive_summary": [
+    "Se inicia el examen de vigencia de la cuota compensatoria sobre alambrón de acero chino; la cuota histórica es de 0.49 dólares de Estados Unidos por kilogramo.",
+    "La medida de 0.49 dólares continúa vigente durante el examen, sin que ello anticipe la decisión final.",
+    "Las partes con interés jurídico cuentan con 28 días hábiles desde el día siguiente de la publicación para comparecer."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-2",
+        "chunk-3"
+      ],
+      "paragraphs": [
+        "La continuidad durante el examen recae sobre la cuota ya existente de 0.49 dólares por kilogramo; la resolución de inicio no impone una cuantía adicional."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-3"
+        ],
+        "paragraphs": [
+          "Deben revisar si sus operaciones están dentro del producto y fracciones señaladas, así como valorar su comparecencia en el expediente de examen."
+        ],
+        "sector": "Industria siderúrgica, importadores y exportadores de alambrón"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5794527&fecha=23%2F07%2F2026",
+    "categories": [
+      "Comercio exterior",
+      "Administración centralizada"
+    ],
+    "content_hash": "53d741dfa095f5367e23cc4dcdc99d12412e368a9558ab4d7e32b1d3a3d5c700",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/bb476de3d8e2ead3bf9de62f.json",
+    "detail_url": "notas/bb476de3d8e2ead3bf9de62f.html",
+    "detected_at": "2026-08-14T01:46:44.993982+00:00",
+    "document_type": "Resolución",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5794527",
+    "importance": 2,
+    "issuing_body": "Secretaría de Economía",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-07-23",
+    "official_title": "Resolución por la que se declara el inicio del procedimiento administrativo de examen de vigencia de la cuota compensatoria impuesta a las importaciones de alambrón de acero originarias de la República Popular China, independientemente del país de procedencia.",
+    "published_at": "2026-07-23",
+    "relevance_score": 3,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5794527",
+    "summary_teaser": "La Secretaría de Economía inició el examen de vigencia de la cuota compensatoria de 0.49 dólares de Estados Unidos por kilogramo para alambrón de acero originario de China. La cuota preexistente continúa durante el procedimiento. Productores, importadores, exportadores y otras personas con interés jurídico cuentan con 28 días hábiles para comparecer.",
+    "title": "Cuota de 0.49 dólares al alambrón chino sigue durante examen",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5794527&fecha=23/07/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Partes con interés jurídico en el examen",
+      "deadline": "28 días hábiles a partir del día siguiente de la publicación",
+      "evidence_refs": [
+        "chunk-3"
+      ],
+      "legal_basis": "Punto 28 de la resolución",
+      "paragraphs": [
+        "Si pretenden participar, acrediten el interés jurídico y preparen formulario, argumentos y pruebas dentro del plazo publicado por la Secretaría."
+      ],
+      "trigger": "Interés en el resultado del procedimiento de examen"
+    }
+  ],
+  "schema_version": 8
+}

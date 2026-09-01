@@ -1,0 +1,163 @@
+{
+  "coverage": [
+    {
+      "disposition": "not_material",
+      "reason": "El locator inicial es el encabezado; los supuestos, formatos, plazo y transitorios constan en los demás fragmentos.",
+      "source_ref": "chunk-1",
+      "target_sections": []
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-3",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-4",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    }
+  ],
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Supuestos, forma y respuesta",
+      "paragraphs": [
+        "La modificación de los artículos 174 Bis y 174 Bis 1 y la adición del Anexo 75 establecen el canal para criterios y registros especiales. Mientras la CNBV notifica su decisión se utiliza el Anexo 33 de contabilidad. El plazo corre desde el día hábil siguiente a la recepción y el silencio se califica expresamente como negativo."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-3"
+      ],
+      "heading": "Contenido de solicitudes por emergencia",
+      "paragraphs": [
+        "El formato solicita identificar emergencia o desastre, explicar criterio propuesto, periodo y región, y describir efectos económicos y proyectados sobre solvencia, liquidez y estabilidad. Para prórroga exige explicar que subsisten las condiciones que la motivaron."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-4"
+      ],
+      "heading": "Registros y transición",
+      "paragraphs": [
+        "Para registros contables especiales, el formato pide categorías, importes, periodos, causas de saneamiento o reestructura, indicadores, impactos proyectados, acciones de remedio y aprobación del consejo. Las transitorias mantienen trámite anterior para solicitudes ingresadas y autorizaciones existentes hasta que concluyan."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "f85aa3f047e2b3dde6c63d52afc574cbc66345adad58162fe1139892b185aeee",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "RESOLUCIÓN que modifica las Disposiciones de carácter general aplicables a las instituciones de crédito (criterios contables especiales y registros contables especiales).",
+        "location": "caracteres 0-174"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Comisión Nacional Bancaria y de Valores. · parte 1",
+        "location": "caracteres 174-12174"
+      },
+      {
+        "id": "chunk-3",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Comisión Nacional Bancaria y de Valores. · parte 2",
+        "location": "caracteres 12174-24174"
+      },
+      {
+        "id": "chunk-4",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Comisión Nacional Bancaria y de Valores. · parte 3",
+        "location": "caracteres 24174-28463"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792308&fecha=01/07/2026",
+    "retrieved_at": "2026-08-13T19:43:36.628883+00:00"
+  },
+  "executive_summary": [
+    "La CNBV modifica disposiciones para instituciones sujetas a su supervisión y formaliza dos vías de solicitud: criterios contables especiales ante emergencias o desastres naturales, y registros contables especiales ligados a saneamiento financiero o reestructuración corporativa.",
+    "La presentación debe usar el formato incorporado y ser suscrita por la representación legal mediante firma autógrafa o electrónica avanzada o fiable. El texto fija un plazo de sesenta días hábiles para que la Comisión resuelva y precisa que la falta de respuesta no implica autorización."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "paragraphs": [
+        "Las instituciones reguladas obtienen una estructura documental para sustentar solicitudes excepcionales, pero deben considerar que sesenta días hábiles no equivalen a autorización tácita. El contenido técnico vincula la petición con solvencia, liquidez, estabilidad y acciones de remedio."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "Áreas contables, jurídicas y de riesgos deben coordinar la información de emergencia o reestructura que exige el Anexo 75 antes de presentar la solicitud."
+        ],
+        "sector": "Entidades financieras supervisadas por la CNBV"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792308&fecha=01/07/2026",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "75a4e75def3f99738de480841911b2d7fba571dc2084f5895cfcc6d319a3ddc4",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/4b7e73d359efb7b04897d905.json",
+    "detail_url": "notas/4b7e73d359efb7b04897d905.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Resolución Que Modifica",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5792308",
+    "importance": 1,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-07-01",
+    "official_title": "Resolución que modifica las Disposiciones de carácter general aplicables a las instituciones de crédito (criterios contables especiales y registros contables especiales).",
+    "published_at": "2026-07-01",
+    "relevance_score": 1,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5792308",
+    "summary_teaser": "Una resolución de la CNBV incorpora formatos para solicitar criterios contables especiales ante emergencias y registros contables especiales en saneamientos o reestructuras. Define el contenido de las solicitudes y prevé una respuesta en sesenta días hábiles, sin que el silencio de la autoridad equivalga a autorización.",
+    "title": "CNBV establece solicitudes contables especiales y respuesta de sesenta días",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5792308&fecha=01/07/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Instituciones que requieran criterios o registros contables especiales",
+      "deadline": "La CNBV cuenta con sesenta días hábiles desde el día hábil siguiente a la recepción para resolver",
+      "evidence_refs": [
+        "chunk-2",
+        "chunk-3",
+        "chunk-4"
+      ],
+      "legal_basis": null,
+      "paragraphs": [
+        "Preparar la solicitud en el Anexo 75 con el supuesto aplicable, explicación contable y efectos requeridos; para saneamiento o reestructura, incluir indicadores, impactos, acciones y aprobación del consejo cuando corresponda."
+      ],
+      "trigger": "Ante una emergencia, desastre natural, saneamiento financiero o reestructuración corporativa"
+    }
+  ],
+  "schema_version": 8
+}

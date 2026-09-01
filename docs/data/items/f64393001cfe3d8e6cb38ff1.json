@@ -1,0 +1,168 @@
+{
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "item": {
+    "ai_generated": true,
+    "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792668&fecha=06/07/2026",
+    "card_body": "## Qué se publicó\n\nUna reforma que incorpora el Anexo 45 de solicitudes de criterios y registros contables para organismos y entidades de fomento.\n\n## Sustancia\n\nLos criterios del artículo 293 se condicionan a emergencia o desastre con afectación adversa; los registros del 293 Bis corresponden a saneamiento financiero o reestructuración corporativa.\n\n## Fuente\n\n[Consultar fuente oficial](https://dof.gob.mx/nota_detalle.php?codigo=5792668&fecha=06/07/2026)",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "952f11ffa0a15c64a2dc699e07f46d373120749edd20301996ebf73cce68bc14",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "not_material",
+        "reason": "No contiene sustancia normativa fuera del encabezado.",
+        "source_ref": "chunk-1",
+        "target_sections": []
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/f64393001cfe3d8e6cb38ff1.json",
+    "detail_url": "notas/f64393001cfe3d8e6cb38ff1.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "heading": "Artículo 293: criterios excepcionales",
+        "paragraphs": [
+          "La solicitud o prórroga de criterios requiere una declaratoria de emergencia o desastre natural, afectación económica e impacto adverso potencial; el formato exige describir criterios, territorio, periodo e indicadores."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "heading": "Artículo 293 Bis: registros ligados a procesos internos",
+        "paragraphs": [
+          "Los registros especiales se reservan a saneamiento financiero o reestructuración corporativa y deben respaldarse con rubros, importes, causas, indicadores, medidas y aprobación del órgano competente."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "heading": "Tramitación y continuidad contable",
+        "paragraphs": [
+          "Las solicitudes se presentan con el Anexo 45. Mientras la CNBV resuelve dentro de sesenta días hábiles, continúan los criterios ordinarios de Anexos 37 y 38; el silencio es negativo."
+        ]
+      }
+    ],
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Resolución Que Modifica",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "ca9a8d47b882b13d785cfceeebcd0c2e353daad513168e0ba3de7d36fa84bd38",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "RESOLUCIÓN que modifica las Disposiciones de carácter general aplicables a los organismos de fomento y entidades de fomento.",
+          "location": "caracteres 0-128"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Comisión Nacional Bancaria y de Valores.",
+          "location": "caracteres 128-8579"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792668&fecha=06/07/2026",
+      "retrieved_at": "2026-08-13T19:43:10.940616+00:00"
+    },
+    "executive_summary": [
+      "El Anexo 45 diferencia criterios contables especiales bajo declaratoria de emergencia o desastre con afectación económica adversa de registros especiales para saneamiento financiero o reestructuración corporativa.",
+      "La CNBV cuenta con sesenta días hábiles para resolver y, hasta la notificación, los organismos y entidades conservan los criterios de los Anexos 37 y 38."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5792668",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "El alcance de la reforma es ordenar solicitudes extraordinarias con causales cerradas, no habilitar cambios contables ordinarios sin una declaratoria o proceso de reorganización aplicable."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-2"
+          ],
+          "paragraphs": [
+            "Deben reunir el expediente con base en el artículo 293 o el 293 Bis, sin mezclar una afectación por desastre con los requisitos de saneamiento corporativo."
+          ],
+          "sector": "Organismos de fomento, entidades de fomento y sus áreas de riesgo y contabilidad"
+        }
+      ]
+    },
+    "importance": 1,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T13:53:50.681449+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792668&fecha=06/07/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5792668"
+    },
+    "official_published_at": "2026-07-06",
+    "official_title": "Resolución que modifica las Disposiciones de carácter general aplicables a los organismos de fomento y entidades de fomento.",
+    "published_at": "2026-07-06",
+    "published_day": 6,
+    "published_month": 7,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Organismos de fomento y entidades de fomento",
+        "deadline": null,
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "legal_basis": "Artículos 293 y 293 Bis, y Anexo 45",
+        "paragraphs": [
+          "Determinen si cuentan con una declaratoria y afectación económica que justifique criterios, o con un proceso formal de saneamiento o reestructuración que justifique registros, antes de elegir el formato."
+        ],
+        "trigger": "Definición de una solicitud de autorización"
+      }
+    ],
+    "relevance_score": 1,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5792668",
+    "subtopic_tags": [],
+    "summary": "La Comisión Nacional Bancaria y de Valores reformó los artículos 293 y 293 Bis de las disposiciones aplicables a organismos de fomento y entidades de fomento, e incorporó el Anexo 45 de formatos. La resolución busca estructurar las solicitudes de criterios contables especiales y registros contables especiales, así como reducir el plazo máximo de respuesta de la autoridad que menciona. La adición de un formato no es una autorización en sí misma ni desvincula las solicitudes de los hechos que las disposiciones enumeran.\n\nEl artículo 293 se relaciona con la solicitud de autorización o prórroga de criterios contables especiales cuando una autoridad competente emita una declaratoria de emergencia o desastre natural ante fenómenos naturales perturbadores. El supuesto debe generar afectaciones a la economía que puedan impactar adversamente la solvencia o liquidez de las entidades y, de ser el caso, la estabilidad del sistema financiero. El formato exige detalles de los criterios, área geográfica, periodo e impacto, además de explicar cómo contribuyen a reducir o prevenir el perjuicio. Una prórroga exige información sobre persistencia de las afectaciones económicas.\n\nEl artículo 293 Bis corresponde a registros contables especiales de organismos o entidades que estén realizando saneamiento financiero o reestructuración corporativa para procurar estabilidad y correcto funcionamiento. El formato demanda describir rubros, importes y periodo de los registros; explicar las causas que vuelven necesario el proceso; proporcionar indicadores y afectaciones potenciales; detallar medidas de remediación; y acreditar la aprobación del consejo de administración u órgano competente. Esta alternativa no se presenta como remedio para cualquier contingencia económica que no sea un proceso de saneamiento o reestructuración.\n\nLas solicitudes deben enviarse a la Comisión en el Anexo 45 con la firma permitida por la disposición. La autoridad tiene sesenta días hábiles desde el día siguiente a la recepción para resolver. Hasta la notificación, organismos y entidades de fomento continúan los criterios de los Anexos 37 y 38, según corresponda; si no existe resolución notificada en ese lapso, se entiende negativa y la solicitud se desestima. Los transitorios regulan los expedientes presentados antes de la reforma y autorizaciones ya emitidas.",
+    "summary_teaser": "La CNBV incorporó el Anexo 45 para organismos y entidades de fomento. El artículo 293 reserva criterios contables especiales a declaratorias de emergencia o desastre con afectación económica adversa; el 293 Bis reserva registros contables especiales a saneamiento financiero o reestructuración corporativa. Las dos modalidades requieren expedientes y efectos distintos.",
+    "title": "CNBV establece requisitos para criterios de organismos de fomento",
+    "topic_tags": [
+      "Resolución"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5792668&fecha=06/07/2026"
+  },
+  "schema_version": 8
+}

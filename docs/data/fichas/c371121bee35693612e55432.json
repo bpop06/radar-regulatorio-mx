@@ -1,0 +1,110 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-1"
+      ],
+      "heading": "Viaje anunciado",
+      "paragraphs": [
+        "La Oficina del Representante Comercial de Estados Unidos informa que el embajador Jamieson Greer viajará a Nueva Delhi para reunirse con el ministro de Comercio e Industria de India, Piyush Goyal, y otros funcionarios de alto nivel. La nota enmarca esas conversaciones en la declaración conjunta Estados Unidos-India, el acuerdo interino y las negociaciones más amplias de un acuerdo comercial bilateral, que la propia comunicación atribuye al inicio anunciado el 13 de febrero de 2025 por los mandatarios de ambos países.",
+        "Después de India, el comunicado prevé una visita a Taskent, Uzbekistán, con reuniones con el presidente Mirziyoyev, Saida Mirziyoyeva y el viceprimer ministro Jamshid Khodjaev. La fuente dice que las reuniones abordarán la búsqueda de comercio justo, equilibrado y recíproco con Estados Unidos. Es un aviso de agenda: no contiene el texto de un tratado, acuerdo definitivo, arancel, compromiso comercial ni resultado de las conversaciones."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "3657c0347617fc4f775ba1028ecaaef323d2013aa5d0be7832e3e8f7f25764e7",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "Documento",
+        "location": "caracteres 0-831"
+      }
+    ],
+    "official_url": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/june/ambassador-greer-travel-india-and-uzbekistan",
+    "retrieved_at": "2026-08-13T19:37:52.932329+00:00"
+  },
+  "executive_summary": [
+    "La Oficina del Representante Comercial de Estados Unidos informa que el embajador Jamieson Greer viajará a Nueva Delhi para reunirse con el ministro de Comercio e Industria de India, Piyush Goyal, y otros funcionarios de alto nivel. La nota enmarca esas conversaciones en la declaración conjunta Estados Unidos-India, el acuerdo interino y las negociaciones más amplias de un acuerdo comercial bilateral, que la propia comunicación atribuye al inicio anunciado el 13 de febrero de 2025 por los mandatarios de ambos países.",
+    "Después de India, el comunicado prevé una visita a Taskent, Uzbekistán, con reuniones con el presidente Mirziyoyev, Saida Mirziyoyeva y el viceprimer ministro Jamshid Khodjaev. La fuente dice que las reuniones abordarán la búsqueda de comercio justo, equilibrado y recíproco con Estados Unidos. Es un aviso de agenda: no contiene el texto de un tratado, acuerdo definitivo, arancel, compromiso comercial ni resultado de las conversaciones."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-1"
+      ],
+      "paragraphs": [
+        "La comunicación es una señal oficial de diálogo comercial previsto; su alcance se limita a los encuentros anunciados y no permite inferir la conclusión de una negociación ni cambios regulatorios."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-1"
+        ],
+        "paragraphs": [
+          "La comunicación es una señal oficial de diálogo comercial previsto; su alcance se limita a los encuentros anunciados y no permite inferir la conclusión de una negociación ni cambios regulatorios."
+        ],
+        "sector": "Empresas que siguen la relación comercial Estados Unidos-India y Estados Unidos-Uzbekistán"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/june/ambassador-greer-travel-india-and-uzbekistan",
+    "categories": [
+      "Comercio exterior"
+    ],
+    "content_hash": "0ea5cd27dca799a1c3541fc26e761d6957df823f1ade2c250704fec16b3b5a5d",
+    "country_or_org": "EEUU",
+    "detail_data_url": "data/fichas/c371121bee35693612e55432.json",
+    "detail_url": "notas/c371121bee35693612e55432.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Comunicado",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "ustr:6a2b34111e71df73",
+    "importance": 2,
+    "issuing_body": "Oficina del Representante Comercial de EEUU",
+    "jurisdiction": "internacional",
+    "official_published_at": "2026-06-21",
+    "official_title": "Ambassador Greer to Travel to India and Uzbekistan",
+    "published_at": "2026-06-21",
+    "relevance_score": 2,
+    "review_reason": null,
+    "source": "USTR",
+    "source_id": "6a2b34111e71df73",
+    "summary_teaser": "La Oficina del Representante Comercial de Estados Unidos informó que el embajador Jamieson Greer viajará a India y Uzbekistán. La comunicación anuncia reuniones sobre una declaración conjunta y un acuerdo interino con India, además de conversaciones sobre comercio recíproco con autoridades uzbekas; no publica acuerdos ni resultados de las reuniones.",
+    "title": "USTR abre diálogo comercial con India y Uzbekistán",
+    "url": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/june/ambassador-greer-travel-india-and-uzbekistan"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Empresas que siguen la relación comercial Estados Unidos-India y Estados Unidos-Uzbekistán",
+      "deadline": null,
+      "evidence_refs": [
+        "chunk-1"
+      ],
+      "legal_basis": null,
+      "paragraphs": [
+        "Trate la publicación como una alerta de seguimiento y espere comunicados oficiales posteriores antes de ajustar operaciones, precios o estrategias por un supuesto acuerdo."
+      ],
+      "trigger": "Ante la evaluación de posibles cambios derivados de las reuniones anunciadas"
+    }
+  ],
+  "schema_version": 8
+}

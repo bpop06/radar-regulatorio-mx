@@ -1,0 +1,167 @@
+{
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "item": {
+    "ai_generated": true,
+    "authority": "PODER EJECUTIVO SECRETARIA ANTICORRUPCION Y BUEN GOBIERNO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791371&fecha=23/06/2026",
+    "card_body": "## Qué se publicó\n\nEl Diario Oficial de la Federación publicó una circular de cumplimiento de una sentencia definitiva relacionada con K.P. Asociados.\n\n## Sustancia\n\nLa circular comunica que se dejaron sin efectos una resolución sancionadora y su publicación previa, tras la nulidad lisa y llana decretada por la Décimo Segunda Sala Regional en la Ciudad de México del TFJA.\n\n## Fuente\n\nLa fuente oficial es el Diario Oficial de la Federación. El acto revisado es la circular del Órgano Interno de Control en el ISSSTE sobre el cumplimiento de la sentencia definitiva.",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "209d7b4908b3a4bd4e359d242d3b53df7915b8bb9fc592797cabd9f71910de07",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "not_material",
+        "reason": "Primer fragmento es título; sentencia, fundamento, expediente y efecto administrativo están en locator posterior.",
+        "source_ref": "chunk-1",
+        "target_sections": []
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "detailed_summary"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/09f1344fd3ecd91f706ebffe.json",
+    "detail_url": "notas/09f1344fd3ecd91f706ebffe.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "heading": "Sentencia de nulidad",
+        "paragraphs": [
+          "Publicación identifica juicio, sala, fecha y oficio sancionador. Señala nulidad lisa y llana con base en artículo 51, fracción IV, LFPCA, por hechos apreciados erróneamente, y remite al artículo 52, fracción II, para efectos."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "heading": "Efecto administrativo",
+        "paragraphs": [
+          "Mediante acuerdo de 1 de junio de 2026, OIC deja sin efectos resolución original y todos sus efectos. Fuente menciona circular de 5 de abril de 2023; cambio se refiere a sanción individual anulada, no regla general de sanciones ISSSTE."
+        ]
+      }
+    ],
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Circular",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "6525a921de3ac75ee2a9cbbebb443796ecb1f1412bd91c0e5f014ff96bac2329",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "CIRCULAR por la que se comunica a las dependencias y entidades de la Administración Pública Federal y a las entidades federativas el cumplimiento dado a la sentencia definitiva de veintitrés de septiembre de dos mil veinticuatro , dictada en el juicio de nulidad 25835/23-17-12-1, promovido por el C. Ángel Pérez Dorante, en representación legal de K.P. Asociados, S.A. de C.V. , en la cual la Décimo Segunda Sala Regional en la Ciudad de México del Tribunal Federal de Justicia Administrativa, declaró la nulidad de la resolución contenida en el oficio No. OIC/00/637/22453/2023 de veintiocho de marzo de dos mil veintitrés , emitida dentro del procedimiento administrativo de sanción a licitantes, proveedores y contratistas SAN-002/2023.",
+          "location": "caracteres 0-744"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Buen Gobierno.- Secretaría Anticorrupción y Buen Gobierno.- Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado.- Órgano Interno de Control en el Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado.- Área de Responsabilidades.- Unidad de Asuntos Jurídicos.- Expediente de Origen: SAN-002/2023.- Expediente: 637-III-092/2023.",
+          "location": "caracteres 744-4464"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791371&fecha=23/06/2026",
+      "retrieved_at": "2026-08-13T19:43:50.810949+00:00"
+    },
+    "executive_summary": [
+      "Órgano Interno de Control en ISSSTE deja sin efectos resolución sancionadora y consecuencias, incluida circular publicada en Diario Oficial en abril de 2023. Determinación cumple sentencia definitiva de Décimo Segunda Sala Regional en la Ciudad de México del TFJA.",
+      "Sentencia de 23 de septiembre de 2024 en expediente 25835/23-17-12-1 declaró nulidad lisa y llana de resolución de 28 de marzo de 2023 sobre K.P. Asociados. Fuente vincula sentido con apreciación errónea de hechos del artículo 51, fracción IV, LFPCA."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5791371",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "Entidades que consulten antecedentes de sanciones deben actualizar registro individual referido. Para empresa, documento informa que resolución y circular quedaron sin efectos como cumplimiento de sentencia judicial concreta."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-2"
+          ],
+          "paragraphs": [
+            "Áreas de control interno y contratación pueden identificar expediente y circular que no deben considerar vigentes, sin extrapolar resultado."
+          ],
+          "sector": "Responsabilidad administrativa y contratación pública"
+        }
+      ]
+    },
+    "importance": 3,
+    "issuing_body": "Presidencia de la República",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T13:53:50.681449+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791371&fecha=23/06/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5791371"
+    },
+    "official_published_at": "2026-06-23",
+    "official_title": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal y a las entidades federativas el cumplimiento dado a la sentencia definitiva de veintitrés de septiembre de dos mil veinticuatro, dictada en el juicio de nulidad 25835/23-17-12-1, promovido por el C. Ángel Pérez Dorante, en representación legal de K.P. Asociados, S.A. de C.V., en la cual la Décimo Segunda Sala Regional en la Ciudad de México del Tribunal Federal de Justicia Administrativa, declaró la nulidad de la resolución contenida en el oficio No. OIC/00/637/22453/2023 de veintiocho de marzo de dos mil veintitrés, emitida dentro del procedimiento administrativo de sanción a licitantes, proveedores y contratistas SAN-002/2023.",
+    "published_at": "2026-06-23",
+    "published_day": 23,
+    "published_month": 6,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Áreas que administren antecedentes de sanción referida",
+        "deadline": null,
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "legal_basis": "Artículos 51, fracción IV, y 52, fracción II, LFPCA",
+        "paragraphs": [
+          "Actualizar registros vinculados con resolución de 28 de marzo de 2023 y circular de 5 de abril de 2023, atendiendo a que acuerdo de cumplimiento las deja sin efectos para caso individual."
+        ],
+        "trigger": null
+      }
+    ],
+    "relevance_score": 5,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5791371",
+    "subtopic_tags": [
+      "administracion publica federal",
+      "juicio de nulidad",
+      "sentencia definitiva",
+      "nulidad de la resolucion",
+      "tribunal federal de justicia administrativa",
+      "sala regional"
+    ],
+    "summary": "Órgano Interno de Control en ISSSTE deja sin efectos resolución sancionadora y consecuencias, incluida circular publicada en Diario Oficial en abril de 2023. Determinación cumple sentencia definitiva de Décimo Segunda Sala Regional en la Ciudad de México del TFJA.\n\nSentencia de 23 de septiembre de 2024 en expediente 25835/23-17-12-1 declaró nulidad lisa y llana de resolución de 28 de marzo de 2023 sobre K.P. Asociados. Fuente vincula sentido con apreciación errónea de hechos del artículo 51, fracción IV, LFPCA.\n\nPublicación identifica juicio, sala, fecha y oficio sancionador. Señala nulidad lisa y llana con base en artículo 51, fracción IV, LFPCA, por hechos apreciados erróneamente, y remite al artículo 52, fracción II, para efectos.\n\nMediante acuerdo de 1 de junio de 2026, OIC deja sin efectos resolución original y todos sus efectos. Fuente menciona circular de 5 de abril de 2023; cambio se refiere a sanción individual anulada, no regla general de sanciones ISSSTE.\n\nPublicación es acto de cumplimiento de sentencia definitiva delimitada por expediente y empresa nombrados. No presenta nulidad como revisión abstracta de responsabilidades ni decide otros procedimientos. Efecto surge de sentencia y acuerdo posterior que ejecuta consecuencias. El aviso permite depurar referencias a ese expediente, pero no permite inferir resultado para personas distintas o para sanciones emitidas por otras autoridades.\n\nEntidades que consulten antecedentes de sanciones deben actualizar registro individual referido. Para empresa, documento informa que resolución y circular quedaron sin efectos como cumplimiento de sentencia judicial concreta. Áreas de control interno y contratación pueden identificar expediente y circular que no deben considerar vigentes, sin extrapolar resultado.\n\nEl cumplimiento deja sin efectos la resolución y circular individualizadas en relación con K.P. Asociados, S.A. de C.V. La circular se fundamenta en una sentencia definitiva y no declara la firmeza de esa sentencia. Ese alcance es individual. No trasciende a otros expedientes.",
+    "summary_teaser": "El Órgano Interno de Control del ISSSTE deja sin efectos una resolución sancionadora y una circular de 2023 en cumplimiento de una sentencia definitiva del TFJA. La decisión se refiere al caso de K.P. Asociados, S.A. de C.V., y a la nulidad lisa y llana declarada por apreciación errónea de los hechos.",
+    "title": "ISSSTE deja sin efecto sanción anulada por el TFJA",
+    "topic_tags": [
+      "Derecho administrativo",
+      "Contencioso administrativo",
+      "Resolución",
+      "Sentencia",
+      "Oficio",
+      "Circular"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5791371&fecha=23/06/2026"
+  },
+  "schema_version": 8
+}

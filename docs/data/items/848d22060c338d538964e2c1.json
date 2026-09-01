@@ -1,0 +1,173 @@
+{
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "item": {
+    "ai_generated": true,
+    "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792566&fecha=03/07/2026",
+    "card_body": "## Qué se publicó\n\nHacienda modificó el Reglamento Orgánico del Banco del Bienestar para aumentar su capital social.\n\n## Sustancia\n\nEl capital llega a 22,783.702 millones de pesos. Además de la entrada en vigor, el Banco del Bienestar debe inscribir la modificación reglamentaria en el Registro Público de Comercio.\n\n## Fuente\n\n[Fuente oficial](https://dof.gob.mx/nota_detalle.php?codigo=5792566&fecha=03/07/2026)",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "7f6d5683774691f63e4d7d8344d30d50d3697a608ba519cda64b999388ce481b",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-1",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/848d22060c338d538964e2c1.json",
+    "detail_url": "notas/848d22060c338d538964e2c1.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "heading": "Capital social reformado",
+        "paragraphs": [
+          "El capital social y pagado del Banco del Bienestar sube en 4,245,000,000 de pesos, de 18,538,702,000 a 22,783,702,000 pesos.",
+          "La reforma modifica los párrafos primero y segundo del artículo 7 de su Reglamento Orgánico y actualiza la representación por certificados de las series A y B."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "heading": "Vigencia e inscripción",
+        "paragraphs": [
+          "El acuerdo entra en vigor al día siguiente de su publicación.",
+          "El Banco del Bienestar debe inscribir las modificaciones de su Reglamento Orgánico en el Registro Público de Comercio."
+        ]
+      }
+    ],
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Acuerdo",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "f6c049989d4eedb976408852c9f7db8a6e81e2ed8af919983615825da195c23f",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "ACUERDO por el cual se modifica el artículo 7o. párrafos primero y segundo del Reglamento Orgánico del Banco del Bienestar, Sociedad Nacional de Crédito, Institución de Banca de Desarrollo, a efecto de aumentar el capital social del mismo.",
+          "location": "caracteres 0-243"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Banco del Bienestar.",
+          "location": "caracteres 243-6458"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792566&fecha=03/07/2026",
+      "retrieved_at": "2026-08-13T19:43:23.125887+00:00"
+    },
+    "executive_summary": [
+      "La Secretaría de Hacienda y Crédito Público reformó los dos primeros párrafos del artículo 7 del Reglamento Orgánico del Banco del Bienestar para aumentar su capital social. La aportación aprobada es de 4,245,000,000 de pesos y responde a gestiones aprobadas por el Consejo Directivo y a la comprobación de suficiencia presupuestaria que cita el acuerdo.",
+      "El capital social y el capital pagado pasan de 18,538,702,000 a 22,783,702,000 pesos. El texto también especifica que el capital queda representado por certificados de aportación patrimonial de las series A y B con valor nominal de diez pesos, en las cantidades que establece el artículo reformado."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-07-07T22:17:33.843455+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5792566",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "El banco debe reflejar el nuevo capital autorizado y cumplir una inscripción registral específica para formalizar la modificación de su reglamento."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-1",
+            "chunk-2"
+          ],
+          "paragraphs": [
+            "Las áreas jurídicas, corporativas y de cumplimiento del Banco del Bienestar deben coordinar la actualización reglamentaria con la inscripción mercantil obligatoria."
+          ],
+          "sector": "Banca de desarrollo"
+        }
+      ]
+    },
+    "importance": 1,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-08-13T13:53:50.681449+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5792566&fecha=03/07/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5792566"
+    },
+    "official_published_at": "2026-07-03",
+    "official_title": "Acuerdo por el cual se modifica el artículo 7o. párrafos primero y segundo del Reglamento Orgánico del Banco del Bienestar, Sociedad Nacional de Crédito, Institución de Banca de Desarrollo, a efecto de aumentar el capital social del mismo.",
+    "published_at": "2026-07-03",
+    "published_day": 3,
+    "published_month": 7,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Banco del Bienestar y sus áreas jurídicas y corporativas",
+        "deadline": null,
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "legal_basis": "Artículo 30 de la Ley de Instituciones de Crédito",
+        "paragraphs": [
+          "Después de la entrada en vigor, gestione y documente la inscripción de las modificaciones del Reglamento Orgánico en el Registro Público de Comercio."
+        ],
+        "trigger": "Entrada en vigor del acuerdo"
+      }
+    ],
+    "relevance_score": 1,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5792566",
+    "subtopic_tags": [],
+    "summary": "La Secretaría de Hacienda y Crédito Público reformó los dos primeros párrafos del artículo 7 del Reglamento Orgánico del Banco del Bienestar para aumentar su capital social. La aportación aprobada es de 4,245,000,000 de pesos y responde a gestiones aprobadas por el Consejo Directivo y a la comprobación de suficiencia presupuestaria que cita el acuerdo.\n\nEl capital social y el capital pagado pasan de 18,538,702,000 a 22,783,702,000 pesos. El texto también especifica que el capital queda representado por certificados de aportación patrimonial de las series A y B con valor nominal de diez pesos, en las cantidades que establece el artículo reformado.\n\nEl acuerdo entra en vigor al día siguiente de su publicación en el Diario Oficial de la Federación. El artículo segundo transitorio establece una obligación concreta para el Banco del Bienestar: inscribir en el Registro Público de Comercio las modificaciones que el acuerdo realiza a su Reglamento Orgánico, conforme al último párrafo del artículo 30 de la Ley de Instituciones de Crédito.\n\nLa publicación modifica el capital autorizado y el reglamento orgánico del banco; no anuncia por sí sola un programa de crédito, una nueva línea de financiamiento ni la asignación de esos recursos a una operación individual. El seguimiento corporativo debe mantener separados el aumento de capital, su entrada en vigor y la inscripción registral obligatoria posterior.\n\nEl capital social y pagado del Banco del Bienestar sube en 4,245,000,000 de pesos, de 18,538,702,000 a 22,783,702,000 pesos. La reforma modifica los párrafos primero y segundo del artículo 7 de su Reglamento Orgánico y actualiza la representación por certificados de las series A y B. El acuerdo entra en vigor al día siguiente de su publicación. El Banco del Bienestar debe inscribir las modificaciones de su Reglamento Orgánico en el Registro Público de Comercio.\n\nEl banco debe reflejar el nuevo capital autorizado y cumplir una inscripción registral específica para formalizar la modificación de su reglamento. Las áreas jurídicas, corporativas y de cumplimiento del Banco del Bienestar deben coordinar la actualización reglamentaria con la inscripción mercantil obligatoria. Después de la entrada en vigor, gestione y documente la inscripción de las modificaciones del Reglamento Orgánico en el Registro Público de Comercio.",
+    "summary_teaser": "Hacienda aumentó en 4,245 millones de pesos el capital social del Banco del Bienestar, que pasa a 22,783.702 millones de pesos. La reforma entra en vigor al día siguiente de su publicación y obliga a la institución a inscribir las modificaciones de su Reglamento Orgánico en el Registro Público de Comercio.",
+    "title": "Banco del Bienestar modifica su capital autorizado",
+    "topic_tags": [
+      "Acuerdo",
+      "Reglamento"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5792566&fecha=03/07/2026"
+  },
+  "schema_version": 8
+}

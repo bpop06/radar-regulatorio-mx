@@ -1,0 +1,135 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    }
+  ],
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "heading": "Alcance de la publicación",
+      "paragraphs": [
+        "Semarnat delegó atribuciones de contratación y supervisión para acciones de restauración ambiental vinculadas con el Corredor Interoceánico.",
+        "La medida se circunscribe a las atribuciones, unidades y programa anual identificados en el acuerdo, sin desplazar el ejercicio directo de la Secretaría."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "heading": "Contenido relevante",
+      "paragraphs": [
+        "La delegación habilita a unidades expresamente identificadas para suscribir contratos y convenios, conducir procedimientos de contratación, realizar actos administrativos y supervisar acciones dentro del programa de restauración señalado.",
+        "La ejecución administrativa de las acciones de restauración puede realizarse por las unidades delegadas dentro de los límites del acuerdo. Las áreas que intervengan en procedimientos del programa deben verificar la competencia delegada, la coordinación administrativa y la normativa de contratación aplicable."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "4a7b35d2d16ad2e66b3c867ce5fb7c2f6ed8343eaafed4f898bf82fe93b978dd",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "ACUERDO Delegatorio de facultades de la Secretaría de Medio Ambiente y Recursos Naturales en materia de obra pública.",
+        "location": "caracteres 0-121"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Medio Ambiente y Recursos Naturales.",
+        "location": "caracteres 121-7202"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797384&fecha=28%2F08%2F2026",
+    "retrieved_at": "2026-09-01T16:34:54.855450+00:00"
+  },
+  "executive_summary": [
+    "Semarnat delegó atribuciones de contratación y supervisión para acciones de restauración ambiental vinculadas con el Corredor Interoceánico. La delegación habilita a unidades expresamente identificadas para suscribir contratos y convenios, conducir procedimientos de contratación, realizar actos administrativos y supervisar acciones dentro del programa de restauración señalado.",
+    "La medida se circunscribe a las atribuciones, unidades y programa anual identificados en el acuerdo, sin desplazar el ejercicio directo de la Secretaría. La publicación debe aplicarse sin extender sus alcances a situaciones no descritas en la fuente."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "paragraphs": [
+        "La ejecución administrativa de las acciones de restauración puede realizarse por las unidades delegadas dentro de los límites del acuerdo."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "La incidencia para este grupo se limita al alcance expresamente descrito en la publicación y requiere contrastarse con cada caso concreto."
+        ],
+        "sector": "Unidades de Semarnat y proveedores potenciales de acciones de restauración"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797384&fecha=28%2F08%2F2026",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "a69e0e62968165ec4fd9cfac07a308549a0741580dbaf350744de719b95d0689",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/149ed68c610703c114d739ad.json",
+    "detail_url": "notas/149ed68c610703c114d739ad.html",
+    "detected_at": "2026-09-01T16:34:47.803209+00:00",
+    "document_type": "Acuerdo Delegatorio",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5797384",
+    "importance": 2,
+    "issuing_body": "Presidencia de la República",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-08-28",
+    "official_title": "Acuerdo Delegatorio de facultades de la Secretaría de Medio Ambiente y Recursos Naturales en materia de obra pública.",
+    "published_at": "2026-08-28",
+    "relevance_score": 2,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5797384",
+    "summary_teaser": "Semarnat delegó facultades de contratación y supervisión para acciones de restauración ambiental vinculadas con el Corredor Interoceánico durante el ejercicio indicado. La Subsecretaría de Biodiversidad y unidades forestales podrán formalizar actos dentro de su competencia, con coordinación administrativa. La Secretaría conserva la posibilidad de ejercer directamente las atribuciones delegadas.",
+    "title": "Semarnat permite contrataciones delegadas para restauración del Corredor Interoceánico",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797384&fecha=28/08/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Unidades de Semarnat y proveedores potenciales de acciones de restauración",
+      "deadline": null,
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "legal_basis": null,
+      "paragraphs": [
+        "Las áreas que intervengan en procedimientos del programa deben verificar la competencia delegada, la coordinación administrativa y la normativa de contratación aplicable."
+      ],
+      "trigger": "Cuando la publicación resulte aplicable a la operación o situación revisada."
+    }
+  ],
+  "schema_version": 8
+}

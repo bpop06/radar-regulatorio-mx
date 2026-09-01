@@ -1,0 +1,126 @@
+{
+  "coverage": [
+    {
+      "disposition": "not_material",
+      "reason": "Encabezado inicial no contiene alcance ni exclusiones; elementos están en locator posterior.",
+      "source_ref": "chunk-1",
+      "target_sections": []
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    }
+  ],
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Alcance y parámetros",
+      "paragraphs": [
+        "Proyecto cubre ventiladores de baja tensión hasta 140 volts de corriente alterna, con aspas de 10 a 214 centímetros, fabricados, importados o comercializados en México. Incluye cálculo de consumo en espera para ventiladores de techo y delimita configuraciones consideradas."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Exclusiones y consulta",
+      "paragraphs": [
+        "Fuente excluye componentes de producto terminado, equipos cuya función primaria sea extracción, tipo torre, ionizadores, sin aspas, con energía distinta de red como baterías o autogeneración y algunos decorativos. Comentarios se presentan en español en sesenta días y proyecto se consulta en PLATIICA."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "ece259defc283350a866e9bbb629ad2a54728470773283f6d046ef6856b6fe42",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "AVISO de consulta pública del Proyecto de Norma Oficial Mexicana PROY-NOM-041-ENER/SE-2025, Eficiencia energética y requisitos de seguridad de ventiladores. Límites, métodos de prueba y etiquetado.",
+        "location": "caracteres 0-201"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- SENER.- Secretaría de Energía.- Comisión Nacional para el Uso Eficiente de la Energía.- Economía.- Secretaría de Economía.",
+        "location": "caracteres 201-6169"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791369&fecha=23/06/2026",
+    "retrieved_at": "2026-08-13T19:43:50.487526+00:00"
+  },
+  "executive_summary": [
+    "Secretaría de Energía y Economía someten a consulta PROY-NOM-041-ENER/SE-2025 sobre eficiencia energética y seguridad de ventiladores. Proyecto comprende ventiladores de techo, pared, pedestal, piso, mesa y tres en uno dentro de características que establece.",
+    "Propuesta abarca eficiencia energética, seguridad, métodos de prueba, información comercial y evaluación. Aviso abre plazo de sesenta días naturales para observaciones en español y publica domicilio y correos del comité competente."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "paragraphs": [
+        "Fabricantes, importadores, distribuidores y laboratorios pueden comparar productos con alcance propuesto y participar. Lista de exclusiones evita aplicar por analogía requisitos a equipos de funciones o fuentes distintas."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "Empresas y organismos de evaluación pueden revisar tensión, dimensiones, tipo y exclusiones antes de formular comentarios técnicos."
+        ],
+        "sector": "Eficiencia energética y electrodomésticos"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5791369&fecha=23/06/2026",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "bb1b88d97793b18e1d840dfa3a460faf280690cb53f99d4fe51a7aa67db667a0",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/2eac63eb125ae807edaa2863.json",
+    "detail_url": "notas/2eac63eb125ae807edaa2863.html",
+    "detected_at": "2026-07-07T22:17:33.843455+00:00",
+    "document_type": "Aviso De Consulta",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5791369",
+    "importance": 3,
+    "issuing_body": "Presidencia de la República",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-06-23",
+    "official_title": "Aviso de consulta pública del Proyecto de Norma Oficial Mexicana PROY-NOM-041-ENER/SE-2025, Eficiencia energética y requisitos de seguridad de ventiladores. Límites, métodos de prueba y etiquetado.",
+    "published_at": "2026-06-23",
+    "relevance_score": 4,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5791369",
+    "summary_teaser": "El aviso abre consulta pública sobre el PROY-NOM-041-ENER/SE-2025 para ventiladores de techo, pared, pedestal, piso, mesa y tres en uno. El proyecto propone requisitos de eficiencia energética, seguridad, métodos de prueba, información comercial y evaluación de conformidad, con sesenta días naturales para presentar observaciones.",
+    "title": "Consulta pública abre requisitos de eficiencia para ventiladores",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5791369&fecha=23/06/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Personas interesadas en PROY-NOM-041-ENER/SE-2025",
+      "deadline": "Sesenta días naturales desde publicación",
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "legal_basis": null,
+      "paragraphs": [
+        "Enviar comentarios en español por vías del aviso dentro de consulta y contrastar producto con parámetros y exclusiones. Consultar proyecto íntegro en PLATIICA."
+      ],
+      "trigger": "Durante consulta pública"
+    }
+  ],
+  "schema_version": 8
+}

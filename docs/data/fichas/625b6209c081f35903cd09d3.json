@@ -1,0 +1,151 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-3",
+      "target_sections": [
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-3"
+      ],
+      "heading": "Destino y uso autorizado",
+      "paragraphs": [
+        "El acuerdo destina dos inmuebles federales: Vías Buenavista Mex-Qro (RFI 9-71659-2) y Estación Buenavista Mex-Qro (RFI 9-71660-9), a la Secretaría de Infraestructura, Comunicaciones y Transportes para la ampliación de infraestructura ferroviaria del proyecto de tren de pasajeros Ciudad de México-Querétaro, incluida la estación terminal Buenavista y Trenes del Norte. El derecho de aprovechamiento de ambos se limita a esa finalidad y no transmite su propiedad."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-3"
+      ],
+      "heading": "Custodia y condicionantes",
+      "paragraphs": [
+        "La destinataria debe conservar, asegurar y vigilar los inmuebles; un cambio de uso o falta de necesidad respecto de ellos activa su puesta a disposición. Las obras en ambos requieren autorizaciones previas conforme al acto."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "ee7494f225985a2d10a3fd2eda2393beea34ffc4db05bfe8fa16b8eedea8e645",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "ACUERDO por el que se destinan a la Secretaría de Infraestructura, Comunicaciones y Transportes, los inmuebles federales denominados \" Vías Buenavista Mex-Qro (Vías) \" y \" Estación Buenavista Mex-Qro, \" con Registros Federales Inmobiliarios 9-71659-2 y 9-71660-9 y superficies de 3,394.97 y 10,757.32 metros cuadrados, respectivamente, que provienen de un inmueble de mayor extensión, ambos ubicados en Avenida Ricardo Flores Magón Número 234, colonia Guerrero, alcaldía Cuauhtémoc, Código Postal 06300, Ciudad de México.",
+        "location": "caracteres 0-525"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Instituto de Administración y Avalúos de Bienes Nacionales.- DST-13/2026. · parte 1",
+        "location": "caracteres 525-12525"
+      },
+      {
+        "id": "chunk-3",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Instituto de Administración y Avalúos de Bienes Nacionales.- DST-13/2026. · parte 2",
+        "location": "caracteres 12525-13186"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795367&fecha=04%2F08%2F2026",
+    "retrieved_at": "2026-09-01T16:35:51.536170+00:00"
+  },
+  "executive_summary": [
+    "El Instituto de Administración y Avalúos de Bienes Nacionales destinó a la Secretaría de Infraestructura, Comunicaciones y Transportes dos inmuebles federales: Vías Buenavista Mex-Qro, con Registro Federal Inmobiliario 9-71659-2 y superficie de 3,394.97 metros cuadrados, y Estación Buenavista Mex-Qro, con Registro Federal Inmobiliario 9-71660-9 y superficie de 10,757.32 metros cuadrados. Ambos se ubican en Cuauhtémoc, Ciudad de México, y se destinan a la ampliación de infraestructura ferroviaria del proyecto de tren de pasajeros Ciudad de México-Querétaro, incluida la estación terminal Buenavista y Trenes del Norte. El acuerdo individualiza ambos inmuebles y señala que la destinación busca permitir la continuidad o ejecución del servicio público referido. Su entrada en vigor ocurre al día siguiente de la publicación.",
+    "La destinación confiere a la institución destinataria el derecho de aprovechar los inmuebles únicamente para el uso autorizado. El instrumento aclara que no transmite su propiedad ni otorga derecho real alguno sobre ellos. Si los bienes se usan para una finalidad distinta sin autorización previa de Hacienda por conducto del Instituto, o dejan de utilizarse o necesitarse, deberán ponerse a disposición del Instituto con sus mejoras y accesiones, sin compensación, dentro de los cuatro meses que establece el acuerdo."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-3"
+      ],
+      "paragraphs": [
+        "El acuerdo regulariza el uso administrativo de los dos inmuebles federales y asigna obligaciones de conservación, aseguramiento y control a la institución destinataria."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-3"
+        ],
+        "paragraphs": [
+          "Las áreas responsables deben mantener el uso de ambos inmuebles dentro de la finalidad autorizada, resguardarlos y tramitar las autorizaciones antes de intervenirlos."
+        ],
+        "sector": "Institución destinataria y áreas responsables de los inmuebles"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795367&fecha=04%2F08%2F2026",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "8ee96981b5beb29e2c69fbfd038574d5d4f4a2117e92acd58848b6c5958545f6",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/625b6209c081f35903cd09d3.json",
+    "detail_url": "notas/625b6209c081f35903cd09d3.html",
+    "detected_at": "2026-09-01T16:34:47.803209+00:00",
+    "document_type": "Acuerdo",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5795367",
+    "importance": 1,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-08-04",
+    "official_title": "Acuerdo por el que se destinan a la Secretaría de Infraestructura, Comunicaciones y Transportes, los inmuebles federales denominados \"Vías Buenavista Mex-Qro (Vías)\" y \"Estación Buenavista Mex-Qro,\" con Registros Federales Inmobiliarios 9-71659-2 y 9-71660-9 y superficies de 3,394.97 y 10,757.32 metros cuadrados, respectivamente, que provienen de un inmueble de mayor extensión, ambos ubicados en Avenida Ricardo Flores Magón Número 234, colonia Guerrero, alcaldía Cuauhtémoc, Código Postal 06300, Ciudad de México.",
+    "published_at": "2026-08-04",
+    "relevance_score": 1,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5795367",
+    "summary_teaser": "El Instituto de Administración y Avalúos de Bienes Nacionales destinó a la Secretaría de Infraestructura, Comunicaciones y Transportes dos inmuebles federales: Vías Buenavista Mex-Qro (RFI 9-71659-2) y Estación Buenavista Mex-Qro (RFI 9-71660-9), para la ampliación de infraestructura ferroviaria del proyecto de tren de pasajeros Ciudad de México-Querétaro. El acuerdo confiere su aprovechamiento para ese uso, no transmite su propiedad y establece deberes de custodia, conservación y permisos previos para intervenciones.",
+    "title": "Acuerdo concede predios federales para infraestructura ferroviaria Buenavista",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5795367&fecha=04/08/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Institución destinataria y áreas responsables de los inmuebles",
+      "deadline": "Cuatro meses para poner los inmuebles a disposición si dejan de ser útiles, cuando se actualice ese supuesto",
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-3"
+      ],
+      "legal_basis": "Ley General de Bienes Nacionales y términos expresos del acuerdo de destino",
+      "paragraphs": [
+        "Documentar la finalidad autorizada de ambos inmuebles, conservar evidencia de su custodia, mantenimiento y aseguramiento, y gestionar los permisos que correspondan antes de ejecutar obras en ellos."
+      ],
+      "trigger": "Administrar los inmuebles o proyectar una intervención material"
+    }
+  ],
+  "schema_version": 8
+}

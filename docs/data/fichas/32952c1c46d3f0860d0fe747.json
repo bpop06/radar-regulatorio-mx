@@ -1,0 +1,148 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-3",
+      "target_sections": [
+        "detailed_summary"
+      ]
+    }
+  ],
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-3"
+      ],
+      "heading": "Alcance de la publicación",
+      "paragraphs": [
+        "El Instituto Mexicano de la Propiedad Industrial y la Agencia Nacional de Aduanas de México informaron el aseguramiento, en la Aduana de Manzanillo, de 379 cajas con 227 mil cajetillas de cigarrillos que ostentaban la denominación PALL MALL.",
+        "El comunicado informa que el IMPI continuará con las actuaciones correspondientes y la coordinación interinstitucional para el seguimiento del caso. La fuente se refiere a mercancías que pudieran infringir derechos marcarios; no acredita que la denominación PALL MALL sea una marca registrada ni contiene una determinación definitiva de infracción o del destino final de la mercancía."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-3"
+      ],
+      "heading": "Seguimiento operativo",
+      "paragraphs": [
+        "Las personas que reciban una notificación en las actuaciones posteriores deben atender el acto formal y conservar la documentación que corresponda a su intervención.",
+        "La ficha no extiende el alcance del acto a supuestos que la fuente no identifica."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "d16b769722da479d13eee27363480e02a07f81b0867ffa8f20f56977cc34b4f9",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "Preámbulo",
+        "location": "caracteres 0-1352"
+      },
+      {
+        "id": "chunk-2",
+        "label": "IMPI y ANAM aseguran más de 227 mil cajetillas de cigarros en Manzanillo",
+        "location": "caracteres 1352-1467"
+      },
+      {
+        "id": "chunk-3",
+        "label": "Comunicado de prensa conjunto 60/2026",
+        "location": "caracteres 1467-2723"
+      }
+    ],
+    "official_url": "https://www.anam.gob.mx/comunicado-prensa-conjunto-60-2026",
+    "retrieved_at": "2026-09-01T16:35:32.411596+00:00"
+  },
+  "executive_summary": [
+    "El Instituto Mexicano de la Propiedad Industrial y la Agencia Nacional de Aduanas de México informaron el aseguramiento, en la Aduana de Manzanillo, de 379 cajas con 227 mil cajetillas de cigarrillos que ostentaban la denominación PALL MALL.",
+    "El comunicado informa que el IMPI continuará con las actuaciones correspondientes y la coordinación interinstitucional para el seguimiento del caso. La fuente se refiere a mercancías que pudieran infringir derechos marcarios; no acredita que la denominación PALL MALL sea una marca registrada ni contiene una determinación definitiva de infracción o del destino final de la mercancía."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-3"
+      ],
+      "paragraphs": [
+        "El comunicado informa que el IMPI continuará con las actuaciones correspondientes y la coordinación interinstitucional para el seguimiento del caso. La fuente se refiere a mercancías que pudieran infringir derechos marcarios; no acredita que la denominación PALL MALL sea una marca registrada ni contiene una determinación definitiva de infracción o del destino final de la mercancía."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-3"
+        ],
+        "paragraphs": [
+          "La incidencia para este grupo se limita al alcance expresamente descrito en la publicación y requiere contrastarse con cada caso concreto."
+        ],
+        "sector": "Personas vinculadas con la mercancía asegurada y autoridades que intervengan en el seguimiento"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://www.anam.gob.mx/comunicado-prensa-conjunto-60-2026",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "e06fa420bb990d1bd0c525c3ef8fb3a574d8cc6756b6b76b2dba46463a9a5933",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/32952c1c46d3f0860d0fe747.json",
+    "detail_url": "notas/32952c1c46d3f0860d0fe747.html",
+    "detected_at": "2026-09-01T16:34:47.803209+00:00",
+    "document_type": "Comunicado",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "anam:eedd3801e348eb0b",
+    "importance": 2,
+    "issuing_body": "Agencia Nacional de Aduanas de México",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-08-18",
+    "official_title": "IMPI y ANAM aseguran más de 227 mil cajetillas de cigarros en Manzanillo",
+    "published_at": "2026-08-18",
+    "relevance_score": 2,
+    "review_reason": null,
+    "source": "ANAM",
+    "source_id": "eedd3801e348eb0b",
+    "summary_teaser": "IMPI y ANAM informaron el aseguramiento de 379 cajas con 227 mil cajetillas de cigarrillos que ostentaban la denominación PALL MALL durante un operativo en la Aduana de Manzanillo. El comunicado anuncia actuaciones posteriores y señala que las mercancías pudieran infringir derechos marcarios. No contiene una determinación definitiva sobre infracción ni sobre la situación jurídica final de la mercancía.",
+    "title": "Aseguramiento de cajetillas abre seguimiento de derechos marcarios",
+    "url": "https://www.anam.gob.mx/comunicado-prensa-conjunto-60-2026/"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Personas vinculadas con la mercancía asegurada y autoridades que intervengan en el seguimiento",
+      "deadline": null,
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-3"
+      ],
+      "legal_basis": null,
+      "paragraphs": [
+        "Las personas que reciban una notificación en las actuaciones posteriores deben atender el acto formal y conservar la documentación que corresponda a su intervención."
+      ],
+      "trigger": "Cuando la publicación resulte aplicable a la situación revisada."
+    }
+  ],
+  "schema_version": 8
+}

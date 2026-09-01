@@ -1,0 +1,208 @@
+{
+  "cut_id": "b38f832eb7eab4fd4e727ec3",
+  "item": {
+    "ai_generated": true,
+    "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796062&fecha=12%2F08%2F2026",
+    "card_body": "## Qué se publicó\n\nLa Secretaría de Hacienda y Crédito Público publicó la relación anual actualizada de las entidades paraestatales de la Administración Pública Federal.\n\n## Sustancia\n\nLa relación enumera 181 entidades paraestatales activas clasificadas como organismos descentralizados, empresas de participación estatal mayoritaria, fideicomisos públicos y empresas públicas del Estado. Incluye entidades sectorizadas y no sectorizadas, instituciones nacionales de salud, centros públicos de investigación, banca de desarrollo, seguros y fideicomisos del sistema bancario. Además, identifica 12 entidades en proceso de desincorporación y a Aerolínea del Estado Mexicano como entidad en exclusión de dicho proceso. La propia publicación aclara que sus efectos son declarativos y no constitutivos: la enumeración y categorización obedecen a disposiciones aplicables e información remitida a la unidad jurídica. No incluye universidades e instituciones con autonomía legal y señala entidades que no quedan sujetas a la Ley Federal de las Entidades Paraestatales.\n\n## Fuente\n\nFuente oficial: https://dof.gob.mx/nota_detalle.php?codigo=5796062&fecha=12%2F08%2F2026. Extracción: html-adapter; recuperada el 2026-09-01T16:35:33.693420+00:00.",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "180de21691a8f60e38a112aea6bc4fe041d6a57721cd9d7520d2e5cf51931c09",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-1",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-3",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-4",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/e8405facb734aa3775b2098f.json",
+    "detail_url": "notas/e8405facb734aa3775b2098f.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-2",
+          "chunk-4"
+        ],
+        "heading": "Contenido publicado",
+        "paragraphs": [
+          "La relación enumera 181 entidades paraestatales activas clasificadas como organismos descentralizados, empresas de participación estatal mayoritaria, fideicomisos públicos y empresas públicas del Estado. Incluye entidades sectorizadas y no sectorizadas, instituciones nacionales de salud, centros públicos de investigación, banca de desarrollo, seguros y fideicomisos del sistema bancario. Además, identifica 12 entidades en proceso de desincorporación y a Aerolínea del Estado Mexicano como entidad en exclusión de dicho proceso.",
+          "El instrumento incorpora modificaciones derivadas de creación, cambio de sector o denominación y procesos de desincorporación. Entre las notas explicativas figuran cambios normativos en CFE y Pemex, la creación de la Comisión Nacional Antimonopolio, la Agencia de Trenes y Transporte Público Integrado y el Instituto Nacional de Estudios Históricos de las Revoluciones de México."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-2",
+          "chunk-4"
+        ],
+        "heading": "Alcance y lectura práctica",
+        "paragraphs": [
+          "La propia publicación aclara que sus efectos son declarativos y no constitutivos: la enumeración y categorización obedecen a disposiciones aplicables e información remitida a la unidad jurídica. No incluye universidades e instituciones con autonomía legal y señala entidades que no quedan sujetas a la Ley Federal de las Entidades Paraestatales.",
+          "La ficha se dirige principalmente a dependencias coordinadoras, entidades paraestatales y personas que consultan su clasificación administrativa."
+        ]
+      }
+    ],
+    "detected_at": "2026-09-01T16:34:47.803209+00:00",
+    "document_type": "Relación De Las",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "b47bf6b253491a80ac99e3d7b9eee76172bfbad299424d7c6a032cd33234e715",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "RELACIÓN de las Entidades Paraestatales de la Administración Pública Federal.",
+          "location": "caracteres 0-81"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público. · parte 1",
+          "location": "caracteres 81-12081"
+        },
+        {
+          "id": "chunk-3",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público. · parte 2",
+          "location": "caracteres 12081-24081"
+        },
+        {
+          "id": "chunk-4",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público. · parte 3",
+          "location": "caracteres 24081-28011"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796062&fecha=12%2F08%2F2026",
+      "retrieved_at": "2026-09-01T16:35:33.693420+00:00"
+    },
+    "executive_summary": [
+      "La Secretaría de Hacienda y Crédito Público difundió la relación anual actualizada de las entidades paraestatales de la Administración Pública Federal. La relación enumera 181 entidades paraestatales activas clasificadas como organismos descentralizados, empresas de participación estatal mayoritaria, fideicomisos públicos y empresas públicas del Estado. Incluye entidades sectorizadas y no sectorizadas, instituciones nacionales de salud, centros públicos de investigación, banca de desarrollo, seguros y fideicomisos del sistema bancario. Además, identifica 12 entidades en proceso de desincorporación y a Aerolínea del Estado Mexicano como entidad en exclusión de dicho proceso.",
+      "La propia publicación aclara que sus efectos son declarativos y no constitutivos: la enumeración y categorización obedecen a disposiciones aplicables e información remitida a la unidad jurídica. No incluye universidades e instituciones con autonomía legal y señala entidades que no quedan sujetas a la Ley Federal de las Entidades Paraestatales. La síntesis se limita a los hechos y condiciones expresamente visibles en la fuente oficial."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-09-01T16:34:47.803209+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5796062",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-2",
+          "chunk-4"
+        ],
+        "paragraphs": [
+          "El efecto observable es el que la publicación atribuye al acto: La propia publicación aclara que sus efectos son declarativos y no constitutivos: la enumeración y categorización obedecen a disposiciones aplicables e información remitida a la unidad jurídica. No incluye universidades e instituciones con autonomía legal y señala entidades que no quedan sujetas a la Ley Federal de las Entidades Paraestatales."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-2",
+            "chunk-4"
+          ],
+          "paragraphs": [
+            "Las personas comprendidas deben considerar el documento porque La relación enumera 181 entidades paraestatales activas clasificadas como organismos descentralizados, empresas de participación estatal mayoritaria, fideicomisos públicos y empresas públicas del Estado. Incluye entidades sectorizadas y no sectorizadas, instituciones nacionales de salud, centros públicos de investigación, banca de desarrollo, seguros y fideicomisos del sistema bancario. Además, identifica 12 entidades en proceso de desincorporación y a Aerolínea del Estado Mexicano como entidad en exclusión de dicho proceso."
+          ],
+          "sector": "Dependencias coordinadoras, entidades paraestatales y personas que consultan su clasificación administrativa"
+        }
+      ]
+    },
+    "importance": 2,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-09-01T16:34:47.803209+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796062&fecha=12/08/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5796062"
+    },
+    "official_published_at": "2026-08-12",
+    "official_title": "Relación de las Entidades Paraestatales de la Administración Pública Federal.",
+    "published_at": "2026-08-12",
+    "published_day": 12,
+    "published_month": 8,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Dependencias coordinadoras, entidades paraestatales y personas que consultan su clasificación administrativa",
+        "deadline": null,
+        "evidence_refs": [
+          "chunk-2",
+          "chunk-4"
+        ],
+        "legal_basis": null,
+        "paragraphs": [
+          "Usar la relación como referencia de identificación y sectorización, verificando la norma constitutiva o el acto específico cuando se requiera determinar facultades, naturaleza jurídica o estado de un proceso de desincorporación."
+        ],
+        "trigger": "Cuando la persona o entidad se ubique en el ámbito material descrito por la fuente oficial."
+      }
+    ],
+    "relevance_score": 2,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5796062",
+    "subtopic_tags": [
+      "administracion publica federal"
+    ],
+    "summary": "La Secretaría de Hacienda y Crédito Público publicó la relación anual actualizada de las entidades paraestatales de la Administración Pública Federal. La relación enumera 181 entidades paraestatales activas clasificadas como organismos descentralizados, empresas de participación estatal mayoritaria, fideicomisos públicos y empresas públicas del Estado. Incluye entidades sectorizadas y no sectorizadas, instituciones nacionales de salud, centros públicos de investigación, banca de desarrollo, seguros y fideicomisos del sistema bancario. Además, identifica 12 entidades en proceso de desincorporación y a Aerolínea del Estado Mexicano como entidad en exclusión de dicho proceso.\n\nEl instrumento incorpora modificaciones derivadas de creación, cambio de sector o denominación y procesos de desincorporación. Entre las notas explicativas figuran cambios normativos en CFE y Pemex, la creación de la Comisión Nacional Antimonopolio, la Agencia de Trenes y Transporte Público Integrado y el Instituto Nacional de Estudios Históricos de las Revoluciones de México.\n\nLa propia publicación aclara que sus efectos son declarativos y no constitutivos: la enumeración y categorización obedecen a disposiciones aplicables e información remitida a la unidad jurídica. No incluye universidades e instituciones con autonomía legal y señala entidades que no quedan sujetas a la Ley Federal de las Entidades Paraestatales.\n\nLa utilidad práctica de la publicación depende de si la persona o entidad se encuentra dentro del ámbito descrito. La información se presenta con base en el documento oficial disponible y no permite extender efectos a supuestos, periodos, personas o actos que no estén expresamente identificados. Cuando el documento incorpora requisitos, condiciones o mecanismos, éstos deben contrastarse con la ficha, resolución, contrato, expediente o norma específica que corresponda.\n\nPara fines de cumplimiento y trazabilidad, conviene conservar la fuente oficial, su fecha de publicación y los documentos que acrediten la situación concreta. Esta síntesis no sustituye el texto íntegro ni una determinación individual de la autoridad; describe el alcance observable del acto y distingue las consecuencias expresamente publicadas de cualquier inferencia que no está respaldada por la evidencia disponible.",
+    "summary_teaser": "La Procuraduría Fiscal difundió la relación actualizada de entidades paraestatales de la Administración Pública Federal. El instrumento enumera 181 entidades activas por tipo y sector, 12 en proceso de desincorporación y una exclusión de ese proceso; sus efectos son declarativos, no constitutivos.",
+    "title": "Hacienda actualiza relación de entidades paraestatales federales",
+    "topic_tags": [
+      "Derecho administrativo"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796062&fecha=12/08/2026"
+  },
+  "schema_version": 8
+}
