@@ -5,6 +5,7 @@
       "reason": null,
       "source_ref": "chunk-1",
       "target_sections": [
+        "executive_summary",
         "detailed_summary"
       ]
     },
@@ -13,35 +14,47 @@
       "reason": null,
       "source_ref": "chunk-2",
       "target_sections": [
-        "detailed_summary"
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
       ]
     }
   ],
-  "cut_id": "80ff8a726797f7b9e5131c53",
+  "cut_id": "9bfb2857e185b6a117ea296f",
   "detailed_summary": [
     {
       "evidence_refs": [
+        "chunk-1",
         "chunk-2"
       ],
-      "heading": "Alcance de la publicación",
+      "heading": "Publicaciones y tablas",
       "paragraphs": [
-        "La Secretaría de Hacienda publicó incumplimientos de Tlaxcala en el primer y segundo trimestre de 2026; de Aguascalientes y Coahuila en el primer trimestre; y de Michoacán en el segundo trimestre, respecto de publicaciones trimestrales y tablas en Excel.",
-        "La obligación trimestral consiste en remitir por correo electrónico el PDF de la publicación oficial y las tablas en Excel dentro de un máximo de cinco días hábiles desde la publicación. En la obligación mensual, el listado identifica a Tlaxcala en marzo y al Estado de México en junio por no remitir los montos ministrados a municipios a más tardar diez días naturales posteriores al término del mes. El corte informado es al 17 de agosto de 2026."
+        "El numeral 8, inciso a), referido por la fuente exige enviar el PDF de la publicación oficial y tablas en Excel dentro de cinco días hábiles. El listado señala incumplimientos de Tlaxcala, Aguascalientes, Coahuila y Michoacán según los trimestres indicados."
       ]
     },
     {
       "evidence_refs": [
         "chunk-2"
       ],
-      "heading": "Seguimiento operativo",
+      "heading": "Información mensual ministrada",
       "paragraphs": [
-        "Las entidades listadas deben contrastar sus envíos trimestrales y mensuales con los plazos de cinco días hábiles y diez días naturales que señala el listado.",
-        "La ficha no extiende el alcance del acto a supuestos que la fuente no identifica."
+        "El numeral 8, inciso b), citado en el documento exige información mensual sobre montos ministrados por concepto de participaciones a municipios, en formato Anexo VII y archivo Excel, hasta diez días naturales posteriores al cierre mensual. Se identifica a Tlaxcala para marzo y al Estado de México para junio."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Alcance del listado",
+      "paragraphs": [
+        "La fuente explica que los registros derivan de la revisión de publicaciones y reportes remitidos a la Unidad de Coordinación con Entidades Federativas, con corte al 17 de agosto de 2026. El listado no cuantifica sanciones ni informa una modificación a los montos de participaciones."
       ]
     }
   ],
   "evidence": {
-    "content_hash": "310c0be1efa5aac40216efa650bd42be70339fcbb9a73c72df34deaa1cc2f1f5",
+    "content_hash": "be2968aec7de362c236c5599afb6f89a86d9f73db0bc6dbea0851a0da26fab80",
     "extraction_method": "html-adapter",
     "locators": [
       {
@@ -56,11 +69,11 @@
       }
     ],
     "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797186&fecha=26%2F08%2F2026",
-    "retrieved_at": "2026-09-01T16:35:06.793368+00:00"
+    "retrieved_at": "2026-09-03T16:53:18.656896+00:00"
   },
   "executive_summary": [
-    "La Secretaría de Hacienda publicó incumplimientos de Tlaxcala en el primer y segundo trimestre de 2026; de Aguascalientes y Coahuila en el primer trimestre; y de Michoacán en el segundo trimestre, respecto de publicaciones trimestrales y tablas en Excel.",
-    "La obligación trimestral consiste en remitir por correo electrónico el PDF de la publicación oficial y las tablas en Excel dentro de un máximo de cinco días hábiles desde la publicación. En la obligación mensual, el listado identifica a Tlaxcala en marzo y al Estado de México en junio por no remitir los montos ministrados a municipios a más tardar diez días naturales posteriores al término del mes. El corte informado es al 17 de agosto de 2026."
+    "La SHCP identifica entidades federativas que incumplieron deberes de remitir publicaciones oficiales y tablas de participaciones federales, o reportes mensuales de recursos ministrados a municipios.",
+    "El corte del 17 de agosto de 2026 señala a Tlaxcala, Aguascalientes, Coahuila, Michoacán y Estado de México, con la obligación y el periodo correspondiente."
   ],
   "impacts": {
     "general": {
@@ -68,7 +81,7 @@
         "chunk-2"
       ],
       "paragraphs": [
-        "La obligación trimestral consiste en remitir por correo electrónico el PDF de la publicación oficial y las tablas en Excel dentro de un máximo de cinco días hábiles desde la publicación. En la obligación mensual, el listado identifica a Tlaxcala en marzo y al Estado de México en junio por no remitir los montos ministrados a municipios a más tardar diez días naturales posteriores al término del mes. El corte informado es al 17 de agosto de 2026."
+        "El listado identifica incumplimientos que la Unidad de Coordinación atribuye a obligaciones documentales y de información sobre participaciones. No cuantifica sanciones ni informa una modificación a los montos de participaciones."
       ]
     },
     "sectors": [
@@ -77,9 +90,9 @@
           "chunk-2"
         ],
         "paragraphs": [
-          "La incidencia para este grupo se limita al alcance expresamente descrito en la publicación y requiere contrastarse con cada caso concreto."
+          "Las entidades federativas son responsables de los envíos listados y la información mensual se refiere a los montos ministrados a municipios por concepto de participaciones federales."
         ],
-        "sector": "Entidades federativas incluidas en el listado"
+        "sector": "Entidades federativas y municipios"
       }
     ]
   },
@@ -108,22 +121,22 @@
     "review_reason": null,
     "source": "DOF",
     "source_id": "5797186",
-    "summary_teaser": "Hacienda listó a Tlaxcala por el primer y segundo trimestre de 2026; a Aguascalientes y Coahuila por el primer trimestre; y a Michoacán por el segundo trimestre en reportes trimestrales. También identificó a Tlaxcala en marzo y al Estado de México en junio por reportes mensuales. Los deberes tienen plazos de cinco días hábiles y diez días naturales.",
-    "title": "Hacienda determina incumplimientos estatales de participaciones federales",
+    "summary_teaser": "La SHCP listó entidades federativas que incumplieron obligaciones de remitir publicaciones y tablas de participaciones federales, o información mensual sobre montos ministrados a municipios. Al corte del 17 de agosto de 2026, el listado identifica incumplimientos de Tlaxcala, Aguascalientes, Coahuila, Michoacán y Estado de México, según tipo y periodo de información.",
+    "title": "Incumplimientos revelan obligación vigente de reportar participaciones federales",
     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797186&fecha=26/08/2026"
   },
   "recommended_actions": [
     {
-      "affected_group": "Entidades federativas incluidas en el listado",
-      "deadline": "PDF y tablas trimestrales: máximo 5 días hábiles desde la publicación; reporte mensual: a más tardar 10 días naturales posteriores al término del mes.",
+      "affected_group": "Áreas de finanzas y coordinación fiscal de las entidades federativas",
+      "deadline": "Cinco días hábiles desde la publicación para PDF y tablas; diez días naturales posteriores al cierre mensual para la información ministrada.",
       "evidence_refs": [
         "chunk-2"
       ],
-      "legal_basis": "Numeral 8, incisos a) y b), de los Lineamientos para la publicación de la información del artículo 6 de la Ley de Coordinación Fiscal.",
+      "legal_basis": "Ley de Coordinación Fiscal, artículo 6o., cuarto párrafo, y numeral 8, incisos a) y b), de los Lineamientos citados en la publicación.",
       "paragraphs": [
-        "Las entidades listadas deben contrastar sus envíos trimestrales y mensuales con los plazos de cinco días hábiles y diez días naturales que señala el listado."
+        "Si la entidad está listada o prepara información de participaciones federales, verifique la entrega del PDF, tablas Excel y reportes del Anexo VII dentro de los plazos que la fuente identifica para cada obligación."
       ],
-      "trigger": "Cuando la publicación resulte aplicable a la situación revisada."
+      "trigger": "Publicación oficial de participaciones o cierre mensual de información ministrada a municipios."
     }
   ],
   "schema_version": 8

@@ -1,10 +1,10 @@
 {
-  "cut_id": "80ff8a726797f7b9e5131c53",
+  "cut_id": "9bfb2857e185b6a117ea296f",
   "item": {
     "ai_generated": true,
     "authority": "PODER EJECUTIVO SECRETARIA ANTICORRUPCION Y BUEN GOBIERNO",
     "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796632&fecha=19%2F08%2F2026",
-    "card_body": "## Qué se publicó\n\nLa Unidad de Contrataciones Públicas de la Secretaría Anticorrupción y Buen Gobierno difundió el listado de bienes y servicios a consolidar durante 2027 y, de forma anticipada, durante 2028.\n\n## Sustancia\n\nEl listado incluye medallas, vales de despensa e insumos de limpieza para 2027; y, anticipadamente para 2028, vales, papel, combustible y servicios de aseguramiento de bienes, aeronaves, embarcaciones y parque vehicular. También actualiza los listados de 2026 y 2027 para sustituir dos procedimientos de blancos y ropa hospitalaria por una adquisición consolidada conjunta. Debe considerarse para programar contrataciones de las instituciones bajo administración de las personas destinatarias.\n\n## Fuente\n\nLa síntesis se elaboró exclusivamente con la fuente oficial identificada en la evidencia y sus fragmentos extraídos.",
+    "card_body": "## Qué se publicó\nLa Unidad de Contrataciones Públicas difundió bienes y servicios que deben considerarse en la programación de compras consolidadas federales para los ejercicios señalados.\n\n## Sustancia\nEl oficio ordena considerar el listado para 2027, la contratación consolidada anticipada de 2028 y la actualización del listado para 2026 y 2027 al programar contrataciones públicas de las instituciones destinatarias.\n\n## Fuente\n[Diario Oficial de la Federación](https://dof.gob.mx/nota_detalle.php?codigo=5796632&fecha=19%2F08%2F2026)",
     "case_amount": "",
     "case_claim": "",
     "case_facts": "",
@@ -25,6 +25,7 @@
         "reason": null,
         "source_ref": "chunk-1",
         "target_sections": [
+          "executive_summary",
           "detailed_summary"
         ]
       },
@@ -33,7 +34,11 @@
         "reason": null,
         "source_ref": "chunk-2",
         "target_sections": [
-          "detailed_summary"
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
         ]
       }
     ],
@@ -43,22 +48,23 @@
     "detailed_summary": [
       {
         "evidence_refs": [
+          "chunk-1",
           "chunk-2"
         ],
-        "heading": "Alcance de la publicación",
+        "heading": "Compras consolidadas programadas",
         "paragraphs": [
-          "La Unidad de Contrataciones Públicas de la Secretaría Anticorrupción y Buen Gobierno difundió el listado de bienes y servicios a consolidar durante 2027 y, de forma anticipada, durante 2028.",
-          "El listado incluye medallas, vales de despensa e insumos de limpieza para 2027; y, anticipadamente para 2028, vales, papel, combustible y servicios de aseguramiento de bienes, aeronaves, embarcaciones y parque vehicular. También actualiza los listados de 2026 y 2027 para sustituir dos procedimientos de blancos y ropa hospitalaria por una adquisición consolidada conjunta. Debe considerarse para programar contrataciones de las instituciones bajo administración de las personas destinatarias."
+          "Para 2027 se listan medallas y rosetas para el Premio Nacional de Antigüedad, vales electrónicos de despensa para la medida de fin de año e insumos y materiales de limpieza. Para contratación anticipada de 2028 se incluyen vales de despensa, papel para impresión, combustible vehicular y varios servicios de aseguramiento.",
+          "El oficio atribuye la aprobación al Comité de Contrataciones Estratégicas y ordena considerar los listados en la programación de las contrataciones de las instituciones bajo administración de las personas destinatarias."
         ]
       },
       {
         "evidence_refs": [
           "chunk-2"
         ],
-        "heading": "Seguimiento operativo",
+        "heading": "Actualización del listado para programación",
         "paragraphs": [
-          "Las áreas de adquisiciones de las dependencias y entidades destinatarias deben revisar el listado difundido al programar las contrataciones comprendidas.",
-          "La ficha no extiende el alcance del acto a supuestos que la fuente no identifica."
+          "El oficio comunica una actualización al listado de bienes y servicios a consolidar para 2026 y, de forma anticipada, para 2027. Después de identificar dos denominaciones de adquisiciones consolidadas, presenta como entrada la adquisición consolidada de blancos y ropa quirúrgica y hospitalaria para esos ejercicios.",
+          "La instrucción expresada por la fuente es que la actualización del listado se considere para la programación de las contrataciones públicas de las instituciones bajo administración de las personas destinatarias."
         ]
       }
     ],
@@ -66,7 +72,7 @@
     "document_type": "Oficio Circular",
     "editorial_status": "complete",
     "evidence": {
-      "content_hash": "49317fd4f006371a7d04420cbcea334274f1135a3265774152c737e31e3d667c",
+      "content_hash": "4ae55d30d90d1dd9bb73a6080ed091738e8d8532a00202856ca68b67fa8304f3",
       "extraction_method": "html-adapter",
       "locators": [
         {
@@ -81,11 +87,12 @@
         }
       ],
       "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796632&fecha=19%2F08%2F2026",
-      "retrieved_at": "2026-09-01T16:35:17.793769+00:00"
+      "retrieved_at": "2026-09-03T16:53:29.924619+00:00"
     },
     "executive_summary": [
-      "La Unidad de Contrataciones Públicas de la Secretaría Anticorrupción y Buen Gobierno difundió el listado de bienes y servicios a consolidar durante 2027 y, de forma anticipada, durante 2028.",
-      "El listado incluye medallas, vales de despensa e insumos de limpieza para 2027; y, anticipadamente para 2028, vales, papel, combustible y servicios de aseguramiento de bienes, aeronaves, embarcaciones y parque vehicular. También actualiza los listados de 2026 y 2027 para sustituir dos procedimientos de blancos y ropa hospitalaria por una adquisición consolidada conjunta. Debe considerarse para programar contrataciones de las instituciones bajo administración de las personas destinatarias."
+      "La Secretaría Anticorrupción y Buen Gobierno difundió un listado de bienes y servicios a consolidar para 2027 y, de manera anticipada, para 2028.",
+      "Las instituciones destinatarias deben considerar el listado al programar sus contrataciones públicas. La lista cubre, entre otros rubros, vales de despensa, limpieza, papel, combustibles y aseguramiento de bienes.",
+      "También se comunica una actualización del listado para 2026 y 2027, con una entrada de adquisición consolidada de blancos y ropa quirúrgica y hospitalaria."
     ],
     "extraction_status": "complete",
     "first_seen_at": "2026-09-01T16:34:47.803209+00:00",
@@ -97,7 +104,7 @@
           "chunk-2"
         ],
         "paragraphs": [
-          "El listado incluye medallas, vales de despensa e insumos de limpieza para 2027; y, anticipadamente para 2028, vales, papel, combustible y servicios de aseguramiento de bienes, aeronaves, embarcaciones y parque vehicular. También actualiza los listados de 2026 y 2027 para sustituir dos procedimientos de blancos y ropa hospitalaria por una adquisición consolidada conjunta. Debe considerarse para programar contrataciones de las instituciones bajo administración de las personas destinatarias."
+          "El efecto expresamente comunicado es que los listados de bienes y servicios difundidos, incluida su actualización, deben considerarse al programar las contrataciones públicas de las instituciones bajo administración de las personas destinatarias."
         ]
       },
       "sectors": [
@@ -106,20 +113,21 @@
             "chunk-2"
           ],
           "paragraphs": [
-            "La incidencia para este grupo se limita al alcance expresamente descrito en la publicación y requiere contrastarse con cada caso concreto."
+            "Al programar contrataciones públicas de las instituciones bajo su administración, deben considerar los listados publicados para 2027, la contratación anticipada de 2028 y la actualización para 2026 y 2027."
           ],
-          "sector": "Oficialías mayores y unidades de administración y finanzas destinatarias"
+          "sector": "Áreas de administración y finanzas de la Administración Pública Federal"
         }
       ]
     },
     "importance": 2,
     "issuing_body": "Presidencia de la República",
     "jurisdiction": "nacional",
-    "last_seen_at": "2026-09-01T18:46:30.041123+00:00",
+    "last_seen_at": "2026-09-04T03:37:15.636102+00:00",
     "official_evidence": {
       "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796632&fecha=19/08/2026"
     },
     "official_identifiers": {
+      "oficio_circular_number": "UCP/001/2026",
       "source_id": "5796632"
     },
     "official_published_at": "2026-08-19",
@@ -130,16 +138,16 @@
     "published_year": 2026,
     "recommended_actions": [
       {
-        "affected_group": "Oficialías mayores y unidades de administración y finanzas destinatarias",
+        "affected_group": "Oficialías Mayores y Unidades de Administración y Finanzas destinatarias",
         "deadline": null,
         "evidence_refs": [
           "chunk-2"
         ],
-        "legal_basis": null,
+        "legal_basis": "Artículo 21 de la Ley de Adquisiciones, Arrendamientos y Servicios del Sector Público, citado en el oficio",
         "paragraphs": [
-          "Las áreas de adquisiciones de las dependencias y entidades destinatarias deben revisar el listado difundido al programar las contrataciones comprendidas."
+          "Al programar contrataciones públicas de las instituciones bajo su administración, considerar los bienes y servicios incluidos en el listado para 2027, el listado anticipado para 2028 y la actualización para 2026 y 2027 que el oficio comunica."
         ],
-        "trigger": "Cuando la publicación resulte aplicable a la situación revisada."
+        "trigger": "Programación de contrataciones públicas para los ejercicios señalados"
       }
     ],
     "relevance_score": 3,
@@ -150,9 +158,9 @@
       "administracion publica federal",
       "organos administrativos desconcentrados"
     ],
-    "summary": "La Unidad de Contrataciones Públicas de la Secretaría Anticorrupción y Buen Gobierno difundió el listado de bienes y servicios a consolidar durante 2027 y, de forma anticipada, durante 2028.\n\nEl listado incluye medallas, vales de despensa e insumos de limpieza para 2027; y, anticipadamente para 2028, vales, papel, combustible y servicios de aseguramiento de bienes, aeronaves, embarcaciones y parque vehicular. También actualiza los listados de 2026 y 2027 para sustituir dos procedimientos de blancos y ropa hospitalaria por una adquisición consolidada conjunta. Debe considerarse para programar contrataciones de las instituciones bajo administración de las personas destinatarias.\n\nPara fines de seguimiento, Las áreas de adquisiciones de las dependencias y entidades destinatarias deben revisar el listado difundido al programar las contrataciones comprendidas. La revisión debe partir de la publicación oficial y de la documentación disponible para el caso concreto. El contenido debe mantenerse dentro de los límites del acto: no permite presumir efectos respecto de personas, operaciones, expedientes, contratos o procedimientos que la fuente no identifica. Cuando el documento comunica una autorización, una sanción, un trámite, una regla administrativa o un dato institucional, corresponde distinguir su alcance expreso de actuaciones posteriores que no estén acreditadas.\n\nEn términos probatorios, esta ficha se limita a los fragmentos oficiales y a sus localizadores. No atribuye efectos, plazos, montos, fundamentos, sujetos, resultados o hechos que no figuren en la fuente. La consulta del texto íntegro y, cuando corresponda, de la documentación del caso es necesaria para determinar cualquier consecuencia concreta. La verificación de una consecuencia particular exige identificar el acto aplicable, su fecha relevante, las personas efectivamente comprendidas y la evidencia que corresponda a la situación revisada. En ningún caso sustituye la consulta de expedientes, constancias o notificaciones individuales que puedan modificar la conclusión para una situación concreta. Esta delimitación evita convertir la información publicada en una conclusión definitiva sobre derechos, obligaciones o cumplimiento individual.",
-    "summary_teaser": "La Unidad de Contrataciones Públicas de la Secretaría Anticorrupción y Buen Gobierno difundió el listado de bienes y servicios a consolidar en 2027 y anticipadamente en 2028. También comunicó la actualización para 2026 y 2027, incluida la integración de blancos y ropa quirúrgica. El oficio sirve para programar contrataciones, no constituye una convocatoria ni adjudicación.",
-    "title": "Lista federal actualiza compras consolidadas para 2027 y 2028",
+    "summary": "La Unidad de Contrataciones Públicas de la Secretaría Anticorrupción y Buen Gobierno difundió el listado de bienes y servicios a consolidar para el ejercicio fiscal 2027 y, de forma anticipada, para 2028. El oficio se dirige a titulares de Oficialías Mayores y Unidades de Administración y Finanzas de dependencias, así como a sus equivalentes en entidades de la Administración Pública Federal. El Comité de Contrataciones Estratégicas aprobó el listado en su primera sesión ordinaria de 7 de agosto de 2026.\n\nPara 2027, el listado incluye la adquisición consolidada de medallas y rosetas para el Premio Nacional de Antigüedad; vales electrónicos de despensa para la medida de fin de año; e insumos y materiales de limpieza. El oficio ordena que este listado se considere para la programación de las contrataciones públicas de las instituciones bajo la administración de las personas destinatarias.\n\nPara la contratación consolidada anticipada de 2028, el listado comprende vales de despensa electrónicos o impresos para prestaciones mensuales o de única ocasión; productos de papel para impresión de documentos oficiales, libros y publicaciones; combustible para vehículos terrestres con monederos electrónicos y sus plataformas; y los servicios de aseguramiento de bienes patrimoniales, aeronaves y embarcaciones, y parque vehicular. Estas partidas son las que el oficio manda considerar al programar contrataciones públicas.\n\nEl oficio también comunica una actualización al listado para 2026 y anticipadamente para 2027. En esa actualización, después de enumerar las denominaciones de adquisición consolidada de blancos y de ropa quirúrgica y hospitalaria, presenta como entrada la adquisición consolidada de blancos y ropa quirúrgica y hospitalaria para esos ejercicios. La misma instrucción es considerar esta actualización al programar las contrataciones públicas de las instituciones bajo administración de las personas destinatarias. La publicación se limita a difundir y ordenar la consideración de esos listados en la programación institucional. El mandato se refiere expresamente a esa programación institucional.",
+    "summary_teaser": "La Unidad de Contrataciones Públicas difundió bienes y servicios que deberán considerarse en la programación de compras consolidadas de 2027 y, anticipadamente, de 2028. También comunicó una actualización del listado para 2026 y 2027 que incluye blancos, ropa quirúrgica y hospitalaria.",
+    "title": "Secretaría Anticorrupción y Buen Gobierno ordena considerar listados al programar contrataciones públicas",
     "topic_tags": [
       "Derecho administrativo",
       "Oficio",

@@ -1,10 +1,10 @@
 {
-  "cut_id": "80ff8a726797f7b9e5131c53",
+  "cut_id": "9bfb2857e185b6a117ea296f",
   "item": {
     "ai_generated": true,
     "authority": "PODER EJECUTIVO SECRETARIA ANTICORRUPCION Y BUEN GOBIERNO",
     "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796636&fecha=19%2F08%2F2026",
-    "card_body": "## Qué se publicó\n\nEl Órgano Interno de Control en la Secretaría de Infraestructura, Comunicaciones y Transportes publicó una circular que ordena abstenerse de contratar obras públicas con una empresa inhabilitada.\n\n## Sustancia\n\nLa empresa Teleconstrucciones Marver, S. de R.L. de C.V. fue inhabilitada por tres meses y quince días para presentar propuestas o celebrar contratos de obras públicas y servicios relacionados con las mismas cuando se utilicen recursos federales conforme a convenios con el Ejecutivo Federal. La circular también comunica una multa y ordena abstenerse desde el día siguiente a la publicación y registro en ComprasMX. Los contratos ya adjudicados o formalizados no quedan comprendidos. La instrucción se dirige a dependencias, entidades, entidades federativas, municipios, entes públicos y demarcaciones al contratar con cargo total o parcial a fondos federales en las materias indicadas.\n\n## Fuente\n\nFuente oficial: https://dof.gob.mx/nota_detalle.php?codigo=5796636&fecha=19%2F08%2F2026. Extracción: html-adapter; recuperada el 2026-09-01T16:35:15.925843+00:00.",
+    "card_body": "## Qué se publicó\nUna autoridad de control comunicó una inhabilitación temporal para que una empresa no presente propuestas ni celebre contratos de obras públicas dentro del ámbito definido.\n\n## Sustancia\nLa abstención empieza tras la publicación y registro señalados. Los contratos existentes quedan excluidos, mientras que la falta de pago de la multa puede prolongar la inhabilitación conforme a la circular.\n\n## Fuente\nDOF: https://dof.gob.mx/nota_detalle.php?codigo=5796636&fecha=19%2F08%2F2026",
     "case_amount": "",
     "case_claim": "",
     "case_facts": "",
@@ -26,10 +26,7 @@
         "source_ref": "chunk-1",
         "target_sections": [
           "executive_summary",
-          "detailed_summary",
-          "impacts.general",
-          "impacts.sectors",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -51,22 +48,30 @@
     "detailed_summary": [
       {
         "evidence_refs": [
+          "chunk-1",
           "chunk-2"
         ],
-        "heading": "Contenido publicado",
+        "heading": "Sanción y ámbito",
         "paragraphs": [
-          "La empresa Teleconstrucciones Marver, S. de R.L. de C.V. fue inhabilitada por tres meses y quince días para presentar propuestas o celebrar contratos de obras públicas y servicios relacionados con las mismas cuando se utilicen recursos federales conforme a convenios con el Ejecutivo Federal. La circular también comunica una multa y ordena abstenerse desde el día siguiente a la publicación y registro en ComprasMX.",
-          "Si al concluir el plazo no se acredita el pago de la multa, la inhabilitación continúa hasta que se realice el pago y se elimine el registro correspondiente. La autoridad ubica el acto en un procedimiento sancionador, pero la publicación no desarrolla elementos fácticos adicionales del caso."
+          "La resolución de sanción mencionada impuso inhabilitación temporal para participar o contratar en obras públicas y servicios relacionados dentro del supuesto de recursos federales descrito. La circular también refiere una multa sin precisar su monto."
         ]
       },
       {
         "evidence_refs": [
           "chunk-2"
         ],
-        "heading": "Alcance y lectura práctica",
+        "heading": "Inicio de la abstención",
         "paragraphs": [
-          "Los contratos ya adjudicados o formalizados no quedan comprendidos. La instrucción se dirige a dependencias, entidades, entidades federativas, municipios, entes públicos y demarcaciones al contratar con cargo total o parcial a fondos federales en las materias indicadas.",
-          "La ficha se dirige principalmente a áreas responsables de obras públicas y servicios relacionados con recursos federales."
+          "Los entes destinatarios deben abstenerse de recibir propuestas y celebrar contratos con la empresa desde el día siguiente a la publicación y al registro en Compras MX, bajo los alcances del aviso."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "heading": "Contratos existentes y pago",
+        "paragraphs": [
+          "Los contratos adjudicados o formalizados no se incluyen. Si la multa no se paga al término del periodo, la inhabilitación continúa hasta acreditarse el pago ante la autoridad señalada."
         ]
       }
     ],
@@ -74,7 +79,7 @@
     "document_type": "Circular",
     "editorial_status": "complete",
     "evidence": {
-      "content_hash": "58f9a719ad097b88e22464120ba89c46422b30812c0114f6dcdd5f399dfb82c3",
+      "content_hash": "13de8290b53773af7ac1f43e16295a7d01dad1651298a3b12eb2de5c0e4674ab",
       "extraction_method": "html-adapter",
       "locators": [
         {
@@ -89,11 +94,11 @@
         }
       ],
       "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796636&fecha=19%2F08%2F2026",
-      "retrieved_at": "2026-09-01T16:35:15.925843+00:00"
+      "retrieved_at": "2026-09-03T16:53:27.961845+00:00"
     },
     "executive_summary": [
-      "El Órgano Interno de Control en la Secretaría de Infraestructura, Comunicaciones y Transportes difundió una circular que ordena abstenerse de contratar obras públicas con una empresa inhabilitada. La empresa Teleconstrucciones Marver, S. de R.L. de C.V. fue inhabilitada por tres meses y quince días para presentar propuestas o celebrar contratos de obras públicas y servicios relacionados con las mismas cuando se utilicen recursos federales conforme a convenios con el Ejecutivo Federal. La circular también comunica una multa y ordena abstenerse desde el día siguiente a la publicación y registro en ComprasMX.",
-      "Los contratos ya adjudicados o formalizados no quedan comprendidos. La instrucción se dirige a dependencias, entidades, entidades federativas, municipios, entes públicos y demarcaciones al contratar con cargo total o parcial a fondos federales en las materias indicadas. La síntesis se limita a los hechos y condiciones expresamente visibles en la fuente oficial."
+      "La circular informa la inhabilitación de Teleconstrucciones Marver por tres meses y quince días en contrataciones de obras públicas con recursos federales, además de una multa no cuantificada en el aviso.",
+      "La abstención inicia después de la publicación y el registro en Compras MX. Contratos ya adjudicados o formalizados quedan fuera, y la falta de pago puede extender la inhabilitación."
     ],
     "extraction_status": "complete",
     "first_seen_at": "2026-09-01T16:34:47.803209+00:00",
@@ -105,7 +110,7 @@
           "chunk-2"
         ],
         "paragraphs": [
-          "El efecto observable es el que la publicación atribuye al acto: Los contratos ya adjudicados o formalizados no quedan comprendidos. La instrucción se dirige a dependencias, entidades, entidades federativas, municipios, entes públicos y demarcaciones al contratar con cargo total o parcial a fondos federales en las materias indicadas."
+          "La circular produce una restricción acotada por empresa, materia contractual y fuente de financiamiento. No equivale a una prohibición general de contratar fuera de los supuestos que el propio aviso identifica."
         ]
       },
       "sectors": [
@@ -114,16 +119,16 @@
             "chunk-2"
           ],
           "paragraphs": [
-            "Las personas comprendidas deben considerar el documento porque La empresa Teleconstrucciones Marver, S. de R.L. de C.V. fue inhabilitada por tres meses y quince días para presentar propuestas o celebrar contratos de obras públicas y servicios relacionados con las mismas cuando se utilicen recursos federales conforme a convenios con el Ejecutivo Federal. La circular también comunica una multa y ordena abstenerse desde el día siguiente a la publicación y registro en ComprasMX."
+            "Las áreas contratantes que operen en ese ámbito deben incorporar la abstención al revisar propuestas y contratos respecto de la empresa sancionada."
           ],
-          "sector": "Áreas responsables de obras públicas y servicios relacionados con recursos federales"
+          "sector": "Obras públicas y servicios relacionados con recursos federales"
         }
       ]
     },
     "importance": 2,
     "issuing_body": "Presidencia de la República",
     "jurisdiction": "nacional",
-    "last_seen_at": "2026-09-01T18:46:30.041123+00:00",
+    "last_seen_at": "2026-09-04T03:37:15.636102+00:00",
     "official_evidence": {
       "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796636&fecha=19/08/2026"
     },
@@ -138,16 +143,28 @@
     "published_year": 2026,
     "recommended_actions": [
       {
-        "affected_group": "Áreas responsables de obras públicas y servicios relacionados con recursos federales",
-        "deadline": "Desde el día siguiente a la publicación de la circular en el DOF y a su registro en ComprasMX, por tres meses y quince días; si la multa no se acredita pagada al concluir ese plazo, la inhabilitación subsiste hasta el pago.",
+        "affected_group": "Áreas contratantes de obras públicas",
+        "deadline": "Desde el día siguiente a la publicación y al registro en Compras MX, durante tres meses y quince días",
         "evidence_refs": [
           "chunk-2"
         ],
-        "legal_basis": "Resolutivo Cuarto de la resolución; artículo 78, párrafo tercero, de la Ley de Obras Públicas y Servicios Relacionados con las Mismas y artículo 271, primer párrafo, de su Reglamento.",
+        "legal_basis": "Resolutivo cuarto y disposiciones citadas en la circular",
         "paragraphs": [
-          "Incorporar la abstención al control de participantes en procedimientos futuros y preservar la diferencia entre nuevas contrataciones y contratos preexistentes excluidos por la circular."
+          "Si el procedimiento o contrato se rige por la Ley de Obras Públicas y Servicios Relacionados con las Mismas y usa recursos federales en los términos indicados, deben abstenerse de recibir propuestas o contratar con la empresa sancionada."
         ],
-        "trigger": "Cuando la persona o entidad se ubique en el ámbito material descrito por la fuente oficial."
+        "trigger": "Procedimiento o contrato dentro del ámbito publicado"
+      },
+      {
+        "affected_group": "Entidades federativas, municipios y otros entes públicos",
+        "deadline": null,
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "legal_basis": null,
+        "paragraphs": [
+          "Cuando la contratación de obra pública tenga cargo total o parcial a fondos federales conforme a los convenios aplicables, deben atender la abstención comunicada."
+        ],
+        "trigger": "Financiamiento federal total o parcial"
       }
     ],
     "relevance_score": 2,
@@ -157,9 +174,9 @@
     "subtopic_tags": [
       "administracion publica federal"
     ],
-    "summary": "El Órgano Interno de Control en la Secretaría de Infraestructura, Comunicaciones y Transportes publicó una circular que ordena abstenerse de contratar obras públicas con una empresa inhabilitada. La empresa Teleconstrucciones Marver, S. de R.L. de C.V. fue inhabilitada por tres meses y quince días para presentar propuestas o celebrar contratos de obras públicas y servicios relacionados con las mismas cuando se utilicen recursos federales conforme a convenios con el Ejecutivo Federal. La circular también comunica una multa y ordena abstenerse desde el día siguiente a la publicación y registro en ComprasMX.\n\nSi al concluir el plazo no se acredita el pago de la multa, la inhabilitación continúa hasta que se realice el pago y se elimine el registro correspondiente. La autoridad ubica el acto en un procedimiento sancionador, pero la publicación no desarrolla elementos fácticos adicionales del caso.\n\nLos contratos ya adjudicados o formalizados no quedan comprendidos. La instrucción se dirige a dependencias, entidades, entidades federativas, municipios, entes públicos y demarcaciones al contratar con cargo total o parcial a fondos federales en las materias indicadas.\n\nLa utilidad práctica de la publicación depende de si la persona o entidad se encuentra dentro del ámbito descrito. La información se presenta con base en el documento oficial disponible y no permite extender efectos a supuestos, periodos, personas o actos que no estén expresamente identificados. Cuando el documento incorpora requisitos, condiciones o mecanismos, éstos deben contrastarse con la ficha, resolución, contrato, expediente o norma específica que corresponda.\n\nPara fines de cumplimiento y trazabilidad, conviene conservar la fuente oficial, su fecha de publicación y los documentos que acrediten la situación concreta. Esta síntesis no sustituye el texto íntegro ni una determinación individual de la autoridad; describe el alcance observable del acto y distingue las consecuencias expresamente publicadas de cualquier inferencia que no está respaldada por la evidencia disponible.\n\nLa revisión completa de la evidencia oficial es necesaria antes de adoptar una decisión que dependa de requisitos particulares.",
-    "summary_teaser": "La Secretaría Anticorrupción comunicó una inhabilitación de tres meses y quince días para Teleconstrucciones Marver, S. de R.L. de C.V. en materia de obras públicas. La prohibición rige tras publicación y registro en ComprasMX; los contratos previamente adjudicados o formalizados quedan excluidos.",
-    "title": "Teleconstrucciones Marver recibe prohibición para obras federales",
+    "summary": "El Órgano Interno de Control en la Secretaría de Infraestructura, Comunicaciones y Transportes comunicó la inhabilitación temporal de Teleconstrucciones Marver, S. de R.L. de C.V. La circular informa que el procedimiento administrativo de sanción concluyó con una inhabilitación de tres meses y quince días para que la empresa, por sí o mediante interpósita persona, no presente propuestas ni celebre contratos en materia de obras públicas y servicios relacionados cuando se utilicen recursos federales conforme a los convenios con el Ejecutivo Federal. También refiere una multa impuesta en la resolución sancionadora, pero el aviso no publica su monto.\n\nLa abstención para los entes destinatarios opera a partir del día siguiente a la publicación de la circular en el DOF y de su registro en la Plataforma Digital de Contrataciones Públicas de la Administración Pública Federal, Compras MX. La medida comprende dependencias y entidades federales, entidades federativas, municipios, entes públicos y demarcaciones territoriales de la Ciudad de México, en los procedimientos de contratación y contratos regulados por la Ley de Obras Públicas y Servicios Relacionados con las Mismas cuando exista financiamiento federal total o parcial en los términos señalados.\n\nLa circular deja fuera los contratos adjudicados y formalizados existentes. Si al concluir la inhabilitación la empresa no ha pagado la multa, la restricción subsiste hasta que se acredite el pago ante la Secretaría Anticorrupción y Buen Gobierno, para eliminar el registro de Compras MX, sin requerir otro comunicado. El acto se limita a la empresa nombrada, la materia de obras públicas y las condiciones de recursos federales descritas; no aporta base para extender automáticamente sus efectos a otros sujetos, ámbitos contractuales o personas relacionadas no identificadas. La circular cita el expediente sancionador y el marco legal aplicable, pero no reproduce los fundamentos fácticos completos ni el importe de la multa. Esa limitación obliga a ceñirse a los supuestos administrativos expresamente comunicados.",
+    "summary_teaser": "Una circular comunica la inhabilitación temporal de Teleconstrucciones Marver para presentar propuestas y celebrar contratos de obras públicas con recursos federales. La medida dura tres meses y quince días, empieza tras publicación y registro en Compras MX, y puede subsistir si no se paga la multa sancionadora.",
+    "title": "Inhabilita a Teleconstrucciones Marver en obras federales",
     "topic_tags": [
       "Derecho administrativo",
       "Circular"

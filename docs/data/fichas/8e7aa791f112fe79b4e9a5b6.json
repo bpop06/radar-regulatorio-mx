@@ -1,0 +1,155 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "9bfb2857e185b6a117ea296f",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "heading": "Delegación anunciada",
+      "paragraphs": [
+        "El aviso comunica el acuerdo delegatorio y explica que se expidió para permitir que titulares de Direcciones de Área suscriban instrumentos jurídicos de su competencia."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Consulta y vigencia",
+      "paragraphs": [
+        "El texto dirige al sitio oficial del Instituto y al archivo enlazado para consulta. El acuerdo entra en vigor al día siguiente de la publicación en el Diario Oficial."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Límite de la extracción",
+      "paragraphs": [
+        "El aviso no reproduce las cláusulas del acuerdo ni un catálogo de instrumentos o direcciones. Por ello, una conclusión sobre una facultad individual exige revisar el texto íntegro enlazado."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "b123759931f6f34ab872db28d58187a2e6c3c1cd25ea3020c5bb454e5359cc82",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "AVISO por el que se da a conocer el Acuerdo delegatorio para suscribir instrumentos jurídicos.",
+        "location": "caracteres 0-98"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Salud.- Instituto Nacional de Rehabilitación Luis Guillermo Ibarra Ibarra.",
+        "location": "caracteres 98-1168"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797816&fecha=03%2F09%2F2026",
+    "retrieved_at": "2026-09-03T16:52:39.788672+00:00"
+  },
+  "executive_summary": [
+    "El Instituto Nacional de Rehabilitación dio publicidad a un acuerdo delegatorio para que titulares de direcciones de área suscriban instrumentos jurídicos de su competencia.",
+    "El aviso entra en vigor al día siguiente de la publicación y remite al texto íntegro en una página oficial. La extracción no enumera facultades específicas para cada instrumento."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "paragraphs": [
+        "La publicación da vigencia y publicidad a una delegación interna de firma, pero el alcance exacto de cada competencia no se desprende del aviso breve. La fuente completa enlazada es necesaria para una validación de facultades."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "Las Direcciones de Área deben atender el acuerdo completo para identificar los instrumentos jurídicos que correspondan a su competencia."
+        ],
+        "sector": "Unidades administrativas del Instituto Nacional de Rehabilitación"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797816&fecha=03%2F09%2F2026",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "e15a64273445f7759f996d4f7a97e4114591562b8b1fbda8a357b41543bd659b",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/8e7aa791f112fe79b4e9a5b6.json",
+    "detail_url": "notas/8e7aa791f112fe79b4e9a5b6.html",
+    "detected_at": "2026-09-04T03:37:15.636102+00:00",
+    "document_type": "Aviso",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5797816",
+    "importance": 2,
+    "issuing_body": "Presidencia de la República",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-09-03",
+    "official_title": "Aviso por el que se da a conocer el Acuerdo delegatorio para suscribir instrumentos jurídicos.",
+    "published_at": "2026-09-03",
+    "relevance_score": 2,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5797816",
+    "summary_teaser": "El Instituto Nacional de Rehabilitación Luis Guillermo Ibarra Ibarra dio a conocer un acuerdo delegatorio para suscribir instrumentos jurídicos. El aviso señala que las personas titulares de direcciones de área podrán firmar los instrumentos de su competencia, remite al texto oficial completo y fija vigencia al día siguiente de su publicación.",
+    "title": "Aviso da publicidad al acuerdo delegatorio de firma del Instituto",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797816&fecha=03/09/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Titulares de Direcciones de Área del Instituto",
+      "deadline": "A partir del día siguiente de la publicación",
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "legal_basis": "Aviso y acuerdo delegatorio referido",
+      "paragraphs": [
+        "Si pretenden suscribir un instrumento con base en la delegación, deben verificar que el tipo de acto y su ámbito de competencia estén comprendidos en el acuerdo íntegro oficial."
+      ],
+      "trigger": "Suscripción de un instrumento jurídico"
+    },
+    {
+      "affected_group": "Personas que revisen la validez de una firma",
+      "deadline": null,
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "legal_basis": null,
+      "paragraphs": [
+        "Deben consultar el acuerdo enlazado antes de concluir que una persona tenía facultad delegada, porque el aviso no contiene el detalle de instrumentos ni límites de cada dirección."
+      ],
+      "trigger": "Revisión de competencia para una firma concreta"
+    }
+  ],
+  "schema_version": 8
+}

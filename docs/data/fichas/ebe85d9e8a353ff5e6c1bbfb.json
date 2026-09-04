@@ -1,50 +1,47 @@
 {
   "coverage": [
     {
-      "disposition": "summarized",
-      "reason": null,
+      "disposition": "not_material",
+      "reason": "Encabezado identificador; las direcciones, vigencia y transitorios se desarrollan en el texto del aviso.",
       "source_ref": "chunk-1",
-      "target_sections": [
-        "executive_summary",
-        "detailed_summary"
-      ]
+      "target_sections": []
     },
     {
       "disposition": "summarized",
-      "reason": null,
+      "reason": "Direcciones de consulta, reformas referidas, vigencia y sustitución del aviso anterior.",
       "source_ref": "chunk-2",
       "target_sections": [
+        "executive_summary",
         "detailed_summary",
         "impacts.general",
+        "impacts.sectors",
         "recommended_actions"
       ]
     }
   ],
-  "cut_id": "80ff8a726797f7b9e5131c53",
+  "cut_id": "9bfb2857e185b6a117ea296f",
   "detailed_summary": [
     {
       "evidence_refs": [
-        "chunk-1",
         "chunk-2"
       ],
-      "heading": "Contenido publicado",
+      "heading": "Vías oficiales de consulta",
       "paragraphs": [
-        "El aviso publica los enlaces oficiales del Reglamento Interior vigente de la Junta y refiere que éste incorpora reformas aprobadas por su Pleno."
+        "El aviso señala una página en gob.mx y un PDF en el sitio del Diario Oficial de la Federación como direcciones electrónicas para consultar el Reglamento Interior vigente de la Junta Federal de Conciliación y Arbitraje."
       ]
     },
     {
       "evidence_refs": [
-        "chunk-1",
         "chunk-2"
       ],
-      "heading": "Alcance práctico",
+      "heading": "Vigencia y alcance de la nota",
       "paragraphs": [
-        "La fuente establece su vigencia al día siguiente de la publicación y deja sin efectos el aviso de consulta anterior."
+        "La fuente indica que el Reglamento contiene reformas y adiciones aprobadas por el Pleno, entra en vigor al día siguiente de la publicación y sustituye la vía de consulta del aviso de 2024. No reproduce las reformas, por lo que sus efectos materiales deben verificarse en el texto enlazado."
       ]
     }
   ],
   "evidence": {
-    "content_hash": "5554dfbd7eb580d8349fbfe29e33a93fe54defc985e4fc3a91086132c757e9e1",
+    "content_hash": "86d1d11456bd2a80b46beb6e44558cac55d7516f86d07adc1454fabc09fa0f91",
     "extraction_method": "html-adapter",
     "locators": [
       {
@@ -59,32 +56,30 @@
       }
     ],
     "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796828&fecha=21%2F08%2F2026",
-    "retrieved_at": "2026-09-01T16:35:09.904744+00:00"
+    "retrieved_at": "2026-09-03T16:53:24.251009+00:00"
   },
   "executive_summary": [
-    "La Secretaría del Trabajo y Previsión Social publicó un aviso para dar a conocer las direcciones electrónicas donde puede consultarse el Reglamento Interior vigente de la Junta Federal de Conciliación y Arbitraje. El documento señala que el reglamento contiene las reformas y adiciones aprobadas por el Pleno de la Junta en sesión de cuatro de junio de dos mil veintiséis. Su finalidad inmediata es de publicidad y acceso a la versión vigente del instrumento.",
-    "El aviso identifica una dirección institucional de la Junta y un enlace del Diario Oficial para consulta. No reproduce el contenido de las reformas, sus artículos ni posibles cambios de competencia o procedimiento. Por tanto, la publicación acredita dónde consultar el Reglamento Interior y su vigencia, pero no permite sostener sin abrir el texto completo que una disposición específica haya sido modificada de determinada forma."
+    "La STPS publicó dos direcciones electrónicas para consultar el Reglamento Interior vigente de la Junta Federal de Conciliación y Arbitraje, que incluye reformas y adiciones aprobadas por su Pleno.",
+    "El Reglamento entra en vigor al día siguiente de la publicación y el aviso deja sin efectos la dirección de consulta divulgada anteriormente; la nota no reproduce ni explica el contenido de las reformas."
   ],
   "impacts": {
     "general": {
       "evidence_refs": [
-        "chunk-1",
         "chunk-2"
       ],
       "paragraphs": [
-        "Facilita la localización de la versión vigente de la normativa interna de la Junta Federal de Conciliación y Arbitraje."
+        "El aviso actualiza la referencia oficial de consulta del Reglamento Interior y comunica su vigencia. La evidencia no basta para describir cambios de competencia, procedimiento o fondo, porque el Reglamento no se transcribe en la nota."
       ]
     },
     "sectors": [
       {
         "evidence_refs": [
-          "chunk-1",
           "chunk-2"
         ],
         "paragraphs": [
-          "Las personas usuarias deben sustituir referencias al aviso anterior por las direcciones oficiales publicadas y consultar el reglamento completo para una cuestión concreta."
+          "Quienes necesiten revisar la normativa interna cuentan con las nuevas direcciones oficiales de consulta; para conocer una reforma específica deben revisar el Reglamento disponible, no sólo el aviso."
         ],
-        "sector": "Personas litigantes y áreas que consultan la normativa interna de la Junta"
+        "sector": "Personas usuarias, litigantes y personal que consulte el Reglamento Interior de la JFCA"
       }
     ]
   },
@@ -113,23 +108,22 @@
     "review_reason": null,
     "source": "DOF",
     "source_id": "5796828",
-    "summary_teaser": "La Secretaría del Trabajo y Previsión Social dio a conocer las direcciones electrónicas para consultar el Reglamento Interior vigente de la Junta Federal de Conciliación y Arbitraje. El reglamento incorpora reformas aprobadas por su Pleno y entra en vigor al día siguiente de la publicación del aviso.",
-    "title": "Junta Federal de Conciliación actualiza acceso a su reglamento interior",
+    "summary_teaser": "La STPS informó dos direcciones electrónicas para consultar el Reglamento Interior vigente de la Junta Federal de Conciliación y Arbitraje, incluidas las reformas aprobadas por su Pleno. El Reglamento entra en vigor al día siguiente de la publicación del aviso, que deja sin efectos la vía de consulta difundida en 2024.",
+    "title": "Aviso reemplaza la consulta anterior del reglamento interior de JFCA",
     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796828&fecha=21/08/2026"
   },
   "recommended_actions": [
     {
-      "affected_group": "Personas litigantes y áreas que consultan la normativa interna de la Junta",
-      "deadline": null,
+      "affected_group": "Personas usuarias, litigantes y personal que requieran consultar el Reglamento Interior de la JFCA",
+      "deadline": "Desde el día siguiente de la publicación del aviso para la entrada en vigor del Reglamento referido.",
       "evidence_refs": [
-        "chunk-1",
         "chunk-2"
       ],
-      "legal_basis": "Aviso de la Secretaría del Trabajo y Previsión Social",
+      "legal_basis": "Punto único y transitorio primero del Aviso.",
       "paragraphs": [
-        "Actualizar repositorios, expedientes y referencias de consulta con los enlaces publicados; revisar el reglamento íntegro antes de invocar una regla interna."
+        "Si necesitan conocer una regla interna o una reforma concreta, deberán consultar la versión del Reglamento en las direcciones electrónicas publicadas y contrastar directamente el texto aplicable."
       ],
-      "trigger": "Consultar o citar el Reglamento Interior de la Junta Federal de Conciliación y Arbitraje"
+      "trigger": "Cuando se requiera consultar el Reglamento Interior vigente o una reforma aprobada por el Pleno."
     }
   ],
   "schema_version": 8

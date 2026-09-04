@@ -1,0 +1,181 @@
+{
+  "cut_id": "9bfb2857e185b6a117ea296f",
+  "item": {
+    "ai_generated": true,
+    "authority": "PODER EJECUTIVO SECRETARIA ANTICORRUPCION Y BUEN GOBIERNO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797708&fecha=02%2F09%2F2026",
+    "card_body": "## Qué se publicó\nLa autoridad comunicó la inhabilitación temporal de IFASER, S.A. de C.V. para participar en contrataciones realizadas con recursos federales.\n\n## Sustancia\nLas entidades destinatarias deben abstenerse de recibir propuestas o contratar con la empresa por tres meses a partir de las condiciones de publicación y registro indicadas. Los contratos ya adjudicados o formalizados quedan fuera del alcance comunicado; la inhabilitación puede subsistir si no se paga la multa.\n\n## Fuente\n[Diario Oficial de la Federación](https://dof.gob.mx/nota_detalle.php?codigo=5797708&fecha=02%2F09%2F2026)",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "96d19b33802c63cd7efe925b8abb5bfec0dbb4507b59a86ec15e8d41213dd194",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-1",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/0fca6068482754b78515d313.json",
+    "detail_url": "notas/0fca6068482754b78515d313.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "heading": "Alcance de la inhabilitación",
+        "paragraphs": [
+          "La autoridad comunica que la resolución sancionadora impuso a IFASER una multa y una inhabilitación temporal. La circular instruye a los destinatarios a abstenerse de aceptar propuestas o celebrar contratos con la empresa, de forma directa o por interpósita persona.",
+          "El alcance material se limita a procedimientos y contratos de adquisiciones, arrendamientos y servicios que se realicen total o parcialmente con recursos federales. La publicación no individualiza procesos de contratación ni cuantifica la multa."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "heading": "Inicio, duración y contratos existentes",
+        "paragraphs": [
+          "La inhabilitación es por tres meses y empieza al día siguiente de la publicación en el DOF y del registro en ComprasMX, según la propia circular. Si la multa sigue impaga al vencimiento, la inhabilitación continúa hasta el pago.",
+          "Los contratos adjudicados y los formalizados con IFASER no quedan comprendidos en la aplicación de la circular. La eliminación del registro en ComprasMX requiere el comprobante de pago presentado ante la Secretaría y no exige otro comunicado."
+        ]
+      }
+    ],
+    "detected_at": "2026-09-04T03:37:15.636102+00:00",
+    "document_type": "Circular",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "3f4b0a9c16b72a4b4dde9b33b8d10d6af3c92e927d7f703da4d0fb853f15cb4d",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "CIRCULAR por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a las entidades federativas y sus municipios, a los entes públicos de unas y otros, así como a las demarcaciones territoriales de la Ciudad de México, que deberán abstenerse de aceptar propuestas y/o celebrar contratos con la empresa IFASER, S.A. de C.V.",
+          "location": "caracteres 0-359"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Buen Gobierno.- Secretaría Anticorrupción y Buen Gobierno.- Órgano Interno de Control en la Comisión Nacional para la Protección y Defensa de los Usuarios de Servicios Financieros.- Área de Responsabilidades.- Exp. RSP. SANCPC 0001/2023.",
+          "location": "caracteres 359-7501"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797708&fecha=02%2F09%2F2026",
+      "retrieved_at": "2026-09-03T16:52:41.813488+00:00"
+    },
+    "executive_summary": [
+      "La circular comunica una inhabilitación temporal de tres meses para IFASER, S.A. de C.V. en procedimientos de adquisiciones, arrendamientos y servicios realizados total o parcialmente con recursos federales.",
+      "El deber comunicado es abstenerse de recibir propuestas o celebrar contratos con la empresa, directamente o por interpósita persona, desde el día siguiente a la publicación y registro en ComprasMX.",
+      "Los contratos adjudicados o formalizados antes de la circular no quedan comprendidos. Si la multa no está pagada al concluir el plazo, la inhabilitación subsiste hasta el pago acreditado."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-09-04T03:37:15.636102+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5797708",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "La consecuencia verificable es una restricción temporal para participar en las contrataciones públicas descritas, no una conclusión sobre la validez de contratos existentes. La duración efectiva puede exceder tres meses si la multa permanece impaga."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-2"
+          ],
+          "paragraphs": [
+            "Deben aplicar el deber de abstención en los procedimientos y contratos regulados por la Ley de Adquisiciones, Arrendamientos y Servicios del Sector Público que entren en el alcance comunicado."
+          ],
+          "sector": "Entidades contratantes que usen recursos federales"
+        }
+      ]
+    },
+    "importance": 2,
+    "issuing_body": "Presidencia de la República",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-09-04T03:37:15.636102+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797708&fecha=02/09/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5797708"
+    },
+    "official_published_at": "2026-09-02",
+    "official_title": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a las entidades federativas y sus municipios, a los entes públicos de unas y otros, así como a las demarcaciones territoriales de la Ciudad de México, que deberán abstenerse de aceptar propuestas y/o celebrar contratos con la empresa IFASER, S.A. de C.V.",
+    "published_at": "2026-09-02",
+    "published_day": 2,
+    "published_month": 9,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Dependencias, entidades y demás destinatarios de la circular",
+        "deadline": "Desde el día siguiente a la publicación en el DOF y al registro en ComprasMX, por tres meses",
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "legal_basis": "Resolutivos primero y tercero de la resolución sancionadora, según la circular",
+        "paragraphs": [
+          "Si un procedimiento de adquisiciones, arrendamientos o servicios se financia total o parcialmente con recursos federales, verificar que no se reciban propuestas ni se celebren contratos con IFASER dentro del periodo comunicado. Revisar por separado los contratos ya adjudicados o formalizados, que la circular excluye."
+        ],
+        "trigger": "Procedimiento o contrato dentro del alcance de la circular"
+      },
+      {
+        "affected_group": "IFASER, S.A. de C.V.",
+        "deadline": null,
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "legal_basis": "Artículo 60, párrafo tercero, de la Ley de Adquisiciones, Arrendamientos y Servicios del Sector Público, citado en la circular",
+        "paragraphs": [
+          "Si busca que se elimine su registro de sancionada al concluir la inhabilitación, presentar ante la Secretaría el comprobante del pago de la multa. La circular no proporciona el monto ni permite verificar un pago concreto."
+        ],
+        "trigger": "Pago de la multa impuesta en la resolución sancionadora"
+      }
+    ],
+    "relevance_score": 2,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5797708",
+    "subtopic_tags": [
+      "administracion publica federal"
+    ],
+    "summary": "La Secretaría Anticorrupción y Buen Gobierno, por conducto del Área de Responsabilidades del Órgano Interno de Control en la Comisión Nacional para la Protección y Defensa de los Usuarios de Servicios Financieros, comunicó la inhabilitación temporal de IFASER, S.A. de C.V. La circular deriva de la resolución de 14 de agosto de 2026 recaída en el expediente SANCPC 0001/2023, con la que se concluyó un procedimiento administrativo de sanción y se impusieron una multa y una inhabilitación temporal.\n\nLa medida obliga a dependencias y entidades de la Administración Pública Federal, entidades federativas y municipios, entes públicos y demarcaciones territoriales de la Ciudad de México a abstenerse de aceptar propuestas o celebrar contratos con la empresa, de manera directa o por interpósita persona. La circular limita ese deber a procedimientos de adquisiciones, arrendamientos y servicios realizados total o parcialmente con recursos federales. No identifica una sanción pecuniaria ni aporta la cuantía de la multa, por lo que esta ficha no la estima.\n\nEl plazo de inhabilitación comunicado es de tres meses. Según el texto, comienza al día siguiente de que la circular se publique en el DOF y se registre en ComprasMX. Si al vencer ese plazo IFASER no ha pagado la multa, la inhabilitación subsiste hasta el pago; para que se elimine el registro de la sancionada en ComprasMX, la empresa debe presentar a la Secretaría el documento probatorio de pago. La circular señala que no será necesaria otra publicación para esa eliminación.\n\nEl documento excluye del alcance de la circular los contratos ya adjudicados y los formalizados actualmente con IFASER. Por ello, la publicación no ordena resolver o modificar esos contratos existentes. Tampoco determina consecuencias particulares para licitaciones concretas: cada entidad debe aplicar el deber de abstención dentro de los procedimientos y contratos regulados por la Ley de Adquisiciones, Arrendamientos y Servicios del Sector Público que utilicen recursos federales.",
+    "summary_teaser": "La circular ordena a dependencias, entidades, entidades federativas, municipios y demarcaciones abstenerse de recibir propuestas o contratar con IFASER, S.A. de C.V. La inhabilitación es por tres meses desde el día siguiente a la publicación y registro en ComprasMX, y puede subsistir hasta el pago de la multa.",
+    "title": "Autoridad inhabilita a IFASER en contrataciones con recursos federales",
+    "topic_tags": [
+      "Derecho administrativo",
+      "Circular"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797708&fecha=02/09/2026"
+  },
+  "schema_version": 8
+}

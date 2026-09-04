@@ -1,0 +1,165 @@
+{
+  "cut_id": "9bfb2857e185b6a117ea296f",
+  "item": {
+    "ai_generated": true,
+    "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797806&fecha=03%2F09%2F2026",
+    "card_body": "## Qué se publicó\n\nLa asignación de un inmueble federal a la Secretaría de Agricultura y Desarrollo Rural para uso administrativo.\n\n## Sustancia\n\nEl destino permite continuar el uso como oficinas, sin transmitir la propiedad, e impone condiciones sobre conservación, obras, cambio de uso y devolución.\n\n## Fuente\n\nDiario Oficial de la Federación, publicación de 3 de septiembre de 2026.",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "262e957ac9df9bf635afe1302b659168754d853dd0e38905c1ee156260e0464e",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-1",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/f5aec09442904b7885146a4c.json",
+    "detail_url": "notas/f5aec09442904b7885146a4c.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "heading": "Destino y antecedentes del inmueble",
+        "paragraphs": [
+          "El acuerdo asigna el predio denominado Representación Estatal de Agricultura en Zacatecas a la Secretaría para oficinas administrativas. Los considerandos registran antecedentes de propiedad, levantamiento topográfico, compatibilidad urbanística, solicitud institucional y dictámenes técnicos de INDAABIN."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "heading": "Condiciones de aprovechamiento",
+        "paragraphs": [
+          "El uso distinto sin autorización previa o el desuso activa la obligación de poner el inmueble a disposición de INDAABIN en el plazo señalado. Las obras requieren las licencias y autorizaciones aplicables; además, la Secretaría debe custodiar, conservar, mantener y asegurar el inmueble."
+        ]
+      }
+    ],
+    "detected_at": "2026-09-04T03:37:15.636102+00:00",
+    "document_type": "Acuerdo",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "be22e41ba09372ef42aa9b051f45dbfab8a0f13c1a39176b0904a52868b21c6d",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "ACUERDO por el que se destina a la Secretaría de Agricultura y Desarrollo Rural, el inmueble federal denominado \" Representación Estatal de Agricultura en Zacatecas \" , con Registro Federal Inmobiliario 32-5567-1 y superficie de 6,800.492 metros cuadrados, que proviene de un inmueble de mayor extensión, ubicado en Avenida Secretaría de la Defensa Nacional número 88, Colonia Guadalupe Centro, Código Postal 98600, Municipio de Guadalupe, Estado de Zacatecas.",
+          "location": "caracteres 0-464"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Instituto de Administración y Avalúos de Bienes Nacionales.- DST-18/2026.",
+          "location": "caracteres 464-11288"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797806&fecha=03%2F09%2F2026",
+      "retrieved_at": "2026-09-03T16:52:39.450768+00:00"
+    },
+    "executive_summary": [
+      "INDAABIN destinó a la Secretaría de Agricultura y Desarrollo Rural un inmueble federal en Guadalupe, Zacatecas, para continuar utilizándolo como oficinas administrativas. El acuerdo identifica la superficie, ubicación y registro federal inmobiliario del predio.",
+      "El destino no transmite propiedad ni derecho real. La Secretaría debe conservar el uso autorizado, custodiar y asegurar el inmueble, obtener las autorizaciones necesarias antes de obras y ponerlo a disposición de INDAABIN si cambia el uso sin autorización o deja de necesitarlo."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-09-04T03:37:15.636102+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5797806",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "El acuerdo formaliza el aprovechamiento administrativo de un inmueble federal por la Secretaría de Agricultura y Desarrollo Rural, sin alterar la titularidad del bien."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-2"
+          ],
+          "paragraphs": [
+            "La Secretaría queda obligada a utilizar, custodiar, conservar y asegurar el inmueble dentro de los límites del destino autorizado."
+          ],
+          "sector": "Secretaría de Agricultura y Desarrollo Rural y responsables inmobiliarios"
+        }
+      ]
+    },
+    "importance": 1,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-09-04T03:37:15.636102+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797806&fecha=03/09/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5797806"
+    },
+    "official_published_at": "2026-09-03",
+    "official_title": "Acuerdo por el que se destina a la Secretaría de Agricultura y Desarrollo Rural, el inmueble federal denominado \"Representación Estatal de Agricultura en Zacatecas\", con Registro Federal Inmobiliario 32-5567-1 y superficie de 6,800.492 metros cuadrados, que proviene de un inmueble de mayor extensión, ubicado en Avenida Secretaría de la Defensa Nacional número 88, Colonia Guadalupe Centro, Código Postal 98600, Municipio de Guadalupe, Estado de Zacatecas.",
+    "published_at": "2026-09-03",
+    "published_day": 3,
+    "published_month": 9,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Áreas inmobiliarias y administrativas de la Secretaría de Agricultura y Desarrollo Rural",
+        "deadline": "Dentro de los cuatro meses siguientes a que el inmueble deje de ser útil para el servicio, cuando proceda su puesta a disposición.",
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "legal_basis": "Puntos segundo, tercero, cuarto y quinto del acuerdo.",
+        "paragraphs": [
+          "Si se proyectan obras o un uso distinto, identifiquen primero las autorizaciones de INDAABIN y de las autoridades competentes que correspondan; si el predio deja de ser útil, gestionen su puesta a disposición conforme al acuerdo."
+        ],
+        "trigger": "Antes de obras, ante un cambio de uso o cuando el inmueble deje de ser útil para el servicio."
+      }
+    ],
+    "relevance_score": 1,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5797806",
+    "subtopic_tags": [],
+    "summary": "El Instituto de Administración y Avalúos de Bienes Nacionales destinó a la Secretaría de Agricultura y Desarrollo Rural el inmueble federal denominado Representación Estatal de Agricultura en Zacatecas. El predio se ubica en Avenida Secretaría de la Defensa Nacional número 88, colonia Guadalupe Centro, municipio de Guadalupe, Zacatecas, tiene Registro Federal Inmobiliario 32-5567-1 y una superficie de 6,800.492 metros cuadrados. El acuerdo indica que el terreno forma parte de un inmueble de mayor extensión y que el destino permite a la Secretaría continuar utilizándolo como oficinas administrativas para el cumplimiento de sus atribuciones.\n\nLos considerandos describen la documentación de propiedad, el levantamiento topográfico y antecedentes de uso de suelo. También refieren que la Secretaría solicitó el acuerdo administrativo de destino y que INDAABIN autorizó técnicamente la operación, con opinión procedente de su Unidad Jurídica. La publicación señala que la manifestación sobre calidad de monumento artístico e histórico concluyó, con los antecedentes documentales disponibles, que el inmueble no cuenta con características para considerarlo monumento histórico o artístico, sin perjuicio de que la autoridad inmobiliaria pueda requerir acreditación posterior.\n\nEl destino queda condicionado al uso autorizado. Si la Secretaría da al inmueble un uso distinto sin autorización previa de Hacienda por conducto de INDAABIN, o deja de utilizarlo o necesitarlo, deberá ponerlo a disposición del Instituto con mejoras y accesiones, sin derecho a compensación, dentro de los cuatro meses siguientes a que deje de ser útil para su servicio. La Secretaría debe gestionar licencias, permisos, autorizaciones u otros actos requeridos por autoridades locales y federales antes de ejecutar obras de construcción, reconstrucción, modificación, adaptación, conservación, mantenimiento, reparación o demolición.\n\nAsimismo, debe custodiar y vigilar el predio, cubrir los gastos necesarios para conservación, mantenimiento, servicios inherentes y aseguramiento contra daños. El acuerdo aclara que el destino sólo confiere el derecho de aprovechar el inmueble para el uso autorizado: no transmite su propiedad ni otorga derecho real alguno. INDAABIN vigilará el cumplimiento, el instrumento se inscribirá en el Registro Público de la Propiedad Federal y entra en vigor al día siguiente de su publicación. La información revisada no identifica un proyecto de obra concreto ni autoriza por sí misma intervenciones futuras; esas actuaciones quedan sujetas a los actos habilitantes indicados.",
+    "summary_teaser": "INDAABIN destinó a la Secretaría de Agricultura y Desarrollo Rural un inmueble federal en Guadalupe, Zacatecas, para continuar utilizándolo como oficinas administrativas. El acuerdo conserva la propiedad federal, exige custodia, mantenimiento y aseguramiento, y fija condiciones para obras, cambio de uso o devolución del predio.",
+    "title": "Destino establece uso administrativo de predio para Agricultura",
+    "topic_tags": [
+      "Acuerdo"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797806&fecha=03/09/2026"
+  },
+  "schema_version": 8
+}

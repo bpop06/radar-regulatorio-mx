@@ -6,10 +6,7 @@
       "source_ref": "chunk-1",
       "target_sections": [
         "executive_summary",
-        "detailed_summary",
-        "impacts.general",
-        "impacts.sectors",
-        "recommended_actions"
+        "detailed_summary"
       ]
     },
     {
@@ -25,31 +22,39 @@
       ]
     }
   ],
-  "cut_id": "80ff8a726797f7b9e5131c53",
+  "cut_id": "9bfb2857e185b6a117ea296f",
   "detailed_summary": [
     {
       "evidence_refs": [
+        "chunk-1",
         "chunk-2"
       ],
-      "heading": "Contenido publicado",
+      "heading": "Contexto de los comisionistas de base tecnológica",
       "paragraphs": [
-        "La modificación incorpora el número móvil habilitado para mensajes SMS como medio de contacto para entregar un Factor de Autenticación Categoría 3. Para consultas de saldos y movimientos realizadas a través de esos comisionistas, la institución puede requerir sólo el Factor de Autenticación Categoría 2. Las instituciones deben mantener una opción o enlace explícito, claro y visible que redireccione a su infraestructura para modificar ese factor o el medio de contacto.",
-        "El texto sitúa el cambio en el esquema que permite a comisionistas de base tecnológica abrir cuentas nivel 2, efectuar transferencias asociadas, otorgar determinados créditos, procesar pagos y mostrar información de productos financieros. La resolución responde a la ausencia previa de SMS como canal para el segundo factor y al tratamiento diferenciado de operaciones de menor riesgo."
+        "La resolución se refiere a comisionistas que actúan por nombre y cuenta de instituciones de crédito mediante páginas de Internet o aplicaciones. La regulación previa contempla aperturas de cuentas nivel 2, transferencias asociadas, créditos dentro del límite indicado, pagos y consultas de saldos y movimientos."
       ]
     },
     {
       "evidence_refs": [
         "chunk-2"
       ],
-      "heading": "Alcance y lectura práctica",
+      "heading": "Canales y factores de autenticación",
       "paragraphs": [
-        "El alcance se limita a instituciones de crédito que celebren operaciones mediante los comisionistas regulados y a sus flujos tecnológicos de autenticación. La resolución entra en vigor al día siguiente de su publicación.",
-        "La ficha se dirige principalmente a instituciones de crédito y comisionistas de base tecnológica."
+        "El factor de categoría 3 puede enviarse a correo electrónico, mensajería instantánea cifrada o teléfono móvil habilitado para SMS. En general, la autenticación exige el factor de categoría 2 definido previamente y el factor de categoría 3 recibido; sólo para consultas de saldos y movimientos puede requerirse únicamente la categoría 2."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Modificación de datos y vigencia",
+      "paragraphs": [
+        "Las instituciones deben permitir modificar el factor de categoría 2 y el medio de contacto mediante una opción o enlace explícito, claro y visible en la página o aplicación del comisionista, que redireccione a la infraestructura tecnológica de la institución. La resolución entra en vigor al día siguiente de su publicación."
       ]
     }
   ],
   "evidence": {
-    "content_hash": "8ec89c1112eab1e8f258c30367afcfa8fb56b10d42e4e5a46047a58ca9ee1c17",
+    "content_hash": "376152ab11d60d6940358158dc7e49dba966dec7352af63e7aa648f704e35ecb",
     "extraction_method": "html-adapter",
     "locators": [
       {
@@ -64,11 +69,11 @@
       }
     ],
     "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797560&fecha=01%2F09%2F2026",
-    "retrieved_at": "2026-09-01T16:34:50.958385+00:00"
+    "retrieved_at": "2026-09-03T16:52:56.144510+00:00"
   },
   "executive_summary": [
-    "La Comisión Nacional Bancaria y de Valores difundió una modificación a las disposiciones aplicables a las instituciones de crédito sobre los mecanismos de autenticación usados mediante comisionistas de base tecnológica. La modificación incorpora el número móvil habilitado para mensajes SMS como medio de contacto para entregar un Factor de Autenticación Categoría 3. Para consultas de saldos y movimientos realizadas a través de esos comisionistas, la institución puede requerir sólo el Factor de Autenticación Categoría 2. Las instituciones deben mantener una opción o enlace explícito, claro y visible que redireccione a su infraestructura para modificar ese factor o el medio de contacto.",
-    "El alcance se limita a instituciones de crédito que celebren operaciones mediante los comisionistas regulados y a sus flujos tecnológicos de autenticación. La resolución entra en vigor al día siguiente de su publicación. La síntesis se limita a los hechos y condiciones expresamente visibles en la fuente oficial."
+    "La CNBV permite que el factor de autenticación de categoría 3 se entregue también por mensajes de texto SMS en la operación de comisionistas de base tecnológica de instituciones de crédito.",
+    "La modificación admite, como excepción, que las consultas de saldos y movimientos requieran sólo el factor de categoría 2. Las páginas o aplicaciones de los comisionistas deben redirigir a la infraestructura de la institución para modificar el factor y el medio de contacto."
   ],
   "impacts": {
     "general": {
@@ -76,7 +81,7 @@
         "chunk-2"
       ],
       "paragraphs": [
-        "El efecto observable es el que la publicación atribuye al acto: El alcance se limita a instituciones de crédito que celebren operaciones mediante los comisionistas regulados y a sus flujos tecnológicos de autenticación. La resolución entra en vigor al día siguiente de su publicación."
+        "La modificación amplía los canales permitidos para un factor de autenticación y crea una excepción específica para consultas de saldos y movimientos. No elimina la regla de autenticación descrita para las demás operaciones."
       ]
     },
     "sectors": [
@@ -85,9 +90,18 @@
           "chunk-2"
         ],
         "paragraphs": [
-          "Las personas comprendidas deben considerar el documento porque La modificación incorpora el número móvil habilitado para mensajes SMS como medio de contacto para entregar un Factor de Autenticación Categoría 3. Para consultas de saldos y movimientos realizadas a través de esos comisionistas, la institución puede requerir sólo el Factor de Autenticación Categoría 2. Las instituciones deben mantener una opción o enlace explícito, claro y visible que redireccione a su infraestructura para modificar ese factor o el medio de contacto."
+          "Deben ajustar, si operan mediante los comisionistas regulados, los medios de contacto y los flujos de autenticación conforme a los artículos modificados."
         ],
-        "sector": "Instituciones de crédito y comisionistas de base tecnológica"
+        "sector": "Instituciones de crédito"
+      },
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "Las páginas o aplicaciones de los comisionistas deben incluir el enlace de redirección para las modificaciones que realizará el cliente en la infraestructura de la institución."
+        ],
+        "sector": "Comisionistas de base tecnológica y sus clientes"
       }
     ]
   },
@@ -116,22 +130,34 @@
     "review_reason": null,
     "source": "DOF",
     "source_id": "5797560",
-    "summary_teaser": "La CNBV permite que las instituciones de crédito envíen por SMS el factor de autenticación de categoría 3 en operaciones con comisionistas de base tecnológica. También autoriza usar únicamente el factor de categoría 2 para consultas de saldos y movimientos, con obligaciones de información y redirección al sistema bancario.",
-    "title": "Banca incorpora SMS en autenticación de comisionistas digitales",
+    "summary_teaser": "La CNBV modifica reglas aplicables a instituciones de crédito para permitir mensajes SMS como canal del factor de autenticación de categoría 3. También permite que las consultas de saldos y movimientos realizadas mediante comisionistas usen únicamente un factor de categoría 2, como excepción.",
+    "title": "CNBV permite autenticación por SMS en servicios de comisionistas",
     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797560&fecha=01/09/2026"
   },
   "recommended_actions": [
     {
-      "affected_group": "Instituciones de crédito y comisionistas de base tecnológica",
+      "affected_group": "Instituciones de crédito que operen con comisionistas de base tecnológica",
+      "deadline": "Al día siguiente de la publicación, conforme al transitorio.",
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "legal_basis": null,
+      "paragraphs": [
+        "Si prestan las operaciones reguladas mediante esos comisionistas, deben revisar sus flujos para admitir los medios de contacto autorizados y aplicar la excepción de un solo factor sólo a consultas de saldos y movimientos."
+      ],
+      "trigger": "A partir de la entrada en vigor de la resolución y para operaciones realizadas mediante los comisionistas regulados."
+    },
+    {
+      "affected_group": "Comisionistas de base tecnológica",
       "deadline": null,
       "evidence_refs": [
         "chunk-2"
       ],
       "legal_basis": null,
       "paragraphs": [
-        "Revisar los flujos de autenticación, los medios de contacto disponibles y la interfaz de redirección a la institución antes de habilitar el nuevo canal o la excepción para consultas."
+        "Si ofrecen la página o aplicación usada por clientes, deben prever una opción o enlace explícito, claro y visible que redireccione a la infraestructura de la institución para modificar el factor de categoría 2 y el medio de contacto."
       ],
-      "trigger": "Cuando la persona o entidad se ubique en el ámbito material descrito por la fuente oficial."
+      "trigger": "Cuando su página o aplicación permita la interacción regulada con clientes."
     }
   ],
   "schema_version": 8

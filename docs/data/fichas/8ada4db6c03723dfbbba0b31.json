@@ -1,0 +1,170 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-3",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "9bfb2857e185b6a117ea296f",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2",
+        "chunk-3"
+      ],
+      "heading": "Detección y alcance informado",
+      "paragraphs": [
+        "La ANAM informó que detectó en Manzanillo, con Marina y la SSPC, un cargamento de tenis procedente de China. El comunicado lo describe con características que permiten presumir un posible carácter apócrifo y reporta tres cargamentos con aproximadamente 11 mil 755 pares de calzado deportivo.",
+        "La comunicación vincula la actuación con revisiones documentales y físicas realizadas por personal especializado. La referencia a posible apocrifía es la caracterización de la fuente y no equivale, por sí sola, a una determinación definitiva de autenticidad o infracción."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-3"
+      ],
+      "heading": "Mecanismos de control descritos",
+      "paragraphs": [
+        "El texto atribuye la identificación a esquemas institucionales de gestión de riesgo, análisis estratégico y vigilancia aduanera coordinados con Semar. Menciona revisión de antecedentes comerciales, validación de perfiles operativos, trazabilidad documental y seguimiento de operaciones que requieran revisión especializada.",
+        "La ANAM presenta esas acciones como parte de mecanismos permanentes de control y supervisión de operaciones de comercio exterior. El comunicado también afirma que la mercancía representaba un riesgo para la recaudación fiscal y la protección de derechos de propiedad intelectual, sin cuantificar ese riesgo ni identificar derechos o titulares específicos."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-3"
+      ],
+      "heading": "Alcance no acreditado por el comunicado",
+      "paragraphs": [
+        "La fuente no identifica importador, consignatario, marca, contenedor, pedimento, fracción arancelaria ni expediente. Tampoco publica una resolución administrativa, un aseguramiento, una destrucción, una multa, una denuncia o un plazo aplicable.",
+        "En consecuencia, el comunicado acredita una detección y revisión reportadas por autoridades, pero no permite afirmar que la mercancía sea falsificada ni anticipar una consecuencia individual para personas, empresas u operaciones concretas."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "773973b37db30fd3ff9215dc4405b4b28887060d3ba73ca23a4a6d2b385c07a9",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "Preámbulo",
+        "location": "caracteres 0-2472"
+      },
+      {
+        "id": "chunk-2",
+        "label": "MARINA Y ANAM IDENTIFICAN CARGAMENTO DE CALZADO DEPORTIVO PRESUNTAMENTE APÓCRIFO EN LA ADUANA DE MANZANILLO, COLIMA",
+        "location": "caracteres 2472-2633"
+      },
+      {
+        "id": "chunk-3",
+        "label": "Comunicado de prensa conjunto 69/2026",
+        "location": "caracteres 2633-4965"
+      }
+    ],
+    "official_url": "https://www.anam.gob.mx/comunicado-prensa-conjunto-69-2026",
+    "retrieved_at": "2026-09-04T03:37:26.812231+00:00"
+  },
+  "executive_summary": [
+    "La ANAM reportó la detección, junto con Marina y la SSPC, de un cargamento de tenis procedente de China en la Aduana de Manzanillo, Colima. La comunicación señala que la mercancía presentaba características que permiten presumir un posible carácter apócrifo.",
+    "Las revisiones documentales y físicas identificaron tres cargamentos con aproximadamente 11 mil 755 pares de calzado deportivo. La fuente asocia la actuación con inteligencia aduanera, análisis de riesgo, perfiles operativos y vigilancia coordinada.",
+    "El comunicado no individualiza a responsables ni describe una resolución, sanción o plazo. Por ello, su alcance probado es una detección y revisión oficial, no una conclusión definitiva sobre autenticidad o infracción."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-3"
+      ],
+      "paragraphs": [
+        "La consecuencia verificable es el registro oficial de una detección y revisión de calzado deportivo procedente de China en Manzanillo. El comunicado no establece una regla general nueva ni documenta una determinación definitiva sobre la autenticidad de la mercancía o sanciones subsecuentes."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-3"
+        ],
+        "paragraphs": [
+          "Para este grupo, el comunicado muestra que la ANAM relaciona sus mecanismos de gestión de riesgo y revisión especializada con operaciones de calzado deportivo procedente de China. No acredita que toda operación de ese tipo esté sujeta a una medida, ni identifica a un operador afectado."
+        ],
+        "sector": "Importadores y operadores de calzado deportivo con operaciones por Manzanillo"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://www.anam.gob.mx/comunicado-prensa-conjunto-69-2026",
+    "categories": [
+      "Comercio exterior"
+    ],
+    "content_hash": "2c789f79ef212e053760473b3a4e41837ff74976c3a427a52c121a1f004525e3",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/8ada4db6c03723dfbbba0b31.json",
+    "detail_url": "notas/8ada4db6c03723dfbbba0b31.html",
+    "detected_at": "2026-09-04T03:37:15.636102+00:00",
+    "document_type": "Comunicado",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "anam:33570b156e50b19f",
+    "importance": 2,
+    "issuing_body": "Agencia Nacional de Aduanas de México",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-09-03",
+    "official_title": "MARINA Y ANAM IDENTIFICAN CARGAMENTO DE CALZADO DEPORTIVO PRESUNTAMENTE APÓCRIFO EN LA ADUANA DE MANZANILLO, COLIMA",
+    "published_at": "2026-09-03",
+    "relevance_score": 2,
+    "review_reason": null,
+    "source": "ANAM",
+    "source_id": "33570b156e50b19f",
+    "summary_teaser": "La ANAM informó que, junto con Marina y la SSPC, detectó en Manzanillo tres cargamentos procedentes de China con aproximadamente 11 mil 755 pares de calzado deportivo que presentaban características para presumirlos apócrifos. El comunicado describe revisiones documentales y físicas y no reporta una determinación definitiva sobre autenticidad ni sanciones posteriores.",
+    "title": "ANAM reconoce indicios de calzado presuntamente apócrifo en Manzanillo",
+    "url": "https://www.anam.gob.mx/comunicado-prensa-conjunto-69-2026/"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Importadores y operadores que reciban una revisión vinculada con calzado deportivo procedente de China",
+      "deadline": null,
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-3"
+      ],
+      "legal_basis": null,
+      "paragraphs": [
+        "Si la autoridad solicita información o inicia una revisión, conservar y revisar la documentación comercial, de origen y de trazabilidad pertinente a la operación. Esta es una medida de preparación condicionada a una actuación concreta: el comunicado no fija un requerimiento individual, un plazo ni un fundamento jurídico específico."
+      ],
+      "trigger": "Solicitud de información o revisión de una operación de calzado deportivo procedente de China"
+    }
+  ],
+  "schema_version": 8
+}

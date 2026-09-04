@@ -6,10 +6,7 @@
       "source_ref": "chunk-1",
       "target_sections": [
         "executive_summary",
-        "detailed_summary",
-        "impacts.general",
-        "impacts.sectors",
-        "recommended_actions"
+        "detailed_summary"
       ]
     },
     {
@@ -25,31 +22,30 @@
       ]
     }
   ],
-  "cut_id": "80ff8a726797f7b9e5131c53",
+  "cut_id": "9bfb2857e185b6a117ea296f",
   "detailed_summary": [
     {
       "evidence_refs": [
+        "chunk-1",
         "chunk-2"
       ],
-      "heading": "Contenido publicado",
+      "heading": "Determinación y contribuyente identificado",
       "paragraphs": [
-        "El anexo identifica a Asociación de Productividad y Competitividad de Sonora, A.C., RFC APC1910164AA. El SAT comunica que no desvirtuó la presunción de falsedad de los CFDI emitidos, por lo que se consideran falsos con efectos generales y las operaciones que contienen no producen ni produjeron efecto fiscal. La publicación corresponde al procedimiento previsto en el artículo 49 Bis del Código Fiscal de la Federación.",
-        "La autoridad relaciona la publicación con la resolución notificada al contribuyente y con el requisito de comprobación del artículo 29-A, fracción IX. La fuente no describe hechos nuevos que justifiquen atribuir consecuencias distintas a la determinación y a los efectos fiscales expresamente comunicados."
+        "El oficio comunica la resolución prevista por el artículo 49 Bis y el anexo identifica a Asociación de Productividad y Competitividad de Sonora, A.C. con RFC APC1910164AA, así como el oficio de resolución y sus fechas de notificación."
       ]
     },
     {
       "evidence_refs": [
         "chunk-2"
       ],
-      "heading": "Alcance y lectura práctica",
+      "heading": "Efecto para receptores de CFDI",
       "paragraphs": [
-        "Quienes recibieron CFDI de la asociación deben conocer la situación y revertir, mediante declaración complementaria, el efecto fiscal que hubieran dado a las operaciones. El oficio fija 30 días naturales desde la publicación y advierte la restricción temporal del certificado de sello digital por incumplimiento.",
-        "La ficha se dirige principalmente a receptores de cfdi y responsables fiscales relacionados con la asociación publicada."
+        "El SAT señala que los comprobantes se consideran falsos con efectos generales y que quienes les hubieran dado efecto fiscal deben revertirlo mediante declaración complementaria dentro de 30 días naturales desde la publicación en el DOF."
       ]
     }
   ],
   "evidence": {
-    "content_hash": "9be77eec3db5f4e4ddcd5f9b293f2f00f283e4a9a070a2603756698277a7ae09",
+    "content_hash": "5d00bd4a00ee0d6af6876d0aae65af3cde7ae77b20a77ed71054155aa6fcfc39",
     "extraction_method": "html-adapter",
     "locators": [
       {
@@ -64,11 +60,11 @@
       }
     ],
     "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795723&fecha=07%2F08%2F2026",
-    "retrieved_at": "2026-09-01T16:35:43.617154+00:00"
+    "retrieved_at": "2026-09-03T16:53:56.279689+00:00"
   },
   "executive_summary": [
-    "El Servicio de Administración Tributaria difundió la publicación de una asociación respecto de la cual se determinó la falsedad general de sus comprobantes fiscales. El anexo identifica a Asociación de Productividad y Competitividad de Sonora, A.C., RFC APC1910164AA. El SAT comunica que no desvirtuó la presunción de falsedad de los CFDI emitidos, por lo que se consideran falsos con efectos generales y las operaciones que contienen no producen ni produjeron efecto fiscal. La publicación corresponde al procedimiento previsto en el artículo 49 Bis del Código Fiscal de la Federación.",
-    "Quienes recibieron CFDI de la asociación deben conocer la situación y revertir, mediante declaración complementaria, el efecto fiscal que hubieran dado a las operaciones. El oficio fija 30 días naturales desde la publicación y advierte la restricción temporal del certificado de sello digital por incumplimiento. La síntesis se limita a los hechos y condiciones expresamente visibles en la fuente oficial."
+    "El SAT publicó el RFC y nombre de Asociación de Productividad y Competitividad de Sonora, A.C. y comunicó que la resolución referida determinó que no desvirtuó la presunción sobre los CFDI del anexo.",
+    "La fuente informa que los receptores que hubieran dado efecto fiscal a esos comprobantes deben revertirlo mediante declaración complementaria dentro del plazo indicado, con la consecuencia administrativa que el oficio vincula a no hacerlo."
   ],
   "impacts": {
     "general": {
@@ -76,7 +72,7 @@
         "chunk-2"
       ],
       "paragraphs": [
-        "El efecto observable es el que la publicación atribuye al acto: Quienes recibieron CFDI de la asociación deben conocer la situación y revertir, mediante declaración complementaria, el efecto fiscal que hubieran dado a las operaciones. El oficio fija 30 días naturales desde la publicación y advierte la restricción temporal del certificado de sello digital por incumplimiento."
+        "La publicación comunica una situación que puede afectar el tratamiento fiscal dado por terceros a CFDI emitidos por el contribuyente identificado, en los términos que el propio oficio señala."
       ]
     },
     "sectors": [
@@ -85,9 +81,18 @@
           "chunk-2"
         ],
         "paragraphs": [
-          "Las personas comprendidas deben considerar el documento porque El anexo identifica a Asociación de Productividad y Competitividad de Sonora, A.C., RFC APC1910164AA. El SAT comunica que no desvirtuó la presunción de falsedad de los CFDI emitidos, por lo que se consideran falsos con efectos generales y las operaciones que contienen no producen ni produjeron efecto fiscal. La publicación corresponde al procedimiento previsto en el artículo 49 Bis del Código Fiscal de la Federación."
+          "Quienes hubieran recibido comprobantes del contribuyente del anexo deben evaluar si les dieron efecto fiscal y si el supuesto descrito por el oficio les exige una declaración complementaria."
         ],
-        "sector": "Receptores de CFDI y responsables fiscales relacionados con la asociación publicada"
+        "sector": "Receptores de CFDI del contribuyente identificado"
+      },
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "Las áreas responsables deben conservar la distinción entre la comunicación publicada, la resolución individual y los hechos concretos de cada operación, pues el oficio no detalla todas las transacciones."
+        ],
+        "sector": "Áreas fiscales y de facturación"
       }
     ]
   },
@@ -117,22 +122,34 @@
     "review_reason": null,
     "source": "DOF",
     "source_id": "5795723",
-    "summary_teaser": "El SAT incorporó a Asociación de Productividad y Competitividad de Sonora, A.C. al supuesto publicado del artículo 49 Bis del Código Fiscal. La autoridad determinó que no desvirtuó la presunción de falsedad de sus CFDI, por lo que terceros deben revisar los efectos fiscales otorgados.",
-    "title": "SAT determina efectos fiscales de CFDI de Asociación de Productividad y Competitividad de Sonora",
+    "summary_teaser": "El SAT publicó el RFC y nombre de Asociación de Productividad y Competitividad de Sonora, A.C. conforme al artículo 49 Bis del CFF. El oficio comunica que no desvirtuó la presunción sobre sus CFDI y advierte a terceros sobre la reversión del efecto fiscal mediante declaración complementaria.",
+    "title": "SAT determina efectos fiscales de comprobantes falsos",
     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5795723&fecha=07/08/2026"
   },
   "recommended_actions": [
     {
-      "affected_group": "Receptores de CFDI y responsables fiscales relacionados con la asociación publicada",
-      "deadline": "30 días naturales contados a partir de la publicación en el DOF.",
+      "affected_group": "Receptores de CFDI de Asociación de Productividad y Competitividad de Sonora, A.C.",
+      "deadline": "Treinta días naturales a partir de la publicación del oficio en el DOF.",
       "evidence_refs": [
         "chunk-2"
       ],
-      "legal_basis": "Artículo 49 Bis, fracción X, del Código Fiscal de la Federación; artículo 17-H Bis, fracción XIV, del mismo Código para la restricción temporal del certificado de sello digital por incumplimiento.",
+      "legal_basis": "Artículo 49 Bis, fracción X, y artículo 17-H Bis, fracción XIV, del CFF, citados en el oficio.",
       "paragraphs": [
-        "Localizar comprobantes emitidos por la asociación, conservar la evidencia de revisión y atender la declaración complementaria o medidas fiscales que correspondan conforme al oficio."
+        "Si recibieron CFDI del contribuyente identificado y les dieron efecto fiscal, revisen el alcance de la publicación y, si aplica, presenten la declaración complementaria para revertir ese efecto."
       ],
-      "trigger": "Cuando la persona o entidad se ubique en el ámbito material descrito por la fuente oficial."
+      "trigger": "Haber recibido CFDI emitidos por el contribuyente listado y haberles dado efecto fiscal."
+    },
+    {
+      "affected_group": "Responsables fiscales del contribuyente y de sus contrapartes",
+      "deadline": null,
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "legal_basis": null,
+      "paragraphs": [
+        "Conserven la resolución, notificaciones y expedientes de cada operación antes de extraer conclusiones adicionales, porque el oficio publicado no describe operaciones ni importes individuales."
+      ],
+      "trigger": "Análisis de consecuencias fiscales o de cumplimiento derivadas del oficio."
     }
   ],
   "schema_version": 8

@@ -6,10 +6,7 @@
       "source_ref": "chunk-1",
       "target_sections": [
         "executive_summary",
-        "detailed_summary",
-        "impacts.general",
-        "impacts.sectors",
-        "recommended_actions"
+        "detailed_summary"
       ]
     },
     {
@@ -20,7 +17,6 @@
         "executive_summary",
         "detailed_summary",
         "impacts.general",
-        "impacts.sectors",
         "recommended_actions"
       ]
     },
@@ -29,7 +25,6 @@
       "reason": null,
       "source_ref": "chunk-3",
       "target_sections": [
-        "executive_summary",
         "detailed_summary",
         "impacts.general",
         "impacts.sectors",
@@ -37,17 +32,16 @@
       ]
     }
   ],
-  "cut_id": "80ff8a726797f7b9e5131c53",
+  "cut_id": "9bfb2857e185b6a117ea296f",
   "detailed_summary": [
     {
       "evidence_refs": [
-        "chunk-2",
-        "chunk-3"
+        "chunk-1",
+        "chunk-2"
       ],
-      "heading": "Contenido publicado",
+      "heading": "Declaratoria y polígono",
       "paragraphs": [
-        "El acuerdo declara como Polo de Desarrollo Económico para el Bienestar Distrito Financiero y Tecnológico de Cancún un polígono de 60.76 hectáreas ubicado en el municipio de Benito Juárez, Quintana Roo. El instrumento describe los polígonos Kulkaná, la conectividad con carreteras, Tren Maya y aeropuerto, y presenta como vocaciones viables turismo médico, producción audiovisual, animación digital, servicios gastronómicos, educación, comercio mayorista, servicios empresariales y financieros y distribución para el Caribe.",
-        "La declaratoria refiere criterios de localización, conectividad, población, factibilidad social, educación, territorio, industria, sostenibilidad, infraestructura, propiedad y habitabilidad. La autoridad ambiental citada considera viable el proyecto sujeto al cumplimiento de requisitos normativos y medidas de protección ecológica y gestión hídrica; el estado reporta necesidades de transporte público y mejora peatonal."
+        "El acuerdo declara el polo y describe cuatro superficies que en conjunto suman 60.76 hectáreas. El texto vincula la declaratoria con el decreto y lineamientos de los Polos de Desarrollo Económico para el Bienestar."
       ]
     },
     {
@@ -55,15 +49,23 @@
         "chunk-2",
         "chunk-3"
       ],
-      "heading": "Alcance y lectura práctica",
+      "heading": "Criterios de factibilidad",
       "paragraphs": [
-        "El acuerdo declara el polo, no acredita por sí solo que un contribuyente cumpla los requisitos individuales de estímulos fiscales. El estado de Quintana Roo y la Secretaría de Economía deben suscribir el convenio de coordinación previsto en el decreto aplicable. La declaratoria entra en vigor al día siguiente de su publicación.",
-        "La ficha se dirige principalmente a desarrolladores, inversionistas y autoridades estatales vinculadas con el polo declarado."
+        "La Secretaría documenta ubicación, conectividad, disponibilidad de servicios, uso de suelo y entorno educativo. También registra la opinión del Instituto Nacional de los Pueblos Indígenas sobre la inexistencia de comunidades o tierras de núcleo agrario certificado en la superficie descrita."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-3"
+      ],
+      "heading": "Vocaciones, sostenibilidad y coordinación",
+      "paragraphs": [
+        "Las vocaciones incluyen turismo médico, audiovisual, animación, servicios empresariales y financieros, formación, alimentos y distribución. La viabilidad ambiental indicada queda sujeta a requisitos normativos y medidas ecológicas e hídricas; el estado y la Secretaría de Economía deben suscribir un convenio de coordinación."
       ]
     }
   ],
   "evidence": {
-    "content_hash": "c33db2a98c7aee72e47bbb1ea725b7bd986c5fab96026b6a1dd681e897c4d96d",
+    "content_hash": "32e40b2c8b8656cbf71a20a8d9128ca1ef9d1da6d31951fbc0916d01c68fdc03",
     "extraction_method": "html-adapter",
     "locators": [
       {
@@ -83,11 +85,11 @@
       }
     ],
     "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795731&fecha=07%2F08%2F2026",
-    "retrieved_at": "2026-09-01T16:35:38.008925+00:00"
+    "retrieved_at": "2026-09-03T16:53:51.606646+00:00"
   },
   "executive_summary": [
-    "La Secretaría de Economía difundió la declaratoria de un Polo de Desarrollo Económico para el Bienestar en Cancún. El acuerdo declara como Polo de Desarrollo Económico para el Bienestar Distrito Financiero y Tecnológico de Cancún un polígono de 60.76 hectáreas ubicado en el municipio de Benito Juárez, Quintana Roo. El instrumento describe los polígonos Kulkaná, la conectividad con carreteras, Tren Maya y aeropuerto, y presenta como vocaciones viables turismo médico, producción audiovisual, animación digital, servicios gastronómicos, educación, comercio mayorista, servicios empresariales y financieros y distribución para el Caribe.",
-    "El acuerdo declara el polo, no acredita por sí solo que un contribuyente cumpla los requisitos individuales de estímulos fiscales. El estado de Quintana Roo y la Secretaría de Economía deben suscribir el convenio de coordinación previsto en el decreto aplicable. La declaratoria entra en vigor al día siguiente de su publicación. La síntesis se limita a los hechos y condiciones expresamente visibles en la fuente oficial."
+    "La Secretaría de Economía declara el PODECOBI Distrito Financiero y Tecnológico de Cancún en una superficie de 60.76 hectáreas del municipio de Benito Juárez, Quintana Roo.",
+    "La resolución registra criterios de conectividad, suelo, sostenibilidad, propiedad e infraestructura, enumera vocaciones productivas y establece que Quintana Roo y la Secretaría de Economía deben suscribir un convenio de coordinación."
   ],
   "impacts": {
     "general": {
@@ -96,7 +98,7 @@
         "chunk-3"
       ],
       "paragraphs": [
-        "El efecto observable es el que la publicación atribuye al acto: El acuerdo declara el polo, no acredita por sí solo que un contribuyente cumpla los requisitos individuales de estímulos fiscales. El estado de Quintana Roo y la Secretaría de Economía deben suscribir el convenio de coordinación previsto en el decreto aplicable. La declaratoria entra en vigor al día siguiente de su publicación."
+        "La declaratoria delimita un polo y sus condiciones de selección. No acredita por sí sola que un contribuyente, proyecto o desarrollador individual haya obtenido estímulos, autorizaciones o cumplimiento ambiental."
       ]
     },
     "sectors": [
@@ -106,9 +108,18 @@
           "chunk-3"
         ],
         "paragraphs": [
-          "Las personas comprendidas deben considerar el documento porque El acuerdo declara como Polo de Desarrollo Económico para el Bienestar Distrito Financiero y Tecnológico de Cancún un polígono de 60.76 hectáreas ubicado en el municipio de Benito Juárez, Quintana Roo. El instrumento describe los polígonos Kulkaná, la conectividad con carreteras, Tren Maya y aeropuerto, y presenta como vocaciones viables turismo médico, producción audiovisual, animación digital, servicios gastronómicos, educación, comercio mayorista, servicios empresariales y financieros y distribución para el Caribe."
+          "El acuerdo identifica vocaciones productivas potenciales dentro del polo, pero la procedencia de beneficios fiscales o autorizaciones depende de los requisitos del decreto, los lineamientos y las normas aplicables que el propio acuerdo cita."
         ],
-        "sector": "Desarrolladores, inversionistas y autoridades estatales vinculadas con el polo declarado"
+        "sector": "Empresas con actividades productivas o de desarrollo en Cancún"
+      },
+      {
+        "evidence_refs": [
+          "chunk-3"
+        ],
+        "paragraphs": [
+          "El instrumento les asigna la suscripción del convenio de coordinación previsto para el polo."
+        ],
+        "sector": "Autoridades de Quintana Roo y Secretaría de Economía"
       }
     ]
   },
@@ -137,13 +148,13 @@
     "review_reason": null,
     "source": "DOF",
     "source_id": "5795731",
-    "summary_teaser": "La Secretaría de Economía declaró un Polo de Desarrollo Económico para el Bienestar de 60.76 hectáreas en Benito Juárez, Quintana Roo. El documento identifica vocaciones financieras, tecnológicas, turísticas y logísticas, y prevé que el estado y la Secretaría suscriban un convenio de coordinación.",
-    "title": "Economía declara polo financiero y tecnológico en Cancún",
+    "summary_teaser": "La Secretaría de Economía declara el Polo de Desarrollo Económico para el Bienestar Distrito Financiero y Tecnológico de Cancún, en Benito Juárez, Quintana Roo. El acuerdo describe su superficie, criterios de selección, vocaciones productivas y condiciones ambientales, territoriales y de coordinación pendientes.",
+    "title": "Economía declara polo financiero y tecnológico de 60.76 hectáreas en Cancún",
     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5795731&fecha=07/08/2026"
   },
   "recommended_actions": [
     {
-      "affected_group": "Desarrolladores, inversionistas y autoridades estatales vinculadas con el polo declarado",
+      "affected_group": "Personas interesadas en desarrollar actividades dentro del polo",
       "deadline": null,
       "evidence_refs": [
         "chunk-2",
@@ -151,9 +162,21 @@
       ],
       "legal_basis": null,
       "paragraphs": [
-        "Verificar la delimitación, vocación aplicable, condiciones ambientales y requisitos del régimen de estímulos antes de estructurar un proyecto o solicitar una autorización individual."
+        "Si evalúan proyectos dentro del área declarada, deben confirmar por separado su ubicación, los requisitos del régimen de estímulos y las autorizaciones sectoriales, ambientales, urbanísticas o de otra naturaleza que correspondan."
       ],
-      "trigger": "Cuando la persona o entidad se ubique en el ámbito material descrito por la fuente oficial."
+      "trigger": "Cuando pretendan desarrollar actividades o solicitar beneficios vinculados con el polo."
+    },
+    {
+      "affected_group": "Gobierno de Quintana Roo y Secretaría de Economía",
+      "deadline": null,
+      "evidence_refs": [
+        "chunk-3"
+      ],
+      "legal_basis": null,
+      "paragraphs": [
+        "Deben suscribir el convenio de coordinación que el acuerdo remite al decreto de estímulos para los Polos de Desarrollo Económico para el Bienestar."
+      ],
+      "trigger": "A partir de la declaratoria del polo."
     }
   ],
   "schema_version": 8

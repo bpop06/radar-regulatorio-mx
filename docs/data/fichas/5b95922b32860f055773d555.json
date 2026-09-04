@@ -14,8 +14,10 @@
       "reason": null,
       "source_ref": "chunk-2",
       "target_sections": [
+        "executive_summary",
         "detailed_summary",
         "impacts.general",
+        "impacts.sectors",
         "recommended_actions"
       ]
     },
@@ -24,8 +26,10 @@
       "reason": null,
       "source_ref": "chunk-3",
       "target_sections": [
+        "executive_summary",
         "detailed_summary",
         "impacts.general",
+        "impacts.sectors",
         "recommended_actions"
       ]
     },
@@ -34,37 +38,51 @@
       "reason": null,
       "source_ref": "chunk-4",
       "target_sections": [
+        "executive_summary",
         "detailed_summary",
         "impacts.general",
+        "impacts.sectors",
         "recommended_actions"
       ]
     }
   ],
-  "cut_id": "80ff8a726797f7b9e5131c53",
+  "cut_id": "9bfb2857e185b6a117ea296f",
   "detailed_summary": [
     {
       "evidence_refs": [
         "chunk-1",
-        "chunk-4"
+        "chunk-2",
+        "chunk-3"
       ],
-      "heading": "Contenido publicado",
+      "heading": "Alcance institucional y reglas básicas",
       "paragraphs": [
-        "Los lineamientos homologan las etapas de ingreso, desarrollo, permanencia, promoción, reconocimiento, reingreso y terminación del servicio profesional."
+        "La regulación es de aplicación general y observancia obligatoria para instituciones de seguridad pública de los tres órdenes de gobierno. La Guardia Nacional conserva la organización, jerarquía, dirección y seguridad social definidas por su legislación, mientras que reclutamiento, selección, ingreso y permanencia se rigen conforme a su marco aplicable.",
+        "Las instituciones deben contar con reglamentos de carrera, órgano colegiado y unidad responsable, así como hacer disponibles sus normas y actualizaciones mediante medios institucionales."
       ]
     },
     {
       "evidence_refs": [
-        "chunk-1",
+        "chunk-2",
+        "chunk-3",
         "chunk-4"
       ],
-      "heading": "Alcance práctico",
+      "heading": "Procesos de carrera y datos",
       "paragraphs": [
-        "Cada institución debe contar con reglamento, unidad responsable, órgano colegiado y mecanismos de registro, y armonizar su normativa dentro del plazo transitorio."
+        "El instrumento regula convocatorias, control de confianza, ingreso, expedientes electrónicos, profesionalización, permanencia y promociones. Las convocatorias y promociones deben incorporar criterios de igualdad sustantiva y las instituciones deben resguardar información conforme a la normativa de datos personales."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-4"
+      ],
+      "heading": "Reconocimiento, reingreso y seguimiento",
+      "paragraphs": [
+        "Los reglamentos deben contemplar reconocimientos, reingreso y terminación. El reingreso por renuncia voluntaria procede sólo si no han transcurrido más de tres años y requiere aprobación del órgano colegiado. El Secretariado puede ofrecer acompañamiento técnico y emitir criterios de evaluación."
       ]
     }
   ],
   "evidence": {
-    "content_hash": "e65b0939cb4cef8280040daca5581491c260fb8d3cf359653bf7dfc3256dc581",
+    "content_hash": "fc75915afd5262bd484cc4e480ecd85b60d32aefa2ae1140ff109d445322d497",
     "extraction_method": "html-adapter",
     "locators": [
       {
@@ -89,32 +107,35 @@
       }
     ],
     "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797183&fecha=26%2F08%2F2026",
-    "retrieved_at": "2026-09-01T16:35:07.800910+00:00"
+    "retrieved_at": "2026-09-03T16:53:20.161452+00:00"
   },
   "executive_summary": [
-    "El Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública emitió los Lineamientos Generales para el Servicio Profesional de Carrera de las Personas Integrantes de las Instituciones de Seguridad Pública. Son de aplicación general y obligatoria para las instituciones de los tres órdenes de gobierno. Su objeto es establecer bases, principios, estándares y criterios homologados para regular e implementar los procesos de desarrollo institucional, con énfasis en mérito, profesionalismo, igualdad sustantiva, no discriminación, transparencia y derechos humanos.",
-    "El instrumento define el servicio profesional de carrera como un sistema obligatorio y permanente que abarca reclutamiento, selección, ingreso, registro, profesionalización, certificación individual, permanencia, promoción, reconocimiento, reingreso y terminación. Exige a las instituciones emitir un reglamento propio, una unidad responsable y un órgano colegiado; para instituciones policiales, este último debe incluir representación policial. También requiere expedientes electrónicos, medidas de protección de datos y convocatorias con reglas expresas."
+    "Los lineamientos fijan una base mínima obligatoria para el servicio profesional de carrera de las instituciones de seguridad pública de los tres órdenes de gobierno, con enfoque de mérito, derechos humanos, igualdad sustantiva y no discriminación.",
+    "Exigen reglamentos institucionales, órganos colegiados, procesos estructurados de ingreso y promoción, expedientes electrónicos y mecanismos de profesionalización, permanencia, reconocimiento, reingreso y terminación.",
+    "La vigencia inicia al día siguiente de la publicación y la armonización normativa debe realizarse en doce meses, conforme a suficiencia presupuestaria y capacidades institucionales."
   ],
   "impacts": {
     "general": {
       "evidence_refs": [
-        "chunk-1",
+        "chunk-2",
+        "chunk-3",
         "chunk-4"
       ],
       "paragraphs": [
-        "La publicación establece un marco común de carrera y desarrollo institucional para las instituciones de seguridad pública de los tres órdenes de gobierno."
+        "Las instituciones sujetas deben alinear sus procesos de carrera con las bases mínimas homologadas y con los elementos de igualdad, profesionalización, certificación y trazabilidad previstos por el instrumento."
       ]
     },
     "sectors": [
       {
         "evidence_refs": [
-          "chunk-1",
+          "chunk-2",
+          "chunk-3",
           "chunk-4"
         ],
         "paragraphs": [
-          "Las instituciones deben revisar sus reglamentos, órganos colegiados, expedientes electrónicos y procesos de carrera para alinearlos con los estándares publicados."
+          "Las instituciones de los tres órdenes de gobierno deben emitir o armonizar sus reglamentos y organizar las etapas de carrera mediante unidades responsables y órganos colegiados."
         ],
-        "sector": "Instituciones de seguridad pública y sus áreas de carrera, recursos humanos y formación"
+        "sector": "Instituciones de seguridad pública"
       }
     ]
   },
@@ -143,23 +164,24 @@
     "review_reason": null,
     "source": "DOF",
     "source_id": "5797183",
-    "summary_teaser": "El Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública emitió lineamientos obligatorios para homologar la carrera de sus integrantes. Las instituciones de los tres órdenes de gobierno tienen doce meses desde la entrada en vigor para emitir o armonizar su normativa, conforme a sus capacidades y suficiencia presupuestaria.",
-    "title": "Lineamientos establecen obligación de armonizar carrera en seguridad pública",
+    "summary_teaser": "Los lineamientos establecen bases obligatorias y homogéneas para el servicio profesional de carrera de las instituciones de seguridad pública de los tres órdenes de gobierno. Regulan reclutamiento, ingreso, expedientes electrónicos, profesionalización, permanencia, promoción, reconocimiento, reingreso y terminación, y otorgan doce meses para emitir o armonizar la normativa institucional.",
+    "title": "Obliga a armonizar carreras de seguridad pública",
     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797183&fecha=26/08/2026"
   },
   "recommended_actions": [
     {
-      "affected_group": "Instituciones de seguridad pública y sus áreas de carrera, recursos humanos y formación",
-      "deadline": "Doce meses contados a partir de la entrada en vigor de los lineamientos",
+      "affected_group": "Instituciones de seguridad pública de los tres órdenes de gobierno",
+      "deadline": "Doce meses contados desde la entrada en vigor.",
       "evidence_refs": [
-        "chunk-1",
+        "chunk-2",
+        "chunk-3",
         "chunk-4"
       ],
-      "legal_basis": "Lineamientos Generales y Ley General del Sistema Nacional de Seguridad Pública, citada en el acto",
+      "legal_basis": "Transitorio tercero de los Lineamientos.",
       "paragraphs": [
-        "Inventariar la normativa vigente, identificar brechas frente a los lineamientos y calendarizar la emisión o armonización institucional dentro del plazo transitorio."
+        "Si la institución aún no cuenta con reglamento compatible, identifique las reglas de ingreso, expediente, profesionalización, permanencia, promoción, reconocimiento, reingreso y terminación que requieran emisión o armonización."
       ],
-      "trigger": "Operar o actualizar un servicio profesional de carrera en una institución de seguridad pública"
+      "trigger": "Entrada en vigor de los Lineamientos."
     }
   ],
   "schema_version": 8

@@ -6,10 +6,7 @@
       "source_ref": "chunk-1",
       "target_sections": [
         "executive_summary",
-        "detailed_summary",
-        "impacts.general",
-        "impacts.sectors",
-        "recommended_actions"
+        "detailed_summary"
       ]
     },
     {
@@ -25,31 +22,30 @@
       ]
     }
   ],
-  "cut_id": "80ff8a726797f7b9e5131c53",
+  "cut_id": "9bfb2857e185b6a117ea296f",
   "detailed_summary": [
     {
       "evidence_refs": [
+        "chunk-1",
         "chunk-2"
       ],
-      "heading": "Contenido publicado",
+      "heading": "Sanción comunicada y alcance",
       "paragraphs": [
-        "La circular comunica que Limpieza Géminis, S.A. de C.V. recibió una inhabilitación de tres meses para no participar en procedimientos de contratación ni celebrar contratos regulados por la Ley de Adquisiciones, Arrendamientos y Servicios del Sector Público, además de una multa. La abstención comienza el día siguiente a la publicación y al registro en el directorio de proveedores y contratistas sancionados de ComprasMX.",
-        "La autoridad prevé que, si la multa no se paga al concluir el periodo, la inhabilitación subsista hasta acreditarse el pago y se elimine el registro correspondiente. La circular identifica el procedimiento administrativo de sanción, pero no expone hechos adicionales que permitan atribuir responsabilidades más allá de la sanción comunicada."
+        "La circular refiere una resolución de 10 de agosto de 2026 que impuso a Limpieza Géminis una inhabilitación de tres meses y una multa no cuantificada en la fuente."
       ]
     },
     {
       "evidence_refs": [
         "chunk-2"
       ],
-      "heading": "Alcance y lectura práctica",
+      "heading": "Inicio, continuidad y contratos existentes",
       "paragraphs": [
-        "Los contratos adjudicados y los ya formalizados con la empresa no quedan comprendidos. Las entidades federativas, municipios y demarcaciones deben observar la circular en procedimientos y contratos cubiertos por la ley señalada, según el texto publicado.",
-        "La ficha se dirige principalmente a áreas compradoras y responsables de contratación pública."
+        "La abstención debe observarse desde el día siguiente a la publicación y registro indicados. Si la multa no se paga al finalizar el periodo, la inhabilitación subsiste; los contratos ya adjudicados o formalizados están excluidos según el texto."
       ]
     }
   ],
   "evidence": {
-    "content_hash": "d342f0a180eaedd4309f04f17517c8973edccc4465587c1a6d02dc706141910b",
+    "content_hash": "2d56e5f696862c660f7cb8f3916e3f4c6964d0c687916134c7ef266e66d8bbf1",
     "extraction_method": "html-adapter",
     "locators": [
       {
@@ -64,11 +60,11 @@
       }
     ],
     "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796941&fecha=24%2F08%2F2026",
-    "retrieved_at": "2026-09-01T16:35:09.587055+00:00"
+    "retrieved_at": "2026-09-03T16:53:23.634555+00:00"
   },
   "executive_summary": [
-    "El Órgano Interno de Control en Semarnat difundió una circular de abstención para contratar con una empresa inhabilitada. La circular comunica que Limpieza Géminis, S.A. de C.V. recibió una inhabilitación de tres meses para no participar en procedimientos de contratación ni celebrar contratos regulados por la Ley de Adquisiciones, Arrendamientos y Servicios del Sector Público, además de una multa. La abstención comienza el día siguiente a la publicación y al registro en el directorio de proveedores y contratistas sancionados de ComprasMX.",
-    "Los contratos adjudicados y los ya formalizados con la empresa no quedan comprendidos. Las entidades federativas, municipios y demarcaciones deben observar la circular en procedimientos y contratos cubiertos por la ley señalada, según el texto publicado. La síntesis se limita a los hechos y condiciones expresamente visibles en la fuente oficial."
+    "La circular comunica que Limpieza Géminis fue inhabilitada por tres meses para participar en procedimientos o celebrar contratos regulados por la Ley de Adquisiciones, Arrendamientos y Servicios del Sector Público.",
+    "La abstención opera bajo la condición de publicación y registro en Compras MX. Contratos ya adjudicados o formalizados no quedan comprendidos y la inhabilitación puede prolongarse si la multa permanece impaga."
   ],
   "impacts": {
     "general": {
@@ -76,7 +72,7 @@
         "chunk-2"
       ],
       "paragraphs": [
-        "El efecto observable es el que la publicación atribuye al acto: Los contratos adjudicados y los ya formalizados con la empresa no quedan comprendidos. Las entidades federativas, municipios y demarcaciones deben observar la circular en procedimientos y contratos cubiertos por la ley señalada, según el texto publicado."
+        "La circular restringe la admisión de propuestas y nuevas contrataciones con la empresa dentro del marco que identifica, sin resolver por sí misma la situación de contratos existentes."
       ]
     },
     "sectors": [
@@ -85,9 +81,18 @@
           "chunk-2"
         ],
         "paragraphs": [
-          "Las personas comprendidas deben considerar el documento porque La circular comunica que Limpieza Géminis, S.A. de C.V. recibió una inhabilitación de tres meses para no participar en procedimientos de contratación ni celebrar contratos regulados por la Ley de Adquisiciones, Arrendamientos y Servicios del Sector Público, además de una multa. La abstención comienza el día siguiente a la publicación y al registro en el directorio de proveedores y contratistas sancionados de ComprasMX."
+          "Las unidades contratantes deben abstenerse de recibir propuestas o celebrar nuevos contratos con la empresa conforme a las condiciones de inicio y duración de la circular."
         ],
-        "sector": "Áreas compradoras y responsables de contratación pública"
+        "sector": "Compradores públicos sujetos a la Ley de Adquisiciones"
+      },
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "La fuente conserva fuera de la restricción los contratos adjudicados o formalizados y prevé la continuación de la inhabilitación si no se acredita el pago de la multa."
+        ],
+        "sector": "Limpieza Géminis y sus contrapartes contractuales"
       }
     ]
   },
@@ -116,22 +121,34 @@
     "review_reason": null,
     "source": "DOF",
     "source_id": "5796941",
-    "summary_teaser": "El órgano interno de control de Semarnat comunicó que Limpieza Géminis, S.A. de C.V. fue inhabilitada por tres meses para participar o contratar bajo la ley federal de adquisiciones. La abstención inicia tras publicación y registro en ComprasMX; contratos previamente formalizados quedan fuera.",
-    "title": "Limpieza Géminis recibe prohibición en contrataciones públicas",
+    "summary_teaser": "Una circular comunica la inhabilitación de Limpieza Géminis, S.A. de C.V. por tres meses para procedimientos y contratos regulados por la ley aplicable. La abstención inicia tras publicación y registro en Compras MX; contratos ya formalizados quedan fuera del alcance expresamente indicado.",
+    "title": "Autoridad inhabilita a Limpieza Géminis para nuevas contrataciones",
     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796941&fecha=24/08/2026"
   },
   "recommended_actions": [
     {
-      "affected_group": "Áreas compradoras y responsables de contratación pública",
-      "deadline": "Desde el día siguiente a la publicación de la circular en el DOF y a su registro en el Directorio de Proveedores y Contratistas Sancionados de ComprasMX, por tres meses; si la multa no se acredita pagada al concluir ese plazo, la inhabilitación subsiste hasta el pago.",
+      "affected_group": "Dependencias, entidades y demás compradores públicos destinatarios",
+      "deadline": "Desde el día siguiente a la publicación y registro indicados, por tres meses; puede subsistir hasta el pago de la multa.",
       "evidence_refs": [
         "chunk-2"
       ],
-      "legal_basis": "Resolutivo Quinto de la resolución; artículo 60, antepenúltimo párrafo, de la Ley de Adquisiciones, Arrendamientos y Servicios del Sector Público y artículo 113, primer párrafo, de su Reglamento.",
+      "legal_basis": "Resolutivos segundo y quinto de la resolución comunicada; artículos 60 y 112 del reglamento citados en la circular.",
       "paragraphs": [
-        "Aplicar la abstención a procedimientos futuros dentro del ámbito legal indicado y distinguirlos de los contratos preexistentes que la propia circular excluye."
+        "Si tramitan un procedimiento regulado por la ley citada, verifiquen el registro en Compras MX y absténganse de recibir propuestas o celebrar nuevos contratos con la empresa durante el alcance vigente de la circular."
       ],
-      "trigger": "Cuando la persona o entidad se ubique en el ámbito material descrito por la fuente oficial."
+      "trigger": "Procedimiento de contratación o celebración de contrato regulado por la Ley de Adquisiciones, Arrendamientos y Servicios del Sector Público."
+    },
+    {
+      "affected_group": "Áreas de administración de contratos existentes",
+      "deadline": null,
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "legal_basis": "Artículo 112 del reglamento citado en la circular.",
+      "paragraphs": [
+        "Si existe un contrato adjudicado o formalizado con la empresa, distingan ese expediente de nuevas contrataciones, porque la circular expresamente no comprende los contratos existentes."
+      ],
+      "trigger": "Existencia de contrato adjudicado o formalizado antes de la aplicación de la circular."
     }
   ],
   "schema_version": 8

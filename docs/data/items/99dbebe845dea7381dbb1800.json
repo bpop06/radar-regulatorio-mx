@@ -1,10 +1,10 @@
 {
-  "cut_id": "80ff8a726797f7b9e5131c53",
+  "cut_id": "9bfb2857e185b6a117ea296f",
   "item": {
     "ai_generated": true,
     "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
     "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796157&fecha=13%2F08%2F2026",
-    "card_body": "## Qué se publicó\n\nEl Consejo Nacional de Armonización Contable reformó el Manual de Contabilidad Gubernamental para adicionar la modalidad X Funciones para la gobernanza institucional al Gasto por Categoría Programática.\n\n## Sustancia\n\nEl acuerdo entra en vigor al día siguiente de su publicación en el DOF y su aplicación será obligatoria a partir del 1 de enero de 2027. Las entidades federativas deben publicarlo en sus medios oficiales escritos y electrónicos dentro de treinta días hábiles siguientes a la publicación. Los consejos de armonización contable estatales deben remitir a la Secretaría Técnica la información de los actos de adopción dentro de quince días hábiles contados desde la conclusión del plazo anterior.\n\n## Fuente\n\nLa síntesis se elaboró exclusivamente con la fuente oficial identificada en la evidencia y sus fragmentos extraídos.",
+    "card_body": "## Qué se publicó\n\nSe añadió la modalidad X, Funciones para la gobernanza institucional, al Manual de Contabilidad Gubernamental.\n\n## Sustancia\n\nLa categoría separa funciones institucionales de la prestación directa de servicios públicos; su aplicación obligatoria inicia el 1 de enero de 2027.\n\n## Fuente\n\n[Fuente oficial](https://dof.gob.mx/nota_detalle.php?codigo=5796157&fecha=13%2F08%2F2026)",
     "case_amount": "",
     "case_claim": "",
     "case_facts": "",
@@ -25,7 +25,11 @@
         "reason": null,
         "source_ref": "chunk-1",
         "target_sections": [
-          "detailed_summary"
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
         ]
       },
       {
@@ -33,7 +37,11 @@
         "reason": null,
         "source_ref": "chunk-2",
         "target_sections": [
-          "detailed_summary"
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
         ]
       },
       {
@@ -41,7 +49,11 @@
         "reason": null,
         "source_ref": "chunk-3",
         "target_sections": [
-          "detailed_summary"
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
         ]
       }
     ],
@@ -51,22 +63,22 @@
     "detailed_summary": [
       {
         "evidence_refs": [
+          "chunk-1",
           "chunk-2"
         ],
-        "heading": "Alcance de la publicación",
+        "heading": "Nueva modalidad programática",
         "paragraphs": [
-          "El Consejo Nacional de Armonización Contable reformó el Manual de Contabilidad Gubernamental para adicionar la modalidad X Funciones para la gobernanza institucional al Gasto por Categoría Programática.",
-          "El acuerdo entra en vigor al día siguiente de su publicación en el DOF y su aplicación será obligatoria a partir del 1 de enero de 2027. Las entidades federativas deben publicarlo en sus medios oficiales escritos y electrónicos dentro de treinta días hábiles siguientes a la publicación. Los consejos de armonización contable estatales deben remitir a la Secretaría Técnica la información de los actos de adopción dentro de quince días hábiles contados desde la conclusión del plazo anterior."
+          "La reforma adiciona la modalidad X al Manual de Contabilidad Gubernamental y la ubica en el formato de Gasto por Categoría Programática. La exposición distingue esas funciones de los servicios prestados de manera directa a la población y ofrece ejemplos de actividades institucionales que la categoría puede hacer visibles."
         ]
       },
       {
         "evidence_refs": [
-          "chunk-2"
+          "chunk-2",
+          "chunk-3"
         ],
-        "heading": "Seguimiento operativo",
+        "heading": "Aplicación y transitorios",
         "paragraphs": [
-          "Las entidades federativas y sus consejos de armonización contable deben programar la publicación del acuerdo y el envío de la información de adopción dentro de los plazos transitorios.",
-          "La ficha no extiende el alcance del acto a supuestos que la fuente no identifica."
+          "La entrada en vigor general ocurre al día siguiente de la publicación, mientras que la aplicación obligatoria inicia el 1 de enero de 2027. Las entidades federativas tienen 30 días hábiles para publicar el acuerdo y los consejos locales deben enviar información de adopción a la Secretaría Técnica dentro del plazo posterior señalado."
         ]
       }
     ],
@@ -74,7 +86,7 @@
     "document_type": "Acuerdo",
     "editorial_status": "complete",
     "evidence": {
-      "content_hash": "c64dc053b8f567185ee76bb08d911b587dbcd1fdc55585543af8323bc01dabc6",
+      "content_hash": "0ccc10cb32280a566e608a392d1bd51a59512eeadd2c5bac127003a58b04ec7f",
       "extraction_method": "html-adapter",
       "locators": [
         {
@@ -94,11 +106,11 @@
         }
       ],
       "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796157&fecha=13%2F08%2F2026",
-      "retrieved_at": "2026-09-01T16:35:32.312967+00:00"
+      "retrieved_at": "2026-09-03T16:53:45.714323+00:00"
     },
     "executive_summary": [
-      "El Consejo Nacional de Armonización Contable reformó el Manual de Contabilidad Gubernamental para adicionar la modalidad X Funciones para la gobernanza institucional al Gasto por Categoría Programática.",
-      "El acuerdo entra en vigor al día siguiente de su publicación en el DOF y su aplicación será obligatoria a partir del 1 de enero de 2027. Las entidades federativas deben publicarlo en sus medios oficiales escritos y electrónicos dentro de treinta días hábiles siguientes a la publicación. Los consejos de armonización contable estatales deben remitir a la Secretaría Técnica la información de los actos de adopción dentro de quince días hábiles contados desde la conclusión del plazo anterior."
+      "El CONAC incorporó una categoría programática para identificar funciones de gobernanza institucional en estados e informes programáticos.",
+      "El acuerdo será obligatorio a partir de 2027 y prevé deberes de publicación y reporte para entidades federativas y consejos de armonización contable."
     ],
     "extraction_status": "complete",
     "first_seen_at": "2026-09-01T16:34:47.803209+00:00",
@@ -107,28 +119,32 @@
     "impacts": {
       "general": {
         "evidence_refs": [
-          "chunk-2"
+          "chunk-1",
+          "chunk-2",
+          "chunk-3"
         ],
         "paragraphs": [
-          "El acuerdo entra en vigor al día siguiente de su publicación en el DOF y su aplicación será obligatoria a partir del 1 de enero de 2027. Las entidades federativas deben publicarlo en sus medios oficiales escritos y electrónicos dentro de treinta días hábiles siguientes a la publicación. Los consejos de armonización contable estatales deben remitir a la Secretaría Técnica la información de los actos de adopción dentro de quince días hábiles contados desde la conclusión del plazo anterior."
+          "La reforma modifica la forma de presentar y comprender determinadas funciones programáticas del gasto público, pero no asigna por sí misma recursos ni identifica una reclasificación concreta para un ente específico."
         ]
       },
       "sectors": [
         {
           "evidence_refs": [
-            "chunk-2"
+            "chunk-1",
+            "chunk-2",
+            "chunk-3"
           ],
           "paragraphs": [
-            "La incidencia para este grupo se limita al alcance expresamente descrito en la publicación y requiere contrastarse con cada caso concreto."
+            "Los entes sujetos a la Ley General de Contabilidad Gubernamental deberán considerar la modalidad X en informes y procesos de clasificación que correspondan cuando la aplicación obligatoria inicie."
           ],
-          "sector": "Entidades federativas y consejos de armonización contable estatales"
+          "sector": "Entes públicos y responsables de contabilidad gubernamental"
         }
       ]
     },
     "importance": 1,
     "issuing_body": "Secretaría de Hacienda y Crédito Público",
     "jurisdiction": "nacional",
-    "last_seen_at": "2026-09-01T18:46:30.041123+00:00",
+    "last_seen_at": "2026-09-04T03:37:15.636102+00:00",
     "official_evidence": {
       "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796157&fecha=13/08/2026"
     },
@@ -143,16 +159,18 @@
     "published_year": 2026,
     "recommended_actions": [
       {
-        "affected_group": "Entidades federativas y consejos de armonización contable estatales",
-        "deadline": "Publicación estatal: 30 días hábiles; remisión a la Secretaría Técnica: 15 días hábiles desde la conclusión del plazo anterior.",
+        "affected_group": "Entidades federativas y consejos de armonización contable",
+        "deadline": "30 días hábiles para publicar; 15 días hábiles posteriores al vencimiento de ese plazo para remitir información",
         "evidence_refs": [
-          "chunk-2"
+          "chunk-1",
+          "chunk-2",
+          "chunk-3"
         ],
-        "legal_basis": "Transitorios primero, segundo y tercero del acuerdo.",
+        "legal_basis": "Transitorios segundo y tercero",
         "paragraphs": [
-          "Las entidades federativas y sus consejos de armonización contable deben programar la publicación del acuerdo y el envío de la información de adopción dentro de los plazos transitorios."
+          "Publicar el acuerdo en medios oficiales aplicables y remitir a la Secretaría Técnica la información de actos de adopción. Preparar la incorporación de la modalidad en información programática conforme al calendario transitorio."
         ],
-        "trigger": "Desde la publicación del acuerdo en el Diario Oficial de la Federación."
+        "trigger": "Ser entidad federativa o consejo de armonización contable competente"
       }
     ],
     "relevance_score": 1,
@@ -160,9 +178,9 @@
     "source": "DOF",
     "source_id": "5796157",
     "subtopic_tags": [],
-    "summary": "El Consejo Nacional de Armonización Contable reformó el Manual de Contabilidad Gubernamental para adicionar la modalidad X Funciones para la gobernanza institucional al Gasto por Categoría Programática.\n\nEl acuerdo entra en vigor al día siguiente de su publicación en el DOF y su aplicación será obligatoria a partir del 1 de enero de 2027. Las entidades federativas deben publicarlo en sus medios oficiales escritos y electrónicos dentro de treinta días hábiles siguientes a la publicación. Los consejos de armonización contable estatales deben remitir a la Secretaría Técnica la información de los actos de adopción dentro de quince días hábiles contados desde la conclusión del plazo anterior.\n\nPara fines de seguimiento, Las entidades federativas y sus consejos de armonización contable deben programar la publicación del acuerdo y el envío de la información de adopción dentro de los plazos transitorios. La revisión debe partir de la publicación oficial y de la documentación disponible para el caso concreto. El contenido debe mantenerse dentro de los límites del acto: no permite presumir efectos respecto de personas, operaciones, expedientes, contratos o procedimientos que la fuente no identifica. Cuando el documento comunica una autorización, una sanción, un trámite, una regla administrativa o un dato institucional, corresponde distinguir su alcance expreso de actuaciones posteriores que no estén acreditadas.\n\nEn términos probatorios, esta ficha se limita a los fragmentos oficiales y a sus localizadores. No atribuye efectos, plazos, montos, fundamentos, sujetos, resultados o hechos que no figuren en la fuente. La consulta del texto íntegro y, cuando corresponda, de la documentación del caso es necesaria para determinar cualquier consecuencia concreta. La verificación de una consecuencia particular exige identificar el acto aplicable, su fecha relevante, las personas efectivamente comprendidas y la evidencia que corresponda a la situación revisada. En ningún caso sustituye la consulta de expedientes, constancias o notificaciones individuales que puedan modificar la conclusión para una situación concreta. Esta delimitación evita convertir la información publicada en una conclusión definitiva sobre derechos, obligaciones o cumplimiento individual.",
-    "summary_teaser": "El CONAC adicionó la modalidad X Funciones para la gobernanza institucional al Gasto por Categoría Programática del Manual de Contabilidad Gubernamental. El acuerdo entra en vigor al día siguiente de su publicación y será obligatorio desde el 1 de enero de 2027. Las entidades federativas deben publicarlo en treinta días hábiles y sus consejos remitir información en los quince días hábiles posteriores.",
-    "title": "CONAC incorpora la modalidad X a la categoría programática",
+    "summary": "El Consejo Nacional de Armonización Contable reformó el Manual de Contabilidad Gubernamental para incorporar, dentro de los estados e informes programáticos, la modalidad X denominada Funciones para la gobernanza institucional. La modificación responde a la actualización de la Clasificación Programática y busca distinguir actividades gubernamentales que no corresponden estrictamente a la prestación directa y continua de servicios públicos a la población. El acuerdo entra en vigor al día siguiente de su publicación, pero su aplicación obligatoria será a partir del 1 de enero de 2027.\n\nLa nueva categoría se inserta en el formato de Gasto por Categoría Programática, dentro del apartado de desempeño de las funciones de gobierno. El acuerdo explica que la modalidad de prestación de servicios públicos debe concentrarse en servicios directos a la población. En contraste, la modalidad X busca visibilizar funciones sustantivas cuyos entregables se dirigen principalmente a otras instituciones públicas o derivan de facultades estatales. Como ejemplos, el texto refiere funciones aduaneras, recaudación tributaria, catastro, registros, control vehicular, regulación de mercados, preservación patrimonial, expropiaciones, actividades asociadas a energía, sistema penitenciario e inteligencia de seguridad.\n\nEl instrumento señala que la diferenciación pretende mejorar la lectura de la asignación de recursos, la trazabilidad del gasto, el seguimiento y la evaluación de programas presupuestarios. No introduce un nuevo monto de gasto ni reclasifica en el propio acuerdo partidas concretas de un ente determinado. La información programática seguirá presentándose conforme a lo autorizado en el Presupuesto de Egresos correspondiente, de acuerdo con el transitorio.\n\nLas entidades federativas deberán publicar el acuerdo en sus medios oficiales escritos y electrónicos dentro de los 30 días hábiles siguientes a la publicación en el Diario Oficial. Además, los consejos de armonización contable locales deben remitir a la Secretaría Técnica del CONAC la información sobre actos de adopción dentro de los 15 días hábiles posteriores a la conclusión de ese plazo. Entes públicos y responsables de contabilidad pueden usar el periodo previo a 2027 para revisar clasificación de programas y formatos aplicables, sin anticipar una reclasificación no determinada por sus instrumentos presupuestarios.",
+    "summary_teaser": "El CONAC adiciona la modalidad X, Funciones para la gobernanza institucional, al Manual de Contabilidad Gubernamental. La aplicación obligatoria inicia el 1 de enero de 2027. Las entidades federativas deben difundir el acuerdo en 30 días hábiles y reportar actos de adopción conforme al transitorio aplicable.",
+    "title": "Manual contable incorpora categoría de gobernanza institucional",
     "topic_tags": [
       "Acuerdo"
     ],

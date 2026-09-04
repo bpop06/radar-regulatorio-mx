@@ -5,6 +5,7 @@
       "reason": null,
       "source_ref": "chunk-1",
       "target_sections": [
+        "executive_summary",
         "detailed_summary"
       ]
     },
@@ -13,7 +14,9 @@
       "reason": null,
       "source_ref": "chunk-2",
       "target_sections": [
-        "detailed_summary"
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general"
       ]
     },
     {
@@ -21,7 +24,9 @@
       "reason": null,
       "source_ref": "chunk-3",
       "target_sections": [
-        "detailed_summary"
+        "detailed_summary",
+        "impacts.sectors",
+        "recommended_actions"
       ]
     },
     {
@@ -29,21 +34,22 @@
       "reason": null,
       "source_ref": "chunk-4",
       "target_sections": [
-        "detailed_summary"
+        "detailed_summary",
+        "impacts.sectors",
+        "recommended_actions"
       ]
     }
   ],
-  "cut_id": "80ff8a726797f7b9e5131c53",
+  "cut_id": "9bfb2857e185b6a117ea296f",
   "detailed_summary": [
     {
       "evidence_refs": [
-        "chunk-2",
-        "chunk-3"
+        "chunk-1",
+        "chunk-2"
       ],
-      "heading": "Alcance de la publicación",
+      "heading": "Alcance de la reforma",
       "paragraphs": [
-        "La Secretaría Anticorrupción y Buen Gobierno modificó las reglas de contenido nacional en contratación pública y obra pública para fortalecer la acreditación de los materiales de acero de construcción.",
-        "La Regla 17 obliga a contratistas y proveedores a conservar durante siete años, contados desde la entrega del bien a la convocante, la información que sustente los escritos de contenido nacional. Para acero, el texto señala certificados de molino, de calidad o conformidad, carta del proveedor, CFDI y pedimentos cuando sean aplicables. El acuerdo entra en vigor al día siguiente de su publicación y los procedimientos iniciados antes se resuelven conforme a las disposiciones vigentes al momento de su celebración."
+        "El acuerdo modifica varias reglas, adiciona una regla para proyectos integrales y actualiza anexos. Su motivación expuesta vincula el cambio con el fortalecimiento de contenido nacional y la participación de la industria siderúrgica en contrataciones públicas."
       ]
     },
     {
@@ -51,15 +57,33 @@
         "chunk-2",
         "chunk-3"
       ],
-      "heading": "Seguimiento operativo",
+      "heading": "Cálculo y acreditación del acero",
       "paragraphs": [
-        "Contratistas y proveedores deben integrar la documentación exigida y conservar la evidencia de contenido nacional durante siete años desde la entrega del bien a la convocante.",
-        "La ficha no extiende el alcance del acto a supuestos que la fuente no identifica."
+        "La norma incorpora una fórmula específica para el contenido nacional de materiales de acero y detalla qué debe pedir una convocante cuando el proyecto los requiera. Los documentos enumerados incluyen certificaciones, carta de proveedor, CFDI y pedimentos de importación."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-3"
+      ],
+      "heading": "Verificación y conservación",
+      "paragraphs": [
+        "Las reglas asignan a convocantes la definición del porcentaje tras evaluar oferta nacional; prevén diálogos estratégicos preferentes en ciertos proyectos integrales. Contratistas y proveedores deben conservar durante siete años los soportes de las manifestaciones y la residencia de obra verifica los materiales al recibirlos."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-3",
+        "chunk-4"
+      ],
+      "heading": "Anexos y transitorios",
+      "paragraphs": [
+        "Los anexos actualizados enumeran materiales, maquinaria, equipo y una lista de productos de acero que pueden considerarse. El acuerdo fija entrada en vigor al día siguiente de su publicación y conserva el régimen anterior para procedimientos iniciados antes."
       ]
     }
   ],
   "evidence": {
-    "content_hash": "80df39bb5248e981663392a1ac0caa6c813c2dfc18b7de963b67659fcfd14638",
+    "content_hash": "463c928272ea779d825939d21a488ab77dd071cfa8e12fe9d7423114dc4039de",
     "extraction_method": "html-adapter",
     "locators": [
       {
@@ -84,11 +108,11 @@
       }
     ],
     "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797479&fecha=31%2F08%2F2026",
-    "retrieved_at": "2026-09-01T16:34:53.148985+00:00"
+    "retrieved_at": "2026-09-03T16:53:02.168009+00:00"
   },
   "executive_summary": [
-    "La Secretaría Anticorrupción y Buen Gobierno modificó las reglas de contenido nacional en contratación pública y obra pública para fortalecer la acreditación de los materiales de acero de construcción.",
-    "La Regla 17 obliga a contratistas y proveedores a conservar durante siete años, contados desde la entrega del bien a la convocante, la información que sustente los escritos de contenido nacional. Para acero, el texto señala certificados de molino, de calidad o conformidad, carta del proveedor, CFDI y pedimentos cuando sean aplicables. El acuerdo entra en vigor al día siguiente de su publicación y los procedimientos iniciados antes se resuelven conforme a las disposiciones vigentes al momento de su celebración."
+    "La reforma fortalece las reglas de contenido nacional para obras públicas y agrega un tratamiento expreso para los materiales de acero de construcción. Incluye cálculo, documentos de acreditación, verificación y listas de referencia.",
+    "Convocantes, licitantes, contratistas y proveedores tienen roles distintos bajo las reglas reformadas. El acuerdo entra en vigor al día siguiente de su publicación y no desplaza los procedimientos ya iniciados, que se resuelven con las disposiciones aplicables al celebrarse."
   ],
   "impacts": {
     "general": {
@@ -97,19 +121,19 @@
         "chunk-3"
       ],
       "paragraphs": [
-        "La Regla 17 obliga a contratistas y proveedores a conservar durante siete años, contados desde la entrega del bien a la convocante, la información que sustente los escritos de contenido nacional. Para acero, el texto señala certificados de molino, de calidad o conformidad, carta del proveedor, CFDI y pedimentos cuando sean aplicables. El acuerdo entra en vigor al día siguiente de su publicación y los procedimientos iniciados antes se resuelven conforme a las disposiciones vigentes al momento de su celebración."
+        "La reforma hace más explícita la trazabilidad del contenido nacional en obras que requieran acero de construcción. No fija por sí misma un porcentaje único para todas las obras; la determinación depende de la convocatoria, las características del proyecto y las reglas aplicables."
       ]
     },
     "sectors": [
       {
         "evidence_refs": [
-          "chunk-2",
-          "chunk-3"
+          "chunk-3",
+          "chunk-4"
         ],
         "paragraphs": [
-          "La incidencia para este grupo se limita al alcance expresamente descrito en la publicación y requiere contrastarse con cada caso concreto."
+          "Las partes que participen en obras con requisito de contenido nacional deberán atender las manifestaciones, soportes y verificaciones previstas cuando el procedimiento respectivo les resulte aplicable."
         ],
-        "sector": "Contratistas y proveedores de bienes en obras públicas"
+        "sector": "Convocantes, contratistas y proveedores de obra pública"
       }
     ]
   },
@@ -139,23 +163,36 @@
     "review_reason": null,
     "source": "DOF",
     "source_id": "5797479",
-    "summary_teaser": "Las reglas de contratación federal refuerzan la acreditación del contenido nacional y de la transformación sustancial del acero de construcción. Contratistas y proveedores deben conservar durante siete años, desde la entrega del bien a la convocante, la información que sustente sus escritos. Los procedimientos iniciados antes de la entrada en vigor conservan el régimen previsto en el transitorio.",
-    "title": "Contratación federal exige conservar siete años evidencia de acero nacional",
+    "summary_teaser": "La Secretaría Anticorrupción y Buen Gobierno reformó las reglas de contenido nacional para obras públicas federales. Incorpora una metodología específica para materiales de acero, exige documentación de acreditación y conservación, añade un anexo de productos siderúrgicos y prevé diálogos estratégicos en determinados proyectos integrales.",
+    "title": "Modifica reglas de contenido nacional en obras con acero",
     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797479&fecha=31/08/2026"
   },
   "recommended_actions": [
     {
-      "affected_group": "Contratistas y proveedores de bienes en obras públicas",
-      "deadline": "Siete años contados a partir de la entrega del bien a la convocante.",
+      "affected_group": "Dependencias y entidades convocantes",
+      "deadline": null,
       "evidence_refs": [
         "chunk-2",
         "chunk-3"
       ],
-      "legal_basis": "Reglas 15, 16 y 17 del acuerdo publicado.",
+      "legal_basis": "Reglas 14, 15 y 15 Bis reformadas, según el acuerdo",
       "paragraphs": [
-        "Contratistas y proveedores deben integrar la documentación exigida y conservar la evidencia de contenido nacional durante siete años desde la entrega del bien a la convocante."
+        "Si un procedimiento de obra pública exige contenido nacional y materiales de acero, conviene incorporar los porcentajes y documentos previstos en las bases, invitación o solicitud de cotización conforme a las reglas reformadas."
       ],
-      "trigger": "Desde la entrega del bien a la convocante."
+      "trigger": "Procedimiento de contratación de obra con requisito de contenido nacional"
+    },
+    {
+      "affected_group": "Contratistas y proveedores",
+      "deadline": "Siete años desde la entrega del bien para la conservación de información",
+      "evidence_refs": [
+        "chunk-3",
+        "chunk-4"
+      ],
+      "legal_basis": "Reglas 16 y 17 reformadas",
+      "paragraphs": [
+        "Si resultan adjudicados en un proyecto sujeto a estas reglas, deben organizar los documentos que acrediten el contenido nacional aplicable y conservar los soportes de sus escritos para una eventual verificación."
+      ],
+      "trigger": "Adjudicación en un proyecto sujeto a las reglas"
     }
   ],
   "schema_version": 8

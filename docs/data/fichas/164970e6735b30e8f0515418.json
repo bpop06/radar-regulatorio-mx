@@ -14,37 +14,40 @@
       "reason": null,
       "source_ref": "chunk-2",
       "target_sections": [
+        "executive_summary",
         "detailed_summary",
         "impacts.general",
+        "impacts.sectors",
         "recommended_actions"
       ]
     }
   ],
-  "cut_id": "80ff8a726797f7b9e5131c53",
+  "cut_id": "9bfb2857e185b6a117ea296f",
   "detailed_summary": [
     {
       "evidence_refs": [
         "chunk-1",
         "chunk-2"
       ],
-      "heading": "Contenido publicado",
+      "heading": "Modificación de la autorización",
       "paragraphs": [
-        "La CNBV actualizó la autorización de la casa de bolsa para que refleje la denominación TRF Casa de Bolsa."
+        "La CNBV tomó en cuenta la reforma estatutaria y su formalización notarial para modificar la base segunda, fracción I, de la autorización de organización y operación. El texto actualizado fija la denominación de la entidad como TRF Casa de Bolsa, S.A. de C.V.",
+        "El oficio identifica que la sociedad antes se denominaba CI Casa de Bolsa. La fuente no describe cambios a otras condiciones de operación, por lo que la ficha se limita al término de denominación social expresamente modificado."
       ]
     },
     {
       "evidence_refs": [
-        "chunk-1",
         "chunk-2"
       ],
-      "heading": "Alcance práctico",
+      "heading": "Publicación e informe a la CNBV",
       "paragraphs": [
-        "El oficio exige publicaciones oficiales y el aviso posterior a la Comisión dentro de los plazos que expresamente fija."
+        "TRF Casa de Bolsa debe tramitar la publicación del texto del oficio en el DOF y en dos periódicos de amplia circulación de su domicilio social dentro de quince días hábiles posteriores a recibirlo.",
+        "Después de las publicaciones, debe informar a la Comisión la fecha en que se realizaron dentro de diez días hábiles. El documento vincula esos requerimientos con los artículos citados de la Ley del Mercado de Valores."
       ]
     }
   ],
   "evidence": {
-    "content_hash": "d13d55bbbc1cb228b70f2687c2483701619d31316e99bf95a7392cdb8969068c",
+    "content_hash": "604e5ccdc5a480ef356e4458c2b688176376acd9e76a8a66272d593cac955b49",
     "extraction_method": "html-adapter",
     "locators": [
       {
@@ -59,32 +62,31 @@
       }
     ],
     "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796403&fecha=17%2F08%2F2026",
-    "retrieved_at": "2026-09-01T16:35:22.122625+00:00"
+    "retrieved_at": "2026-09-03T16:53:34.817645+00:00"
   },
   "executive_summary": [
-    "La Comisión Nacional Bancaria y de Valores modificó los términos de la autorización para la organización y operación de TRF Casa de Bolsa, S.A. de C.V., antes CI Casa de Bolsa, S.A. de C.V. La modificación responde a la reforma del artículo primero de sus estatutos sociales y a la escritura pública que formalizó el cambio de denominación. La Comisión ajustó la base segunda de la autorización para que la casa de bolsa use la denominación TRF Casa de Bolsa seguida de su régimen societario.",
-    "El oficio no describe un cambio de objeto, de capital, de control o de las actividades autorizadas a la intermediaria. Su contenido sustantivo es reflejar en la autorización el cambio de nombre corporativo. La fuente narra que la entidad remitió la documentación formalizada e inscrita en el Registro Público de la Propiedad y del Comercio. El alcance debe leerse como actualización de la autorización existente, no como una nueva autorización independiente."
+    "La CNBV modificó la autorización de organización y operación de TRF Casa de Bolsa para reflejar el cambio de denominación social desde CI Casa de Bolsa.",
+    "El término modificado establece que la sociedad usará la denominación TRF Casa de Bolsa, seguida de Sociedad Anónima de Capital Variable o S.A. de C.V.",
+    "La casa de bolsa debe tramitar la publicación del oficio en el DOF y dos periódicos dentro de quince días hábiles y reportar a la CNBV las fechas de publicación dentro de diez días hábiles posteriores."
   ],
   "impacts": {
     "general": {
       "evidence_refs": [
-        "chunk-1",
         "chunk-2"
       ],
       "paragraphs": [
-        "La modificación ordena la identificación corporativa de una casa de bolsa dentro de su autorización administrativa existente."
+        "La modificación actualiza la identificación corporativa de la casa de bolsa dentro de su autorización. La evidencia revisada no acredita cambios independientes en su objeto, productos, capital, intermediación o condiciones de operación."
       ]
     },
     "sectors": [
       {
         "evidence_refs": [
-          "chunk-1",
           "chunk-2"
         ],
         "paragraphs": [
-          "La entidad debe cumplir las publicaciones requeridas y clientes o contrapartes deben actualizar datos de denominación sin presumir cambios adicionales no publicados."
+          "Debe atender las publicaciones e informar sus fechas a la CNBV en los plazos que el oficio señala como consecuencia de la modificación de denominación."
         ],
-        "sector": "TRF Casa de Bolsa, clientes y contrapartes"
+        "sector": "TRF Casa de Bolsa, S.A. de C.V."
       }
     ]
   },
@@ -113,23 +115,22 @@
     "review_reason": null,
     "source": "DOF",
     "source_id": "5796403",
-    "summary_teaser": "La Comisión Nacional Bancaria y de Valores modificó la autorización de TRF Casa de Bolsa para reflejar su nueva denominación, antes CI Casa de Bolsa. La entidad debe publicar el oficio en el Diario Oficial y en dos periódicos de circulación amplia, e informar la fecha de esas publicaciones a la Comisión.",
-    "title": "CNBV modifica autorización de TRF Casa de Bolsa",
+    "summary_teaser": "La CNBV modificó la autorización de organización y operación de TRF Casa de Bolsa para reflejar su cambio de denominación desde CI Casa de Bolsa. La sociedad debe publicar el oficio en el DOF y en dos periódicos dentro de quince días hábiles, e informar las fechas de publicación a la Comisión.",
+    "title": "CNBV modifica autorización de TRF tras cambio de denominación social",
     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796403&fecha=17/08/2026"
   },
   "recommended_actions": [
     {
       "affected_group": "TRF Casa de Bolsa, S.A. de C.V.",
-      "deadline": "Las publicaciones deben tramitarse dentro de quince días hábiles de la recepción; el aviso a la CNBV vence diez días hábiles después de las publicaciones",
+      "deadline": "Quince días hábiles posteriores a la recepción para tramitar publicaciones; diez días hábiles desde las publicaciones para informar sus fechas",
       "evidence_refs": [
-        "chunk-1",
         "chunk-2"
       ],
-      "legal_basis": "Artículo 114 de la Ley del Mercado de Valores y términos del oficio de la CNBV",
+      "legal_basis": "Artículos 114, último párrafo, 350 y 360 de la Ley del Mercado de Valores, citados en el oficio",
       "paragraphs": [
-        "Tramitar la publicación del oficio en los medios señalados, informar sus fechas a la CNBV y actualizar registros, formatos y comunicaciones que usen la denominación anterior."
+        "Tramitar la publicación del texto del oficio en el DOF y en dos periódicos de amplia circulación de su domicilio social. Conservar evidencia de cada publicación para informar sus fechas a la CNBV."
       ],
-      "trigger": "Haber recibido el oficio de modificación de autorización"
+      "trigger": "Recepción del oficio que modifica la autorización"
     }
   ],
   "schema_version": 8

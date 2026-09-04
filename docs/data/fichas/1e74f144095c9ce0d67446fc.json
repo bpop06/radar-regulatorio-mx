@@ -6,7 +6,8 @@
       "source_ref": "chunk-1",
       "target_sections": [
         "executive_summary",
-        "detailed_summary"
+        "detailed_summary",
+        "impacts.sectors"
       ]
     },
     {
@@ -14,37 +15,47 @@
       "reason": null,
       "source_ref": "chunk-2",
       "target_sections": [
+        "executive_summary",
         "detailed_summary",
         "impacts.general",
+        "impacts.sectors",
         "recommended_actions"
       ]
     }
   ],
-  "cut_id": "80ff8a726797f7b9e5131c53",
+  "cut_id": "9bfb2857e185b6a117ea296f",
   "detailed_summary": [
     {
       "evidence_refs": [
         "chunk-1",
         "chunk-2"
       ],
-      "heading": "Inhabilitación comunicada",
+      "heading": "Destinatarios y prohibición comunicada",
       "paragraphs": [
-        "La circular ordena a las entidades destinatarias abstenerse de recibir propuestas y/o celebrar contratos con Eliana Díaz Magaña durante dos años, desde el día siguiente a su publicación, dentro de la materia contractual que delimita."
+        "La circular se dirige a dependencias y entidades federales, empresas públicas, Fiscalía General, entidades federativas, municipios y demarcaciones de la Ciudad de México. Ordena abstenerse de recibir propuestas y celebrar contratos con la persona física, de manera directa o por interpósita persona."
       ]
     },
     {
       "evidence_refs": [
-        "chunk-1",
         "chunk-2"
       ],
-      "heading": "Límites y continuidad de la medida",
+      "heading": "Duración y pago de multa",
       "paragraphs": [
-        "Los contratos ya adjudicados o formalizados quedan fuera de la aplicación indicada. Si la multa permanece impaga al concluir el término, la inhabilitación continúa hasta que se acredite el pago según la propia circular."
+        "La inhabilitación comunicada es de dos años desde el día siguiente de la publicación. Si la multa permanece sin pago al término, la inhabilitación subsiste hasta que se cubra; el comprobante se presenta ante la Secretaría Anticorrupción y Buen Gobierno para eliminar el registro en Compras MX."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Alcance respecto de contratos existentes",
+      "paragraphs": [
+        "Los contratos adjudicados y los formalizados con la persona infractora no quedan comprendidos. Las autoridades locales deben observar la circular en adquisiciones, servicios u obra pública financiados total o parcialmente con fondos federales conforme a los convenios que celebren con el Ejecutivo Federal."
       ]
     }
   ],
   "evidence": {
-    "content_hash": "4ec034c81d600efdef01a20f0a57fc8360329e16321ba613dc75f7b6c27f5165",
+    "content_hash": "d1e011b17b2d35a88faafe8fe4a0baa4d98a583ad993217a697e0d17761fd95a",
     "extraction_method": "html-adapter",
     "locators": [
       {
@@ -59,20 +70,19 @@
       }
     ],
     "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795910&fecha=11%2F08%2F2026",
-    "retrieved_at": "2026-09-01T16:35:34.081451+00:00"
+    "retrieved_at": "2026-09-03T16:53:47.487479+00:00"
   },
   "executive_summary": [
-    "La circular comunica la resolución administrativa que impuso a Eliana Díaz Magaña una inhabilitación temporal de dos años. A partir del día siguiente a la publicación en el Diario Oficial de la Federación, las autoridades destinatarias deben abstenerse de recibir propuestas y/o celebrar contratos en las materias incluidas en el acto, ya sea directamente o por interpósita persona. La ficha se limita a la inhabilitación y al ámbito que la circular expresa.",
-    "El alcance material se refiere a adquisiciones, arrendamientos, servicios, obras públicas y servicios relacionados con las mismas. El documento dirige la comunicación a dependencias y entidades federales y, en los términos que precisa, a entidades federativas, municipios, demarcaciones territoriales y otros entes cuando las contrataciones se cubran total o parcialmente con recursos federales derivados de convenios con el Ejecutivo Federal. La circular no convierte por sí misma cualquier relación comercial ajena a ese ámbito en una prohibición."
+    "La circular comunica una inhabilitación de dos años para Eliana Díaz Magaña y ordena a autoridades federales y órdenes locales indicados abstenerse de recibir propuestas o celebrar contratos con ella, directa o indirectamente, en las materias publicadas.",
+    "La medida inicia al día siguiente de la publicación y puede subsistir hasta el pago de la multa. Los contratos previamente adjudicados o formalizados quedan excluidos; para autoridades locales el alcance se vincula con contrataciones financiadas total o parcialmente con fondos federales."
   ],
   "impacts": {
     "general": {
       "evidence_refs": [
-        "chunk-1",
         "chunk-2"
       ],
       "paragraphs": [
-        "La publicación incide en la validación de elegibilidad de proveedores y contratistas para procedimientos y contratos cubiertos por recursos federales."
+        "La publicación comunica una restricción temporal de contratación respecto de una persona física determinada. No informa el monto de la multa, el pago de ésta ni elementos adicionales del procedimiento de sanción."
       ]
     },
     "sectors": [
@@ -82,9 +92,18 @@
           "chunk-2"
         ],
         "paragraphs": [
-          "Las áreas contratantes deben abstenerse de recibir propuestas y/o celebrar contratos con la persona señalada sólo en el alcance que la circular fija; los contratos adjudicados o formalizados están excluidos de esa restricción."
+          "Deben abstenerse de recibir propuestas y celebrar contratos con la persona en las materias y durante el plazo que la circular comunica, sin extender el aviso a contratos ya adjudicados o formalizados."
         ],
-        "sector": "Áreas contratantes y unidades de compras públicas"
+        "sector": "Áreas compradoras y contratantes públicas"
+      },
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "La comunicación reporta una inhabilitación de dos años y señala que su subsistencia posterior al plazo depende de que la multa haya sido pagada."
+        ],
+        "sector": "Eliana Díaz Magaña"
       }
     ]
   },
@@ -114,23 +133,34 @@
     "review_reason": null,
     "source": "DOF",
     "source_id": "5795910",
-    "summary_teaser": "La autoridad comunicó la inhabilitación de Eliana Díaz Magaña durante dos años. Desde el día siguiente a la publicación en el DOF, las entidades destinatarias deben abstenerse de recibir propuestas y/o celebrar contratos en las materias cubiertas. Los contratos ya adjudicados o formalizados quedan fuera de la circular y la fuente prevé continuidad si la multa sigue impaga.",
-    "title": "Autoridad inhabilita a Eliana Díaz para contratos públicos",
+    "summary_teaser": "La circular comunica una inhabilitación de dos años para Eliana Díaz Magaña y ordena abstenerse de recibir propuestas o contratar con ella, directa o indirectamente. La prohibición comienza al día siguiente de la publicación y se mantiene hasta el pago de la multa si ésta sigue insoluta al concluir el plazo.",
+    "title": "Circular restringe contrataciones públicas con Eliana Díaz por dos años",
     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5795910&fecha=11/08/2026"
   },
   "recommended_actions": [
     {
-      "affected_group": "Áreas contratantes y unidades de compras públicas",
-      "deadline": "dos años a partir del día siguiente a la publicación, con la extensión condicionada al pago de la multa que la fuente prevé",
+      "affected_group": "Áreas compradoras de las autoridades destinatarias",
+      "deadline": "Dos años; el efecto puede subsistir hasta el pago de la multa.",
       "evidence_refs": [
-        "chunk-1",
         "chunk-2"
       ],
-      "legal_basis": "Ley de Adquisiciones, Arrendamientos y Servicios del Sector Público y términos de la circular",
+      "legal_basis": null,
       "paragraphs": [
-        "Verificar la identidad de Eliana Díaz Magaña, el objeto contractual y el origen de los recursos antes de recibir propuestas o celebrar contratos. Identificar como excluidos de la circular los contratos ya adjudicados o formalizados."
+        "Si tramitan adquisiciones, arrendamientos, servicios, obra pública o servicios relacionados durante la inhabilitación, deben abstenerse de recibir propuestas o celebrar contratos con la persona física, directa o por interpósita persona."
       ],
-      "trigger": "Tramitar un procedimiento o contrato comprendido en la circular"
+      "trigger": "Desde el día siguiente a la publicación de la circular."
+    },
+    {
+      "affected_group": "Entidades federativas, municipios y demarcaciones territoriales",
+      "deadline": "Durante la inhabilitación comunicada.",
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "legal_basis": null,
+      "paragraphs": [
+        "Si realizan adquisiciones, servicios u obra pública con cargo total o parcial a fondos federales conforme a convenios con el Ejecutivo Federal, deben observar la abstención publicada."
+      ],
+      "trigger": "Cuando la contratación tenga el financiamiento federal y alcance descritos en la circular."
     }
   ],
   "schema_version": 8

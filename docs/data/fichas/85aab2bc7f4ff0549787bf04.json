@@ -1,0 +1,167 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.sectors"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "9bfb2857e185b6a117ea296f",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "heading": "Inhabilitación y destinatarios",
+      "paragraphs": [
+        "La comunicación se dirige a dependencias y entidades federales, Fiscalía General, entidades federativas y municipios. Ordena abstenerse de aceptar propuestas y celebrar contratos regulados por la Ley de Adquisiciones, Arrendamientos y Servicios del Sector Público con Roy González Padilla, directa o indirectamente."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Suspensión de amparo y plazo",
+      "paragraphs": [
+        "El texto comunica que la suspensión concedida en el amparo citado quedó sin efectos al causar ejecutoria el sobreseimiento. La abstención opera desde el día siguiente a la publicación y la inhabilitación tiene un plazo de tres meses."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Pago y contratos existentes",
+      "paragraphs": [
+        "Si la multa no se paga al vencimiento, la inhabilitación subsiste hasta el pago y el comprobante debe presentarse ante la Secretaría Anticorrupción y Buen Gobierno para eliminar el registro en Compras MX. Los contratos adjudicados y formalizados quedan fuera de la circular."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "bf8aee9c82fc36a861de87357788228c2c13d4024dedb5f1d49e79edc1bb2162",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "CIRCULAR por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a la Fiscalía General de la República, así como a las entidades federativas y sus municipios, que deberán abstenerse de aceptar propuestas o celebrar contratos con la persona física Roy González Padilla.",
+        "location": "caracteres 0-308"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Buen Gobierno.- Secretaría Anticorrupción y Buen Gobierno.- Coordinación General de Órganos Internos de Control.- Órgano Interno de Control en la Lotería Nacional.- Área de Responsabilidades.- Exp. PA-0001/2023.",
+        "location": "caracteres 308-6205"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797812&fecha=03%2F09%2F2026",
+    "retrieved_at": "2026-09-03T16:52:40.439005+00:00"
+  },
+  "executive_summary": [
+    "La circular comunica una inhabilitación de tres meses para Roy González Padilla y ordena a las autoridades destinatarias abstenerse de aceptar propuestas o celebrar contratos con él, directa o indirectamente, en el alcance publicado.",
+    "La medida comienza al día siguiente de la publicación, tras quedar sin efectos la suspensión de amparo descrita, y puede subsistir hasta el pago de la multa. Los contratos ya adjudicados o formalizados quedan excluidos."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "paragraphs": [
+        "La publicación comunica un efecto de inhabilitación para contratación y la pérdida de efectos de una suspensión de amparo, sin informar el monto de la multa ni los hechos del procedimiento de sanción."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "Deben abstenerse de aceptar propuestas y contratar con la persona durante el periodo divulgado, preservando los contratos que ya estaban adjudicados o formalizados."
+        ],
+        "sector": "Autoridades contratantes destinatarias"
+      },
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "La circular comunica una inhabilitación por tres meses y su posible subsistencia hasta el pago de la multa, sin informar que ese pago se haya realizado."
+        ],
+        "sector": "Roy González Padilla"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797812&fecha=03%2F09%2F2026",
+    "categories": [
+      "Penal",
+      "Administración centralizada"
+    ],
+    "content_hash": "031f7949d56deda95977e581219912bc505972fc5baa2cebb97f21e72d36313f",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/85aab2bc7f4ff0549787bf04.json",
+    "detail_url": "notas/85aab2bc7f4ff0549787bf04.html",
+    "detected_at": "2026-09-04T03:37:15.636102+00:00",
+    "document_type": "Circular",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5797812",
+    "importance": 2,
+    "issuing_body": "Presidencia de la República",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-09-03",
+    "official_title": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a la Fiscalía General de la República, así como a las entidades federativas y sus municipios, que deberán abstenerse de aceptar propuestas o celebrar contratos con la persona física Roy González Padilla.",
+    "published_at": "2026-09-03",
+    "relevance_score": 3,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5797812",
+    "summary_teaser": "La circular comunica que las autoridades destinatarias deben abstenerse de aceptar propuestas o contratar con Roy González Padilla por tres meses. La medida inicia al día siguiente de la publicación luego de que quedó sin efectos la suspensión concedida en un amparo; puede subsistir hasta el pago de la multa.",
+    "title": "Circular restringe contrataciones públicas con Roy González durante tres meses",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797812&fecha=03/09/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Dependencias, entidades y demás autoridades destinatarias",
+      "deadline": "Tres meses; el efecto puede subsistir hasta el pago de la multa.",
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "legal_basis": null,
+      "paragraphs": [
+        "Si tramitan procedimientos o contratos regulados por la Ley de Adquisiciones, Arrendamientos y Servicios del Sector Público dentro del periodo comunicado, deben abstenerse de aceptar propuestas o contratar con la persona, directa o por interpósita persona."
+      ],
+      "trigger": "Desde el día siguiente a la publicación de la circular."
+    },
+    {
+      "affected_group": "Entidades federativas y municipios",
+      "deadline": "Durante la inhabilitación comunicada.",
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "legal_basis": null,
+      "paragraphs": [
+        "Si celebran procedimientos de contratación o contratos regulados por la ley referida, deben observar la abstención comunicada en la circular."
+      ],
+      "trigger": "Durante procedimientos de contratación y celebración de contratos dentro del alcance legal publicado."
+    }
+  ],
+  "schema_version": 8
+}

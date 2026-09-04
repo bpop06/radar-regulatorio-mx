@@ -2,8 +2,20 @@
   "coverage": [
     {
       "disposition": "summarized",
-      "reason": "Extracción lineal duplicada que contiene los hechos desarrollados en la publicación.",
+      "reason": null,
       "source_ref": "chunk-1",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
       "target_sections": [
         "executive_summary",
         "detailed_summary"
@@ -11,15 +23,7 @@
     },
     {
       "disposition": "summarized",
-      "reason": "Encabezado oficial y contexto temporal del comunicado.",
-      "source_ref": "chunk-2",
-      "target_sections": [
-        "executive_summary"
-      ]
-    },
-    {
-      "disposition": "summarized",
-      "reason": "Texto estructurado que sustenta los hechos, alcance y recomendaciones cautelares.",
+      "reason": null,
       "source_ref": "chunk-3",
       "target_sections": [
         "executive_summary",
@@ -30,38 +34,45 @@
       ]
     }
   ],
-  "cut_id": "80ff8a726797f7b9e5131c53",
+  "cut_id": "9bfb2857e185b6a117ea296f",
   "detailed_summary": [
     {
       "evidence_refs": [
+        "chunk-1",
+        "chunk-2",
         "chunk-3"
       ],
-      "heading": "Aseguramiento reportado",
+      "heading": "Aseguramiento reportado durante un transbordo",
       "paragraphs": [
-        "Las autoridades informan que identificaron y aseguraron, durante una operación de transbordo, un cargamento de Vietnam con 52 millones 500 mil cigarros. La publicación combina la denominación “apócrifos” con la precisión posterior de que serían presumiblemente apócrifos."
+        "La ANAM informó que identificó y aseguró, durante una operación de transbordo, un cargamento procedente de Vietnam con 52 millones 500 mil cigarros. El comunicado identifica la coordinación con Marina, autoridades del Gabinete de Seguridad y la Unidad Administrativa de la Aduana de Lázaro Cárdenas.",
+        "La fuente emplea tanto el calificativo apócrifos como la descripción presumiblemente apócrifos. Dado que el mismo comunicado conserva esa formulación presuntiva y no publica una resolución, la información no acredita una determinación definitiva sobre autenticidad."
       ]
     },
     {
       "evidence_refs": [
+        "chunk-1",
         "chunk-3"
       ],
-      "heading": "Herramientas de control descritas",
+      "heading": "Controles y objetivos institucionales descritos",
       "paragraphs": [
-        "El texto menciona análisis documental, antecedentes comerciales y perfiles operativos. También vincula las acciones con inteligencia operativa, gestión de riesgo y análisis estratégico para detectar inconsistencias documentales, perfiles atípicos y operaciones susceptibles de revisión especializada."
+        "El texto atribuye la actuación a medidas de control coordinadas, análisis documental y operativo, y mecanismos institucionales de análisis de riesgo y control aduanero. También sitúa el hecho dentro de acciones permanentes de inteligencia operativa, gestión de riesgo y análisis estratégico.",
+        "La comunicación menciona detección de posibles inconsistencias documentales, perfiles atípicos y operaciones sujetas a revisión especializada, además de trazabilidad documental, revisión operativa y validación de perfiles comerciales. Esas referencias describen capacidades institucionales, no un nuevo deber general para todos los operadores."
       ]
     },
     {
       "evidence_refs": [
+        "chunk-1",
         "chunk-3"
       ],
-      "heading": "Alcance de la información",
+      "heading": "Alcance no definido por la fuente",
       "paragraphs": [
-        "La fuente indica que el análisis integral fortaleció trazabilidad documental, revisión operativa y validación de perfiles comerciales. No publica la identidad de una empresa, un expediente, una sanción, una clasificación arancelaria ni el desenlace de una investigación."
+        "El comunicado no identifica importador, consignatario, marca, contenedor, pedimento, clasificación arancelaria ni expediente. Tampoco describe el método para valorar la posible apocrifía o una resolución posterior sobre la carga.",
+        "La fuente no publica destino final de la mercancía, multa, denuncia, plazo o fundamento jurídico concreto. Por ello, no permite anticipar efectos para una empresa, otro cargamento o una operación distinta de la reportada."
       ]
     }
   ],
   "evidence": {
-    "content_hash": "32cabcd482b001e0851e5ddd056da10526513912b7826678a869cd36771ac489",
+    "content_hash": "51ce7d96d5f00d5710f80d20199ffaafb14127c553c64d9e7d545b3bf3960427",
     "extraction_method": "html-adapter",
     "locators": [
       {
@@ -81,39 +92,33 @@
       }
     ],
     "official_url": "https://www.anam.gob.mx/comunicado-prensa-63-2026",
-    "retrieved_at": "2026-09-01T18:47:02.675381+00:00"
+    "retrieved_at": "2026-09-04T03:38:14.634769+00:00"
   },
   "executive_summary": [
-    "ANAM, Semar, autoridades del Gabinete de Seguridad y la Aduana de Lázaro Cárdenas informaron el aseguramiento de un cargamento procedente de Vietnam durante un transbordo. La fuente reporta 52 millones 500 mil cigarros y posteriormente usa la calificación de presumiblemente apócrifos.",
-    "El comunicado atribuye la detección a análisis de riesgo, revisión documental, antecedentes comerciales y perfiles operativos. Describe mecanismos permanentes de inteligencia y control, pero no identifica responsables, una sanción, un expediente ni una decisión definitiva sobre los bienes."
+    "La ANAM reportó que, con Marina, autoridades del Gabinete de Seguridad y la Unidad Administrativa de la Aduana de Lázaro Cárdenas, identificó y aseguró durante un transbordo un cargamento procedente de Vietnam con 52 millones 500 mil cigarros.",
+    "El comunicado vincula la actuación con análisis documental, análisis de riesgo, inteligencia operativa y control aduanero. Aunque el texto usa una vez el término apócrifos, también los describe como presumiblemente apócrifos; no documenta una determinación definitiva.",
+    "La fuente no identifica responsables, mercancía individualizada, expediente, resolución, destino final, sanción o plazo. Su alcance acreditado es el aseguramiento oficial reportado para una operación concreta."
   ],
   "impacts": {
     "general": {
       "evidence_refs": [
+        "chunk-1",
         "chunk-3"
       ],
       "paragraphs": [
-        "El comunicado tiene alcance informativo y operativo: hace público un aseguramiento y las herramientas de control que las autoridades describen. No establece por sí mismo un nuevo deber general, un plazo, una sanción ni una determinación definitiva sobre los cigarros."
+        "La consecuencia verificable es el aseguramiento reportado de un cargamento específico durante un transbordo. El comunicado no establece una regla general nueva, una sanción ni una determinación definitiva sobre autenticidad de los cigarros."
       ]
     },
     "sectors": [
       {
         "evidence_refs": [
+          "chunk-1",
           "chunk-3"
         ],
         "paragraphs": [
-          "La fuente es relevante porque expone que la autoridad asocia su control con revisión documental, antecedentes comerciales y perfiles operativos. No convierte esa descripción en una obligación nueva ni vincula el aseguramiento a un operador específico."
+          "Para este sector, el comunicado ilustra que la ANAM vincula mecanismos de análisis de riesgo y revisión especializada con una operación de transbordo. No acredita que toda carga de tabaco o procedente de Vietnam esté sujeta a una medida ni identifica a un operador afectado."
         ],
-        "sector": "Operadores de transbordo e importación"
-      },
-      {
-        "evidence_refs": [
-          "chunk-3"
-        ],
-        "paragraphs": [
-          "El uso del comunicado debe conservar la calificación presuntiva de los bienes y distinguir un aseguramiento reportado de una decisión definitiva sobre autenticidad, propiedad, sanciones o responsabilidades."
-        ],
-        "sector": "Asesores y comunicadores de comercio exterior"
+        "sector": "Operadores de transbordo y comercio exterior con carga de tabaco por Lázaro Cárdenas"
       }
     ]
   },
@@ -142,34 +147,23 @@
     "review_reason": null,
     "source": "ANAM",
     "source_id": "41a5756148946bba",
-    "summary_teaser": "ANAM, Semar y autoridades del Gabinete de Seguridad comunicaron el aseguramiento de un cargamento procedente de Vietnam con 52 millones 500 mil cigarros descritos como presuntamente apócrifos. La publicación expone mecanismos de análisis de riesgo y control, pero no reporta sanciones, responsables ni una resolución definitiva.",
-    "title": "ANAM confirma aseguramiento de cigarros presuntamente apócrifos",
+    "summary_teaser": "La ANAM informó que, con Marina y autoridades del Gabinete de Seguridad, identificó y aseguró durante un transbordo en Lázaro Cárdenas un cargamento procedente de Vietnam con 52 millones 500 mil cigarros que describió como presumiblemente apócrifos. El comunicado no precisa una determinación definitiva, el destino de la mercancía ni medidas posteriores.",
+    "title": "ANAM confirma aseguramiento de cigarros presuntamente apócrifos en transbordo",
     "url": "https://www.anam.gob.mx/comunicado-prensa-63-2026/"
   },
   "recommended_actions": [
     {
-      "affected_group": "Operadores de comercio exterior",
+      "affected_group": "Operadores que reciban una revisión de una operación de transbordo con carga de tabaco",
       "deadline": null,
       "evidence_refs": [
+        "chunk-1",
         "chunk-3"
       ],
       "legal_basis": null,
       "paragraphs": [
-        "Ante operaciones de transbordo o importación, pueden revisar de forma preventiva la congruencia de su documentación comercial y de los datos de la operación. La recomendación se limita a la gestión de riesgo que sugiere la descripción oficial; el comunicado no fija un plazo ni una obligación adicional."
+        "Si la autoridad solicita información o inicia una revisión, conservar y revisar la documentación comercial, de origen y de trazabilidad pertinente a la operación. La acción es condicionada a una actuación concreta: el comunicado no establece un requerimiento individual, un plazo ni un fundamento jurídico específico."
       ],
-      "trigger": "Operaciones de transbordo o importación sometidas a revisión aduanera"
-    },
-    {
-      "affected_group": "Quienes analicen o difundan el comunicado",
-      "deadline": null,
-      "evidence_refs": [
-        "chunk-3"
-      ],
-      "legal_basis": null,
-      "paragraphs": [
-        "Conviene presentar el hecho como un aseguramiento comunicado por autoridades y conservar la calificación presuntiva de los cigarros. No debe transformarse en una conclusión sobre responsabilidad, sanción o desenlace que el texto oficial no comunica."
-      ],
-      "trigger": "Elaboración de análisis, notas o reportes sobre el aseguramiento"
+      "trigger": "Solicitud de información o revisión de una operación de transbordo con carga de tabaco"
     }
   ],
   "schema_version": 8

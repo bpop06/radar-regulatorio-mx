@@ -1,20 +1,14 @@
 {
   "coverage": [
     {
-      "disposition": "summarized",
-      "reason": null,
+      "disposition": "not_material",
+      "reason": "Encabezado identificador; el contenido material se desarrolla en la publicación de datos.",
       "source_ref": "chunk-1",
-      "target_sections": [
-        "executive_summary",
-        "detailed_summary",
-        "impacts.general",
-        "impacts.sectors",
-        "recommended_actions"
-      ]
+      "target_sections": []
     },
     {
       "disposition": "summarized",
-      "reason": null,
+      "reason": "Solicitante, producto, delimitación, consulta pública, oposición y precisión de no prejuzgamiento.",
       "source_ref": "chunk-2",
       "target_sections": [
         "executive_summary",
@@ -25,31 +19,38 @@
       ]
     }
   ],
-  "cut_id": "80ff8a726797f7b9e5131c53",
+  "cut_id": "9bfb2857e185b6a117ea296f",
   "detailed_summary": [
     {
       "evidence_refs": [
         "chunk-2"
       ],
-      "heading": "Contenido publicado",
+      "heading": "Solicitud, producto y zona propuesta",
       "paragraphs": [
-        "La publicación divulga la solicitud de declaración de protección de la indicación geográfica “Plátano Chiapas”, presentada por la Secretaría de Economía y del Trabajo del Estado de Chiapas. Describe el producto como plátano de clon gran enano y delimita la zona de producción a la región del Soconusco, integrada por 15 municipios. El IMPI precisa que la difusión no prejuzga sobre la procedencia o improcedencia de la solicitud.",
-        "El expediente está disponible para consulta en la Dirección Divisional de Marcas del IMPI, en el domicilio y horario publicados. La descripción incluye características físicas y organolépticas, así como el vínculo alegado con factores agroecológicos de la región de cultivo."
+        "La publicación identifica a la persona solicitante, describe el Plátano Chiapas como fruto de la especie clon gran enano y sitúa la zona geográfica propuesta en la región del Soconusco, con coordenadas, límites y quince municipios enumerados."
       ]
     },
     {
       "evidence_refs": [
         "chunk-2"
       ],
-      "heading": "Alcance y lectura práctica",
+      "heading": "Consulta pública y oposición",
       "paragraphs": [
-        "Cualquier tercera persona que justifique su interés puede presentar oposición por escrito, observaciones u objeciones sobre los requisitos legales, acompañando pruebas y comprobante de pago de tarifa. El plazo es improrrogable de un mes contado desde la publicación oficial.",
-        "La ficha se dirige principalmente a productores, comercializadores y personas con interés en la indicación geográfica solicitada."
+        "El expediente puede consultarse en el archivo de la Dirección Divisional de Marcas del IMPI. Terceros que justifiquen interés pueden oponerse por escrito, formular observaciones u objeciones y acompañar pruebas y comprobante de pago, dentro del plazo improrrogable indicado."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Alcance procedimental",
+      "paragraphs": [
+        "El IMPI expresa que la publicación no prejuzga ni constituye una determinación sobre la procedencia o improcedencia de la solicitud; por ello, no equivale a la declaración de protección."
       ]
     }
   ],
   "evidence": {
-    "content_hash": "67b4152be04830b02197121576c09a5c0bcd5236deb90f909ea4da995076e94e",
+    "content_hash": "583257174f20c30d44c068009fa2ebeceece7c437b3f33d0efe426fadd06f934",
     "extraction_method": "html-adapter",
     "locators": [
       {
@@ -64,11 +65,11 @@
       }
     ],
     "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797195&fecha=26%2F08%2F2026",
-    "retrieved_at": "2026-09-01T16:35:08.152201+00:00"
+    "retrieved_at": "2026-09-03T16:53:20.532608+00:00"
   },
   "executive_summary": [
-    "El Instituto Mexicano de la Propiedad Industrial difundió los datos de una solicitud de declaración de protección para una indicación geográfica. La publicación divulga la solicitud de declaración de protección de la indicación geográfica “Plátano Chiapas”, presentada por la Secretaría de Economía y del Trabajo del Estado de Chiapas. Describe el producto como plátano de clon gran enano y delimita la zona de producción a la región del Soconusco, integrada por 15 municipios. El IMPI precisa que la difusión no prejuzga sobre la procedencia o improcedencia de la solicitud.",
-    "Cualquier tercera persona que justifique su interés puede presentar oposición por escrito, observaciones u objeciones sobre los requisitos legales, acompañando pruebas y comprobante de pago de tarifa. El plazo es improrrogable de un mes contado desde la publicación oficial. La síntesis se limita a los hechos y condiciones expresamente visibles en la fuente oficial."
+    "El IMPI publicó la solicitud de declaración de protección de la indicación geográfica Plátano Chiapas, presentada por la Secretaría de Economía y del Trabajo del Estado de Chiapas, junto con la descripción del producto y del área propuesta.",
+    "La publicación abre un periodo improrrogable de un mes para oposiciones, observaciones u objeciones de terceros con interés justificado y aclara que no constituye un pronunciamiento sobre la procedencia de la solicitud."
   ],
   "impacts": {
     "general": {
@@ -76,7 +77,7 @@
         "chunk-2"
       ],
       "paragraphs": [
-        "El efecto observable es el que la publicación atribuye al acto: Cualquier tercera persona que justifique su interés puede presentar oposición por escrito, observaciones u objeciones sobre los requisitos legales, acompañando pruebas y comprobante de pago de tarifa. El plazo es improrrogable de un mes contado desde la publicación oficial."
+        "La publicación activa una oportunidad formal de participación de terceros y hace disponible el expediente, pero no produce por sí misma una indicación geográfica declarada ni una protección ya concedida."
       ]
     },
     "sectors": [
@@ -85,9 +86,18 @@
           "chunk-2"
         ],
         "paragraphs": [
-          "Las personas comprendidas deben considerar el documento porque La publicación divulga la solicitud de declaración de protección de la indicación geográfica “Plátano Chiapas”, presentada por la Secretaría de Economía y del Trabajo del Estado de Chiapas. Describe el producto como plátano de clon gran enano y delimita la zona de producción a la región del Soconusco, integrada por 15 municipios. El IMPI precisa que la difusión no prejuzga sobre la procedencia o improcedencia de la solicitud."
+          "La fuente delimita la zona y describe el producto para la solicitud, sin reconocer todavía derechos derivados de una declaración de protección."
         ],
-        "sector": "Productores, comercializadores y personas con interés en la indicación geográfica solicitada"
+        "sector": "Productores y comercializadores vinculados con el Soconusco"
+      },
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "Las personas que puedan demostrar interés cuentan con la vía de oposición, observaciones u objeciones dentro del plazo y con los documentos que la publicación exige."
+        ],
+        "sector": "Terceros con interés justificado en la indicación geográfica"
       }
     ]
   },
@@ -116,22 +126,22 @@
     "review_reason": null,
     "source": "DOF",
     "source_id": "5797195",
-    "summary_teaser": "El IMPI publicó la solicitud de protección para la indicación geográfica “Plátano Chiapas”, promovida por la Secretaría de Economía y del Trabajo estatal. El expediente queda disponible para consulta; personas con interés justificado tienen un mes improrrogable para formular oposición, observaciones u objeciones.",
-    "title": "IMPI abre oposición a la indicación geográfica Plátano Chiapas",
+    "summary_teaser": "El IMPI publicó los datos de la solicitud de declaración de protección para la indicación geográfica Plátano Chiapas. La publicación abre un plazo improrrogable de un mes para que terceros con interés justificado presenten oposición, observaciones u objeciones con pruebas y comprobante de pago; no constituye todavía una declaración de protección.",
+    "title": "Solicitud de Plátano Chiapas abre un periodo de oposición",
     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797195&fecha=26/08/2026"
   },
   "recommended_actions": [
     {
-      "affected_group": "Productores, comercializadores y personas con interés en la indicación geográfica solicitada",
-      "deadline": "Un mes improrrogable contado a partir de la publicación en el DOF.",
+      "affected_group": "Terceros que justifiquen interés en la solicitud",
+      "deadline": "Un mes improrrogable contado a partir de la publicación en el Diario Oficial de la Federación.",
       "evidence_refs": [
         "chunk-2"
       ],
-      "legal_basis": "Artículo 282 de la Ley Federal de Protección a la Propiedad Industrial.",
+      "legal_basis": "Artículo 282 de la Ley Federal de Protección a la Propiedad Industrial, citado en la publicación.",
       "paragraphs": [
-        "Revisar el expediente público y, si existe interés jurídico, preparar la oposición u observaciones con pruebas dentro del plazo indicado por el IMPI."
+        "Si pretenden cuestionar o formular observaciones sobre la solicitud, deberán presentarlas por escrito con las pruebas respectivas y el comprobante de pago de la tarifa, ante el IMPI en el domicilio y horario publicados."
       ],
-      "trigger": "Cuando la persona o entidad se ubique en el ámbito material descrito por la fuente oficial."
+      "trigger": "Si existe una oposición, observación u objeción respecto del cumplimiento de los requisitos de la solicitud."
     }
   ],
   "schema_version": 8

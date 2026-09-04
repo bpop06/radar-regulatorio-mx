@@ -1,0 +1,5423 @@
+{
+  "cut_id": "9bfb2857e185b6a117ea296f",
+  "item": {
+    "ai_generated": true,
+    "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793858&fecha=17%2F07%2F2026",
+    "card_body": "## Qué se publicó\n\nEl anexo de la Primera Resolución de Modificaciones a la Resolución Miscelánea Fiscal para 2026 integra tarifas, tablas y referencias fiscales. La ficha se refiere únicamente a la publicación oficial y no confirma hechos ajenos a su texto.\n\n## Sustancia\n\nLa evidencia oficial contiene el Anexo 2 completo, incluyendo tablas de ISR, IEPS, ISAN y Ley de Ingresos de la Federación. Su aplicación depende de la regla, impuesto, periodo y supuesto que corresponda a cada contribuyente u operación. Para contribuyentes, contadores y asesores fiscales, la acción de contraste consiste en identificar la tabla y el periodo aplicable antes de calcular contribuciones o retenciones. No se infieren efectos adicionales ni se sustituye la consulta de la fuente completa.\n\n## Fuente\n\n[Abrir publicación oficial](https://dof.gob.mx/nota_detalle.php?codigo=5793858&fecha=17%2F07%2F2026)",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "ae1414e1645dded34b731b6ab2f9ead68759a13b6560582028dd45b4783d5690",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-1",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-3",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-4",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-5",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-6",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-7",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-8",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-9",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-10",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-11",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-12",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-13",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-14",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-15",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-16",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-17",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-18",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-19",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-20",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-21",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-22",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-23",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-24",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-25",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-26",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-27",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-28",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-29",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-30",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-31",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-32",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-33",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-34",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-35",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-36",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-37",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-38",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-39",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-40",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-41",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-42",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-43",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-44",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-45",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-46",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-47",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-48",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-49",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-50",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-51",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-52",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-53",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-54",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-55",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-56",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-57",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-58",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-59",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-60",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-61",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-62",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-63",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-64",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-65",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-66",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-67",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-68",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-69",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-70",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-71",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-72",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-73",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-74",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-75",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-76",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-77",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-78",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-79",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-80",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-81",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-82",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-83",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-84",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-85",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-86",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-87",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-88",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-89",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-90",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-91",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-92",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-93",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-94",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-95",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-96",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-97",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-98",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-99",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-100",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-101",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-102",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-103",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-104",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-105",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-106",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-107",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-108",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-109",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-110",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-111",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-112",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-113",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-114",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-115",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-116",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-117",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-118",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-119",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-120",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-121",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-122",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-123",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-124",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-125",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-126",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-127",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-128",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-129",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-130",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-131",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-132",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-133",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-134",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-135",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-136",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-137",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-138",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-139",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-140",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-141",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-142",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-143",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-144",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-145",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-146",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-147",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-148",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-149",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-150",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-151",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-152",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-153",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-154",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-155",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-156",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-157",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-158",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-159",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-160",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-161",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-162",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-163",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-164",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-165",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-166",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-167",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-168",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-169",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-170",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-171",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-172",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-173",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-174",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-175",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-176",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-177",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-178",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-179",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-180",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-181",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-182",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-183",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-184",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-185",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-186",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-187",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-188",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-189",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-190",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-191",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-192",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-193",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-194",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-195",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-196",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-197",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-198",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-199",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-200",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-201",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-202",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-203",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-204",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-205",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-206",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-207",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-208",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-209",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-210",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-211",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-212",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-213",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-214",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-215",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-216",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-217",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-218",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-219",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-220",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-221",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-222",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-223",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-224",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-225",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-226",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-227",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-228",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-229",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-230",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-231",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-232",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-233",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-234",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-235",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-236",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-237",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-238",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-239",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-240",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-241",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-242",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-243",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-244",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-245",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-246",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-247",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-248",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-249",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-250",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-251",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-252",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-253",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-254",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-255",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-256",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-257",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-258",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-259",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-260",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-261",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-262",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-263",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-264",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-265",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-266",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-267",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-268",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-269",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-270",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-271",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-272",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-273",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-274",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-275",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-276",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-277",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-278",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-279",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-280",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-281",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-282",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-283",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-284",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-285",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-286",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-287",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-288",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-289",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-290",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-291",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-292",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-293",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-294",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-295",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-296",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-297",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-298",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-299",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-300",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-301",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-302",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-303",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-304",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-305",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-306",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-307",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-308",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-309",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-310",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-311",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/6e85cbf1b6386a3a42b8fa5a.json",
+    "detail_url": "notas/6e85cbf1b6386a3a42b8fa5a.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-311"
+        ],
+        "heading": "Contenido verificable",
+        "paragraphs": [
+          "El anexo de la Primera Resolución de Modificaciones a la Resolución Miscelánea Fiscal para 2026 integra tarifas, tablas y referencias fiscales. La evidencia oficial contiene el Anexo 2 completo, incluyendo tablas de ISR, IEPS, ISAN y Ley de Ingresos de la Federación. La publicación oficial se fecha 2026-07-17."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-311"
+        ],
+        "heading": "Alcance y lectura",
+        "paragraphs": [
+          "Su aplicación depende de la regla, impuesto, periodo y supuesto que corresponda a cada contribuyente u operación. La revisión debe conservar el enlace oficial y contrastar el supuesto concreto antes de derivar una consecuencia individual."
+        ]
+      }
+    ],
+    "detected_at": "2026-08-14T01:46:44.993982+00:00",
+    "document_type": "Anexo",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "c0e4c900ecddfe1b9f63648d884c171852f3a776d61b8bac08fed1bb84b39213",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "ANEXO 2 de la Primera Resolución de Modificaciones a la Resolución Miscelánea Fiscal para 2026, publicada el 9 de julio de 2026.",
+          "location": "caracteres 0-132"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Anexo 1",
+          "location": "caracteres 132-630"
+        },
+        {
+          "id": "chunk-3",
+          "label": "Trámites Fiscales",
+          "location": "caracteres 630-652"
+        },
+        {
+          "id": "chunk-4",
+          "label": "Contenido",
+          "location": "caracteres 652-666"
+        },
+        {
+          "id": "chunk-5",
+          "label": "I. Definiciones",
+          "location": "caracteres 666-686"
+        },
+        {
+          "id": "chunk-6",
+          "label": "II. Trámites",
+          "location": "caracteres 686-703"
+        },
+        {
+          "id": "chunk-7",
+          "label": "Código Fiscal de la Federación",
+          "location": "caracteres 703-738"
+        },
+        {
+          "id": "chunk-8",
+          "label": "1/CFF …",
+          "location": "caracteres 738-923"
+        },
+        {
+          "id": "chunk-9",
+          "label": "4/CFF a …",
+          "location": "caracteres 923-937"
+        },
+        {
+          "id": "chunk-10",
+          "label": "6/CFF",
+          "location": "caracteres 937-1214"
+        },
+        {
+          "id": "chunk-11",
+          "label": "10/CFF a …",
+          "location": "caracteres 1214-1229"
+        },
+        {
+          "id": "chunk-12",
+          "label": "13/CFF",
+          "location": "caracteres 1229-1584"
+        },
+        {
+          "id": "chunk-13",
+          "label": "18/CFF …",
+          "location": "caracteres 1584-1597"
+        },
+        {
+          "id": "chunk-14",
+          "label": "19/CFF …",
+          "location": "caracteres 1597-1816"
+        },
+        {
+          "id": "chunk-15",
+          "label": "22/CFF …",
+          "location": "caracteres 1816-1829"
+        },
+        {
+          "id": "chunk-16",
+          "label": "23/CFF …",
+          "location": "caracteres 1829-1915"
+        },
+        {
+          "id": "chunk-17",
+          "label": "25/CFF a …",
+          "location": "caracteres 1915-1930"
+        },
+        {
+          "id": "chunk-18",
+          "label": "32/CFF",
+          "location": "caracteres 1930-2016"
+        },
+        {
+          "id": "chunk-19",
+          "label": "34/CFF …",
+          "location": "caracteres 2016-2232"
+        },
+        {
+          "id": "chunk-20",
+          "label": "37/CFF …",
+          "location": "caracteres 2232-2570"
+        },
+        {
+          "id": "chunk-21",
+          "label": "39/CFF",
+          "location": "caracteres 2570-2773"
+        },
+        {
+          "id": "chunk-22",
+          "label": "40/CFF …",
+          "location": "caracteres 2773-2786"
+        },
+        {
+          "id": "chunk-23",
+          "label": "41/CFF …",
+          "location": "caracteres 2786-2799"
+        },
+        {
+          "id": "chunk-24",
+          "label": "42/CFF",
+          "location": "caracteres 2799-2822"
+        },
+        {
+          "id": "chunk-25",
+          "label": "44/CFF …",
+          "location": "caracteres 2822-2835"
+        },
+        {
+          "id": "chunk-26",
+          "label": "45/CFF",
+          "location": "caracteres 2835-2846"
+        },
+        {
+          "id": "chunk-27",
+          "label": "46/CFF …",
+          "location": "caracteres 2846-2859"
+        },
+        {
+          "id": "chunk-28",
+          "label": "47/CFF",
+          "location": "caracteres 2859-2870"
+        },
+        {
+          "id": "chunk-29",
+          "label": "48/CFF",
+          "location": "caracteres 2870-2881"
+        },
+        {
+          "id": "chunk-30",
+          "label": "49/CFF",
+          "location": "caracteres 2881-2892"
+        },
+        {
+          "id": "chunk-31",
+          "label": "50/CFF a",
+          "location": "caracteres 2892-2905"
+        },
+        {
+          "id": "chunk-32",
+          "label": "53/CFF",
+          "location": "caracteres 2905-2916"
+        },
+        {
+          "id": "chunk-33",
+          "label": "54/CFF",
+          "location": "caracteres 2916-2927"
+        },
+        {
+          "id": "chunk-34",
+          "label": "55/CFF",
+          "location": "caracteres 2927-2938"
+        },
+        {
+          "id": "chunk-35",
+          "label": "56/CFF",
+          "location": "caracteres 2938-2949"
+        },
+        {
+          "id": "chunk-36",
+          "label": "57/CFF",
+          "location": "caracteres 2949-2960"
+        },
+        {
+          "id": "chunk-37",
+          "label": "58/CFF",
+          "location": "caracteres 2960-2971"
+        },
+        {
+          "id": "chunk-38",
+          "label": "59/CFF …",
+          "location": "caracteres 2971-2984"
+        },
+        {
+          "id": "chunk-39",
+          "label": "60/CFF",
+          "location": "caracteres 2984-2995"
+        },
+        {
+          "id": "chunk-40",
+          "label": "61/CFF …",
+          "location": "caracteres 2995-3008"
+        },
+        {
+          "id": "chunk-41",
+          "label": "62/CFF …",
+          "location": "caracteres 3008-3021"
+        },
+        {
+          "id": "chunk-42",
+          "label": "63/CFF",
+          "location": "caracteres 3021-3032"
+        },
+        {
+          "id": "chunk-43",
+          "label": "64/CFF",
+          "location": "caracteres 3032-3043"
+        },
+        {
+          "id": "chunk-44",
+          "label": "65/CFF …",
+          "location": "caracteres 3043-3056"
+        },
+        {
+          "id": "chunk-45",
+          "label": "66/CFF",
+          "location": "caracteres 3056-3067"
+        },
+        {
+          "id": "chunk-46",
+          "label": "67/CFF",
+          "location": "caracteres 3067-3078"
+        },
+        {
+          "id": "chunk-47",
+          "label": "68/CFF",
+          "location": "caracteres 3078-3089"
+        },
+        {
+          "id": "chunk-48",
+          "label": "69/CFF …",
+          "location": "caracteres 3089-3114"
+        },
+        {
+          "id": "chunk-49",
+          "label": "71/CFF a",
+          "location": "caracteres 3114-3127"
+        },
+        {
+          "id": "chunk-50",
+          "label": "73/CFF",
+          "location": "caracteres 3127-3138"
+        },
+        {
+          "id": "chunk-51",
+          "label": "74/CFF",
+          "location": "caracteres 3138-5205"
+        },
+        {
+          "id": "chunk-52",
+          "label": "75/CFF a …",
+          "location": "caracteres 5205-5220"
+        },
+        {
+          "id": "chunk-53",
+          "label": "80/CFF",
+          "location": "caracteres 5220-5460"
+        },
+        {
+          "id": "chunk-54",
+          "label": "82/CFF a …",
+          "location": "caracteres 5460-5475"
+        },
+        {
+          "id": "chunk-55",
+          "label": "85/CFF",
+          "location": "caracteres 5475-5715"
+        },
+        {
+          "id": "chunk-56",
+          "label": "88/CFF …",
+          "location": "caracteres 5715-5791"
+        },
+        {
+          "id": "chunk-57",
+          "label": "90/CFF …",
+          "location": "caracteres 5791-7276"
+        },
+        {
+          "id": "chunk-58",
+          "label": "102/CFF …",
+          "location": "caracteres 7276-7392"
+        },
+        {
+          "id": "chunk-59",
+          "label": "104/CFF …",
+          "location": "caracteres 7392-7406"
+        },
+        {
+          "id": "chunk-60",
+          "label": "105/CFF …",
+          "location": "caracteres 7406-7522"
+        },
+        {
+          "id": "chunk-61",
+          "label": "107/CFF a …",
+          "location": "caracteres 7522-7538"
+        },
+        {
+          "id": "chunk-62",
+          "label": "111/CFF",
+          "location": "caracteres 7538-7662"
+        },
+        {
+          "id": "chunk-63",
+          "label": "113/CFF a …",
+          "location": "caracteres 7662-7678"
+        },
+        {
+          "id": "chunk-64",
+          "label": "115/CFF",
+          "location": "caracteres 7678-7831"
+        },
+        {
+          "id": "chunk-65",
+          "label": "117/CFF …",
+          "location": "caracteres 7831-7988"
+        },
+        {
+          "id": "chunk-66",
+          "label": "119/CFF …",
+          "location": "caracteres 7988-8002"
+        },
+        {
+          "id": "chunk-67",
+          "label": "120/CFF …",
+          "location": "caracteres 8002-8145"
+        },
+        {
+          "id": "chunk-68",
+          "label": "122/CFF a …",
+          "location": "caracteres 8145-8161"
+        },
+        {
+          "id": "chunk-69",
+          "label": "131/CFF",
+          "location": "caracteres 8161-8315"
+        },
+        {
+          "id": "chunk-70",
+          "label": "134/CFF …",
+          "location": "caracteres 8315-8459"
+        },
+        {
+          "id": "chunk-71",
+          "label": "136/CFF …",
+          "location": "caracteres 8459-8473"
+        },
+        {
+          "id": "chunk-72",
+          "label": "137/CFF …",
+          "location": "caracteres 8473-8991"
+        },
+        {
+          "id": "chunk-73",
+          "label": "143/CFF …",
+          "location": "caracteres 8991-9286"
+        },
+        {
+          "id": "chunk-74",
+          "label": "146/CFF …",
+          "location": "caracteres 9286-10175"
+        },
+        {
+          "id": "chunk-75",
+          "label": "153/CFF …",
+          "location": "caracteres 10175-10661"
+        },
+        {
+          "id": "chunk-76",
+          "label": "157/CFF a …",
+          "location": "caracteres 10661-10677"
+        },
+        {
+          "id": "chunk-77",
+          "label": "160/CFF",
+          "location": "caracteres 10677-10783"
+        },
+        {
+          "id": "chunk-78",
+          "label": "162/CFF …",
+          "location": "caracteres 10783-10797"
+        },
+        {
+          "id": "chunk-79",
+          "label": "163/CFF …",
+          "location": "caracteres 10797-10985"
+        },
+        {
+          "id": "chunk-80",
+          "label": "166/CFF …",
+          "location": "caracteres 10985-11156"
+        },
+        {
+          "id": "chunk-81",
+          "label": "168/CFF …",
+          "location": "caracteres 11156-11170"
+        },
+        {
+          "id": "chunk-82",
+          "label": "Impuesto sobre la Renta",
+          "location": "caracteres 11170-11198"
+        },
+        {
+          "id": "chunk-83",
+          "label": "1/ISR …",
+          "location": "caracteres 11198-11485"
+        },
+        {
+          "id": "chunk-84",
+          "label": "3/ISR …",
+          "location": "caracteres 11485-11645"
+        },
+        {
+          "id": "chunk-85",
+          "label": "5/ISR a …",
+          "location": "caracteres 11645-11659"
+        },
+        {
+          "id": "chunk-86",
+          "label": "11/ISR",
+          "location": "caracteres 11659-12075"
+        },
+        {
+          "id": "chunk-87",
+          "label": "15/ISR a …",
+          "location": "caracteres 12075-12090"
+        },
+        {
+          "id": "chunk-88",
+          "label": "18/ISR",
+          "location": "caracteres 12090-12246"
+        },
+        {
+          "id": "chunk-89",
+          "label": "20/ISR …",
+          "location": "caracteres 12246-12451"
+        },
+        {
+          "id": "chunk-90",
+          "label": "22/ISR a …",
+          "location": "caracteres 12451-12466"
+        },
+        {
+          "id": "chunk-91",
+          "label": "24/ISR",
+          "location": "caracteres 12466-12695"
+        },
+        {
+          "id": "chunk-92",
+          "label": "26/ISR …",
+          "location": "caracteres 12695-13644"
+        },
+        {
+          "id": "chunk-93",
+          "label": "30/ISR",
+          "location": "caracteres 13644-13655"
+        },
+        {
+          "id": "chunk-94",
+          "label": "31/ISR",
+          "location": "caracteres 13655-13666"
+        },
+        {
+          "id": "chunk-95",
+          "label": "32/ISR …",
+          "location": "caracteres 13666-13679"
+        },
+        {
+          "id": "chunk-96",
+          "label": "33/ISR …",
+          "location": "caracteres 13679-13692"
+        },
+        {
+          "id": "chunk-97",
+          "label": "34/ISR",
+          "location": "caracteres 13692-13703"
+        },
+        {
+          "id": "chunk-98",
+          "label": "35/ISR …",
+          "location": "caracteres 13703-13716"
+        },
+        {
+          "id": "chunk-99",
+          "label": "36/ISR …",
+          "location": "caracteres 13716-13729"
+        },
+        {
+          "id": "chunk-100",
+          "label": "37/ISR",
+          "location": "caracteres 13729-13740"
+        },
+        {
+          "id": "chunk-101",
+          "label": "38/ISR",
+          "location": "caracteres 13740-13751"
+        },
+        {
+          "id": "chunk-102",
+          "label": "39/ISR",
+          "location": "caracteres 13751-13762"
+        },
+        {
+          "id": "chunk-103",
+          "label": "40/ISR",
+          "location": "caracteres 13762-13773"
+        },
+        {
+          "id": "chunk-104",
+          "label": "41/ISR",
+          "location": "caracteres 13773-13784"
+        },
+        {
+          "id": "chunk-105",
+          "label": "42/ISR … 43/ISR",
+          "location": "caracteres 13784-13804"
+        },
+        {
+          "id": "chunk-106",
+          "label": "44/ISR",
+          "location": "caracteres 13804-13815"
+        },
+        {
+          "id": "chunk-107",
+          "label": "45/ISR",
+          "location": "caracteres 13815-13826"
+        },
+        {
+          "id": "chunk-108",
+          "label": "46/ISR …",
+          "location": "caracteres 13826-13839"
+        },
+        {
+          "id": "chunk-109",
+          "label": "47/ISR …",
+          "location": "caracteres 13839-13852"
+        },
+        {
+          "id": "chunk-110",
+          "label": "48/ISR",
+          "location": "caracteres 13852-13863"
+        },
+        {
+          "id": "chunk-111",
+          "label": "49/ISR",
+          "location": "caracteres 13863-13886"
+        },
+        {
+          "id": "chunk-112",
+          "label": "51/ISR",
+          "location": "caracteres 13886-13897"
+        },
+        {
+          "id": "chunk-113",
+          "label": "52/ISR a",
+          "location": "caracteres 13897-13910"
+        },
+        {
+          "id": "chunk-114",
+          "label": "55/ISR",
+          "location": "caracteres 13910-13921"
+        },
+        {
+          "id": "chunk-115",
+          "label": "56/ISR",
+          "location": "caracteres 13921-13932"
+        },
+        {
+          "id": "chunk-116",
+          "label": "57/ISR …",
+          "location": "caracteres 13932-13945"
+        },
+        {
+          "id": "chunk-117",
+          "label": "58/ISR",
+          "location": "caracteres 13945-13956"
+        },
+        {
+          "id": "chunk-118",
+          "label": "59/ISR",
+          "location": "caracteres 13956-13967"
+        },
+        {
+          "id": "chunk-119",
+          "label": "60/ISR",
+          "location": "caracteres 13967-13978"
+        },
+        {
+          "id": "chunk-120",
+          "label": "61/ISR",
+          "location": "caracteres 13978-16314"
+        },
+        {
+          "id": "chunk-121",
+          "label": "62/ISR",
+          "location": "caracteres 16314-16325"
+        },
+        {
+          "id": "chunk-122",
+          "label": "63/ISR",
+          "location": "caracteres 16325-16336"
+        },
+        {
+          "id": "chunk-123",
+          "label": "64/ISR",
+          "location": "caracteres 16336-16347"
+        },
+        {
+          "id": "chunk-124",
+          "label": "65/ISR",
+          "location": "caracteres 16347-16358"
+        },
+        {
+          "id": "chunk-125",
+          "label": "66/ISR",
+          "location": "caracteres 16358-16369"
+        },
+        {
+          "id": "chunk-126",
+          "label": "67/ISR",
+          "location": "caracteres 16369-16380"
+        },
+        {
+          "id": "chunk-127",
+          "label": "68/ISR",
+          "location": "caracteres 16380-16391"
+        },
+        {
+          "id": "chunk-128",
+          "label": "69/ISR",
+          "location": "caracteres 16391-16402"
+        },
+        {
+          "id": "chunk-129",
+          "label": "70/ISR",
+          "location": "caracteres 16402-16413"
+        },
+        {
+          "id": "chunk-130",
+          "label": "71/ISR",
+          "location": "caracteres 16413-16424"
+        },
+        {
+          "id": "chunk-131",
+          "label": "72/ISR",
+          "location": "caracteres 16424-16471"
+        },
+        {
+          "id": "chunk-132",
+          "label": "76/ISR",
+          "location": "caracteres 16471-16482"
+        },
+        {
+          "id": "chunk-133",
+          "label": "77/ISR",
+          "location": "caracteres 16482-16493"
+        },
+        {
+          "id": "chunk-134",
+          "label": "78/ISR …",
+          "location": "caracteres 16493-16506"
+        },
+        {
+          "id": "chunk-135",
+          "label": "79/ISR …",
+          "location": "caracteres 16506-16519"
+        },
+        {
+          "id": "chunk-136",
+          "label": "80/ISR",
+          "location": "caracteres 16519-16530"
+        },
+        {
+          "id": "chunk-137",
+          "label": "81/ISR …",
+          "location": "caracteres 16530-16543"
+        },
+        {
+          "id": "chunk-138",
+          "label": "82/ISR",
+          "location": "caracteres 16543-16554"
+        },
+        {
+          "id": "chunk-139",
+          "label": "83/ISR",
+          "location": "caracteres 16554-16565"
+        },
+        {
+          "id": "chunk-140",
+          "label": "84/ISR",
+          "location": "caracteres 16565-16576"
+        },
+        {
+          "id": "chunk-141",
+          "label": "85/ISR",
+          "location": "caracteres 16576-16587"
+        },
+        {
+          "id": "chunk-142",
+          "label": "86/ISR …",
+          "location": "caracteres 16587-16600"
+        },
+        {
+          "id": "chunk-143",
+          "label": "87/ISR",
+          "location": "caracteres 16600-16611"
+        },
+        {
+          "id": "chunk-144",
+          "label": "88/ISR …",
+          "location": "caracteres 16611-19687"
+        },
+        {
+          "id": "chunk-145",
+          "label": "89/ISR …",
+          "location": "caracteres 19687-19759"
+        },
+        {
+          "id": "chunk-146",
+          "label": "95/ISR",
+          "location": "caracteres 19759-19770"
+        },
+        {
+          "id": "chunk-147",
+          "label": "96/ISR",
+          "location": "caracteres 19770-19781"
+        },
+        {
+          "id": "chunk-148",
+          "label": "97/ISR",
+          "location": "caracteres 19781-19799"
+        },
+        {
+          "id": "chunk-149",
+          "label": "1/IEPS …",
+          "location": "caracteres 19799-19812"
+        },
+        {
+          "id": "chunk-150",
+          "label": "2/IEPS",
+          "location": "caracteres 19812-19823"
+        },
+        {
+          "id": "chunk-151",
+          "label": "3/IEPS",
+          "location": "caracteres 19823-19834"
+        },
+        {
+          "id": "chunk-152",
+          "label": "4/IEPS …",
+          "location": "caracteres 19834-19847"
+        },
+        {
+          "id": "chunk-153",
+          "label": "5/IEPS …",
+          "location": "caracteres 19847-19860"
+        },
+        {
+          "id": "chunk-154",
+          "label": "6/IEPS",
+          "location": "caracteres 19860-19871"
+        },
+        {
+          "id": "chunk-155",
+          "label": "7/IEPS …",
+          "location": "caracteres 19871-19884"
+        },
+        {
+          "id": "chunk-156",
+          "label": "8/IEPS",
+          "location": "caracteres 19884-19895"
+        },
+        {
+          "id": "chunk-157",
+          "label": "9/IEPS",
+          "location": "caracteres 19895-19906"
+        },
+        {
+          "id": "chunk-158",
+          "label": "10/IEPS a",
+          "location": "caracteres 19906-19920"
+        },
+        {
+          "id": "chunk-159",
+          "label": "16/IEPS",
+          "location": "caracteres 19920-19971"
+        },
+        {
+          "id": "chunk-160",
+          "label": "1/ISAN …",
+          "location": "caracteres 19971-19984"
+        },
+        {
+          "id": "chunk-161",
+          "label": "2/ISAN",
+          "location": "caracteres 19984-20007"
+        },
+        {
+          "id": "chunk-162",
+          "label": "1/LIF … 2/LIF",
+          "location": "caracteres 20007-20805"
+        },
+        {
+          "id": "chunk-163",
+          "label": "Impuesto Especial sobre Producción y Servicios",
+          "location": "caracteres 20805-21597"
+        },
+        {
+          "id": "chunk-164",
+          "label": "Impuesto sobre Automóviles Nuevos",
+          "location": "caracteres 21597-22430"
+        },
+        {
+          "id": "chunk-165",
+          "label": "3/LIF",
+          "location": "caracteres 22430-22621"
+        },
+        {
+          "id": "chunk-166",
+          "label": "5/LIF …",
+          "location": "caracteres 22621-22833"
+        },
+        {
+          "id": "chunk-167",
+          "label": "7/LIF …",
+          "location": "caracteres 22833-22845"
+        },
+        {
+          "id": "chunk-168",
+          "label": "8/LIF …",
+          "location": "caracteres 22845-23173"
+        },
+        {
+          "id": "chunk-169",
+          "label": "12/LIF …",
+          "location": "caracteres 23173-23186"
+        },
+        {
+          "id": "chunk-170",
+          "label": "Ley de Ingresos sobre Hidrocarburos",
+          "location": "caracteres 23186-23226"
+        },
+        {
+          "id": "chunk-171",
+          "label": "1/LISH …",
+          "location": "caracteres 23226-23412"
+        },
+        {
+          "id": "chunk-172",
+          "label": "3/LISH …",
+          "location": "caracteres 23412-23425"
+        },
+        {
+          "id": "chunk-173",
+          "label": "4/LISH …",
+          "location": "caracteres 23425-24170"
+        },
+        {
+          "id": "chunk-174",
+          "label": "2/DEC-2 …",
+          "location": "caracteres 24170-24506"
+        },
+        {
+          "id": "chunk-175",
+          "label": "De la prestación de servicios digitales y de intermediación entre terceros.",
+          "location": "caracteres 24506-24916"
+        },
+        {
+          "id": "chunk-176",
+          "label": "3/PLT …",
+          "location": "caracteres 24916-24928"
+        },
+        {
+          "id": "chunk-177",
+          "label": "4/PLT …",
+          "location": "caracteres 24928-25078"
+        },
+        {
+          "id": "chunk-178",
+          "label": "I. Definiciones",
+          "location": "caracteres 25078-25325"
+        },
+        {
+          "id": "chunk-179",
+          "label": "1.2. Identificaciones oficiales, comprobantes de domicilio e Instrumentos para acreditar la representación",
+          "location": "caracteres 25325-27249"
+        },
+        {
+          "id": "chunk-180",
+          "label": "C. …",
+          "location": "caracteres 27249-27258"
+        },
+        {
+          "id": "chunk-181",
+          "label": "II. Trámites",
+          "location": "caracteres 27258-27282"
+        },
+        {
+          "id": "chunk-182",
+          "label": "Código Fiscal de la Federación",
+          "location": "caracteres 27282-31627"
+        },
+        {
+          "id": "chunk-183",
+          "label": "1. Personas distintas de sociedades mercantiles: · parte 1",
+          "location": "caracteres 31627-43627"
+        },
+        {
+          "id": "chunk-184",
+          "label": "1. Personas distintas de sociedades mercantiles: · parte 2",
+          "location": "caracteres 43627-55627"
+        },
+        {
+          "id": "chunk-185",
+          "label": "1. Personas distintas de sociedades mercantiles: · parte 3",
+          "location": "caracteres 55627-67627"
+        },
+        {
+          "id": "chunk-186",
+          "label": "1. Personas distintas de sociedades mercantiles: · parte 4",
+          "location": "caracteres 67627-79627"
+        },
+        {
+          "id": "chunk-187",
+          "label": "1. Personas distintas de sociedades mercantiles: · parte 5",
+          "location": "caracteres 79627-91627"
+        },
+        {
+          "id": "chunk-188",
+          "label": "1. Personas distintas de sociedades mercantiles: · parte 6",
+          "location": "caracteres 91627-103627"
+        },
+        {
+          "id": "chunk-189",
+          "label": "1. Personas distintas de sociedades mercantiles: · parte 7",
+          "location": "caracteres 103627-115627"
+        },
+        {
+          "id": "chunk-190",
+          "label": "1. Personas distintas de sociedades mercantiles: · parte 8",
+          "location": "caracteres 115627-127627"
+        },
+        {
+          "id": "chunk-191",
+          "label": "1. Personas distintas de sociedades mercantiles: · parte 9",
+          "location": "caracteres 127627-139627"
+        },
+        {
+          "id": "chunk-192",
+          "label": "1. Personas distintas de sociedades mercantiles: · parte 10",
+          "location": "caracteres 139627-151627"
+        },
+        {
+          "id": "chunk-193",
+          "label": "1. Personas distintas de sociedades mercantiles: · parte 11",
+          "location": "caracteres 151627-163627"
+        },
+        {
+          "id": "chunk-194",
+          "label": "1. Personas distintas de sociedades mercantiles: · parte 12",
+          "location": "caracteres 163627-175627"
+        },
+        {
+          "id": "chunk-195",
+          "label": "1. Personas distintas de sociedades mercantiles: · parte 13",
+          "location": "caracteres 175627-187627"
+        },
+        {
+          "id": "chunk-196",
+          "label": "1. Personas distintas de sociedades mercantiles: · parte 14",
+          "location": "caracteres 187627-199627"
+        },
+        {
+          "id": "chunk-197",
+          "label": "1. Personas distintas de sociedades mercantiles: · parte 15",
+          "location": "caracteres 199627-211627"
+        },
+        {
+          "id": "chunk-198",
+          "label": "1. Personas distintas de sociedades mercantiles: · parte 16",
+          "location": "caracteres 211627-223627"
+        },
+        {
+          "id": "chunk-199",
+          "label": "1. Personas distintas de sociedades mercantiles: · parte 17",
+          "location": "caracteres 223627-235627"
+        },
+        {
+          "id": "chunk-200",
+          "label": "1. Personas distintas de sociedades mercantiles: · parte 18",
+          "location": "caracteres 235627-247627"
+        },
+        {
+          "id": "chunk-201",
+          "label": "1. Personas distintas de sociedades mercantiles: · parte 19",
+          "location": "caracteres 247627-259627"
+        },
+        {
+          "id": "chunk-202",
+          "label": "1. Personas distintas de sociedades mercantiles: · parte 20",
+          "location": "caracteres 259627-271627"
+        },
+        {
+          "id": "chunk-203",
+          "label": "1. Personas distintas de sociedades mercantiles: · parte 21",
+          "location": "caracteres 271627-283627"
+        },
+        {
+          "id": "chunk-204",
+          "label": "1. Personas distintas de sociedades mercantiles: · parte 22",
+          "location": "caracteres 283627-295627"
+        },
+        {
+          "id": "chunk-205",
+          "label": "1. Personas distintas de sociedades mercantiles: · parte 23",
+          "location": "caracteres 295627-307627"
+        },
+        {
+          "id": "chunk-206",
+          "label": "1. Personas distintas de sociedades mercantiles: · parte 24",
+          "location": "caracteres 307627-319627"
+        },
+        {
+          "id": "chunk-207",
+          "label": "1. Personas distintas de sociedades mercantiles: · parte 25",
+          "location": "caracteres 319627-331627"
+        },
+        {
+          "id": "chunk-208",
+          "label": "1. Personas distintas de sociedades mercantiles: · parte 26",
+          "location": "caracteres 331627-343627"
+        },
+        {
+          "id": "chunk-209",
+          "label": "1. Personas distintas de sociedades mercantiles: · parte 27",
+          "location": "caracteres 343627-355627"
+        },
+        {
+          "id": "chunk-210",
+          "label": "1. Personas distintas de sociedades mercantiles: · parte 28",
+          "location": "caracteres 355627-367627"
+        },
+        {
+          "id": "chunk-211",
+          "label": "1. Personas distintas de sociedades mercantiles: · parte 29",
+          "location": "caracteres 367627-379627"
+        },
+        {
+          "id": "chunk-212",
+          "label": "1. Personas distintas de sociedades mercantiles: · parte 30",
+          "location": "caracteres 379627-391627"
+        },
+        {
+          "id": "chunk-213",
+          "label": "1. Personas distintas de sociedades mercantiles: · parte 31",
+          "location": "caracteres 391627-403627"
+        },
+        {
+          "id": "chunk-214",
+          "label": "1. Personas distintas de sociedades mercantiles: · parte 32",
+          "location": "caracteres 403627-415627"
+        },
+        {
+          "id": "chunk-215",
+          "label": "1. Personas distintas de sociedades mercantiles: · parte 33",
+          "location": "caracteres 415627-427627"
+        },
+        {
+          "id": "chunk-216",
+          "label": "1. Personas distintas de sociedades mercantiles: · parte 34",
+          "location": "caracteres 427627-436249"
+        },
+        {
+          "id": "chunk-217",
+          "label": "TABLAS · parte 1",
+          "location": "caracteres 436249-448249"
+        },
+        {
+          "id": "chunk-218",
+          "label": "TABLAS · parte 2",
+          "location": "caracteres 448249-460249"
+        },
+        {
+          "id": "chunk-219",
+          "label": "TABLAS · parte 3",
+          "location": "caracteres 460249-472249"
+        },
+        {
+          "id": "chunk-220",
+          "label": "TABLAS · parte 4",
+          "location": "caracteres 472249-484249"
+        },
+        {
+          "id": "chunk-221",
+          "label": "TABLAS · parte 5",
+          "location": "caracteres 484249-496249"
+        },
+        {
+          "id": "chunk-222",
+          "label": "TABLAS · parte 6",
+          "location": "caracteres 496249-508249"
+        },
+        {
+          "id": "chunk-223",
+          "label": "TABLAS · parte 7",
+          "location": "caracteres 508249-520249"
+        },
+        {
+          "id": "chunk-224",
+          "label": "TABLAS · parte 8",
+          "location": "caracteres 520249-532249"
+        },
+        {
+          "id": "chunk-225",
+          "label": "TABLAS · parte 9",
+          "location": "caracteres 532249-544249"
+        },
+        {
+          "id": "chunk-226",
+          "label": "TABLAS · parte 10",
+          "location": "caracteres 544249-556249"
+        },
+        {
+          "id": "chunk-227",
+          "label": "TABLAS · parte 11",
+          "location": "caracteres 556249-568249"
+        },
+        {
+          "id": "chunk-228",
+          "label": "TABLAS · parte 12",
+          "location": "caracteres 568249-580249"
+        },
+        {
+          "id": "chunk-229",
+          "label": "TABLAS · parte 13",
+          "location": "caracteres 580249-592249"
+        },
+        {
+          "id": "chunk-230",
+          "label": "TABLAS · parte 14",
+          "location": "caracteres 592249-604249"
+        },
+        {
+          "id": "chunk-231",
+          "label": "TABLAS · parte 15",
+          "location": "caracteres 604249-616249"
+        },
+        {
+          "id": "chunk-232",
+          "label": "TABLAS · parte 16",
+          "location": "caracteres 616249-628249"
+        },
+        {
+          "id": "chunk-233",
+          "label": "TABLAS · parte 17",
+          "location": "caracteres 628249-640249"
+        },
+        {
+          "id": "chunk-234",
+          "label": "TABLAS · parte 18",
+          "location": "caracteres 640249-652249"
+        },
+        {
+          "id": "chunk-235",
+          "label": "TABLAS · parte 19",
+          "location": "caracteres 652249-664249"
+        },
+        {
+          "id": "chunk-236",
+          "label": "TABLAS · parte 20",
+          "location": "caracteres 664249-676249"
+        },
+        {
+          "id": "chunk-237",
+          "label": "TABLAS · parte 21",
+          "location": "caracteres 676249-688249"
+        },
+        {
+          "id": "chunk-238",
+          "label": "TABLAS · parte 22",
+          "location": "caracteres 688249-700249"
+        },
+        {
+          "id": "chunk-239",
+          "label": "TABLAS · parte 23",
+          "location": "caracteres 700249-712249"
+        },
+        {
+          "id": "chunk-240",
+          "label": "TABLAS · parte 24",
+          "location": "caracteres 712249-724249"
+        },
+        {
+          "id": "chunk-241",
+          "label": "TABLAS · parte 25",
+          "location": "caracteres 724249-736249"
+        },
+        {
+          "id": "chunk-242",
+          "label": "TABLAS · parte 26",
+          "location": "caracteres 736249-748249"
+        },
+        {
+          "id": "chunk-243",
+          "label": "TABLAS · parte 27",
+          "location": "caracteres 748249-760249"
+        },
+        {
+          "id": "chunk-244",
+          "label": "TABLAS · parte 28",
+          "location": "caracteres 760249-772249"
+        },
+        {
+          "id": "chunk-245",
+          "label": "TABLAS · parte 29",
+          "location": "caracteres 772249-784249"
+        },
+        {
+          "id": "chunk-246",
+          "label": "TABLAS · parte 30",
+          "location": "caracteres 784249-796249"
+        },
+        {
+          "id": "chunk-247",
+          "label": "TABLAS · parte 31",
+          "location": "caracteres 796249-808249"
+        },
+        {
+          "id": "chunk-248",
+          "label": "TABLAS · parte 32",
+          "location": "caracteres 808249-820249"
+        },
+        {
+          "id": "chunk-249",
+          "label": "TABLAS · parte 33",
+          "location": "caracteres 820249-832249"
+        },
+        {
+          "id": "chunk-250",
+          "label": "TABLAS · parte 34",
+          "location": "caracteres 832249-844249"
+        },
+        {
+          "id": "chunk-251",
+          "label": "TABLAS · parte 35",
+          "location": "caracteres 844249-856249"
+        },
+        {
+          "id": "chunk-252",
+          "label": "TABLAS · parte 36",
+          "location": "caracteres 856249-868249"
+        },
+        {
+          "id": "chunk-253",
+          "label": "TABLAS · parte 37",
+          "location": "caracteres 868249-880249"
+        },
+        {
+          "id": "chunk-254",
+          "label": "TABLAS · parte 38",
+          "location": "caracteres 880249-890561"
+        },
+        {
+          "id": "chunk-255",
+          "label": "TABLA · parte 1",
+          "location": "caracteres 890561-902561"
+        },
+        {
+          "id": "chunk-256",
+          "label": "TABLA · parte 2",
+          "location": "caracteres 902561-914561"
+        },
+        {
+          "id": "chunk-257",
+          "label": "TABLA · parte 3",
+          "location": "caracteres 914561-926561"
+        },
+        {
+          "id": "chunk-258",
+          "label": "TABLA · parte 4",
+          "location": "caracteres 926561-938561"
+        },
+        {
+          "id": "chunk-259",
+          "label": "TABLA · parte 5",
+          "location": "caracteres 938561-950561"
+        },
+        {
+          "id": "chunk-260",
+          "label": "TABLA · parte 6",
+          "location": "caracteres 950561-962561"
+        },
+        {
+          "id": "chunk-261",
+          "label": "TABLA · parte 7",
+          "location": "caracteres 962561-974561"
+        },
+        {
+          "id": "chunk-262",
+          "label": "TABLA · parte 8",
+          "location": "caracteres 974561-986561"
+        },
+        {
+          "id": "chunk-263",
+          "label": "TABLA · parte 9",
+          "location": "caracteres 986561-998561"
+        },
+        {
+          "id": "chunk-264",
+          "label": "TABLA · parte 10",
+          "location": "caracteres 998561-1010561"
+        },
+        {
+          "id": "chunk-265",
+          "label": "TABLA · parte 11",
+          "location": "caracteres 1010561-1022561"
+        },
+        {
+          "id": "chunk-266",
+          "label": "TABLA · parte 12",
+          "location": "caracteres 1022561-1034561"
+        },
+        {
+          "id": "chunk-267",
+          "label": "TABLA · parte 13",
+          "location": "caracteres 1034561-1046561"
+        },
+        {
+          "id": "chunk-268",
+          "label": "TABLA · parte 14",
+          "location": "caracteres 1046561-1058561"
+        },
+        {
+          "id": "chunk-269",
+          "label": "TABLA · parte 15",
+          "location": "caracteres 1058561-1070561"
+        },
+        {
+          "id": "chunk-270",
+          "label": "TABLA · parte 16",
+          "location": "caracteres 1070561-1082561"
+        },
+        {
+          "id": "chunk-271",
+          "label": "TABLA · parte 17",
+          "location": "caracteres 1082561-1094561"
+        },
+        {
+          "id": "chunk-272",
+          "label": "TABLA · parte 18",
+          "location": "caracteres 1094561-1106561"
+        },
+        {
+          "id": "chunk-273",
+          "label": "TABLA · parte 19",
+          "location": "caracteres 1106561-1118561"
+        },
+        {
+          "id": "chunk-274",
+          "label": "TABLA · parte 20",
+          "location": "caracteres 1118561-1130561"
+        },
+        {
+          "id": "chunk-275",
+          "label": "TABLA · parte 21",
+          "location": "caracteres 1130561-1142561"
+        },
+        {
+          "id": "chunk-276",
+          "label": "TABLA · parte 22",
+          "location": "caracteres 1142561-1154561"
+        },
+        {
+          "id": "chunk-277",
+          "label": "TABLA · parte 23",
+          "location": "caracteres 1154561-1166561"
+        },
+        {
+          "id": "chunk-278",
+          "label": "TABLA · parte 24",
+          "location": "caracteres 1166561-1178561"
+        },
+        {
+          "id": "chunk-279",
+          "label": "TABLA · parte 25",
+          "location": "caracteres 1178561-1190561"
+        },
+        {
+          "id": "chunk-280",
+          "label": "TABLA · parte 26",
+          "location": "caracteres 1190561-1202561"
+        },
+        {
+          "id": "chunk-281",
+          "label": "TABLA · parte 27",
+          "location": "caracteres 1202561-1214561"
+        },
+        {
+          "id": "chunk-282",
+          "label": "TABLA · parte 28",
+          "location": "caracteres 1214561-1226561"
+        },
+        {
+          "id": "chunk-283",
+          "label": "TABLA · parte 29",
+          "location": "caracteres 1226561-1238561"
+        },
+        {
+          "id": "chunk-284",
+          "label": "TABLA · parte 30",
+          "location": "caracteres 1238561-1250561"
+        },
+        {
+          "id": "chunk-285",
+          "label": "TABLA · parte 31",
+          "location": "caracteres 1250561-1262561"
+        },
+        {
+          "id": "chunk-286",
+          "label": "TABLA · parte 32",
+          "location": "caracteres 1262561-1274561"
+        },
+        {
+          "id": "chunk-287",
+          "label": "TABLA · parte 33",
+          "location": "caracteres 1274561-1286561"
+        },
+        {
+          "id": "chunk-288",
+          "label": "TABLA · parte 34",
+          "location": "caracteres 1286561-1298561"
+        },
+        {
+          "id": "chunk-289",
+          "label": "TABLA · parte 35",
+          "location": "caracteres 1298561-1310561"
+        },
+        {
+          "id": "chunk-290",
+          "label": "TABLA · parte 36",
+          "location": "caracteres 1310561-1322561"
+        },
+        {
+          "id": "chunk-291",
+          "label": "TABLA · parte 37",
+          "location": "caracteres 1322561-1325431"
+        },
+        {
+          "id": "chunk-292",
+          "label": "Impuesto Especial sobre Producción y Servicios · parte 1",
+          "location": "caracteres 1325431-1337431"
+        },
+        {
+          "id": "chunk-293",
+          "label": "Impuesto Especial sobre Producción y Servicios · parte 2",
+          "location": "caracteres 1337431-1349431"
+        },
+        {
+          "id": "chunk-294",
+          "label": "Impuesto Especial sobre Producción y Servicios · parte 3",
+          "location": "caracteres 1349431-1361431"
+        },
+        {
+          "id": "chunk-295",
+          "label": "Impuesto Especial sobre Producción y Servicios · parte 4",
+          "location": "caracteres 1361431-1373431"
+        },
+        {
+          "id": "chunk-296",
+          "label": "Impuesto Especial sobre Producción y Servicios · parte 5",
+          "location": "caracteres 1373431-1385431"
+        },
+        {
+          "id": "chunk-297",
+          "label": "Impuesto Especial sobre Producción y Servicios · parte 6",
+          "location": "caracteres 1385431-1397431"
+        },
+        {
+          "id": "chunk-298",
+          "label": "Impuesto Especial sobre Producción y Servicios · parte 7",
+          "location": "caracteres 1397431-1409431"
+        },
+        {
+          "id": "chunk-299",
+          "label": "Impuesto Especial sobre Producción y Servicios · parte 8",
+          "location": "caracteres 1409431-1421431"
+        },
+        {
+          "id": "chunk-300",
+          "label": "Impuesto Especial sobre Producción y Servicios · parte 9",
+          "location": "caracteres 1421431-1427257"
+        },
+        {
+          "id": "chunk-301",
+          "label": "Impuesto sobre Automóviles Nuevos",
+          "location": "caracteres 1427257-1434514"
+        },
+        {
+          "id": "chunk-302",
+          "label": "Ley de Ingresos de la Federación · parte 1",
+          "location": "caracteres 1434514-1446514"
+        },
+        {
+          "id": "chunk-303",
+          "label": "Ley de Ingresos de la Federación · parte 2",
+          "location": "caracteres 1446514-1458514"
+        },
+        {
+          "id": "chunk-304",
+          "label": "Ley de Ingresos de la Federación · parte 3",
+          "location": "caracteres 1458514-1470514"
+        },
+        {
+          "id": "chunk-305",
+          "label": "Ley de Ingresos de la Federación · parte 4",
+          "location": "caracteres 1470514-1482514"
+        },
+        {
+          "id": "chunk-306",
+          "label": "Ley de Ingresos de la Federación · parte 5",
+          "location": "caracteres 1482514-1494514"
+        },
+        {
+          "id": "chunk-307",
+          "label": "Ley de Ingresos de la Federación · parte 6",
+          "location": "caracteres 1494514-1506514"
+        },
+        {
+          "id": "chunk-308",
+          "label": "Ley de Ingresos de la Federación · parte 7",
+          "location": "caracteres 1506514-1518514"
+        },
+        {
+          "id": "chunk-309",
+          "label": "Ley de Ingresos de la Federación · parte 8",
+          "location": "caracteres 1518514-1530514"
+        },
+        {
+          "id": "chunk-310",
+          "label": "Ley de Ingresos de la Federación · parte 9",
+          "location": "caracteres 1530514-1542514"
+        },
+        {
+          "id": "chunk-311",
+          "label": "Ley de Ingresos de la Federación · parte 10",
+          "location": "caracteres 1542514-1550372"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793858&fecha=17%2F07%2F2026",
+      "retrieved_at": "2026-08-14T00:36:57.110812+00:00"
+    },
+    "executive_summary": [
+      "El anexo de la Primera Resolución de Modificaciones a la Resolución Miscelánea Fiscal para 2026 integra tarifas, tablas y referencias fiscales. La evidencia oficial contiene el Anexo 2 completo, incluyendo tablas de ISR, IEPS, ISAN y Ley de Ingresos de la Federación.",
+      "La fuente fue reconstruida en 311 fragmentos continuos; el alcance verificable es su aplicación depende de la regla, impuesto, periodo y supuesto que corresponda a cada contribuyente u operación. La ficha no amplía los efectos más allá del texto oficial."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-08-14T01:46:44.993982+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5793858",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-311"
+        ],
+        "paragraphs": [
+          "Su aplicación depende de la regla, impuesto, periodo y supuesto que corresponda a cada contribuyente u operación. La publicación no acredita por sí sola un resultado individual fuera de su contenido."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-1",
+            "chunk-311"
+          ],
+          "paragraphs": [
+            "Para contribuyentes, contadores y asesores fiscales, la referencia útil es identificar la tabla y el periodo aplicable antes de calcular contribuciones o retenciones."
+          ],
+          "sector": "Contribuyentes, contadores y asesores fiscales"
+        }
+      ]
+    },
+    "importance": 1,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-09-04T03:37:15.636102+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5793858&fecha=17/07/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5793858"
+    },
+    "official_published_at": "2026-07-17",
+    "official_title": "Anexo 2 de la Primera Resolución de Modificaciones a la Resolución Miscelánea Fiscal para 2026, publicada el 9 de julio de 2026.",
+    "published_at": "2026-07-17",
+    "published_day": 17,
+    "published_month": 7,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Contribuyentes, contadores y asesores fiscales",
+        "deadline": null,
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-311"
+        ],
+        "legal_basis": "Anexo 2 de la Primera Resolución de Modificaciones a la Resolución Miscelánea Fiscal para 2026",
+        "paragraphs": [
+          "Se recomienda identificar la tabla y el periodo aplicable antes de calcular contribuciones o retenciones y conservar la cita de la publicación oficial como respaldo del análisis."
+        ],
+        "trigger": "Antes de adoptar una decisión, trámite u operación vinculada con el documento"
+      }
+    ],
+    "relevance_score": 1,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5793858",
+    "subtopic_tags": [],
+    "summary": "La fuente oficial revisada corresponde a Anexo 2 de la Primera Resolución de Modificaciones a la Resolución Miscelánea Fiscal para 2026, publicada el 9 de julio de 2026.. El texto íntegro fue reconstruido a partir de 311 fragmentos ordenados y no depende del campo abreviado de la cola. La evidencia oficial contiene el Anexo 2 completo, incluyendo tablas de ISR, IEPS, ISAN y Ley de Ingresos de la Federación. La referencia publicada el 2026-07-17 se conserva con su URL oficial, hash de extracción y delimitación de los fragmentos. Esta nota describe sólo el contenido verificable de la evidencia y no convierte el documento en una conclusión sobre hechos, personas u operaciones que no aparezcan expresamente en él.\n\nEl alcance identificable en la fuente es el siguiente: Su aplicación depende de la regla, impuesto, periodo y supuesto que corresponda a cada contribuyente u operación. Los antecedentes, fundamentos, considerandos, cuadros o disposiciones incluidos en el documento se tratan como contexto del acto y no como base para inferir obligaciones distintas. Cuando la publicación contiene fechas, montos, identificadores, autoridades o referencias técnicas, esos elementos permanecen vinculados al documento oficial y no se proyectan a otros periodos, contribuyentes o expedientes. La ficha tampoco atribuye efectos retroactivos, sanciones adicionales ni plazos que la fuente no establezca de manera expresa.\n\nPara contribuyentes, contadores y asesores fiscales, la revisión operativa razonable consiste en identificar la tabla y el periodo aplicable antes de calcular contribuciones o retenciones. Esa verificación debe partir de la versión oficial y del caso concreto, porque una publicación general no acredita por sí sola cumplimiento, incumplimiento, procedencia de un beneficio ni afectación individual. El texto puede ser relevante para comercio exterior, contratación pública, administración patrimonial, regulación financiera, fiscalización o gestión administrativa, pero cada consecuencia depende del supuesto normativo y factual aplicable.\n\nLa evidencia se clasifica como completa porque conserva texto oficial, identificadores y localizadores de cada segmento. La cobertura declarada permite a un revisor ubicar cada parte del documento antes de usar la ficha. Esta separación entre dato observado, alcance verificable y recomendación de contraste evita presentar el resumen como asesoría individual o como una prueba definitiva de vigencia práctica. Cualquier análisis adicional debe documentar su fuente y sus premisas.",
+    "summary_teaser": "La evidencia oficial reconstruida identifica que la evidencia oficial contiene el anexo 2 completo, incluyendo tablas de isr, ieps, isan y ley de ingresos de la federación. La ficha conserva 311 fragmentos, el enlace institucional y el alcance estrictamente verificable. No agrega consecuencias fuera del texto; orienta a contribuyentes, contadores y asesores fiscales a contrastar la publicación con el supuesto concreto antes de tomar decisiones.",
+    "title": "Anexo fiscal actualiza tarifas y tablas aplicables en 2026",
+    "topic_tags": [
+      "Resolución"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5793858&fecha=17/07/2026"
+  },
+  "schema_version": 8
+}

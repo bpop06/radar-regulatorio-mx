@@ -1,0 +1,150 @@
+{
+  "cut_id": "9bfb2857e185b6a117ea296f",
+  "item": {
+    "ai_generated": true,
+    "authority": "CONVOCATORIAS PARA CONCURSOS DE ADQUISICIONES, ARRENDAMIENTOS, OBRAS Y SERVICIOS DEL SECTOR PUBLICO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797905&fecha=03%2F09%2F2026",
+    "card_body": "## Qué se publicó\n\nLa Fiscalía General de la República convocó una licitación pública internacional para adquirir consumibles de impresión en segunda vuelta.\n\n## Sustancia\n\nLas bases y partidas se consultan en ComprasMX. La junta de aclaraciones es el 22 de septiembre, la apertura el 13 de octubre y el fallo el 22 de octubre de 2026.\n\n## Fuente\n\n[Fuente oficial](https://dof.gob.mx/nota_detalle.php?codigo=5797905&fecha=03%2F09%2F2026)",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Penal"
+    ],
+    "content_hash": "d249f048d796852f05e5a001449f8e7c099b604808303d2492fc28d294614dc4",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-1",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/bae1befafa3dec2459397287.json",
+    "detail_url": "notas/bae1befafa3dec2459397287.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-1"
+        ],
+        "heading": "Objeto y consulta de bases",
+        "paragraphs": [
+          "Procedimiento busca adquirir cartuchos, tanques y botellas de tinta y tóners en segunda vuelta. Detalle de partidas se encuentra en convocatoria y anexo técnico disponibles en ComprasMX y unidad convocante."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-1"
+        ],
+        "heading": "Calendario publicado",
+        "paragraphs": [
+          "Publicación en plataforma fue el 1 de septiembre de 2026. Junta de aclaraciones está prevista para 22 de septiembre, apertura de proposiciones para 13 de octubre y fallo para 22 de octubre, en horarios expresamente indicados."
+        ]
+      }
+    ],
+    "detected_at": "2026-09-04T03:37:15.636102+00:00",
+    "document_type": "Fiscalia General",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "31577f965c95cd5dc7720389c57a1b727897c888d85bd2ec176f2bc6e8eccbe9",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "Documento",
+          "location": "caracteres 0-1829"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797905&fecha=03%2F09%2F2026",
+      "retrieved_at": "2026-09-03T16:52:39.797995+00:00"
+    },
+    "executive_summary": [
+      "La Fiscalía General de la República abrió una licitación internacional bajo cobertura de tratados para consumibles de impresión.",
+      "El resumen remite bases y detalle técnico a ComprasMX y señala fechas de aclaraciones, apertura y fallo."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-09-04T03:37:15.636102+00:00",
+    "government_branch": "Organismo autónomo",
+    "id": "dof:5797905",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-1"
+        ],
+        "paragraphs": [
+          "El acto abre procedimiento competitivo y no constituye adjudicación. Requisitos materiales y técnicos deben verificarse en bases y anexo técnico, no sólo en resumen."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-1"
+          ],
+          "paragraphs": [
+            "Posibles licitantes cuentan con calendario oficial para consultar bases, plantear aclaraciones y presentar propuesta si satisfacen condiciones del procedimiento."
+          ],
+          "sector": "Proveedores de consumibles de impresión"
+        }
+      ]
+    },
+    "importance": 2,
+    "issuing_body": "Fiscalía General de la República",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-09-04T03:37:15.636102+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797905&fecha=03/09/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5797905"
+    },
+    "official_published_at": "2026-09-03",
+    "official_title": "FISCALIA GENERAL DE LA REPUBLICA - REF:579970",
+    "published_at": "2026-09-03",
+    "published_day": 3,
+    "published_month": 9,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Personas proveedoras interesadas en participar",
+        "deadline": "Junta de aclaraciones: 22 de septiembre de 2026; presentación y apertura: 13 de octubre de 2026 a las 10:30 horas",
+        "evidence_refs": [
+          "chunk-1"
+        ],
+        "legal_basis": "Convocatoria y anexo técnico de la licitación",
+        "paragraphs": [
+          "Consultar convocatoria y anexo técnico en ComprasMX, confirmar condiciones y usar junta de aclaraciones cuando sea aplicable. Preparar propuesta conforme a bases antes de fecha de presentación y apertura."
+        ],
+        "trigger": "Pretender participar en la licitación publicada"
+      }
+    ],
+    "relevance_score": 2,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5797905",
+    "subtopic_tags": [
+      "fiscalia"
+    ],
+    "summary": "La Fiscalía General de la República publicó resumen de licitación pública internacional bajo cobertura de tratados para adquisición de cartuchos, tanques de tinta, botellas de tinta y tóners en segunda vuelta. Unidad Especializada de Recursos, Servicios e Infraestructura Inmobiliaria identifica que bases y detalle de partidas están disponibles en Plataforma Digital de Contrataciones Públicas, ComprasMX, y en domicilio de unidad convocante en Ciudad de México.\n\nEl resumen no enumera cantidades, marcas, especificaciones técnicas, requisitos de solvencia, criterios de evaluación ni condiciones de entrega. Esos elementos se remiten a convocatoria y anexo técnico. Por ello, quienes estén interesados en participar deben consultar directamente documentos oficiales y no basar una propuesta únicamente en resumen publicado en Diario Oficial.\n\nConvocatoria fue publicada en plataforma el 1 de septiembre de 2026. Junta de aclaraciones está programada para 22 de septiembre de 2026 a las 10:30 horas. Presentación y apertura de proposiciones se señala para 13 de octubre de 2026 a las 10:30 horas, y fallo se prevé para 22 de octubre de 2026 a las 14:00 horas. Fechas son las consignadas en resumen y deben confirmarse en ComprasMX y bases, pues éstas son fuente operativa de condiciones de participación.\n\nProveedores de consumibles de impresión que cumplan requisitos de convocatoria pueden revisar expediente, formular aclaraciones y preparar propuesta conforme al procedimiento. Anuncio no adjudica contrato ni confirma volumen específico a favor de participante alguno. Tampoco permite concluir que una empresa esté habilitada, precalificada o seleccionada sin atender requisitos y etapas descritos en documentación de licitación. Las personas interesadas deberán revisar toda información oficial disponible antes de tomar decisión de participar. El calendario publicado permite organizar la consulta y preparación, pero cualquier modificación, aclaración o requisito adicional debe verificarse en la plataforma y documentos que integran el procedimiento. Las citas del resumen no reemplazan las bases completas del concurso.",
+    "summary_teaser": "La Fiscalía General de la República convocó una licitación pública internacional bajo cobertura de tratados para adquirir cartuchos, tanques y botellas de tinta y tóners, en segunda vuelta. Las propuestas se abren el 13 de octubre de 2026 y el fallo está previsto para el 22 de octubre.",
+    "title": "Fiscalía abre licitación internacional para consumibles de impresión",
+    "topic_tags": [
+      "Penal"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797905&fecha=03/09/2026"
+  },
+  "schema_version": 8
+}

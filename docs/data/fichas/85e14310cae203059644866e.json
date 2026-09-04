@@ -2,7 +2,7 @@
   "coverage": [
     {
       "disposition": "summarized",
-      "reason": null,
+      "reason": "Conclusión de USTR, liquidación de entradas, medidas atribuidas, antecedentes y límites de alcance.",
       "source_ref": "chunk-1",
       "target_sections": [
         "executive_summary",
@@ -13,31 +13,38 @@
       ]
     }
   ],
-  "cut_id": "80ff8a726797f7b9e5131c53",
+  "cut_id": "9bfb2857e185b6a117ea296f",
   "detailed_summary": [
     {
       "evidence_refs": [
         "chunk-1"
       ],
-      "heading": "Resultado comunicado por USTR",
+      "heading": "Conclusión estadounidense y liquidación de entradas",
       "paragraphs": [
-        "USTR anunció la resolución exitosa del asunto RRM en la planta de Grupo Yazaki y la reanudación de la liquidación de aranceles sobre mercancías de la instalación.",
-        "La embajadora Greer dirigió al Secretario del Tesoro reanudar la liquidación de entradas no liquidadas de mercancías de la planta."
+        "USTR señala que Estados Unidos concluyó el asunto y que su representante instruyó reanudar la liquidación de entradas no liquidadas de bienes procedentes de la planta. La fuente describe esa medida estadounidense, sin afirmar que se eliminen aranceles ni otro efecto aduanero adicional."
       ]
     },
     {
       "evidence_refs": [
         "chunk-1"
       ],
-      "heading": "Medidas y antecedente",
+      "heading": "Medidas descritas por el comunicado",
       "paragraphs": [
-        "La fuente atribuye a Yazaki medidas de neutralidad, lineamientos y política para sindicatos minoritarios, así como compromisos de entrega, capacitación y difusión; también reporta capacitaciones y monitoreo del gobierno mexicano.",
-        "USTR describe una petición de SINTTIA que alegó interferencia y represalias, la solicitud de revisión presentada a México y la conclusión posterior de que la situación fue remediada."
+        "Según USTR, Yazaki adoptó una declaración y lineamientos de neutralidad, una política sobre sindicatos minoritarios y compromisos de entrega, capacitación y difusión. El comunicado atribuye a México capacitación presencial, monitoreo y contacto con trabajadores y empresa durante la revisión."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-1"
+      ],
+      "heading": "Antecedentes y límite de la fuente",
+      "paragraphs": [
+        "La nota resume la petición de SINTTIA, la revisión estadounidense, la solicitud a México y la conclusión de USTR de que la situación fue remediada. Esa conclusión se atribuye a USTR y no permite transformar el comunicado en una determinación o deber adicional de autoridades o partes mexicanas."
       ]
     }
   ],
   "evidence": {
-    "content_hash": "7b956f49c4c1af48fbda07de0f287408281d185583eddea4239f41709206b9ea",
+    "content_hash": "543f98155939d234b52885ea924e3ef2cf3e672dc3e3c2625fefc6a51bf1104c",
     "extraction_method": "html-adapter",
     "locators": [
       {
@@ -47,11 +54,11 @@
       }
     ],
     "official_url": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/august/united-states-announces-successful-resolution-rapid-response-labor-mechanism-matter-grupo-yazaki-sa",
-    "retrieved_at": "2026-09-01T18:47:12.614749+00:00"
+    "retrieved_at": "2026-09-03T16:53:45.108531+00:00"
   },
   "executive_summary": [
-    "USTR anunció la resolución del asunto del Mecanismo Laboral de Respuesta Rápida del T-MEC en la planta Grupo Yazaki de León, Guanajuato, y la reanudación de la liquidación de aranceles sobre mercancías de la instalación.",
-    "Según USTR, las medidas de Yazaki y del gobierno mexicano permitieron concluir que la situación fue remediada y que no existe una denegación de derechos en curso."
+    "USTR anunció la resolución del asunto del Mecanismo Laboral de Respuesta Rápida del T-MEC en la planta Grupo Yazaki de León, Guanajuato, y ordenó al Tesoro estadounidense reanudar la liquidación de entradas no liquidadas de mercancías de la instalación.",
+    "El comunicado atribuye medidas a Yazaki y al Gobierno de México y formula una conclusión de USTR sobre la inexistencia de una denegación de derechos en curso; no establece por sí solo una nueva obligación mexicana."
   ],
   "impacts": {
     "general": {
@@ -59,7 +66,7 @@
         "chunk-1"
       ],
       "paragraphs": [
-        "La publicación informa una decisión de USTR: considera remediada la situación, afirma que no hay una denegación de derechos en curso y reanuda la liquidación señalada."
+        "El efecto que el comunicado expresa literalmente es la instrucción estadounidense de reanudar la liquidación de entradas no liquidadas de mercancías de la planta. No se documenta en esta fuente un efecto jurídico mexicano nuevo ni una decisión aduanera mexicana."
       ]
     },
     "sectors": [
@@ -68,9 +75,18 @@
           "chunk-1"
         ],
         "paragraphs": [
-          "La decisión comunicada por USTR se refiere específicamente a la planta de León, Guanajuato, y a las entradas de mercancías provenientes de esa instalación."
+          "La comunicación es relevante para la liquidación estadounidense de entradas de bienes de la instalación, en los términos precisos que USTR anunció."
         ],
-        "sector": "Planta Grupo Yazaki y mercancías procedentes de la instalación"
+        "sector": "Operaciones comerciales estadounidenses relativas a mercancías de la planta Yazaki"
+      },
+      {
+        "evidence_refs": [
+          "chunk-1"
+        ],
+        "paragraphs": [
+          "El comunicado describe medidas de libertad de asociación y negociación colectiva y el antecedente de una petición sindical, pero no sustituye una fuente mexicana sobre derechos u obligaciones vigentes."
+        ],
+        "sector": "Trabajadores y representación sindical de la planta Yazaki"
       }
     ]
   },
@@ -100,22 +116,34 @@
     "review_reason": null,
     "source": "USTR",
     "source_id": "3a51a827ecdfff57",
-    "summary_teaser": "USTR anunció la resolución del asunto del Mecanismo Laboral de Respuesta Rápida del T-MEC en la planta Grupo Yazaki de León, Guanajuato. Tras medidas de la empresa y del gobierno mexicano, Estados Unidos concluyó que no existe una denegación de derechos en curso y reanudó la liquidación de aranceles sobre las mercancías de la planta.",
-    "title": "USTR da por remediado asunto Yazaki y reanuda liquidación arancelaria",
+    "summary_teaser": "USTR comunicó que concluyó su asunto laboral bajo el Mecanismo Laboral de Respuesta Rápida del T-MEC en la planta Yazaki de León, Guanajuato. La autoridad estadounidense ordenó reanudar la liquidación de entradas no liquidadas; el comunicado describe medidas de empresa y gobierno mexicano, pero no fija obligaciones mexicanas adicionales.",
+    "title": "Estados Unidos ordena reanudar liquidaciones tras concluir asunto laboral de Yazaki",
     "url": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/august/united-states-announces-successful-resolution-rapid-response-labor-mechanism-matter-grupo-yazaki-sa"
   },
   "recommended_actions": [
     {
-      "affected_group": "Personas que revisen el asunto RRM de Grupo Yazaki",
+      "affected_group": "Importadores o asesores que evalúen entradas estadounidenses de mercancías de la planta",
+      "deadline": null,
+      "evidence_refs": [
+        "chunk-1"
+      ],
+      "legal_basis": "Mecanismo Laboral de Respuesta Rápida del T-MEC, según el comunicado de USTR.",
+      "paragraphs": [
+        "Si necesitan evaluar el tratamiento de entradas no liquidadas en Estados Unidos, deberán contrastar la instrucción comunicada por USTR con la documentación aduanera y los registros aplicables a cada entrada."
+      ],
+      "trigger": "Cuando se analicen entradas estadounidenses de mercancías procedentes de la instalación Yazaki referida."
+    },
+    {
+      "affected_group": "Empresa, trabajadores y autoridades mexicanas mencionadas en el comunicado",
       "deadline": null,
       "evidence_refs": [
         "chunk-1"
       ],
       "legal_basis": null,
       "paragraphs": [
-        "Distingan las alegaciones atribuidas a la petición de SINTTIA de la conclusión posterior que USTR comunica sobre la remediación y la inexistencia de una denegación de derechos en curso."
+        "Si se pretende invocar el comunicado en México, deberán distinguir la conclusión de USTR de cualquier resolución, requerimiento o procedimiento mexicano que corresponda consultar por separado."
       ],
-      "trigger": "Al evaluar el comunicado de resolución de USTR."
+      "trigger": "Cuando se busque derivar consecuencias jurídicas mexicanas a partir de la comunicación estadounidense."
     }
   ],
   "schema_version": 8

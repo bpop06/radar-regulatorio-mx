@@ -1,10 +1,10 @@
 {
-  "cut_id": "80ff8a726797f7b9e5131c53",
+  "cut_id": "9bfb2857e185b6a117ea296f",
   "item": {
     "ai_generated": true,
     "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
     "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796486&fecha=18%2F08%2F2026",
-    "card_body": "## Qué se publicó\n\nEl Instituto de Administración y Avalúos de Bienes Nacionales publicó la modificación del destino de un inmueble federal a favor del INAH.\n\n## Sustancia\n\nEl acuerdo modifica el destino otorgado al INAH para que abarque la totalidad del inmueble federal denominado Ex Ateneo Peninsular, con superficie total de 6,532.956 metros cuadrados en el Centro Histórico de Mérida. La modificación incorpora la parte alta, de 4,933.87 metros cuadrados, para continuar de forma integral el proyecto de restauración y conservación del monumento histórico y las actividades de investigación, protección, recuperación y difusión del patrimonio cultural. La medida se limita al inmueble, registro y finalidad pública descritos. El INDAABIN vigilará el cumplimiento y el acuerdo ordena su publicación e inscripción en el Registro Público de la Propiedad Federal; entra en vigor al día siguiente de su publicación.\n\n## Fuente\n\nFuente oficial: https://dof.gob.mx/nota_detalle.php?codigo=5796486&fecha=18%2F08%2F2026. Extracción: html-adapter; recuperada el 2026-09-01T16:35:20.647622+00:00.",
+    "card_body": "## Qué se publicó\n\nSe modificó el destino del Ex Ateneo Peninsular para que el INAH use la totalidad del inmueble federal en Mérida.\n\n## Sustancia\n\nLa ampliación incorpora la parte alta al destino institucional para restauración, conservación, investigación y difusión del patrimonio cultural.\n\n## Fuente\n\n[Fuente oficial](https://dof.gob.mx/nota_detalle.php?codigo=5796486&fecha=18%2F08%2F2026)",
     "case_amount": "",
     "case_claim": "",
     "case_facts": "",
@@ -51,22 +51,21 @@
     "detailed_summary": [
       {
         "evidence_refs": [
+          "chunk-1",
           "chunk-2"
         ],
-        "heading": "Contenido publicado",
+        "heading": "Antecedentes del inmueble",
         "paragraphs": [
-          "El acuerdo modifica el destino otorgado al INAH para que abarque la totalidad del inmueble federal denominado Ex Ateneo Peninsular, con superficie total de 6,532.956 metros cuadrados en el Centro Histórico de Mérida. La modificación incorpora la parte alta, de 4,933.87 metros cuadrados, para continuar de forma integral el proyecto de restauración y conservación del monumento histórico y las actividades de investigación, protección, recuperación y difusión del patrimonio cultural.",
-          "El acuerdo refiere que la planta baja fue destinada al INAH en 2024 y que la parte adicional fue entregada física y jurídicamente mediante acta administrativa de mayo de 2026. La operación fue revisada por las áreas técnicas y jurídicas del INDAABIN conforme al expediente administrativo e inmobiliario citado."
+          "El acuerdo identifica el inmueble federal, su registro inmobiliario, la superficie total y antecedentes de situación jurídica y topográfica. Refiere que el acuerdo de 2024 había destinado sólo la planta baja al INAH."
         ]
       },
       {
         "evidence_refs": [
           "chunk-2"
         ],
-        "heading": "Alcance y lectura práctica",
+        "heading": "Modificación del destino",
         "paragraphs": [
-          "La medida se limita al inmueble, registro y finalidad pública descritos. El INDAABIN vigilará el cumplimiento y el acuerdo ordena su publicación e inscripción en el Registro Público de la Propiedad Federal; entra en vigor al día siguiente de su publicación.",
-          "La ficha se dirige principalmente a inah, administradores de inmuebles federales y autoridades patrimoniales."
+          "La modificación destina la totalidad del inmueble al INAH, incorpora formalmente la superficie adicional y vincula su uso con proyectos de restauración, conservación, investigación, protección, recuperación y difusión del patrimonio. El INDAABIN vigilará el cumplimiento y la disposición se inscribirá en el Registro Público de la Propiedad Federal."
         ]
       }
     ],
@@ -74,7 +73,7 @@
     "document_type": "Acuerdo",
     "editorial_status": "complete",
     "evidence": {
-      "content_hash": "2f9d3eea13745d75c2952212ea0a119836edb8e6068de6a6cfc364487c6dbdf5",
+      "content_hash": "286860338a3321e27a9f105bd58bfbe21afd705e68e71e2000c1fe0391ffed74",
       "extraction_method": "html-adapter",
       "locators": [
         {
@@ -89,11 +88,11 @@
         }
       ],
       "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796486&fecha=18%2F08%2F2026",
-      "retrieved_at": "2026-09-01T16:35:20.647622+00:00"
+      "retrieved_at": "2026-09-03T16:53:32.743116+00:00"
     },
     "executive_summary": [
-      "El Instituto de Administración y Avalúos de Bienes Nacionales difundió la modificación del destino de un inmueble federal a favor del INAH. El acuerdo modifica el destino otorgado al INAH para que abarque la totalidad del inmueble federal denominado Ex Ateneo Peninsular, con superficie total de 6,532.956 metros cuadrados en el Centro Histórico de Mérida. La modificación incorpora la parte alta, de 4,933.87 metros cuadrados, para continuar de forma integral el proyecto de restauración y conservación del monumento histórico y las actividades de investigación, protección, recuperación y difusión del patrimonio cultural.",
-      "La medida se limita al inmueble, registro y finalidad pública descritos. El INDAABIN vigilará el cumplimiento y el acuerdo ordena su publicación e inscripción en el Registro Público de la Propiedad Federal; entra en vigor al día siguiente de su publicación. La síntesis se limita a los hechos y condiciones expresamente visibles en la fuente oficial."
+      "El INDAABIN amplió el destino otorgado al INAH sobre el Ex Ateneo Peninsular para abarcar la totalidad del inmueble federal.",
+      "La medida formaliza el uso de superficie adicional para el proyecto integral de restauración, conservación e investigación del monumento histórico."
     ],
     "extraction_status": "complete",
     "first_seen_at": "2026-09-01T16:34:47.803209+00:00",
@@ -102,28 +101,30 @@
     "impacts": {
       "general": {
         "evidence_refs": [
+          "chunk-1",
           "chunk-2"
         ],
         "paragraphs": [
-          "El efecto observable es el que la publicación atribuye al acto: La medida se limita al inmueble, registro y finalidad pública descritos. El INDAABIN vigilará el cumplimiento y el acuerdo ordena su publicación e inscripción en el Registro Público de la Propiedad Federal; entra en vigor al día siguiente de su publicación."
+          "El acto ordena la administración y destino de un bien federal específico. No acredita una obligación regulatoria directa para empresas o habitantes fuera de instituciones responsables del inmueble."
         ]
       },
       "sectors": [
         {
           "evidence_refs": [
+            "chunk-1",
             "chunk-2"
           ],
           "paragraphs": [
-            "Las personas comprendidas deben considerar el documento porque El acuerdo modifica el destino otorgado al INAH para que abarque la totalidad del inmueble federal denominado Ex Ateneo Peninsular, con superficie total de 6,532.956 metros cuadrados en el Centro Histórico de Mérida. La modificación incorpora la parte alta, de 4,933.87 metros cuadrados, para continuar de forma integral el proyecto de restauración y conservación del monumento histórico y las actividades de investigación, protección, recuperación y difusión del patrimonio cultural."
+            "El INAH consolida el destino del inmueble para sus fines institucionales, mientras que el INDAABIN conserva la vigilancia administrativa dentro de sus atribuciones."
           ],
-          "sector": "INAH, administradores de inmuebles federales y autoridades patrimoniales"
+          "sector": "Instituciones públicas responsables del patrimonio cultural e inmobiliario federal"
         }
       ]
     },
     "importance": 1,
     "issuing_body": "Secretaría de Hacienda y Crédito Público",
     "jurisdiction": "nacional",
-    "last_seen_at": "2026-09-01T18:46:30.041123+00:00",
+    "last_seen_at": "2026-09-04T03:37:15.636102+00:00",
     "official_evidence": {
       "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796486&fecha=18/08/2026"
     },
@@ -138,16 +139,17 @@
     "published_year": 2026,
     "recommended_actions": [
       {
-        "affected_group": "INAH, administradores de inmuebles federales y autoridades patrimoniales",
+        "affected_group": "INAH e INDAABIN",
         "deadline": null,
         "evidence_refs": [
+          "chunk-1",
           "chunk-2"
         ],
-        "legal_basis": null,
+        "legal_basis": "Puntos primero a tercero del acuerdo",
         "paragraphs": [
-          "Actualizar los registros administrativos del inmueble y alinear los instrumentos de uso, conservación y gestión con el destino integral formalizado por el acuerdo."
+          "Considerar que la totalidad del inmueble queda comprendida en el destino institucional y atender la inscripción y vigilancia previstas en el acuerdo, conforme a atribuciones de cada autoridad."
         ],
-        "trigger": "Cuando la persona o entidad se ubique en el ámbito material descrito por la fuente oficial."
+        "trigger": "Administrar o vigilar el inmueble federal señalado"
       }
     ],
     "relevance_score": 1,
@@ -155,9 +157,9 @@
     "source": "DOF",
     "source_id": "5796486",
     "subtopic_tags": [],
-    "summary": "El Instituto de Administración y Avalúos de Bienes Nacionales publicó la modificación del destino de un inmueble federal a favor del INAH. El acuerdo modifica el destino otorgado al INAH para que abarque la totalidad del inmueble federal denominado Ex Ateneo Peninsular, con superficie total de 6,532.956 metros cuadrados en el Centro Histórico de Mérida. La modificación incorpora la parte alta, de 4,933.87 metros cuadrados, para continuar de forma integral el proyecto de restauración y conservación del monumento histórico y las actividades de investigación, protección, recuperación y difusión del patrimonio cultural.\n\nEl acuerdo refiere que la planta baja fue destinada al INAH en 2024 y que la parte adicional fue entregada física y jurídicamente mediante acta administrativa de mayo de 2026. La operación fue revisada por las áreas técnicas y jurídicas del INDAABIN conforme al expediente administrativo e inmobiliario citado.\n\nLa medida se limita al inmueble, registro y finalidad pública descritos. El INDAABIN vigilará el cumplimiento y el acuerdo ordena su publicación e inscripción en el Registro Público de la Propiedad Federal; entra en vigor al día siguiente de su publicación.\n\nLa utilidad práctica de la publicación depende de si la persona o entidad se encuentra dentro del ámbito descrito. La información se presenta con base en el documento oficial disponible y no permite extender efectos a supuestos, periodos, personas o actos que no estén expresamente identificados. Cuando el documento incorpora requisitos, condiciones o mecanismos, éstos deben contrastarse con la ficha, resolución, contrato, expediente o norma específica que corresponda.\n\nPara fines de cumplimiento y trazabilidad, conviene conservar la fuente oficial, su fecha de publicación y los documentos que acrediten la situación concreta. Esta síntesis no sustituye el texto íntegro ni una determinación individual de la autoridad; describe el alcance observable del acto y distingue las consecuencias expresamente publicadas de cualquier inferencia que no está respaldada por la evidencia disponible.",
-    "summary_teaser": "El INDAABIN modificó el destino del Ex Ateneo Peninsular para que el INAH use la totalidad del inmueble federal en Mérida. La medida incorpora la parte alta, entregada previamente, al destino para restauración, conservación, investigación y difusión del patrimonio cultural.",
-    "title": "INAH amplía uso del Ex Ateneo Peninsular",
+    "summary": "El Instituto de Administración y Avalúos de Bienes Nacionales modificó el acuerdo de destino emitido en 2024 sobre el inmueble federal Ex Ateneo Peninsular, ubicado en el Centro Histórico de Mérida, Yucatán. El nuevo acuerdo destina la totalidad del inmueble al Instituto Nacional de Antropología e Historia, órgano administrativo desconcentrado de la Secretaría de Cultura. El inmueble cuenta con el Registro Federal Inmobiliario 31-11494-7 y una superficie total reportada de 6,532.956 metros cuadrados.\n\nEl acuerdo antecedente había destinado únicamente la planta baja al INAH. La modificación se origina en la solicitud presentada por la Dirección General del Instituto para incorporar la parte alta, señalada con una superficie de 4,933.87 metros cuadrados. La finalidad indicada es continuar de manera integral el proyecto de restauración y conservación del monumento histórico, así como desarrollar actividades de investigación, protección, recuperación y difusión del patrimonio cultural de la Nación.\n\nLa publicación describe el régimen inmobiliario y antecedentes de la propiedad federal, incluida la documentación de nacionalización, la situación de una fracción en posesión y el levantamiento topográfico. También refiere que el Gobierno de Yucatán entregó física, jurídica y administrativamente el inmueble a Hacienda, a través del INDAABIN, y que éste lo entregó de manera provisional al INAH mediante acta administrativa. La Dirección General de Administración del Patrimonio Inmobiliario Federal revisó la operación y la Unidad Jurídica emitió opinión procedente.\n\nCon la entrada en vigor, la superficie adicional queda formalmente comprendida en el destino otorgado al INAH, sin perjuicio de la posesión que ya detenta esa dependencia. El INDAABIN vigilará el cumplimiento estricto del acuerdo. La disposición ordena publicación e inscripción en el Registro Público de la Propiedad Federal y entra en vigor al día siguiente de su publicación. El efecto es patrimonial y administrativo: no establece una contratación, licencia ni obligación nueva para particulares ajenos a la administración del inmueble.",
+    "summary_teaser": "El INDAABIN modifica el destino del Ex Ateneo Peninsular para que el INAH use la totalidad del inmueble federal en Mérida, Yucatán. La ampliación formaliza la incorporación de la parte alta, destinada a proyectos de restauración, conservación, investigación y difusión del patrimonio cultural.",
+    "title": "Acuerdo amplía destino del Ex Ateneo Peninsular al INAH",
     "topic_tags": [
       "Acuerdo"
     ],

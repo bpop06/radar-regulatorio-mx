@@ -5,6 +5,7 @@
       "reason": null,
       "source_ref": "chunk-1",
       "target_sections": [
+        "executive_summary",
         "detailed_summary"
       ]
     },
@@ -13,7 +14,9 @@
       "reason": null,
       "source_ref": "chunk-2",
       "target_sections": [
-        "detailed_summary"
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general"
       ]
     },
     {
@@ -21,7 +24,9 @@
       "reason": null,
       "source_ref": "chunk-3",
       "target_sections": [
-        "detailed_summary"
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
       ]
     },
     {
@@ -29,7 +34,9 @@
       "reason": null,
       "source_ref": "chunk-4",
       "target_sections": [
-        "detailed_summary"
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
       ]
     },
     {
@@ -37,7 +44,9 @@
       "reason": null,
       "source_ref": "chunk-5",
       "target_sections": [
-        "detailed_summary"
+        "detailed_summary",
+        "impacts.sectors",
+        "recommended_actions"
       ]
     },
     {
@@ -45,7 +54,9 @@
       "reason": null,
       "source_ref": "chunk-6",
       "target_sections": [
-        "detailed_summary"
+        "detailed_summary",
+        "impacts.sectors",
+        "recommended_actions"
       ]
     },
     {
@@ -53,39 +64,49 @@
       "reason": null,
       "source_ref": "chunk-7",
       "target_sections": [
-        "detailed_summary"
+        "detailed_summary",
+        "impacts.sectors"
       ]
     }
   ],
-  "cut_id": "80ff8a726797f7b9e5131c53",
+  "cut_id": "9bfb2857e185b6a117ea296f",
   "detailed_summary": [
     {
       "evidence_refs": [
+        "chunk-1",
         "chunk-2",
-        "chunk-3",
-        "chunk-6"
+        "chunk-3"
       ],
-      "heading": "Alcance de la publicación",
+      "heading": "Objeto y distribución de competencias",
       "paragraphs": [
-        "La Secretaría de Turismo y el Estado de Guerrero celebraron un convenio de coordinación para verificar el cumplimiento de la Ley General de Turismo, su Reglamento, la Ley de Infraestructura de la Calidad y las normas oficiales aplicables a prestadores de servicios turísticos en la entidad.",
-        "La Secretaría federal emite las órdenes de verificación y desarrolla el procedimiento administrativo hasta su resolución con los expedientes que Guerrero remita. El Estado debe capturar la información de las actividades del mes anterior y enviar la base de datos, así como los expedientes digitales certificados, dentro de los primeros diez días naturales de cada mes. El formato de orden de visita establece una vigencia de diez días hábiles para su ejecución, contados desde su emisión."
+        "El instrumento coordina la verificación de prestadores turísticos en Guerrero. La autoridad federal emite órdenes y resuelve con base en los expedientes estatales; el estado ejecuta las visitas por conducto de su Secretaría de Turismo y debe priorizar casos con quejas o inconformidades registradas."
       ]
     },
     {
       "evidence_refs": [
-        "chunk-2",
         "chunk-3",
-        "chunk-6"
+        "chunk-4"
       ],
-      "heading": "Seguimiento operativo",
+      "heading": "Reportes, supervisión y vigencia",
       "paragraphs": [
-        "La Secretaría de Turismo de Guerrero debe programar el envío mensual de la base de datos y expedientes en los primeros diez días naturales de cada mes, y ejecutar cada orden dentro de sus diez días hábiles de vigencia.",
-        "La ficha no extiende el alcance del acto a supuestos que la fuente no identifica."
+        "Guerrero debe enviar la información de actividades y los expedientes de verificación durante los primeros diez días naturales de cada mes. La SECTUR federal puede supervisar, requerir información y conserva sus facultades originarias; el convenio tiene vigencia hasta el 30 de septiembre de 2027."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-4",
+        "chunk-5",
+        "chunk-6",
+        "chunk-7"
+      ],
+      "heading": "Reglas operativas del Anexo Único",
+      "paragraphs": [
+        "El manual exige orden con firma autógrafa, acta circunstanciada, testigos, documentación de pruebas y reglas específicas para negativas e imposibilidad. La orden tiene vigencia de diez días hábiles y el manual prevé oportunidades para que la persona visitada formule observaciones u ofrezca documentos."
       ]
     }
   ],
   "evidence": {
-    "content_hash": "29d0d79c51a6104501bd2be0ef08585ca4d23005b266975cdf0c5bb2b41c9c60",
+    "content_hash": "79c5d00854eaffa4243152e358545f5fab7673b55d6994c8d22bb95854db29d2",
     "extraction_method": "html-adapter",
     "locators": [
       {
@@ -125,34 +146,45 @@
       }
     ],
     "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795834&fecha=10%2F08%2F2026",
-    "retrieved_at": "2026-09-01T16:35:36.984883+00:00"
+    "retrieved_at": "2026-09-03T16:53:50.316115+00:00"
   },
   "executive_summary": [
-    "La Secretaría de Turismo y el Estado de Guerrero celebraron un convenio de coordinación para verificar el cumplimiento de la Ley General de Turismo, su Reglamento, la Ley de Infraestructura de la Calidad y las normas oficiales aplicables a prestadores de servicios turísticos en la entidad.",
-    "La Secretaría federal emite las órdenes de verificación y desarrolla el procedimiento administrativo hasta su resolución con los expedientes que Guerrero remita. El Estado debe capturar la información de las actividades del mes anterior y enviar la base de datos, así como los expedientes digitales certificados, dentro de los primeros diez días naturales de cada mes. El formato de orden de visita establece una vigencia de diez días hábiles para su ejecución, contados desde su emisión."
+    "El convenio faculta a la Secretaría de Turismo de Guerrero para ejecutar verificaciones de prestadores de servicios turísticos dentro de la entidad, con base en la Ley General de Turismo, su Reglamento, la Ley de Infraestructura de la Calidad y las normas oficiales aplicables.",
+    "La SECTUR federal conserva la emisión de órdenes, la conducción del procedimiento administrativo y la resolución. Guerrero debe practicar las visitas, capturar información mensual y enviar expedientes digitales certificados; el Anexo Único regula la diligencia y los formatos."
   ],
   "impacts": {
     "general": {
       "evidence_refs": [
         "chunk-2",
         "chunk-3",
-        "chunk-6"
+        "chunk-4"
       ],
       "paragraphs": [
-        "La Secretaría federal emite las órdenes de verificación y desarrolla el procedimiento administrativo hasta su resolución con los expedientes que Guerrero remita. El Estado debe capturar la información de las actividades del mes anterior y enviar la base de datos, así como los expedientes digitales certificados, dentro de los primeros diez días naturales de cada mes. El formato de orden de visita establece una vigencia de diez días hábiles para su ejecución, contados desde su emisión."
+        "La publicación organiza un canal estatal de ejecución de visitas sin desplazar la competencia federal para ordenar, sustanciar y resolver. No acredita por sí sola una visita, infracción o sanción contra un prestador concreto."
       ]
     },
     "sectors": [
       {
         "evidence_refs": [
-          "chunk-2",
-          "chunk-3",
+          "chunk-4",
+          "chunk-5",
           "chunk-6"
         ],
         "paragraphs": [
-          "La incidencia para este grupo se limita al alcance expresamente descrito en la publicación y requiere contrastarse con cada caso concreto."
+          "Quienes sean objeto de una orden pueden ser verificados por personal estatal acreditado dentro del esquema coordinado. El manual prevé entrega de documentos, designación de testigos, observaciones y pruebas en los momentos que señala."
         ],
-        "sector": "Secretaría de Turismo del Estado de Guerrero y personal verificador estatal"
+        "sector": "Prestadores de servicios turísticos en Guerrero"
+      },
+      {
+        "evidence_refs": [
+          "chunk-3",
+          "chunk-6",
+          "chunk-7"
+        ],
+        "paragraphs": [
+          "La Secretaría estatal asume ejecución, integración y envío de expedientes, así como reportes periódicos, mientras la autoridad federal conserva supervisión y resolución."
+        ],
+        "sector": "Autoridades turísticas de Guerrero"
       }
     ]
   },
@@ -181,24 +213,36 @@
     "review_reason": null,
     "source": "DOF",
     "source_id": "5795834",
-    "summary_teaser": "El convenio entre Turismo federal y Guerrero faculta al estado para ejecutar verificaciones a prestadores turísticos, mientras la Federación emite órdenes y resuelve los procedimientos. Guerrero debe enviar la base de datos y los expedientes digitales certificados dentro de los primeros diez días naturales de cada mes. El formato de orden de visita tiene vigencia de diez días hábiles desde su emisión.",
-    "title": "Guerrero tiene plazo mensual para remitir verificaciones turísticas",
+    "summary_teaser": "El convenio faculta a la Secretaría de Turismo de Guerrero para ejecutar visitas de verificación a prestadores turísticos. La SECTUR federal emitirá órdenes, recibirá expedientes y resolverá los procedimientos; el estado deberá reportar actividades y remitir expedientes digitales certificados durante los primeros diez días naturales de cada mes.",
+    "title": "SECTUR autoriza verificaciones turísticas estatales en Guerrero bajo supervisión federal",
     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5795834&fecha=10/08/2026"
   },
   "recommended_actions": [
     {
-      "affected_group": "Secretaría de Turismo del Estado de Guerrero y personal verificador estatal",
-      "deadline": "Base de datos y expedientes: primeros 10 días naturales de cada mes; orden de visita: vigencia de 10 días hábiles desde su emisión.",
+      "affected_group": "Secretaría de Turismo del Estado de Guerrero",
+      "deadline": "Primeros diez días naturales de cada mes, respecto del mes anterior.",
       "evidence_refs": [
-        "chunk-2",
         "chunk-3",
         "chunk-6"
       ],
-      "legal_basis": "Cláusula cuarta y Formato I del Anexo Único del convenio.",
+      "legal_basis": null,
       "paragraphs": [
-        "La Secretaría de Turismo de Guerrero debe programar el envío mensual de la base de datos y expedientes en los primeros diez días naturales de cada mes, y ejecutar cada orden dentro de sus diez días hábiles de vigencia."
+        "Si ejecuta verificaciones bajo este convenio, debe integrar los expedientes conforme al manual y enviar tanto la información de actividades como los expedientes digitales certificados dentro de los primeros diez días naturales de cada mes."
       ],
-      "trigger": "Al concluir cada mes de actividades y al emitirse una orden de visita de verificación."
+      "trigger": "Cuando realice actividades de verificación al amparo del convenio."
+    },
+    {
+      "affected_group": "Prestadores de servicios turísticos sujetos a una orden de visita",
+      "deadline": "Las observaciones y documentos pueden presentarse dentro de los cinco días hábiles siguientes al levantamiento del acta, conforme al manual.",
+      "evidence_refs": [
+        "chunk-4",
+        "chunk-5"
+      ],
+      "legal_basis": null,
+      "paragraphs": [
+        "Si reciben una orden de verificación, pueden identificar a la persona verificadora, aportar documentos y formular observaciones en los términos descritos en el manual. La documentación del resultado debe quedar asentada en el acta."
+      ],
+      "trigger": "Cuando se practique una visita de verificación."
     }
   ],
   "schema_version": 8

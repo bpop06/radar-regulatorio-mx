@@ -5,6 +5,7 @@
       "reason": null,
       "source_ref": "chunk-1",
       "target_sections": [
+        "executive_summary",
         "detailed_summary"
       ]
     },
@@ -13,37 +14,47 @@
       "reason": null,
       "source_ref": "chunk-2",
       "target_sections": [
-        "detailed_summary"
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
       ]
     }
   ],
-  "cut_id": "80ff8a726797f7b9e5131c53",
+  "cut_id": "9bfb2857e185b6a117ea296f",
   "detailed_summary": [
     {
       "evidence_refs": [
         "chunk-1",
         "chunk-2"
       ],
-      "heading": "Alcance de la publicación",
+      "heading": "Ampliación del destino",
       "paragraphs": [
-        "El Instituto de Administración y Avalúos de Bienes Nacionales modificó el destino de un inmueble federal para incorporar superficie adicional a favor de la Secretaría de Marina.",
-        "La modificación se refiere al inmueble federal identificado en Manzanillo y prevé publicación e inscripción en el Registro Público de la Propiedad Federal."
+        "El instrumento modifica el destino de una fracción originalmente otorgada a la Secretaría de Marina e incorpora 2,286.08 metros cuadrados adicionales. La totalidad del inmueble Salahua Unidad Habitacional queda destinada con superficie de 31,528.21 metros cuadrados."
       ]
     },
     {
       "evidence_refs": [
-        "chunk-1",
         "chunk-2"
       ],
-      "heading": "Contenido relevante",
+      "heading": "Antecedentes y uso autorizado",
       "paragraphs": [
-        "El acuerdo integra una superficie recuperada al inmueble destinado a la Marina y formaliza que la totalidad del predio continúe usándose para vivienda, alojamiento, recreación, oficinas, talleres y almacenes.",
-        "La Secretaría de Marina queda formalmente vinculada con la superficie total descrita en el acuerdo de destino. Las áreas patrimoniales deben revisar la inscripción, los datos del inmueble y los actos administrativos que deriven de la modificación publicada."
+        "La publicación describe el inmueble federal, sus antecedentes de propiedad, plano topográfico, el destino publicado en 2012 y entregas de fracciones en 2013, 2017 y 2020. Los usos autorizados se mantienen para vivienda, alojamiento, recreación, oficinas, talleres y almacenes."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Formalización y vigencia",
+      "paragraphs": [
+        "La superficie adicional queda formalmente comprendida en el destino a partir de la entrada en vigor. INDAABIN vigilará el cumplimiento y la modificación se publicará e inscribirá en el Registro Público de la Propiedad Federal."
       ]
     }
   ],
   "evidence": {
-    "content_hash": "89acebf598ab716162fa6b36057d569d1ce1732395280d07fa6bc12054b38a31",
+    "content_hash": "2acc828ba1b6d0d40b4026ea54b19fd6f3301c08cb9b34c6da3a78976481eeec",
     "extraction_method": "html-adapter",
     "locators": [
       {
@@ -58,32 +69,30 @@
       }
     ],
     "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795366&fecha=04%2F08%2F2026",
-    "retrieved_at": "2026-09-01T16:35:51.921311+00:00"
+    "retrieved_at": "2026-09-03T16:53:58.470631+00:00"
   },
   "executive_summary": [
-    "El Instituto de Administración y Avalúos de Bienes Nacionales modificó el destino de un inmueble federal para incorporar superficie adicional a favor de la Secretaría de Marina. El acuerdo integra una superficie recuperada al inmueble destinado a la Marina y formaliza que la totalidad del predio continúe usándose para vivienda, alojamiento, recreación, oficinas, talleres y almacenes.",
-    "La modificación se refiere al inmueble federal identificado en Manzanillo y prevé publicación e inscripción en el Registro Público de la Propiedad Federal. La publicación debe aplicarse sin extender sus alcances a situaciones no descritas en la fuente."
+    "La modificación incorpora 2,286.08 metros cuadrados adicionales al inmueble Salahua Unidad Habitacional destinado a la Secretaría de Marina y consolida una superficie total de 31,528.21 metros cuadrados.",
+    "Se conservan los usos de vivienda, alojamiento, recreación, oficinas, talleres y almacenes. La fuente vincula la ampliación con fracciones entregadas en actos administrativos previos y prevé vigencia al día siguiente de la publicación."
   ],
   "impacts": {
     "general": {
       "evidence_refs": [
-        "chunk-1",
         "chunk-2"
       ],
       "paragraphs": [
-        "La Secretaría de Marina queda formalmente vinculada con la superficie total descrita en el acuerdo de destino."
+        "La consecuencia administrativa es la ampliación y formalización del área federal incluida en el destino de la Secretaría de Marina, sin que la fuente altere los usos autorizados descritos."
       ]
     },
     "sectors": [
       {
         "evidence_refs": [
-          "chunk-1",
           "chunk-2"
         ],
         "paragraphs": [
-          "La incidencia para este grupo se limita al alcance expresamente descrito en la publicación y requiere contrastarse con cada caso concreto."
+          "La Secretaría de Marina queda como destinataria de la totalidad del inmueble para los usos expresamente indicados, y la fuente reconoce que detentaba posesión de la superficie adicional antes de la formalización."
         ],
-        "sector": "Secretaría de Marina, autoridades patrimoniales y personas que consulten el registro inmobiliario federal"
+        "sector": "Secretaría de Marina"
       }
     ]
   },
@@ -112,23 +121,22 @@
     "review_reason": null,
     "source": "DOF",
     "source_id": "5795366",
-    "summary_teaser": "El Instituto de Administración y Avalúos de Bienes Nacionales modificó el destino de un inmueble federal en Manzanillo para incorporar una superficie adicional a favor de la Secretaría de Marina. El acuerdo formaliza la inclusión de la totalidad del predio para vivienda, oficinas, talleres y almacenes. También ordena su inscripción en el registro inmobiliario federal.",
-    "title": "Marina incorpora superficie adicional a inmueble federal de Manzanillo",
+    "summary_teaser": "INDAABIN modificó el destino de Salahua Unidad Habitacional, en Manzanillo, para incorporar 2,286.08 metros cuadrados adicionales a favor de la Secretaría de Marina. La superficie total destinada asciende a 31,528.21 metros cuadrados y conserva los usos de vivienda, alojamiento, recreación, oficinas, talleres y almacenes; la modificación entra en vigor al día siguiente de su publicación.",
+    "title": "Amplía la superficie destinada a Marina en Manzanillo",
     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5795366&fecha=04/08/2026"
   },
   "recommended_actions": [
     {
-      "affected_group": "Secretaría de Marina, autoridades patrimoniales y personas que consulten el registro inmobiliario federal",
+      "affected_group": "Responsables inmobiliarios de la Secretaría de Marina",
       "deadline": null,
       "evidence_refs": [
-        "chunk-1",
         "chunk-2"
       ],
-      "legal_basis": null,
+      "legal_basis": "Punto primero del instrumento; artículos 61, 62, 66, 67 y 70 de la Ley General de Bienes Nacionales, citados en la fuente.",
       "paragraphs": [
-        "Las áreas patrimoniales deben revisar la inscripción, los datos del inmueble y los actos administrativos que deriven de la modificación publicada."
+        "Si se administra el inmueble Salahua Unidad Habitacional, actualicen el inventario, los planos y los controles de uso para reflejar la superficie total destinada y los usos autorizados por el instrumento."
       ],
-      "trigger": "Cuando la publicación resulte aplicable a la operación o situación revisada."
+      "trigger": "Entrada en vigor de la modificación del destino."
     }
   ],
   "schema_version": 8

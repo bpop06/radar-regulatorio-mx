@@ -1,10 +1,13 @@
 {
   "coverage": [
     {
-      "disposition": "not_material",
-      "reason": "Encabezado que se desarrolla con el acuerdo, transitorios y anexos en los fragmentos posteriores.",
+      "disposition": "summarized",
+      "reason": null,
       "source_ref": "chunk-1",
-      "target_sections": []
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary"
+      ]
     },
     {
       "disposition": "summarized",
@@ -13,9 +16,7 @@
       "target_sections": [
         "executive_summary",
         "detailed_summary",
-        "impacts.general",
-        "impacts.sectors",
-        "recommended_actions"
+        "impacts.general"
       ]
     },
     {
@@ -24,7 +25,6 @@
       "source_ref": "chunk-3",
       "target_sections": [
         "detailed_summary",
-        "impacts.general",
         "impacts.sectors",
         "recommended_actions"
       ]
@@ -35,7 +35,6 @@
       "source_ref": "chunk-4",
       "target_sections": [
         "detailed_summary",
-        "impacts.general",
         "impacts.sectors",
         "recommended_actions"
       ]
@@ -46,7 +45,6 @@
       "source_ref": "chunk-5",
       "target_sections": [
         "detailed_summary",
-        "impacts.general",
         "impacts.sectors",
         "recommended_actions"
       ]
@@ -57,7 +55,6 @@
       "source_ref": "chunk-6",
       "target_sections": [
         "detailed_summary",
-        "impacts.general",
         "impacts.sectors",
         "recommended_actions"
       ]
@@ -68,7 +65,6 @@
       "source_ref": "chunk-7",
       "target_sections": [
         "detailed_summary",
-        "impacts.general",
         "impacts.sectors",
         "recommended_actions"
       ]
@@ -79,7 +75,6 @@
       "source_ref": "chunk-8",
       "target_sections": [
         "detailed_summary",
-        "impacts.general",
         "impacts.sectors",
         "recommended_actions"
       ]
@@ -90,7 +85,6 @@
       "source_ref": "chunk-9",
       "target_sections": [
         "detailed_summary",
-        "impacts.general",
         "impacts.sectors",
         "recommended_actions"
       ]
@@ -101,7 +95,6 @@
       "source_ref": "chunk-10",
       "target_sections": [
         "detailed_summary",
-        "impacts.general",
         "impacts.sectors",
         "recommended_actions"
       ]
@@ -112,7 +105,6 @@
       "source_ref": "chunk-11",
       "target_sections": [
         "detailed_summary",
-        "impacts.general",
         "impacts.sectors",
         "recommended_actions"
       ]
@@ -123,7 +115,6 @@
       "source_ref": "chunk-12",
       "target_sections": [
         "detailed_summary",
-        "impacts.general",
         "impacts.sectors",
         "recommended_actions"
       ]
@@ -134,7 +125,6 @@
       "source_ref": "chunk-13",
       "target_sections": [
         "detailed_summary",
-        "impacts.general",
         "impacts.sectors",
         "recommended_actions"
       ]
@@ -145,7 +135,6 @@
       "source_ref": "chunk-14",
       "target_sections": [
         "detailed_summary",
-        "impacts.general",
         "impacts.sectors",
         "recommended_actions"
       ]
@@ -156,7 +145,6 @@
       "source_ref": "chunk-15",
       "target_sections": [
         "detailed_summary",
-        "impacts.general",
         "impacts.sectors",
         "recommended_actions"
       ]
@@ -167,7 +155,6 @@
       "source_ref": "chunk-16",
       "target_sections": [
         "detailed_summary",
-        "impacts.general",
         "impacts.sectors",
         "recommended_actions"
       ]
@@ -178,7 +165,6 @@
       "source_ref": "chunk-17",
       "target_sections": [
         "detailed_summary",
-        "impacts.general",
         "impacts.sectors",
         "recommended_actions"
       ]
@@ -189,7 +175,6 @@
       "source_ref": "chunk-18",
       "target_sections": [
         "detailed_summary",
-        "impacts.general",
         "impacts.sectors",
         "recommended_actions"
       ]
@@ -200,7 +185,6 @@
       "source_ref": "chunk-19",
       "target_sections": [
         "detailed_summary",
-        "impacts.general",
         "impacts.sectors",
         "recommended_actions"
       ]
@@ -211,7 +195,6 @@
       "source_ref": "chunk-20",
       "target_sections": [
         "detailed_summary",
-        "impacts.general",
         "impacts.sectors",
         "recommended_actions"
       ]
@@ -222,7 +205,6 @@
       "source_ref": "chunk-21",
       "target_sections": [
         "detailed_summary",
-        "impacts.general",
         "impacts.sectors",
         "recommended_actions"
       ]
@@ -233,7 +215,6 @@
       "source_ref": "chunk-22",
       "target_sections": [
         "detailed_summary",
-        "impacts.general",
         "impacts.sectors",
         "recommended_actions"
       ]
@@ -244,7 +225,6 @@
       "source_ref": "chunk-23",
       "target_sections": [
         "detailed_summary",
-        "impacts.general",
         "impacts.sectors",
         "recommended_actions"
       ]
@@ -255,7 +235,6 @@
       "source_ref": "chunk-24",
       "target_sections": [
         "detailed_summary",
-        "impacts.general",
         "impacts.sectors",
         "recommended_actions"
       ]
@@ -266,7 +245,6 @@
       "source_ref": "chunk-25",
       "target_sections": [
         "detailed_summary",
-        "impacts.general",
         "impacts.sectors",
         "recommended_actions"
       ]
@@ -277,7 +255,6 @@
       "source_ref": "chunk-26",
       "target_sections": [
         "detailed_summary",
-        "impacts.general",
         "impacts.sectors",
         "recommended_actions"
       ]
@@ -288,7 +265,6 @@
       "source_ref": "chunk-27",
       "target_sections": [
         "detailed_summary",
-        "impacts.general",
         "impacts.sectors",
         "recommended_actions"
       ]
@@ -299,7 +275,6 @@
       "source_ref": "chunk-28",
       "target_sections": [
         "detailed_summary",
-        "impacts.general",
         "impacts.sectors",
         "recommended_actions"
       ]
@@ -310,7 +285,6 @@
       "source_ref": "chunk-29",
       "target_sections": [
         "detailed_summary",
-        "impacts.general",
         "impacts.sectors",
         "recommended_actions"
       ]
@@ -321,7 +295,6 @@
       "source_ref": "chunk-30",
       "target_sections": [
         "detailed_summary",
-        "impacts.general",
         "impacts.sectors",
         "recommended_actions"
       ]
@@ -332,7 +305,6 @@
       "source_ref": "chunk-31",
       "target_sections": [
         "detailed_summary",
-        "impacts.general",
         "impacts.sectors",
         "recommended_actions"
       ]
@@ -343,7 +315,6 @@
       "source_ref": "chunk-32",
       "target_sections": [
         "detailed_summary",
-        "impacts.general",
         "impacts.sectors",
         "recommended_actions"
       ]
@@ -354,7 +325,6 @@
       "source_ref": "chunk-33",
       "target_sections": [
         "detailed_summary",
-        "impacts.general",
         "impacts.sectors",
         "recommended_actions"
       ]
@@ -365,7 +335,6 @@
       "source_ref": "chunk-34",
       "target_sections": [
         "detailed_summary",
-        "impacts.general",
         "impacts.sectors",
         "recommended_actions"
       ]
@@ -376,7 +345,6 @@
       "source_ref": "chunk-35",
       "target_sections": [
         "detailed_summary",
-        "impacts.general",
         "impacts.sectors",
         "recommended_actions"
       ]
@@ -387,7 +355,6 @@
       "source_ref": "chunk-36",
       "target_sections": [
         "detailed_summary",
-        "impacts.general",
         "impacts.sectors",
         "recommended_actions"
       ]
@@ -398,7 +365,6 @@
       "source_ref": "chunk-37",
       "target_sections": [
         "detailed_summary",
-        "impacts.general",
         "impacts.sectors",
         "recommended_actions"
       ]
@@ -409,7 +375,6 @@
       "source_ref": "chunk-38",
       "target_sections": [
         "detailed_summary",
-        "impacts.general",
         "impacts.sectors",
         "recommended_actions"
       ]
@@ -420,7 +385,6 @@
       "source_ref": "chunk-39",
       "target_sections": [
         "detailed_summary",
-        "impacts.general",
         "impacts.sectors",
         "recommended_actions"
       ]
@@ -431,7 +395,6 @@
       "source_ref": "chunk-40",
       "target_sections": [
         "detailed_summary",
-        "impacts.general",
         "impacts.sectors",
         "recommended_actions"
       ]
@@ -442,7 +405,6 @@
       "source_ref": "chunk-41",
       "target_sections": [
         "detailed_summary",
-        "impacts.general",
         "impacts.sectors",
         "recommended_actions"
       ]
@@ -453,7 +415,6 @@
       "source_ref": "chunk-42",
       "target_sections": [
         "detailed_summary",
-        "impacts.general",
         "impacts.sectors",
         "recommended_actions"
       ]
@@ -464,7 +425,6 @@
       "source_ref": "chunk-43",
       "target_sections": [
         "detailed_summary",
-        "impacts.general",
         "impacts.sectors",
         "recommended_actions"
       ]
@@ -475,7 +435,6 @@
       "source_ref": "chunk-44",
       "target_sections": [
         "detailed_summary",
-        "impacts.general",
         "impacts.sectors",
         "recommended_actions"
       ]
@@ -486,7 +445,6 @@
       "source_ref": "chunk-45",
       "target_sections": [
         "detailed_summary",
-        "impacts.general",
         "impacts.sectors",
         "recommended_actions"
       ]
@@ -497,7 +455,6 @@
       "source_ref": "chunk-46",
       "target_sections": [
         "detailed_summary",
-        "impacts.general",
         "impacts.sectors",
         "recommended_actions"
       ]
@@ -508,7 +465,6 @@
       "source_ref": "chunk-47",
       "target_sections": [
         "detailed_summary",
-        "impacts.general",
         "impacts.sectors",
         "recommended_actions"
       ]
@@ -519,7 +475,6 @@
       "source_ref": "chunk-48",
       "target_sections": [
         "detailed_summary",
-        "impacts.general",
         "impacts.sectors",
         "recommended_actions"
       ]
@@ -530,7 +485,6 @@
       "source_ref": "chunk-49",
       "target_sections": [
         "detailed_summary",
-        "impacts.general",
         "impacts.sectors",
         "recommended_actions"
       ]
@@ -541,7 +495,6 @@
       "source_ref": "chunk-50",
       "target_sections": [
         "detailed_summary",
-        "impacts.general",
         "impacts.sectors",
         "recommended_actions"
       ]
@@ -552,7 +505,6 @@
       "source_ref": "chunk-51",
       "target_sections": [
         "detailed_summary",
-        "impacts.general",
         "impacts.sectors",
         "recommended_actions"
       ]
@@ -563,7 +515,6 @@
       "source_ref": "chunk-52",
       "target_sections": [
         "detailed_summary",
-        "impacts.general",
         "impacts.sectors",
         "recommended_actions"
       ]
@@ -574,7 +525,6 @@
       "source_ref": "chunk-53",
       "target_sections": [
         "detailed_summary",
-        "impacts.general",
         "impacts.sectors",
         "recommended_actions"
       ]
@@ -585,7 +535,6 @@
       "source_ref": "chunk-54",
       "target_sections": [
         "detailed_summary",
-        "impacts.general",
         "impacts.sectors",
         "recommended_actions"
       ]
@@ -596,456 +545,421 @@
       "source_ref": "chunk-55",
       "target_sections": [
         "detailed_summary",
-        "impacts.general",
         "impacts.sectors",
         "recommended_actions"
       ]
     }
   ],
-  "cut_id": "80ff8a726797f7b9e5131c53",
+  "cut_id": "9bfb2857e185b6a117ea296f",
   "detailed_summary": [
     {
       "evidence_refs": [
+        "chunk-1",
         "chunk-2"
       ],
-      "heading": "Formatos emitidos y vigencia",
+      "heading": "Alcance, anexos y vigencia",
       "paragraphs": [
-        "El artículo único enumera 22 formatos para permisos, autorización de producción o aprovechamiento, bitácoras, aviso de inicio de operaciones y solicitudes de modificación o suspensión, cesión y prórroga.",
-        "El transitorio primero dispone la entrada en vigor al día siguiente de la publicación en el Diario Oficial de la Federación; el segundo deja sin efectos el acuerdo de 13 de noviembre de 2009 que describe."
+        "La disposición ÚNICA enumera los formatos 1 a 22 para solicitudes de permisos, autorización de producción o aprovechamiento, bitácoras, aviso de inicio de operaciones, modificación o suspensión, cesión y prórroga. Los distribuye en siete anexos. El transitorio primero dispone su entrada en vigor al día siguiente de la publicación en el Diario Oficial de la Federación; el segundo deja sin efectos el acuerdo de formatos publicado el 13 de noviembre de 2009 que precisa para etanol anhidro y biodiésel."
       ]
     },
     {
       "evidence_refs": [
         "chunk-2",
-        "chunk-3",
         "chunk-4",
-        "chunk-5",
-        "chunk-6",
         "chunk-7",
-        "chunk-8",
-        "chunk-9",
         "chunk-10",
-        "chunk-11",
-        "chunk-12",
-        "chunk-13",
         "chunk-14",
-        "chunk-15",
-        "chunk-16",
-        "chunk-17",
         "chunk-18",
-        "chunk-19",
-        "chunk-20",
-        "chunk-21",
         "chunk-22",
-        "chunk-23",
-        "chunk-24",
-        "chunk-25",
-        "chunk-26",
-        "chunk-27",
-        "chunk-28"
+        "chunk-24"
       ],
-      "heading": "Solicitudes y autorización",
+      "heading": "Solicitudes de permisos",
       "paragraphs": [
-        "Los Anexos 1 y 2 desarrollan formatos de solicitud de permiso para las actividades de biocombustibles y de autorización para producción o aprovechamiento.",
-        "Los formularios incluyen apartados para identificación de la persona solicitante, información del proyecto, instalaciones, operación, logística, trazabilidad, seguros, pagos y manifestaciones, según el trámite correspondiente."
+        "El Anexo 1 prevé formatos separados para permisos de producción, importación, comercialización, almacenamiento, distribución, transporte, expendio al público y exportación. En ellos se solicitan datos de la persona solicitante y de la representación legal, domicilio para notificaciones, grupo de interés e información del proyecto. Según el trámite, los campos comprenden tipo de biocombustible, capacidades, biomasa o insumos, instalaciones, procesos, seguridad, proyecciones, relaciones con otras actividades, documentación de comercio exterior, certificados de calidad y datos de trazabilidad.",
+        "Los formatos muestran que el contenido documental y técnico varía por actividad: importación y exportación incluyen fracción arancelaria, NICO y referencias de comercio exterior; los de almacenamiento, distribución, transporte y expendio recaban información sobre instalaciones, medios, seguridad o verificación técnica cuando aplique; y el de comercialización prevé campos para procedencia, suministro y trazabilidad."
       ]
     },
     {
       "evidence_refs": [
+        "chunk-26",
+        "chunk-27",
         "chunk-28",
         "chunk-29",
-        "chunk-30",
-        "chunk-31",
-        "chunk-32",
-        "chunk-33",
         "chunk-34",
-        "chunk-35",
-        "chunk-36",
-        "chunk-37",
-        "chunk-38",
         "chunk-39",
-        "chunk-40",
-        "chunk-41",
-        "chunk-42",
-        "chunk-43",
         "chunk-44",
-        "chunk-45",
-        "chunk-46",
-        "chunk-47",
-        "chunk-48",
-        "chunk-49",
+        "chunk-49"
+      ],
+      "heading": "Autorización y bitácoras",
+      "paragraphs": [
+        "El Anexo 2 contiene el formato de autorización para producción o aprovechamiento de biocombustibles. Distingue investigación científica o tecnológica, aprovechamiento directo de biomasa y valorización energética de residuos orgánicos por comunidades rurales, indígenas o afromexicanas. Para los supuestos que describe, el formato solicita información de la persona solicitante, el proyecto, las instalaciones y, cuando corresponda, datos de la comunidad y del mecanismo de beneficio directo por distribución o comercialización.",
+        "El Anexo 3 establece bitácoras por actividad para producción, importación, comercialización, almacenamiento, distribución, transporte, expendio al público, exportación y autorización. Sus tablas se presentan por trimestre y prevén registros de operaciones, origen, volumen, movimientos, contrapartes y documentos de soporte. Algunos formatos especifican qué registrar si no hay operaciones y qué información incorporar cuando éstas comienzan."
+      ]
+    },
+    {
+      "evidence_refs": [
         "chunk-50",
         "chunk-51",
         "chunk-52",
         "chunk-53",
-        "chunk-54",
+        "chunk-54"
+      ],
+      "heading": "Aviso de inicio, modificación, suspensión y cesión",
+      "paragraphs": [
+        "El Anexo 4 incluye el aviso de inicio de operaciones y solicita la identificación del permiso o autorización, la fecha de inicio y, en los casos descritos, dictámenes o evaluaciones técnicas sobre instalaciones, vehículos, equipos, mantenimiento, seguridad y contingencias, además de seguros si no se presentaron con la solicitud original.",
+        "El Anexo 5 contiene la solicitud de modificación o suspensión. Distingue cambios de razón social, tipo de biocombustible, volumen y diversos componentes técnicos según el permiso o autorización. Para los cambios en procesos, instalaciones, equipos o medios de transporte o distribución, el formato pide motivación, implicaciones técnicas, efectos y mecanismos de continuidad y seguridad; precisa: La Secretaría determinará si los cambios ameritan la solicitud de un nuevo permiso. El Anexo 6 prevé la cesión y solicita información de cedente y cesionaria, el proyecto de contrato, datos de cumplimiento y documentación asociada."
+      ]
+    },
+    {
+      "evidence_refs": [
         "chunk-55"
       ],
-      "heading": "Bitácoras, avisos y solicitudes posteriores",
+      "heading": "Prórroga",
       "paragraphs": [
-        "El Anexo 3 contiene bitácoras para permisos y la autorización señalada; los Anexos 4 a 7 contienen el aviso de inicio de operaciones y las solicitudes de modificación o suspensión, cesión y prórroga.",
-        "Los anexos presentan campos específicos para cada trámite, incluidos datos del permiso o autorización, operación, trazabilidad y manifestaciones cuando corresponden."
+        "El Anexo 7 contiene la solicitud de prórroga de permisos y autorizaciones. El formato solicita identificar el permiso o autorización y su fecha de vencimiento, describir razones y argumentos de procedencia, informar el cumplimiento de los términos y condiciones, y describir el cumplimiento de la Ley, el Reglamento, las normas oficiales, lineamientos y demás disposiciones administrativas que resulten aplicables al momento de la solicitud."
       ]
     }
   ],
   "evidence": {
-    "content_hash": "cfe5631b0a587e57fc51df128272bd6e74e86338be450abbb77f06633babaf61",
+    "content_hash": "128d712870a982dd5de977d2fa91e2a3a736e5710ae15efdc8ecce8426ab51e2",
     "extraction_method": "html-adapter",
     "locators": [
       {
         "id": "chunk-1",
-        "label": "ACUERDO por el que se emiten los formatos de solicitud de permisos y bitácoras para la producción, importación, exportación, almacenamiento, transporte, comercialización, distribución y expendio al público de biocombustibles, autorizaciones y bitácoras para la producción de biocombustibles, así como de avisos de inicio de operaciones, modificaciones o suspensiones, cesiones y prórroga de dichos permisos y autorizaciones.",
+        "label": "Título oficial del Acuerdo y alcance de formatos de biocombustibles",
         "location": "caracteres 0-428"
       },
       {
         "id": "chunk-2",
-        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 1",
+        "label": "Autoridad emisora, considerandos, Disposición Única, transitorios y Anexo 1/Formato 1 de producción: inicio",
         "location": "caracteres 428-12428"
       },
       {
         "id": "chunk-3",
-        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 2",
+        "label": "Anexo 1 · Formato 1: solicitud de permiso para producción — datos del proyecto, procesos y tecnología",
         "location": "caracteres 12428-24428"
       },
       {
         "id": "chunk-4",
-        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 3",
+        "label": "Anexo 1 · Formato 1: solicitud de permiso para producción — proyecciones, trazabilidad y operación",
         "location": "caracteres 24428-36428"
       },
       {
         "id": "chunk-5",
-        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 4",
+        "label": "Anexo 1 · Formato 1 de producción: cierre documental; Formato 2 de importación: inicio",
         "location": "caracteres 36428-48428"
       },
       {
         "id": "chunk-6",
-        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 5",
+        "label": "Anexo 1 · Formato 2: solicitud de permiso para importación — datos, proyecto y almacenamiento",
         "location": "caracteres 48428-60428"
       },
       {
         "id": "chunk-7",
-        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 6",
+        "label": "Anexo 1 · Formato 2: solicitud de permiso para importación — comercialización, transporte y proyecciones",
         "location": "caracteres 60428-72428"
       },
       {
         "id": "chunk-8",
-        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 7",
+        "label": "Anexo 1 · Formato 2 de importación: cierre; Formato 3 de comercialización: inicio y requisitos técnicos",
         "location": "caracteres 72428-84428"
       },
       {
         "id": "chunk-9",
-        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 8",
+        "label": "Anexo 1 · Formato 3: solicitud de permiso para comercialización — operación, clientes y trazabilidad",
         "location": "caracteres 84428-96428"
       },
       {
         "id": "chunk-10",
-        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 9",
+        "label": "Anexo 1 · Formato 3 de comercialización: cierre; Formato 4 de almacenamiento: inicio",
         "location": "caracteres 96428-108428"
       },
       {
         "id": "chunk-11",
-        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 10",
+        "label": "Anexo 1 · Formato 4: solicitud de permiso para almacenamiento — personalidad y proyecto",
         "location": "caracteres 108428-120428"
       },
       {
         "id": "chunk-12",
-        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 11",
+        "label": "Anexo 1 · Formato 4: solicitud de permiso para almacenamiento — instalaciones, seguridad y trazabilidad",
         "location": "caracteres 120428-132428"
       },
       {
         "id": "chunk-13",
-        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 12",
+        "label": "Anexo 1 · Formato 4 de almacenamiento: cierre documental; Formato 5 de distribución: inicio",
         "location": "caracteres 132428-144428"
       },
       {
         "id": "chunk-14",
-        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 13",
+        "label": "Anexo 1 · Formato 5: solicitud de permiso para distribución — requisitos, seguridad e ingeniería",
         "location": "caracteres 144428-156428"
       },
       {
         "id": "chunk-15",
-        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 14",
+        "label": "Anexo 1 · Formato 5: solicitud de permiso para distribución — procesos, tecnología y relaciones operativas",
         "location": "caracteres 156428-168428"
       },
       {
         "id": "chunk-16",
-        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 15",
+        "label": "Anexo 1 · Formato 5: solicitud de permiso para distribución — operación, seguros y manifestaciones",
         "location": "caracteres 168428-180428"
       },
       {
         "id": "chunk-17",
-        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 16",
+        "label": "Anexo 1 · Formato 5 de distribución: cierre; Formato 6 de transporte: inicio",
         "location": "caracteres 180428-192428"
       },
       {
         "id": "chunk-18",
-        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 17",
+        "label": "Anexo 1 · Formato 6: solicitud de permiso para transporte — proyecto, infraestructura y actividades vinculadas",
         "location": "caracteres 192428-204428"
       },
       {
         "id": "chunk-19",
-        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 18",
+        "label": "Anexo 1 · Formato 6: solicitud de permiso para transporte — trazabilidad y relaciones reguladas",
         "location": "caracteres 204428-216428"
       },
       {
         "id": "chunk-20",
-        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 19",
+        "label": "Anexo 1 · Formato 6: solicitud de permiso para transporte — clientes, pago y manifestaciones",
         "location": "caracteres 216428-228428"
       },
       {
         "id": "chunk-21",
-        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 20",
+        "label": "Anexo 1 · Formato 6 de transporte: manifestaciones finales; Formato 7 de expendio al público: inicio",
         "location": "caracteres 228428-240428"
       },
       {
         "id": "chunk-22",
-        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 21",
+        "label": "Anexo 1 · Formato 7: solicitud de permiso para expendio al público — proyecto, biocombustibles y operación",
         "location": "caracteres 240428-252428"
       },
       {
         "id": "chunk-23",
-        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 22",
+        "label": "Anexo 1 · Formato 7 de expendio al público: trazabilidad y cierre; Formato 8 de exportación: inicio",
         "location": "caracteres 252428-264428"
       },
       {
         "id": "chunk-24",
-        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 23",
+        "label": "Anexo 1 · Formato 8: solicitud de permiso para exportación — personalidad, representación y proyecto",
         "location": "caracteres 264428-276428"
       },
       {
         "id": "chunk-25",
-        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 24",
+        "label": "Anexo 1 · Formato 8: solicitud de permiso para exportación — operación, comercialización y formulación",
         "location": "caracteres 276428-288428"
       },
       {
         "id": "chunk-26",
-        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 25",
+        "label": "Anexo 1 · Formato 8 de exportación: contenido nacional, pago y manifestaciones; Anexo 2/Formato 9: inicio",
         "location": "caracteres 288428-300428"
       },
       {
         "id": "chunk-27",
-        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 26",
+        "label": "Anexo 2 · Formato 9: autorización de producción o aprovechamiento — biomasa, impacto y operación",
         "location": "caracteres 300428-312428"
       },
       {
         "id": "chunk-28",
-        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 27",
+        "label": "Anexo 2 · Formato 9: beneficio comunitario y cierre; Anexo 3/Formato 10 de bitácora de producción: inicio",
         "location": "caracteres 312428-324428"
       },
       {
         "id": "chunk-29",
-        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 28",
+        "label": "Anexo 3 · Formato 10: bitácora del permiso de producción — ficha técnica, operación y trazabilidad",
         "location": "caracteres 324428-336428"
       },
       {
         "id": "chunk-30",
-        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 29",
+        "label": "Anexo 3 · Formato 10: bitácora del permiso de producción — volúmenes, clientes y trazabilidad",
         "location": "caracteres 336428-348428"
       },
       {
         "id": "chunk-31",
-        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 30",
+        "label": "Anexo 3 · Formato 10 de producción: seguros; Formato 11 de bitácora de importación: inicio",
         "location": "caracteres 348428-360428"
       },
       {
         "id": "chunk-32",
-        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 31",
+        "label": "Anexo 3 · Formato 11: bitácora del permiso de importación — costos, pedimentos y operación",
         "location": "caracteres 360428-372428"
       },
       {
         "id": "chunk-33",
-        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 32",
+        "label": "Anexo 3 · Formato 11 de importación: transporte y cierre; Formato 12 de bitácora de comercialización: inicio",
         "location": "caracteres 372428-384428"
       },
       {
         "id": "chunk-34",
-        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 33",
+        "label": "Anexo 3 · Formato 12: bitácora del permiso de comercialización — operación y trazabilidad",
         "location": "caracteres 384428-396428"
       },
       {
         "id": "chunk-35",
-        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 34",
+        "label": "Anexo 3 · Formato 12: bitácora del permiso de comercialización — registros de operación y manifestaciones",
         "location": "caracteres 396428-408428"
       },
       {
         "id": "chunk-36",
-        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 35",
+        "label": "Anexo 3 · Formato 12 de comercialización: cierre; Formato 13 de bitácora de almacenamiento: inicio",
         "location": "caracteres 408428-420428"
       },
       {
         "id": "chunk-37",
-        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 36",
+        "label": "Anexo 3 · Formato 13: bitácora del permiso de almacenamiento — plantilla, trazabilidad y clientes",
         "location": "caracteres 420428-432428"
       },
       {
         "id": "chunk-38",
-        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 37",
+        "label": "Anexo 3 · Formato 13 de almacenamiento: cierre de trazabilidad; Formato 14 de bitácora de distribución: inicio",
         "location": "caracteres 432428-444428"
       },
       {
         "id": "chunk-39",
-        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 38",
+        "label": "Anexo 3 · Formato 14: bitácora del permiso de distribución — datos y operación del proyecto",
         "location": "caracteres 444428-456428"
       },
       {
         "id": "chunk-40",
-        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 39",
+        "label": "Anexo 3 · Formato 14: bitácora del permiso de distribución — almacenamiento y relaciones reguladas",
         "location": "caracteres 456428-468428"
       },
       {
         "id": "chunk-41",
-        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 40",
+        "label": "Anexo 3 · Formato 14 de distribución: trazabilidad por importación; Formato 15 de bitácora de transporte: inicio",
         "location": "caracteres 468428-480428"
       },
       {
         "id": "chunk-42",
-        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 41",
+        "label": "Anexo 3 · Formato 15: bitácora del permiso de transporte — instalaciones y registros operativos",
         "location": "caracteres 480428-492428"
       },
       {
         "id": "chunk-43",
-        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 42",
+        "label": "Anexo 3 · Formato 15: bitácora del permiso de transporte — volumen y trazabilidad",
         "location": "caracteres 492428-504428"
       },
       {
         "id": "chunk-44",
-        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 43",
+        "label": "Anexo 3 · Formato 15 de transporte: trazabilidad y cierre; Formato 16 de bitácora de expendio: inicio",
         "location": "caracteres 504428-516428"
       },
       {
         "id": "chunk-45",
-        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 44",
+        "label": "Anexo 3 · Formato 16: bitácora del permiso de expendio al público — instalaciones y operación",
         "location": "caracteres 516428-528428"
       },
       {
         "id": "chunk-46",
-        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 45",
+        "label": "Anexo 3 · Formato 16 de expendio: cierre; Formato 17 de bitácora de exportación: inicio",
         "location": "caracteres 528428-540428"
       },
       {
         "id": "chunk-47",
-        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 46",
+        "label": "Anexo 3 · Formato 17: bitácora del permiso de exportación — proveedores, clientes y trazabilidad",
         "location": "caracteres 540428-552428"
       },
       {
         "id": "chunk-48",
-        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 47",
+        "label": "Anexo 3 · Formato 17 de exportación: cierre; Formato 18 de bitácora de autorización de producción o aprovechamiento: inicio",
         "location": "caracteres 552428-564428"
       },
       {
         "id": "chunk-49",
-        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 48",
+        "label": "Anexo 3 · Formato 18: bitácora de autorización de producción o aprovechamiento — operación y beneficio comunitario",
         "location": "caracteres 564428-576428"
       },
       {
         "id": "chunk-50",
-        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 49",
+        "label": "Anexo 3 · Formato 18: cierre comunitario; Anexo 4/Formato 19 de aviso de inicio de operaciones",
         "location": "caracteres 576428-588428"
       },
       {
         "id": "chunk-51",
-        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 50",
+        "label": "Anexo 4 · Formato 19: cierre y manifestaciones; Anexo 5/Formato 20 de modificación o suspensión: inicio",
         "location": "caracteres 588428-600428"
       },
       {
         "id": "chunk-52",
-        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 51",
+        "label": "Anexo 5 · Formato 20: solicitud de modificación o suspensión — componentes y cambios de proyecto",
         "location": "caracteres 600428-612428"
       },
       {
         "id": "chunk-53",
-        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 52",
+        "label": "Anexo 5 · Formato 20: medios de distribución, procesos, la solicitud de un nuevo permiso y suspensión",
         "location": "caracteres 612428-624428"
       },
       {
         "id": "chunk-54",
-        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 53",
+        "label": "Anexo 5 · Formato 20: suspensión y autorizaciones; Anexo 6/Formato 21 de cesión: inicio",
         "location": "caracteres 624428-636428"
       },
       {
         "id": "chunk-55",
-        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Secretaría de Energía. · parte 54",
+        "label": "Anexo 6 · Formato 21: declaraciones finales; Anexo 7/Formato 22 de prórroga",
         "location": "caracteres 636428-646759"
       }
     ],
     "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797477&fecha=31%2F08%2F2026",
-    "retrieved_at": "2026-09-01T16:35:05.873441+00:00"
+    "retrieved_at": "2026-09-04T03:38:02.279676+00:00"
   },
   "executive_summary": [
-    "La Secretaría de Energía emitió 22 formatos, agrupados en siete anexos, para permisos, autorizaciones, bitácoras, avisos y otras gestiones en materia de biocombustibles.",
-    "El acuerdo entra en vigor al día siguiente de su publicación en el Diario Oficial de la Federación y deja sin efectos el acuerdo de 2009 identificado en su segundo transitorio."
+    "La Secretaría de Energía emitió formatos para solicitudes de permisos, autorizaciones y bitácoras de biocombustibles, así como para avisos de inicio de operaciones, modificaciones o suspensiones, cesiones y prórrogas. El acuerdo articula 22 formatos en siete anexos para las actividades de producción, importación, exportación, almacenamiento, transporte, comercialización, distribución y expendio al público.",
+    "Los formatos reúnen campos de identificación, proyecto, operación, trazabilidad y documentación de soporte, adaptados al trámite y a la actividad. El acuerdo prevé entrada en vigor al día siguiente de su publicación en el Diario Oficial de la Federación y deja sin efectos el acuerdo de formatos de 2009 que identifica su transitorio segundo."
   ],
   "impacts": {
     "general": {
       "evidence_refs": [
-        "chunk-2"
+        "chunk-1",
+        "chunk-2",
+        "chunk-29",
+        "chunk-50",
+        "chunk-55"
       ],
       "paragraphs": [
-        "El acuerdo sustituye el instrumento de formatos de 2009 que identifica en su segundo transitorio y concentra los formatos actuales en siete anexos para las gestiones enumeradas."
+        "El cambio consiste en la emisión de formatos administrativos para los trámites y registros que el acuerdo identifica. Para quienes utilicen esos trámites, la fuente concentra la información y los documentos que cada formato solicita para la actividad correspondiente."
       ]
     },
     "sectors": [
       {
         "evidence_refs": [
           "chunk-2",
-          "chunk-3",
-          "chunk-4",
-          "chunk-5",
-          "chunk-6",
-          "chunk-7",
           "chunk-8",
-          "chunk-9",
-          "chunk-10",
-          "chunk-11",
-          "chunk-12",
           "chunk-13",
-          "chunk-14",
-          "chunk-15",
-          "chunk-16",
           "chunk-17",
-          "chunk-18",
-          "chunk-19",
-          "chunk-20",
           "chunk-21",
-          "chunk-22",
-          "chunk-23",
-          "chunk-24",
-          "chunk-25",
+          "chunk-23"
+        ],
+        "paragraphs": [
+          "Las personas que pretendan solicitar permisos para producción, importación, exportación, almacenamiento, transporte, comercialización, distribución o expendio al público cuentan con formatos diferenciados por actividad. Los campos del Anexo 1 hacen visible la información de identificación, proyecto, infraestructura, seguridad, trazabilidad y documentación que puede corresponder a cada solicitud."
+        ],
+        "sector": "Solicitantes de permisos de biocombustibles"
+      },
+      {
+        "evidence_refs": [
           "chunk-26",
-          "chunk-27",
           "chunk-28",
-          "chunk-29",
           "chunk-30",
-          "chunk-31",
-          "chunk-32",
-          "chunk-33",
-          "chunk-34",
-          "chunk-35",
           "chunk-36",
-          "chunk-37",
-          "chunk-38",
-          "chunk-39",
-          "chunk-40",
-          "chunk-41",
           "chunk-42",
-          "chunk-43",
-          "chunk-44",
-          "chunk-45",
-          "chunk-46",
-          "chunk-47",
-          "chunk-48",
-          "chunk-49",
+          "chunk-48"
+        ],
+        "paragraphs": [
+          "Quienes se ubiquen en los supuestos de autorización de producción o aprovechamiento o deban usar las bitácoras del acuerdo tienen formatos específicos. Las bitácoras se organizan por actividad y trimestre e incluyen campos para operaciones y documentación de soporte, con indicaciones particulares cuando no existan operaciones."
+        ],
+        "sector": "Titulares de autorizaciones y operadores con bitácora"
+      },
+      {
+        "evidence_refs": [
           "chunk-50",
           "chunk-51",
-          "chunk-52",
-          "chunk-53",
           "chunk-54",
           "chunk-55"
         ],
         "paragraphs": [
-          "La publicación reúne formatos para sus solicitudes, bitácoras, avisos de inicio y gestiones de modificación o suspensión, cesión y prórroga, diferenciados por actividad y anexo."
+          "Los Anexos 4 a 7 reúnen formatos para aviso de inicio, modificación o suspensión, cesión y prórroga. En esos supuestos, los formatos recaban información sobre el permiso o autorización, soporte técnico o documental, cumplimiento y, según el caso, razones, contrato de cesión o argumentos de prórroga."
         ],
-        "sector": "Solicitantes y titulares de permisos o autorizaciones de biocombustibles"
+        "sector": "Titulares que inicien, modifiquen, suspendan, cedan o prorroguen"
       }
     ]
   },
@@ -1074,75 +988,72 @@
     "review_reason": null,
     "source": "DOF",
     "source_id": "5797477",
-    "summary_teaser": "La SENER emitió 22 formatos y siete anexos para permisos, autorizaciones, bitácoras, avisos y otros trámites de biocombustibles. El acuerdo entra en vigor al día siguiente de su publicación en el DOF y deja sin efectos el acuerdo de 2009 que contenía formatos para producción, almacenamiento, transporte y comercialización de ciertos bioenergéticos.",
-    "title": "SENER reemplaza formatos de 2009 con anexos para biocombustibles",
+    "summary_teaser": "La Secretaría de Energía emitió formatos para solicitar permisos, autorizaciones, bitácoras y avisos relacionados con la cadena de biocombustibles. El acuerdo abarca producción, importación, exportación, almacenamiento, transporte, comercialización, distribución y expendio al público; también prevé modificaciones, suspensiones, cesiones y prórrogas. Entra en vigor al día siguiente de su publicación y deja sin efectos un acuerdo de formatos de 2009.",
+    "title": "Sener establece formatos para permisos y bitácoras de biocombustibles",
     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797477&fecha=31/08/2026"
   },
   "recommended_actions": [
     {
-      "affected_group": "Solicitantes y titulares de permisos o autorizaciones de biocombustibles",
+      "affected_group": "Personas que proyecten solicitar un permiso",
       "deadline": null,
       "evidence_refs": [
         "chunk-2",
-        "chunk-3",
-        "chunk-4",
-        "chunk-5",
-        "chunk-6",
         "chunk-7",
-        "chunk-8",
-        "chunk-9",
-        "chunk-10",
-        "chunk-11",
-        "chunk-12",
         "chunk-13",
-        "chunk-14",
-        "chunk-15",
-        "chunk-16",
         "chunk-17",
-        "chunk-18",
-        "chunk-19",
-        "chunk-20",
-        "chunk-21",
-        "chunk-22",
-        "chunk-23",
-        "chunk-24",
-        "chunk-25",
+        "chunk-23"
+      ],
+      "legal_basis": "Disposición ÚNICA, formatos 1 a 8 y Anexo 1",
+      "paragraphs": [
+        "Si se pretende presentar una solicitud de permiso, puede identificarse primero el formato aplicable a la actividad y contrastar el expediente disponible con los campos del Anexo 1. La revisión puede abarcar, según el formato, identificación, representación, datos del proyecto, instalaciones, seguridad, trazabilidad, relaciones operativas y documentos de soporte."
+      ],
+      "trigger": "Si se pretende presentar una solicitud de permiso de biocombustibles"
+    },
+    {
+      "affected_group": "Personas que pretendan solicitar autorización de producción o aprovechamiento",
+      "deadline": null,
+      "evidence_refs": [
         "chunk-26",
         "chunk-27",
-        "chunk-28",
+        "chunk-28"
+      ],
+      "legal_basis": "Disposición ÚNICA, formato 9 y Anexo 2",
+      "paragraphs": [
+        "Si el proyecto corresponde a investigación, aprovechamiento directo de biomasa o a los supuestos comunitarios descritos, puede identificarse el tipo de autorización y reunir la información que el Anexo 2 prevé para ese supuesto. Cuando el formato lo condiciona, conviene distinguir los datos de comunidad o el mecanismo de beneficio directo de los datos generales del proyecto."
+      ],
+      "trigger": "Si se pretende presentar una autorización de producción o aprovechamiento"
+    },
+    {
+      "affected_group": "Operadores de actividades con bitácora",
+      "deadline": null,
+      "evidence_refs": [
         "chunk-29",
-        "chunk-30",
-        "chunk-31",
-        "chunk-32",
-        "chunk-33",
-        "chunk-34",
         "chunk-35",
-        "chunk-36",
-        "chunk-37",
-        "chunk-38",
-        "chunk-39",
-        "chunk-40",
         "chunk-41",
-        "chunk-42",
-        "chunk-43",
-        "chunk-44",
-        "chunk-45",
-        "chunk-46",
         "chunk-47",
-        "chunk-48",
-        "chunk-49",
+        "chunk-49"
+      ],
+      "legal_basis": "Disposición ÚNICA, formatos 10 a 18 y Anexo 3",
+      "paragraphs": [
+        "Si resulta aplicable una bitácora de las actividades enumeradas, puede ordenarse la información por trimestre y conservarse la documentación de soporte que el formato menciona para la actividad. Cuando no haya operaciones, debe revisarse la instrucción específica del formato antes de decidir cómo registrar esa situación; el acuerdo ofrece formatos distintos para cada actividad."
+      ],
+      "trigger": "Si se realiza una actividad para la que el acuerdo prevé bitácora"
+    },
+    {
+      "affected_group": "Titulares de permisos o autorizaciones existentes",
+      "deadline": null,
+      "evidence_refs": [
         "chunk-50",
         "chunk-51",
         "chunk-52",
-        "chunk-53",
         "chunk-54",
         "chunk-55"
       ],
-      "legal_basis": "Transitorio primero y artículo único del acuerdo.",
+      "legal_basis": "Disposición ÚNICA, formatos 19 a 22 y Anexos 4 a 7",
       "paragraphs": [
-        "Al preparar las gestiones enumeradas en el acuerdo, identifiquen el formato y anexo que corresponden a la actividad o trámite de que se trate."
+        "Si se pretende iniciar operaciones, modificar o suspender la actividad, ceder el permiso o autorización, o solicitar prórroga, puede ubicarse el Anexo correspondiente y revisar la información que éste solicita. Para cambios técnicos, el formato pide motivación, implicaciones y efectos; la fuente precisa: La Secretaría determinará si los cambios ameritan la solicitud de un nuevo permiso."
       ],
-      "trigger": "A partir de la entrada en vigor del acuerdo, al presentar alguno de los trámites listados."
+      "trigger": "Cuando se pretenda usar alguno de los trámites de los Anexos 4 a 7"
     }
   ],
   "schema_version": 8

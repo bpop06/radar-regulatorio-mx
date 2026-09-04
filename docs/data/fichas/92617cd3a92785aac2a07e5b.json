@@ -5,6 +5,7 @@
       "reason": null,
       "source_ref": "chunk-1",
       "target_sections": [
+        "executive_summary",
         "detailed_summary"
       ]
     },
@@ -13,35 +14,47 @@
       "reason": null,
       "source_ref": "chunk-2",
       "target_sections": [
-        "detailed_summary"
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
       ]
     }
   ],
-  "cut_id": "80ff8a726797f7b9e5131c53",
+  "cut_id": "9bfb2857e185b6a117ea296f",
   "detailed_summary": [
     {
       "evidence_refs": [
+        "chunk-1",
         "chunk-2"
       ],
-      "heading": "Alcance de la publicación",
+      "heading": "Sentencia interlocutoria",
       "paragraphs": [
-        "El Órgano Interno de Control en el Instituto Mexicano del Seguro Social publicó una circular para comunicar el cumplimiento de la sentencia interlocutoria de medida cautelar emitida por la Sexta Sala Regional en la Ciudad de México del Tribunal Federal de Justicia Administrativa en el juicio de nulidad de Hima Promotions.",
-        "La Sexta Sala negó la medida cautelar respecto de los efectos de la inhabilitación por un año y de su publicación, y concedió suspensión definitiva respecto de la ejecución de la multa en los términos de la sentencia. La circular del OIC deja sin efectos la circular previa de 26 de junio y comunica que se mantiene la inhabilitación por un año. La publicación no resuelve el fondo del juicio de nulidad."
+        "La Sexta Sala Regional del TFJA negó la medida cautelar respecto de la inhabilitación por un año y de su publicación, y concedió suspensión definitiva sobre la ejecución de la multa en los términos del considerando tercero no reproducido en la circular."
       ]
     },
     {
       "evidence_refs": [
         "chunk-2"
       ],
-      "heading": "Seguimiento operativo",
+      "heading": "Efecto sobre la circular anterior",
       "paragraphs": [
-        "Las dependencias y entidades destinatarias deben distinguir la continuidad de la inhabilitación de Hima Promotions del tratamiento cautelar de la multa y consultar la sentencia para el alcance exacto.",
-        "La ficha no extiende el alcance del acto a supuestos que la fuente no identifica."
+        "La autoridad deja sin efectos la circular previamente publicada, pero no elimina la inhabilitación. La fuente afirma que continúa por un año la prohibición de presentar propuestas o celebrar contratos, directa o indirectamente, en las materias especificadas."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Alcance no verificable",
+      "paragraphs": [
+        "El documento no contiene el texto íntegro del considerando que fija las condiciones de suspensión de la multa ni informa el importe de esa multa; esos aspectos no son verificables con la publicación revisada."
       ]
     }
   ],
   "evidence": {
-    "content_hash": "3826ba06cce88b35dc8c7152bd30e89ed44d915012abc3c0ce39aa2e6d033892",
+    "content_hash": "bf354045a20358746159ffafb58ce5fe920fd34b18e97d41bd990b30f96cfa8f",
     "extraction_method": "html-adapter",
     "locators": [
       {
@@ -56,11 +69,11 @@
       }
     ],
     "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796637&fecha=19%2F08%2F2026",
-    "retrieved_at": "2026-09-01T16:35:18.526221+00:00"
+    "retrieved_at": "2026-09-03T16:53:30.743346+00:00"
   },
   "executive_summary": [
-    "El Órgano Interno de Control en el Instituto Mexicano del Seguro Social publicó una circular para comunicar el cumplimiento de la sentencia interlocutoria de medida cautelar emitida por la Sexta Sala Regional en la Ciudad de México del Tribunal Federal de Justicia Administrativa en el juicio de nulidad de Hima Promotions.",
-    "La Sexta Sala negó la medida cautelar respecto de los efectos de la inhabilitación por un año y de su publicación, y concedió suspensión definitiva respecto de la ejecución de la multa en los términos de la sentencia. La circular del OIC deja sin efectos la circular previa de 26 de junio y comunica que se mantiene la inhabilitación por un año. La publicación no resuelve el fondo del juicio de nulidad."
+    "El OIC en el IMSS comunicó que una sentencia interlocutoria negó la medida cautelar respecto de la inhabilitación de Hima Promotions y concedió suspensión definitiva sobre la ejecución de la multa en los términos judiciales indicados.",
+    "La autoridad dejó sin efectos una circular previa, pero mantuvo la inhabilitación de un año para nuevas propuestas y contratos en adquisiciones, arrendamientos, servicios, obras públicas y servicios relacionados."
   ],
   "impacts": {
     "general": {
@@ -68,7 +81,7 @@
         "chunk-2"
       ],
       "paragraphs": [
-        "La Sexta Sala negó la medida cautelar respecto de los efectos de la inhabilitación por un año y de su publicación, y concedió suspensión definitiva respecto de la ejecución de la multa en los términos de la sentencia. La circular del OIC deja sin efectos la circular previa de 26 de junio y comunica que se mantiene la inhabilitación por un año. La publicación no resuelve el fondo del juicio de nulidad."
+        "La publicación separa los efectos cautelares de la multa de la inhabilitación: la circular anterior se deja sin efectos, pero la prohibición de nuevas contrataciones para Hima Promotions continúa según el texto oficial."
       ]
     },
     "sectors": [
@@ -77,9 +90,9 @@
           "chunk-2"
         ],
         "paragraphs": [
-          "La incidencia para este grupo se limita al alcance expresamente descrito en la publicación y requiere contrastarse con cada caso concreto."
+          "Las áreas que tramitan adquisiciones, arrendamientos, servicios, obras públicas y servicios relacionados deben atender que la circular describe como vigente la inhabilitación de un año de Hima Promotions."
         ],
-        "sector": "Dependencias y entidades destinatarias de la circular y Hima Promotions"
+        "sector": "Áreas contratantes públicas"
       }
     ]
   },
@@ -109,22 +122,22 @@
     "review_reason": null,
     "source": "DOF",
     "source_id": "5796637",
-    "summary_teaser": "El Órgano Interno de Control en el IMSS publicó una circular de cumplimiento de la sentencia interlocutoria emitida por la Sexta Sala Regional Metropolitana del TFJA en el caso Hima Promotions. La Sala negó la medida cautelar sobre la inhabilitación y su publicación, pero concedió suspensión definitiva de la ejecución de la multa en los términos de la sentencia. No es una decisión definitiva de fondo.",
-    "title": "OIC del IMSS comunica cautelar que suspende multa de Hima",
+    "summary_teaser": "El Órgano Interno de Control en el IMSS comunicó el cumplimiento de una sentencia interlocutoria del TFJA en el juicio de Hima Promotions. Deja sin efectos una circular previa, mantiene la inhabilitación de un año para contrataciones públicas y precisa que la suspensión definitiva concedida se refiere únicamente a la ejecución de la multa en los términos judiciales.",
+    "title": "Mantiene inhabilitación de Hima Promotions y suspende ejecución de multa",
     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796637&fecha=19/08/2026"
   },
   "recommended_actions": [
     {
-      "affected_group": "Dependencias y entidades destinatarias de la circular y Hima Promotions",
-      "deadline": null,
+      "affected_group": "Áreas contratantes de adquisiciones, arrendamientos, servicios, obras públicas y servicios relacionados",
+      "deadline": "Durante el año de inhabilitación señalado por la circular.",
       "evidence_refs": [
         "chunk-2"
       ],
-      "legal_basis": null,
+      "legal_basis": "Resolutivo tercero de la resolución de 1 de abril de 2026, citado en la circular.",
       "paragraphs": [
-        "Las dependencias y entidades destinatarias deben distinguir la continuidad de la inhabilitación de Hima Promotions del tratamiento cautelar de la multa y consultar la sentencia para el alcance exacto."
+        "Si revisan elegibilidad de Hima Promotions en nuevos procedimientos, mantengan la verificación de la inhabilitación de un año descrita por la circular y no traten la suspensión de la multa como suspensión de la inhabilitación."
       ],
-      "trigger": "Cuando la publicación resulte aplicable a la situación revisada."
+      "trigger": "Participación de Hima Promotions, S.A. de C.V. en un nuevo procedimiento de contratación."
     }
   ],
   "schema_version": 8

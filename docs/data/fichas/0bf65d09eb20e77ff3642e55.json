@@ -5,6 +5,7 @@
       "reason": null,
       "source_ref": "chunk-1",
       "target_sections": [
+        "executive_summary",
         "detailed_summary"
       ]
     },
@@ -13,7 +14,11 @@
       "reason": null,
       "source_ref": "chunk-2",
       "target_sections": [
-        "detailed_summary"
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
       ]
     },
     {
@@ -21,39 +26,48 @@
       "reason": null,
       "source_ref": "chunk-3",
       "target_sections": [
-        "detailed_summary"
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
       ]
     }
   ],
-  "cut_id": "80ff8a726797f7b9e5131c53",
+  "cut_id": "9bfb2857e185b6a117ea296f",
   "detailed_summary": [
     {
       "evidence_refs": [
         "chunk-1",
-        "chunk-2",
-        "chunk-3"
+        "chunk-2"
       ],
-      "heading": "Alcance de la publicación",
+      "heading": "Objeto y orden de suplencia",
       "paragraphs": [
-        "El Órgano Interno de Control de la Fiscalía General de la República publicó reglas de suplencia por ausencia o excusa.",
-        "Las reglas se aplican al titular del órgano de control y a las unidades administrativas que lo integran, con previsiones específicas para ausencia definitiva."
+        "El acuerdo regula la suplencia de la persona titular del OIC y de sus unidades administrativas. Si no existe una designación previa, fija un orden que inicia con la Unidad de Responsabilidades Administrativas y continúa con Auditoría Interna, Denuncias e Investigaciones, unidades jurídica, garante, de control y de verificación."
       ]
     },
     {
       "evidence_refs": [
-        "chunk-1",
         "chunk-2",
         "chunk-3"
       ],
-      "heading": "Contenido relevante",
+      "heading": "Excusas y separación de funciones",
       "paragraphs": [
-        "El acuerdo fija el orden de personas titulares que pueden suplir, exige designación temporal cuando corresponda y evita que una misma persona concentre funciones de investigación, substanciación y resolución en un caso.",
-        "El acuerdo ordena la continuidad y la separación funcional en procedimientos de responsabilidades administrativas dentro de la institución. Las unidades involucradas deben documentar las designaciones, excusas y remisiones de expedientes conforme al orden y salvaguardas publicados."
+        "Quien identifique un posible conflicto de interés o impedimento debe solicitar su excusa. El instrumento prohíbe encomendar a una misma persona la calidad de autoridad investigadora, substanciadora y resolutora; si la unidad original de una suplente intervino en un asunto, éste se remite a la siguiente persona del orden sólo para su atención individual."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-3"
+      ],
+      "heading": "Ausencia definitiva",
+      "paragraphs": [
+        "Ante fallecimiento, remoción, renuncia o conclusión del encargo, la titularidad de Responsabilidades Administrativas asume provisionalmente el despacho para continuidad de la función, atención de plazos y prevención de prescripción, mientras la Cámara de Diputados designa o determina lo conducente."
       ]
     }
   ],
   "evidence": {
-    "content_hash": "d45544f4d470da167053ab6fb494ab1f29d4527a2816cbc6b875b6c050685cfe",
+    "content_hash": "278344dfec61a1d9f010e15a600821c80081b0dfd8c81a477c90d86d31dfa3ce",
     "extraction_method": "html-adapter",
     "locators": [
       {
@@ -73,34 +87,42 @@
       }
     ],
     "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795543&fecha=05%2F08%2F2026",
-    "retrieved_at": "2026-09-01T16:35:51.135395+00:00"
+    "retrieved_at": "2026-09-03T16:53:57.677907+00:00"
   },
   "executive_summary": [
-    "El Órgano Interno de Control de la Fiscalía General de la República publicó reglas de suplencia por ausencia o excusa. El acuerdo fija el orden de personas titulares que pueden suplir, exige designación temporal cuando corresponda y evita que una misma persona concentre funciones de investigación, substanciación y resolución en un caso.",
-    "Las reglas se aplican al titular del órgano de control y a las unidades administrativas que lo integran, con previsiones específicas para ausencia definitiva. La publicación debe aplicarse sin extender sus alcances a situaciones no descritas en la fuente."
+    "El OIC de la Fiscalía General de la República establece un orden de suplencias para la persona titular y las unidades administrativas, además de reglas para excusas por posibles conflictos de interés o impedimentos legales.",
+    "La norma ordena separar funciones investigadoras, substanciadoras y resolutoras, prevé remitir asuntos individualizados cuando exista conflicto funcional y designa una continuidad provisional ante una ausencia definitiva."
   ],
   "impacts": {
     "general": {
       "evidence_refs": [
-        "chunk-1",
         "chunk-2",
         "chunk-3"
       ],
       "paragraphs": [
-        "El acuerdo ordena la continuidad y la separación funcional en procedimientos de responsabilidades administrativas dentro de la institución."
+        "La publicación establece reglas de continuidad y distribución interna para el OIC. No decide un procedimiento de responsabilidad administrativa concreto ni acredita una excusa o suplencia ya materializada."
       ]
     },
     "sectors": [
       {
         "evidence_refs": [
-          "chunk-1",
           "chunk-2",
           "chunk-3"
         ],
         "paragraphs": [
-          "La incidencia para este grupo se limita al alcance expresamente descrito en la publicación y requiere contrastarse con cada caso concreto."
+          "Las unidades deben observar el orden de suplencia y la separación funcional cuando intervengan en asuntos de responsabilidades administrativas o se actualicen ausencias y excusas."
         ],
-        "sector": "Personal del órgano interno de control de la Fiscalía General de la República"
+        "sector": "Unidades administrativas del OIC de la FGR"
+      },
+      {
+        "evidence_refs": [
+          "chunk-2",
+          "chunk-3"
+        ],
+        "paragraphs": [
+          "El acuerdo prevé que las suplencias no concentren funciones investigadoras, substanciadoras y resolutoras, y que el expediente se canalice cuando la unidad de origen de una suplente ya intervino en ese asunto."
+        ],
+        "sector": "Personas sujetas a procedimientos ante el OIC"
       }
     ]
   },
@@ -130,24 +152,35 @@
     "review_reason": null,
     "source": "DOF",
     "source_id": "5795543",
-    "summary_teaser": "El Órgano Interno de Control de la Fiscalía General de la República publicó reglas para suplencias por ausencia o excusa de su titular y de sus unidades. El acuerdo establece un orden de prelación y salvaguardas para evitar concentración de funciones investigadoras, substanciadoras y resolutoras. También prevé continuidad administrativa en caso de ausencia definitiva.",
-    "title": "Órgano interno de control de FGR fija reglas de suplencia",
+    "summary_teaser": "El Órgano Interno de Control de la Fiscalía General de la República publica reglas para suplir ausencias y atender excusas. El acuerdo fija un orden de prelación, exige separar funciones en procedimientos de responsabilidades y prevé continuidad operativa ante una ausencia definitiva.",
+    "title": "El OIC de la FGR establece suplencias y reglas de excusa",
     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5795543&fecha=05/08/2026"
   },
   "recommended_actions": [
     {
-      "affected_group": "Personal del órgano interno de control de la Fiscalía General de la República",
+      "affected_group": "Personas servidoras públicas del OIC de la FGR",
       "deadline": null,
       "evidence_refs": [
-        "chunk-1",
         "chunk-2",
         "chunk-3"
       ],
       "legal_basis": null,
       "paragraphs": [
-        "Las unidades involucradas deben documentar las designaciones, excusas y remisiones de expedientes conforme al orden y salvaguardas publicados."
+        "Si conocen un posible conflicto de interés o impedimento legal, deben solicitar su excusa al superior inmediato. Si intervienen como suplentes, deben revisar que no acumulen funciones incompatibles en el asunto particular."
       ],
-      "trigger": "Cuando la publicación resulte aplicable a la operación o situación revisada."
+      "trigger": "Cuando exista una excusa, ausencia o participación previa de la unidad de adscripción en un asunto."
+    },
+    {
+      "affected_group": "Unidad de Responsabilidades Administrativas del OIC",
+      "deadline": "Dentro de las 24 horas siguientes a que ocurra el hecho, para el aviso a la Cámara de Diputados.",
+      "evidence_refs": [
+        "chunk-3"
+      ],
+      "legal_basis": null,
+      "paragraphs": [
+        "Si ocurre una ausencia definitiva de la persona titular del OIC, asume provisionalmente el despacho en los términos del acuerdo y debe dar aviso formal de la vacante a la Cámara de Diputados."
+      ],
+      "trigger": "Fallecimiento, remoción, renuncia o conclusión del periodo de la persona titular del OIC."
     }
   ],
   "schema_version": 8

@@ -1,10 +1,10 @@
 {
-  "cut_id": "80ff8a726797f7b9e5131c53",
+  "cut_id": "9bfb2857e185b6a117ea296f",
   "item": {
     "ai_generated": true,
     "authority": "PODER EJECUTIVO SECRETARIA ANTICORRUPCION Y BUEN GOBIERNO",
     "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796407&fecha=17%2F08%2F2026",
-    "card_body": "## Qué se publicó\n\nEl órgano interno de control comunicó que cumplió una sentencia anulatoria.\n\n## Sustancia\n\nLa autoridad dejó sin efectos la resolución sancionadora precisada en la circular, sin publicar un acto sustituto.\n\n## Fuente\n\n[Consulta la publicación oficial](https://dof.gob.mx/nota_detalle.php?codigo=5796407&fecha=17%2F08%2F2026)",
+    "card_body": "## Qué se publicó\n\nUna circular comunicó el cumplimiento de una sentencia del TFJA que anuló una resolución emitida en un procedimiento administrativo sancionatorio.\n\n## Sustancia\n\nEl órgano interno de control informó que dejó sin efectos la resolución anulada. La publicación no expone la motivación completa de la sentencia ni acredita actuaciones posteriores en el procedimiento.\n\n## Fuente\n\nDOF, Circular de cumplimiento de sentencia del TFJA, publicada el 17 de agosto de 2026.",
     "case_amount": "",
     "case_claim": "",
     "case_facts": "",
@@ -26,7 +26,8 @@
         "source_ref": "chunk-1",
         "target_sections": [
           "executive_summary",
-          "detailed_summary"
+          "detailed_summary",
+          "impacts.sectors"
         ]
       },
       {
@@ -34,8 +35,10 @@
         "reason": null,
         "source_ref": "chunk-2",
         "target_sections": [
+          "executive_summary",
           "detailed_summary",
           "impacts.general",
+          "impacts.sectors",
           "recommended_actions"
         ]
       }
@@ -49,19 +52,18 @@
           "chunk-1",
           "chunk-2"
         ],
-        "heading": "Contenido publicado",
+        "heading": "Sentencia de nulidad comunicada",
         "paragraphs": [
-          "La Sala Regional en Michoacán declaró la nulidad lisa y llana de una resolución dictada en un procedimiento sancionador del ISSSTE."
+          "La circular identifica el juicio 715/25-21-01-4-OT y transcribe que la sala declaró la nulidad lisa y llana de la resolución impugnada en el procedimiento administrativo sancionatorio."
         ]
       },
       {
         "evidence_refs": [
-          "chunk-1",
           "chunk-2"
         ],
-        "heading": "Alcance práctico",
+        "heading": "Cumplimiento administrativo",
         "paragraphs": [
-          "El órgano interno de control informó que dejó sin efectos el acto administrativo anulado, sin anunciar una determinación sustituta."
+          "El órgano interno de control informa que emitió un acuerdo el 30 de julio de 2026 para dejar sin efectos el oficio anulado, sin describir nuevas actuaciones o una reposición del procedimiento."
         ]
       }
     ],
@@ -69,7 +71,7 @@
     "document_type": "Circular",
     "editorial_status": "complete",
     "evidence": {
-      "content_hash": "5798e86c5d32e470a0651427f5ac2ec1bc721a52a022267a84c42d827665263e",
+      "content_hash": "3c4d862b0f5ec112e5ff71123bd43a8c46c782b5255c5035407e2ffe0db40c05",
       "extraction_method": "html-adapter",
       "locators": [
         {
@@ -84,11 +86,11 @@
         }
       ],
       "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796407&fecha=17%2F08%2F2026",
-      "retrieved_at": "2026-09-01T16:35:27.220560+00:00"
+      "retrieved_at": "2026-09-03T16:53:40.426739+00:00"
     },
     "executive_summary": [
-      "El Área de Responsabilidades del Órgano Interno de Control en el ISSSTE publicó una circular para informar el cumplimiento de una sentencia dictada por la Sala Regional en Michoacán del Tribunal Federal de Justicia Administrativa. La sentencia declaró la nulidad lisa y llana de una resolución emitida dentro de un procedimiento administrativo de sanción a licitantes, proveedores y contratistas. La persona actora fue Eder Vieyra Sánchez, según la identificación que hace la fuente.",
-      "En cumplimiento de esa sentencia, la autoridad comunicó que dejó sin efectos la resolución administrativa impugnada. La circular individualiza el acto anulado, pero no reproduce las razones completas de la sentencia ni informa nuevas sanciones, reposición del procedimiento o una determinación de fondo posterior. El efecto verificable de la publicación es que aquella resolución específica no debe seguir siendo tratada como vigente dentro del expediente administrativo identificado."
+      "La Sala Regional en Michoacán del TFJA declaró la nulidad lisa y llana de la resolución contenida en el oficio OICE/00/637/19606/2024, impugnada por Eder Vieyra Sánchez.",
+      "El órgano interno de control comunicó que, en cumplimiento de esa sentencia, dejó sin efectos la resolución administrativa dentro del procedimiento PA-032/2024."
     ],
     "extraction_status": "complete",
     "first_seen_at": "2026-09-01T16:34:47.803209+00:00",
@@ -97,11 +99,10 @@
     "impacts": {
       "general": {
         "evidence_refs": [
-          "chunk-1",
           "chunk-2"
         ],
         "paragraphs": [
-          "La circular actualiza el estado oficial de la resolución anulada para efectos de los registros y verificaciones que dependan de ella."
+          "La resolución administrativa identificada pierde efectos por el cumplimiento comunicado, pero la fuente no permite extender esa conclusión a otros actos o expedientes."
         ]
       },
       "sectors": [
@@ -111,16 +112,25 @@
             "chunk-2"
           ],
           "paragraphs": [
-            "Las verificaciones deben reflejar que la resolución citada fue dejada sin efectos y evitar extender esa conclusión a otros actos no incluidos."
+            "Las destinatarias de la circular deben reconocer que el acto identificado fue dejado sin efectos, sin presuponer consecuencias registrales o contractuales no descritas."
           ],
-          "sector": "Áreas contratantes y personas que consultan antecedentes de procedimientos sancionadores"
+          "sector": "Dependencias y entidades de la Administración Pública Federal"
+        },
+        {
+          "evidence_refs": [
+            "chunk-2"
+          ],
+          "paragraphs": [
+            "La publicación confirma la nulidad y su cumplimiento, pero la motivación completa, alcance de restitución y situación posterior requieren revisar documentos del expediente."
+          ],
+          "sector": "Partes y asesores del procedimiento PA-032/2024"
         }
       ]
     },
     "importance": 3,
     "issuing_body": "Presidencia de la República",
     "jurisdiction": "nacional",
-    "last_seen_at": "2026-09-01T18:46:30.041123+00:00",
+    "last_seen_at": "2026-09-04T03:37:15.636102+00:00",
     "official_evidence": {
       "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796407&fecha=17/08/2026"
     },
@@ -135,17 +145,28 @@
     "published_year": 2026,
     "recommended_actions": [
       {
-        "affected_group": "Áreas contratantes y personas que consultan antecedentes de procedimientos sancionadores",
+        "affected_group": "Áreas que mantengan referencias al oficio anulado",
         "deadline": null,
         "evidence_refs": [
-          "chunk-1",
           "chunk-2"
         ],
-        "legal_basis": "Sentencia del Tribunal Federal de Justicia Administrativa y circular de cumplimiento",
+        "legal_basis": "Sentencia y artículos 49, 50, 51, fracción IV, y 52, fracción II, de la Ley Federal de Procedimiento Contencioso Administrativo citados en la circular.",
         "paragraphs": [
-          "Actualizar expedientes o sistemas que registren la resolución anulada y contrastar cualquier restricción vigente con fuentes oficiales actuales."
+          "Si un registro, análisis o decisión cita la resolución anulada, verifiquen el acuerdo de cumplimiento y ajusten la referencia únicamente en el alcance que acrediten esos documentos."
         ],
-        "trigger": "Consultar la resolución sancionadora identificada en la circular"
+        "trigger": "Uso o consulta del oficio OICE/00/637/19606/2024 o del procedimiento PA-032/2024."
+      },
+      {
+        "affected_group": "Partes o asesores que evalúan consecuencias posteriores",
+        "deadline": null,
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "legal_basis": null,
+        "paragraphs": [
+          "Antes de concluir que existe reposición, indemnización o una nueva decisión, obtengan la sentencia íntegra y los acuerdos posteriores, pues no están contenidos en la circular."
+        ],
+        "trigger": "Evaluación de efectos adicionales a la nulidad comunicada."
       }
     ],
     "relevance_score": 5,
@@ -160,9 +181,9 @@
       "tribunal federal de justicia administrativa",
       "sala regional"
     ],
-    "summary": "El Área de Responsabilidades del Órgano Interno de Control en el ISSSTE publicó una circular para informar el cumplimiento de una sentencia dictada por la Sala Regional en Michoacán del Tribunal Federal de Justicia Administrativa. La sentencia declaró la nulidad lisa y llana de una resolución emitida dentro de un procedimiento administrativo de sanción a licitantes, proveedores y contratistas. La persona actora fue Eder Vieyra Sánchez, según la identificación que hace la fuente.\n\nEn cumplimiento de esa sentencia, la autoridad comunicó que dejó sin efectos la resolución administrativa impugnada. La circular individualiza el acto anulado, pero no reproduce las razones completas de la sentencia ni informa nuevas sanciones, reposición del procedimiento o una determinación de fondo posterior. El efecto verificable de la publicación es que aquella resolución específica no debe seguir siendo tratada como vigente dentro del expediente administrativo identificado.\n\nLa comunicación se dirige a dependencias y entidades de la Administración Pública Federal. Es relevante para las áreas que pudieran conservar registros internos de la resolución anulada o depender de su vigencia para decisiones de contratación. El texto no afirma que toda restricción relacionada con la persona actora haya desaparecido ni que no existan otras determinaciones aplicables; sólo reporta la insubsistencia del acto que la sentencia anuló.\n\nUna verificación de elegibilidad o de antecedentes debe distinguir la resolución dejada sin efectos de cualquier otro registro vigente. La ficha no infiere consecuencias que no describe la circular, como restituciones, multas, plazos o medidas cautelares. Para un expediente concreto, la fuente debe consultarse junto con los registros oficiales y la resolución judicial correspondiente.\n\nPara fines de seguimiento, la publicación debe leerse con la normativa que expresamente cita. Esta ficha sólo reporta el alcance verificable del documento oficial: no anticipa decisiones posteriores, requisitos no publicados ni consecuencias que el texto no atribuye de manera directa.",
-    "summary_teaser": "El órgano interno de control del ISSSTE comunicó que dejó sin efectos una resolución dictada en un procedimiento administrativo de sanción a licitantes, proveedores y contratistas. La medida cumple una sentencia de la Sala Regional en Michoacán del Tribunal Federal de Justicia Administrativa que declaró la nulidad lisa y llana del acto impugnado.",
-    "title": "TFJA invalida resolución sancionadora en procedimiento del ISSSTE",
+    "summary": "La circular del Órgano Interno de Control en el Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado comunica el cumplimiento de una sentencia definitiva dictada el 24 de marzo de 2026 por la Sala Regional en Michoacán del Tribunal Federal de Justicia Administrativa. El juicio de nulidad fue identificado como 715/25-21-01-4-OT y fue promovido por Eder Vieyra Sánchez. La fuente transcribe que la sala declaró la nulidad lisa y llana de la resolución impugnada, contenida en el oficio OICE/00/637/19606/2024 de 16 de diciembre de 2024.\n\nLa resolución anulada se había emitido dentro del procedimiento administrativo de sanción a licitantes, proveedores y contratistas PA-032/2024. La circular no reproduce íntegramente las razones de la sentencia: solo menciona que la sala resolvió con fundamento en los artículos 49, 50, 51, fracción IV, y 52, fracción II, de la Ley Federal de Procedimiento Contencioso Administrativo. Por ello, esta fuente permite afirmar la nulidad comunicada y el acto que quedó sin efectos, pero no permite atribuir una causa jurídica específica distinta de la declaración de nulidad que transcribe.\n\nEn cumplimiento de la sentencia, el órgano interno de control indica que el 30 de julio de 2026 emitió un acuerdo que dejó sin efectos el oficio citado. Ese oficio había resuelto en definitiva el procedimiento administrativo correspondiente. La comunicación está dirigida a dependencias y entidades de la Administración Pública Federal y delimita su objeto al cumplimiento de la sentencia y a la desactivación de la resolución administrativa anulada.\n\nLa circular no informa si hubo reposición de procedimiento, una nueva resolución, restitución, indemnización, modificación de registros administrativos o algún recurso ulterior. Tampoco permite caracterizar a la persona promovente como proveedor actual ni inferir la situación de terceros. Para decisiones de contratación, registros o cumplimiento, debe consultarse la sentencia íntegra y el acuerdo de cumplimiento, pues el texto publicado es una comunicación parcial y no una constancia completa del expediente.",
+    "summary_teaser": "Una circular comunica que la Sala Regional en Michoacán del TFJA declaró la nulidad lisa y llana de una resolución emitida en un procedimiento sancionatorio. El órgano interno de control informó que dejó sin efectos esa resolución en cumplimiento de la sentencia; la fuente no describe nuevas sanciones ni actuaciones posteriores.",
+    "title": "TFJA invalida resolución sancionatoria contra Eder Vieyra Sánchez",
     "topic_tags": [
       "Derecho administrativo",
       "Contencioso administrativo",

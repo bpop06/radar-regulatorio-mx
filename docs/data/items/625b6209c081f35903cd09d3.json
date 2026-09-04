@@ -1,10 +1,10 @@
 {
-  "cut_id": "80ff8a726797f7b9e5131c53",
+  "cut_id": "9bfb2857e185b6a117ea296f",
   "item": {
     "ai_generated": true,
     "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
     "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795367&fecha=04%2F08%2F2026",
-    "card_body": "## Qué se publicó\n\nEl Instituto destinó dos inmuebles federales: Vías Buenavista Mex-Qro y Estación Buenavista Mex-Qro.\n\n## Sustancia\n\nLos inmuebles se identifican con los RFIs 9-71659-2 y 9-71660-9, respectivamente. El acto limita el aprovechamiento de ambos a la finalidad pública indicada y fija deberes de custodia, conservación, aseguramiento y permisos previos para obras.\n\n## Fuente\n\n[Consulta la publicación oficial](https://dof.gob.mx/nota_detalle.php?codigo=5795367&fecha=04%2F08%2F2026)",
+    "card_body": "## Qué se publicó\n\nLa asignación de dos inmuebles federales a la Secretaría de Infraestructura, Comunicaciones y Transportes.\n\n## Sustancia\n\nLos predios se destinan a infraestructura ferroviaria de Buenavista y del tren de pasajeros Ciudad de México-Querétaro, con condiciones sobre uso, obras, conservación y devolución.\n\n## Fuente\n\nDiario Oficial de la Federación, publicación de 4 de agosto de 2026.",
     "case_amount": "",
     "case_claim": "",
     "case_facts": "",
@@ -26,7 +26,8 @@
         "source_ref": "chunk-1",
         "target_sections": [
           "executive_summary",
-          "detailed_summary"
+          "detailed_summary",
+          "impacts.general"
         ]
       },
       {
@@ -34,8 +35,10 @@
         "reason": null,
         "source_ref": "chunk-2",
         "target_sections": [
+          "executive_summary",
           "detailed_summary",
           "impacts.general",
+          "impacts.sectors",
           "recommended_actions"
         ]
       },
@@ -46,6 +49,7 @@
         "target_sections": [
           "detailed_summary",
           "impacts.general",
+          "impacts.sectors",
           "recommended_actions"
         ]
       }
@@ -57,21 +61,21 @@
       {
         "evidence_refs": [
           "chunk-1",
-          "chunk-3"
+          "chunk-2"
         ],
-        "heading": "Destino y uso autorizado",
+        "heading": "Destino ferroviario",
         "paragraphs": [
-          "El acuerdo destina dos inmuebles federales: Vías Buenavista Mex-Qro (RFI 9-71659-2) y Estación Buenavista Mex-Qro (RFI 9-71660-9), a la Secretaría de Infraestructura, Comunicaciones y Transportes para la ampliación de infraestructura ferroviaria del proyecto de tren de pasajeros Ciudad de México-Querétaro, incluida la estación terminal Buenavista y Trenes del Norte. El derecho de aprovechamiento de ambos se limita a esa finalidad y no transmite su propiedad."
+          "Los inmuebles tienen superficies de 3,394.97 y 10,757.32 metros cuadrados y se destinan a ampliar infraestructura del proyecto ferroviario señalado. El acuerdo reconoce una entrega provisional previa y dispone que se consideren entregados definitivamente cuando el instrumento entre en vigor."
         ]
       },
       {
         "evidence_refs": [
-          "chunk-1",
+          "chunk-2",
           "chunk-3"
         ],
-        "heading": "Custodia y condicionantes",
+        "heading": "Condiciones de uso y obra",
         "paragraphs": [
-          "La destinataria debe conservar, asegurar y vigilar los inmuebles; un cambio de uso o falta de necesidad respecto de ellos activa su puesta a disposición. Las obras en ambos requieren autorizaciones previas conforme al acto."
+          "La SICT debe conservar el uso autorizado, obtener actos habilitantes para obras y atender condicionantes del INAH sobre excavaciones o remoción de sedimentos. Si deja de utilizar los inmuebles o les da un uso distinto sin autorización previa, debe ponerlos a disposición de INDAABIN en el plazo previsto."
         ]
       }
     ],
@@ -79,7 +83,7 @@
     "document_type": "Acuerdo",
     "editorial_status": "complete",
     "evidence": {
-      "content_hash": "ee7494f225985a2d10a3fd2eda2393beea34ffc4db05bfe8fa16b8eedea8e645",
+      "content_hash": "723d97807c8d2f2770a65df772a07d1b1c128a202ca609d83716a807ec2eb7a5",
       "extraction_method": "html-adapter",
       "locators": [
         {
@@ -99,11 +103,11 @@
         }
       ],
       "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795367&fecha=04%2F08%2F2026",
-      "retrieved_at": "2026-09-01T16:35:51.536170+00:00"
+      "retrieved_at": "2026-09-03T16:53:58.063744+00:00"
     },
     "executive_summary": [
-      "El Instituto de Administración y Avalúos de Bienes Nacionales destinó a la Secretaría de Infraestructura, Comunicaciones y Transportes dos inmuebles federales: Vías Buenavista Mex-Qro, con Registro Federal Inmobiliario 9-71659-2 y superficie de 3,394.97 metros cuadrados, y Estación Buenavista Mex-Qro, con Registro Federal Inmobiliario 9-71660-9 y superficie de 10,757.32 metros cuadrados. Ambos se ubican en Cuauhtémoc, Ciudad de México, y se destinan a la ampliación de infraestructura ferroviaria del proyecto de tren de pasajeros Ciudad de México-Querétaro, incluida la estación terminal Buenavista y Trenes del Norte. El acuerdo individualiza ambos inmuebles y señala que la destinación busca permitir la continuidad o ejecución del servicio público referido. Su entrada en vigor ocurre al día siguiente de la publicación.",
-      "La destinación confiere a la institución destinataria el derecho de aprovechar los inmuebles únicamente para el uso autorizado. El instrumento aclara que no transmite su propiedad ni otorga derecho real alguno sobre ellos. Si los bienes se usan para una finalidad distinta sin autorización previa de Hacienda por conducto del Instituto, o dejan de utilizarse o necesitarse, deberán ponerse a disposición del Instituto con sus mejoras y accesiones, sin compensación, dentro de los cuatro meses que establece el acuerdo."
+      "INDAABIN destinó a la SICT los inmuebles Vías Buenavista Mex-Qro y Estación Buenavista Mex-Qro, ubicados en Ciudad de México, para ampliar infraestructura ferroviaria del tren de pasajeros Ciudad de México-Querétaro y la terminal Buenavista.",
+      "El destino no transmite propiedad y condiciona el aprovechamiento al uso autorizado. La SICT debe gestionar autorizaciones para obras, observar medidas arqueológicas cuando correspondan, conservar y asegurar los predios, y devolverlos si deja de necesitarlos o cambia el uso sin autorización."
     ],
     "extraction_status": "complete",
     "first_seen_at": "2026-09-01T16:34:47.803209+00:00",
@@ -113,29 +117,30 @@
       "general": {
         "evidence_refs": [
           "chunk-1",
+          "chunk-2",
           "chunk-3"
         ],
         "paragraphs": [
-          "El acuerdo regulariza el uso administrativo de los dos inmuebles federales y asigna obligaciones de conservación, aseguramiento y control a la institución destinataria."
+          "El acuerdo formaliza el aprovechamiento administrativo de los dos predios federales para el proyecto ferroviario identificado, sin transferir su propiedad."
         ]
       },
       "sectors": [
         {
           "evidence_refs": [
-            "chunk-1",
+            "chunk-2",
             "chunk-3"
           ],
           "paragraphs": [
-            "Las áreas responsables deben mantener el uso de ambos inmuebles dentro de la finalidad autorizada, resguardarlos y tramitar las autorizaciones antes de intervenirlos."
+            "La SICT queda sujeta a las reglas de uso, conservación, aseguramiento, autorizaciones de obra y, en su caso, supervisión arqueológica descritas en el acuerdo."
           ],
-          "sector": "Institución destinataria y áreas responsables de los inmuebles"
+          "sector": "Secretaría de Infraestructura, Comunicaciones y Transportes y autoridades de obra"
         }
       ]
     },
     "importance": 1,
     "issuing_body": "Secretaría de Hacienda y Crédito Público",
     "jurisdiction": "nacional",
-    "last_seen_at": "2026-09-01T18:46:30.041123+00:00",
+    "last_seen_at": "2026-09-04T03:37:15.636102+00:00",
     "official_evidence": {
       "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795367&fecha=04/08/2026"
     },
@@ -150,17 +155,29 @@
     "published_year": 2026,
     "recommended_actions": [
       {
-        "affected_group": "Institución destinataria y áreas responsables de los inmuebles",
-        "deadline": "Cuatro meses para poner los inmuebles a disposición si dejan de ser útiles, cuando se actualice ese supuesto",
+        "affected_group": "Áreas responsables de la SICT y ejecutores de obras en los inmuebles",
+        "deadline": "Previo a la realización de las obras.",
         "evidence_refs": [
-          "chunk-1",
+          "chunk-2",
           "chunk-3"
         ],
-        "legal_basis": "Ley General de Bienes Nacionales y términos expresos del acuerdo de destino",
+        "legal_basis": "Punto tercero del acuerdo.",
         "paragraphs": [
-          "Documentar la finalidad autorizada de ambos inmuebles, conservar evidencia de su custodia, mantenimiento y aseguramiento, y gestionar los permisos que correspondan antes de ejecutar obras en ellos."
+          "Antes de iniciar obras, identifiquen las licencias, permisos y autorizaciones aplicables y, si habrá excavaciones o remoción de sedimentos, atiendan la supervisión y vigilancia arqueológica prevista."
         ],
-        "trigger": "Administrar los inmuebles o proyectar una intervención material"
+        "trigger": "Antes de ejecutar obras de construcción, modificación o intervención del subsuelo."
+      },
+      {
+        "affected_group": "Secretaría de Infraestructura, Comunicaciones y Transportes",
+        "deadline": "Dentro de los cuatro meses siguientes a que ya no sean útiles para el servicio, cuando proceda la puesta a disposición.",
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "legal_basis": "Punto segundo del acuerdo y artículo 68 de la Ley General de Bienes Nacionales.",
+        "paragraphs": [
+          "Si los inmuebles dejan de ser útiles para el servicio o se propone un uso distinto, gestionen la autorización o su puesta a disposición de INDAABIN conforme al supuesto aplicable."
+        ],
+        "trigger": "Cuando cambie el uso autorizado o los inmuebles dejen de utilizarse o necesitarse."
       }
     ],
     "relevance_score": 1,
@@ -168,9 +185,9 @@
     "source": "DOF",
     "source_id": "5795367",
     "subtopic_tags": [],
-    "summary": "El Instituto de Administración y Avalúos de Bienes Nacionales destinó a la Secretaría de Infraestructura, Comunicaciones y Transportes dos inmuebles federales: Vías Buenavista Mex-Qro, con Registro Federal Inmobiliario 9-71659-2 y superficie de 3,394.97 metros cuadrados, y Estación Buenavista Mex-Qro, con Registro Federal Inmobiliario 9-71660-9 y superficie de 10,757.32 metros cuadrados. Ambos se ubican en Cuauhtémoc, Ciudad de México, y se destinan a la ampliación de infraestructura ferroviaria del proyecto de tren de pasajeros Ciudad de México-Querétaro, incluida la estación terminal Buenavista y Trenes del Norte. El acuerdo individualiza ambos inmuebles y señala que la destinación busca permitir la continuidad o ejecución del servicio público referido. Su entrada en vigor ocurre al día siguiente de la publicación.\n\nLa destinación confiere a la institución destinataria el derecho de aprovechar los inmuebles únicamente para el uso autorizado. El instrumento aclara que no transmite su propiedad ni otorga derecho real alguno sobre ellos. Si los bienes se usan para una finalidad distinta sin autorización previa de Hacienda por conducto del Instituto, o dejan de utilizarse o necesitarse, deberán ponerse a disposición del Instituto con sus mejoras y accesiones, sin compensación, dentro de los cuatro meses que establece el acuerdo.\n\nLa institución destinataria queda obligada a custodiar y vigilar los inmuebles, cubrir su conservación, mantenimiento, servicios inherentes y aseguramiento contra daños. Para obras de construcción, reconstrucción, modificación, adaptación, conservación, mantenimiento, reparación o demolición en ellos debe gestionar las licencias, permisos o autorizaciones aplicables antes de realizarlas. El acuerdo exige observar las medidas y condicionantes del Instituto Nacional de Antropología e Historia para obras que impliquen excavaciones o remoción de sedimentos, por el potencial arqueológico identificado. El Instituto conserva la vigilancia del cumplimiento de la destinación.\n\nLa publicación resuelve una situación de administración del patrimonio federal y no acredita por sí sola la ejecución física de obras, ampliaciones o servicios futuros. En consecuencia, la ficha distingue el destino jurídico de los inmuebles de cualquier proyecto posterior: las actuaciones materiales requerirán las autorizaciones que el propio acuerdo exige y, cuando corresponda, las condicionantes de las autoridades competentes.",
-    "summary_teaser": "El Instituto de Administración y Avalúos de Bienes Nacionales destinó a la Secretaría de Infraestructura, Comunicaciones y Transportes dos inmuebles federales: Vías Buenavista Mex-Qro (RFI 9-71659-2) y Estación Buenavista Mex-Qro (RFI 9-71660-9), para la ampliación de infraestructura ferroviaria del proyecto de tren de pasajeros Ciudad de México-Querétaro. El acuerdo confiere su aprovechamiento para ese uso, no transmite su propiedad y establece deberes de custodia, conservación y permisos previos para intervenciones.",
-    "title": "Acuerdo concede predios federales para infraestructura ferroviaria Buenavista",
+    "summary": "El Instituto de Administración y Avalúos de Bienes Nacionales destinó a la Secretaría de Infraestructura, Comunicaciones y Transportes dos inmuebles federales ubicados en Avenida Ricardo Flores Magón número 234, colonia Guerrero, alcaldía Cuauhtémoc, Ciudad de México. Se trata de Vías Buenavista Mex-Qro, con una superficie de 3,394.97 metros cuadrados, y Estación Buenavista Mex-Qro, con una superficie de 10,757.32 metros cuadrados. Ambos provienen de un inmueble de mayor extensión y cuentan con registros federales inmobiliarios distintos. El acuerdo señala que la SICT ya tenía posesión provisional derivada de un acta de entrega de 14 de abril de 2026 y los tiene por entregados definitivamente al entrar en vigor el instrumento.\n\nEl destino se otorga para la ampliación de infraestructura ferroviaria del proyecto Tren de pasajeros Ciudad de México-Querétaro, incluida la construcción y ampliación de la estación terminal de los proyectos Buenavista y Trenes del Norte. Los considerandos documentan los antecedentes de propiedad, los planos topográficos que definen superficies y colindancias, y la zonificación aplicable. También incorporan información del INBA y del INAH: este último indicó que, por el potencial arqueológico de la zona, toda obra con excavaciones o remoción de sedimentos más allá de nivelación superficial debe contar con supervisión y vigilancia arqueológica permanente de personal autorizado.\n\nLa SICT debe destinar los predios al uso autorizado. Si les da un uso distinto sin autorización previa de Hacienda, por conducto de INDAABIN, o deja de utilizarlos o necesitarlos, deberá ponerlos a disposición del Instituto con mejoras y accesiones, sin compensación, dentro de los cuatro meses siguientes a la fecha en que dejen de ser útiles al servicio. Las obras de construcción, reconstrucción, modificación, adaptación, conservación, mantenimiento, reparación o demolición requieren gestionar las licencias, permisos, autorizaciones u otros actos que exijan las autoridades locales y federales, y observar las medidas que determine el INAH cuando proceda.\n\nEl acuerdo obliga además a custodiar, vigilar, conservar, mantener y asegurar los inmuebles contra daños. Precisa que el destino confiere sólo el derecho de aprovechamiento para el uso autorizado; no transmite la propiedad ni constituye derecho real alguno. INDAABIN vigilará el cumplimiento y el instrumento se inscribirá en el Registro Público de la Propiedad Federal. Su entrada en vigor es al día siguiente de la publicación oficial.",
+    "summary_teaser": "INDAABIN destinó a la SICT dos inmuebles federales en Buenavista, Ciudad de México, para ampliar infraestructura del tren de pasajeros Ciudad de México-Querétaro y la terminal Buenavista. El destino no transmite propiedad y sujeta obras, uso, conservación y devolución a condiciones expresas.",
+    "title": "Destino establece uso ferroviario de predios Buenavista",
     "topic_tags": [
       "Acuerdo"
     ],

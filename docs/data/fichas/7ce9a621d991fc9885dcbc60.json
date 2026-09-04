@@ -14,6 +14,7 @@
       "reason": null,
       "source_ref": "chunk-2",
       "target_sections": [
+        "executive_summary",
         "detailed_summary",
         "impacts.general",
         "recommended_actions"
@@ -25,8 +26,7 @@
       "source_ref": "chunk-3",
       "target_sections": [
         "detailed_summary",
-        "impacts.general",
-        "recommended_actions"
+        "impacts.sectors"
       ]
     },
     {
@@ -34,9 +34,7 @@
       "reason": null,
       "source_ref": "chunk-4",
       "target_sections": [
-        "detailed_summary",
-        "impacts.general",
-        "recommended_actions"
+        "detailed_summary"
       ]
     },
     {
@@ -45,8 +43,7 @@
       "source_ref": "chunk-5",
       "target_sections": [
         "detailed_summary",
-        "impacts.general",
-        "recommended_actions"
+        "impacts.sectors"
       ]
     },
     {
@@ -54,9 +51,7 @@
       "reason": null,
       "source_ref": "chunk-6",
       "target_sections": [
-        "detailed_summary",
-        "impacts.general",
-        "recommended_actions"
+        "detailed_summary"
       ]
     },
     {
@@ -64,9 +59,7 @@
       "reason": null,
       "source_ref": "chunk-7",
       "target_sections": [
-        "detailed_summary",
-        "impacts.general",
-        "recommended_actions"
+        "detailed_summary"
       ]
     },
     {
@@ -74,8 +67,10 @@
       "reason": null,
       "source_ref": "chunk-8",
       "target_sections": [
+        "executive_summary",
         "detailed_summary",
         "impacts.general",
+        "impacts.sectors",
         "recommended_actions"
       ]
     },
@@ -85,8 +80,7 @@
       "source_ref": "chunk-9",
       "target_sections": [
         "detailed_summary",
-        "impacts.general",
-        "recommended_actions"
+        "impacts.sectors"
       ]
     },
     {
@@ -94,37 +88,57 @@
       "reason": null,
       "source_ref": "chunk-10",
       "target_sections": [
+        "executive_summary",
         "detailed_summary",
         "impacts.general",
+        "impacts.sectors",
         "recommended_actions"
       ]
     }
   ],
-  "cut_id": "80ff8a726797f7b9e5131c53",
+  "cut_id": "9bfb2857e185b6a117ea296f",
   "detailed_summary": [
     {
       "evidence_refs": [
         "chunk-1",
-        "chunk-10"
+        "chunk-2",
+        "chunk-3",
+        "chunk-4",
+        "chunk-5",
+        "chunk-6",
+        "chunk-7",
+        "chunk-8"
       ],
-      "heading": "Contenido publicado",
+      "heading": "Recaudación y participaciones de julio",
       "paragraphs": [
-        "El acuerdo publica la recaudación federal participable de junio, las participaciones de julio y la metodología de cálculo y distribución."
+        "La fuente vincula la recaudación federal participable de junio con el cálculo de las participaciones de julio y presenta los procedimientos, fondos, coeficientes y distribuciones por entidad federativa y, en su caso, por municipio.",
+        "Los cuadros incluyen la integración del Fondo General de Participaciones, Fondo de Fomento Municipal, participaciones específicas de IEPS, Fondo de Extracción de Hidrocarburos, Fondo de Compensación, componente de 0.136 por ciento y participaciones vinculadas con la salida de hidrocarburos."
       ]
     },
     {
       "evidence_refs": [
-        "chunk-1",
+        "chunk-8",
+        "chunk-9",
         "chunk-10"
       ],
-      "heading": "Alcance práctico",
+      "heading": "Fondo de Fiscalización y Recaudación",
       "paragraphs": [
-        "Incluye fondos generales, municipales, hidrocarburos, IEPS y el Fondo de Fiscalización y Recaudación del segundo trimestre, mediante cuadros y coeficientes oficiales."
+        "La segunda parte del instrumento publica la integración del Fondo de Fiscalización y Recaudación por el segundo trimestre de 2026, los coeficientes de sus cuatro partes de crecimiento, la distribución por entidad federativa y las diferencias respecto de anticipos."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2",
+        "chunk-10"
+      ],
+      "heading": "Variabilidad de los montos",
+      "paragraphs": [
+        "La publicación aclara que las cifras de julio no consideran deducciones por compromisos financieros de las entidades y que los montos finales pueden modificarse por variación de ingresos efectivamente captados, cambios de coeficientes o ajustes a pagos provisionales y al ejercicio 2026."
       ]
     }
   ],
   "evidence": {
-    "content_hash": "b228fe315e6eafdc7e5ec9a54ca6b99750e096980653f223323cc13fd1d2b93c",
+    "content_hash": "82a083de5eb6dd14d53a07ac663d8d323789fcaa995d657ec591750147d2cab9",
     "extraction_method": "html-adapter",
     "locators": [
       {
@@ -179,32 +193,36 @@
       }
     ],
     "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796402&fecha=17%2F08%2F2026",
-    "retrieved_at": "2026-09-01T16:35:25.100199+00:00"
+    "retrieved_at": "2026-09-03T16:53:38.012460+00:00"
   },
   "executive_summary": [
-    "La Secretaría de Hacienda y Crédito Público publicó el informe sobre la recaudación federal participable de junio de dos mil veintiséis y las participaciones en ingresos federales de julio del mismo año. El acuerdo explica los procedimientos de cálculo y distribución por entidades federativas y, cuando corresponde, por municipios. Las cifras de julio no incluyen deducciones derivadas de compromisos financieros contraídos por las entidades federativas, según la precisión que contiene el texto.",
-    "El documento integra cuadros para el Fondo General de Participaciones, Fondo de Fomento Municipal, participaciones específicas del impuesto especial sobre producción y servicios, gasolinas y diésel, Fondo de Compensación, Fondo de Extracción de Hidrocarburos, participaciones provisionales, el componente de cero punto ciento treinta y seis por ciento de la recaudación federal participable y transferencias relacionadas con municipios por los que salen hidrocarburos. También da a conocer coeficientes y distribuciones del Fondo de Fiscalización y Recaudación del segundo trimestre de dos mil veintiséis."
+    "La SHCP reporta la recaudación federal participable de junio y la distribución de participaciones federales de julio de 2026, incluidos fondos generales, municipales, de hidrocarburos, compensación, IEPS y componentes para municipios.",
+    "También publica la integración y diferencias del Fondo de Fiscalización y Recaudación del segundo trimestre. El documento advierte que los montos finales pueden cambiar conforme a ingresos efectivos, coeficientes y ajustes."
   ],
   "impacts": {
     "general": {
       "evidence_refs": [
-        "chunk-1",
+        "chunk-2",
+        "chunk-8",
         "chunk-10"
       ],
       "paragraphs": [
-        "La información sirve para transparencia y conciliación de transferencias federales a entidades y municipios; no cambia por sí misma la normativa tributaria."
+        "El documento provee los montos y coeficientes oficiales para la conciliación de participaciones federales de julio y del Fondo de Fiscalización y Recaudación del segundo trimestre, sin eliminar la posibilidad de ajustes posteriores expresamente indicada por la fuente."
       ]
     },
     "sectors": [
       {
         "evidence_refs": [
-          "chunk-1",
+          "chunk-3",
+          "chunk-5",
+          "chunk-8",
+          "chunk-9",
           "chunk-10"
         ],
         "paragraphs": [
-          "Las áreas financieras pueden contrastar sus registros y previsiones con las tablas oficiales y los procedimientos que el acuerdo publica."
+          "Las entidades y municipios aparecen como destinatarios de distribuciones y coeficientes; los cuadros permiten identificar los importes por jurisdicción y las diferencias del Fondo de Fiscalización y Recaudación."
         ],
-        "sector": "Entidades federativas, municipios y áreas de finanzas públicas"
+        "sector": "Entidades federativas y municipios"
       }
     ]
   },
@@ -233,23 +251,24 @@
     "review_reason": null,
     "source": "DOF",
     "source_id": "5796402",
-    "summary_teaser": "La Secretaría de Hacienda publicó la recaudación federal participable de junio y los cálculos de participaciones de julio de dos mil veintiséis, incluidos fondos generales, municipales, hidrocarburos, IEPS, fronteras y litorales. El acuerdo también informa las participaciones del Fondo de Fiscalización y Recaudación correspondientes al segundo trimestre.",
-    "title": "Hacienda determina participaciones federales de julio",
+    "summary_teaser": "La SHCP difundió la recaudación federal participable de junio, la integración y distribución de participaciones de julio de 2026 y el Fondo de Fiscalización y Recaudación del segundo trimestre. Los cuadros incluyen coeficientes, montos por entidad y municipio, así como diferencias frente a anticipos, sujetos a los ajustes que prevé la fuente.",
+    "title": "Informa participaciones federales de julio y FOFIR del segundo trimestre; aclara variación posible",
     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796402&fecha=17/08/2026"
   },
   "recommended_actions": [
     {
-      "affected_group": "Entidades federativas, municipios y áreas de finanzas públicas",
+      "affected_group": "Áreas financieras de entidades federativas y municipios",
       "deadline": null,
       "evidence_refs": [
-        "chunk-1",
+        "chunk-2",
+        "chunk-8",
         "chunk-10"
       ],
-      "legal_basis": "Ley de Coordinación Fiscal y artículo 26 de la Ley del Servicio de Administración Tributaria, citados en el acuerdo",
+      "legal_basis": "Ley de Coordinación Fiscal, artículos 2o., 2o.-A, 3o.-A, 4o.-A, 4o.-B, 5o. y 7o., citados en la publicación.",
       "paragraphs": [
-        "Conciliar participaciones, coeficientes y transferencias con el cuadro aplicable; documentar cualquier diferencia usando la metodología oficial."
+        "Si usan participaciones federales en conciliaciones presupuestarias o tesorería, contrasten los cuadros oficiales aplicables con sus registros y documenten cualquier diferencia, considerando la advertencia de que los montos finales pueden variar."
       ],
-      "trigger": "Preparar registros, presupuestos o conciliaciones de participaciones federales"
+      "trigger": "Si la entidad o municipio recibe o concilia participaciones federales de julio de 2026 o FOFIR del segundo trimestre."
     }
   ],
   "schema_version": 8

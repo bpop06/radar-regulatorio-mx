@@ -1,16 +1,10 @@
 {
   "coverage": [
     {
-      "disposition": "summarized",
-      "reason": null,
+      "disposition": "not_material",
+      "reason": "Repite el encabezado oficial; las modificaciones y su justificación se desarrollan en el segundo fragmento.",
       "source_ref": "chunk-1",
-      "target_sections": [
-        "executive_summary",
-        "detailed_summary",
-        "impacts.general",
-        "impacts.sectors",
-        "recommended_actions"
-      ]
+      "target_sections": []
     },
     {
       "disposition": "summarized",
@@ -25,31 +19,29 @@
       ]
     }
   ],
-  "cut_id": "80ff8a726797f7b9e5131c53",
+  "cut_id": "9bfb2857e185b6a117ea296f",
   "detailed_summary": [
     {
       "evidence_refs": [
         "chunk-2"
       ],
-      "heading": "Contenido publicado",
+      "heading": "Constancia, listado y establecimiento",
       "paragraphs": [
-        "La reforma ajusta los lineamientos a la modificación del decreto de estímulos del Istmo. La constancia será emitida por la Unidad de Política de Ingresos Tributarios previa opinión favorable del CIIT y tendrá vigencia de seis años. Para acreditar presencia en un polo, se contempla domicilio fiscal, agencia, sucursal u otro establecimiento. El texto también incorpora como requisito que no se haya emitido y notificado resolución de emisión de comprobantes fiscales falsos en términos del artículo 49 Bis del CFF.",
-        "Los lineamientos actualizan definiciones, el contenido del listado de contribuyentes acreditados, documentos para acreditar propiedad, concesión o arrendamiento, y causas relacionadas con la pérdida de las condiciones sobre el inmueble. La exposición de motivos refiere que el estímulo de IVA se aplica durante cuatro años desde la obtención de la constancia."
+        "La constancia será emitida por la Unidad de Política de Ingresos Tributarios previa opinión favorable del CIIT y tendrá vigencia de seis años. El listado público deberá incluir datos de identificación y el domicilio, agencia, sucursal u otro establecimiento dentro del PODEBI. Los documentos de solicitud pueden acreditar cualquiera de esas formas de establecimiento."
       ]
     },
     {
       "evidence_refs": [
         "chunk-2"
       ],
-      "heading": "Alcance y lectura práctica",
+      "heading": "Condiciones de acceso y vigencia",
       "paragraphs": [
-        "El acuerdo es relevante para contribuyentes que realicen actividades productivas dentro de los polos del Istmo y para quienes busquen la constancia correspondiente. Entra en vigor al día siguiente de su publicación y no sustituye los requisitos que dependan del decreto o de la opinión del CIIT.",
-        "La ficha se dirige principalmente a contribuyentes y desarrolladores con actividades productivas en los polos del istmo."
+        "La reforma incorpora la condición de no contar con una resolución notificada que determine emisión de comprobantes fiscales falsos en los términos indicados. También modifica una causa relativa a la pérdida de concesión, propiedad o arrendamiento dentro de un polo y establece la vigencia de los lineamientos desde el día siguiente de su publicación."
       ]
     }
   ],
   "evidence": {
-    "content_hash": "1c6ab3724573900668bf62e443b9dbe20608cc8f802feff425d780c96a917c8a",
+    "content_hash": "d948ec7fe899636e5571b46c072f0b9a136acafdd595a8565afda58450833e90",
     "extraction_method": "html-adapter",
     "locators": [
       {
@@ -64,11 +56,11 @@
       }
     ],
     "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796626&fecha=19%2F08%2F2026",
-    "retrieved_at": "2026-09-01T16:35:17.453528+00:00"
+    "retrieved_at": "2026-09-03T16:53:29.522771+00:00"
   },
   "executive_summary": [
-    "La Secretaría de Hacienda y Crédito Público difundió reformas a los lineamientos para obtener beneficios fiscales en los Polos de Desarrollo del Istmo de Tehuantepec. La reforma ajusta los lineamientos a la modificación del decreto de estímulos del Istmo. La constancia será emitida por la Unidad de Política de Ingresos Tributarios previa opinión favorable del CIIT y tendrá vigencia de seis años. Para acreditar presencia en un polo, se contempla domicilio fiscal, agencia, sucursal u otro establecimiento. El texto también incorpora como requisito que no se haya emitido y notificado resolución de emisión de comprobantes fiscales falsos en términos del artículo 49 Bis del CFF.",
-    "El acuerdo es relevante para contribuyentes que realicen actividades productivas dentro de los polos del Istmo y para quienes busquen la constancia correspondiente. Entra en vigor al día siguiente de su publicación y no sustituye los requisitos que dependan del decreto o de la opinión del CIIT. La síntesis se limita a los hechos y condiciones expresamente visibles en la fuente oficial."
+    "Hacienda reformó los lineamientos que regulan la constancia para acceder a beneficios fiscales y facilidades administrativas de los PODEBI del Istmo de Tehuantepec. La reforma adapta los lineamientos al decreto modificatorio publicado en abril de 2026.",
+    "El acuerdo fija seis años de vigencia para la constancia, actualiza documentos de establecimiento en un polo y agrega la condición de no tener una resolución notificada sobre emisión de comprobantes fiscales falsos bajo el artículo 49 Bis del Código Fiscal de la Federación. Entra en vigor al día siguiente de su publicación."
   ],
   "impacts": {
     "general": {
@@ -76,7 +68,7 @@
         "chunk-2"
       ],
       "paragraphs": [
-        "El efecto observable es el que la publicación atribuye al acto: El acuerdo es relevante para contribuyentes que realicen actividades productivas dentro de los polos del Istmo y para quienes busquen la constancia correspondiente. Entra en vigor al día siguiente de su publicación y no sustituye los requisitos que dependan del decreto o de la opinión del CIIT."
+        "La reforma cambia la documentación y condiciones que los lineamientos enumeran para obtener y conservar la constancia vinculada con los beneficios del decreto."
       ]
     },
     "sectors": [
@@ -85,9 +77,9 @@
           "chunk-2"
         ],
         "paragraphs": [
-          "Las personas comprendidas deben considerar el documento porque La reforma ajusta los lineamientos a la modificación del decreto de estímulos del Istmo. La constancia será emitida por la Unidad de Política de Ingresos Tributarios previa opinión favorable del CIIT y tendrá vigencia de seis años. Para acreditar presencia en un polo, se contempla domicilio fiscal, agencia, sucursal u otro establecimiento. El texto también incorpora como requisito que no se haya emitido y notificado resolución de emisión de comprobantes fiscales falsos en términos del artículo 49 Bis del CFF."
+          "Quienes busquen o mantengan una constancia deben revisar el requisito de establecimiento en el polo, la información del listado público y la nueva condición relacionada con resoluciones del artículo 49 Bis del Código Fiscal de la Federación."
         ],
-        "sector": "Contribuyentes y desarrolladores con actividades productivas en los Polos del Istmo"
+        "sector": "Contribuyentes con actividades económicas productivas en PODEBI"
       }
     ]
   },
@@ -117,22 +109,22 @@
     "review_reason": null,
     "source": "DOF",
     "source_id": "5796626",
-    "summary_teaser": "Hacienda reformó los lineamientos de beneficios fiscales para actividades productivas en los Polos de Desarrollo del Istmo de Tehuantepec. La constancia tendrá seis años; se acepta agencia, sucursal u otro establecimiento en el polo, y se incorporan requisitos vinculados con el artículo 49 Bis del CFF.",
-    "title": "Hacienda actualiza requisitos de estímulos para Polos del Istmo",
+    "summary_teaser": "Hacienda reformó los lineamientos de beneficios fiscales para actividades productivas en los Polos de Desarrollo para el Bienestar del Istmo de Tehuantepec. Ajusta requisitos de establecimiento, vigencia de la constancia, datos del listado público y una condición vinculada con resoluciones sobre comprobantes fiscales falsos.",
+    "title": "Hacienda actualiza requisitos para beneficios fiscales del Istmo",
     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796626&fecha=19/08/2026"
   },
   "recommended_actions": [
     {
-      "affected_group": "Contribuyentes y desarrolladores con actividades productivas en los Polos del Istmo",
+      "affected_group": "Contribuyentes interesados en una constancia para PODEBI",
       "deadline": null,
       "evidence_refs": [
         "chunk-2"
       ],
-      "legal_basis": null,
+      "legal_basis": "Lineamientos 3, 9, 10 y 16 reformados o adicionados por el acuerdo.",
       "paragraphs": [
-        "Actualizar expedientes de solicitud con el documento que acredite la presencia en el polo y verificar las condiciones vigentes antes de solicitar o conservar la constancia."
+        "Si solicitan o revisan una constancia, contrasten su documentación de concesión, propiedad, arrendamiento, domicilio, agencia, sucursal u otro establecimiento con los lineamientos reformados y verifiquen la condición incorporada sobre resoluciones fiscales."
       ],
-      "trigger": "Cuando la persona o entidad se ubique en el ámbito material descrito por la fuente oficial."
+      "trigger": "Al preparar una solicitud o evaluar el cumplimiento de requisitos de la constancia."
     }
   ],
   "schema_version": 8

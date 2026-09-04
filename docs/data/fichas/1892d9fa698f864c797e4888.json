@@ -1,47 +1,47 @@
 {
   "coverage": [
     {
-      "disposition": "summarized",
-      "reason": null,
+      "disposition": "not_material",
+      "reason": "Repite el encabezado; la determinación, anexo y plazo se desarrollan en el segundo fragmento.",
       "source_ref": "chunk-1",
-      "target_sections": [
-        "detailed_summary"
-      ]
+      "target_sections": []
     },
     {
       "disposition": "summarized",
       "reason": null,
       "source_ref": "chunk-2",
       "target_sections": [
-        "detailed_summary"
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
       ]
     }
   ],
-  "cut_id": "80ff8a726797f7b9e5131c53",
+  "cut_id": "9bfb2857e185b6a117ea296f",
   "detailed_summary": [
     {
       "evidence_refs": [
         "chunk-2"
       ],
-      "heading": "Alcance de la publicación",
+      "heading": "Determinación y publicación",
       "paragraphs": [
-        "El Servicio de Administración Tributaria publicó el nombre y la clave en el RFC de Comercializadora Topik, respecto de una resolución en la que no desvirtuó la presunción de falsedad de los comprobantes fiscales digitales por internet emitidos; por ello, se consideran falsos con efectos generales y las operaciones contenidas en ellos no producen ni produjeron efecto fiscal alguno.",
-        "Las personas que recibieron CFDI emitidos por la contribuyente deben revertir el efecto fiscal que les hubieren dado mediante la presentación de una declaración complementaria dentro de treinta días naturales a partir de la publicación en el DOF. Si no lo hacen, la autoridad restringirá temporalmente el uso del certificado de sello digital para emitir CFDI, conforme al artículo 17-H Bis, fracción XIV, del Código Fiscal de la Federación."
+        "La Administración Central de Fiscalización Estratégica comunica la determinación de no desvirtuar la presunción de falsedad y publica el nombre y RFC del contribuyente. El anexo incorpora datos de la resolución y de su notificación por Buzón Tributario."
       ]
     },
     {
       "evidence_refs": [
         "chunk-2"
       ],
-      "heading": "Seguimiento operativo",
+      "heading": "Reversión para receptores",
       "paragraphs": [
-        "Las personas receptoras deben identificar los CFDI involucrados y revisar la presentación de la declaración complementaria dentro del plazo de treinta días naturales contado desde la publicación en el DOF.",
-        "La ficha no extiende el alcance del acto a supuestos que la fuente no identifica."
+        "El oficio indica que los terceros receptores deben revertir el efecto fiscal por declaración complementaria en treinta días naturales desde la publicación. De no hacerlo, la autoridad restringirá temporalmente el certificado de sello digital en los términos que cita."
       ]
     }
   ],
   "evidence": {
-    "content_hash": "52d63119e05849cbb1ca16b71b95c5bf59dc875168b7fd52c9cb8a201c03cfc9",
+    "content_hash": "a96a91d59def10d1e43e005b331c2df1a2914125bfc9db04f03cef91dc7675e8",
     "extraction_method": "html-adapter",
     "locators": [
       {
@@ -56,11 +56,11 @@
       }
     ],
     "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795724&fecha=07%2F08%2F2026",
-    "retrieved_at": "2026-09-01T16:35:43.348159+00:00"
+    "retrieved_at": "2026-09-03T16:53:56.149850+00:00"
   },
   "executive_summary": [
-    "El Servicio de Administración Tributaria publicó el nombre y la clave en el RFC de Comercializadora Topik, respecto de una resolución en la que no desvirtuó la presunción de falsedad de los comprobantes fiscales digitales por internet emitidos; por ello, se consideran falsos con efectos generales y las operaciones contenidas en ellos no producen ni produjeron efecto fiscal alguno.",
-    "Las personas que recibieron CFDI emitidos por la contribuyente deben revertir el efecto fiscal que les hubieren dado mediante la presentación de una declaración complementaria dentro de treinta días naturales a partir de la publicación en el DOF. Si no lo hacen, la autoridad restringirá temporalmente el uso del certificado de sello digital para emitir CFDI, conforme al artículo 17-H Bis, fracción XIV, del Código Fiscal de la Federación."
+    "El SAT publicó a Comercializadora Topik, S.A. de C.V., RFC CTO210813AM5, después de una resolución que tuvo por no desvirtuada la presunción de falsedad de sus CFDI. El oficio señala que los comprobantes se consideran falsos con efectos generales y que las operaciones contenidas no producen efecto fiscal.",
+    "Los terceros que recibieron esos CFDI deben revertir el efecto fiscal mediante declaración complementaria dentro de treinta días naturales desde la publicación. El oficio advierte que la falta de reversión genera restricción temporal del certificado de sello digital en los términos citados."
   ],
   "impacts": {
     "general": {
@@ -68,7 +68,7 @@
         "chunk-2"
       ],
       "paragraphs": [
-        "Las personas que recibieron CFDI emitidos por la contribuyente deben revertir el efecto fiscal que les hubieren dado mediante la presentación de una declaración complementaria dentro de treinta días naturales a partir de la publicación en el DOF. Si no lo hacen, la autoridad restringirá temporalmente el uso del certificado de sello digital para emitir CFDI, conforme al artículo 17-H Bis, fracción XIV, del Código Fiscal de la Federación."
+        "La publicación comunica que los CFDI del contribuyente identificado se consideran falsos con efectos generales y que las operaciones documentadas no producen ni produjeron efecto fiscal."
       ]
     },
     "sectors": [
@@ -77,9 +77,9 @@
           "chunk-2"
         ],
         "paragraphs": [
-          "La incidencia para este grupo se limita al alcance expresamente descrito en la publicación y requiere contrastarse con cada caso concreto."
+          "Los receptores que hubieran dado efecto fiscal a CFDI del contribuyente incluido deben considerar el mecanismo y plazo de reversión señalados por el SAT."
         ],
-        "sector": "Personas receptoras de CFDI emitidos por la contribuyente identificada"
+        "sector": "Receptores de CFDI de Comercializadora Topik, S.A. de C.V."
       }
     ]
   },
@@ -109,22 +109,22 @@
     "review_reason": null,
     "source": "DOF",
     "source_id": "5795724",
-    "summary_teaser": "El SAT publicó la identificación de Comercializadora Topik tras una resolución en la que no desvirtuó la presunción de falsedad de los CFDI emitidos. Las operaciones contenidas en esos comprobantes no producen efectos fiscales. Las personas receptoras deben presentar declaración complementaria para revertir el efecto fiscal dentro de treinta días naturales desde la publicación en el DOF; de no hacerlo, procede la restricción temporal del certificado de sello digital.",
-    "title": "Comercializadora Topik: plazo de 30 días para revertir efectos de CFDI falsos",
+    "summary_teaser": "El SAT publicó el nombre y RFC de Comercializadora Topik, S.A. de C.V. tras una resolución que tuvo por no desvirtuada la presunción de falsedad de sus CFDI. Los receptores deben revertir el efecto fiscal mediante declaración complementaria dentro de treinta días naturales desde la publicación.",
+    "title": "CFDI falsos dejan sin efecto fiscal operaciones de Topik",
     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5795724&fecha=07/08/2026"
   },
   "recommended_actions": [
     {
-      "affected_group": "Personas receptoras de CFDI emitidos por la contribuyente identificada",
-      "deadline": "Treinta días naturales a partir de la publicación en el DOF.",
+      "affected_group": "Terceros que recibieron CFDI de Comercializadora Topik, S.A. de C.V.",
+      "deadline": "Treinta días naturales a partir de la publicación en el Diario Oficial de la Federación.",
       "evidence_refs": [
         "chunk-2"
       ],
-      "legal_basis": "Artículo 49 Bis, fracción X, y artículo 17-H Bis, fracción XIV, del Código Fiscal de la Federación.",
+      "legal_basis": "Artículo 49 Bis, fracción X, y artículo 17-H Bis, fracción XIV, del Código Fiscal de la Federación, según el oficio.",
       "paragraphs": [
-        "Las personas receptoras deben identificar los CFDI involucrados y revisar la presentación de la declaración complementaria dentro del plazo de treinta días naturales contado desde la publicación en el DOF."
+        "Si recibieron CFDI del contribuyente identificado y les dieron efecto fiscal, revisen los comprobantes y presenten la declaración complementaria necesaria para revertirlo conforme al oficio."
       ],
-      "trigger": "Desde la publicación del oficio en el Diario Oficial de la Federación."
+      "trigger": "Cuando se hayan recibido CFDI del contribuyente publicado y se les hubiera dado efecto fiscal."
     }
   ],
   "schema_version": 8

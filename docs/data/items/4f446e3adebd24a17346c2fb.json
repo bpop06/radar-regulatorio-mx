@@ -1,10 +1,10 @@
 {
-  "cut_id": "80ff8a726797f7b9e5131c53",
+  "cut_id": "9bfb2857e185b6a117ea296f",
   "item": {
     "ai_generated": true,
     "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
     "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796158&fecha=13%2F08%2F2026",
-    "card_body": "## Qué se publicó\n\nEl Consejo reformó el marco conceptual que guía la contabilidad gubernamental.\n\n## Sustancia\n\nLa reforma actualiza conceptos, reportes y referencias de sostenibilidad, y fija una aplicación obligatoria futura con deberes transitorios.\n\n## Fuente\n\n[Consulta la publicación oficial](https://dof.gob.mx/nota_detalle.php?codigo=5796158&fecha=13%2F08%2F2026)",
+    "card_body": "## Qué se publicó\nSe reformó el Marco Conceptual de Contabilidad Gubernamental para actualizar referencias, estructura e información financiera y para incorporar normas de sostenibilidad como supletorias.\n\n## Sustancia\nLa aplicación será obligatoria desde el 1 de enero de 2027. Las entidades federativas deben difundir el texto en treinta días hábiles y remitir información de adopción en los términos previstos.\n\n## Fuente\nDiario Oficial de la Federación, 13 de agosto de 2026.",
     "case_amount": "",
     "case_claim": "",
     "case_facts": "",
@@ -34,8 +34,10 @@
         "reason": null,
         "source_ref": "chunk-2",
         "target_sections": [
+          "executive_summary",
           "detailed_summary",
           "impacts.general",
+          "impacts.sectors",
           "recommended_actions"
         ]
       },
@@ -44,8 +46,10 @@
         "reason": null,
         "source_ref": "chunk-3",
         "target_sections": [
+          "executive_summary",
           "detailed_summary",
           "impacts.general",
+          "impacts.sectors",
           "recommended_actions"
         ]
       }
@@ -57,21 +61,30 @@
       {
         "evidence_refs": [
           "chunk-1",
-          "chunk-3"
+          "chunk-2"
         ],
-        "heading": "Contenido publicado",
+        "heading": "Cambios al marco conceptual",
         "paragraphs": [
-          "El acuerdo incorpora sostenibilidad como normativa supletoria y actualiza conceptos, referencias y la estructura de los informes gubernamentales."
+          "La reforma incorpora normativa de sostenibilidad como supletoria, actualiza el tratamiento de entes regulados por CNBV y CNSF, homologa referencias a la LGCG y modifica la estructura de los apartados sobre características cualitativas e informes contables, presupuestarios, programáticos y de postura fiscal."
         ]
       },
       {
         "evidence_refs": [
-          "chunk-1",
+          "chunk-2",
           "chunk-3"
         ],
-        "heading": "Alcance práctico",
+        "heading": "Contenido de información financiera",
         "paragraphs": [
-          "Su aplicación obligatoria inicia el primero de enero de dos mil veintisiete y los transitorios fijan deberes de publicación y reporte para entidades federativas."
+          "El texto identifica estados e informes contables, presupuestarios, programáticos e indicadores de postura fiscal. La información contable incluye, entre otros, estados de actividades, situación financiera, cambios y variación de hacienda pública, flujos de efectivo, activo, deuda, pasivos contingentes y notas."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-3"
+        ],
+        "heading": "Vigencia y seguimiento",
+        "paragraphs": [
+          "El acuerdo entra en vigor al día siguiente de su publicación y será obligatorio desde el 1 de enero de 2027. Las entidades federativas deben difundirlo en treinta días hábiles y sus consejos de armonización deben remitir información de adopción a la Secretaría Técnica dentro de quince días hábiles posteriores a ese plazo."
         ]
       }
     ],
@@ -79,7 +92,7 @@
     "document_type": "Acuerdo",
     "editorial_status": "complete",
     "evidence": {
-      "content_hash": "82da4a278008e1c1a09cd5b76a646383009fc869207e910cd14eeece8a42c014",
+      "content_hash": "8e2f6a9274dc76bf3eba8a71d26d3067ca62d67a34b0909a1f455bb1d808d578",
       "extraction_method": "html-adapter",
       "locators": [
         {
@@ -99,11 +112,11 @@
         }
       ],
       "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796158&fecha=13%2F08%2F2026",
-      "retrieved_at": "2026-09-01T16:35:32.007596+00:00"
+      "retrieved_at": "2026-09-03T16:53:45.983373+00:00"
     },
     "executive_summary": [
-      "El Consejo Nacional de Armonización Contable reformó el Marco Conceptual de Contabilidad Gubernamental para alinear la información financiera de los entes públicos con la normativa emitida por el propio Consejo. El acuerdo incorpora como normativa supletoria las Normas de Información de Sostenibilidad, actualiza referencias y conceptos, y precisa el tratamiento aplicable a entes públicos regulados por la Comisión Nacional Bancaria y de Valores y la Comisión Nacional de Seguros y Fianzas.",
-      "La reforma también cambia la presentación de diversos apartados. Entre ellos, deja los postulados básicos solamente enlistados, renombra las cualidades de la información financiera y actualiza la sección sobre estados e informes contables, presupuestarios, programáticos e indicadores de postura fiscal. La fuente enumera información contable, presupuestaria y programática que debe generarse conforme al Manual de Contabilidad Gubernamental, incluidos estados financieros, notas, indicadores y clasificaciones del presupuesto."
+      "El CONAC reforma el Marco Conceptual de Contabilidad Gubernamental para actualizar conceptos, reorganizar apartados de información financiera e incorporar Normas de Información de Sostenibilidad dentro de la normativa supletoria.",
+      "El acuerdo entra en vigor al día siguiente de su publicación, con aplicación obligatoria desde el 1 de enero de 2027. Las entidades federativas tienen deberes específicos de publicación y de reporte de actos de adopción."
     ],
     "extraction_status": "complete",
     "first_seen_at": "2026-09-01T16:34:47.803209+00:00",
@@ -112,30 +125,30 @@
     "impacts": {
       "general": {
         "evidence_refs": [
-          "chunk-1",
+          "chunk-2",
           "chunk-3"
         ],
         "paragraphs": [
-          "El cambio afecta la armonización y presentación de información financiera de entes públicos, con preparación previa antes de la aplicación obligatoria."
+          "La reforma modifica el marco de referencia de la contabilidad gubernamental y define una fecha de aplicación obligatoria, por lo que los entes públicos deben considerar el nuevo texto al preparar su implementación conforme a la LGCG y a la normativa CONAC."
         ]
       },
       "sectors": [
         {
           "evidence_refs": [
-            "chunk-1",
+            "chunk-2",
             "chunk-3"
           ],
           "paragraphs": [
-            "Las áreas responsables deben revisar impactos en políticas contables, sistemas de reporte, manuales y mecanismos de adopción institucional."
+            "Los poderes públicos, entidades federativas, municipios, demarcaciones y organismos comprendidos por la LGCG son el universo de aplicación descrito. Las entidades federativas y sus consejos tienen obligaciones específicas de difusión y remisión de información."
           ],
-          "sector": "Entes públicos, entidades federativas y áreas de contabilidad gubernamental"
+          "sector": "Entes públicos y consejos de armonización contable"
         }
       ]
     },
     "importance": 1,
     "issuing_body": "Secretaría de Hacienda y Crédito Público",
     "jurisdiction": "nacional",
-    "last_seen_at": "2026-09-01T18:46:30.041123+00:00",
+    "last_seen_at": "2026-09-04T03:37:15.636102+00:00",
     "official_evidence": {
       "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796158&fecha=13/08/2026"
     },
@@ -150,17 +163,29 @@
     "published_year": 2026,
     "recommended_actions": [
       {
-        "affected_group": "Entes públicos, entidades federativas y áreas de contabilidad gubernamental",
-        "deadline": "Aplicación obligatoria desde el primero de enero de dos mil veintisiete; publicación estatal en treinta días hábiles y reporte de adopción en quince días hábiles después del plazo de publicación",
+        "affected_group": "Entidades federativas",
+        "deadline": "Treinta días hábiles para publicar; quince días hábiles posteriores a ese plazo para remitir la información de adopción.",
         "evidence_refs": [
-          "chunk-1",
           "chunk-3"
         ],
-        "legal_basis": "Ley General de Contabilidad Gubernamental y acuerdo del CONAC",
+        "legal_basis": "Transitorios segundo y tercero del acuerdo; artículo 7, segundo párrafo, y artículo 15, tercer párrafo, de la LGCG, citados en la fuente.",
         "paragraphs": [
-          "Planear la adopción antes de la fecha obligatoria, publicar el acuerdo cuando corresponda y documentar los actos de implementación para el reporte a la Secretaría Técnica."
+          "Si la entidad es destinataria de la LGCG, programe la publicación del acuerdo en sus medios oficiales escritos y electrónicos y verifique el mecanismo para documentar y remitir los actos locales de adopción."
         ],
-        "trigger": "Preparar, publicar o armonizar información financiera gubernamental"
+        "trigger": "Publicación del acuerdo en el Diario Oficial de la Federación."
+      },
+      {
+        "affected_group": "Unidades de contabilidad gubernamental",
+        "deadline": "1 de enero de 2027.",
+        "evidence_refs": [
+          "chunk-2",
+          "chunk-3"
+        ],
+        "legal_basis": "Artículo único y transitorio primero del acuerdo.",
+        "paragraphs": [
+          "Si preparan normas, registros o informes bajo el marco conceptual, revisen las modificaciones y planifiquen su implementación antes de la fecha de aplicación obligatoria, sin aplicar normativa supletoria que contradiga las disposiciones señaladas por el acuerdo."
+        ],
+        "trigger": "Preparación para la aplicación obligatoria del marco reformado."
       }
     ],
     "relevance_score": 1,
@@ -168,9 +193,9 @@
     "source": "DOF",
     "source_id": "5796158",
     "subtopic_tags": [],
-    "summary": "El Consejo Nacional de Armonización Contable reformó el Marco Conceptual de Contabilidad Gubernamental para alinear la información financiera de los entes públicos con la normativa emitida por el propio Consejo. El acuerdo incorpora como normativa supletoria las Normas de Información de Sostenibilidad, actualiza referencias y conceptos, y precisa el tratamiento aplicable a entes públicos regulados por la Comisión Nacional Bancaria y de Valores y la Comisión Nacional de Seguros y Fianzas.\n\nLa reforma también cambia la presentación de diversos apartados. Entre ellos, deja los postulados básicos solamente enlistados, renombra las cualidades de la información financiera y actualiza la sección sobre estados e informes contables, presupuestarios, programáticos e indicadores de postura fiscal. La fuente enumera información contable, presupuestaria y programática que debe generarse conforme al Manual de Contabilidad Gubernamental, incluidos estados financieros, notas, indicadores y clasificaciones del presupuesto.\n\nEl acuerdo entra en vigor al día siguiente de la publicación, pero su aplicación obligatoria inicia el primero de enero de dos mil veintisiete. Las entidades federativas deben publicarlo en sus medios oficiales escritos y electrónicos dentro de treinta días hábiles posteriores a la publicación en el Diario Oficial. Además, los consejos de armonización contable estatales deben remitir a la Secretaría Técnica la información de los actos de adopción dentro de quince días hábiles contados a partir de la conclusión del plazo de publicación.\n\nLa reforma fija un marco conceptual y de armonización para entes públicos; no reemplaza por sí sola los formatos, sistemas o actos de implementación que correspondan a cada orden de gobierno. Las áreas contables deben distinguir la vigencia formal del acuerdo de la fecha de aplicación obligatoria, y planear la adopción con base en el texto completo, el Manual de Contabilidad Gubernamental y las reglas que resulten aplicables.\n\nPara fines de seguimiento, la publicación debe leerse con la normativa que expresamente cita. Esta ficha sólo reporta el alcance verificable del documento oficial: no anticipa decisiones posteriores, requisitos no publicados ni consecuencias que el texto no atribuye de manera directa.",
-    "summary_teaser": "El Consejo Nacional de Armonización Contable reformó el Marco Conceptual de Contabilidad Gubernamental. La aplicación obligatoria comienza el primero de enero de dos mil veintisiete; las entidades federativas deben publicar el acuerdo dentro de treinta días hábiles y sus consejos deben informar actos de adopción en el plazo posterior indicado.",
-    "title": "Contabilidad gubernamental incorpora sostenibilidad y actualiza sus reportes",
+    "summary": "El Consejo Nacional de Armonización Contable reformó el Marco Conceptual de Contabilidad Gubernamental para actualizar y armonizar sus conceptos con la normativa del propio Consejo y con la Ley General de Contabilidad Gubernamental. El acuerdo incorpora las Normas de Información de Sostenibilidad dentro de la normativa supletoria, junto con las Normas Internacionales de Contabilidad del Sector Público y las normas emitidas por el Consejo Mexicano de Normas de Información Financiera y Sostenibilidad. Precisa que la aplicación de normativa supletoria no puede contravenir la Ley General de Contabilidad Gubernamental, la Ley Federal de Presupuesto y Responsabilidad Hacendaria, la Ley de Disciplina Financiera ni las disposiciones del CONAC, y que su aplicación es responsabilidad del ente público.\n\nLa reforma actualiza el ámbito de aplicación respecto de los entes públicos regulados por la Comisión Nacional Bancaria y de Valores y por la Comisión Nacional de Seguros y Fianzas, que continúan sujetos a la Ley General de Contabilidad Gubernamental y a la normativa del CONAC. Homologa la referencia abreviada a esa ley como LGCG, modifica y reordena párrafos del marco, deja el numeral de Postulados Básicos de Contabilidad Gubernamental como listado y renombra los apartados sobre cualidades de información financiera y sobre estados presupuestarios, financieros y económicos. El nuevo texto denomina esos apartados Características Cualitativas de la Información Financiera a Producir y Estados e Informes Contables, Presupuestarios, Programáticos y de los Indicadores de Postura Fiscal.\n\nEl marco reformado conserva los propósitos de generar información financiera confiable y comparable, favorecer la rendición de cuentas y la fiscalización, y describe información contable, presupuestaria, programática y de postura fiscal. Enumera información contable como estados de actividades, situación financiera, variación de hacienda pública, flujos de efectivo, activo, deuda y pasivos, contingencias y notas. El acuerdo entra en vigor al día siguiente de su publicación, pero su aplicación es obligatoria desde el 1 de enero de 2027. Las entidades federativas deben publicarlo en sus medios oficiales escritos y electrónicos dentro de treinta días hábiles; sus consejos de armonización deben remitir a la Secretaría Técnica del CONAC la información de adopción en quince días hábiles posteriores al término de ese plazo.",
+    "summary_teaser": "El CONAC reformó el Marco Conceptual de Contabilidad Gubernamental para incorporar normas de sostenibilidad como supletorias, actualizar conceptos y reorganizar sus apartados de información financiera. El acuerdo entra en vigor al día siguiente de su publicación y será obligatorio desde el 1 de enero de 2027; las entidades federativas deben difundirlo en treinta días hábiles.",
+    "title": "Actualiza contabilidad gubernamental con aplicación obligatoria en 2027",
     "topic_tags": [
       "Acuerdo"
     ],

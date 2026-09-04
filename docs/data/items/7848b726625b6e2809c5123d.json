@@ -1,10 +1,10 @@
 {
-  "cut_id": "80ff8a726797f7b9e5131c53",
+  "cut_id": "9bfb2857e185b6a117ea296f",
   "item": {
     "ai_generated": true,
     "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
     "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797381&fecha=28%2F08%2F2026",
-    "card_body": "## Qué se publicó\n\nEl SAT comunicó la publicación de un contribuyente vinculado con CFDI sin efectos fiscales.\n\n## Sustancia\n\nLa fuente identifica al emisor y señala la obligación de revertir el efecto fiscal que se hubiera dado a sus comprobantes, en los términos y plazo que publica.\n\n## Fuente\n\n[Consulta la publicación oficial](https://dof.gob.mx/nota_detalle.php?codigo=5797381&fecha=28%2F08%2F2026)",
+    "card_body": "## Qué se publicó\n\nEl SAT comunicó la inclusión de un contribuyente en la publicación prevista por el artículo 49 Bis del CFF sobre comprobantes fiscales digitales.\n\n## Sustancia\n\nEl oficio identifica al contribuyente del anexo, expone la determinación administrativa comunicada y señala la reversión del efecto fiscal para terceros que recibieron los comprobantes, con el plazo expresamente indicado.\n\n## Fuente\n\nDOF, Oficio del SAT sobre la fracción X del artículo 49 Bis del CFF, publicado el 28 de agosto de 2026.",
     "case_amount": "",
     "case_claim": "",
     "case_facts": "",
@@ -35,8 +35,10 @@
         "reason": null,
         "source_ref": "chunk-2",
         "target_sections": [
+          "executive_summary",
           "detailed_summary",
           "impacts.general",
+          "impacts.sectors",
           "recommended_actions"
         ]
       }
@@ -50,19 +52,18 @@
           "chunk-1",
           "chunk-2"
         ],
-        "heading": "Publicación del contribuyente y sus CFDI",
+        "heading": "Determinación y contribuyente identificado",
         "paragraphs": [
-          "El aviso identifica a SERVIARUGA, A.C. con RFC SER2212218H9 y comunica que la presunción de falsedad de sus CFDI no fue desvirtuada; por ello el texto les atribuye falta de efectos fiscales con alcance general."
+          "El oficio comunica la resolución prevista por el artículo 49 Bis y el anexo identifica a Serviaruga, A.C. con RFC SER2212218H9, así como el oficio de resolución y sus fechas de notificación."
         ]
       },
       {
         "evidence_refs": [
-          "chunk-1",
           "chunk-2"
         ],
-        "heading": "Efecto para receptores",
+        "heading": "Efecto para receptores de CFDI",
         "paragraphs": [
-          "La fuente ordena a terceros que hayan dado efectos fiscales a esos CFDI revertirlos mediante declaración complementaria en treinta días naturales desde la publicación y advierte la restricción temporal del certificado de sello digital ante el incumplimiento."
+          "El SAT señala que los comprobantes se consideran falsos con efectos generales y que quienes les hubieran dado efecto fiscal deben revertirlo mediante declaración complementaria dentro de 30 días naturales desde la publicación en el DOF."
         ]
       }
     ],
@@ -70,7 +71,7 @@
     "document_type": "Oficio",
     "editorial_status": "complete",
     "evidence": {
-      "content_hash": "5f75f35a00d11c8a1ddba8d456f4406098ac8b5a26b133fc2978fb4e9e4db98e",
+      "content_hash": "68628f5c56978ffb14e4a679cf3a7b69a3281ade1fee9aef547646ab500278b2",
       "extraction_method": "html-adapter",
       "locators": [
         {
@@ -85,11 +86,11 @@
         }
       ],
       "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797381&fecha=28%2F08%2F2026",
-      "retrieved_at": "2026-09-01T16:34:56.018560+00:00"
+      "retrieved_at": "2026-09-03T16:53:14.074567+00:00"
     },
     "executive_summary": [
-      "El Servicio de Administración Tributaria publicó el nombre de SERVIARUGA, A.C. y el RFC SER2212218H9 en el supuesto de la fracción X del artículo 49 Bis del Código Fiscal de la Federación. El anexo identifica a la persona contribuyente y el oficio de la resolución administrativa. Según el documento, la autoridad concluyó, tras el procedimiento previsto en ese artículo, que no se desvirtuó la presunción de falsedad de los comprobantes fiscales digitales por Internet emitidos por esa persona.",
-      "La consecuencia que la publicación atribuye a esos CFDI es que se consideran falsos con efectos generales por incumplir el requisito referido en el artículo 29-A, fracción IX, del Código Fiscal de la Federación. Por ello, el propio aviso indica que las operaciones asentadas en dichos comprobantes no producen ni produjeron efecto fiscal. Esta ficha no extiende esa conclusión a comprobantes distintos de los emitidos por la persona publicada ni a operaciones que el documento no identifica."
+      "El SAT publicó el RFC y nombre de Serviaruga, A.C. y comunicó que la resolución referida determinó que no desvirtuó la presunción sobre los CFDI del anexo.",
+      "La fuente informa que los receptores que hubieran dado efecto fiscal a esos comprobantes deben revertirlo mediante declaración complementaria dentro del plazo indicado, con la consecuencia administrativa que el oficio vincula a no hacerlo."
     ],
     "extraction_status": "complete",
     "first_seen_at": "2026-09-01T16:34:47.803209+00:00",
@@ -98,30 +99,37 @@
     "impacts": {
       "general": {
         "evidence_refs": [
-          "chunk-1",
           "chunk-2"
         ],
         "paragraphs": [
-          "El efecto directo recae en la trazabilidad fiscal de operaciones respaldadas por CFDI del emisor publicado y en las revisiones que correspondan a sus receptores."
+          "La publicación comunica una situación que puede afectar el tratamiento fiscal dado por terceros a CFDI emitidos por el contribuyente identificado, en los términos que el propio oficio señala."
         ]
       },
       "sectors": [
         {
           "evidence_refs": [
-            "chunk-1",
             "chunk-2"
           ],
           "paragraphs": [
-            "Quienes hayan recibido CFDI de SERVIARUGA, A.C. deben ubicar los comprobantes y contrastar su tratamiento fiscal con la determinación y el plazo que el oficio comunica."
+            "Quienes hubieran recibido comprobantes del contribuyente del anexo deben evaluar si les dieron efecto fiscal y si el supuesto descrito por el oficio les exige una declaración complementaria."
           ],
-          "sector": "Receptores de CFDI del contribuyente publicado"
+          "sector": "Receptores de CFDI del contribuyente identificado"
+        },
+        {
+          "evidence_refs": [
+            "chunk-2"
+          ],
+          "paragraphs": [
+            "Las áreas responsables deben conservar la distinción entre la comunicación publicada, la resolución individual y los hechos concretos de cada operación, pues el oficio no detalla todas las transacciones."
+          ],
+          "sector": "Áreas fiscales y de facturación"
         }
       ]
     },
     "importance": 2,
     "issuing_body": "Secretaría de Hacienda y Crédito Público",
     "jurisdiction": "nacional",
-    "last_seen_at": "2026-09-01T18:46:30.041123+00:00",
+    "last_seen_at": "2026-09-04T03:37:15.636102+00:00",
     "official_evidence": {
       "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797381&fecha=28/08/2026"
     },
@@ -136,17 +144,28 @@
     "published_year": 2026,
     "recommended_actions": [
       {
-        "affected_group": "Receptores de CFDI del contribuyente publicado",
-        "deadline": "Treinta días naturales contados a partir de la publicación en el Diario Oficial de la Federación",
+        "affected_group": "Receptores de CFDI de Serviaruga, A.C.",
+        "deadline": "Treinta días naturales a partir de la publicación del oficio en el DOF.",
         "evidence_refs": [
-          "chunk-1",
           "chunk-2"
         ],
-        "legal_basis": "Artículo 49 Bis, fracción X, y artículo 17-H Bis, fracción XIV, del Código Fiscal de la Federación, citados en el oficio",
+        "legal_basis": "Artículo 49 Bis, fracción X, y artículo 17-H Bis, fracción XIV, del CFF, citados en el oficio.",
         "paragraphs": [
-          "Identificar los CFDI recibidos de SERVIARUGA, A.C., revisar el efecto fiscal que se les dio y, si corresponde, presentar la declaración complementaria dentro del plazo publicado. Conservar expediente documental de la revisión."
+          "Si recibieron CFDI del contribuyente identificado y les dieron efecto fiscal, revisen el alcance de la publicación y, si aplica, presenten la declaración complementaria para revertir ese efecto."
         ],
-        "trigger": "Haber recibido CFDI emitidos por el contribuyente publicado y haberles dado efectos fiscales"
+        "trigger": "Haber recibido CFDI emitidos por el contribuyente listado y haberles dado efecto fiscal."
+      },
+      {
+        "affected_group": "Responsables fiscales del contribuyente y de sus contrapartes",
+        "deadline": null,
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "legal_basis": null,
+        "paragraphs": [
+          "Conserven la resolución, notificaciones y expedientes de cada operación antes de extraer conclusiones adicionales, porque el oficio publicado no describe operaciones ni importes individuales."
+        ],
+        "trigger": "Análisis de consecuencias fiscales o de cumplimiento derivadas del oficio."
       }
     ],
     "relevance_score": 3,
@@ -156,9 +175,9 @@
     "subtopic_tags": [
       "codigo fiscal"
     ],
-    "summary": "El Servicio de Administración Tributaria publicó el nombre de SERVIARUGA, A.C. y el RFC SER2212218H9 en el supuesto de la fracción X del artículo 49 Bis del Código Fiscal de la Federación. El anexo identifica a la persona contribuyente y el oficio de la resolución administrativa. Según el documento, la autoridad concluyó, tras el procedimiento previsto en ese artículo, que no se desvirtuó la presunción de falsedad de los comprobantes fiscales digitales por Internet emitidos por esa persona.\n\nLa consecuencia que la publicación atribuye a esos CFDI es que se consideran falsos con efectos generales por incumplir el requisito referido en el artículo 29-A, fracción IX, del Código Fiscal de la Federación. Por ello, el propio aviso indica que las operaciones asentadas en dichos comprobantes no producen ni produjeron efecto fiscal. Esta ficha no extiende esa conclusión a comprobantes distintos de los emitidos por la persona publicada ni a operaciones que el documento no identifica.\n\nEl oficio se dirige también a quienes recibieron CFDI del contribuyente citado. Les comunica que deben conocer la situación y revertir el efecto fiscal que hubieran dado a esos comprobantes mediante declaración complementaria. El texto fija treinta días naturales contados a partir de la publicación en el Diario Oficial de la Federación para hacerlo y señala que, si no se cumple, la autoridad restringirá temporalmente el uso del certificado de sello digital para emitir CFDI conforme al artículo 17-H Bis, fracción XIV, citado en el propio aviso.\n\nLa publicación funciona como comunicación oficial de la determinación respecto del emisor incluido en el anexo; no sustituye la revisión documental de cada receptor ni cuantifica ajustes, contribuciones, accesorios o efectos para un caso individual. La medida operativa verificable es revisar si se recibieron CFDI de la persona identificada, conservar la trazabilidad de las operaciones y, si procede, valorar la declaración complementaria dentro del plazo expresamente publicado.",
-    "summary_teaser": "El SAT publicó a SERVIARUGA, A.C. y su RFC como contribuyente que no desvirtuó la presunción de falsedad de los CFDI emitidos. El aviso señala que esos comprobantes no producen efectos fiscales y que quienes les hayan dado efectos deben revertirlos mediante declaración complementaria dentro del plazo señalado.",
-    "title": "SAT exige revertir efectos de CFDI falsos de Serviaruga",
+    "summary": "El Servicio de Administración Tributaria publicó en el Diario Oficial el nombre y RFC de Serviaruga, A.C., RFC SER2212218H9, con base en la fracción X del artículo 49 Bis del Código Fiscal de la Federación. El oficio expone que, después del procedimiento previsto por ese precepto, la Administración Central de Fiscalización Estratégica emitió una resolución que determinó que el contribuyente del anexo no desvirtuó la presunción de falsedad de los comprobantes fiscales digitales por internet emitidos.\n\nConforme al texto oficial, esos comprobantes se consideran falsos con efectos generales por no cumplir el artículo 29-A, fracción IX, del CFF, y las operaciones contenidas en ellos no producen ni produjeron efecto fiscal alguno. El anexo identifica la resolución 500-05-00-00-00-2026-24495, de 11 de agosto de 2026. También señala que la notificación por Buzón Tributario ocurrió el 12 de agosto y surtió efectos el 13 de agosto de 2026. El documento no describe las operaciones, los receptores, los importes ni las razones particulares de fondo, por lo que no permite atribuir hechos distintos de la determinación que comunica.\n\nEl oficio señala que la publicación en el portal del SAT y en el DOF permite a los terceros que recibieron CFDI del contribuyente conocer la situación y revertir el efecto fiscal que les hubieran otorgado mediante una declaración complementaria. El plazo que el documento indica para ello es de 30 días naturales desde la publicación en el DOF. Si no se presenta, el SAT señala que restringirá temporalmente el uso del certificado de sello digital para emitir CFDI conforme al artículo 17-H Bis, fracción XIV, del CFF.\n\nAsimismo, el texto describe que el nombre y RFC se publican dentro de los 45 días hábiles posteriores a que surte efectos la notificación de la resolución. Esa mención corresponde al mecanismo de publicación, no a un nuevo plazo para terceros. La fuente acredita la comunicación oficial de la determinación y de las consecuencias que indica, pero no el cumplimiento posterior de los receptores ni la situación fiscal completa de operaciones específicas.",
+    "summary_teaser": "El SAT publicó el RFC y nombre de Serviaruga, A.C. conforme al artículo 49 Bis del CFF. El oficio comunica que no desvirtuó la presunción sobre sus CFDI y advierte a terceros sobre la reversión del efecto fiscal mediante declaración complementaria.",
+    "title": "SAT determina efectos fiscales de comprobantes falsos",
     "topic_tags": [
       "Fiscal",
       "Oficio"

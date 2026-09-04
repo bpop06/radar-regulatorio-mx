@@ -1,9 +1,12 @@
 {
-  "cut_id": "80ff8a726797f7b9e5131c53",
+  "cut_id": "9bfb2857e185b6a117ea296f",
   "schema_version": 8,
   "source": "retractions",
   "state": {
     "items": {
+      "anam:780e101837f9bd31": {
+        "retracted_at": "2026-09-04T03:45:04.138611+00:00"
+      },
       "cpi:b3ca701b1684cf90": {
         "retracted_at": "2026-08-13T05:07:20.890880+00:00"
       },
