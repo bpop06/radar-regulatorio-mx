@@ -5,6 +5,7 @@
       "reason": null,
       "source_ref": "chunk-1",
       "target_sections": [
+        "executive_summary",
         "detailed_summary"
       ]
     },
@@ -13,35 +14,47 @@
       "reason": null,
       "source_ref": "chunk-2",
       "target_sections": [
-        "detailed_summary"
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
       ]
     }
   ],
-  "cut_id": "80ff8a726797f7b9e5131c53",
+  "cut_id": "9bfb2857e185b6a117ea296f",
   "detailed_summary": [
     {
       "evidence_refs": [
+        "chunk-1",
         "chunk-2"
       ],
-      "heading": "Alcance de la publicación",
+      "heading": "Sanción y ámbito",
       "paragraphs": [
-        "La circular del Órgano Interno de Control en la Secretaría de Infraestructura, Comunicaciones y Transportes comunicó una inhabilitación temporal de Teleconstrucciones Marver por tres meses y quince días para presentar propuestas o celebrar contratos en obra pública y servicios relacionados con recursos federales.",
-        "Las entidades destinatarias deben abstenerse de recibir propuestas o celebrar contratos con la empresa desde el día siguiente de la publicación de la circular en el DOF y de su registro en ComprasMX. Si la multa no se cubre al concluir el plazo, la inhabilitación subsiste hasta el pago. Los contratos adjudicados o formalizados no quedan comprendidos."
+        "La circular comunica la inhabilitación temporal derivada del procedimiento SAN/005/2025-SPR. La empresa no puede presentar propuestas ni celebrar contratos directa o indirectamente en materia de obras públicas y servicios relacionados cuando se usen recursos federales conforme a los convenios descritos."
       ]
     },
     {
       "evidence_refs": [
         "chunk-2"
       ],
-      "heading": "Seguimiento operativo",
+      "heading": "Inicio y duración",
       "paragraphs": [
-        "Las áreas de obra pública deben verificar el estatus de Teleconstrucciones Marver y abstenerse de recibir propuestas o celebrar contratos durante el plazo comunicado.",
-        "La ficha no extiende el alcance del acto a supuestos que la fuente no identifica."
+        "El deber de abstención inicia al día siguiente de publicación en el Diario Oficial y registro en ComprasMX, y dura tres meses y quince días. Si la multa no se ha pagado al finalizar ese periodo, la inhabilitación subsiste hasta acreditarse el pago."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Contratos existentes",
+      "paragraphs": [
+        "Los contratos adjudicados y los ya formalizados con la empresa no quedan comprendidos en la circular."
       ]
     }
   ],
   "evidence": {
-    "content_hash": "5923eb49a8afa043a713a73bdc3fac182f56bdd5ed185d02fbcbfd93af374a94",
+    "content_hash": "af3e14989538548dc82e4062014a03603dec54429b4fc6fae68ffcff8c4cab23",
     "extraction_method": "html-adapter",
     "locators": [
       {
@@ -56,11 +69,11 @@
       }
     ],
     "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796635&fecha=19%2F08%2F2026",
-    "retrieved_at": "2026-09-01T16:35:16.355575+00:00"
+    "retrieved_at": "2026-09-03T16:53:28.359311+00:00"
   },
   "executive_summary": [
-    "La circular del Órgano Interno de Control en la Secretaría de Infraestructura, Comunicaciones y Transportes comunicó una inhabilitación temporal de Teleconstrucciones Marver por tres meses y quince días para presentar propuestas o celebrar contratos en obra pública y servicios relacionados con recursos federales.",
-    "Las entidades destinatarias deben abstenerse de recibir propuestas o celebrar contratos con la empresa desde el día siguiente de la publicación de la circular en el DOF y de su registro en ComprasMX. Si la multa no se cubre al concluir el plazo, la inhabilitación subsiste hasta el pago. Los contratos adjudicados o formalizados no quedan comprendidos."
+    "Teleconstrucciones Marver, S. de R.L. de C.V. fue inhabilitada por tres meses y quince días para nuevas propuestas y contratos de obras públicas y servicios relacionados en los supuestos de recursos federales señalados.",
+    "La restricción comienza al día siguiente de publicación y registro en ComprasMX, puede subsistir hasta el pago de la multa y no incluye contratos ya adjudicados o formalizados."
   ],
   "impacts": {
     "general": {
@@ -68,7 +81,7 @@
         "chunk-2"
       ],
       "paragraphs": [
-        "Las entidades destinatarias deben abstenerse de recibir propuestas o celebrar contratos con la empresa desde el día siguiente de la publicación de la circular en el DOF y de su registro en ComprasMX. Si la multa no se cubre al concluir el plazo, la inhabilitación subsiste hasta el pago. Los contratos adjudicados o formalizados no quedan comprendidos."
+        "Las entidades obligadas deben excluir a la empresa de nuevos procedimientos y contratos dentro del alcance de obras públicas con fondos federales, mientras subsista la inhabilitación comunicada."
       ]
     },
     "sectors": [
@@ -77,9 +90,9 @@
           "chunk-2"
         ],
         "paragraphs": [
-          "La incidencia para este grupo se limita al alcance expresamente descrito en la publicación y requiere contrastarse con cada caso concreto."
+          "Dependencias, entidades, estados, municipios, entes públicos y demarcaciones están mencionados como destinatarios de la abstención en procedimientos y contratos de obras públicas y servicios relacionados."
         ],
-        "sector": "Áreas de obra pública destinatarias de la circular"
+        "sector": "Compradores públicos y entes que contratan obras con recursos federales"
       }
     ]
   },
@@ -108,22 +121,22 @@
     "review_reason": null,
     "source": "DOF",
     "source_id": "5796635",
-    "summary_teaser": "La circular del Órgano Interno de Control en la SICT comunicó la inhabilitación de Teleconstrucciones Marver por tres meses y quince días en obra pública y servicios relacionados financiados con recursos federales. La abstención de recibir propuestas o celebrar contratos inicia el día siguiente de su publicación en el DOF y registro en ComprasMX. La multa impaga prolonga la inhabilitación hasta el pago.",
-    "title": "OIC inhabilita a Teleconstrucciones Marver en obra pública federal",
+    "summary_teaser": "La Secretaría Anticorrupción y Buen Gobierno comunicó una inhabilitación de tres meses y quince días para Teleconstrucciones Marver, S. de R.L. de C.V., en contrataciones de obras públicas y servicios relacionados financiados total o parcialmente con recursos federales. La restricción inicia al día siguiente de publicación y registro en ComprasMX; contratos vigentes no quedan comprendidos.",
+    "title": "Inhabilita a Teleconstrucciones Marver para contratos con fondos federales",
     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796635&fecha=19/08/2026"
   },
   "recommended_actions": [
     {
-      "affected_group": "Áreas de obra pública destinatarias de la circular",
-      "deadline": "Tres meses y 15 días; si la multa no se paga al concluirlos, la inhabilitación subsiste hasta el pago.",
+      "affected_group": "Áreas contratantes con procedimientos de obras públicas financiados total o parcialmente con recursos federales",
+      "deadline": "Desde el día siguiente a ambos actos y por tres meses y quince días; o hasta pago de la multa si subsiste la inhabilitación.",
       "evidence_refs": [
         "chunk-2"
       ],
-      "legal_basis": null,
+      "legal_basis": "Resolutivo cuarto de la resolución citado en la circular; artículos 77, 78 y 79 de la Ley de Obras Públicas y Servicios Relacionados con las Mismas, citados en la fuente.",
       "paragraphs": [
-        "Las áreas de obra pública deben verificar el estatus de Teleconstrucciones Marver y abstenerse de recibir propuestas o celebrar contratos durante el plazo comunicado."
+        "Si tienen procedimientos abiertos o nuevas contrataciones dentro del alcance de la circular, incorporen la verificación de la inhabilitación y absténganse de recibir propuestas o celebrar contratos con la empresa durante el periodo aplicable."
       ],
-      "trigger": "Desde el día siguiente a la publicación en el DOF y al registro en ComprasMX."
+      "trigger": "Publicación de la circular y registro de la sanción en ComprasMX."
     }
   ],
   "schema_version": 8

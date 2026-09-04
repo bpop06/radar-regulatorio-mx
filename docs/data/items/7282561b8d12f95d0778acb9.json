@@ -1,10 +1,10 @@
 {
-  "cut_id": "80ff8a726797f7b9e5131c53",
+  "cut_id": "9bfb2857e185b6a117ea296f",
   "item": {
     "ai_generated": true,
     "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
     "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796063&fecha=12%2F08%2F2026",
-    "card_body": "## Qué se publicó\n\nEl Instituto confirmó el régimen de dominio público de un inmueble federal en uso de la Fiscalía.\n\n## Sustancia\n\nLa declaratoria precisa su protección patrimonial, su administración por la institución destinataria y su inscripción para efectos de certeza jurídica.\n\n## Fuente\n\n[Consulta la publicación oficial](https://dof.gob.mx/nota_detalle.php?codigo=5796063&fecha=12%2F08%2F2026)",
+    "card_body": "## Qué se publicó\nSe declaró sujeto al régimen de dominio público federal un inmueble usado por la Fiscalía General de la República en la Ciudad de México.\n\n## Sustancia\nEl inmueble es inalienable, imprescriptible e inembargable. La Fiscalía tiene carácter de institución destinataria mientras conserve su posesión, control, administración y uso; el régimen subsiste aun si deja de ocuparlo.\n\n## Fuente\nDiario Oficial de la Federación, 12 de agosto de 2026.",
     "case_amount": "",
     "case_claim": "",
     "case_facts": "",
@@ -34,8 +34,10 @@
         "reason": null,
         "source_ref": "chunk-2",
         "target_sections": [
+          "executive_summary",
           "detailed_summary",
           "impacts.general",
+          "impacts.sectors",
           "recommended_actions"
         ]
       }
@@ -49,19 +51,27 @@
           "chunk-1",
           "chunk-2"
         ],
-        "heading": "Contenido publicado",
+        "heading": "Inmueble e institución destinataria",
         "paragraphs": [
-          "El Instituto declaró sujeto al régimen de dominio público federal el inmueble que la Fiscalía General de la República posee, controla y administra."
+          "La declaratoria se refiere al Parque Nacional de la Justicia A, con Registro Federal Inmobiliario 9-71325-0, ubicado en la Ciudad de México. La Fiscalía General de la República conserva el carácter de institución destinataria mientras mantenga posesión, control, administración y uso."
         ]
       },
       {
         "evidence_refs": [
-          "chunk-1",
           "chunk-2"
         ],
-        "heading": "Alcance práctico",
+        "heading": "Régimen de dominio público",
         "paragraphs": [
-          "La fuente confirma los atributos de inalienabilidad, imprescriptibilidad e inembargabilidad y prevé que el régimen continúe aun si cambia la ocupación institucional."
+          "El texto declara que el inmueble está sujeto al régimen de dominio público federal, por lo que es inalienable, imprescriptible e inembargable. La fuente excluye prescripción, acciones reivindicatorias e interdictos posesorios de terceros."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "heading": "Continuidad e inscripción",
+        "paragraphs": [
+          "El régimen continúa si la Fiscalía deja de ocupar el inmueble o si éste se pone a disposición de Hacienda e INDAABIN. Se ordena publicar e inscribir la declaratoria en los registros federal y local, con vigencia al día siguiente de su publicación."
         ]
       }
     ],
@@ -69,7 +79,7 @@
     "document_type": "Declaratoria De Sujeción",
     "editorial_status": "complete",
     "evidence": {
-      "content_hash": "9786ebec91a74ecc5f7246e2baba411b6045a4e358291b505f9ac2080fa71c37",
+      "content_hash": "54f984e6a82b52013e9a6720017ddc532932bad9b55e17d2fb9fb096673b748d",
       "extraction_method": "html-adapter",
       "locators": [
         {
@@ -84,11 +94,11 @@
         }
       ],
       "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796063&fecha=12%2F08%2F2026",
-      "retrieved_at": "2026-09-01T16:35:32.658943+00:00"
+      "retrieved_at": "2026-09-03T16:53:45.761134+00:00"
     },
     "executive_summary": [
-      "El Instituto de Administración y Avalúos de Bienes Nacionales emitió una declaratoria de sujeción al régimen de dominio público de la Federación respecto del inmueble federal denominado Parque Nacional de la Justicia A, ubicado en Álvaro Obregón, Ciudad de México. La fuente señala que la Fiscalía General de la República tiene la posesión, control, administración y uso del inmueble, el cual ya figura en el Sistema de Inventario del Patrimonio Inmobiliario Federal con el registro que identifica.",
-      "La declaratoria afirma que el inmueble se encuentra sujeto al régimen de dominio público federal. Como consecuencia, el texto lo califica de inalienable, imprescriptible e inembargable; añade que no está sujeto a prescripción positiva o negativa, acciones reivindicatorias ni interdictos posesorios de terceros, y que no puede considerarse bien vacante en los términos que cita. Esos efectos derivan de la declaratoria y de la Ley General de Bienes Nacionales que el documento invoca."
+      "INDAABIN declaró sujeto al régimen de dominio público de la Federación el inmueble Parque Nacional de la Justicia A, bajo posesión, control, administración y uso de la Fiscalía General de la República.",
+      "La declaratoria atribuye al inmueble los caracteres de inalienable, imprescriptible e inembargable, ordena su inscripción pública y prevé que el régimen subsista incluso si la Fiscalía deja de ocuparlo."
     ],
     "extraction_status": "complete",
     "first_seen_at": "2026-09-01T16:34:47.803209+00:00",
@@ -97,30 +107,28 @@
     "impacts": {
       "general": {
         "evidence_refs": [
-          "chunk-1",
           "chunk-2"
         ],
         "paragraphs": [
-          "El acto fortalece la certeza registral y patrimonial del inmueble federal, con efectos sobre su administración y protección jurídica."
+          "La declaratoria aporta certeza sobre la naturaleza federal del inmueble y fija las consecuencias de su sometimiento al dominio público, sin extinguir el régimen si cambia la ocupación o destino material en los supuestos previstos."
         ]
       },
       "sectors": [
         {
           "evidence_refs": [
-            "chunk-1",
             "chunk-2"
           ],
           "paragraphs": [
-            "Las áreas responsables deben mantener la administración y los registros del inmueble conforme al régimen de dominio público confirmado por la declaratoria."
+            "La Fiscalía es la institución destinataria mientras mantenga posesión, control, administración y uso, y debe actuar mediante su responsable inmobiliario para cumplir las disposiciones citadas por la declaratoria."
           ],
-          "sector": "Fiscalía General de la República y responsables de patrimonio inmobiliario federal"
+          "sector": "Fiscalía General de la República"
         }
       ]
     },
     "importance": 1,
     "issuing_body": "Secretaría de Hacienda y Crédito Público",
     "jurisdiction": "nacional",
-    "last_seen_at": "2026-09-01T18:46:30.041123+00:00",
+    "last_seen_at": "2026-09-04T03:37:15.636102+00:00",
     "official_evidence": {
       "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796063&fecha=12/08/2026"
     },
@@ -135,17 +143,16 @@
     "published_year": 2026,
     "recommended_actions": [
       {
-        "affected_group": "Fiscalía General de la República y responsables de patrimonio inmobiliario federal",
+        "affected_group": "Responsable inmobiliario de la Fiscalía General de la República",
         "deadline": null,
         "evidence_refs": [
-          "chunk-1",
           "chunk-2"
         ],
-        "legal_basis": "Ley General de Bienes Nacionales y declaratoria de sujeción al régimen de dominio público",
+        "legal_basis": "Punto tercero de la declaratoria; artículos 28, fracción I, y 32 de la Ley General de Bienes Nacionales, citados en la fuente.",
         "paragraphs": [
-          "Actualizar inventarios y expedientes inmobiliarios con la declaratoria, verificar su inscripción registral y aplicar las obligaciones de administración previstas por la Ley General de Bienes Nacionales."
+          "Si la Fiscalía conserva el uso del inmueble, verifique que el control patrimonial y registral identifique su régimen de dominio público y documente las obligaciones de la institución destinataria señaladas por la fuente."
         ],
-        "trigger": "Administrar, registrar o consultar la situación jurídica del inmueble declarado"
+        "trigger": "Posesión, control, administración y uso del inmueble por la Fiscalía."
       }
     ],
     "relevance_score": 1,
@@ -153,9 +160,9 @@
     "source": "DOF",
     "source_id": "5796063",
     "subtopic_tags": [],
-    "summary": "El Instituto de Administración y Avalúos de Bienes Nacionales emitió una declaratoria de sujeción al régimen de dominio público de la Federación respecto del inmueble federal denominado Parque Nacional de la Justicia A, ubicado en Álvaro Obregón, Ciudad de México. La fuente señala que la Fiscalía General de la República tiene la posesión, control, administración y uso del inmueble, el cual ya figura en el Sistema de Inventario del Patrimonio Inmobiliario Federal con el registro que identifica.\n\nLa declaratoria afirma que el inmueble se encuentra sujeto al régimen de dominio público federal. Como consecuencia, el texto lo califica de inalienable, imprescriptible e inembargable; añade que no está sujeto a prescripción positiva o negativa, acciones reivindicatorias ni interdictos posesorios de terceros, y que no puede considerarse bien vacante en los términos que cita. Esos efectos derivan de la declaratoria y de la Ley General de Bienes Nacionales que el documento invoca.\n\nMientras la Fiscalía conserve la posesión, control, administración y uso, tendrá el carácter de institución destinataria y deberá cumplir, a través de su responsable inmobiliario, las obligaciones legales mencionadas en el acto. La fuente también aclara que el inmueble continuará sujeto al régimen de dominio público aun si la Fiscalía deja de ocuparlo y se pone a disposición de Hacienda por medio del Instituto, o si deja de destinarse a las finalidades que la ley refiere.\n\nLa declaratoria da certeza sobre la naturaleza jurídica y el régimen patrimonial del inmueble; no es una autorización de obra, una transmisión de propiedad ni un anuncio de cambio de uso. El acto ordena su publicación e inscripción en registros públicos para efectos de publicidad. Las acciones materiales o administrativas posteriores deben sujetarse a la Ley General de Bienes Nacionales y a los procedimientos específicos que resulten aplicables.\n\nPara fines de seguimiento, la publicación debe leerse con la normativa que expresamente cita. Esta ficha sólo reporta el alcance verificable del documento oficial: no anticipa decisiones posteriores, requisitos no publicados ni consecuencias que el texto no atribuye de manera directa.",
-    "summary_teaser": "El Instituto de Administración y Avalúos de Bienes Nacionales declaró sujeto al régimen de dominio público federal el inmueble Parque Nacional de la Justicia A, en uso de la Fiscalía General de la República. La declaratoria confirma su carácter inalienable, imprescriptible e inembargable y ordena su inscripción registral.",
-    "title": "Declaratoria declara dominio público federal del Parque de la Justicia",
+    "summary": "La Dirección General de Administración del Patrimonio Inmobiliario Federal del Instituto de Administración y Avalúos de Bienes Nacionales emitió una declaratoria de sujeción al régimen de dominio público de la Federación respecto del inmueble federal denominado Parque Nacional de la Justicia A. La fuente lo identifica con Registro Federal Inmobiliario 9-71325-0, ubicado en la Carretera Federal México-Toluca kilómetro 14.5, colonia San Gabriel, alcaldía Álvaro Obregón, Ciudad de México. Señala que la Fiscalía General de la República tiene la posesión, control, administración y uso del inmueble, cuyas medidas, colindancias y coordenadas se consignan en el plano topográfico referido por el documento.\n\nLa declaratoria parte de que los inmuebles federales destinados de hecho o mediante ordenamiento jurídico a un servicio público están sujetos al régimen de dominio público de la Federación. El texto indica que el inmueble está controlado en el Sistema de Inventario del Patrimonio Inmobiliario Federal y Paraestatal con el registro citado. También refiere que el 30 de julio de 2026 se publicó la notificación de inicio del procedimiento administrativo y que el término para que personas interesadas manifestaran lo que a su derecho conviniera venció el 4 de agosto de 2026.\n\nComo consecuencia, el bien queda sujeto al régimen de dominio público de la Federación y es inalienable, imprescriptible e inembargable. La fuente precisa que no está sujeto a prescripción positiva o negativa, ni a acciones reivindicatorias o interdictos posesorios de terceros, y que no puede considerarse bien vacante para los efectos señalados en el Código Civil Federal. Mientras la Fiscalía General de la República mantenga la posesión, control, administración y uso, tendrá carácter de institución destinataria y deberá cumplir por conducto de su responsable inmobiliario con los artículos legales citados. Aun si deja de ocupar el inmueble y éste es puesto a disposición de Hacienda por medio de INDAABIN, o si deja de destinarse a las finalidades mencionadas, continuará sujeto al dominio público federal. La declaratoria ordena publicación e inscripción en los registros públicos federal y local y entra en vigor al día siguiente de la publicación.",
+    "summary_teaser": "INDAABIN declaró sujeto al régimen de dominio público de la Federación el inmueble Parque Nacional de la Justicia A, en la alcaldía Álvaro Obregón, Ciudad de México, bajo posesión, control, administración y uso de la Fiscalía General de la República. La declaratoria precisa su carácter inalienable, imprescriptible e inembargable y ordena su inscripción registral.",
+    "title": "Declara dominio público federal sobre inmueble usado por Fiscalía",
     "topic_tags": [],
     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796063&fecha=12/08/2026"
   },

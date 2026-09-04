@@ -1,10 +1,10 @@
 {
-  "cut_id": "80ff8a726797f7b9e5131c53",
+  "cut_id": "9bfb2857e185b6a117ea296f",
   "item": {
     "ai_generated": true,
     "authority": "PODER EJECUTIVO SECRETARIA ANTICORRUPCION Y BUEN GOBIERNO",
     "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795243&fecha=03%2F08%2F2026",
-    "card_body": "## Qué se publicó\n\nLa autoridad difundió una restricción temporal de contratación aplicable a la empresa señalada.\n\n## Sustancia\n\nLa circular precisa la duración, la materia contractual cubierta, la excepción para contratos adjudicados o ya formalizados y la regla de continuidad vinculada al pago de la multa.\n\n## Fuente\n\n[Consulta la publicación oficial](https://dof.gob.mx/nota_detalle.php?codigo=5795243&fecha=03%2F08%2F2026)",
+    "card_body": "## Qué se publicó\n\nLa autoridad comunicó una inhabilitación para contratar con Profesionales en Vigilancia y Seguridad Privada.\n\n## Sustancia\n\nLa circular impone a Profesionales en Vigilancia y Seguridad Privada una multa de 165,026.50 pesos y una inhabilitación de tres meses en adquisiciones, obras públicas y asociaciones público privadas. Desde el día siguiente de la publicación deben abstenerse de contratar con la empresa. Si la multa no se paga al cumplirse tres meses, la inhabilitación subsiste hasta el pago. Contratos adjudicados y formalizados actualmente quedan fuera. Entidades federativas, municipios y demarcaciones sólo aplican la circular si la contratación se financia total o parcialmente con fondos federales.\n\n## Fuente\n\n[Abrir publicación oficial](https://dof.gob.mx/nota_detalle.php?codigo=5795243&fecha=03%2F08%2F2026)",
     "case_amount": "",
     "case_claim": "",
     "case_facts": "",
@@ -26,7 +26,10 @@
         "source_ref": "chunk-1",
         "target_sections": [
           "executive_summary",
-          "detailed_summary"
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
         ]
       },
       {
@@ -34,8 +37,10 @@
         "reason": null,
         "source_ref": "chunk-2",
         "target_sections": [
+          "executive_summary",
           "detailed_summary",
           "impacts.general",
+          "impacts.sectors",
           "recommended_actions"
         ]
       }
@@ -49,9 +54,9 @@
           "chunk-1",
           "chunk-2"
         ],
-        "heading": "Inhabilitación comunicada",
+        "heading": "Contenido verificable",
         "paragraphs": [
-          "La circular ordena a las entidades destinatarias abstenerse de aceptar propuestas o celebrar contratos con Profesionales en Vigilancia y Seguridad Privada, S.A. de C.V. durante tres meses, desde el día siguiente a su publicación, dentro de la materia contractual que delimita."
+          "La autoridad comunicó una inhabilitación para contratar con Profesionales en Vigilancia y Seguridad Privada. La circular impone a Profesionales en Vigilancia y Seguridad Privada una multa de 165,026.50 pesos y una inhabilitación de tres meses en adquisiciones, obras públicas y asociaciones público privadas."
         ]
       },
       {
@@ -59,9 +64,19 @@
           "chunk-1",
           "chunk-2"
         ],
-        "heading": "Límites y continuidad de la medida",
+        "heading": "Efectos, plazos y condiciones",
         "paragraphs": [
-          "Los contratos ya adjudicados o formalizados quedan fuera de la aplicación indicada. Si la multa permanece impaga al concluir el término, la inhabilitación continúa hasta que se acredite el pago según la propia circular."
+          "Desde el día siguiente de la publicación deben abstenerse de contratar con la empresa. Si la multa no se paga al cumplirse tres meses, la inhabilitación subsiste hasta el pago. Contratos adjudicados y formalizados actualmente quedan fuera. Entidades federativas, municipios y demarcaciones sólo aplican la circular si la contratación se financia total o parcialmente con fondos federales."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "heading": "Alcance y lectura",
+        "paragraphs": [
+          "El alcance verificable se limita a los supuestos expresos. Verificar identidad, materia y vigencia antes de recibir propuesta o contratar. Aplicar el alcance local sólo si existe financiamiento federal total o parcial."
         ]
       }
     ],
@@ -69,7 +84,7 @@
     "document_type": "Circular",
     "editorial_status": "complete",
     "evidence": {
-      "content_hash": "4395f3278244fdbadae5e2586104ca02b4b8f3f2b0c6b04594028606d2b4d699",
+      "content_hash": "fbf23113a1da31f305a82763af3999014777c64262b07f029470db0a567a6d84",
       "extraction_method": "html-adapter",
       "locators": [
         {
@@ -84,11 +99,11 @@
         }
       ],
       "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795243&fecha=03%2F08%2F2026",
-      "retrieved_at": "2026-09-01T16:35:53.287427+00:00"
+      "retrieved_at": "2026-09-02T00:36:17.134767+00:00"
     },
     "executive_summary": [
-      "La circular comunica la resolución administrativa que impuso a Profesionales en Vigilancia y Seguridad Privada, S.A. de C.V. una inhabilitación temporal de tres meses. A partir del día siguiente a la publicación en el Diario Oficial de la Federación, las autoridades destinatarias deben abstenerse de aceptar propuestas o celebrar contratos regulados por las leyes de adquisiciones, obras públicas y asociaciones público privadas con la empresa, de manera directa o por interpósita persona. La ficha se limita a la inhabilitación y al ámbito que la circular expresa.",
-      "El alcance material se refiere a procedimientos y contratos regulados por las leyes de adquisiciones, obras públicas y asociaciones público privadas. El documento dirige la comunicación a dependencias y entidades federales y, en los términos que precisa, a entidades federativas, municipios, demarcaciones territoriales y otros entes cuando las contrataciones se cubran total o parcialmente con recursos federales derivados de convenios con el Ejecutivo Federal. La circular no convierte por sí misma cualquier relación comercial ajena a ese ámbito en una prohibición."
+      "La autoridad comunicó una inhabilitación para contratar con Profesionales en Vigilancia y Seguridad Privada. La circular impone a Profesionales en Vigilancia y Seguridad Privada una multa de 165,026.50 pesos y una inhabilitación de tres meses en adquisiciones, obras públicas y asociaciones público privadas.",
+      "Desde el día siguiente de la publicación deben abstenerse de contratar con la empresa. Si la multa no se paga al cumplirse tres meses, la inhabilitación subsiste hasta el pago. Contratos adjudicados y formalizados actualmente quedan fuera. Entidades federativas, municipios y demarcaciones sólo aplican la circular si la contratación se financia total o parcialmente con fondos federales."
     ],
     "extraction_status": "complete",
     "first_seen_at": "2026-09-01T16:34:47.803209+00:00",
@@ -101,7 +116,7 @@
           "chunk-2"
         ],
         "paragraphs": [
-          "La publicación incide en la validación de elegibilidad de proveedores y contratistas para procedimientos y contratos cubiertos por recursos federales."
+          "El efecto y alcance se limitan a las condiciones expresas del documento; no se infieren consecuencias fuera de ellas."
         ]
       },
       "sectors": [
@@ -111,16 +126,16 @@
             "chunk-2"
           ],
           "paragraphs": [
-            "Las áreas contratantes deben abstenerse de aceptar propuestas o celebrar contratos con la empresa señalada sólo en el alcance que la circular fija; los contratos adjudicados o formalizados están excluidos de esa restricción."
+            "Verificar identidad, materia y vigencia antes de recibir propuesta o contratar. Aplicar el alcance local sólo si existe financiamiento federal total o parcial."
           ],
-          "sector": "Áreas contratantes y unidades de compras públicas"
+          "sector": "Dependencias, entidades, entidades federativas, municipios y demarcaciones que contraten con recursos federales"
         }
       ]
     },
     "importance": 2,
     "issuing_body": "Presidencia de la República",
     "jurisdiction": "nacional",
-    "last_seen_at": "2026-09-01T18:46:30.041123+00:00",
+    "last_seen_at": "2026-09-04T03:37:15.636102+00:00",
     "official_evidence": {
       "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795243&fecha=03/08/2026"
     },
@@ -135,17 +150,17 @@
     "published_year": 2026,
     "recommended_actions": [
       {
-        "affected_group": "Áreas contratantes y unidades de compras públicas",
-        "deadline": "tres meses a partir del día siguiente a la publicación, con la extensión condicionada al pago de la multa que la fuente prevé",
+        "affected_group": "Dependencias, entidades, entidades federativas, municipios y demarcaciones que contraten con recursos federales",
+        "deadline": "Tres meses desde el día siguiente; subsiste hasta el pago de la multa si no se cubre.",
         "evidence_refs": [
           "chunk-1",
           "chunk-2"
         ],
-        "legal_basis": "Leyes de Adquisiciones, Arrendamientos y Servicios del Sector Público; de Obras Públicas y Servicios Relacionados con las Mismas; y de Asociaciones Público Privadas, así como términos de la circular",
+        "legal_basis": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a las entidades federativas y sus municipios, los entes públicos de unas y otros, así como a las demarcaciones territoriales de la Ciudad de México, que deberán abstenerse de aceptar propuestas o celebrar contratos con la empresa Profesionales en Vigilancia y Seguridad Privada, S.A. de C.V.",
         "paragraphs": [
-          "Verificar la identidad de Profesionales en Vigilancia y Seguridad Privada, S.A. de C.V., el objeto contractual y el origen de los recursos antes de aceptar propuestas o celebrar contratos. Identificar como excluidos de la circular los contratos ya adjudicados o formalizados."
+          "Verificar identidad, materia y vigencia antes de recibir propuesta o contratar. Aplicar el alcance local sólo si existe financiamiento federal total o parcial."
         ],
-        "trigger": "Tramitar un procedimiento o contrato comprendido en la circular"
+        "trigger": "Antes de recibir propuestas o celebrar contratos en las materias señaladas."
       }
     ],
     "relevance_score": 2,
@@ -155,9 +170,9 @@
     "subtopic_tags": [
       "administracion publica federal"
     ],
-    "summary": "La circular comunica la resolución administrativa que impuso a Profesionales en Vigilancia y Seguridad Privada, S.A. de C.V. una inhabilitación temporal de tres meses. A partir del día siguiente a la publicación en el Diario Oficial de la Federación, las autoridades destinatarias deben abstenerse de aceptar propuestas o celebrar contratos regulados por las leyes de adquisiciones, obras públicas y asociaciones público privadas con la empresa, de manera directa o por interpósita persona. La ficha se limita a la inhabilitación y al ámbito que la circular expresa.\n\nEl alcance material se refiere a procedimientos y contratos regulados por las leyes de adquisiciones, obras públicas y asociaciones público privadas. El documento dirige la comunicación a dependencias y entidades federales y, en los términos que precisa, a entidades federativas, municipios, demarcaciones territoriales y otros entes cuando las contrataciones se cubran total o parcialmente con recursos federales derivados de convenios con el Ejecutivo Federal. La circular no convierte por sí misma cualquier relación comercial ajena a ese ámbito en una prohibición.\n\nLa fuente establece como excepción los contratos ya adjudicados o formalizados: no quedan comprendidos en la aplicación de la circular. También establece que, si al vencer la inhabilitación no se ha pagado la multa impuesta, la restricción subsiste hasta que se acredite el pago ante la Secretaría Anticorrupción y Buen Gobierno para eliminar el registro de la sancionada en ComprasMX. No se infiere una fecha de liberación distinta de la que resulta de esas condiciones.\n\nPara quienes compran con recursos públicos, el dato operativo es verificar la identidad de la persona o empresa, el tipo de procedimiento y la fuente de financiamiento antes de aceptar propuestas o celebrar contratos. La publicación no describe los hechos de fondo del procedimiento ni sustituye la consulta del expediente, de ComprasMX o de las reglas específicas aplicables a una contratación concreta.",
-    "summary_teaser": "La autoridad comunicó la inhabilitación de Profesionales en Vigilancia y Seguridad Privada, S.A. de C.V. por tres meses. Desde el día siguiente a la publicación en el DOF, las entidades destinatarias deben abstenerse de aceptar propuestas o celebrar contratos en las materias cubiertas. Los contratos ya adjudicados o formalizados quedan fuera de la circular y la fuente prevé continuidad si la multa sigue impaga.",
-    "title": "Autoridad inhabilita empresa de vigilancia para contrataciones públicas",
+    "summary": "La fuente oficial íntegra corresponde a Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a las entidades federativas y sus municipios, los entes públicos de unas y otros, así como a las demarcaciones territoriales de la Ciudad de México, que deberán abstenerse de aceptar propuestas o celebrar contratos con la empresa Profesionales en Vigilancia y Seguridad Privada, S.A. de C.V.. El texto fue reconstruido desde 2 fragmentos continuos y permanece ligado a su URL, hash de extracción y localizadores. La autoridad comunicó una inhabilitación para contratar con Profesionales en Vigilancia y Seguridad Privada.\n\nLa circular impone a Profesionales en Vigilancia y Seguridad Privada una multa de 165,026.50 pesos y una inhabilitación de tres meses en adquisiciones, obras públicas y asociaciones público privadas. Desde el día siguiente de la publicación deben abstenerse de contratar con la empresa. Si la multa no se paga al cumplirse tres meses, la inhabilitación subsiste hasta el pago. Contratos adjudicados y formalizados actualmente quedan fuera. Entidades federativas, municipios y demarcaciones sólo aplican la circular si la contratación se financia total o parcialmente con fondos federales.\n\nEl alcance verificable se limita a los sujetos, materias y supuestos que el documento expresa. No se calculan fechas que la fuente no proporcione, no se convierten condiciones en efectos generales y no se atribuyen resultados individuales fuera de su texto.\n\nPara Dependencias, entidades, entidades federativas, municipios y demarcaciones que contraten con recursos federales, la referencia práctica debe partir del documento oficial y del caso concreto. Verificar identidad, materia y vigencia antes de recibir propuesta o contratar. Aplicar el alcance local sólo si existe financiamiento federal total o parcial. Esta orientación no sustituye una determinación de autoridad ni acredita por sí sola cumplimiento, incumplimiento, derecho individual o efecto práctico.\n\nLa ficha relaciona todos los bloques estructurados con los locators de la extracción completa. Esa trazabilidad permite revisar el texto oficial antes de usar título, plazo, condición, identificador o consecuencia en una decisión.",
+    "summary_teaser": "La autoridad comunicó una inhabilitación para contratar con Profesionales en Vigilancia y Seguridad Privada. La circular impone a Profesionales en Vigilancia y Seguridad Privada una multa de 165,026.50 pesos y una inhabilitación de tres meses en adquisiciones, obras públicas y asociaciones público privadas. La ficha conserva sujetos, condiciones, plazos y localizadores de la fuente oficial..",
+    "title": "Circular inhabilita tres meses a Profesionales en Vigilancia",
     "topic_tags": [
       "Derecho administrativo",
       "Circular"

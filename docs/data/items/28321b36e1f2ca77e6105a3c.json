@@ -1,10 +1,10 @@
 {
-  "cut_id": "80ff8a726797f7b9e5131c53",
+  "cut_id": "9bfb2857e185b6a117ea296f",
   "item": {
     "ai_generated": true,
     "authority": "PODER EJECUTIVO SECRETARIA DE CIENCIA, HUMANIDADES, TECNOLOGIA E INNOVACION",
     "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796068&fecha=12%2F08%2F2026",
-    "card_body": "## Qué se publicó\n\nLa Universidad informó la publicación electrónica de su Manual de Organización General.\n\n## Sustancia\n\nEl instrumento describe su organización interna y la fuente aclara que no crea obligaciones ni costos adicionales para particulares.\n\n## Fuente\n\n[Consulta la publicación oficial](https://dof.gob.mx/nota_detalle.php?codigo=5796068&fecha=12%2F08%2F2026)",
+    "card_body": "## Qué se publicó\n\nUn aviso sobre la disponibilidad pública en línea del Manual de Organización General de la Universidad Nacional Rosario Castellanos.\n\n## Sustancia\n\nEl aviso identifica el Manual como instrumento de organización interna, informa su fecha de emisión y proporciona medios oficiales de consulta; no reproduce su contenido íntegro.\n\n## Fuente\n\nDiario Oficial de la Federación, publicación de 12 de agosto de 2026.",
     "case_amount": "",
     "case_claim": "",
     "case_facts": "",
@@ -21,21 +21,20 @@
     "country_or_org": "México",
     "coverage": [
       {
-        "disposition": "summarized",
-        "reason": null,
+        "disposition": "not_material",
+        "reason": "Repite el encabezado oficial; los antecedentes, enlaces y alcance se desarrollan en el segundo fragmento.",
         "source_ref": "chunk-1",
-        "target_sections": [
-          "executive_summary",
-          "detailed_summary"
-        ]
+        "target_sections": []
       },
       {
         "disposition": "summarized",
         "reason": null,
         "source_ref": "chunk-2",
         "target_sections": [
+          "executive_summary",
           "detailed_summary",
           "impacts.general",
+          "impacts.sectors",
           "recommended_actions"
         ]
       }
@@ -46,22 +45,11 @@
     "detailed_summary": [
       {
         "evidence_refs": [
-          "chunk-1",
           "chunk-2"
         ],
-        "heading": "Contenido publicado",
+        "heading": "Difusión y alcance del instrumento",
         "paragraphs": [
-          "El aviso pone a disposición el Manual de Organización General de la Universidad y explica que regula su estructura y funciones internas."
-        ]
-      },
-      {
-        "evidence_refs": [
-          "chunk-1",
-          "chunk-2"
-        ],
-        "heading": "Alcance práctico",
-        "paragraphs": [
-          "La fuente señala que el instrumento no aumenta obligaciones ni costos para particulares y debe consultarse íntegramente para una atribución específica."
+          "El aviso reporta visto bueno de la unidad organizacional competente y una exención de análisis de impacto regulatorio, al considerar que el Manual no incrementa obligaciones ni costos para particulares. Identifica la fecha de emisión y los enlaces para consultar su versión íntegra, pero no reproduce el Manual."
         ]
       }
     ],
@@ -69,7 +57,7 @@
     "document_type": "Aviso",
     "editorial_status": "complete",
     "evidence": {
-      "content_hash": "6116bab72d11727dd2a054503ec1d8e57b67658ac1e8fed915504035be27b488",
+      "content_hash": "20db30138f70e01e51ee248eba2a21d5735d7821bb1f313eb1af1f1d1e6dd9b4",
       "extraction_method": "html-adapter",
       "locators": [
         {
@@ -84,11 +72,11 @@
         }
       ],
       "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796068&fecha=12%2F08%2F2026",
-      "retrieved_at": "2026-09-01T16:35:32.873564+00:00"
+      "retrieved_at": "2026-09-03T16:53:46.228604+00:00"
     },
     "executive_summary": [
-      "La Universidad Nacional Rosario Castellanos publicó un aviso para informar la disponibilidad de su Manual de Organización General 2026-2030 en una dirección electrónica institucional. El documento explica que el manual es el instrumento normativo-administrativo que establece la estructura orgánica, las atribuciones, funciones y responsabilidades de las unidades administrativas de la Universidad. La publicación busca cumplir la obligación de difusión oficial de manuales de organización y facilitar su consulta pública.",
-      "La fuente refiere que la Dirección General de Recursos Humanos y Organización de la Secretaría de Ciencia, Humanidades, Tecnología e Innovación emitió visto bueno al manual. Asimismo, cita una constancia de exención de análisis de impacto regulatorio de la Agencia de Transformación Digital y Telecomunicaciones. La razón expresada es que el manual se refiere a organización y funcionamiento interno y no modifica ni incrementa obligaciones para particulares, ni adiciona costos burocráticos."
+      "La Universidad Nacional Rosario Castellanos informó que su Manual de Organización General puede consultarse mediante una liga institucional y otra del Diario Oficial de la Federación. El aviso describe el Manual como instrumento de estructura, atribuciones, funciones y responsabilidades internas.",
+      "La publicación refiere visto bueno organizacional y una exención de análisis de impacto regulatorio, porque el Manual se limita a organización y funcionamiento internos. La fuente no reproduce el contenido íntegro, por lo que las atribuciones específicas deben verificarse en el documento enlazado."
     ],
     "extraction_status": "complete",
     "first_seen_at": "2026-09-01T16:34:47.803209+00:00",
@@ -97,30 +85,28 @@
     "impacts": {
       "general": {
         "evidence_refs": [
-          "chunk-1",
           "chunk-2"
         ],
         "paragraphs": [
-          "La publicación mejora la transparencia de la organización interna y la identificación de áreas competentes de la Universidad."
+          "La publicación pone a disposición un instrumento de organización interna y precisa que, según la exención descrita, no modifica ni incrementa obligaciones o costos para particulares."
         ]
       },
       "sectors": [
         {
           "evidence_refs": [
-            "chunk-1",
             "chunk-2"
           ],
           "paragraphs": [
-            "El personal debe usar el manual vigente y las personas usuarias pueden consultar la versión oficial para ubicar atribuciones internas."
+            "Las personas que deban revisar estructura, atribuciones o responsabilidades institucionales cuentan con los medios oficiales de consulta indicados en el aviso."
           ],
-          "sector": "Personal y personas usuarias de la Universidad Nacional Rosario Castellanos"
+          "sector": "Unidades administrativas y comunidad de la Universidad Nacional Rosario Castellanos"
         }
       ]
     },
     "importance": 2,
     "issuing_body": "Presidencia de la República",
     "jurisdiction": "nacional",
-    "last_seen_at": "2026-09-01T18:46:30.041123+00:00",
+    "last_seen_at": "2026-09-04T03:37:15.636102+00:00",
     "official_evidence": {
       "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796068&fecha=12/08/2026"
     },
@@ -135,17 +121,16 @@
     "published_year": 2026,
     "recommended_actions": [
       {
-        "affected_group": "Personal y personas usuarias de la Universidad Nacional Rosario Castellanos",
+        "affected_group": "Personas que necesiten aplicar o interpretar el Manual de Organización General",
         "deadline": null,
         "evidence_refs": [
-          "chunk-1",
           "chunk-2"
         ],
-        "legal_basis": "Aviso institucional y normativa de organización administrativa citada en él",
+        "legal_basis": null,
         "paragraphs": [
-          "Actualizar referencias institucionales y consultar el manual íntegro antes de dirigir escritos o solicitudes a una unidad administrativa específica."
+          "Consulten la versión íntegra en los enlaces oficiales antes de atribuir a una unidad una función, competencia o procedimiento específico, pues el aviso no reproduce el contenido completo del Manual."
         ],
-        "trigger": "Gestionar un asunto o identificar una unidad competente de la Universidad"
+        "trigger": "Al requerir una atribución, función o responsabilidad concreta de la Universidad."
       }
     ],
     "relevance_score": 2,
@@ -155,9 +140,9 @@
     "subtopic_tags": [
       "manual de organizacion"
     ],
-    "summary": "La Universidad Nacional Rosario Castellanos publicó un aviso para informar la disponibilidad de su Manual de Organización General 2026-2030 en una dirección electrónica institucional. El documento explica que el manual es el instrumento normativo-administrativo que establece la estructura orgánica, las atribuciones, funciones y responsabilidades de las unidades administrativas de la Universidad. La publicación busca cumplir la obligación de difusión oficial de manuales de organización y facilitar su consulta pública.\n\nLa fuente refiere que la Dirección General de Recursos Humanos y Organización de la Secretaría de Ciencia, Humanidades, Tecnología e Innovación emitió visto bueno al manual. Asimismo, cita una constancia de exención de análisis de impacto regulatorio de la Agencia de Transformación Digital y Telecomunicaciones. La razón expresada es que el manual se refiere a organización y funcionamiento interno y no modifica ni incrementa obligaciones para particulares, ni adiciona costos burocráticos.\n\nEl aviso identifica la fecha de emisión del manual y ofrece la liga de consulta oficial, además de un enlace de referencia del Diario Oficial. No reproduce las atribuciones de cada unidad administrativa ni la estructura completa. Por ello, la publicación es evidencia de la disponibilidad y carácter organizacional del instrumento, pero cualquier conclusión sobre una facultad concreta requiere revisar el texto íntegro puesto a disposición por la Universidad.\n\nPara quienes gestionen asuntos con la Universidad, el manual puede servir para identificar unidades responsables y canales de competencia, pero no es apropiado afirmar cambios concretos sin contrastar el documento completo. La propia fuente delimita el alcance regulatorio: es una norma interna que no crea obligaciones adicionales para particulares. Esta ficha conserva esa delimitación y no atribuye efectos externos no publicados.\n\nPara fines de seguimiento, la publicación debe leerse con la normativa que expresamente cita. Esta ficha sólo reporta el alcance verificable del documento oficial: no anticipa decisiones posteriores, requisitos no publicados ni consecuencias que el texto no atribuye de manera directa.",
-    "summary_teaser": "La Universidad Nacional Rosario Castellanos informó la publicación electrónica de su Manual de Organización General para el periodo dos mil veintiséis a dos mil treinta. El aviso señala que el manual regula estructura, atribuciones, funciones y responsabilidades internas, y refiere una constancia de exención de impacto regulatorio por no crear obligaciones para particulares.",
-    "title": "Manual de Rosario Castellanos establece su organización interna",
+    "summary": "La Universidad Nacional Rosario Castellanos informó mediante aviso que su Manual de Organización General está disponible para consulta en línea. La publicación identifica al Manual como instrumento normativo-administrativo que establece la estructura orgánica, atribuciones, funciones y responsabilidades de las unidades administrativas de la institución. El aviso tiene por finalidad hacer del conocimiento público la existencia y el medio de consulta de ese instrumento, en cumplimiento de las disposiciones que la Universidad cita sobre difusión oficial, organización administrativa, máxima publicidad y transparencia.\n\nLa Universidad señala que la Dirección General de Recursos Humanos y Organización de la Secretaría de Ciencia, Humanidades, Tecnología e Innovación emitió visto bueno al Manual mediante oficio de 17 de julio de 2026. También refiere una Constancia de Exención de Análisis de Impacto Regulatorio de la Agencia de Transformación Digital y Telecomunicaciones. De acuerdo con el aviso, esa constancia consideró que el Manual no modifica ni incrementa obligaciones existentes para particulares ni añade costos burocráticos, porque se refiere a la organización y funcionamiento internos de la institución. El texto publicado no sustituye el contenido integral del Manual: dirige a sus versiones disponibles en medios institucionales.\n\nEl aviso identifica la fecha de emisión del Manual como 3 de agosto de 2026. Ofrece una dirección electrónica institucional de la Universidad Nacional Rosario Castellanos para consultar la versión íntegra y una liga adicional hospedada en el dominio del Diario Oficial de la Federación. La publicación cita el artículo 4 de la Ley Federal de Procedimiento Administrativo en relación con la identificación de la norma para su publicación en el Diario Oficial y en la normateca institucional. La disponibilidad de una liga oficial es relevante para revisar el texto del Manual, pero los fragmentos revisados no reproducen sus capítulos, organigrama ni el contenido concreto de atribuciones de cada unidad.\n\nPor ello, el alcance verificable del aviso es la publicación y puesta a disposición del Manual, sus antecedentes de visto bueno y exención de análisis de impacto regulatorio, y la caracterización de su objeto interno. No corresponde deducir modificaciones específicas de competencias, procesos, puestos, trámites o servicios a partir del aviso sin revisar el Manual íntegro enlazado. La publicación no establece una fecha de cumplimiento para particulares. Para unidades universitarias y personas que necesiten aplicar o interpretar el instrumento, la fuente oficial disponible para ese análisis es el Manual completo, no sólo el aviso de difusión.",
+    "summary_teaser": "El aviso comunica que el Manual de Organización General de la Universidad Nacional Rosario Castellanos puede consultarse en línea. La Universidad reporta visto bueno organizacional y exención de análisis de impacto regulatorio, al señalar que el instrumento regula su estructura interna sin incrementar obligaciones ni costos para particulares.",
+    "title": "Aviso establece consulta pública del manual organizacional",
     "topic_tags": [
       "Derecho administrativo",
       "Aviso"

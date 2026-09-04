@@ -1,10 +1,10 @@
 {
-  "cut_id": "80ff8a726797f7b9e5131c53",
+  "cut_id": "9bfb2857e185b6a117ea296f",
   "item": {
     "ai_generated": true,
     "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
     "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796487&fecha=18%2F08%2F2026",
-    "card_body": "## Qué se publicó\n\nEl Instituto destinó un inmueble federal a una institución pública para el uso autorizado.\n\n## Sustancia\n\nEl acto limita el aprovechamiento a la finalidad pública indicada y fija deberes de custodia, conservación, aseguramiento y permisos previos para obras.\n\n## Fuente\n\n[Consulta la publicación oficial](https://dof.gob.mx/nota_detalle.php?codigo=5796487&fecha=18%2F08%2F2026)",
+    "card_body": "## Qué se publicó\n\nINDAABIN destinó un inmueble federal a la PROFEPA para continuar su uso como Archivo Institucional.\n\n## Sustancia\n\nEl destino reconoce la superficie actual del predio, conserva la propiedad federal y sujeta el uso, la conservación, las obras y una eventual devolución a las condiciones expresas del acuerdo.\n\n## Fuente\n\nDOF, Acuerdo de destino del inmueble Renacimiento 175 a la PROFEPA, publicado el 18 de agosto de 2026.",
     "case_amount": "",
     "case_claim": "",
     "case_facts": "",
@@ -26,7 +26,8 @@
         "source_ref": "chunk-1",
         "target_sections": [
           "executive_summary",
-          "detailed_summary"
+          "detailed_summary",
+          "impacts.sectors"
         ]
       },
       {
@@ -34,8 +35,10 @@
         "reason": null,
         "source_ref": "chunk-2",
         "target_sections": [
+          "executive_summary",
           "detailed_summary",
           "impacts.general",
+          "impacts.sectors",
           "recommended_actions"
         ]
       }
@@ -49,19 +52,18 @@
           "chunk-1",
           "chunk-2"
         ],
-        "heading": "Destino y uso autorizado",
+        "heading": "Destino y antecedentes técnicos",
         "paragraphs": [
-          "El acuerdo destina el inmueble a la Procuraduría Federal de Protección al Ambiente para continuar utilizándolo como Archivo Institucional, con un derecho de aprovechamiento limitado a esa finalidad y sin transmisión de propiedad."
+          "El INDAABIN destina el inmueble a la PROFEPA para Archivo Institucional, refiere la entrega provisional previa y señala la superficie actual de 211.200 metros cuadrados derivada del área ocupada por vialidad."
         ]
       },
       {
         "evidence_refs": [
-          "chunk-1",
           "chunk-2"
         ],
-        "heading": "Custodia y condicionantes",
+        "heading": "Condiciones de aprovechamiento",
         "paragraphs": [
-          "La destinataria debe conservar, asegurar y vigilar el inmueble; un cambio de uso o falta de necesidad activa la puesta a disposición prevista. Las obras requieren autorizaciones previas conforme al acto."
+          "El acuerdo limita el aprovechamiento al uso autorizado, exige autorización para un uso distinto, condiciona las obras a permisos aplicables y prevé devolución sin compensación dentro del plazo expresamente señalado si el bien deja de ser útil."
         ]
       }
     ],
@@ -69,7 +71,7 @@
     "document_type": "Acuerdo",
     "editorial_status": "complete",
     "evidence": {
-      "content_hash": "c6c9260c2051d84e55d4140e59e16babb73a42818021d28b1d1ef3a38fb98c8c",
+      "content_hash": "56a56a4e2e2b08264c5da762aafc938f8b840e41da4bda32193b531c0d449cb9",
       "extraction_method": "html-adapter",
       "locators": [
         {
@@ -84,11 +86,11 @@
         }
       ],
       "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796487&fecha=18%2F08%2F2026",
-      "retrieved_at": "2026-09-01T16:35:20.254138+00:00"
+      "retrieved_at": "2026-09-03T16:53:32.364511+00:00"
     },
     "executive_summary": [
-      "El Instituto de Administración y Avalúos de Bienes Nacionales destinó a la Procuraduría Federal de Protección al Ambiente el inmueble federal Renacimiento 175, ubicado en Azcapotzalco, Ciudad de México, para continuar utilizándolo como Archivo Institucional. El acuerdo individualiza el bien mediante sus datos inmobiliarios y señala que la destinación busca permitir la continuidad o ejecución del servicio público referido. Su entrada en vigor ocurre al día siguiente de la publicación.",
-      "La destinación confiere a la institución destinataria el derecho de aprovechar el inmueble únicamente para el uso autorizado. El instrumento aclara que no transmite la propiedad ni otorga derecho real alguno. Si el bien se usa para una finalidad distinta sin autorización previa de Hacienda por conducto del Instituto, o deja de utilizarse o necesitarse, deberá ponerse a disposición del Instituto con mejoras y accesiones, sin compensación, dentro de los cuatro meses que establece el acuerdo."
+      "El acuerdo asigna a la PROFEPA el uso definitivo de Renacimiento 175 como Archivo Institucional y reconoce que la superficie actual es menor a la antecedente por el área ocupada por vialidad.",
+      "El destino no transmite propiedad. La PROFEPA queda sujeta a obligaciones de uso autorizado, custodia, conservación, aseguramiento, permisos previos para obras y devolución del inmueble si deja de necesitarlo."
     ],
     "extraction_status": "complete",
     "first_seen_at": "2026-09-01T16:34:47.803209+00:00",
@@ -97,11 +99,10 @@
     "impacts": {
       "general": {
         "evidence_refs": [
-          "chunk-1",
           "chunk-2"
         ],
         "paragraphs": [
-          "El acuerdo regulariza el uso administrativo de un bien federal y asigna obligaciones de conservación y control a la institución destinataria."
+          "La decisión formaliza el destino administrativo del inmueble y fija las obligaciones operativas que acompañan el aprovechamiento de un bien del dominio público federal."
         ]
       },
       "sectors": [
@@ -111,16 +112,25 @@
             "chunk-2"
           ],
           "paragraphs": [
-            "Las áreas responsables deben mantener el uso dentro de la finalidad autorizada, resguardar el bien y tramitar las autorizaciones antes de intervenirlo."
+            "La PROFEPA puede continuar el uso autorizado como Archivo Institucional, bajo las condiciones de custodia, conservación y control previstas por el acuerdo."
           ],
-          "sector": "Institución destinataria y áreas responsables del inmueble"
+          "sector": "PROFEPA y gestión patrimonial federal"
+        },
+        {
+          "evidence_refs": [
+            "chunk-2"
+          ],
+          "paragraphs": [
+            "Cualquier obra proyectada queda condicionada a la obtención de las licencias, permisos o autorizaciones pertinentes, y el texto destaca una condición arqueológica para excavaciones."
+          ],
+          "sector": "Autoridades y contratistas de obras en el inmueble"
         }
       ]
     },
     "importance": 1,
     "issuing_body": "Secretaría de Hacienda y Crédito Público",
     "jurisdiction": "nacional",
-    "last_seen_at": "2026-09-01T18:46:30.041123+00:00",
+    "last_seen_at": "2026-09-04T03:37:15.636102+00:00",
     "official_evidence": {
       "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796487&fecha=18/08/2026"
     },
@@ -135,17 +145,28 @@
     "published_year": 2026,
     "recommended_actions": [
       {
-        "affected_group": "Institución destinataria y áreas responsables del inmueble",
-        "deadline": "Cuatro meses para poner el inmueble a disposición si deja de ser útil, cuando se actualice ese supuesto",
+        "affected_group": "PROFEPA como entidad destinataria",
+        "deadline": "Cuatro meses desde que el inmueble deje de ser útil para el servicio, si se actualiza ese supuesto.",
         "evidence_refs": [
-          "chunk-1",
           "chunk-2"
         ],
-        "legal_basis": "Ley General de Bienes Nacionales y términos expresos del acuerdo de destino",
+        "legal_basis": "Puntos segundo, cuarto y quinto del acuerdo; artículo 68 de la Ley General de Bienes Nacionales citado en el texto.",
         "paragraphs": [
-          "Documentar la finalidad autorizada, conservar evidencia de custodia, mantenimiento y aseguramiento, y gestionar los permisos que correspondan antes de ejecutar obras."
+          "Si se conserva el uso de Archivo Institucional, documente la custodia, mantenimiento y aseguramiento conforme al acuerdo; si se prevé cambiar el uso o dejar de requerir el bien, revise la autorización o devolución que corresponda."
         ],
-        "trigger": "Administrar el inmueble o proyectar una intervención material"
+        "trigger": "Cambio de uso, falta de necesidad del inmueble o gestión ordinaria del inmueble destinado."
+      },
+      {
+        "affected_group": "Responsables de obras o intervenciones físicas",
+        "deadline": null,
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "legal_basis": "Punto tercero del acuerdo y condición técnica descrita en sus considerandos.",
+        "paragraphs": [
+          "Si se proyectan obras, obtengan antes las autorizaciones locales y federales aplicables y consideren el visto bueno arqueológico únicamente cuando haya excavación, como precisa la fuente."
+        ],
+        "trigger": "Proyecto de construcción, modificación, conservación, reparación, demolición o excavación."
       }
     ],
     "relevance_score": 1,
@@ -153,9 +174,9 @@
     "source": "DOF",
     "source_id": "5796487",
     "subtopic_tags": [],
-    "summary": "El Instituto de Administración y Avalúos de Bienes Nacionales destinó a la Procuraduría Federal de Protección al Ambiente el inmueble federal Renacimiento 175, ubicado en Azcapotzalco, Ciudad de México, para continuar utilizándolo como Archivo Institucional. El acuerdo individualiza el bien mediante sus datos inmobiliarios y señala que la destinación busca permitir la continuidad o ejecución del servicio público referido. Su entrada en vigor ocurre al día siguiente de la publicación.\n\nLa destinación confiere a la institución destinataria el derecho de aprovechar el inmueble únicamente para el uso autorizado. El instrumento aclara que no transmite la propiedad ni otorga derecho real alguno. Si el bien se usa para una finalidad distinta sin autorización previa de Hacienda por conducto del Instituto, o deja de utilizarse o necesitarse, deberá ponerse a disposición del Instituto con mejoras y accesiones, sin compensación, dentro de los cuatro meses que establece el acuerdo.\n\nLa institución destinataria queda obligada a custodiar y vigilar el inmueble, cubrir su conservación, mantenimiento, servicios inherentes y aseguramiento contra daños. Para obras de construcción, reconstrucción, modificación, adaptación, conservación, mantenimiento, reparación o demolición debe gestionar las licencias, permisos o autorizaciones aplicables antes de realizarlas. El acto refiere que el inmueble está en zona de alto potencial de vestigios arqueológicos y que las obras con excavación requieren visto bueno de la Dirección de Salvamento Arqueológico. El Instituto conserva la vigilancia del cumplimiento de la destinación.\n\nLa publicación resuelve una situación de administración del patrimonio federal y no acredita por sí sola la ejecución física de obras, ampliaciones o servicios futuros. En consecuencia, la ficha distingue el destino jurídico del inmueble de cualquier proyecto posterior: las actuaciones materiales requerirán las autorizaciones que el propio acuerdo exige y, cuando corresponda, las condicionantes de las autoridades competentes.\n\nPara fines de seguimiento, la publicación debe leerse con la normativa que expresamente cita. Esta ficha sólo reporta el alcance verificable del documento oficial: no anticipa decisiones posteriores, requisitos no publicados ni consecuencias que el texto no atribuye de manera directa.",
-    "summary_teaser": "El Instituto de Administración y Avalúos de Bienes Nacionales destinó el inmueble federal descrito a la Procuraduría Federal de Protección al Ambiente para continuar utilizándolo como Archivo Institucional. El acuerdo confiere derecho de aprovechamiento para ese uso, no transmite la propiedad y establece obligaciones de custodia, conservación y permisos para intervenciones.",
-    "title": "Acuerdo concede a Profepa archivo institucional en Azcapotzalco",
+    "summary": "El Instituto de Administración y Avalúos de Bienes Nacionales destinó a la Procuraduría Federal de Protección al Ambiente el inmueble federal Renacimiento 175, ubicado en Calzada Renacimiento 175, colonia Petrolera, alcaldía Azcapotzalco. El acuerdo lo asigna para que la PROFEPA continúe utilizándolo como Archivo Institucional. Aunque el antecedente consigna 230 metros cuadrados, el plano topográfico reporta una superficie actual de 211.200 metros cuadrados por el área ocupada por vialidad. El instrumento señala que, para sus efectos, la entrega se tendrá por definitiva al entrar en vigor.\n\nEl acuerdo documenta antecedentes de propiedad, entrega provisional y análisis técnicos. También refiere que el inmueble no está considerado monumento histórico ni artístico según las comunicaciones citadas; sin embargo, por ubicarse en una zona con alto potencial de vestigios arqueológicos, el texto indica que para iniciar obras con excavación se requiere el visto bueno de la Dirección de Salvamento Arqueológico. La operación contó con autorización técnica y opinión jurídica del INDAABIN.\n\nEl destino confiere a la PROFEPA un derecho de aprovechamiento para el uso autorizado, no transmite la propiedad ni otorga un derecho real. Si se pretende dar un uso distinto, se requiere autorización previa de Hacienda por conducto del INDAABIN. Si el bien deja de utilizarse o necesitarse, debe ponerse a disposición del Instituto con mejoras y accesiones, sin compensación, dentro de cuatro meses desde que deje de ser útil para el servicio. Antes de obras de construcción, reconstrucción, adaptación, conservación, mantenimiento, reparación o demolición, la PROFEPA debe gestionar licencias, permisos o autorizaciones locales y federales que correspondan.\n\nAdemás, la PROFEPA debe custodiar y vigilar el inmueble, asumir conservación, mantenimiento, servicios inherentes y aseguramiento contra daños. El INDAABIN vigilará el cumplimiento. El acuerdo ordena su publicación e inscripción en el Registro Público de la Propiedad Federal y entra en vigor al día siguiente de su publicación. La resolución no acredita la ejecución de obras ni una autorización posterior distinta de las que el texto condiciona.",
+    "summary_teaser": "INDAABIN destinó a la PROFEPA el inmueble federal Renacimiento 175 en Azcapotzalco para continuar como Archivo Institucional. El acuerdo reconoce la superficie actual derivada de vialidad, precisa que no transmite propiedad y establece condiciones de uso, conservación, autorizaciones y devolución del bien.",
+    "title": "INDAABIN concede uso de archivo institucional a PROFEPA",
     "topic_tags": [
       "Acuerdo"
     ],

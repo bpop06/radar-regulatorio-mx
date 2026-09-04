@@ -14,37 +14,47 @@
       "reason": null,
       "source_ref": "chunk-2",
       "target_sections": [
+        "executive_summary",
         "detailed_summary",
         "impacts.general",
+        "impacts.sectors",
         "recommended_actions"
       ]
     }
   ],
-  "cut_id": "80ff8a726797f7b9e5131c53",
+  "cut_id": "9bfb2857e185b6a117ea296f",
   "detailed_summary": [
     {
       "evidence_refs": [
         "chunk-1",
         "chunk-2"
       ],
-      "heading": "Publicación del contribuyente y sus CFDI",
+      "heading": "Determinación publicada",
       "paragraphs": [
-        "El aviso identifica a INTEGRADORA EMPRESARIAL APE, A.C. con RFC IEA170925PN8 y comunica que la presunción de falsedad de sus CFDI no fue desvirtuada; por ello el texto les atribuye falta de efectos fiscales con alcance general."
+        "El anexo identifica a Integradora Empresarial Ape, A.C., RFC IEA170925PN8. El SAT señala que el contribuyente no desvirtuó la presunción de falsedad de los CFDI emitidos y que éstos no cumplen el artículo 29-A, fracción IX, citado por la fuente."
       ]
     },
     {
       "evidence_refs": [
-        "chunk-1",
         "chunk-2"
       ],
-      "heading": "Efecto para receptores",
+      "heading": "Efecto fiscal y reversión",
       "paragraphs": [
-        "La fuente ordena a terceros que hayan dado efectos fiscales a esos CFDI revertirlos mediante declaración complementaria en treinta días naturales desde la publicación y advierte la restricción temporal del certificado de sello digital ante el incumplimiento."
+        "Los CFDI se consideran falsos con efectos generales y las operaciones contenidas en ellos no producen ni produjeron efecto fiscal. Los terceros que los recibieron deben revertir el efecto fiscal mediante declaración complementaria."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Plazo y consecuencia",
+      "paragraphs": [
+        "La publicación da treinta días naturales desde su difusión en el Diario Oficial para presentar la declaración complementaria. De no hacerlo, el SAT indica que restringirá temporalmente el certificado de sello digital para emitir CFDI."
       ]
     }
   ],
   "evidence": {
-    "content_hash": "16bb3be283f5a0c1c0f34bab19d191cb274c229e9060814a94d7f75bc74ab0af",
+    "content_hash": "9a00af3d11dd964a1b5199d15c93a077e4644a80ffb491af3ce532a16c2bf1cb",
     "extraction_method": "html-adapter",
     "locators": [
       {
@@ -59,32 +69,30 @@
       }
     ],
     "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797380&fecha=28%2F08%2F2026",
-    "retrieved_at": "2026-09-01T16:34:56.357505+00:00"
+    "retrieved_at": "2026-09-03T16:53:15.012860+00:00"
   },
   "executive_summary": [
-    "El Servicio de Administración Tributaria publicó el nombre de INTEGRADORA EMPRESARIAL APE, A.C. y el RFC IEA170925PN8 en el supuesto de la fracción X del artículo 49 Bis del Código Fiscal de la Federación. El anexo identifica a la persona contribuyente y el oficio de la resolución administrativa. Según el documento, la autoridad concluyó, tras el procedimiento previsto en ese artículo, que no se desvirtuó la presunción de falsedad de los comprobantes fiscales digitales por Internet emitidos por esa persona.",
-    "La consecuencia que la publicación atribuye a esos CFDI es que se consideran falsos con efectos generales por incumplir el requisito referido en el artículo 29-A, fracción IX, del Código Fiscal de la Federación. Por ello, el propio aviso indica que las operaciones asentadas en dichos comprobantes no producen ni produjeron efecto fiscal. Esta ficha no extiende esa conclusión a comprobantes distintos de los emitidos por la persona publicada ni a operaciones que el documento no identifica."
+    "El SAT publicó el RFC IEA170925PN8 y el nombre de Integradora Empresarial Ape, A.C., al determinar que no desvirtuó la presunción de falsedad de los CFDI emitidos.",
+    "La fuente establece que los comprobantes son falsos con efectos generales y que los terceros que les dieron efecto fiscal deben revertirlo mediante declaración complementaria dentro de treinta días naturales desde la publicación."
   ],
   "impacts": {
     "general": {
       "evidence_refs": [
-        "chunk-1",
         "chunk-2"
       ],
       "paragraphs": [
-        "El efecto directo recae en la trazabilidad fiscal de operaciones respaldadas por CFDI del emisor publicado y en las revisiones que correspondan a sus receptores."
+        "La determinación afecta el tratamiento fiscal que terceras personas hayan dado a los CFDI emitidos por el contribuyente listado y vincula la omisión de reversión con una posible restricción temporal del certificado de sello digital."
       ]
     },
     "sectors": [
       {
         "evidence_refs": [
-          "chunk-1",
           "chunk-2"
         ],
         "paragraphs": [
-          "Quienes hayan recibido CFDI de INTEGRADORA EMPRESARIAL APE, A.C. deben ubicar los comprobantes y contrastar su tratamiento fiscal con la determinación y el plazo que el oficio comunica."
+          "Los receptores que hubieran dado efecto fiscal a esos CFDI son las personas expresamente llamadas a conocer la publicación y, en su caso, revertirlo mediante declaración complementaria."
         ],
-        "sector": "Receptores de CFDI del contribuyente publicado"
+        "sector": "Terceros receptores de CFDI de Integradora Empresarial Ape, A.C."
       }
     ]
   },
@@ -114,23 +122,22 @@
     "review_reason": null,
     "source": "DOF",
     "source_id": "5797380",
-    "summary_teaser": "El SAT publicó a INTEGRADORA EMPRESARIAL APE, A.C. y su RFC como contribuyente que no desvirtuó la presunción de falsedad de los CFDI emitidos. El aviso señala que esos comprobantes no producen efectos fiscales y que quienes les hayan dado efectos deben revertirlos mediante declaración complementaria dentro del plazo señalado.",
-    "title": "SAT exige revertir efectos de CFDI falsos de Integradora APE",
+    "summary_teaser": "El SAT publicó el RFC IEA170925PN8 y el nombre de Integradora Empresarial Ape, A.C., al determinar que no desvirtuó la presunción de falsedad de los CFDI emitidos. La fuente señala que esos comprobantes no producen efecto fiscal y que los terceros que los recibieron deben revertirlo mediante declaración complementaria dentro de treinta días naturales desde la publicación.",
+    "title": "Exige revertir efectos fiscales de CFDI falsos de Integradora Empresarial Ape",
     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797380&fecha=28/08/2026"
   },
   "recommended_actions": [
     {
-      "affected_group": "Receptores de CFDI del contribuyente publicado",
-      "deadline": "Treinta días naturales contados a partir de la publicación en el Diario Oficial de la Federación",
+      "affected_group": "Personas contribuyentes que recibieron CFDI de Integradora Empresarial Ape, A.C.",
+      "deadline": "Treinta días naturales a partir de la publicación en el Diario Oficial de la Federación.",
       "evidence_refs": [
-        "chunk-1",
         "chunk-2"
       ],
-      "legal_basis": "Artículo 49 Bis, fracción X, y artículo 17-H Bis, fracción XIV, del Código Fiscal de la Federación, citados en el oficio",
+      "legal_basis": "Código Fiscal de la Federación, artículo 49 Bis, fracción X, y artículo 17-H Bis, fracción XIV, citados en la publicación.",
       "paragraphs": [
-        "Identificar los CFDI recibidos de INTEGRADORA EMPRESARIAL APE, A.C., revisar el efecto fiscal que se les dio y, si corresponde, presentar la declaración complementaria dentro del plazo publicado. Conservar expediente documental de la revisión."
+        "Si se identifican CFDI emitidos por el contribuyente listado a los que se hubiera dado efecto fiscal, revisen el alcance de esa afectación y presenten la declaración complementaria necesaria para revertirlo."
       ],
-      "trigger": "Haber recibido CFDI emitidos por el contribuyente publicado y haberles dado efectos fiscales"
+      "trigger": "Recepción de CFDI emitidos por el RFC IEA170925PN8 con efecto fiscal otorgado."
     }
   ],
   "schema_version": 8

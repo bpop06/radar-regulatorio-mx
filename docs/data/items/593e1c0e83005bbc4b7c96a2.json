@@ -1,23 +1,23 @@
 {
-  "cut_id": "80ff8a726797f7b9e5131c53",
+  "cut_id": "9bfb2857e185b6a117ea296f",
   "item": {
     "ai_generated": true,
     "authority": "PODER EJECUTIVO SECRETARIA ANTICORRUPCION Y BUEN GOBIERNO",
     "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797565&fecha=01%2F09%2F2026",
-    "card_body": "## Qué se publicó\n\nEl Órgano Interno de Control en IMSS-BIENESTAR publicó una circular que comunica la nulidad firme de una resolución sancionadora y la insubsistencia de sus sanciones.\n\n## Sustancia\n\nLa circular informa que la sentencia definitiva del Tribunal Federal de Justicia Administrativa declaró la nulidad de la resolución emitida en el procedimiento sancionador contra Mape+Tzin, S.A. de C.V. Esa sentencia quedó firme a partir del 25 de junio de 2026. En cumplimiento, el órgano interno de control dejó insubsistente la resolución de 9 de octubre de 2024 y las sanciones que contenía, entre ellas una inhabilitación de 24 meses y una multa de 1,286,376 pesos. Las dependencias, entidades, empresas públicas, entidades federativas, municipios y demarcaciones destinatarias reciben el aviso para que identifiquen que las sanciones de ese expediente fueron dejadas sin efecto. La nota no permite extender ese efecto a actos, contratos o expedientes distintos.\n\n## Fuente\n\nFuente oficial: https://dof.gob.mx/nota_detalle.php?codigo=5797565&fecha=01%2F09%2F2026. Extracción: html-adapter; recuperada el 2026-09-01T16:34:51.603450+00:00.",
+    "card_body": "## Qué se publicó\n\nSe comunicó la firmeza de una sentencia que anuló la resolución sancionadora contra Mape+tzin, S.A. de C.V.\n\n## Sustancia\n\nEn cumplimiento de la sentencia, se dejó insubsistente la resolución administrativa y las sanciones de inhabilitación y multa que contenía.\n\n## Fuente\n\n[Diario Oficial de la Federación](https://dof.gob.mx/nota_detalle.php?codigo=5797565&fecha=01%2F09%2F2026)",
     "case_amount": "",
     "case_claim": "",
     "case_facts": "",
-    "case_number": "",
+    "case_number": "25403/24-17-12-9",
     "case_outcome": "",
-    "case_parties": "",
+    "case_parties": "Mape+tzin, S.A. de C.V.",
     "case_reasoning": "",
     "case_status": "",
     "case_treaty": "",
     "categories": [
       "Administración centralizada"
     ],
-    "content_hash": "11d7379b15dcc3b7fa00b7553246999c1abcc24cca24a195c1e8577058e612d0",
+    "content_hash": "178bba70f1a0165592aca523606c226050730d34aba9e51b89d631dffde7468a",
     "country_or_org": "México",
     "coverage": [
       {
@@ -51,22 +51,21 @@
     "detailed_summary": [
       {
         "evidence_refs": [
+          "chunk-1",
           "chunk-2"
         ],
-        "heading": "Contenido publicado",
+        "heading": "Sentencia firme",
         "paragraphs": [
-          "La circular informa que la sentencia definitiva del Tribunal Federal de Justicia Administrativa declaró la nulidad de la resolución emitida en el procedimiento sancionador contra Mape+Tzin, S.A. de C.V. Esa sentencia quedó firme a partir del 25 de junio de 2026. En cumplimiento, el órgano interno de control dejó insubsistente la resolución de 9 de octubre de 2024 y las sanciones que contenía, entre ellas una inhabilitación de 24 meses y una multa de 1,286,376 pesos.",
-          "La publicación reproduce que la empresa demandó la nulidad y que la sala regional resolvió a favor de la parte actora. El documento no describe una nueva determinación de responsabilidad ni un procedimiento sustituto; su objeto es comunicar el efecto de la sentencia firme sobre la resolución anterior."
+          "La circular informa que la Sala Regional declaró firme la sentencia dictada en el juicio contencioso promovido por Mape+tzin. Esa sentencia anuló la resolución administrativa de 2024 vinculada con el procedimiento de sanción referido."
         ]
       },
       {
         "evidence_refs": [
           "chunk-2"
         ],
-        "heading": "Alcance y lectura práctica",
+        "heading": "Cumplimiento administrativo comunicado",
         "paragraphs": [
-          "Las dependencias, entidades, empresas públicas, entidades federativas, municipios y demarcaciones destinatarias reciben el aviso para que identifiquen que las sanciones de ese expediente fueron dejadas sin efecto. La nota no permite extender ese efecto a actos, contratos o expedientes distintos.",
-          "La ficha se dirige principalmente a áreas de contratación pública y de registro de sanciones."
+          "El área de responsabilidades comunica que dejó insubsistente la resolución anulada y las sanciones que contenía, incluida la inhabilitación de 24 meses y la multa indicada en el texto."
         ]
       }
     ],
@@ -74,7 +73,7 @@
     "document_type": "Circular",
     "editorial_status": "complete",
     "evidence": {
-      "content_hash": "36ebc08bc6d3cbe537a0514437a23f88dca984a173d402fd362bfe5298c92751",
+      "content_hash": "cbb6ad23abf6f2af48dc30c8aae3bcfe3dc265b5145a24fb68f1351b947b79a9",
       "extraction_method": "html-adapter",
       "locators": [
         {
@@ -89,11 +88,11 @@
         }
       ],
       "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797565&fecha=01%2F09%2F2026",
-      "retrieved_at": "2026-09-01T16:34:51.603450+00:00"
+      "retrieved_at": "2026-09-03T16:52:57.456483+00:00"
     },
     "executive_summary": [
-      "El Órgano Interno de Control en IMSS-BIENESTAR difundió una circular que comunica la nulidad firme de una resolución sancionadora y la insubsistencia de sus sanciones. La circular informa que la sentencia definitiva del Tribunal Federal de Justicia Administrativa declaró la nulidad de la resolución emitida en el procedimiento sancionador contra Mape+Tzin, S.A. de C.V. Esa sentencia quedó firme a partir del 25 de junio de 2026. En cumplimiento, el órgano interno de control dejó insubsistente la resolución de 9 de octubre de 2024 y las sanciones que contenía, entre ellas una inhabilitación de 24 meses y una multa de 1,286,376 pesos.",
-      "Las dependencias, entidades, empresas públicas, entidades federativas, municipios y demarcaciones destinatarias reciben el aviso para que identifiquen que las sanciones de ese expediente fueron dejadas sin efecto. La nota no permite extender ese efecto a actos, contratos o expedientes distintos. La síntesis se limita a los hechos y condiciones expresamente visibles en la fuente oficial."
+      "El Tribunal Federal de Justicia Administrativa declaró firme la nulidad de la resolución que había sancionado a Mape+tzin, S.A. de C.V.",
+      "En cumplimiento, el órgano interno de control dejó insubsistentes la resolución administrativa y las sanciones comunicadas en la circular."
     ],
     "extraction_status": "complete",
     "first_seen_at": "2026-09-01T16:34:47.803209+00:00",
@@ -102,32 +101,38 @@
     "impacts": {
       "general": {
         "evidence_refs": [
+          "chunk-1",
           "chunk-2"
         ],
         "paragraphs": [
-          "El efecto observable es el que la publicación atribuye al acto: Las dependencias, entidades, empresas públicas, entidades federativas, municipios y demarcaciones destinatarias reciben el aviso para que identifiquen que las sanciones de ese expediente fueron dejadas sin efecto. La nota no permite extender ese efecto a actos, contratos o expedientes distintos."
+          "La circular comunica que la resolución administrativa de 2024 y las sanciones contenidas en ella quedaron insubsistentes en cumplimiento de la sentencia firme."
         ]
       },
       "sectors": [
         {
           "evidence_refs": [
+            "chunk-1",
             "chunk-2"
           ],
           "paragraphs": [
-            "Las personas comprendidas deben considerar el documento porque La circular informa que la sentencia definitiva del Tribunal Federal de Justicia Administrativa declaró la nulidad de la resolución emitida en el procedimiento sancionador contra Mape+Tzin, S.A. de C.V. Esa sentencia quedó firme a partir del 25 de junio de 2026. En cumplimiento, el órgano interno de control dejó insubsistente la resolución de 9 de octubre de 2024 y las sanciones que contenía, entre ellas una inhabilitación de 24 meses y una multa de 1,286,376 pesos."
+            "La fuente comunica a sus destinatarios la firmeza de la sentencia y el acuerdo que dejó insubsistentes la resolución y las sanciones de ese procedimiento."
           ],
-          "sector": "Áreas de contratación pública y de registro de sanciones"
+          "sector": "Destinatarios de la circular y referencias al expediente PA/0004/2023"
         }
       ]
     },
     "importance": 3,
     "issuing_body": "Presidencia de la República",
     "jurisdiction": "nacional",
-    "last_seen_at": "2026-09-01T18:46:30.041123+00:00",
+    "last_seen_at": "2026-09-04T03:37:15.636102+00:00",
     "official_evidence": {
       "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797565&fecha=01/09/2026"
     },
     "official_identifiers": {
+      "case_number": "25403/24-17-12-9",
+      "circular": "CIRCULAR 02/2026",
+      "expediente": "PA/0004/2023",
+      "juicio_contencioso_administrativo": "25403/24-17-12-9",
       "source_id": "5797565"
     },
     "official_published_at": "2026-09-01",
@@ -138,16 +143,17 @@
     "published_year": 2026,
     "recommended_actions": [
       {
-        "affected_group": "Áreas de contratación pública y de registro de sanciones",
+        "affected_group": "Personas o áreas que mantengan una referencia al expediente PA/0004/2023",
         "deadline": null,
         "evidence_refs": [
+          "chunk-1",
           "chunk-2"
         ],
         "legal_basis": null,
         "paragraphs": [
-          "Verificar los registros y filtros internos vinculados exclusivamente con la resolución dejada sin efectos, conservando la trazabilidad de la circular y de la sentencia que la sustenta."
+          "Si se conserva una referencia interna al expediente o a las sanciones, puede contrastarse con la circular y con registros oficiales aplicables. Esta es una recomendación condicional de verificación y no una obligación publicada por la circular."
         ],
-        "trigger": "Cuando la persona o entidad se ubique en el ámbito material descrito por la fuente oficial."
+        "trigger": "Mantener una referencia interna al expediente o a las sanciones comunicadas"
       }
     ],
     "relevance_score": 5,
@@ -162,9 +168,9 @@
       "tribunal federal de justicia administrativa",
       "sala regional"
     ],
-    "summary": "El Órgano Interno de Control en IMSS-BIENESTAR publicó una circular que comunica la nulidad firme de una resolución sancionadora y la insubsistencia de sus sanciones. La circular informa que la sentencia definitiva del Tribunal Federal de Justicia Administrativa declaró la nulidad de la resolución emitida en el procedimiento sancionador contra Mape+Tzin, S.A. de C.V. Esa sentencia quedó firme a partir del 25 de junio de 2026. En cumplimiento, el órgano interno de control dejó insubsistente la resolución de 9 de octubre de 2024 y las sanciones que contenía, entre ellas una inhabilitación de 24 meses y una multa de 1,286,376 pesos.\n\nLa publicación reproduce que la empresa demandó la nulidad y que la sala regional resolvió a favor de la parte actora. El documento no describe una nueva determinación de responsabilidad ni un procedimiento sustituto; su objeto es comunicar el efecto de la sentencia firme sobre la resolución anterior.\n\nLas dependencias, entidades, empresas públicas, entidades federativas, municipios y demarcaciones destinatarias reciben el aviso para que identifiquen que las sanciones de ese expediente fueron dejadas sin efecto. La nota no permite extender ese efecto a actos, contratos o expedientes distintos.\n\nLa utilidad práctica de la publicación depende de si la persona o entidad se encuentra dentro del ámbito descrito. La información se presenta con base en el documento oficial disponible y no permite extender efectos a supuestos, periodos, personas o actos que no estén expresamente identificados. Cuando el documento incorpora requisitos, condiciones o mecanismos, éstos deben contrastarse con la ficha, resolución, contrato, expediente o norma específica que corresponda.\n\nPara fines de cumplimiento y trazabilidad, conviene conservar la fuente oficial, su fecha de publicación y los documentos que acrediten la situación concreta. Esta síntesis no sustituye el texto íntegro ni una determinación individual de la autoridad; describe el alcance observable del acto y distingue las consecuencias expresamente publicadas de cualquier inferencia que no está respaldada por la evidencia disponible.",
-    "summary_teaser": "El órgano interno de control de IMSS-BIENESTAR informó que dejó insubsistentes las sanciones impuestas a Mape+Tzin, S.A. de C.V. La medida deriva de una sentencia del TFJA que anuló la resolución sancionadora y cuya firmeza fue declarada en junio de 2026.",
-    "title": "TFJA invalida sanción a Mape+Tzin tras nulidad firme",
+    "summary": "El Órgano Interno de Control en Servicios de Salud del Instituto Mexicano del Seguro Social para el Bienestar comunicó la firmeza de una sentencia del Tribunal Federal de Justicia Administrativa vinculada con Mape+tzin, S.A. de C.V. La Décimo Segunda Sala Regional en la Ciudad de México declaró firme, a partir del 25 de junio de 2026, la sentencia definitiva de 10 de septiembre de 2025 dictada en el juicio contencioso administrativo 25403/24-17-12-9. La circular se dirige a dependencias, entidades, empresas públicas del Estado, entidades federativas, municipios y demarcaciones territoriales de la Ciudad de México.\n\nLa sentencia anuló la resolución administrativa de 9 de octubre de 2024 recaída en el procedimiento PA/0004/2023. Según la circular, la resolución impugnada había impuesto a la empresa una inhabilitación de 24 meses y una multa de 1,286,376 pesos. El texto reproduce que la Sala declaró que la parte actora probó su acción y resolvió la nulidad de la resolución impugnada con fundamento en la Ley Federal de Procedimiento Contencioso Administrativo.\n\nEn cumplimiento de la sentencia firme, el área de responsabilidades comunicó que, mediante acuerdo de 13 de agosto de 2026, dejó insubsistente la resolución definitiva de 2024 y las sanciones impuestas a Mape+tzin. La circular registra esa consecuencia respecto del expediente señalado y no comunica una adjudicación, una celebración de contrato o una decisión sobre procedimientos distintos. Tampoco contiene una instrucción específica para que las autoridades destinatarias realicen una actualización o conservación documental.\n\nLa publicación da a conocer la firmeza de la nulidad y el acuerdo de cumplimiento. Quien mantenga una referencia interna al expediente puede contrastarla con la circular y con los registros oficiales aplicables como medida de verificación propia; esa posibilidad no se presenta en el texto como una obligación publicada. La circular no permite extender la situación comunicada a proveedores diferentes ni inferir consecuencias ajenas al procedimiento PA/0004/2023 y a las sanciones dejadas insubsistentes.",
+    "summary_teaser": "La autoridad comunicó que quedó firme la sentencia del Tribunal Federal de Justicia Administrativa que anuló la resolución sancionadora contra Mape+tzin, S.A. de C.V. En cumplimiento, se dejó insubsistente la resolución administrativa, incluida la inhabilitación de 24 meses y la multa de 1,286,376 pesos que contenía.",
+    "title": "Nulidad firme contra Mape+tzin lleva al OIC a dejar sanciones sin efecto",
     "topic_tags": [
       "Derecho administrativo",
       "Contencioso administrativo",

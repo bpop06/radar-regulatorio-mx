@@ -1,10 +1,10 @@
 {
-  "cut_id": "80ff8a726797f7b9e5131c53",
+  "cut_id": "9bfb2857e185b6a117ea296f",
   "item": {
     "ai_generated": true,
     "authority": "PODER EJECUTIVO SECRETARIA ANTICORRUPCION Y BUEN GOBIERNO",
     "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796823&fecha=21%2F08%2F2026",
-    "card_body": "## Qué se publicó\n\nEl Órgano Interno de Control en la Secretaría de la Defensa Nacional comunicó una suspensión provisional en favor de Intman, S.A. de C.V.\n\n## Sustancia\n\nEl Juzgado Octavo de Distrito en Materia Administrativa en la Ciudad de México ordenó que se cancele provisionalmente el registro de Intman en el Padrón de Proveedores y Contratistas Sancionados de Compras MX mientras se resuelve el amparo. El efecto comunicado es registral; la circular no informa que las sanciones administrativas subyacentes hayan sido anuladas o resueltas de fondo. La medida deja de surtir efectos si la parte quejosa no acredita una garantía de 1,182,408 pesos dentro de cinco días ante la autoridad ejecutora.\n\n## Fuente\n\nFuente oficial: https://dof.gob.mx/nota_detalle.php?codigo=5796823&fecha=21%2F08%2F2026. Extracción: html-adapter; recuperada el 2026-09-01T16:35:10.147995+00:00.",
+    "card_body": "## Qué se publicó\n\nUna circular comunicó la suspensión provisional que ordena cancelar temporalmente el registro sancionatorio de Intman en Compras MX.\n\n## Sustancia\n\nLa medida cautelar no resuelve el fondo del amparo y depende de acreditar la garantía fijada dentro del plazo señalado. La fuente comunica la suspensión del registro de sanciones, no una absolución definitiva.\n\n## Fuente\n\nDOF, Circular relativa al amparo indirecto promovido por Intman, S.A. de C.V., publicada el 21 de agosto de 2026.",
     "case_amount": "",
     "case_claim": "",
     "case_facts": "",
@@ -28,9 +28,7 @@
         "target_sections": [
           "executive_summary",
           "detailed_summary",
-          "impacts.general",
-          "impacts.sectors",
-          "recommended_actions"
+          "impacts.sectors"
         ]
       },
       {
@@ -55,20 +53,18 @@
           "chunk-1",
           "chunk-2"
         ],
-        "heading": "Medida cautelar comunicada",
+        "heading": "Medida cautelar judicial",
         "paragraphs": [
-          "La circular comunica que el Juzgado Octavo de Distrito en Materia Administrativa en la Ciudad de México concedió suspensión provisional a Intman, S.A. de C.V. para que la autoridad responsable cancele su registro en el Padrón de Proveedores y Contratistas Sancionados de la plataforma Compras MX.",
-          "El efecto descrito es registral y provisional. La publicación no reporta anulación, revocación ni resolución de fondo sobre las sanciones administrativas que dieron lugar al registro."
+          "El acuerdo de 31 de julio de 2026 concede suspensión provisional en el incidente del amparo 1591/2026 para cancelar el registro de Intman y evitar provisionalmente la ejecución de la circular AR07-08/2026."
         ]
       },
       {
         "evidence_refs": [
           "chunk-2"
         ],
-        "heading": "Condición y alcance",
+        "heading": "Garantía y alcance temporal",
         "paragraphs": [
-          "El acuerdo fija garantía por 1,182,408 pesos y prevé que la suspensión dejará de surtir efectos si la parte quejosa no la acredita ante la autoridad ejecutora dentro de cinco días.",
-          "Las dependencias y demás destinatarios de la circular deben distinguir el estado temporal del registro de una determinación definitiva sobre el juicio de amparo o el procedimiento sancionador."
+          "La suspensión surte efectos desde luego, pero deja de hacerlo si no se acredita una garantía de 1,182,408 pesos dentro de cinco días. La circular administrativa comunica la suspensión temporal del registro de sanciones de Intman y de su representante."
         ]
       }
     ],
@@ -76,7 +72,7 @@
     "document_type": "Circular",
     "editorial_status": "complete",
     "evidence": {
-      "content_hash": "d52b19acd42780722e51c144ff1e6cb80b63079c10da077d9c2f7ae118325af5",
+      "content_hash": "f0aba47ed28772ec432693d9c6077b470d50ddfc20657ab9e50a0cfb728aacd7",
       "extraction_method": "html-adapter",
       "locators": [
         {
@@ -91,11 +87,11 @@
         }
       ],
       "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796823&fecha=21%2F08%2F2026",
-      "retrieved_at": "2026-09-01T16:35:10.147995+00:00"
+      "retrieved_at": "2026-09-03T16:53:25.004717+00:00"
     },
     "executive_summary": [
-      "El Órgano Interno de Control en la Secretaría de la Defensa Nacional difundió una circular sobre la suspensión provisional concedida a Intman, S.A. de C.V. El Juzgado Octavo de Distrito en Materia Administrativa en la Ciudad de México ordenó, como efecto cautelar, cancelar el registro de la quejosa en el Padrón de Proveedores y Contratistas Sancionados de Compras MX mientras se resuelve el juicio de amparo.",
-      "El alcance comunicado es la inscripción o permanencia en el padrón, no una decisión definitiva sobre las sanciones administrativas subyacentes. La medida surte efectos desde luego, pero cesa si no se acredita una garantía de 1,182,408 pesos ante la autoridad ejecutora dentro de cinco días."
+      "El Juzgado Octavo de Distrito concedió una suspensión provisional para que se cancele temporalmente el registro de Intman en el Padrón de Proveedores y Contratistas Sancionados de Compras MX.",
+      "La medida cautelar queda sujeta a una garantía de 1,182,408 pesos que debe acreditarse en cinco días y no constituye una decisión de fondo sobre el amparo ni sobre la sanción."
     ],
     "extraction_status": "complete",
     "first_seen_at": "2026-09-01T16:34:47.803209+00:00",
@@ -107,7 +103,7 @@
           "chunk-2"
         ],
         "paragraphs": [
-          "El efecto observable de la medida es la cancelación provisional del registro de Intman en el Padrón de Proveedores y Contratistas Sancionados de Compras MX, condicionada a la garantía y vigente mientras se resuelve el juicio principal. La fuente no informa que las sanciones subyacentes hayan quedado sin efectos."
+          "La comunicación modifica provisionalmente la disponibilidad del registro sancionatorio para la empresa mientras se resuelve el juicio, sin anticipar la sentencia de fondo."
         ]
       },
       "sectors": [
@@ -117,16 +113,25 @@
             "chunk-2"
           ],
           "paragraphs": [
-            "Las áreas destinatarias deben considerar que la circular comunica un cambio provisional en el registro de Intman dentro de Compras MX, no una resolución definitiva sobre las sanciones administrativas o el fondo del amparo."
+            "Deben distinguir la cancelación temporal del registro de una resolución definitiva y consultar el estado actualizado del incidente y del juicio antes de aplicar consecuencias adicionales."
           ],
-          "sector": "Áreas de contratación que consultan el Padrón de Proveedores y Contratistas Sancionados"
+          "sector": "Entidades contratantes y administradoras de Compras MX"
+        },
+        {
+          "evidence_refs": [
+            "chunk-2"
+          ],
+          "paragraphs": [
+            "La continuidad de la medida depende de la acreditación de la garantía en el plazo comunicado; la fuente no informa si ese requisito se cumplió."
+          ],
+          "sector": "Intman y su representación"
         }
       ]
     },
     "importance": 3,
     "issuing_body": "Presidencia de la República",
     "jurisdiction": "nacional",
-    "last_seen_at": "2026-09-01T18:46:30.041123+00:00",
+    "last_seen_at": "2026-09-04T03:37:15.636102+00:00",
     "official_evidence": {
       "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796823&fecha=21/08/2026"
     },
@@ -141,7 +146,19 @@
     "published_year": 2026,
     "recommended_actions": [
       {
-        "affected_group": "Áreas de contratación que consultan el Padrón de Proveedores y Contratistas Sancionados",
+        "affected_group": "Intman y la parte quejosa",
+        "deadline": "Cinco días para acreditar la garantía indicada ante la autoridad exactora.",
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "legal_basis": "Artículos 132, 135, 136, 139 y 150 de la Ley de Amparo, citados en el acuerdo transcrito.",
+        "paragraphs": [
+          "Si buscan que la medida cautelar continúe, acrediten la garantía ante la autoridad exactora conforme al acuerdo, sin confundir ese requisito con una decisión de fondo."
+        ],
+        "trigger": "Concesión de la suspensión provisional dentro del incidente de amparo."
+      },
+      {
+        "affected_group": "Dependencias y entidades que consultan el padrón",
         "deadline": null,
         "evidence_refs": [
           "chunk-1",
@@ -149,9 +166,9 @@
         ],
         "legal_basis": null,
         "paragraphs": [
-          "Al consultar o utilizar el padrón, verificar el estado vigente del registro de Intman y tratar la medida como cautelar, sin equipararla con la anulación definitiva de las sanciones subyacentes."
+          "Si una decisión de contratación depende del registro, verifiquen el estado judicial y administrativo vigente y documenten que la circular describe una medida provisional, no una resolución definitiva."
         ],
-        "trigger": "Cuando se consulte o se pretenda usar el registro de Intman para una decisión de contratación pública."
+        "trigger": "Consulta o uso del Padrón de Proveedores y Contratistas Sancionados respecto de Intman."
       }
     ],
     "relevance_score": 4,
@@ -163,9 +180,9 @@
       "administracion publica federal",
       "incidente de suspension"
     ],
-    "summary": "El Órgano Interno de Control en la Secretaría de la Defensa Nacional publicó una circular que comunica la suspensión provisional concedida a Intman, S.A. de C.V. en un juicio de amparo. El Juzgado Octavo de Distrito en Materia Administrativa en la Ciudad de México ordenó, como efecto cautelar, que la autoridad responsable cancele el registro de la quejosa en el Padrón de Proveedores y Contratistas Sancionados de la plataforma Compras MX mientras se resuelve el juicio principal.\n\nEl alcance informado es registral: se cancela provisionalmente la inscripción o permanencia de Intman en ese padrón. La circular no informa que se hayan anulado, dejado sin efectos o revisado de fondo las sanciones administrativas subyacentes. Por ello, la medida no debe presentarse como una absolución, una revocación definitiva de la sanción ni una decisión sobre el fondo del procedimiento administrativo.\n\nEl acuerdo judicial fija una garantía de 1,182,408 pesos. La fuente indica que la suspensión surte efectos desde luego, pero deja de hacerlo si la parte quejosa no acredita la garantía ante la autoridad ejecutora dentro de cinco días. Esa condición y la resolución de fondo del amparo delimitan la vigencia de la medida cautelar comunicada.\n\nLa circular se dirige a dependencias y entidades de la Administración Pública Federal, a la Fiscalía General de la República, a entidades federativas, municipios y demarcaciones territoriales de la Ciudad de México. Para las áreas que consultan el padrón, el hecho relevante es el estado temporal del registro de Intman en Compras MX, no una modificación definitiva de las sanciones que originaron la anotación.\n\nLa nota se limita a los efectos expresamente comunicados por la circular y el acuerdo transcrito. La situación posterior del registro y cualquier efecto en una contratación concreta deben confirmarse en la fuente oficial y, en su caso, en las determinaciones judiciales o administrativas posteriores.",
-    "summary_teaser": "Un juzgado federal concedió suspensión provisional para cancelar el registro de Intman, S.A. de C.V. en el Padrón de Proveedores y Contratistas Sancionados de Compras MX. La medida cautelar no decide el fondo del amparo y exige una garantía de 1,182,408 pesos dentro de cinco días.",
-    "title": "Juzgado ordena cancelar provisionalmente registro de Intman en Compras MX",
+    "summary": "La circular comunica que el Juzgado Octavo de Distrito en Materia Administrativa en la Ciudad de México concedió, el 31 de julio de 2026, una suspensión provisional a Intman, S.A. de C.V. dentro del incidente de suspensión del juicio de amparo indirecto 1591/2026. La medida ordena a la autoridad responsable cancelar el registro de la quejosa en el Padrón de Proveedores y Contratistas Sancionados de la plataforma Compras MX. El acuerdo judicial indica que la suspensión impide provisionalmente la ejecución de la circular AR07-08/2026 y la permanencia del registro de la sanción mientras se resuelve el juicio principal.\n\nLa medida es cautelar y no decide el fondo del amparo ni invalida de manera definitiva la sanción administrativa. La propia resolución transcrita señala que puede repercutir en la eficacia de la potestad sancionadora y por ello fija una garantía suficiente para daños y perjuicios. La garantía indicada equivale a 1,182,408 pesos y debe acreditarse ante la autoridad exactora dentro de cinco días; la suspensión surte efectos desde luego, pero deja de hacerlo si la parte quejosa no cumple esa condición. La fuente no reporta si la garantía fue exhibida ni el estado posterior del incidente o del juicio principal.\n\nLa autoridad administrativa comunica, en cumplimiento estricto del acuerdo, que se suspende temporalmente el registro de las sanciones administrativas impuestas a Intman y a John Lorenzo Días Salas, quien la representó, dentro del procedimiento administrativo de sanción a proveedores 005/PAS/2024. La comunicación se limita a la permanencia del registro y a la ejecución provisional de la circular referida. No autoriza a concluir que la empresa fue absuelta, que la sanción se haya dejado sin efectos definitivamente o que el juicio de amparo se haya resuelto.\n\nPara las entidades destinatarias, la consecuencia verificable es que la circular informa una cancelación temporal del registro mientras se decide el juicio, condicionada a la garantía judicial. Las decisiones de contratación deben distinguir esa medida cautelar de una sentencia de fondo, revisar el estatus judicial actualizado y conservar el acuerdo y los soportes oficiales antes de derivar efectos adicionales.",
+    "summary_teaser": "El Juzgado Octavo de Distrito concedió a Intman, S.A. de C.V. una suspensión provisional para cancelar temporalmente su registro en el padrón de proveedores y contratistas sancionados. La medida no resuelve el fondo del amparo y queda condicionada a acreditar la garantía indicada en cinco días.",
+    "title": "Suspensión provisional ordena cancelar registro de Intman",
     "topic_tags": [
       "Penal",
       "Derecho administrativo",

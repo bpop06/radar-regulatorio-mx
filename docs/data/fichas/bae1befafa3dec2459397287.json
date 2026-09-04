@@ -1,0 +1,119 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "9bfb2857e185b6a117ea296f",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-1"
+      ],
+      "heading": "Objeto y consulta de bases",
+      "paragraphs": [
+        "Procedimiento busca adquirir cartuchos, tanques y botellas de tinta y tóners en segunda vuelta. Detalle de partidas se encuentra en convocatoria y anexo técnico disponibles en ComprasMX y unidad convocante."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-1"
+      ],
+      "heading": "Calendario publicado",
+      "paragraphs": [
+        "Publicación en plataforma fue el 1 de septiembre de 2026. Junta de aclaraciones está prevista para 22 de septiembre, apertura de proposiciones para 13 de octubre y fallo para 22 de octubre, en horarios expresamente indicados."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "31577f965c95cd5dc7720389c57a1b727897c888d85bd2ec176f2bc6e8eccbe9",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "Documento",
+        "location": "caracteres 0-1829"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797905&fecha=03%2F09%2F2026",
+    "retrieved_at": "2026-09-03T16:52:39.797995+00:00"
+  },
+  "executive_summary": [
+    "La Fiscalía General de la República abrió una licitación internacional bajo cobertura de tratados para consumibles de impresión.",
+    "El resumen remite bases y detalle técnico a ComprasMX y señala fechas de aclaraciones, apertura y fallo."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-1"
+      ],
+      "paragraphs": [
+        "El acto abre procedimiento competitivo y no constituye adjudicación. Requisitos materiales y técnicos deben verificarse en bases y anexo técnico, no sólo en resumen."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-1"
+        ],
+        "paragraphs": [
+          "Posibles licitantes cuentan con calendario oficial para consultar bases, plantear aclaraciones y presentar propuesta si satisfacen condiciones del procedimiento."
+        ],
+        "sector": "Proveedores de consumibles de impresión"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797905&fecha=03%2F09%2F2026",
+    "categories": [
+      "Penal"
+    ],
+    "content_hash": "d249f048d796852f05e5a001449f8e7c099b604808303d2492fc28d294614dc4",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/bae1befafa3dec2459397287.json",
+    "detail_url": "notas/bae1befafa3dec2459397287.html",
+    "detected_at": "2026-09-04T03:37:15.636102+00:00",
+    "document_type": "Fiscalia General",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5797905",
+    "importance": 2,
+    "issuing_body": "Fiscalía General de la República",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-09-03",
+    "official_title": "FISCALIA GENERAL DE LA REPUBLICA - REF:579970",
+    "published_at": "2026-09-03",
+    "relevance_score": 2,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5797905",
+    "summary_teaser": "La Fiscalía General de la República convocó una licitación pública internacional bajo cobertura de tratados para adquirir cartuchos, tanques y botellas de tinta y tóners, en segunda vuelta. Las propuestas se abren el 13 de octubre de 2026 y el fallo está previsto para el 22 de octubre.",
+    "title": "Fiscalía abre licitación internacional para consumibles de impresión",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797905&fecha=03/09/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Personas proveedoras interesadas en participar",
+      "deadline": "Junta de aclaraciones: 22 de septiembre de 2026; presentación y apertura: 13 de octubre de 2026 a las 10:30 horas",
+      "evidence_refs": [
+        "chunk-1"
+      ],
+      "legal_basis": "Convocatoria y anexo técnico de la licitación",
+      "paragraphs": [
+        "Consultar convocatoria y anexo técnico en ComprasMX, confirmar condiciones y usar junta de aclaraciones cuando sea aplicable. Preparar propuesta conforme a bases antes de fecha de presentación y apertura."
+      ],
+      "trigger": "Pretender participar en la licitación publicada"
+    }
+  ],
+  "schema_version": 8
+}

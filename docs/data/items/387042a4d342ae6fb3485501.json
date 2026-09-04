@@ -1,0 +1,186 @@
+{
+  "cut_id": "9bfb2857e185b6a117ea296f",
+  "item": {
+    "ai_generated": true,
+    "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797805&fecha=03%2F09%2F2026",
+    "card_body": "## Qué se publicó\n\nINDAABIN destinó un inmueble federal de Fresnillo a la Secretaría de Agricultura y Desarrollo Rural para mantener oficinas administrativas.\n\n## Sustancia\n\nEl acuerdo conserva la propiedad federal y regula el aprovechamiento autorizado, la conservación, los permisos previos para obras y la devolución del bien si deja de ser necesario.\n\n## Fuente\n\nDOF, Acuerdo de destino del inmueble DDR y CADER Fresnillo a Agricultura, publicado el 3 de septiembre de 2026.",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "a1d798a0fc32bdbb5f6bb86a6cad601e442423773171405cca9dedb8860c4033",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-1",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.sectors"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/387042a4d342ae6fb3485501.json",
+    "detail_url": "notas/387042a4d342ae6fb3485501.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "heading": "Inmueble y justificación del destino",
+        "paragraphs": [
+          "El acuerdo identifica el inmueble, su superficie y antecedentes técnicos. Explica que la diferencia topográfica frente al antecedente está dentro de la tolerancia indicada y mantiene la identidad del bien."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "heading": "Uso autorizado y obligaciones",
+        "paragraphs": [
+          "Agricultura puede aprovechar el inmueble como oficinas administrativas; debe solicitar autorización para un uso distinto, gestionar permisos antes de obras y responder por custodia, conservación, servicios y seguro."
+        ]
+      }
+    ],
+    "detected_at": "2026-09-04T03:37:15.636102+00:00",
+    "document_type": "Acuerdo",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "84035ee07e77e98fd5b2e45f2e81e7e33019f648fdd6e2b453b204b9b4869a21",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "ACUERDO por el que se destina a la Secretaría de Agricultura y Desarrollo Rural, el inmueble federal denominado \" DDR y CADER FRESNILLO \" , con Registro Federal Inmobiliario 32-5568-0 y superficie de 3,339.211 metros cuadrados, ubicado en calle República de Costa Rica número 106, Colonia las Américas, Código Postal 99030, Municipio de Fresnillo, Estado de Zacatecas.",
+          "location": "caracteres 0-372"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Instituto de Administración y Avalúos de Bienes Nacionales.- DST-17/2026.",
+          "location": "caracteres 372-11032"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797805&fecha=03%2F09%2F2026",
+      "retrieved_at": "2026-09-03T16:52:39.450471+00:00"
+    },
+    "executive_summary": [
+      "El acuerdo formaliza el destino del inmueble DDR y CADER Fresnillo a la Secretaría de Agricultura y Desarrollo Rural para continuar su uso como oficinas administrativas.",
+      "El derecho conferido es de aprovechamiento y no de propiedad. El texto establece condiciones sobre cambio de uso, devolución, obras, custodia, conservación y aseguramiento."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-09-04T03:37:15.636102+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5797805",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "La decisión preserva el uso administrativo de un bien federal y establece los controles patrimoniales que limitan ese aprovechamiento."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-1",
+            "chunk-2"
+          ],
+          "paragraphs": [
+            "La Secretaría conserva el uso autorizado para oficinas administrativas, con obligaciones expresas respecto de la gestión y conservación del inmueble."
+          ],
+          "sector": "Secretaría de Agricultura y Desarrollo Rural"
+        },
+        {
+          "evidence_refs": [
+            "chunk-2"
+          ],
+          "paragraphs": [
+            "Las intervenciones físicas quedan sujetas a permisos y autorizaciones aplicables antes de ejecutarse."
+          ],
+          "sector": "Gestión patrimonial y autoridades de permisos"
+        }
+      ]
+    },
+    "importance": 1,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-09-04T03:37:15.636102+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797805&fecha=03/09/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5797805"
+    },
+    "official_published_at": "2026-09-03",
+    "official_title": "Acuerdo por el que se destina a la Secretaría de Agricultura y Desarrollo Rural, el inmueble federal denominado \"DDR y CADER FRESNILLO\", con Registro Federal Inmobiliario 32-5568-0 y superficie de 3,339.211 metros cuadrados, ubicado en calle República de Costa Rica número 106, Colonia las Américas, Código Postal 99030, Municipio de Fresnillo, Estado de Zacatecas.",
+    "published_at": "2026-09-03",
+    "published_day": 3,
+    "published_month": 9,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Secretaría de Agricultura y Desarrollo Rural",
+        "deadline": "Cuatro meses desde que el bien deje de ser útil para el servicio, si se actualiza el supuesto.",
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "legal_basis": "Puntos segundo, cuarto y quinto del acuerdo; artículo 68 de la Ley General de Bienes Nacionales citado en el texto.",
+        "paragraphs": [
+          "Si se mantiene el uso administrativo, conserve evidencia de custodia, mantenimiento y aseguramiento; si se anticipa un cambio de uso o falta de necesidad, revise las condiciones de autorización o devolución del acuerdo."
+        ],
+        "trigger": "Cambio de uso, pérdida de necesidad del inmueble o administración ordinaria del inmueble destinado."
+      },
+      {
+        "affected_group": "Responsables de obras en el inmueble",
+        "deadline": null,
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "legal_basis": "Punto tercero del acuerdo.",
+        "paragraphs": [
+          "Si se proyecta una obra, gestione antes las licencias, permisos, autorizaciones o documentos equivalentes que exijan las autoridades locales y federales."
+        ],
+        "trigger": "Proyecto de construcción, reconstrucción, modificación, adaptación, conservación, mantenimiento, reparación o demolición."
+      }
+    ],
+    "relevance_score": 1,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5797805",
+    "subtopic_tags": [],
+    "summary": "El Instituto de Administración y Avalúos de Bienes Nacionales destinó a la Secretaría de Agricultura y Desarrollo Rural el inmueble federal DDR y CADER Fresnillo, ubicado en la calle República de Costa Rica 106, colonia Las Américas, municipio de Fresnillo, Zacatecas. El acuerdo permite que la Secretaría continúe utilizándolo como oficinas administrativas para cumplir sus atribuciones. El inmueble tiene Registro Federal Inmobiliario 32-5568-0 y la superficie consignada en el acuerdo es de 3,339.211 metros cuadrados.\n\nEl texto documenta que el antecedente de propiedad reportaba 3,383 metros cuadrados y que un levantamiento topográfico posterior arrojó una diferencia de 43.789 metros cuadrados, equivalente a un decremento de 1.29 por ciento. El propio acuerdo indica que la diferencia se encuentra dentro de los límites de tolerancia aplicables y que el inmueble no pierde su identidad respecto del antecedente. También refiere la solicitud de destino para mantener oficinas, compatibilidad urbanística y manifestaciones sobre su condición no histórica o artística, así como autorización técnica y opinión jurídica del INDAABIN.\n\nEl destino concede únicamente el derecho de aprovechar el bien para el uso autorizado; no transmite su propiedad ni otorga derecho real. Si Agricultura le da un uso distinto sin autorización previa de Hacienda a través del INDAABIN, o si deja de utilizarlo o necesitarlo, debe ponerlo a disposición del Instituto con sus mejoras y accesiones, sin compensación, dentro de cuatro meses desde que deje de ser útil. Antes de ejecutar obras de construcción, reconstrucción, modificación, adaptación, conservación, mantenimiento, reparación o demolición, la Secretaría debe obtener las licencias, permisos y autorizaciones que resulten aplicables.\n\nLa Secretaría queda obligada a custodiar y vigilar el inmueble, cubrir conservación, mantenimiento, servicios inherentes y aseguramiento contra daños. El INDAABIN vigilará el cumplimiento. El acuerdo debe inscribirse en el Registro Público de la Propiedad Federal y entra en vigor al día siguiente de su publicación. La fuente no acredita una obra concreta ni un cambio de uso posterior.",
+    "summary_teaser": "INDAABIN destinó a la Secretaría de Agricultura y Desarrollo Rural el inmueble DDR y CADER Fresnillo para continuar como oficinas administrativas. El acuerdo define el alcance del aprovechamiento, conserva la propiedad federal y condiciona cambios de uso, obras, conservación, aseguramiento y una eventual devolución.",
+    "title": "INDAABIN concede oficinas administrativas a Agricultura en Fresnillo",
+    "topic_tags": [
+      "Acuerdo"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797805&fecha=03/09/2026"
+  },
+  "schema_version": 8
+}

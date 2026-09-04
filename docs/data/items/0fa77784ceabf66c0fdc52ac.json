@@ -1,10 +1,10 @@
 {
-  "cut_id": "80ff8a726797f7b9e5131c53",
+  "cut_id": "9bfb2857e185b6a117ea296f",
   "item": {
     "ai_generated": true,
     "authority": "PODER EJECUTIVO SECRETARIA ANTICORRUPCION Y BUEN GOBIERNO",
     "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796708&fecha=20%2F08%2F2026",
-    "card_body": "## Qué se publicó\n\nEl órgano interno de control comunicó el cumplimiento de una sentencia que anuló una resolución sancionadora.\n\n## Sustancia\n\nLa autoridad dejó sin efectos la resolución y las sanciones relacionadas con Industrias Danjur, dentro del expediente que la fuente identifica.\n\n## Fuente\n\n[Consulta la publicación oficial](https://dof.gob.mx/nota_detalle.php?codigo=5796708&fecha=20%2F08%2F2026)",
+    "card_body": "## Qué se publicó\nSe comunicó el cumplimiento de una sentencia definitiva que dejó sin efectos la resolución sancionadora y las sanciones impuestas a Industrias Danjur.\n\n## Sustancia\nEl TFJA declaró la nulidad de la resolución impugnada. En cumplimiento, el OIC de IMSS-BIENESTAR dejó insubsistente tanto la resolución como la multa y la inhabilitación que derivaban de ella.\n\n## Fuente\n[Diario Oficial de la Federación](https://dof.gob.mx/nota_detalle.php?codigo=5796708&fecha=20%2F08%2F2026)",
     "case_amount": "",
     "case_claim": "",
     "case_facts": "",
@@ -26,7 +26,10 @@
         "source_ref": "chunk-1",
         "target_sections": [
           "executive_summary",
-          "detailed_summary"
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
         ]
       },
       {
@@ -34,8 +37,10 @@
         "reason": null,
         "source_ref": "chunk-2",
         "target_sections": [
+          "executive_summary",
           "detailed_summary",
           "impacts.general",
+          "impacts.sectors",
           "recommended_actions"
         ]
       }
@@ -49,19 +54,27 @@
           "chunk-1",
           "chunk-2"
         ],
-        "heading": "Contenido publicado",
+        "heading": "Sentencia firme y resolución impugnada",
         "paragraphs": [
-          "La sentencia firme del Tribunal anuló la resolución administrativa sancionadora impugnada por Industrias Danjur."
+          "La publicación informa que la Quinta Sala Regional Metropolitana del TFJA resolvió el juicio promovido por Industrias Danjur y declaró la nulidad de la resolución impugnada. La circular señala que la sentencia definitiva adquirió firmeza conforme a la certificación comunicada."
         ]
       },
       {
         "evidence_refs": [
-          "chunk-1",
           "chunk-2"
         ],
-        "heading": "Alcance práctico",
+        "heading": "Sanciones que se dejaron sin efecto",
         "paragraphs": [
-          "La autoridad informó que dejó insubsistentes la resolución y las sanciones que contenía, sin publicar un nuevo procedimiento."
+          "La resolución administrativa había impuesto una multa de $894,846.00 y una inhabilitación de 18 meses. Por acuerdo de 4 de agosto de 2026, el OIC dejó insubsistente la resolución de junio de 2024 y las sanciones impuestas a la empresa."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "heading": "Límite del aviso",
+        "paragraphs": [
+          "La circular comunica cumplimiento de la sentencia y no desarrolla razones adicionales del fallo ni crea una sanción, multa o contratación nueva."
         ]
       }
     ],
@@ -69,7 +82,7 @@
     "document_type": "Circular",
     "editorial_status": "complete",
     "evidence": {
-      "content_hash": "764282d0a3f9326653e0e439e1d84b579bfdd488f50412071b2d1920aa1d9114",
+      "content_hash": "f0b124f7b712b85d7c05b695783072bfce2db1f26c59f39aff714b26f6279364",
       "extraction_method": "html-adapter",
       "locators": [
         {
@@ -84,11 +97,11 @@
         }
       ],
       "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796708&fecha=20%2F08%2F2026",
-      "retrieved_at": "2026-09-01T16:35:12.205194+00:00"
+      "retrieved_at": "2026-09-03T16:53:27.201034+00:00"
     },
     "executive_summary": [
-      "El Área de Responsabilidades del Órgano Interno de Control en Servicios de Salud del IMSS-BIENESTAR publicó una circular para comunicar el cumplimiento de una sentencia definitiva del Tribunal Federal de Justicia Administrativa. La sentencia, notificada como firme según la fuente, declaró la nulidad de la resolución emitida dentro de un procedimiento administrativo de sanción seguido contra Industrias Danjur, S.A. de C.V. La circular reproduce que la Sala resolvió que la parte actora probó los hechos constitutivos de su pretensión y anuló la resolución impugnada.",
-      "La comunicación identifica que la resolución administrativa había impuesto a la empresa una multa y una inhabilitación para celebrar contratos. En cumplimiento de la sentencia, un acuerdo posterior dejó insubsistente esa resolución y las sanciones que contenía. El efecto reportado por la autoridad es la eliminación de esas sanciones específicas; no es una declaración general sobre cualquier procedimiento, contrato o situación distinta de la resolución administrativa anulada."
+      "La circular comunica que una sentencia definitiva del TFJA declaró la nulidad de la resolución de sanción contra Industrias Danjur, S.A. de C.V. y que la firmeza de esa sentencia fue certificada.",
+      "En cumplimiento, el OIC de IMSS-BIENESTAR dejó insubsistente la resolución de junio de 2024 y las sanciones de multa e inhabilitación que había impuesto a la empresa."
     ],
     "extraction_status": "complete",
     "first_seen_at": "2026-09-01T16:34:47.803209+00:00",
@@ -101,7 +114,7 @@
           "chunk-2"
         ],
         "paragraphs": [
-          "La circular actualiza el estado de una sanción específica que ya no debe tratarse como vigente por las autoridades destinatarias."
+          "La comunicación deja sin efectos una resolución sancionadora y sus consecuencias expresamente identificadas. La publicación no sustituye el expediente judicial ni permite inferir otras consecuencias ajenas a la insubsistencia comunicada."
         ]
       },
       "sectors": [
@@ -111,16 +124,25 @@
             "chunk-2"
           ],
           "paragraphs": [
-            "Las áreas contratantes deben ajustar sus expedientes y verificaciones para reflejar que la resolución sancionadora descrita fue dejada sin efectos."
+            "Las autoridades destinatarias reciben la comunicación de que la resolución de sanción y las sanciones de multa e inhabilitación contra Industrias Danjur fueron dejadas sin efecto en cumplimiento de la sentencia."
           ],
-          "sector": "Áreas contratantes y la empresa involucrada"
+          "sector": "Áreas de contratación pública"
+        },
+        {
+          "evidence_refs": [
+            "chunk-2"
+          ],
+          "paragraphs": [
+            "La circular identifica a la empresa como beneficiaria de la insubsistencia de la resolución y de las sanciones que se le habían impuesto, sin comunicar un resultado contractual adicional."
+          ],
+          "sector": "Industrias Danjur, S.A. de C.V."
         }
       ]
     },
     "importance": 3,
     "issuing_body": "Presidencia de la República",
     "jurisdiction": "nacional",
-    "last_seen_at": "2026-09-01T18:46:30.041123+00:00",
+    "last_seen_at": "2026-09-04T03:37:15.636102+00:00",
     "official_evidence": {
       "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796708&fecha=20/08/2026"
     },
@@ -135,17 +157,29 @@
     "published_year": 2026,
     "recommended_actions": [
       {
-        "affected_group": "Áreas contratantes y la empresa involucrada",
+        "affected_group": "Autoridades que tengan registros o controles de contratación vinculados con la sanción",
         "deadline": null,
         "evidence_refs": [
           "chunk-1",
           "chunk-2"
         ],
-        "legal_basis": "Sentencia del Tribunal Federal de Justicia Administrativa y circular de cumplimiento",
+        "legal_basis": null,
         "paragraphs": [
-          "Identificar referencias internas a la resolución anulada y actualizar la verificación de elegibilidad con base en la circular y en los registros oficiales vigentes."
+          "Si usan la resolución o las sanciones referidas como antecedente en un trámite, deben verificar la circular y el acto de cumplimiento para no tratar como vigente una sanción que la publicación comunica como insubsistente."
         ],
-        "trigger": "Consultar o aplicar la sanción administrativa identificada en la circular"
+        "trigger": "Cuando un trámite o registro haga referencia a la resolución sancionadora o a sus sanciones."
+      },
+      {
+        "affected_group": "Personas que requieran el alcance de la sentencia",
+        "deadline": null,
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "legal_basis": null,
+        "paragraphs": [
+          "Si el efecto requerido depende de fundamentos, pruebas o alcances específicos del juicio, deben consultar la sentencia y las constancias oficiales correspondientes; la circular sólo comunica su firmeza y cumplimiento."
+        ],
+        "trigger": "Cuando sea necesario interpretar el alcance judicial más allá de la insubsistencia anunciada."
       }
     ],
     "relevance_score": 5,
@@ -160,9 +194,9 @@
       "tribunal federal de justicia administrativa",
       "sala regional"
     ],
-    "summary": "El Área de Responsabilidades del Órgano Interno de Control en Servicios de Salud del IMSS-BIENESTAR publicó una circular para comunicar el cumplimiento de una sentencia definitiva del Tribunal Federal de Justicia Administrativa. La sentencia, notificada como firme según la fuente, declaró la nulidad de la resolución emitida dentro de un procedimiento administrativo de sanción seguido contra Industrias Danjur, S.A. de C.V. La circular reproduce que la Sala resolvió que la parte actora probó los hechos constitutivos de su pretensión y anuló la resolución impugnada.\n\nLa comunicación identifica que la resolución administrativa había impuesto a la empresa una multa y una inhabilitación para celebrar contratos. En cumplimiento de la sentencia, un acuerdo posterior dejó insubsistente esa resolución y las sanciones que contenía. El efecto reportado por la autoridad es la eliminación de esas sanciones específicas; no es una declaración general sobre cualquier procedimiento, contrato o situación distinta de la resolución administrativa anulada.\n\nEl acto se dirige a dependencias, entidades, empresas públicas, entidades federativas, municipios y demarcaciones territoriales, lo que permite que las áreas compradoras actualicen la referencia oficial relacionada con la sanción anulada. La fuente no publica un nuevo procedimiento sancionador ni establece que la autoridad haya reexaminado el fondo de los hechos. La información verificable es el cumplimiento de una sentencia firme mediante la insubsistencia de la resolución y las sanciones identificadas.\n\nPara efectos de contratación pública, la circular es relevante para no mantener como vigente la sanción que fue dejada sin efectos. Sin embargo, la ficha no presume la inexistencia de otras restricciones, registros o obligaciones que no aparecen en el documento. Las verificaciones de elegibilidad deben hacerse respecto de la identidad, periodo y resolución concretos, con consulta de fuentes oficiales actualizadas.\n\nPara fines de seguimiento, la publicación debe leerse con la normativa que expresamente cita. Esta ficha sólo reporta el alcance verificable del documento oficial: no anticipa decisiones posteriores, requisitos no publicados ni consecuencias que el texto no atribuye de manera directa.",
-    "summary_teaser": "El órgano interno de control de IMSS-BIENESTAR comunicó que dejó insubsistente la resolución que sancionó a Industrias Danjur. La circular da cumplimiento a una sentencia firme de la Sala Regional en Ciudad de México del Tribunal Federal de Justicia Administrativa que declaró la nulidad de la resolución impugnada.",
-    "title": "TFJA invalida sanciones impuestas a Industrias Danjur",
+    "summary": "El Órgano Interno de Control en Servicios de Salud del Instituto Mexicano del Seguro Social para el Bienestar comunicó el cumplimiento de una sentencia definitiva dictada por la Quinta Sala Regional Metropolitana, hoy Quinta Sala en la Ciudad de México, del Tribunal Federal de Justicia Administrativa. La circular informa que la sentencia de 10 de marzo de 2025 quedó firme y que, en el juicio contencioso administrativo promovido por Industrias Danjur, S.A. de C.V., se declaró la nulidad de la resolución de sanción emitida en junio de 2024.\n\nEl texto reproduce que la empresa demandó la nulidad de la resolución dictada dentro del procedimiento administrativo de sanción correspondiente. Según la circular, esa resolución había impuesto una multa de $894,846.00 y una inhabilitación de 18 meses para celebrar contratos con diversas dependencias. La sentencia declaró la nulidad de la resolución impugnada; la publicación no describe más allá de lo transcrito las razones fácticas o jurídicas que condujeron a esa nulidad, por lo que no permite atribuir una motivación adicional al Tribunal.\n\nLa circular precisa que la firmeza fue certificada en el juicio y notificada mediante publicación en el Boletín Jurisdiccional. En estricto cumplimiento de la sentencia definitiva, por acuerdo de 4 de agosto de 2026, se dejó insubsistente la resolución de junio de 2024 y también las sanciones impuestas a Industrias Danjur, S.A. de C.V. La publicación es una comunicación de cumplimiento dirigida a dependencias y entidades federales, empresas públicas, entidades federativas, municipios y demarcaciones territoriales de la Ciudad de México.\n\nEl alcance publicado es la insubsistencia de la resolución sancionadora y de las sanciones vinculadas con ella. No crea una sanción nueva, no comunica una multa pendiente ni acredita que la empresa haya celebrado, vaya a celebrar o deba celebrar un contrato. Tampoco sustituye la sentencia ni proporciona el expediente completo; para cualquier efecto que dependa de los términos judiciales debe atenderse a los documentos oficiales correspondientes.",
+    "summary_teaser": "La circular comunica el cumplimiento de una sentencia definitiva del TFJA que declaró nulidad lisa y llana de la resolución sancionadora contra Industrias Danjur. El OIC de IMSS-BIENESTAR dejó insubsistente la resolución y las sanciones de multa e inhabilitación que había impuesto.",
+    "title": "Se dejan sin efecto sanciones de contratación contra Industrias Danjur",
     "topic_tags": [
       "Derecho administrativo",
       "Contencioso administrativo",

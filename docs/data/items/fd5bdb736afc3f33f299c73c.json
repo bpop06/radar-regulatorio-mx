@@ -1,0 +1,168 @@
+{
+  "cut_id": "9bfb2857e185b6a117ea296f",
+  "item": {
+    "ai_generated": true,
+    "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797701&fecha=02%2F09%2F2026",
+    "card_body": "## Qué se publicó\nLa CNBV modificó los términos de la autorización para la organización y operación de Openbank México.\n\n## Sustancia\nEl oficio actualiza la base de capital social pagado de la institución con base en reformas estatutarias formalizadas. También requiere informar la fecha de sus publicaciones en el Diario Oficial de la Federación y en periódicos de amplia circulación, bajo los plazos que el propio acto precisa.\n\n## Fuente\nDiario Oficial de la Federación: https://dof.gob.mx/nota_detalle.php?codigo=5797701&fecha=02/09/2026",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "324c06547a3bee9a3ffa62df7e02aedc98ab78395b235efb7f0b613c125fdf94",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "not_material",
+        "reason": "Encabezado identificador; los antecedentes, modificación y requerimiento están en el texto del oficio.",
+        "source_ref": "chunk-1",
+        "target_sections": []
+      },
+      {
+        "disposition": "summarized",
+        "reason": "Antecedentes de capital, modificación de autorización, publicación e información a la CNBV.",
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/fd5bdb736afc3f33f299c73c.json",
+    "detail_url": "notas/fd5bdb736afc3f33f299c73c.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "heading": "Modificación de capital y antecedentes",
+        "paragraphs": [
+          "La CNBV incorpora en la base quinta de la autorización el capital social pagado de $5,008,420,220. El oficio identifica dos aumentos previos, las reformas estatutarias respectivas y las escrituras públicas e inscripciones remitidas para formalizarlas."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "heading": "Publicación e información a la autoridad",
+        "paragraphs": [
+          "Openbank debe informar la fecha de la publicación del oficio en el Diario Oficial de la Federación y en dos periódicos de amplia circulación de su domicilio social. El texto expresa un plazo para informar y otra referencia temporal para tramitar las publicaciones, ambas de quince días hábiles y con puntos de cómputo que el oficio enuncia."
+        ]
+      }
+    ],
+    "detected_at": "2026-09-04T03:37:15.636102+00:00",
+    "document_type": "Oficio",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "cfb86707dbb604859fdc394c9db043f337b78e61901b1da9c9fb7299a7acd7b0",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "OFICIO mediante el cual se modifican los términos de la autorización para la organización y operación de Openbank México, S.A., Institución de Banca Múltiple, Grupo Financiero Santander México.",
+          "location": "caracteres 0-197"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Comisión Nacional Bancaria y de Valores.- Vicepresidencia de Normatividad.- Dirección General de Autorizaciones al Sistema Financiero.- Vicepresidencia de Supervisión de Grupos e Intermediarios Financieros A.- Dirección General de Supervisión de Grupos e intermediarios Financieros A.- Oficio Núm.: 312-1/709252/2026.- Exp.: CNBV.3S.1.312 (16046).",
+          "location": "caracteres 197-5115"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797701&fecha=02%2F09%2F2026",
+      "retrieved_at": "2026-09-03T16:52:40.781497+00:00"
+    },
+    "executive_summary": [
+      "La CNBV modificó la autorización individual de Openbank México para fijar su capital social pagado en $5,008,420,220, después de dos aumentos estatutarios que el oficio detalla.",
+      "El acto requiere informar a la autoridad la fecha de publicación en el Diario Oficial de la Federación y en dos periódicos de amplia circulación, con referencias expresas a plazos de quince días hábiles."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-09-04T03:37:15.636102+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5797701",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "El acto actualiza una condición de la autorización de Openbank México. La evidencia no permite extender el cambio a otras instituciones ni concluir modificaciones en productos, tarifas o relaciones contractuales con clientes."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-2"
+          ],
+          "paragraphs": [
+            "La institución es la destinataria de la modificación de capital y de la obligación de informar las publicaciones descritas por la CNBV."
+          ],
+          "sector": "Openbank México, S.A., Institución de Banca Múltiple"
+        },
+        {
+          "evidence_refs": [
+            "chunk-2"
+          ],
+          "paragraphs": [
+            "La ficha documenta una actualización individual de autorización; no constituye una disposición de alcance general para el sistema bancario."
+          ],
+          "sector": "Supervisión y autorización bancaria"
+        }
+      ]
+    },
+    "importance": 1,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-09-04T03:37:15.636102+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797701&fecha=02/09/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5797701"
+    },
+    "official_published_at": "2026-09-02",
+    "official_title": "Oficio mediante el cual se modifican los términos de la autorización para la organización y operación de Openbank México, S.A., Institución de Banca Múltiple, Grupo Financiero Santander México.",
+    "published_at": "2026-09-02",
+    "published_day": 2,
+    "published_month": 9,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Openbank México, S.A., Institución de Banca Múltiple",
+        "deadline": "El oficio menciona quince días hábiles desde la publicación para informar y quince días hábiles posteriores a la recepción para tramitar las publicaciones.",
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "legal_basis": "Artículos 8 y 97 de la Ley de Instituciones de Crédito y 19 de la Ley de la Comisión Nacional Bancaria y de Valores, citados en el oficio.",
+        "paragraphs": [
+          "Si recibió el oficio, deberá atender la publicación que éste exige y comunicar a la CNBV la fecha correspondiente, verificando los dos enunciados temporales con la fecha de recepción que resulte aplicable."
+        ],
+        "trigger": "Después de la recepción del oficio de modificación de autorización."
+      }
+    ],
+    "relevance_score": 1,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5797701",
+    "subtopic_tags": [],
+    "summary": "La Comisión Nacional Bancaria y de Valores modificó la base quinta de la autorización para la organización y operación de Openbank México, S.A., Institución de Banca Múltiple, Grupo Financiero Santander México. El oficio fija que el capital social pagado de la institución es de $5,008,420,220. La modificación se emite con fundamento en la Ley de Instituciones de Crédito y se integra a la autorización originalmente emitida para la institución, cuya modificación más reciente previa también se identifica en el documento. El acto es individual para Openbank y no presenta una regla general de capitalización para las demás instituciones de banca múltiple.\n\nLa CNBV explica que previamente aprobó dos reformas estatutarias vinculadas con aumentos de capital. Una correspondió a un incremento de $900,000,000, que llevó el capital de $2,908,420,220 a $3,808,420,220; la segunda fue por $1,200,000,000, para pasar a $5,008,420,220. Openbank remitió copias certificadas de las escrituras públicas con las que se formalizaron esas modificaciones, junto con las inscripciones mercantiles que el oficio identifica. Con base en esos antecedentes, la autoridad modifica el texto de la autorización para reflejar el capital pagado señalado.\n\nEl oficio también requiere que Openbank informe a la CNBV la fecha de publicación de su texto en el Diario Oficial de la Federación y en dos periódicos de amplia circulación de su domicilio social. La fuente establece un plazo de quince días hábiles contado a partir de la publicación para informar esa fecha y, enseguida, señala que las publicaciones deben tramitarse dentro de los quince días hábiles posteriores a la recepción del oficio. Ambos enunciados deben atenderse conforme al texto completo y la fecha de recepción aplicable. La exigencia de informar se dirige exclusivamente a Openbank y se circunscribe a las publicaciones que el oficio identifica. La fuente no describe cambios en productos, depósitos, comisiones, derechos de clientes ni condiciones comerciales de la institución.",
+    "summary_teaser": "CNBV modifica la base de capital pagado de la autorización de Openbank México a $5,008,420,220. El oficio refiere dos aumentos estatutarios previos y exige comunicar las publicaciones oficiales y en periódicos de amplia circulación. Los plazos se expresan en días hábiles y deben leerse junto con el texto íntegro del oficio.",
+    "title": "CNBV actualiza el capital pagado autorizado de Openbank México",
+    "topic_tags": [
+      "Oficio"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797701&fecha=02/09/2026"
+  },
+  "schema_version": 8
+}

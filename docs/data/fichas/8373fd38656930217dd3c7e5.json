@@ -25,31 +25,30 @@
       ]
     }
   ],
-  "cut_id": "80ff8a726797f7b9e5131c53",
+  "cut_id": "9bfb2857e185b6a117ea296f",
   "detailed_summary": [
     {
       "evidence_refs": [
+        "chunk-1",
         "chunk-2"
       ],
-      "heading": "Contenido publicado",
+      "heading": "Lista semestral de participantes",
       "paragraphs": [
-        "La publicación enumera 34 Sociedades Financieras Populares que participaron en el Fondo de Protección durante el primer semestre de 2026. La lista contiene, entre otras, Crediclub, Financiera Broxel, Fincomún, Klar Technologies, Nu México Financiera, Stori México y Unagra. La nota se publica con fundamento en el artículo 98 de la Ley de Ahorro y Crédito Popular.",
-        "El documento acompaña dos precisiones expresas. Acción y Evolución figura clasificada en categoría 4 en el nivel de capitalización y sujeta a un estudio técnico para valorar lo previsto en el artículo 90 de la ley. Impulso para el Desarrollo de México aparece pendiente de resolución firme por los medios de defensa interpuestos contra un oficio de revocación."
+        "La publicación, emitida con fundamento en el artículo 98 de la Ley de Ahorro y Crédito Popular, enumera 34 Sofipos que participaron en el Fondo de Protección durante el primer semestre de 2026."
       ]
     },
     {
       "evidence_refs": [
         "chunk-2"
       ],
-      "heading": "Alcance y lectura práctica",
+      "heading": "Notas individuales expresamente publicadas",
       "paragraphs": [
-        "El listado acredita la participación en el Fondo durante el periodo señalado; no sustituye información individual sobre autorización, solvencia, productos, cobertura concreta o resultado de procedimientos de cada sociedad. Las dos notas deben leerse con el alcance limitado que el propio documento les da.",
-        "La ficha se dirige principalmente a ahorradores, sofipos y personas que consultan información del fondo de protección."
+        "Acción y Evolución aparece clasificada en categoría 4 en el Nivel de Capitalización, con aplicación de Estudio Técnico para valorar lo previsto en el artículo 90 de la ley citada. Impulso para el Desarrollo de México aparece pendiente de resolución firme por medios de defensa contra el oficio de revocación emitido por CNBV."
       ]
     }
   ],
   "evidence": {
-    "content_hash": "272e85f645c17b3f1e81ac9494e5e60a8850b9e181f5ee98a2ef989f0fdf8e08",
+    "content_hash": "3f1231d545ad79411a35109d1ee1beb0b96b678161de4975742c6fc804f9db78",
     "extraction_method": "html-adapter",
     "locators": [
       {
@@ -64,19 +63,20 @@
       }
     ],
     "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795599&fecha=06%2F08%2F2026",
-    "retrieved_at": "2026-09-01T16:35:43.688705+00:00"
+    "retrieved_at": "2026-09-03T16:53:56.494140+00:00"
   },
   "executive_summary": [
-    "El Fondo de Protección de Sociedades Financieras Populares y de Protección a sus Ahorradores difundió la lista de sociedades financieras populares participantes en el Fondo de Protección durante el primer semestre de 2026. La publicación enumera 34 Sociedades Financieras Populares que participaron en el Fondo de Protección durante el primer semestre de 2026. La lista contiene, entre otras, Crediclub, Financiera Broxel, Fincomún, Klar Technologies, Nu México Financiera, Stori México y Unagra. La nota se publica con fundamento en el artículo 98 de la Ley de Ahorro y Crédito Popular.",
-    "El listado acredita la participación en el Fondo durante el periodo señalado; no sustituye información individual sobre autorización, solvencia, productos, cobertura concreta o resultado de procedimientos de cada sociedad. Las dos notas deben leerse con el alcance limitado que el propio documento les da. La síntesis se limita a los hechos y condiciones expresamente visibles en la fuente oficial."
+    "El Fondo de Protección publicó una lista de 34 Sociedades Financieras Populares que participaron durante el primer semestre de 2026, sin describir los productos, servicios o condición actual de cada entidad.",
+    "La fuente añade dos notas de alcance individual: la clasificación y estudio técnico referidos para Acción y Evolución, y la pendencia de resolución firme por medios de defensa respecto de Impulso para el Desarrollo de México."
   ],
   "impacts": {
     "general": {
       "evidence_refs": [
+        "chunk-1",
         "chunk-2"
       ],
       "paragraphs": [
-        "El efecto observable es el que la publicación atribuye al acto: El listado acredita la participación en el Fondo durante el periodo señalado; no sustituye información individual sobre autorización, solvencia, productos, cobertura concreta o resultado de procedimientos de cada sociedad. Las dos notas deben leerse con el alcance limitado que el propio documento les da."
+        "La relación ofrece una referencia oficial de participación durante el semestre señalado, pero no acredita actividades, productos, situación actual o una condición común adicional para las entidades enumeradas."
       ]
     },
     "sectors": [
@@ -85,9 +85,19 @@
           "chunk-2"
         ],
         "paragraphs": [
-          "Las personas comprendidas deben considerar el documento porque La publicación enumera 34 Sociedades Financieras Populares que participaron en el Fondo de Protección durante el primer semestre de 2026. La lista contiene, entre otras, Crediclub, Financiera Broxel, Fincomún, Klar Technologies, Nu México Financiera, Stori México y Unagra. La nota se publica con fundamento en el artículo 98 de la Ley de Ahorro y Crédito Popular."
+          "La publicación acredita que las entidades enumeradas participaron en el Fondo de Protección durante el primer semestre de 2026; las dos notas añadidas tienen el alcance individual que el texto les asigna."
         ],
-        "sector": "Ahorradores, Sofipos y personas que consultan información del Fondo de Protección"
+        "sector": "Sofipos incluidas en la relación"
+      },
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "Quienes utilicen la relación deben mantener su alcance temporal y no convertir una denominación, la participación semestral o una nota individual en una caracterización de servicios o condición de otra entidad."
+        ],
+        "sector": "Usuarios y contrapartes que consultan la lista"
       }
     ]
   },
@@ -116,22 +126,35 @@
     "review_reason": null,
     "source": "DOF",
     "source_id": "5795599",
-    "summary_teaser": "El Fondo de Protección de Sociedades Financieras Populares publicó las 34 Sofipos que participaron durante el primer semestre de 2026. El listado incluye dos notas: Acción y Evolución está en categoría 4 con estudio técnico, e Impulso para el Desarrollo de México tiene medios de defensa pendientes.",
-    "title": "Fondo de Protección confirma Sofipos participantes del semestre",
+    "summary_teaser": "El Fondo de Protección publicó la lista de 34 Sociedades Financieras Populares que participaron durante el primer semestre de 2026. La fuente sólo acredita esa participación y contiene dos notas individualizadas: una sobre la clasificación de Acción y Evolución y otra sobre la situación procesal de Impulso para el Desarrollo de México.",
+    "title": "Fondo confirma participación semestral de Sofipos listadas",
     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5795599&fecha=06/08/2026"
   },
   "recommended_actions": [
     {
-      "affected_group": "Ahorradores, Sofipos y personas que consultan información del Fondo de Protección",
+      "affected_group": "Usuarios que citen la lista para verificación institucional",
+      "deadline": null,
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2"
+      ],
+      "legal_basis": "Artículo 98, segundo párrafo, de la Ley de Ahorro y Crédito Popular, citado en la publicación.",
+      "paragraphs": [
+        "Si se usa la relación como referencia, limítese a la participación de las Sofipos enumeradas durante el primer semestre de 2026 y obténgase una fuente vigente para cualquier estatus distinto."
+      ],
+      "trigger": "Uso de la lista para describir la participación de una Sofipo en el Fondo de Protección."
+    },
+    {
+      "affected_group": "Responsables que evalúan las dos entidades con nota",
       "deadline": null,
       "evidence_refs": [
         "chunk-2"
       ],
       "legal_basis": null,
       "paragraphs": [
-        "Usar el listado para confirmar la participación durante el semestre y consultar fuentes regulatorias específicas antes de tomar decisiones sobre una sociedad, producto o procedimiento particular."
+        "Si el análisis concierne a Acción y Evolución o a Impulso para el Desarrollo de México, conserve la literalidad y el alcance individual de cada nota, sin extenderla a las demás Sofipos ni anticipar un resultado procesal."
       ],
-      "trigger": "Cuando la persona o entidad se ubique en el ámbito material descrito por la fuente oficial."
+      "trigger": "Análisis de las notas incorporadas a la relación semestral."
     }
   ],
   "schema_version": 8

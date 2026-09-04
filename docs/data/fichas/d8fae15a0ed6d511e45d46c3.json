@@ -1,16 +1,10 @@
 {
   "coverage": [
     {
-      "disposition": "summarized",
-      "reason": null,
+      "disposition": "not_material",
+      "reason": "El primer fragmento sólo reproduce el encabezado del aviso.",
       "source_ref": "chunk-1",
-      "target_sections": [
-        "executive_summary",
-        "detailed_summary",
-        "impacts.general",
-        "impacts.sectors",
-        "recommended_actions"
-      ]
+      "target_sections": []
     },
     {
       "disposition": "summarized",
@@ -25,31 +19,29 @@
       ]
     }
   ],
-  "cut_id": "80ff8a726797f7b9e5131c53",
+  "cut_id": "9bfb2857e185b6a117ea296f",
   "detailed_summary": [
     {
       "evidence_refs": [
         "chunk-2"
       ],
-      "heading": "Contenido publicado",
+      "heading": "Unidades y atención oficial",
       "paragraphs": [
-        "Desde el 1 de agosto de 2026, las unidades administrativas enumeradas por la Secretaría de Cultura ejercen funciones y reciben correspondencia, notificaciones, citaciones, requerimientos, trámites y diligencias en Calle Dinamarca 84, colonia Juárez, alcaldía Cuauhtémoc, Ciudad de México. El aviso incluye la Unidad de Administración y Finanzas, Unidad de Asuntos Jurídicos, Unidad de Culturas Vivas, Órgano Interno de Control y cuatro coordinaciones administrativas y tecnológicas.",
-        "Las referencias en contratos, convenios, actos, oficios y demás documentación que indiquen el domicilio anterior en Paseo de la Reforma 175 deben entenderse hechas al nuevo domicilio. La Oficialía de Partes de las unidades incluidas recibirá las actuaciones relacionadas con sus competencias, salvo disposición expresa en contrario."
+        "El aviso enumera ocho unidades administrativas y sitúa su atención oficial en Calle Dinamarca 84. La Oficialía de Partes correspondiente recibe en ese domicilio los documentos y actuaciones vinculados con sus competencias, salvo disposición expresa en contrario."
       ]
     },
     {
       "evidence_refs": [
         "chunk-2"
       ],
-      "heading": "Alcance y lectura práctica",
+      "heading": "Transición documental y procedimental",
       "paragraphs": [
-        "El aviso protege la continuidad de procedimientos iniciados con anterioridad y obliga a actualizar formatos, medios electrónicos, directorios, portales y documentación oficial. Entró en vigor el día de su publicación; el cambio de domicilio operativo se fija desde la fecha indicada en el cuerpo del aviso.",
-        "La ficha se dirige principalmente a personas usuarias y autoridades que presenten promociones ante las unidades administrativas señaladas."
+        "Las referencias al domicilio anterior se entienden hechas al nuevo sin afectar actos previos. Los procedimientos iniciados continúan su trámite y las unidades deben asegurar continuidad y actualizar sus soportes institucionales."
       ]
     }
   ],
   "evidence": {
-    "content_hash": "3d247ce1a38f5da47a4e419e0461367bb59ddd245946c864ae27c8a5cd436f91",
+    "content_hash": "6fee4a3c4305551fc4f102f47eff732afdc852ac5e2c74f96e48409eb1478a72",
     "extraction_method": "html-adapter",
     "locators": [
       {
@@ -64,11 +56,11 @@
       }
     ],
     "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795832&fecha=10%2F08%2F2026",
-    "retrieved_at": "2026-09-01T16:35:37.329694+00:00"
+    "retrieved_at": "2026-09-03T16:53:50.685570+00:00"
   },
   "executive_summary": [
-    "La Secretaría de Cultura difundió el cambio de domicilio oficial de unidades administrativas de la Secretaría de Cultura. Desde el 1 de agosto de 2026, las unidades administrativas enumeradas por la Secretaría de Cultura ejercen funciones y reciben correspondencia, notificaciones, citaciones, requerimientos, trámites y diligencias en Calle Dinamarca 84, colonia Juárez, alcaldía Cuauhtémoc, Ciudad de México. El aviso incluye la Unidad de Administración y Finanzas, Unidad de Asuntos Jurídicos, Unidad de Culturas Vivas, Órgano Interno de Control y cuatro coordinaciones administrativas y tecnológicas.",
-    "El aviso protege la continuidad de procedimientos iniciados con anterioridad y obliga a actualizar formatos, medios electrónicos, directorios, portales y documentación oficial. Entró en vigor el día de su publicación; el cambio de domicilio operativo se fija desde la fecha indicada en el cuerpo del aviso. La síntesis se limita a los hechos y condiciones expresamente visibles en la fuente oficial."
+    "La Secretaría de Cultura comunicó que ocho unidades administrativas tienen domicilio oficial en Calle Dinamarca número 84, colonia Juárez, Ciudad de México, desde el 1 de agosto de 2026.",
+    "El nuevo domicilio rige para recepción de promociones, notificaciones y diligencias de esas unidades. Los procedimientos previos continúan sin afectación; las áreas deben asegurar continuidad y actualizar formatos, medios electrónicos, directorios, portales y documentación."
   ],
   "impacts": {
     "general": {
@@ -76,7 +68,7 @@
         "chunk-2"
       ],
       "paragraphs": [
-        "El efecto observable es el que la publicación atribuye al acto: El aviso protege la continuidad de procedimientos iniciados con anterioridad y obliga a actualizar formatos, medios electrónicos, directorios, portales y documentación oficial. Entró en vigor el día de su publicación; el cambio de domicilio operativo se fija desde la fecha indicada en el cuerpo del aviso."
+        "El aviso cambia el lugar oficial de atención para las unidades enumeradas, con efectos sobre la recepción de correspondencia, promociones, notificaciones y diligencias posteriores."
       ]
     },
     "sectors": [
@@ -85,9 +77,9 @@
           "chunk-2"
         ],
         "paragraphs": [
-          "Las personas comprendidas deben considerar el documento porque Desde el 1 de agosto de 2026, las unidades administrativas enumeradas por la Secretaría de Cultura ejercen funciones y reciben correspondencia, notificaciones, citaciones, requerimientos, trámites y diligencias en Calle Dinamarca 84, colonia Juárez, alcaldía Cuauhtémoc, Ciudad de México. El aviso incluye la Unidad de Administración y Finanzas, Unidad de Asuntos Jurídicos, Unidad de Culturas Vivas, Órgano Interno de Control y cuatro coordinaciones administrativas y tecnológicas."
+          "Quienes presenten escritos, promociones o notificaciones ante esas unidades deben considerar el domicilio oficial que el aviso identifica desde la fecha señalada."
         ],
-        "sector": "Personas usuarias y autoridades que presenten promociones ante las unidades administrativas señaladas"
+        "sector": "Personas usuarias y autoridades que realizan actuaciones ante las unidades señaladas"
       }
     ]
   },
@@ -116,22 +108,34 @@
     "review_reason": null,
     "source": "DOF",
     "source_id": "5795832",
-    "summary_teaser": "La Secretaría de Cultura comunicó el nuevo domicilio oficial de ocho unidades administrativas en Calle Dinamarca 84, colonia Juárez, Ciudad de México. Desde el 1 de agosto de 2026, ahí se reciben promociones, notificaciones y correspondencia; los procedimientos iniciados continúan sin afectación.",
-    "title": "Cultura cambia domicilio de ocho unidades administrativas",
+    "summary_teaser": "La Secretaría de Cultura comunicó que ocho unidades administrativas atenderán en Calle Dinamarca 84, colonia Juárez, Ciudad de México, desde el 1 de agosto de 2026. El aviso regula la recepción de promociones, notificaciones y diligencias, mantiene procedimientos iniciados y ordena actualizar medios y documentos institucionales.",
+    "title": "Cultura cambia domicilio oficial de ocho unidades",
     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5795832&fecha=10/08/2026"
   },
   "recommended_actions": [
     {
-      "affected_group": "Personas usuarias y autoridades que presenten promociones ante las unidades administrativas señaladas",
+      "affected_group": "Unidades administrativas comprendidas en el aviso",
       "deadline": null,
       "evidence_refs": [
         "chunk-2"
       ],
-      "legal_basis": null,
+      "legal_basis": "Puntos quinto y transitorio tercero del aviso.",
       "paragraphs": [
-        "Actualizar datos de notificación, expedientes, contratos y directorios; dirigir las promociones posteriores al domicilio oficial comunicado para la unidad competente."
+        "Actualicen los formatos, medios electrónicos, directorios, portales y documentos oficiales que aún señalen el domicilio anterior y adopten medidas para sostener la continuidad de los trámites y servicios."
       ],
-      "trigger": "Cuando la persona o entidad se ubique en el ámbito material descrito por la fuente oficial."
+      "trigger": "Por la entrada en vigor del cambio de domicilio."
+    },
+    {
+      "affected_group": "Personas y autoridades que presenten actuaciones ante las unidades señaladas",
+      "deadline": "Desde el 1 de agosto de 2026.",
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "legal_basis": "Puntos primero, tercero y cuarto del aviso.",
+      "paragraphs": [
+        "Para promociones, notificaciones, citaciones o diligencias posteriores, verifiquen que la presentación se dirija al domicilio oficial previsto para la unidad competente."
+      ],
+      "trigger": "Al realizar una actuación ante una de las ocho unidades administrativas enumeradas."
     }
   ],
   "schema_version": 8

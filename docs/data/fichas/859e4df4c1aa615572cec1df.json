@@ -1,16 +1,10 @@
 {
   "coverage": [
     {
-      "disposition": "summarized",
-      "reason": null,
+      "disposition": "not_material",
+      "reason": "Repite el encabezado oficial; el contenido sustantivo se desarrolla en los fragmentos siguientes.",
       "source_ref": "chunk-1",
-      "target_sections": [
-        "executive_summary",
-        "detailed_summary",
-        "impacts.general",
-        "impacts.sectors",
-        "recommended_actions"
-      ]
+      "target_sections": []
     },
     {
       "disposition": "summarized",
@@ -20,7 +14,6 @@
         "executive_summary",
         "detailed_summary",
         "impacts.general",
-        "impacts.sectors",
         "recommended_actions"
       ]
     },
@@ -29,11 +22,8 @@
       "reason": null,
       "source_ref": "chunk-3",
       "target_sections": [
-        "executive_summary",
         "detailed_summary",
-        "impacts.general",
-        "impacts.sectors",
-        "recommended_actions"
+        "impacts.sectors"
       ]
     },
     {
@@ -41,11 +31,8 @@
       "reason": null,
       "source_ref": "chunk-4",
       "target_sections": [
-        "executive_summary",
         "detailed_summary",
-        "impacts.general",
-        "impacts.sectors",
-        "recommended_actions"
+        "impacts.sectors"
       ]
     },
     {
@@ -53,11 +40,8 @@
       "reason": null,
       "source_ref": "chunk-5",
       "target_sections": [
-        "executive_summary",
         "detailed_summary",
-        "impacts.general",
-        "impacts.sectors",
-        "recommended_actions"
+        "impacts.sectors"
       ]
     },
     {
@@ -65,11 +49,8 @@
       "reason": null,
       "source_ref": "chunk-6",
       "target_sections": [
-        "executive_summary",
         "detailed_summary",
-        "impacts.general",
-        "impacts.sectors",
-        "recommended_actions"
+        "impacts.sectors"
       ]
     },
     {
@@ -80,7 +61,6 @@
         "executive_summary",
         "detailed_summary",
         "impacts.general",
-        "impacts.sectors",
         "recommended_actions"
       ]
     },
@@ -92,38 +72,39 @@
         "executive_summary",
         "detailed_summary",
         "impacts.general",
-        "impacts.sectors",
         "recommended_actions"
       ]
     }
   ],
-  "cut_id": "80ff8a726797f7b9e5131c53",
+  "cut_id": "9bfb2857e185b6a117ea296f",
   "detailed_summary": [
     {
       "evidence_refs": [
         "chunk-2",
-        "chunk-8"
+        "chunk-3",
+        "chunk-4",
+        "chunk-5",
+        "chunk-6",
+        "chunk-7"
       ],
-      "heading": "Contenido publicado",
+      "heading": "Remuneraciones y prestaciones",
       "paragraphs": [
-        "El acuerdo reforma el artículo 26 y modifica los anexos de tabuladores, seguros, despensa y límites de percepción; además, incorpora un anexo de claves y denominaciones de unidades responsables. Para personal operativo de confianza y de base establece ayuda de transporte, previsión social múltiple, ayuda de servicios y compensación por desarrollo y capacitación, con el último concepto integrado a la base de cálculo de seguridad social. La publicación reporta que el cambio responde al incremento salarial autorizado en 2026 y a reformas orgánicas de la institución.",
-        "Los anexos contienen rangos y montos para personal directivo, ministerial, policial, pericial, analistas, facilitadores, técnico, administrativo y otras categorías. También actualizan coberturas de seguros, despensa y límites netos mensuales de percepción ordinaria, por lo que la fuente debe consultarse para identificar la clave y nivel concreto."
+        "El artículo 26 establece cuatro conceptos mensuales para personal Operativo de Confianza y Operativo de Base: ayuda de transporte, previsión social múltiple, ayuda de servicios y compensación por desarrollo y capacitación. El anexo 2 despliega sueldos base, compensaciones y sueldos mensuales brutos por puestos y niveles; los anexos 3 y 6 contienen seguros, despensa y límites netos de percepción ordinaria total."
       ]
     },
     {
       "evidence_refs": [
-        "chunk-2",
+        "chunk-7",
         "chunk-8"
       ],
-      "heading": "Alcance y lectura práctica",
+      "heading": "Estructura y aplicación temporal",
       "paragraphs": [
-        "Los incrementos de sueldos, salarios y prestaciones indicados tienen aplicación retroactiva al 1 de enero de 2026 conforme a los periodos efectivamente laborados. Para ciertos niveles, el tabulador entra en vigor el 16 de agosto de 2026. Las unidades administrativas deben adoptar las acciones necesarias para observar la modificación.",
-        "La ficha se dirige principalmente a personal y áreas de recursos humanos, presupuesto y nómina de la fiscalía general de la república."
+        "El anexo 7 relaciona claves y denominaciones de unidades responsables conforme a la reforma orgánica de la Fiscalía. Los transitorios ordenan la entrada en vigor al día siguiente de la publicación, la aplicación retroactiva de incrementos y prestaciones desde el 1 de enero de 2026 conforme a periodos laborados, y una fecha diferenciada para determinados niveles."
       ]
     }
   ],
   "evidence": {
-    "content_hash": "5ad4d00c973ae788e93dcd0bb4e1a1a9f897dd8eccdf0cc8d8a40e7fe52dd783",
+    "content_hash": "982bdc2a5a18a51713f06218ece5369911665903fb5490b58e1cd5dea3466e61",
     "extraction_method": "html-adapter",
     "locators": [
       {
@@ -168,32 +149,36 @@
       }
     ],
     "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796419&fecha=17%2F08%2F2026",
-    "retrieved_at": "2026-09-01T16:35:26.642058+00:00"
+    "retrieved_at": "2026-09-03T16:53:39.697482+00:00"
   },
   "executive_summary": [
-    "La Fiscalía General de la República difundió una modificación al Manual que regula las remuneraciones del personal de la Fiscalía General de la República. El acuerdo reforma el artículo 26 y modifica los anexos de tabuladores, seguros, despensa y límites de percepción; además, incorpora un anexo de claves y denominaciones de unidades responsables. Para personal operativo de confianza y de base establece ayuda de transporte, previsión social múltiple, ayuda de servicios y compensación por desarrollo y capacitación, con el último concepto integrado a la base de cálculo de seguridad social. La publicación reporta que el cambio responde al incremento salarial autorizado en 2026 y a reformas orgánicas de la institución.",
-    "Los incrementos de sueldos, salarios y prestaciones indicados tienen aplicación retroactiva al 1 de enero de 2026 conforme a los periodos efectivamente laborados. Para ciertos niveles, el tabulador entra en vigor el 16 de agosto de 2026. Las unidades administrativas deben adoptar las acciones necesarias para observar la modificación. La síntesis se limita a los hechos y condiciones expresamente visibles en la fuente oficial."
+    "La Fiscalía General de la República reformó el artículo 26 de su Manual de remuneraciones de 2026, modificó los anexos 2, 3 y 6, y agregó el anexo 7. La exposición del acuerdo vincula el cambio con el incremento salarial autorizado para el ejercicio y con la actualización organizacional derivada de la reforma a su Estatuto Orgánico.",
+    "El acuerdo actualiza tabuladores y prestaciones para diversos grupos de personal, incorpora límites de percepción ordinaria y enumera unidades responsables. Entra en vigor al día siguiente de su publicación; sus transitorios prevén retroactividad al 1 de enero de 2026 para los conceptos señalados y una vigencia desde el 16 de agosto para niveles expresamente listados."
   ],
   "impacts": {
     "general": {
       "evidence_refs": [
         "chunk-2",
+        "chunk-7",
         "chunk-8"
       ],
       "paragraphs": [
-        "El efecto observable es el que la publicación atribuye al acto: Los incrementos de sueldos, salarios y prestaciones indicados tienen aplicación retroactiva al 1 de enero de 2026 conforme a los periodos efectivamente laborados. Para ciertos niveles, el tabulador entra en vigor el 16 de agosto de 2026. Las unidades administrativas deben adoptar las acciones necesarias para observar la modificación."
+        "La modificación formaliza los importes y parámetros de remuneración, prestaciones y unidades responsables que el Manual identifica para 2026."
       ]
     },
     "sectors": [
       {
         "evidence_refs": [
-          "chunk-2",
+          "chunk-3",
+          "chunk-4",
+          "chunk-5",
+          "chunk-6",
           "chunk-8"
         ],
         "paragraphs": [
-          "Las personas comprendidas deben considerar el documento porque El acuerdo reforma el artículo 26 y modifica los anexos de tabuladores, seguros, despensa y límites de percepción; además, incorpora un anexo de claves y denominaciones de unidades responsables. Para personal operativo de confianza y de base establece ayuda de transporte, previsión social múltiple, ayuda de servicios y compensación por desarrollo y capacitación, con el último concepto integrado a la base de cálculo de seguridad social. La publicación reporta que el cambio responde al incremento salarial autorizado en 2026 y a reformas orgánicas de la institución."
+          "Los tabuladores y anexos alcanzan a los grupos y niveles descritos en el Manual; las unidades administrativas y el INACIPE deben observar la modificación conforme al transitorio cuarto."
         ],
-        "sector": "Personal y áreas de recursos humanos, presupuesto y nómina de la Fiscalía General de la República"
+        "sector": "Personas servidoras públicas y unidades administrativas de la FGR"
       }
     ]
   },
@@ -222,23 +207,24 @@
     "review_reason": null,
     "source": "DOF",
     "source_id": "5796419",
-    "summary_teaser": "La Fiscalía General de la República modificó su Manual de Remuneraciones 2026: actualizó tabuladores, prestaciones, límites de percepción y claves de unidades responsables. Los incrementos y conceptos señalados tienen efectos retroactivos al 1 de enero, con vigencia específica para algunos niveles desde agosto.",
-    "title": "Fiscalía actualiza tabuladores y prestaciones de su personal",
+    "summary_teaser": "El acuerdo de la Fiscalía General de la República modifica su manual de remuneraciones para 2026: actualiza tabuladores y prestaciones, fija conceptos mensuales para personal operativo e incorpora claves de unidades responsables. Los incrementos aplican retroactivamente desde enero en los periodos laborados, con una fecha específica para ciertos niveles.",
+    "title": "FGR actualiza tabuladores y prestaciones con efectos retroactivos",
     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796419&fecha=17/08/2026"
   },
   "recommended_actions": [
     {
-      "affected_group": "Personal y áreas de recursos humanos, presupuesto y nómina de la Fiscalía General de la República",
+      "affected_group": "Personas servidoras públicas y áreas de recursos humanos de la FGR",
       "deadline": null,
       "evidence_refs": [
         "chunk-2",
+        "chunk-7",
         "chunk-8"
       ],
-      "legal_basis": null,
+      "legal_basis": "Artículo 26, anexos 2, 3, 6 y 7, y transitorios segundo y cuarto del acuerdo.",
       "paragraphs": [
-        "Identificar la clave de puesto y unidad responsable aplicables, contrastar el tabulador y las prestaciones del anexo correspondiente y documentar la vigencia que corresponda."
+        "Si requieren determinar el importe aplicable a una plaza o prestación, revisen el nivel, grupo y anexo correspondiente del Manual modificado, así como las reglas transitorias sobre la fecha de aplicación."
       ],
-      "trigger": "Cuando la persona o entidad se ubique en el ámbito material descrito por la fuente oficial."
+      "trigger": "Cuando se determine una remuneración o prestación del ejercicio 2026."
     }
   ],
   "schema_version": 8

@@ -1,10 +1,10 @@
 {
-  "cut_id": "80ff8a726797f7b9e5131c53",
+  "cut_id": "9bfb2857e185b6a117ea296f",
   "item": {
     "ai_generated": true,
     "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
     "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796484&fecha=18%2F08%2F2026",
-    "card_body": "## Qué se publicó\n\nLa Secretaría de Hacienda autorizó la constitución de una empresa estatal para infraestructura estratégica fronteriza en Piedras Negras.\n\n## Sustancia\n\nLa empresa tendrá por objeto promover, estructurar, administrar, supervisar y financiar proyectos de infraestructura logística, fronteriza y aduanera, incluido el puente internacional que identifica el acuerdo.\n\n## Fuente\n\nLa síntesis se elaboró exclusivamente con la fuente oficial identificada en la evidencia y sus fragmentos extraídos.",
+    "card_body": "## Qué se publicó\nHacienda autorizó la constitución de una empresa de participación estatal mayoritaria con finalidad pública para estructurar y gestionar infraestructura estratégica.\n\n## Sustancia\nLa resolución define su objeto, coordinación sectorial, capital inicial y principios de operación. También aclara las fuentes previstas para constitución y operación, sin describir un programa de obras ni un calendario de ejecución.\n\n## Fuente\nDOF: https://dof.gob.mx/nota_detalle.php?codigo=5796484&fecha=18%2F08%2F2026",
     "case_amount": "",
     "case_claim": "",
     "case_facts": "",
@@ -25,6 +25,7 @@
         "reason": null,
         "source_ref": "chunk-1",
         "target_sections": [
+          "executive_summary",
           "detailed_summary"
         ]
       },
@@ -33,7 +34,11 @@
         "reason": null,
         "source_ref": "chunk-2",
         "target_sections": [
-          "detailed_summary"
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
         ]
       },
       {
@@ -41,7 +46,11 @@
         "reason": null,
         "source_ref": "chunk-3",
         "target_sections": [
-          "detailed_summary"
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
         ]
       }
     ],
@@ -52,25 +61,31 @@
       {
         "evidence_refs": [
           "chunk-1",
-          "chunk-2",
-          "chunk-3"
+          "chunk-2"
         ],
-        "heading": "Alcance de la publicación",
+        "heading": "Constitución y finalidad",
         "paragraphs": [
-          "La Secretaría de Hacienda autorizó la constitución de una empresa estatal para infraestructura estratégica fronteriza en Piedras Negras.",
-          "El acuerdo define el objeto y la integración inicial de la sociedad, y conserva el control estatal sobre los títulos y decisiones previstas."
+          "La sociedad se autoriza como sociedad anónima de capital variable y empresa de participación estatal mayoritaria, coordinada por Hacienda. Su finalidad pública se relaciona con infraestructura estratégica, conectividad, integración regional y bienestar."
         ]
       },
       {
         "evidence_refs": [
-          "chunk-1",
           "chunk-2",
           "chunk-3"
         ],
-        "heading": "Contenido relevante",
+        "heading": "Objeto y facultades descritas",
         "paragraphs": [
-          "La empresa tendrá por objeto promover, estructurar, administrar, supervisar y financiar proyectos de infraestructura logística, fronteriza y aduanera, incluido el puente internacional que identifica el acuerdo.",
-          "La autorización crea un vehículo societario para la planeación y gestión de los proyectos estratégicos incluidos en su objeto. Las dependencias y potenciales participantes deben revisar el objeto social, la integración autorizada y los instrumentos específicos que se emitan para cada proyecto."
+          "La resolución enumera proyectos y sectores a los que puede vincularse la sociedad, así como figuras de inversión, financiamiento, contratación y administración sujetas a la legislación aplicable. Menciona el Puente Internacional III dentro de los proyectos que puede abarcar su objeto."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-2",
+          "chunk-3"
+        ],
+        "heading": "Capital y financiamiento",
+        "paragraphs": [
+          "El capital mínimo inicial es de un millón de pesos, con aportaciones señaladas de Hacienda y el Fondo Nacional de Infraestructura. Los gastos de constitución y operación tienen fuentes expresamente indicadas y la resolución descarta recursos presupuestarios adicionales para operación."
         ]
       }
     ],
@@ -78,7 +93,7 @@
     "document_type": "Resolución",
     "editorial_status": "complete",
     "evidence": {
-      "content_hash": "9f63684e8d76f22c7196d5d3a0d0ebdf1b8b521748785f7b2d6f47377463be7e",
+      "content_hash": "3b2756f94969a961b84e9f30f3403db9007c5203dcd6de0f3195fb05a6a51cf7",
       "extraction_method": "html-adapter",
       "locators": [
         {
@@ -98,11 +113,11 @@
         }
       ],
       "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796484&fecha=18%2F08%2F2026",
-      "retrieved_at": "2026-09-01T16:35:21.327742+00:00"
+      "retrieved_at": "2026-09-03T16:53:33.488774+00:00"
     },
     "executive_summary": [
-      "La Secretaría de Hacienda autorizó la constitución de una empresa estatal para infraestructura estratégica fronteriza en Piedras Negras. La empresa tendrá por objeto promover, estructurar, administrar, supervisar y financiar proyectos de infraestructura logística, fronteriza y aduanera, incluido el puente internacional que identifica el acuerdo.",
-      "El acuerdo define el objeto y la integración inicial de la sociedad, y conserva el control estatal sobre los títulos y decisiones previstas. La publicación debe aplicarse sin extender sus alcances a situaciones no descritas en la fuente."
+      "Hacienda autorizó una nueva empresa de participación estatal mayoritaria, Inversión Mixta Piedras Negras, con finalidad pública y objeto amplio en infraestructura estratégica, conectividad y mecanismos de inversión.",
+      "El acto determina su capital inicial, la participación de Hacienda y del Fondo Nacional de Infraestructura, el sector coordinador y las fuentes previstas para gastos. La autorización entra en vigor al día siguiente de la publicación."
     ],
     "extraction_status": "complete",
     "first_seen_at": "2026-09-01T16:34:47.803209+00:00",
@@ -111,32 +126,30 @@
     "impacts": {
       "general": {
         "evidence_refs": [
-          "chunk-1",
           "chunk-2",
           "chunk-3"
         ],
         "paragraphs": [
-          "La autorización crea un vehículo societario para la planeación y gestión de los proyectos estratégicos incluidos en su objeto."
+          "La resolución crea el vehículo societario y delimita sus posibilidades legales de actuación, pero no adjudica una obra, concesión o contrato concreto. Cualquier proyecto posterior debe sujetarse a las autorizaciones y legislación aplicables que el propio acto menciona."
         ]
       },
       "sectors": [
         {
           "evidence_refs": [
-            "chunk-1",
             "chunk-2",
             "chunk-3"
           ],
           "paragraphs": [
-            "La incidencia para este grupo se limita al alcance expresamente descrito en la publicación y requiere contrastarse con cada caso concreto."
+            "La sociedad queda habilitada, dentro de su objeto y del marco aplicable, para participar en proyectos de infraestructura estratégica relacionados con esos sectores."
           ],
-          "sector": "Entidades públicas, posibles participantes privados y usuarios de infraestructura fronteriza"
+          "sector": "Infraestructura, logística, conectividad y comercio exterior"
         }
       ]
     },
     "importance": 1,
     "issuing_body": "Secretaría de Hacienda y Crédito Público",
     "jurisdiction": "nacional",
-    "last_seen_at": "2026-09-01T18:46:30.041123+00:00",
+    "last_seen_at": "2026-09-04T03:37:15.636102+00:00",
     "official_evidence": {
       "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796484&fecha=18/08/2026"
     },
@@ -151,18 +164,29 @@
     "published_year": 2026,
     "recommended_actions": [
       {
-        "affected_group": "Entidades públicas, posibles participantes privados y usuarios de infraestructura fronteriza",
+        "affected_group": "Entidades y participantes de proyectos de infraestructura",
         "deadline": null,
         "evidence_refs": [
-          "chunk-1",
           "chunk-2",
           "chunk-3"
         ],
         "legal_basis": null,
         "paragraphs": [
-          "Las dependencias y potenciales participantes deben revisar el objeto social, la integración autorizada y los instrumentos específicos que se emitan para cada proyecto."
+          "Si un proyecto llega a ser estructurado o gestionado por la nueva sociedad, conviene verificar el instrumento específico, las autorizaciones aplicables y el procedimiento de contratación correspondiente; esta resolución no sustituye esos actos posteriores."
         ],
-        "trigger": "Cuando la publicación resulte aplicable a la operación o situación revisada."
+        "trigger": "Participación futura de la sociedad en un proyecto concreto"
+      },
+      {
+        "affected_group": "Áreas coordinadoras de la Administración Pública Federal",
+        "deadline": null,
+        "evidence_refs": [
+          "chunk-3"
+        ],
+        "legal_basis": "Resolutivo octavo de la resolución",
+        "paragraphs": [
+          "Para la constitución formal, la resolución prevé la remisión del testimonio notarial a la Procuraduría Fiscal de la Federación por la unidad de Hacienda señalada."
+        ],
+        "trigger": "Formalización de la sociedad"
       }
     ],
     "relevance_score": 1,
@@ -170,9 +194,9 @@
     "source": "DOF",
     "source_id": "5796484",
     "subtopic_tags": [],
-    "summary": "El documento oficial La Secretaría de Hacienda autorizó la constitución de una empresa estatal para infraestructura estratégica fronteriza en Piedras Negras. La empresa tendrá por objeto promover, estructurar, administrar, supervisar y financiar proyectos de infraestructura logística, fronteriza y aduanera, incluido el puente internacional que identifica el acuerdo.\n\nEl alcance debe leerse dentro de los límites que la propia fuente identifica: El acuerdo define el objeto y la integración inicial de la sociedad, y conserva el control estatal sobre los títulos y decisiones previstas. La información ubica a Entidades públicas, posibles participantes privados y usuarios de infraestructura fronteriza como sujetos principalmente vinculados con el asunto. Por ello, la nota registra la existencia y el contenido comunicado, sin extender la conclusión a personas, operaciones, expedientes o contratos que el texto no menciona.\n\nDesde la gestión de cumplimiento, Las dependencias y potenciales participantes deben revisar el objeto social, la integración autorizada y los instrumentos específicos que se emitan para cada proyecto. La revisión debe partir de la publicación oficial y de la documentación disponible para cada situación concreta. Cuando el documento se refiera a una autorización, una sanción, un trámite, una regla administrativa, una medida de inspección o una propuesta legislativa, conviene distinguir el acto publicado de sus posibles actuaciones posteriores. La fuente no acredita por sí sola el cumplimiento individual, una afectación económica concreta, la procedencia de una solicitud ni un resultado distinto de los expresamente descritos.\n\nEn términos probatorios, esta síntesis se limita a la evidencia extraída y a los localizadores asociados. No atribuye efectos, tratados, montos, plazos, fundamentos, resultados o hechos que no estén contenidos en la publicación. La lectura operativa requiere consultar el texto íntegro, sus anexos y, cuando corresponda, la documentación de la persona o operación involucrada. Esta distinción es especialmente importante para no convertir un comunicado, una referencia registral, una actuación cautelar o una iniciativa en una conclusión definitiva sobre derechos u obligaciones individuales.",
-    "summary_teaser": "Hacienda autorizó la constitución de una empresa de participación estatal mayoritaria para estructurar y administrar infraestructura estratégica en Piedras Negras. El objeto comprende proyectos logísticos, fronterizos, aduaneros y el puente internacional señalado en la publicación. El acuerdo describe su integración accionaria inicial y la conservación del control estatal.",
-    "title": "Hacienda autoriza empresa estatal para infraestructura fronteriza en Piedras Negras",
+    "summary": "La Secretaría de Hacienda y Crédito Público autorizó la constitución de Inversión Mixta Piedras Negras, S.A. de C.V., como empresa de participación estatal mayoritaria organizada como sociedad anónima de capital variable y agrupada en el sector coordinado por Hacienda, a través de la Unidad de Crédito Público y Asuntos Internacionales de Hacienda. La resolución describe una finalidad primordialmente pública: fomentar, articular, coordinar y estructurar proyectos de infraestructura estratégica y mecanismos de inversión vinculados con desarrollo nacional, conectividad, integración regional y bienestar social.\n\nSu objeto comprende promover, administrar, supervisar, financiar y gestionar proyectos de infraestructura estratégica, prioritaria y de interés público en ámbitos económicos, logísticos, comerciales, fronterizos, aduaneros, energéticos, hidráulicos, digitales, de movilidad, conectividad y transporte. La resolución menciona que puede desarrollar o participar en mecanismos de inversión y financiamiento, contratos y vehículos jurídicos conforme a la legislación aplicable, así como actuar en proyectos asignados, concesionados, autorizados o encomendados. Incluye entre los proyectos vinculados con esa finalidad el denominado Puente Internacional III y Libramiento Norte de Piedras Negras, sin que la resolución detalle un calendario, presupuesto de obra o autorización específica de ejecución para ese proyecto.\n\nEl capital social mínimo sin derecho a retiro se fija en un millón de pesos, representado por cien acciones nominativas. La participación inicial se integra con recursos presupuestales de Hacienda por quinientos diez mil pesos y recursos del Fondo Nacional de Infraestructura por cuatrocientos noventa mil pesos; la resolución establece una serie de acciones reservada al Gobierno Federal, sus fideicomisos y entidades paraestatales. Los gastos de constitución se cubren con el patrimonio del Fondo Nacional de Infraestructura, mientras que los de operación se prevén con participación privada y recursos de la propia actividad; el acto indica que no se autorizarán recursos presupuestarios adicionales para ese fin. Entra en vigor al día siguiente de su publicación.",
+    "summary_teaser": "Hacienda autorizó la constitución de Inversión Mixta Piedras Negras como empresa de participación estatal mayoritaria. La sociedad tendrá finalidad pública y un objeto amplio relacionado con infraestructura estratégica, conectividad, comercio exterior y esquemas de inversión; el acto define su capital inicial, coordinación sectorial y reglas de operación financiera.",
+    "title": "Autoriza empresa pública para infraestructura de Piedras Negras",
     "topic_tags": [
       "Resolución"
     ],

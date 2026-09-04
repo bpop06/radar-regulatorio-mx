@@ -1,10 +1,10 @@
 {
-  "cut_id": "80ff8a726797f7b9e5131c53",
+  "cut_id": "9bfb2857e185b6a117ea296f",
   "item": {
     "ai_generated": true,
     "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
     "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795727&fecha=07%2F08%2F2026",
-    "card_body": "## Qué se publicó\n\nEl Servicio de Administración Tributaria publicó el nombre y la clave en el RFC de Operadora Macdegar, respecto de una resolución en la que no desvirtuó la presunción de falsedad de los comprobantes fiscales digitales por internet emitidos; por ello, se consideran falsos con efectos generales y las operaciones contenidas en ellos no producen ni produjeron efecto fiscal alguno.\n\n## Sustancia\n\nLas personas que recibieron CFDI emitidos por la contribuyente deben revertir el efecto fiscal que les hubieren dado mediante la presentación de una declaración complementaria dentro de treinta días naturales a partir de la publicación en el DOF. Si no lo hacen, la autoridad restringirá temporalmente el uso del certificado de sello digital para emitir CFDI, conforme al artículo 17-H Bis, fracción XIV, del Código Fiscal de la Federación.\n\n## Fuente\n\nLa síntesis se elaboró exclusivamente con la fuente oficial identificada en la evidencia y sus fragmentos extraídos.",
+    "card_body": "## Qué se publicó\nEl SAT publicó el nombre y RFC de una contribuyente respecto de la cual determinó que no desvirtuó la presunción de falsedad de sus CFDI.\n\n## Sustancia\nLos comprobantes de la contribuyente se consideran falsos con efectos generales y sus operaciones no producen efecto fiscal. Los terceros que recibieron esos CFDI deben revertir el efecto fiscal mediante declaración complementaria en el plazo comunicado.\n\n## Fuente\n[Diario Oficial de la Federación](https://dof.gob.mx/nota_detalle.php?codigo=5795727&fecha=07%2F08%2F2026)",
     "case_amount": "",
     "case_claim": "",
     "case_facts": "",
@@ -26,6 +26,7 @@
         "reason": null,
         "source_ref": "chunk-1",
         "target_sections": [
+          "executive_summary",
           "detailed_summary"
         ]
       },
@@ -34,7 +35,11 @@
         "reason": null,
         "source_ref": "chunk-2",
         "target_sections": [
-          "detailed_summary"
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
         ]
       }
     ],
@@ -44,22 +49,30 @@
     "detailed_summary": [
       {
         "evidence_refs": [
+          "chunk-1",
           "chunk-2"
         ],
-        "heading": "Alcance de la publicación",
+        "heading": "Determinación publicada",
         "paragraphs": [
-          "El Servicio de Administración Tributaria publicó el nombre y la clave en el RFC de Operadora Macdegar, respecto de una resolución en la que no desvirtuó la presunción de falsedad de los comprobantes fiscales digitales por internet emitidos; por ello, se consideran falsos con efectos generales y las operaciones contenidas en ellos no producen ni produjeron efecto fiscal alguno.",
-          "Las personas que recibieron CFDI emitidos por la contribuyente deben revertir el efecto fiscal que les hubieren dado mediante la presentación de una declaración complementaria dentro de treinta días naturales a partir de la publicación en el DOF. Si no lo hacen, la autoridad restringirá temporalmente el uso del certificado de sello digital para emitir CFDI, conforme al artículo 17-H Bis, fracción XIV, del Código Fiscal de la Federación."
+          "La Administración Central de Fiscalización Estratégica comunica la publicación de nombre y RFC conforme al artículo 49 Bis del Código Fiscal. Señala que la contribuyente identificada en el Anexo 1 no desvirtuó la presunción de falsedad de sus CFDI y que las operaciones no producen ni produjeron efecto fiscal."
         ]
       },
       {
         "evidence_refs": [
           "chunk-2"
         ],
-        "heading": "Seguimiento operativo",
+        "heading": "Identificación y notificación consignadas",
         "paragraphs": [
-          "Las personas receptoras deben identificar los CFDI involucrados y revisar la presentación de la declaración complementaria dentro del plazo de treinta días naturales contado desde la publicación en el DOF.",
-          "La ficha no extiende el alcance del acto a supuestos que la fuente no identifica."
+          "El Anexo 1 identifica a Operadora Macdegar, S.A. de C.V. con RFC OMA040713D79, una resolución de 10 de julio de 2026 y fechas de notificación por Buzón Tributario de 16 y 17 de julio de 2026."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "heading": "Reversión para terceros",
+        "paragraphs": [
+          "El oficio ordena a los terceros que hubieran dado efectos fiscales a los comprobantes revertirlos mediante declaración complementaria dentro de treinta días naturales desde la publicación. Si no lo hacen, informa la restricción temporal del certificado de sello digital para emitir CFDI."
         ]
       }
     ],
@@ -67,7 +80,7 @@
     "document_type": "Oficio",
     "editorial_status": "complete",
     "evidence": {
-      "content_hash": "4d49ccd56c72efbf97d0fc8c974ec36e41057b769efb32938f4080e624405c85",
+      "content_hash": "bd32d5b6298b834fa23158f1b5c9dcca1e7e79fdc62d2e55f5bb0a0f57a85b4b",
       "extraction_method": "html-adapter",
       "locators": [
         {
@@ -82,11 +95,11 @@
         }
       ],
       "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795727&fecha=07%2F08%2F2026",
-      "retrieved_at": "2026-09-01T16:35:42.256940+00:00"
+      "retrieved_at": "2026-09-03T16:53:55.375733+00:00"
     },
     "executive_summary": [
-      "El Servicio de Administración Tributaria publicó el nombre y la clave en el RFC de Operadora Macdegar, respecto de una resolución en la que no desvirtuó la presunción de falsedad de los comprobantes fiscales digitales por internet emitidos; por ello, se consideran falsos con efectos generales y las operaciones contenidas en ellos no producen ni produjeron efecto fiscal alguno.",
-      "Las personas que recibieron CFDI emitidos por la contribuyente deben revertir el efecto fiscal que les hubieren dado mediante la presentación de una declaración complementaria dentro de treinta días naturales a partir de la publicación en el DOF. Si no lo hacen, la autoridad restringirá temporalmente el uso del certificado de sello digital para emitir CFDI, conforme al artículo 17-H Bis, fracción XIV, del Código Fiscal de la Federación."
+      "El SAT publicó a Operadora Macdegar, S.A. de C.V. porque determinó que no desvirtuó la presunción de falsedad de los CFDI emitidos. La publicación indica que esos comprobantes son falsos con efectos generales y que sus operaciones no producen efecto fiscal.",
+      "Los terceros que recibieron los CFDI deben revertir el efecto fiscal mediante declaración complementaria dentro de treinta días naturales desde la publicación; de no hacerlo, el texto advierte la restricción temporal del certificado de sello digital."
     ],
     "extraction_status": "complete",
     "first_seen_at": "2026-09-01T16:34:47.803209+00:00",
@@ -98,7 +111,7 @@
           "chunk-2"
         ],
         "paragraphs": [
-          "Las personas que recibieron CFDI emitidos por la contribuyente deben revertir el efecto fiscal que les hubieren dado mediante la presentación de una declaración complementaria dentro de treinta días naturales a partir de la publicación en el DOF. Si no lo hacen, la autoridad restringirá temporalmente el uso del certificado de sello digital para emitir CFDI, conforme al artículo 17-H Bis, fracción XIV, del Código Fiscal de la Federación."
+          "La publicación fija el efecto fiscal general de los CFDI de la contribuyente identificada y abre un plazo para que terceros reviertan los efectos que hubieran dado. No enumera clientes, comprobantes concretos, montos ni ajustes individualizados."
         ]
       },
       "sectors": [
@@ -107,16 +120,25 @@
             "chunk-2"
           ],
           "paragraphs": [
-            "La incidencia para este grupo se limita al alcance expresamente descrito en la publicación y requiere contrastarse con cada caso concreto."
+            "Si recibieron comprobantes de la contribuyente, el oficio les atribuye la reversión del efecto fiscal mediante declaración complementaria dentro del plazo comunicado."
           ],
-          "sector": "Personas receptoras de CFDI emitidos por la contribuyente identificada"
+          "sector": "Terceros receptores de CFDI de Operadora Macdegar"
+        },
+        {
+          "evidence_refs": [
+            "chunk-2"
+          ],
+          "paragraphs": [
+            "La publicación identifica a la sociedad y su RFC bajo la determinación de que no desvirtuó la presunción de falsedad de los CFDI mencionados."
+          ],
+          "sector": "Operadora Macdegar, S.A. de C.V."
         }
       ]
     },
     "importance": 2,
     "issuing_body": "Secretaría de Hacienda y Crédito Público",
     "jurisdiction": "nacional",
-    "last_seen_at": "2026-09-01T18:46:30.041123+00:00",
+    "last_seen_at": "2026-09-04T03:37:15.636102+00:00",
     "official_evidence": {
       "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795727&fecha=07/08/2026"
     },
@@ -131,16 +153,28 @@
     "published_year": 2026,
     "recommended_actions": [
       {
-        "affected_group": "Personas receptoras de CFDI emitidos por la contribuyente identificada",
-        "deadline": "Treinta días naturales a partir de la publicación en el DOF.",
+        "affected_group": "Terceros que recibieron CFDI de Operadora Macdegar",
+        "deadline": "Treinta días naturales a partir de la publicación en el Diario Oficial.",
         "evidence_refs": [
           "chunk-2"
         ],
-        "legal_basis": "Artículo 49 Bis, fracción X, y artículo 17-H Bis, fracción XIV, del Código Fiscal de la Federación.",
+        "legal_basis": null,
         "paragraphs": [
-          "Las personas receptoras deben identificar los CFDI involucrados y revisar la presentación de la declaración complementaria dentro del plazo de treinta días naturales contado desde la publicación en el DOF."
+          "Si dieron efectos fiscales a operaciones respaldadas por los CFDI señalados, deben revisarlos y revertir esos efectos mediante declaración complementaria conforme al oficio."
         ],
-        "trigger": "Desde la publicación del oficio en el Diario Oficial de la Federación."
+        "trigger": "Cuando hayan recibido CFDI de la contribuyente identificada y les hubieran dado efecto fiscal."
+      },
+      {
+        "affected_group": "Contribuyentes que puedan estar comprendidos como terceros receptores",
+        "deadline": "Dentro del plazo de treinta días naturales comunicado, si se actualiza el supuesto.",
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "legal_basis": null,
+        "paragraphs": [
+          "Deben identificar sus registros y comprobantes efectivamente recibidos antes de aplicar cualquier corrección, pues el oficio no publica una relación individual de clientes, montos ni comprobantes específicos."
+        ],
+        "trigger": "Antes de presentar una declaración complementaria vinculada con la publicación."
       }
     ],
     "relevance_score": 3,
@@ -150,9 +184,9 @@
     "subtopic_tags": [
       "codigo fiscal"
     ],
-    "summary": "El Servicio de Administración Tributaria publicó el nombre y la clave en el RFC de Operadora Macdegar, respecto de una resolución en la que no desvirtuó la presunción de falsedad de los comprobantes fiscales digitales por internet emitidos; por ello, se consideran falsos con efectos generales y las operaciones contenidas en ellos no producen ni produjeron efecto fiscal alguno.\n\nLas personas que recibieron CFDI emitidos por la contribuyente deben revertir el efecto fiscal que les hubieren dado mediante la presentación de una declaración complementaria dentro de treinta días naturales a partir de la publicación en el DOF. Si no lo hacen, la autoridad restringirá temporalmente el uso del certificado de sello digital para emitir CFDI, conforme al artículo 17-H Bis, fracción XIV, del Código Fiscal de la Federación.\n\nPara fines de seguimiento, Las personas receptoras deben identificar los CFDI involucrados y revisar la presentación de la declaración complementaria dentro del plazo de treinta días naturales contado desde la publicación en el DOF. La revisión debe partir de la publicación oficial y de la documentación disponible para el caso concreto. El contenido debe mantenerse dentro de los límites del acto: no permite presumir efectos respecto de personas, operaciones, expedientes, contratos o procedimientos que la fuente no identifica. Cuando el documento comunica una autorización, una sanción, un trámite, una regla administrativa o un dato institucional, corresponde distinguir su alcance expreso de actuaciones posteriores que no estén acreditadas.\n\nEn términos probatorios, esta ficha se limita a los fragmentos oficiales y a sus localizadores. No atribuye efectos, plazos, montos, fundamentos, sujetos, resultados o hechos que no figuren en la fuente. La consulta del texto íntegro y, cuando corresponda, de la documentación del caso es necesaria para determinar cualquier consecuencia concreta. La verificación de una consecuencia particular exige identificar el acto aplicable, su fecha relevante, las personas efectivamente comprendidas y la evidencia que corresponda a la situación revisada. En ningún caso sustituye la consulta de expedientes, constancias o notificaciones individuales que puedan modificar la conclusión para una situación concreta. Esta delimitación evita convertir la información publicada en una conclusión definitiva sobre derechos, obligaciones o cumplimiento individual.",
-    "summary_teaser": "El SAT publicó la identificación de Operadora Macdegar tras una resolución en la que no desvirtuó la presunción de falsedad de los CFDI emitidos. Las operaciones contenidas en esos comprobantes no producen efectos fiscales. Las personas receptoras deben presentar declaración complementaria para revertir el efecto fiscal dentro de treinta días naturales desde la publicación en el DOF; de no hacerlo, procede la restricción temporal del certificado de sello digital.",
-    "title": "Operadora Macdegar: plazo de 30 días para revertir efectos de CFDI falsos",
+    "summary": "El Servicio de Administración Tributaria publicó el nombre y Registro Federal de Contribuyentes de Operadora Macdegar, S.A. de C.V. en el supuesto previsto por el artículo 49 Bis, fracción X, del Código Fiscal de la Federación. La Administración Central de Fiscalización Estratégica comunicó que, después del procedimiento previsto por dicho artículo, determinó que el contribuyente identificado en el Anexo 1 no desvirtuó la presunción de falsedad de los comprobantes fiscales digitales por internet que emitió. Por ello, los comprobantes se consideran falsos con efectos generales y las operaciones contenidas en ellos no producen ni produjeron efecto fiscal alguno.\n\nLa publicación identifica a la sociedad con RFC OMA040713D79. El anexo señala una resolución de 10 de julio de 2026 y registra notificación por Buzón Tributario el 16 de julio, con efectos al 17 de julio. El oficio explica que la publicación se hace para que las personas que recibieron CFDI de ese contribuyente conozcan la determinación y reviertan el efecto fiscal que hubieran dado a esas operaciones mediante declaración complementaria. El texto no determina por sí mismo qué declaración individual debe modificarse ni cuantifica ajustes, créditos, deducciones, impuestos o sanciones particulares.\n\nEl documento establece que los terceros que recibieron comprobantes de la contribuyente cuentan con treinta días naturales a partir de la publicación en el Diario Oficial para revertir el efecto fiscal. La vía indicada es la presentación de declaración complementaria. La circular también informa que, si no lo hacen, la autoridad restringirá temporalmente el uso del certificado de sello digital para emitir CFDI, conforme al artículo 17-H Bis, fracción XIV, del Código Fiscal de la Federación. El plazo divulgado corre desde la publicación, no desde la fecha de la resolución individual citada en el anexo.\n\nLa comunicación se funda en una resolución respecto de la presunción de falsedad y en la publicación de nombre y RFC; no contiene una lista de clientes, montos, comprobantes individuales ni una determinación adicional de responsabilidades de terceros. Quienes tengan operaciones con la sociedad deben contrastar sus registros y CFDI recibidos con el alcance exacto de la publicación y, en su caso, con las reglas fiscales aplicables a su situación.",
+    "summary_teaser": "El SAT publicó el nombre y RFC de Operadora Macdegar, S.A. de C.V., al determinar que no desvirtuó la presunción de falsedad de sus CFDI. Terceros que dieron efectos fiscales a esas operaciones deben revertirlos mediante declaración complementaria dentro de treinta días naturales o enfrentan la restricción temporal de su sello digital.",
+    "title": "SAT obliga a revertir efectos fiscales de CFDI de Operadora Macdegar",
     "topic_tags": [
       "Fiscal",
       "Oficio"

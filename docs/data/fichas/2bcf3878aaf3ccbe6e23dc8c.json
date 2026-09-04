@@ -6,7 +6,10 @@
       "source_ref": "chunk-1",
       "target_sections": [
         "executive_summary",
-        "detailed_summary"
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
       ]
     },
     {
@@ -14,8 +17,10 @@
       "reason": null,
       "source_ref": "chunk-2",
       "target_sections": [
+        "executive_summary",
         "detailed_summary",
         "impacts.general",
+        "impacts.sectors",
         "recommended_actions"
       ]
     },
@@ -24,8 +29,10 @@
       "reason": null,
       "source_ref": "chunk-3",
       "target_sections": [
+        "executive_summary",
         "detailed_summary",
         "impacts.general",
+        "impacts.sectors",
         "recommended_actions"
       ]
     },
@@ -34,8 +41,10 @@
       "reason": null,
       "source_ref": "chunk-4",
       "target_sections": [
+        "executive_summary",
         "detailed_summary",
         "impacts.general",
+        "impacts.sectors",
         "recommended_actions"
       ]
     },
@@ -44,8 +53,10 @@
       "reason": null,
       "source_ref": "chunk-5",
       "target_sections": [
+        "executive_summary",
         "detailed_summary",
         "impacts.general",
+        "impacts.sectors",
         "recommended_actions"
       ]
     },
@@ -54,8 +65,10 @@
       "reason": null,
       "source_ref": "chunk-6",
       "target_sections": [
+        "executive_summary",
         "detailed_summary",
         "impacts.general",
+        "impacts.sectors",
         "recommended_actions"
       ]
     },
@@ -64,8 +77,10 @@
       "reason": null,
       "source_ref": "chunk-7",
       "target_sections": [
+        "executive_summary",
         "detailed_summary",
         "impacts.general",
+        "impacts.sectors",
         "recommended_actions"
       ]
     },
@@ -74,8 +89,10 @@
       "reason": null,
       "source_ref": "chunk-8",
       "target_sections": [
+        "executive_summary",
         "detailed_summary",
         "impacts.general",
+        "impacts.sectors",
         "recommended_actions"
       ]
     },
@@ -84,8 +101,10 @@
       "reason": null,
       "source_ref": "chunk-9",
       "target_sections": [
+        "executive_summary",
         "detailed_summary",
         "impacts.general",
+        "impacts.sectors",
         "recommended_actions"
       ]
     },
@@ -94,37 +113,45 @@
       "reason": null,
       "source_ref": "chunk-10",
       "target_sections": [
+        "executive_summary",
         "detailed_summary",
         "impacts.general",
+        "impacts.sectors",
         "recommended_actions"
       ]
     }
   ],
-  "cut_id": "80ff8a726797f7b9e5131c53",
+  "cut_id": "9bfb2857e185b6a117ea296f",
   "detailed_summary": [
     {
       "evidence_refs": [
         "chunk-1",
-        "chunk-10"
+        "chunk-2"
       ],
-      "heading": "Contenido publicado",
+      "heading": "Naturaleza y aprobación del suplemento",
       "paragraphs": [
-        "El programa complementa la agenda anual de normalización con proyectos, modificaciones, reprogramaciones y cancelaciones en múltiples sectores."
+        "El documento explica que el Programa y su Suplemento ordenan la planeación nacional de actividades de normalización, estandarización y metrología. La aprobación del Suplemento fue instruida por la Comisión Nacional de Infraestructura de la Calidad para su publicación."
       ]
     },
     {
       "evidence_refs": [
-        "chunk-1",
+        "chunk-3",
+        "chunk-4",
+        "chunk-5",
+        "chunk-6",
+        "chunk-7",
+        "chunk-8",
+        "chunk-9",
         "chunk-10"
       ],
-      "heading": "Alcance práctico",
+      "heading": "Agenda regulatoria sectorial",
       "paragraphs": [
-        "Las fichas describen objetivos y periodos estimados, pero la fuente no expide por sí misma las normas futuras ni convierte sus propuestas en obligaciones vigentes."
+        "Las secciones posteriores agrupan propuestas sobre medio ambiente, agua, energía, economía, agricultura y pesca, transporte terrestre, salud, seguridad laboral, regulación sanitaria, aviación, ferrocarril y metrología. Los temas incluyen nuevas normas, modificaciones, cancelaciones y trabajos reprogramados, con fechas estimadas indicadas por cada comité."
       ]
     }
   ],
   "evidence": {
-    "content_hash": "792118b75d85276bacaa73f0ab98b16999056f68fa5f75fdf0459ada3b291cbd",
+    "content_hash": "f6dc357e9b614f48e16c2ae80f4b23daccac2d5524e939e287edc35cb3fdf389",
     "extraction_method": "html-adapter",
     "locators": [
       {
@@ -179,32 +206,48 @@
       }
     ],
     "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797188&fecha=26%2F08%2F2026",
-    "retrieved_at": "2026-09-01T16:35:07.759913+00:00"
+    "retrieved_at": "2026-09-03T16:53:19.675142+00:00"
   },
   "executive_summary": [
-    "La Comisión Nacional de Infraestructura de la Calidad publicó el Suplemento del Programa Nacional de Infraestructura de la Calidad 2026. El documento es un instrumento de planeación, conducción, coordinación e información sobre actividades de normalización, estandarización y metrología. Recoge propuestas aprobadas por la Comisión y las clasifica como temas nuevos, modificaciones, reprogramaciones o cancelaciones; por ello, la publicación no equivale a la expedición inmediata de todas las normas que enumera.",
-    "El suplemento incorpora, entre otros asuntos, propuestas sobre seguridad de embarcaciones menores, contingencias atmosféricas, emisiones de industrias metalúrgicas, exploración minera, presas de jales, medición de aguas nacionales, transformadores de distribución, seguridad de vehículos pesados, Talavera y Raicilla. También programa trabajos relativos a importación de carne, productos veterinarios, pesca y acuacultura, transporte de mercancías peligrosas, salud, seguridad y salud en el trabajo, productos sanitarios, aviación y sistema ferroviario. Varias fichas señalan agosto a diciembre de 2026 como periodo estimado de inicio y terminación."
+    "La Comisión Nacional de Infraestructura de la Calidad aprobó y la Secretaría de Economía publicó el Suplemento 2026 como complemento del programa anual de normalización, estandarización y metrología.",
+    "El instrumento reúne temas nuevos, modificaciones, reprogramaciones y cancelaciones. Sus calendarios estimados no sustituyen la consulta pública ni la emisión posterior de disposiciones obligatorias."
   ],
   "impacts": {
     "general": {
       "evidence_refs": [
         "chunk-1",
+        "chunk-2",
+        "chunk-3",
+        "chunk-4",
+        "chunk-5",
+        "chunk-6",
+        "chunk-7",
+        "chunk-8",
+        "chunk-9",
         "chunk-10"
       ],
       "paragraphs": [
-        "La publicación ofrece una señal regulatoria temprana para industrias sujetas a normalización, sin crear por sí sola obligaciones técnicas nuevas."
+        "El efecto inmediato es informativo y de planeación regulatoria. El Suplemento permite anticipar materias que podrían avanzar a proyecto, consulta o norma posterior, sin acreditar que cada tema ya sea una obligación aplicable."
       ]
     },
     "sectors": [
       {
         "evidence_refs": [
           "chunk-1",
+          "chunk-2",
+          "chunk-3",
+          "chunk-4",
+          "chunk-5",
+          "chunk-6",
+          "chunk-7",
+          "chunk-8",
+          "chunk-9",
           "chunk-10"
         ],
         "paragraphs": [
-          "Los sectores marítimo, ambiental, energético, automotor, agroalimentario, transporte, salud, aeronáutico y ferroviario pueden priorizar vigilancia de los proyectos que les resulten aplicables."
+          "Productores, importadores, concesionarios, prestadores de servicios y organizaciones de los sectores listados pueden verse involucrados si las autoridades publican posteriormente proyectos o normas sobre las materias inscritas."
         ],
-        "sector": "Industrias reguladas y áreas de cumplimiento técnico"
+        "sector": "Industria, comercio exterior, transporte y servicios regulados"
       }
     ]
   },
@@ -233,23 +276,31 @@
     "review_reason": null,
     "source": "DOF",
     "source_id": "5797188",
-    "summary_teaser": "La Comisión Nacional de Infraestructura de la Calidad publicó el suplemento de su programa anual con temas nuevos, modificaciones y cancelaciones normativas. Abarca sectores marítimo, ambiental, energético, industrial, agroalimentario, transporte, salud, aeronáutico, ferroviario y metrología, con periodos estimados de elaboración durante dos mil veintiséis.",
-    "title": "Suplemento incorpora agenda nacional de normas para dos mil veintiséis",
+    "summary_teaser": "El Suplemento 2026 del Programa Nacional de Infraestructura de la Calidad integra proyectos de normas, modificaciones y cancelaciones en sectores ambientales, industriales, agroalimentarios, sanitarios, de transporte y metrología. Es un instrumento de planeación: varios temas tienen calendario estimado de agosto a diciembre de 2026 y no constituyen por sí mismos nuevas obligaciones vigentes.",
+    "title": "Suplemento incorpora agenda multisectorial de normalización para 2026",
     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797188&fecha=26/08/2026"
   },
   "recommended_actions": [
     {
-      "affected_group": "Industrias reguladas y áreas de cumplimiento técnico",
+      "affected_group": "Organizaciones y personas de sectores potencialmente alcanzados",
       "deadline": null,
       "evidence_refs": [
         "chunk-1",
+        "chunk-2",
+        "chunk-3",
+        "chunk-4",
+        "chunk-5",
+        "chunk-6",
+        "chunk-7",
+        "chunk-8",
+        "chunk-9",
         "chunk-10"
       ],
-      "legal_basis": "Ley de Infraestructura de la Calidad y Suplemento del Programa Nacional de Infraestructura de la Calidad 2026",
+      "legal_basis": "Ley de Infraestructura de la Calidad, artículo 29",
       "paragraphs": [
-        "Mapear los temas del suplemento relevantes para cada operación y dar seguimiento a consultas públicas, proyectos y publicaciones definitivas antes de modificar controles o certificar cumplimiento."
+        "Identificar los temas inscritos que correspondan a su actividad y dar seguimiento a publicaciones posteriores de proyectos, consultas públicas o normas definitivas. No debe tratarse la inscripción en el Suplemento como una obligación nueva por sí sola."
       ],
-      "trigger": "Identificar una propuesta del suplemento vinculada con la actividad propia"
+      "trigger": "Cuando el tema inscrito corresponda a la actividad de la organización o persona"
     }
   ],
   "schema_version": 8

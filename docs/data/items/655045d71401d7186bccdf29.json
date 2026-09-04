@@ -1,0 +1,204 @@
+{
+  "cut_id": "9bfb2857e185b6a117ea296f",
+  "item": {
+    "ai_generated": true,
+    "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797807&fecha=03%2F09%2F2026",
+    "card_body": "## Qué se publicó\nSe destinó un inmueble federal en el Centro Histórico de la Ciudad de México al Instituto Nacional de Estudios Históricos de las Revoluciones de México para educación superior pública y gratuita.\n\n## Sustancia\nEl destino autoriza el aprovechamiento, pero no transmite la propiedad. El inmueble debe conservarse, asegurarse y contar con autorizaciones previas para obras por su condición de monumento histórico.\n\n## Fuente\nDiario Oficial de la Federación, 3 de septiembre de 2026.",
+    "case_amount": "",
+    "case_claim": "",
+    "case_facts": "",
+    "case_number": "",
+    "case_outcome": "",
+    "case_parties": "",
+    "case_reasoning": "",
+    "case_status": "",
+    "case_treaty": "",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "37b78a49e84bd9c527508fe963ad7e5b9bc7e14de20e75c7f6908b518005f56c",
+    "country_or_org": "México",
+    "coverage": [
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-1",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-2",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors",
+          "recommended_actions"
+        ]
+      },
+      {
+        "disposition": "summarized",
+        "reason": null,
+        "source_ref": "chunk-3",
+        "target_sections": [
+          "executive_summary",
+          "detailed_summary",
+          "impacts.general",
+          "impacts.sectors"
+        ]
+      }
+    ],
+    "description": "",
+    "detail_data_url": "data/fichas/655045d71401d7186bccdf29.json",
+    "detail_url": "notas/655045d71401d7186bccdf29.html",
+    "detailed_summary": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2",
+          "chunk-3"
+        ],
+        "heading": "Inmueble y destino autorizado",
+        "paragraphs": [
+          "El destino corresponde al Centro Cultural SHCP, con Registro Federal Inmobiliario 9-6597-3, situado en República de Guatemala 80, Ciudad de México, para educación superior pública y gratuita. La entrega se tendrá por definitiva al entrar en vigor."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "heading": "Régimen patrimonial y conservación",
+        "paragraphs": [
+          "El destino permite sólo el aprovechamiento para el uso autorizado, sin transmitir propiedad ni derecho real. Si cambia el uso sin autorización o deja de necesitarse, el inmueble debe ponerse a disposición de INDAABIN en los términos señalados por la fuente."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-2",
+          "chunk-3"
+        ],
+        "heading": "Condición histórica y obras",
+        "paragraphs": [
+          "La fuente identifica al inmueble como monumento histórico y ubicado en zona de monumentos históricos. Antes de obras deben obtenerse licencias, permisos y autorizaciones, específicamente ante el INAH; además, el destinatario debe custodiarlo, conservarlo y asegurarlo."
+        ]
+      }
+    ],
+    "detected_at": "2026-09-04T03:37:15.636102+00:00",
+    "document_type": "Acuerdo",
+    "editorial_status": "complete",
+    "evidence": {
+      "content_hash": "4a08467b00a897b1cd9817c999fc3c6f8f083c303524ec865a21e36f00a9347e",
+      "extraction_method": "html-adapter",
+      "locators": [
+        {
+          "id": "chunk-1",
+          "label": "ACUERDO por el que se destina al Instituto Nacional de Estudios Históricos de las Revoluciones de México, el inmueble federal denominado \" Centro Cultural SHCP \" , con Registro Federal Inmobiliario 9-6597-3 y superficie de 512.00 metros cuadrados, ubicado en Calle República de Guatemala número 80, Colonia Centro, Código Postal 06020, alcaldía Cuauhtémoc, Ciudad de México.",
+          "location": "caracteres 0-378"
+        },
+        {
+          "id": "chunk-2",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Instituto de Administración y Avalúos de Bienes Nacionales.- DST-19/2026. · parte 1",
+          "location": "caracteres 378-12378"
+        },
+        {
+          "id": "chunk-3",
+          "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Instituto de Administración y Avalúos de Bienes Nacionales.- DST-19/2026. · parte 2",
+          "location": "caracteres 12378-12812"
+        }
+      ],
+      "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797807&fecha=03%2F09%2F2026",
+      "retrieved_at": "2026-09-03T16:52:39.450574+00:00"
+    },
+    "executive_summary": [
+      "El inmueble federal Centro Cultural SHCP fue destinado al Instituto Nacional de Estudios Históricos de las Revoluciones de México para impartir educación superior pública y gratuita.",
+      "El destinatario debe conservar, custodiar y asegurar el inmueble. Las obras requieren permisos y autorizaciones previas, especialmente ante el INAH, por la condición de monumento histórico y su ubicación en el Centro Histórico."
+    ],
+    "extraction_status": "complete",
+    "first_seen_at": "2026-09-04T03:37:15.636102+00:00",
+    "government_branch": "Ejecutivo federal",
+    "id": "dof:5797807",
+    "impacts": {
+      "general": {
+        "evidence_refs": [
+          "chunk-2",
+          "chunk-3"
+        ],
+        "paragraphs": [
+          "La medida asigna un uso público educativo a un inmueble federal y condiciona su aprovechamiento a conservación, aseguramiento, vigilancia y cumplimiento de autorizaciones para intervenciones físicas."
+        ]
+      },
+      "sectors": [
+        {
+          "evidence_refs": [
+            "chunk-2",
+            "chunk-3"
+          ],
+          "paragraphs": [
+            "El instituto es la institución destinataria y debe administrar el inmueble dentro del uso autorizado, cuidar su conservación y obtener las autorizaciones previas que correspondan para cualquier obra."
+          ],
+          "sector": "Instituto Nacional de Estudios Históricos de las Revoluciones de México"
+        }
+      ]
+    },
+    "importance": 1,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "last_seen_at": "2026-09-04T03:37:15.636102+00:00",
+    "official_evidence": {
+      "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797807&fecha=03/09/2026"
+    },
+    "official_identifiers": {
+      "source_id": "5797807"
+    },
+    "official_published_at": "2026-09-03",
+    "official_title": "Acuerdo por el que se destina al Instituto Nacional de Estudios Históricos de las Revoluciones de México, el inmueble federal denominado \"Centro Cultural SHCP\", con Registro Federal Inmobiliario 9-6597-3 y superficie de 512.00 metros cuadrados, ubicado en Calle República de Guatemala número 80, Colonia Centro, Código Postal 06020, alcaldía Cuauhtémoc, Ciudad de México.",
+    "published_at": "2026-09-03",
+    "published_day": 3,
+    "published_month": 9,
+    "published_year": 2026,
+    "recommended_actions": [
+      {
+        "affected_group": "Administración inmobiliaria del Instituto destinatario",
+        "deadline": "Antes de realizar la obra.",
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "legal_basis": "Punto tercero del instrumento; artículos 35 y 36, fracción I, de la Ley Federal sobre Monumentos y Zonas Arqueológicos, Artísticos e Históricos, citados en la fuente.",
+        "paragraphs": [
+          "Si se proyecta intervenir físicamente el inmueble, integre el expediente técnico y gestione previamente las licencias, permisos y autorizaciones exigibles, incluida la intervención del INAH indicada por la fuente."
+        ],
+        "trigger": "Proyecto de construcción, reconstrucción, modificación, adaptación, conservación, mantenimiento, reparación o demolición."
+      },
+      {
+        "affected_group": "Administración inmobiliaria del Instituto destinatario",
+        "deadline": "Cuatro meses desde que deje de ser útil para el servicio.",
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "legal_basis": "Puntos segundo y quinto del instrumento; artículo 68 y artículo 70 de la Ley General de Bienes Nacionales, citados en la fuente.",
+        "paragraphs": [
+          "Si el inmueble deja de usarse o necesitarse para el servicio autorizado, prepare su puesta a disposición de INDAABIN con mejoras y accesiones, sin asumir que el destino transfirió la propiedad."
+        ],
+        "trigger": "Cambio no autorizado de uso o cese de necesidad del inmueble."
+      }
+    ],
+    "relevance_score": 1,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5797807",
+    "subtopic_tags": [],
+    "summary": "El Instituto de Administración y Avalúos de Bienes Nacionales destinó al Instituto Nacional de Estudios Históricos de las Revoluciones de México el inmueble federal denominado Centro Cultural SHCP, ubicado en República de Guatemala número 80, colonia Centro, alcaldía Cuauhtémoc, Ciudad de México. La fuente lo identifica con Registro Federal Inmobiliario 9-6597-3 y con una superficie de 512 metros cuadrados. El destino tiene por finalidad la impartición de educación superior pública y gratuita; el inmueble se considerará entregado definitivamente al entrar en vigor el instrumento, pues ya existía una entrega física, jurídica y administrativa provisional documentada el 31 de julio de 2026.\n\nEl documento describe antecedentes de propiedad, registro y superficie. Refiere una compraventa de 1946 e inscripciones posteriores, así como un levantamiento topográfico con superficie de 507.719 metros cuadrados, diferencia de 4.281 metros cuadrados frente a la superficie registrada que se considera dentro de límites técnicos tolerables. La fuente también señala que el inmueble data del siglo XVIII, está considerado monumento histórico, figura en el Catálogo Nacional de Monumentos Históricos, colinda con otro monumento histórico y se ubica en la Zona de Monumentos Históricos del Centro Histórico de la Ciudad de México. El acuerdo añade que el INBAL informó que el inmueble no está incluido en su relación de inmuebles con valor artístico.\n\nEl instituto destinatario sólo recibe el derecho de aprovechar el bien para el uso autorizado; no se transmite la propiedad ni un derecho real. Si lo usa para una finalidad distinta sin autorización previa de Hacienda por conducto de INDAABIN, o si deja de usarlo o necesitarlo, debe ponerlo a disposición de INDAABIN con mejoras y accesiones, sin compensación, dentro de cuatro meses desde que deje de ser útil al servicio. Antes de obras de construcción, reconstrucción, modificación, adaptación, conservación, mantenimiento, reparación o demolición, debe tramitar licencias, permisos y autorizaciones, en particular ante el INAH. También debe custodiarlo, conservarlo, cubrir servicios y asegurarlo contra daños. El acuerdo entra en vigor al día siguiente de su publicación.",
+    "summary_teaser": "INDAABIN destinó al Instituto Nacional de Estudios Históricos de las Revoluciones de México el inmueble federal Centro Cultural SHCP, en República de Guatemala 80, Ciudad de México, para impartir educación superior pública y gratuita. El destino no transmite la propiedad y establece obligaciones de conservación, aseguramiento y autorizaciones previas para obras por su condición de monumento histórico.",
+    "title": "Establece destino educativo del Centro Cultural SHCP",
+    "topic_tags": [
+      "Acuerdo"
+    ],
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797807&fecha=03/09/2026"
+  },
+  "schema_version": 8
+}

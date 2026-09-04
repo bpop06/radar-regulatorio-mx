@@ -5,6 +5,7 @@
       "reason": null,
       "source_ref": "chunk-1",
       "target_sections": [
+        "executive_summary",
         "detailed_summary"
       ]
     },
@@ -13,6 +14,7 @@
       "reason": null,
       "source_ref": "chunk-2",
       "target_sections": [
+        "executive_summary",
         "detailed_summary"
       ]
     },
@@ -125,7 +127,8 @@
       "reason": null,
       "source_ref": "chunk-16",
       "target_sections": [
-        "detailed_summary"
+        "detailed_summary",
+        "impacts.general"
       ]
     },
     {
@@ -133,7 +136,9 @@
       "reason": null,
       "source_ref": "chunk-17",
       "target_sections": [
-        "detailed_summary"
+        "detailed_summary",
+        "impacts.general",
+        "recommended_actions"
       ]
     },
     {
@@ -141,37 +146,63 @@
       "reason": null,
       "source_ref": "chunk-18",
       "target_sections": [
-        "detailed_summary"
+        "detailed_summary",
+        "recommended_actions"
       ]
     }
   ],
-  "cut_id": "80ff8a726797f7b9e5131c53",
+  "cut_id": "9bfb2857e185b6a117ea296f",
   "detailed_summary": [
     {
       "evidence_refs": [
+        "chunk-1",
+        "chunk-2",
+        "chunk-16",
         "chunk-17",
         "chunk-18"
       ],
-      "heading": "Alcance de la publicación",
+      "heading": "Alcance y decisión final",
       "paragraphs": [
-        "La Secretaría de Economía declaró concluida la investigación antidumping sobre sulfato de amonio originario de China e impuso una cuota compensatoria definitiva de 0.1488 dólares de los Estados Unidos de América por kilogramo a las importaciones que ingresen por la fracción arancelaria 3102.21.01 de la TIGIE o por cualquier otra.",
-        "La Secretaría de Hacienda y Crédito Público aplica la cuota en todo el territorio nacional. Las personas importadoras que deban pagarla no están obligadas si comprueban que el país de origen de la mercancía es distinto a China conforme a las normas para la determinación y certificación del origen no preferencial. La resolución entra en vigor el día siguiente de su publicación en el DOF."
+        "El expediente AD 30-24 investigó importaciones de sulfato de amonio originarias de China. La resolución concluye el procedimiento e impone una cuota definitiva de 0.1488 dólares por kilogramo a la mercancía que ingrese por la fracción 3102.21.01 de la TIGIE o cualquier otra. La Secretaría de Hacienda y Crédito Público debe aplicarla en territorio nacional.",
+        "La medida entra en vigor al día siguiente de la publicación. Los importadores que acrediten un país de origen distinto de China no están obligados a pagarla, en los términos de las reglas de origen no preferencial que la resolución cita."
       ]
     },
     {
       "evidence_refs": [
-        "chunk-17",
-        "chunk-18"
+        "chunk-3",
+        "chunk-4",
+        "chunk-5",
+        "chunk-6",
+        "chunk-7",
+        "chunk-8"
       ],
-      "heading": "Seguimiento operativo",
+      "heading": "Dumping y metodología",
       "paragraphs": [
-        "Las personas importadoras de sulfato de amonio deben revisar la clasificación declarada, el país de origen y la documentación aplicable para determinar si se actualiza la cuota o la excepción probatoria.",
-        "La ficha no extiende el alcance del acto a supuestos que la fuente no identifica."
+        "La Secretaría determinó un margen de discriminación de precios de 0.1849 dólares por kilogramo. Para el análisis usó información de la solicitante, importadoras y fuentes de comercio; ajustó el precio de exportación por flete marítimo y seguro, y calculó el valor normal mediante valor reconstruido para las presentaciones estándar y granular.",
+        "En la etapa final, la autoridad no usó la información de la exportadora Fujian Shenyuan para el cálculo porque consideró que no contó con soportes suficientes para verificar ajustes de exportación y costos de producción. Esa apreciación es una conclusión de la Secretaría dentro del expediente, no una determinación adicional sobre terceros."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-9",
+        "chunk-10",
+        "chunk-11",
+        "chunk-12",
+        "chunk-13",
+        "chunk-14",
+        "chunk-15",
+        "chunk-16",
+        "chunk-17"
+      ],
+      "heading": "Daño, causalidad y cuota inferior",
+      "paragraphs": [
+        "La resolución concluye que las importaciones investigadas crecieron 973% en el periodo analizado, ganaron participación de mercado y registraron una subvaloración creciente frente al producto nacional. La Secretaría atribuyó daño material a la rama de producción nacional después de revisar indicadores económicos y financieros, así como otros factores de daño planteados por las partes.",
+        "Al valorar una cuota menor al margen de dumping, la Secretaría concluyó que la propuesta de 3% de una importadora no bastaba para eliminar el daño y utilizó el valor normal calculado como precio no lesivo. De esa evaluación derivó la cuota definitiva de 0.1488 dólares por kilogramo."
       ]
     }
   ],
   "evidence": {
-    "content_hash": "7a3150ebedbe6b5ae3e25db5e822cff6be5a84e64c6c16097e5e02bfe92c837c",
+    "content_hash": "83094fd94c61748e02537c7c087b286c569f81c508c5c8575a425811efc2e923",
     "extraction_method": "html-adapter",
     "locators": [
       {
@@ -266,20 +297,22 @@
       }
     ],
     "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796309&fecha=14%2F08%2F2026",
-    "retrieved_at": "2026-09-01T16:35:31.658165+00:00"
+    "retrieved_at": "2026-09-03T16:53:44.973039+00:00"
   },
   "executive_summary": [
-    "La Secretaría de Economía declaró concluida la investigación antidumping sobre sulfato de amonio originario de China e impuso una cuota compensatoria definitiva de 0.1488 dólares de los Estados Unidos de América por kilogramo a las importaciones que ingresen por la fracción arancelaria 3102.21.01 de la TIGIE o por cualquier otra.",
-    "La Secretaría de Hacienda y Crédito Público aplica la cuota en todo el territorio nacional. Las personas importadoras que deban pagarla no están obligadas si comprueban que el país de origen de la mercancía es distinto a China conforme a las normas para la determinación y certificación del origen no preferencial. La resolución entra en vigor el día siguiente de su publicación en el DOF."
+    "La Secretaría de Economía cerró la investigación antidumping sobre importaciones de sulfato de amonio originarias de China y resolvió imponer una cuota compensatoria definitiva de 0.1488 dólares por kilogramo.",
+    "La determinación se apoyó en una conclusión positiva sobre dumping y daño material a la rama de producción nacional. La autoridad calculó un margen de discriminación de precios de 0.1849 dólares por kilogramo y eligió una cuota inferior con base en el precio no lesivo que determinó.",
+    "La cuota se aplica en todo el territorio nacional a la mercancía y origen definidos. Entra en vigor al día siguiente de la publicación; la resolución reconoce una excepción para quien pruebe que el origen de la mercancía es distinto de China."
   ],
   "impacts": {
     "general": {
       "evidence_refs": [
+        "chunk-16",
         "chunk-17",
         "chunk-18"
       ],
       "paragraphs": [
-        "La Secretaría de Hacienda y Crédito Público aplica la cuota en todo el territorio nacional. Las personas importadoras que deban pagarla no están obligadas si comprueban que el país de origen de la mercancía es distinto a China conforme a las normas para la determinación y certificación del origen no preferencial. La resolución entra en vigor el día siguiente de su publicación en el DOF."
+        "La consecuencia jurídica verificable es la aplicación de una cuota compensatoria definitiva a las importaciones de sulfato de amonio originarias de China que caigan en el alcance de la resolución. La fuente no establece una prohibición general de comercio ni cuantifica efectos particulares para empresas o consumidores."
       ]
     },
     "sectors": [
@@ -289,9 +322,9 @@
           "chunk-18"
         ],
         "paragraphs": [
-          "La incidencia para este grupo se limita al alcance expresamente descrito en la publicación y requiere contrastarse con cada caso concreto."
+          "Deben considerar la cuota por kilogramo cuando la mercancía y el origen correspondan al supuesto de la resolución. La excepción descrita depende de acreditar un origen distinto de China conforme a las reglas referidas por la autoridad."
         ],
-        "sector": "Personas importadoras de sulfato de amonio"
+        "sector": "Importadores de sulfato de amonio originario de China"
       }
     ]
   },
@@ -321,23 +354,35 @@
     "review_reason": null,
     "source": "DOF",
     "source_id": "5796309",
-    "summary_teaser": "La Secretaría de Economía concluyó la investigación antidumping e impuso una cuota compensatoria definitiva de 0.1488 dólares por kilogramo al sulfato de amonio originario de China que ingrese por la fracción 3102.21.01 o cualquier otra. Entra en vigor al día siguiente de su publicación. Las personas importadoras quedan exentas si prueban origen distinto a China conforme a las normas no preferenciales aplicables.",
-    "title": "Sulfato de amonio chino queda sujeto a cuota definitiva",
+    "summary_teaser": "La Secretaría de Economía concluyó la investigación antidumping sobre sulfato de amonio de China e impuso una cuota compensatoria definitiva de 0.1488 dólares por kilogramo. La medida cubre mercancía que ingrese por la fracción 3102.21.01 o cualquier otra, y entra en vigor al día siguiente de su publicación.",
+    "title": "México impone cuota definitiva al sulfato de amonio chino",
     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796309&fecha=14/08/2026"
   },
   "recommended_actions": [
     {
-      "affected_group": "Personas importadoras de sulfato de amonio",
-      "deadline": "Entrada en vigor al día siguiente de la publicación en el DOF.",
+      "affected_group": "Importadores de sulfato de amonio originario de China",
+      "deadline": "A partir del día siguiente de la publicación de la resolución",
       "evidence_refs": [
         "chunk-17",
         "chunk-18"
       ],
-      "legal_basis": "Puntos 288 a 293 de la resolución antidumping.",
+      "legal_basis": "Puntos 288, 289 y 293 de la resolución",
       "paragraphs": [
-        "Las personas importadoras de sulfato de amonio deben revisar la clasificación declarada, el país de origen y la documentación aplicable para determinar si se actualiza la cuota o la excepción probatoria."
+        "Si una operación entra en el alcance de la resolución, revisar la clasificación, el origen y el cálculo de la cuota compensatoria antes del despacho. La acción es condicional y no sustituye la determinación aduanera aplicable a cada importación."
       ],
-      "trigger": "Desde el día siguiente a la publicación de la resolución en el Diario Oficial de la Federación."
+      "trigger": "Importación de sulfato de amonio originario de China dentro del alcance descrito por la resolución"
+    },
+    {
+      "affected_group": "Importadores que sostengan un origen distinto de China",
+      "deadline": null,
+      "evidence_refs": [
+        "chunk-18"
+      ],
+      "legal_basis": "Artículo 66 de la Ley de Comercio Exterior, citado en el punto 290",
+      "paragraphs": [
+        "Si pretenden invocar la excepción de origen, contar con la comprobación exigida por las reglas de origen no preferencial citadas en la resolución. El documento no aporta un expediente individual de origen ni releva otras obligaciones aduaneras."
+      ],
+      "trigger": "Pretensión de no pagar la cuota por origen distinto de China"
     }
   ],
   "schema_version": 8

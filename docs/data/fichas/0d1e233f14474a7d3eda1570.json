@@ -1,50 +1,48 @@
 {
   "coverage": [
     {
-      "disposition": "summarized",
-      "reason": null,
+      "disposition": "not_material",
+      "reason": "Repite el título del acuerdo; las reglas de habilitación se desarrollan en el segundo fragmento.",
       "source_ref": "chunk-1",
-      "target_sections": [
-        "executive_summary",
-        "detailed_summary"
-      ]
+      "target_sections": []
     },
     {
       "disposition": "summarized",
       "reason": null,
       "source_ref": "chunk-2",
       "target_sections": [
+        "executive_summary",
         "detailed_summary",
         "impacts.general",
+        "impacts.sectors",
         "recommended_actions"
       ]
     }
   ],
-  "cut_id": "80ff8a726797f7b9e5131c53",
+  "cut_id": "9bfb2857e185b6a117ea296f",
   "detailed_summary": [
     {
       "evidence_refs": [
         "chunk-1",
         "chunk-2"
       ],
-      "heading": "Contenido publicado",
+      "heading": "Habilitación y fecha de ejercicio",
       "paragraphs": [
-        "Se habilita a los tres juzgados de procesos penales federales con residencia en Matamoros para conocer de amparo en materia penal."
+        "Los tres juzgados identificados pueden conocer amparo penal en términos del artículo 53 de la Ley Orgánica del Poder Judicial de la Federación. La competencia ampliada se ejercerá desde el 1 de septiembre de 2026."
       ]
     },
     {
       "evidence_refs": [
-        "chunk-1",
         "chunk-2"
       ],
-      "heading": "Alcance práctico",
+      "heading": "Alcance organizacional",
       "paragraphs": [
-        "La competencia adicional inicia el primero de septiembre de dos mil veintiséis y no altera su especialización ni la competencia preexistente sobre procesos penales federales."
+        "El acuerdo fundamenta la medida en capacidad jurisdiccional disponible y la vincula con un análisis de reorganización en curso. Precisa que no modifica la especialización ni la competencia existente sobre procesos penales federales y atribuye las consultas interpretativas a la Comisión indicada."
       ]
     }
   ],
   "evidence": {
-    "content_hash": "a51f0a69addf5af85eab085ea5b6ceda7f6e6cc2a0a2f70c280faaa09ed72394",
+    "content_hash": "30ad667465e8027d6c0ef83a991cb1036d591af84488103d50d2735e0df174f8",
     "extraction_method": "html-adapter",
     "locators": [
       {
@@ -59,32 +57,30 @@
       }
     ],
     "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797580&fecha=01%2F09%2F2026",
-    "retrieved_at": "2026-09-01T16:34:51.291058+00:00"
+    "retrieved_at": "2026-09-03T16:52:56.840054+00:00"
   },
   "executive_summary": [
-    "El Pleno del Órgano de Administración Judicial habilitó a los Juzgados Primero, Segundo y Tercero de Distrito de Procesos Penales Federales en Tamaulipas, con residencia en Matamoros, para conocer de amparo en materia penal. El acuerdo explica que estos órganos presentan capacidad jurisdiccional disponible debido a la disminución sostenida de cargas de trabajo asociada a la implementación del sistema penal acusatorio y que esa capacidad puede aprovecharse en apoyo de otros órganos.",
-    "La ampliación se ejerce a partir del primero de septiembre de dos mil veintiséis, en los términos que el acuerdo remite al artículo 53 de la Ley Orgánica del Poder Judicial de la Federación. La decisión se presenta como medida inmediata dentro de un programa de análisis y reorganización de los juzgados de procesos penales federales. El instrumento conserva la competencia existente de los órganos respecto de los procesos penales federales."
+    "El Órgano de Administración Judicial habilitó a los Juzgados Primero, Segundo y Tercero de Distrito de Procesos Penales Federales de Matamoros para conocer amparo en materia penal desde el 1 de septiembre de 2026.",
+    "La medida busca aprovechar capacidad jurisdiccional disponible y no modifica la especialización ni la competencia que esos órganos ya ejercen sobre procesos penales federales. Las consultas interpretativas quedan a cargo de la Comisión de Creación y Seguimiento de Órganos Jurisdiccionales."
   ],
   "impacts": {
     "general": {
       "evidence_refs": [
-        "chunk-1",
         "chunk-2"
       ],
       "paragraphs": [
-        "La medida abre una capacidad adicional para asuntos de amparo penal sin sustituir las funciones penales federales de los órganos habilitados."
+        "La habilitación añade conocimiento de amparo penal a los tres juzgados de Matamoros sin sustituir la competencia penal federal que el acuerdo identifica como existente."
       ]
     },
     "sectors": [
       {
         "evidence_refs": [
-          "chunk-1",
           "chunk-2"
         ],
         "paragraphs": [
-          "Quienes promuevan o sigan amparos penales deben considerar la habilitación al revisar la competencia y los canales de trámite aplicables."
+          "Los juzgados habilitados podrán conocer amparo penal desde la fecha fijada; la fuente no publica reglas adicionales de distribución de asuntos."
         ],
-        "sector": "Personas litigantes y defensorías en asuntos de amparo penal"
+        "sector": "Personas litigantes y órganos jurisdiccionales en materia penal federal"
       }
     ]
   },
@@ -113,23 +109,22 @@
     "review_reason": null,
     "source": "DOF",
     "source_id": "5797580",
-    "summary_teaser": "El Órgano de Administración Judicial habilitó a tres juzgados federales de procesos penales en Matamoros para conocer amparos en materia penal. La competencia ampliada inicia el primero de septiembre de dos mil veintiséis, no sustituye su especialización ni desplaza la competencia que ya ejercen sobre procesos penales federales.",
-    "title": "Acuerdo amplía competencia de juzgados penales de Matamoros",
+    "summary_teaser": "El Órgano de Administración Judicial habilitó a tres juzgados de procesos penales federales en Matamoros para conocer amparo penal desde el 1 de septiembre de 2026. La medida aprovecha capacidad jurisdiccional disponible sin modificar su especialización ni su competencia para procesos penales federales.",
+    "title": "Acuerdo establece habilitación para conocer amparo penal en Matamoros",
     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797580&fecha=01/09/2026"
   },
   "recommended_actions": [
     {
-      "affected_group": "Personas litigantes y defensorías en asuntos de amparo penal",
+      "affected_group": "Personas litigantes con asuntos de amparo en materia penal",
       "deadline": null,
       "evidence_refs": [
-        "chunk-1",
         "chunk-2"
       ],
-      "legal_basis": "Acuerdo General del Órgano de Administración Judicial y artículo 53 de la Ley Orgánica del Poder Judicial de la Federación, citado en el acto",
+      "legal_basis": "Puntos primero a cuarto del acuerdo general.",
       "paragraphs": [
-        "Verificar la competencia del órgano que corresponda conforme al acuerdo y a las reglas procesales aplicables antes de presentar promociones o solicitudes."
+        "Si un asunto se presenta después de la fecha de ejercicio, consideren la habilitación de los juzgados de Matamoros y consulten las reglas procesales y de turno aplicables en el sistema judicial correspondiente."
       ],
-      "trigger": "Promover o tramitar un amparo en materia penal"
+      "trigger": "Al definir el órgano competente para un asunto de amparo penal a partir del 1 de septiembre de 2026."
     }
   ],
   "schema_version": 8

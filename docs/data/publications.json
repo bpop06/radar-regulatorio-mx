@@ -2,7 +2,7 @@
   "collection_notes": {
     "dof_previous_day_reviewed": false
   },
-  "cut_id": "80ff8a726797f7b9e5131c53",
+  "cut_id": "9bfb2857e185b6a117ea296f",
   "edition": {
     "coverage": {
       "failed": [],
@@ -10,51 +10,431 @@
       "state": "complete",
       "total": 18
     },
-    "edition_date": "2026-09-01",
-    "last_available_date": "2026-09-01",
-    "lead_id": "dof:5796407",
+    "edition_date": "2026-09-03",
+    "last_available_date": "2026-09-03",
+    "lead_id": "dof:5797812",
     "signals": [
       {
-        "id": "dof:5796407",
+        "id": "dof:5797812",
         "rank": 1,
-        "why_it_matters": "El órgano interno de control del ISSSTE comunicó que dejó sin efectos una resolución dictada en un procedimiento administrativo de sanción a licitantes, proveedores y contratistas. La medida cumple una sentencia de."
+        "why_it_matters": "La circular comunica que las autoridades destinatarias deben abstenerse de aceptar propuestas o contratar con Roy González Padilla por tres meses. La medida inicia al día siguiente de la publicación luego de."
       },
       {
-        "id": "dof:5796637",
+        "id": "anam:33570b156e50b19f",
         "rank": 2,
-        "why_it_matters": "El Órgano Interno de Control en el IMSS publicó una circular de cumplimiento de la sentencia interlocutoria emitida por la Sexta Sala Regional Metropolitana del TFJA en el caso Hima Promotions. La."
+        "why_it_matters": "La ANAM informó que, junto con Marina y la SSPC, detectó en Manzanillo tres cargamentos procedentes de China con aproximadamente 11 mil 755 pares de calzado deportivo que presentaban características para presumirlos."
       },
       {
-        "id": "anam:1c45bce94037e150",
+        "id": "dof:5797705",
         "rank": 3,
-        "why_it_matters": "ANAM e IMPI informaron una inspección en la Aduana de Lázaro Cárdenas que incluyó la suspensión provisional de libre circulación de 48 perfumes y el aseguramiento de otros bienes con signos distintivos."
+        "why_it_matters": "La Secretaría de Economía abrió una investigación antidumping sobre placa de acero en hoja originaria de Japón. La resolución fija el periodo investigado en 2025 y el análisis de daño de 2023."
       },
       {
-        "id": "dof:5795543",
+        "id": "dof:5797708",
         "rank": 4,
-        "why_it_matters": "El Órgano Interno de Control de la Fiscalía General de la República publicó reglas para suplencias por ausencia o excusa de su titular y de sus unidades. El acuerdo establece un orden."
+        "why_it_matters": "La circular ordena a dependencias, entidades, entidades federativas, municipios y demarcaciones abstenerse de recibir propuestas o contratar con IFASER, S.A. de C.V. La inhabilitación es por tres meses desde el día siguiente."
       },
       {
-        "id": "dof:5795723",
+        "id": "dof:5797905",
         "rank": 5,
-        "why_it_matters": "El SAT incorporó a Asociación de Productividad y Competitividad de Sonora, A.C. al supuesto publicado del artículo 49 Bis del Código Fiscal. La autoridad determinó que no desvirtuó la presunción de falsedad."
+        "why_it_matters": "La Fiscalía General de la República convocó una licitación pública internacional bajo cobertura de tratados para adquirir cartuchos, tanques y botellas de tinta y tóners, en segunda vuelta. Las propuestas se abren."
       },
       {
-        "id": "dof:5795724",
+        "id": "dof:5797700",
         "rank": 6,
-        "why_it_matters": "El SAT publicó la identificación de Comercializadora Topik tras una resolución en la que no desvirtuó la presunción de falsedad de los CFDI emitidos. Las operaciones contenidas en esos comprobantes no producen."
+        "why_it_matters": "La CONSAR modifica la metodología de indicadores de rendimiento neto para asignación y reasignación de cuentas individuales. Desde el 1 de enero de 2027 incorpora condiciones de inversión neutrales, factores de búsqueda."
       },
       {
-        "id": "dof:5797195",
+        "id": "dof:5797809",
         "rank": 7,
-        "why_it_matters": "El IMPI publicó la solicitud de protección para la indicación geográfica “Plátano Chiapas”, promovida por la Secretaría de Economía y del Trabajo estatal. El expediente queda disponible para consulta; personas con interés."
+        "why_it_matters": "La Secretaría de Economía concluyó la investigación antidumping e impuso cuotas compensatorias definitivas a importaciones de aceros laminados en caliente originarias de China y Vietnam. Las cuotas van de 0.2719 a 0.3087."
       }
     ],
     "state": "ready",
-    "total_today": 86
+    "total_today": 13
   },
-  "generated_at": "2026-09-01T18:46:30.041123+00:00",
+  "generated_at": "2026-09-04T03:37:15.636102+00:00",
   "items": [
+    {
+      "ai_generated": true,
+      "canonical_url": "https://www.anam.gob.mx/comunicado-prensa-conjunto-69-2026",
+      "categories": [
+        "Comercio exterior"
+      ],
+      "content_hash": "2c789f79ef212e053760473b3a4e41837ff74976c3a427a52c121a1f004525e3",
+      "country_or_org": "México",
+      "detail_data_url": "data/fichas/8ada4db6c03723dfbbba0b31.json",
+      "detail_url": "notas/8ada4db6c03723dfbbba0b31.html",
+      "detected_at": "2026-09-04T03:37:15.636102+00:00",
+      "document_type": "Comunicado",
+      "editorial_status": "complete",
+      "extraction_status": "complete",
+      "id": "anam:33570b156e50b19f",
+      "importance": 2,
+      "issuing_body": "Agencia Nacional de Aduanas de México",
+      "jurisdiction": "nacional",
+      "official_published_at": "2026-09-03",
+      "official_title": "MARINA Y ANAM IDENTIFICAN CARGAMENTO DE CALZADO DEPORTIVO PRESUNTAMENTE APÓCRIFO EN LA ADUANA DE MANZANILLO, COLIMA",
+      "published_at": "2026-09-03",
+      "relevance_score": 2,
+      "review_reason": null,
+      "source": "ANAM",
+      "source_id": "33570b156e50b19f",
+      "summary_teaser": "La ANAM informó que, junto con Marina y la SSPC, detectó en Manzanillo tres cargamentos procedentes de China con aproximadamente 11 mil 755 pares de calzado deportivo que presentaban características para presumirlos apócrifos. El comunicado describe revisiones documentales y físicas y no reporta una determinación definitiva sobre autenticidad ni sanciones posteriores.",
+      "title": "ANAM reconoce indicios de calzado presuntamente apócrifo en Manzanillo",
+      "url": "https://www.anam.gob.mx/comunicado-prensa-conjunto-69-2026/"
+    },
+    {
+      "ai_generated": true,
+      "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797805&fecha=03%2F09%2F2026",
+      "categories": [
+        "Administración centralizada"
+      ],
+      "content_hash": "a1d798a0fc32bdbb5f6bb86a6cad601e442423773171405cca9dedb8860c4033",
+      "country_or_org": "México",
+      "detail_data_url": "data/fichas/387042a4d342ae6fb3485501.json",
+      "detail_url": "notas/387042a4d342ae6fb3485501.html",
+      "detected_at": "2026-09-04T03:37:15.636102+00:00",
+      "document_type": "Acuerdo",
+      "editorial_status": "complete",
+      "extraction_status": "complete",
+      "id": "dof:5797805",
+      "importance": 1,
+      "issuing_body": "Secretaría de Hacienda y Crédito Público",
+      "jurisdiction": "nacional",
+      "official_published_at": "2026-09-03",
+      "official_title": "Acuerdo por el que se destina a la Secretaría de Agricultura y Desarrollo Rural, el inmueble federal denominado \"DDR y CADER FRESNILLO\", con Registro Federal Inmobiliario 32-5568-0 y superficie de 3,339.211 metros cuadrados, ubicado en calle República de Costa Rica número 106, Colonia las Américas, Código Postal 99030, Municipio de Fresnillo, Estado de Zacatecas.",
+      "published_at": "2026-09-03",
+      "relevance_score": 1,
+      "review_reason": null,
+      "source": "DOF",
+      "source_id": "5797805",
+      "summary_teaser": "INDAABIN destinó a la Secretaría de Agricultura y Desarrollo Rural el inmueble DDR y CADER Fresnillo para continuar como oficinas administrativas. El acuerdo define el alcance del aprovechamiento, conserva la propiedad federal y condiciona cambios de uso, obras, conservación, aseguramiento y una eventual devolución.",
+      "title": "INDAABIN concede oficinas administrativas a Agricultura en Fresnillo",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797805&fecha=03/09/2026"
+    },
+    {
+      "ai_generated": true,
+      "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797806&fecha=03%2F09%2F2026",
+      "categories": [
+        "Administración centralizada"
+      ],
+      "content_hash": "262e957ac9df9bf635afe1302b659168754d853dd0e38905c1ee156260e0464e",
+      "country_or_org": "México",
+      "detail_data_url": "data/fichas/f5aec09442904b7885146a4c.json",
+      "detail_url": "notas/f5aec09442904b7885146a4c.html",
+      "detected_at": "2026-09-04T03:37:15.636102+00:00",
+      "document_type": "Acuerdo",
+      "editorial_status": "complete",
+      "extraction_status": "complete",
+      "id": "dof:5797806",
+      "importance": 1,
+      "issuing_body": "Secretaría de Hacienda y Crédito Público",
+      "jurisdiction": "nacional",
+      "official_published_at": "2026-09-03",
+      "official_title": "Acuerdo por el que se destina a la Secretaría de Agricultura y Desarrollo Rural, el inmueble federal denominado \"Representación Estatal de Agricultura en Zacatecas\", con Registro Federal Inmobiliario 32-5567-1 y superficie de 6,800.492 metros cuadrados, que proviene de un inmueble de mayor extensión, ubicado en Avenida Secretaría de la Defensa Nacional número 88, Colonia Guadalupe Centro, Código Postal 98600, Municipio de Guadalupe, Estado de Zacatecas.",
+      "published_at": "2026-09-03",
+      "relevance_score": 1,
+      "review_reason": null,
+      "source": "DOF",
+      "source_id": "5797806",
+      "summary_teaser": "INDAABIN destinó a la Secretaría de Agricultura y Desarrollo Rural un inmueble federal en Guadalupe, Zacatecas, para continuar utilizándolo como oficinas administrativas. El acuerdo conserva la propiedad federal, exige custodia, mantenimiento y aseguramiento, y fija condiciones para obras, cambio de uso o devolución del predio.",
+      "title": "Destino establece uso administrativo de predio para Agricultura",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797806&fecha=03/09/2026"
+    },
+    {
+      "ai_generated": true,
+      "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797807&fecha=03%2F09%2F2026",
+      "categories": [
+        "Administración centralizada"
+      ],
+      "content_hash": "37b78a49e84bd9c527508fe963ad7e5b9bc7e14de20e75c7f6908b518005f56c",
+      "country_or_org": "México",
+      "detail_data_url": "data/fichas/655045d71401d7186bccdf29.json",
+      "detail_url": "notas/655045d71401d7186bccdf29.html",
+      "detected_at": "2026-09-04T03:37:15.636102+00:00",
+      "document_type": "Acuerdo",
+      "editorial_status": "complete",
+      "extraction_status": "complete",
+      "id": "dof:5797807",
+      "importance": 1,
+      "issuing_body": "Secretaría de Hacienda y Crédito Público",
+      "jurisdiction": "nacional",
+      "official_published_at": "2026-09-03",
+      "official_title": "Acuerdo por el que se destina al Instituto Nacional de Estudios Históricos de las Revoluciones de México, el inmueble federal denominado \"Centro Cultural SHCP\", con Registro Federal Inmobiliario 9-6597-3 y superficie de 512.00 metros cuadrados, ubicado en Calle República de Guatemala número 80, Colonia Centro, Código Postal 06020, alcaldía Cuauhtémoc, Ciudad de México.",
+      "published_at": "2026-09-03",
+      "relevance_score": 1,
+      "review_reason": null,
+      "source": "DOF",
+      "source_id": "5797807",
+      "summary_teaser": "INDAABIN destinó al Instituto Nacional de Estudios Históricos de las Revoluciones de México el inmueble federal Centro Cultural SHCP, en República de Guatemala 80, Ciudad de México, para impartir educación superior pública y gratuita. El destino no transmite la propiedad y establece obligaciones de conservación, aseguramiento y autorizaciones previas para obras por su condición de monumento histórico.",
+      "title": "Establece destino educativo del Centro Cultural SHCP",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797807&fecha=03/09/2026"
+    },
+    {
+      "ai_generated": true,
+      "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797809&fecha=03%2F09%2F2026",
+      "categories": [
+        "Comercio exterior",
+        "Administración centralizada"
+      ],
+      "content_hash": "c8be7dc435536a7fe3b0355c562d7f5598ae905d362719c9764cfe2387bebf1a",
+      "country_or_org": "México",
+      "detail_data_url": "data/fichas/b5edd9a565a5cfc3614cb8cf.json",
+      "detail_url": "notas/b5edd9a565a5cfc3614cb8cf.html",
+      "detected_at": "2026-09-04T03:37:15.636102+00:00",
+      "document_type": "Resolución Final",
+      "editorial_status": "complete",
+      "extraction_status": "complete",
+      "id": "dof:5797809",
+      "importance": 2,
+      "issuing_body": "Secretaría de Economía",
+      "jurisdiction": "nacional",
+      "official_published_at": "2026-09-03",
+      "official_title": "Resolución final del procedimiento administrativo de investigación antidumping sobre las importaciones de aceros laminados en caliente originarias de la República Popular China y la República Socialista de Vietnam, independientemente del país de procedencia.",
+      "published_at": "2026-09-03",
+      "relevance_score": 2,
+      "review_reason": null,
+      "source": "DOF",
+      "source_id": "5797809",
+      "summary_teaser": "La Secretaría de Economía concluyó la investigación antidumping e impuso cuotas compensatorias definitivas a importaciones de aceros laminados en caliente originarias de China y Vietnam. Las cuotas van de 0.2719 a 0.3087 dólares por kilogramo, según la empresa o país de origen, y abarcan diversos regímenes aduaneros.",
+      "title": "Impone cuotas definitivas al acero laminado chino y vietnamita",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797809&fecha=03/09/2026"
+    },
+    {
+      "ai_generated": true,
+      "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797811&fecha=03%2F09%2F2026",
+      "categories": [
+        "Administración centralizada"
+      ],
+      "content_hash": "721a02a16647ac9dcb8cbcc574b98d6016ce02feeec7686913947054d8a104d6",
+      "country_or_org": "México",
+      "detail_data_url": "data/fichas/f985d3a9032165fbf67d22d9.json",
+      "detail_url": "notas/f985d3a9032165fbf67d22d9.html",
+      "detected_at": "2026-09-04T03:37:15.636102+00:00",
+      "document_type": "Manual De Organización",
+      "editorial_status": "complete",
+      "extraction_status": "complete",
+      "id": "dof:5797811",
+      "importance": 2,
+      "issuing_body": "Presidencia de la República",
+      "jurisdiction": "nacional",
+      "official_published_at": "2026-09-03",
+      "official_title": "Manual de Organización General de la Secretaría Anticorrupción y Buen Gobierno.",
+      "published_at": "2026-09-03",
+      "relevance_score": 2,
+      "review_reason": null,
+      "source": "DOF",
+      "source_id": "5797811",
+      "summary_teaser": "El Manual de Organización General describe la estructura, las cadenas de mando y las funciones de la Secretaría Anticorrupción y Buen Gobierno. Distribuye responsabilidades en buen gobierno, fiscalización, combate a la impunidad, contrataciones públicas, protección de datos, transparencia, asuntos jurídicos y órganos internos de control; además, sustituye el manual general previo de la Secretaría de la Función Pública.",
+      "title": "Manual establece estructura y funciones de la Secretaría Anticorrupción y Buen Gobierno",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797811&fecha=03/09/2026"
+    },
+    {
+      "ai_generated": true,
+      "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797812&fecha=03%2F09%2F2026",
+      "categories": [
+        "Penal",
+        "Administración centralizada"
+      ],
+      "content_hash": "031f7949d56deda95977e581219912bc505972fc5baa2cebb97f21e72d36313f",
+      "country_or_org": "México",
+      "detail_data_url": "data/fichas/85aab2bc7f4ff0549787bf04.json",
+      "detail_url": "notas/85aab2bc7f4ff0549787bf04.html",
+      "detected_at": "2026-09-04T03:37:15.636102+00:00",
+      "document_type": "Circular",
+      "editorial_status": "complete",
+      "extraction_status": "complete",
+      "id": "dof:5797812",
+      "importance": 2,
+      "issuing_body": "Presidencia de la República",
+      "jurisdiction": "nacional",
+      "official_published_at": "2026-09-03",
+      "official_title": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a la Fiscalía General de la República, así como a las entidades federativas y sus municipios, que deberán abstenerse de aceptar propuestas o celebrar contratos con la persona física Roy González Padilla.",
+      "published_at": "2026-09-03",
+      "relevance_score": 3,
+      "review_reason": null,
+      "source": "DOF",
+      "source_id": "5797812",
+      "summary_teaser": "La circular comunica que las autoridades destinatarias deben abstenerse de aceptar propuestas o contratar con Roy González Padilla por tres meses. La medida inicia al día siguiente de la publicación luego de que quedó sin efectos la suspensión concedida en un amparo; puede subsistir hasta el pago de la multa.",
+      "title": "Circular restringe contrataciones públicas con Roy González durante tres meses",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797812&fecha=03/09/2026"
+    },
+    {
+      "ai_generated": true,
+      "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797816&fecha=03%2F09%2F2026",
+      "categories": [
+        "Administración centralizada"
+      ],
+      "content_hash": "e15a64273445f7759f996d4f7a97e4114591562b8b1fbda8a357b41543bd659b",
+      "country_or_org": "México",
+      "detail_data_url": "data/fichas/8e7aa791f112fe79b4e9a5b6.json",
+      "detail_url": "notas/8e7aa791f112fe79b4e9a5b6.html",
+      "detected_at": "2026-09-04T03:37:15.636102+00:00",
+      "document_type": "Aviso",
+      "editorial_status": "complete",
+      "extraction_status": "complete",
+      "id": "dof:5797816",
+      "importance": 2,
+      "issuing_body": "Presidencia de la República",
+      "jurisdiction": "nacional",
+      "official_published_at": "2026-09-03",
+      "official_title": "Aviso por el que se da a conocer el Acuerdo delegatorio para suscribir instrumentos jurídicos.",
+      "published_at": "2026-09-03",
+      "relevance_score": 2,
+      "review_reason": null,
+      "source": "DOF",
+      "source_id": "5797816",
+      "summary_teaser": "El Instituto Nacional de Rehabilitación Luis Guillermo Ibarra Ibarra dio a conocer un acuerdo delegatorio para suscribir instrumentos jurídicos. El aviso señala que las personas titulares de direcciones de área podrán firmar los instrumentos de su competencia, remite al texto oficial completo y fija vigencia al día siguiente de su publicación.",
+      "title": "Aviso da publicidad al acuerdo delegatorio de firma del Instituto",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797816&fecha=03/09/2026"
+    },
+    {
+      "ai_generated": true,
+      "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797905&fecha=03%2F09%2F2026",
+      "categories": [
+        "Penal"
+      ],
+      "content_hash": "d249f048d796852f05e5a001449f8e7c099b604808303d2492fc28d294614dc4",
+      "country_or_org": "México",
+      "detail_data_url": "data/fichas/bae1befafa3dec2459397287.json",
+      "detail_url": "notas/bae1befafa3dec2459397287.html",
+      "detected_at": "2026-09-04T03:37:15.636102+00:00",
+      "document_type": "Fiscalia General",
+      "editorial_status": "complete",
+      "extraction_status": "complete",
+      "id": "dof:5797905",
+      "importance": 2,
+      "issuing_body": "Fiscalía General de la República",
+      "jurisdiction": "nacional",
+      "official_published_at": "2026-09-03",
+      "official_title": "FISCALIA GENERAL DE LA REPUBLICA - REF:579970",
+      "published_at": "2026-09-03",
+      "relevance_score": 2,
+      "review_reason": null,
+      "source": "DOF",
+      "source_id": "5797905",
+      "summary_teaser": "La Fiscalía General de la República convocó una licitación pública internacional bajo cobertura de tratados para adquirir cartuchos, tanques y botellas de tinta y tóners, en segunda vuelta. Las propuestas se abren el 13 de octubre de 2026 y el fallo está previsto para el 22 de octubre.",
+      "title": "Fiscalía abre licitación internacional para consumibles de impresión",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797905&fecha=03/09/2026"
+    },
+    {
+      "ai_generated": true,
+      "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797700&fecha=02%2F09%2F2026",
+      "categories": [
+        "Administración centralizada"
+      ],
+      "content_hash": "04213d5af8aa120563bae59b5f2d6651935836527365e715edd5e411c80253a8",
+      "country_or_org": "México",
+      "detail_data_url": "data/fichas/3c94b6cea0fd957760d1f7c2.json",
+      "detail_url": "notas/3c94b6cea0fd957760d1f7c2.html",
+      "detected_at": "2026-09-04T03:37:15.636102+00:00",
+      "document_type": "Modificaciones Y Adiciones",
+      "editorial_status": "complete",
+      "extraction_status": "complete",
+      "id": "dof:5797700",
+      "importance": 1,
+      "issuing_body": "Secretaría de Hacienda y Crédito Público",
+      "jurisdiction": "nacional",
+      "official_published_at": "2026-09-02",
+      "official_title": "Modificaciones y adiciones a las Disposiciones de carácter general que establecen el procedimiento para la construcción de los indicadores de rendimiento neto de las sociedades de inversión especializadas de fondos para el retiro.",
+      "published_at": "2026-09-02",
+      "relevance_score": 1,
+      "review_reason": null,
+      "source": "DOF",
+      "source_id": "5797700",
+      "summary_teaser": "La CONSAR modifica la metodología de indicadores de rendimiento neto para asignación y reasignación de cuentas individuales. Desde el 1 de enero de 2027 incorpora condiciones de inversión neutrales, factores de búsqueda, localización y contacto, y reglas para reasignar cuentas sin evidencia de esas actividades.",
+      "title": "CONSAR actualiza reasignación de cuentas y condiciones de inversión",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797700&fecha=02/09/2026"
+    },
+    {
+      "ai_generated": true,
+      "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797701&fecha=02%2F09%2F2026",
+      "categories": [
+        "Administración centralizada"
+      ],
+      "content_hash": "324c06547a3bee9a3ffa62df7e02aedc98ab78395b235efb7f0b613c125fdf94",
+      "country_or_org": "México",
+      "detail_data_url": "data/fichas/fd5bdb736afc3f33f299c73c.json",
+      "detail_url": "notas/fd5bdb736afc3f33f299c73c.html",
+      "detected_at": "2026-09-04T03:37:15.636102+00:00",
+      "document_type": "Oficio",
+      "editorial_status": "complete",
+      "extraction_status": "complete",
+      "id": "dof:5797701",
+      "importance": 1,
+      "issuing_body": "Secretaría de Hacienda y Crédito Público",
+      "jurisdiction": "nacional",
+      "official_published_at": "2026-09-02",
+      "official_title": "Oficio mediante el cual se modifican los términos de la autorización para la organización y operación de Openbank México, S.A., Institución de Banca Múltiple, Grupo Financiero Santander México.",
+      "published_at": "2026-09-02",
+      "relevance_score": 1,
+      "review_reason": null,
+      "source": "DOF",
+      "source_id": "5797701",
+      "summary_teaser": "CNBV modifica la base de capital pagado de la autorización de Openbank México a $5,008,420,220. El oficio refiere dos aumentos estatutarios previos y exige comunicar las publicaciones oficiales y en periódicos de amplia circulación. Los plazos se expresan en días hábiles y deben leerse junto con el texto íntegro del oficio.",
+      "title": "CNBV actualiza el capital pagado autorizado de Openbank México",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797701&fecha=02/09/2026"
+    },
+    {
+      "ai_generated": true,
+      "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797705&fecha=02%2F09%2F2026",
+      "categories": [
+        "Comercio exterior",
+        "Administración centralizada"
+      ],
+      "content_hash": "89ca337462f0faa6ba27c9c1346fffc97f7ab4634a862f6a01edfcddbf6e58f6",
+      "country_or_org": "México",
+      "detail_data_url": "data/fichas/cbd0a3613bdfab9db208b7c3.json",
+      "detail_url": "notas/cbd0a3613bdfab9db208b7c3.html",
+      "detected_at": "2026-09-04T03:37:15.636102+00:00",
+      "document_type": "Resolución",
+      "editorial_status": "complete",
+      "extraction_status": "complete",
+      "id": "dof:5797705",
+      "importance": 2,
+      "issuing_body": "Secretaría de Economía",
+      "jurisdiction": "nacional",
+      "official_published_at": "2026-09-02",
+      "official_title": "Resolución por la que se acepta la solicitud de parte interesada y se declara el inicio del procedimiento administrativo de investigación antidumping sobre las importaciones de placa de acero en hoja originarias de Japón, independientemente del país de procedencia.",
+      "published_at": "2026-09-02",
+      "relevance_score": 2,
+      "review_reason": null,
+      "source": "DOF",
+      "source_id": "5797705",
+      "summary_teaser": "La Secretaría de Economía abrió una investigación antidumping sobre placa de acero en hoja originaria de Japón. La resolución fija el periodo investigado en 2025 y el análisis de daño de 2023 a 2025, describe las fracciones involucradas y abre un periodo para que partes con interés jurídico presenten información, argumentos y pruebas.",
+      "title": "Abre investigación antidumping sobre placa japonesa",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797705&fecha=02/09/2026"
+    },
+    {
+      "ai_generated": true,
+      "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797708&fecha=02%2F09%2F2026",
+      "categories": [
+        "Administración centralizada"
+      ],
+      "content_hash": "96d19b33802c63cd7efe925b8abb5bfec0dbb4507b59a86ec15e8d41213dd194",
+      "country_or_org": "México",
+      "detail_data_url": "data/fichas/0fca6068482754b78515d313.json",
+      "detail_url": "notas/0fca6068482754b78515d313.html",
+      "detected_at": "2026-09-04T03:37:15.636102+00:00",
+      "document_type": "Circular",
+      "editorial_status": "complete",
+      "extraction_status": "complete",
+      "id": "dof:5797708",
+      "importance": 2,
+      "issuing_body": "Presidencia de la República",
+      "jurisdiction": "nacional",
+      "official_published_at": "2026-09-02",
+      "official_title": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a las entidades federativas y sus municipios, a los entes públicos de unas y otros, así como a las demarcaciones territoriales de la Ciudad de México, que deberán abstenerse de aceptar propuestas y/o celebrar contratos con la empresa IFASER, S.A. de C.V.",
+      "published_at": "2026-09-02",
+      "relevance_score": 2,
+      "review_reason": null,
+      "source": "DOF",
+      "source_id": "5797708",
+      "summary_teaser": "La circular ordena a dependencias, entidades, entidades federativas, municipios y demarcaciones abstenerse de recibir propuestas o contratar con IFASER, S.A. de C.V. La inhabilitación es por tres meses desde el día siguiente a la publicación y registro en ComprasMX, y puede subsistir hasta el pago de la multa.",
+      "title": "Autoridad inhabilita a IFASER en contrataciones con recursos federales",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797708&fecha=02/09/2026"
+    },
     {
       "ai_generated": true,
       "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797560&fecha=01%2F09%2F2026",
@@ -80,8 +460,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5797560",
-      "summary_teaser": "La CNBV permite que las instituciones de crédito envíen por SMS el factor de autenticación de categoría 3 en operaciones con comisionistas de base tecnológica. También autoriza usar únicamente el factor de categoría 2 para consultas de saldos y movimientos, con obligaciones de información y redirección al sistema bancario.",
-      "title": "Banca incorpora SMS en autenticación de comisionistas digitales",
+      "summary_teaser": "La CNBV modifica reglas aplicables a instituciones de crédito para permitir mensajes SMS como canal del factor de autenticación de categoría 3. También permite que las consultas de saldos y movimientos realizadas mediante comisionistas usen únicamente un factor de categoría 2, como excepción.",
+      "title": "CNBV permite autenticación por SMS en servicios de comisionistas",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797560&fecha=01/09/2026"
     },
     {
@@ -109,8 +489,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5797561",
-      "summary_teaser": "La CNBV revocó, a solicitud de SDMX Superdigital, su autorización como institución de fondos de pago electrónico. La inscripción de la escritura de protocolización debe tramitarse dentro de quince días hábiles posteriores a esa protocolización; la copia inscrita debe entregarse a la CNBV dentro de cuarenta y cinco días hábiles desde el día siguiente a la inscripción.",
-      "title": "CNBV revoca autorización de Superdigital y fija gestiones registrales",
+      "summary_teaser": "La Comisión Nacional Bancaria y de Valores declaró la revocación de la autorización de SDMX Superdigital para operar como institución de fondos de pago electrónico. La determinación responde a la solicitud presentada por la propia entidad y exige formalizar e inscribir la revocación, con entrega posterior de documentación a la Comisión.",
+      "title": "Revoca autorización fintech de SDMX Superdigital",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797561&fecha=01/09/2026"
     },
     {
@@ -139,8 +519,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5797563",
-      "summary_teaser": "La Secretaría de Economía abrió el examen de vigencia de la cuota compensatoria aplicable al ftalato de dioctilo originario de Corea y Estados Unidos. La cuota definitiva continúa durante el procedimiento; importadores, exportadores, productores y personas con interés jurídico tienen 28 días hábiles para comparecer.",
-      "title": "México abre examen de cuota antidumping al ftalato de dioctilo",
+      "summary_teaser": "La Secretaría de Economía inició el examen de vigencia de la cuota compensatoria sobre ftalato de dioctilo originario de Corea y Estados Unidos. La cuota definitiva continúa mientras se tramita el procedimiento; partes con interés jurídico tienen 28 días hábiles desde la publicación para comparecer, responder el formulario y presentar pruebas.",
+      "title": "Secretaría abre examen y conserva cuota al DOP importado",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797563&fecha=01/09/2026"
     },
     {
@@ -149,7 +529,7 @@
       "categories": [
         "Administración centralizada"
       ],
-      "content_hash": "11d7379b15dcc3b7fa00b7553246999c1abcc24cca24a195c1e8577058e612d0",
+      "content_hash": "178bba70f1a0165592aca523606c226050730d34aba9e51b89d631dffde7468a",
       "country_or_org": "México",
       "detail_data_url": "data/fichas/593e1c0e83005bbc4b7c96a2.json",
       "detail_url": "notas/593e1c0e83005bbc4b7c96a2.html",
@@ -168,8 +548,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5797565",
-      "summary_teaser": "El órgano interno de control de IMSS-BIENESTAR informó que dejó insubsistentes las sanciones impuestas a Mape+Tzin, S.A. de C.V. La medida deriva de una sentencia del TFJA que anuló la resolución sancionadora y cuya firmeza fue declarada en junio de 2026.",
-      "title": "TFJA invalida sanción a Mape+Tzin tras nulidad firme",
+      "summary_teaser": "La autoridad comunicó que quedó firme la sentencia del Tribunal Federal de Justicia Administrativa que anuló la resolución sancionadora contra Mape+tzin, S.A. de C.V. En cumplimiento, se dejó insubsistente la resolución administrativa, incluida la inhabilitación de 24 meses y la multa de 1,286,376 pesos que contenía.",
+      "title": "Nulidad firme contra Mape+tzin lleva al OIC a dejar sanciones sin efecto",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797565&fecha=01/09/2026"
     },
     {
@@ -197,8 +577,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5797580",
-      "summary_teaser": "El Órgano de Administración Judicial habilitó a tres juzgados federales de procesos penales en Matamoros para conocer amparos en materia penal. La competencia ampliada inicia el primero de septiembre de dos mil veintiséis, no sustituye su especialización ni desplaza la competencia que ya ejercen sobre procesos penales federales.",
-      "title": "Acuerdo amplía competencia de juzgados penales de Matamoros",
+      "summary_teaser": "El Órgano de Administración Judicial habilitó a tres juzgados de procesos penales federales en Matamoros para conocer amparo penal desde el 1 de septiembre de 2026. La medida aprovecha capacidad jurisdiccional disponible sin modificar su especialización ni su competencia para procesos penales federales.",
+      "title": "Acuerdo establece habilitación para conocer amparo penal en Matamoros",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797580&fecha=01/09/2026"
     },
     {
@@ -226,8 +606,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5797666",
-      "summary_teaser": "La Fiscalía General de la República difundió una licitación pública internacional abierta para adquirir DVD, CD, memorias USB, discos duros y otros bienes informáticos en segunda vuelta. Las bases se consultan en ComprasMX; el calendario publicado contempla aclaraciones, presentación de propuestas y fallo durante septiembre.",
-      "title": "Fiscalía abre licitación internacional de insumos informáticos",
+      "summary_teaser": "La Fiscalía General de la República convocó una licitación pública internacional abierta para adquirir DVD, CD, memorias USB, discos duros y otros bienes informáticos, en segunda vuelta. Las bases pueden consultarse en ComprasMX y en la Unidad Especializada de Recursos, Servicios e Infraestructura Inmobiliaria; el calendario prevé junta de aclaraciones el 4 de septiembre, apertura el 17 y fallo el 24.",
+      "title": "Abre licitación internacional para medios y bienes informáticos",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797666&fecha=01/09/2026"
     },
     {
@@ -255,8 +635,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5797477",
-      "summary_teaser": "La SENER emitió 22 formatos y siete anexos para permisos, autorizaciones, bitácoras, avisos y otros trámites de biocombustibles. El acuerdo entra en vigor al día siguiente de su publicación en el DOF y deja sin efectos el acuerdo de 2009 que contenía formatos para producción, almacenamiento, transporte y comercialización de ciertos bioenergéticos.",
-      "title": "SENER reemplaza formatos de 2009 con anexos para biocombustibles",
+      "summary_teaser": "La Secretaría de Energía emitió formatos para solicitar permisos, autorizaciones, bitácoras y avisos relacionados con la cadena de biocombustibles. El acuerdo abarca producción, importación, exportación, almacenamiento, transporte, comercialización, distribución y expendio al público; también prevé modificaciones, suspensiones, cesiones y prórrogas. Entra en vigor al día siguiente de su publicación y deja sin efectos un acuerdo de formatos de 2009.",
+      "title": "Sener establece formatos para permisos y bitácoras de biocombustibles",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797477&fecha=31/08/2026"
     },
     {
@@ -285,8 +665,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5797479",
-      "summary_teaser": "Las reglas de contratación federal refuerzan la acreditación del contenido nacional y de la transformación sustancial del acero de construcción. Contratistas y proveedores deben conservar durante siete años, desde la entrega del bien a la convocante, la información que sustente sus escritos. Los procedimientos iniciados antes de la entrada en vigor conservan el régimen previsto en el transitorio.",
-      "title": "Contratación federal exige conservar siete años evidencia de acero nacional",
+      "summary_teaser": "La Secretaría Anticorrupción y Buen Gobierno reformó las reglas de contenido nacional para obras públicas federales. Incorpora una metodología específica para materiales de acero, exige documentación de acreditación y conservación, añade un anexo de productos siderúrgicos y prevé diálogos estratégicos en determinados proyectos integrales.",
+      "title": "Modifica reglas de contenido nacional en obras con acero",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797479&fecha=31/08/2026"
     },
     {
@@ -315,39 +695,9 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5797480",
-      "summary_teaser": "Una circular del órgano interno de control del Instituto para Devolver al Pueblo lo Robado comunica la inhabilitación de Fedang de México, S.A. de C.V. por 30 meses para participar o contratar bajo la legislación federal de adquisiciones. Los contratos ya formalizados no quedan comprendidos.",
-      "title": "Fedang de México recibe prohibición para contratar con gobierno",
+      "summary_teaser": "Una circular ordena a dependencias, entidades y otros entes públicos abstenerse de aceptar propuestas o celebrar contratos con Fedang de México. La medida deriva de una resolución sancionadora, surte efectos desde el día posterior a la publicación y contempla una inhabilitación de treinta meses, además de multa no cuantificada en el aviso.",
+      "title": "Inhabilita a Fedang para contratos públicos federales",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797480&fecha=31/08/2026"
-    },
-    {
-      "ai_generated": true,
-      "canonical_url": "https://www.snice.gob.mx/~oracle/SNICE_DOCS/FORMATOS-BASESLPN-001Y002-2027-LICITACION-ACTUALIDAD_20260831-20260831.pdf",
-      "categories": [
-        "Comercio exterior",
-        "Administración centralizada"
-      ],
-      "content_hash": "54f934f834063709555fca8da69c1e44687fc1df55c12a0b31efd8d846884f57",
-      "country_or_org": "México",
-      "detail_data_url": "data/fichas/dc99c41bb479e1b94899a45c.json",
-      "detail_url": "notas/dc99c41bb479e1b94899a45c.html",
-      "detected_at": "2026-09-01T16:34:47.803209+00:00",
-      "document_type": "Actualidad",
-      "editorial_status": "complete",
-      "extraction_status": "complete",
-      "id": "snice:89a32ee3936c6570",
-      "importance": 2,
-      "issuing_body": "Secretaría de Economía",
-      "jurisdiction": "nacional",
-      "official_published_at": "2026-08-31",
-      "official_title": "Bases para participar en la LPN No. 001/2027 para asignar el cupo de exportación de prendas de vestir de algodón o fibras artificiales o sintéticas (TPL1) y 002/2027 para asignar el cupo de exportación de prendas de vestir de lana (TPL2), establecidos en el acuerdo por el que se dan a conocer los cupos de exportación e importación de mercancías textiles y prendas de vestir no originarias, susceptibles de recibir el trato arancelario preferencial, conforme al Tratado entre los Estados Unidos de América, los Estados Unidos Mexicanos y Canadá..",
-      "published_at": "2026-08-31",
-      "relevance_score": 3,
-      "review_reason": null,
-      "source": "SNICE",
-      "source_id": "89a32ee3936c6570",
-      "summary_teaser": "La SNICE puso a disposición ligas a las bases y documentos de las licitaciones públicas nacionales 001/2027 y 002/2027 para cupos de exportación de prendas de vestir. Incluye guía de registro, manifestación de no colusión, manual de encriptado y enlaces a dos formatos. La publicación no informa adjudicaciones ni resultados.",
-      "title": "SNICE permite acceso a formatos para cupos textiles",
-      "url": "https://www.snice.gob.mx/~oracle/SNICE_DOCS/FORMATOS-BASESLPN-001Y002-2027-LICITACION-ACTUALIDAD_20260831-20260831.pdf"
     },
     {
       "ai_generated": true,
@@ -375,8 +725,8 @@
       "review_reason": null,
       "source": "ANAM",
       "source_id": "1c45bce94037e150",
-      "summary_teaser": "ANAM e IMPI informaron una inspección en la Aduana de Lázaro Cárdenas que incluyó la suspensión provisional de libre circulación de 48 perfumes y el aseguramiento de otros bienes con signos distintivos. El comunicado no determina una infracción, una sanción definitiva ni responsabilidades individuales.",
-      "title": "Medida provisional suspende libre circulación de 48 perfumes",
+      "summary_teaser": "IMPI, ANAM y FGR reportaron una diligencia en Lázaro Cárdenas que incluyó la suspensión provisional de libre circulación de 48 perfumes relacionados con dos registros marcarios y el aseguramiento de envases, mochilas y bolsas con diversas leyendas o diseños. La fuente no informa una resolución definitiva sobre infracción ni destino final de la mercancía.",
+      "title": "Medida provisional suspende libre circulación de perfumes en Lázaro Cárdenas",
       "url": "https://www.anam.gob.mx/comunicado-prensa-conjunto-64-2026/"
     },
     {
@@ -405,8 +755,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5797380",
-      "summary_teaser": "El SAT publicó a INTEGRADORA EMPRESARIAL APE, A.C. y su RFC como contribuyente que no desvirtuó la presunción de falsedad de los CFDI emitidos. El aviso señala que esos comprobantes no producen efectos fiscales y que quienes les hayan dado efectos deben revertirlos mediante declaración complementaria dentro del plazo señalado.",
-      "title": "SAT exige revertir efectos de CFDI falsos de Integradora APE",
+      "summary_teaser": "El SAT publicó el RFC IEA170925PN8 y el nombre de Integradora Empresarial Ape, A.C., al determinar que no desvirtuó la presunción de falsedad de los CFDI emitidos. La fuente señala que esos comprobantes no producen efecto fiscal y que los terceros que los recibieron deben revertirlo mediante declaración complementaria dentro de treinta días naturales desde la publicación.",
+      "title": "Exige revertir efectos fiscales de CFDI falsos de Integradora Empresarial Ape",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797380&fecha=28/08/2026"
     },
     {
@@ -435,8 +785,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5797381",
-      "summary_teaser": "El SAT publicó a SERVIARUGA, A.C. y su RFC como contribuyente que no desvirtuó la presunción de falsedad de los CFDI emitidos. El aviso señala que esos comprobantes no producen efectos fiscales y que quienes les hayan dado efectos deben revertirlos mediante declaración complementaria dentro del plazo señalado.",
-      "title": "SAT exige revertir efectos de CFDI falsos de Serviaruga",
+      "summary_teaser": "El SAT publicó el RFC y nombre de Serviaruga, A.C. conforme al artículo 49 Bis del CFF. El oficio comunica que no desvirtuó la presunción sobre sus CFDI y advierte a terceros sobre la reversión del efecto fiscal mediante declaración complementaria.",
+      "title": "SAT determina efectos fiscales de comprobantes falsos",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797381&fecha=28/08/2026"
     },
     {
@@ -465,8 +815,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5797382",
-      "summary_teaser": "El SAT publicó a Limpor Asistencia, S.A. de C.V. en el supuesto del artículo 49 Bis del Código Fiscal. La autoridad señala que no desvirtuó la presunción de falsedad de los CFDI emitidos; terceros receptores deben revisar el efecto fiscal que dieron a esas operaciones.",
-      "title": "SAT determina efectos fiscales de CFDI falsos de Limpor",
+      "summary_teaser": "El SAT publicó a Limpor Asistencia, S.A. de C.V., RFC LAS2302282S5, al determinar que no desvirtuó la presunción de falsedad de sus CFDI. Los terceros que hayan dado efectos fiscales a esos comprobantes tienen 30 días naturales desde la publicación para presentar declaración complementaria y revertirlos.",
+      "title": "CFDI falsos de Limpor: plazo para revertir efectos fiscales",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797382&fecha=28/08/2026"
     },
     {
@@ -494,8 +844,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5797384",
-      "summary_teaser": "Semarnat delegó facultades de contratación y supervisión para acciones de restauración ambiental vinculadas con el Corredor Interoceánico durante el ejercicio indicado. La Subsecretaría de Biodiversidad y unidades forestales podrán formalizar actos dentro de su competencia, con coordinación administrativa. La Secretaría conserva la posibilidad de ejercer directamente las atribuciones delegadas.",
-      "title": "Semarnat permite contrataciones delegadas para restauración del Corredor Interoceánico",
+      "summary_teaser": "SEMARNAT delega, para el ejercicio de 2026 y dentro de sus atribuciones, la suscripción de convenios y contratos de obra pública vinculados con la restauración del Corredor Interoceánico. El acuerdo conserva el ejercicio directo de la Secretaría y exige observar la normativa aplicable; no crea por sí mismo una convocatoria ni adjudica una obra concreta.",
+      "title": "SEMARNAT establece delegación para obras del Corredor Interoceánico en el ejercicio 2026",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797384&fecha=28/08/2026"
     },
     {
@@ -524,8 +874,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5797386",
-      "summary_teaser": "La autoridad comunicó que ATV de Sahuayo, S.A. de C.V. no puede presentar propuestas ni celebrar los contratos cubiertos por la circular durante seis meses. La restricción opera desde el día siguiente a la publicación y la fuente precisa el alcance material, el tratamiento de contratos vigentes y la consecuencia de no pagar la multa.",
-      "title": "Autoridad inhabilita a ATV para contratar con recursos federales",
+      "summary_teaser": "La circular ordena abstenerse de recibir propuestas, adjudicar o contratar con ATV de Sahuayo por seis meses, incluso mediante interpósita persona, desde el día siguiente a su publicación. La inhabilitación puede prolongarse si no se acredita el pago de la multa; los contratos ya formalizados quedan fuera de la circular.",
+      "title": "Sanción inhabilita a ATV de Sahuayo para contratar con entes públicos",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797386&fecha=28/08/2026"
     },
     {
@@ -560,35 +910,6 @@
     },
     {
       "ai_generated": true,
-      "canonical_url": "https://www.anam.gob.mx/informacion-publica-de-comercio-exterior-2025",
-      "categories": [
-        "Comercio exterior"
-      ],
-      "content_hash": "c760357d770bcea143d99297bcb1e86c32d7dda9b938e20901a0d92d5141fdc9",
-      "country_or_org": "México",
-      "detail_data_url": "data/fichas/fe5377e3337fa53fe592c417.json",
-      "detail_url": "notas/fe5377e3337fa53fe592c417.html",
-      "detected_at": "2026-09-01T18:46:30.041123+00:00",
-      "document_type": "Comunicado",
-      "editorial_status": "complete",
-      "extraction_status": "complete",
-      "id": "anam:780e101837f9bd31",
-      "importance": 2,
-      "issuing_body": "Agencia Nacional de Aduanas de México",
-      "jurisdiction": "nacional",
-      "official_published_at": "2026-08-27",
-      "official_title": "Información Pública de Comercio Exterior",
-      "published_at": "2026-08-27",
-      "relevance_score": 2,
-      "review_reason": null,
-      "source": "ANAM",
-      "source_id": "780e101837f9bd31",
-      "summary_teaser": "La ANAM mantiene una consulta pública sobre operaciones de comercio exterior tramitadas ante las 50 aduanas del país. La página aclara que no genera estadísticas, protege la información de contribuyentes por secreto fiscal y remite la estadística de balanza comercial a Banco de México e INEGI. Algunos archivos superan un millón de registros.",
-      "title": "ANAM permite consulta histórica de operaciones aduaneras públicas",
-      "url": "https://www.anam.gob.mx/informacion-publica-de-comercio-exterior-2025/"
-    },
-    {
-      "ai_generated": true,
       "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797264&fecha=27%2F08%2F2026",
       "categories": [
         "Administración centralizada"
@@ -612,8 +933,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5797264",
-      "summary_teaser": "La Comisión Nacional Bancaria y de Valores revocó la autorización de Unicaja Banco, S.A., Oficina de Representación en México. La resolución señala que se actualizó la causal invocada y que, desde su notificación, la oficina queda imposibilitada para realizar actividades.",
-      "title": "CNBV revoca la oficina mexicana de Unicaja Banco",
+      "summary_teaser": "La Comisión Nacional Bancaria y de Valores revocó la autorización de Unicaja Banco, S.A., Oficina de Representación en México, para operar como oficina de representación de una entidad financiera del exterior. Desde la notificación de la resolución, la oficina queda imposibilitada para realizar actividades.",
+      "title": "CNBV revoca operación de oficina de representación de Unicaja",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797264&fecha=27/08/2026"
     },
     {
@@ -641,8 +962,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5797266",
-      "summary_teaser": "El Instituto Mexicano del Petróleo publicó su nuevo Estatuto Orgánico, que define su objeto, estructura y atribuciones. El instrumento abroga el estatuto aprobado en dos mil veinticuatro, entra en vigor al día siguiente de su publicación y mantiene disposiciones previas que no se le opongan mientras se modifican o dejan sin efecto.",
-      "title": "Estatuto establece atribuciones del Instituto Mexicano del Petróleo",
+      "summary_teaser": "El Estatuto Orgánico del Instituto Mexicano del Petróleo define su organización, objetivos y atribuciones. Reordena direcciones para investigación, tecnología, transferencia, exploración, ingeniería y operación institucional; también regula gobierno, suplencias y la abrogación del estatuto aprobado en 2024 que estaba vigente.",
+      "title": "El IMP establece nueva estructura para investigación y transición energética",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797266&fecha=27/08/2026"
     },
     {
@@ -670,8 +991,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5797277",
-      "summary_teaser": "El Instituto Mexicano de Tecnología del Agua dio a conocer reformas a su Estatuto Orgánico y modificaciones a su Manual de Organización. Son obligatorias para su personal, entran en vigor al día siguiente de la publicación y pueden consultarse íntegramente en los enlaces oficiales indicados por el propio acuerdo.",
-      "title": "IMTA actualiza su estatuto y manual de organización",
+      "summary_teaser": "El Instituto Mexicano de Tecnología del Agua dio a conocer reformas a su Estatuto Orgánico y modificaciones a su Manual de Organización. El acuerdo las hace obligatorias para las personas servidoras públicas adscritas al Instituto, entra en vigor al día siguiente de su publicación y remite a versiones íntegras disponibles en enlaces oficiales.",
+      "title": "Modifica organización institucional del Instituto Mexicano del Agua",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797277&fecha=27/08/2026"
     },
     {
@@ -699,8 +1020,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5797319",
-      "summary_teaser": "La Fiscalía General de la República publicó los fallos de una licitación internacional cubierta por tratados para adquirir papelería y artículos de oficina en 2026. El aviso identifica partidas adjudicadas, proveedores, RFC, domicilios e importes con IVA para las unidades administrativas y fiscalías federales.",
-      "title": "Fiscalía determina adjudicaciones de papelería y artículos de oficina",
+      "summary_teaser": "La Fiscalía General de la República publicó los fallos de una licitación pública internacional para adquirir papelería y artículos de oficina en 2026. El aviso identifica el procedimiento, la fecha de fallo, diez personas o empresas adjudicatarias, partidas y montos totales con IVA para cada adjudicación informada.",
+      "title": "Confirma adjudicaciones de papelería fiscalía para 2026",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797319&fecha=27/08/2026"
     },
     {
@@ -728,8 +1049,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5797183",
-      "summary_teaser": "El Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública emitió lineamientos obligatorios para homologar la carrera de sus integrantes. Las instituciones de los tres órdenes de gobierno tienen doce meses desde la entrada en vigor para emitir o armonizar su normativa, conforme a sus capacidades y suficiencia presupuestaria.",
-      "title": "Lineamientos establecen obligación de armonizar carrera en seguridad pública",
+      "summary_teaser": "Los lineamientos establecen bases obligatorias y homogéneas para el servicio profesional de carrera de las instituciones de seguridad pública de los tres órdenes de gobierno. Regulan reclutamiento, ingreso, expedientes electrónicos, profesionalización, permanencia, promoción, reconocimiento, reingreso y terminación, y otorgan doce meses para emitir o armonizar la normativa institucional.",
+      "title": "Obliga a armonizar carreras de seguridad pública",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797183&fecha=26/08/2026"
     },
     {
@@ -757,8 +1078,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5797186",
-      "summary_teaser": "Hacienda listó a Tlaxcala por el primer y segundo trimestre de 2026; a Aguascalientes y Coahuila por el primer trimestre; y a Michoacán por el segundo trimestre en reportes trimestrales. También identificó a Tlaxcala en marzo y al Estado de México en junio por reportes mensuales. Los deberes tienen plazos de cinco días hábiles y diez días naturales.",
-      "title": "Hacienda determina incumplimientos estatales de participaciones federales",
+      "summary_teaser": "La SHCP listó entidades federativas que incumplieron obligaciones de remitir publicaciones y tablas de participaciones federales, o información mensual sobre montos ministrados a municipios. Al corte del 17 de agosto de 2026, el listado identifica incumplimientos de Tlaxcala, Aguascalientes, Coahuila, Michoacán y Estado de México, según tipo y periodo de información.",
+      "title": "Incumplimientos revelan obligación vigente de reportar participaciones federales",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797186&fecha=26/08/2026"
     },
     {
@@ -786,8 +1107,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5797188",
-      "summary_teaser": "La Comisión Nacional de Infraestructura de la Calidad publicó el suplemento de su programa anual con temas nuevos, modificaciones y cancelaciones normativas. Abarca sectores marítimo, ambiental, energético, industrial, agroalimentario, transporte, salud, aeronáutico, ferroviario y metrología, con periodos estimados de elaboración durante dos mil veintiséis.",
-      "title": "Suplemento incorpora agenda nacional de normas para dos mil veintiséis",
+      "summary_teaser": "El Suplemento 2026 del Programa Nacional de Infraestructura de la Calidad integra proyectos de normas, modificaciones y cancelaciones en sectores ambientales, industriales, agroalimentarios, sanitarios, de transporte y metrología. Es un instrumento de planeación: varios temas tienen calendario estimado de agosto a diciembre de 2026 y no constituyen por sí mismos nuevas obligaciones vigentes.",
+      "title": "Suplemento incorpora agenda multisectorial de normalización para 2026",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797188&fecha=26/08/2026"
     },
     {
@@ -816,8 +1137,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5797190",
-      "summary_teaser": "La circular del Órgano Interno de Control en la Secretaría de Salud comunicó la inhabilitación de Galmar Proyectos Integrales por tres meses para contrataciones reguladas por la Ley de Adquisiciones. La abstención de aceptar propuestas o celebrar contratos inicia el día siguiente de la publicación en el DOF. Si la multa permanece impaga al concluir el plazo, la inhabilitación subsiste hasta el pago.",
-      "title": "OIC inhabilita a Galmar tres meses en contratación pública",
+      "summary_teaser": "La circular ordena a dependencias, empresas públicas, Fiscalía, entidades federativas, municipios y demarcaciones abstenerse de recibir propuestas o contratar con Galmar Proyectos Integrales. La inhabilitación es por tres meses desde el día siguiente a la publicación; si la multa sigue impaga, subsiste hasta el pago acreditado.",
+      "title": "Autoridad inhabilita temporalmente a Galmar en contrataciones públicas",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797190&fecha=26/08/2026"
     },
     {
@@ -845,8 +1166,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5797195",
-      "summary_teaser": "El IMPI publicó la solicitud de protección para la indicación geográfica “Plátano Chiapas”, promovida por la Secretaría de Economía y del Trabajo estatal. El expediente queda disponible para consulta; personas con interés justificado tienen un mes improrrogable para formular oposición, observaciones u objeciones.",
-      "title": "IMPI abre oposición a la indicación geográfica Plátano Chiapas",
+      "summary_teaser": "El IMPI publicó los datos de la solicitud de declaración de protección para la indicación geográfica Plátano Chiapas. La publicación abre un plazo improrrogable de un mes para que terceros con interés justificado presenten oposición, observaciones u objeciones con pruebas y comprobante de pago; no constituye todavía una declaración de protección.",
+      "title": "Solicitud de Plátano Chiapas abre un periodo de oposición",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797195&fecha=26/08/2026"
     },
     {
@@ -874,8 +1195,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5796941",
-      "summary_teaser": "El órgano interno de control de Semarnat comunicó que Limpieza Géminis, S.A. de C.V. fue inhabilitada por tres meses para participar o contratar bajo la ley federal de adquisiciones. La abstención inicia tras publicación y registro en ComprasMX; contratos previamente formalizados quedan fuera.",
-      "title": "Limpieza Géminis recibe prohibición en contrataciones públicas",
+      "summary_teaser": "Una circular comunica la inhabilitación de Limpieza Géminis, S.A. de C.V. por tres meses para procedimientos y contratos regulados por la ley aplicable. La abstención inicia tras publicación y registro en Compras MX; contratos ya formalizados quedan fuera del alcance expresamente indicado.",
+      "title": "Autoridad inhabilita a Limpieza Géminis para nuevas contrataciones",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796941&fecha=24/08/2026"
     },
     {
@@ -904,8 +1225,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5796823",
-      "summary_teaser": "Un juzgado federal concedió suspensión provisional para cancelar el registro de Intman, S.A. de C.V. en el Padrón de Proveedores y Contratistas Sancionados de Compras MX. La medida cautelar no decide el fondo del amparo y exige una garantía de 1,182,408 pesos dentro de cinco días.",
-      "title": "Juzgado ordena cancelar provisionalmente registro de Intman en Compras MX",
+      "summary_teaser": "El Juzgado Octavo de Distrito concedió a Intman, S.A. de C.V. una suspensión provisional para cancelar temporalmente su registro en el padrón de proveedores y contratistas sancionados. La medida no resuelve el fondo del amparo y queda condicionada a acreditar la garantía indicada en cinco días.",
+      "title": "Suspensión provisional ordena cancelar registro de Intman",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796823&fecha=21/08/2026"
     },
     {
@@ -933,8 +1254,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5796828",
-      "summary_teaser": "La Secretaría del Trabajo y Previsión Social dio a conocer las direcciones electrónicas para consultar el Reglamento Interior vigente de la Junta Federal de Conciliación y Arbitraje. El reglamento incorpora reformas aprobadas por su Pleno y entra en vigor al día siguiente de la publicación del aviso.",
-      "title": "Junta Federal de Conciliación actualiza acceso a su reglamento interior",
+      "summary_teaser": "La STPS informó dos direcciones electrónicas para consultar el Reglamento Interior vigente de la Junta Federal de Conciliación y Arbitraje, incluidas las reformas aprobadas por su Pleno. El Reglamento entra en vigor al día siguiente de la publicación del aviso, que deja sin efectos la vía de consulta difundida en 2024.",
+      "title": "Aviso reemplaza la consulta anterior del reglamento interior de JFCA",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796828&fecha=21/08/2026"
     },
     {
@@ -992,8 +1313,8 @@
       "review_reason": null,
       "source": "ANAM",
       "source_id": "41a5756148946bba",
-      "summary_teaser": "ANAM, Semar y autoridades del Gabinete de Seguridad comunicaron el aseguramiento de un cargamento procedente de Vietnam con 52 millones 500 mil cigarros descritos como presuntamente apócrifos. La publicación expone mecanismos de análisis de riesgo y control, pero no reporta sanciones, responsables ni una resolución definitiva.",
-      "title": "ANAM confirma aseguramiento de cigarros presuntamente apócrifos",
+      "summary_teaser": "La ANAM informó que, con Marina y autoridades del Gabinete de Seguridad, identificó y aseguró durante un transbordo en Lázaro Cárdenas un cargamento procedente de Vietnam con 52 millones 500 mil cigarros que describió como presumiblemente apócrifos. El comunicado no precisa una determinación definitiva, el destino de la mercancía ni medidas posteriores.",
+      "title": "ANAM confirma aseguramiento de cigarros presuntamente apócrifos en transbordo",
       "url": "https://www.anam.gob.mx/comunicado-prensa-63-2026/"
     },
     {
@@ -1022,8 +1343,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5796707",
-      "summary_teaser": "La circular del Órgano Interno de Control en la CONAGUA comunicó la inhabilitación de Transmareli por seis meses y veintiún días en adquisiciones, obra pública, asociaciones público-privadas y acuerdos marco. La abstención de aceptar propuestas o celebrar contratos inicia el día siguiente de la publicación en el DOF y en el Directorio de Proveedores y Contratistas Sancionados. La multa impaga prolonga la medida hasta el pago.",
-      "title": "OIC inhabilita a Transmareli seis meses y 21 días",
+      "summary_teaser": "Una circular comunica la inhabilitación de Transmareli, S.A. de C.V. por seis meses y 21 días para contratación, obras, asociaciones público privadas y acuerdos marco. La restricción inicia bajo las condiciones de publicación y registro señaladas; los contratos ya formalizados se excluyen expresamente.",
+      "title": "Autoridad inhabilita a Transmareli para contratos y acuerdos marco",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796707&fecha=20/08/2026"
     },
     {
@@ -1051,8 +1372,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5796708",
-      "summary_teaser": "El órgano interno de control de IMSS-BIENESTAR comunicó que dejó insubsistente la resolución que sancionó a Industrias Danjur. La circular da cumplimiento a una sentencia firme de la Sala Regional en Ciudad de México del Tribunal Federal de Justicia Administrativa que declaró la nulidad de la resolución impugnada.",
-      "title": "TFJA invalida sanciones impuestas a Industrias Danjur",
+      "summary_teaser": "La circular comunica el cumplimiento de una sentencia definitiva del TFJA que declaró nulidad lisa y llana de la resolución sancionadora contra Industrias Danjur. El OIC de IMSS-BIENESTAR dejó insubsistente la resolución y las sanciones de multa e inhabilitación que había impuesto.",
+      "title": "Se dejan sin efecto sanciones de contratación contra Industrias Danjur",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796708&fecha=20/08/2026"
     },
     {
@@ -1080,8 +1401,8 @@
       "review_reason": null,
       "source": "ANAM",
       "source_id": "a2488ef42c1b17bc",
-      "summary_teaser": "ANAM, Marina y autoridades del Gabinete de Seguridad informaron el aseguramiento precautorio de cuatro embarques con aproximadamente 5 millones 808 mil cigarros que el comunicado denomina apócrifos, en la Aduana del AICM. La mercancía permanece en recinto fiscalizado hasta determinar su situación jurídica; la fuente no comunica una resolución final.",
-      "title": "El comunicado confirma aseguramiento precautorio de cuatro embarques en AICM",
+      "summary_teaser": "La ANAM, la Secretaría de Marina y autoridades del Gabinete de Seguridad aseguraron cuatro embarques con aproximadamente 5 millones 808 mil cigarros apócrifos en el AICM. La mercancía, procedente de Singapur y Sri Lanka, permanece bajo aseguramiento precautorio en un recinto fiscalizado mientras se define su situación jurídica.",
+      "title": "Carga apócrifa queda asegurada mientras se determina su situación jurídica",
       "url": "https://www.anam.gob.mx/comunicado-prensa-conjunto-62-2026/"
     },
     {
@@ -1110,8 +1431,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5796626",
-      "summary_teaser": "Hacienda reformó los lineamientos de beneficios fiscales para actividades productivas en los Polos de Desarrollo del Istmo de Tehuantepec. La constancia tendrá seis años; se acepta agencia, sucursal u otro establecimiento en el polo, y se incorporan requisitos vinculados con el artículo 49 Bis del CFF.",
-      "title": "Hacienda actualiza requisitos de estímulos para Polos del Istmo",
+      "summary_teaser": "Hacienda reformó los lineamientos de beneficios fiscales para actividades productivas en los Polos de Desarrollo para el Bienestar del Istmo de Tehuantepec. Ajusta requisitos de establecimiento, vigencia de la constancia, datos del listado público y una condición vinculada con resoluciones sobre comprobantes fiscales falsos.",
+      "title": "Hacienda actualiza requisitos para beneficios fiscales del Istmo",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796626&fecha=19/08/2026"
     },
     {
@@ -1139,8 +1460,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5796627",
-      "summary_teaser": "Hacienda publicó los estímulos fiscales de septiembre de 2026 para gasolina menor a 91 octanos y diésel de los sectores pesquero y agropecuario. Los tres porcentajes se fijaron en 0.00%; el acuerdo explica que se aplican sobre cuotas disminuidas y con el IVA correspondiente.",
-      "title": "Hacienda fija estímulos de cero por ciento a combustibles sectoriales",
+      "summary_teaser": "Hacienda dio a conocer que, para septiembre de 2026, los estímulos fiscales a gasolina menor a 91 octanos y al diésel de los sectores pesquero y agropecuario son de 0.00%. El acuerdo aplica en todo el territorio nacional y entra en vigor el día de su publicación.",
+      "title": "Hacienda fija estímulos de cero para combustibles del campo",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796627&fecha=19/08/2026"
     },
     {
@@ -1168,8 +1489,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5796632",
-      "summary_teaser": "La Unidad de Contrataciones Públicas de la Secretaría Anticorrupción y Buen Gobierno difundió el listado de bienes y servicios a consolidar en 2027 y anticipadamente en 2028. También comunicó la actualización para 2026 y 2027, incluida la integración de blancos y ropa quirúrgica. El oficio sirve para programar contrataciones, no constituye una convocatoria ni adjudicación.",
-      "title": "Lista federal actualiza compras consolidadas para 2027 y 2028",
+      "summary_teaser": "La Unidad de Contrataciones Públicas difundió bienes y servicios que deberán considerarse en la programación de compras consolidadas de 2027 y, anticipadamente, de 2028. También comunicó una actualización del listado para 2026 y 2027 que incluye blancos, ropa quirúrgica y hospitalaria.",
+      "title": "Secretaría Anticorrupción y Buen Gobierno ordena considerar listados al programar contrataciones públicas",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796632&fecha=19/08/2026"
     },
     {
@@ -1197,8 +1518,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5796633",
-      "summary_teaser": "La circular del Órgano Interno de Control en la SICT comunicó la inhabilitación de Teleconstrucciones Marver por tres meses y quince días en adquisiciones, arrendamientos y servicios con recursos federales. La abstención de recibir propuestas o celebrar contratos inicia el día siguiente de su publicación en el DOF y registro en ComprasMX. La multa impaga prolonga la inhabilitación hasta el pago.",
-      "title": "OIC inhabilita a Teleconstrucciones Marver en adquisiciones federales",
+      "summary_teaser": "Una circular comunica la inhabilitación temporal de Teleconstrucciones Marver, S. de R.L. de C.V., por tres meses y quince días para nuevos procedimientos con recursos federales. La restricción inicia tras publicación y registro en ComprasMX; los contratos ya adjudicados o formalizados no quedan comprendidos.",
+      "title": "Circular prohíbe nuevas contrataciones con Teleconstrucciones Marver",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796633&fecha=19/08/2026"
     },
     {
@@ -1226,8 +1547,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5796634",
-      "summary_teaser": "La autoridad comunicó la inhabilitación de Teleconstrucciones Marver, S. de R.L. de C.V. por tres meses y quince días. El mandato a las entidades destinatarias es abstenerse de recibir propuestas y/o celebrar contratos en la materia cubierta desde el día siguiente a que la circular se publique en el DOF y se registre en ComprasMX; la fecha efectiva requiere confirmar ese registro.",
-      "title": "Autoridad inhabilita a Teleconstrucciones Marver para obras federales",
+      "summary_teaser": "La Secretaría Anticorrupción y Buen Gobierno instruye abstenerse de recibir propuestas o celebrar contratos de obra pública con Teleconstrucciones Marver, S. de R.L. de C.V., por tres meses y quince días. La restricción opera desde el día siguiente a la publicación y registro en ComprasMX, y puede subsistir si no se paga la multa.",
+      "title": "Inhabilitación restringe contratos de obra federal con Teleconstrucciones Marver",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796634&fecha=19/08/2026"
     },
     {
@@ -1255,8 +1576,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5796635",
-      "summary_teaser": "La circular del Órgano Interno de Control en la SICT comunicó la inhabilitación de Teleconstrucciones Marver por tres meses y quince días en obra pública y servicios relacionados financiados con recursos federales. La abstención de recibir propuestas o celebrar contratos inicia el día siguiente de su publicación en el DOF y registro en ComprasMX. La multa impaga prolonga la inhabilitación hasta el pago.",
-      "title": "OIC inhabilita a Teleconstrucciones Marver en obra pública federal",
+      "summary_teaser": "La Secretaría Anticorrupción y Buen Gobierno comunicó una inhabilitación de tres meses y quince días para Teleconstrucciones Marver, S. de R.L. de C.V., en contrataciones de obras públicas y servicios relacionados financiados total o parcialmente con recursos federales. La restricción inicia al día siguiente de publicación y registro en ComprasMX; contratos vigentes no quedan comprendidos.",
+      "title": "Inhabilita a Teleconstrucciones Marver para contratos con fondos federales",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796635&fecha=19/08/2026"
     },
     {
@@ -1284,8 +1605,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5796636",
-      "summary_teaser": "La Secretaría Anticorrupción comunicó una inhabilitación de tres meses y quince días para Teleconstrucciones Marver, S. de R.L. de C.V. en materia de obras públicas. La prohibición rige tras publicación y registro en ComprasMX; los contratos previamente adjudicados o formalizados quedan excluidos.",
-      "title": "Teleconstrucciones Marver recibe prohibición para obras federales",
+      "summary_teaser": "Una circular comunica la inhabilitación temporal de Teleconstrucciones Marver para presentar propuestas y celebrar contratos de obras públicas con recursos federales. La medida dura tres meses y quince días, empieza tras publicación y registro en Compras MX, y puede subsistir si no se paga la multa sancionadora.",
+      "title": "Inhabilita a Teleconstrucciones Marver en obras federales",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796636&fecha=19/08/2026"
     },
     {
@@ -1314,38 +1635,9 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5796637",
-      "summary_teaser": "El Órgano Interno de Control en el IMSS publicó una circular de cumplimiento de la sentencia interlocutoria emitida por la Sexta Sala Regional Metropolitana del TFJA en el caso Hima Promotions. La Sala negó la medida cautelar sobre la inhabilitación y su publicación, pero concedió suspensión definitiva de la ejecución de la multa en los términos de la sentencia. No es una decisión definitiva de fondo.",
-      "title": "OIC del IMSS comunica cautelar que suspende multa de Hima",
+      "summary_teaser": "El Órgano Interno de Control en el IMSS comunicó el cumplimiento de una sentencia interlocutoria del TFJA en el juicio de Hima Promotions. Deja sin efectos una circular previa, mantiene la inhabilitación de un año para contrataciones públicas y precisa que la suspensión definitiva concedida se refiere únicamente a la ejecución de la multa en los términos judiciales.",
+      "title": "Mantiene inhabilitación de Hima Promotions y suspende ejecución de multa",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796637&fecha=19/08/2026"
-    },
-    {
-      "ai_generated": true,
-      "canonical_url": "https://www.anam.gob.mx/comunicado-prensa-conjunto-60-2026",
-      "categories": [
-        "Administración centralizada"
-      ],
-      "content_hash": "e06fa420bb990d1bd0c525c3ef8fb3a574d8cc6756b6b76b2dba46463a9a5933",
-      "country_or_org": "México",
-      "detail_data_url": "data/fichas/32952c1c46d3f0860d0fe747.json",
-      "detail_url": "notas/32952c1c46d3f0860d0fe747.html",
-      "detected_at": "2026-09-01T18:46:30.041123+00:00",
-      "document_type": "Comunicado",
-      "editorial_status": "complete",
-      "extraction_status": "complete",
-      "id": "anam:eedd3801e348eb0b",
-      "importance": 2,
-      "issuing_body": "Agencia Nacional de Aduanas de México",
-      "jurisdiction": "nacional",
-      "official_published_at": "2026-08-18",
-      "official_title": "IMPI y ANAM aseguran más de 227 mil cajetillas de cigarros en Manzanillo",
-      "published_at": "2026-08-18",
-      "relevance_score": 2,
-      "review_reason": null,
-      "source": "ANAM",
-      "source_id": "eedd3801e348eb0b",
-      "summary_teaser": "Un operativo coordinado en la Aduana de Manzanillo localizó 379 cajas con 227 mil cajetillas de cigarrillos que ostentaban la denominación PALL MALL. El comunicado conjunto señala que el IMPI continuará las actuaciones de su competencia y la coordinación interinstitucional para el seguimiento del caso; no informa una determinación sobre infracción marcaria ni sanciones.",
-      "title": "IMPI confirma actuaciones tras aseguramiento de 227 mil cajetillas en Manzanillo",
-      "url": "https://www.anam.gob.mx/comunicado-prensa-conjunto-60-2026/"
     },
     {
       "ai_generated": true,
@@ -1372,8 +1664,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5796484",
-      "summary_teaser": "Hacienda autorizó la constitución de una empresa de participación estatal mayoritaria para estructurar y administrar infraestructura estratégica en Piedras Negras. El objeto comprende proyectos logísticos, fronterizos, aduaneros y el puente internacional señalado en la publicación. El acuerdo describe su integración accionaria inicial y la conservación del control estatal.",
-      "title": "Hacienda autoriza empresa estatal para infraestructura fronteriza en Piedras Negras",
+      "summary_teaser": "Hacienda autorizó la constitución de Inversión Mixta Piedras Negras como empresa de participación estatal mayoritaria. La sociedad tendrá finalidad pública y un objeto amplio relacionado con infraestructura estratégica, conectividad, comercio exterior y esquemas de inversión; el acto define su capital inicial, coordinación sectorial y reglas de operación financiera.",
+      "title": "Autoriza empresa pública para infraestructura de Piedras Negras",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796484&fecha=18/08/2026"
     },
     {
@@ -1401,8 +1693,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5796485",
-      "summary_teaser": "La CONSAR publicó la relación de planes de pensiones autorizados y registrados a la fecha de emisión. Incluye el Plan Adicional de Pensiones de Contribuciones Definidas para los magistrados del TFJA, con registro CNSAR/PP/0032/2010/R-2026 y vigencia al 31 de mayo de 2027. La publicación no acredita una actualización distinta ni modifica reglas individuales del plan.",
-      "title": "Registro del plan de pensiones del TFJA indica vigencia hasta 2027",
+      "summary_teaser": "CONSAR publicó la relación de planes de pensiones autorizados y registrados a la fecha del documento. La tabla incluye el Plan Adicional de Pensiones de Contribuciones Definidas para magistrados del TFJA, con registro CNSAR/PP/0032/2010/R-2026 y vigencia registral consignada al 31 de mayo de 2027.",
+      "title": "CONSAR publica vigencia registral de plan de pensiones del TFJA",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796485&fecha=18/08/2026"
     },
     {
@@ -1430,8 +1722,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5796486",
-      "summary_teaser": "El INDAABIN modificó el destino del Ex Ateneo Peninsular para que el INAH use la totalidad del inmueble federal en Mérida. La medida incorpora la parte alta, entregada previamente, al destino para restauración, conservación, investigación y difusión del patrimonio cultural.",
-      "title": "INAH amplía uso del Ex Ateneo Peninsular",
+      "summary_teaser": "El INDAABIN modifica el destino del Ex Ateneo Peninsular para que el INAH use la totalidad del inmueble federal en Mérida, Yucatán. La ampliación formaliza la incorporación de la parte alta, destinada a proyectos de restauración, conservación, investigación y difusión del patrimonio cultural.",
+      "title": "Acuerdo amplía destino del Ex Ateneo Peninsular al INAH",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796486&fecha=18/08/2026"
     },
     {
@@ -1459,8 +1751,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5796487",
-      "summary_teaser": "El Instituto de Administración y Avalúos de Bienes Nacionales destinó el inmueble federal descrito a la Procuraduría Federal de Protección al Ambiente para continuar utilizándolo como Archivo Institucional. El acuerdo confiere derecho de aprovechamiento para ese uso, no transmite la propiedad y establece obligaciones de custodia, conservación y permisos para intervenciones.",
-      "title": "Acuerdo concede a Profepa archivo institucional en Azcapotzalco",
+      "summary_teaser": "INDAABIN destinó a la PROFEPA el inmueble federal Renacimiento 175 en Azcapotzalco para continuar como Archivo Institucional. El acuerdo reconoce la superficie actual derivada de vialidad, precisa que no transmite propiedad y establece condiciones de uso, conservación, autorizaciones y devolución del bien.",
+      "title": "INDAABIN concede uso de archivo institucional a PROFEPA",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796487&fecha=18/08/2026"
     },
     {
@@ -1488,8 +1780,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5796488",
-      "summary_teaser": "El Instituto de Administración y Avalúos de Bienes Nacionales destinó el inmueble federal descrito a la Procuraduría Federal de Protección al Ambiente para continuar utilizándolo como oficinas de representación de protección ambiental en el estado. El acuerdo confiere derecho de aprovechamiento para ese uso, no transmite la propiedad y establece obligaciones de custodia, conservación y permisos para intervenciones.",
-      "title": "Acuerdo concede a Profepa oficinas ambientales federales en Veracruz",
+      "summary_teaser": "INDAABIN destina a PROFEPA un inmueble federal de Xalapa para continuar como oficina de representación ambiental. El acuerdo conserva la propiedad federal, impone custodia, conservación y aseguramiento; exige autorizaciones antes de obras y la puesta a disposición del bien si cambia su uso.",
+      "title": "INDAABIN autoriza destino de inmueble para PROFEPA en Veracruz",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796488&fecha=18/08/2026"
     },
     {
@@ -1517,8 +1809,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5796402",
-      "summary_teaser": "La Secretaría de Hacienda publicó la recaudación federal participable de junio y los cálculos de participaciones de julio de dos mil veintiséis, incluidos fondos generales, municipales, hidrocarburos, IEPS, fronteras y litorales. El acuerdo también informa las participaciones del Fondo de Fiscalización y Recaudación correspondientes al segundo trimestre.",
-      "title": "Hacienda determina participaciones federales de julio",
+      "summary_teaser": "La SHCP difundió la recaudación federal participable de junio, la integración y distribución de participaciones de julio de 2026 y el Fondo de Fiscalización y Recaudación del segundo trimestre. Los cuadros incluyen coeficientes, montos por entidad y municipio, así como diferencias frente a anticipos, sujetos a los ajustes que prevé la fuente.",
+      "title": "Informa participaciones federales de julio y FOFIR del segundo trimestre; aclara variación posible",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796402&fecha=17/08/2026"
     },
     {
@@ -1546,8 +1838,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5796403",
-      "summary_teaser": "La Comisión Nacional Bancaria y de Valores modificó la autorización de TRF Casa de Bolsa para reflejar su nueva denominación, antes CI Casa de Bolsa. La entidad debe publicar el oficio en el Diario Oficial y en dos periódicos de circulación amplia, e informar la fecha de esas publicaciones a la Comisión.",
-      "title": "CNBV modifica autorización de TRF Casa de Bolsa",
+      "summary_teaser": "La CNBV modificó la autorización de organización y operación de TRF Casa de Bolsa para reflejar su cambio de denominación desde CI Casa de Bolsa. La sociedad debe publicar el oficio en el DOF y en dos periódicos dentro de quince días hábiles, e informar las fechas de publicación a la Comisión.",
+      "title": "CNBV modifica autorización de TRF tras cambio de denominación social",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796403&fecha=17/08/2026"
     },
     {
@@ -1575,8 +1867,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5796407",
-      "summary_teaser": "El órgano interno de control del ISSSTE comunicó que dejó sin efectos una resolución dictada en un procedimiento administrativo de sanción a licitantes, proveedores y contratistas. La medida cumple una sentencia de la Sala Regional en Michoacán del Tribunal Federal de Justicia Administrativa que declaró la nulidad lisa y llana del acto impugnado.",
-      "title": "TFJA invalida resolución sancionadora en procedimiento del ISSSTE",
+      "summary_teaser": "Una circular comunica que la Sala Regional en Michoacán del TFJA declaró la nulidad lisa y llana de una resolución emitida en un procedimiento sancionatorio. El órgano interno de control informó que dejó sin efectos esa resolución en cumplimiento de la sentencia; la fuente no describe nuevas sanciones ni actuaciones posteriores.",
+      "title": "TFJA invalida resolución sancionatoria contra Eder Vieyra Sánchez",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796407&fecha=17/08/2026"
     },
     {
@@ -1604,8 +1896,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5796409",
-      "summary_teaser": "La Secretaría de Salud publicó las respuestas a los comentarios recibidos sobre el proyecto de norma para la disposición de sangre humana y sus componentes con fines terapéuticos. El anexo registra determinaciones del grupo de trabajo, incluidas aceptaciones, aceptaciones parciales, no aceptaciones y modificaciones de redacción.",
-      "title": "Salud incorpora ajustes al proyecto de norma sanguínea",
+      "summary_teaser": "La Secretaría de Salud difunde las respuestas a los comentarios sobre el proyecto de norma para la disposición de sangre humana y sus componentes con fines terapéuticos. El anexo registra decisiones de aceptación, aceptación parcial o no aceptación sobre definiciones, operación, calidad, pruebas, trazabilidad, transfusión y transporte.",
+      "title": "Salud incorpora ajustes al proyecto de norma sobre sangre",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796409&fecha=17/08/2026"
     },
     {
@@ -1633,8 +1925,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5796419",
-      "summary_teaser": "La Fiscalía General de la República modificó su Manual de Remuneraciones 2026: actualizó tabuladores, prestaciones, límites de percepción y claves de unidades responsables. Los incrementos y conceptos señalados tienen efectos retroactivos al 1 de enero, con vigencia específica para algunos niveles desde agosto.",
-      "title": "Fiscalía actualiza tabuladores y prestaciones de su personal",
+      "summary_teaser": "El acuerdo de la Fiscalía General de la República modifica su manual de remuneraciones para 2026: actualiza tabuladores y prestaciones, fija conceptos mensuales para personal operativo e incorpora claves de unidades responsables. Los incrementos aplican retroactivamente desde enero en los periodos laborados, con una fecha específica para ciertos niveles.",
+      "title": "FGR actualiza tabuladores y prestaciones con efectos retroactivos",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796419&fecha=17/08/2026"
     },
     {
@@ -1663,8 +1955,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5796303",
-      "summary_teaser": "El SAT publicó la identificación de Integradora Mexicana ASA Profesional tras una resolución en la que no desvirtuó la presunción de falsedad de los CFDI emitidos. Las operaciones contenidas en esos comprobantes no producen efectos fiscales. Las personas receptoras deben presentar declaración complementaria para revertir el efecto fiscal dentro de treinta días naturales desde la publicación en el DOF; de no hacerlo, procede la restricción del certificado de sello digital.",
-      "title": "Integradora Mexicana ASA Profesional: plazo de 30 días para revertir efectos de CFDI falsos",
+      "summary_teaser": "El SAT publicó el RFC IMA1206124B8 y el nombre de Integradora Mexicana Asa Profesional, S.C., al determinar que no desvirtuó la presunción de falsedad de los CFDI emitidos. La fuente indica que esos comprobantes no producen efecto fiscal y obliga a terceros receptores a revertir cualquier efecto mediante declaración complementaria dentro de treinta días naturales.",
+      "title": "Exige revertir efectos fiscales de CFDI falsos de Integradora Mexicana Asa",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796303&fecha=14/08/2026"
     },
     {
@@ -1693,8 +1985,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5796304",
-      "summary_teaser": "El SAT publicó a INTEGRADORA DE SERVICIOS DELCARP, S.C. y su RFC como contribuyente que no desvirtuó la presunción de falsedad de los CFDI emitidos. El aviso señala que esos comprobantes no producen efectos fiscales y que quienes les hayan dado efectos deben revertirlos mediante declaración complementaria dentro del plazo señalado.",
-      "title": "SAT exige revertir efectos de CFDI falsos de Delcarp",
+      "summary_teaser": "El SAT publicó el nombre y RFC de Integradora de Servicios Delcarp tras una resolución que determinó que no desvirtuó la presunción de falsedad de sus CFDI. El aviso señala que las operaciones amparadas no producen efectos fiscales y fija la vía para que terceros receptores reviertan efectos mediante declaración complementaria.",
+      "title": "SAT determina falsedad fiscal de Integradora Delcarp",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796304&fecha=14/08/2026"
     },
     {
@@ -1723,8 +2015,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5796305",
-      "summary_teaser": "El SAT publicó la identificación de Asociación Hatres Mexicana tras una resolución en la que no desvirtuó la presunción de falsedad de los CFDI emitidos. Las operaciones contenidas en esos comprobantes no producen efectos fiscales. Las personas receptoras deben presentar declaración complementaria para revertir el efecto fiscal dentro de treinta días naturales desde la publicación en el DOF; de no hacerlo, procede la restricción temporal del certificado de sello digital.",
-      "title": "Asociación Hatres Mexicana: plazo de 30 días para revertir efectos de CFDI falsos",
+      "summary_teaser": "El SAT publicó el nombre y RFC de Asociación Hatres Mexicana tras una resolución que determinó que no desvirtuó la presunción de falsedad de sus CFDI. El aviso señala que las operaciones amparadas no producen efectos fiscales y explica la reversión mediante declaración complementaria para terceros receptores.",
+      "title": "SAT determina falsedad fiscal de Asociación Hatres Mexicana",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796305&fecha=14/08/2026"
     },
     {
@@ -1753,9 +2045,38 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5796309",
-      "summary_teaser": "La Secretaría de Economía concluyó la investigación antidumping e impuso una cuota compensatoria definitiva de 0.1488 dólares por kilogramo al sulfato de amonio originario de China que ingrese por la fracción 3102.21.01 o cualquier otra. Entra en vigor al día siguiente de su publicación. Las personas importadoras quedan exentas si prueban origen distinto a China conforme a las normas no preferenciales aplicables.",
-      "title": "Sulfato de amonio chino queda sujeto a cuota definitiva",
+      "summary_teaser": "La Secretaría de Economía concluyó la investigación antidumping sobre sulfato de amonio de China e impuso una cuota compensatoria definitiva de 0.1488 dólares por kilogramo. La medida cubre mercancía que ingrese por la fracción 3102.21.01 o cualquier otra, y entra en vigor al día siguiente de su publicación.",
+      "title": "México impone cuota definitiva al sulfato de amonio chino",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796309&fecha=14/08/2026"
+    },
+    {
+      "ai_generated": true,
+      "canonical_url": "https://www.anam.gob.mx/comunicado-prensa-conjunto-60-2026",
+      "categories": [
+        "Administración centralizada"
+      ],
+      "content_hash": "682a83b17da8e0f457fdd0361aeb1bbea451ab930fb9f6bfdcfa2934286d393b",
+      "country_or_org": "México",
+      "detail_data_url": "data/fichas/32952c1c46d3f0860d0fe747.json",
+      "detail_url": "notas/32952c1c46d3f0860d0fe747.html",
+      "detected_at": "2026-09-01T18:46:30.041123+00:00",
+      "document_type": "Comunicado",
+      "editorial_status": "complete",
+      "extraction_status": "complete",
+      "id": "anam:eedd3801e348eb0b",
+      "importance": 2,
+      "issuing_body": "Agencia Nacional de Aduanas de México",
+      "jurisdiction": "nacional",
+      "official_published_at": "2026-08-13",
+      "official_title": "IMPI y ANAM aseguran más de 227 mil cajetillas de cigarros en Manzanillo",
+      "published_at": "2026-08-13",
+      "relevance_score": 2,
+      "review_reason": null,
+      "source": "ANAM",
+      "source_id": "eedd3801e348eb0b",
+      "summary_teaser": "IMPI y ANAM informaron el aseguramiento de 379 cajas con 227 mil cajetillas de cigarrillos que ostentaban la denominación PALL MALL en la Aduana de Manzanillo. El comunicado señala que el IMPI continuará las actuaciones en el ámbito de sus atribuciones, sin publicar una sanción o resolución definitiva.",
+      "title": "IMPI confirma aseguramiento de cigarrillos PALL MALL en Manzanillo",
+      "url": "https://www.anam.gob.mx/comunicado-prensa-conjunto-60-2026/"
     },
     {
       "ai_generated": true,
@@ -1782,8 +2103,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5796157",
-      "summary_teaser": "El CONAC adicionó la modalidad X Funciones para la gobernanza institucional al Gasto por Categoría Programática del Manual de Contabilidad Gubernamental. El acuerdo entra en vigor al día siguiente de su publicación y será obligatorio desde el 1 de enero de 2027. Las entidades federativas deben publicarlo en treinta días hábiles y sus consejos remitir información en los quince días hábiles posteriores.",
-      "title": "CONAC incorpora la modalidad X a la categoría programática",
+      "summary_teaser": "El CONAC adiciona la modalidad X, Funciones para la gobernanza institucional, al Manual de Contabilidad Gubernamental. La aplicación obligatoria inicia el 1 de enero de 2027. Las entidades federativas deben difundir el acuerdo en 30 días hábiles y reportar actos de adopción conforme al transitorio aplicable.",
+      "title": "Manual contable incorpora categoría de gobernanza institucional",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796157&fecha=13/08/2026"
     },
     {
@@ -1811,8 +2132,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5796158",
-      "summary_teaser": "El Consejo Nacional de Armonización Contable reformó el Marco Conceptual de Contabilidad Gubernamental. La aplicación obligatoria comienza el primero de enero de dos mil veintisiete; las entidades federativas deben publicar el acuerdo dentro de treinta días hábiles y sus consejos deben informar actos de adopción en el plazo posterior indicado.",
-      "title": "Contabilidad gubernamental incorpora sostenibilidad y actualiza sus reportes",
+      "summary_teaser": "El CONAC reformó el Marco Conceptual de Contabilidad Gubernamental para incorporar normas de sostenibilidad como supletorias, actualizar conceptos y reorganizar sus apartados de información financiera. El acuerdo entra en vigor al día siguiente de su publicación y será obligatorio desde el 1 de enero de 2027; las entidades federativas deben difundirlo en treinta días hábiles.",
+      "title": "Actualiza contabilidad gubernamental con aplicación obligatoria en 2027",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796158&fecha=13/08/2026"
     },
     {
@@ -1841,8 +2162,8 @@
       "review_reason": null,
       "source": "USTR",
       "source_id": "3a51a827ecdfff57",
-      "summary_teaser": "USTR anunció la resolución del asunto del Mecanismo Laboral de Respuesta Rápida del T-MEC en la planta Grupo Yazaki de León, Guanajuato. Tras medidas de la empresa y del gobierno mexicano, Estados Unidos concluyó que no existe una denegación de derechos en curso y reanudó la liquidación de aranceles sobre las mercancías de la planta.",
-      "title": "USTR da por remediado asunto Yazaki y reanuda liquidación arancelaria",
+      "summary_teaser": "USTR comunicó que concluyó su asunto laboral bajo el Mecanismo Laboral de Respuesta Rápida del T-MEC en la planta Yazaki de León, Guanajuato. La autoridad estadounidense ordenó reanudar la liquidación de entradas no liquidadas; el comunicado describe medidas de empresa y gobierno mexicano, pero no fija obligaciones mexicanas adicionales.",
+      "title": "Estados Unidos ordena reanudar liquidaciones tras concluir asunto laboral de Yazaki",
       "url": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/august/united-states-announces-successful-resolution-rapid-response-labor-mechanism-matter-grupo-yazaki-sa"
     },
     {
@@ -1870,8 +2191,8 @@
       "review_reason": null,
       "source": "ANAM",
       "source_id": "827d77cec754354b",
-      "summary_teaser": "La ANAM informó que en julio de 2026 recaudó 131 mil 616 millones de pesos, cifra mensual más alta del año, y realizó 1 millón 957 mil 554 operaciones de comercio exterior, récord desde enero de 2025. El comunicado también reportó variaciones, acumulado, costo de captación y distribuciones por aduana.",
-      "title": "ANAM confirma récord de operaciones y mayor recaudación mensual",
+      "summary_teaser": "La ANAM reportó para julio de 2026 una recaudación de 131 mil 616 millones de pesos y 1 millón 957 mil 554 operaciones de comercio exterior. El comunicado identifica máximos mensuales, crecimiento frente a junio y julio de 2025, y concentración de operaciones y recaudación en aduanas fronterizas y marítimas.",
+      "title": "Julio establece máximos en recaudación y operaciones aduaneras",
       "url": "https://www.anam.gob.mx/comunicado-prensa-58-2026/"
     },
     {
@@ -1899,8 +2220,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5796062",
-      "summary_teaser": "La Procuraduría Fiscal difundió la relación actualizada de entidades paraestatales de la Administración Pública Federal. El instrumento enumera 181 entidades activas por tipo y sector, 12 en proceso de desincorporación y una exclusión de ese proceso; sus efectos son declarativos, no constitutivos.",
-      "title": "Hacienda actualiza relación de entidades paraestatales federales",
+      "summary_teaser": "Hacienda publicó la relación anual de entidades paraestatales federales: registra 181 entidades en el apartado principal, 12 en proceso de desincorporación y una empresa excluida de ese proceso. El documento declara que su enumeración y categorización son informativas, no constitutivas.",
+      "title": "Relación anual actualiza el universo paraestatal federal",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796062&fecha=12/08/2026"
     },
     {
@@ -1928,8 +2249,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5796063",
-      "summary_teaser": "El Instituto de Administración y Avalúos de Bienes Nacionales declaró sujeto al régimen de dominio público federal el inmueble Parque Nacional de la Justicia A, en uso de la Fiscalía General de la República. La declaratoria confirma su carácter inalienable, imprescriptible e inembargable y ordena su inscripción registral.",
-      "title": "Declaratoria declara dominio público federal del Parque de la Justicia",
+      "summary_teaser": "INDAABIN declaró sujeto al régimen de dominio público de la Federación el inmueble Parque Nacional de la Justicia A, en la alcaldía Álvaro Obregón, Ciudad de México, bajo posesión, control, administración y uso de la Fiscalía General de la República. La declaratoria precisa su carácter inalienable, imprescriptible e inembargable y ordena su inscripción registral.",
+      "title": "Declara dominio público federal sobre inmueble usado por Fiscalía",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796063&fecha=12/08/2026"
     },
     {
@@ -1958,8 +2279,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5796065",
-      "summary_teaser": "México publicó una prórroga de la dispensa temporal que permite a ciertos textiles y prendas elaborados en Colombia usar materiales fuera de la zona de libre comercio y conservar trato arancelario preferencial. La decisión rige del 22 de julio de 2026 al 21 de julio de 2027.",
-      "title": "México extiende preferencia textil con insumos extrarregionales",
+      "summary_teaser": "México dio a conocer la Decisión 128 del tratado comercial con Colombia, que prorroga una dispensa temporal para determinados bienes textiles y del vestido. La medida permite usar ciertos insumos fuera de la zona de libre comercio, dentro de cantidades y condiciones específicas, para conservar el trato arancelario preferencial.",
+      "title": "Extiende dispensa textil México Colombia hasta 2027",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796065&fecha=12/08/2026"
     },
     {
@@ -1987,8 +2308,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5796068",
-      "summary_teaser": "La Universidad Nacional Rosario Castellanos informó la publicación electrónica de su Manual de Organización General para el periodo dos mil veintiséis a dos mil treinta. El aviso señala que el manual regula estructura, atribuciones, funciones y responsabilidades internas, y refiere una constancia de exención de impacto regulatorio por no crear obligaciones para particulares.",
-      "title": "Manual de Rosario Castellanos establece su organización interna",
+      "summary_teaser": "El aviso comunica que el Manual de Organización General de la Universidad Nacional Rosario Castellanos puede consultarse en línea. La Universidad reporta visto bueno organizacional y exención de análisis de impacto regulatorio, al señalar que el instrumento regula su estructura interna sin incrementar obligaciones ni costos para particulares.",
+      "title": "Aviso establece consulta pública del manual organizacional",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796068&fecha=12/08/2026"
     },
     {
@@ -2017,8 +2338,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5795910",
-      "summary_teaser": "La autoridad comunicó la inhabilitación de Eliana Díaz Magaña durante dos años. Desde el día siguiente a la publicación en el DOF, las entidades destinatarias deben abstenerse de recibir propuestas y/o celebrar contratos en las materias cubiertas. Los contratos ya adjudicados o formalizados quedan fuera de la circular y la fuente prevé continuidad si la multa sigue impaga.",
-      "title": "Autoridad inhabilita a Eliana Díaz para contratos públicos",
+      "summary_teaser": "La circular comunica una inhabilitación de dos años para Eliana Díaz Magaña y ordena abstenerse de recibir propuestas o contratar con ella, directa o indirectamente. La prohibición comienza al día siguiente de la publicación y se mantiene hasta el pago de la multa si ésta sigue insoluta al concluir el plazo.",
+      "title": "Circular restringe contrataciones públicas con Eliana Díaz por dos años",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5795910&fecha=11/08/2026"
     },
     {
@@ -2046,8 +2367,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5795832",
-      "summary_teaser": "La Secretaría de Cultura comunicó el nuevo domicilio oficial de ocho unidades administrativas en Calle Dinamarca 84, colonia Juárez, Ciudad de México. Desde el 1 de agosto de 2026, ahí se reciben promociones, notificaciones y correspondencia; los procedimientos iniciados continúan sin afectación.",
-      "title": "Cultura cambia domicilio de ocho unidades administrativas",
+      "summary_teaser": "La Secretaría de Cultura comunicó que ocho unidades administrativas atenderán en Calle Dinamarca 84, colonia Juárez, Ciudad de México, desde el 1 de agosto de 2026. El aviso regula la recepción de promociones, notificaciones y diligencias, mantiene procedimientos iniciados y ordena actualizar medios y documentos institucionales.",
+      "title": "Cultura cambia domicilio oficial de ocho unidades",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5795832&fecha=10/08/2026"
     },
     {
@@ -2075,8 +2396,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5795834",
-      "summary_teaser": "El convenio entre Turismo federal y Guerrero faculta al estado para ejecutar verificaciones a prestadores turísticos, mientras la Federación emite órdenes y resuelve los procedimientos. Guerrero debe enviar la base de datos y los expedientes digitales certificados dentro de los primeros diez días naturales de cada mes. El formato de orden de visita tiene vigencia de diez días hábiles desde su emisión.",
-      "title": "Guerrero tiene plazo mensual para remitir verificaciones turísticas",
+      "summary_teaser": "El convenio faculta a la Secretaría de Turismo de Guerrero para ejecutar visitas de verificación a prestadores turísticos. La SECTUR federal emitirá órdenes, recibirá expedientes y resolverá los procedimientos; el estado deberá reportar actividades y remitir expedientes digitales certificados durante los primeros diez días naturales de cada mes.",
+      "title": "SECTUR autoriza verificaciones turísticas estatales en Guerrero bajo supervisión federal",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5795834&fecha=10/08/2026"
     },
     {
@@ -2104,8 +2425,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5795842",
-      "summary_teaser": "La Conavi publicó un nuevo manual de organización que actualiza su estructura, unidades y atribuciones para operar programas de vivienda. El documento describe responsabilidades de operación, seguimiento, asuntos jurídicos, análisis, administración y representación. También deja sin efectos el manual y modificaciones anteriores que la publicación identifica, a partir de su vigencia.",
-      "title": "Conavi actualiza estructura y funciones para operar programas de vivienda",
+      "summary_teaser": "El Manual de Organización de CONAVI ordena su estructura y las funciones de operación, subsidios, asuntos jurídicos, análisis, finanzas y administración. Entra en vigor al día siguiente de su publicación, deja sin efectos el texto compilado anterior y funciona como instrumento interno de consulta; no sustituye las reglas de operación de los programas.",
+      "title": "CONAVI reemplaza su manual organizativo y actualiza funciones internas",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5795842&fecha=10/08/2026"
     },
     {
@@ -2133,8 +2454,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5795722",
-      "summary_teaser": "La CNBV modificó reglas aplicables a fondos con referencias ASG. Las desviaciones técnicas descritas se ajustan en un máximo de noventa días naturales y no cuentan como incumplimiento. Los fondos tienen hasta doce meses desde la entrada en vigor para presentar prospectos aplicables y adecuar denominaciones o publicidad; las operadoras deben actualizar manuales y documentos del Anexo 19. El formato del reporte J-0311 cambia el 1 de enero de 2027.",
-      "title": "CNBV fija 12 meses para adecuar prospectos y denominaciones ASG",
+      "summary_teaser": "La CNBV modifica la regulación de fondos de inversión para ordenar el uso de denominaciones ASG, exigir un porcentaje mínimo de activos elegibles y ampliar la divulgación a inversionistas. También actualiza prospectos, documentos clave, reportes regulatorios y manuales operativos, con plazos de transición expresamente previstos.",
+      "title": "CNBV exige respaldo ASG para denominaciones de fondos",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5795722&fecha=07/08/2026"
     },
     {
@@ -2163,8 +2484,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5795723",
-      "summary_teaser": "El SAT incorporó a Asociación de Productividad y Competitividad de Sonora, A.C. al supuesto publicado del artículo 49 Bis del Código Fiscal. La autoridad determinó que no desvirtuó la presunción de falsedad de sus CFDI, por lo que terceros deben revisar los efectos fiscales otorgados.",
-      "title": "SAT determina efectos fiscales de CFDI de Asociación de Productividad y Competitividad de Sonora",
+      "summary_teaser": "El SAT publicó el RFC y nombre de Asociación de Productividad y Competitividad de Sonora, A.C. conforme al artículo 49 Bis del CFF. El oficio comunica que no desvirtuó la presunción sobre sus CFDI y advierte a terceros sobre la reversión del efecto fiscal mediante declaración complementaria.",
+      "title": "SAT determina efectos fiscales de comprobantes falsos",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5795723&fecha=07/08/2026"
     },
     {
@@ -2193,8 +2514,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5795724",
-      "summary_teaser": "El SAT publicó la identificación de Comercializadora Topik tras una resolución en la que no desvirtuó la presunción de falsedad de los CFDI emitidos. Las operaciones contenidas en esos comprobantes no producen efectos fiscales. Las personas receptoras deben presentar declaración complementaria para revertir el efecto fiscal dentro de treinta días naturales desde la publicación en el DOF; de no hacerlo, procede la restricción temporal del certificado de sello digital.",
-      "title": "Comercializadora Topik: plazo de 30 días para revertir efectos de CFDI falsos",
+      "summary_teaser": "El SAT publicó el nombre y RFC de Comercializadora Topik, S.A. de C.V. tras una resolución que tuvo por no desvirtuada la presunción de falsedad de sus CFDI. Los receptores deben revertir el efecto fiscal mediante declaración complementaria dentro de treinta días naturales desde la publicación.",
+      "title": "CFDI falsos dejan sin efecto fiscal operaciones de Topik",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5795724&fecha=07/08/2026"
     },
     {
@@ -2223,8 +2544,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5795725",
-      "summary_teaser": "El SAT publicó a MEC Competitividad Americana, A.C. dentro del procedimiento del artículo 49 Bis del Código Fiscal. Sus CFDI se consideran falsos con efectos generales. Los receptores deben revertir el efecto fiscal mediante declaración complementaria dentro de 30 días naturales; la restricción temporal del CSD sólo procede si incumplen.",
-      "title": "SAT determina falsedad general y reversión fiscal de CFDI de MEC",
+      "summary_teaser": "El SAT publicó a MEC Competitividad Americana, A.C. y su RFC en el supuesto del artículo 49 Bis del CFF. El contribuyente listado no desvirtuó la presunción de falsedad de sus CFDI; las operaciones carecen de efectos fiscales y los terceros tienen treinta días naturales desde la publicación para presentar declaración complementaria.",
+      "title": "SAT confirma efectos fiscales nulos de comprobantes de MEC Competitividad Americana",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5795725&fecha=07/08/2026"
     },
     {
@@ -2253,8 +2574,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5795726",
-      "summary_teaser": "El SAT publicó a GROUP IRBENIGI DE MEXICO, S.A. DE C.V. y su RFC como contribuyente que no desvirtuó la presunción de falsedad de los CFDI emitidos. El aviso señala que esos comprobantes no producen efectos fiscales y que quienes les hayan dado efectos deben revertirlos mediante declaración complementaria dentro del plazo señalado.",
-      "title": "SAT exige revertir efectos de CFDI falsos en treinta días",
+      "summary_teaser": "El SAT publicó a Group Irbenigi de México, S.A. de C.V., RFC GIM150409IG1, al determinar que no desvirtuó la presunción de falsedad de sus CFDI. Los terceros que les dieron efecto fiscal cuentan con 30 días naturales desde la publicación para presentar declaración complementaria y revertir ese efecto.",
+      "title": "CFDI falsos: 30 días para revertir o dejar sin efecto sus efectos",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5795726&fecha=07/08/2026"
     },
     {
@@ -2283,8 +2604,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5795727",
-      "summary_teaser": "El SAT publicó la identificación de Operadora Macdegar tras una resolución en la que no desvirtuó la presunción de falsedad de los CFDI emitidos. Las operaciones contenidas en esos comprobantes no producen efectos fiscales. Las personas receptoras deben presentar declaración complementaria para revertir el efecto fiscal dentro de treinta días naturales desde la publicación en el DOF; de no hacerlo, procede la restricción temporal del certificado de sello digital.",
-      "title": "Operadora Macdegar: plazo de 30 días para revertir efectos de CFDI falsos",
+      "summary_teaser": "El SAT publicó el nombre y RFC de Operadora Macdegar, S.A. de C.V., al determinar que no desvirtuó la presunción de falsedad de sus CFDI. Terceros que dieron efectos fiscales a esas operaciones deben revertirlos mediante declaración complementaria dentro de treinta días naturales o enfrentan la restricción temporal de su sello digital.",
+      "title": "SAT obliga a revertir efectos fiscales de CFDI de Operadora Macdegar",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5795727&fecha=07/08/2026"
     },
     {
@@ -2312,8 +2633,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5795731",
-      "summary_teaser": "La Secretaría de Economía declaró un Polo de Desarrollo Económico para el Bienestar de 60.76 hectáreas en Benito Juárez, Quintana Roo. El documento identifica vocaciones financieras, tecnológicas, turísticas y logísticas, y prevé que el estado y la Secretaría suscriban un convenio de coordinación.",
-      "title": "Economía declara polo financiero y tecnológico en Cancún",
+      "summary_teaser": "La Secretaría de Economía declara el Polo de Desarrollo Económico para el Bienestar Distrito Financiero y Tecnológico de Cancún, en Benito Juárez, Quintana Roo. El acuerdo describe su superficie, criterios de selección, vocaciones productivas y condiciones ambientales, territoriales y de coordinación pendientes.",
+      "title": "Economía declara polo financiero y tecnológico de 60.76 hectáreas en Cancún",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5795731&fecha=07/08/2026"
     },
     {
@@ -2341,8 +2662,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5795750",
-      "summary_teaser": "El Comité Técnico del CONOCER aprobó estándares de competencia sobre desarrollo y marketing con inteligencia artificial, producción audiovisual generativa e inclusión de niñas, niños y adolescentes. La publicación describe los perfiles generales y enlaza las versiones de cada estándar. El acuerdo no certifica por sí mismo a personas ni acredita una evaluación individual.",
-      "title": "CONOCER establece estándares sobre inteligencia artificial e inclusión",
+      "summary_teaser": "El Comité Técnico del CONOCER aprobó ocho estándares de competencia sobre inteligencia artificial para MiPyMEs, marketing y video digital, así como inclusión, neurodiversidad, salud mental, prevención de violencia y crianza positiva. El acuerdo presenta los códigos, descripciones generales y ligas oficiales para consultar el contenido de cada estándar.",
+      "title": "CONOCER incorpora ocho estándares de competencia laboral",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5795750&fecha=07/08/2026"
     },
     {
@@ -2370,8 +2691,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5795599",
-      "summary_teaser": "El Fondo de Protección de Sociedades Financieras Populares publicó las 34 Sofipos que participaron durante el primer semestre de 2026. El listado incluye dos notas: Acción y Evolución está en categoría 4 con estudio técnico, e Impulso para el Desarrollo de México tiene medios de defensa pendientes.",
-      "title": "Fondo de Protección confirma Sofipos participantes del semestre",
+      "summary_teaser": "El Fondo de Protección publicó la lista de 34 Sociedades Financieras Populares que participaron durante el primer semestre de 2026. La fuente sólo acredita esa participación y contiene dos notas individualizadas: una sobre la clasificación de Acción y Evolución y otra sobre la situación procesal de Impulso para el Desarrollo de México.",
+      "title": "Fondo confirma participación semestral de Sofipos listadas",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5795599&fecha=06/08/2026"
     },
     {
@@ -2400,8 +2721,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5795519",
-      "summary_teaser": "El órgano interno de control del IMSS comunicó la inhabilitación de Buffington’s de México, S.A. de C.V. por seis meses para contratar en adquisiciones, arrendamientos, servicios y obras públicas. La prohibición inicia tras publicación; los contratos previamente formalizados no quedan comprendidos.",
-      "title": "Buffington’s de México recibe prohibición para contratar",
+      "summary_teaser": "La circular comunica que dependencias, entidades, empresas públicas y órdenes locales indicados deben abstenerse de recibir propuestas o contratar con Buffington's de México. La restricción inicia al día siguiente de la publicación, dura seis meses y puede subsistir hasta el pago de la multa impuesta.",
+      "title": "Circular restringe contratos públicos con Buffington's de México por seis meses",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5795519&fecha=05/08/2026"
     },
     {
@@ -2430,8 +2751,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5795520",
-      "summary_teaser": "La autoridad comunicó la inhabilitación de Grupo Comercial Ogamak, S.A. de C.V. por tres meses. Desde el día siguiente a la publicación en el DOF, las entidades destinatarias deben abstenerse de aceptar propuestas o celebrar contratos en la materia cubierta. Los contratos ya adjudicados o formalizados quedan fuera de la circular y la fuente prevé continuidad si la multa sigue impaga.",
-      "title": "Autoridad inhabilita a Grupo Comercial Ogamak en compras públicas",
+      "summary_teaser": "La Secretaría Anticorrupción y Buen Gobierno comunicó una inhabilitación de tres meses para Grupo Comercial Ogamak, S.A. de C.V., en procedimientos y contratos regidos por la Ley de Adquisiciones, Arrendamientos y Servicios del Sector Público. La restricción inicia al día siguiente de publicación; puede continuar hasta el pago de la multa. Los contratos adjudicados o formalizados no quedan comprendidos.",
+      "title": "Inhabilita a Grupo Comercial Ogamak en contrataciones públicas",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5795520&fecha=05/08/2026"
     },
     {
@@ -2460,8 +2781,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5795543",
-      "summary_teaser": "El Órgano Interno de Control de la Fiscalía General de la República publicó reglas para suplencias por ausencia o excusa de su titular y de sus unidades. El acuerdo establece un orden de prelación y salvaguardas para evitar concentración de funciones investigadoras, substanciadoras y resolutoras. También prevé continuidad administrativa en caso de ausencia definitiva.",
-      "title": "Órgano interno de control de FGR fija reglas de suplencia",
+      "summary_teaser": "El Órgano Interno de Control de la Fiscalía General de la República publica reglas para suplir ausencias y atender excusas. El acuerdo fija un orden de prelación, exige separar funciones en procedimientos de responsabilidades y prevé continuidad operativa ante una ausencia definitiva.",
+      "title": "El OIC de la FGR establece suplencias y reglas de excusa",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5795543&fecha=05/08/2026"
     },
     {
@@ -2489,8 +2810,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5795358",
-      "summary_teaser": "Un nuevo Reglamento Interior organiza la Oficina de la Presidencia, distribuye atribuciones entre unidades técnicas, administrativas y operativas, y abroga el reglamento de 2019. Los asuntos pendientes continúan ante la unidad competente y la implementación debe realizarse con presupuesto aprobado, sin ampliaciones regularizables.",
-      "title": "Presidencia establece unidades y atribuciones internas actualizadas",
+      "summary_teaser": "El nuevo Reglamento Interior de la Oficina de la Presidencia define su organización, unidades de apoyo y atribuciones. Sustituye el reglamento de 2019, prevé la continuidad de asuntos en trámite y ordena cubrir los cambios organizacionales con el presupuesto aprobado, sin ampliaciones al presupuesto regularizable.",
+      "title": "Reglamento establece nueva organización de la Oficina Presidencial",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5795358&fecha=04/08/2026"
     },
     {
@@ -2518,8 +2839,8 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5795366",
-      "summary_teaser": "El Instituto de Administración y Avalúos de Bienes Nacionales modificó el destino de un inmueble federal en Manzanillo para incorporar una superficie adicional a favor de la Secretaría de Marina. El acuerdo formaliza la inclusión de la totalidad del predio para vivienda, oficinas, talleres y almacenes. También ordena su inscripción en el registro inmobiliario federal.",
-      "title": "Marina incorpora superficie adicional a inmueble federal de Manzanillo",
+      "summary_teaser": "INDAABIN modificó el destino de Salahua Unidad Habitacional, en Manzanillo, para incorporar 2,286.08 metros cuadrados adicionales a favor de la Secretaría de Marina. La superficie total destinada asciende a 31,528.21 metros cuadrados y conserva los usos de vivienda, alojamiento, recreación, oficinas, talleres y almacenes; la modificación entra en vigor al día siguiente de su publicación.",
+      "title": "Amplía la superficie destinada a Marina en Manzanillo",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5795366&fecha=04/08/2026"
     },
     {
@@ -2547,38 +2868,9 @@
       "review_reason": null,
       "source": "DOF",
       "source_id": "5795367",
-      "summary_teaser": "El Instituto de Administración y Avalúos de Bienes Nacionales destinó a la Secretaría de Infraestructura, Comunicaciones y Transportes dos inmuebles federales: Vías Buenavista Mex-Qro (RFI 9-71659-2) y Estación Buenavista Mex-Qro (RFI 9-71660-9), para la ampliación de infraestructura ferroviaria del proyecto de tren de pasajeros Ciudad de México-Querétaro. El acuerdo confiere su aprovechamiento para ese uso, no transmite su propiedad y establece deberes de custodia, conservación y permisos previos para intervenciones.",
-      "title": "Acuerdo concede predios federales para infraestructura ferroviaria Buenavista",
+      "summary_teaser": "INDAABIN destinó a la SICT dos inmuebles federales en Buenavista, Ciudad de México, para ampliar infraestructura del tren de pasajeros Ciudad de México-Querétaro y la terminal Buenavista. El destino no transmite propiedad y sujeta obras, uso, conservación y devolución a condiciones expresas.",
+      "title": "Destino establece uso ferroviario de predios Buenavista",
       "url": "https://dof.gob.mx/nota_detalle.php?codigo=5795367&fecha=04/08/2026"
-    },
-    {
-      "ai_generated": true,
-      "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795243&fecha=03%2F08%2F2026",
-      "categories": [
-        "Administración centralizada"
-      ],
-      "content_hash": "b71c89bb1772f3a84c19e6c564970aa6336006576587d392f000ac678168c4b9",
-      "country_or_org": "México",
-      "detail_data_url": "data/fichas/a3b98fbbecbc5d5660bcd744.json",
-      "detail_url": "notas/a3b98fbbecbc5d5660bcd744.html",
-      "detected_at": "2026-09-01T16:34:47.803209+00:00",
-      "document_type": "Circular",
-      "editorial_status": "complete",
-      "extraction_status": "complete",
-      "id": "dof:5795243",
-      "importance": 2,
-      "issuing_body": "Presidencia de la República",
-      "jurisdiction": "nacional",
-      "official_published_at": "2026-08-03",
-      "official_title": "Circular por la que se comunica a las dependencias y entidades de la Administración Pública Federal, a las entidades federativas y sus municipios, los entes públicos de unas y otros, así como a las demarcaciones territoriales de la Ciudad de México, que deberán abstenerse de aceptar propuestas o celebrar contratos con la empresa Profesionales en Vigilancia y Seguridad Privada, S.A. de C.V.",
-      "published_at": "2026-08-03",
-      "relevance_score": 2,
-      "review_reason": null,
-      "source": "DOF",
-      "source_id": "5795243",
-      "summary_teaser": "La autoridad comunicó la inhabilitación de Profesionales en Vigilancia y Seguridad Privada, S.A. de C.V. por tres meses. Desde el día siguiente a la publicación en el DOF, las entidades destinatarias deben abstenerse de aceptar propuestas o celebrar contratos en las materias cubiertas. Los contratos ya adjudicados o formalizados quedan fuera de la circular y la fuente prevé continuidad si la multa sigue impaga.",
-      "title": "Autoridad inhabilita empresa de vigilancia para contrataciones públicas",
-      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5795243&fecha=03/08/2026"
     }
   ],
   "lookback_days": 31,
@@ -2587,14 +2879,14 @@
     {
       "attempts": 1,
       "error": null,
-      "items_found": 11512,
+      "items_found": 11586,
       "source": "DOF",
       "status": "ok"
     },
     {
       "attempts": 1,
       "error": null,
-      "items_found": 7,
+      "items_found": 10,
       "source": "SNICE",
       "status": "ok"
     },
@@ -2608,7 +2900,7 @@
     {
       "attempts": 1,
       "error": null,
-      "items_found": 8,
+      "items_found": 16,
       "source": "Diputados",
       "status": "ok"
     },
@@ -2629,7 +2921,7 @@
     {
       "attempts": 1,
       "error": null,
-      "items_found": 99,
+      "items_found": 104,
       "source": "Gob.mx APF",
       "status": "ok"
     },
@@ -2664,7 +2956,7 @@
     {
       "attempts": 1,
       "error": null,
-      "items_found": 24,
+      "items_found": 26,
       "source": "ANAM",
       "status": "ok"
     },
@@ -2678,7 +2970,7 @@
     {
       "attempts": 1,
       "error": null,
-      "items_found": 6,
+      "items_found": 8,
       "source": "OMC",
       "status": "ok"
     },
@@ -2711,5 +3003,5 @@
       "status": "ok"
     }
   ],
-  "total_items": 86
+  "total_items": 96
 }

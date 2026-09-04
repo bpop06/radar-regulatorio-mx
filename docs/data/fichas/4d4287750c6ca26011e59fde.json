@@ -7,9 +7,7 @@
       "target_sections": [
         "executive_summary",
         "detailed_summary",
-        "impacts.general",
-        "impacts.sectors",
-        "recommended_actions"
+        "impacts.sectors"
       ]
     },
     {
@@ -25,31 +23,39 @@
       ]
     }
   ],
-  "cut_id": "80ff8a726797f7b9e5131c53",
+  "cut_id": "9bfb2857e185b6a117ea296f",
   "detailed_summary": [
     {
       "evidence_refs": [
+        "chunk-1",
         "chunk-2"
       ],
-      "heading": "Contenido publicado",
+      "heading": "Alcance de la restricción",
       "paragraphs": [
-        "La circular comunica una inhabilitación de seis meses para Buffington’s de México, S.A. de C.V. La empresa no puede presentar propuestas ni celebrar contratos, por sí o por interpósita persona, en materias de adquisiciones, arrendamientos, servicios, obras públicas y servicios relacionados. La abstención opera desde el día siguiente a la publicación de la circular y se acompaña de la multa determinada en la resolución sancionadora.",
-        "Si la multa no se paga al concluir el periodo, la inhabilitación subsiste hasta que se acredite el pago ante la autoridad y se elimine el registro de ComprasMX. El texto se limita a comunicar el efecto contractual de la resolución y no expone hechos adicionales que permitan extender el alcance de la sanción."
+        "La comunicación se dirige a autoridades federales, empresas públicas, Fiscalía General, entidades federativas, municipios y demarcaciones territoriales. Les ordena abstenerse de recibir propuestas o celebrar contratos con la empresa, de forma directa o por interpósita persona."
       ]
     },
     {
       "evidence_refs": [
         "chunk-2"
       ],
-      "heading": "Alcance y lectura práctica",
+      "heading": "Plazo y pago de la multa",
       "paragraphs": [
-        "Los contratos adjudicados o ya formalizados no quedan comprendidos. Entidades federativas, municipios y demarcaciones deben observar la circular cuando las adquisiciones, servicios u obras se realicen con cargo total o parcial a fondos federales conforme a los convenios correspondientes.",
-        "La ficha se dirige principalmente a áreas de contratación de adquisiciones, servicios y obras públicas."
+        "La inhabilitación comunicada dura seis meses desde el día siguiente a la publicación. Si la multa no se paga al concluir ese lapso, la inhabilitación subsiste hasta el pago; el comprobante debe presentarse ante la Secretaría Anticorrupción y Buen Gobierno para la eliminación del registro en Compras MX."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Contratos existentes y fondos federales",
+      "paragraphs": [
+        "Los contratos adjudicados o formalizados antes de la circular quedan excluidos de su aplicación. Entidades federativas, municipios y demarcaciones deben observarla respecto de adquisiciones, servicios u obra pública con cargo total o parcial a fondos federales conforme a los convenios respectivos."
       ]
     }
   ],
   "evidence": {
-    "content_hash": "d7c89036d1b3dfe7ceb5a6f9fa68d52cea85b31d2938b87a6a09dbddfce5a0a7",
+    "content_hash": "adc6c553cba90f8d2236c724d3d89ebb0164bbea1a89cd581ddf831a9902c6c9",
     "extraction_method": "html-adapter",
     "locators": [
       {
@@ -64,11 +70,11 @@
       }
     ],
     "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5795519&fecha=05%2F08%2F2026",
-    "retrieved_at": "2026-09-01T16:35:50.781773+00:00"
+    "retrieved_at": "2026-09-03T16:53:57.277748+00:00"
   },
   "executive_summary": [
-    "El Órgano Interno de Control en el Instituto Mexicano del Seguro Social difundió una circular de abstención para contratar con una empresa inhabilitada. La circular comunica una inhabilitación de seis meses para Buffington’s de México, S.A. de C.V. La empresa no puede presentar propuestas ni celebrar contratos, por sí o por interpósita persona, en materias de adquisiciones, arrendamientos, servicios, obras públicas y servicios relacionados. La abstención opera desde el día siguiente a la publicación de la circular y se acompaña de la multa determinada en la resolución sancionadora.",
-    "Los contratos adjudicados o ya formalizados no quedan comprendidos. Entidades federativas, municipios y demarcaciones deben observar la circular cuando las adquisiciones, servicios u obras se realicen con cargo total o parcial a fondos federales conforme a los convenios correspondientes. La síntesis se limita a los hechos y condiciones expresamente visibles en la fuente oficial."
+    "La circular comunica una inhabilitación de seis meses para Buffington's de México y ordena a las autoridades destinatarias abstenerse de recibir propuestas o celebrar contratos con la empresa, directa o indirectamente, en las materias indicadas.",
+    "La medida inicia al día siguiente de la publicación y puede subsistir hasta que se cubra la multa. Los contratos previamente adjudicados o formalizados no quedan comprendidos; para órdenes locales aplica en contrataciones con fondos federales en los términos señalados."
   ],
   "impacts": {
     "general": {
@@ -76,18 +82,28 @@
         "chunk-2"
       ],
       "paragraphs": [
-        "El efecto observable es el que la publicación atribuye al acto: Los contratos adjudicados o ya formalizados no quedan comprendidos. Entidades federativas, municipios y demarcaciones deben observar la circular cuando las adquisiciones, servicios u obras se realicen con cargo total o parcial a fondos federales conforme a los convenios correspondientes."
+        "La circular activa una restricción de contratación respecto de una empresa determinada, sin comunicar el monto de la multa ni ampliar los hechos de la resolución de sanción. El efecto divulgado se limita a las materias, personas destinatarias y temporalidad expresamente indicadas."
       ]
     },
     "sectors": [
       {
         "evidence_refs": [
+          "chunk-1",
           "chunk-2"
         ],
         "paragraphs": [
-          "Las personas comprendidas deben considerar el documento porque La circular comunica una inhabilitación de seis meses para Buffington’s de México, S.A. de C.V. La empresa no puede presentar propuestas ni celebrar contratos, por sí o por interpósita persona, en materias de adquisiciones, arrendamientos, servicios, obras públicas y servicios relacionados. La abstención opera desde el día siguiente a la publicación de la circular y se acompaña de la multa determinada en la resolución sancionadora."
+          "Las autoridades destinatarias deben excluir a la empresa de propuestas y contratos en el periodo comunicado, sin extender la circular a contratos previamente adjudicados o formalizados."
         ],
-        "sector": "Áreas de contratación de adquisiciones, servicios y obras públicas"
+        "sector": "Áreas compradoras y contratantes públicas"
+      },
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "La empresa queda sujeta a la inhabilitación comunicada y la continuidad posterior al periodo depende del pago de la multa, conforme a la circular."
+        ],
+        "sector": "Buffington's de México"
       }
     ]
   },
@@ -117,22 +133,34 @@
     "review_reason": null,
     "source": "DOF",
     "source_id": "5795519",
-    "summary_teaser": "El órgano interno de control del IMSS comunicó la inhabilitación de Buffington’s de México, S.A. de C.V. por seis meses para contratar en adquisiciones, arrendamientos, servicios y obras públicas. La prohibición inicia tras publicación; los contratos previamente formalizados no quedan comprendidos.",
-    "title": "Buffington’s de México recibe prohibición para contratar",
+    "summary_teaser": "La circular comunica que dependencias, entidades, empresas públicas y órdenes locales indicados deben abstenerse de recibir propuestas o contratar con Buffington's de México. La restricción inicia al día siguiente de la publicación, dura seis meses y puede subsistir hasta el pago de la multa impuesta.",
+    "title": "Circular restringe contratos públicos con Buffington's de México por seis meses",
     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5795519&fecha=05/08/2026"
   },
   "recommended_actions": [
     {
-      "affected_group": "Áreas de contratación de adquisiciones, servicios y obras públicas",
-      "deadline": "Desde el día siguiente a la publicación de la circular en el DOF, por seis meses; si la multa no se acredita pagada al concluir ese plazo, la inhabilitación subsiste hasta el pago.",
+      "affected_group": "Áreas compradoras de las autoridades destinatarias",
+      "deadline": "Seis meses; la inhabilitación puede subsistir hasta el pago de la multa.",
       "evidence_refs": [
         "chunk-2"
       ],
-      "legal_basis": "Resolutivo Quinto de la resolución; artículo 60, antepenúltimo párrafo, de la Ley de Adquisiciones, Arrendamientos y Servicios del Sector Público y artículo 113 de su Reglamento.",
+      "legal_basis": null,
       "paragraphs": [
-        "Aplicar la abstención a procesos y contratos futuros dentro del alcance publicado, mantener evidencia de la consulta y diferenciar los contratos preexistentes que la circular exceptúa."
+        "Si tramitan adquisiciones, arrendamientos, servicios, obra pública o servicios relacionados durante la vigencia comunicada, deben abstenerse de recibir propuestas o celebrar contratos con la empresa, directa o por interpósita persona."
       ],
-      "trigger": "Cuando la persona o entidad se ubique en el ámbito material descrito por la fuente oficial."
+      "trigger": "Desde el día siguiente a la publicación de la circular y durante el periodo de inhabilitación."
+    },
+    {
+      "affected_group": "Entidades federativas, municipios y demarcaciones territoriales",
+      "deadline": "Durante el periodo de inhabilitación comunicado.",
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "legal_basis": null,
+      "paragraphs": [
+        "Si contratan con cargo total o parcial a fondos federales conforme a convenios con el Ejecutivo Federal, deben observar la abstención indicada en la circular."
+      ],
+      "trigger": "Cuando las contrataciones se financien total o parcialmente con fondos federales en los términos comunicados."
     }
   ],
   "schema_version": 8

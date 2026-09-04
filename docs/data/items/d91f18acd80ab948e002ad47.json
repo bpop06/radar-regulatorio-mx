@@ -1,10 +1,10 @@
 {
-  "cut_id": "80ff8a726797f7b9e5131c53",
+  "cut_id": "9bfb2857e185b6a117ea296f",
   "item": {
     "ai_generated": true,
     "authority": "Agencia Nacional de Aduanas de México",
     "canonical_url": "https://www.anam.gob.mx/comunicado-prensa-conjunto-62-2026",
-    "card_body": "## Qué se publicó\n\nLa ANAM, la Secretaría de Marina y autoridades del Gabinete de Seguridad informaron un aseguramiento precautorio de cuatro embarques en la Aduana del AICM.\n\n## Sustancia\n\nEl comunicado reporta aproximadamente 5 millones 808 mil cigarros, 484 cajas, 24 pallets y 8 mil 525 kilogramos. Señala que la mercancía permanece asegurada de forma precautoria en recinto fiscalizado hasta determinar su situación jurídica.\n\n## Fuente\n\nLa síntesis se elaboró exclusivamente con el comunicado oficial identificado en la evidencia y sus fragmentos extraídos.",
+    "card_body": "## Qué se publicó\nANAM, la Secretaría de Marina y autoridades del Gabinete de Seguridad informaron el aseguramiento precautorio de cuatro embarques de cigarros apócrifos en la Aduana del AICM.\n\n## Sustancia\nLa mercancía comprende aproximadamente 5 millones 808 mil cigarros, distribuidos en 484 cajas y 24 pallets. Permanece en un recinto fiscalizado mientras se determina su situación jurídica; el comunicado no publica una resolución final.\n\n## Fuente\n[ANAM](https://www.anam.gob.mx/comunicado-prensa-conjunto-62-2026)",
     "case_amount": "",
     "case_claim": "",
     "case_facts": "",
@@ -37,8 +37,8 @@
         "reason": null,
         "source_ref": "chunk-2",
         "target_sections": [
-          "detailed_summary",
-          "recommended_actions"
+          "executive_summary",
+          "detailed_summary"
         ]
       },
       {
@@ -61,23 +61,13 @@
       {
         "evidence_refs": [
           "chunk-1",
+          "chunk-2",
           "chunk-3"
         ],
-        "heading": "Actuación comunicada",
+        "heading": "Aseguramiento y procedencia de la carga",
         "paragraphs": [
-          "La ANAM informó que, junto con la Secretaría de Marina y autoridades del Gabinete de Seguridad, realizó el aseguramiento de cuatro embarques en el Aeropuerto Internacional de la Ciudad de México.",
-          "La fuente describe la mercancía como aproximadamente 5 millones 808 mil cigarros apócrifos; esa calificación se atribuye al comunicado y no equivale en esta ficha a una determinación final."
-        ]
-      },
-      {
-        "evidence_refs": [
-          "chunk-1",
-          "chunk-3"
-        ],
-        "heading": "Datos de los embarques",
-        "paragraphs": [
-          "El comunicado reporta 484 cajas, 24 pallets y un peso aproximado de 8 mil 525 kilogramos; señala procedencia de Singapur y Sri Lanka y destino a la Ciudad de México.",
-          "También indica que los cargamentos estaban amparados por cuatro guías aéreas y que había diferentes empresas vendedoras e importadoras, sin identificar sus nombres."
+          "El comunicado conjunto, fechado el 19 de agosto de 2026, reporta que la ANAM, la Secretaría de Marina y autoridades del Gabinete de Seguridad aseguraron cuatro embarques en el AICM. El total informado es de aproximadamente 5 millones 808 mil cigarros apócrifos, en 484 cajas y 24 pallets, con un peso aproximado de 8 mil 525 kilogramos.",
+          "La fuente identifica a Singapur y Sri Lanka como procedencias de los cargamentos y señala que su destino era la Ciudad de México. También indica que los embarques estaban amparados por cuatro guías aéreas y vinculados con empresas vendedoras e importadoras diferentes, sin identificarlas públicamente."
         ]
       },
       {
@@ -86,10 +76,10 @@
           "chunk-2",
           "chunk-3"
         ],
-        "heading": "Estado precautorio",
+        "heading": "Situación reportada y alcance institucional",
         "paragraphs": [
-          "La mercancía permanece asegurada de manera precautoria dentro del recinto fiscalizado hasta determinar su situación jurídica.",
-          "La publicación no comunica una resolución final, una sanción, un decomiso definitivo ni una responsabilidad individual."
+          "La mercancía permanece asegurada de manera precautoria dentro del recinto fiscalizado hasta que se determine su situación jurídica. Esa formulación no acredita una resolución final sobre el destino de los bienes, una infracción concreta, una multa, un decomiso definitivo ni la responsabilidad de alguna empresa o persona.",
+          "La ANAM presenta la actuación como parte de una estrategia de análisis de riesgo, inteligencia aduanera, inspección no intrusiva y coordinación operativa. El comunicado expresa esa finalidad institucional, pero no establece una nueva obligación, plazo o procedimiento general para importadores o para terceros ajenos a los cuatro embarques."
         ]
       }
     ],
@@ -97,7 +87,7 @@
     "document_type": "Comunicado",
     "editorial_status": "complete",
     "evidence": {
-      "content_hash": "506b486e1e27aeb540e6f87cfcb5f8228e7ae8491a094e485b7de4bbe1658f49",
+      "content_hash": "db28fb5447ba3ae156d8e4ff9a19c13613f2ba0f989c686264791b86afcb3bce",
       "extraction_method": "html-adapter",
       "locators": [
         {
@@ -117,11 +107,11 @@
         }
       ],
       "official_url": "https://www.anam.gob.mx/comunicado-prensa-conjunto-62-2026",
-      "retrieved_at": "2026-09-01T18:47:05.526346+00:00"
+      "retrieved_at": "2026-09-04T03:38:19.919684+00:00"
     },
     "executive_summary": [
-      "La Agencia Nacional de Aduanas de México, la Secretaría de Marina y autoridades del Gabinete de Seguridad informaron el aseguramiento precautorio de cuatro embarques en la Aduana del AICM.",
-      "El comunicado reporta aproximadamente 5 millones 808 mil cigarros que denomina apócrifos y precisa que la mercancía permanece en recinto fiscalizado hasta determinar su situación jurídica."
+      "ANAM, la Secretaría de Marina y autoridades del Gabinete de Seguridad reportan el aseguramiento precautorio de cuatro embarques con aproximadamente 5 millones 808 mil cigarros apócrifos en la Aduana del AICM. La mercancía estaba distribuida en 484 cajas y 24 pallets, y los cargamentos procedían de Singapur y Sri Lanka.",
+      "Las mercancías permanecen aseguradas dentro de un recinto fiscalizado mientras se determina su situación jurídica. El comunicado describe herramientas de inteligencia, gestión de riesgos e inspección, pero no publica una determinación definitiva de infracción, sanción, decomiso o responsabilidad individual."
     ],
     "extraction_status": "complete",
     "first_seen_at": "2026-09-01T18:46:30.041123+00:00",
@@ -134,7 +124,7 @@
           "chunk-3"
         ],
         "paragraphs": [
-          "El efecto expresamente comunicado es la custodia precautoria de la mercancía en recinto fiscalizado mientras se determina su situación jurídica; el comunicado no acredita un resultado definitivo adicional."
+          "La consecuencia verificable en esta fuente es el aseguramiento precautorio de los cuatro embarques y su permanencia en recinto fiscalizado mientras se determina su situación jurídica. El comunicado no acredita un cambio regulatorio general ni una decisión final respecto de la mercancía o de las personas relacionadas."
         ]
       },
       "sectors": [
@@ -144,16 +134,26 @@
             "chunk-3"
           ],
           "paragraphs": [
-            "La información disponible para este grupo se limita a los cuatro embarques, las cantidades aproximadas, las guías aéreas referidas y el estado precautorio que expone el comunicado."
+            "La fuente informa que los cargamentos permanecen asegurados y que estaban amparados por cuatro guías aéreas. No identifica a las personas interesadas ni publica una consecuencia individual, por lo que el seguimiento depende de las actuaciones oficiales que, en su caso, se emitan o notifiquen."
           ],
-          "sector": "Personas que den seguimiento a las operaciones comunicadas"
+          "sector": "Personas vinculadas con los cuatro embarques asegurados"
+        },
+        {
+          "evidence_refs": [
+            "chunk-1",
+            "chunk-3"
+          ],
+          "paragraphs": [
+            "El comunicado muestra el uso institucional de análisis de riesgos y tecnología de inspección en la Aduana del AICM. No anuncia requisitos nuevos para importadores, aerolíneas, agentes aduanales o recintos distintos de la operación reportada."
+          ],
+          "sector": "Operadores de comercio exterior en carga aérea"
         }
       ]
     },
     "importance": 2,
     "issuing_body": "Agencia Nacional de Aduanas de México",
     "jurisdiction": "nacional",
-    "last_seen_at": "2026-09-01T18:46:30.041123+00:00",
+    "last_seen_at": "2026-09-04T03:37:15.636102+00:00",
     "official_evidence": {
       "primary_url": "https://www.anam.gob.mx/comunicado-prensa-conjunto-62-2026/"
     },
@@ -168,18 +168,30 @@
     "published_year": 2026,
     "recommended_actions": [
       {
-        "affected_group": "Personas que consulten el caso comunicado",
+        "affected_group": "Personas con interés jurídico o documental en los embarques asegurados",
         "deadline": null,
         "evidence_refs": [
           "chunk-1",
-          "chunk-2",
           "chunk-3"
         ],
         "legal_basis": null,
         "paragraphs": [
-          "Al citar la publicación, pueden distinguir el aseguramiento precautorio informado de una eventual determinación posterior sobre la situación jurídica de la mercancía."
+          "Si requieren conocer el estado de una mercancía concreta, ubiquen el acto individual o la actuación de la autoridad competente que les corresponda. El comunicado público sólo informa un aseguramiento precautorio y no fija un plazo, una vía de defensa ni una consecuencia individual para terceros."
         ],
-        "trigger": "Al analizar el comunicado de la ANAM y la Secretaría de Marina."
+        "trigger": "Existencia de una relación concreta con alguno de los cuatro embarques descritos"
+      },
+      {
+        "affected_group": "Equipos de cumplimiento de comercio exterior",
+        "deadline": null,
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-3"
+        ],
+        "legal_basis": null,
+        "paragraphs": [
+          "Distingan el aseguramiento comunicado de una determinación final de infracción o responsabilidad. Si analizan operaciones semejantes, contrasten los documentos propios y los actos aplicables al caso, sin asumir que este comunicado modifica por sí mismo requisitos generales de importación."
+        ],
+        "trigger": "Análisis interno de operaciones de carga aérea o de mercancías semejantes a las descritas"
       }
     ],
     "relevance_score": 2,
@@ -189,9 +201,9 @@
     "subtopic_tags": [
       "aduana"
     ],
-    "summary": "La Agencia Nacional de Aduanas de México, en coordinación con la Secretaría de Marina y autoridades del Gabinete de Seguridad, informó el aseguramiento de cuatro embarques en el Aeropuerto Internacional de la Ciudad de México. El comunicado describe aproximadamente 5 millones 808 mil cigarros como apócrifos y ubica la actuación en la Aduana del AICM. La ficha atribuye esa calificación y esas cantidades al comunicado oficial; no las transforma en una declaración judicial, una determinación administrativa firme o una conclusión autónoma sobre la legalidad de la mercancía.\n\nSegún la fuente, los cuatro embarques sumaron aproximadamente 5 millones 808 mil cigarros, distribuidos en 484 cajas y 24 pallets, con un peso aproximado de 8 mil 525 kilogramos. El comunicado indica que los cargamentos procedían de Singapur y Sri Lanka, tenían como destino la Ciudad de México y estaban amparados por cuatro guías aéreas. También señala que intervenían diferentes empresas vendedoras e importadoras, pero no identifica sus nombres ni atribuye responsabilidad a una persona determinada.\n\nLa actuación fue descrita como resultado de coordinación entre la ANAM, la Secretaría de Marina y autoridades del Gabinete de Seguridad, con uso de inteligencia aduanera, gestión integral de riesgos, tecnología de inspección no intrusiva y coordinación operativa. Ese contexto explica la actuación comunicada, pero no acredita por sí mismo una infracción, un delito, una sanción ni el resultado definitivo de algún procedimiento.\n\nEl dato jurídico inmediato que sí expresa la fuente es que la mercancía permanece asegurada de manera precautoria dentro del recinto fiscalizado hasta determinar su situación jurídica. Por ello, el alcance de esta ficha se limita al aseguramiento comunicado, sus cantidades aproximadas y su estado precautorio. La fuente tampoco identifica a las empresas involucradas. No afirma contrabando acreditado, destrucción, decomiso definitivo, titularidad de los bienes ni una decisión posterior que la fuente no contiene.",
-    "summary_teaser": "ANAM, Marina y autoridades del Gabinete de Seguridad informaron el aseguramiento precautorio de cuatro embarques con aproximadamente 5 millones 808 mil cigarros que el comunicado denomina apócrifos, en la Aduana del AICM. La mercancía permanece en recinto fiscalizado hasta determinar su situación jurídica; la fuente no comunica una resolución final.",
-    "title": "El comunicado confirma aseguramiento precautorio de cuatro embarques en AICM",
+    "summary": "La Agencia Nacional de Aduanas de México informó, en un comunicado conjunto con la Secretaría de Marina y autoridades del Gabinete de Seguridad, el aseguramiento precautorio de cuatro embarques con aproximadamente 5 millones 808 mil cigarros apócrifos en la Aduana del Aeropuerto Internacional de la Ciudad de México. Según el comunicado, los cargamentos procedían de Asia y tenían como destino la Ciudad de México. La fuente no identifica públicamente a las empresas vendedoras o importadoras, por lo que no permite atribuir responsabilidades individuales a partir de esta nota.\n\nEl comunicado reporta que la mercancía estaba distribuida en 484 cajas y 24 pallets, con un peso aproximado de 8 mil 525 kilogramos. Indica que los cargamentos procedían de Singapur y Sri Lanka y estaban amparados por cuatro guías aéreas, con empresas vendedoras e importadoras distintas. La actuación descrita se realizó por la Aduana del AICM y personal de la Secretaría de Marina, dentro de una estrategia que la ANAM presenta como basada en inteligencia aduanera, gestión integral de riesgos, tecnología de inspección no intrusiva y coordinación operativa. Esa descripción es la caracterización institucional publicada, no una determinación independiente sobre la eficacia de cada herramienta.\n\nLa nota informa que los cigarros permanecen asegurados precautoriamente dentro del recinto fiscalizado hasta que se determine su situación jurídica. Por ello, el comunicado no reporta una resolución final, decomiso definitivo, sanción individual ni destino final de la mercancía. Tampoco comunica plazos de defensa, valor de los embarques, fracciones arancelarias ni una resolución de autoridad competente sobre las personas vinculadas con las operaciones.\n\nPara operadores de comercio exterior, la información documenta un aseguramiento concreto en carga aérea que presentó indicadores de riesgo, pero no modifica por sí misma requisitos generales de importación ni anuncia una restricción general sobre cigarrillos. Las personas relacionadas con los embarques descritos deberán atender las actuaciones que, en su caso, les sean notificadas individualmente. El comunicado sólo acredita el aseguramiento precautorio y una situación jurídica pendiente respecto de cuatro embarques; no permite anticipar una conclusión administrativa, penal o marcaria sobre la mercancía o las personas involucradas.",
+    "summary_teaser": "La ANAM, la Secretaría de Marina y autoridades del Gabinete de Seguridad aseguraron cuatro embarques con aproximadamente 5 millones 808 mil cigarros apócrifos en el AICM. La mercancía, procedente de Singapur y Sri Lanka, permanece bajo aseguramiento precautorio en un recinto fiscalizado mientras se define su situación jurídica.",
+    "title": "Carga apócrifa queda asegurada mientras se determina su situación jurídica",
     "topic_tags": [
       "Aduanero"
     ],

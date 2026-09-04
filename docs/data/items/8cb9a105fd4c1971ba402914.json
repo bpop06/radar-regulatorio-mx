@@ -1,10 +1,10 @@
 {
-  "cut_id": "80ff8a726797f7b9e5131c53",
+  "cut_id": "9bfb2857e185b6a117ea296f",
   "item": {
     "ai_generated": true,
     "authority": "PODER EJECUTIVO SECRETARIA DE SALUD",
     "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796409&fecha=17%2F08%2F2026",
-    "card_body": "## Qué se publicó\n\nLa Secretaría publicó el expediente de respuestas a comentarios sobre un proyecto de norma sanitaria.\n\n## Sustancia\n\nEl anexo documenta decisiones variadas del grupo de trabajo y ajustes potenciales, sin emitir una norma final en este acto.\n\n## Fuente\n\n[Consulta la publicación oficial](https://dof.gob.mx/nota_detalle.php?codigo=5796409&fecha=17%2F08%2F2026)",
+    "card_body": "## Qué se publicó\nLa Secretaría de Salud dio a conocer las respuestas a las observaciones sobre el proyecto de norma relativo a sangre humana y sus componentes con fines terapéuticos. La publicación conserva un anexo con la matriz de comentarios, justificaciones y determinaciones del grupo de trabajo.\n\n## Sustancia\nLa matriz muestra resoluciones de aceptación, aceptación parcial y no aceptación. Sus temas pasan por definiciones, servicios, donación, procesamiento, calidad, pruebas, identificación, hemovigilancia, comités, registros y transporte; cada determinación debe leerse junto con su fila porque el anexo reproduce propuestas y respuestas distintas.\n\n## Fuente\nDiario Oficial de la Federación, 17 de agosto de 2026. Consulta el texto y el anexo oficial en la URL de esta ficha.",
     "case_amount": "",
     "case_claim": "",
     "case_facts": "",
@@ -34,9 +34,8 @@
         "reason": null,
         "source_ref": "chunk-2",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "executive_summary",
+          "detailed_summary"
         ]
       },
       {
@@ -44,9 +43,8 @@
         "reason": null,
         "source_ref": "chunk-3",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "executive_summary",
+          "detailed_summary"
         ]
       },
       {
@@ -54,9 +52,8 @@
         "reason": null,
         "source_ref": "chunk-4",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "executive_summary",
+          "detailed_summary"
         ]
       },
       {
@@ -64,9 +61,7 @@
         "reason": null,
         "source_ref": "chunk-5",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -74,9 +69,7 @@
         "reason": null,
         "source_ref": "chunk-6",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -84,9 +77,7 @@
         "reason": null,
         "source_ref": "chunk-7",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -94,9 +85,7 @@
         "reason": null,
         "source_ref": "chunk-8",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -104,9 +93,7 @@
         "reason": null,
         "source_ref": "chunk-9",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -114,9 +101,7 @@
         "reason": null,
         "source_ref": "chunk-10",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -124,9 +109,7 @@
         "reason": null,
         "source_ref": "chunk-11",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -134,9 +117,7 @@
         "reason": null,
         "source_ref": "chunk-12",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -144,9 +125,7 @@
         "reason": null,
         "source_ref": "chunk-13",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -154,9 +133,7 @@
         "reason": null,
         "source_ref": "chunk-14",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -164,9 +141,7 @@
         "reason": null,
         "source_ref": "chunk-15",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -174,9 +149,7 @@
         "reason": null,
         "source_ref": "chunk-16",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -184,9 +157,7 @@
         "reason": null,
         "source_ref": "chunk-17",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -194,9 +165,7 @@
         "reason": null,
         "source_ref": "chunk-18",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -204,9 +173,7 @@
         "reason": null,
         "source_ref": "chunk-19",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -214,9 +181,7 @@
         "reason": null,
         "source_ref": "chunk-20",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -224,9 +189,7 @@
         "reason": null,
         "source_ref": "chunk-21",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -234,9 +197,7 @@
         "reason": null,
         "source_ref": "chunk-22",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -244,9 +205,7 @@
         "reason": null,
         "source_ref": "chunk-23",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -254,9 +213,7 @@
         "reason": null,
         "source_ref": "chunk-24",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -264,9 +221,7 @@
         "reason": null,
         "source_ref": "chunk-25",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -274,9 +229,7 @@
         "reason": null,
         "source_ref": "chunk-26",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -284,9 +237,7 @@
         "reason": null,
         "source_ref": "chunk-27",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -294,9 +245,7 @@
         "reason": null,
         "source_ref": "chunk-28",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -304,9 +253,7 @@
         "reason": null,
         "source_ref": "chunk-29",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -314,9 +261,7 @@
         "reason": null,
         "source_ref": "chunk-30",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -324,9 +269,7 @@
         "reason": null,
         "source_ref": "chunk-31",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -334,9 +277,7 @@
         "reason": null,
         "source_ref": "chunk-32",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -344,9 +285,7 @@
         "reason": null,
         "source_ref": "chunk-33",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -354,9 +293,7 @@
         "reason": null,
         "source_ref": "chunk-34",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -364,9 +301,7 @@
         "reason": null,
         "source_ref": "chunk-35",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -374,9 +309,7 @@
         "reason": null,
         "source_ref": "chunk-36",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -384,9 +317,7 @@
         "reason": null,
         "source_ref": "chunk-37",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -394,9 +325,7 @@
         "reason": null,
         "source_ref": "chunk-38",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -404,9 +333,7 @@
         "reason": null,
         "source_ref": "chunk-39",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -414,9 +341,7 @@
         "reason": null,
         "source_ref": "chunk-40",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -424,9 +349,7 @@
         "reason": null,
         "source_ref": "chunk-41",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -434,9 +357,7 @@
         "reason": null,
         "source_ref": "chunk-42",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -444,9 +365,7 @@
         "reason": null,
         "source_ref": "chunk-43",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -454,9 +373,7 @@
         "reason": null,
         "source_ref": "chunk-44",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -464,9 +381,7 @@
         "reason": null,
         "source_ref": "chunk-45",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -474,9 +389,7 @@
         "reason": null,
         "source_ref": "chunk-46",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -484,9 +397,7 @@
         "reason": null,
         "source_ref": "chunk-47",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -494,9 +405,7 @@
         "reason": null,
         "source_ref": "chunk-48",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -504,9 +413,7 @@
         "reason": null,
         "source_ref": "chunk-49",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -514,9 +421,7 @@
         "reason": null,
         "source_ref": "chunk-50",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -524,9 +429,7 @@
         "reason": null,
         "source_ref": "chunk-51",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -534,9 +437,7 @@
         "reason": null,
         "source_ref": "chunk-52",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -544,9 +445,7 @@
         "reason": null,
         "source_ref": "chunk-53",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -554,9 +453,7 @@
         "reason": null,
         "source_ref": "chunk-54",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -564,9 +461,7 @@
         "reason": null,
         "source_ref": "chunk-55",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -574,9 +469,7 @@
         "reason": null,
         "source_ref": "chunk-56",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -584,9 +477,7 @@
         "reason": null,
         "source_ref": "chunk-57",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -594,9 +485,7 @@
         "reason": null,
         "source_ref": "chunk-58",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -604,9 +493,7 @@
         "reason": null,
         "source_ref": "chunk-59",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -614,9 +501,7 @@
         "reason": null,
         "source_ref": "chunk-60",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -624,9 +509,7 @@
         "reason": null,
         "source_ref": "chunk-61",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -634,9 +517,7 @@
         "reason": null,
         "source_ref": "chunk-62",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -644,9 +525,7 @@
         "reason": null,
         "source_ref": "chunk-63",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -654,9 +533,7 @@
         "reason": null,
         "source_ref": "chunk-64",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -664,9 +541,7 @@
         "reason": null,
         "source_ref": "chunk-65",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -674,9 +549,7 @@
         "reason": null,
         "source_ref": "chunk-66",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -684,9 +557,7 @@
         "reason": null,
         "source_ref": "chunk-67",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -694,9 +565,7 @@
         "reason": null,
         "source_ref": "chunk-68",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -704,9 +573,7 @@
         "reason": null,
         "source_ref": "chunk-69",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -714,9 +581,7 @@
         "reason": null,
         "source_ref": "chunk-70",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -724,9 +589,7 @@
         "reason": null,
         "source_ref": "chunk-71",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -734,9 +597,7 @@
         "reason": null,
         "source_ref": "chunk-72",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -744,9 +605,7 @@
         "reason": null,
         "source_ref": "chunk-73",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -754,9 +613,7 @@
         "reason": null,
         "source_ref": "chunk-74",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -764,9 +621,7 @@
         "reason": null,
         "source_ref": "chunk-75",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -774,9 +629,7 @@
         "reason": null,
         "source_ref": "chunk-76",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -784,9 +637,7 @@
         "reason": null,
         "source_ref": "chunk-77",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -794,9 +645,7 @@
         "reason": null,
         "source_ref": "chunk-78",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -804,9 +653,7 @@
         "reason": null,
         "source_ref": "chunk-79",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -814,9 +661,7 @@
         "reason": null,
         "source_ref": "chunk-80",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -824,9 +669,7 @@
         "reason": null,
         "source_ref": "chunk-81",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -834,9 +677,7 @@
         "reason": null,
         "source_ref": "chunk-82",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -844,9 +685,7 @@
         "reason": null,
         "source_ref": "chunk-83",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -854,9 +693,7 @@
         "reason": null,
         "source_ref": "chunk-84",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -864,9 +701,7 @@
         "reason": null,
         "source_ref": "chunk-85",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -874,9 +709,7 @@
         "reason": null,
         "source_ref": "chunk-86",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -884,9 +717,7 @@
         "reason": null,
         "source_ref": "chunk-87",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -894,9 +725,7 @@
         "reason": null,
         "source_ref": "chunk-88",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -904,9 +733,7 @@
         "reason": null,
         "source_ref": "chunk-89",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -914,9 +741,7 @@
         "reason": null,
         "source_ref": "chunk-90",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -924,9 +749,7 @@
         "reason": null,
         "source_ref": "chunk-91",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -934,9 +757,7 @@
         "reason": null,
         "source_ref": "chunk-92",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -944,9 +765,7 @@
         "reason": null,
         "source_ref": "chunk-93",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -954,9 +773,7 @@
         "reason": null,
         "source_ref": "chunk-94",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -964,9 +781,7 @@
         "reason": null,
         "source_ref": "chunk-95",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -974,9 +789,7 @@
         "reason": null,
         "source_ref": "chunk-96",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -984,9 +797,7 @@
         "reason": null,
         "source_ref": "chunk-97",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -994,9 +805,7 @@
         "reason": null,
         "source_ref": "chunk-98",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1004,9 +813,7 @@
         "reason": null,
         "source_ref": "chunk-99",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1014,9 +821,7 @@
         "reason": null,
         "source_ref": "chunk-100",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1024,9 +829,7 @@
         "reason": null,
         "source_ref": "chunk-101",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1034,9 +837,7 @@
         "reason": null,
         "source_ref": "chunk-102",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1044,9 +845,7 @@
         "reason": null,
         "source_ref": "chunk-103",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1054,9 +853,7 @@
         "reason": null,
         "source_ref": "chunk-104",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1064,9 +861,7 @@
         "reason": null,
         "source_ref": "chunk-105",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1074,9 +869,7 @@
         "reason": null,
         "source_ref": "chunk-106",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1084,9 +877,7 @@
         "reason": null,
         "source_ref": "chunk-107",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1094,9 +885,7 @@
         "reason": null,
         "source_ref": "chunk-108",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1104,9 +893,7 @@
         "reason": null,
         "source_ref": "chunk-109",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1114,9 +901,7 @@
         "reason": null,
         "source_ref": "chunk-110",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1124,9 +909,7 @@
         "reason": null,
         "source_ref": "chunk-111",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1134,9 +917,7 @@
         "reason": null,
         "source_ref": "chunk-112",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1144,9 +925,7 @@
         "reason": null,
         "source_ref": "chunk-113",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1154,9 +933,7 @@
         "reason": null,
         "source_ref": "chunk-114",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1164,9 +941,7 @@
         "reason": null,
         "source_ref": "chunk-115",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1174,9 +949,7 @@
         "reason": null,
         "source_ref": "chunk-116",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1184,9 +957,7 @@
         "reason": null,
         "source_ref": "chunk-117",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1194,9 +965,7 @@
         "reason": null,
         "source_ref": "chunk-118",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1204,9 +973,7 @@
         "reason": null,
         "source_ref": "chunk-119",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1214,9 +981,7 @@
         "reason": null,
         "source_ref": "chunk-120",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1224,9 +989,7 @@
         "reason": null,
         "source_ref": "chunk-121",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1234,9 +997,7 @@
         "reason": null,
         "source_ref": "chunk-122",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1244,9 +1005,7 @@
         "reason": null,
         "source_ref": "chunk-123",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1254,9 +1013,7 @@
         "reason": null,
         "source_ref": "chunk-124",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1264,9 +1021,7 @@
         "reason": null,
         "source_ref": "chunk-125",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1274,9 +1029,7 @@
         "reason": null,
         "source_ref": "chunk-126",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1284,9 +1037,7 @@
         "reason": null,
         "source_ref": "chunk-127",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1294,9 +1045,7 @@
         "reason": null,
         "source_ref": "chunk-128",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1304,9 +1053,7 @@
         "reason": null,
         "source_ref": "chunk-129",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1314,9 +1061,7 @@
         "reason": null,
         "source_ref": "chunk-130",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1324,9 +1069,7 @@
         "reason": null,
         "source_ref": "chunk-131",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1334,9 +1077,7 @@
         "reason": null,
         "source_ref": "chunk-132",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1344,9 +1085,7 @@
         "reason": null,
         "source_ref": "chunk-133",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1354,9 +1093,7 @@
         "reason": null,
         "source_ref": "chunk-134",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1364,9 +1101,7 @@
         "reason": null,
         "source_ref": "chunk-135",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1374,9 +1109,7 @@
         "reason": null,
         "source_ref": "chunk-136",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1384,9 +1117,7 @@
         "reason": null,
         "source_ref": "chunk-137",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1394,9 +1125,7 @@
         "reason": null,
         "source_ref": "chunk-138",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1404,9 +1133,7 @@
         "reason": null,
         "source_ref": "chunk-139",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1414,9 +1141,7 @@
         "reason": null,
         "source_ref": "chunk-140",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1424,9 +1149,7 @@
         "reason": null,
         "source_ref": "chunk-141",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1434,9 +1157,7 @@
         "reason": null,
         "source_ref": "chunk-142",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1444,9 +1165,7 @@
         "reason": null,
         "source_ref": "chunk-143",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1454,9 +1173,7 @@
         "reason": null,
         "source_ref": "chunk-144",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1464,9 +1181,7 @@
         "reason": null,
         "source_ref": "chunk-145",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1474,9 +1189,7 @@
         "reason": null,
         "source_ref": "chunk-146",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1484,9 +1197,7 @@
         "reason": null,
         "source_ref": "chunk-147",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1494,9 +1205,7 @@
         "reason": null,
         "source_ref": "chunk-148",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1504,9 +1213,7 @@
         "reason": null,
         "source_ref": "chunk-149",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1514,9 +1221,7 @@
         "reason": null,
         "source_ref": "chunk-150",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1524,9 +1229,7 @@
         "reason": null,
         "source_ref": "chunk-151",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1534,9 +1237,7 @@
         "reason": null,
         "source_ref": "chunk-152",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1544,9 +1245,7 @@
         "reason": null,
         "source_ref": "chunk-153",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1554,9 +1253,7 @@
         "reason": null,
         "source_ref": "chunk-154",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1564,9 +1261,7 @@
         "reason": null,
         "source_ref": "chunk-155",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1574,9 +1269,7 @@
         "reason": null,
         "source_ref": "chunk-156",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1584,9 +1277,7 @@
         "reason": null,
         "source_ref": "chunk-157",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1594,9 +1285,7 @@
         "reason": null,
         "source_ref": "chunk-158",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1604,9 +1293,7 @@
         "reason": null,
         "source_ref": "chunk-159",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1614,9 +1301,7 @@
         "reason": null,
         "source_ref": "chunk-160",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1624,9 +1309,7 @@
         "reason": null,
         "source_ref": "chunk-161",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1634,9 +1317,7 @@
         "reason": null,
         "source_ref": "chunk-162",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1644,9 +1325,7 @@
         "reason": null,
         "source_ref": "chunk-163",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1654,9 +1333,7 @@
         "reason": null,
         "source_ref": "chunk-164",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1664,9 +1341,7 @@
         "reason": null,
         "source_ref": "chunk-165",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1674,9 +1349,7 @@
         "reason": null,
         "source_ref": "chunk-166",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1684,9 +1357,7 @@
         "reason": null,
         "source_ref": "chunk-167",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1694,9 +1365,7 @@
         "reason": null,
         "source_ref": "chunk-168",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1704,9 +1373,7 @@
         "reason": null,
         "source_ref": "chunk-169",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1714,9 +1381,7 @@
         "reason": null,
         "source_ref": "chunk-170",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1724,9 +1389,7 @@
         "reason": null,
         "source_ref": "chunk-171",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1734,9 +1397,7 @@
         "reason": null,
         "source_ref": "chunk-172",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1744,9 +1405,7 @@
         "reason": null,
         "source_ref": "chunk-173",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1754,9 +1413,7 @@
         "reason": null,
         "source_ref": "chunk-174",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1764,9 +1421,7 @@
         "reason": null,
         "source_ref": "chunk-175",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1774,9 +1429,7 @@
         "reason": null,
         "source_ref": "chunk-176",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1784,9 +1437,7 @@
         "reason": null,
         "source_ref": "chunk-177",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1794,9 +1445,7 @@
         "reason": null,
         "source_ref": "chunk-178",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1804,9 +1453,7 @@
         "reason": null,
         "source_ref": "chunk-179",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1814,9 +1461,7 @@
         "reason": null,
         "source_ref": "chunk-180",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1824,9 +1469,7 @@
         "reason": null,
         "source_ref": "chunk-181",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1834,9 +1477,7 @@
         "reason": null,
         "source_ref": "chunk-182",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1844,9 +1485,7 @@
         "reason": null,
         "source_ref": "chunk-183",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1854,9 +1493,7 @@
         "reason": null,
         "source_ref": "chunk-184",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1864,9 +1501,7 @@
         "reason": null,
         "source_ref": "chunk-185",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1874,9 +1509,7 @@
         "reason": null,
         "source_ref": "chunk-186",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1884,9 +1517,7 @@
         "reason": null,
         "source_ref": "chunk-187",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1894,9 +1525,7 @@
         "reason": null,
         "source_ref": "chunk-188",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1904,9 +1533,7 @@
         "reason": null,
         "source_ref": "chunk-189",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1914,9 +1541,7 @@
         "reason": null,
         "source_ref": "chunk-190",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1924,9 +1549,7 @@
         "reason": null,
         "source_ref": "chunk-191",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1934,9 +1557,7 @@
         "reason": null,
         "source_ref": "chunk-192",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1944,9 +1565,7 @@
         "reason": null,
         "source_ref": "chunk-193",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1954,9 +1573,7 @@
         "reason": null,
         "source_ref": "chunk-194",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1964,9 +1581,7 @@
         "reason": null,
         "source_ref": "chunk-195",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1974,9 +1589,7 @@
         "reason": null,
         "source_ref": "chunk-196",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1984,9 +1597,7 @@
         "reason": null,
         "source_ref": "chunk-197",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -1994,9 +1605,7 @@
         "reason": null,
         "source_ref": "chunk-198",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2004,9 +1613,7 @@
         "reason": null,
         "source_ref": "chunk-199",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2014,9 +1621,7 @@
         "reason": null,
         "source_ref": "chunk-200",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2024,9 +1629,7 @@
         "reason": null,
         "source_ref": "chunk-201",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2034,9 +1637,7 @@
         "reason": null,
         "source_ref": "chunk-202",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2044,9 +1645,7 @@
         "reason": null,
         "source_ref": "chunk-203",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2054,9 +1653,7 @@
         "reason": null,
         "source_ref": "chunk-204",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2064,9 +1661,7 @@
         "reason": null,
         "source_ref": "chunk-205",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2074,9 +1669,7 @@
         "reason": null,
         "source_ref": "chunk-206",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2084,9 +1677,7 @@
         "reason": null,
         "source_ref": "chunk-207",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2094,9 +1685,7 @@
         "reason": null,
         "source_ref": "chunk-208",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2104,9 +1693,7 @@
         "reason": null,
         "source_ref": "chunk-209",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2114,9 +1701,7 @@
         "reason": null,
         "source_ref": "chunk-210",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2124,9 +1709,7 @@
         "reason": null,
         "source_ref": "chunk-211",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2134,9 +1717,7 @@
         "reason": null,
         "source_ref": "chunk-212",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2144,9 +1725,7 @@
         "reason": null,
         "source_ref": "chunk-213",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2154,9 +1733,7 @@
         "reason": null,
         "source_ref": "chunk-214",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2164,9 +1741,7 @@
         "reason": null,
         "source_ref": "chunk-215",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2174,9 +1749,7 @@
         "reason": null,
         "source_ref": "chunk-216",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2184,9 +1757,7 @@
         "reason": null,
         "source_ref": "chunk-217",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2194,9 +1765,7 @@
         "reason": null,
         "source_ref": "chunk-218",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2204,9 +1773,7 @@
         "reason": null,
         "source_ref": "chunk-219",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2214,9 +1781,7 @@
         "reason": null,
         "source_ref": "chunk-220",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2224,9 +1789,7 @@
         "reason": null,
         "source_ref": "chunk-221",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2234,9 +1797,7 @@
         "reason": null,
         "source_ref": "chunk-222",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2244,9 +1805,7 @@
         "reason": null,
         "source_ref": "chunk-223",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2254,9 +1813,7 @@
         "reason": null,
         "source_ref": "chunk-224",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2264,9 +1821,7 @@
         "reason": null,
         "source_ref": "chunk-225",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2274,9 +1829,7 @@
         "reason": null,
         "source_ref": "chunk-226",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2284,9 +1837,7 @@
         "reason": null,
         "source_ref": "chunk-227",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2294,9 +1845,7 @@
         "reason": null,
         "source_ref": "chunk-228",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2304,9 +1853,7 @@
         "reason": null,
         "source_ref": "chunk-229",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2314,9 +1861,7 @@
         "reason": null,
         "source_ref": "chunk-230",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2324,9 +1869,7 @@
         "reason": null,
         "source_ref": "chunk-231",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2334,9 +1877,7 @@
         "reason": null,
         "source_ref": "chunk-232",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2344,9 +1885,7 @@
         "reason": null,
         "source_ref": "chunk-233",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2354,9 +1893,7 @@
         "reason": null,
         "source_ref": "chunk-234",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2364,9 +1901,7 @@
         "reason": null,
         "source_ref": "chunk-235",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2374,9 +1909,7 @@
         "reason": null,
         "source_ref": "chunk-236",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2384,9 +1917,7 @@
         "reason": null,
         "source_ref": "chunk-237",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2394,9 +1925,7 @@
         "reason": null,
         "source_ref": "chunk-238",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2404,9 +1933,7 @@
         "reason": null,
         "source_ref": "chunk-239",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2414,9 +1941,7 @@
         "reason": null,
         "source_ref": "chunk-240",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2424,9 +1949,7 @@
         "reason": null,
         "source_ref": "chunk-241",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2434,9 +1957,7 @@
         "reason": null,
         "source_ref": "chunk-242",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2444,9 +1965,7 @@
         "reason": null,
         "source_ref": "chunk-243",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2454,9 +1973,7 @@
         "reason": null,
         "source_ref": "chunk-244",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2464,9 +1981,7 @@
         "reason": null,
         "source_ref": "chunk-245",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2474,9 +1989,7 @@
         "reason": null,
         "source_ref": "chunk-246",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2484,9 +1997,7 @@
         "reason": null,
         "source_ref": "chunk-247",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2494,9 +2005,7 @@
         "reason": null,
         "source_ref": "chunk-248",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2504,9 +2013,7 @@
         "reason": null,
         "source_ref": "chunk-249",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2514,9 +2021,7 @@
         "reason": null,
         "source_ref": "chunk-250",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2524,9 +2029,7 @@
         "reason": null,
         "source_ref": "chunk-251",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2534,9 +2037,7 @@
         "reason": null,
         "source_ref": "chunk-252",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2544,9 +2045,7 @@
         "reason": null,
         "source_ref": "chunk-253",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2554,9 +2053,7 @@
         "reason": null,
         "source_ref": "chunk-254",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2564,9 +2061,7 @@
         "reason": null,
         "source_ref": "chunk-255",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2574,9 +2069,7 @@
         "reason": null,
         "source_ref": "chunk-256",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2584,9 +2077,7 @@
         "reason": null,
         "source_ref": "chunk-257",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2594,9 +2085,7 @@
         "reason": null,
         "source_ref": "chunk-258",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2604,9 +2093,7 @@
         "reason": null,
         "source_ref": "chunk-259",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2614,9 +2101,7 @@
         "reason": null,
         "source_ref": "chunk-260",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2624,9 +2109,7 @@
         "reason": null,
         "source_ref": "chunk-261",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2634,9 +2117,7 @@
         "reason": null,
         "source_ref": "chunk-262",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2644,9 +2125,7 @@
         "reason": null,
         "source_ref": "chunk-263",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2654,9 +2133,7 @@
         "reason": null,
         "source_ref": "chunk-264",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2664,9 +2141,7 @@
         "reason": null,
         "source_ref": "chunk-265",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2674,9 +2149,7 @@
         "reason": null,
         "source_ref": "chunk-266",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2684,9 +2157,7 @@
         "reason": null,
         "source_ref": "chunk-267",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2694,9 +2165,7 @@
         "reason": null,
         "source_ref": "chunk-268",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2704,9 +2173,7 @@
         "reason": null,
         "source_ref": "chunk-269",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2714,9 +2181,7 @@
         "reason": null,
         "source_ref": "chunk-270",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2724,9 +2189,7 @@
         "reason": null,
         "source_ref": "chunk-271",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2734,9 +2197,7 @@
         "reason": null,
         "source_ref": "chunk-272",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2744,9 +2205,7 @@
         "reason": null,
         "source_ref": "chunk-273",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2754,9 +2213,7 @@
         "reason": null,
         "source_ref": "chunk-274",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2764,9 +2221,7 @@
         "reason": null,
         "source_ref": "chunk-275",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2774,9 +2229,7 @@
         "reason": null,
         "source_ref": "chunk-276",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -2784,9 +2237,8 @@
         "reason": null,
         "source_ref": "chunk-277",
         "target_sections": [
-          "detailed_summary",
-          "impacts.general",
-          "recommended_actions"
+          "executive_summary",
+          "detailed_summary"
         ]
       }
     ],
@@ -2797,21 +2249,70 @@
       {
         "evidence_refs": [
           "chunk-1",
+          "chunk-2",
+          "chunk-3",
+          "chunk-4",
           "chunk-277"
         ],
-        "heading": "Expediente de consulta",
+        "heading": "Respuesta y matriz de comentarios",
         "paragraphs": [
-          "La publicación integra el anexo completo de comentarios y respuestas sobre el proyecto de norma de sangre terapéutica, con determinaciones del grupo de trabajo para cada observación."
+          "La publicación identifica una respuesta a comentarios recibidos sobre el proyecto y remite a un anexo oficial. La matriz presenta, para cada planteamiento, el participante, el texto propuesto o comentario, su justificación y la respuesta emitida tras el análisis del grupo de trabajo.",
+          "Las fórmulas de respuesta muestran que no existe un resultado uniforme: hay comentarios aceptados, aceptados parcialmente y no aceptados. En los casos señalados por la autoridad, la propia matriz incorpora la redacción considerada para el proyecto."
         ]
       },
       {
         "evidence_refs": [
-          "chunk-1",
-          "chunk-277"
+          "chunk-5",
+          "chunk-6",
+          "chunk-12",
+          "chunk-16",
+          "chunk-21",
+          "chunk-24",
+          "chunk-30",
+          "chunk-45"
         ],
-        "heading": "Alcance normativo",
+        "heading": "Organización y operación de los servicios de sangre",
         "paragraphs": [
-          "Las respuestas muestran ajustes y decisiones diversas durante la consulta; no constituyen por sí mismas la expedición ni la entrada en vigor de una NOM final."
+          "Las filas tempranas tratan definiciones, validación, centros de calificación biológica y la organización de bancos de sangre, centros de colecta, procesamiento y distribución. También abordan perfiles de responsables sanitarios, responsabilidades, selección de donantes y procedimientos vinculados con la atención transfusional.",
+          "El expediente incorpora además propuestas sobre comités de medicina transfusional, documentación, registros, conservación, etiquetado, trazabilidad y transporte. Las decisiones se expresan por comentario, no como una sola regla resumida para todos los establecimientos."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-25",
+          "chunk-27",
+          "chunk-78",
+          "chunk-92",
+          "chunk-111",
+          "chunk-124",
+          "chunk-129",
+          "chunk-155",
+          "chunk-177",
+          "chunk-215",
+          "chunk-249",
+          "chunk-276"
+        ],
+        "heading": "Calidad, determinaciones y productos sanguíneos",
+        "paragraphs": [
+          "Una parte sustantiva de la matriz revisa sistemas de gestión de la calidad, calificación y control de equipos, reactivos, pruebas de tamizaje y determinaciones analíticas. También incluye propuestas y respuestas sobre componentes sanguíneos, temperaturas, almacenamiento, controles de calidad y tablas técnicas.",
+          "Las aportaciones posteriores continúan con temas de identificación de unidades, pruebas, plasma, plaquetas, eritrocitos, crioprecipitados y otros productos. El texto conserva las razones y respuestas particulares, por lo que los valores o términos técnicos deben verificarse en el localizador correspondiente."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-47",
+          "chunk-51",
+          "chunk-133",
+          "chunk-188",
+          "chunk-216",
+          "chunk-240",
+          "chunk-257",
+          "chunk-268"
+        ],
+        "heading": "Alcance de la consulta y lectura regulatoria",
+        "paragraphs": [
+          "El anexo recibe comentarios de autoridades, profesionales, asociaciones e integrantes de establecimientos vinculados con los servicios de sangre. Varias filas discuten redacción, referencias, figuras, tablas y propuestas de disposiciones transitorias, con una respuesta independiente para cada planteamiento.",
+          "La ficha no convierte las propuestas o referencias técnicas aisladas en obligaciones autónomas. Su valor es documentar el resultado de la consulta del proyecto y orientar la consulta del texto oficial exacto cuando se revise una materia concreta."
         ]
       }
     ],
@@ -2819,7 +2320,7 @@
     "document_type": "Respuesta A",
     "editorial_status": "complete",
     "evidence": {
-      "content_hash": "a0f9563e9e95ec0578fed152a51fedf0ae7cddee2f9f52c6d8837d01cf9b59e0",
+      "content_hash": "4a99c249eb686ec309f942b377f3424725ebcfb16612377d8d96baf2e1ae9bf3",
       "extraction_method": "html-adapter",
       "locators": [
         {
@@ -4209,11 +3710,11 @@
         }
       ],
       "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796409&fecha=17%2F08%2F2026",
-      "retrieved_at": "2026-09-01T16:35:28.582962+00:00"
+      "retrieved_at": "2026-09-03T16:53:42.960433+00:00"
     },
     "executive_summary": [
-      "La Secretaría de Salud publicó la respuesta a los comentarios recibidos respecto del Proyecto de Norma Oficial Mexicana NOM-253-SSA1-2024, relativo a la disposición de sangre humana y sus componentes con fines terapéuticos. El anexo reúne el expediente de comentarios y respuestas del grupo de trabajo. La fuente no se presenta como la expedición de una NOM final: comunica cómo fueron analizadas las observaciones hechas al proyecto y qué decisiones se tomaron en relación con propuestas concretas.",
-      "La evidencia íntegra contiene numerosos registros de comentarios, justificaciones y respuestas. A lo largo del anexo se observan decisiones de aceptación, aceptación parcial, no aceptación y modificaciones de texto. Las materias tratadas abarcan, entre otras, establecimientos y servicios de sangre, responsables sanitarios, procedimientos, controles de calidad, hemovigilancia, registros, etiquetado, pruebas y referencias técnicas. La pluralidad de respuestas impide atribuir una sola decisión uniforme a todos los temas del proyecto."
+      "La Secretaría de Salud publicó la respuesta oficial a los comentarios del proyecto de norma sobre disposición de sangre humana y sus componentes con fines terapéuticos. El anexo conserva una matriz de observaciones, propuestas, justificaciones y determinaciones del grupo de trabajo.",
+      "La matriz contiene decisiones de aceptación, aceptación parcial y no aceptación en asuntos técnicos y operativos de la cadena de la sangre. Las respuestas documentan el tratamiento de los comentarios; para determinar el alcance de una redacción concreta debe revisarse su fila y el texto normativo definitivo que llegue a publicarse."
     ],
     "extraction_status": "complete",
     "first_seen_at": "2026-09-01T16:34:47.803209+00:00",
@@ -4222,30 +3723,50 @@
     "impacts": {
       "general": {
         "evidence_refs": [
-          "chunk-1",
-          "chunk-277"
+          "chunk-3",
+          "chunk-45",
+          "chunk-240"
         ],
         "paragraphs": [
-          "La información permite seguir la evolución técnica y regulatoria del proyecto, pero no crea por sí misma nuevos requisitos exigibles."
+          "La publicación es relevante para el seguimiento del proyecto porque deja trazabilidad de las observaciones y de la respuesta individual que recibió cada una. No permite trasladar una propuesta aislada a un requisito general sin leer la determinación y el texto oficial aplicable."
         ]
       },
       "sectors": [
         {
           "evidence_refs": [
-            "chunk-1",
-            "chunk-277"
+            "chunk-6",
+            "chunk-12",
+            "chunk-24",
+            "chunk-41",
+            "chunk-220",
+            "chunk-221"
           ],
           "paragraphs": [
-            "Los sujetos que operan bancos, centros o servicios de sangre pueden contrastar los temas discutidos con sus controles actuales y esperar el texto final aplicable."
+            "Los comentarios cubren organización de servicios, responsables sanitarios, donación, procesamiento, distribución, registros y transporte. Si estos establecimientos usan el expediente para evaluar ajustes internos, deben vincular cada tema con la respuesta oficial específica."
           ],
-          "sector": "Establecimientos y servicios vinculados con sangre y componentes sanguíneos"
+          "sector": "Bancos de sangre y demás servicios de sangre"
+        },
+        {
+          "evidence_refs": [
+            "chunk-25",
+            "chunk-27",
+            "chunk-92",
+            "chunk-93",
+            "chunk-214",
+            "chunk-249",
+            "chunk-274"
+          ],
+          "paragraphs": [
+            "La matriz incluye controles de calidad, reactivos, pruebas, determinaciones analíticas, tablas de componentes y condiciones de conservación. La relevancia práctica depende de la redacción que quede en el instrumento definitivo y no sólo del comentario reproducido."
+          ],
+          "sector": "Laboratorios y equipos de calidad transfusional"
         }
       ]
     },
     "importance": 2,
     "issuing_body": "Presidencia de la República",
     "jurisdiction": "nacional",
-    "last_seen_at": "2026-09-01T18:46:30.041123+00:00",
+    "last_seen_at": "2026-09-04T03:37:15.636102+00:00",
     "official_evidence": {
       "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796409&fecha=17/08/2026"
     },
@@ -4260,17 +3781,53 @@
     "published_year": 2026,
     "recommended_actions": [
       {
-        "affected_group": "Establecimientos y servicios vinculados con sangre y componentes sanguíneos",
+        "affected_group": "Bancos de sangre, centros de colecta, procesamiento, distribución y calificación biológica",
+        "deadline": null,
+        "evidence_refs": [
+          "chunk-3",
+          "chunk-6",
+          "chunk-12",
+          "chunk-220",
+          "chunk-221"
+        ],
+        "legal_basis": null,
+        "paragraphs": [
+          "Si se usa esta respuesta para preparar escenarios regulatorios, ubicar primero la fila aplicable al proceso propio y conservar el localizador oficial. No tratar una propuesta contenida en la matriz como obligación vigente sin corroborar la determinación y el texto normativo definitivo."
+        ],
+        "trigger": "Si se evalúan posibles cambios al proyecto o a procedimientos internos."
+      },
+      {
+        "affected_group": "Áreas de calidad, laboratorios y responsables sanitarios",
+        "deadline": null,
+        "evidence_refs": [
+          "chunk-25",
+          "chunk-78",
+          "chunk-92",
+          "chunk-111",
+          "chunk-177",
+          "chunk-249"
+        ],
+        "legal_basis": null,
+        "paragraphs": [
+          "Si se revisan controles, pruebas, temperaturas, etiquetas o registros, contrastar el texto técnico de la fila con la respuesta que la acompaña. Documentar por separado los elementos aceptados, parcialmente aceptados y no aceptados antes de decidir una adecuación."
+        ],
+        "trigger": "Si se realiza análisis de brechas o seguimiento técnico del proyecto."
+      },
+      {
+        "affected_group": "Áreas jurídicas y de asuntos regulatorios",
         "deadline": null,
         "evidence_refs": [
           "chunk-1",
+          "chunk-3",
+          "chunk-45",
+          "chunk-240",
           "chunk-277"
         ],
-        "legal_basis": "Respuesta oficial a comentarios sobre el proyecto de norma",
+        "legal_basis": null,
         "paragraphs": [
-          "Conservar una matriz de los temas discutidos y dar seguimiento a la publicación de la NOM definitiva antes de modificar obligaciones internas como si ya fueran exigibles."
+          "Para atribuir efectos, plazos o requisitos finales, revisar la publicación normativa que corresponda y no inferirlos únicamente de la respuesta a comentarios. La matriz sirve para rastrear el proceso de consulta y las redacciones consideradas por la autoridad."
         ],
-        "trigger": "Evaluar el posible impacto de la futura norma sobre sangre y componentes terapéuticos"
+        "trigger": "Si se requiere emitir una conclusión sobre obligaciones aplicables."
       }
     ],
     "relevance_score": 3,
@@ -4281,9 +3838,9 @@
       "norma oficial mexicana",
       "nom-"
     ],
-    "summary": "La Secretaría de Salud publicó la respuesta a los comentarios recibidos respecto del Proyecto de Norma Oficial Mexicana NOM-253-SSA1-2024, relativo a la disposición de sangre humana y sus componentes con fines terapéuticos. El anexo reúne el expediente de comentarios y respuestas del grupo de trabajo. La fuente no se presenta como la expedición de una NOM final: comunica cómo fueron analizadas las observaciones hechas al proyecto y qué decisiones se tomaron en relación con propuestas concretas.\n\nLa evidencia íntegra contiene numerosos registros de comentarios, justificaciones y respuestas. A lo largo del anexo se observan decisiones de aceptación, aceptación parcial, no aceptación y modificaciones de texto. Las materias tratadas abarcan, entre otras, establecimientos y servicios de sangre, responsables sanitarios, procedimientos, controles de calidad, hemovigilancia, registros, etiquetado, pruebas y referencias técnicas. La pluralidad de respuestas impide atribuir una sola decisión uniforme a todos los temas del proyecto.\n\nVarias respuestas indican que se modifica la redacción considerando el conjunto de propuestas recibidas; otras conservan o ajustan el proyecto por las razones que el grupo de trabajo expone. Esa trazabilidad es relevante para entender la evolución del texto en consulta, pero las respuestas no sustituyen una lectura del texto final que llegue a publicarse. La fuente tampoco fija en este acto una fecha de entrada en vigor de una NOM definitiva ni identifica obligaciones nuevas exigibles a partir de la sola publicación de las respuestas.\n\nLos bancos de sangre, centros de procesamiento, centros de colecta, centros de distribución, centros de calificación biológica y servicios de transfusión pueden usar el documento para anticipar los temas discutidos y preservar comentarios o matrices de cumplimiento. Sin embargo, deben evitar tratar una respuesta aislada como obligación vigente hasta que el texto normativo final se publique y se determine su vigencia. La ficha resume el expediente completo sin convertirlo en una NOM final.",
-    "summary_teaser": "La Secretaría de Salud publicó las respuestas a los comentarios recibidos sobre el proyecto de norma para la disposición de sangre humana y sus componentes con fines terapéuticos. El anexo registra determinaciones del grupo de trabajo, incluidas aceptaciones, aceptaciones parciales, no aceptaciones y modificaciones de redacción.",
-    "title": "Salud incorpora ajustes al proyecto de norma sanguínea",
+    "summary": "El Diario Oficial de la Federación publicó la respuesta a los comentarios recibidos sobre el Proyecto de Norma Oficial Mexicana NOM-253-SSA1-2024, relativo a la disposición de sangre humana y sus componentes con fines terapéuticos. La publicación incorpora un anexo técnico que organiza los planteamientos de personas e instituciones interesadas, las propuestas de redacción, sus justificaciones y la determinación del grupo de trabajo. El registro identifica decisiones de aceptar, aceptar parcialmente o no aceptar comentarios; cuando la respuesta lo señala, reproduce la redacción que el análisis propone para el proyecto.\n\nLos asuntos revisados abarcan términos y definiciones de calidad y validación; la delimitación y el funcionamiento de bancos de sangre, centros de colecta, procesamiento, distribución y calificación biológica; los perfiles de responsables sanitarios; y la selección de personas donantes, recolección y procesamiento. También contiene filas sobre controles de calidad, almacenamiento y temperaturas, reactivos y determinaciones analíticas, identificación y etiquetado, trazabilidad, sistemas de gestión, registros, hemovigilancia, comités de medicina transfusional y embalaje o transporte.\n\nEl anexo reproduce tablas, figuras y propuestas técnicas junto con respuestas individuales. Por ello, una referencia a un parámetro, una expresión o una disposición transitoria dentro de una fila no permite asumir que toda propuesta fue adoptada ni que el documento sea el texto definitivo de la norma. El alcance de cada ajuste depende de la respuesta oficial asociada a esa fila y de la eventual versión final del instrumento.\n\nPara seguimiento regulatorio, la publicación permite identificar cómo se atendieron observaciones de distintos participantes y qué redacciones fueron consideradas durante la consulta. Quien necesite valorar requisitos operativos, controles de calidad o fechas aplicables debe contrastar la fila pertinente y, cuando corresponda, el texto normativo definitivo publicado oficialmente. El documento también acredita la participación de distintos interesados a lo largo de la matriz, pero no homologa sus propuestas. La lectura responsable debe distinguir el contenido de cada comentario, la motivación expresada y el sentido literal de la respuesta oficial antes de usarla como base de una conclusión regulatoria.",
+    "summary_teaser": "La Secretaría de Salud difunde las respuestas a los comentarios sobre el proyecto de norma para la disposición de sangre humana y sus componentes con fines terapéuticos. El anexo registra decisiones de aceptación, aceptación parcial o no aceptación sobre definiciones, operación, calidad, pruebas, trazabilidad, transfusión y transporte.",
+    "title": "Salud incorpora ajustes al proyecto de norma sobre sangre",
     "topic_tags": [
       "Normalización",
       "Norma"

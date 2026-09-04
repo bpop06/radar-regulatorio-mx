@@ -1,0 +1,182 @@
+{
+  "coverage": [
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-1",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-2",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-3",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    },
+    {
+      "disposition": "summarized",
+      "reason": null,
+      "source_ref": "chunk-4",
+      "target_sections": [
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
+      ]
+    }
+  ],
+  "cut_id": "9bfb2857e185b6a117ea296f",
+  "detailed_summary": [
+    {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2",
+        "chunk-3"
+      ],
+      "heading": "Criterios de reasignación y evidencia",
+      "paragraphs": [
+        "Las disposiciones actualizan definiciones y anexos para el cálculo de indicadores. Incorporan una condición neutral con valor 0.5 y ordenan considerar factores de búsqueda, localización y contacto al distribuir cuentas reasignadas. Las cuentas sin evidencia pueden reasignarse y la administradora que careció de ella no puede recibirlas de nuevo en ese proceso."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-3",
+        "chunk-4"
+      ],
+      "heading": "Metodología y entrada en vigor",
+      "paragraphs": [
+        "El anexo regula el uso de valores del Índice del Sistema, medias móviles y pendientes para definir condiciones estresadas, neutrales o estables. La regla prevé porcentajes de reasignación asociados a esos valores y un límite agregado vinculado al activo neto de cada grupo. El transitorio fija la entrada en vigor para el primer día de 2027."
+      ]
+    }
+  ],
+  "evidence": {
+    "content_hash": "bc1bc142cea7fa4de47bedcf27f0486e24d4e299f746f64c12e31cae8567e196",
+    "extraction_method": "html-adapter",
+    "locators": [
+      {
+        "id": "chunk-1",
+        "label": "MODIFICACIONES y adiciones a las Disposiciones de carácter general que establecen el procedimiento para la construcción de los indicadores de rendimiento neto de las sociedades de inversión especializadas de fondos para el retiro.",
+        "location": "caracteres 0-234"
+      },
+      {
+        "id": "chunk-2",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Comisión Nacional del Sistema de Ahorro para el Retiro. · parte 1",
+        "location": "caracteres 234-12234"
+      },
+      {
+        "id": "chunk-3",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Comisión Nacional del Sistema de Ahorro para el Retiro. · parte 2",
+        "location": "caracteres 12234-24234"
+      },
+      {
+        "id": "chunk-4",
+        "label": "Al margen un sello con el Escudo Nacional, que dice: Estados Unidos Mexicanos.- Hacienda.- Secretaría de Hacienda y Crédito Público.- Comisión Nacional del Sistema de Ahorro para el Retiro. · parte 3",
+        "location": "caracteres 24234-28796"
+      }
+    ],
+    "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797700&fecha=02%2F09%2F2026",
+    "retrieved_at": "2026-09-03T16:52:41.481733+00:00"
+  },
+  "executive_summary": [
+    "La CONSAR ajustó las disposiciones de indicadores de rendimiento neto para cambiar la metodología aplicable a asignación y reasignación de cuentas individuales.",
+    "La reforma incorpora reglas sobre condiciones de inversión y evidencia de búsqueda, localización y contacto. Su vigencia inicia el 1 de enero de 2027."
+  ],
+  "impacts": {
+    "general": {
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2",
+        "chunk-3",
+        "chunk-4"
+      ],
+      "paragraphs": [
+        "La modificación cambia parámetros institucionales para reasignar cuentas no registradas y vincula la distribución a información sobre atención y contacto con titulares, sin identificar un cambio individual automático para una cuenta determinada."
+      ]
+    },
+    "sectors": [
+      {
+        "evidence_refs": [
+          "chunk-1",
+          "chunk-2",
+          "chunk-3",
+          "chunk-4"
+        ],
+        "paragraphs": [
+          "Las entidades participantes deberán contar con información verificable sobre sus actividades de búsqueda, localización y contacto, y aplicar la metodología actualizada cuando corresponda a procesos de asignación o reasignación."
+        ],
+        "sector": "Administradoras y sociedades de inversión especializadas de fondos para el retiro"
+      }
+    ]
+  },
+  "item": {
+    "ai_generated": true,
+    "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797700&fecha=02%2F09%2F2026",
+    "categories": [
+      "Administración centralizada"
+    ],
+    "content_hash": "04213d5af8aa120563bae59b5f2d6651935836527365e715edd5e411c80253a8",
+    "country_or_org": "México",
+    "detail_data_url": "data/fichas/3c94b6cea0fd957760d1f7c2.json",
+    "detail_url": "notas/3c94b6cea0fd957760d1f7c2.html",
+    "detected_at": "2026-09-04T03:37:15.636102+00:00",
+    "document_type": "Modificaciones Y Adiciones",
+    "editorial_status": "complete",
+    "extraction_status": "complete",
+    "id": "dof:5797700",
+    "importance": 1,
+    "issuing_body": "Secretaría de Hacienda y Crédito Público",
+    "jurisdiction": "nacional",
+    "official_published_at": "2026-09-02",
+    "official_title": "Modificaciones y adiciones a las Disposiciones de carácter general que establecen el procedimiento para la construcción de los indicadores de rendimiento neto de las sociedades de inversión especializadas de fondos para el retiro.",
+    "published_at": "2026-09-02",
+    "relevance_score": 1,
+    "review_reason": null,
+    "source": "DOF",
+    "source_id": "5797700",
+    "summary_teaser": "La CONSAR modifica la metodología de indicadores de rendimiento neto para asignación y reasignación de cuentas individuales. Desde el 1 de enero de 2027 incorpora condiciones de inversión neutrales, factores de búsqueda, localización y contacto, y reglas para reasignar cuentas sin evidencia de esas actividades.",
+    "title": "CONSAR actualiza reasignación de cuentas y condiciones de inversión",
+    "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797700&fecha=02/09/2026"
+  },
+  "recommended_actions": [
+    {
+      "affected_group": "Administradoras y sociedades de inversión participantes",
+      "deadline": "1 de enero de 2027",
+      "evidence_refs": [
+        "chunk-1",
+        "chunk-2",
+        "chunk-3",
+        "chunk-4"
+      ],
+      "legal_basis": "Disposiciones modificadas y transitorio único",
+      "paragraphs": [
+        "Revisar los procesos que conservan evidencia de búsqueda, localización y contacto, y preparar la implementación de los anexos modificados antes de la fecha de entrada en vigor. La información de respaldo debe estar disponible para la Comisión cuando ésta la requiera."
+      ],
+      "trigger": "Participar en procesos de asignación o reasignación de cuentas individuales"
+    }
+  ],
+  "schema_version": 8
+}

@@ -14,37 +14,47 @@
       "reason": null,
       "source_ref": "chunk-2",
       "target_sections": [
+        "executive_summary",
         "detailed_summary",
         "impacts.general",
+        "impacts.sectors",
         "recommended_actions"
       ]
     }
   ],
-  "cut_id": "80ff8a726797f7b9e5131c53",
+  "cut_id": "9bfb2857e185b6a117ea296f",
   "detailed_summary": [
     {
       "evidence_refs": [
         "chunk-1",
         "chunk-2"
       ],
-      "heading": "Contenido publicado",
+      "heading": "Reformas divulgadas",
       "paragraphs": [
-        "El acuerdo publica la existencia de reformas al Estatuto Orgánico y al Manual de Organización para armonizarlos con el marco jurídico y fortalecer reglas internas."
+        "El acuerdo comunica reformas al Estatuto Orgánico y modificaciones al Manual de Organización aprobadas por el órgano de gobierno. Su alcance obligatorio se dirige a las personas servidoras públicas de las unidades administrativas del Instituto."
       ]
     },
     {
       "evidence_refs": [
-        "chunk-1",
         "chunk-2"
       ],
-      "heading": "Alcance práctico",
+      "heading": "Finalidades expuestas",
       "paragraphs": [
-        "Las versiones íntegras se consultan en enlaces oficiales; su aplicación es obligatoria para el personal del Instituto y comienza al día siguiente de la publicación."
+        "Los considerandos refieren armonización con el marco jurídico y la estructura administrativa vigente, además de objetivos relacionados con transparencia, acceso a información, datos personales e inclusión."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Consulta de los textos",
+      "paragraphs": [
+        "El acuerdo enlaza el documento de reforma y las versiones íntegras vigentes del Estatuto y Manual. La publicación señala entrada en vigor al día siguiente de su difusión oficial."
       ]
     }
   ],
   "evidence": {
-    "content_hash": "5d4bdcfca8892fd616c49e2d9d9cc705aba0fe2baa323556d9363f90ad2524e3",
+    "content_hash": "7ca628827ca885d9f13abd90350b7fc1daeef337a0bb0d7f7bdef8774584d9ee",
     "extraction_method": "html-adapter",
     "locators": [
       {
@@ -59,32 +69,30 @@
       }
     ],
     "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797277&fecha=27%2F08%2F2026",
-    "retrieved_at": "2026-09-01T16:35:06.221326+00:00"
+    "retrieved_at": "2026-09-03T16:53:18.051589+00:00"
   },
   "executive_summary": [
-    "El Instituto Mexicano de Tecnología del Agua dio a conocer reformas a su Estatuto Orgánico y modificaciones a su Manual de Organización. La autoridad explica que la actualización busca armonizar esos instrumentos con cambios recientes del marco jurídico de la Administración Pública Federal, fortalecer las disposiciones de transparencia, acceso a la información y protección de datos personales, e incorporar lenguaje incluyente y no sexista.",
-    "El acuerdo indica que las versiones reformadas son de observancia obligatoria para todas las personas servidoras públicas adscritas a las unidades administrativas del Instituto. No reproduce en el Diario Oficial el texto completo de cada modificación; en su lugar, ofrece enlaces oficiales para consultar el acuerdo, el Estatuto Orgánico vigente y el Manual de Organización. Por esa razón, la ficha no atribuye cambios puntuales de facultades que el documento publicado no detalla."
+    "El Instituto Mexicano de Tecnología del Agua publicó un acuerdo que da a conocer reformas a su Estatuto Orgánico y modificaciones a su Manual de Organización, obligatorias para su personal adscrito.",
+    "El acto entra en vigor al día siguiente y ofrece enlaces oficiales a los textos íntegros. La publicación extraída no reproduce cada cambio, por lo que la atribución concreta debe verificarse en esos documentos."
   ],
   "impacts": {
     "general": {
       "evidence_refs": [
-        "chunk-1",
         "chunk-2"
       ],
       "paragraphs": [
-        "El cambio es organizacional e interno al Instituto, aunque puede afectar la identificación de áreas competentes y documentos aplicables."
+        "El acuerdo actualiza el marco organizacional interno del Instituto, pero la ficha no infiere una modificación puntual de atribuciones sin contrastar el texto íntegro enlazado. La publicidad oficial facilita esa verificación."
       ]
     },
     "sectors": [
       {
         "evidence_refs": [
-          "chunk-1",
           "chunk-2"
         ],
         "paragraphs": [
-          "El personal debe aplicar los instrumentos actualizados y quienes tramiten asuntos con el Instituto deben consultar las versiones íntegras para ubicar competencias."
+          "Las versiones reformadas son declaradas obligatorias para el personal adscrito a las unidades administrativas del Instituto."
         ],
-        "sector": "Personal y personas usuarias de trámites del Instituto Mexicano de Tecnología del Agua"
+        "sector": "Personas servidoras públicas del Instituto Mexicano de Tecnología del Agua"
       }
     ]
   },
@@ -113,23 +121,34 @@
     "review_reason": null,
     "source": "DOF",
     "source_id": "5797277",
-    "summary_teaser": "El Instituto Mexicano de Tecnología del Agua dio a conocer reformas a su Estatuto Orgánico y modificaciones a su Manual de Organización. Son obligatorias para su personal, entran en vigor al día siguiente de la publicación y pueden consultarse íntegramente en los enlaces oficiales indicados por el propio acuerdo.",
-    "title": "IMTA actualiza su estatuto y manual de organización",
+    "summary_teaser": "El Instituto Mexicano de Tecnología del Agua dio a conocer reformas a su Estatuto Orgánico y modificaciones a su Manual de Organización. El acuerdo las hace obligatorias para las personas servidoras públicas adscritas al Instituto, entra en vigor al día siguiente de su publicación y remite a versiones íntegras disponibles en enlaces oficiales.",
+    "title": "Modifica organización institucional del Instituto Mexicano del Agua",
     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797277&fecha=27/08/2026"
   },
   "recommended_actions": [
     {
-      "affected_group": "Personal y personas usuarias de trámites del Instituto Mexicano de Tecnología del Agua",
-      "deadline": null,
+      "affected_group": "Personas servidoras públicas del Instituto",
+      "deadline": "A partir del día siguiente de la publicación",
       "evidence_refs": [
-        "chunk-1",
         "chunk-2"
       ],
-      "legal_basis": "Acuerdo del Instituto Mexicano de Tecnología del Agua",
+      "legal_basis": "Punto único y transitorio primero del acuerdo",
       "paragraphs": [
-        "Consultar los enlaces oficiales y actualizar referencias internas a estructura, atribuciones o manuales antes de iniciar gestiones con el Instituto."
+        "Deben consultar el Estatuto Orgánico y Manual de Organización vigentes en los enlaces oficiales para identificar los cambios aplicables a su unidad administrativa."
       ],
-      "trigger": "Aplicar o invocar el Estatuto Orgánico o el Manual de Organización del Instituto"
+      "trigger": "Entrada en vigor del acuerdo"
+    },
+    {
+      "affected_group": "Personas que analicen atribuciones del Instituto",
+      "deadline": null,
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "legal_basis": null,
+      "paragraphs": [
+        "Si requieren una conclusión sobre una estructura, facultad o procedimiento específico, conviene verificar las versiones íntegras enlazadas, pues el aviso publicado no transcribe su contenido completo."
+      ],
+      "trigger": "Análisis de una atribución o estructura concreta"
     }
   ],
   "schema_version": 8

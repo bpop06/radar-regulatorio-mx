@@ -1,49 +1,47 @@
 {
   "coverage": [
     {
-      "disposition": "summarized",
-      "reason": null,
+      "disposition": "not_material",
+      "reason": "Encabezado identificador; el contenido sustantivo está en el texto del Acuerdo.",
       "source_ref": "chunk-1",
-      "target_sections": [
-        "detailed_summary"
-      ]
+      "target_sections": []
     },
     {
       "disposition": "summarized",
-      "reason": null,
+      "reason": "Fundamento, alcance, límites, vigencia y transitorio de la delegación.",
       "source_ref": "chunk-2",
       "target_sections": [
-        "detailed_summary"
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
       ]
     }
   ],
-  "cut_id": "80ff8a726797f7b9e5131c53",
+  "cut_id": "9bfb2857e185b6a117ea296f",
   "detailed_summary": [
     {
       "evidence_refs": [
-        "chunk-1",
         "chunk-2"
       ],
-      "heading": "Alcance de la publicación",
+      "heading": "Alcance de la delegación",
       "paragraphs": [
-        "Semarnat delegó atribuciones de contratación y supervisión para acciones de restauración ambiental vinculadas con el Corredor Interoceánico.",
-        "La medida se circunscribe a las atribuciones, unidades y programa anual identificados en el acuerdo, sin desplazar el ejercicio directo de la Secretaría."
+        "El acuerdo delega a las personas titulares expresamente identificadas la suscripción de convenios y contratos, el desarrollo y ejecución de procesos de contratación, los actos inherentes y la supervisión de obras y servicios relacionados, dentro de sus respectivas atribuciones y para la restauración del Corredor Interoceánico durante 2026."
       ]
     },
     {
       "evidence_refs": [
-        "chunk-1",
         "chunk-2"
       ],
-      "heading": "Contenido relevante",
+      "heading": "Límites y entrada en vigor",
       "paragraphs": [
-        "La delegación habilita a unidades expresamente identificadas para suscribir contratos y convenios, conducir procedimientos de contratación, realizar actos administrativos y supervisar acciones dentro del programa de restauración señalado.",
-        "La ejecución administrativa de las acciones de restauración puede realizarse por las unidades delegadas dentro de los límites del acuerdo. Las áreas que intervengan en procedimientos del programa deben verificar la competencia delegada, la coordinación administrativa y la normativa de contratación aplicable."
+        "Las facultades deben ejercerse conforme a las leyes y reglamentos citados; la Secretaria conserva la facultad de ejercerlas directamente. El acuerdo entra en vigor el día de su publicación."
       ]
     }
   ],
   "evidence": {
-    "content_hash": "4a7b35d2d16ad2e66b3c867ce5fb7c2f6ed8343eaafed4f898bf82fe93b978dd",
+    "content_hash": "d0af827505ceeec5adadad37bbacbd2237b4535c78d9954f5ab853de8482b65f",
     "extraction_method": "html-adapter",
     "locators": [
       {
@@ -58,32 +56,39 @@
       }
     ],
     "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797384&fecha=28%2F08%2F2026",
-    "retrieved_at": "2026-09-01T16:34:54.855450+00:00"
+    "retrieved_at": "2026-09-03T16:53:11.825619+00:00"
   },
   "executive_summary": [
-    "Semarnat delegó atribuciones de contratación y supervisión para acciones de restauración ambiental vinculadas con el Corredor Interoceánico. La delegación habilita a unidades expresamente identificadas para suscribir contratos y convenios, conducir procedimientos de contratación, realizar actos administrativos y supervisar acciones dentro del programa de restauración señalado.",
-    "La medida se circunscribe a las atribuciones, unidades y programa anual identificados en el acuerdo, sin desplazar el ejercicio directo de la Secretaría. La publicación debe aplicarse sin extender sus alcances a situaciones no descritas en la fuente."
+    "SEMARNAT delegó facultades de contratación y supervisión de obras públicas relacionadas con el programa de restauración del Corredor Interoceánico del Istmo de Tehuantepec para el ejercicio de 2026.",
+    "La medida identifica a la Subsecretaría de Biodiversidad y Restauración Ambiental y a la Dirección General de Gestión Forestal, Suelos y Ordenamiento Ecológico; conserva el ejercicio directo de la Secretaría y no anuncia una obra o contratación específica."
   ],
   "impacts": {
     "general": {
       "evidence_refs": [
-        "chunk-1",
         "chunk-2"
       ],
       "paragraphs": [
-        "La ejecución administrativa de las acciones de restauración puede realizarse por las unidades delegadas dentro de los límites del acuerdo."
+        "El cambio identificado es de distribución de competencia administrativa para procesos de obra pública ligados al programa señalado. La fuente no acredita, por sí sola, el inicio de un procedimiento de contratación ni una adjudicación."
       ]
     },
     "sectors": [
       {
         "evidence_refs": [
-          "chunk-1",
           "chunk-2"
         ],
         "paragraphs": [
-          "La incidencia para este grupo se limita al alcance expresamente descrito en la publicación y requiere contrastarse con cada caso concreto."
+          "Las áreas mencionadas cuentan con una base publicada para actuar en los procesos descritos, coordinadas con la Unidad de Administración y Finanzas y dentro de la normativa aplicable."
         ],
-        "sector": "Unidades de Semarnat y proveedores potenciales de acciones de restauración"
+        "sector": "Áreas de biodiversidad, restauración ambiental y administración de SEMARNAT"
+      },
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "El acuerdo identifica quién puede ejercer facultades internas, pero no sustituye una convocatoria, invitación o documento de contratación que eventualmente defina requisitos para participantes."
+        ],
+        "sector": "Personas interesadas en obra pública ambiental"
       }
     ]
   },
@@ -112,23 +117,34 @@
     "review_reason": null,
     "source": "DOF",
     "source_id": "5797384",
-    "summary_teaser": "Semarnat delegó facultades de contratación y supervisión para acciones de restauración ambiental vinculadas con el Corredor Interoceánico durante el ejercicio indicado. La Subsecretaría de Biodiversidad y unidades forestales podrán formalizar actos dentro de su competencia, con coordinación administrativa. La Secretaría conserva la posibilidad de ejercer directamente las atribuciones delegadas.",
-    "title": "Semarnat permite contrataciones delegadas para restauración del Corredor Interoceánico",
+    "summary_teaser": "SEMARNAT delega, para el ejercicio de 2026 y dentro de sus atribuciones, la suscripción de convenios y contratos de obra pública vinculados con la restauración del Corredor Interoceánico. El acuerdo conserva el ejercicio directo de la Secretaría y exige observar la normativa aplicable; no crea por sí mismo una convocatoria ni adjudica una obra concreta.",
+    "title": "SEMARNAT establece delegación para obras del Corredor Interoceánico en el ejercicio 2026",
     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797384&fecha=28/08/2026"
   },
   "recommended_actions": [
     {
-      "affected_group": "Unidades de Semarnat y proveedores potenciales de acciones de restauración",
+      "affected_group": "Personas titulares de las unidades administrativas delegadas",
+      "deadline": "Durante el ejercicio 2026 para la delegación descrita.",
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "legal_basis": "Artículo primero del Acuerdo delegatorio.",
+      "paragraphs": [
+        "Si intervienen en procedimientos del programa de restauración señalado, deberán verificar que el asunto corresponda a sus atribuciones, al ejercicio indicado y a las normas de obra pública y ambientales aplicables."
+      ],
+      "trigger": "Cuando se pretenda suscribir, tramitar o supervisar una contratación cubierta por la delegación."
+    },
+    {
+      "affected_group": "Personas interesadas en procedimientos de contratación",
       "deadline": null,
       "evidence_refs": [
-        "chunk-1",
         "chunk-2"
       ],
       "legal_basis": null,
       "paragraphs": [
-        "Las áreas que intervengan en procedimientos del programa deben verificar la competencia delegada, la coordinación administrativa y la normativa de contratación aplicable."
+        "Si requieren participar en una contratación, deberán identificar el procedimiento o convocatoria particular: el acuerdo sólo distribuye facultades y no fija requisitos de participación ni adjudica un contrato."
       ],
-      "trigger": "Cuando la publicación resulte aplicable a la operación o situación revisada."
+      "trigger": "Cuando exista un procedimiento de obra pública relacionado con el programa referido."
     }
   ],
   "schema_version": 8

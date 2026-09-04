@@ -25,31 +25,30 @@
       ]
     }
   ],
-  "cut_id": "80ff8a726797f7b9e5131c53",
+  "cut_id": "9bfb2857e185b6a117ea296f",
   "detailed_summary": [
     {
       "evidence_refs": [
+        "chunk-1",
         "chunk-2"
       ],
-      "heading": "Contenido publicado",
+      "heading": "Publicación del contribuyente",
       "paragraphs": [
-        "El anexo identifica a Limpor Asistencia, S.A. de C.V., con RFC LAS2302282S5. El SAT comunica que el contribuyente no desvirtuó la presunción de falsedad de los comprobantes fiscales digitales por Internet emitidos, por lo que éstos se consideran falsos con efectos generales y las operaciones contenidas en ellos no producen ni produjeron efecto fiscal. La publicación se formula conforme al artículo 49 Bis del Código Fiscal de la Federación.",
-        "La autoridad explica que la difusión en su portal y en el Diario Oficial permite que terceros receptores conozcan la situación. El documento vincula la consecuencia con el incumplimiento del requisito previsto en el artículo 29-A, fracción IX, sin exponer hechos distintos a los contenidos en la resolución notificada al contribuyente."
+        "La autoridad identifica a Limpor Asistencia en el anexo y comunica que sus CFDI se consideran falsos con efectos generales porque no se desvirtuó la presunción correspondiente. Operaciones asentadas en comprobantes no producen ni produjeron efecto fiscal, según el oficio."
       ]
     },
     {
       "evidence_refs": [
         "chunk-2"
       ],
-      "heading": "Alcance y lectura práctica",
+      "heading": "Reversión y plazo",
       "paragraphs": [
-        "Los terceros que recibieron CFDI del contribuyente publicado deben revertir el efecto fiscal que les hubieran dado mediante declaración complementaria. La fuente señala un plazo de 30 días naturales desde la publicación y advierte la restricción temporal del certificado de sello digital en caso de omisión.",
-        "La ficha se dirige principalmente a receptores de cfdi y responsables fiscales con operaciones documentadas por el contribuyente publicado."
+        "El texto dirige la publicación a terceros receptores. Si éstos otorgaron efecto fiscal a CFDI, deben revertirlo con declaración complementaria dentro de 30 días naturales desde la publicación. También comunica posible restricción temporal del certificado de sello digital ante falta de reversión."
       ]
     }
   ],
   "evidence": {
-    "content_hash": "2ae94a8ed812bee708157dc68a1a9ceb507fd5c55b9928495891e3943caa1e35",
+    "content_hash": "9ac28424c667579aa29b058b037f6aed8f2cf53c0af3378369e51597d82f06a5",
     "extraction_method": "html-adapter",
     "locators": [
       {
@@ -64,30 +63,32 @@
       }
     ],
     "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797382&fecha=28%2F08%2F2026",
-    "retrieved_at": "2026-09-01T16:34:55.669310+00:00"
+    "retrieved_at": "2026-09-03T16:53:13.928667+00:00"
   },
   "executive_summary": [
-    "El Servicio de Administración Tributaria difundió la publicación de un contribuyente respecto del cual se determinó la falsedad general de sus comprobantes fiscales. El anexo identifica a Limpor Asistencia, S.A. de C.V., con RFC LAS2302282S5. El SAT comunica que el contribuyente no desvirtuó la presunción de falsedad de los comprobantes fiscales digitales por Internet emitidos, por lo que éstos se consideran falsos con efectos generales y las operaciones contenidas en ellos no producen ni produjeron efecto fiscal. La publicación se formula conforme al artículo 49 Bis del Código Fiscal de la Federación.",
-    "Los terceros que recibieron CFDI del contribuyente publicado deben revertir el efecto fiscal que les hubieran dado mediante declaración complementaria. La fuente señala un plazo de 30 días naturales desde la publicación y advierte la restricción temporal del certificado de sello digital en caso de omisión. La síntesis se limita a los hechos y condiciones expresamente visibles en la fuente oficial."
+    "El SAT publicó a Limpor Asistencia, S.A. de C.V., RFC LAS2302282S5, al comunicar que no desvirtuó la presunción de falsedad de CFDI.",
+    "Los terceros que dieron efecto fiscal a esos comprobantes deben revertirlo mediante declaración complementaria dentro de 30 días naturales desde la publicación."
   ],
   "impacts": {
     "general": {
       "evidence_refs": [
+        "chunk-1",
         "chunk-2"
       ],
       "paragraphs": [
-        "El efecto observable es el que la publicación atribuye al acto: Los terceros que recibieron CFDI del contribuyente publicado deben revertir el efecto fiscal que les hubieran dado mediante declaración complementaria. La fuente señala un plazo de 30 días naturales desde la publicación y advierte la restricción temporal del certificado de sello digital en caso de omisión."
+        "La determinación afecta efectos fiscales de CFDI emitidos por el contribuyente listado y abre plazo específico para que receptores regularicen, si corresponde, el efecto que hubieran dado a esos documentos."
       ]
     },
     "sectors": [
       {
         "evidence_refs": [
+          "chunk-1",
           "chunk-2"
         ],
         "paragraphs": [
-          "Las personas comprendidas deben considerar el documento porque El anexo identifica a Limpor Asistencia, S.A. de C.V., con RFC LAS2302282S5. El SAT comunica que el contribuyente no desvirtuó la presunción de falsedad de los comprobantes fiscales digitales por Internet emitidos, por lo que éstos se consideran falsos con efectos generales y las operaciones contenidas en ellos no producen ni produjeron efecto fiscal. La publicación se formula conforme al artículo 49 Bis del Código Fiscal de la Federación."
+          "Los receptores potencialmente alcanzados deben revisar comprobantes y declaraciones para determinar si utilizaron CFDI asociados al RFC LAS2302282S5 con un efecto fiscal."
         ],
-        "sector": "Receptores de CFDI y responsables fiscales con operaciones documentadas por el contribuyente publicado"
+        "sector": "Receptores de CFDI de Limpor Asistencia, S.A. de C.V."
       }
     ]
   },
@@ -117,22 +118,23 @@
     "review_reason": null,
     "source": "DOF",
     "source_id": "5797382",
-    "summary_teaser": "El SAT publicó a Limpor Asistencia, S.A. de C.V. en el supuesto del artículo 49 Bis del Código Fiscal. La autoridad señala que no desvirtuó la presunción de falsedad de los CFDI emitidos; terceros receptores deben revisar el efecto fiscal que dieron a esas operaciones.",
-    "title": "SAT determina efectos fiscales de CFDI falsos de Limpor",
+    "summary_teaser": "El SAT publicó a Limpor Asistencia, S.A. de C.V., RFC LAS2302282S5, al determinar que no desvirtuó la presunción de falsedad de sus CFDI. Los terceros que hayan dado efectos fiscales a esos comprobantes tienen 30 días naturales desde la publicación para presentar declaración complementaria y revertirlos.",
+    "title": "CFDI falsos de Limpor: plazo para revertir efectos fiscales",
     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797382&fecha=28/08/2026"
   },
   "recommended_actions": [
     {
-      "affected_group": "Receptores de CFDI y responsables fiscales con operaciones documentadas por el contribuyente publicado",
-      "deadline": "30 días naturales contados a partir de la publicación en el DOF.",
+      "affected_group": "Terceros receptores de CFDI de Limpor Asistencia",
+      "deadline": "30 días naturales a partir de la publicación en el Diario Oficial de la Federación",
       "evidence_refs": [
+        "chunk-1",
         "chunk-2"
       ],
-      "legal_basis": "Artículo 49 Bis, fracción X, del Código Fiscal de la Federación; artículo 17-H Bis, fracción XIV, del mismo Código para la restricción temporal del certificado de sello digital por incumplimiento.",
+      "legal_basis": "Artículo 49 Bis, fracción X, y artículo 17-H Bis, fracción XIV, del Código Fiscal de la Federación",
       "paragraphs": [
-        "Localizar CFDI emitidos por el contribuyente identificado, evaluar el efecto fiscal previamente aplicado y atender, si corresponde, el mecanismo y plazo expresamente señalados por el SAT."
+        "Contrastar razón social y RFC publicados con registros fiscales propios. Si se otorgó efecto fiscal a CFDI señalados, presentar declaración complementaria para revertirlo dentro del plazo comunicado y conservar evidencia del ajuste."
       ],
-      "trigger": "Cuando la persona o entidad se ubique en el ámbito material descrito por la fuente oficial."
+      "trigger": "Haber recibido CFDI del RFC LAS2302282S5 y haberles dado efecto fiscal"
     }
   ],
   "schema_version": 8

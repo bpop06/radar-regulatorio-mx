@@ -37,33 +37,30 @@
       ]
     }
   ],
-  "cut_id": "80ff8a726797f7b9e5131c53",
+  "cut_id": "9bfb2857e185b6a117ea296f",
   "detailed_summary": [
     {
       "evidence_refs": [
-        "chunk-2",
-        "chunk-3"
+        "chunk-1",
+        "chunk-2"
       ],
-      "heading": "Contenido publicado",
+      "heading": "Producto y antecedente de la medida",
       "paragraphs": [
-        "La autoridad inició el expediente EC_18-26 respecto de importaciones de ftalato de dioctilo, también identificado como DOP, originarias de Corea y de Estados Unidos, independientemente del país de procedencia. El producto se identifica en la fracción 2917.32.01 de la TIGIE. La cuota definitiva de 0.27 dólares por kilogramo continuará vigente mientras se tramita el examen. El periodo de examen corre del 1 de julio de 2025 al 30 de junio de 2026 y el de análisis del 1 de julio de 2021 al 30 de junio de 2026.",
-        "La resolución refiere la medida definitiva de 2021 y la manifestación de interés presentada por una productora nacional antes del vencimiento de la cuota. También identifica posibles importadoras, un exportador y al gobierno estadounidense, sin que esa mención agote las personas que podrían demostrar interés jurídico."
+        "La resolución identifica al DOP como plastificante primario y señala su cuota compensatoria definitiva, países de origen y clasificación arancelaria de referencia. La manifestación de interés de una productora nacional permitió iniciar el examen antes del vencimiento señalado en el aviso de vigencia."
       ]
     },
     {
       "evidence_refs": [
-        "chunk-2",
         "chunk-3"
       ],
-      "heading": "Alcance y lectura práctica",
+      "heading": "Procedimiento y participación",
       "paragraphs": [
-        "Productoras nacionales, importadoras, exportadoras, personas morales extranjeras y demás personas con interés jurídico cuentan con 28 días hábiles, contados desde el día siguiente a la publicación, para acreditar su interés, responder el formulario y aportar argumentos y pruebas.",
-        "La ficha se dirige principalmente a importadores, exportadores y productores de ftalato de dioctilo."
+        "Se fijan el periodo de examen y el periodo de análisis. La cuota continuará vigente mientras se tramita el expediente. Las productoras, importadoras, exportadoras y demás personas con interés jurídico tienen 28 días hábiles desde el día siguiente a la publicación para comparecer y presentar formulario, argumentos y pruebas."
       ]
     }
   ],
   "evidence": {
-    "content_hash": "098ab7ed1f9ddf028bf1d7551c0fff30f6fbf89841493e829dc53cf42109288b",
+    "content_hash": "ea1f10c2793243b7878a40540eb3cd00a1ac614aa76c46967a3b92f2e626038a",
     "extraction_method": "html-adapter",
     "locators": [
       {
@@ -83,32 +80,34 @@
       }
     ],
     "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797563&fecha=01%2F09%2F2026",
-    "retrieved_at": "2026-09-01T16:34:51.380452+00:00"
+    "retrieved_at": "2026-09-03T16:52:57.406382+00:00"
   },
   "executive_summary": [
-    "La Secretaría de Economía difundió el inicio del procedimiento para examinar la vigencia de la cuota compensatoria aplicable al ftalato de dioctilo. La autoridad inició el expediente EC_18-26 respecto de importaciones de ftalato de dioctilo, también identificado como DOP, originarias de Corea y de Estados Unidos, independientemente del país de procedencia. El producto se identifica en la fracción 2917.32.01 de la TIGIE. La cuota definitiva de 0.27 dólares por kilogramo continuará vigente mientras se tramita el examen. El periodo de examen corre del 1 de julio de 2025 al 30 de junio de 2026 y el de análisis del 1 de julio de 2021 al 30 de junio de 2026.",
-    "Productoras nacionales, importadoras, exportadoras, personas morales extranjeras y demás personas con interés jurídico cuentan con 28 días hábiles, contados desde el día siguiente a la publicación, para acreditar su interés, responder el formulario y aportar argumentos y pruebas. La síntesis se limita a los hechos y condiciones expresamente visibles en la fuente oficial."
+    "La Secretaría de Economía abrió el examen de vigencia de la cuota compensatoria sobre DOP originario de Corea y Estados Unidos.",
+    "La cuota definitiva permanece vigente durante el procedimiento y las partes con interés jurídico pueden comparecer dentro del plazo fijado en la resolución."
   ],
   "impacts": {
     "general": {
       "evidence_refs": [
+        "chunk-1",
         "chunk-2",
         "chunk-3"
       ],
       "paragraphs": [
-        "El efecto observable es el que la publicación atribuye al acto: Productoras nacionales, importadoras, exportadoras, personas morales extranjeras y demás personas con interés jurídico cuentan con 28 días hábiles, contados desde el día siguiente a la publicación, para acreditar su interés, responder el formulario y aportar argumentos y pruebas."
+        "El inicio impide que la cuota definitiva expire durante la tramitación del examen. La resolución no decide todavía si la medida continuará, se modificará o se eliminará al término del procedimiento."
       ]
     },
     "sectors": [
       {
         "evidence_refs": [
+          "chunk-1",
           "chunk-2",
           "chunk-3"
         ],
         "paragraphs": [
-          "Las personas comprendidas deben considerar el documento porque La autoridad inició el expediente EC_18-26 respecto de importaciones de ftalato de dioctilo, también identificado como DOP, originarias de Corea y de Estados Unidos, independientemente del país de procedencia. El producto se identifica en la fracción 2917.32.01 de la TIGIE. La cuota definitiva de 0.27 dólares por kilogramo continuará vigente mientras se tramita el examen. El periodo de examen corre del 1 de julio de 2025 al 30 de junio de 2026 y el de análisis del 1 de julio de 2021 al 30 de junio de 2026."
+          "Las empresas que intervengan en importaciones, exportaciones o producción del plastificante deben considerar que la cuota sigue vigente y que la resolución abre una oportunidad procesal para aportar información si acreditan interés jurídico."
         ],
-        "sector": "Importadores, exportadores y productores de ftalato de dioctilo"
+        "sector": "Importadores, exportadores, productores y usuarios de DOP"
       }
     ]
   },
@@ -138,22 +137,24 @@
     "review_reason": null,
     "source": "DOF",
     "source_id": "5797563",
-    "summary_teaser": "La Secretaría de Economía abrió el examen de vigencia de la cuota compensatoria aplicable al ftalato de dioctilo originario de Corea y Estados Unidos. La cuota definitiva continúa durante el procedimiento; importadores, exportadores, productores y personas con interés jurídico tienen 28 días hábiles para comparecer.",
-    "title": "México abre examen de cuota antidumping al ftalato de dioctilo",
+    "summary_teaser": "La Secretaría de Economía inició el examen de vigencia de la cuota compensatoria sobre ftalato de dioctilo originario de Corea y Estados Unidos. La cuota definitiva continúa mientras se tramita el procedimiento; partes con interés jurídico tienen 28 días hábiles desde la publicación para comparecer, responder el formulario y presentar pruebas.",
+    "title": "Secretaría abre examen y conserva cuota al DOP importado",
     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5797563&fecha=01/09/2026"
   },
   "recommended_actions": [
     {
-      "affected_group": "Productoras nacionales, importadoras, exportadoras, personas morales extranjeras y demás personas con interés jurídico",
-      "deadline": "28 días hábiles contados a partir del día siguiente a la publicación en el DOF",
+      "affected_group": "Partes con interés jurídico en las importaciones de DOP",
+      "deadline": "28 días hábiles contados a partir del día siguiente de la publicación",
       "evidence_refs": [
+        "chunk-1",
+        "chunk-2",
         "chunk-3"
       ],
-      "legal_basis": "Punto 31 de la Resolución; artículos 6.1 y 11.4 del Acuerdo Antidumping, y 3o., último párrafo y 89 F de la Ley de Comercio Exterior.",
+      "legal_basis": "Resolutivos sobre comparecencia y continuidad de la cuota",
       "paragraphs": [
-        "Quienes pretendan intervenir deben acreditar su interés jurídico y presentar la respuesta al formulario oficial, junto con los argumentos y pruebas que consideren convenientes."
+        "Valorar si corresponde comparecer al examen y, de ser el caso, presentar el formulario oficial, argumentos y pruebas por los canales indicados por la Secretaría. Mantener la documentación vinculada con las operaciones mientras la cuota continúa vigente."
       ],
-      "trigger": "Cuando la persona o entidad pretenda comparecer en el procedimiento de examen de vigencia publicado."
+      "trigger": "Acreditar interés jurídico en el resultado del examen de vigencia"
     }
   ],
   "schema_version": 8

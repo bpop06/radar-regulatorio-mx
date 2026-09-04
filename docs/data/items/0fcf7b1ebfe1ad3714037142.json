@@ -1,10 +1,10 @@
 {
-  "cut_id": "80ff8a726797f7b9e5131c53",
+  "cut_id": "9bfb2857e185b6a117ea296f",
   "item": {
     "ai_generated": true,
     "authority": "PODER EJECUTIVO SECRETARIA ANTICORRUPCION Y BUEN GOBIERNO",
     "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797386&fecha=28%2F08%2F2026",
-    "card_body": "## Qué se publicó\n\nLa autoridad difundió una restricción temporal de contratación aplicable a la persona o empresa señalada.\n\n## Sustancia\n\nLa circular precisa la duración, la materia contractual cubierta, la excepción para contratos ya formalizados y la regla de continuidad vinculada al pago de la multa.\n\n## Fuente\n\n[Consulta la publicación oficial](https://dof.gob.mx/nota_detalle.php?codigo=5797386&fecha=28%2F08%2F2026)",
+    "card_body": "## Qué se publicó\nSe comunicó la inhabilitación de ATV de Sahuayo para participar en propuestas y nuevas contrataciones cubiertas por la circular.\n\n## Sustancia\nLa abstención opera desde el día siguiente de la publicación por el plazo señalado y puede continuar hasta que se acredite el pago de la multa. Los contratos ya adjudicados o formalizados no quedan comprendidos; para gobiernos subnacionales, la regla se conecta con fondos federales.\n\n## Fuente\nDiario Oficial de la Federación: https://dof.gob.mx/nota_detalle.php?codigo=5797386&fecha=28/08/2026",
     "case_amount": "",
     "case_claim": "",
     "case_facts": "",
@@ -22,21 +22,20 @@
     "country_or_org": "México",
     "coverage": [
       {
-        "disposition": "summarized",
-        "reason": null,
+        "disposition": "not_material",
+        "reason": "Encabezado identificador; los hechos, alcance y condiciones están desarrollados en el texto de la circular.",
         "source_ref": "chunk-1",
-        "target_sections": [
-          "executive_summary",
-          "detailed_summary"
-        ]
+        "target_sections": []
       },
       {
         "disposition": "summarized",
-        "reason": null,
+        "reason": "Resolución comunicada, alcance, plazo, condición de pago, contratos existentes y fondos federales.",
         "source_ref": "chunk-2",
         "target_sections": [
+          "executive_summary",
           "detailed_summary",
           "impacts.general",
+          "impacts.sectors",
           "recommended_actions"
         ]
       }
@@ -47,22 +46,20 @@
     "detailed_summary": [
       {
         "evidence_refs": [
-          "chunk-1",
           "chunk-2"
         ],
-        "heading": "Inhabilitación comunicada",
+        "heading": "Restricción para nuevas contrataciones",
         "paragraphs": [
-          "La circular ordena abstenerse de contratar con ATV de Sahuayo, S.A. de C.V. durante seis meses, desde el día siguiente a su publicación, dentro de la materia contractual que delimita."
+          "Los destinatarios de la circular deben abstenerse de aceptar propuestas, adjudicar y celebrar contratos con ATV de Sahuayo, incluso por interpósita persona, en los procedimientos y acuerdos marco cubiertos por las leyes que el texto identifica."
         ]
       },
       {
         "evidence_refs": [
-          "chunk-1",
           "chunk-2"
         ],
-        "heading": "Límites y continuidad de la medida",
+        "heading": "Plazo, multa y contratos existentes",
         "paragraphs": [
-          "Los contratos ya adjudicados o formalizados quedan fuera de la aplicación indicada. Si la multa permanece impaga al concluir el término, la inhabilitación continúa hasta que se acredite el pago según la propia circular."
+          "La inhabilitación comienza el día siguiente a la publicación y dura seis meses, pero subsiste hasta el pago si la multa sigue insoluta al concluir ese periodo. La circular excluye los contratos adjudicados y los ya formalizados, y condiciona la aplicación para gobiernos subnacionales a los supuestos con fondos federales."
         ]
       }
     ],
@@ -70,7 +67,7 @@
     "document_type": "Circular",
     "editorial_status": "complete",
     "evidence": {
-      "content_hash": "8f37baaf27179a37949b648e9ead82885aa77bc9a6f6fb24bd5cecf83909a39a",
+      "content_hash": "2217758d2a529b460de80f4be7efe9d906f9cbfed759134bb97fcd84fa27d07a",
       "extraction_method": "html-adapter",
       "locators": [
         {
@@ -85,11 +82,11 @@
         }
       ],
       "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797386&fecha=28%2F08%2F2026",
-      "retrieved_at": "2026-09-01T16:34:55.313848+00:00"
+      "retrieved_at": "2026-09-03T16:53:13.008169+00:00"
     },
     "executive_summary": [
-      "La circular comunica la resolución administrativa que impuso a ATV de Sahuayo, S.A. de C.V. una inhabilitación temporal de seis meses. A partir del día siguiente a la publicación en el Diario Oficial de la Federación, las autoridades destinatarias deben abstenerse de aceptar propuestas, adjudicar o celebrar los contratos incluidos en el acto, ya sea directamente o por interpósita persona. La ficha se limita a la inhabilitación y al ámbito que la circular expresa.",
-      "El alcance material se refiere a procedimientos y contratos regulados por las leyes de adquisiciones, obras públicas y asociaciones público privadas, así como acuerdos marco. El documento dirige la comunicación a dependencias y entidades federales y, en los términos que precisa, a entidades federativas, municipios, demarcaciones territoriales y otros entes cuando las contrataciones se cubran total o parcialmente con recursos federales derivados de convenios con el Ejecutivo Federal. La circular no convierte por sí misma cualquier relación comercial ajena a ese ámbito en una prohibición."
+      "La circular comunica que ATV de Sahuayo, S.A. de C.V. fue inhabilitada para participar, directa o indirectamente, en los procedimientos y contratos indicados, durante seis meses a partir del día siguiente de la publicación.",
+      "La restricción puede subsistir si no se acredita el pago de la multa; los contratos previamente adjudicados o formalizados quedan fuera del alcance que la circular describe."
     ],
     "extraction_status": "complete",
     "first_seen_at": "2026-09-01T16:34:47.803209+00:00",
@@ -98,30 +95,37 @@
     "impacts": {
       "general": {
         "evidence_refs": [
-          "chunk-1",
           "chunk-2"
         ],
         "paragraphs": [
-          "La publicación incide en la validación de elegibilidad de proveedores y contratistas para procedimientos y contratos cubiertos por recursos federales."
+          "La consecuencia directa es una restricción de contratación para los sujetos y procedimientos enumerados. La circular no cuantifica la multa, no ordena terminar contratos existentes y no acredita efectos distintos de los expresamente descritos."
         ]
       },
       "sectors": [
         {
           "evidence_refs": [
-            "chunk-1",
             "chunk-2"
           ],
           "paragraphs": [
-            "Las áreas contratantes deben impedir la participación o contratación de la empresa o persona señalada sólo en el alcance que la circular fija y conservar la evidencia de la verificación."
+            "La empresa queda sujeta a la inhabilitación comunicada para propuestas y nuevos contratos dentro del ámbito material de la circular, con posible prolongación por falta de pago de la multa."
           ],
-          "sector": "Áreas contratantes y unidades de compras públicas"
+          "sector": "ATV de Sahuayo, S.A. de C.V."
+        },
+        {
+          "evidence_refs": [
+            "chunk-2"
+          ],
+          "paragraphs": [
+            "Las dependencias y demás entes destinatarios deben distinguir los nuevos procedimientos cubiertos de los contratos existentes; para entidades subnacionales, la regla se vincula con contrataciones financiadas total o parcialmente con fondos federales."
+          ],
+          "sector": "Compras públicas con recursos federales"
         }
       ]
     },
     "importance": 2,
     "issuing_body": "Presidencia de la República",
     "jurisdiction": "nacional",
-    "last_seen_at": "2026-09-01T18:46:30.041123+00:00",
+    "last_seen_at": "2026-09-04T03:37:15.636102+00:00",
     "official_evidence": {
       "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797386&fecha=28/08/2026"
     },
@@ -136,17 +140,28 @@
     "published_year": 2026,
     "recommended_actions": [
       {
-        "affected_group": "Áreas contratantes y unidades de compras públicas",
-        "deadline": "seis meses a partir del día siguiente a la publicación, con la extensión condicionada al pago de la multa que la fuente prevé",
+        "affected_group": "Dependencias, entidades y demás entes destinatarios de la circular",
+        "deadline": "Seis meses desde el día siguiente de la publicación; la inhabilitación subsiste hasta el pago de la multa si ésta no se acredita al concluir ese plazo.",
         "evidence_refs": [
-          "chunk-1",
           "chunk-2"
         ],
-        "legal_basis": "Ley de Adquisiciones, Arrendamientos y Servicios del Sector Público y términos de la circular",
+        "legal_basis": "Circular 003/2026 y disposiciones citadas de la Ley de Adquisiciones, Arrendamientos y Servicios del Sector Público.",
         "paragraphs": [
-          "Verificar la identidad de ATV de Sahuayo, S.A. de C.V., el objeto contractual y el origen de los recursos antes de aceptar propuestas o formalizar contratos. Mantener separados los contratos preexistentes que la fuente excluye."
+          "Si contemplan recibir propuestas, adjudicar o contratar bajo los regímenes señalados, deberán verificar que ATV de Sahuayo no intervenga directa ni indirectamente y distinguir los contratos ya formalizados del nuevo procedimiento."
         ],
-        "trigger": "Tramitar un procedimiento o contrato comprendido en la circular"
+        "trigger": "Cuando se tramite una contratación cubierta por la circular."
+      },
+      {
+        "affected_group": "ATV de Sahuayo, S.A. de C.V.",
+        "deadline": "Hasta que se acredite el pago correspondiente.",
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "legal_basis": "Artículo 90 de la Ley de Adquisiciones, Arrendamientos y Servicios del Sector Público, citado en la circular.",
+        "paragraphs": [
+          "Si pretende acreditar la terminación de la inhabilitación, deberá atender la condición de pago y presentar el documento probatorio ante la Secretaría Anticorrupción y Buen Gobierno, según el mecanismo descrito por la circular."
+        ],
+        "trigger": "Si la multa permanece impaga al vencimiento del plazo de inhabilitación."
       }
     ],
     "relevance_score": 3,
@@ -157,9 +172,9 @@
       "fiscalia",
       "administracion publica federal"
     ],
-    "summary": "La circular comunica la resolución administrativa que impuso a ATV de Sahuayo, S.A. de C.V. una inhabilitación temporal de seis meses. A partir del día siguiente a la publicación en el Diario Oficial de la Federación, las autoridades destinatarias deben abstenerse de aceptar propuestas, adjudicar o celebrar los contratos incluidos en el acto, ya sea directamente o por interpósita persona. La ficha se limita a la inhabilitación y al ámbito que la circular expresa.\n\nEl alcance material se refiere a procedimientos y contratos regulados por las leyes de adquisiciones, obras públicas y asociaciones público privadas, así como acuerdos marco. El documento dirige la comunicación a dependencias y entidades federales y, en los términos que precisa, a entidades federativas, municipios, demarcaciones territoriales y otros entes cuando las contrataciones se cubran total o parcialmente con recursos federales derivados de convenios con el Ejecutivo Federal. La circular no convierte por sí misma cualquier relación comercial ajena a ese ámbito en una prohibición.\n\nLa fuente separa los procedimientos futuros de los contratos ya adjudicados o formalizados: éstos no quedan comprendidos en la aplicación de la circular. También establece que, si al vencer la inhabilitación no se ha pagado la multa impuesta, la restricción subsiste hasta que se acredite el pago ante la Secretaría Anticorrupción y Buen Gobierno para eliminar el registro de la sancionada en ComprasMX. No se infiere una fecha de liberación distinta de la que resulta de esas condiciones.\n\nPara quienes compran con recursos públicos, el dato operativo es verificar la identidad de la persona o empresa, el tipo de procedimiento y la fuente de financiamiento antes de aceptar una propuesta o formalizar un contrato. La publicación no describe los hechos de fondo del procedimiento ni sustituye la consulta del expediente, de ComprasMX o de las reglas específicas aplicables a una contratación concreta.",
-    "summary_teaser": "La autoridad comunicó que ATV de Sahuayo, S.A. de C.V. no puede presentar propuestas ni celebrar los contratos cubiertos por la circular durante seis meses. La restricción opera desde el día siguiente a la publicación y la fuente precisa el alcance material, el tratamiento de contratos vigentes y la consecuencia de no pagar la multa.",
-    "title": "Autoridad inhabilita a ATV para contratar con recursos federales",
+    "summary": "El Área de Responsabilidades del Órgano Interno de Control en el Servicio Postal Mexicano comunicó una sanción impuesta a ATV de Sahuayo, S.A. de C.V. en un procedimiento administrativo de sanción a proveedores. La circular está dirigida a dependencias y entidades de la Administración Pública Federal, entidades federativas, Fiscalía General de la República, empresas públicas del Estado, municipios y demarcaciones territoriales de la Ciudad de México. Indica que la resolución administrativa impuso a la empresa una inhabilitación y una multa, aunque la circular no divulga el importe de la multa ni reproduce el contenido de su resolutivo tercero.\n\nA partir del día siguiente al de la publicación de la circular, los destinatarios deben abstenerse de aceptar propuestas, adjudicar o celebrar contratos con la empresa, de manera directa o por interpósita persona, en procedimientos regulados por las leyes de adquisiciones, obras públicas y asociaciones público-privadas, o para suscribir acuerdos marco. El plazo expreso de inhabilitación es de seis meses. La restricción no alcanza los contratos adjudicados ni los que ya estuvieran formalizados a la fecha de aplicación de la circular, conforme a la regla que la fuente cita del Reglamento de la Ley de Adquisiciones, Arrendamientos y Servicios del Sector Público.\n\nLa circular añade una condición para la terminación práctica de la inhabilitación: si, al concluir los seis meses, ATV de Sahuayo no hubiera pagado la multa impuesta, la inhabilitación subsiste hasta el pago. El pago debe acreditarse ante la Secretaría Anticorrupción y Buen Gobierno con el documento probatorio correspondiente, a fin de eliminar el registro de la sancionada del portal Compras Mx, sin requerir otro comunicado. Para entidades federativas, municipios y demarcaciones, el mandato se vincula a compras, arrendamientos, bienes o servicios cubiertos total o parcialmente con fondos federales conforme a los convenios con el Ejecutivo Federal. La fuente no describe una sanción adicional, un monto, una rescisión de contratos vigentes ni efectos fuera de los supuestos señalados.",
+    "summary_teaser": "La circular ordena abstenerse de recibir propuestas, adjudicar o contratar con ATV de Sahuayo por seis meses, incluso mediante interpósita persona, desde el día siguiente a su publicación. La inhabilitación puede prolongarse si no se acredita el pago de la multa; los contratos ya formalizados quedan fuera de la circular.",
+    "title": "Sanción inhabilita a ATV de Sahuayo para contratar con entes públicos",
     "topic_tags": [
       "Penal",
       "Derecho administrativo",

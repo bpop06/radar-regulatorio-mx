@@ -1,10 +1,10 @@
 {
-  "cut_id": "80ff8a726797f7b9e5131c53",
+  "cut_id": "9bfb2857e185b6a117ea296f",
   "item": {
     "ai_generated": true,
     "authority": "CONVOCATORIAS PARA CONCURSOS DE ADQUISICIONES, ARRENDAMIENTOS, OBRAS Y SERVICIOS DEL SECTOR PUBLICO",
     "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797666&fecha=01%2F09%2F2026",
-    "card_body": "## Qué se publicó\n\nLa Fiscalía General de la República publicó el resumen de una convocatoria de licitación pública internacional abierta para adquirir soportes de almacenamiento y otros bienes informáticos.\n\n## Sustancia\n\nLa convocatoria corresponde a una segunda vuelta para adquirir DVD, CD, memorias USB, discos duros y diversos materiales y bienes informáticos. Las bases se pusieron a consulta en ComprasMX y en la sede indicada por la autoridad. El calendario publicado fija junta de aclaraciones el 4 de septiembre de 2026 a las 10:30 horas, presentación y apertura de proposiciones el 17 de septiembre de 2026 a las 10:30 horas y fallo el 24 de septiembre de 2026 a las 17:00 horas. La información interesa a proveedores capaces de atender las partidas y a áreas de compras que deban seguir un procedimiento internacional abierto. Los requisitos técnicos, económicos y de participación deben tomarse de las bases disponibles en la plataforma, no del resumen publicado.\n\n## Fuente\n\nFuente oficial: https://dof.gob.mx/nota_detalle.php?codigo=5797666&fecha=01%2F09%2F2026. Extracción: html-adapter; recuperada el 2026-09-01T16:34:50.918583+00:00.",
+    "card_body": "## Qué se publicó\nLa Fiscalía General de la República convocó una licitación pública internacional abierta para adquirir medios de almacenamiento y diversos bienes informáticos en segunda vuelta.\n\n## Sustancia\nEl detalle de partidas y volumen está en las bases y el Anexo Técnico. El calendario prevé aclaraciones el 4 de septiembre, apertura el 17 y fallo el 24 de septiembre de 2026.\n\n## Fuente\nDiario Oficial de la Federación, 1 de septiembre de 2026.",
     "case_amount": "",
     "case_claim": "",
     "case_facts": "",
@@ -41,20 +41,27 @@
         "evidence_refs": [
           "chunk-1"
         ],
-        "heading": "Contenido publicado",
+        "heading": "Objeto y consulta de bases",
         "paragraphs": [
-          "La convocatoria corresponde a una segunda vuelta para adquirir DVD, CD, memorias USB, discos duros y diversos materiales y bienes informáticos. Las bases se pusieron a consulta en ComprasMX y en la sede indicada por la autoridad. El calendario publicado fija junta de aclaraciones el 4 de septiembre de 2026 a las 10:30 horas, presentación y apertura de proposiciones el 17 de septiembre de 2026 a las 10:30 horas y fallo el 24 de septiembre de 2026 a las 17:00 horas.",
-          "El resumen remite al anexo técnico para el detalle de las partidas y no identifica adjudicatarios ni un resultado, porque el documento es una convocatoria. La referencia oficial precisa que la publicación en la plataforma de contrataciones ocurrió el 27 de agosto de 2026."
+          "El procedimiento busca adquirir DVD, CD, memorias USB, discos duros y diversos materiales y bienes informáticos. La convocatoria y sus bases pueden consultarse en ComprasMX y en la ubicación de la Fiscalía indicada por la fuente."
         ]
       },
       {
         "evidence_refs": [
           "chunk-1"
         ],
-        "heading": "Alcance y lectura práctica",
+        "heading": "Información no contenida en el resumen",
         "paragraphs": [
-          "La información interesa a proveedores capaces de atender las partidas y a áreas de compras que deban seguir un procedimiento internacional abierto. Los requisitos técnicos, económicos y de participación deben tomarse de las bases disponibles en la plataforma, no del resumen publicado.",
-          "La ficha se dirige principalmente a proveedores de bienes informáticos y participantes en contrataciones públicas."
+          "El resumen remite a la convocatoria y Anexo Técnico para el volumen y detalle de las partidas. Con los datos publicados no es verificable el número de unidades, especificaciones, presupuesto o condiciones particulares de la contratación."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-1"
+        ],
+        "heading": "Calendario",
+        "paragraphs": [
+          "La fuente informa publicación en plataforma el 27 de agosto de 2026, junta de aclaraciones el 4 de septiembre a las 10:30 horas, apertura de proposiciones el 17 de septiembre a las 10:30 horas y fallo el 24 de septiembre a las 17:00 horas."
         ]
       }
     ],
@@ -62,7 +69,7 @@
     "document_type": "Fiscalia General",
     "editorial_status": "complete",
     "evidence": {
-      "content_hash": "6adb8a96f875164377779b1e65474f0a9ed2037ff8392a9156998833f514cb59",
+      "content_hash": "771fb48da2e6d18fa323dc04c1cfc2bc453b9855204c1e67393ceb749d8f2f59",
       "extraction_method": "html-adapter",
       "locators": [
         {
@@ -72,11 +79,11 @@
         }
       ],
       "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797666&fecha=01%2F09%2F2026",
-      "retrieved_at": "2026-09-01T16:34:50.918583+00:00"
+      "retrieved_at": "2026-09-03T16:52:56.467669+00:00"
     },
     "executive_summary": [
-      "La Fiscalía General de la República difundió el resumen de una convocatoria de licitación pública internacional abierta para adquirir soportes de almacenamiento y otros bienes informáticos. La convocatoria corresponde a una segunda vuelta para adquirir DVD, CD, memorias USB, discos duros y diversos materiales y bienes informáticos. Las bases se pusieron a consulta en ComprasMX y en la sede indicada por la autoridad. El calendario publicado fija junta de aclaraciones el 4 de septiembre de 2026 a las 10:30 horas, presentación y apertura de proposiciones el 17 de septiembre de 2026 a las 10:30 horas y fallo el 24 de septiembre de 2026 a las 17:00 horas.",
-      "La información interesa a proveedores capaces de atender las partidas y a áreas de compras que deban seguir un procedimiento internacional abierto. Los requisitos técnicos, económicos y de participación deben tomarse de las bases disponibles en la plataforma, no del resumen publicado. La síntesis se limita a los hechos y condiciones expresamente visibles en la fuente oficial."
+      "La Fiscalía General de la República abrió una licitación pública internacional para DVD, CD, memorias USB, discos duros y otros bienes informáticos, en segunda vuelta.",
+      "El resumen dirige a las bases y al Anexo Técnico para el detalle de partidas. Publica fechas de aclaraciones, apertura y fallo durante septiembre de 2026."
     ],
     "extraction_status": "complete",
     "first_seen_at": "2026-09-01T16:34:47.803209+00:00",
@@ -88,7 +95,7 @@
           "chunk-1"
         ],
         "paragraphs": [
-          "El efecto observable es el que la publicación atribuye al acto: La información interesa a proveedores capaces de atender las partidas y a áreas de compras que deban seguir un procedimiento internacional abierto. Los requisitos técnicos, económicos y de participación deben tomarse de las bases disponibles en la plataforma, no del resumen publicado."
+          "La publicación abre un procedimiento competitivo para bienes de almacenamiento y materiales informáticos; los requisitos materiales y comerciales quedan remitidos a la convocatoria completa y su anexo técnico."
         ]
       },
       "sectors": [
@@ -97,16 +104,16 @@
             "chunk-1"
           ],
           "paragraphs": [
-            "Las personas comprendidas deben considerar el documento porque La convocatoria corresponde a una segunda vuelta para adquirir DVD, CD, memorias USB, discos duros y diversos materiales y bienes informáticos. Las bases se pusieron a consulta en ComprasMX y en la sede indicada por la autoridad. El calendario publicado fija junta de aclaraciones el 4 de septiembre de 2026 a las 10:30 horas, presentación y apertura de proposiciones el 17 de septiembre de 2026 a las 10:30 horas y fallo el 24 de septiembre de 2026 a las 17:00 horas."
+            "Las personas interesadas en participar deben consultar las bases disponibles en ComprasMX o en la Fiscalía, pues el resumen no contiene el detalle de partidas ni el volumen a adquirir."
           ],
-          "sector": "Proveedores de bienes informáticos y participantes en contrataciones públicas"
+          "sector": "Proveedores de bienes informáticos y medios de almacenamiento"
         }
       ]
     },
     "importance": 2,
     "issuing_body": "Fiscalía General de la República",
     "jurisdiction": "nacional",
-    "last_seen_at": "2026-09-01T18:46:30.041123+00:00",
+    "last_seen_at": "2026-09-04T03:37:15.636102+00:00",
     "official_evidence": {
       "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797666&fecha=01/09/2026"
     },
@@ -121,16 +128,16 @@
     "published_year": 2026,
     "recommended_actions": [
       {
-        "affected_group": "Proveedores de bienes informáticos y participantes en contrataciones públicas",
-        "deadline": "Presentación y apertura de proposiciones: 17 de septiembre de 2026, 10:30 horas.",
+        "affected_group": "Personas proveedoras interesadas en la licitación",
+        "deadline": "Junta de aclaraciones: 4 de septiembre de 2026 a las 10:30 horas; presentación y apertura: 17 de septiembre de 2026 a las 10:30 horas; fallo: 24 de septiembre de 2026 a las 17:00 horas.",
         "evidence_refs": [
           "chunk-1"
         ],
-        "legal_basis": null,
+        "legal_basis": "Disposiciones internas de la Fiscalía General de la República citadas en el resumen de convocatoria.",
         "paragraphs": [
-          "Consultar las bases y el anexo técnico en la fuente institucional, verificar las partidas aplicables y preparar preguntas o propuesta conforme al calendario oficial."
+          "Si consideran participar, revisen la convocatoria y el Anexo Técnico en la fuente oficial para confirmar partidas, requisitos y documentación, y preparen preguntas para la junta de aclaraciones cuando corresponda."
         ],
-        "trigger": "Cuando la persona o entidad se ubique en el ámbito material descrito por la fuente oficial."
+        "trigger": "Interés en presentar una proposición en el procedimiento."
       }
     ],
     "relevance_score": 2,
@@ -140,9 +147,9 @@
     "subtopic_tags": [
       "fiscalia"
     ],
-    "summary": "La Fiscalía General de la República publicó el resumen de una convocatoria de licitación pública internacional abierta para adquirir soportes de almacenamiento y otros bienes informáticos. La convocatoria corresponde a una segunda vuelta para adquirir DVD, CD, memorias USB, discos duros y diversos materiales y bienes informáticos. Las bases se pusieron a consulta en ComprasMX y en la sede indicada por la autoridad. El calendario publicado fija junta de aclaraciones el 4 de septiembre de 2026 a las 10:30 horas, presentación y apertura de proposiciones el 17 de septiembre de 2026 a las 10:30 horas y fallo el 24 de septiembre de 2026 a las 17:00 horas.\n\nEl resumen remite al anexo técnico para el detalle de las partidas y no identifica adjudicatarios ni un resultado, porque el documento es una convocatoria. La referencia oficial precisa que la publicación en la plataforma de contrataciones ocurrió el 27 de agosto de 2026.\n\nLa información interesa a proveedores capaces de atender las partidas y a áreas de compras que deban seguir un procedimiento internacional abierto. Los requisitos técnicos, económicos y de participación deben tomarse de las bases disponibles en la plataforma, no del resumen publicado.\n\nLa utilidad práctica de la publicación depende de si la persona o entidad se encuentra dentro del ámbito descrito. La información se presenta con base en el documento oficial disponible y no permite extender efectos a supuestos, periodos, personas o actos que no estén expresamente identificados. Cuando el documento incorpora requisitos, condiciones o mecanismos, éstos deben contrastarse con la ficha, resolución, contrato, expediente o norma específica que corresponda.\n\nPara fines de cumplimiento y trazabilidad, conviene conservar la fuente oficial, su fecha de publicación y los documentos que acrediten la situación concreta. Esta síntesis no sustituye el texto íntegro ni una determinación individual de la autoridad; describe el alcance observable del acto y distingue las consecuencias expresamente publicadas de cualquier inferencia que no está respaldada por la evidencia disponible.",
-    "summary_teaser": "La Fiscalía General de la República difundió una licitación pública internacional abierta para adquirir DVD, CD, memorias USB, discos duros y otros bienes informáticos en segunda vuelta. Las bases se consultan en ComprasMX; el calendario publicado contempla aclaraciones, presentación de propuestas y fallo durante septiembre.",
-    "title": "Fiscalía abre licitación internacional de insumos informáticos",
+    "summary": "La Unidad Especializada de Recursos, Servicios e Infraestructura Inmobiliaria de la Fiscalía General de la República publicó un resumen de convocatoria de licitación pública internacional abierta para la adquisición de DVD, CD, memorias USB, discos duros y diversos materiales y bienes informáticos, en segunda vuelta. La fuente identifica el procedimiento como LA-49-830-049830002-I-32-2026 y señala que la convocatoria con las bases de participación está disponible para consulta en la Plataforma Digital de Contrataciones Públicas, ComprasMX, así como en las oficinas indicadas de la Fiscalía en Río Elba número 17, piso 2, colonia Cuauhtémoc, Ciudad de México.\n\nEl resumen no enumera cantidades por partida. Precisa que el volumen a adquirir y el detalle de las partidas se encuentran en la convocatoria y en el Anexo Técnico del procedimiento. Por ello, no es verificable con el resumen publicado cuál será el número de unidades de cada material, qué especificaciones técnicas aplicarán, el presupuesto, las condiciones de entrega o los criterios de evaluación. Las personas interesadas deben consultar las bases y el anexo técnico oficial para conocer esos elementos antes de decidir si participan.\n\nEl calendario publicado indica que la convocatoria fue puesta en la Plataforma Digital de Contrataciones Públicas el 27 de agosto de 2026. Programa junta de aclaraciones el 4 de septiembre de 2026 a las 10:30 horas, presentación y apertura de proposiciones el 17 de septiembre de 2026 a las 10:30 horas y fallo el 24 de septiembre de 2026 a las 17:00 horas. El resumen atribuye la convocatoria a las disposiciones internas de la Fiscalía General de la República señaladas y no aporta una estimación económica de la compra. La consecuencia verificable es la apertura de un procedimiento competitivo internacional para bienes de almacenamiento y medios físicos de información, sujeto a las reglas y especificaciones que aparecen en la convocatoria completa y no en este extracto.",
+    "summary_teaser": "La Fiscalía General de la República convocó una licitación pública internacional abierta para adquirir DVD, CD, memorias USB, discos duros y otros bienes informáticos, en segunda vuelta. Las bases pueden consultarse en ComprasMX y en la Unidad Especializada de Recursos, Servicios e Infraestructura Inmobiliaria; el calendario prevé junta de aclaraciones el 4 de septiembre, apertura el 17 y fallo el 24.",
+    "title": "Abre licitación internacional para medios y bienes informáticos",
     "topic_tags": [
       "Penal"
     ],

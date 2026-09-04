@@ -1,10 +1,10 @@
 {
-  "cut_id": "80ff8a726797f7b9e5131c53",
+  "cut_id": "9bfb2857e185b6a117ea296f",
   "item": {
     "ai_generated": true,
     "authority": "PODER EJECUTIVO SECRETARIA DE ECONOMIA",
     "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796065&fecha=12%2F08%2F2026",
-    "card_body": "## Qué se publicó\n\nLa Secretaría de Economía publicó la decisión bilateral que prorroga una dispensa temporal para insumos textiles fuera de la zona de libre comercio.\n\n## Sustancia\n\nLa Decisión 128 prorroga del 22 de julio de 2026 al 21 de julio de 2027 la dispensa temporal para determinados bienes textiles y del vestido elaborados totalmente en Colombia con materiales producidos u obtenidos fuera de la zona de libre comercio. La preferencia se aplica a bienes clasificados en las subpartidas indicadas, siempre que cumplan la regla de origen y demás condiciones del tratado. La tabla fija cantidades máximas para hilos de poliéster, poliamida y elastano. Los certificados de origen deben incluir la leyenda indicada y amparar productos de una misma subpartida a seis dígitos. México puede solicitar a Colombia información para verificar la utilización de la dispensa. Cualquier prórroga o aumento de montos debe seguir el procedimiento del tratado y del reglamento del CIRI.\n\n## Fuente\n\nFuente oficial: https://dof.gob.mx/nota_detalle.php?codigo=5796065&fecha=12%2F08%2F2026. Extracción: html-adapter; recuperada el 2026-09-01T16:35:33.021630+00:00.",
+    "card_body": "## Qué se publicó\nLa Secretaría de Economía dio a conocer una prórroga de dispensa temporal para determinados textiles y prendas elaborados en Colombia.\n\n## Sustancia\nLa dispensa permite usar insumos externos a la zona de libre comercio dentro de cantidades y condiciones definidas, sin relevar los requisitos de origen y certificación aplicables. Su vigencia material va de julio de 2026 a julio de 2027.\n\n## Fuente\nDOF: https://dof.gob.mx/nota_detalle.php?codigo=5796065&fecha=12%2F08%2F2026",
     "case_amount": "",
     "case_claim": "",
     "case_facts": "",
@@ -27,10 +27,7 @@
         "source_ref": "chunk-1",
         "target_sections": [
           "executive_summary",
-          "detailed_summary",
-          "impacts.general",
-          "impacts.sectors",
-          "recommended_actions"
+          "detailed_summary"
         ]
       },
       {
@@ -52,22 +49,30 @@
     "detailed_summary": [
       {
         "evidence_refs": [
+          "chunk-1",
           "chunk-2"
         ],
-        "heading": "Contenido publicado",
+        "heading": "Fundamento y vigencia",
         "paragraphs": [
-          "La Decisión 128 prorroga del 22 de julio de 2026 al 21 de julio de 2027 la dispensa temporal para determinados bienes textiles y del vestido elaborados totalmente en Colombia con materiales producidos u obtenidos fuera de la zona de libre comercio. La preferencia se aplica a bienes clasificados en las subpartidas indicadas, siempre que cumplan la regla de origen y demás condiciones del tratado. La tabla fija cantidades máximas para hilos de poliéster, poliamida y elastano.",
-          "La Comisión Administradora adoptó la decisión con base en el dictamen del Comité de Integración Regional de Insumos, que determinó incapacidad real y probada para disponer de determinados materiales en condiciones comerciales normales dentro de las partes. La fuente no concede una preferencia general fuera de los bienes, insumos y montos previstos."
+          "La decisión parte del dictamen del Comité de Integración Regional de Insumos y prorroga la dispensa para materiales de la decisión previa. El acuerdo mexicano la publica y precisa las fechas de vigencia material."
         ]
       },
       {
         "evidence_refs": [
           "chunk-2"
         ],
-        "heading": "Alcance y lectura práctica",
+        "heading": "Bienes, insumos y cantidades",
         "paragraphs": [
-          "Los certificados de origen deben incluir la leyenda indicada y amparar productos de una misma subpartida a seis dígitos. México puede solicitar a Colombia información para verificar la utilización de la dispensa. Cualquier prórroga o aumento de montos debe seguir el procedimiento del tratado y del reglamento del CIRI.",
-          "La ficha se dirige principalmente a exportadores colombianos, importadores mexicanos y productores textiles."
+          "El texto identifica subpartidas de bienes textiles y del vestido elaborados en Colombia, así como insumos y cantidades máximas en la tabla. La preferencia exige además cumplir las reglas de origen y condiciones aplicables del tratado."
+        ]
+      },
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "heading": "Certificación y control",
+        "paragraphs": [
+          "Los bienes quedan sujetos a verificación y certificación. El certificado de origen debe reflejar el uso de la dispensa conforme a la leyenda indicada y sólo puede amparar productos de una misma subpartida a seis dígitos."
         ]
       }
     ],
@@ -75,7 +80,7 @@
     "document_type": "Acuerdo",
     "editorial_status": "complete",
     "evidence": {
-      "content_hash": "4a7a12a4ebd527900ddfadd1218f579da607b0adb7975a1d98dd09c1abdd2b36",
+      "content_hash": "c6cc94dbaec4f930872f38868ece67b2c2448185b145dd8945b79a4713e6ade6",
       "extraction_method": "html-adapter",
       "locators": [
         {
@@ -90,11 +95,11 @@
         }
       ],
       "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796065&fecha=12%2F08%2F2026",
-      "retrieved_at": "2026-09-01T16:35:33.021630+00:00"
+      "retrieved_at": "2026-09-03T16:53:46.550709+00:00"
     },
     "executive_summary": [
-      "La Secretaría de Economía difundió la decisión bilateral que prorroga una dispensa temporal para insumos textiles fuera de la zona de libre comercio. La Decisión 128 prorroga del 22 de julio de 2026 al 21 de julio de 2027 la dispensa temporal para determinados bienes textiles y del vestido elaborados totalmente en Colombia con materiales producidos u obtenidos fuera de la zona de libre comercio. La preferencia se aplica a bienes clasificados en las subpartidas indicadas, siempre que cumplan la regla de origen y demás condiciones del tratado. La tabla fija cantidades máximas para hilos de poliéster, poliamida y elastano.",
-      "Los certificados de origen deben incluir la leyenda indicada y amparar productos de una misma subpartida a seis dígitos. México puede solicitar a Colombia información para verificar la utilización de la dispensa. Cualquier prórroga o aumento de montos debe seguir el procedimiento del tratado y del reglamento del CIRI. La síntesis se limita a los hechos y condiciones expresamente visibles en la fuente oficial."
+      "La Decisión 128 prorroga una dispensa temporal para que ciertos textiles y prendas elaborados en Colombia utilicen materiales de fuera de la zona de libre comercio y conserven el trato arancelario preferencial, si cumplen sus condiciones.",
+      "La medida contiene insumos, cantidades máximas, requisitos de certificado de origen y mecanismos de verificación. La dispensa rige del 22 de julio de 2026 al 21 de julio de 2027."
     ],
     "extraction_status": "complete",
     "first_seen_at": "2026-09-01T16:34:47.803209+00:00",
@@ -106,7 +111,7 @@
           "chunk-2"
         ],
         "paragraphs": [
-          "El efecto observable es el que la publicación atribuye al acto: Los certificados de origen deben incluir la leyenda indicada y amparar productos de una misma subpartida a seis dígitos. México puede solicitar a Colombia información para verificar la utilización de la dispensa. Cualquier prórroga o aumento de montos debe seguir el procedimiento del tratado y del reglamento del CIRI."
+          "La decisión mantiene una excepción temporal y acotada para los bienes e insumos descritos; no establece una preferencia general para todo el sector textil. La utilización queda limitada por las cantidades, clasificación y requisitos documentales publicados."
         ]
       },
       "sectors": [
@@ -115,16 +120,16 @@
             "chunk-2"
           ],
           "paragraphs": [
-            "Las personas comprendidas deben considerar el documento porque La Decisión 128 prorroga del 22 de julio de 2026 al 21 de julio de 2027 la dispensa temporal para determinados bienes textiles y del vestido elaborados totalmente en Colombia con materiales producidos u obtenidos fuera de la zona de libre comercio. La preferencia se aplica a bienes clasificados en las subpartidas indicadas, siempre que cumplan la regla de origen y demás condiciones del tratado. La tabla fija cantidades máximas para hilos de poliéster, poliamida y elastano."
+            "Los operadores de los bienes expresamente descritos pueden revisar si su mercancía, insumos, cantidad y certificado encuadran en la dispensa antes de invocar trato preferencial."
           ],
-          "sector": "Exportadores colombianos, importadores mexicanos y productores textiles"
+          "sector": "Exportadores colombianos e importadores mexicanos de textiles y prendas"
         }
       ]
     },
     "importance": 2,
     "issuing_body": "Secretaría de Economía",
     "jurisdiction": "nacional",
-    "last_seen_at": "2026-09-01T18:46:30.041123+00:00",
+    "last_seen_at": "2026-09-04T03:37:15.636102+00:00",
     "official_evidence": {
       "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796065&fecha=12/08/2026"
     },
@@ -139,16 +144,28 @@
     "published_year": 2026,
     "recommended_actions": [
       {
-        "affected_group": "Exportadores colombianos, importadores mexicanos y productores textiles",
+        "affected_group": "Exportadores de bienes textiles cubiertos",
+        "deadline": "Vigencia de la dispensa del 22 de julio de 2026 al 21 de julio de 2027",
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "legal_basis": "Numerales 1, 3, 4 y 5 de la Decisión 128",
+        "paragraphs": [
+          "Si pretenden usar la dispensa, deben revisar la subpartida del bien, el insumo, la cantidad máxima y la información que debe constar en el certificado de origen."
+        ],
+        "trigger": "Exportación de bienes incluidos en la decisión"
+      },
+      {
+        "affected_group": "Importadores mexicanos de mercancía beneficiaria",
         "deadline": null,
         "evidence_refs": [
           "chunk-2"
         ],
-        "legal_basis": null,
+        "legal_basis": "Capítulo de verificación y certificación referido en la Decisión 128",
         "paragraphs": [
-          "Verificar clasificación, insumo, cantidad disponible y certificado de origen antes de solicitar trato preferencial para una operación cubierta por la dispensa."
+          "Si solicitan trato arancelario preferencial con base en la dispensa, conviene conservar y revisar el certificado de origen y los datos de clasificación que acrediten las condiciones del instrumento."
         ],
-        "trigger": "Cuando la persona o entidad se ubique en el ámbito material descrito por la fuente oficial."
+        "trigger": "Solicitud de preferencia para mercancía cubierta"
       }
     ],
     "relevance_score": 2,
@@ -158,9 +175,9 @@
     "subtopic_tags": [
       "tratado de libre comercio"
     ],
-    "summary": "La Secretaría de Economía publicó la decisión bilateral que prorroga una dispensa temporal para insumos textiles fuera de la zona de libre comercio. La Decisión 128 prorroga del 22 de julio de 2026 al 21 de julio de 2027 la dispensa temporal para determinados bienes textiles y del vestido elaborados totalmente en Colombia con materiales producidos u obtenidos fuera de la zona de libre comercio. La preferencia se aplica a bienes clasificados en las subpartidas indicadas, siempre que cumplan la regla de origen y demás condiciones del tratado. La tabla fija cantidades máximas para hilos de poliéster, poliamida y elastano.\n\nLa Comisión Administradora adoptó la decisión con base en el dictamen del Comité de Integración Regional de Insumos, que determinó incapacidad real y probada para disponer de determinados materiales en condiciones comerciales normales dentro de las partes. La fuente no concede una preferencia general fuera de los bienes, insumos y montos previstos.\n\nLos certificados de origen deben incluir la leyenda indicada y amparar productos de una misma subpartida a seis dígitos. México puede solicitar a Colombia información para verificar la utilización de la dispensa. Cualquier prórroga o aumento de montos debe seguir el procedimiento del tratado y del reglamento del CIRI.\n\nLa utilidad práctica de la publicación depende de si la persona o entidad se encuentra dentro del ámbito descrito. La información se presenta con base en el documento oficial disponible y no permite extender efectos a supuestos, periodos, personas o actos que no estén expresamente identificados. Cuando el documento incorpora requisitos, condiciones o mecanismos, éstos deben contrastarse con la ficha, resolución, contrato, expediente o norma específica que corresponda.\n\nPara fines de cumplimiento y trazabilidad, conviene conservar la fuente oficial, su fecha de publicación y los documentos que acrediten la situación concreta. Esta síntesis no sustituye el texto íntegro ni una determinación individual de la autoridad; describe el alcance observable del acto y distingue las consecuencias expresamente publicadas de cualquier inferencia que no está respaldada por la evidencia disponible.",
-    "summary_teaser": "México publicó una prórroga de la dispensa temporal que permite a ciertos textiles y prendas elaborados en Colombia usar materiales fuera de la zona de libre comercio y conservar trato arancelario preferencial. La decisión rige del 22 de julio de 2026 al 21 de julio de 2027.",
-    "title": "México extiende preferencia textil con insumos extrarregionales",
+    "summary": "La Secretaría de Economía dio a conocer la Decisión 128 de la Comisión Administradora del Tratado de Libre Comercio entre México y Colombia. La decisión prorroga, del 22 de julio de 2026 al 21 de julio de 2027, una dispensa temporal para utilizar ciertos materiales producidos u obtenidos fuera de la zona de libre comercio en la manufactura de determinados bienes textiles y del vestido elaborados totalmente en Colombia. Bajo las condiciones de la decisión, esos bienes pueden recibir el trato arancelario preferencial previsto en el tratado.\n\nLa prórroga se apoya en un dictamen del Comité de Integración Regional de Insumos que determinó la incapacidad real y probada de disponer de materiales en condiciones comerciales normales en el territorio de las partes, para los insumos considerados. El texto identifica subpartidas de bienes textiles y del vestido y establece una tabla de insumos clasificados en Colombia, con descripciones y cantidades máximas en kilogramos netos. La decisión no elimina los demás requisitos de origen ni las demás condiciones del trato preferencial del tratado.\n\nLos bienes amparados quedan sujetos a los mecanismos de verificación y certificación del capítulo correspondiente del tratado. La autoridad competente colombiana debe asegurar que el certificado de origen contenga la leyenda descrita en la decisión sobre el uso de la dispensa y los materiales. Además, un certificado sólo puede amparar productos clasificados en una misma subpartida a seis dígitos; cuando un exportador envíe productos de subpartidas distintas, debe llenar un certificado por cada una. México puede solicitar información a Colombia para comprobar la utilización de la dispensa y la aplicación del dictamen. El acuerdo mexicano entra en vigor el día de su publicación, mientras que la vigencia de la dispensa sigue las fechas fijadas por la decisión. La difusión mexicana no altera las cantidades, clasificaciones o límites que enumera el instrumento bilateral.",
+    "summary_teaser": "México dio a conocer la Decisión 128 del tratado comercial con Colombia, que prorroga una dispensa temporal para determinados bienes textiles y del vestido. La medida permite usar ciertos insumos fuera de la zona de libre comercio, dentro de cantidades y condiciones específicas, para conservar el trato arancelario preferencial.",
+    "title": "Extiende dispensa textil México Colombia hasta 2027",
     "topic_tags": [
       "Comercio exterior",
       "Acuerdo"

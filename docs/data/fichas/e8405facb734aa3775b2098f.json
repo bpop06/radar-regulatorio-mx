@@ -1,16 +1,10 @@
 {
   "coverage": [
     {
-      "disposition": "summarized",
-      "reason": null,
+      "disposition": "not_material",
+      "reason": "Repite el título del instrumento; el contenido material aparece en los fragmentos posteriores.",
       "source_ref": "chunk-1",
-      "target_sections": [
-        "executive_summary",
-        "detailed_summary",
-        "impacts.general",
-        "impacts.sectors",
-        "recommended_actions"
-      ]
+      "target_sections": []
     },
     {
       "disposition": "summarized",
@@ -43,39 +37,36 @@
       "target_sections": [
         "executive_summary",
         "detailed_summary",
-        "impacts.general",
         "impacts.sectors",
         "recommended_actions"
       ]
     }
   ],
-  "cut_id": "80ff8a726797f7b9e5131c53",
+  "cut_id": "9bfb2857e185b6a117ea296f",
   "detailed_summary": [
     {
       "evidence_refs": [
         "chunk-2",
-        "chunk-4"
+        "chunk-3"
       ],
-      "heading": "Contenido publicado",
+      "heading": "Entidades registradas",
       "paragraphs": [
-        "La relación enumera 181 entidades paraestatales activas clasificadas como organismos descentralizados, empresas de participación estatal mayoritaria, fideicomisos públicos y empresas públicas del Estado. Incluye entidades sectorizadas y no sectorizadas, instituciones nacionales de salud, centros públicos de investigación, banca de desarrollo, seguros y fideicomisos del sistema bancario. Además, identifica 12 entidades en proceso de desincorporación y a Aerolínea del Estado Mexicano como entidad en exclusión de dicho proceso.",
-        "El instrumento incorpora modificaciones derivadas de creación, cambio de sector o denominación y procesos de desincorporación. Entre las notas explicativas figuran cambios normativos en CFE y Pemex, la creación de la Comisión Nacional Antimonopolio, la Agencia de Trenes y Transporte Público Integrado y el Instituto Nacional de Estudios Históricos de las Revoluciones de México."
+        "El apartado principal distribuye 181 entidades entre organismos descentralizados, empresas de participación estatal mayoritaria, fideicomisos públicos y empresas públicas del Estado. Incluye categorías específicas para institutos nacionales de salud, centros públicos de investigación, banca de desarrollo, seguros y fideicomisos del sistema bancario."
       ]
     },
     {
       "evidence_refs": [
-        "chunk-2",
+        "chunk-3",
         "chunk-4"
       ],
-      "heading": "Alcance y lectura práctica",
+      "heading": "Desincorporación y notas de actualización",
       "paragraphs": [
-        "La propia publicación aclara que sus efectos son declarativos y no constitutivos: la enumeración y categorización obedecen a disposiciones aplicables e información remitida a la unidad jurídica. No incluye universidades e instituciones con autonomía legal y señala entidades que no quedan sujetas a la Ley Federal de las Entidades Paraestatales.",
-        "La ficha se dirige principalmente a dependencias coordinadoras, entidades paraestatales y personas que consultan su clasificación administrativa."
+        "El documento reporta doce entidades en proceso de desincorporación y una empresa excluida del proceso. Las notas describen, entre otros antecedentes, cambios de naturaleza jurídica, creaciones institucionales y procedimientos de extinción, liquidación, fusión o exclusión."
       ]
     }
   ],
   "evidence": {
-    "content_hash": "b47bf6b253491a80ac99e3d7b9eee76172bfbad299424d7c6a032cd33234e715",
+    "content_hash": "3a013c4a74e7a4742b9ac18c4dc95a1860ba980181d35bfafd9ab5ba78029238",
     "extraction_method": "html-adapter",
     "locators": [
       {
@@ -100,32 +91,33 @@
       }
     ],
     "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796062&fecha=12%2F08%2F2026",
-    "retrieved_at": "2026-09-01T16:35:33.693420+00:00"
+    "retrieved_at": "2026-09-03T16:53:47.102648+00:00"
   },
   "executive_summary": [
-    "La Secretaría de Hacienda y Crédito Público difundió la relación anual actualizada de las entidades paraestatales de la Administración Pública Federal. La relación enumera 181 entidades paraestatales activas clasificadas como organismos descentralizados, empresas de participación estatal mayoritaria, fideicomisos públicos y empresas públicas del Estado. Incluye entidades sectorizadas y no sectorizadas, instituciones nacionales de salud, centros públicos de investigación, banca de desarrollo, seguros y fideicomisos del sistema bancario. Además, identifica 12 entidades en proceso de desincorporación y a Aerolínea del Estado Mexicano como entidad en exclusión de dicho proceso.",
-    "La propia publicación aclara que sus efectos son declarativos y no constitutivos: la enumeración y categorización obedecen a disposiciones aplicables e información remitida a la unidad jurídica. No incluye universidades e instituciones con autonomía legal y señala entidades que no quedan sujetas a la Ley Federal de las Entidades Paraestatales. La síntesis se limita a los hechos y condiciones expresamente visibles en la fuente oficial."
+    "Hacienda publicó la relación anual del sector paraestatal federal y señala que su función es declarativa, no constitutiva. El documento agrupa 181 entidades en el apartado principal conforme a su naturaleza y sector de adscripción.",
+    "También registra doce entidades en proceso de desincorporación y una empresa en exclusión de ese proceso. Las notas explican actualizaciones y precisiones usadas para elaborar el listado, con información disponible a la fecha de suscripción."
   ],
   "impacts": {
     "general": {
       "evidence_refs": [
         "chunk-2",
-        "chunk-4"
+        "chunk-3"
       ],
       "paragraphs": [
-        "El efecto observable es el que la publicación atribuye al acto: La propia publicación aclara que sus efectos son declarativos y no constitutivos: la enumeración y categorización obedecen a disposiciones aplicables e información remitida a la unidad jurídica. No incluye universidades e instituciones con autonomía legal y señala entidades que no quedan sujetas a la Ley Federal de las Entidades Paraestatales."
+        "La relación ofrece un inventario oficial de referencia sobre la integración y clasificación del sector paraestatal, sin constituir por sí misma la situación jurídica de cada entidad."
       ]
     },
     "sectors": [
       {
         "evidence_refs": [
           "chunk-2",
+          "chunk-3",
           "chunk-4"
         ],
         "paragraphs": [
-          "Las personas comprendidas deben considerar el documento porque La relación enumera 181 entidades paraestatales activas clasificadas como organismos descentralizados, empresas de participación estatal mayoritaria, fideicomisos públicos y empresas públicas del Estado. Incluye entidades sectorizadas y no sectorizadas, instituciones nacionales de salud, centros públicos de investigación, banca de desarrollo, seguros y fideicomisos del sistema bancario. Además, identifica 12 entidades en proceso de desincorporación y a Aerolínea del Estado Mexicano como entidad en exclusión de dicho proceso."
+          "Las dependencias y entidades cuentan con una relación actualizada que incorpora categorías, sectores y procesos de desincorporación reportados hasta la fecha de suscripción."
         ],
-        "sector": "Dependencias coordinadoras, entidades paraestatales y personas que consultan su clasificación administrativa"
+        "sector": "Dependencias coordinadoras y entidades paraestatales federales"
       }
     ]
   },
@@ -154,23 +146,24 @@
     "review_reason": null,
     "source": "DOF",
     "source_id": "5796062",
-    "summary_teaser": "La Procuraduría Fiscal difundió la relación actualizada de entidades paraestatales de la Administración Pública Federal. El instrumento enumera 181 entidades activas por tipo y sector, 12 en proceso de desincorporación y una exclusión de ese proceso; sus efectos son declarativos, no constitutivos.",
-    "title": "Hacienda actualiza relación de entidades paraestatales federales",
+    "summary_teaser": "Hacienda publicó la relación anual de entidades paraestatales federales: registra 181 entidades en el apartado principal, 12 en proceso de desincorporación y una empresa excluida de ese proceso. El documento declara que su enumeración y categorización son informativas, no constitutivas.",
+    "title": "Relación anual actualiza el universo paraestatal federal",
     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796062&fecha=12/08/2026"
   },
   "recommended_actions": [
     {
-      "affected_group": "Dependencias coordinadoras, entidades paraestatales y personas que consultan su clasificación administrativa",
+      "affected_group": "Personas y autoridades que consulten la situación de una entidad paraestatal",
       "deadline": null,
       "evidence_refs": [
         "chunk-2",
+        "chunk-3",
         "chunk-4"
       ],
-      "legal_basis": null,
+      "legal_basis": "Considerandos y notas de la Relación de las Entidades Paraestatales de la Administración Pública Federal.",
       "paragraphs": [
-        "Usar la relación como referencia de identificación y sectorización, verificando la norma constitutiva o el acto específico cuando se requiera determinar facultades, naturaleza jurídica o estado de un proceso de desincorporación."
+        "Si la consulta exige determinar efectos jurídicos de una entidad concreta, usen la relación como referencia informativa y contrasten el decreto, ley, resolución o acto específico aplicable a esa entidad."
       ],
-      "trigger": "Cuando la persona o entidad se ubique en el ámbito material descrito por la fuente oficial."
+      "trigger": "Cuando se requiera verificar la situación jurídica de una entidad determinada."
     }
   ],
   "schema_version": 8

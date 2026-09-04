@@ -5,6 +5,7 @@
       "reason": null,
       "source_ref": "chunk-1",
       "target_sections": [
+        "executive_summary",
         "detailed_summary"
       ]
     },
@@ -13,35 +14,47 @@
       "reason": null,
       "source_ref": "chunk-2",
       "target_sections": [
-        "detailed_summary"
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
       ]
     }
   ],
-  "cut_id": "80ff8a726797f7b9e5131c53",
+  "cut_id": "9bfb2857e185b6a117ea296f",
   "detailed_summary": [
     {
       "evidence_refs": [
+        "chunk-1",
         "chunk-2"
       ],
-      "heading": "Alcance de la publicación",
+      "heading": "Publicación e identificación",
       "paragraphs": [
-        "El Servicio de Administración Tributaria publicó el nombre y la clave en el RFC de Asociación Hatres Mexicana, respecto de una resolución en la que no desvirtuó la presunción de falsedad de los comprobantes fiscales digitales por internet emitidos; por ello, se consideran falsos con efectos generales y las operaciones contenidas en ellos no producen ni produjeron efecto fiscal alguno.",
-        "Las personas que recibieron CFDI emitidos por la contribuyente deben revertir el efecto fiscal que les hubieren dado mediante la presentación de una declaración complementaria dentro de treinta días naturales a partir de la publicación en el DOF. Si no lo hacen, la autoridad restringirá temporalmente el uso del certificado de sello digital para emitir CFDI, conforme al artículo 17-H Bis, fracción XIV, del Código Fiscal de la Federación."
+        "El aviso comunica la publicación del nombre y RFC del contribuyente conforme al artículo 49 Bis referido. El anexo individualiza a Asociación Hatres Mexicana, A.C. y los datos de resolución y notificación incluidos."
       ]
     },
     {
       "evidence_refs": [
         "chunk-2"
       ],
-      "heading": "Seguimiento operativo",
+      "heading": "Efecto fiscal comunicado",
       "paragraphs": [
-        "Las personas receptoras deben identificar los CFDI involucrados y revisar la presentación de la declaración complementaria dentro del plazo de treinta días naturales contado desde la publicación en el DOF.",
-        "La ficha no extiende el alcance del acto a supuestos que la fuente no identifica."
+        "La autoridad indica que el contribuyente no desvirtuó la presunción de falsedad de sus CFDI, por lo que éstos se consideran falsos con efectos generales y las operaciones que contienen no producen ni produjeron efecto fiscal."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Terceros receptores",
+      "paragraphs": [
+        "La publicación explica que quienes hubieran dado efecto fiscal a CFDI del contribuyente deben revertirlo mediante declaración complementaria. Señala el plazo y la posible restricción temporal del certificado de sello digital si no se realiza la reversión."
       ]
     }
   ],
   "evidence": {
-    "content_hash": "63a4d13b60cbf7dabac0d6863ada7456fc2c003ccf9b3a1b8c7b4c8e5bba7bc9",
+    "content_hash": "da334b3b66c97bc6bdf8d2b1426c703ee434d392f2d16d27df1c11188f1d8e38",
     "extraction_method": "html-adapter",
     "locators": [
       {
@@ -56,11 +69,11 @@
       }
     ],
     "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796305&fecha=14%2F08%2F2026",
-    "retrieved_at": "2026-09-01T16:35:28.945695+00:00"
+    "retrieved_at": "2026-09-03T16:53:43.711397+00:00"
   },
   "executive_summary": [
-    "El Servicio de Administración Tributaria publicó el nombre y la clave en el RFC de Asociación Hatres Mexicana, respecto de una resolución en la que no desvirtuó la presunción de falsedad de los comprobantes fiscales digitales por internet emitidos; por ello, se consideran falsos con efectos generales y las operaciones contenidas en ellos no producen ni produjeron efecto fiscal alguno.",
-    "Las personas que recibieron CFDI emitidos por la contribuyente deben revertir el efecto fiscal que les hubieren dado mediante la presentación de una declaración complementaria dentro de treinta días naturales a partir de la publicación en el DOF. Si no lo hacen, la autoridad restringirá temporalmente el uso del certificado de sello digital para emitir CFDI, conforme al artículo 17-H Bis, fracción XIV, del Código Fiscal de la Federación."
+    "El SAT publicó a Asociación Hatres Mexicana, A.C., y su RFC en el supuesto de una resolución donde no se desvirtuó la presunción de falsedad de CFDI. La publicación atribuye a esos comprobantes falsedad con efectos generales.",
+    "Los terceros que recibieron esos CFDI deben revertir el efecto fiscal mediante declaración complementaria dentro de treinta días naturales desde la publicación, según el aviso."
   ],
   "impacts": {
     "general": {
@@ -68,7 +81,7 @@
         "chunk-2"
       ],
       "paragraphs": [
-        "Las personas que recibieron CFDI emitidos por la contribuyente deben revertir el efecto fiscal que les hubieren dado mediante la presentación de una declaración complementaria dentro de treinta días naturales a partir de la publicación en el DOF. Si no lo hacen, la autoridad restringirá temporalmente el uso del certificado de sello digital para emitir CFDI, conforme al artículo 17-H Bis, fracción XIV, del Código Fiscal de la Federación."
+        "El aviso comunica una determinación específica y sus efectos fiscales generales respecto de los CFDI del contribuyente listado. No permite atribuir la misma situación a otros RFC ni resolver por sí solo la revisión de documentos distintos."
       ]
     },
     "sectors": [
@@ -77,9 +90,9 @@
           "chunk-2"
         ],
         "paragraphs": [
-          "La incidencia para este grupo se limita al alcance expresamente descrito en la publicación y requiere contrastarse con cada caso concreto."
+          "Los receptores que hayan dado efecto fiscal a CFDI emitidos por la persona identificada tienen el mecanismo y plazo publicados para revertirlo."
         ],
-        "sector": "Personas receptoras de CFDI emitidos por la contribuyente identificada"
+        "sector": "Contribuyentes receptores de CFDI del contribuyente listado"
       }
     ]
   },
@@ -109,22 +122,34 @@
     "review_reason": null,
     "source": "DOF",
     "source_id": "5796305",
-    "summary_teaser": "El SAT publicó la identificación de Asociación Hatres Mexicana tras una resolución en la que no desvirtuó la presunción de falsedad de los CFDI emitidos. Las operaciones contenidas en esos comprobantes no producen efectos fiscales. Las personas receptoras deben presentar declaración complementaria para revertir el efecto fiscal dentro de treinta días naturales desde la publicación en el DOF; de no hacerlo, procede la restricción temporal del certificado de sello digital.",
-    "title": "Asociación Hatres Mexicana: plazo de 30 días para revertir efectos de CFDI falsos",
+    "summary_teaser": "El SAT publicó el nombre y RFC de Asociación Hatres Mexicana tras una resolución que determinó que no desvirtuó la presunción de falsedad de sus CFDI. El aviso señala que las operaciones amparadas no producen efectos fiscales y explica la reversión mediante declaración complementaria para terceros receptores.",
+    "title": "SAT determina falsedad fiscal de Asociación Hatres Mexicana",
     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796305&fecha=14/08/2026"
   },
   "recommended_actions": [
     {
-      "affected_group": "Personas receptoras de CFDI emitidos por la contribuyente identificada",
-      "deadline": "Treinta días naturales a partir de la publicación en el DOF.",
+      "affected_group": "Terceros que recibieron CFDI de Asociación Hatres Mexicana",
+      "deadline": "30 días naturales a partir de la publicación en el DOF",
       "evidence_refs": [
         "chunk-2"
       ],
-      "legal_basis": "Artículo 49 Bis, fracción X, y artículo 17-H Bis, fracción XIV, del Código Fiscal de la Federación.",
+      "legal_basis": "Artículo 49 Bis, fracción X, del CFF, citado por el aviso",
       "paragraphs": [
-        "Las personas receptoras deben identificar los CFDI involucrados y revisar la presentación de la declaración complementaria dentro del plazo de treinta días naturales contado desde la publicación en el DOF."
+        "Si dieron efecto fiscal a CFDI emitidos por el contribuyente listado, deben revisar sus registros y, cuando corresponda, revertir ese efecto mediante declaración complementaria."
       ],
-      "trigger": "Desde la publicación del oficio en el Diario Oficial de la Federación."
+      "trigger": "Haber dado efecto fiscal a CFDI emitidos por el contribuyente listado"
+    },
+    {
+      "affected_group": "Áreas fiscales de los receptores",
+      "deadline": "30 días naturales a partir de la publicación en el DOF",
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "legal_basis": "Artículo 17-H Bis, fracción XIV, del CFF, citado por el aviso",
+      "paragraphs": [
+        "Conviene documentar la revisión de los CFDI y la determinación adoptada, considerando que el aviso advierte una restricción temporal del certificado de sello digital si no se revierte el efecto dentro del plazo indicado."
+      ],
+      "trigger": "Identificación de CFDI incluidos en el supuesto publicado"
     }
   ],
   "schema_version": 8

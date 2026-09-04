@@ -14,37 +14,47 @@
       "reason": null,
       "source_ref": "chunk-2",
       "target_sections": [
+        "executive_summary",
         "detailed_summary",
         "impacts.general",
+        "impacts.sectors",
         "recommended_actions"
       ]
     }
   ],
-  "cut_id": "80ff8a726797f7b9e5131c53",
+  "cut_id": "9bfb2857e185b6a117ea296f",
   "detailed_summary": [
     {
       "evidence_refs": [
         "chunk-1",
         "chunk-2"
       ],
-      "heading": "Publicación del contribuyente y sus CFDI",
+      "heading": "Publicación e identificación",
       "paragraphs": [
-        "El aviso identifica a INTEGRADORA DE SERVICIOS DELCARP, S.C. con RFC ISD230321MS9 y comunica que la presunción de falsedad de sus CFDI no fue desvirtuada; por ello el texto les atribuye falta de efectos fiscales con alcance general."
+        "El aviso comunica el supuesto de publicación previsto por el artículo citado y el anexo identifica a Integradora de Servicios Delcarp, S.C., su RFC y los datos de resolución y notificación disponibles."
       ]
     },
     {
       "evidence_refs": [
-        "chunk-1",
         "chunk-2"
       ],
-      "heading": "Efecto para receptores",
+      "heading": "Efecto fiscal comunicado",
       "paragraphs": [
-        "La fuente ordena a terceros que hayan dado efectos fiscales a esos CFDI revertirlos mediante declaración complementaria en treinta días naturales desde la publicación y advierte la restricción temporal del certificado de sello digital ante el incumplimiento."
+        "La autoridad señala que el contribuyente no desvirtuó la presunción de falsedad de los CFDI emitidos. Por ello, el aviso informa que se consideran falsos con efectos generales y que sus operaciones no producen ni produjeron efecto fiscal."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Reversión para receptores",
+      "paragraphs": [
+        "El texto dirige a los terceros receptores a revertir el efecto fiscal que hubieran dado mediante declaración complementaria. También comunica la consecuencia relativa al certificado de sello digital si no se actúa dentro del plazo publicado."
       ]
     }
   ],
   "evidence": {
-    "content_hash": "fa0d49a0faa0a8eacae22afcace981e5ddbd11300a285f65b6d67224c7507322",
+    "content_hash": "1fab46416dbd1198ee0800475c40ef8592730f573233ceb11f71566e991c29ba",
     "extraction_method": "html-adapter",
     "locators": [
       {
@@ -59,32 +69,30 @@
       }
     ],
     "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796304&fecha=14%2F08%2F2026",
-    "retrieved_at": "2026-09-01T16:35:29.323693+00:00"
+    "retrieved_at": "2026-09-03T16:53:44.535768+00:00"
   },
   "executive_summary": [
-    "El Servicio de Administración Tributaria publicó el nombre de INTEGRADORA DE SERVICIOS DELCARP, S.C. y el RFC ISD230321MS9 en el supuesto de la fracción X del artículo 49 Bis del Código Fiscal de la Federación. El anexo identifica a la persona contribuyente y el oficio de la resolución administrativa. Según el documento, la autoridad concluyó, tras el procedimiento previsto en ese artículo, que no se desvirtuó la presunción de falsedad de los comprobantes fiscales digitales por Internet emitidos por esa persona.",
-    "La consecuencia que la publicación atribuye a esos CFDI es que se consideran falsos con efectos generales por incumplir el requisito referido en el artículo 29-A, fracción IX, del Código Fiscal de la Federación. Por ello, el propio aviso indica que las operaciones asentadas en dichos comprobantes no producen ni produjeron efecto fiscal. Esta ficha no extiende esa conclusión a comprobantes distintos de los emitidos por la persona publicada ni a operaciones que el documento no identifica."
+    "El SAT publicó a Integradora de Servicios Delcarp, S.C., y su RFC en el supuesto de una resolución que no tuvo por desvirtuada la presunción de falsedad de CFDI. El aviso atribuye falsedad con efectos generales a esos comprobantes.",
+    "Los receptores que les hayan dado efecto fiscal disponen del mecanismo de declaración complementaria y del plazo de treinta días naturales indicado en la publicación."
   ],
   "impacts": {
     "general": {
       "evidence_refs": [
-        "chunk-1",
         "chunk-2"
       ],
       "paragraphs": [
-        "El efecto directo recae en la trazabilidad fiscal de operaciones respaldadas por CFDI del emisor publicado y en las revisiones que correspondan a sus receptores."
+        "La determinación publicada está vinculada al RFC y los CFDI del contribuyente listado. La ficha no amplía sus efectos a otros contribuyentes ni sustituye la evaluación documental de cada receptor."
       ]
     },
     "sectors": [
       {
         "evidence_refs": [
-          "chunk-1",
           "chunk-2"
         ],
         "paragraphs": [
-          "Quienes hayan recibido CFDI de INTEGRADORA DE SERVICIOS DELCARP, S.C. deben ubicar los comprobantes y contrastar su tratamiento fiscal con la determinación y el plazo que el oficio comunica."
+          "Quienes hayan reconocido efectos fiscales por CFDI de la persona publicada cuentan con una advertencia oficial y el procedimiento de reversión descrito en el aviso."
         ],
-        "sector": "Receptores de CFDI del contribuyente publicado"
+        "sector": "Contribuyentes receptores de CFDI del contribuyente listado"
       }
     ]
   },
@@ -114,23 +122,34 @@
     "review_reason": null,
     "source": "DOF",
     "source_id": "5796304",
-    "summary_teaser": "El SAT publicó a INTEGRADORA DE SERVICIOS DELCARP, S.C. y su RFC como contribuyente que no desvirtuó la presunción de falsedad de los CFDI emitidos. El aviso señala que esos comprobantes no producen efectos fiscales y que quienes les hayan dado efectos deben revertirlos mediante declaración complementaria dentro del plazo señalado.",
-    "title": "SAT exige revertir efectos de CFDI falsos de Delcarp",
+    "summary_teaser": "El SAT publicó el nombre y RFC de Integradora de Servicios Delcarp tras una resolución que determinó que no desvirtuó la presunción de falsedad de sus CFDI. El aviso señala que las operaciones amparadas no producen efectos fiscales y fija la vía para que terceros receptores reviertan efectos mediante declaración complementaria.",
+    "title": "SAT determina falsedad fiscal de Integradora Delcarp",
     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796304&fecha=14/08/2026"
   },
   "recommended_actions": [
     {
-      "affected_group": "Receptores de CFDI del contribuyente publicado",
-      "deadline": "Treinta días naturales contados a partir de la publicación en el Diario Oficial de la Federación",
+      "affected_group": "Terceros que recibieron CFDI de Integradora de Servicios Delcarp",
+      "deadline": "30 días naturales a partir de la publicación en el DOF",
       "evidence_refs": [
-        "chunk-1",
         "chunk-2"
       ],
-      "legal_basis": "Artículo 49 Bis, fracción X, y artículo 17-H Bis, fracción XIV, del Código Fiscal de la Federación, citados en el oficio",
+      "legal_basis": "Artículo 49 Bis, fracción X, del CFF, citado por el aviso",
       "paragraphs": [
-        "Identificar los CFDI recibidos de INTEGRADORA DE SERVICIOS DELCARP, S.C., revisar el efecto fiscal que se les dio y, si corresponde, presentar la declaración complementaria dentro del plazo publicado. Conservar expediente documental de la revisión."
+        "Si dieron efecto fiscal a CFDI emitidos por el contribuyente listado, deben revisar sus registros y, cuando corresponda, presentar la declaración complementaria para revertirlo."
       ],
-      "trigger": "Haber recibido CFDI emitidos por el contribuyente publicado y haberles dado efectos fiscales"
+      "trigger": "Haber dado efecto fiscal a CFDI emitidos por el contribuyente listado"
+    },
+    {
+      "affected_group": "Áreas fiscales de los receptores",
+      "deadline": "30 días naturales a partir de la publicación en el DOF",
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "legal_basis": "Artículo 17-H Bis, fracción XIV, del CFF, citado por el aviso",
+      "paragraphs": [
+        "Conviene identificar los comprobantes afectados y conservar el análisis de reversión, dado que la publicación informa una posible restricción temporal del certificado de sello digital si no se actúa dentro del plazo indicado."
+      ],
+      "trigger": "Identificación de CFDI incluidos en el supuesto publicado"
     }
   ],
   "schema_version": 8

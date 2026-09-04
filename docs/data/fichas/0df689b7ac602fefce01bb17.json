@@ -5,6 +5,7 @@
       "reason": null,
       "source_ref": "chunk-1",
       "target_sections": [
+        "executive_summary",
         "detailed_summary"
       ]
     },
@@ -13,35 +14,47 @@
       "reason": null,
       "source_ref": "chunk-2",
       "target_sections": [
-        "detailed_summary"
+        "executive_summary",
+        "detailed_summary",
+        "impacts.general",
+        "impacts.sectors",
+        "recommended_actions"
       ]
     }
   ],
-  "cut_id": "80ff8a726797f7b9e5131c53",
+  "cut_id": "9bfb2857e185b6a117ea296f",
   "detailed_summary": [
     {
       "evidence_refs": [
+        "chunk-1",
         "chunk-2"
       ],
-      "heading": "Alcance de la publicación",
+      "heading": "Contribuyente y determinación",
       "paragraphs": [
-        "El Servicio de Administración Tributaria publicó el nombre y la clave en el RFC de Integradora Mexicana ASA Profesional, respecto de una resolución en la que no desvirtuó la presunción de falsedad de los comprobantes fiscales digitales por internet emitidos; por ello, se consideran falsos con efectos generales y las operaciones contenidas en ellos no producen ni produjeron efecto fiscal alguno.",
-        "Las personas que recibieron CFDI emitidos por la contribuyente deben revertir el efecto fiscal que les hubieren dado mediante la presentación de una declaración complementaria dentro de treinta días naturales a partir de la publicación en el DOF. Si no lo hacen, la autoridad restringirá temporalmente el uso del certificado de sello digital para emitir CFDI, conforme al artículo 17-H Bis, fracción XIV, del Código Fiscal de la Federación."
+        "El anexo identifica a Integradora Mexicana Asa Profesional, S.C., RFC IMA1206124B8, y asocia la publicación a una resolución donde no se desvirtuó la presunción de falsedad de los CFDI emitidos."
       ]
     },
     {
       "evidence_refs": [
         "chunk-2"
       ],
-      "heading": "Seguimiento operativo",
+      "heading": "Efecto de los comprobantes",
       "paragraphs": [
-        "Las personas receptoras deben identificar los CFDI involucrados y revisar la presentación de la declaración complementaria dentro del plazo de treinta días naturales contado desde la publicación en el DOF.",
-        "La ficha no extiende el alcance del acto a supuestos que la fuente no identifica."
+        "El SAT indica que los CFDI se consideran falsos con efectos generales, que incumplen el artículo 29-A, fracción IX, señalado en la fuente, y que las operaciones contenidas en ellos no producen ni produjeron efecto fiscal."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Reversión por terceros",
+      "paragraphs": [
+        "Los terceros que recibieron los CFDI y les dieron efecto fiscal deben revertirlo mediante declaración complementaria en treinta días naturales desde la publicación; la fuente refiere una restricción temporal de sello digital si no se realiza."
       ]
     }
   ],
   "evidence": {
-    "content_hash": "2d34cffc7d46b373bcbc0bc0ff546207dc60d0b9df658f82c8601a6aef45a90c",
+    "content_hash": "7055b711f0742bbe712ccfe635ee58756fee2bc33458ae6f08700d50cecd27bc",
     "extraction_method": "html-adapter",
     "locators": [
       {
@@ -56,11 +69,11 @@
       }
     ],
     "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796303&fecha=14%2F08%2F2026",
-    "retrieved_at": "2026-09-01T16:35:29.964211+00:00"
+    "retrieved_at": "2026-09-03T16:53:44.886872+00:00"
   },
   "executive_summary": [
-    "El Servicio de Administración Tributaria publicó el nombre y la clave en el RFC de Integradora Mexicana ASA Profesional, respecto de una resolución en la que no desvirtuó la presunción de falsedad de los comprobantes fiscales digitales por internet emitidos; por ello, se consideran falsos con efectos generales y las operaciones contenidas en ellos no producen ni produjeron efecto fiscal alguno.",
-    "Las personas que recibieron CFDI emitidos por la contribuyente deben revertir el efecto fiscal que les hubieren dado mediante la presentación de una declaración complementaria dentro de treinta días naturales a partir de la publicación en el DOF. Si no lo hacen, la autoridad restringirá temporalmente el uso del certificado de sello digital para emitir CFDI, conforme al artículo 17-H Bis, fracción XIV, del Código Fiscal de la Federación."
+    "El SAT publicó el RFC IMA1206124B8 y el nombre de Integradora Mexicana Asa Profesional, S.C., por una resolución que determinó que no desvirtuó la presunción de falsedad de sus CFDI.",
+    "Los comprobantes se consideran falsos con efectos generales. Los receptores que les hubieran dado efecto fiscal deben revertirlo mediante declaración complementaria en treinta días naturales desde la publicación."
   ],
   "impacts": {
     "general": {
@@ -68,7 +81,7 @@
         "chunk-2"
       ],
       "paragraphs": [
-        "Las personas que recibieron CFDI emitidos por la contribuyente deben revertir el efecto fiscal que les hubieren dado mediante la presentación de una declaración complementaria dentro de treinta días naturales a partir de la publicación en el DOF. Si no lo hacen, la autoridad restringirá temporalmente el uso del certificado de sello digital para emitir CFDI, conforme al artículo 17-H Bis, fracción XIV, del Código Fiscal de la Federación."
+        "La publicación delimita el efecto fiscal de los CFDI emitidos por el contribuyente identificado y prevé una consecuencia administrativa para quienes, estando sujetos al supuesto descrito, no reviertan el efecto fiscal dentro del plazo señalado."
       ]
     },
     "sectors": [
@@ -77,9 +90,9 @@
           "chunk-2"
         ],
         "paragraphs": [
-          "La incidencia para este grupo se limita al alcance expresamente descrito en la publicación y requiere contrastarse con cada caso concreto."
+          "La fuente dirige la reversión mediante declaración complementaria a las personas que recibieron CFDI del contribuyente listado y les dieron efecto fiscal."
         ],
-        "sector": "Personas receptoras de CFDI emitidos por la contribuyente identificada"
+        "sector": "Terceros receptores de CFDI de Integradora Mexicana Asa Profesional, S.C."
       }
     ]
   },
@@ -109,22 +122,22 @@
     "review_reason": null,
     "source": "DOF",
     "source_id": "5796303",
-    "summary_teaser": "El SAT publicó la identificación de Integradora Mexicana ASA Profesional tras una resolución en la que no desvirtuó la presunción de falsedad de los CFDI emitidos. Las operaciones contenidas en esos comprobantes no producen efectos fiscales. Las personas receptoras deben presentar declaración complementaria para revertir el efecto fiscal dentro de treinta días naturales desde la publicación en el DOF; de no hacerlo, procede la restricción del certificado de sello digital.",
-    "title": "Integradora Mexicana ASA Profesional: plazo de 30 días para revertir efectos de CFDI falsos",
+    "summary_teaser": "El SAT publicó el RFC IMA1206124B8 y el nombre de Integradora Mexicana Asa Profesional, S.C., al determinar que no desvirtuó la presunción de falsedad de los CFDI emitidos. La fuente indica que esos comprobantes no producen efecto fiscal y obliga a terceros receptores a revertir cualquier efecto mediante declaración complementaria dentro de treinta días naturales.",
+    "title": "Exige revertir efectos fiscales de CFDI falsos de Integradora Mexicana Asa",
     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796303&fecha=14/08/2026"
   },
   "recommended_actions": [
     {
-      "affected_group": "Personas receptoras de CFDI emitidos por la contribuyente identificada",
-      "deadline": "Treinta días naturales a partir de la publicación en el DOF.",
+      "affected_group": "Personas contribuyentes que recibieron CFDI de Integradora Mexicana Asa Profesional, S.C.",
+      "deadline": "Treinta días naturales a partir de la publicación en el Diario Oficial de la Federación.",
       "evidence_refs": [
         "chunk-2"
       ],
-      "legal_basis": "Artículo 49 Bis, fracción X, y artículo 17-H Bis, fracción XIV, del Código Fiscal de la Federación.",
+      "legal_basis": "Código Fiscal de la Federación, artículo 49 Bis, fracción X, y artículo 17-H Bis, fracción XIV, citados en la publicación.",
       "paragraphs": [
-        "Las personas receptoras deben identificar los CFDI involucrados y revisar la presentación de la declaración complementaria dentro del plazo de treinta días naturales contado desde la publicación en el DOF."
+        "Si sus registros contienen CFDI del RFC IMA1206124B8 a los que se hubiera dado efecto fiscal, revisen el supuesto publicado y, cuando corresponda, presenten la declaración complementaria para revertirlo."
       ],
-      "trigger": "Desde la publicación del oficio en el Diario Oficial de la Federación."
+      "trigger": "Recepción de CFDI emitidos por el RFC IMA1206124B8 con efecto fiscal otorgado."
     }
   ],
   "schema_version": 8

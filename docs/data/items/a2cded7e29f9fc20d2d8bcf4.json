@@ -1,10 +1,10 @@
 {
-  "cut_id": "80ff8a726797f7b9e5131c53",
+  "cut_id": "9bfb2857e185b6a117ea296f",
   "item": {
     "ai_generated": true,
     "authority": "PODER EJECUTIVO SECRETARIA DE HACIENDA Y CREDITO PUBLICO",
     "canonical_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797264&fecha=27%2F08%2F2026",
-    "card_body": "## Qué se publicó\n\nLa Comisión Nacional Bancaria y de Valores publicó la revocación de la autorización para operar como oficina de representación de una entidad financiera del exterior.\n\n## Sustancia\n\nLa CNBV revocó a Unicaja Banco, S.A., Oficina de Representación en México, la autorización para organizarse y operar como oficina de representación de una entidad financiera del exterior. La resolución señala que la oficina no proporcionó elementos suficientes para desvirtuar la causal de revocación y que ésta se tuvo por acreditada. A partir de la notificación, la oficina está imposibilitada para realizar actividades. El acto se refiere a la oficina de representación identificada en México. No contiene una determinación sobre otras entidades, oficinas o productos, ni debe extenderse a relaciones jurídicas que no correspondan a la autorización revocada.\n\n## Fuente\n\nFuente oficial: https://dof.gob.mx/nota_detalle.php?codigo=5797264&fecha=27%2F08%2F2026. Extracción: html-adapter; recuperada el 2026-09-01T16:35:05.156708+00:00.",
+    "card_body": "## Qué se publicó\n\nLa revocación de la autorización para que una oficina de representación de entidad financiera exterior opere en México.\n\n## Sustancia\n\nLa resolución identifica a Unicaja Banco, S.A., Oficina de Representación en México, y dispone que queda imposibilitada para realizar actividades desde la fecha de notificación.\n\n## Fuente\n\nDiario Oficial de la Federación, publicación de 27 de agosto de 2026.",
     "case_amount": "",
     "case_claim": "",
     "case_facts": "",
@@ -21,16 +21,10 @@
     "country_or_org": "México",
     "coverage": [
       {
-        "disposition": "summarized",
-        "reason": null,
+        "disposition": "not_material",
+        "reason": "El encabezado se desarrolla y sustenta en el segundo fragmento.",
         "source_ref": "chunk-1",
-        "target_sections": [
-          "executive_summary",
-          "detailed_summary",
-          "impacts.general",
-          "impacts.sectors",
-          "recommended_actions"
-        ]
+        "target_sections": []
       },
       {
         "disposition": "summarized",
@@ -53,20 +47,18 @@
         "evidence_refs": [
           "chunk-2"
         ],
-        "heading": "Contenido publicado",
+        "heading": "Decisión de la CNBV",
         "paragraphs": [
-          "La CNBV revocó a Unicaja Banco, S.A., Oficina de Representación en México, la autorización para organizarse y operar como oficina de representación de una entidad financiera del exterior. La resolución señala que la oficina no proporcionó elementos suficientes para desvirtuar la causal de revocación y que ésta se tuvo por acreditada. A partir de la notificación, la oficina está imposibilitada para realizar actividades.",
-          "El acuerdo de la Junta de Gobierno citado por la autoridad fue adoptado el 30 de junio de 2026. La publicación se apoya en la Ley de Instituciones de Crédito y en las reglas aplicables a oficinas de representación, y describe la competencia de la CNBV para autorizar y revocar ese tipo de operaciones."
+          "La CNBV concluye que se actualizó la causal de revocación que cita y revoca la autorización de Unicaja Banco, S.A., Oficina de Representación en México. La resolución vincula sus facultades con la Ley de Instituciones de Crédito y las reglas aplicables a oficinas de representación de entidades financieras del exterior."
         ]
       },
       {
         "evidence_refs": [
           "chunk-2"
         ],
-        "heading": "Alcance y lectura práctica",
+        "heading": "Límite de la evidencia publicada",
         "paragraphs": [
-          "El acto se refiere a la oficina de representación identificada en México. No contiene una determinación sobre otras entidades, oficinas o productos, ni debe extenderse a relaciones jurídicas que no correspondan a la autorización revocada.",
-          "La ficha se dirige principalmente a clientes, contrapartes y autoridades que interactúen con la oficina de representación."
+          "El texto identifica la imposibilidad de realizar actividades desde la notificación, pero no reproduce una fecha de notificación. Las elisiones marcadas en la fuente impiden reconstruir antecedentes, defensas, el tercer resolutivo o consecuencias no expresamente publicadas."
         ]
       }
     ],
@@ -74,7 +66,7 @@
     "document_type": "Oficio",
     "editorial_status": "complete",
     "evidence": {
-      "content_hash": "9b4da97f3aac4da90ef9a97840bd2756cf1c246e61d92ebdec726b3b01ab3a45",
+      "content_hash": "d04b61b0e76119c6dce9ca6135be620a43f6afdb6b3dadd76a1d676175b66585",
       "extraction_method": "html-adapter",
       "locators": [
         {
@@ -89,11 +81,11 @@
         }
       ],
       "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797264&fecha=27%2F08%2F2026",
-      "retrieved_at": "2026-09-01T16:35:05.156708+00:00"
+      "retrieved_at": "2026-09-03T16:53:17.388042+00:00"
     },
     "executive_summary": [
-      "La Comisión Nacional Bancaria y de Valores difundió la revocación de la autorización para operar como oficina de representación de una entidad financiera del exterior. La CNBV revocó a Unicaja Banco, S.A., Oficina de Representación en México, la autorización para organizarse y operar como oficina de representación de una entidad financiera del exterior. La resolución señala que la oficina no proporcionó elementos suficientes para desvirtuar la causal de revocación y que ésta se tuvo por acreditada. A partir de la notificación, la oficina está imposibilitada para realizar actividades.",
-      "El acto se refiere a la oficina de representación identificada en México. No contiene una determinación sobre otras entidades, oficinas o productos, ni debe extenderse a relaciones jurídicas que no correspondan a la autorización revocada. La síntesis se limita a los hechos y condiciones expresamente visibles en la fuente oficial."
+      "La CNBV revocó la autorización de Unicaja Banco, S.A., Oficina de Representación en México, para operar como oficina de representación de una entidad financiera del exterior.",
+      "La resolución dispone que la oficina queda imposibilitada para realizar actividades desde la fecha de notificación. El texto publicado contiene elisiones en antecedentes, considerandos y un resolutivo, por lo que no permite afirmar hechos o efectos adicionales no reproducidos."
     ],
     "extraction_status": "complete",
     "first_seen_at": "2026-09-01T16:34:47.803209+00:00",
@@ -105,7 +97,7 @@
           "chunk-2"
         ],
         "paragraphs": [
-          "El efecto observable es el que la publicación atribuye al acto: El acto se refiere a la oficina de representación identificada en México. No contiene una determinación sobre otras entidades, oficinas o productos, ni debe extenderse a relaciones jurídicas que no correspondan a la autorización revocada."
+          "La publicación acredita una revocación de autorización para la oficina identificada y limita su operación desde la notificación conforme al resolutivo reproducido."
         ]
       },
       "sectors": [
@@ -114,16 +106,16 @@
             "chunk-2"
           ],
           "paragraphs": [
-            "Las personas comprendidas deben considerar el documento porque La CNBV revocó a Unicaja Banco, S.A., Oficina de Representación en México, la autorización para organizarse y operar como oficina de representación de una entidad financiera del exterior. La resolución señala que la oficina no proporcionó elementos suficientes para desvirtuar la causal de revocación y que ésta se tuvo por acreditada. A partir de la notificación, la oficina está imposibilitada para realizar actividades."
+            "La resolución se dirige a la oficina de representación identificada; la fuente no documenta efectos generales para otras entidades financieras."
           ],
-          "sector": "Clientes, contrapartes y autoridades que interactúen con la oficina de representación"
+          "sector": "Oficinas de representación de entidades financieras del exterior"
         }
       ]
     },
     "importance": 1,
     "issuing_body": "Secretaría de Hacienda y Crédito Público",
     "jurisdiction": "nacional",
-    "last_seen_at": "2026-09-01T18:46:30.041123+00:00",
+    "last_seen_at": "2026-09-04T03:37:15.636102+00:00",
     "official_evidence": {
       "primary_url": "https://dof.gob.mx/nota_detalle.php?codigo=5797264&fecha=27/08/2026"
     },
@@ -138,16 +130,16 @@
     "published_year": 2026,
     "recommended_actions": [
       {
-        "affected_group": "Clientes, contrapartes y autoridades que interactúen con la oficina de representación",
-        "deadline": null,
+        "affected_group": "Unicaja Banco, S.A., Oficina de Representación en México",
+        "deadline": "Desde la fecha de notificación de la resolución.",
         "evidence_refs": [
           "chunk-2"
         ],
-        "legal_basis": null,
+        "legal_basis": "Resolutivos primero y segundo de la resolución publicada.",
         "paragraphs": [
-          "Actualizar los registros de contraparte y confirmar la entidad, oficina y canal autorizados antes de tramitar operaciones o comunicaciones relacionadas con la representación revocada."
+          "Para fijar el momento operativo de la medida, revisen la constancia de notificación de la resolución y absténganse de realizar actividades desde la fecha que ésta produzca efectos conforme al resolutivo publicado."
         ],
-        "trigger": "Cuando la persona o entidad se ubique en el ámbito material descrito por la fuente oficial."
+        "trigger": "A partir de la notificación de la resolución."
       }
     ],
     "relevance_score": 1,
@@ -155,9 +147,9 @@
     "source": "DOF",
     "source_id": "5797264",
     "subtopic_tags": [],
-    "summary": "La Comisión Nacional Bancaria y de Valores publicó la revocación de la autorización para operar como oficina de representación de una entidad financiera del exterior. La CNBV revocó a Unicaja Banco, S.A., Oficina de Representación en México, la autorización para organizarse y operar como oficina de representación de una entidad financiera del exterior. La resolución señala que la oficina no proporcionó elementos suficientes para desvirtuar la causal de revocación y que ésta se tuvo por acreditada. A partir de la notificación, la oficina está imposibilitada para realizar actividades.\n\nEl acuerdo de la Junta de Gobierno citado por la autoridad fue adoptado el 30 de junio de 2026. La publicación se apoya en la Ley de Instituciones de Crédito y en las reglas aplicables a oficinas de representación, y describe la competencia de la CNBV para autorizar y revocar ese tipo de operaciones.\n\nEl acto se refiere a la oficina de representación identificada en México. No contiene una determinación sobre otras entidades, oficinas o productos, ni debe extenderse a relaciones jurídicas que no correspondan a la autorización revocada.\n\nLa utilidad práctica de la publicación depende de si la persona o entidad se encuentra dentro del ámbito descrito. La información se presenta con base en el documento oficial disponible y no permite extender efectos a supuestos, periodos, personas o actos que no estén expresamente identificados. Cuando el documento incorpora requisitos, condiciones o mecanismos, éstos deben contrastarse con la ficha, resolución, contrato, expediente o norma específica que corresponda.\n\nPara fines de cumplimiento y trazabilidad, conviene conservar la fuente oficial, su fecha de publicación y los documentos que acrediten la situación concreta. Esta síntesis no sustituye el texto íntegro ni una determinación individual de la autoridad; describe el alcance observable del acto y distingue las consecuencias expresamente publicadas de cualquier inferencia que no está respaldada por la evidencia disponible.",
-    "summary_teaser": "La Comisión Nacional Bancaria y de Valores revocó la autorización de Unicaja Banco, S.A., Oficina de Representación en México. La resolución señala que se actualizó la causal invocada y que, desde su notificación, la oficina queda imposibilitada para realizar actividades.",
-    "title": "CNBV revoca la oficina mexicana de Unicaja Banco",
+    "summary": "La Comisión Nacional Bancaria y de Valores publicó la resolución que revoca la autorización otorgada a Unicaja Banco, S.A., Oficina de Representación en México, para continuar operando como oficina de representación de una entidad financiera del exterior. La publicación identifica a la CNBV como órgano desconcentrado de la Secretaría de Hacienda y Crédito Público y cita sus atribuciones para autorizar la constitución y operación de oficinas de representación de entidades financieras del exterior y, en su caso, revocar esas autorizaciones. El resolutivo primero revoca expresamente la autorización de la oficina de representación de Unicaja Banco.\n\nEl resolutivo segundo dispone que, a partir de la fecha de notificación de la resolución, la oficina de representación se encuentra imposibilitada para realizar actividades. Ese es el único hito temporal operativo que reproduce el documento; no presenta en el texto visible una fecha concreta de notificación. Por ello, la fecha de publicación en el Diario Oficial no debe confundirse con la fecha desde la cual la propia resolución afirma que se actualiza la imposibilidad de operar. La publicación está fechada en Ciudad de México el 6 de julio de 2026 y refiere acuerdos de la Junta de Gobierno de la CNBV celebrados el 30 de junio de 2026.\n\nEn la parte que se reproduce, la CNBV señala que la oficina no proporcionó elementos suficientes para desvirtuar la causal de revocación por la que fue emplazada y concluye que dicha causal se actualizó conforme al artículo 7, párrafo tercero, de la Ley de Instituciones de Crédito y la fracción IV de la Regla Décima Quinta de las Reglas de Oficinas de Representación de Entidades Financieras del Exterior. La fuente contiene elisiones expresas en los antecedentes, los considerandos y el tercer resolutivo, marcadas con corchetes. En consecuencia, la evidencia disponible no permite reconstruir hechos específicos, defensas, documentación ni el contenido íntegro de las determinaciones omitidas.\n\nEl alcance verificable de la publicación es la revocación de la autorización para que esa oficina de representación opere y la imposibilidad de realizar actividades a partir de la notificación. No se deben inferir, sin el expediente o la resolución íntegra, efectos sobre otras entidades del grupo, contratos, clientes, obligaciones de liquidación o procedimientos administrativos no reproducidos. Para determinar la fecha efectiva de cese operativo o cualquier obligación concreta distinta de las frases publicadas, sería necesario revisar la constancia de notificación y el texto completo no elidido.",
+    "summary_teaser": "La Comisión Nacional Bancaria y de Valores revocó la autorización de Unicaja Banco, S.A., Oficina de Representación en México, para operar como oficina de representación de una entidad financiera del exterior. Desde la notificación de la resolución, la oficina queda imposibilitada para realizar actividades.",
+    "title": "CNBV revoca operación de oficina de representación de Unicaja",
     "topic_tags": [
       "Oficio"
     ],

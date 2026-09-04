@@ -6,7 +6,8 @@
       "source_ref": "chunk-1",
       "target_sections": [
         "executive_summary",
-        "detailed_summary"
+        "detailed_summary",
+        "impacts.general"
       ]
     },
     {
@@ -14,37 +15,47 @@
       "reason": null,
       "source_ref": "chunk-2",
       "target_sections": [
+        "executive_summary",
         "detailed_summary",
         "impacts.general",
+        "impacts.sectors",
         "recommended_actions"
       ]
     }
   ],
-  "cut_id": "80ff8a726797f7b9e5131c53",
+  "cut_id": "9bfb2857e185b6a117ea296f",
   "detailed_summary": [
     {
       "evidence_refs": [
         "chunk-1",
         "chunk-2"
       ],
-      "heading": "Destino y uso autorizado",
+      "heading": "Destino y antecedentes del inmueble",
       "paragraphs": [
-        "El acuerdo destina el inmueble a la Procuraduría Federal de Protección al Ambiente para continuar utilizándolo como oficinas de representación de protección ambiental en el estado, con un derecho de aprovechamiento limitado a esa finalidad y sin transmisión de propiedad."
+        "El acuerdo destina el inmueble federal de Xalapa a PROFEPA para uso de oficinas de representación ambiental. Describe antecedentes de propiedad, servidumbre, levantamiento topográfico, uso de suelo, opiniones del INAH e INBAL y la solicitud institucional que precedió al destino."
       ]
     },
     {
       "evidence_refs": [
-        "chunk-1",
         "chunk-2"
       ],
-      "heading": "Custodia y condicionantes",
+      "heading": "Condiciones de uso y devolución",
       "paragraphs": [
-        "La destinataria debe conservar, asegurar y vigilar el inmueble; un cambio de uso o falta de necesidad activa la puesta a disposición prevista. Las obras requieren autorizaciones previas conforme al acto."
+        "El destino sólo permite el aprovechamiento para el uso autorizado y no transmite propiedad. Si el inmueble cambia de uso sin autorización o deja de ser útil, PROFEPA debe ponerlo a disposición del INDAABIN con mejoras y accesiones, sin compensación, dentro del plazo fijado."
+      ]
+    },
+    {
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "heading": "Obras, conservación y vigencia",
+      "paragraphs": [
+        "Antes de obras deben gestionarse las licencias, permisos y autorizaciones requeridas, incluida la intervención del INAH por la colindancia indicada. PROFEPA debe custodiar, conservar, mantener y asegurar el bien; el acuerdo inicia vigencia al día siguiente de su publicación."
       ]
     }
   ],
   "evidence": {
-    "content_hash": "fed495700bd37b00897ec1b142d96806dc28237fc3a83d5f204bf067c7f2276d",
+    "content_hash": "ef0e1b2c09ec40ae9c49dfb54c2a6fa1c1855accf8590b8dcb7a45f428993d55",
     "extraction_method": "html-adapter",
     "locators": [
       {
@@ -59,11 +70,11 @@
       }
     ],
     "official_url": "https://dof.gob.mx/nota_detalle.php?codigo=5796488&fecha=18%2F08%2F2026",
-    "retrieved_at": "2026-09-01T16:35:19.876490+00:00"
+    "retrieved_at": "2026-09-03T16:53:31.980641+00:00"
   },
   "executive_summary": [
-    "El Instituto de Administración y Avalúos de Bienes Nacionales destinó a la Procuraduría Federal de Protección al Ambiente el inmueble federal Oficinas de Representación de Protección Ambiental en el Estado de Veracruz, ubicado en Xalapa, Veracruz, para continuar utilizándolo como oficinas de representación de protección ambiental en el estado. El acuerdo individualiza el bien mediante sus datos inmobiliarios y señala que la destinación busca permitir la continuidad o ejecución del servicio público referido. Su entrada en vigor ocurre al día siguiente de la publicación.",
-    "La destinación confiere a la institución destinataria el derecho de aprovechar el inmueble únicamente para el uso autorizado. El instrumento aclara que no transmite la propiedad ni otorga derecho real alguno. Si el bien se usa para una finalidad distinta sin autorización previa de Hacienda por conducto del Instituto, o deja de utilizarse o necesitarse, deberá ponerse a disposición del Instituto con mejoras y accesiones, sin compensación, dentro de los cuatro meses que establece el acuerdo."
+    "INDAABIN destina a PROFEPA un inmueble federal de Xalapa para que continúe como oficina de representación ambiental. El destino no transmite la propiedad ni otorga un derecho real.",
+    "El acuerdo limita el uso autorizado, exige custodia, conservación y aseguramiento, y prevé que PROFEPA debe obtener autorizaciones antes de obras; si deja de usar o necesitar el bien, debe ponerlo a disposición del Instituto en los términos indicados."
   ],
   "impacts": {
     "general": {
@@ -72,19 +83,27 @@
         "chunk-2"
       ],
       "paragraphs": [
-        "El acuerdo regulariza el uso administrativo de un bien federal y asigna obligaciones de conservación y control a la institución destinataria."
+        "La publicación formaliza un destino administrativo para la operación de PROFEPA en Veracruz y fija condiciones de uso y administración del bien federal. No comunica la transferencia de propiedad ni autoriza una obra concreta."
       ]
     },
     "sectors": [
       {
         "evidence_refs": [
-          "chunk-1",
           "chunk-2"
         ],
         "paragraphs": [
-          "Las áreas responsables deben mantener el uso dentro de la finalidad autorizada, resguardar el bien y tramitar las autorizaciones antes de intervenirlo."
+          "La Procuraduría puede continuar usando el inmueble para oficinas de representación ambiental, sujeto a custodia, conservación, aseguramiento y a las condiciones de uso señaladas en el acuerdo."
         ],
-        "sector": "Institución destinataria y áreas responsables del inmueble"
+        "sector": "PROFEPA en Veracruz"
+      },
+      {
+        "evidence_refs": [
+          "chunk-2"
+        ],
+        "paragraphs": [
+          "El INDAABIN conserva la vigilancia del cumplimiento y el inmueble debe volver a su disposición si se actualiza el supuesto de cambio de uso no autorizado o de falta de necesidad."
+        ],
+        "sector": "Gestión del patrimonio inmobiliario federal"
       }
     ]
   },
@@ -113,23 +132,34 @@
     "review_reason": null,
     "source": "DOF",
     "source_id": "5796488",
-    "summary_teaser": "El Instituto de Administración y Avalúos de Bienes Nacionales destinó el inmueble federal descrito a la Procuraduría Federal de Protección al Ambiente para continuar utilizándolo como oficinas de representación de protección ambiental en el estado. El acuerdo confiere derecho de aprovechamiento para ese uso, no transmite la propiedad y establece obligaciones de custodia, conservación y permisos para intervenciones.",
-    "title": "Acuerdo concede a Profepa oficinas ambientales federales en Veracruz",
+    "summary_teaser": "INDAABIN destina a PROFEPA un inmueble federal de Xalapa para continuar como oficina de representación ambiental. El acuerdo conserva la propiedad federal, impone custodia, conservación y aseguramiento; exige autorizaciones antes de obras y la puesta a disposición del bien si cambia su uso.",
+    "title": "INDAABIN autoriza destino de inmueble para PROFEPA en Veracruz",
     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5796488&fecha=18/08/2026"
   },
   "recommended_actions": [
     {
-      "affected_group": "Institución destinataria y áreas responsables del inmueble",
-      "deadline": "Cuatro meses para poner el inmueble a disposición si deja de ser útil, cuando se actualice ese supuesto",
+      "affected_group": "PROFEPA",
+      "deadline": "Antes de realizar la obra respectiva.",
       "evidence_refs": [
-        "chunk-1",
         "chunk-2"
       ],
-      "legal_basis": "Ley General de Bienes Nacionales y términos expresos del acuerdo de destino",
+      "legal_basis": null,
       "paragraphs": [
-        "Documentar la finalidad autorizada, conservar evidencia de custodia, mantenimiento y aseguramiento, y gestionar los permisos que correspondan antes de ejecutar obras."
+        "Si proyecta obras en el inmueble, debe gestionar previamente las licencias, permisos o autorizaciones aplicables ante autoridades locales y federales, con atención a la intervención del INAH prevista por la colindancia indicada."
       ],
-      "trigger": "Administrar el inmueble o proyectar una intervención material"
+      "trigger": "Antes de realizar construcción, reconstrucción, modificación, adaptación, conservación, mantenimiento, reparación o demolición."
+    },
+    {
+      "affected_group": "PROFEPA",
+      "deadline": "Dentro de los cuatro meses siguientes a que deje de ser útil para su servicio, para ponerlo a disposición cuando corresponda.",
+      "evidence_refs": [
+        "chunk-2"
+      ],
+      "legal_basis": null,
+      "paragraphs": [
+        "Si deja de utilizar o necesitar el inmueble, o pretende destinarlo a un uso distinto, debe atender la autorización previa o la puesta a disposición que establece el acuerdo, sin asumir que el destino transmite propiedad."
+      ],
+      "trigger": "Cambio de uso o falta de necesidad del inmueble."
     }
   ],
   "schema_version": 8
